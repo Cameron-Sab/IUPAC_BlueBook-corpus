@@ -159,15 +159,16 @@ def _ranking_vector(
         )
     else:
         principal_locants = ()
-    multiple_bond_locants = tuple(
+    multiple_bond_locants = tuple(sorted(
         min(locants[bond.a], locants[bond.b])
         for bond in molecule.bonds
         if bond.a in locants and bond.b in locants and bond.order > 1
-    )
+    ))
+    multiple_bond_rank = (-len(multiple_bond_locants), *multiple_bond_locants)
     substituents = _substituents(molecule, chain, principal)
     substituent_locants = tuple(sorted(locant for locant, _ in substituents))
     substituent_names = tuple(name for _, name in sorted(substituents, key=lambda item: (item[1], item[0])))
-    return (principal_locants, tuple(sorted(multiple_bond_locants)), substituent_locants, substituent_names)
+    return (principal_locants, multiple_bond_rank, substituent_locants, substituent_names)
 
 
 def _substituents(
@@ -200,10 +201,17 @@ def _substituents(
 
     for atom_id in chain:
         for neighbor, order in molecule.neighbors(atom_id):
-            if neighbor in chain_set or neighbor in principal_atoms or neighbor in functional_group_atoms or order != 1:
+            if neighbor in chain_set or neighbor in principal_atoms or neighbor in functional_group_atoms:
                 continue
             atom = molecule.atom(neighbor)
-            if atom.element in HALO_PREFIX:
+            if order == 2 and atom.element == "C":
+                if _alkyl_size(molecule, neighbor, blocked=chain_set | {atom_id}) == 1:
+                    substituents.append((locants[atom_id], "methylidene"))
+                else:
+                    raise NamingUnsupported("Complex double-bond substituents are outside scope")
+            elif order != 1:
+                continue
+            elif atom.element in HALO_PREFIX:
                 substituents.append((locants[atom_id], HALO_PREFIX[atom.element]))
             elif atom.element == "C":
                 size = _alkyl_size(molecule, neighbor, blocked=chain_set | {atom_id})
@@ -248,10 +256,11 @@ def _alkyl_size(molecule: Molecule, start: int, blocked: set[int]) -> int:
             raise NamingUnsupported("Heteroatom-containing substituent recursion is outside scope")
         seen.add(atom_id)
         for neighbor, order in molecule.neighbors(atom_id):
+            if neighbor in blocked:
+                continue
             if order != 1:
                 raise NamingUnsupported("Unsaturated substituent recursion is outside scope")
-            if neighbor not in blocked:
-                stack.append(neighbor)
+            stack.append(neighbor)
     return len(seen)
 
 

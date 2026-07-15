@@ -84,6 +84,15 @@ def test_dicarboxylic_acid_numbering_prefers_unsaturation_after_suffix_locants()
     assert name_smiles("O=C(O)CCC(O)C=C(O)C(=O)O")["name"] == "2,4-dihydroxyhept-2-enedioic acid"
 
 
+def test_parent_selection_prefers_multiple_bonds():
+    assert name_smiles("C=C(C)C(=O)O")["name"] == "2-methylprop-2-enoic acid"
+
+
+def test_exocyclic_methylidene_prefix():
+    assert name_smiles("C=C(CCC(=O)O)C(=O)O")["name"] == "2-methylidenepentanedioic acid"
+    assert name_smiles("C=C(C(=O)O)C(C)C(=O)O")["name"] == "2-methyl-3-methylidenebutanedioic acid"
+
+
 def test_simple_ester():
     assert name_smiles("CC(=O)OCC")["name"] == "ethyl ethanoate"
 
