@@ -100,3 +100,21 @@ def test_lone_acylamino_prefix_prefers_acetylamino_style():
 def test_acetamido_prefix_with_other_prefixes():
     assert name_smiles("CC(=O)NCCCC(N)CC(=O)O")["name"] == "6-acetamido-3-aminohexanoic acid"
     assert name_smiles("CC(=O)NCCCC(=O)CC(=O)O")["name"] == "6-acetamido-3-oxohexanoic acid"
+
+
+def test_unsupported_amide_suffix_fails_closed():
+    result = name_smiles("CC(=O)NN")
+    assert result["status"] == "unsupported"
+    assert "Amide suffix" in result["reason"]
+
+
+def test_unsupported_guanidine_fails_closed():
+    result = name_smiles("N=C(N)NC(=N)N")
+    assert result["status"] == "unsupported"
+    assert "guanidine" in result["reason"]
+
+
+def test_complex_amine_substituent_fails_closed():
+    result = name_smiles("O=C(O)CN(CCN(CC(=O)O)CC(=O)O)CC(=O)O")
+    assert result["status"] == "unsupported"
+    assert "Complex amine" in result["reason"]

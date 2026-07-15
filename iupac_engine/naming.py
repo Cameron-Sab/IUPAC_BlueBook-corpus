@@ -44,6 +44,7 @@ def name_molecule(molecule: Molecule, groups: list[FunctionalGroup]) -> tuple[st
         raise NamingUnsupported("Carbon chains longer than C10 are outside the current prototype scope")
 
     principal = groups[0] if groups else None
+    _reject_unsupported_functional_families(molecule, groups, principal)
     trace.append(
         TraceStep(
             "P-1",
@@ -111,6 +112,19 @@ def groups_for_molecule(molecule: Molecule) -> list[FunctionalGroup]:
 def groups_for_chain(molecule: Molecule, chain: tuple[int, ...]) -> list[FunctionalGroup]:
     chain_set = set(chain)
     return [group for group in groups_for_molecule(molecule) if group.principal_atom in chain_set]
+
+
+def _reject_unsupported_functional_families(
+    molecule: Molecule, groups: list[FunctionalGroup], principal: FunctionalGroup | None
+) -> None:
+    if principal and principal.kind == "amide":
+        raise NamingUnsupported("Amide suffix nomenclature is outside the current scope")
+
+    hydroxyimino_atoms = set().union(*(group.atom_ids for group in groups if group.kind == "hydroxyimino")) if groups else set()
+    for bond in molecule.bonds:
+        has_nitrogen = molecule.atom(bond.a).element == "N" or molecule.atom(bond.b).element == "N"
+        if bond.order == 2 and has_nitrogen and not ({bond.a, bond.b} <= hydroxyimino_atoms):
+            raise NamingUnsupported("Imine, amidine, and guanidine nomenclature is outside the current scope")
 
 
 def _all_carbon_paths(molecule: Molecule, carbon_ids: list[int]) -> list[tuple[int, ...]]:
@@ -203,7 +217,12 @@ def _substituents(
                     substituents.append((locants[atom_id], "hydroxy"))
             elif atom.element == "N":
                 acylamino = _acylamino_name(molecule, neighbor, blocked=chain_set | {atom_id})
-                substituents.append((locants[atom_id], acylamino or "amino"))
+                if acylamino:
+                    substituents.append((locants[atom_id], acylamino))
+                elif len(molecule.neighbors(neighbor)) == 1:
+                    substituents.append((locants[atom_id], "amino"))
+                else:
+                    raise NamingUnsupported("Complex amine substituents are outside scope")
             else:
                 raise NamingUnsupported(f"Unsupported substituent atom: {atom.element}")
     return substituents
