@@ -54,7 +54,6 @@ def _validate_graph_scope(molecule) -> None:
     if molecule.rings:
         if any(atom.aromatic for atom in molecule.atoms):
             raise NamingUnsupported("Aromatic ring nomenclature is outside the current scope")
-        raise NamingUnsupported("Ring nomenclature is outside the current scope")
     if any(atom.aromatic for atom in molecule.atoms) or any(bond.aromatic for bond in molecule.bonds):
         raise NamingUnsupported("Aromatic nomenclature is outside the current scope")
     if any(atom.formal_charge for atom in molecule.atoms):

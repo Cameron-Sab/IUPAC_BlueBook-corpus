@@ -56,10 +56,10 @@ def test_branched_alkane():
 
 
 def test_ring_is_structured_unsupported():
-    result = name_smiles("C1CCCCC1")
+    result = name_smiles("C1=CCCCC1")
     assert result["status"] == "unsupported"
     assert result["name"] is None
-    assert "Ring nomenclature" in result["reason"]
+    assert "Unsaturated ring" in result["reason"]
 
 
 def test_disconnected_is_structured_unsupported():
@@ -81,7 +81,32 @@ def test_graph_modifiers_fail_closed_by_feature():
 
 def test_aromatic_and_alicyclic_rings_are_distinguished():
     assert "Aromatic ring" in name_smiles("c1ccccc1")["reason"]
-    assert name_smiles("C1CCCCC1")["reason"].startswith("Ring nomenclature")
+    assert name_smiles("C1CCCCC1")["name"] == "cyclohexane"
+
+
+def test_saturated_monocyclic_hydrocarbon_parents():
+    assert name_smiles("C1CC1")["name"] == "cyclopropane"
+    assert name_smiles("C1CCC1")["name"] == "cyclobutane"
+    assert name_smiles("C1CCCC1")["name"] == "cyclopentane"
+    assert name_smiles("C1CCCCC1")["name"] == "cyclohexane"
+
+
+def test_substituted_monocycle_numbering_and_locant_elision():
+    assert name_smiles("CC1CCCCC1")["name"] == "methylcyclohexane"
+    assert name_smiles("CC1CC(C)CCC1")["name"] == "1,3-dimethylcyclohexane"
+    assert name_smiles("CCC1CCCCC1C")["name"] == "1-ethyl-2-methylcyclohexane"
+    assert name_smiles("FC1(F)C(F)(F)C(F)(F)C1(F)F")["name"] == "octafluorocyclobutane"
+
+
+def test_ring_parent_is_preferred_to_an_equally_long_chain():
+    assert name_smiles("CCCCCCC1CCCCC1")["name"] == "hexylcyclohexane"
+
+
+def test_unsupported_ring_families_fail_closed():
+    assert "Heterocycle" in name_smiles("O1CCCCC1")["reason"]
+    assert "Polycyclic" in name_smiles("C1CCC2CCCCC2C1")["reason"]
+    assert "Characteristic-group" in name_smiles("OC1CCCCC1")["reason"]
+    assert "Cycloalkyl-prefix" in name_smiles("CCCCCCC1CCCC1")["reason"]
 
 
 def test_oxo_prefix_with_carboxylic_acid():

@@ -109,7 +109,8 @@ Current boundaries:
 
 ## Supported Scope
 
-The current prototype supports single-component, acyclic organic molecules using:
+The current prototype supports single-component organic molecules in these
+implemented families:
 
 - carbon parent chains;
 - single, double, and triple bonds;
@@ -118,6 +119,8 @@ The current prototype supports single-component, acyclic organic molecules using
 - simple alkyl substituent prefixes;
 - attachment-aware branched alkyl and alkoxy substituent prefixes;
 - Blue Book Table 1.4 numerical terms and parent roots;
+- saturated monocyclic carbon parents with hydrocarbon, halo, alkyl, alkoxy, or
+  simple methylidene substitution;
 - one principal characteristic group among:
   - carboxylic acid;
   - ester;
@@ -131,9 +134,10 @@ The current prototype supports single-component, acyclic organic molecules using
   - hydrocarbon.
 
 Neutral bracket atoms are accepted when their chemistry is otherwise supported.
-Rings, aromatic systems, formal charges, isotopic modification, radicals,
-stereochemical descriptors, disconnected structures, and unsupported elements
-currently return structured `unsupported` responses rather than guessed names.
+Polycyclic, unsaturated-ring, heterocyclic, and aromatic systems, along with
+formal charges, isotopic modification, radicals, stereochemical descriptors,
+disconnected structures, and unsupported elements, currently return structured
+`unsupported` responses rather than guessed names.
 
 ## Quick Start
 

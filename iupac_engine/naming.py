@@ -49,6 +49,9 @@ def name_molecule(molecule: Molecule, groups: list[FunctionalGroup]) -> tuple[st
         )
     )
 
+    if molecule.rings:
+        return _name_saturated_monocycle(molecule, groups, trace)
+
     candidates = _numbering_candidates(molecule, carbon_ids, principal)
     if not candidates:
         raise NamingUnsupported("No valid acyclic carbon parent candidate found")
@@ -72,6 +75,117 @@ def name_molecule(molecule: Molecule, groups: list[FunctionalGroup]) -> tuple[st
     )
 
     return _render_name(molecule, winner), trace
+
+
+def _name_saturated_monocycle(
+    molecule: Molecule,
+    groups: list[FunctionalGroup],
+    trace: list[TraceStep],
+) -> tuple[str, list[TraceStep]]:
+    if len(molecule.rings) != 1:
+        raise NamingUnsupported("Polycyclic nomenclature is outside the current scope")
+
+    ring_atoms = frozenset(molecule.rings[0])
+    if len(ring_atoms) < 3:
+        raise NamingUnsupported("A valid monocyclic parent requires at least three ring atoms")
+    if any(molecule.atom(atom_id).element != "C" for atom_id in ring_atoms):
+        raise NamingUnsupported("Heterocycle nomenclature is outside the current scope")
+    if groups:
+        raise NamingUnsupported("Characteristic-group nomenclature on rings is outside the current scope")
+
+    ring_bonds = [
+        bond
+        for bond in molecule.bonds
+        if bond.a in ring_atoms and bond.b in ring_atoms
+    ]
+    if len(ring_bonds) != len(ring_atoms):
+        raise NamingUnsupported("Unsupported monocyclic ring topology")
+    if any(bond.order != 1 or bond.aromatic for bond in ring_bonds):
+        raise NamingUnsupported("Unsaturated ring nomenclature is outside the current scope")
+
+    external_carbons = [
+        atom.id
+        for atom in molecule.atoms
+        if atom.element == "C" and atom.id not in ring_atoms
+    ]
+    if external_carbons:
+        longest_external_chain = max(
+            len(path) for path in _all_carbon_paths(molecule, external_carbons)
+        )
+        if longest_external_chain > len(ring_atoms):
+            raise NamingUnsupported(
+                "Cycloalkyl-prefix nomenclature for a longer acyclic parent is outside the current scope"
+            )
+
+    orientations = _ring_orientations(molecule, ring_atoms)
+    candidates = [
+        NumberingCandidate(
+            orientation,
+            _ranking_vector(molecule, orientation, None),
+            None,
+            (),
+        )
+        for orientation in orientations
+    ]
+    winner = min(candidates, key=lambda candidate: candidate.ranking_vector)
+    substituents = _substituents(molecule, winner.chain, None)
+
+    trace.append(
+        TraceStep(
+            "P-22.1.1",
+            f"Selected a saturated monocyclic parent with {len(ring_atoms)} carbon atoms",
+            (f"longest external chain: {max((len(path) for path in _all_carbon_paths(molecule, external_carbons)), default=0)}",),
+            f"{parent_root(len(ring_atoms))}-membered carbon ring",
+        )
+    )
+    trace.append(
+        TraceStep(
+            "P-14",
+            f"Selected ring numbering by lexicographic ranking vector {winner.ranking_vector}",
+            tuple(str(candidate.ranking_vector) for candidate in candidates),
+            str(winner.ranking_vector),
+        )
+    )
+
+    omit_locants = len(substituents) == 1 or _is_complete_single_halogen_substitution(
+        molecule, winner, substituents
+    )
+    prefixes = _render_prefixes(substituents, omit_locants=omit_locants)
+    parent = f"cyclo{parent_root(len(ring_atoms))}ane"
+    return prefixes + parent, trace
+
+
+def _ring_orientations(
+    molecule: Molecule, ring_atoms: frozenset[int]
+) -> list[tuple[int, ...]]:
+    adjacency = {
+        atom_id: tuple(
+            neighbor
+            for neighbor, _ in molecule.neighbors(atom_id)
+            if neighbor in ring_atoms
+        )
+        for atom_id in ring_atoms
+    }
+    if any(len(neighbors) != 2 for neighbors in adjacency.values()):
+        raise NamingUnsupported("Unsupported monocyclic ring topology")
+
+    orientations: set[tuple[int, ...]] = set()
+    for start in sorted(ring_atoms):
+        for second in adjacency[start]:
+            path = [start, second]
+            while len(path) < len(ring_atoms):
+                next_atoms = [
+                    atom_id
+                    for atom_id in adjacency[path[-1]]
+                    if atom_id != path[-2] and atom_id not in path
+                ]
+                if len(next_atoms) != 1:
+                    raise NamingUnsupported("Unsupported monocyclic ring topology")
+                path.append(next_atoms[0])
+            if start not in adjacency[path[-1]]:
+                raise NamingUnsupported("Unsupported monocyclic ring topology")
+            orientations.add(tuple(path))
+    return sorted(orientations)
 
 
 def _numbering_candidates(molecule: Molecule, carbon_ids: list[int], principal: FunctionalGroup | None) -> list[NumberingCandidate]:
