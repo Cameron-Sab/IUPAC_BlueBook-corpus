@@ -365,11 +365,11 @@ def _render_name(molecule: Molecule, candidate: NumberingCandidate) -> str:
     parent = _render_parent(molecule, chain, candidate.principal_group, candidate.groups)
     if candidate.principal_group and candidate.principal_group.kind == "ester":
         return parent
-    prefixes = _render_prefixes(_substituents(molecule, chain, candidate.principal_group, candidate.groups))
+    prefixes = _render_prefixes(_substituents(molecule, chain, candidate.principal_group, candidate.groups), omit_locants=len(chain) == 1)
     return prefixes + parent
 
 
-def _render_prefixes(substituents: list[tuple[int, str]]) -> str:
+def _render_prefixes(substituents: list[tuple[int, str]], *, omit_locants: bool = False) -> str:
     if not substituents:
         return ""
     grouped: dict[str, list[int]] = {}
@@ -384,7 +384,10 @@ def _render_prefixes(substituents: list[tuple[int, str]]) -> str:
         rendered = multiplier + rendered_name
         if _needs_substitutive_parentheses(rendered_name):
             rendered = f"({rendered})"
-        parts.append(f"{','.join(str(l) for l in locants)}-{rendered}")
+        if omit_locants:
+            parts.append(rendered)
+        else:
+            parts.append(f"{','.join(str(l) for l in locants)}-{rendered}")
     return "-".join(parts)
 
 
@@ -413,7 +416,7 @@ def _render_parent(
     if group == "ester":
         ester_group = suffix_groups[0] if suffix_groups else principal
         alkyl = _ester_alkyl_name(molecule, ester_group, chain)
-        prefixes = _render_prefixes(_substituents(molecule, chain, principal, groups))
+        prefixes = _render_prefixes(_substituents(molecule, chain, principal, groups), omit_locants=len(chain) == 1)
         return f"{alkyl} {prefixes}{root}{unsat}oate"
     if group == "aldehyde":
         return f"{root}{unsat}al"

@@ -29,6 +29,10 @@ def test_halo_prefix():
     assert name_smiles("CC(C)Cl")["name"] == "2-chloropropane"
 
 
+def test_methane_prefix_locants_are_elided():
+    assert name_smiles("ClC(Cl)(Cl)Cl")["name"] == "tetrachloromethane"
+
+
 def test_simple_alkanes():
     assert name_smiles("C")["name"] == "methane"
     assert name_smiles("CC")["name"] == "ethane"
