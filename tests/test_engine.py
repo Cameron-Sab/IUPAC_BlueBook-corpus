@@ -51,3 +51,19 @@ def test_disconnected_is_structured_unsupported():
     result = name_smiles("CC.O")
     assert result["status"] == "unsupported"
     assert result["supported_scope"] is False
+
+
+def test_oxo_prefix_with_carboxylic_acid():
+    assert name_smiles("O=CCCCCC(=O)O")["name"] == "6-oxohexanoic acid"
+
+
+def test_multiple_oxo_prefixes_with_carboxylic_acid():
+    assert name_smiles("CC(=O)CC(=O)C(=O)O")["name"] == "2,4-dioxopentanoic acid"
+
+
+def test_parent_chain_prefers_maximum_suffix_groups():
+    assert name_smiles("CC(N)(CO)CO")["name"] == "2-amino-2-methylpropane-1,3-diol"
+
+
+def test_dicarboxylic_acid_numbering_prefers_unsaturation_after_suffix_locants():
+    assert name_smiles("O=C(O)CCC(O)C=C(O)C(=O)O")["name"] == "2,4-dihydroxyhept-2-enedioic acid"

@@ -28,6 +28,7 @@ class NumberingCandidate:
     chain: tuple[int, ...]
     ranking_vector: tuple[tuple[int, ...], tuple[int, ...], tuple[int, ...], tuple[str, ...]]
     principal_group: FunctionalGroup | None
+    groups: tuple[FunctionalGroup, ...]
 
 
 class NamingUnsupported(ValueError):
@@ -79,13 +80,37 @@ def name_molecule(molecule: Molecule, groups: list[FunctionalGroup]) -> tuple[st
 
 def _numbering_candidates(molecule: Molecule, carbon_ids: list[int], principal: FunctionalGroup | None) -> list[NumberingCandidate]:
     paths = _all_carbon_paths(molecule, carbon_ids)
+    if principal:
+        same_kind_groups = [group for group in groups_for_molecule(molecule) if group.kind == principal.kind]
+        principal_paths = [path for path in paths if principal.principal_atom in path]
+        if not principal_paths:
+            return []
+        max_suffix_count = max(
+            sum(1 for group in same_kind_groups if group.principal_atom in path)
+            for path in principal_paths
+        )
+    else:
+        max_suffix_count = 0
     candidates: list[NumberingCandidate] = []
     for path in paths:
         if principal and principal.principal_atom not in path:
             continue
+        if principal and sum(1 for group in same_kind_groups if group.principal_atom in path) < max_suffix_count:
+            continue
         for oriented in (path, tuple(reversed(path))):
-            candidates.append(NumberingCandidate(oriented, _ranking_vector(molecule, oriented, principal), principal))
+            candidates.append(NumberingCandidate(oriented, _ranking_vector(molecule, oriented, principal), principal, tuple(groups_for_chain(molecule, oriented))))
     return candidates
+
+
+def groups_for_molecule(molecule: Molecule) -> list[FunctionalGroup]:
+    from .perception import perceive_functional_groups
+
+    return perceive_functional_groups(molecule)
+
+
+def groups_for_chain(molecule: Molecule, chain: tuple[int, ...]) -> list[FunctionalGroup]:
+    chain_set = set(chain)
+    return [group for group in groups_for_molecule(molecule) if group.principal_atom in chain_set]
 
 
 def _all_carbon_paths(molecule: Molecule, carbon_ids: list[int]) -> list[tuple[int, ...]]:
@@ -110,7 +135,16 @@ def _ranking_vector(
     molecule: Molecule, chain: tuple[int, ...], principal: FunctionalGroup | None
 ) -> tuple[tuple[int, ...], tuple[int, ...], tuple[int, ...], tuple[str, ...]]:
     locants = {atom_id: idx + 1 for idx, atom_id in enumerate(chain)}
-    principal_locants = (locants[principal.principal_atom],) if principal else ()
+    if principal:
+        principal_locants = tuple(
+            sorted(
+                locants[group.principal_atom]
+                for group in groups_for_chain(molecule, chain)
+                if group.kind == principal.kind
+            )
+        )
+    else:
+        principal_locants = ()
     multiple_bond_locants = tuple(
         min(locants[bond.a], locants[bond.b])
         for bond in molecule.bonds
@@ -122,15 +156,35 @@ def _ranking_vector(
     return (principal_locants, tuple(sorted(multiple_bond_locants)), substituent_locants, substituent_names)
 
 
-def _substituents(molecule: Molecule, chain: tuple[int, ...], principal: FunctionalGroup | None) -> list[tuple[int, str]]:
+def _substituents(
+    molecule: Molecule,
+    chain: tuple[int, ...],
+    principal: FunctionalGroup | None,
+    groups: tuple[FunctionalGroup, ...] = (),
+) -> list[tuple[int, str]]:
     chain_set = set(chain)
     locants = {atom_id: idx + 1 for idx, atom_id in enumerate(chain)}
     principal_atoms = principal.atom_ids if principal else frozenset()
     substituents: list[tuple[int, str]] = []
+    functional_group_atoms = set().union(*(group.atom_ids for group in groups)) if groups else set()
+
+    for group in groups:
+        if _is_suffix_group(group, principal):
+            continue
+        if group.kind == "ketone":
+            substituents.append((locants[group.principal_atom], "oxo"))
+        elif group.kind == "aldehyde":
+            substituents.append((locants[group.principal_atom], "oxo"))
+        elif group.kind == "alcohol":
+            substituents.append((locants[group.principal_atom], "hydroxy"))
+        elif group.kind == "amine":
+            substituents.append((locants[group.principal_atom], "amino"))
+        elif group.kind == "amide":
+            substituents.append((locants[group.principal_atom], "carbamoyl"))
 
     for atom_id in chain:
         for neighbor, order in molecule.neighbors(atom_id):
-            if neighbor in chain_set or neighbor in principal_atoms or order != 1:
+            if neighbor in chain_set or neighbor in principal_atoms or neighbor in functional_group_atoms or order != 1:
                 continue
             atom = molecule.atom(neighbor)
             if atom.element in HALO_PREFIX:
@@ -147,6 +201,14 @@ def _substituents(molecule: Molecule, chain: tuple[int, ...], principal: Functio
             else:
                 raise NamingUnsupported(f"Unsupported substituent atom: {atom.element}")
     return substituents
+
+
+def _is_suffix_group(group: FunctionalGroup, principal: FunctionalGroup | None) -> bool:
+    if principal is None:
+        return False
+    if group.kind == principal.kind:
+        return group.kind in {"carboxylic_acid", "ketone", "alcohol", "amine"}
+    return group == principal
 
 
 def _alkyl_size(molecule: Molecule, start: int, blocked: set[int]) -> int:
@@ -173,8 +235,8 @@ def _render_name(molecule: Molecule, candidate: NumberingCandidate) -> str:
     if len(chain) not in ROOTS:
         raise NamingUnsupported("Parent roots above decane are outside scope")
 
-    prefixes = _render_prefixes(_substituents(molecule, chain, candidate.principal_group))
-    parent = _render_parent(molecule, chain, candidate.principal_group)
+    prefixes = _render_prefixes(_substituents(molecule, chain, candidate.principal_group, candidate.groups))
+    parent = _render_parent(molecule, chain, candidate.principal_group, candidate.groups)
     return prefixes + parent
 
 
@@ -193,25 +255,47 @@ def _render_prefixes(substituents: list[tuple[int, str]]) -> str:
     return "-".join(parts)
 
 
-def _render_parent(molecule: Molecule, chain: tuple[int, ...], principal: FunctionalGroup | None) -> str:
+def _render_parent(
+    molecule: Molecule,
+    chain: tuple[int, ...],
+    principal: FunctionalGroup | None,
+    groups: tuple[FunctionalGroup, ...] = (),
+) -> str:
     root = ROOTS[len(chain)]
     unsat = _unsaturation(molecule, chain)
     group = principal.kind if principal else "hydrocarbon"
     locants = {atom_id: idx + 1 for idx, atom_id in enumerate(chain)}
 
+    suffix_groups = [g for g in groups if g.kind == group]
+    suffix_locants = tuple(sorted(locants[g.principal_atom] for g in suffix_groups if g.principal_atom in locants))
+
     if group == "carboxylic_acid":
+        if len(suffix_locants) > 1:
+            return f"{root}{unsat}edioic acid"
         return f"{root}{unsat}oic acid"
     if group == "aldehyde":
         return f"{root}{unsat}al"
     if group == "ketone":
+        if len(suffix_locants) > 1:
+            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-dione"
         return f"{root}{unsat}-{locants[principal.principal_atom]}-one"
     if group == "alcohol":
+        if len(suffix_locants) > 1:
+            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-diol"
         return f"{root}{unsat}-{locants[principal.principal_atom]}-ol"
     if group == "amine":
+        if len(suffix_locants) > 1:
+            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-diamine"
         return f"{root}{unsat}-{locants[principal.principal_atom]}-amine"
     if unsat == "an":
         return f"{root}ane"
     return _elide_terminal_locant_for_two_carbon_unsaturation(f"{root}{unsat}")
+
+
+def _parent_stem(root: str, unsat: str, *, keep_terminal_e: bool) -> str:
+    if unsat == "an":
+        return f"{root}ane" if keep_terminal_e else f"{root}an"
+    return f"{root}{unsat}"
 
 
 def _unsaturation(molecule: Molecule, chain: tuple[int, ...]) -> str:
