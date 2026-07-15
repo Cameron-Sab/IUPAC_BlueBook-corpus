@@ -12,6 +12,13 @@ class Atom:
     id: int
     element: str
     aromatic: bool = False
+    formal_charge: int = 0
+    isotope: int = 0
+    explicit_hydrogens: int = 0
+    radical_electrons: int = 0
+    chiral_tag: str | None = None
+    cip_label: str | None = None
+    in_ring: bool = False
 
 
 @dataclass(frozen=True)
@@ -19,12 +26,18 @@ class Bond:
     a: int
     b: int
     order: BondOrder = 1
+    aromatic: bool = False
+    in_ring: bool = False
+    stereo: str | None = None
 
 
 @dataclass
 class Molecule:
     atoms: list[Atom] = field(default_factory=list)
     bonds: list[Bond] = field(default_factory=list)
+    rings: tuple[tuple[int, ...], ...] = ()
+    source_smiles: str = ""
+    canonical_smiles: str = ""
 
     def neighbors(self, atom_id: int) -> list[tuple[int, BondOrder]]:
         pairs: list[tuple[int, BondOrder]] = []

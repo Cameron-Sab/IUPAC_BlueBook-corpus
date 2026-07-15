@@ -59,13 +59,29 @@ def test_ring_is_structured_unsupported():
     result = name_smiles("C1CCCCC1")
     assert result["status"] == "unsupported"
     assert result["name"] is None
-    assert "Ring closures" in result["reason"]
+    assert "Ring nomenclature" in result["reason"]
 
 
 def test_disconnected_is_structured_unsupported():
     result = name_smiles("CC.O")
     assert result["status"] == "unsupported"
     assert result["supported_scope"] is False
+
+
+def test_neutral_bracket_atom_is_parsed_when_chemistry_is_supported():
+    assert name_smiles("[NH2]CC(=O)O")["name"] == "2-aminoethanoic acid"
+
+
+def test_graph_modifiers_fail_closed_by_feature():
+    assert "Formal-charge" in name_smiles("[NH3+]CC(=O)[O-]")["reason"]
+    assert "Isotopic" in name_smiles("[13CH3]CO")["reason"]
+    assert "Stereochemical" in name_smiles("N[C@@H](C)C(=O)O")["reason"]
+    assert "Stereochemical" in name_smiles("C/C=C/C")["reason"]
+
+
+def test_aromatic_and_alicyclic_rings_are_distinguished():
+    assert "Aromatic ring" in name_smiles("c1ccccc1")["reason"]
+    assert name_smiles("C1CCCCC1")["reason"].startswith("Ring nomenclature")
 
 
 def test_oxo_prefix_with_carboxylic_acid():

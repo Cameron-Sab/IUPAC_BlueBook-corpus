@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from rdkit import Chem, rdBase
+
 from .model import Atom, Bond, Molecule
 
 
@@ -7,70 +9,61 @@ class SmilesError(ValueError):
     pass
 
 
-ORGANIC_ATOMS = ("Cl", "Br", "C", "N", "O", "F", "I")
-
-
 def parse_smiles(smiles: str) -> Molecule:
     if not smiles:
         raise SmilesError("Empty SMILES")
-    if "." in smiles:
-        raise SmilesError("Disconnected structures are outside the current scope")
 
-    molecule = Molecule()
-    stack: list[int] = []
-    current: int | None = None
-    pending_order = 1
-    index = 0
+    with rdBase.BlockLogs():
+        parsed = Chem.MolFromSmiles(smiles)
+    if parsed is None:
+        raise SmilesError("Invalid SMILES")
 
-    while index < len(smiles):
-        char = smiles[index]
+    canonical_smiles = Chem.MolToSmiles(parsed, canonical=True, isomericSmiles=True)
+    with rdBase.BlockLogs():
+        canonical = Chem.MolFromSmiles(canonical_smiles)
+    if canonical is None:
+        raise SmilesError("Canonical SMILES could not be parsed")
+    Chem.AssignStereochemistry(canonical, cleanIt=True, force=True)
 
-        if char in "-=#":
-            pending_order = {"-": 1, "=": 2, "#": 3}[char]
-            index += 1
-            continue
+    molecule = Molecule(source_smiles=smiles, canonical_smiles=canonical_smiles)
+    ring_info = canonical.GetRingInfo()
+    molecule.rings = tuple(tuple(ring) for ring in ring_info.AtomRings())
 
-        if char == "(":
-            if current is None:
-                raise SmilesError("Branch cannot start before an atom")
-            stack.append(current)
-            index += 1
-            continue
+    for atom in canonical.GetAtoms():
+        chiral_tag = str(atom.GetChiralTag())
+        molecule.atoms.append(
+            Atom(
+                id=atom.GetIdx(),
+                element=atom.GetSymbol() if atom.GetAtomicNum() else "*",
+                aromatic=atom.GetIsAromatic(),
+                formal_charge=atom.GetFormalCharge(),
+                isotope=atom.GetIsotope(),
+                explicit_hydrogens=atom.GetNumExplicitHs(),
+                radical_electrons=atom.GetNumRadicalElectrons(),
+                chiral_tag=None if chiral_tag == "CHI_UNSPECIFIED" else chiral_tag,
+                cip_label=atom.GetProp("_CIPCode") if atom.HasProp("_CIPCode") else None,
+                in_ring=atom.IsInRing(),
+            )
+        )
 
-        if char == ")":
-            if not stack:
-                raise SmilesError("Unmatched branch close")
-            current = stack.pop()
-            index += 1
-            continue
+    for bond in canonical.GetBonds():
+        numeric_order = bond.GetBondTypeAsDouble()
+        if bond.GetIsAromatic():
+            order = 1
+        elif numeric_order in {1.0, 2.0, 3.0}:
+            order = int(numeric_order)
+        else:
+            raise SmilesError(f"Unsupported bond type: {bond.GetBondType()}")
+        stereo = str(bond.GetStereo())
+        molecule.bonds.append(
+            Bond(
+                a=bond.GetBeginAtomIdx(),
+                b=bond.GetEndAtomIdx(),
+                order=order,
+                aromatic=bond.GetIsAromatic(),
+                in_ring=bond.IsInRing(),
+                stereo=None if stereo == "STEREONONE" else stereo,
+            )
+        )
 
-        if char.isdigit():
-            raise SmilesError("Ring closures are outside the current scope")
-
-        if char == "[":
-            raise SmilesError("Bracket atoms, charges, isotopes, and explicit stereochemistry are outside the current scope")
-
-        element = _read_atom(smiles, index)
-        if element is None:
-            if char.islower():
-                raise SmilesError("Aromatic atoms are outside the current scope")
-            raise SmilesError(f"Unsupported token at position {index}: {char!r}")
-
-        atom_id = len(molecule.atoms)
-        molecule.atoms.append(Atom(atom_id, element))
-        if current is not None:
-            molecule.bonds.append(Bond(current, atom_id, pending_order))
-        current = atom_id
-        pending_order = 1
-        index += len(element)
-
-    if stack:
-        raise SmilesError("Unclosed branch")
     return molecule
-
-
-def _read_atom(smiles: str, index: int) -> str | None:
-    for symbol in ORGANIC_ATOMS:
-        if smiles.startswith(symbol, index):
-            return symbol
-    return None

@@ -11,21 +11,26 @@ The local dataset is not committed to the repository. It was run from:
 
 Latest local run:
 
-- output directory: `work/local_benchmark/results_chebi_3star_iupac_after_substituent_parents`
+- output directory: `work/local_benchmark/results_chebi_3star_iupac_rdkit_adapter`
 - total cases: 44,940
-- exact passes: 1,180
-- exact failures: 43,760
-- false-success name mismatches: 183
+- exact passes: 1,335
+- exact failures: 43,605
+- false-success name mismatches: 221
 
 Failure stages:
 
 | Stage | Count |
 |---|---:|
-| bracket, charge, isotope, or stereochemistry outside scope | 21,217 |
-| ring or aromatic chemistry outside scope | 11,738 |
-| other unsupported scope | 8,748 |
-| disconnected salts, mixtures, hydrates, or multi-component structures | 1,874 |
-| successful render but exact-name mismatch | 183 |
+| ring or aromatic chemistry outside scope | 28,274 |
+| other unsupported scope | 9,210 |
+| bracket, charge, isotope, or stereochemistry outside scope | 4,103 |
+| disconnected salts, mixtures, hydrates, or multi-component structures | 1,797 |
+| successful render but exact-name mismatch | 221 |
+
+These stages record only the first blocker returned for each case. Their counts
+are not directly comparable with the earlier handwritten-parser run: the RDKit
+adapter now parses bracket atoms and full molecular graphs, so it can classify
+rings and graph modifiers that previously stopped at the input syntax layer.
 
 ## Improvement Since Initial Local Blitz
 
@@ -34,12 +39,22 @@ The initial local ChEBI run before this improvement pass produced:
 - exact passes: 271
 - false-success name mismatches: 662
 
-After the engine fixes:
+After the acyclic naming fixes:
 
 - exact passes: 1,180
 - false-success name mismatches: 183
 
-This is a net gain of 909 exact matches and a reduction of 479 successful-but-wrong names. No previously passing case regressed in either of the two full-corpus comparison runs used for this checkpoint.
+After adopting the RDKit graph adapter:
+
+- exact passes: 1,335
+- false-success name mismatches: 221
+
+This is a net gain of 1,064 exact matches from the initial run. The graph-adapter
+checkpoint added 155 exact matches with zero regressions among the previous 1,180
+passes. Its 38 additional successful renders that disagree with the ChEBI string
+are predominantly retained-name or naming-variant cases such as `ethanal` versus
+`acetaldehyde`, `methanamide` versus `formamide`, and `methanoic acid` versus
+`formic acid`.
 
 ## Fixes Driven By This Benchmark
 
@@ -61,6 +76,11 @@ The benchmark exposed and helped verify fixes for:
 - complete single-halogen substitution with locant elision;
 - attachment-aware branched alkyl, alkoxy, and ester organyl names;
 - `bis(...)` rendering for repeated complex ester organyl groups.
+- canonical, input-order-independent graph parsing through RDKit;
+- neutral bracket-atom parsing while charges, isotopes, radicals, rings, and
+  stereochemistry remain explicitly fail-closed;
+- molecular ring, aromaticity, charge, isotope, radical, and stereochemical
+  metadata for later nomenclature phases.
 
 ## Benchmark Limitation
 
@@ -72,6 +92,9 @@ Reasons:
 - Most ChEBI failures are outside that declared scope: rings, aromatics, stereochemistry, salts, charges, isotopes, sulfur/phosphorus chemistry, carbohydrates, peptides, natural products, and mixtures.
 - ChEBI names are curated names, not guaranteed preferred IUPAC names.
 - Exact string equality penalizes valid naming variants, retained names, functional-class names, optional locants, optional parentheses, and PIN/non-PIN differences.
+- The current runner assigns one failure stage per row even when a molecule has
+  several independent blockers. A separate all-feature census is required for
+  sound prioritization.
 
 Examples of benchmark-style mismatches that are not straightforward engine defects:
 

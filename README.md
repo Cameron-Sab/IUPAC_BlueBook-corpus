@@ -97,10 +97,13 @@ What this engine does now:
 - queries rules by id, chapter, type, and text;
 - walks outgoing or incoming dependency edges;
 - activates candidate rules from simple fact tokens.
+- parses SMILES into canonical, input-order-independent RDKit molecular graphs;
+- preserves ring, aromaticity, charge, isotope, radical, and stereochemical
+  metadata for deterministic nomenclature phases.
 
 Current boundaries:
 
-- molecular graph feature extraction is still scoped to the small prototype;
+- graph parsing is broad, but naming support remains deliberately fail-closed;
 - many Blue Book predicates now have explicit implementation requirements;
 - final full-scale IUPAC rendering from semantic actions is not complete.
 
@@ -127,7 +130,10 @@ The current prototype supports single-component, acyclic organic molecules using
   - amine;
   - hydrocarbon.
 
-Unsupported structures return structured `unsupported` responses rather than guessed names.
+Neutral bracket atoms are accepted when their chemistry is otherwise supported.
+Rings, aromatic systems, formal charges, isotopic modification, radicals,
+stereochemical descriptors, disconnected structures, and unsupported elements
+currently return structured `unsupported` responses rather than guessed names.
 
 ## Quick Start
 
