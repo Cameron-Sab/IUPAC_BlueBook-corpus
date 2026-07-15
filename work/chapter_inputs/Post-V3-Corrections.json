@@ -1,0 +1,1568 @@
+{
+  "source": "https://iupac.qmul.ac.uk/BlueBook/",
+  "source_version": "IUPAC Blue Book 2013 online version 3, posted 2023-12-06",
+  "chapter": "Post-V3-Corrections",
+  "record_count": 85,
+  "records": [
+    {
+      "target": "Contents, P-31.2",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "Contents, P-31.2. [corrected 31 December 2025]\nFor P-31.2 SUBSTITUENT GROUPS MODIFIED BY THE PREFIXES ‘HYDRO’ AND ‘DEHYDRO’\nread P-31.2 PARENT HYDRIDES MODIFIED BY THE PREFIXES ‘HYDRO’ AND ‘DEHYDRO’",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "Contents, P-32.2",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "Contents, P-32.2. [corrected 31 December 2025]\nFor P-32.2 SUBSTITUENT GROUPS DERIVED FROM PARENT HYDRIDES MODIFIED BY THE PREFIX ‘HYDRO’\nread P-32.2 SUBSTITUENT GROUPS DERIVED FROM PARENT HYDRIDES MODIFIED BY THE PREFIX ‘HYDRO’ AND ‘DEHYDRO’",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-13.2.2.1, example 2",
+      "correction_type": "corrected",
+      "correction_date": "9 October 2024",
+      "correction_dates": [
+        "9 October 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-13.2.2.1, example 2. [corrected 9 October 2024]\nFor C6H5 -P(O)(OH)2\nread C6H5-P(O)(OH)2\nfor C6H5 -P(≡N)-OH\nread C6H5-P(≡N)-OH",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-13.3.5, example",
+      "correction_type": "corrected",
+      "correction_date": "8 October 2025",
+      "correction_dates": [
+        "8 October 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-13.3.5, example. [corrected 8 October 2025]\nFor carbon monoxide—methylborane (PIN)\nread carbon monoxide—methylborane (1/1) (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-13.6.2, example 2",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-13.6.2, example 2. [corrected 9 April 2025]\nFor dimethyl butanedioylbis(oxy-2,1-phenylene) dibutanedioate (PIN)\nread dimethyl butanedioylbis[oxy(2,1-phenylene)] dibutanedioate (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-14.3.4.2 (d), text",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-14.3.4.2 (d), text. [corrected 9 April 2025]\nFor(d) in unsubstituted dinuclear and trinuclear...\nread (d) in any dinuclear, unsubstituted trinuclear...",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-14.3.4.4, after examples add",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-14.3.4.4, after examples add. [corrected 9 April 2025]\nFor As an exception the locant is not omitted from propan-2-one, butan-2-one, prop-2-enoic acid and prop-2-ynoic acid although unambiguous without a locant.\nread As an exception the locant is not omitted from propa-1,2-diene, propan-2-one, butan-2-one, prop-2-enoic acid and prop-2-ynoic acid although unambiguous without a locant.",
+      "logical_form": {
+        "if": [],
+        "unless": [
+          "[corrected 9 April 2025] For As an exception the locant is not omitted from propan-2-one, butan-2-one, prop-2-enoic acid and prop-2-ynoic acid although unambiguous without a locant. read As an exception the locant is not omitted from propa-1,2-diene, propan-2-one, butan-2-one, prop-2-enoic acid and prop-2-ynoic acid although unambiguous without a locant."
+        ],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-14.4 (b) text",
+      "correction_type": "corrected",
+      "correction_date": "28 May 2024",
+      "correction_dates": [
+        "28 May 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-14.4 (b) text. [corrected 28 May 2024]\nFor ....accommodate a substituent suffix in accordance with structural feature (d)\nread ....accommodate a substituent suffix in accordance with structural feature (c)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-14.5, paragraph 2, line 2",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-14.5, paragraph 2, line 2. [corrected 31 December 2025]\nFor ...(not the detachable saturation prefixes, hydro and dehydro)...\nread ...(also the separately cited dehydro and hydro prefixes)...",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-15.3.1.2.2.4, example 4",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-15.3.1.2.2.4, example 4. [corrected 9 April 2025]\nFor methylenebis(1,3,5-triazine-6,2,4-triyl) (preferred prefix)\nread methylenedi(1,3,5-triazine-6,2,4-triyl) (preferred prefix)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [
+          "[corrected 9 April 2025] For methylenebis(1,3,5-triazine-6,2,4-triyl) (preferred prefix) read methylenedi(1,3,5-triazine-6,2,4-triyl) (preferred prefix)"
+        ],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-15.3.2.2.1, example 1",
+      "correction_type": "corrected",
+      "correction_date": "3 December 2025",
+      "correction_dates": [
+        "3 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-15.3.2.2.1, example 1. [corrected 3 December 2025]\nFor N,N′-methylenedi(ethan-1-amine) (PIN)\nread N,N′-xmethylenediethanamine\nAdd N,N′-diethylmethanediamine (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-16.2.4.1 (b) example 2",
+      "correction_type": "corrected",
+      "correction_date": "9 October 2024",
+      "correction_dates": [
+        "9 October 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-16.2.4.1 (b) example 2. [corrected 9 October 2024]\nFor\nN1-(2-aminoethyl)-N1,N2,N2 -trimethylethane-1,2-diamine\nread N1-(2-aminoethyl)-N1,N2,N2-trimethylethane-1,2-diamine",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-16.7.1 (a), text",
+      "correction_type": "corrected",
+      "correction_date": "30 March 2024",
+      "correction_dates": [
+        "30 March 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-16.7.1 (a), text. [corrected 30 March 2024]\nFor ...when followed by a suffix or 'en' ending beginning with 'a', 'e'....\nread ...when followed by a suffix or ending beginning with 'a', 'e'....",
+      "logical_form": {
+        "if": [
+          "[corrected 30 March 2024] For ...when followed by a suffix or 'en' ending beginning with 'a', 'e'.... read ...when followed by a suffix or ending beginning with 'a', 'e'...."
+        ],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-15.1.1, Fig. 1.1, column 2",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-15.1.1, Fig. 1.1, column 2. [corrected 31 December 2025]\nFor Detachable saturation/unsaturation prefixes (hydro/dehydro)\nread Saturation/unsaturation prefixes (hydro/dehydro)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-16.5.4.1.5 (revised text), Stage 1",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-16.5.4.1.5 (revised text), Stage 1. [corrected 31 December 2025]\nFor 2-{2-{[(2S)-1-ethoxy-1-oxo-4-phenylbutan-2-yl]amino}propanoyl}-1,2,3,4-tetrahydroisoquinoline-3-carboxylic acid\nread 2-(2-{[(2S)-1-ethoxy-1-oxo-4-phenylbutan-2-yl]amino}propanoyl)-1,2,3,4-tetrahydroisoquinoline-3-carboxylic acid",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-22.2.4, example 4",
+      "correction_type": "corrected",
+      "correction_date": "9 October 2024",
+      "correction_dates": [
+        "9 October 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-22.2.4, example 4. [corrected 9 October 2024]\nFor 2H-1,4,8,11-oxatriazacyclotetradecine\n1-oxa-4,8,11-triazacyclotetradeca-3,5,7,9,11,13- hexaene (PIN)\nread 2H-1,4,8,11-oxatriazacyclotetradecine\n1-oxa-4,8,11-triazacyclotetradeca-3,5,7,9,11,13-hexaene (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-27.6.2, example 4",
+      "correction_type": "modified",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-27.6.2, example 4. [modified 9 April 2025]\nFor 1,9:32,33-(ethane-1,2,2-triyloxymethylene-1,4-phenylenemethyleneoxyethane-1,2,2-triy)(C60-Ih)[5,6]fullerene\nread 1,9:32,33-[ethane-1,1,2-triyloxymethylene(1,4-phenylene)methyleneoxyethane-1,2,2-triyl](C60-Ih)[5,6]fullerene",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-28.3.1",
+      "correction_type": "corrected",
+      "correction_date": "8 October 2025",
+      "correction_dates": [
+        "8 October 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-28.3.1. [Corrected 8 October 2025]\nFor ...usual way. Composite...\nread ...usual way provided the lowest locant set is selected and, if a choice remains, in the order of citation in the name. Composite...",
+      "logical_form": {
+        "if": [
+          "Composite... read ...usual way provided the lowest locant set is selected and, if a choice remains, in the order of citation in the name."
+        ],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-28.3.1, add two new examples after example 5",
+      "correction_type": "corrected",
+      "correction_date": "8 October 2025",
+      "correction_dates": [
+        "8 October 2025",
+        "8 October 2025",
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-28.3.1, add two new examples after example 5. [Corrected 8 October 2025]\nAdd\nnot\n12,25:22,34-terpyridine (PIN)\n(not 12,23:26,34-terpyridine);\nthe locant set 12,22,25,34 is lower than the locant set 12,23,26,34)\n2,5′:2′,4′′-terpyridine\n(not 2,3′:6′,4′′-terpyridine\nthe locant set 2,2′,5′,4′′ is lower than the locant set 2,6′,3′,4′′)\nnot\n13,23:25,34-terpyridine (PIN)\n(not 13,25:23,34-terpyridine);\nboth locant sets are the same but 13,23:25,34 is lower than 13,25:23,34 in the order of citation.\n3,3′:5′,4′′-terpyridine\n(not 3,5′:3′,4′′-terpyridine\nboth locant sets are the same but 3,3′:5′,4′′ is lower than 3,5′:3′,4′′ in the order of citation.\nPage 345, P-28.4.1, example 2\n. [Corrected 8 October 2025]\nReplace structure by\nfor 13,213,33-trioxa-11,21:27:31-tercyclotetradecane (PIN)\nread 13,29,33-trioxa-11,21:27:31-tercyclotetradecane (PIN)\n(not 13,213,33-trioxa-11,21:27:31-tercyclotetradecane; 13,29,33 is lower than 13,213,33)\nfor 3′,3′′,13′-trioxa-1,1′:7′,1′′-tercyclotetradecane\nread 3,3′′,9′-trioxa-1,1′:7′,1′′-tercyclotetradecane\n(not 3,3′′,13′-trioxa-1,1′:7′,1′′-tercyclotetradecane; 3,3′′,9′ is lower than 3,3′′,13′)\nP-28.6, text [corrected 9 April 2025]\nFor ...the longest chain, the maximum number of substituents...\nread ...the longest chain, the lowest attachment locants in the order of citation, the maximum number of substituents...",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31, line 3",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31, line 3. [corrected 31 December 2025]\nFor P-31.2 The prefixes ‘hydro’ and ‘dehydro’\nread P-31.2 The parent hydrides modified by the prefixes ‘hydro’ and ‘dehydro’",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.1.1, after text",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.1.1, after text. [corrected 4 September 2024]\nAdd If the stereochemistry of a double bond is indicated in a structure it should be specified by E or Z with the appropriate locant. This includes double bonds in rings of eight or more members (see P-91.2.2).",
+      "logical_form": {
+        "if": [
+          "[corrected 4 September 2024] Add If the stereochemistry of a double bond is indicated in a structure it should be specified by E or Z with the appropriate locant."
+        ],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.3.1, example 4",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.3.1, example 4. [corrected 4 September 2024]\nFor cyclododeca-1,5-diene (PIN)\nread (1Z,5E)-cyclododeca-1,5-diene (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.3.1, example 5",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.3.1, example 5. [corrected 4 September 2024]\nReplace the structure with:\nfor cyclopentadec-1-en-4-yne (PIN)\nread (1Z)-cyclopentadec-1-en-4-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.3.2, example 1",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.3.2, example 1. [corrected 4 September 2024]\nFor1,4,7,10-tetraoxacyclododec-2-ene (PIN)\nread (2Z)-1,4,7,10-tetraoxacyclododec-2-ene (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.3.2, example 2",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.3.2, example 2. [corrected 4 September 2024]\nFor 1-oxa-4-azacyclododec-3-ene (PIN)\nread (3E)-1-oxa-4-azacyclododec-3-ene (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.3.2, example 3",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.3.2, example 3. [corrected 4 September 2024]\nFor 1,11-disilacycloicosa-5,7-dien-3-yne (PIN)\nread (5Z,7E)-1,11-disilacycloicosa-5,7-dien-3-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.3.2, example 4",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.3.2, example 4. [corrected 4 September 2024]\nFor 1,10-disilacycloicosa-12,14,16-trien-18-yne (PIN)\nread (12Z,14E,16Z)-1,10-disilacycloicosa-12,14,16-trien-18-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.4.3",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.4.3. [corrected 4 September 2024]\nThe order of the three criteria changed to make minimum number of compound locants first.",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.4.3 (2) formerly (1), example",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.4.3 (2) formerly (1), example. [corrected 4 September 2024]\nFor bicyclo[14.3.1]icosa-11,13,18-trien-2-yne (PIN)\nread (11E,13E)-bicyclo[14.3.1]icosa-11,13,18-trien-2-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.4.3 (3) formerly (2), example",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.4.3 (3) formerly (2), example. [corrected 4 September 2024]\nFor bicyclo[11.3.1]heptadeca-2-en-11-yne (PIN)\nread (2Z)-bicyclo[11.3.1]heptadeca-2-en-11-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.4.3 (1) formerly (3), example",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.4.3 (1) formerly (3), example. [corrected 4 September 2024]\nFor bicyclo[8.3.1]tetradeca-4,6,10-trien-2-yne (PIN)\nread (4Z,6E)-bicyclo[8.3.1]tetradeca-4,6,10-trien-2-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.5.1.2 (1), example",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.5.1.2 (1), example. [corrected 4 September 2024]\nFor spiro[4.10]pentadec-10-en-8-yne (PIN)\nread (10Z)-spiro[4.10]pentadec-10-en-8-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.5.1.2 (2), example",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.5.1.2 (2), example. [corrected 4 September 2024]\nFor spiro[4.10]pentadec-6-en-14-yne (PIN)\nread (6Z)-spiro[4.10]pentadec-6-en-14-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.6.1, (1), (b) and (2)",
+      "correction_type": "changed",
+      "correction_date": "20 November 2024",
+      "correction_dates": [
+        "20 November 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.6.1, (1), (b) and (2). [changed 20 November 2024]\nFor (b) composite locants, neither of which is adjacent to a primary locant;\nread (b) composite locants;\nfor (2) by a compound locant, when one locant is a composite locant adjacent to a primary locant.\nread (2) by a compound locant, when two locants are not consecutive, or when one is a primary locant and the other is a composite locant.",
+      "logical_form": {
+        "if": [
+          "[changed 20 November 2024] For (b) composite locants, neither of which is adjacent to a primary locant; read (b) composite locants; for (2) by a compound locant, when one locant is a composite locant adjacent to a primary locant. read (2) by a compound locant, when two locants are not consecutive, or when one is a primary locant and the other is a composite locant."
+        ],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.6.1 before examples",
+      "correction_type": "added",
+      "correction_date": "20 November 2024",
+      "correction_dates": [
+        "20 November 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.6.1 before examples. [added 20 November 2024]\nAdd in a box This is a change from PhII-5.3.2.",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.6.1, before examples",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.6.1, before examples. [corrected 4 September 2024]\nAdd If there is a choice the criteria of P-31.1.4.3 are applied.",
+      "logical_form": {
+        "if": [
+          "[corrected 4 September 2024] Add If there is a choice the criteria of P-31.1.4.3 are applied."
+        ],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.6.1, example 1",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.6.1, example 1. [corrected 4 September 2024]\nReplace the structure with:\nFor 1(1,3)-benzena-9(1,3)-cyclohexanacyclohexadecaphane-91(96),94-diene (PIN)\nread not 1(1,3)-benzena-9(1,3)-cyclohexanacyclohexadecaphane-91(96),94-diene\nadd 1(1,3)-benzena-9(1,3)-cyclohexanacyclohexadecaphane-93,95-diene (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.6.1, new example after example 3",
+      "correction_type": "added",
+      "correction_date": "20 November 2024",
+      "correction_dates": [
+        "20 November 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.6.1, new example after example 3. [added 20 November 2024]\nAdd the structure:\n(2E,8(91)Z)-1(1,3)-benzena-9(1,3)-cyclohexanacyclohexadecaphan-2,8(91),92-triene (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.6.2, example 1",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.6.2, example 1. [corrected 4 September 2024]\nFor 1,7(1,3)dibenzenacyclotridecaphan-4-en-2-yne (PIN)\nread (4Z)-1,7(1,3)dibenzenacyclotridecaphan-4-en-2-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.6.2, example 2",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.6.2, example 2. [corrected 4 September 2024]\nFor 1,7(1,3)dibenzenacyclotridecaphan-2-en-5-yne (PIN)\nread (2E)-1,7(1,3)dibenzenacyclotridecaphan-2-en-5-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.1.7.2, example 3",
+      "correction_type": "corrected",
+      "correction_date": "9 October 2024",
+      "correction_dates": [
+        "9 October 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.1.7.2, example 3. [corrected 9 October 2024]\nFor [11,21:24,31-tercyclohexane]-11(21),22,32- triene (PIN)\nread [11,21:24,31-tercyclohexane]-11(21),22,32-triene (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.2, heading",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.2, heading. [corrected 31 December 2025]\nFor P-31.2 THE PREFIXES ‘HYDRO’ AND ‘DEHYDRO’\nread P-31.2 PARENT HYDRIDES MODIFIED BY THE PREFIXES ‘HYDRO’ AND ‘DEHYDRO’",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.2.1, after the first paragraph and before box",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.2.1, after the first paragraph and before box. [corrected 31 December 2025]\nAdd If both hydro and dehydro prefixes are used in name, dehydro prefixes are cited before hydro prefixes with the order not affected by multipliers.",
+      "logical_form": {
+        "if": [
+          "[corrected 31 December 2025] Add If both hydro and dehydro prefixes are used in name, dehydro prefixes are cited before hydro prefixes with the order not affected by multipliers."
+        ],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.2.1, after text",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.2.1, after text. [corrected 31 December 2025]\nAdd Example.\n1,2,7,8-tetradehydro-3,4-dihydro[12]annulene\n(1Z,3Z,7Z)-cyclododeca-1,3,7-triene-5,11-diyne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.2.3.3.5.1 (b), example 1",
+      "correction_type": "corrected",
+      "correction_date": "8 October 2025",
+      "correction_dates": [
+        "8 October 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.2.3.3.5.1 (b), example 1. [Corrected 8 October 2025]\nReplace structure by\nFor 11,16,24,25,32,35-hexahydro-12,23:26,34-terpyridine (PIN)\nread 11,16,23,24,32,35-hexahydro-12,25:22,34-terpyridine (PIN)\nfor 1,2′′,4′,5′,5′′,6-hexahydro-2,3′:6′,4′′-terpyridine\nread 1,2′′,3′,4′,5′′,6-hexahydro-2,5′:2′,4′′-terpyridine",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-31.2.4.3, example left",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-31.2.4.3, example left. [corrected 4 September 2024]\nFor 2,3,4,5-tetrahydroazocine (PIN)\nread (6Z,8Z)-2,3,4,5-tetrahydroazocine (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-32, line 5",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-32, line 5. [corrected 31 December 2025]\nFor ...by the prefix hydro\nread ...by the prefixes ‘hydro’ and ‘dehydro’",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-32.2, heading, line1/2",
+      "correction_type": "corrected",
+      "correction_date": "31 December 2025",
+      "correction_dates": [
+        "31 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-32.2, heading, line1/2. [corrected 31 December 2025]\nFor ...BY THE PREFIX ‘HYDRO’\nread ...BY THE PREFIXES ‘HYDRO’ AND ‘DEHYDRO’",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-32.4, Table 3.2, example 3",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-32.4, Table 3.2, example 3. [corrected 9 April 2025]\nFor 2,3-dihydro-1H-isoindole-2-yl\nread 1,3-dihydro-2H-isoindole-2-yl",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-44.4.1.2 (1), example left",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-44.4.1.2 (1), example left. [corrected 4 September 2024]\nFor cycloicosene (PIN)\nread (E)-cycloicosene (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-44.4.1.2 (2), example left",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-44.4.1.2 (2), example left. [corrected 4 September 2024]\nFor cycloicosa-1,8-diene (PIN)\nread (1E,8E)-cycloicosa-1,8-diene (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-44.4.1.2 (2), example right",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024",
+        "3 December 2025",
+        "22.1.2026"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-44.4.1.2 (2), example right. [corrected 4 September 2024]\nFor cycloicos-1-en-3-yne (PIN)\nread (1E)-cycloicos-1-en-3-yne (PIN)\nP-44.4.1.2 example (4), structure 1. [corrected 3 December 2025, modified 22.1.2026]\nFor 1,2,5,6-tetrasilacyclooct-3-en-7-yne (PIN)\nread 1,2,5,6-tetrasilacyclooct-3-en-7-yne\nadd 3,4-didehydro-1,2,5,6-tetrahydro-1,2,5,6-tetrasilocine (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-44.4.1.2 example (4), structure 2",
+      "correction_type": "corrected",
+      "correction_date": "3 December 2025",
+      "correction_dates": [
+        "3 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-44.4.1.2 example (4), structure 2. [corrected 3 December 2025]\nFor 1,2,5,6-tetrasilacycloocta-3,7-diyne (PIN)\nread 1,2,5,6-tetrasilacycloocta-3,7-diyne\nadd3,4,7,8-tetradehydro-1,2,5,6-tetrahydro-1,2,5,6-tetrasilocine (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-44.4.1.10.1 (1), example left",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-44.4.1.10.1 (1), example left. [corrected 4 September 2024]\nFor cyclocosa-1,3-dien-5-yne (PIN)\nread (1Z,3E)-cyclocosa-1,3-dien-5-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-44.4.1.10.1 (1), example right",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-44.4.1.10.1 (1), example right. [corrected 4 September 2024]\nFor cyclocosa-1,7-dien-3-yne (PIN)\nread (1E,7Z)-cyclocosa-1,7-dien-3-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-44.4.1.10.1 (2), example left",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-44.4.1.10.1 (2), example left. [corrected 4 September 2024]\nFor cyclocosa-1,3-dien-5-yne (PIN)\nread (1Z,3E)- (1Z,3E)-cyclocosa-1,3-dien-5-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-44.4.1.10.1 (2), example right",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-44.4.1.10.1 (2), example right. [corrected 4 September 2024]\nFor cyclocosa-1,5-dien-3-yne (PIN)\nread (1E,5E)- cyclocosa-1,5-dien-3-yne (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-46.1.12, example 1 right",
+      "correction_type": "corrected",
+      "correction_date": "9 October 2024",
+      "correction_dates": [
+        "9 October 2024",
+        "3 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-46.1.12, example 1 right. [corrected 9 October 2024]\nFor [not 3-hydroxy-1-(1- hydroxyethyl)propyl\nread [not 3-hydroxy-1-(1-hydroxyethyl)propyl\nP-51.4.2.4, example that replaced printed compound [corrected 3 December 2025]\nFor 1,3a1,4-triazaphenylene (PIN)\nread 1,3a1,4-triazaphenalene (PIN)\nFor [not 1,4,9b-triazaphenylene; see P-25.3.3.3]\nread [not 1,4,9b-triazaphenalene; see P-25.3.3.3]",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-51.3.1, example 7",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-51.3.1, example 7. [corrected 9 April 2025]\nFor 2,2′-{ethane-1,2-diylbis[(oxyethane-2,1-diyl)oxy]diacetic acid (a multiplicative name)\nread 2,2′-[ethane-1,2-diylbis(oxyethane-2,1-diyloxy)]diacetic acid (a multiplicative name)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-54.2, example 2",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-54.2, example 2. [corrected 4 September 2024]\nReplace the structure with:\n../bibliog/bibgif/31.1.3.1.gif\nfor cyclododeca-1,3,5,7,9-pentaen-11-yne (PIN)\nread (1Z,3E,5Z,7E,9Z)-cyclododeca-1,3,5,7,9-pentaen-11-yne (PIN)\nfor 1,2-didehydro[12]annulene\nread 1,2-didehydro[12]annulene (numbering shown)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-62.2.4.1.3, example 8",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-62.2.4.1.3, example 8. [corrected 9 April 2025]\nFor N1-(4-aminophenyl)- N1,N1′-(azanediyldi-4,1-phenylene)di(benzene-1,4-diamine)\nread N1-(4-aminophenyl)- N1,N1′-[azanediyldi(4,1-phenylene)]di(benzene-1,4-diamine)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-64.2.2.3, example 8",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-64.2.2.3, example 8. [corrected 4 September 2024]\nFor 1,3,6,8(2,5)-tetrafuranacyclododecaphan-11-en-2-one (PIN)\nread (11Z)-1,4,7,10(2,5)-tetrafuranacyclododecaphan-11-en-2-one (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-65.6.3.3.2.2.1 (2), text",
+      "correction_type": "corrected",
+      "correction_date": "28 May 2024",
+      "correction_dates": [
+        "28 May 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-65.6.3.3.2.2.1 (2), text. [corrected 28 May 2024]\nFor ...representing the ‘hydroxylic’ are exactly...\nread ...representing the ‘hydroxylic’ component are exactly...",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-65.6.3.3.2.2.1, example 1",
+      "correction_type": "corrected",
+      "correction_date": "28 May 2024",
+      "correction_dates": [
+        "28 May 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-65.6.3.3.2.2.1, example 1. [corrected 28 May 2024]\nFor (2) 3,3′-oxydi(methyl benzoate)\nread (2) 3,3′-oxybis(methyl benzoate)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-65.6.3.3.2.2.1, example 3",
+      "correction_type": "corrected",
+      "correction_date": "9 October 2024",
+      "correction_dates": [
+        "9 October 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-65.6.3.3.2.2.1, example 3. [corrected 9 October 2024]\nFor (2) butanedioylbis(oxy-2,1-phenylene) di(methyl butanedioate)\nread (2) butanedioylbis(oxy-2,1-phenylene) bis(methyl butanedioate)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-65.6.3.3.4.2, example 10",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-65.6.3.3.4.2, example 10. [corrected 9 April 2025]\nFor 1-{2-[2-(acetyloxy)-1-(formyloxy)ethyl]cyclohexyl}-2-(propanoyloxy)ethyl butanoate (PIN)\nread 1-{2-[2-(acetyloxy)-1-(formyloxy)ethyl]cyclohexyl}ethane-1,2-diyl 1-butanoate 2-propanoate (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-65.6.3.3.4.1, example",
+      "correction_type": "corrected",
+      "correction_date": "28 May 2024",
+      "correction_dates": [
+        "28 May 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-65.6.3.3.4.1, example. [corrected 28 May 2024]\nFor ethane-1,2-diyl di(methyl butanedioate)\nread ethane-1,2-diyl bis(methyl butanedioate)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-65.7.1, example 7 (return to how printed)",
+      "correction_type": "corrected",
+      "correction_date": "8 October 2025",
+      "correction_dates": [
+        "8 October 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-65.7.1, example 7 (return to how printed). [Corrected 8 October 2025]\nDelete bis(chloroacetic) anhydride (PIN)\nfor chloroacetic anhydride\nread chloroacetic anhydride (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-65.7.1, example 8 (return to how printed)",
+      "correction_type": "corrected",
+      "correction_date": "8 October 2025",
+      "correction_dates": [
+        "8 October 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-65.7.1, example 8 (return to how printed). [Corrected 8 October 2025]\nDelete bis(2-chloroethane-1-sulfinic) anhydride (PIN)\nfor 2-chloroethane-1-sulfinic anhydride\nread 2-chloroethane-1-sulfinic anhydride (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-65.7.3, example 3 (return to how printed)",
+      "correction_type": "corrected",
+      "correction_date": "8 October 2025",
+      "correction_dates": [
+        "8 October 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-65.7.3, example 3 (return to how printed). [Corrected 8 October 2025]\nFor bis(4-chlorocyclohexane-1-carbothioic) thioanhydride (PIN)\nread 4-chlorocyclohexane-1-carbothioic thioanhydride (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-65.7.8",
+      "correction_type": "corrected",
+      "correction_date": "8 October 2025",
+      "correction_dates": [
+        "8 October 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-65.7.8. [Corrected 8 October 2025]\nDelete this section (conflict with P-65.7.1)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-67.1.2.4.1.1, example 5",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-67.1.2.4.1.1, example 5. [corrected 9 April 2025]\nFor N,N-dimethylphosphoramidic acid (PIN)\nread dimethylphosphoramidic acid (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-68.1.6.3 (was P-68.1.6.1.2), example 8",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-68.1.6.3 (was P-68.1.6.1.2), example 8. [corrected 9 April 2025]\nFor (μ-{2,2′-[ethane-1,2-diylbis(azanylylidene-1κN:2κN′-methanylylidene)bis(4,6-di-tert-butylphenolato-1κO:2κO′)bis[di(ethanido-1κ2C1,2κ2C1)gallium]\nread (μ-{2,2′-[ethane-1,2-diylbis(azanylylidene-1κN1:2κN2-methanylylidene)bis(4,6-di-tert-butylphenolato-1κO:2κO′)]})bis[di(ethanido-1κ2C1,2κ2C1)gallium]",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-69.2.3, example 5",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-69.2.3, example 5. [corrected 9 April 2025]\nFor (4-carboxyphenyl)methylmercury\nread (4-carboxyphenyl)(methyl)mercury",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-69.2.4, example 2",
+      "correction_type": "corrected",
+      "correction_date": "9 October 2024",
+      "correction_dates": [
+        "9 October 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-69.2.4, example 2. [corrected 9 October 2024]\nFor [(2,3,5,6-η) -bicyclo[2.2.1]hepta-2,5-diene]tricarbonyliron\nread [(2,3,5,6-η)-bicyclo[2.2.1]hepta-2,5-diene]tricarbonyliron",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-73.1.2.1 (2), text",
+      "correction_type": "corrected",
+      "correction_date": "9 April 2025",
+      "correction_dates": [
+        "9 April 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-73.1.2.1 (2), text. [corrected 9 April 2025]\nFor ...atom is present.\nread ...atom is present or when they are nitrogen containing compounds other than those described in (1).",
+      "logical_form": {
+        "if": [
+          "[corrected 9 April 2025] For ...atom is present. read ...atom is present or when they are nitrogen containing compounds other than those described in (1)."
+        ],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-73.6, example 2",
+      "correction_type": "corrected",
+      "correction_date": "9 October 2024",
+      "correction_dates": [
+        "9 October 2024",
+        "20 November 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-73.6, example 2. [corrected 9 October 2024]\nFor triaz-2-en-1-ium-1- yl (preselected prefix)\nread triaz-2-en-1-ium-1-yl (preselected prefix)\nP-82.2.2.2, text [corrected 20 November 2024]\nFor ...as the principle charactersitic group with...\nread ...as the principle characteristic group with...",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [
+          "[corrected 9 October 2024] For triaz-2-en-1-ium-1- yl (preselected prefix) read triaz-2-en-1-ium-1-yl (preselected prefix) P-82.2.2.2, text [corrected 20 November 2024] For ...as the principle charactersitic group with... read ...as the principle characteristic group with..."
+        ],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-92.6, Example 2, digraph",
+      "correction_type": "corrected",
+      "correction_date": "3 December 2025",
+      "correction_dates": [
+        "3 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-92.6, Example 2, digraph. [corrected 3 December 2025]\nReplace by",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-93.5.1.1.2, line 2",
+      "correction_type": "corrected",
+      "correction_date": "3 December 2025",
+      "correction_dates": [
+        "3 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-93.5.1.1.2, line 2. [corrected 3 December 2025]\nAdd For the use of cis or trans see P-93.5.1.2.",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-93.5.1.1.2 (a) after example 5",
+      "correction_type": "corrected",
+      "correction_date": "3 December 2025",
+      "correction_dates": [
+        "3 December 2025"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-93.5.1.1.2 (a) after example 5. [corrected 3 December 2025]\nAdd\n(1r,4s)-4-chloro-1-methyl-4-propylcyclohexan-1-ol (PIN)\n1,4-cis-4-chloro-1-methyl-4-propylcyclohexan-1-ol\nExplanation. The CIP preferred group at both substitution positions are cis.",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [
+          "The CIP preferred group at both substitution positions are cis."
+        ],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-93.5.5.1, example 2",
+      "correction_type": "corrected",
+      "correction_date": "28 May 2024",
+      "correction_dates": [
+        "28 May 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-93.5.5.1, example 2. [corrected 28 May 2024]\nFor (14M)-15-bromo-2,13-dioxa-1(1,4)-benzenacyclotridecaphane-12-carboxylic acid (PIN)\nread (14M)-15-bromo-2,13-dioxa-1(1,4)-benzenacyclotridecaphane-12-carboxylic acid\nadd (1M)-17-bromo-2,13-dioxabicyclo[12.2.2]octadeca-1(16),14,17-triene-15-carboxylic acid (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-93.5.5.3, text",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-93.5.5.3, text. [corrected 4 September 2024]\nFor ...present, all descriptors are must be cited (see P-91.2.2).\nread ...present, all descriptors of double bonds in rings of more than seven nodes are cited (see P-91.2.2)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [
+          "[corrected 4 September 2024] For ...present, all descriptors are must be cited (see P-91.2.2). read ...present, all descriptors of double bonds in rings of more than seven nodes are cited (see P-91.2.2)"
+        ],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "P-93.5.5.3, example 2",
+      "correction_type": "corrected",
+      "correction_date": "4 September 2024",
+      "correction_dates": [
+        "4 September 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "P-93.5.5.3, example 2. [corrected 4 September 2024]\nFor (2E)-1(2,6)-pyridina-7(1,3)-benzenacyclododecaphan-2-ene (PIN)\nread (2E)-11,14,15,16-tetrahydro-1(2,6)-pyridina-7(1,3)-benzenacyclododecaphan-2-ene (PIN)",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "Appendix 2, heptanylidene*",
+      "correction_type": "corrected",
+      "correction_date": "9 October 2024",
+      "correction_dates": [
+        "9 October 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "Appendix 2, heptanylidene*. [corrected 9 October 2024]\nFor CH3-[CH2]5 -CH=\nread CH3-[CH2]5-CH=",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    },
+    {
+      "target": "Appendix 2",
+      "correction_type": "corrected",
+      "correction_date": "9 October 2024",
+      "correction_dates": [
+        "9 October 2024"
+      ],
+      "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "change_text": "Appendix 2. [corrected 9 October 2024]\nFor 7- isoquinolyl\nread 7-isoquinolyl\nReturn to:\nIUPAC Chemical Nomenclature home page.\nBlue Book home page.",
+      "logical_form": {
+        "if": [],
+        "unless": [],
+        "then": [],
+        "prefer": [],
+        "must_not": [],
+        "definitions": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Machine-readable IUPAC Blue Book rule corpus",
+  "type": "object",
+  "required": ["source", "source_version", "record_count", "records"],
+  "properties": {
+    "source": { "type": "string" },
+    "source_version": { "type": "string" },
+    "record_count": { "type": "integer" },
+    "correction_count": { "type": "integer" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rule_id",
+          "title",
+          "chapter",
+          "source_url",
+          "source_version",
+          "body",
+          "logic_clauses",
+          "logical_form",
+          "references",
+          "implementation_status"
+        ],
+        "properties": {
+          "rule_id": { "type": "string", "pattern": "^P-[0-9]+(\\.[0-9]+)*(\\([a-z0-9]+\\))?$" },
+          "title": { "type": "string" },
+          "chapter": { "type": "string" },
+          "source_url": { "type": "string" },
+          "source_version": { "type": "string" },
+          "body": { "type": "string" },
+          "logic_clauses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["clause_type", "source_text", "predicate_stub", "action_stub"],
+              "properties": {
+                "clause_type": {
+                  "type": "string",
+                  "enum": ["condition", "exception", "preference", "prohibition", "requirement", "definition"]
+                },
+                "source_text": { "type": "string" },
+                "predicate_stub": { "type": ["string", "null"] },
+                "action_stub": { "type": ["string", "null"] }
+              }
+            }
+          },
+          "logical_form": {
+            "type": "object",
+            "required": ["if", "unless", "then", "prefer", "must_not", "definitions"],
+            "properties": {
+              "if": { "type": "array", "items": { "type": "string" } },
+              "unless": { "type": "array", "items": { "type": "string" } },
+              "then": { "type": "array", "items": { "type": "string" } },
+              "prefer": { "type": "array", "items": { "type": "string" } },
+              "must_not": { "type": "array", "items": { "type": "string" } },
+              "definitions": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "references": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "implementation_status": {
+            "type": "string",
+            "enum": ["uncompiled_prose", "predicate_drafted", "executable", "verified"]
+          }
+        }
+      }
+    },
+    "corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target", "correction_type", "correction_date", "correction_dates", "source_url", "change_text", "logical_form"],
+        "properties": {
+          "target": { "type": "string" },
+          "correction_type": { "type": "string" },
+          "correction_date": { "type": "string" },
+          "correction_dates": { "type": "array", "items": { "type": "string" } },
+          "source_url": { "type": "string" },
+          "change_text": { "type": "string" },
+          "logical_form": {
+            "type": "object",
+            "required": ["if", "unless", "then", "prefer", "must_not", "definitions"],
+            "properties": {
+              "if": { "type": "array", "items": { "type": "string" } },
+              "unless": { "type": "array", "items": { "type": "string" } },
+              "then": { "type": "array", "items": { "type": "string" } },
+              "prefer": { "type": "array", "items": { "type": "string" } },
+              "must_not": { "type": "array", "items": { "type": "string" } },
+              "definitions": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

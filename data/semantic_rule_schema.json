@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Semantic Blue Book rule records",
+  "type": "object",
+  "required": ["source", "source_version", "conversion_status", "records"],
+  "properties": {
+    "source": { "type": "string" },
+    "source_version": { "type": "string" },
+    "chapter": { "type": "string" },
+    "conversion_status": {
+      "type": "string",
+      "enum": ["draft_semantic", "reviewed_semantic", "executable"]
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rule_id",
+          "title",
+          "source_chapter",
+          "source_url",
+          "rule_type",
+          "applies_if",
+          "unless",
+          "then",
+          "prefer",
+          "reject",
+          "compare_by",
+          "depends_on",
+          "exceptions",
+          "examples",
+          "tables_or_terms",
+          "unresolved_semantics",
+          "source_quote"
+        ],
+        "properties": {
+          "rule_id": { "type": "string" },
+          "title": { "type": "string" },
+          "source_chapter": { "type": "string" },
+          "source_url": { "type": "string" },
+          "rule_type": {
+            "type": "string",
+            "enum": [
+              "definition",
+              "domain",
+              "operation",
+              "parent_selection",
+              "numbering",
+              "locant",
+              "preference",
+              "suffix_prefix",
+              "stereochemistry",
+              "isotope",
+              "class_specific",
+              "formatting",
+              "retained_name",
+              "correction",
+              "example_only",
+              "other"
+            ]
+          },
+          "applies_if": { "type": "array", "items": { "type": "string" } },
+          "unless": { "type": "array", "items": { "type": "string" } },
+          "then": { "type": "array", "items": { "type": "string" } },
+          "prefer": { "type": "array", "items": { "type": "string" } },
+          "reject": { "type": "array", "items": { "type": "string" } },
+          "compare_by": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["priority", "criterion", "direction"],
+              "properties": {
+                "priority": { "type": "integer" },
+                "criterion": { "type": "string" },
+                "direction": {
+                  "type": "string",
+                  "enum": ["lowest", "highest", "first_point_of_difference", "seniority_order", "alphabetical", "specified_order", "boolean_true", "boolean_false", "not_applicable"]
+                }
+              }
+            }
+          },
+          "depends_on": { "type": "array", "items": { "type": "string" } },
+          "exceptions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["condition", "effect"],
+              "properties": {
+                "condition": { "type": "string" },
+                "effect": { "type": "string" }
+              }
+            }
+          },
+          "examples": { "type": "array", "items": { "type": "string" } },
+          "tables_or_terms": { "type": "array", "items": { "type": "string" } },
+          "unresolved_semantics": { "type": "array", "items": { "type": "string" } },
+          "source_quote": { "type": "string" }
+        }
+      }
+    }
+  }
+}
