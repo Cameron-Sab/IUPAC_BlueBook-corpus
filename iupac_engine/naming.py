@@ -232,7 +232,7 @@ def _is_suffix_group(group: FunctionalGroup, principal: FunctionalGroup | None) 
     if principal is None:
         return False
     if group.kind == principal.kind:
-        return group.kind in {"carboxylic_acid", "ester", "ketone", "alcohol", "amine"}
+        return group.kind in {"carboxylic_acid", "ester", "aldehyde", "ketone", "alcohol", "amine"}
     return group == principal
 
 

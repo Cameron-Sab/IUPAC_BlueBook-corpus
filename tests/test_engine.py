@@ -20,6 +20,11 @@ def test_carboxylic_acid():
     assert name_smiles("CC(=O)O")["name"] == "ethanoic acid"
 
 
+def test_aldehyde_suffix_does_not_render_oxo_prefix():
+    assert name_smiles("CC(C)CCC=O")["name"] == "4-methylpentanal"
+    assert name_smiles("C#CC=O")["name"] == "prop-2-ynal"
+
+
 def test_halo_prefix():
     assert name_smiles("CC(C)Cl")["name"] == "2-chloropropane"
 
