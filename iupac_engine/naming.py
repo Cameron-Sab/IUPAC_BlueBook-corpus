@@ -1,32 +1,29 @@
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 
 from .model import Molecule, TraceStep
+from .numeric import multiplicative_prefix, parent_root
 from .perception import FunctionalGroup, GroupSeniority
 
 
-ROOTS = {
-    1: "meth",
-    2: "eth",
-    3: "prop",
-    4: "but",
-    5: "pent",
-    6: "hex",
-    7: "hept",
-    8: "oct",
-    9: "non",
-    10: "dec",
-}
-
 HALO_PREFIX = {"F": "fluoro", "Cl": "chloro", "Br": "bromo", "I": "iodo"}
-MULT = {2: "di", 3: "tri", 4: "tetra", 5: "penta", 6: "hexa"}
+
+
+@dataclass(frozen=True, order=True)
+class RankingVector:
+    principal_locants: tuple[int, ...]
+    multiple_bond_rank: tuple[int, ...]
+    substituent_locants: tuple[int, ...]
+    citation_locants: tuple[int, ...]
+    substituent_names: tuple[str, ...]
 
 
 @dataclass(frozen=True)
 class NumberingCandidate:
     chain: tuple[int, ...]
-    ranking_vector: tuple[tuple[int, ...], tuple[int, ...], tuple[int, ...], tuple[str, ...]]
+    ranking_vector: RankingVector
     principal_group: FunctionalGroup | None
     groups: tuple[FunctionalGroup, ...]
 
@@ -40,8 +37,6 @@ def name_molecule(molecule: Molecule, groups: list[FunctionalGroup]) -> tuple[st
     carbon_ids = [atom.id for atom in molecule.atoms if atom.element == "C"]
     if not carbon_ids:
         raise NamingUnsupported("No carbon parent chain found")
-    if len(carbon_ids) > 10:
-        raise NamingUnsupported("Carbon chains longer than C10 are outside the current prototype scope")
 
     principal = groups[0] if groups else None
     _reject_unsupported_functional_families(molecule, groups, principal)
@@ -90,8 +85,15 @@ def _numbering_candidates(molecule: Molecule, carbon_ids: list[int], principal: 
             sum(1 for group in same_kind_groups if group.principal_atom in path)
             for path in principal_paths
         )
+        paths = [
+            path
+            for path in principal_paths
+            if sum(1 for group in same_kind_groups if group.principal_atom in path) == max_suffix_count
+        ]
     else:
         max_suffix_count = 0
+    max_len = max(len(path) for path in paths)
+    paths = [path for path in paths if len(path) == max_len]
     candidates: list[NumberingCandidate] = []
     for path in paths:
         if principal and principal.principal_atom not in path:
@@ -118,7 +120,16 @@ def _reject_unsupported_functional_families(
     molecule: Molecule, groups: list[FunctionalGroup], principal: FunctionalGroup | None
 ) -> None:
     if principal and principal.kind == "amide":
-        raise NamingUnsupported("Amide suffix nomenclature is outside the current scope")
+        for group in (group for group in groups if group.kind == "amide"):
+            nitrogen_atoms = [atom_id for atom_id in group.atom_ids if molecule.atom(atom_id).element == "N"]
+            if not nitrogen_atoms or len(molecule.neighbors(nitrogen_atoms[0])) != 1:
+                raise NamingUnsupported("N-substituted amide suffix nomenclature is outside the current scope")
+
+    if principal and principal.kind != "nitrile" and any(group.kind == "nitrile" for group in groups):
+        raise NamingUnsupported("Cyano prefix parent selection is outside the current scope")
+
+    if principal and principal.kind != "acid_halide" and any(group.kind == "acid_halide" for group in groups):
+        raise NamingUnsupported("Acyl-halide prefix nomenclature is outside the current scope")
 
     hydroxyimino_atoms = set().union(*(group.atom_ids for group in groups if group.kind == "hydroxyimino")) if groups else set()
     for bond in molecule.bonds:
@@ -141,13 +152,12 @@ def _all_carbon_paths(molecule: Molecule, carbon_ids: list[int]) -> list[tuple[i
     for atom_id in carbon_ids:
         dfs([atom_id])
 
-    max_len = max(len(path) for path in paths)
-    return sorted(path for path in paths if len(path) == max_len)
+    return sorted(paths)
 
 
 def _ranking_vector(
     molecule: Molecule, chain: tuple[int, ...], principal: FunctionalGroup | None
-) -> tuple[tuple[int, ...], tuple[int, ...], tuple[int, ...], tuple[str, ...]]:
+) -> RankingVector:
     locants = {atom_id: idx + 1 for idx, atom_id in enumerate(chain)}
     if principal:
         principal_locants = tuple(
@@ -165,10 +175,19 @@ def _ranking_vector(
         if bond.a in locants and bond.b in locants and bond.order > 1
     ))
     multiple_bond_rank = (-len(multiple_bond_locants), *multiple_bond_locants)
-    substituents = _substituents(molecule, chain, principal)
+    chain_groups = tuple(groups_for_chain(molecule, chain))
+    substituents = _substituents(molecule, chain, principal, chain_groups)
     substituent_locants = tuple(sorted(locant for locant, _ in substituents))
-    substituent_names = tuple(name for _, name in sorted(substituents, key=lambda item: (item[1], item[0])))
-    return (principal_locants, multiple_bond_rank, substituent_locants, substituent_names)
+    citation_order = sorted(substituents, key=lambda item: (_alphabetical_key(item[1]), item[0]))
+    citation_locants = tuple(locant for locant, _ in citation_order)
+    substituent_names = tuple(name for _, name in citation_order)
+    return RankingVector(
+        principal_locants,
+        multiple_bond_rank,
+        substituent_locants,
+        citation_locants,
+        substituent_names,
+    )
 
 
 def _substituents(
@@ -195,7 +214,12 @@ def _substituents(
         elif group.kind == "amine":
             substituents.append((locants[group.principal_atom], "amino"))
         elif group.kind == "amide":
-            substituents.append((locants[group.principal_atom], "carbamoyl"))
+            substituents.append((locants[group.principal_atom], "amino"))
+            substituents.append((locants[group.principal_atom], "oxo"))
+        elif group.kind == "ester":
+            alkyl = _ester_alkyl_name(molecule, group, chain)
+            substituents.append((locants[group.principal_atom], _organyl_to_oxy(alkyl)))
+            substituents.append((locants[group.principal_atom], "oxo"))
         elif group.kind == "hydroxyimino":
             substituents.append((locants[group.principal_atom], "hydroxyimino"))
 
@@ -214,10 +238,12 @@ def _substituents(
             elif atom.element in HALO_PREFIX:
                 substituents.append((locants[atom_id], HALO_PREFIX[atom.element]))
             elif atom.element == "C":
-                size = _alkyl_size(molecule, neighbor, blocked=chain_set | {atom_id})
-                if size not in ROOTS:
-                    raise NamingUnsupported("Alkyl substituents larger than C10 are outside scope")
-                substituents.append((locants[atom_id], ROOTS[size] + "yl"))
+                substituents.append(
+                    (
+                        locants[atom_id],
+                        _simple_alkyl_name(molecule, neighbor, blocked=chain_set | {atom_id}),
+                    )
+                )
             elif atom.element == "O":
                 if len(molecule.neighbors(neighbor)) == 2:
                     substituents.append((locants[atom_id], _alkoxy_name(molecule, neighbor, blocked=chain_set | {atom_id})))
@@ -240,7 +266,17 @@ def _is_suffix_group(group: FunctionalGroup, principal: FunctionalGroup | None) 
     if principal is None:
         return False
     if group.kind == principal.kind:
-        return group.kind in {"carboxylic_acid", "ester", "aldehyde", "ketone", "alcohol", "amine"}
+        return group.kind in {
+            "carboxylic_acid",
+            "ester",
+            "acid_halide",
+            "amide",
+            "nitrile",
+            "aldehyde",
+            "ketone",
+            "alcohol",
+            "amine",
+        }
     return group == principal
 
 
@@ -264,6 +300,82 @@ def _alkyl_size(molecule: Molecule, start: int, blocked: set[int]) -> int:
     return len(seen)
 
 
+def _simple_alkyl_name(molecule: Molecule, start: int, blocked: set[int]) -> str:
+    carbon_ids = _carbon_fragment(molecule, start, blocked)
+    paths = [path for path in _fragment_paths(molecule, carbon_ids) if start in path]
+    if not paths:
+        raise NamingUnsupported("No carbon chain found for alkyl substituent")
+    max_len = max(len(path) for path in paths)
+    oriented_paths = {
+        oriented
+        for path in paths
+        if len(path) == max_len
+        for oriented in (path, tuple(reversed(path)))
+    }
+
+    candidates: list[tuple[tuple[object, ...], tuple[int, ...], list[tuple[int, str]]]] = []
+    for path in oriented_paths:
+        locants = {atom_id: index + 1 for index, atom_id in enumerate(path)}
+        branches = _alkyl_branches(molecule, path, blocked)
+        citation_order = sorted(branches, key=lambda item: (_alphabetical_key(item[1]), item[0]))
+        rank: tuple[object, ...] = (
+            locants[start],
+            tuple(sorted(locant for locant, _ in branches)),
+            tuple(locant for locant, _ in citation_order),
+            tuple(name for _, name in citation_order),
+        )
+        candidates.append((rank, path, branches))
+
+    _, parent_chain, branches = min(candidates, key=lambda item: item[0])
+    attachment_locant = parent_chain.index(start) + 1
+    root = parent_root(len(parent_chain))
+    if attachment_locant == 1:
+        parent_name = root + "yl"
+    else:
+        parent_name = f"{root}an-{attachment_locant}-yl"
+    return _render_prefixes(branches) + parent_name
+
+
+def _fragment_paths(molecule: Molecule, atom_ids: set[int]) -> set[tuple[int, ...]]:
+    paths: set[tuple[int, ...]] = set()
+
+    def walk(path: list[int]) -> None:
+        paths.add(tuple(path))
+        for neighbor, order in molecule.neighbors(path[-1]):
+            if neighbor in atom_ids and neighbor not in path:
+                if order != 1:
+                    raise NamingUnsupported("Unsaturated alkyl substituents are outside scope")
+                walk(path + [neighbor])
+
+    for atom_id in atom_ids:
+        walk([atom_id])
+    return paths
+
+
+def _alkyl_branches(
+    molecule: Molecule, parent_chain: tuple[int, ...], blocked: set[int]
+) -> list[tuple[int, str]]:
+    chain_set = set(parent_chain)
+    branches: list[tuple[int, str]] = []
+    for locant, atom_id in enumerate(parent_chain, start=1):
+        for neighbor, order in molecule.neighbors(atom_id):
+            if neighbor in chain_set or neighbor in blocked:
+                continue
+            atom = molecule.atom(neighbor)
+            if atom.element in HALO_PREFIX and order == 1:
+                branches.append((locant, HALO_PREFIX[atom.element]))
+                continue
+            if atom.element != "C" or order != 1:
+                raise NamingUnsupported("Unsaturated alkyl substituents are outside scope")
+            branches.append(
+                (
+                    locant,
+                    _simple_alkyl_name(molecule, neighbor, blocked | chain_set),
+                )
+            )
+    return branches
+
+
 def _alkoxy_name(molecule: Molecule, oxygen: int, blocked: set[int]) -> str:
     carbon_neighbors = [
         neighbor
@@ -273,10 +385,11 @@ def _alkoxy_name(molecule: Molecule, oxygen: int, blocked: set[int]) -> str:
     if len(carbon_neighbors) != 1:
         raise NamingUnsupported("Complex ether substituents are outside scope")
     carbon_ids = _carbon_fragment(molecule, carbon_neighbors[0], blocked | {oxygen})
-    if len(carbon_ids) not in ROOTS:
-        raise NamingUnsupported("Alkoxy substituents larger than C10 are outside scope")
     halo_prefix = _halo_fragment_prefix(molecule, carbon_ids)
-    return halo_prefix + ROOTS[len(carbon_ids)] + "oxy"
+    if halo_prefix:
+        return halo_prefix + parent_root(len(carbon_ids)) + "oxy"
+    alkyl = _simple_alkyl_name(molecule, carbon_neighbors[0], blocked | {oxygen})
+    return _organyl_to_oxy(alkyl)
 
 
 def _acylamino_name(molecule: Molecule, nitrogen: int, blocked: set[int]) -> str | None:
@@ -291,8 +404,8 @@ def _acylamino_name(molecule: Molecule, nitrogen: int, blocked: set[int]) -> str
             return "formamido"
         if carbon_count == 2:
             return "acetamido"
-        if carbon_count in ROOTS:
-            return ROOTS[carbon_count] + "anamido"
+        if carbon_count:
+            return parent_root(carbon_count) + "anamido"
     return None
 
 
@@ -353,20 +466,50 @@ def _halo_fragment_prefix(molecule: Molecule, carbon_ids: set[int]) -> str:
     parts = []
     for name in sorted(halo_counts):
         count = halo_counts[name]
-        parts.append((MULT.get(count, "") if count > 1 else "") + name)
+        parts.append(multiplicative_prefix(count) + name)
     return "".join(parts)
 
 
 def _render_name(molecule: Molecule, candidate: NumberingCandidate) -> str:
     chain = candidate.chain
-    if len(chain) not in ROOTS:
-        raise NamingUnsupported("Parent roots above decane are outside scope")
 
     parent = _render_parent(molecule, chain, candidate.principal_group, candidate.groups)
     if candidate.principal_group and candidate.principal_group.kind == "ester":
         return parent
-    prefixes = _render_prefixes(_substituents(molecule, chain, candidate.principal_group, candidate.groups), omit_locants=len(chain) == 1)
+    substituents = _substituents(molecule, chain, candidate.principal_group, candidate.groups)
+    omit_locants = (
+        len(chain) == 1
+        or _single_prefix_has_no_distinct_locant(candidate, substituents)
+        or _is_complete_single_halogen_substitution(molecule, candidate, substituents)
+    )
+    prefixes = _render_prefixes(substituents, omit_locants=omit_locants)
     return prefixes + parent
+
+
+def _single_prefix_has_no_distinct_locant(
+    candidate: NumberingCandidate, substituents: list[tuple[int, str]]
+) -> bool:
+    return candidate.principal_group is None and len(candidate.chain) == 2 and len(substituents) == 1
+
+
+def _is_complete_single_halogen_substitution(
+    molecule: Molecule,
+    candidate: NumberingCandidate,
+    substituents: list[tuple[int, str]],
+) -> bool:
+    if not substituents or len({name for _, name in substituents}) != 1:
+        return False
+    if any(name not in HALO_PREFIX.values() for _, name in substituents):
+        return False
+    if candidate.principal_group and candidate.principal_group.kind not in {"carboxylic_acid", "alcohol"}:
+        return False
+    for atom in molecule.atoms:
+        if atom.element != "C":
+            continue
+        valence = sum(order for _, order in molecule.neighbors(atom.id))
+        if valence < 4:
+            return False
+    return True
 
 
 def _render_prefixes(substituents: list[tuple[int, str]], *, omit_locants: bool = False) -> str:
@@ -377,13 +520,18 @@ def _render_prefixes(substituents: list[tuple[int, str]], *, omit_locants: bool 
         grouped.setdefault(name, []).append(locant)
 
     parts = []
-    for name in sorted(grouped):
+    for name in sorted(grouped, key=_alphabetical_key):
         locants = sorted(grouped[name])
-        multiplier = MULT.get(len(locants), "") if len(locants) > 1 else ""
         rendered_name = "acetylamino" if name == "acetamido" and len(grouped) == 1 and len(locants) == 1 else name
-        rendered = multiplier + rendered_name
-        if _needs_substitutive_parentheses(rendered_name):
-            rendered = f"({rendered})"
+        needs_enclosure = _needs_substitutive_parentheses(rendered_name)
+        if len(locants) > 1 and needs_enclosure:
+            rendered = f"{_derived_multiplicative_prefix(len(locants))}({rendered_name})"
+        else:
+            rendered = multiplicative_prefix(len(locants)) + rendered_name
+            if rendered_name.startswith("(") and rendered_name.endswith("oxy"):
+                rendered = f"[{rendered}]"
+            elif needs_enclosure:
+                rendered = f"({rendered})"
         if omit_locants:
             parts.append(rendered)
         else:
@@ -392,7 +540,26 @@ def _render_prefixes(substituents: list[tuple[int, str]], *, omit_locants: bool 
 
 
 def _needs_substitutive_parentheses(name: str) -> bool:
-    return name in {"acetylamino", "hydroxyimino"} or (name.endswith("methoxy") and name != "methoxy")
+    return (
+        name in {"acetylamino", "hydroxyimino"}
+        or (
+            name.endswith("oxy")
+            and name not in {"hydroxy", "methoxy", "ethoxy", "propoxy", "butoxy"}
+        )
+        or any(char.isdigit() for char in name)
+    )
+
+
+def _alphabetical_key(name: str) -> str:
+    return re.sub(r"[^a-z]", "", name.lower())
+
+
+def _derived_multiplicative_prefix(count: int) -> str:
+    if count == 2:
+        return "bis"
+    if count == 3:
+        return "tris"
+    return multiplicative_prefix(count) + "kis"
 
 
 def _render_parent(
@@ -401,7 +568,7 @@ def _render_parent(
     principal: FunctionalGroup | None,
     groups: tuple[FunctionalGroup, ...] = (),
 ) -> str:
-    root = ROOTS[len(chain)]
+    root = parent_root(len(chain))
     unsat = _unsaturation(molecule, chain)
     group = principal.kind if principal else "hydrocarbon"
     locants = {atom_id: idx + 1 for idx, atom_id in enumerate(chain)}
@@ -414,11 +581,43 @@ def _render_parent(
             return f"{root}{unsat}edioic acid"
         return f"{root}{unsat}oic acid"
     if group == "ester":
-        ester_group = suffix_groups[0] if suffix_groups else principal
-        alkyl = _ester_alkyl_name(molecule, ester_group, chain)
+        ester_groups = suffix_groups or [principal]
+        alkyl_names = sorted(
+            (_ester_alkyl_name(molecule, ester_group, chain) for ester_group in ester_groups),
+            key=_alphabetical_key,
+        )
+        if len(set(alkyl_names)) == 1:
+            if len(alkyl_names) > 1 and _needs_substitutive_parentheses(alkyl_names[0]):
+                alkyl = f"{_derived_multiplicative_prefix(len(alkyl_names))}({alkyl_names[0]})"
+            else:
+                alkyl = multiplicative_prefix(len(alkyl_names)) + alkyl_names[0]
+        else:
+            alkyl = " ".join(alkyl_names)
         prefixes = _render_prefixes(_substituents(molecule, chain, principal, groups), omit_locants=len(chain) == 1)
-        return f"{alkyl} {prefixes}{root}{unsat}oate"
+        if len(ester_groups) == 1:
+            anion_name = f"{root}{unsat}oate"
+        else:
+            anion_name = f"{_parent_stem(root, unsat, keep_terminal_e=True)}{_multiplicative_suffix(len(ester_groups), 'oate')}"
+        return f"{alkyl} {prefixes}{anion_name}"
+    if group == "acid_halide":
+        halogens = [
+            molecule.atom(atom_id).element
+            for atom_id in principal.atom_ids
+            if molecule.atom(atom_id).element in HALO_PREFIX
+        ]
+        if len(halogens) != 1:
+            raise NamingUnsupported("Acid halide atom could not be identified")
+        return f"{_parent_stem(root, unsat, keep_terminal_e=False)}oyl {_halide_class_name(halogens[0])}"
+    if group == "amide":
+        if len(suffix_locants) > 1:
+            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}{_multiplicative_suffix(len(suffix_locants), 'amide')}"
+        return f"{_parent_stem(root, unsat, keep_terminal_e=False)}amide"
+    if group == "nitrile":
+        ending = "nitrile" if len(suffix_locants) == 1 else _multiplicative_suffix(len(suffix_locants), "nitrile")
+        return f"{_parent_stem(root, unsat, keep_terminal_e=True)}{ending}"
     if group == "aldehyde":
+        if len(suffix_locants) > 1:
+            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}{_multiplicative_suffix(len(suffix_locants), 'al')}"
         return f"{root}{unsat}al"
     if group == "ketone":
         if len(suffix_locants) > 1:
@@ -427,10 +626,14 @@ def _render_parent(
     if group == "alcohol":
         if len(suffix_locants) > 1:
             return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-{_multiplicative_suffix(len(suffix_locants), 'ol')}"
+        if len(chain) <= 2 and suffix_locants == (1,):
+            return f"{root}{unsat}ol"
         return f"{root}{unsat}-{locants[principal.principal_atom]}-ol"
     if group == "amine":
         if len(suffix_locants) > 1:
             return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-{_multiplicative_suffix(len(suffix_locants), 'amine')}"
+        if len(chain) <= 2 and suffix_locants == (1,):
+            return f"{root}{unsat}amine"
         return f"{root}{unsat}-{locants[principal.principal_atom]}-amine"
     if unsat == "an":
         return f"{root}ane"
@@ -444,10 +647,24 @@ def _parent_stem(root: str, unsat: str, *, keep_terminal_e: bool) -> str:
 
 
 def _multiplicative_suffix(count: int, suffix: str) -> str:
-    multiplier = MULT.get(count)
-    if multiplier is None:
-        raise NamingUnsupported("More than six repeated suffix groups are outside scope")
+    multiplier = multiplicative_prefix(count)
+    if suffix[0] in "aeiou" and multiplier.endswith("a"):
+        multiplier = multiplier[:-1]
     return multiplier + suffix
+
+
+def _halide_class_name(element: str) -> str:
+    return {"F": "fluoride", "Cl": "chloride", "Br": "bromide", "I": "iodide"}[element]
+
+
+def _organyl_to_oxy(name: str) -> str:
+    if not name.endswith("yl"):
+        raise NamingUnsupported(f"Cannot form an oxy prefix from {name!r}")
+    if name in {"methyl", "ethyl", "propyl", "butyl"}:
+        return name[:-2] + "oxy"
+    if any(char.isdigit() for char in name):
+        return f"({name})oxy"
+    return name + "oxy"
 
 
 def _ester_alkyl_name(molecule: Molecule, ester_group: FunctionalGroup, chain: tuple[int, ...]) -> str:
@@ -463,10 +680,10 @@ def _ester_alkyl_name(molecule: Molecule, ester_group: FunctionalGroup, chain: t
     ]
     if len(alkyl_roots) != 1:
         raise NamingUnsupported("Complex ester alkyl groups are outside scope")
-    size = _alkyl_size(molecule, alkyl_roots[0], blocked={oxygen})
-    if size not in ROOTS:
-        raise NamingUnsupported("Ester alkyl groups larger than C10 are outside scope")
-    return ROOTS[size] + "yl"
+    name = _simple_alkyl_name(molecule, alkyl_roots[0], blocked={oxygen})
+    if name == "2-methylpropan-2-yl":
+        return "tert-butyl"
+    return name
 
 
 def _unsaturation(molecule: Molecule, chain: tuple[int, ...]) -> str:

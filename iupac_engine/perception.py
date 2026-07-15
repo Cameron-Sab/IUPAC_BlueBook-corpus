@@ -12,8 +12,11 @@ class GroupSeniority(IntEnum):
     ALCOHOL = 20
     KETONE = 30
     ALDEHYDE = 40
-    ESTER = 45
-    CARBOXYLIC_ACID = 50
+    NITRILE = 45
+    AMIDE = 50
+    ACID_HALIDE = 55
+    ESTER = 60
+    CARBOXYLIC_ACID = 70
 
 
 @dataclass(frozen=True)
@@ -38,6 +41,12 @@ def perceive_functional_groups(molecule: Molecule) -> list[FunctionalGroup]:
         carbon_single = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "C" and order == 1]
         nitrogen_single = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "N" and order == 1]
         nitrogen_double = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "N" and order == 2]
+        nitrogen_triple = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "N" and order == 3]
+        halogen_single = [
+            n
+            for n, order in molecule.neighbors(atom.id)
+            if molecule.atom(n).element in {"F", "Cl", "Br", "I"} and order == 1
+        ]
 
         if oxygen_double and hydroxy_oxygen:
             groups.append(
@@ -51,7 +60,16 @@ def perceive_functional_groups(molecule: Molecule) -> list[FunctionalGroup]:
         elif oxygen_double and ester_oxygen:
             groups.append(FunctionalGroup("ester", GroupSeniority.ESTER, atom.id, frozenset({atom.id, oxygen_double[0], ester_oxygen[0]})))
         elif oxygen_double and nitrogen_single:
-            groups.append(FunctionalGroup("amide", GroupSeniority.HYDROCARBON, atom.id, frozenset({atom.id, oxygen_double[0], nitrogen_single[0]})))
+            groups.append(FunctionalGroup("amide", GroupSeniority.AMIDE, atom.id, frozenset({atom.id, oxygen_double[0], nitrogen_single[0]})))
+        elif oxygen_double and len(halogen_single) == 1:
+            groups.append(
+                FunctionalGroup(
+                    "acid_halide",
+                    GroupSeniority.ACID_HALIDE,
+                    atom.id,
+                    frozenset({atom.id, oxygen_double[0], halogen_single[0]}),
+                )
+            )
         elif oxygen_double and len(carbon_single) == 1:
             groups.append(FunctionalGroup("aldehyde", GroupSeniority.ALDEHYDE, atom.id, frozenset({atom.id, oxygen_double[0]})))
         elif oxygen_double and len(carbon_single) == 2:
@@ -65,7 +83,17 @@ def perceive_functional_groups(molecule: Molecule) -> list[FunctionalGroup]:
             ]
             if hydroxy:
                 groups.append(FunctionalGroup("hydroxyimino", GroupSeniority.HYDROCARBON, atom.id, frozenset({atom.id, nitrogen, hydroxy[0]})))
+        elif nitrogen_triple:
+            groups.append(
+                FunctionalGroup(
+                    "nitrile",
+                    GroupSeniority.NITRILE,
+                    atom.id,
+                    frozenset({atom.id, nitrogen_triple[0]}),
+                )
+            )
 
+    functional_group_atoms = set().union(*(group.atom_ids for group in groups)) if groups else set()
     for atom in molecule.atoms:
         if atom.element == "O":
             carbon_neighbors = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "C" and order == 1]
@@ -74,6 +102,8 @@ def perceive_functional_groups(molecule: Molecule) -> list[FunctionalGroup]:
                 if not any(atom.id in group.atom_ids for group in groups):
                     groups.append(FunctionalGroup("alcohol", GroupSeniority.ALCOHOL, carbon, frozenset({atom.id, carbon})))
         if atom.element == "N":
+            if atom.id in functional_group_atoms:
+                continue
             carbon_neighbors = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "C" and order == 1]
             if len(carbon_neighbors) == 1 and len(molecule.neighbors(atom.id)) == 1:
                 groups.append(FunctionalGroup("amine", GroupSeniority.AMINE, carbon_neighbors[0], frozenset({atom.id, carbon_neighbors[0]})))

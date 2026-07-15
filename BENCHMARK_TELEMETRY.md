@@ -11,21 +11,21 @@ The local dataset is not committed to the repository. It was run from:
 
 Latest local run:
 
-- output directory: `work/local_benchmark/results_chebi_3star_iupac_after_methane_locants`
+- output directory: `work/local_benchmark/results_chebi_3star_iupac_after_substituent_parents`
 - total cases: 44,940
-- exact passes: 503
-- exact failures: 44,437
-- false-success name mismatches: 225
+- exact passes: 1,180
+- exact failures: 43,760
+- false-success name mismatches: 183
 
 Failure stages:
 
 | Stage | Count |
 |---|---:|
 | bracket, charge, isotope, or stereochemistry outside scope | 21,217 |
-| ring or aromatic chemistry outside scope | 11,735 |
-| other unsupported scope | 9,386 |
+| ring or aromatic chemistry outside scope | 11,738 |
+| other unsupported scope | 8,748 |
 | disconnected salts, mixtures, hydrates, or multi-component structures | 1,874 |
-| successful render but exact-name mismatch | 225 |
+| successful render but exact-name mismatch | 183 |
 
 ## Improvement Since Initial Local Blitz
 
@@ -36,10 +36,10 @@ The initial local ChEBI run before this improvement pass produced:
 
 After the engine fixes:
 
-- exact passes: 503
-- false-success name mismatches: 225
+- exact passes: 1,180
+- false-success name mismatches: 183
 
-This is a net gain of 232 exact matches and a reduction of 437 successful-but-wrong names.
+This is a net gain of 909 exact matches and a reduction of 479 successful-but-wrong names. No previously passing case regressed in either of the two full-corpus comparison runs used for this checkpoint.
 
 ## Fixes Driven By This Benchmark
 
@@ -53,7 +53,14 @@ The benchmark exposed and helped verify fixes for:
 - unsaturated parent endings such as `prop-1-ene` and `but-2-yne`;
 - aldehyde suffix handling without duplicate `oxo` prefixes;
 - multiplicative suffixes such as `triol`;
-- locant elision for substituted methane.
+- locant elision for substituted methane;
+- primary amide, nitrile, acid-halide, and multiple-ester suffixes;
+- lower-priority amide and ester rendering as paired prefixes;
+- functional-prefix participation in numbering and prefix citation-order tie breaking;
+- Table 1.4 numerical terms beyond six substituents and ten carbon atoms;
+- complete single-halogen substitution with locant elision;
+- attachment-aware branched alkyl, alkoxy, and ester organyl names;
+- `bis(...)` rendering for repeated complex ester organyl groups.
 
 ## Benchmark Limitation
 

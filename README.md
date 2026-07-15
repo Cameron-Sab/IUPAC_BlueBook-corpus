@@ -113,8 +113,14 @@ The current prototype supports single-component, acyclic organic molecules using
 - branches;
 - halogen prefixes: fluoro, chloro, bromo, iodo;
 - simple alkyl substituent prefixes;
+- attachment-aware branched alkyl and alkoxy substituent prefixes;
+- Blue Book Table 1.4 numerical terms and parent roots;
 - one principal characteristic group among:
   - carboxylic acid;
+  - ester;
+  - acid halide;
+  - primary amide;
+  - nitrile;
   - aldehyde;
   - ketone;
   - alcohol;
@@ -134,7 +140,7 @@ python -m iupac_engine "CC(=O)O" --json --explain
 ## Examples
 
 ```text
-CCO        -> ethan-1-ol
+CCO        -> ethanol
 CC(C)O     -> propan-2-ol
 CCC(=O)C   -> butan-2-one
 CC(=O)O    -> ethanoic acid
