@@ -422,13 +422,13 @@ def _render_parent(
         return f"{root}{unsat}-{locants[principal.principal_atom]}-amine"
     if unsat == "an":
         return f"{root}ane"
-    return _elide_terminal_locant_for_two_carbon_unsaturation(f"{root}{unsat}")
+    return _elide_terminal_locant_for_two_carbon_unsaturation(f"{root}{unsat}e")
 
 
 def _parent_stem(root: str, unsat: str, *, keep_terminal_e: bool) -> str:
     if unsat == "an":
         return f"{root}ane" if keep_terminal_e else f"{root}an"
-    return f"{root}{unsat}"
+    return f"{root}{unsat}e" if keep_terminal_e else f"{root}{unsat}"
 
 
 def _ester_alkyl_name(molecule: Molecule, ester_group: FunctionalGroup, chain: tuple[int, ...]) -> str:
@@ -473,4 +473,4 @@ def _unsaturation(molecule: Molecule, chain: tuple[int, ...]) -> str:
 
 
 def _elide_terminal_locant_for_two_carbon_unsaturation(name: str) -> str:
-    return name.replace("eth-1-en", "ethene").replace("eth-1-yn", "ethyne")
+    return name.replace("eth-1-ene", "ethene").replace("eth-1-yne", "ethyne")

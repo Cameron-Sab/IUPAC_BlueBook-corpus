@@ -34,6 +34,8 @@ def test_simple_alkanes():
 def test_simple_unsaturation():
     assert name_smiles("C=C")["name"] == "ethene"
     assert name_smiles("C#C")["name"] == "ethyne"
+    assert name_smiles("C=CC")["name"] == "prop-1-ene"
+    assert name_smiles("CC#CC")["name"] == "but-2-yne"
 
 
 def test_branched_alkane():
@@ -63,6 +65,10 @@ def test_multiple_oxo_prefixes_with_carboxylic_acid():
 
 def test_parent_chain_prefers_maximum_suffix_groups():
     assert name_smiles("CC(N)(CO)CO")["name"] == "2-amino-2-methylpropane-1,3-diol"
+
+
+def test_unsaturated_parent_keeps_terminal_e_before_multiplicative_suffix():
+    assert name_smiles("OCC#CCO")["name"] == "but-2-yne-1,4-diol"
 
 
 def test_dicarboxylic_acid_numbering_prefers_unsaturation_after_suffix_locants():
