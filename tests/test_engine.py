@@ -6,7 +6,7 @@ def test_simple_alcohol():
     assert result["status"] == "success"
     assert result["name"] == "ethanol"
     assert result["decision_trace"]
-    assert result["rule_set"] == "bluebook-prototype-v0.2"
+    assert result["rule_set"] == "bluebook-prototype-v0.3"
     assert [step["rule_id"] for step in result["decision_trace"]] == [
         "P-41",
         "P-44.1.1",
@@ -156,7 +156,69 @@ def test_ring_parent_is_preferred_even_when_acyclic_branches_are_longer():
 def test_unsupported_ring_families_fail_closed():
     assert "Heterocycle" in name_smiles("O1CCCCC1")["reason"]
     assert "Polycyclic" in name_smiles("C1CCC2CCCCC2C1")["reason"]
-    assert "Characteristic-group" in name_smiles("OC1CCCCC1")["reason"]
+
+
+def test_ring_local_monofunctional_suffixes():
+    assert name_smiles("OC1CCCC1")["name"] == "cyclopentanol"
+    assert name_smiles("O=C1CCCCC1")["name"] == "cyclohexanone"
+    assert name_smiles("NC1CCCCC1")["name"] == "cyclohexanamine"
+
+
+def test_ring_suffix_locant_is_retained_when_another_locant_is_needed():
+    assert name_smiles("OC1C(C)CCCC1")["name"] == "2-methylcyclohexan-1-ol"
+    assert name_smiles("O=C1CCC(C)CC1")["name"] == "4-methylcyclohexan-1-one"
+    assert name_smiles("NC1C(C)CCCC1")["name"] == "2-methylcyclohexan-1-amine"
+
+
+def test_multiple_and_lower_priority_ring_suffix_groups():
+    assert name_smiles("OC1CC(O)CCC1")["name"] == "cyclohexane-1,3-diol"
+    assert name_smiles("O=C1CC(=O)CCC1")["name"] == "cyclohexane-1,3-dione"
+    assert name_smiles("NC1CC(N)CCC1")["name"] == "cyclohexane-1,3-diamine"
+    assert name_smiles("O=C1CC(O)CCC1")["name"] == "3-hydroxycyclohexan-1-one"
+
+
+def test_exocyclic_ring_suffixes():
+    assert name_smiles("O=C(O)C1CCCCC1")["name"] == "cyclohexanecarboxylic acid"
+    assert name_smiles("NC(=O)C1CC1")["name"] == "cyclopropanecarboxamide"
+    assert name_smiles("N#CC1CCCCC1")["name"] == "cyclohexanecarbonitrile"
+    assert name_smiles("O=CC1CCCCC1")["name"] == "cyclohexanecarbaldehyde"
+    assert name_smiles("COC(=O)C1CCCCC1")["name"] == "methyl cyclohexanecarboxylate"
+    assert name_smiles("O=C(Cl)C1CCCCC1")["name"] == "cyclohexanecarbonyl chloride"
+
+
+def test_exocyclic_suffix_locant_completeness_and_multiplication():
+    assert (
+        name_smiles("O=C(O)C1CCC(=O)CC1")["name"]
+        == "4-oxocyclohexane-1-carboxylic acid"
+    )
+    assert (
+        name_smiles("N#CC1CCC(=O)C1")["name"]
+        == "3-oxocyclopentane-1-carbonitrile"
+    )
+    assert (
+        name_smiles("O=C(O)C1CC(C(=O)O)CCC1")["name"]
+        == "cyclohexane-1,3-dicarboxylic acid"
+    )
+
+
+def test_acid_bearing_side_chain_does_not_become_a_ring_suffix():
+    assert name_smiles("O=C(O)CC1CCCCC1")["name"] == "cyclohexylacetic acid"
+    assert name_smiles("O=C(O)CCC1CCCC1")["name"] == "3-cyclopentylpropanoic acid"
+
+
+def test_substituted_cycloalkyl_prefix_fails_closed():
+    result = name_smiles("O=C(O)CC1CCCCC1C")
+    assert result["status"] == "unsupported"
+    assert "Substituted cycloalkyl" in result["reason"]
+
+
+def test_complex_cyclic_substituents_do_not_flatten_into_acyclic_fragments():
+    heterocycle = name_smiles("NCC[C@@H](O)[C@@H](C(=O)O)N1CCC1=O")
+    nested_ring = name_smiles("O=C(O)CCCOCC1CCCCC1")
+    assert heterocycle["status"] == "unsupported"
+    assert "Heterocyclic" in heterocycle["reason"]
+    assert nested_ring["status"] == "unsupported"
+    assert "Nested" in nested_ring["reason"]
 
 
 def test_oxo_prefix_with_carboxylic_acid():

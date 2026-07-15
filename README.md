@@ -121,6 +121,10 @@ implemented families:
 - Blue Book Table 1.4 numerical terms and parent roots;
 - saturated monocyclic carbon parents with hydrocarbon, halo, alkyl, alkoxy, or
   simple methylidene substitution;
+- ring-local `ol`, `one`, and `amine` suffixes and directly attached
+  `carboxylic acid`, `carboxamide`, `carbonitrile`, `carbaldehyde`, ester, and
+  carbonyl-halide suffix forms;
+- simple saturated cycloalkyl prefixes on senior acyclic parents;
 - absolute tetrahedral `R`/`S` and alkene `E`/`Z` descriptors when every
   stereogenic feature maps directly to the final parent numbering;
 - one principal characteristic group among:

@@ -11,21 +11,21 @@ The local dataset is not committed to the repository. It was run from:
 
 Latest local run:
 
-- output directory: `work/local_benchmark/results_chebi_3star_iupac_stereo_corrected`
+- output directory: `work/local_benchmark/results_chebi_3star_iupac_ring_families_guarded`
 - total cases: 44,940
-- exact passes: 1,962
-- exact failures: 42,978
-- successful render/name-string mismatches: 602
+- exact passes: 2,001
+- exact failures: 42,939
+- successful render/name-string mismatches: 664
 
 Failure stages:
 
 | Stage | Count |
 |---|---:|
-| other unsupported scope | 18,058 |
-| ring or aromatic chemistry outside scope | 16,720 |
+| other unsupported scope | 18,417 |
+| ring or aromatic chemistry outside scope | 16,260 |
 | bracket, charge, isotope, or stereochemistry outside scope | 5,801 |
 | disconnected salts, mixtures, hydrates, or multi-component structures | 1,797 |
-| successful render but exact-name mismatch | 602 |
+| successful render but exact-name mismatch | 664 |
 
 These stages record only the first blocker returned for each case. Their counts
 are not directly comparable with the earlier handwritten-parser run: the RDKit
@@ -59,7 +59,12 @@ After adding strict parent-locant stereodescriptors:
 - exact passes: 1,962
 - successful render/name-string mismatches: 602
 
-This is a net gain of 1,082 exact matches from the initial run. The graph-adapter
+After adding guarded saturated-ring suffix and cycloalkyl-prefix families:
+
+- exact passes: 2,001
+- successful render/name-string mismatches: 664
+
+This is a net gain of 1,730 exact matches from the initial run. The graph-adapter
 checkpoint added 155 exact matches with zero regressions among the previous 1,180
 passes. Its 38 additional successful renders that disagree with the ChEBI string
 are predominantly retained-name or naming-variant cases such as `ethanal` versus
@@ -83,6 +88,16 @@ stereochemistry as the final numbering tie-break, omits unnecessary descriptor
 locants, and applies the PIN rule that a hydrocarbon ring remains senior to an
 acyclic component even when the chain is longer.
 
+The guarded ring-family checkpoint added 39 exact matches with zero regressions
+among the previous 1,962 passes. It covers ring-local `ol`, `one`, and `amine`
+suffixes; ring `carboxylic acid`, `carboxamide`, `carbonitrile`, `carbaldehyde`,
+ester, and carbonyl-halide suffix forms; and simple cycloalkyl prefixes on senior
+acyclic parents. Sixty-two newly rendered rows differ from ChEBI largely because
+the PIN requires complete locants such as `4-methylcyclohexan-1-one`, while the
+dataset stores general names such as `4-methylcyclohexanone` or retained inositol
+names. Complex heterocycles, polycycles, and functionalized cyclic prefixes are
+guarded rather than flattened into false-success names.
+
 ## Fixes Driven By This Benchmark
 
 The benchmark exposed and helped verify fixes for:
@@ -102,17 +117,21 @@ The benchmark exposed and helped verify fixes for:
 - Table 1.4 numerical terms beyond six substituents and ten carbon atoms;
 - complete single-halogen substitution with locant elision;
 - attachment-aware branched alkyl, alkoxy, and ester organyl names;
-- `bis(...)` rendering for repeated complex ester organyl groups.
+- `bis(...)` rendering for repeated complex ester organyl groups;
 - canonical, input-order-independent graph parsing through RDKit;
 - neutral bracket-atom parsing while charges, isotopes, radicals, rings, and
   stereochemistry remain explicitly fail-closed;
 - molecular ring, aromaticity, charge, isotope, radical, and stereochemical
-  metadata for later nomenclature phases.
+  metadata for later nomenclature phases;
 - saturated monocyclic carbon parents, ring-versus-chain parent choice, complete
   ring-numbering enumeration, citation-order tie breaking, and perhalogen locant
-  elision.
+  elision;
 - standards-grade RDKit CIP assignment and strict parent-locant rendering of
-  tetrahedral `R`/`S` and double-bond `E`/`Z` descriptors.
+  tetrahedral `R`/`S` and double-bond `E`/`Z` descriptors;
+- ring-local and exocyclic characteristic-group suffixes with mandatory locant
+  completion for preferred names;
+- simple cycloalkyl prefixes on senior acyclic parents, with fail-closed guards
+  against flattening complex cyclic substituents.
 
 ## Benchmark Limitation
 
@@ -120,7 +139,8 @@ The ChEBI set is useful as broad telemetry, but it is not a valid exact pass-rat
 
 Reasons:
 
-- The current engine scope is explicitly small: single-component, acyclic organic structures with a limited element and functional-group set.
+- The current engine scope remains limited to selected single-component acyclic
+  and saturated monocyclic organic families.
 - Most ChEBI failures are outside that declared scope: rings, aromatics, stereochemistry, salts, charges, isotopes, sulfur/phosphorus chemistry, carbohydrates, peptides, natural products, and mixtures.
 - ChEBI names are curated names, not guaranteed preferred IUPAC names.
 - Exact string equality penalizes valid naming variants, retained names, functional-class names, optional locants, optional parentheses, and PIN/non-PIN differences.
