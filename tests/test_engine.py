@@ -91,3 +91,12 @@ def test_fluoromethoxy_prefix():
 
 def test_hydroxyimino_prefix_on_ketone():
     assert name_smiles("CC(=O)C(C)=NO")["name"] == "3-(hydroxyimino)butan-2-one"
+
+
+def test_lone_acylamino_prefix_prefers_acetylamino_style():
+    assert name_smiles("CC(=O)NCCCCC(=O)O")["name"] == "5-(acetylamino)pentanoic acid"
+
+
+def test_acetamido_prefix_with_other_prefixes():
+    assert name_smiles("CC(=O)NCCCC(N)CC(=O)O")["name"] == "6-acetamido-3-aminohexanoic acid"
+    assert name_smiles("CC(=O)NCCCC(=O)CC(=O)O")["name"] == "6-acetamido-3-oxohexanoic acid"

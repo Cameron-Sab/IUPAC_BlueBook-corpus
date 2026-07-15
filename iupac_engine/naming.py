@@ -202,7 +202,8 @@ def _substituents(
                 else:
                     substituents.append((locants[atom_id], "hydroxy"))
             elif atom.element == "N":
-                substituents.append((locants[atom_id], "amino"))
+                acylamino = _acylamino_name(molecule, neighbor, blocked=chain_set | {atom_id})
+                substituents.append((locants[atom_id], acylamino or "amino"))
             else:
                 raise NamingUnsupported(f"Unsupported substituent atom: {atom.element}")
     return substituents
@@ -248,6 +249,49 @@ def _alkoxy_name(molecule: Molecule, oxygen: int, blocked: set[int]) -> str:
         raise NamingUnsupported("Alkoxy substituents larger than C10 are outside scope")
     halo_prefix = _halo_fragment_prefix(molecule, carbon_ids)
     return halo_prefix + ROOTS[len(carbon_ids)] + "oxy"
+
+
+def _acylamino_name(molecule: Molecule, nitrogen: int, blocked: set[int]) -> str | None:
+    for neighbor, order in molecule.neighbors(nitrogen):
+        if neighbor in blocked or order != 1 or molecule.atom(neighbor).element != "C":
+            continue
+        has_oxo = any(molecule.atom(n).element == "O" and bond_order == 2 for n, bond_order in molecule.neighbors(neighbor))
+        if not has_oxo:
+            continue
+        carbon_count = _acyl_carbon_count(molecule, neighbor, blocked | {nitrogen})
+        if carbon_count == 1:
+            return "formamido"
+        if carbon_count == 2:
+            return "acetamido"
+        if carbon_count in ROOTS:
+            return ROOTS[carbon_count] + "anamido"
+    return None
+
+
+def _acyl_carbon_count(molecule: Molecule, start: int, blocked: set[int]) -> int:
+    seen: set[int] = set()
+    stack = [start]
+    while stack:
+        atom_id = stack.pop()
+        if atom_id in seen or atom_id in blocked:
+            continue
+        atom = molecule.atom(atom_id)
+        if atom.element != "C":
+            continue
+        seen.add(atom_id)
+        for neighbor, order in molecule.neighbors(atom_id):
+            neighbor_atom = molecule.atom(neighbor)
+            if neighbor in blocked:
+                continue
+            if neighbor_atom.element == "O" and order in {1, 2}:
+                continue
+            if neighbor_atom.element == "C" and order == 1:
+                stack.append(neighbor)
+            elif neighbor_atom.element in HALO_PREFIX and order == 1:
+                continue
+            else:
+                raise NamingUnsupported("Complex acylamino substituents are outside scope")
+    return len(seen)
 
 
 def _carbon_fragment(molecule: Molecule, start: int, blocked: set[int]) -> set[int]:
@@ -308,15 +352,16 @@ def _render_prefixes(substituents: list[tuple[int, str]]) -> str:
     for name in sorted(grouped):
         locants = sorted(grouped[name])
         multiplier = MULT.get(len(locants), "") if len(locants) > 1 else ""
-        rendered = multiplier + name
-        if _needs_substitutive_parentheses(name):
+        rendered_name = "acetylamino" if name == "acetamido" and len(grouped) == 1 and len(locants) == 1 else name
+        rendered = multiplier + rendered_name
+        if _needs_substitutive_parentheses(rendered_name):
             rendered = f"({rendered})"
         parts.append(f"{','.join(str(l) for l in locants)}-{rendered}")
     return "-".join(parts)
 
 
 def _needs_substitutive_parentheses(name: str) -> bool:
-    return name == "hydroxyimino" or (name.endswith("methoxy") and name != "methoxy")
+    return name in {"acetylamino", "hydroxyimino"} or (name.endswith("methoxy") and name != "methoxy")
 
 
 def _render_parent(
