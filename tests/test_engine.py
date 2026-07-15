@@ -76,6 +76,10 @@ def test_unsaturated_parent_keeps_terminal_e_before_multiplicative_suffix():
     assert name_smiles("OCC#CCO")["name"] == "but-2-yne-1,4-diol"
 
 
+def test_three_alcohol_suffixes_render_triol():
+    assert name_smiles("OCC(O)CO")["name"] == "propane-1,2,3-triol"
+
+
 def test_dicarboxylic_acid_numbering_prefers_unsaturation_after_suffix_locants():
     assert name_smiles("O=C(O)CCC(O)C=C(O)C(=O)O")["name"] == "2,4-dihydroxyhept-2-enedioic acid"
 

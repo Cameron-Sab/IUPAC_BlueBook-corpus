@@ -410,15 +410,15 @@ def _render_parent(
         return f"{root}{unsat}al"
     if group == "ketone":
         if len(suffix_locants) > 1:
-            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-dione"
+            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-{_multiplicative_suffix(len(suffix_locants), 'one')}"
         return f"{root}{unsat}-{locants[principal.principal_atom]}-one"
     if group == "alcohol":
         if len(suffix_locants) > 1:
-            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-diol"
+            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-{_multiplicative_suffix(len(suffix_locants), 'ol')}"
         return f"{root}{unsat}-{locants[principal.principal_atom]}-ol"
     if group == "amine":
         if len(suffix_locants) > 1:
-            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-diamine"
+            return f"{_parent_stem(root, unsat, keep_terminal_e=True)}-{','.join(str(n) for n in suffix_locants)}-{_multiplicative_suffix(len(suffix_locants), 'amine')}"
         return f"{root}{unsat}-{locants[principal.principal_atom]}-amine"
     if unsat == "an":
         return f"{root}ane"
@@ -429,6 +429,13 @@ def _parent_stem(root: str, unsat: str, *, keep_terminal_e: bool) -> str:
     if unsat == "an":
         return f"{root}ane" if keep_terminal_e else f"{root}an"
     return f"{root}{unsat}e" if keep_terminal_e else f"{root}{unsat}"
+
+
+def _multiplicative_suffix(count: int, suffix: str) -> str:
+    multiplier = MULT.get(count)
+    if multiplier is None:
+        raise NamingUnsupported("More than six repeated suffix groups are outside scope")
+    return multiplier + suffix
 
 
 def _ester_alkyl_name(molecule: Molecule, ester_group: FunctionalGroup, chain: tuple[int, ...]) -> str:
