@@ -19,7 +19,7 @@ def name_smiles(smiles: str, *, explain: bool = False) -> dict[str, Any]:
             "status": "unsupported",
             "name": None,
             "name_type": "systematic",
-            "rule_set": "bluebook-prototype-v0.3",
+            "rule_set": "bluebook-prototype-v0.4",
             "supported_scope": False,
             "reason": str(exc),
             "warnings": [],
@@ -42,7 +42,7 @@ def name_smiles(smiles: str, *, explain: bool = False) -> dict[str, Any]:
         "status": "success",
         "name": name,
         "name_type": "systematic",
-        "rule_set": "bluebook-prototype-v0.3",
+        "rule_set": "bluebook-prototype-v0.4",
         "supported_scope": True,
         "round_trip_verified": False,
         "warnings": warnings,
@@ -58,11 +58,6 @@ def name_smiles(smiles: str, *, explain: bool = False) -> dict[str, Any]:
 def _validate_graph_scope(molecule) -> None:
     if len(molecule.connected_components()) != 1:
         raise NamingUnsupported("Disconnected structures are outside the current scope")
-    if molecule.rings:
-        if any(atom.aromatic for atom in molecule.atoms):
-            raise NamingUnsupported("Aromatic ring nomenclature is outside the current scope")
-    if any(atom.aromatic for atom in molecule.atoms) or any(bond.aromatic for bond in molecule.bonds):
-        raise NamingUnsupported("Aromatic nomenclature is outside the current scope")
     if any(atom.formal_charge for atom in molecule.atoms):
         raise NamingUnsupported("Formal-charge nomenclature is outside the current scope")
     if any(atom.isotope for atom in molecule.atoms):

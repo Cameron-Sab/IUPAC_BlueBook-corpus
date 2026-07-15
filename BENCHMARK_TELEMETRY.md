@@ -11,21 +11,21 @@ The local dataset is not committed to the repository. It was run from:
 
 Latest local run:
 
-- output directory: `work/local_benchmark/results_chebi_3star_iupac_ring_families_guarded`
+- output directory: `work/local_benchmark/results_chebi_3star_iupac_benzene_guarded_v2`
 - total cases: 44,940
-- exact passes: 2,001
-- exact failures: 42,939
-- successful render/name-string mismatches: 664
+- exact passes: 2,498
+- exact failures: 42,442
+- successful render/name-string mismatches: 734
 
 Failure stages:
 
 | Stage | Count |
 |---|---:|
-| other unsupported scope | 18,417 |
-| ring or aromatic chemistry outside scope | 16,260 |
-| bracket, charge, isotope, or stereochemistry outside scope | 5,801 |
+| other unsupported scope | 30,257 |
+| bracket, charge, isotope, or stereochemistry outside scope | 9,253 |
 | disconnected salts, mixtures, hydrates, or multi-component structures | 1,797 |
-| successful render but exact-name mismatch | 664 |
+| successful render but exact-name mismatch | 734 |
+| ring or aromatic chemistry outside scope | 401 |
 
 These stages record only the first blocker returned for each case. Their counts
 are not directly comparable with the earlier handwritten-parser run: the RDKit
@@ -64,7 +64,12 @@ After adding guarded saturated-ring suffix and cycloalkyl-prefix families:
 - exact passes: 2,001
 - successful render/name-string mismatches: 664
 
-This is a net gain of 1,730 exact matches from the initial run. The graph-adapter
+After adding guarded phenyl prefixes and isolated benzene parents:
+
+- exact passes: 2,498
+- successful render/name-string mismatches: 734
+
+This is a net gain of 2,227 exact matches from the initial run. The graph-adapter
 checkpoint added 155 exact matches with zero regressions among the previous 1,180
 passes. Its 38 additional successful renders that disagree with the ChEBI string
 are predominantly retained-name or naming-variant cases such as `ethanal` versus
@@ -97,6 +102,19 @@ the PIN requires complete locants such as `4-methylcyclohexan-1-one`, while the
 dataset stores general names such as `4-methylcyclohexanone` or retained inositol
 names. Complex heterocycles, polycycles, and functionalized cyclic prefixes are
 guarded rather than flattened into false-success names.
+
+The isolated-aromatic checkpoint added 497 exact matches with zero regressions
+among the previous 2,001 passes. It covers carbon-bound phenyl prefixes and
+isolated benzene, toluene/xylene, phenol, aniline, benzoic acid, benzamide,
+benzonitrile, benzaldehyde, benzoate, and benzoyl-halide parents. Seventy-one
+newly rendered rows differ from ChEBI mainly through general aliases such as
+`anisole`, phthalic-acid retained names, and nonpreferred `isopropyl`/`isobutyl`
+forms. Explicit aromatic triple bonds, exocyclic multiple bonds, functionalized
+halogens, fused rings, and complex aromatic prefixes remain fail-closed.
+
+The dramatic first-error bucket shift in this run is diagnostic, not chemical:
+once isolated aromatic graphs pass the former top-level guard, molecules with
+independent unsupported features are classified at those deeper guards.
 
 ## Fixes Driven By This Benchmark
 
@@ -131,7 +149,10 @@ The benchmark exposed and helped verify fixes for:
 - ring-local and exocyclic characteristic-group suffixes with mandatory locant
   completion for preferred names;
 - simple cycloalkyl prefixes on senior acyclic parents, with fail-closed guards
-  against flattening complex cyclic substituents.
+  against flattening complex cyclic substituents;
+- carbon-bound phenyl prefixes and retained isolated-benzene parent families;
+- preferred `tert-butyl`, parenthesized halomethyl, fully substituted benzene,
+  and derived `bis(...)` organyl rendering.
 
 ## Benchmark Limitation
 

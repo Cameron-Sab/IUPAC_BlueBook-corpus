@@ -51,6 +51,9 @@ def name_molecule(molecule: Molecule, groups: list[FunctionalGroup]) -> tuple[st
     )
 
     if molecule.rings and _ring_is_parent(molecule, principal, groups):
+        benzene_ring = _benzene_ring_atoms(molecule)
+        if benzene_ring is not None:
+            return _name_benzene_parent(molecule, benzene_ring, groups, trace)
         return _name_saturated_monocycle(molecule, groups, trace)
 
     ring_atoms = set().union(*(set(ring) for ring in molecule.rings)) if molecule.rings else set()
@@ -104,9 +107,11 @@ def _validate_acyclic_parent_ring_scope(
         for bond in molecule.bonds
         if bond.a in ring_atoms and bond.b in ring_atoms
     ]
-    if len(ring_bonds) != len(ring_atoms) or any(
-        bond.order != 1 or bond.aromatic for bond in ring_bonds
-    ):
+    saturated_carbocycle = len(ring_bonds) == len(ring_atoms) and all(
+        bond.order == 1 and not bond.aromatic for bond in ring_bonds
+    )
+    benzene = _is_benzene_ring(molecule, ring_atoms, ring_bonds)
+    if not saturated_carbocycle and not benzene:
         raise NamingUnsupported("Unsaturated cyclic substituent nomenclature is outside the current scope")
     if any(group.atom_ids & ring_atoms for group in groups):
         raise NamingUnsupported("Functionalized cyclic substituent nomenclature is outside the current scope")
@@ -134,11 +139,19 @@ def _ring_is_parent(
     if principal is None:
         return True
     ring_atoms = set().union(*(set(ring) for ring in molecule.rings))
+    exocyclic_suffix_kinds = {
+        "carboxylic_acid",
+        "ester",
+        "acid_halide",
+        "amide",
+        "nitrile",
+        "aldehyde",
+    }
     same_kind = [group for group in groups if group.kind == principal.kind]
     for group in same_kind:
         if group.principal_atom in ring_atoms:
             continue
-        if not any(
+        if group.kind not in exocyclic_suffix_kinds or not any(
             neighbor in ring_atoms and order == 1
             for neighbor, order in molecule.neighbors(group.principal_atom)
         ):
@@ -159,6 +172,8 @@ def _name_saturated_monocycle(
         raise NamingUnsupported("A valid monocyclic parent requires at least three ring atoms")
     if any(molecule.atom(atom_id).element != "C" for atom_id in ring_atoms):
         raise NamingUnsupported("Heterocycle nomenclature is outside the current scope")
+    if any(molecule.atom(atom_id).aromatic for atom_id in ring_atoms):
+        raise NamingUnsupported("Aromatic parent nomenclature is outside the current scope")
 
     principal = groups[0] if groups else None
     if groups:
@@ -238,6 +253,218 @@ def _name_saturated_monocycle(
     if stereo_trace:
         trace.append(stereo_trace)
     return name, trace
+
+
+def _name_benzene_parent(
+    molecule: Molecule,
+    ring_atoms: frozenset[int],
+    groups: list[FunctionalGroup],
+    trace: list[TraceStep],
+) -> tuple[str, list[TraceStep]]:
+    principal = groups[0] if groups else None
+    if groups:
+        _validate_cyclic_groups(molecule, ring_atoms, groups, principal)
+
+    orientations = _ring_orientations(molecule, ring_atoms)
+    candidates = [
+        NumberingCandidate(
+            orientation,
+            _ranking_vector(
+                molecule,
+                orientation,
+                principal,
+                candidate_groups=tuple(groups),
+            ),
+            principal,
+            tuple(groups),
+        )
+        for orientation in orientations
+    ]
+    winner = min(candidates, key=lambda candidate: candidate.ranking_vector)
+    substituents = _substituents(
+        molecule,
+        winner.chain,
+        winner.principal_group,
+        winner.groups,
+    )
+
+    trace.append(
+        TraceStep(
+            "P-52.2.8",
+            "Selected the aromatic ring as the preferred parent over acyclic components",
+            ("ring parent", "acyclic parent"),
+            "ring parent",
+        )
+    )
+    trace.append(
+        TraceStep(
+            "P-22.1.2",
+            "Selected the retained benzene parent",
+            (),
+            "benzene",
+        )
+    )
+    trace.append(
+        TraceStep(
+            "P-14.4",
+            f"Selected benzene numbering by lexicographic ranking vector {winner.ranking_vector}",
+            tuple(str(candidate.ranking_vector) for candidate in candidates),
+            str(winner.ranking_vector),
+        )
+    )
+
+    name = _render_benzene_name(molecule, winner, substituents)
+    name, stereo_trace = _apply_stereodescriptors(molecule, winner.chain, name)
+    if stereo_trace:
+        trace.append(stereo_trace)
+    return name, trace
+
+
+def _render_benzene_name(
+    molecule: Molecule,
+    candidate: NumberingCandidate,
+    substituents: list[tuple[int, str]],
+) -> str:
+    principal = candidate.principal_group
+    if principal is None:
+        if not substituents:
+            return "benzene"
+        if all(name == "methyl" for _, name in substituents):
+            if len(substituents) == 1:
+                return "toluene"
+            if len(substituents) == 2:
+                locants = ",".join(str(locant) for locant, _ in sorted(substituents))
+                return f"{locants}-xylene"
+        prefixes = _render_prefixes(
+            substituents,
+            omit_locants=(
+                len(substituents) == 1
+                or _benzene_prefix_locants_are_redundant(molecule, candidate, substituents)
+            ),
+        )
+        return prefixes + "benzene"
+
+    ring_locants = {atom_id: index + 1 for index, atom_id in enumerate(candidate.chain)}
+    same_kind = [group for group in candidate.groups if group.kind == principal.kind]
+    if principal.principal_atom in candidate.chain:
+        suffix_locants = tuple(sorted(ring_locants[group.principal_atom] for group in same_kind))
+        prefixes = _render_prefixes(
+            substituents,
+            omit_locants=_benzene_prefix_locants_are_redundant(
+                molecule, candidate, substituents
+            ),
+        )
+        if principal.kind == "alcohol":
+            if len(suffix_locants) == 1:
+                return prefixes + "phenol"
+            parent = f"benzene-{','.join(str(locant) for locant in suffix_locants)}-{_multiplicative_suffix(len(suffix_locants), 'ol')}"
+            return prefixes + parent
+        if principal.kind == "amine":
+            if len(suffix_locants) == 1:
+                return prefixes + "aniline"
+            parent = f"benzene-{','.join(str(locant) for locant in suffix_locants)}-{_multiplicative_suffix(len(suffix_locants), 'amine')}"
+            return prefixes + parent
+        raise NamingUnsupported("Unsupported benzene ring-local suffix")
+
+    return _render_exocyclic_benzene_parent(molecule, candidate, substituents)
+
+
+def _render_exocyclic_benzene_parent(
+    molecule: Molecule,
+    candidate: NumberingCandidate,
+    substituents: list[tuple[int, str]],
+) -> str:
+    principal = candidate.principal_group
+    if principal is None:
+        raise NamingUnsupported("Missing benzene principal group")
+    ring_atoms = frozenset(candidate.chain)
+    ring_locants = {atom_id: index + 1 for index, atom_id in enumerate(candidate.chain)}
+    suffix_groups = [group for group in candidate.groups if group.kind == principal.kind]
+    suffix_locants = tuple(
+        sorted(
+            ring_locants[_cyclic_group_parent_atom(molecule, group, ring_atoms)]
+            for group in suffix_groups
+        )
+    )
+    prefixes = _render_prefixes(
+        substituents,
+        omit_locants=_benzene_prefix_locants_are_redundant(
+            molecule, candidate, substituents
+        ),
+    )
+    group = principal.kind
+
+    if len(suffix_groups) == 1:
+        retained = {
+            "carboxylic_acid": "benzoic acid",
+            "amide": "benzamide",
+            "nitrile": "benzonitrile",
+            "aldehyde": "benzaldehyde",
+        }
+        if group in retained:
+            return prefixes + retained[group]
+        if group == "ester":
+            alkyl = _ester_alkyl_name(molecule, principal, candidate.chain)
+            return f"{alkyl} {prefixes}benzoate"
+        if group == "acid_halide":
+            halogens = [
+                molecule.atom(atom_id).element
+                for atom_id in principal.atom_ids
+                if molecule.atom(atom_id).element in HALO_PREFIX
+            ]
+            if len(halogens) != 1:
+                raise NamingUnsupported("Acid halide atom could not be identified")
+            return f"{prefixes}benzoyl {_halide_class_name(halogens[0])}"
+
+    locant_text = ",".join(str(locant) for locant in suffix_locants)
+    multiplier = multiplicative_prefix(len(suffix_groups))
+    if group == "carboxylic_acid":
+        return f"{prefixes}benzene-{locant_text}-{multiplier}carboxylic acid"
+    if group == "amide":
+        return f"{prefixes}benzene-{locant_text}-{multiplier}carboxamide"
+    if group == "nitrile":
+        return f"{prefixes}benzene-{locant_text}-{multiplier}carbonitrile"
+    if group == "aldehyde":
+        return f"{prefixes}benzene-{locant_text}-{multiplier}carbaldehyde"
+    if group == "ester":
+        alkyl_names = sorted(
+            (_ester_alkyl_name(molecule, group_item, candidate.chain) for group_item in suffix_groups),
+            key=_alphabetical_key,
+        )
+        alkyl = _combine_organyl_names(alkyl_names)
+        return f"{alkyl} {prefixes}benzene-{locant_text}-{multiplier}carboxylate"
+    raise NamingUnsupported("Unsupported multiple benzene suffix")
+
+
+def _benzene_prefix_locants_are_redundant(
+    molecule: Molecule,
+    candidate: NumberingCandidate,
+    substituents: list[tuple[int, str]],
+) -> bool:
+    if not substituents or len({name for _, name in substituents}) != 1:
+        return False
+    ring_locants = {atom_id: index + 1 for index, atom_id in enumerate(candidate.chain)}
+    occupied: set[int] = set()
+    principal = candidate.principal_group
+    if principal is not None:
+        same_kind = [
+            group for group in candidate.groups if group.kind == principal.kind
+        ]
+        if len(same_kind) != 1:
+            return False
+        for group in same_kind:
+            occupied.add(
+                ring_locants[
+                    _cyclic_group_parent_atom(
+                        molecule, group, frozenset(candidate.chain)
+                    )
+                ]
+            )
+    prefix_locants = [locant for locant, _ in substituents]
+    return (
+        len(prefix_locants) == len(set(prefix_locants))
+        and set(prefix_locants) == set(range(1, len(candidate.chain) + 1)) - occupied
+    )
 
 
 def _validate_cyclic_groups(
@@ -362,10 +589,7 @@ def _render_exocyclic_cycle_parent(
             (_ester_alkyl_name(molecule, group_item, candidate.chain) for group_item in suffix_groups),
             key=_alphabetical_key,
         )
-        if len(set(alkyl_names)) == 1:
-            alkyl = multiplicative_prefix(len(alkyl_names)) + alkyl_names[0]
-        else:
-            alkyl = " ".join(alkyl_names)
+        alkyl = _combine_organyl_names(alkyl_names)
         return f"{alkyl} {parent}{locant_text}{multiplier}carboxylate"
     if group == "acid_halide":
         if len(suffix_groups) != 1:
@@ -685,6 +909,8 @@ def _substituents(
             elif order != 1:
                 continue
             elif atom.element in HALO_PREFIX:
+                if len(molecule.neighbors(neighbor)) != 1:
+                    raise NamingUnsupported("Functionalized halogen substituents are outside the current scope")
                 substituents.append((locants[atom_id], HALO_PREFIX[atom.element]))
             elif atom.element == "C":
                 substituents.append(
@@ -785,7 +1011,8 @@ def _simple_alkyl_name(molecule: Molecule, start: int, blocked: set[int]) -> str
         parent_name = root + "yl"
     else:
         parent_name = f"{root}an-{attachment_locant}-yl"
-    return _render_prefixes(branches) + parent_name
+    name = _render_prefixes(branches, omit_locants=len(parent_chain) == 1) + parent_name
+    return "tert-butyl" if name == "2-methylpropan-2-yl" else name
 
 
 def _simple_cycloalkyl_name(
@@ -804,9 +1031,13 @@ def _simple_cycloalkyl_name(
         for bond in molecule.bonds
         if bond.a in ring_atoms and bond.b in ring_atoms
     ]
-    if len(ring_bonds) != len(ring_atoms) or any(
-        bond.order != 1 or bond.aromatic for bond in ring_bonds
+    if _is_benzene_ring(molecule, ring_atoms, ring_bonds):
+        parent_name = "phenyl"
+    elif len(ring_bonds) == len(ring_atoms) and all(
+        bond.order == 1 and not bond.aromatic for bond in ring_bonds
     ):
+        parent_name = f"cyclo{parent_root(len(ring_atoms))}yl"
+    else:
         raise NamingUnsupported("Unsaturated cyclic substituent nomenclature is outside the current scope")
 
     for ring_atom in ring_atoms:
@@ -814,7 +1045,39 @@ def _simple_cycloalkyl_name(
             if neighbor in ring_atoms or neighbor in blocked:
                 continue
             raise NamingUnsupported("Substituted cycloalkyl prefixes are outside the current scope")
-    return f"cyclo{parent_root(len(ring_atoms))}yl"
+    return parent_name
+
+
+def _is_benzene_ring(
+    molecule: Molecule,
+    ring_atoms: frozenset[int],
+    ring_bonds: list,
+) -> bool:
+    return (
+        len(ring_atoms) == 6
+        and len(ring_bonds) == 6
+        and all(molecule.atom(atom_id).element == "C" for atom_id in ring_atoms)
+        and all(molecule.atom(atom_id).aromatic for atom_id in ring_atoms)
+        and all(bond.aromatic and bond.order == 1 for bond in ring_bonds)
+        and all(
+            order == 1
+            for atom_id in ring_atoms
+            for neighbor, order in molecule.neighbors(atom_id)
+            if neighbor not in ring_atoms
+        )
+    )
+
+
+def _benzene_ring_atoms(molecule: Molecule) -> frozenset[int] | None:
+    if len(molecule.rings) != 1:
+        return None
+    ring_atoms = frozenset(molecule.rings[0])
+    ring_bonds = [
+        bond
+        for bond in molecule.bonds
+        if bond.a in ring_atoms and bond.b in ring_atoms
+    ]
+    return ring_atoms if _is_benzene_ring(molecule, ring_atoms, ring_bonds) else None
 
 
 def _fragment_paths(molecule: Molecule, atom_ids: set[int]) -> set[tuple[int, ...]]:
@@ -979,7 +1242,10 @@ def _uses_retained_acetic_parent(
         and len(candidate.chain) == 2
         and bool(substituents)
         and all(locant == 2 for locant, _ in substituents)
-        and all(name.startswith("cyclo") and name.endswith("yl") for _, name in substituents)
+        and all(
+            name == "phenyl" or (name.startswith("cyclo") and name.endswith("yl"))
+            for _, name in substituents
+        )
     )
 
 
@@ -1040,6 +1306,10 @@ def _needs_substitutive_parentheses(name: str) -> bool:
     return (
         name in {"acetylamino", "hydroxyimino"}
         or (
+            name.endswith(("methyl", "ethyl", "propyl", "butyl"))
+            and any(prefix in name for prefix in HALO_PREFIX.values())
+        )
+        or (
             name.endswith("oxy")
             and name not in {"hydroxy", "methoxy", "ethoxy", "propoxy", "butoxy"}
         )
@@ -1057,6 +1327,17 @@ def _derived_multiplicative_prefix(count: int) -> str:
     if count == 3:
         return "tris"
     return multiplicative_prefix(count) + "kis"
+
+
+def _combine_organyl_names(names: list[str]) -> str:
+    if not names:
+        raise NamingUnsupported("No organyl component was available")
+    if len(set(names)) != 1:
+        return " ".join(names)
+    name = names[0]
+    if len(names) > 1 and _needs_substitutive_parentheses(name):
+        return f"{_derived_multiplicative_prefix(len(names))}({name})"
+    return multiplicative_prefix(len(names)) + name
 
 
 def _render_parent(
@@ -1083,13 +1364,7 @@ def _render_parent(
             (_ester_alkyl_name(molecule, ester_group, chain) for ester_group in ester_groups),
             key=_alphabetical_key,
         )
-        if len(set(alkyl_names)) == 1:
-            if len(alkyl_names) > 1 and _needs_substitutive_parentheses(alkyl_names[0]):
-                alkyl = f"{_derived_multiplicative_prefix(len(alkyl_names))}({alkyl_names[0]})"
-            else:
-                alkyl = multiplicative_prefix(len(alkyl_names)) + alkyl_names[0]
-        else:
-            alkyl = " ".join(alkyl_names)
+        alkyl = _combine_organyl_names(alkyl_names)
         prefixes = _render_prefixes(_substituents(molecule, chain, principal, groups), omit_locants=len(chain) == 1)
         if len(ester_groups) == 1:
             anion_name = f"{root}{unsat}oate"

@@ -125,6 +125,10 @@ implemented families:
   `carboxylic acid`, `carboxamide`, `carbonitrile`, `carbaldehyde`, ester, and
   carbonyl-halide suffix forms;
 - simple saturated cycloalkyl prefixes on senior acyclic parents;
+- carbon-bound phenyl prefixes;
+- isolated benzene parents, including retained toluene/xylene, phenol, aniline,
+  benzoic acid, benzamide, benzonitrile, benzaldehyde, benzoate, and benzoyl
+  halide forms;
 - absolute tetrahedral `R`/`S` and alkene `E`/`Z` descriptors when every
   stereogenic feature maps directly to the final parent numbering;
 - one principal characteristic group among:
@@ -140,7 +144,7 @@ implemented families:
   - hydrocarbon.
 
 Neutral bracket atoms are accepted when their chemistry is otherwise supported.
-Polycyclic, unsaturated-ring, heterocyclic, and aromatic systems, along with
+Polycyclic, unsaturated-ring, heterocyclic, and non-benzene aromatic systems, along with
 formal charges, isotopic modification, radicals, non-tetrahedral or
 substituent-local stereochemistry, enhanced relative/mixture stereochemistry,
 disconnected structures, and unsupported elements currently return structured

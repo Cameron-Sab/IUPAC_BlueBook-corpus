@@ -110,6 +110,22 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         RuleStatus.PARTIAL,
     ),
     RuleRecord(
+        "P-22.1.2",
+        "Retained benzene and monocyclic unsaturated hydrocarbon parents",
+        (22, 1, 2),
+        "isolated_six_membered_aromatic_carbon_parent",
+        "select_retained_benzene_parent",
+        RuleStatus.PARTIAL,
+    ),
+    RuleRecord(
+        "P-29.6",
+        "Retained prefixes derived from parent hydrides",
+        (29, 6),
+        "retained_substituent_prefix_is_preferred",
+        "render_phenyl_or_retained_organyl_prefix",
+        RuleStatus.PARTIAL,
+    ),
+    RuleRecord(
         "P-31.1.3.1",
         "Subtractive unsaturation operation for alkenes",
         (31, 1, 3, 1),

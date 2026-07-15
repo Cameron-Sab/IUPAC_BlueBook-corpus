@@ -68,7 +68,7 @@ def _parse_smiles(smiles: str) -> Molecule:
 
     for bond in canonical.GetBonds():
         numeric_order = bond.GetBondTypeAsDouble()
-        if bond.GetIsAromatic():
+        if bond.GetIsAromatic() and numeric_order == 1.5:
             order = 1
         elif numeric_order in {1.0, 2.0, 3.0}:
             order = int(numeric_order)

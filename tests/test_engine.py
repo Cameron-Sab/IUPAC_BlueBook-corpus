@@ -6,7 +6,7 @@ def test_simple_alcohol():
     assert result["status"] == "success"
     assert result["name"] == "ethanol"
     assert result["decision_trace"]
-    assert result["rule_set"] == "bluebook-prototype-v0.3"
+    assert result["rule_set"] == "bluebook-prototype-v0.4"
     assert [step["rule_id"] for step in result["decision_trace"]] == [
         "P-41",
         "P-44.1.1",
@@ -123,7 +123,7 @@ def test_enhanced_stereo_fails_closed_instead_of_becoming_absolute():
 
 
 def test_aromatic_and_alicyclic_rings_are_distinguished():
-    assert "Aromatic ring" in name_smiles("c1ccccc1")["reason"]
+    assert name_smiles("c1ccccc1")["name"] == "benzene"
     assert name_smiles("C1CCCCC1")["name"] == "cyclohexane"
 
 
@@ -219,6 +219,69 @@ def test_complex_cyclic_substituents_do_not_flatten_into_acyclic_fragments():
     assert "Heterocyclic" in heterocycle["reason"]
     assert nested_ring["status"] == "unsupported"
     assert "Nested" in nested_ring["reason"]
+
+
+def test_unsubstituted_phenyl_prefix_on_an_acyclic_parent():
+    assert name_smiles("O=C(O)CCc1ccccc1")["name"] == "3-phenylpropanoic acid"
+    assert name_smiles("CC(O)c1ccccc1")["name"] == "1-phenylethanol"
+    assert name_smiles("O=C(O)Cc1ccccc1")["name"] == "phenylacetic acid"
+
+
+def test_substituted_and_fused_phenyl_prefixes_fail_closed():
+    substituted = name_smiles("O=C(O)CCc1ccccc1C")
+    fused = name_smiles("O=C(O)CCc1ccc2ccccc2c1")
+    assert substituted["status"] == "unsupported"
+    assert "Substituted cycloalkyl" in substituted["reason"]
+    assert fused["status"] == "unsupported"
+    assert "Polycyclic" in fused["reason"]
+
+
+def test_retained_benzene_hydrocarbon_parents():
+    assert name_smiles("c1ccccc1")["name"] == "benzene"
+    assert name_smiles("Cc1ccccc1")["name"] == "toluene"
+    assert name_smiles("Cc1ccccc1C")["name"] == "1,2-xylene"
+    assert name_smiles("Cc1ccc(C)cc1")["name"] == "1,4-xylene"
+    assert name_smiles("CCc1ccccc1")["name"] == "ethylbenzene"
+    assert name_smiles("Clc1ccccc1")["name"] == "chlorobenzene"
+    assert name_smiles("COc1ccccc1")["name"] == "methoxybenzene"
+    assert name_smiles("FC(F)(F)c1ccccc1")["name"] == "(trifluoromethyl)benzene"
+    assert name_smiles("CC(C)(C)c1ccccc1")["name"] == "tert-butylbenzene"
+    assert name_smiles("Fc1c(F)c(F)c(F)c(F)c1F")["name"] == "hexafluorobenzene"
+    assert name_smiles("Cc1c(C)c(C)c(C)c(C)c1C")["name"] == "hexamethylbenzene"
+
+
+def test_phenol_and_aniline_parents():
+    assert name_smiles("Oc1ccccc1")["name"] == "phenol"
+    assert name_smiles("Oc1c(C)cccc1")["name"] == "2-methylphenol"
+    assert name_smiles("Nc1ccccc1")["name"] == "aniline"
+    assert name_smiles("Nc1ccc(Cl)cc1")["name"] == "4-chloroaniline"
+    assert name_smiles("Oc1cccc(O)c1")["name"] == "benzene-1,3-diol"
+    assert name_smiles("Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl")["name"] == "pentachlorophenol"
+    assert (
+        name_smiles("Oc1c(Cl)c(Cl)c(O)c(Cl)c1Cl")["name"]
+        == "2,3,5,6-tetrachlorobenzene-1,4-diol"
+    )
+
+
+def test_retained_benzene_exocyclic_suffix_parents():
+    assert name_smiles("O=C(O)c1ccccc1")["name"] == "benzoic acid"
+    assert name_smiles("O=C(O)c1ccccc1Cl")["name"] == "2-chlorobenzoic acid"
+    assert name_smiles("NC(=O)c1ccccc1")["name"] == "benzamide"
+    assert name_smiles("N#Cc1ccccc1")["name"] == "benzonitrile"
+    assert name_smiles("O=Cc1ccccc1")["name"] == "benzaldehyde"
+    assert name_smiles("COC(=O)c1ccccc1")["name"] == "methyl benzoate"
+    assert name_smiles("O=C(Cl)c1ccccc1")["name"] == "benzoyl chloride"
+    assert name_smiles("O=C(O)c1c(F)c(F)c(F)c(F)c1F")["name"] == "pentafluorobenzoic acid"
+
+
+def test_nonbenzene_aromatic_bonding_and_functionalized_halogen_fail_closed():
+    assert name_smiles("c1ccccc#1")["status"] == "unsupported"
+    assert name_smiles("O=Ic1ccccc1C(=O)O")["status"] == "unsupported"
+
+
+def test_complex_benzoate_organyl_groups_use_derived_multipliers():
+    result = name_smiles("CCCCC(CC)COC(=O)c1ccccc1C(=O)OCC(CC)CCCC")
+    assert result["name"] == "bis(2-ethylhexyl) benzene-1,2-dicarboxylate"
 
 
 def test_oxo_prefix_with_carboxylic_acid():
