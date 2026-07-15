@@ -195,7 +195,10 @@ def _substituents(
                     raise NamingUnsupported("Alkyl substituents larger than C10 are outside scope")
                 substituents.append((locants[atom_id], ROOTS[size] + "yl"))
             elif atom.element == "O":
-                substituents.append((locants[atom_id], "hydroxy"))
+                if len(molecule.neighbors(neighbor)) == 2:
+                    substituents.append((locants[atom_id], _alkoxy_name(molecule, neighbor, blocked=chain_set | {atom_id})))
+                else:
+                    substituents.append((locants[atom_id], "hydroxy"))
             elif atom.element == "N":
                 substituents.append((locants[atom_id], "amino"))
             else:
@@ -207,7 +210,7 @@ def _is_suffix_group(group: FunctionalGroup, principal: FunctionalGroup | None) 
     if principal is None:
         return False
     if group.kind == principal.kind:
-        return group.kind in {"carboxylic_acid", "ketone", "alcohol", "amine"}
+        return group.kind in {"carboxylic_acid", "ester", "ketone", "alcohol", "amine"}
     return group == principal
 
 
@@ -230,13 +233,65 @@ def _alkyl_size(molecule: Molecule, start: int, blocked: set[int]) -> int:
     return len(seen)
 
 
+def _alkoxy_name(molecule: Molecule, oxygen: int, blocked: set[int]) -> str:
+    carbon_neighbors = [
+        neighbor
+        for neighbor, order in molecule.neighbors(oxygen)
+        if order == 1 and molecule.atom(neighbor).element == "C" and neighbor not in blocked
+    ]
+    if len(carbon_neighbors) != 1:
+        raise NamingUnsupported("Complex ether substituents are outside scope")
+    carbon_ids = _carbon_fragment(molecule, carbon_neighbors[0], blocked | {oxygen})
+    if len(carbon_ids) not in ROOTS:
+        raise NamingUnsupported("Alkoxy substituents larger than C10 are outside scope")
+    halo_prefix = _halo_fragment_prefix(molecule, carbon_ids)
+    return halo_prefix + ROOTS[len(carbon_ids)] + "oxy"
+
+
+def _carbon_fragment(molecule: Molecule, start: int, blocked: set[int]) -> set[int]:
+    seen: set[int] = set()
+    stack = [start]
+    while stack:
+        atom_id = stack.pop()
+        if atom_id in seen or atom_id in blocked:
+            continue
+        atom = molecule.atom(atom_id)
+        if atom.element != "C":
+            continue
+        seen.add(atom_id)
+        for neighbor, order in molecule.neighbors(atom_id):
+            if order != 1:
+                raise NamingUnsupported("Unsaturated alkoxy substituents are outside scope")
+            if neighbor not in blocked and molecule.atom(neighbor).element == "C":
+                stack.append(neighbor)
+            elif neighbor not in blocked and molecule.atom(neighbor).element not in HALO_PREFIX:
+                raise NamingUnsupported("Heteroatom-containing alkoxy substituents are outside scope")
+    return seen
+
+
+def _halo_fragment_prefix(molecule: Molecule, carbon_ids: set[int]) -> str:
+    halo_counts: dict[str, int] = {}
+    for carbon_id in carbon_ids:
+        for neighbor, order in molecule.neighbors(carbon_id):
+            atom = molecule.atom(neighbor)
+            if order == 1 and atom.element in HALO_PREFIX:
+                halo_counts[HALO_PREFIX[atom.element]] = halo_counts.get(HALO_PREFIX[atom.element], 0) + 1
+    parts = []
+    for name in sorted(halo_counts):
+        count = halo_counts[name]
+        parts.append((MULT.get(count, "") if count > 1 else "") + name)
+    return "".join(parts)
+
+
 def _render_name(molecule: Molecule, candidate: NumberingCandidate) -> str:
     chain = candidate.chain
     if len(chain) not in ROOTS:
         raise NamingUnsupported("Parent roots above decane are outside scope")
 
-    prefixes = _render_prefixes(_substituents(molecule, chain, candidate.principal_group, candidate.groups))
     parent = _render_parent(molecule, chain, candidate.principal_group, candidate.groups)
+    if candidate.principal_group and candidate.principal_group.kind == "ester":
+        return parent
+    prefixes = _render_prefixes(_substituents(molecule, chain, candidate.principal_group, candidate.groups))
     return prefixes + parent
 
 
@@ -251,8 +306,15 @@ def _render_prefixes(substituents: list[tuple[int, str]]) -> str:
     for name in sorted(grouped):
         locants = sorted(grouped[name])
         multiplier = MULT.get(len(locants), "") if len(locants) > 1 else ""
-        parts.append(f"{','.join(str(l) for l in locants)}-{multiplier}{name}")
+        rendered = multiplier + name
+        if _needs_substitutive_parentheses(name):
+            rendered = f"({rendered})"
+        parts.append(f"{','.join(str(l) for l in locants)}-{rendered}")
     return "-".join(parts)
+
+
+def _needs_substitutive_parentheses(name: str) -> bool:
+    return name.endswith("methoxy") and name != "methoxy"
 
 
 def _render_parent(
@@ -273,6 +335,11 @@ def _render_parent(
         if len(suffix_locants) > 1:
             return f"{root}{unsat}edioic acid"
         return f"{root}{unsat}oic acid"
+    if group == "ester":
+        ester_group = suffix_groups[0] if suffix_groups else principal
+        alkyl = _ester_alkyl_name(molecule, ester_group, chain)
+        prefixes = _render_prefixes(_substituents(molecule, chain, principal, groups))
+        return f"{alkyl} {prefixes}{root}{unsat}oate"
     if group == "aldehyde":
         return f"{root}{unsat}al"
     if group == "ketone":
@@ -296,6 +363,25 @@ def _parent_stem(root: str, unsat: str, *, keep_terminal_e: bool) -> str:
     if unsat == "an":
         return f"{root}ane" if keep_terminal_e else f"{root}an"
     return f"{root}{unsat}"
+
+
+def _ester_alkyl_name(molecule: Molecule, ester_group: FunctionalGroup, chain: tuple[int, ...]) -> str:
+    chain_set = set(chain)
+    oxygens = [atom_id for atom_id in ester_group.atom_ids if molecule.atom(atom_id).element == "O" and len(molecule.neighbors(atom_id)) == 2]
+    if not oxygens:
+        raise NamingUnsupported("Ester alkoxy oxygen could not be identified")
+    oxygen = oxygens[0]
+    alkyl_roots = [
+        neighbor
+        for neighbor, order in molecule.neighbors(oxygen)
+        if order == 1 and molecule.atom(neighbor).element == "C" and neighbor not in chain_set
+    ]
+    if len(alkyl_roots) != 1:
+        raise NamingUnsupported("Complex ester alkyl groups are outside scope")
+    size = _alkyl_size(molecule, alkyl_roots[0], blocked={oxygen})
+    if size not in ROOTS:
+        raise NamingUnsupported("Ester alkyl groups larger than C10 are outside scope")
+    return ROOTS[size] + "yl"
 
 
 def _unsaturation(molecule: Molecule, chain: tuple[int, ...]) -> str:

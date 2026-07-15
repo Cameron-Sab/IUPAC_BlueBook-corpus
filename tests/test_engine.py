@@ -67,3 +67,23 @@ def test_parent_chain_prefers_maximum_suffix_groups():
 
 def test_dicarboxylic_acid_numbering_prefers_unsaturation_after_suffix_locants():
     assert name_smiles("O=C(O)CCC(O)C=C(O)C(=O)O")["name"] == "2,4-dihydroxyhept-2-enedioic acid"
+
+
+def test_simple_ester():
+    assert name_smiles("CC(=O)OCC")["name"] == "ethyl ethanoate"
+
+
+def test_oxo_substituted_ester():
+    assert name_smiles("CCOC(=O)CC(C)=O")["name"] == "ethyl 3-oxobutanoate"
+
+
+def test_halogenated_alkoxy_prefix():
+    assert name_smiles("FC(F)OC(F)C(F)(F)F")["name"] == "2-(difluoromethoxy)-1,1,1,2-tetrafluoroethane"
+
+
+def test_halogenated_alkoxy_prefix_with_chloro_parent():
+    assert name_smiles("FC(F)OC(F)(F)C(F)Cl")["name"] == "2-chloro-1-(difluoromethoxy)-1,1,2-trifluoroethane"
+
+
+def test_fluoromethoxy_prefix():
+    assert name_smiles("FCOC(C(F)(F)F)C(F)(F)F")["name"] == "1,1,1,3,3,3-hexafluoro-2-(fluoromethoxy)propane"

@@ -12,6 +12,7 @@ class GroupSeniority(IntEnum):
     ALCOHOL = 20
     KETONE = 30
     ALDEHYDE = 40
+    ESTER = 45
     CARBOXYLIC_ACID = 50
 
 
@@ -32,18 +33,22 @@ def perceive_functional_groups(molecule: Molecule) -> list[FunctionalGroup]:
 
         oxygen_double = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "O" and order == 2]
         oxygen_single = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "O" and order == 1]
+        hydroxy_oxygen = [n for n in oxygen_single if len(molecule.neighbors(n)) == 1]
+        ester_oxygen = [n for n in oxygen_single if len(molecule.neighbors(n)) == 2]
         carbon_single = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "C" and order == 1]
         nitrogen_single = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "N" and order == 1]
 
-        if oxygen_double and oxygen_single:
+        if oxygen_double and hydroxy_oxygen:
             groups.append(
                 FunctionalGroup(
                     "carboxylic_acid",
                     GroupSeniority.CARBOXYLIC_ACID,
                     atom.id,
-                    frozenset({atom.id, oxygen_double[0], oxygen_single[0]}),
+                    frozenset({atom.id, oxygen_double[0], hydroxy_oxygen[0]}),
                 )
             )
+        elif oxygen_double and ester_oxygen:
+            groups.append(FunctionalGroup("ester", GroupSeniority.ESTER, atom.id, frozenset({atom.id, oxygen_double[0], ester_oxygen[0]})))
         elif oxygen_double and nitrogen_single:
             groups.append(FunctionalGroup("amide", GroupSeniority.HYDROCARBON, atom.id, frozenset({atom.id, oxygen_double[0], nitrogen_single[0]})))
         elif oxygen_double and len(carbon_single) == 1:
