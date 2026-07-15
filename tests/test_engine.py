@@ -87,3 +87,7 @@ def test_halogenated_alkoxy_prefix_with_chloro_parent():
 
 def test_fluoromethoxy_prefix():
     assert name_smiles("FCOC(C(F)(F)F)C(F)(F)F")["name"] == "1,1,1,3,3,3-hexafluoro-2-(fluoromethoxy)propane"
+
+
+def test_hydroxyimino_prefix_on_ketone():
+    assert name_smiles("CC(=O)C(C)=NO")["name"] == "3-(hydroxyimino)butan-2-one"

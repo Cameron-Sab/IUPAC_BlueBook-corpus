@@ -37,6 +37,7 @@ def perceive_functional_groups(molecule: Molecule) -> list[FunctionalGroup]:
         ester_oxygen = [n for n in oxygen_single if len(molecule.neighbors(n)) == 2]
         carbon_single = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "C" and order == 1]
         nitrogen_single = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "N" and order == 1]
+        nitrogen_double = [n for n, order in molecule.neighbors(atom.id) if molecule.atom(n).element == "N" and order == 2]
 
         if oxygen_double and hydroxy_oxygen:
             groups.append(
@@ -55,6 +56,15 @@ def perceive_functional_groups(molecule: Molecule) -> list[FunctionalGroup]:
             groups.append(FunctionalGroup("aldehyde", GroupSeniority.ALDEHYDE, atom.id, frozenset({atom.id, oxygen_double[0]})))
         elif oxygen_double and len(carbon_single) == 2:
             groups.append(FunctionalGroup("ketone", GroupSeniority.KETONE, atom.id, frozenset({atom.id, oxygen_double[0]})))
+        elif nitrogen_double:
+            nitrogen = nitrogen_double[0]
+            hydroxy = [
+                n
+                for n, order in molecule.neighbors(nitrogen)
+                if order == 1 and molecule.atom(n).element == "O" and len(molecule.neighbors(n)) == 1
+            ]
+            if hydroxy:
+                groups.append(FunctionalGroup("hydroxyimino", GroupSeniority.HYDROCARBON, atom.id, frozenset({atom.id, nitrogen, hydroxy[0]})))
 
     for atom in molecule.atoms:
         if atom.element == "O":

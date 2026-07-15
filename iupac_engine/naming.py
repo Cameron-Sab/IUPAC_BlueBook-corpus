@@ -181,6 +181,8 @@ def _substituents(
             substituents.append((locants[group.principal_atom], "amino"))
         elif group.kind == "amide":
             substituents.append((locants[group.principal_atom], "carbamoyl"))
+        elif group.kind == "hydroxyimino":
+            substituents.append((locants[group.principal_atom], "hydroxyimino"))
 
     for atom_id in chain:
         for neighbor, order in molecule.neighbors(atom_id):
@@ -314,7 +316,7 @@ def _render_prefixes(substituents: list[tuple[int, str]]) -> str:
 
 
 def _needs_substitutive_parentheses(name: str) -> bool:
-    return name.endswith("methoxy") and name != "methoxy"
+    return name == "hydroxyimino" or (name.endswith("methoxy") and name != "methoxy")
 
 
 def _render_parent(
