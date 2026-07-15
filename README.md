@@ -159,25 +159,3 @@ Run the bundled smoke/conformance harness:
 python scripts\example_test_engine.py
 python scripts\example_test_engine.py --markdown-out ..\iupac_prototype_test_audit.md
 ```
-
-## Blitz Benchmark Harness
-
-Run the built-in smoke/negative benchmark:
-
-```powershell
-python scripts\blitz_benchmark.py
-```
-
-Outputs are written to `benchmark_results/`:
-
-- `blitz_results.json`
-- `blitz_report.md`
-
-The harness can also ingest CSV/TSV files with a `smiles` column and one of
-`expected_name`, `name`, `iupac_name`, or `IUPAC Name`:
-
-```powershell
-python scripts\blitz_benchmark.py --input path\to\cases.tsv --limit 1000
-```
-
-Benchmark lanes are documented in `data/benchmark_sources.json`.
