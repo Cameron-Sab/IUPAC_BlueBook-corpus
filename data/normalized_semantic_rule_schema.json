@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Normalized semantic Blue Book rule records",
+  "type": "object",
+  "required": [
+    "source",
+    "source_version",
+    "conversion_status",
+    "records"
+  ],
+  "properties": {
+    "source": {
+      "type": "string"
+    },
+    "source_homepage": {
+      "type": "string"
+    },
+    "post_v3_corrections": {
+      "type": "string"
+    },
+    "source_version": {
+      "type": "string"
+    },
+    "conversion_status": {
+      "const": "normalized_semantic"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "normalized_id",
+          "record_index",
+          "rule_id",
+          "rule_instance",
+          "title",
+          "source_chapter",
+          "source_pdf_url",
+          "rule_type",
+          "implementation_status",
+          "logic",
+          "compare_by",
+          "exceptions",
+          "dependency_context",
+          "implementation_requirements",
+          "examples",
+          "tables_or_terms",
+          "source_quote"
+        ]
+      }
+    }
+  }
+}

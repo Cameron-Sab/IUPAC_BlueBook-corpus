@@ -43,10 +43,16 @@
         "Preferred IUPAC names are not necessarily the aim of a practicing chemist who wants to communicate with his colleagues in familiar, well understood terms, but it may be appropriate to those who cite chemical names in legislative documents, in international trade and commerce, or for preparing programs for index purposes, databases, and retrieval systems"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "In this Chapter, principles regarding name construction are presented."
+      "source_quote": "In this Chapter, principles regarding name construction are presented.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-41",
@@ -103,11 +109,23 @@
         "chalcogen seniority: O > S > Se > Te",
         "halogen seniority: F > Cl > Br > I"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "The order of seniority of classes is given in Table 4.1."
+      "source_quote": "The order of seniority of classes is given in Table 4.1.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-42",
@@ -142,11 +160,23 @@
       "tables_or_terms": [
         "Acid seniority list and subclasses 7a-7e from Table 4.1 / P-42."
       ],
-      "unresolved_semantics": [
-        "Original tabular/list structure should be normalized into machine table rows before executable use.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Acids of class 7 (see Table 4.1) in the order of classes of compounds are further classified into subclasses."
+      "source_quote": "Acids of class 7 (see Table 4.1) in the order of classes of compounds are further classified into subclasses.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "Original tabular/list structure should be normalized into machine table rows before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-42.1",
@@ -176,8 +206,8 @@
       "tables_or_terms": [
         "Acid seniority list and subclasses 7a-7e from Table 4.1 / P-42."
       ],
-      "unresolved_semantics": [],
-      "source_quote": "carboxylic acids–COOH -carboxylic acid –(C)O-OH -oic acid sulfonic acids–SO2-OH -sulfonic acid sulfinic acids–SO-OH -sulfinic acid selenonic acids–SeO2-OH -selenonic acid seleninic acids–SeO-OH-seleninic acid telluronic acids–TeO2-OH-telluronic acid tellurinic acids–TeO-OH..."
+      "source_quote": "carboxylic acids–COOH -carboxylic acid –(C)O-OH -oic acid sulfonic acids–SO2-OH -sulfonic acid sulfinic acids–SO-OH -sulfinic acid selenonic acids–SeO2-OH -selenonic acid seleninic acids–SeO-OH-seleninic acid telluronic acids–TeO2-OH-telluronic acid tellurinic acids–TeO-OH...",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-42.2",
@@ -207,8 +237,8 @@
       "tables_or_terms": [
         "Acid seniority list and subclasses 7a-7e from Table 4.1 / P-42."
       ],
-      "unresolved_semantics": [],
-      "source_quote": "polycarbonic acids dicarbonic acid carbonic acid cyanic acid"
+      "source_quote": "polycarbonic acids dicarbonic acid carbonic acid cyanic acid",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-42.3",
@@ -242,12 +272,30 @@
       "tables_or_terms": [
         "Acid seniority list and subclasses 7a-7e from Table 4.1 / P-42."
       ],
-      "unresolved_semantics": [
-        "Examples are present but could not be cleanly segmented by the draft converter.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "All these names are preselected names."
+      "source_quote": "All these names are preselected names.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Examples are present but could not be cleanly segmented by the draft converter."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-42.4",
@@ -284,12 +332,30 @@
       "tables_or_terms": [
         "Acid seniority list and subclasses 7a-7e from Table 4.1 / P-42."
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "All these names are preselected names."
+      "source_quote": "All these names are preselected names.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-42.5",
@@ -322,10 +388,16 @@
         "Acid seniority list and subclasses 7a-7e from Table 4.1 / P-42.",
         "halogen seniority: F > Cl > Br > I"
       ],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "All these names are preselected names."
+      "source_quote": "All these names are preselected names.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-43.0",
@@ -350,11 +422,23 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Original tabular/list structure should be normalized into machine table rows before executable use.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Suffixes are modified as indicated in Table 4.3 for acids and in Table 4.4 for all substituent suffixes."
+      "source_quote": "Suffixes are modified as indicated in Table 4.3 for acids and in Table 4.4 for all substituent suffixes.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "Original tabular/list structure should be normalized into machine table rows before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-43.1",
@@ -396,11 +480,23 @@
         "4 Complete list of suffixes and functional replacement analogues (when present) for IUPAC preferred names, in decreasing order of seniority 1"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Suffixes are modified as indicated in Table 4.3 for acids and in Table 4.4 for acids and other classes."
+      "source_quote": "Suffixes are modified as indicated in Table 4.3 for acids and in Table 4.4 for acids and other classes.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44",
@@ -437,11 +533,23 @@
         "For choice of the preferred IUPAC name based on a senior parent structure, see P-45"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "A parent structure is defined (P-15.1.1 and P-15.1.2) as a parent hydride, for example methane, a functionalized parent hydride, for example, cyclohexanol, or a functional parent compound, for example, acetic acid."
+      "source_quote": "A parent structure is defined (P-15.1.1 and P-15.1.2) as a parent hydride, for example methane, a functionalized parent hydride, for example, cyclohexanol, or a functional parent compound, for example, acetic acid.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.0",
@@ -484,11 +592,23 @@
         "The criteria necessary to select a preferred IUPAC name are described in P-45"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "The selection of a preferred parent structure is based on the seniority of classes (see P-41), which gives priority first to characteristic groups expressed as suffixes and then to parent hydrides when different classes are present."
+      "source_quote": "The selection of a preferred parent structure is based on the seniority of classes (see P-41), which gives priority first to characteristic groups expressed as suffixes and then to parent hydrides when different classes are present.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.1",
@@ -581,11 +701,23 @@
       "tables_or_terms": [
         "chalcogen seniority: O > S > Se > Te"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "When there is a choice, the senior parent structure is chosen by applying the following criteria, in order, until a decision is reached."
+      "source_quote": "When there is a choice, the senior parent structure is chosen by applying the following criteria, in order, until a decision is reached.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.1.2.2",
@@ -615,10 +747,16 @@
         "Examples: (1) heptylbenzene (PIN) (ring is senior to chain) (2) 1-phenylheptane (chain has greater number of skeletal atoms) (1) ethenylcyclohexane (PIN) (ring is senior to chain) (2) cyclohexylethene (emphasizes unsaturation) (1) 1,1′-methylenedibenzene (PIN) (ring is senior to chain) (2) diphenylmethane (treats phenyl groups alike as substituents) (1) 1,1′-(ethene-1,2-diyl)dicyclohexane (PIN) (ring is senior to chain) (2) 1,2-dicyclohexylethene (emphasizes unsaturation) (1) 2-hydrazinylpyridine (PIN) (ring is senior to chain) (2) (pyridin-2-yl)hydrazine (pyridin-2-yl)diazane (1) 2-hydrazinyl-4,5-dihydro-1H-imidazole (PIN) 2-diazanyl-4,5-dihydro-1H-imidazole (ring is senior to chain) (2) (4,5-dihydro-1H-imidazol-2-yl)hydrazine"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Two methods are recognized to name systems composed of rings and chains (exclusive of linear phanes)."
+      "source_quote": "Two methods are recognized to name systems composed of rings and chains (exclusive of linear phanes).",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.1.4",
@@ -652,12 +790,30 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires stereochemical descriptor assignment before comparison can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "P-44.1.5 Criteria applicable to rings, ring systems, or acyclic chains, such as unsaturation, the presence of skeletal atoms with different bonding numbers, isotopically modified compounds, and stereochemical configurations are given in P-44.4."
+      "source_quote": "P-44.1.5 Criteria applicable to rings, ring systems, or acyclic chains, such as unsaturation, the presence of skeletal atoms with different bonding numbers, isotopically modified compounds, and stereochemical configurations are given in P-44.4.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2",
@@ -694,12 +850,30 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "P-44.2.1 If application of P-44.1 does not effect a choice, general criteria for determining ring seniority given below are applied successively until there are no alternatives remaining."
+      "source_quote": "P-44.2.1 If application of P-44.1 does not effect a choice, general criteria for determining ring seniority given below are applied successively until there are no alternatives remaining.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.1.1",
@@ -741,12 +915,30 @@
         "4-(6-{2-[(3-methylphenyl)methylidene]hydrazin-1-yl}-2-[2-(pyridin-2-yl)ethoxy]pyrimidin-4-yl)morpholine (PIN) (morpholine > pyrimidine > pyridine > benzene) Note: In this compound, ‘morpholine’ is chosen as parent hydride, as a decision in the selection of the senior ring cannot be made until criterion (g ) in P-44"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "In order to apply P-44.2 after P-44.1 has failed to reach a conclusion, there must not be a characteristic group present in the compound, or the same number of a characteristic group must be present in all cyclic structures to be compared."
+      "source_quote": "In order to apply P-44.2 after P-44.1 has failed to reach a conclusion, there must not be a characteristic group present in the compound, or the same number of a characteristic group must be present in all cyclic structures to be compared.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.1.2",
@@ -780,8 +972,8 @@
         "> quinoline (PIN)anthracene (PIN)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "> quinoline (PIN)anthracene (PIN)"
+      "source_quote": "> quinoline (PIN)anthracene (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-44.2.1.3",
@@ -822,11 +1014,23 @@
         "chalcogen seniority: O > S > Se > Te",
         "halogen seniority: F > Cl > Br > I"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Examples (the symbol > means ‘is senior to’): > 1H-pyrrole (PIN)2H-1-benzopyran (PIN) 2H-chromene > 1H-pyrrole (PIN)2H-siline (PIN) P-44.2.1.4 The senior ring or ring system has at least one heteroatom (in the absence of nitrogen) that occurs earlier in the following..."
+      "source_quote": "Examples (the symbol > means ‘is senior to’): > 1H-pyrrole (PIN)2H-1-benzopyran (PIN) 2H-chromene > 1H-pyrrole (PIN)2H-siline (PIN) P-44.2.1.4 The senior ring or ring system has at least one heteroatom (in the absence of nitrogen) that occurs earlier in the following...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.1.5",
@@ -860,10 +1064,16 @@
         "Example (the symbol > means ‘is senior to’): > isoquinoline (PIN)1H-pyrrole (PIN) [2 rings > 1 ring]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > isoquinoline (PIN)1H-pyrrole (PIN) [2 rings > 1 ring]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > isoquinoline (PIN)1H-pyrrole (PIN) [2 rings > 1 ring]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.1.6",
@@ -900,11 +1110,23 @@
         "> biphenylene (PIN)1,4-methanonaphthalene (PIN) [12 skeletal atoms > 11 skeletal atoms] Note: Because of the hierarchical nature of these criteria, this criterion regarding the number of skeletal atoms supersedes P-44"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Examples (the symbol > means ‘is senior to’): > quinoline (PIN)1H-indole (PIN) [10 skeletal atoms > 9 skeletal atoms] > bicyclo[6.2.1]undecane (PIN)naphthalene (PIN) [11 skeletal atoms > 10 skeletal atoms] Note: Because of the hierarchical nature of these criteria, this..."
+      "source_quote": "Examples (the symbol > means ‘is senior to’): > quinoline (PIN)1H-indole (PIN) [10 skeletal atoms > 9 skeletal atoms] > bicyclo[6.2.1]undecane (PIN)naphthalene (PIN) [11 skeletal atoms > 10 skeletal atoms] Note: Because of the hierarchical nature of these criteria, this...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.1.7",
@@ -951,11 +1173,23 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Examples (the symbol > means ‘is senior to’): (1)> 2,5,7-trioxabicyclo[4.1.1]octane (PIN)2-oxabicyclo[4.1.1]octane (PIN) [3 heteroatoms > 1 heteroatom] (2)> cinnoline (PIN)cyclopenta[c]azepine (PIN) [2 heteroatoms > 1 heteroatom] (3)>..."
+      "source_quote": "Examples (the symbol > means ‘is senior to’): (1)> 2,5,7-trioxabicyclo[4.1.1]octane (PIN)2-oxabicyclo[4.1.1]octane (PIN) [3 heteroatoms > 1 heteroatom] (2)> cinnoline (PIN)cyclopenta[c]azepine (PIN) [2 heteroatoms > 1 heteroatom] (3)>...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.1",
@@ -986,10 +1220,16 @@
       ],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
-      ],
-      "source_quote": "If P-44.2.1 does not provide a decision, further criteria applicable to monocyclic rings are found in P-44.4."
+      "source_quote": "If P-44.2.1 does not provide a decision, further criteria applicable to monocyclic rings are found in P-44.4.",
+      "implementation_requirements": [
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2",
@@ -1033,12 +1273,30 @@
         "2]decane (PIN) [fused ring system (c) > nonfused bridged ring system (e)] (4)> benzo[8]annulene (PIN)1,1′-biphenyl (PIN) [fused ring system (c) > ring assembly (g)]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "The seniority order between parent hydrides having the same number of identical heteroatoms, the same number of rings, and the same number of skeletal atoms is a change from previous practice."
+      "source_quote": "The seniority order between parent hydrides having the same number of identical heteroatoms, the same number of rings, and the same number of skeletal atoms is a change from previous practice.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.1",
@@ -1073,8 +1331,8 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "(a) has the greater number of spiro fusions; (b) consists of saturated monocyclic rings; (c) consists of only discrete components."
+      "source_quote": "(a) has the greater number of spiro fusions; (b) consists of saturated monocyclic rings; (c) consists of only discrete components.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-44.2.2.2.1.1",
@@ -1109,10 +1367,16 @@
         "25]tetradecane (PIN)2′H-spiro[cyclopentane-1,1′-isoquinoline] (PIN) [2 spiro fusions > 1 spiro fusion]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 6-azadispiro[4.2.48.25]tetradecane (PIN)2′H-spiro[cyclopentane-1,1′-isoquinoline] (PIN) [2 spiro fusions > 1 spiro fusion]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 6-azadispiro[4.2.48.25]tetradecane (PIN)2′H-spiro[cyclopentane-1,1′-isoquinoline] (PIN) [2 spiro fusions > 1 spiro fusion]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.1.2",
@@ -1148,11 +1412,23 @@
         "24]dodecane (PIN) [saturated monocyclic rings each with 2 spiro fusions"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 8,10-diazadispiro[3.1.56.14]dodecane (PIN)5,11-diazadispiro[3.2.37.24]dodecane (PIN) [saturated monocyclic rings each with 2 spiro fusions; the locant set for spiro fusions ‘4,6’ is lower that ‘4,7’]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 8,10-diazadispiro[3.1.56.14]dodecane (PIN)5,11-diazadispiro[3.2.37.24]dodecane (PIN) [saturated monocyclic rings each with 2 spiro fusions; the locant set for spiro fusions ‘4,6’ is lower that ‘4,7’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.1.3",
@@ -1190,11 +1466,23 @@
         "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 1′H-spiro[cyclopentane-1,2′-quinoline] (PIN) is senior to (II) 2′H-spiro[cyclopentane-1,3′-quinoline] (PIN) [spiro fusion locant set 1,2′ in (I) is lower than 1,3′ in (II)]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "(a) has the senior component determined by criteria above and below for the appropriate type of ring or ring system when the components are compared in their order of seniority; Example (the symbol > means ‘is senior to’): > 2′H-spiro[cyclopentane-1,1′-isoquinoline]..."
+      "source_quote": "(a) has the senior component determined by criteria above and below for the appropriate type of ring or ring system when the components are compared in their order of seniority; Example (the symbol > means ‘is senior to’): > 2′H-spiro[cyclopentane-1,1′-isoquinoline]...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.2",
@@ -1236,12 +1524,30 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "The senior cyclic phane system: (a) is the one occurring earlier in the following list of basic phane skeletal ring systems: spiro, von Baeyer, monocyclic; (b) has the senior amplificant, as defined by P-44.2.1.2 through P-44.2.1.8; (c) has the lower superatom locant(s) for..."
+      "source_quote": "The senior cyclic phane system: (a) is the one occurring earlier in the following list of basic phane skeletal ring systems: spiro, von Baeyer, monocyclic; (b) has the senior amplificant, as defined by P-44.2.1.2 through P-44.2.1.8; (c) has the lower superatom locant(s) for...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.2.1",
@@ -1279,10 +1585,16 @@
       "tables_or_terms": [
         "cyclic phane skeletal ring system order: spiro > nonfused bridged (von Baeyer) > monocyclic"
       ],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Examples (in order of decreasing seniority according to the criteria (a) in P-44.2.2.2.2): 4,12(1,3)-dibenzenaspiro[7.7]pentadecaphane (PIN) (a spiro phane skeletal system) is senior to 5,12(1,3)-dibenzenabicyclo[7.5.1]pentadecaphane (PIN) (a von Baeyer phane skeletal system)..."
+      "source_quote": "Examples (in order of decreasing seniority according to the criteria (a) in P-44.2.2.2.2): 4,12(1,3)-dibenzenaspiro[7.7]pentadecaphane (PIN) (a spiro phane skeletal system) is senior to 5,12(1,3)-dibenzenabicyclo[7.5.1]pentadecaphane (PIN) (a von Baeyer phane skeletal system)...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.2.2",
@@ -1321,12 +1633,30 @@
         "Example (the symbol > means ‘is senior to’): > (I) (II) 1,4(1,3)-dibenzenacyclononaphane (PIN)1,5(1,3)-dibenzenacyclononaphane (PIN) [superatom locant set ‘1,4’ in (I) is lower than ‘1,5’ in (II)]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I) (II) (I) 1(2,6)-pyrazina-6(1,3)-benzenacyclodecaphane (PIN) is senior to (II) 1,6(2,4)-dipyridinacyclodecaphane (PIN) [pyrazine > pyridine] P-44.2.2.2.2.3 The senior cyclic phane system has the lower superatom locant(s) for..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I) (II) (I) 1(2,6)-pyrazina-6(1,3)-benzenacyclodecaphane (PIN) is senior to (II) 1,6(2,4)-dipyridinacyclodecaphane (PIN) [pyrazine > pyridine] P-44.2.2.2.2.3 The senior cyclic phane system has the lower superatom locant(s) for...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.2.4",
@@ -1361,10 +1691,16 @@
         "Example (the symbol > means ‘is senior to’): > (I) (II) (I) 3(3,5)-pyridina-1(1,3),6(1,4)-dibenzenacyclotridecaphane (PIN) is senior to (II) 6(2,5)-pyridina-1,3(1,3)-dibenzenacyclotridecaphane (PIN) [superatom locant ‘3’ for the senior amplificant pyridine is lower than ‘6’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I) (II) (I) 3(3,5)-pyridina-1(1,3),6(1,4)-dibenzenacyclotridecaphane (PIN) is senior to (II) 6(2,5)-pyridina-1,3(1,3)-dibenzenacyclotridecaphane (PIN) [superatom locant ‘3’ for the senior amplificant pyridine is lower than ‘6’]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I) (II) (I) 3(3,5)-pyridina-1(1,3),6(1,4)-dibenzenacyclotridecaphane (PIN) is senior to (II) 6(2,5)-pyridina-1,3(1,3)-dibenzenacyclotridecaphane (PIN) [superatom locant ‘3’ for the senior amplificant pyridine is lower than ‘6’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.2.5",
@@ -1399,11 +1735,23 @@
         "Example (the symbol > means ‘is senior to’): > (I) (II) 1,6(1,3)-dibenzenacyclodecaphane (PIN)1(1,3),6(1,4)-dibenzenacyclodecaphane (PIN) [the attachment locant set ‘(1,3)(1,3)’ is lower than ‘(1,3)(1,4)’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I) (II) 1,6(1,3)-dibenzenacyclodecaphane (PIN)1(1,3),6(1,4)-dibenzenacyclodecaphane (PIN) [the attachment locant set ‘(1,3)(1,3)’ is lower than ‘(1,3)(1,4)’]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I) (II) 1,6(1,3)-dibenzenacyclodecaphane (PIN)1(1,3),6(1,4)-dibenzenacyclodecaphane (PIN) [the attachment locant set ‘(1,3)(1,3)’ is lower than ‘(1,3)(1,4)’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.2.6",
@@ -1438,10 +1786,16 @@
         "Example (the symbol > means ‘is senior to’): > (I) (II) (I) 1,3,5,7(2,4)-tetrapyridinacyclooctaphane (PIN) is senior to (II) 1,5(2,4),3,7(4,2)-tetrapyridinacyclooctaphane (PIN) [the attachment locant set ‘(2,4)(2,4)(2,4)(2,4)’ is lower than ‘(2,4)(2,4)(4,2)(4,2)’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I) (II) (I) 1,3,5,7(2,4)-tetrapyridinacyclooctaphane (PIN) is senior to (II) 1,5(2,4),3,7(4,2)-tetrapyridinacyclooctaphane (PIN) [the attachment locant set ‘(2,4)(2,4)(2,4)(2,4)’ is lower than ‘(2,4)(2,4)(4,2)(4,2)’]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I) (II) (I) 1,3,5,7(2,4)-tetrapyridinacyclooctaphane (PIN) is senior to (II) 1,5(2,4),3,7(4,2)-tetrapyridinacyclooctaphane (PIN) [the attachment locant set ‘(2,4)(2,4)(2,4)(2,4)’ is lower than ‘(2,4)(2,4)(4,2)(4,2)’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.2.7",
@@ -1483,12 +1837,30 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I) (II) (I) 3-oxa-2-thia-1,7(1,3)-dibenzenacyclododecaphane (PIN) is senior to (II) 5-oxa-2-thia-1,7(1,3)-dibenzenacyclododecaphane (PIN) [the heteroatom locant set ‘2,3’ is lower than ‘2,5’] P-44.2.2.2.2.8 The senior cyclic..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I) (II) (I) 3-oxa-2-thia-1,7(1,3)-dibenzenacyclododecaphane (PIN) is senior to (II) 5-oxa-2-thia-1,7(1,3)-dibenzenacyclododecaphane (PIN) [the heteroatom locant set ‘2,3’ is lower than ‘2,5’] P-44.2.2.2.2.8 The senior cyclic...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.3",
@@ -1524,12 +1896,30 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "(a) has the larger individual ring component at first point of difference when their ring sizes are compared in order of decreasing size; (b) has the greater number of rings in a horizontal row; (c) has the lower letter(s) in the fusion descriptor when compared as a set;..."
+      "source_quote": "(a) has the larger individual ring component at first point of difference when their ring sizes are compared in order of decreasing size; (b) has the greater number of rings in a horizontal row; (c) has the lower letter(s) in the fusion descriptor when compared as a set;...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.3.1",
@@ -1564,10 +1954,16 @@
         "Example (the symbol > means ‘is senior to’): > azulene (PIN)naphthalene (PIN) [the ring size ‘7’ in the ring set ‘7,5’ is larger than ‘6’ in the ring set ‘6,6’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > azulene (PIN)naphthalene (PIN) [the ring size ‘7’ in the ring set ‘7,5’ is larger than ‘6’ in the ring set ‘6,6’]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > azulene (PIN)naphthalene (PIN) [the ring size ‘7’ in the ring set ‘7,5’ is larger than ‘6’ in the ring set ‘6,6’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.3.2",
@@ -1606,12 +2002,30 @@
         "Example (the symbol > means ‘is senior to’): > naphtho[1,2-f]quinoline (PIN)naphtho[2,1-f]quinoline (PIN) [the locant set ‘1,2’ in the fusion descriptor is lower than ‘2,1’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> anthracene (PIN)phenanthrene (PIN) [three rings in the horizontal row is greater than two] (2)> naphtho[1,2-g]quinoline (PIN)naphtho[2,1-f]quinoline (PIN) [three rings in the horizontal row is greater than two] P-44.2.2.2.3.3..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> anthracene (PIN)phenanthrene (PIN) [three rings in the horizontal row is greater than two] (2)> naphtho[1,2-g]quinoline (PIN)naphtho[2,1-f]quinoline (PIN) [three rings in the horizontal row is greater than two] P-44.2.2.2.3.3...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.3.5",
@@ -1658,12 +2072,30 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > naphtho[2,3-f]quinoline (PIN)naphtho[2,3-f]isoquinoline (PIN) [the senior ring system quinoline is senior to isoquinoline (see P-25.2.1, Table 2.8)] P-44.2.2.2.4 Seniority criteria for bridged fused ring systems given below are..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): > naphtho[2,3-f]quinoline (PIN)naphtho[2,3-f]isoquinoline (PIN) [the senior ring system quinoline is senior to isoquinoline (see P-25.2.1, Table 2.8)] P-44.2.2.2.4 Seniority criteria for bridged fused ring systems given below are...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.1",
@@ -1698,10 +2130,16 @@
         "Example (the symbol > means ‘is senior to’): > 4,7-methanocyclopenta[a]indene (PIN)2H-1,4:5,8-dimethanobenzo[7]annulene (PIN) [three rings in the ring system before bridging is greater than two]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 4,7-methanocyclopenta[a]indene (PIN)2H-1,4:5,8-dimethanobenzo[7]annulene (PIN) [three rings in the ring system before bridging is greater than two]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 4,7-methanocyclopenta[a]indene (PIN)2H-1,4:5,8-dimethanobenzo[7]annulene (PIN) [three rings in the ring system before bridging is greater than two]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.2",
@@ -1736,10 +2174,16 @@
         "Example (the symbol > means ‘is senior to’): > 1H-3,10a-methanophenanthrene (PIN)1,4a-ethanofluorene (PIN) [fourteen ring atoms in the ring system before bridging is greater than thirteen]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 1H-3,10a-methanophenanthrene (PIN)1,4a-ethanofluorene (PIN) [fourteen ring atoms in the ring system before bridging is greater than thirteen]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 1H-3,10a-methanophenanthrene (PIN)1,4a-ethanofluorene (PIN) [fourteen ring atoms in the ring system before bridging is greater than thirteen]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.3",
@@ -1774,10 +2218,16 @@
         "Example (the symbol > means ‘is senior to’): > 1,4:5,8-diepoxyanthracene (PIN)1,4:6,9-dimethanooxanthrene (PIN) [zero heteroatoms in the fused ring system before bridging is fewer than two]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 1,4:5,8-diepoxyanthracene (PIN)1,4:6,9-dimethanooxanthrene (PIN) [zero heteroatoms in the fused ring system before bridging is fewer than two]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 1,4:5,8-diepoxyanthracene (PIN)1,4:6,9-dimethanooxanthrene (PIN) [zero heteroatoms in the fused ring system before bridging is fewer than two]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.4",
@@ -1814,10 +2264,16 @@
         "Example (the symbol > means ‘is senior to’): > 4,7-methanoazulene (PIN)1,4-methanonaphthalene (PIN) [azulene is senior to naphthalene, see P-44"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 4,7-methanoazulene (PIN)1,4-methanonaphthalene (PIN) [azulene is senior to naphthalene, see P-44.2.1]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 4,7-methanoazulene (PIN)1,4-methanonaphthalene (PIN) [azulene is senior to naphthalene, see P-44.2.1]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.5",
@@ -1852,11 +2308,23 @@
         "Example (the symbol > means ‘is senior to’): > 1,3-methanonaphthalene (PIN)1,4-methanonaphthalene (PIN) [the locant set for bridge attachments ‘1,3’ is lower than ‘1,4’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 1,3-methanonaphthalene (PIN)1,4-methanonaphthalene (PIN) [the locant set for bridge attachments ‘1,3’ is lower than ‘1,4’]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 1,3-methanonaphthalene (PIN)1,4-methanonaphthalene (PIN) [the locant set for bridge attachments ‘1,3’ is lower than ‘1,4’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.6",
@@ -1898,12 +2366,30 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 5,1-(epoxyethano)octalene (PIN)1,5-(methanooxymethano)octalene (PIN) [the locant ‘13’ for the bridge oxygen atom is lower than ‘14’] P-44.2.2.2.4.7 The senior bridged fused ring system has the lower locants for heteroatoms in..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 5,1-(epoxyethano)octalene (PIN)1,5-(methanooxymethano)octalene (PIN) [the locant ‘13’ for the bridge oxygen atom is lower than ‘14’] P-44.2.2.2.4.7 The senior bridged fused ring system has the lower locants for heteroatoms in...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.8",
@@ -1938,10 +2424,16 @@
         "Example (the symbol > means ‘is senior to’): > 1,4-epoxy-5,8-ethanonaphthalene (PIN)1,4-(epoxymethano)-5,8-methanonaphthalene (PIN) [zero composite bridges is fewer than one]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 1,4-epoxy-5,8-ethanonaphthalene (PIN)1,4-(epoxymethano)-5,8-methanonaphthalene (PIN) [zero composite bridges is fewer than one]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 1,4-epoxy-5,8-ethanonaphthalene (PIN)1,4-(epoxymethano)-5,8-methanonaphthalene (PIN) [zero composite bridges is fewer than one]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.9",
@@ -1976,10 +2468,16 @@
         "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 1,4-methano-10,13-pentanonaphtho[2,3-c][1]benzazocine (PIN) is senior to (II) 13,18-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) [zero dependent bridges is fewer than one]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 1,4-methano-10,13-pentanonaphtho[2,3-c][1]benzazocine (PIN) is senior to (II) 13,18-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) [zero dependent bridges is fewer than one]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 1,4-methano-10,13-pentanonaphtho[2,3-c][1]benzazocine (PIN) is senior to (II) 13,18-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) [zero dependent bridges is fewer than one]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.10",
@@ -2014,10 +2512,16 @@
         "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 13,18-methano-6,10-heptanonaphtho[2,3-c][1]benzazocine (PIN) is senior to (II) 13,18-ethano-6,10-hexanonaphtho[2,3-c][1]benzazocine (PIN) [one atom in the dependent bridge in (I) (atom 22) is fewer the two atoms in (II) (atoms 21 and 22)]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 13,18-methano-6,10-heptanonaphtho[2,3-c][1]benzazocine (PIN) is senior to (II) 13,18-ethano-6,10-hexanonaphtho[2,3-c][1]benzazocine (PIN) [one atom in the dependent bridge in (I) (atom 22) is fewer the two atoms in..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 13,18-methano-6,10-heptanonaphtho[2,3-c][1]benzazocine (PIN) is senior to (II) 13,18-ethano-6,10-hexanonaphtho[2,3-c][1]benzazocine (PIN) [one atom in the dependent bridge in (I) (atom 22) is fewer the two atoms in...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.11",
@@ -2052,10 +2556,16 @@
         "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 1-oxa-2,7:6,8-dimethanocycloocta[1,2,3-cd]pentalene (PIN) is senior to (II) 1-oxa-5,9,2-(ethane[1,1,2]triyl)cycloocta[1,2,3-cd]pentalene (PIN) [‘2’ divalent bridges in (I) is senior to the ‘1’ trivalent bridge in (II)]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 1-oxa-2,7:6,8-dimethanocycloocta[1,2,3-cd]pentalene (PIN) is senior to (II) 1-oxa-5,9,2-(ethane[1,1,2]triyl)cycloocta[1,2,3-cd]pentalene (PIN) [‘2’ divalent bridges in (I) is senior to the ‘1’ trivalent bridge in (II)]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 1-oxa-2,7:6,8-dimethanocycloocta[1,2,3-cd]pentalene (PIN) is senior to (II) 1-oxa-5,9,2-(ethane[1,1,2]triyl)cycloocta[1,2,3-cd]pentalene (PIN) [‘2’ divalent bridges in (I) is senior to the ‘1’ trivalent bridge in (II)]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.12",
@@ -2090,10 +2600,16 @@
         "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 13,18-methano-6,9-pentanonaphtho[2,3-c][1]benzazocine (PIN) is senior to (II) 13,18-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) [the locant set ‘6,9’ for the independent bridge in (I) is lower than the locant set ‘6,10’ in (II)]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 13,18-methano-6,9-pentanonaphtho[2,3-c][1]benzazocine (PIN) is senior to (II) 13,18-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) [the locant set ‘6,9’ for the independent bridge in (I) is lower than the..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) (I) 13,18-methano-6,9-pentanonaphtho[2,3-c][1]benzazocine (PIN) is senior to (II) 13,18-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) [the locant set ‘6,9’ for the independent bridge in (I) is lower than the...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.13",
@@ -2128,10 +2644,16 @@
         "Example (the symbol > means ‘is senior to’): > (I)(II) 13,17-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) (I) is senior to 13,18-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) (II) [the locant set ‘13,17’ for the dependent bridge in (I) is lower than the locant set ‘13,18’ in (II)]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) 13,17-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) (I) is senior to 13,18-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) (II) [the locant set ‘13,17’ for the dependent bridge in (I) is lower than the..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) 13,17-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) (I) is senior to 13,18-methano-6,10-pentanonaphtho[2,3-c][1]benzazocine (PIN) (II) [the locant set ‘13,17’ for the dependent bridge in (I) is lower than the...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.4.14",
@@ -2177,11 +2699,23 @@
         "18,12]heptadecane (PIN) [the bridge attachment locant set ‘2,5,8,12’ is lower than ‘2,6,8,12’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) 1,2,3,4,4a,9,9a,10-octahydro-9,10-ethanoanthracene (PIN) (I) is senior to 1,2,3,4,4a,8a,9,9a,10,10a-decahydro-9,10-ethenoanthracene (PIN) (II) [three noncumulative double bonds in (I) is greater than the two noncumulative..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (I)(II) 1,2,3,4,4a,9,9a,10-octahydro-9,10-ethanoanthracene (PIN) (I) is senior to 1,2,3,4,4a,8a,9,9a,10,10a-decahydro-9,10-ethenoanthracene (PIN) (II) [three noncumulative double bonds in (I) is greater than the two noncumulative...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.6",
@@ -2218,12 +2752,30 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Although linear phane systems can be viewed as heteroacyclic chains, in which the amplificants are heteroatoms and the connecting atoms or chains are carbon atoms, seniority for linear (acyclic) phanes follows closely the criteria used for cyclic phane systems (see P-44.2.2.2.2)."
+      "source_quote": "Although linear phane systems can be viewed as heteroacyclic chains, in which the amplificants are heteroatoms and the connecting atoms or chains are carbon atoms, seniority for linear (acyclic) phanes follows closely the criteria used for cyclic phane systems (see P-44.2.2.2.2).",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.6.1",
@@ -2260,10 +2812,16 @@
         "Examples: (1) 1(4)-pyridina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to 1(4)-silina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) [the amplificant ‘pyridina’ is senior to the amplificant ‘silina’] (2) 1(2)-furana-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to 1(2)-thiophena-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) [the amplificant ‘furana’ is senior to the amplificant ‘thiophena’] (3) 1(2)-quinolina-7(4)-pyridina-3,5(1,4)-dibenzenaheptaphane (PIN) is senior to 1,7(4)-dipyridina-3,5(1,4)-dibenzenaheptaphane (PIN) [the amplificant ‘quinolina’ is senior to the amplificant ‘pyridina’] (4) 11H-1(2)-azepina-7(4)-pyridina-3,5(1,4)-dibenzenaheptaphane (PIN) is senior to 1(2),7(4)-dipyridina-3,5(1,4)-dibenzenaheptaphane (PIN) [the amplificant ‘azepina’ is senior to the amplificant ‘pyridina’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Examples: (1) 1(4)-pyridina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to 1(4)-silina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) [the amplificant ‘pyridina’ is senior to the amplificant ‘silina’] (2) 1(2)-furana-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to..."
+      "source_quote": "Examples: (1) 1(4)-pyridina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to 1(4)-silina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) [the amplificant ‘pyridina’ is senior to the amplificant ‘silina’] (2) 1(2)-furana-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.6.2",
@@ -2300,10 +2858,16 @@
         "Examples: (1) 1,7(4)-dipyridina-3,5(1,4)-dibenzenaheptaphane (PIN) is senior to 1(4)-pyridina-7(2)-silina-3,5(1,4)-dibenzenaheptaphane (PIN) [the amplificants ‘pyridina/pyridina’ are senior to the amplificants ‘pyridina/silina’] (2) 1(4)-cinnolina-7(4)-pyridina-3,5(1,4)-dibenzenaheptaphane (PIN) is senior to 1(3)-quinolina-7(4)-pyridina-3,5(1,4)-dibenzenaheptaphane (PIN) [the amplificants ‘cinnolina/pyridina’ are senior to the amplificants ‘quinolina/pyridina’] (3) 1(4)-pyridina-7(2)-furana-3,5(1,4)-dibenzenaheptaphane (PIN) is senior to 1(4)-pyridina-7(2)-thiophena-3,5(1,4)-dibenzenaheptaphane (PIN) [the amplificants ‘pyridina/furana’ are senior to ‘pyridina/thiophena’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Examples: (1) 1,7(4)-dipyridina-3,5(1,4)-dibenzenaheptaphane (PIN) is senior to 1(4)-pyridina-7(2)-silina-3,5(1,4)-dibenzenaheptaphane (PIN) [the amplificants ‘pyridina/pyridina’ are senior to the amplificants ‘pyridina/silina’] (2)..."
+      "source_quote": "Examples: (1) 1,7(4)-dipyridina-3,5(1,4)-dibenzenaheptaphane (PIN) is senior to 1(4)-pyridina-7(2)-silina-3,5(1,4)-dibenzenaheptaphane (PIN) [the amplificants ‘pyridina/pyridina’ are senior to the amplificants ‘pyridina/silina’] (2)...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.6.3",
@@ -2338,10 +2902,16 @@
         "Example: 1,10(1),3,5,7(1,4)-pentabenzenadecaphane (PIN) is senior to 1,9(1),3,5,7(1,4)-pentabenzenanonaphane (PIN) [the decaphane has more nodes than the nonaphane]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example: 1,10(1),3,5,7(1,4)-pentabenzenadecaphane (PIN) is senior to 1,9(1),3,5,7(1,4)-pentabenzenanonaphane (PIN) [the decaphane has more nodes than the nonaphane]"
+      "source_quote": "Example: 1,10(1),3,5,7(1,4)-pentabenzenadecaphane (PIN) is senior to 1,9(1),3,5,7(1,4)-pentabenzenanonaphane (PIN) [the decaphane has more nodes than the nonaphane]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.6.4",
@@ -2376,11 +2946,23 @@
         "Example: 1(4),7(2,5)-dipyridina-3,5(1,4),10(1)-tribenzenadecaphane (PIN) is senior to 1(4),8(2,5)-dipyridina-3,5(1,4),10(1)-tribenzenadecaphane (PIN) [the locant set ‘1,7’ for the pyridina amplificants is lower than the set ‘1,8’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example: 1(4),7(2,5)-dipyridina-3,5(1,4),10(1)-tribenzenadecaphane (PIN) is senior to 1(4),8(2,5)-dipyridina-3,5(1,4),10(1)-tribenzenadecaphane (PIN) [the locant set ‘1,7’ for the pyridina amplificants is lower than the set ‘1,8’]"
+      "source_quote": "Example: 1(4),7(2,5)-dipyridina-3,5(1,4),10(1)-tribenzenadecaphane (PIN) is senior to 1(4),8(2,5)-dipyridina-3,5(1,4),10(1)-tribenzenadecaphane (PIN) [the locant set ‘1,7’ for the pyridina amplificants is lower than the set ‘1,8’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.6.5",
@@ -2415,11 +2997,23 @@
         "Example: 1,11(1),3,5,7(1,4)-pentabenzenaundecaphane (PIN) is senior to 1,11(1),3,5,9(1,4)-pentabenzenaundecaphane (PIN) [the locant set ‘1,3,5,7,11’ for the amplificants is lower than the set ‘1,3,5,9,11’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example: 1,11(1),3,5,7(1,4)-pentabenzenaundecaphane (PIN) is senior to 1,11(1),3,5,9(1,4)-pentabenzenaundecaphane (PIN) [the locant set ‘1,3,5,7,11’ for the amplificants is lower than the set ‘1,3,5,9,11’]"
+      "source_quote": "Example: 1,11(1),3,5,7(1,4)-pentabenzenaundecaphane (PIN) is senior to 1,11(1),3,5,9(1,4)-pentabenzenaundecaphane (PIN) [the locant set ‘1,3,5,7,11’ for the amplificants is lower than the set ‘1,3,5,9,11’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.6.6",
@@ -2454,11 +3048,23 @@
         "Example: 1(4)-pyridina-7(2,5)-furana-9(2,5)-thiophena-3,5(1,4),11(1)-tribenzenaundecaphane (PIN) is senior to 1(4)-pyridina-9(2,5)-furana-7(2,5)-thiophena-3,5(1,4),11(1)-tribenzenaundecaphane (PIN) [the locant set for the amplificants in order of occurrence in the name ‘1,7,9,3,5,11’ is lower than the locant set ‘1,9,7,3,5,11’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example: 1(4)-pyridina-7(2,5)-furana-9(2,5)-thiophena-3,5(1,4),11(1)-tribenzenaundecaphane (PIN) is senior to 1(4)-pyridina-9(2,5)-furana-7(2,5)-thiophena-3,5(1,4),11(1)-tribenzenaundecaphane (PIN) [the locant set for the amplificants in order of occurrence in the name..."
+      "source_quote": "Example: 1(4)-pyridina-7(2,5)-furana-9(2,5)-thiophena-3,5(1,4),11(1)-tribenzenaundecaphane (PIN) is senior to 1(4)-pyridina-9(2,5)-furana-7(2,5)-thiophena-3,5(1,4),11(1)-tribenzenaundecaphane (PIN) [the locant set for the amplificants in order of occurrence in the name...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.6.7",
@@ -2493,10 +3099,16 @@
         "Example: 1,7(1),3,5(1,3)-tetrabenzenaheptaphane (PIN) is senior to 1,7(1),3(1,3),5(1,4)-tetrabenzenaheptaphane (PIN) [the locant set ‘1,1,1,1,3,3’ for amplificant attachment locants in increasing numerical order is lower than ‘1,1,1,1,3,4’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example: 1,7(1),3,5(1,3)-tetrabenzenaheptaphane (PIN) is senior to 1,7(1),3(1,3),5(1,4)-tetrabenzenaheptaphane (PIN) [the locant set ‘1,1,1,1,3,3’ for amplificant attachment locants in increasing numerical order is lower than ‘1,1,1,1,3,4’]"
+      "source_quote": "Example: 1,7(1),3,5(1,3)-tetrabenzenaheptaphane (PIN) is senior to 1,7(1),3(1,3),5(1,4)-tetrabenzenaheptaphane (PIN) [the locant set ‘1,1,1,1,3,3’ for amplificant attachment locants in increasing numerical order is lower than ‘1,1,1,1,3,4’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.6.8",
@@ -2531,10 +3143,16 @@
         "Example: 1(4)-pyridina-3(1,3),5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to 1(4)-pyridina-3(1,4),5(1,3),7(1)-tribenzenaheptaphane (PIN) [the locant set ‘4,1,3,1,4,1’ for the amplificant locants in order of their citation in the name is lower than ‘4,1,4,1,3,1’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example: 1(4)-pyridina-3(1,3),5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to 1(4)-pyridina-3(1,4),5(1,3),7(1)-tribenzenaheptaphane (PIN) [the locant set ‘4,1,3,1,4,1’ for the amplificant locants in order of their citation in the name is lower than ‘4,1,4,1,3,1’]"
+      "source_quote": "Example: 1(4)-pyridina-3(1,3),5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to 1(4)-pyridina-3(1,4),5(1,3),7(1)-tribenzenaheptaphane (PIN) [the locant set ‘4,1,3,1,4,1’ for the amplificant locants in order of their citation in the name is lower than ‘4,1,4,1,3,1’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.6.9",
@@ -2582,12 +3200,30 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example: 6-oxa-2-thia-1(4)-pyridina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to 2-thia-1(4)-pyridina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) [two heteroatoms intoduced by skeletal replacement (‘a’) nomenclature are senior to one such heteroatom] P-44.2.2.2.6.10 The..."
+      "source_quote": "Example: 6-oxa-2-thia-1(4)-pyridina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to 2-thia-1(4)-pyridina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) [two heteroatoms intoduced by skeletal replacement (‘a’) nomenclature are senior to one such heteroatom] P-44.2.2.2.6.10 The...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.7.1",
@@ -2622,10 +3258,16 @@
         "Example (the symbol > means ‘is senior to’): > 2,2′-biphosphinine (PIN) 11,21:24,31-terphenyl (PIN) 1,1′:4′,1′′-terphenyl"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 2,2′-biphosphinine (PIN) 11,21:24,31-terphenyl (PIN) 1,1′:4′,1′′-terphenyl"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 2,2′-biphosphinine (PIN) 11,21:24,31-terphenyl (PIN) 1,1′:4′,1′′-terphenyl",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.7.2",
@@ -2665,11 +3307,23 @@
       "tables_or_terms": [
         "halogen seniority: F > Cl > Br > I"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 2,2′-bipyridine (PIN) 2H,2′H-2,2′-bipyran (PIN) P-44.2.2.2.7.3 The senior ring assembly in the absence of nitrogen is composed of rings containing at least one hetero atom first cited in the following sequence: F > Cl > Br > I >..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 2,2′-bipyridine (PIN) 2H,2′H-2,2′-bipyran (PIN) P-44.2.2.2.7.3 The senior ring assembly in the absence of nitrogen is composed of rings containing at least one hetero atom first cited in the following sequence: F > Cl > Br > I >...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.7.4",
@@ -2704,10 +3358,16 @@
         "Example (the symbol > means ‘is senior to’): > 2,2′-biquinoline (PIN) 12,22:25,32-terpyridine (PIN) 2,2′:5′,2′′-terpyridine [a ring system consisting of two rings is senior to a ring system consisting of one ring]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 2,2′-biquinoline (PIN) 12,22:25,32-terpyridine (PIN) 2,2′:5′,2′′-terpyridine [a ring system consisting of two rings is senior to a ring system consisting of one ring]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 2,2′-biquinoline (PIN) 12,22:25,32-terpyridine (PIN) 2,2′:5′,2′′-terpyridine [a ring system consisting of two rings is senior to a ring system consisting of one ring]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.7.5",
@@ -2743,11 +3403,23 @@
         "Example (the symbol > means ‘is senior to’): > 1H,1′H-2,2′-biazepine (PIN) 2,4′-bipyridine (PIN) [seven atoms per ring is preferred to six atoms per ring]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 1H,1′H-2,2′-biazepine (PIN) 2,4′-bipyridine (PIN) [seven atoms per ring is preferred to six atoms per ring]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 1H,1′H-2,2′-biazepine (PIN) 2,4′-bipyridine (PIN) [seven atoms per ring is preferred to six atoms per ring]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.7.6",
@@ -2783,10 +3455,16 @@
         "Example (the symbol > means ‘is senior to’): > 3,3′-bipyridazine (PIN) 2,3′-bipyridine (PIN) [two heteroatoms per ring is preferred to one heteroatom per ring]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 3,3′-bipyridazine (PIN) 2,3′-bipyridine (PIN) [two heteroatoms per ring is preferred to one heteroatom per ring]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 3,3′-bipyridazine (PIN) 2,3′-bipyridine (PIN) [two heteroatoms per ring is preferred to one heteroatom per ring]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.2.2.2.7.7",
@@ -2827,10 +3505,16 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > 3,3′-bipyrano[3,2-e][1,4]dioxepine (PIN) 2,2′-bi-3,1,5-benzoxadiarsepine (PIN) [three oxygen atoms per ring preferred to one oxygen atom per ring]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > 3,3′-bipyrano[3,2-e][1,4]dioxepine (PIN) 2,2′-bi-3,1,5-benzoxadiarsepine (PIN) [three oxygen atoms per ring preferred to one oxygen atom per ring]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.3",
@@ -2867,11 +3551,23 @@
         "chalcogen seniority: O > S > Se > Te",
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "In an acyclic compound consisting of individual atoms, alike or different (an acyclic chain), the chain on which the nomenclature and numbering is based is called the ‘principal chain’."
+      "source_quote": "In an acyclic compound consisting of individual atoms, alike or different (an acyclic chain), the chain on which the nomenclature and numbering is based is called the ‘principal chain’.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.3.1",
@@ -2905,10 +3601,16 @@
         "Examples: (1) 2,5,8,11,14-pentaoxahexadecane (PIN) is senior to 3,6,9,12-tetraoxaheptadecane (PIN) [five heteroatoms are greater than four] (2) 2,5,8,11,14-pentasilapentadecane (PIN) is senior to 3,12-dioxa-6,9-dithiaheptadecane (PIN) [five heteroatoms are greater than four]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Examples: (1) 2,5,8,11,14-pentaoxahexadecane (PIN) is senior to 3,6,9,12-tetraoxaheptadecane (PIN) [five heteroatoms are greater than four] (2) 2,5,8,11,14-pentasilapentadecane (PIN) is senior to 3,12-dioxa-6,9-dithiaheptadecane (PIN) [five heteroatoms are greater than four]"
+      "source_quote": "Examples: (1) 2,5,8,11,14-pentaoxahexadecane (PIN) is senior to 3,6,9,12-tetraoxaheptadecane (PIN) [five heteroatoms are greater than four] (2) 2,5,8,11,14-pentasilapentadecane (PIN) is senior to 3,12-dioxa-6,9-dithiaheptadecane (PIN) [five heteroatoms are greater than four]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.3.2",
@@ -2947,10 +3649,16 @@
         "2) [four heteroatoms in each chain and thirteen skeletal atoms is greater than four] (7) 2,5,8,11,14-pentasilapentadecane (PIN) is senior to SiH3-O-SiH2-O-SiH3 trisiloxane (preselected name"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "In acyclic parent structures the order of seniority between unsaturation and length of chain given in earlier recommendations is reversed."
+      "source_quote": "In acyclic parent structures the order of seniority between unsaturation and length of chain given in earlier recommendations is reversed.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.3.3",
@@ -2988,10 +3696,16 @@
         "chalcogen seniority: O > S > Se > Te",
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): (1) 2,5,8,11-tetraoxatridecane (PIN) is senior to 2,5,8-trioxa-11-thiatridecane (PIN) [four oxygen atoms is more than three] (2)SiH3-O-SiH3>SiH3-S-SiH3 disiloxane (preselected name; see P-12.2)disilathiane (preselected name; see..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): (1) 2,5,8,11-tetraoxatridecane (PIN) is senior to 2,5,8-trioxa-11-thiatridecane (PIN) [four oxygen atoms is more than three] (2)SiH3-O-SiH3>SiH3-S-SiH3 disiloxane (preselected name; see P-12.2)disilathiane (preselected name; see...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4",
@@ -3049,13 +3763,37 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "P-44.4.1 If the criteria of P-44.1 through P-44.3, where applicable, do not effect a choice of a senior parent structure, the following criteria are applied successively until there are no alternatives remaining."
+      "source_quote": "P-44.4.1 If the criteria of P-44.1 through P-44.3, where applicable, do not effect a choice of a senior parent structure, the following criteria are applied successively until there are no alternatives remaining.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.2",
@@ -3097,12 +3835,30 @@
         "2) [the locant ‘1’ for the atom with the nonstandard bonding number is lower than ‘2’] (2)> 1λ4,2,3-trithiane (PIN)1,2λ4,3-trithiane (PIN) [the locant ‘1’ for the atom with the nonstandard bonding number is lower than ‘2’] (3)> 1λ6,2λ4,3-trithiane (PIN)1λ4,2λ6,3-trithiane (PIN) [the locant sets ‘1,2’ for the atoms with the nonstandard bonding number are the same,‘1,2’ but the superscript arabic number set giving the actual nonstandard bonding state is compared and the number set ‘6,4’ is senior to ‘4,6’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> (E)-cycloicosene (PIN) cycloicosyne (PIN) [one double bond is senior to one triple bond] (2)> (1E,8E)-cycloicosa-1,8-diene (PIN) (1E)-cycloicos-1-en-3-yne (PIN) [two double bonds are senior to one double bond and one triple..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> (E)-cycloicosene (PIN) cycloicosyne (PIN) [one double bond is senior to one triple bond] (2)> (1E,8E)-cycloicosa-1,8-diene (PIN) (1E)-cycloicos-1-en-3-yne (PIN) [two double bonds are senior to one double bond and one triple...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.4",
@@ -3136,10 +3892,16 @@
         "Example (the symbol > means ‘is senior to’): (1)> 2H-pyran (PIN)4H-pyran (PIN) [‘2H’ is lower than ‘4H’] (2) 72H-1(4),3,5(2,5)-tripyridina-7(2)-pyranaheptaphane (PIN) is senior to 74H-1(4),3,5(2,5)-tripyridina-7(2)-pyranaheptaphane (PIN) [‘72H’ is lower than ‘74H’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> 2H-pyran (PIN)4H-pyran (PIN) [‘2H’ is lower than ‘4H’] (2) 72H-1(4),3,5(2,5)-tripyridina-7(2)-pyranaheptaphane (PIN) is senior to 74H-1(4),3,5(2,5)-tripyridina-7(2)-pyranaheptaphane (PIN) [‘72H’ is lower than ‘74H’]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> 2H-pyran (PIN)4H-pyran (PIN) [‘2H’ is lower than ‘4H’] (2) 72H-1(4),3,5(2,5)-tripyridina-7(2)-pyranaheptaphane (PIN) is senior to 74H-1(4),3,5(2,5)-tripyridina-7(2)-pyranaheptaphane (PIN) [‘72H’ is lower than ‘74H’]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.5",
@@ -3187,12 +3949,30 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "ring-assembly heteroatom seniority: F > Cl > Br > I > O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): (1) 1,7-dioxa-3,5-dithia-4-stannacycloundecane (PIN) is senior to 1,9-dioxa-4,6-dithia-5-stannacycloundecane (PIN) [the heteroatom locant set ‘1,3,4,5,7’ is lower than ‘1,4,5,6,9’] (2) 1,4,6,10-tetraoxa-5λ5-phosphaspiro[4.5]decane..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): (1) 1,7-dioxa-3,5-dithia-4-stannacycloundecane (PIN) is senior to 1,9-dioxa-4,6-dithia-5-stannacycloundecane (PIN) [the heteroatom locant set ‘1,3,4,5,7’ is lower than ‘1,4,5,6,9’] (2) 1,4,6,10-tetraoxa-5λ5-phosphaspiro[4.5]decane...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.7",
@@ -3226,11 +4006,23 @@
         "Example (the symbol > means ‘is senior to’): (1)>> aceanthrylene (PIN)acephenanthrylene (PIN)fluoranthene (PIN) (I)(II)(III) [the locant ‘2a’ for the fusion site in (I) is lower than ‘3a’ in (II) and the locant set ‘3a,5a’ for the fusion sites in (II) is lower than ‘3a,6a’ in (III)] (2)> chrysene (PIN)triphenylene (PIN) [the locant set ‘4a,4b,6a’ for the fusion sites is lower than ‘4a,4b,8a’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): (1)>> aceanthrylene (PIN)acephenanthrylene (PIN)fluoranthene (PIN) (I)(II)(III) [the locant ‘2a’ for the fusion site in (I) is lower than ‘3a’ in (II) and the locant set ‘3a,5a’ for the fusion sites in (II) is lower than ‘3a,6a’ in..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): (1)>> aceanthrylene (PIN)acephenanthrylene (PIN)fluoranthene (PIN) (I)(II)(III) [the locant ‘2a’ for the fusion site in (I) is lower than ‘3a’ in (II) and the locant set ‘3a,5a’ for the fusion sites in (II) is lower than ‘3a,6a’ in...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.8",
@@ -3264,10 +4056,16 @@
         "Example (the symbol > means ‘is senior to’): (1)> pyridin-2(1H)-one (PIN)pyridin-4(1H)-one (PIN) [the locant ‘2’ for the principal characteristic group is lower than ‘4’] (2) octane-1,7-diol (PIN) is senior to octane-1,8-diol (PIN) [(the locant set ‘1,7’ for the principal characteristic group is lower than ‘1,8’] (3) 2,4,6,8-tetrasiladecane-1,9-diol (PIN) is senior to 2,4,6,8-tetrasiladecane-1,10-diol (PIN) [the locant set for the principal characteristic group ‘1,9’ is lower than ‘1,10’] (4) 2,4-dioxa-1,7(1),3,5(1,4)-tetrabenzenaheptaphane-14,72-diol (PIN) is senior to 2,4-dioxa-1,7(1),3,5(1,4)-tetrabenzenaheptaphane-14,74-diol (PIN) [the locant for the principal characteristic group ‘72’ is lower than ‘74’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> pyridin-2(1H)-one (PIN)pyridin-4(1H)-one (PIN) [the locant ‘2’ for the principal characteristic group is lower than ‘4’] (2) octane-1,7-diol (PIN) is senior to octane-1,8-diol (PIN) [(the locant set ‘1,7’ for the principal..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> pyridin-2(1H)-one (PIN)pyridin-4(1H)-one (PIN) [the locant ‘2’ for the principal characteristic group is lower than ‘4’] (2) octane-1,7-diol (PIN) is senior to octane-1,8-diol (PIN) [(the locant set ‘1,7’ for the principal...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.9",
@@ -3308,11 +4106,23 @@
         "Example (the symbol > means ‘is senior to’): > pyridin-2-yl (preferred prefix)pyridin-3-yl (preferred prefix) [the locant for the point of attachment ‘2’ is lower than ‘3’] P-44"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > pyridin-2-yl (preferred prefix)pyridin-3-yl (preferred prefix) [the locant for the point of attachment ‘2’ is lower than ‘3’] P-44.4.1.10 The senior ring, ring system or principal chain has the lowest locants for endings or..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): > pyridin-2-yl (preferred prefix)pyridin-3-yl (preferred prefix) [the locant for the point of attachment ‘2’ is lower than ‘3’] P-44.4.1.10 The senior ring, ring system or principal chain has the lowest locants for endings or...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.10.1",
@@ -3344,10 +4154,16 @@
         "Example (the symbol > means ‘is senior to’): (1)> (1Z,3E)-cycloicosa-1,3-dien-5-yne (PIN) (1E,7Z)-cycloicosa-1,7-dien-3-yne (PIN) [the locant set ‘1,3,5’ for the ‘ene’ and ‘yne’ endings is lower than ‘1,3,7’] (2)> (1Z,3E)-cycloicosa-1,3-dien-5-yne (PIN) (1E,5E)-cycloicosa-1,5-dien-3-yne (PIN) [the locant set ‘1,3’ for the ‘ene’ endings is lower than ‘1,5’] (3) undeca-2,4-dien-7-yne (PIN) is senior to undeca-2,4-dien-8-yne (PIN) [the locant set ‘2,4,7’ for the ‘ene’ and ‘yne’ endings is lower than ‘2,4,8’] (4) hexa-1,4-diene (PIN) is senior to hexa-1,5-diene (PIN) [the locant set ‘1,4’ for the ‘ene’ endings is lower than ‘1,5’] (5) undeca-2,4,7-trien-9-yne-1,11-diol (PIN) is senior to undeca-2,4,9-trien-7-yne-1,11-diol (PIN) [the locant set ‘2,4,7’ for the ‘ene’ endings is lower than ‘2,4,9’] (6) 3,6,10,13-tetrathiahexadec-14-ene (PIN) is senior to 3,6,10,13-tetrathiahexadec-15-ene (PIN) [the locant ‘14‘ for the ‘ene’ ending is lower than ‘15’] (7) 1,13(1),3,6,10(1,4)-pentabenzenatridecaphane-4-en-8-yne (PIN) is senior to 1,13(1),3,6,10(1,4)-pentabenzenatridecaphan-4-en-11-yne (PIN) [the locant set ‘4,8’ for the ‘ene’ and ‘yne’ endings is lower than ‘4,11’] (8) 1,13(1),3(1,2),6,10(1,4)-pentabenzenatridecaphan-4,8-dien-11-yne (PIN) is senior to 1,13(1),3(1,2),6,10(1,4)-pentabenzenatridecaphane-4,11-dien-8-yne (PIN) [the locant set ‘4,8’ for the ‘ene’ endings is lower than ‘4,11’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> (1Z,3E)-cycloicosa-1,3-dien-5-yne (PIN) (1E,7Z)-cycloicosa-1,7-dien-3-yne (PIN) [the locant set ‘1,3,5’ for the ‘ene’ and ‘yne’ endings is lower than ‘1,3,7’] (2)> (1Z,3E)-cycloicosa-1,3-dien-5-yne (PIN)..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> (1Z,3E)-cycloicosa-1,3-dien-5-yne (PIN) (1E,7Z)-cycloicosa-1,7-dien-3-yne (PIN) [the locant set ‘1,3,5’ for the ‘ene’ and ‘yne’ endings is lower than ‘1,3,7’] (2)> (1Z,3E)-cycloicosa-1,3-dien-5-yne (PIN)...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.10.2",
@@ -3383,11 +4199,23 @@
         "Example (the symbol > means ‘is senior to’): (1)> 1,2-dihydronaphthalene (PIN)1,4-dihydronaphthalene (PIN) [the locant set for the ‘hydro’ prefixes ‘1,2’ is lower than ‘1,4’] (2) 11,12-dihydro-1(2)-quinolina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to 11,14-dihydro-1(2)-quinolina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) [the locant set ‘11,12’ for the ‘hydro’ prefixes is lower than ‘11,14’) (3)> 1,2-dihydrophosphinine (PIN)1,4-dihydrophosphinine (PIN) [the locant set ‘1,2’ for the ‘hydro’ prefixes is lower than ‘1,4’] (4)> 1,2,3,4-tetrahydrophosphinine (PIN)2,3,4,5-tetrahydrophosphinine (PIN) [the locant set ‘1,2,3,4’ for the ‘hydro’ prefixes is lower than ‘2,3,4,5’] (5)> 2,3-didehydropyridine (PIN)3,4-didehydropyridine (PIN) [the locant set ‘2,3’ for the ‘dehydro’ prefixes is lower than ‘3,4’] Criteria for choosing a preferred IUPAC name based on a senior parent structure as described in P-44 are found in P-45"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> 1,2-dihydronaphthalene (PIN)1,4-dihydronaphthalene (PIN) [the locant set for the ‘hydro’ prefixes ‘1,2’ is lower than ‘1,4’] (2) 11,12-dihydro-1(2)-quinolina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to..."
+      "source_quote": "Example (the symbol > means ‘is senior to’): (1)> 1,2-dihydronaphthalene (PIN)1,4-dihydronaphthalene (PIN) [the locant set for the ‘hydro’ prefixes ‘1,2’ is lower than ‘1,4’] (2) 11,12-dihydro-1(2)-quinolina-3,5(1,4),7(1)-tribenzenaheptaphane (PIN) is senior to...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.11",
@@ -3420,11 +4248,23 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "When there is a choice for the senior parent structure between isotopically modified and isotopically unmodified compounds or between isotopically modified compounds (see Chapter P-8), the senior parent structure is chosen according to the following criteria, applied..."
+      "source_quote": "When there is a choice for the senior parent structure between isotopically modified and isotopically unmodified compounds or between isotopically modified compounds (see Chapter P-8), the senior parent structure is chosen according to the following criteria, applied...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.11.1",
@@ -3456,11 +4296,23 @@
         "Example (the symbol > means ‘is senior to’): > (1-2H1)pentane (PIN)pentane (PIN) [one isotopically modified atom is senior to none] > (1,1-2H2)cyclohexane (PIN)(14C1)cyclohexane (PIN) [two 2H atoms are senior to one 14C]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (1-2H1)pentane (PIN)pentane (PIN) [one isotopically modified atom is senior to none] > (1,1-2H2)cyclohexane (PIN)(14C1)cyclohexane (PIN) [two 2H atoms are senior to one 14C]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (1-2H1)pentane (PIN)pentane (PIN) [one isotopically modified atom is senior to none] > (1,1-2H2)cyclohexane (PIN)(14C1)cyclohexane (PIN) [two 2H atoms are senior to one 14C]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.11.2",
@@ -3492,11 +4344,23 @@
         "Example (the symbol > means ‘is senior to’): > (14C1)cyclopentane (PIN)(2H1)cyclopentane (PIN) [14C is senior to 2H] > [1-14C]pentane (PIN)[1-2H1]pentane (PIN) [14C is senior to 2H]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (14C1)cyclopentane (PIN)(2H1)cyclopentane (PIN) [14C is senior to 2H] > [1-14C]pentane (PIN)[1-2H1]pentane (PIN) [14C is senior to 2H]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (14C1)cyclopentane (PIN)(2H1)cyclopentane (PIN) [14C is senior to 2H] > [1-14C]pentane (PIN)[1-2H1]pentane (PIN) [14C is senior to 2H]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.11.3",
@@ -3528,11 +4392,23 @@
         "Example (the symbol > means ‘is senior to’): > (3H1)benzene (PIN)(2H1)benzene (PIN) [3H is senior to 2H] > [1-14C]pentane (PIN)[1-13C]pentane (PIN) [14C is senior to 13C]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > (3H1)benzene (PIN)(2H1)benzene (PIN) [3H is senior to 2H] > [1-14C]pentane (PIN)[1-13C]pentane (PIN) [14C is senior to 13C]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > (3H1)benzene (PIN)(2H1)benzene (PIN) [3H is senior to 2H] > [1-14C]pentane (PIN)[1-13C]pentane (PIN) [14C is senior to 13C]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.11.4",
@@ -3564,12 +4440,30 @@
         "Example (the symbol > means ‘is senior to’): > [4-2H1]pentanoic acid (PIN)[5-2H1]pentanoic acid (PIN) [4-2H is senior to 5-2H] > (2-2H)pyridine (PIN)(3-2H)pyridine (PIN) [2-2H is senior to 3-2H]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > [4-2H1]pentanoic acid (PIN)[5-2H1]pentanoic acid (PIN) [4-2H is senior to 5-2H] > (2-2H)pyridine (PIN)(3-2H)pyridine (PIN) [2-2H is senior to 3-2H]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > [4-2H1]pentanoic acid (PIN)[5-2H1]pentanoic acid (PIN) [4-2H is senior to 5-2H] > (2-2H)pyridine (PIN)(3-2H)pyridine (PIN) [2-2H is senior to 3-2H]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.11.5",
@@ -3601,12 +4495,30 @@
         "Example (the symbol > means ‘is senior to’): > [4-13C,5-2H1]pentanoic acid (PIN)[5-13C,4-2H1]pentanoic acid (PIN) [4-13C is senior to 5-13C ]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > [4-13C,5-2H1]pentanoic acid (PIN)[5-13C,4-2H1]pentanoic acid (PIN) [4-13C is senior to 5-13C ]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > [4-13C,5-2H1]pentanoic acid (PIN)[5-13C,4-2H1]pentanoic acid (PIN) [4-13C is senior to 5-13C ]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.11.6",
@@ -3638,12 +4550,30 @@
         "Example (the symbol > means ‘is senior to’): > [4-13C,3-14C]butan-1-ol (PIN)[3-13C,4-14C]butan-1-ol (PIN) [3-14C is senior to 4-14C]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example (the symbol > means ‘is senior to’): > [4-13C,3-14C]butan-1-ol (PIN)[3-13C,4-14C]butan-1-ol (PIN) [3-14C is senior to 4-14C]"
+      "source_quote": "Example (the symbol > means ‘is senior to’): > [4-13C,3-14C]butan-1-ol (PIN)[3-13C,4-14C]butan-1-ol (PIN) [3-14C is senior to 4-14C]",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.12",
@@ -3681,12 +4611,30 @@
         "Example (the symbol > means ‘is senior to’): (1)> (Z)-cyclooctene (PIN) cis-cyclooctene(E)-cyclooctene (PIN) trans-cyclooctene [‘Z’ is senior to ‘E’] (2)> (2Z)-2-methylbut-2-enoic acid (PIN)(2E)-2-methylbut-2-enoic acid (PIN) [‘Z’ is senior to ‘E’] (3)> (4Z)-hex-4-enenitrile (PIN) (4E)-hex-4-enenitrile (PIN) [‘Z’ is senior to ‘E’] (4) (4Z,6E)-octa-4,6-dienoic acid (PIN) is senior to (4E,6E)-octa-4,6-dienoic acid (PIN) [‘Z,E’ is senior to ‘E,E’] (5) (4Z,7E)-nona-4,7-dienoic acid (PIN) is senior to (4E,7Z)-nona-4,7-dienoic acid (PIN) [‘4Z,7E’ is senior to ‘4E,7Z’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "P-44.4.1.12.1 ‘cis/trans’ Isomerism, the ‘E/Z’ convention When there is a choice between parent structures that differ only by ‘Z’ and ‘E’ configurations, the senior parent structure contains the greater number of double bonds with ‘Z’ configuration; when a further choice is..."
+      "source_quote": "P-44.4.1.12.1 ‘cis/trans’ Isomerism, the ‘E/Z’ convention When there is a choice between parent structures that differ only by ‘Z’ and ‘E’ configurations, the senior parent structure contains the greater number of double bonds with ‘Z’ configuration; when a further choice is...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-44.4.1.12.2",
@@ -3715,12 +4663,30 @@
         "25]tridecane (PIN) [‘RR’ is senior to ‘RS’] P-44"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "When there is a choice between parent structures differing only by the configurations of the chirality centers, the principal chain or the senior ring system is chosen by applying the CIP sequence rules 4 and 5, in the order: like stereodescriptors such as ‘RR’, ‘SS’ have..."
+      "source_quote": "When there is a choice between parent structures differing only by the configurations of the chirality centers, the principal chain or the senior ring system is chosen by applying the CIP sequence rules 4 and 5, in the order: like stereodescriptors such as ‘RR’, ‘SS’ have...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.0",
@@ -3750,10 +4716,16 @@
         "Application of the criteria in this section will generate the preferred IUPAC name"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Two or more names may result based on the same senior parent structure selected according to P-44, because of different substitution patterns or multiple occurrences of the same senior parent structure."
+      "source_quote": "Two or more names may result based on the same senior parent structure selected according to P-44, because of different substitution patterns or multiple occurrences of the same senior parent structure.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.1",
@@ -3817,11 +4789,23 @@
         "the second name multiplies only two] [phosphanetriyltris(methylene)]tris(phosphonic acid) (PIN) 1,1′,1′′-({[(diphenylmethyl)sulfanyl]diphenylmethoxy}methanetriyl)tribenzene (PIN) (not 1,1′-({[diphenyl(triphenylmethoxy)methyl]sulfanyl}methylene)dibenzene"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "P-45.1.1 Multiplicative nomenclature is senior to substitutive nomenclature for generating preferred IUPAC names to express multiple occurrences of identical senior parent structures, other than alkanes, in the name of the parent structure (see P-51.3.1)."
+      "source_quote": "P-45.1.1 Multiplicative nomenclature is senior to substitutive nomenclature for generating preferred IUPAC names to express multiple occurrences of identical senior parent structures, other than alkanes, in the name of the parent structure (see P-51.3.1).",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.2",
@@ -3850,11 +4834,23 @@
         "The preferred IUPAC name is the name based on the senior parent structure that has: P-45"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "The following criteria are applied, in turn, until a decision is reached."
+      "source_quote": "The following criteria are applied, in turn, until a decision is reached.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.2.1",
@@ -3938,8 +4934,8 @@
         "the PIN parent structure has more substituents, four (three simple and one complex) substituents vs"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: (1) 4-methoxy-N-phenylaniline (PIN) [not N-(4-methoxyphenyl)aniline; the PIN parent structure has more substituents, two simple substituents vs."
+      "source_quote": "Examples: (1) 4-methoxy-N-phenylaniline (PIN) [not N-(4-methoxyphenyl)aniline; the PIN parent structure has more substituents, two simple substituents vs.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-45.2.2",
@@ -4023,11 +5019,23 @@
         "the locant set ‘2,5,6’ in the PIN is lower than the locant set ‘2,5,7’ or ‘3,5,6’] (8) 5-methyl-4-(2-methylprop-1-en-1-yl)hepta-1,5-diene (PIN) [not 4-(but-2-en-2-yl)-6-methylhepta-1,5-diene"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Examples: (1) 2-(2-amino-4-methylphenoxy)-N-methylaniline (PIN) [not 5-methyl-2-[2-(methylamino)phenoxy]aniline; the locant set ‘N,2’ in the PIN is lower than ‘2,5’] (2) 1-bromo-3-chloro-6-nitro-2-[2-(1,3,7-trifluoronaphthalen-2-yl)ethyl]naphthalene (PIN) [not..."
+      "source_quote": "Examples: (1) 2-(2-amino-4-methylphenoxy)-N-methylaniline (PIN) [not 5-methyl-2-[2-(methylamino)phenoxy]aniline; the locant set ‘N,2’ in the PIN is lower than ‘2,5’] (2) 1-bromo-3-chloro-6-nitro-2-[2-(1,3,7-trifluoronaphthalen-2-yl)ethyl]naphthalene (PIN) [not...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.3",
@@ -4055,12 +5063,30 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "The following criteria are relative only to substituents with nonstandard bonding numbers applied in turn, until a decision is reached, earlier criteria having been satisfied."
+      "source_quote": "The following criteria are relative only to substituents with nonstandard bonding numbers applied in turn, until a decision is reached, earlier criteria having been satisfied.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.3.1",
@@ -4113,10 +5139,16 @@
         "the PIN parent structure contains the substituent group having the highest bonding number, ‘λ6’ > ‘λ4’]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Examples: 3-(λ5-phosphanyl)-2-(phosphanylmethyl)propanoic acid (PIN) [not 3-phosphanyl-2-(λ5-phosphanylmethyl)propanoic acid; the PIN parent structure contains the substituent group having the highest bonding number, ‘λ5’ > ‘λ3’]..."
+      "source_quote": "Examples: 3-(λ5-phosphanyl)-2-(phosphanylmethyl)propanoic acid (PIN) [not 3-phosphanyl-2-(λ5-phosphanylmethyl)propanoic acid; the PIN parent structure contains the substituent group having the highest bonding number, ‘λ5’ > ‘λ3’]...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.3.2",
@@ -4156,10 +5188,16 @@
         "Example: 5-(1λ5-diphosphan-1-yl)-2-[3-(2λ5-diphosphan-1-yl)propyl]pentanoic acid (PIN) [not 5-(2λ5-diphosphan-1-yl)-2-[3-(1λ5-diphosphan-1-yl)propyl]pentanoic acid] The locant ‘1λ5’ for the nonstandard bonding number directly bonded to the parent structure is lower than ‘2λ5’"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Example: 5-(1λ5-diphosphan-1-yl)-2-[3-(2λ5-diphosphan-1-yl)propyl]pentanoic acid (PIN) [not 5-(2λ5-diphosphan-1-yl)-2-[3-(1λ5-diphosphan-1-yl)propyl]pentanoic acid] The locant ‘1λ5’ for the nonstandard bonding number directly bonded to the parent structure is lower than ‘2λ5’."
+      "source_quote": "Example: 5-(1λ5-diphosphan-1-yl)-2-[3-(2λ5-diphosphan-1-yl)propyl]pentanoic acid (PIN) [not 5-(2λ5-diphosphan-1-yl)-2-[3-(1λ5-diphosphan-1-yl)propyl]pentanoic acid] The locant ‘1λ5’ for the nonstandard bonding number directly bonded to the parent structure is lower than ‘2λ5’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.4",
@@ -4182,10 +5220,16 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "The following criteria are relative only to substituents with isotopic modification applied in turn, until a decision is reached, earlier criteria having been satisfied."
+      "source_quote": "The following criteria are relative only to substituents with isotopic modification applied in turn, until a decision is reached, earlier criteria having been satisfied.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.4.1",
@@ -4225,11 +5269,23 @@
         "Example: 2-bromo-1-{[2-(81Br)bromopentyl]oxy}pentane (PIN) [not 2-(81Br)bromo-1-[(2-bromopentyl)oxy]pentane] The isotopically modified substituent for the PIN is attached at ‘1’ which is lower than ‘2’"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires stereochemical descriptor assignment before comparison can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example: 2-bromo-1-{[2-(81Br)bromopentyl]oxy}pentane (PIN) [not 2-(81Br)bromo-1-[(2-bromopentyl)oxy]pentane] The isotopically modified substituent for the PIN is attached at ‘1’ which is lower than ‘2’."
+      "source_quote": "Example: 2-bromo-1-{[2-(81Br)bromopentyl]oxy}pentane (PIN) [not 2-(81Br)bromo-1-[(2-bromopentyl)oxy]pentane] The isotopically modified substituent for the PIN is attached at ‘1’ which is lower than ‘2’.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.4.2",
@@ -4270,11 +5326,23 @@
         "the 18O isotopically modified substituent for the PIN is attached at ‘N’ which is lower than ‘2’"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires stereochemical descriptor assignment before comparison can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example: 2-(13C)methoxy-N-[2-(18O)methoxyethyl]ethan-1-amine (PIN) [not 2-(18O)methoxy-N-[2-(13C)methoxyethyl]ethan-1-amine] 18O > 13C; the 18O isotopically modified substituent for the PIN is attached at ‘N’ which is lower than ‘2’."
+      "source_quote": "Example: 2-(13C)methoxy-N-[2-(18O)methoxyethyl]ethan-1-amine (PIN) [not 2-(18O)methoxy-N-[2-(13C)methoxyethyl]ethan-1-amine] 18O > 13C; the 18O isotopically modified substituent for the PIN is attached at ‘N’ which is lower than ‘2’.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.4.3",
@@ -4315,11 +5383,23 @@
         "the 14C isotopically modified substituent for the PIN is attached at ‘2’ which is lower than ‘4’"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires stereochemical descriptor assignment before comparison can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example: 4-[2-13C]ethyl-2-(2-[2-14C]ethylpentyl)heptan-1-ol (PIN) [not 4-[2-14C]ethyl-2-(2-[2-13C]ethylpentyl)heptan-1-ol 14C > 13C; the 14C isotopically modified substituent for the PIN is attached at ‘2’ which is lower than ‘4’"
+      "source_quote": "Example: 4-[2-13C]ethyl-2-(2-[2-14C]ethylpentyl)heptan-1-ol (PIN) [not 4-[2-14C]ethyl-2-(2-[2-13C]ethylpentyl)heptan-1-ol 14C > 13C; the 14C isotopically modified substituent for the PIN is attached at ‘2’ which is lower than ‘4’",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.5",
@@ -4403,10 +5483,16 @@
         "] (4) 4-(1,2-difluoropropyl)-5,6-dinitroheptanoic acid (PIN) [not 4-(1,2-dinitropropyl)-5,6-difluoroheptanoic acid"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
-      ],
-      "source_quote": "The preferred IUPAC name is the name that is earlier in alphanumerical order (see P-14.5)."
+      "source_quote": "The preferred IUPAC name is the name that is earlier in alphanumerical order (see P-14.5).",
+      "implementation_requirements": [
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.6.1",
@@ -4481,12 +5567,30 @@
         "also a substitutive name but since the alphabetic characters and locants (ignoring the configuration symbols) are identical the configurational symbols are compared and ‘R’ precedes ‘S’] Example 3: 1,1′-oxybis[3,4-bis(1-chloroethyl)benzene] (PIN) 4-{3,4-bis[(1R)-1-chloroethyl]phenoxy}-1,2-bis[(1S)-1-chloroethyl]benzene (PIN) [not 4-{3,4-bis[(1S)-1-chloroethyl]phenoxy}-1,2-bis[(1R)-1-chloroethyl]benzene"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "This section is concerned only with the main principles for specification of configuration in names of organic compounds."
+      "source_quote": "This section is concerned only with the main principles for specification of configuration in names of organic compounds.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-45.6.3",
@@ -4528,11 +5632,23 @@
         "Example: 1-[(1R)-1-bromoethyl]-1-[(1S)-1-bromoethyl]cyclopentane (PIN) [not 1-[(1S)-1-bromoethyl]-1-[(1R)-1-bromoethyl]cyclopentane"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires stereochemical descriptor assignment before comparison can execute.",
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example: 1-[(1R)-1-bromoethyl]-1-[(1S)-1-bromoethyl]cyclopentane (PIN) [not 1-[(1S)-1-bromoethyl]-1-[(1R)-1-bromoethyl]cyclopentane; ‘R’ precedes ‘S’]"
+      "source_quote": "Example: 1-[(1R)-1-bromoethyl]-1-[(1S)-1-bromoethyl]cyclopentane (PIN) [not 1-[(1S)-1-bromoethyl]-1-[(1R)-1-bromoethyl]cyclopentane; ‘R’ precedes ‘S’]",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.0",
@@ -4566,11 +5682,23 @@
       "tables_or_terms": [
         "free valence suffix seniority: yl > ylidene > ylidyne"
       ],
-      "unresolved_semantics": [
-        "Examples are present but could not be cleanly segmented by the draft converter.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Compound acyclic substituents, i.e., substituted acyclic substituents, consist of a principal chain and one or more acyclic substituents."
+      "source_quote": "Compound acyclic substituents, i.e., substituted acyclic substituents, consist of a principal chain and one or more acyclic substituents.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Examples are present but could not be cleanly segmented by the draft converter."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.1",
@@ -4607,12 +5735,30 @@
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl",
         "free valence suffix seniority: yl > ylidene > ylidyne"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Selection of the principal chain of a compound substituent is accomplished in accordance with the following criteria, applied successively in the order given until a decision is reached."
+      "source_quote": "Selection of the principal chain of a compound substituent is accomplished in accordance with the following criteria, applied successively in the order given until a decision is reached.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.1.1",
@@ -4658,10 +5804,16 @@
         "Examples: (2) pentan-2-ylidene (preferred prefix) (1) 1-methylbutylidene (a simple substituent group)(a compound substituent group) (2) but-1-en-2-yl (preferred prefix) (1) 1-methylidenepropyl (a simple substituent group)(a compound substituent group) (2) 4-methylhexan-2-yl (preferred prefix)(1) 1,3-dimethylpentyl (a compound substituent group)(a compound substituent group)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
-      ],
-      "source_quote": "Example: 7-propyl-2,4,6,8-tetrasilanonan-1-yl (preferred prefix) [not 7-(methylsilyl)-2,4,6-trisiladecan-1-yl] P-46.1.2 The principal substituent chain has the greater number of skeletal atoms, i.e., the longest chain [criterion (b) in P-46.1]."
+      "source_quote": "Example: 7-propyl-2,4,6,8-tetrasilanonan-1-yl (preferred prefix) [not 7-(methylsilyl)-2,4,6-trisiladecan-1-yl] P-46.1.2 The principal substituent chain has the greater number of skeletal atoms, i.e., the longest chain [criterion (b) in P-46.1].",
+      "implementation_requirements": [
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.1.3",
@@ -4735,12 +5887,30 @@
         "chalcogen seniority: O > S > Se > Te",
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Examples: 1-(silylsulfanyl)disiloxanyl (preselected prefix) [not 1-(silyloxy)disilathianyl; ‘O’ > ‘S’] 5-{[(ethylsilyl)methyl]silyl}-2,6-dioxa-4,9-disiladecan-1-yl (preferred prefix) [not 5-[2-(methylsilyl)ethoxy]-2-oxa-4,6,8-trisiladecan-1-yl; two oxygens are senior to one..."
+      "source_quote": "Examples: 1-(silylsulfanyl)disiloxanyl (preselected prefix) [not 1-(silyloxy)disilathianyl; ‘O’ > ‘S’] 5-{[(ethylsilyl)methyl]silyl}-2,6-dioxa-4,9-disiladecan-1-yl (preferred prefix) [not 5-[2-(methylsilyl)ethoxy]-2-oxa-4,6,8-trisiladecan-1-yl; two oxygens are senior to one...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.1.6",
@@ -4798,11 +5968,23 @@
         "chalcogen seniority: O > S > Se > Te",
         "acyclic heteroatom seniority: O > S > Se > Te > N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
-      ],
-      "source_quote": "Heteroatoms in chains are now considered as part of the parent hydride; as such they have seniority over suffixes for numbering (see P-14.4; see also P-15.4.3); this change makes ‘a’ terms nondetachable in skeletal replacement in chains, rings, and ring systems."
+      "source_quote": "Heteroatoms in chains are now considered as part of the parent hydride; as such they have seniority over suffixes for numbering (see P-14.4; see also P-15.4.3); this change makes ‘a’ terms nondetachable in skeletal replacement in chains, rings, and ring systems.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.1.8",
@@ -4877,12 +6059,30 @@
       "tables_or_terms": [
         "free valence suffix seniority: yl > ylidene > ylidyne"
       ],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Examples: 5-{[(methylsilyl)ylomethyl]silyl}-2,4,6,8,10-pentasilatetradecan-13-yl-1-ylidene (preferred prefix) 5-{[(diylomethylsilyl)methyl]silyl}-2,4,6,8,10-pentasilatetradecane-1,13-diyl (preferred prefix) (for ‘ylo’ as a prefix, see P-70.3.1, P-71.5) P-46.1.9 The principal..."
+      "source_quote": "Examples: 5-{[(methylsilyl)ylomethyl]silyl}-2,4,6,8,10-pentasilatetradecan-13-yl-1-ylidene (preferred prefix) 5-{[(diylomethylsilyl)methyl]silyl}-2,4,6,8,10-pentasilatetradecane-1,13-diyl (preferred prefix) (for ‘ylo’ as a prefix, see P-70.3.1, P-71.5) P-46.1.9 The principal...",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.1.12",
@@ -4946,12 +6146,30 @@
         "chloro’ is senior to ‘bromoethyl’] (2) 5-ethyl-7-methylnonan-3-yl (preferred prefix) (1) 1,3-diethyl-5-methylheptyl (a compound substituent group) (a compound substituent group)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires graph feature extractor for the named Blue Book concept before this rule can execute.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "When applicable, the principal substituent chain has the greatest number of substituent groups with (an) atom(s) of the highest bonding number."
+      "source_quote": "When applicable, the principal substituent chain has the greatest number of substituent groups with (an) atom(s) of the highest bonding number.",
+      "implementation_requirements": [
+        {
+          "kind": "molecular_graph_predicate_required",
+          "resolution": "Rule execution requires a molecular graph feature or predicate implementation.",
+          "source_notes": [
+            "Requires graph feature extractor for the named Blue Book concept before this rule can execute."
+          ]
+        },
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.2.1",
@@ -4984,10 +6202,16 @@
         "Examples: (1) 3-methyl[4-2H1]butyl (preferred prefix) (2) 1-(18O)hydroxy-3-hydroxypropan-2-yl (preferred prefix) (1) 2-(18O)hydroxy-1-(hydroxymethyl)ethyl"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Examples: (1) 3-methyl[4-2H1]butyl (preferred prefix) (2) 1-(18O)hydroxy-3-hydroxypropan-2-yl (preferred prefix) (1) 2-(18O)hydroxy-1-(hydroxymethyl)ethyl"
+      "source_quote": "Examples: (1) 3-methyl[4-2H1]butyl (preferred prefix) (2) 1-(18O)hydroxy-3-hydroxypropan-2-yl (preferred prefix) (1) 2-(18O)hydroxy-1-(hydroxymethyl)ethyl",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.2.2",
@@ -5020,10 +6244,16 @@
         "Example: (1) 3-[2H1]methyl[4-14C]butyl (preferred prefix)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires isotope/nuclide metadata on atoms and substituent groups."
-      ],
-      "source_quote": "Example: (1) 3-[2H1]methyl[4-14C]butyl (preferred prefix)"
+      "source_quote": "Example: (1) 3-[2H1]methyl[4-14C]butyl (preferred prefix)",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Requires isotope/nuclide metadata on atoms and substituent groups."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.3.1",
@@ -5062,10 +6292,16 @@
         "(2)(1) (2) [(2Z,4R,5E)-4-methylhepta-2,5-dien-4-yl]siline (PIN) (1) {(1R,2Z)-1-[(1E)-prop-1-en-1-yl]-1-methylbut-2-en-1-yl}siline"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Examples: (2)(1) (2) (2Z,5E)-4-methylhepta-2,5-dien-4-yl (preferred prefix) (1) (2Z)-1-[(1E)-prop-1-en-1-yl]-1-methylbut-2-en-1-yl Note: The configuration at C-4 (method 2) or C-1 (method 1) cannot be given because the attached substituent is unknown."
+      "source_quote": "Examples: (2)(1) (2) (2Z,5E)-4-methylhepta-2,5-dien-4-yl (preferred prefix) (1) (2Z)-1-[(1E)-prop-1-en-1-yl]-1-methylbut-2-en-1-yl Note: The configuration at C-4 (method 2) or C-1 (method 1) cannot be given because the attached substituent is unknown.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-46.3.2",
@@ -5107,11 +6343,23 @@
         "(2)(1) (2) [(2R,5s,8S)-2,8-dichloro-5-methylnonan-5-yl]trimethylsilane (PIN) (1) {(1s,4R)-4-chloro-1-[(3S)-3-chlorobutyl]-1-methylpentyl}trimethylsilane Continued with P-5 Selecting Preferred IUPAC Names and Constructing Names of Organic Compounds"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review.",
-        "Requires stereochemical descriptor assignment before comparison can execute."
-      ],
-      "source_quote": "Examples: (2)(1) (2) (2R,8S)-2,8-dichloro-5-methylnonan-5-yl (preferred prefix) (1) (4R)-4-chloro-1-[(3S)-3-chlorobutyl]-1-methylpentyl Note: The configuration at C-5 (method 2) or C-1 (method 1) cannot be given because the attached substituent is unknown."
+      "source_quote": "Examples: (2)(1) (2) (2R,8S)-2,8-dichloro-5-methylnonan-5-yl (preferred prefix) (1) (4R)-4-chloro-1-[(3S)-3-chlorobutyl]-1-methylpentyl Note: The configuration at C-5 (method 2) or C-1 (method 1) cannot be given because the attached substituent is unknown.",
+      "implementation_requirements": [
+        {
+          "kind": "source_boundary_review_recommended",
+          "resolution": "The extracted source boundary is preserved and should be checked before executable compilation.",
+          "source_notes": [
+            "Source extraction may include adjacent rule text or cross-reference material; preserve source rule_id and verify boundaries during review."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires stereochemical descriptor assignment before comparison can execute."
+          ]
+        }
+      ]
     }
   ]
 }

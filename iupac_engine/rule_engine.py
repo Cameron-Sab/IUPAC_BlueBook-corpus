@@ -9,6 +9,7 @@ from typing import Any, Iterable
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RULES_PATH = PROJECT_ROOT / "data" / "bluebook_semantic_rules.json"
+DEFAULT_NORMALIZED_RULES_PATH = PROJECT_ROOT / "data" / "bluebook_semantic_rules.normalized.json"
 DEFAULT_GRAPH_PATH = PROJECT_ROOT / "data" / "bluebook_rule_dependency_graph.json"
 
 
@@ -37,28 +38,43 @@ class SemanticRule:
     exceptions: tuple[dict[str, str], ...]
     examples: tuple[str, ...]
     tables_or_terms: tuple[str, ...]
-    unresolved_semantics: tuple[str, ...]
+    implementation_status: str
+    implementation_requirements: tuple[dict[str, Any], ...]
     source_quote: str
 
     @classmethod
     def from_dict(cls, payload: dict[str, Any]) -> "SemanticRule":
+        logic = payload.get("logic", {})
+        dependency_context = payload.get("dependency_context", {})
+        depends_on = set(payload.get("depends_on", []))
+        if dependency_context:
+            for field in (
+                "declared",
+                "explicit_references",
+                "hierarchy",
+                "exception_references",
+                "example_references",
+                "source_table_references",
+            ):
+                depends_on.update(str(item) for item in dependency_context.get(field, []))
         return cls(
             rule_id=str(payload["rule_id"]),
             title=str(payload["title"]),
             source_chapter=str(payload["source_chapter"]),
             source_url=str(payload["source_url"]),
             rule_type=str(payload["rule_type"]),
-            applies_if=tuple(payload.get("applies_if", [])),
-            unless=tuple(payload.get("unless", [])),
-            then=tuple(payload.get("then", [])),
-            prefer=tuple(payload.get("prefer", [])),
-            reject=tuple(payload.get("reject", [])),
+            applies_if=tuple(payload.get("applies_if", logic.get("applies_if", []))),
+            unless=tuple(payload.get("unless", logic.get("unless", []))),
+            then=tuple(payload.get("then", logic.get("then", []))),
+            prefer=tuple(payload.get("prefer", logic.get("prefer", []))),
+            reject=tuple(payload.get("reject", logic.get("reject", []))),
             compare_by=tuple(payload.get("compare_by", [])),
-            depends_on=tuple(payload.get("depends_on", [])),
+            depends_on=tuple(sorted(depends_on)),
             exceptions=tuple(payload.get("exceptions", [])),
             examples=tuple(payload.get("examples", [])),
             tables_or_terms=tuple(payload.get("tables_or_terms", [])),
-            unresolved_semantics=tuple(payload.get("unresolved_semantics", [])),
+            implementation_status=str(payload.get("implementation_status", "draft_semantic")),
+            implementation_requirements=tuple(payload.get("implementation_requirements", [])),
             source_quote=str(payload.get("source_quote", "")),
         )
 
@@ -79,7 +95,8 @@ class SemanticRule:
             "exceptions": list(self.exceptions),
             "examples": list(self.examples),
             "tables_or_terms": list(self.tables_or_terms),
-            "unresolved_semantics": list(self.unresolved_semantics),
+            "implementation_status": self.implementation_status,
+            "implementation_requirements": list(self.implementation_requirements),
             "source_quote": self.source_quote,
         }
 
@@ -87,10 +104,10 @@ class SemanticRule:
 class BlueBookRuleEngine:
     def __init__(
         self,
-        rules_path: Path | str = DEFAULT_RULES_PATH,
+        rules_path: Path | str | None = None,
         graph_path: Path | str = DEFAULT_GRAPH_PATH,
     ) -> None:
-        self.rules_path = Path(rules_path)
+        self.rules_path = Path(rules_path) if rules_path is not None else _default_rules_path()
         self.graph_path = Path(graph_path)
         self.metadata: dict[str, Any] = {}
         self.rules: list[SemanticRule] = []
@@ -262,3 +279,9 @@ def _condition_match(condition: str, fact_tokens: set[str]) -> bool:
         if fact == condition_token or fact in condition_token or condition_token in fact:
             return True
     return False
+
+
+def _default_rules_path() -> Path:
+    if DEFAULT_NORMALIZED_RULES_PATH.exists():
+        return DEFAULT_NORMALIZED_RULES_PATH
+    return DEFAULT_RULES_PATH

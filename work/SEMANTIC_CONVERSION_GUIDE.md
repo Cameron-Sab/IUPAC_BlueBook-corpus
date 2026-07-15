@@ -20,7 +20,7 @@ Use the schema in:
 - Do not summarize multiple rules into one record unless the input record is itself a table/list rule.
 - Convert prose into predicate/action language.
 - Use chemistry-neutral predicate names where a graph predicate will later be implemented.
-- Put uncertainty in `unresolved_semantics`, not in hidden assumptions.
+- Put compiler or implementation needs in `implementation_requirements`, not in hidden assumptions.
 - Use `source_quote` as a short supporting quote from the source body, not the whole source body.
 - Use `compare_by` for ordered preference criteria.
 - Use `exceptions` for "except", "unless", "however", "not used when", and correction overrides.

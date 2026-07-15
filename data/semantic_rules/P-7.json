@@ -37,10 +37,16 @@
         "cation",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "The nomenclature for radicals, ions and related species is described in this Chapter."
+      "source_quote": "The nomenclature for radicals, ions and related species is described in this Chapter.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-70.2",
@@ -74,8 +80,8 @@
         "anion",
         "cation"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "As classes, radicals and ions are senior to acids and other classes in the following order: (1) radicals; (2) anions; (3) cations."
+      "source_quote": "As classes, radicals and ions are senior to acids and other classes in the following order: (1) radicals; (2) anions; (3) cations.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-70.3",
@@ -114,10 +120,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Substitutive names and functional class names denote radicals and ions and related compounds."
+      "source_quote": "Substitutive names and functional class names denote radicals and ions and related compounds.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-70.3.1",
@@ -179,11 +191,23 @@
         "Table 7.1",
         "Table 3.4"
       ],
-      "unresolved_semantics": [
-        "table_values_require_machine_table_extraction_or_manual_verification",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "• from one atomylidyne from different atomstriyl or ylylidene addition of H•hydryl Anions formed by loss of H+ide ate, ite (endings) addition of H–uide addition of an electronelide 1 Cations formed by loss of H–ylium addition of H+ium loss of an electronelium 1 1 The suffixes ‘elide’ and ‘elium’ are recommended to denote modification of a parent hydride by the addition or the subtraction of one electron, respectively."
+      "source_quote": "• from one atomylidyne from different atomstriyl or ylylidene addition of H•hydryl Anions formed by loss of H+ide ate, ite (endings) addition of H–uide addition of an electronelide 1 Cations formed by loss of H–ylium addition of H+ium loss of an electronelium 1 1 The suffixes ‘elide’ and ‘elium’ are recommended to denote modification of a parent hydride by the addition or the subtraction of one electron, respectively.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-70.3.3",
@@ -234,10 +258,16 @@
         "ylium",
         "ite"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "P-70.3.3.1 When two or more cumulative suffixes are present in a name, the order of citation is the reverse of the order of seniority for radicals and ions as given in P-70.2, i.e.,‘ium’, ‘ylium’, ‘ide’, ‘uide’, ‘yl’, ‘ylidene’, ‘ylidyne’."
+      "source_quote": "P-70.3.3.1 When two or more cumulative suffixes are present in a name, the order of citation is the reverse of the order of seniority for radicals and ions as given in P-70.2, i.e.,‘ium’, ‘ylium’, ‘ide’, ‘uide’, ‘yl’, ‘ylidene’, ‘ylidyne’.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-70.3.3.2.1",
@@ -277,10 +307,16 @@
         "ylidene",
         "ide"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Examples: methanaminyl (PIN) methylazanyl (traditional name: methylamino) propan-1-iminyl (PIN) propylideneazanyl"
+      "source_quote": "Examples: methanaminyl (PIN) methylazanyl (traditional name: methylamino) propan-1-iminyl (PIN) propylideneazanyl",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-70.3.3.2.2",
@@ -319,8 +355,8 @@
         "ium",
         "ate"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Example: 1,1,1-trimethylhydrazin-1-ium-2-sulfonate (PIN)"
+      "source_quote": "Example: 1,1,1-trimethylhydrazin-1-ium-2-sulfonate (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-70.4",
@@ -365,10 +401,16 @@
         "ylium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
-      ],
-      "source_quote": "The concept of preferred IUPAC names as applied to radicals and ions is based on the following principles."
+      "source_quote": "The concept of preferred IUPAC names as applied to radicals and ions is based on the following principles.",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.1",
@@ -410,8 +452,8 @@
         "ate",
         "ylo"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Radicals are named by modifying a parent hydride name to signal the subtraction or addition of one or more hydrogen atoms, H•."
+      "source_quote": "Radicals are named by modifying a parent hydride name to signal the subtraction or addition of one or more hydrogen atoms, H•.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-71.2.1",
@@ -481,11 +523,23 @@
         "ate",
         "ylo"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "P-71.2.1.1 A radical formally derived by the removal of one hydrogen atom from a mononuclear parent hydride of an element of Group 14, from a terminal atom of an unbranched acyclic hydrocarbon, or from any position of a monocyclic saturated hydrocarbon ring is named by replacing the ‘ane’ ending of the systematic name of the parent hydride by ‘yl’."
+      "source_quote": "P-71.2.1.1 A radical formally derived by the removal of one hydrogen atom from a mononuclear parent hydride of an element of Group 14, from a terminal atom of an unbranched acyclic hydrocarbon, or from any position of a monocyclic saturated hydrocarbon ring is named by replacing the ‘ane’ ending of the systematic name of the parent hydride by ‘yl’.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.2.1.3",
@@ -531,10 +585,16 @@
         "elium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Example: anthracene-9-hydryl (PIN) anthracen-9-iumelide (see P-70.3.1) anthracen-9-eliumuide (see P-70.3.1) 2,9-dihydroanthracen-2-yl"
+      "source_quote": "Example: anthracene-9-hydryl (PIN) anthracen-9-iumelide (see P-70.3.1) anthracen-9-eliumuide (see P-70.3.1) 2,9-dihydroanthracen-2-yl",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.2.2",
@@ -575,10 +635,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "ent of Group 14, or from a terminal atom of an unbranched acyclic hydrocarbon, or from any position of a monocyclic saturated hydrocarbon ring by the appropriate suffix (corresponds to P-71.2.1.1) (2) adding the appropriate suffix to the name of a parent hydride, other than those described by P-71.2.1.1, at any position eliding the final letter ‘e’ of the name of the parent hydride, if any (corresponds to P-71.2.1.2)."
+      "source_quote": "ent of Group 14, or from a terminal atom of an unbranched acyclic hydrocarbon, or from any position of a monocyclic saturated hydrocarbon ring by the appropriate suffix (corresponds to P-71.2.1.1) (2) adding the appropriate suffix to the name of a parent hydride, other than those described by P-71.2.1.1, at any position eliding the final letter ‘e’ of the name of the parent hydride, if any (corresponds to P-71.2.1.2).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.2.2.1",
@@ -635,10 +701,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
-      ],
-      "source_quote": "A radical formally derived by the removal of two hydrogen atom from one skeletal atom of a mononuclear parent hydride of an element of Group 14, or from one terminal skeletal atom of an unbranched acyclic hydrocarbon, or from one skeletal atom of a monocyclic saturated hydrocarbon ring is named by replacing the ‘ane’ ending of the systematic name of the parent hydride by the suffix ‘-ylidene’ or ‘-diyl’."
+      "source_quote": "A radical formally derived by the removal of two hydrogen atom from one skeletal atom of a mononuclear parent hydride of an element of Group 14, or from one terminal skeletal atom of an unbranched acyclic hydrocarbon, or from one skeletal atom of a monocyclic saturated hydrocarbon ring is named by replacing the ‘ane’ ending of the systematic name of the parent hydride by the suffix ‘-ylidene’ or ‘-diyl’.",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.2.2.2",
@@ -702,10 +774,16 @@
         "ylidyne",
         "ide"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "With the exception of the radicals named in P-71.2.2.1, the names of divalent and trivalent radicals derived by the removal of two or three hydrogen atoms from one position of a parent hydride are formed by adding the suffixes ‘-ylidene’ or ‘-diyl’ and ‘-ylidyne’ or ‘-triyl’, respectively, to the name of the parent hydride, with elision of the final letter ‘e’, if present."
+      "source_quote": "With the exception of the radicals named in P-71.2.2.1, the names of divalent and trivalent radicals derived by the removal of two or three hydrogen atoms from one position of a parent hydride are formed by adding the suffixes ‘-ylidene’ or ‘-diyl’ and ‘-ylidyne’ or ‘-triyl’, respectively, to the name of the parent hydride, with elision of the final letter ‘e’, if present.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.2.3",
@@ -770,10 +848,16 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "the removal of two or more hydrogen atoms from each of two or more different skeletal atoms of a parent hydride, are named by adding to the name of the parent hydride combinations of the suffix ‘yl’ for a monovalent radical center, ‘ylidene’ for a divalent radical center, and ‘ylidyne’ for a trivalent radical center, together with the appropriate numerical prefixes indicating the number of each kind of radical center."
+      "source_quote": "the removal of two or more hydrogen atoms from each of two or more different skeletal atoms of a parent hydride, are named by adding to the name of the parent hydride combinations of the suffix ‘yl’ for a monovalent radical center, ‘ylidene’ for a divalent radical center, and ‘ylidyne’ for a trivalent radical center, together with the appropriate numerical prefixes indicating the number of each kind of radical center.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.2.4",
@@ -811,10 +895,16 @@
         "yl",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "(1) by citing the locant of the nonterminal position of the chain (2) by substituting a parent radical that has the free valence(s) at the end of a chain."
+      "source_quote": "(1) by citing the locant of the nonterminal position of the chain (2) by substituting a parent radical that has the free valence(s) at the end of a chain.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.2.5",
@@ -880,11 +970,23 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Divalent and trivalent radical centers in a parent hydride formally derived by the removal of two or three hydrogen atoms from the same skeletal atom in its standard valence state may be described by the λ-convention (see P-14.1)."
+      "source_quote": "Divalent and trivalent radical centers in a parent hydride formally derived by the removal of two or three hydrogen atoms from the same skeletal atom in its standard valence state may be described by the λ-convention (see P-14.1).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.3.1",
@@ -944,12 +1046,24 @@
         "ate",
         "Table 7.2"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "table_values_require_machine_table_extraction_or_manual_verification",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "radicals with at least one chalcogen or nitrogen atom attached to a radical center by a (formal) double bond, which may be considered to be formally derived by the removal of a hydroxy group from acid characteristic groups, are named by replacing the ‘ic acid’ or ‘carboxylic acid’ ending of the name of the acid with ‘oyl’ or ‘yl’, or ‘carbonyl’, according to the method for forming names of acyl groups (see P-65.1.7)."
+      "source_quote": "radicals with at least one chalcogen or nitrogen atom attached to a radical center by a (formal) double bond, which may be considered to be formally derived by the removal of a hydroxy group from acid characteristic groups, are named by replacing the ‘ic acid’ or ‘carboxylic acid’ ending of the name of the acid with ‘oyl’ or ‘yl’, or ‘carbonyl’, according to the method for forming names of acyl groups (see P-65.1.7).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.3.3",
@@ -1005,10 +1119,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Polyradicals with radical centres identically derived but located on two or more amine, imine, or amide characteristic groups are named in two ways: (1) by using suffixes (see P-71.3.2) denoting the removal of one hydrogen atom from each characteristic group and the multiplying prefixes ‘bis-’, ‘tris-’, etc.; (2) by multiplicative nomenclature based on the parent radicals ‘azanyl’ and ‘azanylidene’."
+      "source_quote": "Polyradicals with radical centres identically derived but located on two or more amine, imine, or amide characteristic groups are named in two ways: (1) by using suffixes (see P-71.3.2) denoting the removal of one hydrogen atom from each characteristic group and the multiplying prefixes ‘bis-’, ‘tris-’, etc.; (2) by multiplicative nomenclature based on the parent radicals ‘azanyl’ and ‘azanylidene’.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.3.4",
@@ -1060,11 +1180,23 @@
         "ate",
         "ylo"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "(1) additively, using the term ‘oxyl’ or ‘peroxyl’ derived from the terms ‘oxy’ or ‘peroxy’ (not dioxy); (2) by substituting the parent radicals ‘oxidanyl’ (preselected name), for HO•, or ‘dioxidanyl’ (preselected name), for HOO•, by the appropriate substituent groups."
+      "source_quote": "(1) additively, using the term ‘oxyl’ or ‘peroxyl’ derived from the terms ‘oxy’ or ‘peroxy’ (not dioxy); (2) by substituting the parent radicals ‘oxidanyl’ (preselected name), for HO•, or ‘dioxidanyl’ (preselected name), for HOO•, by the appropriate substituent groups.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.4",
@@ -1120,10 +1252,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Polyradicals with radical centers identically derived from the same parent hydride or the same characteristic group (except for polyacyl or polyamide radicals described in P-71.3.1 and P-71.3.3, respectively) but located in different parts of the structure are named, if possible, according to the principles for nomenclature of assemblies of identical units linked by multivalent substituents (see P-15.3)."
+      "source_quote": "Polyradicals with radical centers identically derived from the same parent hydride or the same characteristic group (except for polyacyl or polyamide radicals described in P-71.3.1 and P-71.3.3, respectively) but located in different parts of the structure are named, if possible, according to the principles for nomenclature of assemblies of identical units linked by multivalent substituents (see P-15.3).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.5",
@@ -1168,8 +1306,8 @@
         "ite",
         "ylo"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "The presence of a radical center in a substituent that is to be cited as a prefix is expressed in two ways: (1) by using the prefix ‘ylo’ that indicates the subtraction of a hydrogen atom from a substituent group, for example ‘–ylomethyl’ for –CH2•; (2) by concatenation of prefixes, for example ‘oxylcarbonyl’ for –CO-O•."
+      "source_quote": "The presence of a radical center in a substituent that is to be cited as a prefix is expressed in two ways: (1) by using the prefix ‘ylo’ that indicates the subtraction of a hydrogen atom from a substituent group, for example ‘–ylomethyl’ for –CH2•; (2) by concatenation of prefixes, for example ‘oxylcarbonyl’ for –CO-O•.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-71.6",
@@ -1233,10 +1371,16 @@
         "ide",
         "ite"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "The suffixes ‘yl’, ‘ylidene’, and ‘ylidyne’ are cited in that order in a name, if applicable; lowest locants are assigned to radicals as a set, then in the order ‘yl’, ‘ylidene’ and ‘ylidyne’."
+      "source_quote": "The suffixes ‘yl’, ‘ylidene’, and ‘ylidyne’ are cited in that order in a name, if applicable; lowest locants are assigned to radicals as a set, then in the order ‘yl’, ‘ylidene’ and ‘ylidyne’.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-71.7",
@@ -1311,12 +1455,24 @@
         "ylo",
         "Table 4.4"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "table_values_require_machine_table_extraction_or_manual_verification",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "When a choice of a parent radical is necessary, the following criteria are applied, in the order given, until a decision is reached."
+      "source_quote": "When a choice of a parent radical is necessary, the following criteria are applied, in the order given, until a decision is reached.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.1",
@@ -1359,8 +1515,8 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Anions are named in two ways: (1) by using suffixes and endings; (2) by functional class nomenclature."
+      "source_quote": "Anions are named in two ways: (1) by using suffixes and endings; (2) by functional class nomenclature.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-72.2.1",
@@ -1421,10 +1577,16 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Functional class nomenclature can be used, in general nomenclature, to describe anionic compounds."
+      "source_quote": "Functional class nomenclature can be used, in general nomenclature, to describe anionic compounds.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.2.2.1",
@@ -1483,11 +1645,23 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "An anion derived formally by the removal of one or more hydrons from any position of a neutral parent hydride is preferably named by using the suffix ‘-ide’, with elision of the final letter ‘e’ of the parent hydride, if any."
+      "source_quote": "An anion derived formally by the removal of one or more hydrons from any position of a neutral parent hydride is preferably named by using the suffix ‘-ide’, with elision of the final letter ‘e’ of the parent hydride, if any.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.2.2.2",
@@ -1524,8 +1698,8 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "lcohols, (c) the suffix ‘aminide’ (formed by adding ‘ide’ to the suffix of the corresponding amine with elision of the final ‘e’ of ‘amine’, i.e., ‘amin(e) + ide’) to name anions derived from amines where the negative charge is on the nitrogen atom; (2) by the appropriate preselected anionic parent names in the case of other characteristic groups, such as ‘azanide’ for NH2–, ‘azanediide’ for NH2–, ‘oxidanide’ for HO–."
+      "source_quote": "lcohols, (c) the suffix ‘aminide’ (formed by adding ‘ide’ to the suffix of the corresponding amine with elision of the final ‘e’ of ‘amine’, i.e., ‘amin(e) + ide’) to name anions derived from amines where the negative charge is on the nitrogen atom; (2) by the appropriate preselected anionic parent names in the case of other characteristic groups, such as ‘azanide’ for NH2–, ‘azanediide’ for NH2–, ‘oxidanide’ for HO–.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-72.2.2.2.1",
@@ -1583,10 +1757,16 @@
         "ite",
         "ylo"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "P-72.2.2.2.1.1 The preferred IUPAC name of anions formed by the removal of a hydron from the chalcogen atom (O, S, Se, and Te) of an acid or peroxyacid characteristic group or functional parent compound is formed by replacing the ‘ic acid’ or ‘ous acid’ ending of the acid name by ‘ate’ or ‘ite’, respectively."
+      "source_quote": "P-72.2.2.2.1.1 The preferred IUPAC name of anions formed by the removal of a hydron from the chalcogen atom (O, S, Se, and Te) of an acid or peroxyacid characteristic group or functional parent compound is formed by replacing the ‘ic acid’ or ‘ous acid’ ending of the acid name by ‘ate’ or ‘ite’, respectively.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.2.2.2.1.2",
@@ -1640,10 +1820,16 @@
         "yl",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Preferred IUPAC names of acid esters of ‘organic acids’ as discussed in P-65 are formed substitutively (see P-65.6.3.3.5) rather than by the method of ‘hydrogen salts’."
+      "source_quote": "Preferred IUPAC names of acid esters of ‘organic acids’ as discussed in P-65 are formed substitutively (see P-65.6.3.3.5) rather than by the method of ‘hydrogen salts’.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.2.2.2.2",
@@ -1700,11 +1886,23 @@
         "ate",
         "ylo"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "An anion formed by subtracting a hydron from the chalcogen atom of a hydroxy characteristic group, or a chalcogen analogue, that can be expressed by a suffix such as ‘ol’, ‘thiol’, ‘peroxol’, etc., is preferably named by using suffixes ‘olate’, ‘thiolate’, ‘peroxolate’, etc., formed by addition of the ending ‘ate’ to the suffixes ‘ol’, ‘thiol’, ‘peroxol’, etc."
+      "source_quote": "An anion formed by subtracting a hydron from the chalcogen atom of a hydroxy characteristic group, or a chalcogen analogue, that can be expressed by a suffix such as ‘ol’, ‘thiol’, ‘peroxol’, etc., is preferably named by using suffixes ‘olate’, ‘thiolate’, ‘peroxolate’, etc., formed by addition of the ending ‘ate’ to the suffixes ‘ol’, ‘thiol’, ‘peroxol’, etc.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.2.2.2.3",
@@ -1755,8 +1953,8 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Amines and imines having one negative charge on each nitrogen atom are named by using the suffixes ‘aminide’ and ‘iminide’, formed by the addition of the suffix ‘ide’ to the suffix ‘amine’ or ‘imine’, respectively; the prefix ‘bis-’ is used to indicate two aminide suffixes."
+      "source_quote": "Amines and imines having one negative charge on each nitrogen atom are named by using the suffixes ‘aminide’ and ‘iminide’, formed by the addition of the suffix ‘ide’ to the suffix ‘amine’ or ‘imine’, respectively; the prefix ‘bis-’ is used to indicate two aminide suffixes.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-72.2.2.2.4",
@@ -1815,10 +2013,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Anionic centers generated formally by the removal of hydrons from atoms of characteristic groups other than those considered in P-72.2.2.2.1, P-72.2.2.2.2, and P-72.2.2.2.3 are named on the basis of the corresponding anionic parent hydrides."
+      "source_quote": "Anionic centers generated formally by the removal of hydrons from atoms of characteristic groups other than those considered in P-72.2.2.2.1, P-72.2.2.2.2, and P-72.2.2.2.3 are named on the basis of the corresponding anionic parent hydrides.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.3",
@@ -1875,11 +2079,23 @@
         "ium",
         "ite"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Two methods are used to name anions formally derived by the addition of a hydride ion, H–: (1) the suffix ‘uide’ describes an anion formally derived by adding a hydride ion, H–, to a parent hydride name; the multiplying prefixes ‘di’, ‘tri’, etc."
+      "source_quote": "Two methods are used to name anions formally derived by the addition of a hydride ion, H–: (1) the suffix ‘uide’ describes an anion formally derived by adding a hydride ion, H–, to a parent hydride name; the multiplying prefixes ‘di’, ‘tri’, etc.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.4",
@@ -1934,11 +2150,23 @@
         "uide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "he anionic centers; (2) by adding anionic skeletal replacement (‘a’) prefixes formed by adding the suffixes ‘ida’ and ‘uida’ to the name of the corresponding mononuclear parent hydride, with elision of the final letter ‘e’; these replacement prefixes indicate an anionic center having a bonding number one lower or one higher, respectively, than the bonding number of the corresponding neutral mononuclear parent hydride."
+      "source_quote": "he anionic centers; (2) by adding anionic skeletal replacement (‘a’) prefixes formed by adding the suffixes ‘ida’ and ‘uida’ to the name of the corresponding mononuclear parent hydride, with elision of the final letter ‘e’; these replacement prefixes indicate an anionic center having a bonding number one lower or one higher, respectively, than the bonding number of the corresponding neutral mononuclear parent hydride.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.5",
@@ -1965,8 +2193,8 @@
         "anion",
         "anionic center"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Multiple anionic centers are named by several methods in accordance with the previous rules."
+      "source_quote": "Multiple anionic centers are named by several methods in accordance with the previous rules.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-72.5.1",
@@ -1998,10 +2226,16 @@
         "ide",
         "uide"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "P-72.5.2 ‘Ide’ and ‘uide’ centers in the same parent hydride"
+      "source_quote": "P-72.5.2 ‘Ide’ and ‘uide’ centers in the same parent hydride",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.5.1.1",
@@ -2046,11 +2280,23 @@
         "uide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Anionic compounds with anionic centers derived from the same parent hydride, but located in different parts of a structure, are named, if possible, according to the principles of multiplicative nomenclature (see P-15.3), using the multiplying prefixes ‘bis’, ‘tris’, etc., where necessary."
+      "source_quote": "Anionic compounds with anionic centers derived from the same parent hydride, but located in different parts of a structure, are named, if possible, according to the principles of multiplicative nomenclature (see P-15.3), using the multiplying prefixes ‘bis’, ‘tris’, etc., where necessary.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.5.3",
@@ -2094,10 +2340,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Polyanions with anionic centers both in the parent hydride part of the structure and on a characteristic group that may be expressed as an anionic suffix are named by adding the anionic suffix to the name of a parent anion formed according to Rules P-72.2.2.1 and P-72.2.2.2."
+      "source_quote": "Polyanions with anionic centers both in the parent hydride part of the structure and on a characteristic group that may be expressed as an anionic suffix are named by adding the anionic suffix to the name of a parent anion formed according to Rules P-72.2.2.1 and P-72.2.2.2.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.6",
@@ -2127,8 +2379,8 @@
         "anionic center",
         "parent structure"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "When anionic centers are not in the same parent structure, one anion must be chosen as the parent anion and the other expressed as anionic substituent group(s)."
+      "source_quote": "When anionic centers are not in the same parent structure, one anion must be chosen as the parent anion and the other expressed as anionic substituent group(s).",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-72.6.1",
@@ -2169,8 +2421,8 @@
         "yl",
         "ate"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Substituent anions derived from acid characteristic groups by removal of a hydron from all hydroxy, thiol, etc."
+      "source_quote": "Substituent anions derived from acid characteristic groups by removal of a hydron from all hydroxy, thiol, etc.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-72.6.2",
@@ -2202,8 +2454,8 @@
         "anion",
         "ide"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "These prefixes are derived from the names oxide, sulfide, selenide, and telluride by changing the final letter ‘e’, to ‘o’."
+      "source_quote": "These prefixes are derived from the names oxide, sulfide, selenide, and telluride by changing the final letter ‘e’, to ‘o’.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-72.6.3",
@@ -2252,8 +2504,8 @@
         "ylidene",
         "ide"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "These prefixes are formed by adding the cumulative suffixes ‘yl’ or ‘ylidene’ to the name of the parent anion, with elision of the final letter ‘e’ in the name of the parent anion."
+      "source_quote": "These prefixes are formed by adding the cumulative suffixes ‘yl’ or ‘ylidene’ to the name of the parent anion, with elision of the final letter ‘e’ in the name of the parent anion.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-72.7",
@@ -2327,12 +2579,24 @@
         "ite",
         "Table 4.4"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "table_values_require_machine_table_extraction_or_manual_verification",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "When necessary, a parent anionic structure must be chosen by applying the following criteria in order until a definitive choice is achieved: (a) parent with the maximum number of anionic centers, including anionic suffixes;"
+      "source_quote": "When necessary, a parent anionic structure must be chosen by applying the following criteria in order until a definitive choice is achieved: (a) parent with the maximum number of anionic centers, including anionic suffixes;",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-72.8.1",
@@ -2372,8 +2636,8 @@
         "ide",
         "uide"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: methylsilanuide (PIN) methyl-λ6-silanide F6I– hexafluoro-λ5-iodanuide (preselected name) hexafluoro-λ7-iodanide"
+      "source_quote": "Examples: methylsilanuide (PIN) methyl-λ6-silanide F6I– hexafluoro-λ5-iodanuide (preselected name) hexafluoro-λ7-iodanide",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-72.8.2",
@@ -2417,8 +2681,8 @@
         "ide",
         "uide"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: H3C– methanide (PIN) λ2-methanuide 1λ6,3λ6-dithiocane-1,3-diide (PIN) 1λ4,3λ4-dithiocane-1,3-diuide (not 1λ4,3λ6-dithiocan-3-id-1-uide; identical groups, if possible, must not be named differently within a name)"
+      "source_quote": "Examples: H3C– methanide (PIN) λ2-methanuide 1λ6,3λ6-dithiocane-1,3-diide (PIN) 1λ4,3λ4-dithiocane-1,3-diuide (not 1λ4,3λ6-dithiocan-3-id-1-uide; identical groups, if possible, must not be named differently within a name)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-73.0",
@@ -2447,8 +2711,8 @@
         "parent hydride",
         "ide"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "For the purpose of organic nomenclature a cation is a molecular entity carrying at least one unit of positive charge formally derived from a parent hydride or parent compound by adding one or more hydrons, by the removal of one or more hydride ions, or a combination of these operations."
+      "source_quote": "For the purpose of organic nomenclature a cation is a molecular entity carrying at least one unit of positive charge formally derived from a parent hydride or parent compound by adding one or more hydrons, by the removal of one or more hydride ions, or a combination of these operations.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-73.1.1.1",
@@ -2506,11 +2770,23 @@
         "ate",
         "Table 7.3"
       ],
-      "unresolved_semantics": [
-        "table_values_require_machine_table_extraction_or_manual_verification",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "A parent ion derived formally by adding one hydron to a mononuclear parent hydride of the nitrogen, chalcogen, and halogen families in its standard bonding state is named by adding the term ‘onium’ to a root for the element as indicated in Table 7.3."
+      "source_quote": "A parent ion derived formally by adding one hydron to a mononuclear parent hydride of the nitrogen, chalcogen, and halogen families in its standard bonding state is named by adding the term ‘onium’ to a root for the element as indicated in Table 7.3.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.1.1.2",
@@ -2570,12 +2846,24 @@
         "ium",
         "Table 7.3"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "table_values_require_machine_table_extraction_or_manual_verification",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "A cation derived formally by adding one or more hydrons to any position of a neutral parent hydride (listed in Chapter P-2), or whose degree of hydrogenation has been modified (see P-31) is named by replacing the final letter ‘e’ of the parent hydride name, if any, by the suffix ‘ium’, preceded by multiplying prefixes ‘di’, ‘tri’, etc."
+      "source_quote": "A cation derived formally by adding one or more hydrons to any position of a neutral parent hydride (listed in Chapter P-2), or whose degree of hydrogenation has been modified (see P-31) is named by replacing the final letter ‘e’ of the parent hydride name, if any, by the suffix ‘ium’, preceded by multiplying prefixes ‘di’, ‘tri’, etc.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.1.2",
@@ -2612,10 +2900,16 @@
         "ium",
         "Table 7.4"
       ],
-      "unresolved_semantics": [
-        "table_values_require_machine_table_extraction_or_manual_verification"
-      ],
-      "source_quote": "The principle applied in the naming of cationic centers on characteristic groups is that the largest neutral parent possible is used."
+      "source_quote": "The principle applied in the naming of cationic centers on characteristic groups is that the largest neutral parent possible is used.",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.1.2.1",
@@ -2683,12 +2977,24 @@
         "ylo",
         "Table 7.4"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "table_values_require_machine_table_extraction_or_manual_verification",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "(1) Cationic suffixes derived from names of acids named by a suffix, amides, imides, nitriles, amines, and imines are formed by adding the suffix ‘ium’ to the basic suffix, as indicated in Table 7.4."
+      "source_quote": "(1) Cationic suffixes derived from names of acids named by a suffix, amides, imides, nitriles, amines, and imines are formed by adding the suffix ‘ium’ to the basic suffix, as indicated in Table 7.4.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.1.2.2",
@@ -2730,8 +3036,8 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Cations derived formally by adding a hydron to urea (or isourea) are named on the basis of the parent cation ‘uronium’, representing the following tautomeric structures: Numerical locants for the parent cation uronium are no longer used in preferred IUPAC names."
+      "source_quote": "Cations derived formally by adding a hydron to urea (or isourea) are named on the basis of the parent cation ‘uronium’, representing the following tautomeric structures: Numerical locants for the parent cation uronium are no longer used in preferred IUPAC names.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-73.2.1",
@@ -2783,10 +3089,16 @@
         "ylium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Cationic compounds that can be considered as being derived formally by removal of electrons from the corresponding radical may be named by adding the class name ‘cation’ as a separate word after the name of the radical."
+      "source_quote": "Cationic compounds that can be considered as being derived formally by removal of electrons from the corresponding radical may be named by adding the class name ‘cation’ as a separate word after the name of the radical.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.2.2",
@@ -2819,10 +3131,16 @@
         "parent hydride",
         "ide"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "The following recommendations follow closely those for naming radicals, for which see P-71."
+      "source_quote": "The following recommendations follow closely those for naming radicals, for which see P-71.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.2.2.1",
@@ -2857,10 +3175,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "P-73.2.2.2 ‘Added indicated hydrogen’ for cations of mancude ring systems"
+      "source_quote": "P-73.2.2.2 ‘Added indicated hydrogen’ for cations of mancude ring systems",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.2.2.1.1",
@@ -2903,8 +3227,8 @@
         "ylium",
         "ate"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Cations formed formally by the removal of a hydride ion, H–, from a terminal atom of a saturated unbranched acyclic hydrocarbon, a saturated monocyclic hydrocarbon, or a mononuclear parent hydride belonging to Group 14, i.e., methane, CH4, silane, SiH4, germane, GeH4, stannane, SnH4, and plumbane, PbH4, are named by replacing the ‘ane’ ending in the name of the parent hydride by the suffix ‘ylium’."
+      "source_quote": "Cations formed formally by the removal of a hydride ion, H–, from a terminal atom of a saturated unbranched acyclic hydrocarbon, a saturated monocyclic hydrocarbon, or a mononuclear parent hydride belonging to Group 14, i.e., methane, CH4, silane, SiH4, germane, GeH4, stannane, SnH4, and plumbane, PbH4, are named by replacing the ‘ane’ ending in the name of the parent hydride by the suffix ‘ylium’.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-73.2.2.1.2",
@@ -2959,11 +3283,23 @@
         "ylium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "According to the general method, cations formally derived by the removal of one hydride ion, H–, from any position of a parent hydride are named by adding the suffix ‘-ylium’ to the name of the parent hydride, with elision of the final ‘e’ in the name of the parent hydride, if present."
+      "source_quote": "According to the general method, cations formally derived by the removal of one hydride ion, H–, from any position of a parent hydride are named by adding the suffix ‘-ylium’ to the name of the parent hydride, with elision of the final ‘e’ in the name of the parent hydride, if present.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.2.2.3",
@@ -3009,8 +3345,8 @@
         "ium",
         "ylium"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Cations containing an –N2+ group attached to a parent hydride are traditionally named according to the principles of substitutive nomenclature by using the suffix ‘diazonium’ and the multiplying prefixes ‘bis’, ‘tris’, etc."
+      "source_quote": "Cations containing an –N2+ group attached to a parent hydride are traditionally named according to the principles of substitutive nomenclature by using the suffix ‘diazonium’ and the multiplying prefixes ‘bis’, ‘tris’, etc.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-73.2.3.1",
@@ -3058,11 +3394,23 @@
         "ylium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Cations formally derived by the removal of all the hydroxy groups as hydroxide ions from acids having systematic or retained names are named by replacing the ‘oic acid’ or ‘ic acid’ ending by the suffix ‘oylium’ or ‘ylium’, or the ‘carboxylic acid’ ending by ‘carbonylium’, in accordance with the rules for naming neutral acyl groups (see P-65.1.7)."
+      "source_quote": "Cations formally derived by the removal of all the hydroxy groups as hydroxide ions from acids having systematic or retained names are named by replacing the ‘oic acid’ or ‘ic acid’ ending by the suffix ‘oylium’ or ‘ylium’, or the ‘carboxylic acid’ ending by ‘carbonylium’, in accordance with the rules for naming neutral acyl groups (see P-65.1.7).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.2.3.3",
@@ -3117,8 +3465,8 @@
         "ate",
         "ylo"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "(1) additively, using the term ‘oxylium’ or ‘peroxylium’; (2) by substituting the parent cations ‘oxidanylium’ or ‘dioxidanylium’ (preselected names) by the appropriate substituent groups."
+      "source_quote": "(1) additively, using the term ‘oxylium’ or ‘peroxylium’; (2) by substituting the parent cations ‘oxidanylium’ or ‘dioxidanylium’ (preselected names) by the appropriate substituent groups.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-73.2.3.4",
@@ -3173,8 +3521,8 @@
         "ylium",
         "ate"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "All other cationic centers are named by substituting the appropriate parent cation."
+      "source_quote": "All other cationic centers are named by substituting the appropriate parent cation.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-73.3.1",
@@ -3222,12 +3570,24 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "table_values_require_machine_table_extraction_or_manual_verification",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "ng a cationic center on a heteroatom that has one more skeletal bonds than it has in the corresponding neutral heterocycle is named by adding the suffix ‘ylium’ to the name of the neutral parent hydride for which the λ-convention has been used to describe a nonstandard bonding state of the heteroatom, and that heteroatom has at least one hydrogen atom in the neutral heterocycle on which the ‘ylium’ suffix can operate."
+      "source_quote": "ng a cationic center on a heteroatom that has one more skeletal bonds than it has in the corresponding neutral heterocycle is named by adding the suffix ‘ylium’ to the name of the neutral parent hydride for which the λ-convention has been used to describe a nonstandard bonding state of the heteroatom, and that heteroatom has at least one hydrogen atom in the neutral heterocycle on which the ‘ylium’ suffix can operate.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.3.2",
@@ -3262,10 +3622,16 @@
         "ylium",
         "Table 7.5"
       ],
-      "unresolved_semantics": [
-        "table_values_require_machine_table_extraction_or_manual_verification"
-      ],
-      "source_quote": "The contracted and traditional names listed in Table 7.5 are retained as preferred IUPAC names and for use in general nomenclature."
+      "source_quote": "The contracted and traditional names listed in Table 7.5 are retained as preferred IUPAC names and for use in general nomenclature.",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.4",
@@ -3331,11 +3697,23 @@
         "ylium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Two methods are used to name cationic centers by skeletal replacement (‘a’) nomenclature: (1) name the compound using neutral skeletal replacement (‘a’) prefixes and then describe the cationic centers by the appropriate suffix ‘ium’ and ‘ylium’; (2) by using cationic skeletal replacement (‘a’) prefixes."
+      "source_quote": "Two methods are used to name cationic centers by skeletal replacement (‘a’) nomenclature: (1) name the compound using neutral skeletal replacement (‘a’) prefixes and then describe the cationic centers by the appropriate suffix ‘ium’ and ‘ylium’; (2) by using cationic skeletal replacement (‘a’) prefixes.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.5",
@@ -3362,8 +3740,8 @@
         "cation",
         "cationic center"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Cationic compounds with multiple cationic centers are named by several methods in addition to previous rules."
+      "source_quote": "Cationic compounds with multiple cationic centers are named by several methods in addition to previous rules.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-73.5.1",
@@ -3397,10 +3775,16 @@
         "ium",
         "ylium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "P-73.5.2 ‘Ium’ and ‘ylium’ centers in the same parent hydride"
+      "source_quote": "P-73.5.2 ‘Ium’ and ‘ylium’ centers in the same parent hydride",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.5.1.1",
@@ -3444,10 +3828,16 @@
         "ylium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Cationic compounds with cationic centers derived from the same parent hydride, but located in different parts of a structure, are named, if possible, according to the principles of multiplicative nomenclature (see P-15.3), using the multiplying prefixes ‘bis-’, ‘tris-’, etc."
+      "source_quote": "Cationic compounds with cationic centers derived from the same parent hydride, but located in different parts of a structure, are named, if possible, according to the principles of multiplicative nomenclature (see P-15.3), using the multiplying prefixes ‘bis-’, ‘tris-’, etc.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.5.1.2",
@@ -3504,8 +3894,8 @@
         "ium",
         "ylium"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Polycations with cationic centers on characteristic groups are named by substitutive nomenclature or multiplicative nomenclature using the multiplying prefixes ‘bis-’, ‘tris-’, etc."
+      "source_quote": "Polycations with cationic centers on characteristic groups are named by substitutive nomenclature or multiplicative nomenclature using the multiplying prefixes ‘bis-’, ‘tris-’, etc.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-73.5.1.3",
@@ -3556,10 +3946,16 @@
         "ylium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "P-73.5.2 ‘Ium’ and ‘ylium’ centers in the same parent hydride Cyclic compounds with two or more cationic centers in the same parent hydride structure at least one of which being denoted by ‘ium’ and another by ‘ylium’ suffixes, are named by placing the ‘ium’ and ‘ylium’ suffixes, in that order, after the name of the parent hydride, preceded by the appropriate multiplying numerical prefixes and locants, where required."
+      "source_quote": "P-73.5.2 ‘Ium’ and ‘ylium’ centers in the same parent hydride Cyclic compounds with two or more cationic centers in the same parent hydride structure at least one of which being denoted by ‘ium’ and another by ‘ylium’ suffixes, are named by placing the ‘ium’ and ‘ylium’ suffixes, in that order, after the name of the parent hydride, preceded by the appropriate multiplying numerical prefixes and locants, where required.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.5.3",
@@ -3611,10 +4007,16 @@
         "ylium",
         "ite"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "P-73.5.3.1 Cationic compounds with cationic centers both in the parent hydride part of the structure and on a characteristic group expressed as a cationic suffix are named by citing both cationic centers."
+      "source_quote": "P-73.5.3.1 Cationic compounds with cationic centers both in the parent hydride part of the structure and on a characteristic group expressed as a cationic suffix are named by citing both cationic centers.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.6",
@@ -3679,11 +4081,17 @@
         "ite",
         "Table 7.3"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "table_values_require_machine_table_extraction_or_manual_verification"
-      ],
-      "source_quote": "A polycation in which all cationic centers cannot be included in the cationic parent hydride or cationic parent compound is named by selecting one part of the structure as the parent cation and citing the other part(s) as cationic substituent prefixes."
+      "source_quote": "A polycation in which all cationic centers cannot be included in the cationic parent hydride or cationic parent compound is named by selecting one part of the structure as the parent cation and citing the other part(s) as cationic substituent prefixes.",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.7",
@@ -3763,12 +4171,24 @@
         "ylo",
         "Table 4.4"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "table_values_require_machine_table_extraction_or_manual_verification",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "A parent cationic structure is chosen by applying the following criteria in order until a definitive choice is achieved: (a) parent with the maximum number of cationic centers, including cationic suffixes;"
+      "source_quote": "A parent cationic structure is chosen by applying the following criteria in order until a definitive choice is achieved: (a) parent with the maximum number of cationic centers, including cationic suffixes;",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
+            "table_values_require_machine_table_extraction_or_manual_verification"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-73.8.1",
@@ -3822,10 +4242,16 @@
         "ium",
         "ylium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "hydride that has been modified by the λ-convention."
+      "source_quote": "hydride that has been modified by the λ-convention.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.0",
@@ -3868,11 +4294,23 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation",
-        "source_rule_needs_finer_manual_semantic_decomposition"
-      ],
-      "source_quote": "Zwitterionic compounds have both positive and negative ionic centers. Most examples are essentially neutral because they have an equal number of formal unit charges of opposite sign and are best illustrated by the ionic forms of amino acids."
+      "source_quote": "Zwitterionic compounds have both positive and negative ionic centers. Most examples are essentially neutral because they have an equal number of formal unit charges of opposite sign and are best illustrated by the ionic forms of amino acids.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_rule_needs_finer_manual_semantic_decomposition"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.1.1",
@@ -3947,11 +4385,23 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Zwitterionic compounds with the ionic centers in the same parent structure may be named by combining appropriate cumulative suffixes at the end of the name of a parent hydride in the order ‘ium’, ‘ylium’, ‘ide’, ‘uide’."
+      "source_quote": "Zwitterionic compounds with the ionic centers in the same parent structure may be named by combining appropriate cumulative suffixes at the end of the name of a parent hydride in the order ‘ium’, ‘ylium’, ‘ide’, ‘uide’.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.1.2",
@@ -4002,8 +4452,8 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Zwitterionic compounds with at least one ionic center on a characteristic group may be named by adding the appropriate ionic suffix to the name of the ionic parent hydride."
+      "source_quote": "Zwitterionic compounds with at least one ionic center on a characteristic group may be named by adding the appropriate ionic suffix to the name of the ionic parent hydride.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.1.3",
@@ -4060,10 +4510,16 @@
         "ium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Zwitterionic compounds with anionic and cationic centers on different parent structures may be named by prefixing the name of the cationic center or the parts of the structure containing the cationic centers to the name of the anionic parent structure."
+      "source_quote": "Zwitterionic compounds with anionic and cationic centers on different parent structures may be named by prefixing the name of the cationic center or the parts of the structure containing the cationic centers to the name of the anionic parent structure.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2",
@@ -4094,11 +4550,23 @@
         "dipolar compound",
         "ite"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation",
-        "source_rule_needs_finer_manual_semantic_decomposition"
-      ],
-      "source_quote": "Dipolar compounds are electrically neutral molecules carrying a negative and a positive charge in at least one of their major canonical resonance structures."
+      "source_quote": "Dipolar compounds are electrically neutral molecules carrying a negative and a positive charge in at least one of their major canonical resonance structures.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_rule_needs_finer_manual_semantic_decomposition"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.3",
@@ -4144,10 +4612,16 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "P-74.2.1 1,2-Dipolar compounds P-74.2.1.1 ‘Ylides’ Compounds in which an anionic site ‘Y–’ (originally only on carbon, but now including other atoms) is attached directly to a heteroatom ‘X+’ (usually nitrogen, phosphorus, sulfur, selenium, or tellurium) carrying a formal positive charge are 1,2-dipolar species of the type RmX+-Y––Rn."
+      "source_quote": "P-74.2.1 1,2-Dipolar compounds P-74.2.1.1 ‘Ylides’ Compounds in which an anionic site ‘Y–’ (originally only on carbon, but now including other atoms) is attached directly to a heteroatom ‘X+’ (usually nitrogen, phosphorus, sulfur, selenium, or tellurium) carrying a formal positive charge are 1,2-dipolar species of the type RmX+-Y––Rn.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.1.1.1",
@@ -4181,8 +4655,8 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Nitrogen ylides have the general structure R3N+–C–R2."
+      "source_quote": "Nitrogen ylides have the general structure R3N+–C–R2.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.1.1.2",
@@ -4221,8 +4695,8 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Phosphorus ylides have the general structure R3P+–C–R2 ↔ R3P=CR2"
+      "source_quote": "Phosphorus ylides have the general structure R3P+–C–R2 ↔ R3P=CR2",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.1.1.3",
@@ -4257,8 +4731,8 @@
         "ium",
         "ylo"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Oxygen ylides have the general structure R2O+–C–R2."
+      "source_quote": "Oxygen ylides have the general structure R2O+–C–R2.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.1.1.4",
@@ -4297,8 +4771,8 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Sulfur ylides have the general structure R2S+–C–R2 ↔ R2S=CR2."
+      "source_quote": "Sulfur ylides have the general structure R2S+–C–R2 ↔ R2S=CR2.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.1.2",
@@ -4345,10 +4819,16 @@
         "ium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Amine oxides and imine oxides have the generic formulae R3N+–O– and R2C=N+(R)–O– respectively; chalcogen analogues are amine sulfides, imine selenides, etc."
+      "source_quote": "Amine oxides and imine oxides have the generic formulae R3N+–O– and R2C=N+(R)–O– respectively; chalcogen analogues are amine sulfides, imine selenides, etc.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.1.3",
@@ -4392,8 +4872,8 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Amine imides (not amine imines) have the generic formula R3N+–N––R. They may be named by two methods: (1) as a zwitterion based on hydrazine (in order not to break the nitrogen chain); (2) by functional class nomenclature using the class name ‘imide’ placed after the name of the amine."
+      "source_quote": "Amine imides (not amine imines) have the generic formula R3N+–N––R. They may be named by two methods: (1) as a zwitterion based on hydrazine (in order not to break the nitrogen chain); (2) by functional class nomenclature using the class name ‘imide’ placed after the name of the amine.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.1.4",
@@ -4437,8 +4917,8 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Phosphine oxides have the generic formula R3P+–O– ↔ R3P=O. Chalcogen analogues are phosphine sulfides, phosphine selenides, and phosphine telluride (where O is replaced by S, Se, and Te, respectively)."
+      "source_quote": "Phosphine oxides have the generic formula R3P+–O– ↔ R3P=O. Chalcogen analogues are phosphine sulfides, phosphine selenides, and phosphine telluride (where O is replaced by S, Se, and Te, respectively).",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.1.5",
@@ -4490,10 +4970,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Phosphine imides have the generic structure: R3P+–N––R ↔ R3P=N–R. They may be named in three ways: (1) as zwitterionic compounds; (2) by functional class nomenclature using the class name imide; (3) substitutively, as heterimines, by using the suffix ‘-imine’ and λ5-phosphane as the parent hydride."
+      "source_quote": "Phosphine imides have the generic structure: R3P+–N––R ↔ R3P=N–R. They may be named in three ways: (1) as zwitterionic compounds; (2) by functional class nomenclature using the class name imide; (3) substitutively, as heterimines, by using the suffix ‘-imine’ and λ5-phosphane as the parent hydride.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1",
@@ -4544,10 +5030,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Z=X+-Y– ↔ Z–-X+=Y ↔ Z+-X-Y– ↔ Z–-X-Y+ Preferred IUPAC names are based on the first canonical form, although each canonical form can be named, if so desired."
+      "source_quote": "Z=X+-Y– ↔ Z–-X+=Y ↔ Z+-X-Y– ↔ Z–-X-Y+ Preferred IUPAC names are based on the first canonical form, although each canonical form can be named, if so desired.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1.1",
@@ -4588,10 +5080,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "RN=N+(R)−N–-R– ↔ RN––N+(R)=NR Method (1) in P-74.2.2.1 gives preferred IUPAC names."
+      "source_quote": "RN=N+(R)−N–-R– ↔ RN––N+(R)=NR Method (1) in P-74.2.2.1 gives preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1.2",
@@ -4632,10 +5130,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "R-N––N+(R)=CR2 ↔ R-N=N+(R)-C–R2 Method (1) in P-74.2.2.1 gives preferred IUPAC names."
+      "source_quote": "R-N––N+(R)=CR2 ↔ R-N=N+(R)-C–R2 Method (1) in P-74.2.2.1 gives preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1.3",
@@ -4675,10 +5179,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "R2C––N+(R)=CR2 ↔ R2C=N+(R)-C–R2 Method (2) in P-74.2.2.1 gives preferred IUPAC names."
+      "source_quote": "R2C––N+(R)=CR2 ↔ R2C=N+(R)-C–R2 Method (2) in P-74.2.2.1 gives preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1.4",
@@ -4719,10 +5229,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Example: _ diphenyldiazene oxide (PIN) (diphenyldiazeniumyl)oxidanide azoxybenzene 1,2-diphenyl-1λ5-diazen-1-one"
+      "source_quote": "Example: _ diphenyldiazene oxide (PIN) (diphenyldiazeniumyl)oxidanide azoxybenzene 1,2-diphenyl-1λ5-diazen-1-one",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1.5",
@@ -4763,10 +5279,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "R2C=O+–N–-R ↔ R2C+−O-N–-R Method (2) in P-74.2.2.1 gives preferred IUPAC names."
+      "source_quote": "R2C=O+–N–-R ↔ R2C+−O-N–-R Method (2) in P-74.2.2.1 gives preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1.6",
@@ -4807,10 +5329,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "R2C––O+=O ↔ R2C=O+-O– Method (1) in P-74.2.2.1 gives preferred IUPAC names."
+      "source_quote": "R2C––O+=O ↔ R2C=O+-O– Method (1) in P-74.2.2.1 gives preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1.7",
@@ -4850,10 +5378,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "R2C=O+–C–(R)2 ↔ R2C+–OC–(R)2 Method (2) in P-74.2.2.1 gives preferred IUPAC names."
+      "source_quote": "R2C=O+–C–(R)2 ↔ R2C+–OC–(R)2 Method (2) in P-74.2.2.1 gives preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1.8",
@@ -4903,10 +5437,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "RR′C=S+−O– ↔ RR′C=S=O (where R′ = or ≠ H) Method (4) in P-74.2.2.1 gives preferred IUPAC names."
+      "source_quote": "RR′C=S+−O– ↔ RR′C=S=O (where R′ = or ≠ H) Method (4) in P-74.2.2.1 gives preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1.9",
@@ -4947,10 +5487,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "R2C=N+(O–)R′ ↔ R2C+−N(O–)R′ where R′ ≠ H; compounds where R′ = H are not included in this class Method (3) in P-74.2.2.1 gives preferred IUPAC names."
+      "source_quote": "R2C=N+(O–)R′ ↔ R2C+−N(O–)R′ where R′ ≠ H; compounds where R′ = H are not included in this class Method (3) in P-74.2.2.1 gives preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.1.10",
@@ -4984,10 +5530,16 @@
       "tables_or_terms": [
         "PIN"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Example: ↔ CH3-CH2-NO2 nitroethane (PIN)"
+      "source_quote": "Example: ↔ CH3-CH2-NO2 nitroethane (PIN)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.2",
@@ -5012,8 +5564,8 @@
       "tables_or_terms": [
         "yl"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "X≡N+–Z– ↔ –X=N+=Z ↔ –X=N-Z+, where X = C, N or O; and Z = C, N or O"
+      "source_quote": "X≡N+–Z– ↔ –X=N+=Z ↔ –X=N-Z+, where X = C, N or O; and Z = C, N or O",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.2.2.1",
@@ -5045,8 +5597,8 @@
         "yl",
         "ide"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "(1) as zwitterionic compounds, without breaking the longest chain of heteroatoms; (2) by functional class nomenclature using the class names imide, oxide, sulfide, etc."
+      "source_quote": "(1) as zwitterionic compounds, without breaking the longest chain of heteroatoms; (2) by functional class nomenclature using the class names imide, oxide, sulfide, etc.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.2.2.1.1",
@@ -5089,10 +5641,16 @@
         "ium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Method (1) in P-74.2.2.2.1, zwitterionic names, generates preferred IUPAC names."
+      "source_quote": "Method (1) in P-74.2.2.2.1, zwitterionic names, generates preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.2.1.2",
@@ -5134,10 +5692,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Method (2) in P-74.2.2.2.1, functional class names, yields preferred IUPAC names (see also P-66.5.4.1)."
+      "source_quote": "Method (2) in P-74.2.2.2.1, functional class names, yields preferred IUPAC names (see also P-66.5.4.1).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.2.1.3",
@@ -5179,10 +5743,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Method (1) in P-74.2.2.2.1, zwitterionic names, gives preferred IUPAC names."
+      "source_quote": "Method (1) in P-74.2.2.2.1, zwitterionic names, gives preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.2.2",
@@ -5229,10 +5799,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "(1) substitutively, using the compulsory prefix azido (P-61.7); (2) by functional class nomenclature using the class name azide; (3) as derivatives of the zwitterionic parent hydride ‘triazadien-2-ium-1-ide.’ Method (1) yields preferred IUPAC names (see also P-61.7)"
+      "source_quote": "(1) substitutively, using the compulsory prefix azido (P-61.7); (2) by functional class nomenclature using the class name azide; (3) as derivatives of the zwitterionic parent hydride ‘triazadien-2-ium-1-ide.’ Method (1) yields preferred IUPAC names (see also P-61.7)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.2.3",
@@ -5279,10 +5855,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "(1) substitutively by using the compulsory prefix diazo (P-61.4);. (2) as derivatives of the zwitterionic parent hydride diazen-2-ium-1-ide."
+      "source_quote": "(1) substitutively by using the compulsory prefix diazo (P-61.4);. (2) as derivatives of the zwitterionic parent hydride diazen-2-ium-1-ide.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.3",
@@ -5322,10 +5904,16 @@
         "ide",
         "ite"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "X2•-C=Z ↔ +X=C-Z–, where X = C or N and Z = C, N or O P-74.2.2.3.1 Acyl carbenes have the generic structure acyl-C2•–R."
+      "source_quote": "X2•-C=Z ↔ +X=C-Z–, where X = C or N and Z = C, N or O P-74.2.2.3.1 Acyl carbenes have the generic structure acyl-C2•–R.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-74.2.2.3.2",
@@ -5366,8 +5954,8 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Compounds having the structure RC(=NH)-C2•–R are imidoyl carbenes. Imidoyl is a shortened, but imprecise, term for carboximidoyl, RC(=NH)–."
+      "source_quote": "Compounds having the structure RC(=NH)-C2•–R are imidoyl carbenes. Imidoyl is a shortened, but imprecise, term for carboximidoyl, RC(=NH)–.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.2.3.3",
@@ -5404,8 +5992,8 @@
         "ylidene",
         "ide"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "RC(=N-R′)N2• ↔ RC(N–-R′)=N+ They may be named substitutively using the parent names azanylidene, nitrene, or aminylene."
+      "source_quote": "RC(=N-R′)N2• ↔ RC(N–-R′)=N+ They may be named substitutively using the parent names azanylidene, nitrene, or aminylene.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.2.3.4",
@@ -5443,8 +6031,8 @@
         "ylidene",
         "ide"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Preferred IUPAC names are formed by using the longest carbon chain according to the principles of substitutive nomenclature for radicals, low locants being assigned to the suffix ‘ylidene’."
+      "source_quote": "Preferred IUPAC names are formed by using the longest carbon chain according to the principles of substitutive nomenclature for radicals, low locants being assigned to the suffix ‘ylidene’.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-74.2.3",
@@ -5483,8 +6071,8 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Names of dipolar substituent groups are formed by using prefixes for naming ions as the substituent group and designating the free valences by the suffixes ‘yl’, ‘ylidene’ or ‘ylidyne’."
+      "source_quote": "Names of dipolar substituent groups are formed by using prefixes for naming ions as the substituent group and designating the free valences by the suffixes ‘yl’, ‘ylidene’ or ‘ylidyne’.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-75",
@@ -5513,8 +6101,8 @@
         "radical ion",
         "parent structure"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "For the purpose of nomenclature of organic chemistry, a radical ion is a molecular entity having at least one radical center and one ionic center, which may be on the same or on different atoms of a parent structure."
+      "source_quote": "For the purpose of nomenclature of organic chemistry, a radical ion is a molecular entity having at least one radical center and one ionic center, which may be on the same or on different atoms of a parent structure.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-75.1",
@@ -5585,10 +6173,16 @@
         "elium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
-      ],
-      "source_quote": "Radical ions formed by the addition or removal of electrons may be named in two ways."
+      "source_quote": "Radical ions formed by the addition or removal of electrons may be named in two ways.",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-75.2",
@@ -5646,10 +6240,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "The order of seniority, radicals > anions > cations, is reflected in a preferred IUPAC name."
+      "source_quote": "The order of seniority, radicals > anions > cations, is reflected in a preferred IUPAC name.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-75.2.1",
@@ -5686,10 +6286,16 @@
         "ylidene",
         "ide"
       ],
-      "unresolved_semantics": [
-        "example_only_record_should_be_converted_into_test_cases_during_executable_compilation"
-      ],
-      "source_quote": "HN•– azanidyl (preselected name) aminidyl ethan-2-id-1-yl (PIN) (CH3)3B•– trimethylboranuidyl (PIN) trimethyl-1λ5-boranidyl 1λ4-thiiran-1-id-1-yl (PIN) 1,3-diphenylpropane-1,3-diid-2-yl (PIN) CH3-O-CO-C2•– (methoxycarbonyl)methanidylidene (PIN)"
+      "source_quote": "HN•– azanidyl (preselected name) aminidyl ethan-2-id-1-yl (PIN) (CH3)3B•– trimethylboranuidyl (PIN) trimethyl-1λ5-boranidyl 1λ4-thiiran-1-id-1-yl (PIN) 1,3-diphenylpropane-1,3-diid-2-yl (PIN) CH3-O-CO-C2•– (methoxycarbonyl)methanidylidene (PIN)",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "example_only_record_should_be_converted_into_test_cases_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-75.2.2",
@@ -5727,10 +6333,16 @@
         "elium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "example_only_record_should_be_converted_into_test_cases_during_executable_compilation"
-      ],
-      "source_quote": "H2C•+ methyliumyl (PIN) H4Si•+ silaniumyl (preselected name) [CH3-CH2]•2+ ethaniumyliumyl (PIN) (location of radical and ionic centers is unknown) ethan-1-ium-1-ylium-1-yl (PIN) (location of radical and ionic centers as indicated by locants) or [C6H6]•+ benzenelium (PIN) benzeniumyl 4,5-bis(trifluoromethyl)-1,2,3-trithiolan-5-ylium-4-yl (PIN)"
+      "source_quote": "H2C•+ methyliumyl (PIN) H4Si•+ silaniumyl (preselected name) [CH3-CH2]•2+ ethaniumyliumyl (PIN) (location of radical and ionic centers is unknown) ethan-1-ium-1-ylium-1-yl (PIN) (location of radical and ionic centers as indicated by locants) or [C6H6]•+ benzenelium (PIN) benzeniumyl 4,5-bis(trifluoromethyl)-1,2,3-trithiolan-5-ylium-4-yl (PIN)",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "example_only_record_should_be_converted_into_test_cases_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-75.2.3",
@@ -5802,12 +6414,24 @@
         "ate",
         "ite"
       ],
-      "unresolved_semantics": [
-        "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split",
-        "example_only_record_should_be_converted_into_test_cases_during_executable_compilation",
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "1-(trimethylsilyl)triaz-2-en-2-ium-1-id-2-yl (PIN) P-75.2.4 ‘Added indicated hydrogen’ Radical and ionic centers at positions in a mancude parent hydride where there is an insufficient number of hydrogen atoms to directly apply recommendations for the use of ‘yl’, ‘ylidene’, ‘ide’ or ‘ylium’ as given in P-71.1, P-72.1 and P-73.2, respectively are derived formally from a dihydro derivative of the cyclic parent hydride."
+      "source_quote": "1-(trimethylsilyl)triaz-2-en-2-ium-1-id-2-yl (PIN) P-75.2.4 ‘Added indicated hydrogen’ Radical and ionic centers at positions in a mancude parent hydride where there is an insufficient number of hydrogen atoms to directly apply recommendations for the use of ‘yl’, ‘ylidene’, ‘ide’ or ‘ylium’ as given in P-71.1, P-72.1 and P-73.2, respectively are derived formally from a dihydro derivative of the cyclic parent hydride.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "example_only_record_should_be_converted_into_test_cases_during_executable_compilation",
+            "long_source_record_contains_multiple_embedded_subrules_examples_or_tables_for_review_split"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-75.3.1",
@@ -5859,10 +6483,16 @@
         "ium",
         "ylium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "When ions may be named by using modified suffixes (see P-73.1.2.1 and P-72.2.2.2.3), the suffixes denoting radical centers are added to the name of the cationic or anionic parent hydride."
+      "source_quote": "When ions may be named by using modified suffixes (see P-73.1.2.1 and P-72.2.2.2.3), the suffixes denoting radical centers are added to the name of the cationic or anionic parent hydride.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-75.3.2",
@@ -5903,8 +6533,8 @@
         "ium",
         "ylo"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: acetyl(methyl)oxidaniumyl (PIN) propyloxidaniumyl (PIN) CH3-CO-N•– acetylazanidyl (PIN) 2-(benzenesulfonyl)hydrazin-1-id-1-yl (PIN) 2-(benzenesulfonyl)diazan-1-id-1-yl"
+      "source_quote": "Examples: acetyl(methyl)oxidaniumyl (PIN) propyloxidaniumyl (PIN) CH3-CO-N•– acetylazanidyl (PIN) 2-(benzenesulfonyl)hydrazin-1-id-1-yl (PIN) 2-(benzenesulfonyl)diazan-1-id-1-yl",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-75.4",
@@ -5950,8 +6580,8 @@
         "ylidyne",
         "ium"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "ve priority over ionic centers. A radical ion derived formally by the subtraction of one or more hydrogen atom(s) from an ionic or zwitterionic compound in which the ionic and radical centers cannot be included in the same parent structure is named by expressing the ionic center(s), or the part of the structure containing the ionic center(s), by means of substituent prefixes attached to the name of the parent radical."
+      "source_quote": "ve priority over ionic centers. A radical ion derived formally by the subtraction of one or more hydrogen atom(s) from an ionic or zwitterionic compound in which the ionic and radical centers cannot be included in the same parent structure is named by expressing the ionic center(s), or the part of the structure containing the ionic center(s), by means of substituent prefixes attached to the name of the parent radical.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-76",
@@ -5993,8 +6623,8 @@
         "ylium",
         "ate"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Delocalization in names involving one radical or ionic center in an otherwise conjugated double bonds structure is denoted by the appropriate suffix without locants."
+      "source_quote": "Delocalization in names involving one radical or ionic center in an otherwise conjugated double bonds structure is denoted by the appropriate suffix without locants.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-77.1.1",
@@ -6037,8 +6667,8 @@
         "ium",
         "ate"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: anilinium choride (PIN) benzenaminium chloride bis(methanaminium) sulfate (PIN) N,N-diethylethanaminium hydrogen sulfate (PIN)"
+      "source_quote": "Examples: anilinium choride (PIN) benzenaminium chloride bis(methanaminium) sulfate (PIN) N,N-diethylethanaminium hydrogen sulfate (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-77.1.2",
@@ -6077,10 +6707,16 @@
         "ide",
         "ium"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Example: 2-aminoethan-1-aminium chloride (PIN) ethane-1,2-diamine monohydrochloride"
+      "source_quote": "Example: 2-aminoethan-1-aminium chloride (PIN) ethane-1,2-diamine monohydrochloride",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-77.1.3",
@@ -6126,10 +6762,16 @@
         "ide",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "(1) as adducts. The names of these adducts are preferred IUPAC names only when the acid components of the adducts are organic compounds; (2) the unaltered name of the base followed by the name of the anion; (3) for salts of hydrohalogen acids only, the unaltered name of the base is followed by hydrofluoride, hydrobromide, hydrochloride, or hydroiodide, as the case may be."
+      "source_quote": "(1) as adducts. The names of these adducts are preferred IUPAC names only when the acid components of the adducts are organic compounds; (2) the unaltered name of the base followed by the name of the anion; (3) for salts of hydrohalogen acids only, the unaltered name of the base is followed by hydrofluoride, hydrobromide, hydrochloride, or hydroiodide, as the case may be.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-77.2.1",
@@ -6173,10 +6815,16 @@
         "ium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Examples: CH3-O– Na+ sodium methoxide (PIN) sodium methanolate sodium 4-methylbenzene-1-thiolate (PIN)"
+      "source_quote": "Examples: CH3-O– Na+ sodium methoxide (PIN) sodium methanolate sodium 4-methylbenzene-1-thiolate (PIN)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-77.2.2",
@@ -6210,8 +6858,8 @@
         "ium",
         "ate"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Example: HO-CH2-CH2-O– K+ potassium 2-hydroxyethan-1-olate (PIN)"
+      "source_quote": "Example: HO-CH2-CH2-O– K+ potassium 2-hydroxyethan-1-olate (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-77.3.1",
@@ -6251,10 +6899,16 @@
         "ium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Example: CH3-CO-O– Na+ sodium acetate (PIN)"
+      "source_quote": "Example: CH3-CO-O– Na+ sodium acetate (PIN)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-77.3.2",
@@ -6294,10 +6948,16 @@
         "ium",
         "ate"
       ],
-      "unresolved_semantics": [
-        "cross_referenced_rules_must_be_resolved_during_executable_compilation"
-      ],
-      "source_quote": "Example: potassium 3-carboxypropanoate (PIN) butanedioic acid monopotassium salt Continued with P-8 Isotopically Modified Compounds."
+      "source_quote": "Example: potassium 3-carboxypropanoate (PIN) butanedioic acid monopotassium salt Continued with P-8 Isotopically Modified Compounds.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "cross_referenced_rules_must_be_resolved_during_executable_compilation"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "access_date": "2026-07-15",
+  "canonical_source": {
+    "title": "Nomenclature of Organic Chemistry: IUPAC Recommendations and Preferred Names 2013, Blue Book Version 3",
+    "url": "https://iupac.qmul.ac.uk/BlueBook/PDF/BlueBookV3.pdf",
+    "role": "canonical_pdf_source",
+    "retrieval": {
+      "method": "HEAD",
+      "status": 200,
+      "content_type": "application/pdf",
+      "content_length_bytes": 28948620,
+      "last_modified": "Wed, 25 Mar 2026 16:31:29 GMT",
+      "etag": "\"1b9b88c-64ddbcccfe3d8\""
+    },
+    "stored_in_repository": false,
+    "notes": [
+      "The PDF is the canonical source for Blue Book Version 3 provenance.",
+      "The PDF itself is intentionally not committed to this repository."
+    ]
+  },
+  "extraction_sources": [
+    {
+      "title": "IUPAC Blue Book HTML version",
+      "url": "https://iupac.qmul.ac.uk/BlueBook/",
+      "role": "section_linked_extraction_source",
+      "notes": [
+        "Used for section-addressable extraction of rule text and rule identifiers.",
+        "Records derived from this source should be treated as aligned with the canonical PDF unless contradicted by explicit corrections."
+      ]
+    },
+    {
+      "title": "IUPAC Blue Book post-Version-3 corrections",
+      "url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+      "role": "section_linked_correction_provenance_source",
+      "notes": [
+        "Used to preserve post-Version-3 correction provenance and target-rule links.",
+        "Correction records are represented separately from the canonical Version 3 rule corpus."
+      ]
+    }
+  ],
+  "repository_policy": {
+    "commit_canonical_pdf": false,
+    "preferred_source_storage": "metadata_and_section_links",
+    "generated_artifacts": [
+      "data/bluebook_rules.json",
+      "data/bluebook_semantic_rules.json",
+      "data/bluebook_semantic_rules.normalized.json",
+      "data/bluebook_rule_dependency_graph.json",
+      "data/normalized_semantic_rule_schema.json",
+      "data/semantic_rules/*.json"
+    ]
+  }
+}

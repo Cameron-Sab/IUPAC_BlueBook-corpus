@@ -67,13 +67,25 @@
         "conformational stereodescriptor vocabulary",
         "natural-product stereochemical exception context"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
-        "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
-      ],
-      "source_quote": "When different stereodescriptors are recommended to describe cis and trans isomers, diastereoisomers, and enantiomers, one of them is recommended as a preferred stereodescriptor."
+      "source_quote": "When different stereodescriptors are recommended to describe cis and trans isomers, diastereoisomers, and enantiomers, one of them is recommended as a preferred stereodescriptor.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-91.1",
@@ -125,11 +137,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "natural-product stereochemical exception context"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
-      ],
-      "source_quote": "If the configuration is unknown, this can be indicated explicitly by a wavy line of constant amplitude ."
+      "source_quote": "If the configuration is unknown, this can be indicated explicitly by a wavy line of constant amplitude .",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-91.2",
@@ -164,10 +188,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "The configuration of an organic compound is systematically indicated by one or more affixes added to a name that does not itself prescribe configuration; such affixes are called ‘stereodescriptors’."
+      "source_quote": "The configuration of an organic compound is systematically indicated by one or more affixes added to a name that does not itself prescribe configuration; such affixes are called ‘stereodescriptors’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-91.2.1",
@@ -199,10 +229,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Stereodescriptors are divided into two types:"
+      "source_quote": "Stereodescriptors are divided into two types:",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-91.2.1.1",
@@ -279,11 +315,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "natural-product stereochemical exception context"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
-      ],
-      "source_quote": "Some stereodescriptors described in the Cahn-Ingold-Prelog (CIP) priority system, called ‘CIP stereodescriptors’, are recommended to specify the configuration of organic compounds, as described and exemplified in this Chapter and applied in Chapters P-1 through P-8, and in the nomenclature of natural products in Cha..."
+      "source_quote": "Some stereodescriptors described in the Cahn-Ingold-Prelog (CIP) priority system, called ‘CIP stereodescriptors’, are recommended to specify the configuration of organic compounds, as described and exemplified in this Chapter and applied in Chapters P-1 through P-8, and in the nomenclature of natural products in Cha...",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-91.2.1.2",
@@ -318,10 +366,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Non Cahn-Ingold-Prelog (CIP) stereodescriptors are divided into two categories:"
+      "source_quote": "Non Cahn-Ingold-Prelog (CIP) stereodescriptors are divided into two categories:",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-91.2.1.2.1",
@@ -387,11 +441,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "The stereoisomer is designated as ‘Z’ (zusammen = together) if the groups lie on the same side of a reference plane passing through the double bond and perpendicular to the plane containing the bonds linking the groups to the double bond atoms; the other isomer is designated ‘E’ (entgegen = opposite)."
+      "source_quote": "The stereoisomer is designated as ‘Z’ (zusammen = together) if the groups lie on the same side of a reference plane passing through the double bond and perpendicular to the plane containing the bonds linking the groups to the double bond atoms; the other isomer is designated ‘E’ (entgegen = opposite).",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-91.2.1.2.2",
@@ -449,11 +515,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "natural-product stereochemical exception context"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
-      ],
-      "source_quote": "(i) The descriptors ‘D’ and ‘L’ are used to describe the configuration of carbohydrates (ref. 27 and P-102), amino acids and peptides (ref. 18 and P-103), and cyclitols (ref. 39 and P-104); (ii) The descriptors ‘erythro’ and ‘threo’ are used in the systematic nomenclature of carbohydrates, along with descriptors suc..."
+      "source_quote": "(i) The descriptors ‘D’ and ‘L’ are used to describe the configuration of carbohydrates (ref. 27 and P-102), amino acids and peptides (ref. 18 and P-103), and cyclitols (ref. 39 and P-104); (ii) The descriptors ‘erythro’ and ‘threo’ are used in the systematic nomenclature of carbohydrates, along with descriptors suc...",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-91.2.2",
@@ -503,10 +581,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "The omission of stereodescriptors specifying double bonds is recommended in the case of three- through seven-membered unsaturated alicyclic compounds where any double bond has a fixed configuration, ‘Z’ in the case of hydrocarbons, and ‘Z’ or ‘E’ in accordance with the nature of ligands attached to the double bond (..."
+      "source_quote": "The omission of stereodescriptors specifying double bonds is recommended in the case of three- through seven-membered unsaturated alicyclic compounds where any double bond has a fixed configuration, ‘Z’ in the case of hydrocarbons, and ‘Z’ or ‘E’ in accordance with the nature of ligands attached to the double bond (...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-91.3",
@@ -566,10 +650,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "They are placed at the front of the complete name when related to the parent structure; they are cited in parentheses followed by a hyphen."
+      "source_quote": "They are placed at the front of the complete name when related to the parent structure; they are cited in parentheses followed by a hyphen.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.1",
@@ -651,11 +741,17 @@
         "hierarchical digraph ligand-ranking model",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "For example, with an allene, ‘abC=C=Cmn’, the chirality axis is defined by the ‘C=C=C’ bonds; and with an ortho-substituted 1,1′-biphenyl the atoms ‘C-1’, ‘C-1′’, ‘C-4’, and ‘C-4′’ lie on the chirality axis (see ref. 37)."
+      "source_quote": "For example, with an allene, ‘abC=C=Cmn’, the chirality axis is defined by the ‘C=C=C’ bonds; and with an ortho-substituted 1,1′-biphenyl the atoms ‘C-1’, ‘C-1′’, ‘C-4’, and ‘C-4′’ lie on the chirality axis (see ref. 37).",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.2",
@@ -697,11 +793,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "This section describes the CIP priority system which was developed to deal with all compounds with a bonding number up to six for organic compounds, and for all configurations and conformations of these compounds (refs. 34, 35, 36)."
+      "source_quote": "This section describes the CIP priority system which was developed to deal with all compounds with a bonding number up to six for organic compounds, and for all configurations and conformations of these compounds (refs. 34, 35, 36).",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.2.1",
@@ -750,11 +852,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "For discussion this order can conveniently be generalized as ‘a > b > c > d’, where ‘>’ means ‘has priority over’ or ‘has precedence over’."
+      "source_quote": "For discussion this order can conveniently be generalized as ‘a > b > c > d’, where ‘>’ means ‘has priority over’ or ‘has precedence over’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.2.1.1",
@@ -788,10 +896,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "For ‘a > b > c > d’, two enantiomeric stereogenic centers are described as ‘R’ or ‘S’ depending of the sense of chirality as shown below."
+      "source_quote": "For ‘a > b > c > d’, two enantiomeric stereogenic centers are described as ‘R’ or ‘S’ depending of the sense of chirality as shown below.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.2.1.2",
@@ -833,11 +947,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "For instance, in an allene ‘abC=C=Ccd’, the chirality axis is defined by the ‘C=C=C’ bonds, and in a ‘2,2′,6,6′’-tetrasubstituted 1,1′-biphenyl the atoms ‘1,1′,4,4′’ lie on the chirality axis."
+      "source_quote": "For instance, in an allene ‘abC=C=Ccd’, the chirality axis is defined by the ‘C=C=C’ bonds, and in a ‘2,2′,6,6′’-tetrasubstituted 1,1′-biphenyl the atoms ‘1,1′,4,4′’ lie on the chirality axis.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.2.1.3",
@@ -878,10 +998,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Thus, the descriptor ‘Sp’ is used to denote the configuration and assigned to the carbon atom ‘C-11’."
+      "source_quote": "Thus, the descriptor ‘Sp’ is used to denote the configuration and assigned to the carbon atom ‘C-11’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.2.2",
@@ -923,11 +1049,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "Helicity is the chiral sense of a helical, propeller, or screw-shaped molecular entity (see ref. 37). The ‘helicity’rule is expressed by Prelog and Helmchen (see subsection 5.1, ref. 36) as: “Depending on whether the identified helix is left- or right-handed, it is designated ‘minus’ and marked ‘M’ or ‘plus’ and mar..."
+      "source_quote": "Helicity is the chiral sense of a helical, propeller, or screw-shaped molecular entity (see ref. 37). The ‘helicity’rule is expressed by Prelog and Helmchen (see subsection 5.1, ref. 36) as: “Depending on whether the identified helix is left- or right-handed, it is designated ‘minus’ and marked ‘M’ or ‘plus’ and mar...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.2.2.1",
@@ -976,10 +1108,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "When proceeding from the nearer ligand having priority in the pair to the further away atom or group having priority in the pair, the chirality is described by the symbols ‘M’ if the path is anticlockwise; the symbol is ‘P’ if the path is clockwise."
+      "source_quote": "When proceeding from the nearer ligand having priority in the pair to the further away atom or group having priority in the pair, the chirality is described by the symbols ‘M’ if the path is anticlockwise; the symbol is ‘P’ if the path is clockwise.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.2.2.2",
@@ -1029,11 +1167,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "A negative torsion angle is denoted when ‘z’ is rotated into the plane in the direction of ‘a’ that has precedence over ‘b’."
+      "source_quote": "A negative torsion angle is denoted when ‘z’ is rotated into the plane in the direction of ‘a’ that has precedence over ‘b’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.3",
@@ -1079,11 +1223,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The following ‘Sequence Rules’ are used (refs 34, 35, 36) to establish the order of precedence of atoms and groups."
+      "source_quote": "The following ‘Sequence Rules’ are used (refs 34, 35, 36) to establish the order of precedence of atoms and groups.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.3.1",
@@ -1129,11 +1279,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "(a) higher atomic number precedes lower; (b) a duplicate atom node whose corresponding nonduplicated atom node is the root or is closer to the root ranks higher than a duplicate atom node whose corresponding nonduplicated atom node is farther from the root."
+      "source_quote": "(a) higher atomic number precedes lower; (b) a duplicate atom node whose corresponding nonduplicated atom node is the root or is closer to the root ranks higher than a duplicate atom node whose corresponding nonduplicated atom node is farther from the root.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.3.2",
@@ -1176,11 +1332,17 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "Higher atomic mass number precedes lower;"
+      "source_quote": "Higher atomic mass number precedes lower;",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.3.3",
@@ -1239,11 +1401,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "When considering double bonds and planar tetraligand atoms ‘seqcis’ = ‘Z’ precedes ‘seqtrans’ = ‘E’ and this precedes nonstereogenic double bonds."
+      "source_quote": "When considering double bonds and planar tetraligand atoms ‘seqcis’ = ‘Z’ precedes ‘seqtrans’ = ‘E’ and this precedes nonstereogenic double bonds.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.3.4",
@@ -1315,11 +1483,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "(b) When two ligands have different descriptor pairs, then the one with the first chosen like descriptor pairs has priority over the one with a corresponding unlike descriptor pair (see P-92.5.2.1 for a discussion and examples about this rule)."
+      "source_quote": "(b) When two ligands have different descriptor pairs, then the one with the first chosen like descriptor pairs has priority over the one with a corresponding unlike descriptor pair (see P-92.5.2.1 for a discussion and examples about this rule).",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.3.5",
@@ -1370,11 +1544,17 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "An atom or group with descriptor ‘R’, ‘M’, and ‘seqCis’ has priority over its enantiomorph ‘S’, ‘P’ or ‘seqTrans’."
+      "source_quote": "An atom or group with descriptor ‘R’, ‘M’, and ‘seqCis’ has priority over its enantiomorph ‘S’, ‘P’ or ‘seqTrans’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.4",
@@ -1414,11 +1594,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "A digraph must be established for each stereogenic unit generating several digraphs when several stereogenic units are present in a molecule."
+      "source_quote": "A digraph must be established for each stereogenic unit generating several digraphs when several stereogenic units are present in a molecule.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.4.1",
@@ -1478,11 +1664,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The digraphs corresponding to 6-chlorohexane-2,4-diol are illustrated. 6-chlorohexane-2,4-diol (PIN) The complete digraph describes all monodentate ligands; to ensure the tetraligancy of all atoms, except H, ‘phantom atoms’ are shown. These atoms have the atomic number zero shown by the symbol ‘0’. Such complete dig..."
+      "source_quote": "The digraphs corresponding to 6-chlorohexane-2,4-diol are illustrated. 6-chlorohexane-2,4-diol (PIN) The complete digraph describes all monodentate ligands; to ensure the tetraligancy of all atoms, except H, ‘phantom atoms’ are shown. These atoms have the atomic number zero shown by the symbol ‘0’. Such complete dig...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.4.2",
@@ -1539,11 +1731,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "A >C=O group is treated as where (O) and (C) are duplicate representations of the atoms at the other end of the double bond."
+      "source_quote": "A >C=O group is treated as where (O) and (C) are duplicate representations of the atoms at the other end of the double bond.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.4.3",
@@ -1585,11 +1783,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "At each end of n branches thus obtained a duplicate atom of the core is attached (as in the case of multiple bonds described in P-92.1.4.2). simplified digraph for center 5 In ligands of stereogenic units containing rings, the ring opens after the first ring atom encountered when exploring each way outward from the ..."
+      "source_quote": "At each end of n branches thus obtained a duplicate atom of the core is attached (as in the case of multiple bonds described in P-92.1.4.2). simplified digraph for center 5 In ligands of stereogenic units containing rings, the ring opens after the first ring atom encountered when exploring each way outward from the ...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.4.4",
@@ -1641,11 +1845,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "For mancude heterocycles, each duplicate atom is given an atomic number that is the mean of what it would have if the double bonds were located at each of the possible positions."
+      "source_quote": "For mancude heterocycles, each duplicate atom is given an atomic number that is the mean of what it would have if the double bonds were located at each of the possible positions.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.5",
@@ -1698,11 +1908,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "(d) Those atoms in the nth sphere which are of equal rank with respect to those in the (n − 1)th sphere in the same branch are ranked by means of the Sequence Rules, first by the exhaustive application of Sequence Rule 1; if no decision is reached, Sequence Rule 2 is exhaustively applied, and so on."
+      "source_quote": "(d) Those atoms in the nth sphere which are of equal rank with respect to those in the (n − 1)th sphere in the same branch are ranked by means of the Sequence Rules, first by the exhaustive application of Sequence Rule 1; if no decision is reached, Sequence Rule 2 is exhaustively applied, and so on.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.1.6",
@@ -1743,11 +1959,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The five ‘Sequence Rules’ discussed in P-92.1.3 are applied as follows: (a) each rule is applied in accordance with a hierachical digraph (see P-92.1.4) (b) each rule is applied exhaustively to all ligands being compared; (c) the ligand that is found to have precedence (priority) at the first occurrence of a differe..."
+      "source_quote": "The five ‘Sequence Rules’ discussed in P-92.1.3 are applied as follows: (a) each rule is applied in accordance with a hierachical digraph (see P-92.1.4) (b) each rule is applied exhaustively to all ligands being compared; (c) the ligand that is found to have precedence (priority) at the first occurrence of a differe...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.2.1",
@@ -1801,10 +2023,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "In all examples shown below, ligands are ranked as ‘a > b > c > d’ for stereogenic units, unless otherwise stipulated for stereogenic axes and planes."
+      "source_quote": "In all examples shown below, ligands are ranked as ‘a > b > c > d’ for stereogenic units, unless otherwise stipulated for stereogenic axes and planes.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.2.1.1.1",
@@ -1853,11 +2081,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The order ‘a > b > c > d’ is ‘Br > Cl > F > H’ for center ‘1’ describing a clockwise direction; the stereodescriptor ‘R’ describes this configuration, leading to the preferred IUPAC name: (R)-bromo(chloro)(fluoro)methane (PIN) Example 2: (1R)-1-methoxy-1-(methylsulfanyl)ethane (PIN) simplified digraph for sphere I E..."
+      "source_quote": "The order ‘a > b > c > d’ is ‘Br > Cl > F > H’ for center ‘1’ describing a clockwise direction; the stereodescriptor ‘R’ describes this configuration, leading to the preferred IUPAC name: (R)-bromo(chloro)(fluoro)methane (PIN) Example 2: (1R)-1-methoxy-1-(methylsulfanyl)ethane (PIN) simplified digraph for sphere I E...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.2.1.1.2",
@@ -1917,11 +2151,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "When atoms attached to the stereogenic unit are identical, precedence is established by the atoms in turn that are directly attached to the identical atoms."
+      "source_quote": "When atoms attached to the stereogenic unit are identical, precedence is established by the atoms in turn that are directly attached to the identical atoms.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.2.1.1.3",
@@ -1978,11 +2218,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "When choices remain after evaluating the second sphere, the exploration procedure is continued in the same way further away from the stereogenic center."
+      "source_quote": "When choices remain after evaluating the second sphere, the exploration procedure is continued in the same way further away from the stereogenic center.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.2.1.2",
@@ -2043,11 +2289,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "Duplicate atom nodes as described in P-92.1.4.2 are used in digraphs."
+      "source_quote": "Duplicate atom nodes as described in P-92.1.4.2 are used in digraphs.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.2.1.3",
@@ -2127,11 +2379,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "Duplicate atoms as described in P-92.1.4.3 are used in digraphs."
+      "source_quote": "Duplicate atoms as described in P-92.1.4.3 are used in digraphs.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.2.2",
@@ -2212,11 +2470,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "When comparing the ‘C-4’ and ‘C-6’ ligands, they are similar, except that the first duplicate atom on the right (bonded to C-1) corresponds to the stereogenic center, whereas the first one on the left (bonded to ‘C-3’) corresponds to atoms at the third sphere ‘(C-2)’."
+      "source_quote": "When comparing the ‘C-4’ and ‘C-6’ ligands, they are similar, except that the first duplicate atom on the right (bonded to C-1) corresponds to the stereogenic center, whereas the first one on the left (bonded to ‘C-3’) corresponds to atoms at the third sphere ‘(C-2)’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.3",
@@ -2283,11 +2547,17 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "When isotopes are present in a molecule, Sequence Rule 1 is first applied ignoring isotopic differences between otherwise identical atoms or groups."
+      "source_quote": "When isotopes are present in a molecule, Sequence Rule 1 is first applied ignoring isotopic differences between otherwise identical atoms or groups.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.4",
@@ -2345,11 +2615,17 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The atom or group having CIP Sequence Rule precedence attached to one of a doubly bonded pair of atoms is compared with the atom or group having CIP Sequence Rule precedence attached to the other atom; if the atoms or groups having precedence are on the same side of the reference plane, the italic capital letter ‘Z’..."
+      "source_quote": "The atom or group having CIP Sequence Rule precedence attached to one of a doubly bonded pair of atoms is compared with the atom or group having CIP Sequence Rule precedence attached to the other atom; if the atoms or groups having precedence are on the same side of the reference plane, the italic capital letter ‘Z’...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.4.2",
@@ -2433,11 +2709,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "P-92.4.2.1 The application of Sequence Rule 3 leads to the specification of the configuration of compounds containing sets of ‘cis’ and ‘trans’ double bonds when the direct application of Sequence Rules 1 or 2 does not permit a conclusion to be reached (see Mata, Lobo, Marshall, and Johnson, ref. 41)."
+      "source_quote": "P-92.4.2.1 The application of Sequence Rule 3 leads to the specification of the configuration of compounds containing sets of ‘cis’ and ‘trans’ double bonds when the direct application of Sequence Rules 1 or 2 does not permit a conclusion to be reached (see Mata, Lobo, Marshall, and Johnson, ref. 41).",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.5",
@@ -2504,11 +2786,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "When the use of Sequence Rules 1, 2, and 3 does not permit the determination of the ranking of all ligands of a stereogenic unit, Sequence Rule 4 is applied as described here."
+      "source_quote": "When the use of Sequence Rules 1, 2, and 3 does not permit the determination of the ranking of all ligands of a stereogenic unit, Sequence Rule 4 is applied as described here.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.5.1",
@@ -2591,11 +2879,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "Example: (2R,3s,4S,6R)-2,6-dichloro-5-[(1R)-1-chloroethyl]-3-[(1S)-1-chloroethyl]heptan-4-ol (PIN) Note: The numbering of the principal chain is based on lowest locants for stereogenic centers; the stereodescriptor set ‘2R,4S,6R’ in the principal chain is preferred to ‘2S,4S,6R’ according to Sequence Rule 5 (see P-9..."
+      "source_quote": "Example: (2R,3s,4S,6R)-2,6-dichloro-5-[(1R)-1-chloroethyl]-3-[(1S)-1-chloroethyl]heptan-4-ol (PIN) Note: The numbering of the principal chain is based on lowest locants for stereogenic centers; the stereodescriptor set ‘2R,4S,6R’ in the principal chain is preferred to ‘2S,4S,6R’ according to Sequence Rule 5 (see P-9...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.5.2",
@@ -2644,11 +2938,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "When two ligands have different descriptor pairs, then the one with the first chosen like descriptor pairs has priority over the one with a corresponding unlike descriptor pair."
+      "source_quote": "When two ligands have different descriptor pairs, then the one with the first chosen like descriptor pairs has priority over the one with a corresponding unlike descriptor pair.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.5.2.1",
@@ -2735,11 +3035,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The rule for pairing stereodescriptors is as follows: A reference descriptor for chirality centers, identified as R or S (not associated with any node of the digraph and designated here with a bold font), is chosen in each ligand and is: (a) the one associated with the highest rank node corresponding to a chiral uni..."
+      "source_quote": "The rule for pairing stereodescriptors is as follows: A reference descriptor for chirality centers, identified as R or S (not associated with any node of the digraph and designated here with a bold font), is chosen in each ligand and is: (a) the one associated with the highest rank node corresponding to a chiral uni...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.5.3",
@@ -2809,11 +3115,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "Example: (2R,3r,4R,5s,6R)-2,6-dichloro-3,5-bis[(1S)-1-chloroethyl]heptan-4-ol (PIN) Note: According to Sequence Rule 4a(b) in P-92.5.2.1, the locant set ‘(2R,4R,6R)’ has priority over ‘(2R,4R,6S)’."
+      "source_quote": "Example: (2R,3r,4R,5s,6R)-2,6-dichloro-3,5-bis[(1S)-1-chloroethyl]heptan-4-ol (PIN) Note: According to Sequence Rule 4a(b) in P-92.5.2.1, the locant set ‘(2R,4R,6R)’ has priority over ‘(2R,4R,6S)’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-92.6",
@@ -2904,11 +3216,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "When Sequence Rule 5, ‘R’ precedes ‘S’, is applied to the first sphere of descriptors (those directly bonded to N), in ’branch A’ node 3 ranks higher than node 10; in ‘branch B’ node 13 ranks higher than node 7."
+      "source_quote": "When Sequence Rule 5, ‘R’ precedes ‘S’, is applied to the first sphere of descriptors (those directly bonded to N), in ’branch A’ node 3 ranks higher than node 10; in ‘branch B’ node 13 ranks higher than node 7.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.0",
@@ -2949,10 +3267,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Different systems are used to describe the configuration of acyclic and cyclic compounds."
+      "source_quote": "Different systems are used to describe the configuration of acyclic and cyclic compounds.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.1",
@@ -2994,11 +3318,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "In the context of stereochemistry, the term ‘configuration’ is restricted to the arrangements of atoms of a molecular entity in space that distinguishes ‘stereoisomers’, the isomerism between which is not due to conformational differences. ‘Conformation’ is the spatial arrangement of the atoms affording distinction ..."
+      "source_quote": "In the context of stereochemistry, the term ‘configuration’ is restricted to the arrangements of atoms of a molecular entity in space that distinguishes ‘stereoisomers’, the isomerism between which is not due to conformational differences. ‘Conformation’ is the spatial arrangement of the atoms affording distinction ...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.1.1",
@@ -3041,10 +3371,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "The ‘absolute configuration’ is the spatial arrangement of the atoms of a chiral molecular entity. It corresponds to a graphical representation and is described by stereodescriptors such as ‘R’, ‘S’, ‘r’, ‘s’, ‘M’, or ‘P’, as shown in Section P-92. Examples: (2R)-butan-2-ol (PIN) (2S,3S)-3-bromobutan-2-ol (PIN) (1R,..."
+      "source_quote": "The ‘absolute configuration’ is the spatial arrangement of the atoms of a chiral molecular entity. It corresponds to a graphical representation and is described by stereodescriptors such as ‘R’, ‘S’, ‘r’, ‘s’, ‘M’, or ‘P’, as shown in Section P-92. Examples: (2R)-butan-2-ol (PIN) (2S,3S)-3-bromobutan-2-ol (PIN) (1R,...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.1.2",
@@ -3107,10 +3443,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Relative configuration denoting diastereoisomers may be denoted by using the prefix ‘rel’ which is cited at the front of the name of one enantiomer where the configurational descriptors ‘R’, ‘S’, ‘M’, ‘P’, etc. have been used."
+      "source_quote": "Relative configuration denoting diastereoisomers may be denoted by using the prefix ‘rel’ which is cited at the front of the name of one enantiomer where the configurational descriptors ‘R’, ‘S’, ‘M’, ‘P’, etc. have been used.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.1.3",
@@ -3161,10 +3503,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Racemates may be denoted by using the prefix ‘rac’ cited at the front of the name of one enantiomer where the configurational descriptors ‘R’, ‘S’, ‘M’, ‘P’, etc. have been used."
+      "source_quote": "Racemates may be denoted by using the prefix ‘rac’ cited at the front of the name of one enantiomer where the configurational descriptors ‘R’, ‘S’, ‘M’, ‘P’, etc. have been used.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.1.4",
@@ -3206,11 +3554,23 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
-      ],
-      "source_quote": "To indicate this situation, the prefix ‘ambo’ is used (see also P-103.3.4)."
+      "source_quote": "To indicate this situation, the prefix ‘ambo’ is used (see also P-103.3.4).",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.2.0",
@@ -3250,10 +3610,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "The CIP priority system described for stereogenic carbon centers is extended to any atom having four ligands tetrahedrally arranged."
+      "source_quote": "The CIP priority system described for stereogenic carbon centers is extended to any atom having four ligands tetrahedrally arranged.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.2.1",
@@ -3300,10 +3666,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Numerical locants are used before stereodescriptors, but letter locants such as ‘N’, ‘O’ or ‘S’ are not."
+      "source_quote": "Numerical locants are used before stereodescriptors, but letter locants such as ‘N’, ‘O’ or ‘S’ are not.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.2.2",
@@ -3351,10 +3723,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "The four different ligands are considered in priority order ‘a’ > ‘b’ > ‘c’ > ‘d’ in the manner described in P-92.2."
+      "source_quote": "The four different ligands are considered in priority order ‘a’ > ‘b’ > ‘c’ > ‘d’ in the manner described in P-92.2.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.2.3",
@@ -3397,10 +3775,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "With chiral amine oxides and phosphane oxides the oxygen atom is treated as the fourth atom. The nature of the bonding to this oxygen atom is not relevant. Examples: (S)-N-ethyl-N-methylaniline N-oxide (PIN; see P-74.2.1.2) [(S)-ethyl(methyl)phenylaminiumyl]oxidanide [(S)-ethyl(methyl)(phenyl)azaniumyl]oxidanide (S)..."
+      "source_quote": "With chiral amine oxides and phosphane oxides the oxygen atom is treated as the fourth atom. The nature of the bonding to this oxygen atom is not relevant. Examples: (S)-N-ethyl-N-methylaniline N-oxide (PIN; see P-74.2.1.2) [(S)-ethyl(methyl)phenylaminiumyl]oxidanide [(S)-ethyl(methyl)(phenyl)azaniumyl]oxidanide (S)...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.2.4",
@@ -3443,10 +3827,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Similarly, the formal arrangement of charges is not considered when determining the configuration of a chiral molecule."
+      "source_quote": "Similarly, the formal arrangement of charges is not considered when determining the configuration of a chiral molecule.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.2.5",
@@ -3489,10 +3879,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Sulfates, sulfonates and related anions are treated in the same way as phosphate anions (see P-93.2.4). Selenates, selenonates, tellurates, telluronates and related compounds are treated like sulfates, sulfonates and related compounds. Sulfoxides are discussed in P-93.3.3.2. Examples: O-methyl (S)-(benzenesulfonothi..."
+      "source_quote": "Sulfates, sulfonates and related anions are treated in the same way as phosphate anions (see P-93.2.4). Selenates, selenonates, tellurates, telluronates and related compounds are treated like sulfates, sulfonates and related compounds. Sulfoxides are discussed in P-93.3.3.2. Examples: O-methyl (S)-(benzenesulfonothi...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.2.6",
@@ -3527,10 +3923,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Chiral silanes, germanes, stannanes, and plumbanes are treated in the same way as carbon compounds. Example: (R)-methyl(propyl)silanol (PIN)"
+      "source_quote": "Chiral silanes, germanes, stannanes, and plumbanes are treated in the same way as carbon compounds. Example: (R)-methyl(propyl)silanol (PIN)",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.1",
@@ -3568,11 +3970,23 @@
         "hierarchical digraph ligand-ranking model",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "When an atom is attached to three, four, five, or six ligands (atoms or groups) a number of geometrical configurations are possible."
+      "source_quote": "When an atom is attached to three, four, five, or six ligands (atoms or groups) a number of geometrical configurations are possible.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.2",
@@ -3617,11 +4031,23 @@
         "hierarchical digraph ligand-ranking model",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "The abbreviation for the idealized polyhedron and the number of attached atoms or groups are separated by a hyphen and enclosed in parentheses in front of the name of the compound, if no further information is required."
+      "source_quote": "The abbreviation for the idealized polyhedron and the number of attached atoms or groups are separated by a hyphen and enclosed in parentheses in front of the name of the compound, if no further information is required.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.3.1",
@@ -3671,11 +4097,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The configuration index is a series of numbers to identify where each atom or group is located (see Rule IR-9.3.3.2, ref. 12)."
+      "source_quote": "The configuration index is a series of numbers to identify where each atom or group is located (see Rule IR-9.3.3.2, ref. 12).",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.3.2",
@@ -3729,11 +4161,23 @@
         "hierarchical digraph ligand-ranking model",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "No configuration index is used with the ‘TPY-3’ symbol."
+      "source_quote": "No configuration index is used with the ‘TPY-3’ symbol.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.3.3",
@@ -3777,11 +4221,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "The configuration index of the T-shape configuration follows the polyhedral symbol, TS-3, and consist of a single digit, the priority number of the atom or substituent group on the stem of the ‘T’ (as opposed to the cross piece of the ‘T’) (see IR-9.3.3.7, ref. 12)."
+      "source_quote": "The configuration index of the T-shape configuration follows the polyhedral symbol, TS-3, and consist of a single digit, the priority number of the atom or substituent group on the stem of the ‘T’ (as opposed to the cross piece of the ‘T’) (see IR-9.3.3.7, ref. 12).",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.3.4",
@@ -3825,11 +4281,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "The configuration index of a see-saw system consists of the priority numbers indicating the two atoms or groups separated by the largest angle (see IR-9.3.3.8, ref. 12)."
+      "source_quote": "The configuration index of a see-saw system consists of the priority numbers indicating the two atoms or groups separated by the largest angle (see IR-9.3.3.8, ref. 12).",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.3.5",
@@ -3873,11 +4341,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "P-93.3.3.5.1 The configuration index of a trigonal bipyramid (see Rule IR-9.3.3.6, ref 12) consists of the priority numbers of the two apical atoms (lower number first if different), representing the reference axis of the system."
+      "source_quote": "P-93.3.3.5.1 The configuration index of a trigonal bipyramid (see Rule IR-9.3.3.6, ref 12) consists of the priority numbers of the two apical atoms (lower number first if different), representing the reference axis of the system.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.3.5.2",
@@ -3923,11 +4403,23 @@
         "hierarchical digraph ligand-ranking model",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "When one lone pair is present, the polyhedral symbol is ‘TBPY-4’; the symbol is ‘TBPY-3’ when two lone pairs of electrons are present."
+      "source_quote": "When one lone pair is present, the polyhedral symbol is ‘TBPY-4’; the symbol is ‘TBPY-3’ when two lone pairs of electrons are present.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.3.6",
@@ -3978,11 +4470,23 @@
         "hierarchical digraph ligand-ranking model",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "If necessary, the rule of the ‘trans-maximum difference of priority numbers’ is applied (see Rule IR- 9.3.3.3, ref. 12)."
+      "source_quote": "If necessary, the rule of the ‘trans-maximum difference of priority numbers’ is applied (see Rule IR- 9.3.3.3, ref. 12).",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.3.7",
@@ -4031,11 +4535,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "If necessary, the principle of the ‘trans-maximum-difference’ of priority numbers is applied."
+      "source_quote": "If necessary, the principle of the ‘trans-maximum-difference’ of priority numbers is applied.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.4",
@@ -4081,11 +4597,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "The chirality symbols ‘A’ and ‘C’ are used to indicate the absolute configuration of compounds described by a polyhedral symbol and a configuration index, with the exception of trigonal pyramidal polyhedra that are described by ‘R’ and ‘S’ stereodescriptors (see P-93.3.4.1) and tetrahedral configuration that is desc..."
+      "source_quote": "The chirality symbols ‘A’ and ‘C’ are used to indicate the absolute configuration of compounds described by a polyhedral symbol and a configuration index, with the exception of trigonal pyramidal polyhedra that are described by ‘R’ and ‘S’ stereodescriptors (see P-93.3.4.1) and tetrahedral configuration that is desc...",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.4.1",
@@ -4137,11 +4665,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "The stereodescriptors ‘R’ and ‘S’ (as defined in P-92.2) are used to indicate the absolute configuration of a trigonal pyramidal system discussed in P-93.3.3.2 (see Rule IR-9.3.4.3, ref. 12)."
+      "source_quote": "The stereodescriptors ‘R’ and ‘S’ (as defined in P-92.2) are used to indicate the absolute configuration of a trigonal pyramidal system discussed in P-93.3.3.2 (see Rule IR-9.3.4.3, ref. 12).",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.3.4.2",
@@ -4198,11 +4738,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
-      ],
-      "source_quote": "If the direction from the atom in this plane with highest priority (lowest priority number) to the atom with the next higher priority is clockwise the chirality symbol is ‘C’, if anticlockwise ‘A’."
+      "source_quote": "If the direction from the atom in this plane with highest priority (lowest priority number) to the atom with the next higher priority is clockwise the chirality symbol is ‘C’, if anticlockwise ‘A’.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.4",
@@ -4249,10 +4801,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Numbering of compounds is established by applying rules described in P-14.4, especially when the final choice depends on the presence of stereodescriptors."
+      "source_quote": "Numbering of compounds is established by applying rules described in P-14.4, especially when the final choice depends on the presence of stereodescriptors.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.4.1",
@@ -4343,12 +4901,24 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "natural-product stereochemical exception context"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
-        "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
-      ],
-      "source_quote": "Stereodescriptors are preceded by a locant when the stereogenic center needs to be described by a locant."
+      "source_quote": "Stereodescriptors are preceded by a locant when the stereogenic center needs to be described by a locant.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.4.1.3",
@@ -4395,10 +4965,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Four steps are used in the construction of the stereospecific name: Step 1: configurations ‘R’ and ‘S’ are assigned to the hydroxylated stereogenic centers; Step 2: configuration ‘s’ is assigned to the pseudoasymetric stereogenic center; Step 3: the principal chain has the maximum number of stereogenic centers havin..."
+      "source_quote": "Four steps are used in the construction of the stereospecific name: Step 1: configurations ‘R’ and ‘S’ are assigned to the hydroxylated stereogenic centers; Step 2: configuration ‘s’ is assigned to the pseudoasymetric stereogenic center; Step 3: the principal chain has the maximum number of stereogenic centers havin...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.4.2.1.1",
@@ -4451,10 +5027,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "The stereodescriptors ‘cis’ and ‘trans’ are used in general nomenclature only to describe double bonds having two hydrogen atoms, one on each carbon atom."
+      "source_quote": "The stereodescriptors ‘cis’ and ‘trans’ are used in general nomenclature only to describe double bonds having two hydrogen atoms, one on each carbon atom.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.4.2.1.2",
@@ -4510,10 +5092,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "The stereodescriptors ‘E’ and ‘Z’ related to the parent are cited, preceded by the appropriate locant if more than one double bond is present, before the complete name of the compound, or before the name of the appropriate component."
+      "source_quote": "The stereodescriptors ‘E’ and ‘Z’ related to the parent are cited, preceded by the appropriate locant if more than one double bond is present, before the complete name of the compound, or before the name of the appropriate component.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.4.2.1.3",
@@ -4564,10 +5152,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "A lone pair of electrons, when present, is considered to have the atomic number ‘0’ (zero)."
+      "source_quote": "A lone pair of electrons, when present, is considered to have the atomic number ‘0’ (zero).",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.4.2.2",
@@ -4616,10 +5210,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "When appropriately substituted, allenes are chiral compounds having an axis of chirality."
+      "source_quote": "When appropriately substituted, allenes are chiral compounds having an axis of chirality.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.4.2.3",
@@ -4667,10 +5267,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Compound locants are used only when locants are not consecutive as shown in P-93.5.2.3."
+      "source_quote": "Compound locants are used only when locants are not consecutive as shown in P-93.5.2.3.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.4.2.4",
@@ -4716,11 +5322,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "When chiral compounds contain multiple double bonds, >C=C<, stereodescriptors are assigned as described above."
+      "source_quote": "When chiral compounds contain multiple double bonds, >C=C<, stereodescriptors are assigned as described above.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.1",
@@ -4754,10 +5366,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "P-93.5.2 von Baeyer compounds"
+      "source_quote": "P-93.5.2 von Baeyer compounds",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.0",
@@ -4809,11 +5427,23 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "natural-product stereochemical exception context"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
-      ],
-      "source_quote": "The following non-CIP stereodescriptors are used in general IUPAC substitutive nomenclature: ‘cis’, ‘trans’ (see P-93.5.1.2); ‘r’, ‘c’, ‘t’ (see P-93.5.1.3); ‘endo’, ‘exo’, ‘syn’, ‘anti’ (see P-93.5.2.2.1)."
+      "source_quote": "The following non-CIP stereodescriptors are used in general IUPAC substitutive nomenclature: ‘cis’, ‘trans’ (see P-93.5.1.2); ‘r’, ‘c’, ‘t’ (see P-93.5.1.3); ‘endo’, ‘exo’, ‘syn’, ‘anti’ (see P-93.5.2.2.1).",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.1.1.1",
@@ -4864,10 +5494,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "In substituted monocyclic compounds the absolute configuration is specified in preferred IUPAC names by the CIP stereodescriptors such as ‘R’, ‘S’, ‘r’, and ‘s’."
+      "source_quote": "In substituted monocyclic compounds the absolute configuration is specified in preferred IUPAC names by the CIP stereodescriptors such as ‘R’, ‘S’, ‘r’, and ‘s’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.1.1.2",
@@ -4937,11 +5573,17 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "By the method described in P-92.5, for the chiral isomer, Sequence Rule 4 is applied exhaustively; then, Sequence Rule 5 (see P-92.6) is used to name pseudoasymmetric stereogenic centers."
+      "source_quote": "By the method described in P-92.5, for the chiral isomer, Sequence Rule 4 is applied exhaustively; then, Sequence Rule 5 (see P-92.6) is used to name pseudoasymmetric stereogenic centers.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.1.2",
@@ -4998,11 +5640,17 @@
         "hierarchical digraph ligand-ranking model",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "The two ligands are said to be located ‘cis’ to each other if they lie on the same side of a plane."
+      "source_quote": "The two ligands are said to be located ‘cis’ to each other if they lie on the same side of a plane.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.1.3",
@@ -5073,11 +5721,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "P-93.5.1.3.1 When one substituent and one hydrogen atom are attached to each of more than two positions of a monocycle, the steric relations of the ligands are expressed by adding ‘r’ (the reference ligand) after the locant of the lowest numbered of these ligands, and ‘c’ for ‘cis’ and ‘t’ for ‘trans’ (as required) ..."
+      "source_quote": "P-93.5.1.3.1 When one substituent and one hydrogen atom are attached to each of more than two positions of a monocycle, the steric relations of the ligands are expressed by adding ‘r’ (the reference ligand) after the locant of the lowest numbered of these ligands, and ‘c’ for ‘cis’ and ‘t’ for ‘trans’ (as required) ...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.1.4.1",
@@ -5135,10 +5789,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Examples: cyclohepta-1,3,5-triene (PIN) (1Z,3Z,5Z,7Z,9Z)-cyclodeca-1,3,5,7,9-pentaene (PIN) (E)-cyclononene (PIN) (E)-cyclooctene (PIN) (1Z,3E)-cyclodeca-1,3-diene (PIN) 1-cis,3-trans-cyclodeca-1,3-diene [lowest locants are assigned to the ‘Z’ double bond; see P-14.4 (j)] (1R,2E,4S,7Z)-4-(propan-2-yl)cyclodeca-2,7-d..."
+      "source_quote": "Examples: cyclohepta-1,3,5-triene (PIN) (1Z,3Z,5Z,7Z,9Z)-cyclodeca-1,3,5,7,9-pentaene (PIN) (E)-cyclononene (PIN) (E)-cyclooctene (PIN) (1Z,3E)-cyclodeca-1,3-diene (PIN) 1-cis,3-trans-cyclodeca-1,3-diene [lowest locants are assigned to the ‘Z’ double bond; see P-14.4 (j)] (1R,2E,4S,7Z)-4-(propan-2-yl)cyclodeca-2,7-d...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.1.4.2.1",
@@ -5193,11 +5853,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "(1) When one double bond is present, two methods are used to construct the names (a) the double bond is considered as an integral part of the parent structure; the stereodescriptor is placed at the front of the substitutive name, preceded by the locant indicating its point of attachment to the parent structure; (b) ..."
+      "source_quote": "(1) When one double bond is present, two methods are used to construct the names (a) the double bond is considered as an integral part of the parent structure; the stereodescriptor is placed at the front of the substitutive name, preceded by the locant indicating its point of attachment to the parent structure; (b) ...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.1.4.2.2",
@@ -5265,11 +5931,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "Example 1: (1seqCis,4R)-N-hydroxy-4-methylcyclohexan-1-imine (PIN) [(1seqCis,4R)-4-methylcyclohexylidene]hydroxylamine [for ‘seqCis’ see P-92.1.1 (f)] (M)-(4-methylcyclohexylidene)hydroxylamine (Ra)-4-methylcyclohexanone oxime Explanation: The following digraphs are used for specifying the configurations ‘C-1’ and ‘..."
+      "source_quote": "Example 1: (1seqCis,4R)-N-hydroxy-4-methylcyclohexan-1-imine (PIN) [(1seqCis,4R)-4-methylcyclohexylidene]hydroxylamine [for ‘seqCis’ see P-92.1.1 (f)] (M)-(4-methylcyclohexylidene)hydroxylamine (Ra)-4-methylcyclohexanone oxime Explanation: The following digraphs are used for specifying the configurations ‘C-1’ and ‘...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.2.1",
@@ -5317,11 +5989,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The absolute configuration with a unique numbering determined by the structure is specified by CIP stereodescriptor such as‘R’, ‘s’, etc. Examples: (1S,3R,5R,7R)-3-amino-5-bromoadamantan-1-ol (PIN) (1S,3R,5R,7R)-3-amino-5-bromotricyclo[3.3.1.13,7]decan-1-ol simplified digraph (1S,2R,4R,5S)-3,6,8-trioxatricyclo[3.2.1..."
+      "source_quote": "The absolute configuration with a unique numbering determined by the structure is specified by CIP stereodescriptor such as‘R’, ‘s’, etc. Examples: (1S,3R,5R,7R)-3-amino-5-bromoadamantan-1-ol (PIN) (1S,3R,5R,7R)-3-amino-5-bromotricyclo[3.3.1.13,7]decan-1-ol simplified digraph (1S,2R,4R,5S)-3,6,8-trioxatricyclo[3.2.1...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.2.2",
@@ -5363,10 +6041,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Relative configuration and racemates are specified by using the stereodescriptors ‘R’ and ‘S’ and prefixes ‘rel’ and ‘rac’ as described in P-93.1.2 and P-93.1.3."
+      "source_quote": "Relative configuration and racemates are specified by using the stereodescriptors ‘R’ and ‘S’ and prefixes ‘rel’ and ‘rac’ as described in P-93.1.2 and P-93.1.3.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.2.2.1",
@@ -5417,11 +6101,23 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
-      ],
-      "source_quote": "These stereodescriptors are used to indicate the relative orientation of groups attached to nonbridgehead atoms in bicyclo[x.y.z]alkanes, where ‘x ≥ y > z > 0’, and with the additional provision that the two bridges ‘x + y’ must be smaller than ‘7’."
+      "source_quote": "These stereodescriptors are used to indicate the relative orientation of groups attached to nonbridgehead atoms in bicyclo[x.y.z]alkanes, where ‘x ≥ y > z > 0’, and with the additional provision that the two bridges ‘x + y’ must be smaller than ‘7’.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.2.2.2",
@@ -5468,10 +6164,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "CIP stereodescriptors, preceded by the prefix ‘rel’, must be used in association with preferred IUPAC names."
+      "source_quote": "CIP stereodescriptors, preceded by the prefix ‘rel’, must be used in association with preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.2.3",
@@ -5524,10 +6226,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Compound locants (see P-14.3 and P-31.1.4.2) are used when the locants of an individual double bond differ from more than one unit."
+      "source_quote": "Compound locants (see P-14.3 and P-31.1.4.2) are used when the locants of an individual double bond differ from more than one unit.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.3.4",
@@ -5564,10 +6272,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "P-93 5.3.5 Axial chirality of spiro compounds"
+      "source_quote": "P-93 5.3.5 Axial chirality of spiro compounds",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.3.1",
@@ -5623,11 +6337,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The stereodescriptors ‘R’ and ‘S’ are used when the spiro atom ‘X’ is surrounded by four atoms arranged as ‘a > b > c > d’."
+      "source_quote": "The stereodescriptors ‘R’ and ‘S’ are used when the spiro atom ‘X’ is surrounded by four atoms arranged as ‘a > b > c > d’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.3.2",
@@ -5699,11 +6419,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "Example 1: (5R)-1,6-diazaspiro[4.4]nonane-4,9-dione (PIN) Explanation: In this example (see 2.5, ref. 34), the analysis to determine the order of ligands amongst equivalent pairs ‘a’/‘a′’ and ‘b’/‘b′’, where ‘a’ > ‘b’, starts at the nitrogen atom numbered 1, then goes to the nitrogen atom numbered 6; they are ranked..."
+      "source_quote": "Example 1: (5R)-1,6-diazaspiro[4.4]nonane-4,9-dione (PIN) Explanation: In this example (see 2.5, ref. 34), the analysis to determine the order of ligands amongst equivalent pairs ‘a’/‘a′’ and ‘b’/‘b′’, where ‘a’ > ‘b’, starts at the nitrogen atom numbered 1, then goes to the nitrogen atom numbered 6; they are ranked...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.3.3",
@@ -5743,10 +6469,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "No stereodescriptor ‘E’ or ‘Z’ is needed to describe a double bond when the stereogenic unit is located in a ring having less than eight members."
+      "source_quote": "No stereodescriptor ‘E’ or ‘Z’ is needed to describe a double bond when the stereogenic unit is located in a ring having less than eight members.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.3.4",
@@ -5789,10 +6521,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "As described in P-93.3.4.2, stereodescriptors ‘A’ and ‘C’, used in coordination chemistry, describe the relative and the absolute configuration of spiro compounds with λ4, λ5, and λ6-hetero spiro atoms. Examples: (TBPY-5-12-C)-2-phenoxy-2H-2λ5-spiro[[1,3,2]dithiaphosphinane-2,2′-phenanthro[9,10-d][1,3,2]dioxaphospho..."
+      "source_quote": "As described in P-93.3.4.2, stereodescriptors ‘A’ and ‘C’, used in coordination chemistry, describe the relative and the absolute configuration of spiro compounds with λ4, λ5, and λ6-hetero spiro atoms. Examples: (TBPY-5-12-C)-2-phenoxy-2H-2λ5-spiro[[1,3,2]dithiaphosphinane-2,2′-phenanthro[9,10-d][1,3,2]dioxaphospho...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.3.5",
@@ -5844,11 +6582,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The stereodescriptors ‘M’ and ‘P’ are used to describe axial chirality of spiro compounds."
+      "source_quote": "The stereodescriptors ‘M’ and ‘P’ are used to describe axial chirality of spiro compounds.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.4.1",
@@ -5903,11 +6647,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "A great variety of fused and bridged fused carbocyclic and heterocyclic compounds are described by specifying their stereogenic units as ‘R’, ‘S’, ‘r’, ‘s’, ‘M’, and ‘P’. A few examples illustrate chirality associated with carbon and heteroatoms. Examples: (5S,11S)-2,8-dimethyl-5,11-6H,12H-methanodibenzo[b,f][1,5]di..."
+      "source_quote": "A great variety of fused and bridged fused carbocyclic and heterocyclic compounds are described by specifying their stereogenic units as ‘R’, ‘S’, ‘r’, ‘s’, ‘M’, and ‘P’. A few examples illustrate chirality associated with carbon and heteroatoms. Examples: (5S,11S)-2,8-dimethyl-5,11-6H,12H-methanodibenzo[b,f][1,5]di...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.4.2",
@@ -5952,10 +6702,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "The term ‘nearest atom’ denotes those atoms linked together through the smallest number of atoms, irrespective of the numbering of the system."
+      "source_quote": "The term ‘nearest atom’ denotes those atoms linked together through the smallest number of atoms, irrespective of the numbering of the system.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.5.1",
@@ -6006,10 +6762,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "When there is a choice of ligands to determine the sense of chirality, the highest ranking in the CIP priority system is selected as reference."
+      "source_quote": "When there is a choice of ligands to determine the sense of chirality, the highest ranking in the CIP priority system is selected as reference.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.5.2",
@@ -6046,10 +6808,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Example: (2r,4r,6r,8r)-2,4,6,8-tetranonyl-1,3,5,7(1,3)-tetrabenzenacyclooctaphane-14,16,34,36,54,56,74,76-octol (PIN) 2r,4c,6c,8c-tetranonyl-1,3,5,7(1,3)-tetrabenzenacyclooctaphane-14,16,34,36,54,56,74,76-octol"
+      "source_quote": "Example: (2r,4r,6r,8r)-2,4,6,8-tetranonyl-1,3,5,7(1,3)-tetrabenzenacyclooctaphane-14,16,34,36,54,56,74,76-octol (PIN) 2r,4c,6c,8c-tetranonyl-1,3,5,7(1,3)-tetrabenzenacyclooctaphane-14,16,34,36,54,56,74,76-octol",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.5.3",
@@ -6095,10 +6863,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "When more than seven nodes are present, all descriptors of double bonds in rings of more than seven nodes are cited (see P-91.2.2)."
+      "source_quote": "When more than seven nodes are present, all descriptors of double bonds in rings of more than seven nodes are cited (see P-91.2.2).",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.6.1",
@@ -6138,10 +6912,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "fullerene stereogenic-element classification"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Describing stereochemical configuration of fullerenes is extremely complex because of different factors such as the numbering of the fullerene molecule, systematic or trivial (in these recommendations, only the systematic numbering given in refs. 10, 11 is used), the nature and disposition of substituent groups on t..."
+      "source_quote": "Describing stereochemical configuration of fullerenes is extremely complex because of different factors such as the numbering of the fullerene molecule, systematic or trivial (in these recommendations, only the systematic numbering given in refs. 10, 11 is used), the nature and disposition of substituent groups on t...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.6.6",
@@ -6175,10 +6955,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "fullerene stereogenic-element classification"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "The four types are classified by the ‘substitution test’ that consists of changing the substituents in a single fullerene unit into a ‘achiral test substituent’, ‘T’, and verifying the chirality of the fullerene so modified by the presence of ‘T’ substituents (see Fig. 9.2) Fig. 9.2 Classification of fullerene chira..."
+      "source_quote": "The four types are classified by the ‘substitution test’ that consists of changing the substituents in a single fullerene unit into a ‘achiral test substituent’, ‘T’, and verifying the chirality of the fullerene so modified by the presence of ‘T’ substituents (see Fig. 9.2) Fig. 9.2 Classification of fullerene chira...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.6.2",
@@ -6224,10 +7010,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "fullerene stereogenic-element classification"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "If this path describes a clockwise direction, the configuration is indicated by the stereodescriptor ‘f,xC’, where the superscript ‘f’ indicates that the descriptor refers to a fullerene, and the superscript ‘x’ is either ‘s’ for the systematic numbering or ‘t’ for the trivial numbering described in P-27.3."
+      "source_quote": "If this path describes a clockwise direction, the configuration is indicated by the stereodescriptor ‘f,xC’, where the superscript ‘f’ indicates that the descriptor refers to a fullerene, and the superscript ‘x’ is either ‘s’ for the systematic numbering or ‘t’ for the trivial numbering described in P-27.3.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.6.3",
@@ -6282,10 +7074,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "fullerene stereogenic-element classification"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "They have an inherently chiral substitution pattern if the existence of enantiomers is inherent to the geometrical arrangement of the substitution sites on the fullerene parent regardless of whether the substituents are identical or different."
+      "source_quote": "They have an inherently chiral substitution pattern if the existence of enantiomers is inherent to the geometrical arrangement of the substitution sites on the fullerene parent regardless of whether the substituents are identical or different.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.6.4",
@@ -6333,11 +7131,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "fullerene stereogenic-element classification"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "The CIP system is used to rank substituents according to Sequence Rules 1 or 2 (see P-92.2 and P-92.3)."
+      "source_quote": "The CIP system is used to rank substituents according to Sequence Rules 1 or 2 (see P-92.2 and P-92.3).",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.6.5",
@@ -6382,10 +7186,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "fullerene stereogenic-element classification"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "(b) If the esters of the acid in the above example were different, the parent fullerene and its substitution pattern would still be achiral and therefore any chirality of the original compound would be due to stereogenic centers located in the substituents."
+      "source_quote": "(b) If the esters of the acid in the above example were different, the parent fullerene and its substitution pattern would still be achiral and therefore any chirality of the original compound would be due to stereogenic centers located in the substituents.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.6.6",
@@ -6426,10 +7236,16 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "fullerene stereogenic-element classification"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "If a fullerene derivative with an inherently or noninherently chiral substitution pattern carries chiral substituents, the configuration of both types of stereogenic elements has to be indicated."
+      "source_quote": "If a fullerene derivative with an inherently or noninherently chiral substitution pattern carries chiral substituents, the configuration of both types of stereogenic elements has to be indicated.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.7.1",
@@ -6478,10 +7294,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "The descriptors ‘M’ and ‘P’ are preferred to ‘Ra’ and ‘Sa’, respectively, to denote the stereogenic axis, in accordance with the methodology described in P-92.1.2.2.1 and P-92.1.2.1.2."
+      "source_quote": "The descriptors ‘M’ and ‘P’ are preferred to ‘Ra’ and ‘Sa’, respectively, to denote the stereogenic axis, in accordance with the methodology described in P-92.1.2.2.1 and P-92.1.2.1.2.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.7.2",
@@ -6531,10 +7353,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "In preferred IUPAC names, stereogenic centers are specified by stereodescriptors such as ‘R’, ‘S,’ ‘r’, and ‘s’."
+      "source_quote": "In preferred IUPAC names, stereogenic centers are specified by stereodescriptors such as ‘R’, ‘S,’ ‘r’, and ‘s’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.5.7.3",
@@ -6576,10 +7404,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "In eight-membered rings, all stereogenic units must be specified, when one needs to be specified."
+      "source_quote": "In eight-membered rings, all stereogenic units must be specified, when one needs to be specified.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-93.6",
@@ -6652,11 +7486,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "hierarchical digraph ligand-ranking model"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples."
-      ],
-      "source_quote": "This addition of stereodescriptors does not change a preferred IUPAC name, be it a substitutive name, a phane name, or a functional class name, and the corresponding names formed by skeletal (‘a’) replacement nomenclature, provided that stereodescriptors are added in conformity with numbering."
+      "source_quote": "This addition of stereodescriptors does not change a preferred IUPAC name, be it a substitutive name, a phane name, or a functional class name, and the corresponding names formed by skeletal (‘a’) replacement nomenclature, provided that stereodescriptors are added in conformity with numbering.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94",
@@ -6692,11 +7532,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "This Section is based on the IUPAC publication “Basic Terminology of Stereochemistry” (see ref. 37)."
+      "source_quote": "This Section is based on the IUPAC publication “Basic Terminology of Stereochemistry” (see ref. 37).",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.1",
@@ -6733,11 +7579,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "A conformation is the spatial arrangement of the atoms affording distinction between stereoisomers which can be interconverted by rotations about formally single bonds, as exemplified for conformers A and B in Fig. 9.3. A B IIIIII Sawhorse projectionNewman projectionZig-zag projection Fig. 9.3. Three different repre..."
+      "source_quote": "A conformation is the spatial arrangement of the atoms affording distinction between stereoisomers which can be interconverted by rotations about formally single bonds, as exemplified for conformers A and B in Fig. 9.3. A B IIIIII Sawhorse projectionNewman projectionZig-zag projection Fig. 9.3. Three different repre...",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.2",
@@ -6801,13 +7653,25 @@
         "conformational stereodescriptor vocabulary",
         "polyhedral nontetrahedral stereogenic-center symbols"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
-        "Nontetrahedral geometry recognition requires 3D coordination-geometry perception.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "P-94.2.1 In an assembly of attached atoms X-A-B-Y, where neither X nor Y is collinear with A and B, the smaller angle subtended by the bonds X-A and Y-B in a plane projection obtained by viewing the assembly along the axis A-B is termed the ‘torsion angle’, denoted by the italicized lower-case Greek letter θ."
+      "source_quote": "P-94.2.1 In an assembly of attached atoms X-A-B-Y, where neither X nor Y is collinear with A and B, the smaller angle subtended by the bonds X-A and Y-B in a plane projection obtained by viewing the assembly along the axis A-B is termed the ‘torsion angle’, denoted by the italicized lower-case Greek letter θ.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Nontetrahedral geometry recognition requires 3D coordination-geometry perception."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "CIP hierarchical digraph construction and duplicate-node expansion must be implemented and validated against official examples.",
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.3",
@@ -6843,10 +7707,16 @@
         "E/Z, seqCis/seqTrans, cis/trans double-bond descriptors",
         "M/P helicity, axial, and planar chirality descriptors"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use."
-      ],
-      "source_quote": "Stereodescriptors are used to denote specific conformers, both aliphatic and alicyclic."
+      "source_quote": "Stereodescriptors are used to denote specific conformers, both aliphatic and alicyclic.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.3.1",
@@ -6903,11 +7773,17 @@
         "hierarchical digraph ligand-ranking model",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "The other conformation, in which X is synperiplanar to one of the R group, is called an ‘eclipsing conformation’."
+      "source_quote": "The other conformation, in which X is synperiplanar to one of the R group, is called an ‘eclipsing conformation’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.3.1.3",
@@ -6953,11 +7829,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "The spatial arrangement of two conjugated double bonds about the intervening single bond is described as ‘s-cis’ if ‘synperiplanar’ and ‘s-trans’ if ‘antiperiplanar’."
+      "source_quote": "The spatial arrangement of two conjugated double bonds about the intervening single bond is described as ‘s-cis’ if ‘synperiplanar’ and ‘s-trans’ if ‘antiperiplanar’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.3.2.1",
@@ -6997,11 +7879,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "The envelope conformation is the conformation of a five-membered ring in which four atoms are coplanar and one atom projects out of the plane. Example:"
+      "source_quote": "The envelope conformation is the conformation of a five-membered ring in which four atoms are coplanar and one atom projects out of the plane. Example:",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.3.2.2",
@@ -7053,12 +7941,24 @@
         "conformational stereodescriptor vocabulary",
         "natural-product stereochemical exception context"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
-        "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
-      ],
-      "source_quote": "In carbohydrate stereochemistry, the term twist refers to a five-membered ring and the twist conformation is referred to as skew."
+      "source_quote": "In carbohydrate stereochemistry, the term twist refers to a five-membered ring and the twist conformation is referred to as skew.",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.3.2.3",
@@ -7098,11 +7998,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "A molecule of a monounsaturated six-membered ring is described as being in a ‘half-chair’ conformation according as the atoms not directly linked to the double bond lie on opposite sides of the plane."
+      "source_quote": "A molecule of a monounsaturated six-membered ring is described as being in a ‘half-chair’ conformation according as the atoms not directly linked to the double bond lie on opposite sides of the plane.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.3.2.4",
@@ -7140,11 +8046,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "The conformation of a saturated cyclic molecular entity, containing an even number (≥ 8) of atoms in the ring, in which these atoms lie alternately in each of two parallel planes and are symmetrically equivalent (D4d for cyclooctane, D5d for cyclodecane, etc.), is called a ‘crown conformation’. cyclooctanecyclodecane"
+      "source_quote": "The conformation of a saturated cyclic molecular entity, containing an even number (≥ 8) of atoms in the ring, in which these atoms lie alternately in each of two parallel planes and are symmetrically equivalent (D4d for cyclooctane, D5d for cyclodecane, etc.), is called a ‘crown conformation’. cyclooctanecyclodecane",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.3.2.5",
@@ -7182,11 +8094,17 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "conformational stereodescriptor vocabulary"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone."
-      ],
-      "source_quote": "The conformation of an eight-membered ring in which the four atoms forming one pair of diametrically opposite bonds in the ring lie in one plane and all other ring atoms lie on one side of that plane is called a ‘tub conformation’."
+      "source_quote": "The conformation of an eight-membered ring in which the four atoms forming one pair of diametrically opposite bonds in the ring lie in one plane and all other ring atoms lie on one side of that plane is called a ‘tub conformation’.",
+      "implementation_requirements": [
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Conformational descriptors require 3D coordinates or conformer geometry, not SMILES connectivity alone.",
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-94.3.2.6",
@@ -7233,12 +8151,30 @@
         "M/P helicity, axial, and planar chirality descriptors",
         "natural-product stereochemical exception context"
       ],
-      "unresolved_semantics": [
-        "Requires molecular graph stereochemistry perception before executable use.",
-        "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10.",
-        "Source extraction may include navigation or adjacent-chapter text; review boundary before executable compilation."
-      ],
-      "source_quote": "In-out isomerism is found in bicyclic systems having bridges long enough to allow the bridgehead exocyclic bond or lone pair of electrons to point either inside the structure or outside. Example 1: Example 2: Continued with P-10 Parent Structures for Natural Products and Related Compounds. Return to: IUPAC Chemical ..."
+      "source_quote": "In-out isomerism is found in bicyclic systems having bridges long enough to allow the bridgehead exocyclic bond or lone pair of electrons to point either inside the structure or outside. Example 1: Example 2: Continued with P-10 Parent Structures for Natural Products and Related Compounds. Return to: IUPAC Chemical ...",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Natural-product and carbohydrate-specific overrides must be reconciled with Chapter P-10."
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "Source extraction may include navigation or adjacent-chapter text; review boundary before executable compilation."
+          ]
+        },
+        {
+          "kind": "stereochemistry_perception_required",
+          "resolution": "Rule execution requires stereochemical perception and descriptor assignment.",
+          "source_notes": [
+            "Requires molecular graph stereochemistry perception before executable use."
+          ]
+        }
+      ]
     }
   ]
 }

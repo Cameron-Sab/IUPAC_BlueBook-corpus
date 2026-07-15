@@ -97,10 +97,16 @@
         "spiro",
         "functional parent compound"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Many compounds can have two or more names in accordance with several methods recommended by IUPAC for their formation, one of which is recommended herein as the preferred IUPAC name (PIN)."
+      "source_quote": "Many compounds can have two or more names in accordance with several methods recommended by IUPAC for their formation, one of which is recommended herein as the preferred IUPAC name (PIN).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51",
@@ -123,10 +129,16 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "heading_or_scope_record_requires_child_rules_for_executable_behavior"
-      ],
-      "source_quote": "SELECTING THE PREFERRED IUPAC TYPE OF NOMENCLATURE"
+      "source_quote": "SELECTING THE PREFERRED IUPAC TYPE OF NOMENCLATURE",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "heading_or_scope_record_requires_child_rules_for_executable_behavior"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.0",
@@ -154,10 +166,16 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "When a choice is needed between the several types of IUPAC nomenclature, the following selection rules must be applied."
+      "source_quote": "When a choice is needed between the several types of IUPAC nomenclature, the following selection rules must be applied.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.1",
@@ -183,8 +201,8 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "When there is a choice between two types of nomenclature, the preferred type of nomenclature is selected in accordance with the following rules."
+      "source_quote": "When there is a choice between two types of nomenclature, the preferred type of nomenclature is selected in accordance with the following rules.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-51.1.1",
@@ -230,11 +248,23 @@
         "substitutive nomenclature",
         "functional class nomenclature"
       ],
-      "unresolved_semantics": [
-        "source_record_contains_examples_without_full_normative prose; semantics inferred from title",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: (CH3)2C=N-N=C(CH3)2 acetone azine (see P-68.3.1.2.3) di(propan-2-ylidene)hydrazine (PIN)"
+      "source_quote": "Example: (CH3)2C=N-N=C(CH3)2 acetone azine (see P-68.3.1.2.3) di(propan-2-ylidene)hydrazine (PIN)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.1.2",
@@ -272,15 +302,27 @@
         "substitutive nomenclature",
         "conjunctive nomenclature"
       ],
-      "unresolved_semantics": [
-        "source_record_contains_examples_without_full_normative prose; semantics inferred from title",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: 2,3-naphthalenediacetic acid (a conjunctive name) 2,2\u2032-(naphthalene-2,3-diyl)diacetic acid (PIN; a substitutive name; see P-15.6.1.4)"
+      "source_quote": "Example: 2,3-naphthalenediacetic acid (a conjunctive name) 2,2′-(naphthalene-2,3-diyl)diacetic acid (PIN; a substitutive name; see P-15.6.1.4)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.1.3",
-      "title": "Skeletal replacement (\u2018a\u2019) nomenclature is preferred to substitutive nomenclature when heteroatoms are present in chains (see P-51.4.1) and the criteria for the use of skeletal nomenclature are met",
+      "title": "Skeletal replacement (‘a’) nomenclature is preferred to substitutive nomenclature when heteroatoms are present in chains (see P-51.4.1) and the criteria for the use of skeletal nomenclature are met",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -319,15 +361,27 @@
       "tables_or_terms": [
         "substitutive nomenclature"
       ],
-      "unresolved_semantics": [
-        "source_record_contains_examples_without_full_normative prose; semantics inferred from title",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: 3-phospha-2,5,7-trisilaoctane (PIN, a skeletal replacement (\u2018a\u2019) name) (methylsilyl)({[(methylsilyl)methyl]silyl}methyl)phosphane (a substitutive name)"
+      "source_quote": "Example: 3-phospha-2,5,7-trisilaoctane (PIN, a skeletal replacement (‘a’) name) (methylsilyl)({[(methylsilyl)methyl]silyl}methyl)phosphane (a substitutive name)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.1.4",
-      "title": "Skeletal replacement (\u2018a\u2019) nomenclature is preferred to multiplicative nomenclature (see P-51.4.1) when the criteria for use of skeletal nomenclature are met",
+      "title": "Skeletal replacement (‘a’) nomenclature is preferred to multiplicative nomenclature (see P-51.4.1) when the criteria for use of skeletal nomenclature are met",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -367,17 +421,23 @@
       ],
       "exceptions": [],
       "examples": [
-        "Example: 8-thia-2,4,6-trisiladecane (PIN, skeletal replacement (\u2018a\u2019) name) 1-[(ethylsulfanyl)methyl]-1\u2032-methyl-1,1\u2032-[silanediylbis(methylene)]bis(silane); (a multiplicative name) P-51.1.5 Multiplicative nomenclature (P-15.3, P-51.3), as a s"
+        "Example: 8-thia-2,4,6-trisiladecane (PIN, skeletal replacement (‘a’) name) 1-[(ethylsulfanyl)methyl]-1′-methyl-1,1′-[silanediylbis(methylene)]bis(silane); (a multiplicative name) P-51.1.5 Multiplicative nomenclature (P-15.3, P-51.3), as a s"
       ],
       "tables_or_terms": [
         "substitutive nomenclature",
         "multiplicative nomenclature",
         "principal characteristic group"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: 8-thia-2,4,6-trisiladecane (PIN, skeletal replacement (\u2018a\u2019) name) 1-[(ethylsulfanyl)methyl]-1\u2032-methyl-1,1\u2032-[silanediylbis(methylene)]bis(silane); (a multiplicative name) P-51.1.5 Multiplicative nomenclature (P-15.3, P-51.3), as a subset of substitutive nomenclature, is preferred to simple s"
+      "source_quote": "Example: 8-thia-2,4,6-trisiladecane (PIN, skeletal replacement (‘a’) name) 1-[(ethylsulfanyl)methyl]-1′-methyl-1,1′-[silanediylbis(methylene)]bis(silane); (a multiplicative name) P-51.1.5 Multiplicative nomenclature (P-15.3, P-51.3), as a subset of substitutive nomenclature, is preferred to simple s",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.2",
@@ -412,10 +472,16 @@
         "functional class nomenclature",
         "preferred IUPAC name"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "In many cases, functional class nomenclature and substitutive nomenclature can be used to give two names to one compound, for example methyl bromide, a functional class name, and bromomethane, a substitutive name, for CH3-Br."
+      "source_quote": "In many cases, functional class nomenclature and substitutive nomenclature can be used to give two names to one compound, for example methyl bromide, a functional class name, and bromomethane, a substitutive name, for CH3-Br.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.2.1",
@@ -460,11 +526,23 @@
         "functional class nomenclature",
         "preferred IUPAC name"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Amine oxides(CH3)3NO N,N-dimethylmethanamine N-oxide (PIN; P-62.5) (trimethylazaniumyl)oxidanide (N,N-dimethylmethanaminiumyl)oxidanide Imine oxidesCH2=N(O)Cl N-chloromethanimine N-oxide (PIN; P-62.5) [chloro(methylidene)azaniumyl]oxidanide (N-chloromethaniminiumyl)oxidanide Acyl halidesCH3-CO-Cl ac"
+      "source_quote": "Amine oxides(CH3)3NO N,N-dimethylmethanamine N-oxide (PIN; P-62.5) (trimethylazaniumyl)oxidanide (N,N-dimethylmethanaminiumyl)oxidanide Imine oxidesCH2=N(O)Cl N-chloromethanimine N-oxide (PIN; P-62.5) [chloro(methylidene)azaniumyl]oxidanide (N-chloromethaniminiumyl)oxidanide Acyl halidesCH3-CO-Cl ac",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.2.2",
@@ -500,10 +578,16 @@
         "functional class nomenclature",
         "preferred IUPAC name"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "For these classes, preferred IUPAC names are substitutive names."
+      "source_quote": "For these classes, preferred IUPAC names are substitutive names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.3",
@@ -557,10 +641,16 @@
         "phane nomenclature",
         "principal characteristic group"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Multiplicative nomenclature is used to name assemblies of identical units linked by di- or polyvalent groups formed according to P-15.3.2."
+      "source_quote": "Multiplicative nomenclature is used to name assemblies of identical units linked by di- or polyvalent groups formed according to P-15.3.2.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.3.1",
@@ -636,11 +726,23 @@
         "suffix",
         "locant"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "For a multiplicative name to be categorized as an IUPAC preferred name, certain restrictive conditions must be met."
+      "source_quote": "For a multiplicative name to be categorized as an IUPAC preferred name, certain restrictive conditions must be met.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.3.2.1",
@@ -696,10 +798,16 @@
         "preferred IUPAC name",
         "prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Examples: 4,4\u2032,4\u2032\u2032-(ethane-1,1,2-triyl)tribenzoic acid (PIN) [not 4,4\u2032\u2032-[2-(4-carboxyphenyl)ethane-1,1-diyl]dibenzoic acid; the preferred IUPAC name multiplies more identical parent structures \u20183\u2019 vs."
+      "source_quote": "Examples: 4,4′,4′′-(ethane-1,1,2-triyl)tribenzoic acid (PIN) [not 4,4′′-[2-(4-carboxyphenyl)ethane-1,1-diyl]dibenzoic acid; the preferred IUPAC name multiplies more identical parent structures ‘3’ vs.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.3.2.3",
@@ -738,11 +846,23 @@
       "tables_or_terms": [
         "seniority order"
       ],
-      "unresolved_semantics": [
-        "source_record_contains_examples_without_full_normative prose; semantics inferred from title",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: bis(phenyldiazenyl)methanone (PIN) [not 1,1\u2032-carbonylbis(2-phenyldiazene); not 1,1\u2032-[carbonylbis(diazenediyl)]dibenzene; methanone is senior to both \u2018diazene\u2019 and a carbocyclic ring, see P-41]"
+      "source_quote": "Example: bis(phenyldiazenyl)methanone (PIN) [not 1,1′-carbonylbis(2-phenyldiazene); not 1,1′-[carbonylbis(diazenediyl)]dibenzene; methanone is senior to both ‘diazene’ and a carbocyclic ring, see P-41]",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.3.3",
@@ -790,22 +910,34 @@
       ],
       "exceptions": [],
       "examples": [
-        "Examples: 2,4\u2032-methylenedi(cyclohexane-1-carboxylic acid) (a multiplicative name) 2-[(4-carboxycyclohexyl)methyl]cyclohexane-1-carboxylic acid (PIN, a substitutive name, see P-45.2.2) [not 4-[(2-carboxycyclohexyl)methyl]cyclohexane-1-carbox"
+        "Examples: 2,4′-methylenedi(cyclohexane-1-carboxylic acid) (a multiplicative name) 2-[(4-carboxycyclohexyl)methyl]cyclohexane-1-carboxylic acid (PIN, a substitutive name, see P-45.2.2) [not 4-[(2-carboxycyclohexyl)methyl]cyclohexane-1-carbox"
       ],
       "tables_or_terms": [
         "substitutive nomenclature",
         "preferred IUPAC name",
         "locant"
       ],
-      "unresolved_semantics": [
-        "source_record_contains_examples_without_full_normative prose; semantics inferred from title",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Examples: 2,4\u2032-methylenedi(cyclohexane-1-carboxylic acid) (a multiplicative name) 2-[(4-carboxycyclohexyl)methyl]cyclohexane-1-carboxylic acid (PIN, a substitutive name, see P-45.2.2) [not 4-[(2-carboxycyclohexyl)methyl]cyclohexane-1-carboxylic acid; the substituent locant \u20182\u2019 is lower than \u20184\u2019 (see"
+      "source_quote": "Examples: 2,4′-methylenedi(cyclohexane-1-carboxylic acid) (a multiplicative name) 2-[(4-carboxycyclohexyl)methyl]cyclohexane-1-carboxylic acid (PIN, a substitutive name, see P-45.2.2) [not 4-[(2-carboxycyclohexyl)methyl]cyclohexane-1-carboxylic acid; the substituent locant ‘2’ is lower than ‘4’ (see",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.4",
-      "title": "SKELETAL REPLACEMENT (\u2018a\u2019) NOMENCLATURE",
+      "title": "SKELETAL REPLACEMENT (‘a’) NOMENCLATURE",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -839,14 +971,20 @@
       "tables_or_terms": [
         "preferred IUPAC name"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Skeletal replacement (\u2018a\u2019) nomenclature is used to generate preferred IUPAC names in place of substitutive or multiplicative names when four or more heterounits are present in an acyclic chain (see P-51.3.1)."
+      "source_quote": "Skeletal replacement (‘a’) nomenclature is used to generate preferred IUPAC names in place of substitutive or multiplicative names when four or more heterounits are present in an acyclic chain (see P-51.3.1).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.4.1",
-      "title": "Skeletal replacement (\u2018a\u2019) nomenclature in acyclic chains",
+      "title": "Skeletal replacement (‘a’) nomenclature in acyclic chains",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -919,14 +1057,20 @@
         "prefix",
         "locant"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-51.4.1.1 Skeletal replacement (\u2018a\u2019) nomenclature rather than substitutive or multiplicative names must be used to generate preferred IUPAC names for acyclic structures when four or more heterounits are present in a unbranched chain containing at least one carbon atom and when none of the heteroato"
+      "source_quote": "P-51.4.1.1 Skeletal replacement (‘a’) nomenclature rather than substitutive or multiplicative names must be used to generate preferred IUPAC names for acyclic structures when four or more heterounits are present in a unbranched chain containing at least one carbon atom and when none of the heteroato",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.4.1.3",
-      "title": "The same number of characteristic groups that would be expressed as suffixes in substitutive names must be present in skeletal replacement (\u2018a\u2019) names",
+      "title": "The same number of characteristic groups that would be expressed as suffixes in substitutive names must be present in skeletal replacement (‘a’) names",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -961,8 +1105,8 @@
         "principal characteristic group",
         "suffix"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: 9-imino-2,8,10,16-tetraazaheptadecanediimidamide (PIN) (a diimidamide expressed as a principal characteristic group is senior to a carbonimidic diamide) 16-amino-N-(14-amino-3,6,9,12-tetraazatetradecan-1-yl)-2,5,8,11,14-pentaazahexadecanamide [PIN; an amide expressed as a principal charact"
+      "source_quote": "Examples: 9-imino-2,8,10,16-tetraazaheptadecanediimidamide (PIN) (a diimidamide expressed as a principal characteristic group is senior to a carbonimidic diamide) 16-amino-N-(14-amino-3,6,9,12-tetraazatetradecan-1-yl)-2,5,8,11,14-pentaazahexadecanamide [PIN; an amide expressed as a principal charact",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-51.4.1.4",
@@ -987,12 +1131,12 @@
         "2-oxa-4-thia-1,5-disilapentane"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "In these recommendations heterochains may be terminated by certain heteroatoms and not just by carbon atoms."
+      "source_quote": "In these recommendations heterochains may be terminated by certain heteroatoms and not just by carbon atoms.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-51.4.2",
-      "title": "Skeletal replacement (\u2018a\u2019) nomenclature for cyclic compounds",
+      "title": "Skeletal replacement (‘a’) nomenclature for cyclic compounds",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -1011,12 +1155,12 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "Skeletal replacement (\u2018a\u2019) nomenclature is the only recommended method to generate names for certain heterocyclic compounds."
+      "source_quote": "Skeletal replacement (‘a’) nomenclature is the only recommended method to generate names for certain heterocyclic compounds.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-51.4.2.1",
-      "title": "Skeletal replacement (\u2018a\u2019) nomenclature is used to derive preferred IUPAC names for heteromonocyclic compounds having more than ten ring atoms (see P-22.2.3)",
+      "title": "Skeletal replacement (‘a’) nomenclature is used to derive preferred IUPAC names for heteromonocyclic compounds having more than ten ring atoms (see P-22.2.3)",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -1054,14 +1198,20 @@
         "prefix",
         "Hantzsch-Widman"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Skeletal replacement (\u2018a\u2019) nomenclature is also possible with rings having less than 10 ring members if the skeletal replacement (\u2018a\u2019) prefix represents a metal as defined in P-69.4."
+      "source_quote": "Skeletal replacement (‘a’) nomenclature is also possible with rings having less than 10 ring members if the skeletal replacement (‘a’) prefix represents a metal as defined in P-69.4.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.4.2.2",
-      "title": "Skeletal replacement (\u2018a\u2019) nomenclature is used to derive preferred IUPAC names for heterocyclic von Baeyer ring systems (see P-23.3.1)",
+      "title": "Skeletal replacement (‘a’) nomenclature is used to derive preferred IUPAC names for heterocyclic von Baeyer ring systems (see P-23.3.1)",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -1094,15 +1244,27 @@
         "preferred IUPAC name",
         "von Baeyer"
       ],
-      "unresolved_semantics": [
-        "source_record_contains_examples_without_full_normative prose; semantics inferred from title",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: 2,6-dioxabicyclo[3.3.2]decane (PIN)"
+      "source_quote": "Example: 2,6-dioxabicyclo[3.3.2]decane (PIN)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.4.2.3",
-      "title": "Skeletal replacement (\u2018a\u2019) nomenclature is used to derive preferred IUPAC names for heterocyclic spiro parent hydrides consisting of two or more saturated monocyclic rings (see P-24.2.4.1.1)",
+      "title": "Skeletal replacement (‘a’) nomenclature is used to derive preferred IUPAC names for heterocyclic spiro parent hydrides consisting of two or more saturated monocyclic rings (see P-24.2.4.1.1)",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -1136,15 +1298,27 @@
         "parent hydride",
         "spiro"
       ],
-      "unresolved_semantics": [
-        "source_record_contains_examples_without_full_normative prose; semantics inferred from title",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: 7-aza-1-thiaspiro[4.5]decane (PIN)"
+      "source_quote": "Example: 7-aza-1-thiaspiro[4.5]decane (PIN)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.4.2.4",
-      "title": "Skeletal replacement (\u2018a\u2019) nomenclature is used to derive preferred IUPAC names for heteropolycyclic ring systems for which fusion nomenclature based on heterocyclic parent rings is not applicable (see P-25.5.1)",
+      "title": "Skeletal replacement (‘a’) nomenclature is used to derive preferred IUPAC names for heteropolycyclic ring systems for which fusion nomenclature based on heterocyclic parent rings is not applicable (see P-25.5.1)",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -1179,15 +1353,27 @@
         "preferred IUPAC name",
         "fusion nomenclature"
       ],
-      "unresolved_semantics": [
-        "source_record_contains_examples_without_full_normative prose; semantics inferred from title",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: 1,3a1,4-triazaphenalene (PIN) [not 1,4,9b-triazaphenalene; see P-25.3.3.3]"
+      "source_quote": "Example: 1,3a1,4-triazaphenalene (PIN) [not 1,4,9b-triazaphenalene; see P-25.3.3.3]",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.4.2.5",
-      "title": "Skeletal replacement (\u2018a\u2019) nomenclature is used to derive preferred IUPAC names for heterophane ring systems (see P-26.5) and for heterofullerenes (see P-27.5)",
+      "title": "Skeletal replacement (‘a’) nomenclature is used to derive preferred IUPAC names for heterophane ring systems (see P-26.5) and for heterofullerenes (see P-27.5)",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -1221,7 +1407,7 @@
       ],
       "exceptions": [],
       "examples": [
-        "Examples: 13,23,34-trioxa-11,21:26,31-tercycloundecane (PIN; see P-28.3.1) 3,3\u2032,4\u2032\u2032-trioxa-1,1\u2032:6\u2032,1\u2032\u2032-tercycloundecane (not 13,23:29,34-ter-1-oxacycloundecane) 23-thia-12,22:26,32-terbicyclo[2.2.1]heptane (PIN; see P-28.3.1) {not 2,6-bis(b"
+        "Examples: 13,23,34-trioxa-11,21:26,31-tercycloundecane (PIN; see P-28.3.1) 3,3′,4′′-trioxa-1,1′:6′,1′′-tercycloundecane (not 13,23:29,34-ter-1-oxacycloundecane) 23-thia-12,22:26,32-terbicyclo[2.2.1]heptane (PIN; see P-28.3.1) {not 2,6-bis(b"
       ],
       "tables_or_terms": [
         "preferred IUPAC name",
@@ -1229,10 +1415,16 @@
         "von Baeyer",
         "fullerene"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-51.4.2.6 When necessary, the choice of a preferred IUPAC name of a heterocyclic parent structure is made before the insertion of skeletal replacement (\u2018a\u2019) prefixes."
+      "source_quote": "P-51.4.2.6 When necessary, the choice of a preferred IUPAC name of a heterocyclic parent structure is made before the insertion of skeletal replacement (‘a’) prefixes.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.4.2.7",
@@ -1255,15 +1447,21 @@
       "depends_on": [],
       "exceptions": [],
       "examples": [
-        "Example: 1-azacyclotrideca-2,4,6,8,10,12-hexaene [PIN, a skeletal replacement (\u2018a\u2019) name] 1-azacyclotridecine [a skeletal relacement (\u2018a\u2019) name for use in fusion nomenclature] 1H-1-aza[13]annulene"
+        "Example: 1-azacyclotrideca-2,4,6,8,10,12-hexaene [PIN, a skeletal replacement (‘a’) name] 1-azacyclotridecine [a skeletal relacement (‘a’) name for use in fusion nomenclature] 1H-1-aza[13]annulene"
       ],
       "tables_or_terms": [
         "fusion nomenclature"
       ],
-      "unresolved_semantics": [
-        "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
-      ],
-      "source_quote": "Example: 1-azacyclotrideca-2,4,6,8,10,12-hexaene [PIN, a skeletal replacement (\u2018a\u2019) name] 1-azacyclotridecine [a skeletal relacement (\u2018a\u2019) name for use in fusion nomenclature] 1H-1-aza[13]annulene"
+      "source_quote": "Example: 1-azacyclotrideca-2,4,6,8,10,12-hexaene [PIN, a skeletal replacement (‘a’) name] 1-azacyclotridecine [a skeletal relacement (‘a’) name for use in fusion nomenclature] 1H-1-aza[13]annulene",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-51.5",
@@ -1317,10 +1515,16 @@
         "skeletal replacement nomenclature",
         "preferred IUPAC name"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "When there is a choice between conjunctive nomenclature and substitutive nomenclature, preferred IUPAC names are formed by using substitutive nomenclature (including multiplicative nomenclature and skeletal replacement nomenclature when the conditions for their use are fulfilled) (see P-51)."
+      "source_quote": "When there is a choice between conjunctive nomenclature and substitutive nomenclature, preferred IUPAC names are formed by using substitutive nomenclature (including multiplicative nomenclature and skeletal replacement nomenclature when the conditions for their use are fulfilled) (see P-51).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52",
@@ -1357,10 +1561,16 @@
         "parent hydride",
         "retained name"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "For naming the parent hydrides described in Chapter P-2, when only one method is described, the resulting single names are naturally preferred IUPAC names."
+      "source_quote": "For naming the parent hydrides described in Chapter P-2, when only one method is described, the resulting single names are naturally preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.1",
@@ -1400,14 +1610,20 @@
         "parent hydride",
         "retained name"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "The preselected name for NH2-NH2 is the retained name hydrazine; the systematic name diazane may be used in general nomenclature."
+      "source_quote": "The preselected name for NH2-NH2 is the retained name hydrazine; the systematic name diazane may be used in general nomenclature.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.1.3",
-      "title": "Preselected names for heterogeneous acyclic parent hydrides composed of alternating \u2018ab\u2019 atoms, i.e., [a(ba)n parent hydrides], except carbon or halogen, are described in P-21.2.3.1",
+      "title": "Preselected names for heterogeneous acyclic parent hydrides composed of alternating ‘ab’ atoms, i.e., [a(ba)n parent hydrides], except carbon or halogen, are described in P-21.2.3.1",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "parent_selection",
@@ -1440,8 +1656,8 @@
         "preselected name",
         "parent hydride"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "In addition, carbon was not excluded as a \u2018b\u2019 element leading to conflicts with the order of priority for heteranes."
+      "source_quote": "In addition, carbon was not excluded as a ‘b’ element leading to conflicts with the order of priority for heteranes.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-52.1.4",
@@ -1465,16 +1681,22 @@
       "depends_on": [],
       "exceptions": [],
       "examples": [
-        "Examples: PH5 \u03bb5-phosphane (preselected name) phosphorane AsH5 \u03bb5-arsane (preselected name) arsorane SH4 \u03bb4-sulfane (preselected name) (not sulfurane) SH6 \u03bb6-sulfane (preselected name) (not persulfurane) IH3 \u03bb3-iodane (preselected name) (no"
+        "Examples: PH5 λ5-phosphane (preselected name) phosphorane AsH5 λ5-arsane (preselected name) arsorane SH4 λ4-sulfane (preselected name) (not sulfurane) SH6 λ6-sulfane (preselected name) (not persulfurane) IH3 λ3-iodane (preselected name) (no"
       ],
       "tables_or_terms": [
         "preselected name",
         "parent hydride"
       ],
-      "unresolved_semantics": [
-        "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
-      ],
-      "source_quote": "Examples: PH5 \u03bb5-phosphane (preselected name) phosphorane AsH5 \u03bb5-arsane (preselected name) arsorane SH4 \u03bb4-sulfane (preselected name) (not sulfurane) SH6 \u03bb6-sulfane (preselected name) (not persulfurane) IH3 \u03bb3-iodane (preselected name) (not iodinane) IH5 \u03bb5-iodane (preselected name (not periodinane"
+      "source_quote": "Examples: PH5 λ5-phosphane (preselected name) phosphorane AsH5 λ5-arsane (preselected name) arsorane SH4 λ4-sulfane (preselected name) (not sulfurane) SH6 λ6-sulfane (preselected name) (not persulfurane) IH3 λ3-iodane (preselected name) (not iodinane) IH5 λ5-iodane (preselected name (not periodinane",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "source_record_contains_examples_without_full_normative prose; semantics inferred from title"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.1.5",
@@ -1523,10 +1745,16 @@
         "prefix",
         "Hantzsch-Widman"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "The final \u2018e\u2019 in Hantzsch-Widman names is required in preferred IUPAC names; it is still optional in general nomenclature."
+      "source_quote": "The final ‘e’ in Hantzsch-Widman names is required in preferred IUPAC names; it is still optional in general nomenclature.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.1.5.2",
@@ -1567,10 +1795,16 @@
         "prefix",
         "Hantzsch-Widman"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Preselected names for heterogeneous heteromonocyclic parent hydrides with ten or fewer ring members and consisting of alternating heteroatoms, i.e., [ab]n, are Hantzsch-Widman names (see P-22.2.2)."
+      "source_quote": "Preselected names for heterogeneous heteromonocyclic parent hydrides with ten or fewer ring members and consisting of alternating heteroatoms, i.e., [ab]n, are Hantzsch-Widman names (see P-22.2.2).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.1.6",
@@ -1617,10 +1851,16 @@
         "von Baeyer",
         "spiro"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-52.1.6.1 Preselected names for von Baeyer compounds and for spiro compounds having only monocyclic components and consisting entirely of heteroatoms of the same kind are names formed by citing the appropriate prefix, such as \u2018bicyclo\u2019, \u2018spiro\u2019, etc., and descriptor enclosed within square brackets "
+      "source_quote": "P-52.1.6.1 Preselected names for von Baeyer compounds and for spiro compounds having only monocyclic components and consisting entirely of heteroatoms of the same kind are names formed by citing the appropriate prefix, such as ‘bicyclo’, ‘spiro’, etc., and descriptor enclosed within square brackets ",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.1",
@@ -1658,10 +1898,16 @@
         "preferred IUPAC name",
         "fusion nomenclature"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-52.2.1.1 The names methane, ethane, propane, and butane are used as preferred IUPAC names for CH4, CH3-CH3, CH3-CH2-CH3, and CH3-CH2-CH2-CH3, respectively."
+      "source_quote": "P-52.2.1.1 The names methane, ethane, propane, and butane are used as preferred IUPAC names for CH4, CH3-CH3, CH3-CH2-CH3, and CH3-CH2-CH2-CH3, respectively.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.2.1",
@@ -1700,10 +1946,16 @@
         "locant",
         "Hantzsch-Widman"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-52.2.2.2 Preferred IUPAC names for heteromonocyclic rings with no more than ten ring members are Hantzsch-Widman names, including the locants \u20181,2\u2019 and \u20181,3\u2019."
+      "source_quote": "P-52.2.2.2 Preferred IUPAC names for heteromonocyclic rings with no more than ten ring members are Hantzsch-Widman names, including the locants ‘1,2’ and ‘1,3’.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.3",
@@ -1753,10 +2005,16 @@
         "preferred IUPAC name",
         "fusion nomenclature"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Preferred IUPAC names for unsaturated monocyclic compounds with more than ten ring members derived from cycloalkanes and modified by skeletal replacement (\u2018a\u2019) nomenclature are formed by changing the \u2018ane\u2019 ending of the saturated heteromonocycle to \u2018ene\u2019, \u2018adiene\u2019, etc."
+      "source_quote": "Preferred IUPAC names for unsaturated monocyclic compounds with more than ten ring members derived from cycloalkanes and modified by skeletal replacement (‘a’) nomenclature are formed by changing the ‘ane’ ending of the saturated heteromonocycle to ‘ene’, ‘adiene’, etc.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.4.1",
@@ -1792,10 +2050,16 @@
         "fusion nomenclature",
         "von Baeyer"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Fusion nomenclature gives preferred IUPAC names only to compounds having at least two rings of at least five or more members."
+      "source_quote": "Fusion nomenclature gives preferred IUPAC names only to compounds having at least two rings of at least five or more members.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.4.2",
@@ -1836,10 +2100,16 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Heteromonocycles having more than ten ring members and the maximum number of noncumulative double bonds whose names are denoted by the \u2018ine\u2019 ending described in P-22.2.4 are used as parent components as well as attached components in preferred IUPAC fusion names."
+      "source_quote": "Heteromonocycles having more than ten ring members and the maximum number of noncumulative double bonds whose names are denoted by the ‘ine’ ending described in P-22.2.4 are used as parent components as well as attached components in preferred IUPAC fusion names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.4.3",
@@ -1875,10 +2145,16 @@
         "prefix",
         "locant"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "When two (or more) possible parent components are separated by an odd number of interparent components and these are ordered symmetrically with respect to their component rings (but not necessarily with their fusion locants), the whole system is treated as a multiparent system."
+      "source_quote": "When two (or more) possible parent components are separated by an odd number of interparent components and these are ordered symmetrically with respect to their component rings (but not necessarily with their fusion locants), the whole system is treated as a multiparent system.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.4.4",
@@ -1909,10 +2185,16 @@
         "preferred IUPAC name",
         "fusion nomenclature"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Hence, when a third component is ortho- and peri-fused to two components that are themselves ortho- or ortho- and peri-fused together, the following procedures are applied to generate a preferred IUPAC name."
+      "source_quote": "Hence, when a third component is ortho- and peri-fused to two components that are themselves ortho- or ortho- and peri-fused together, the following procedures are applied to generate a preferred IUPAC name.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.4.4.1",
@@ -1963,10 +2245,16 @@
       "tables_or_terms": [
         "seniority order"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-52.2.4.4.1.1 A less preferred parent ring or ring system component is selected that will permit a fusion name."
+      "source_quote": "P-52.2.4.4.1.1 A less preferred parent ring or ring system component is selected that will permit a fusion name.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.4.4.1.2",
@@ -1997,14 +2285,20 @@
       "tables_or_terms": [
         "retained name"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: 2H-[1,3]benzodioxino[6\u2032,5\u2032,4\u2032:10,5,6]anthra[2,3-b]azepine (PIN) Explanation: A normal fusion name is not possible when the four components azepine, anthracene, 1,3-dioxine, and benzene are treated individually; therefore, the use of a benzo name component is necessary; 1-benzazepine cannot "
+      "source_quote": "Example: 2H-[1,3]benzodioxino[6′,5′,4′:10,5,6]anthra[2,3-b]azepine (PIN) Explanation: A normal fusion name is not possible when the four components azepine, anthracene, 1,3-dioxine, and benzene are treated individually; therefore, the use of a benzo name component is necessary; 1-benzazepine cannot ",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.4.4.2",
-      "title": "Skeletal replacement (\u2018a\u2019) nomenclature",
+      "title": "Skeletal replacement (‘a’) nomenclature",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "parent_selection",
@@ -2060,10 +2354,16 @@
         "prefix",
         "fusion nomenclature"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "When the fusion principles discussed in P-25.1 through P-25.3 apply, no skeletal replacement (\u2018a\u2019) name is recommended."
+      "source_quote": "When the fusion principles discussed in P-25.1 through P-25.3 apply, no skeletal replacement (‘a’) name is recommended.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.5.1",
@@ -2096,11 +2396,23 @@
         "preferred IUPAC name",
         "von Baeyer"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "(1) cyclophanes are cyclic phane structures with at least six nodes including two or more rings or ring systems not ortho or ortho and peri-fused to the cyclophane ring, and with at least one ring or ring system of which must be a mancude system; (2) linear phanes consist of four or more rings or ri"
+      "source_quote": "(1) cyclophanes are cyclic phane structures with at least six nodes including two or more rings or ring systems not ortho or ortho and peri-fused to the cyclophane ring, and with at least one ring or ring system of which must be a mancude system; (2) linear phanes consist of four or more rings or ri",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.5.2.1",
@@ -2150,11 +2462,23 @@
         "seniority order",
         "von Baeyer"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Fusion names described in P-25.0 through P-25.3 or bridged fused ring systems described in P-25.4 are preferred IUPAC names."
+      "source_quote": "Fusion names described in P-25.0 through P-25.3 or bridged fused ring systems described in P-25.4 are preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.5.3",
@@ -2195,14 +2519,20 @@
         "preferred IUPAC name",
         "locant"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Phane nomenclature is used to generate preferred IUPAC names for ring assemblies and linear acyclic/cyclic compounds that include a minimum of seven nodes including at least four rings or ring systems, two of which must be terminal, even though the compounds could also be named by substitutive or mu"
+      "source_quote": "Phane nomenclature is used to generate preferred IUPAC names for ring assemblies and linear acyclic/cyclic compounds that include a minimum of seven nodes including at least four rings or ring systems, two of which must be terminal, even though the compounds could also be named by substitutive or mu",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.6",
-      "title": "Selecting preferred IUPAC names for (C60-Ih)[5,6]fullerene and (C70-D5h(6))[5,6]fullerene modified by \u2018nor\u2019 or \u2018seco\u2019 prefixes",
+      "title": "Selecting preferred IUPAC names for (C60-Ih)[5,6]fullerene and (C70-D5h(6))[5,6]fullerene modified by ‘nor’ or ‘seco’ prefixes",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "parent_selection",
@@ -2235,11 +2565,23 @@
         "prefix",
         "fullerene"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "To achieve this, it is recommended that, in order to receive a modified fullerene name, a fullerene fragment must be large enough so as to, arbitrarily, contain more than one-half the number of carbon atoms and more than one-third of the number of rings present in the unmodified fullerene."
+      "source_quote": "To achieve this, it is recommended that, in order to receive a modified fullerene name, a fullerene fragment must be large enough so as to, arbitrarily, contain more than one-half the number of carbon atoms and more than one-third of the number of rings present in the unmodified fullerene.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.6.2",
@@ -2273,8 +2615,8 @@
         "preferred IUPAC name",
         "fullerene"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Example 1: C30H10 (I)(II) cyclopenta[cd]di-as-indaceno[3,4,5,6-fghij:3\u2032,4\u2032,5\u2032,6\u2032-lmnoa]fluoranthene (I) (PIN) [not 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,25,26,29,30,33,34,37,38-triacontanor(C60-Ih)[5,6]fullerene (II)] Explanation: The preferred IUPAC name for this fullerene fragme"
+      "source_quote": "Example 1: C30H10 (I)(II) cyclopenta[cd]di-as-indaceno[3,4,5,6-fghij:3′,4′,5′,6′-lmnoa]fluoranthene (I) (PIN) [not 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,25,26,29,30,33,34,37,38-triacontanor(C60-Ih)[5,6]fullerene (II)] Explanation: The preferred IUPAC name for this fullerene fragme",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-52.2.6.3",
@@ -2310,10 +2652,16 @@
         "preferred IUPAC name",
         "fullerene"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example 1: C70H16 1,2:5,6:11,12:20,21:29,30:40,41:49,50:59,60-octaseco(C70-D5h(6))[5,6]fullerene (PIN) Explanation: The preferred IUPAC name for this fullerene fragment is a secofullerene name because it has 70 carbon atoms and 28 rings."
+      "source_quote": "Example 1: C70H16 1,2:5,6:11,12:20,21:29,30:40,41:49,50:59,60-octaseco(C70-D5h(6))[5,6]fullerene (PIN) Explanation: The preferred IUPAC name for this fullerene fragment is a secofullerene name because it has 70 carbon atoms and 28 rings.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.7",
@@ -2359,10 +2707,16 @@
         "parent hydride",
         "locant"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-52.2.7.1 Preferred IUPAC names for assemblies of two or more identical cyclic systems joined by a single bond are formed using the names of parent hydrides rather than the names of substituent groups, except for biphenyl and polyphenyl assemblies, for which the name benzene is never used."
+      "source_quote": "P-52.2.7.1 Preferred IUPAC names for assemblies of two or more identical cyclic systems joined by a single bond are formed using the names of parent hydrides rather than the names of substituent groups, except for biphenyl and polyphenyl assemblies, for which the name benzene is never used.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.7.2",
@@ -2394,10 +2748,16 @@
         "preferred IUPAC name",
         "locant"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "A new numbering system is now recommended for preferred IUPAC names of ring assemblies with more than two rings or ring systems; it consists of composite locants, for example, 12."
+      "source_quote": "A new numbering system is now recommended for preferred IUPAC names of ring assemblies with more than two rings or ring systems; it consists of composite locants, for example, 12.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-52.2.7.3",
@@ -2430,8 +2790,8 @@
         "preferred IUPAC name",
         "ring assembly"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Phane names are preferred IUPAC names rather than ring assembly names when seven or more rings or ring systems are present."
+      "source_quote": "Phane names are preferred IUPAC names rather than ring assembly names when seven or more rings or ring systems are present.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-52.2.8",
@@ -2468,10 +2828,16 @@
         "parent hydride",
         "principal characteristic group"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Within the same heteroatom class and for the same number of characteristic groups cited as the principal characteristic group, a ring is always selected as the parent hydride to construct a preferred IUPAC name."
+      "source_quote": "Within the same heteroatom class and for the same number of characteristic groups cited as the principal characteristic group, a ring is always selected as the parent hydride to construct a preferred IUPAC name.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-53",
@@ -2516,10 +2882,16 @@
         "prefix",
         "fusion nomenclature"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "The names methane, ethane, propane, and butane have been used since the beginning of systematic nomenclature."
+      "source_quote": "The names methane, ethane, propane, and butane have been used since the beginning of systematic nomenclature.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-54.1",
@@ -2552,10 +2924,16 @@
         "retained name",
         "prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Systematic IUPAC names and retained names of parent hydrides may be modified in the same way or in different ways to generate preferred IUPAC names."
+      "source_quote": "Systematic IUPAC names and retained names of parent hydrides may be modified in the same way or in different ways to generate preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-54.2",
@@ -2585,8 +2963,8 @@
       "tables_or_terms": [
         "preferred IUPAC name"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Two methods are used for modifying the degree of hydrogenation of monocyclic carbocycles: (1) by using the endings \u2018ene\u2019 and \u2018yne\u2019; (2) by using the parent name \u2018annulene\u2019."
+      "source_quote": "Two methods are used for modifying the degree of hydrogenation of monocyclic carbocycles: (1) by using the endings ‘ene’ and ‘yne’; (2) by using the parent name ‘annulene’.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-54.3",
@@ -2637,14 +3015,20 @@
         "hydro prefix",
         "ring assembly"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "When assemblies of otherwise identical rings contain both mancude and saturated rings, the use of hydro prefixes is preferred, except in the case of a two ring assembly consisting of one benzene ring and a cyclohexane ring."
+      "source_quote": "When assemblies of otherwise identical rings contain both mancude and saturated rings, the use of hydro prefixes is preferred, except in the case of a two ring assembly consisting of one benzene ring and a cyclohexane ring.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-54.4",
-      "title": "NAMES MODIFIED BY \u2018HYDRO\u2019 AND \u2018DEHYDRO\u2019 PREFIXES",
+      "title": "NAMES MODIFIED BY ‘HYDRO’ AND ‘DEHYDRO’ PREFIXES",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -2688,10 +3072,16 @@
         "added indicated hydrogen",
         "detachable prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "When along with the endings \u2018ene\u2019 and \u2018yne\u2019 they are used to modify parent hydrides, they are regulated by the principle of lowest locants, in accord with the numbering of the parent hydride and after priority has been given to indicated hydrogen, added indicated hydrogen, and suffixes, when present"
+      "source_quote": "When along with the endings ‘ene’ and ‘yne’ they are used to modify parent hydrides, they are regulated by the principle of lowest locants, in accord with the numbering of the parent hydride and after priority has been given to indicated hydrogen, added indicated hydrogen, and suffixes, when present",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-54.4.1",
@@ -2728,10 +3118,16 @@
         "prefix",
         "Hantzsch-Widman"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Preferred IUPAC names for Hantzsch-Widman rings correspond to either fully unsaturated or fully saturated compounds (see P-22.2.2.1.1)."
+      "source_quote": "Preferred IUPAC names for Hantzsch-Widman rings correspond to either fully unsaturated or fully saturated compounds (see P-22.2.2.1.1).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-54.4.2",
@@ -2781,10 +3177,16 @@
         "Hantzsch-Widman",
         "Table 2.3."
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Preferred IUPAC names for saturated heteromonocyclic compounds are either Hantzsch-Widman names described in P-22.2.2.1.1 or retained names given in Table 2.3."
+      "source_quote": "Preferred IUPAC names for saturated heteromonocyclic compounds are either Hantzsch-Widman names described in P-22.2.2.1.1 or retained names given in Table 2.3.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-54.4.3",
@@ -2847,14 +3249,20 @@
         "added indicated hydrogen",
         "detachable prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-54.4.3.1 Retained fusion names are used for the fully unsaturated compounds (see P-25); they are the preferred IUPAC names."
+      "source_quote": "P-54.4.3.1 Retained fusion names are used for the fully unsaturated compounds (see P-25); they are the preferred IUPAC names.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-54.4.4",
-      "title": "Names modified by \u2018dehydro\u2019 prefixes",
+      "title": "Names modified by ‘dehydro’ prefixes",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "class_specific",
@@ -2901,10 +3309,16 @@
         "added indicated hydrogen",
         "detachable prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "\u2018Dehydro\u2019 prefixes are used to generate preferred IUPAC names for dehydrogenated mancude compounds."
+      "source_quote": "‘Dehydro’ prefixes are used to generate preferred IUPAC names for dehydrogenated mancude compounds.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-55",
@@ -2963,10 +3377,16 @@
         "fusion nomenclature",
         "functional parent compound"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "The main reason is that the aliphatic ones methane, ethane, propane and butane have been in use since the Geneva Convention; most of the cyclic parent hydrides are used as components in systematic fusion nomenclature as discussed in Section P-52."
+      "source_quote": "The main reason is that the aliphatic ones methane, ethane, propane and butane have been in use since the Geneva Convention; most of the cyclic parent hydrides are used as components in systematic fusion nomenclature as discussed in Section P-52.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-56",
@@ -2995,14 +3415,20 @@
         "principal characteristic group",
         "suffix"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
-      ],
-      "source_quote": "Suffixes have always been considered as the most unique elements of the formation of names."
+      "source_quote": "Suffixes have always been considered as the most unique elements of the formation of names.",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-56.1",
-      "title": "THE SUFFIX \u2018PEROXOL\u2019, FOR \u2013OOH",
+      "title": "THE SUFFIX ‘PEROXOL’, FOR –OOH",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "suffix_prefix",
@@ -3028,12 +3454,12 @@
         "functional class nomenclature",
         "suffix"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Such names are preferred to those generated by functional class nomenclature."
+      "source_quote": "Such names are preferred to those generated by functional class nomenclature.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-56.2",
-      "title": "THE SUFFIXES \u2018SO-THIOPEROXOL\u2019, AND CHALOGEN ANALOGUES",
+      "title": "THE SUFFIXES ‘SO-THIOPEROXOL’, AND CHALOGEN ANALOGUES",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "suffix_prefix",
@@ -3058,14 +3484,20 @@
       "tables_or_terms": [
         "suffix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "The suffix \u2018sulfenic acid\u2019 and its chalcogen analogues were discarded in the 1993 recommendations (ref."
+      "source_quote": "The suffix ‘sulfenic acid’ and its chalcogen analogues were discarded in the 1993 recommendations (ref.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-56.3",
-      "title": "THE SUFFIXES \u2018IMIDAMIDE\u2019 AND \u2018CARBOXIMIDAMIDE\u2019",
+      "title": "THE SUFFIXES ‘IMIDAMIDE’ AND ‘CARBOXIMIDAMIDE’",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "suffix_prefix",
@@ -3094,14 +3526,20 @@
         "preferred IUPAC name",
         "suffix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "They are replaced by the new functional replacement suffixes \u2018imidamide\u2019 and \u2018carboximidamide\u2019 in preferred IUPAC names (see P-66.4.1)."
+      "source_quote": "They are replaced by the new functional replacement suffixes ‘imidamide’ and ‘carboximidamide’ in preferred IUPAC names (see P-66.4.1).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-56.4",
-      "title": "THE ENDINGS \u2018DIYL\u2019 AND \u2018YLIDENE\u2019 VS. \u2018YLENE\u2019",
+      "title": "THE ENDINGS ‘DIYL’ AND ‘YLIDENE’ VS. ‘YLENE’",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "suffix_prefix",
@@ -3147,10 +3585,16 @@
         "suffix",
         "prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Except for \u2018methylene\u2019, \u2018ethylene\u2019, and \u2018phenylene\u2019, the suffix \u2018ylene\u2019 previously used to describe divalent substituent groups in which the free valences do not form a double bond, i.e., \u2013E\u2013 or E< was discarded in 1993 (ref."
+      "source_quote": "Except for ‘methylene’, ‘ethylene’, and ‘phenylene’, the suffix ‘ylene’ previously used to describe divalent substituent groups in which the free valences do not form a double bond, i.e., –E– or E< was discarded in 1993 (ref.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57",
@@ -3181,8 +3625,8 @@
         "substitutive nomenclature",
         "prefix"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Preferred prefixes for substituent groups are considered here in three different sections."
+      "source_quote": "Preferred prefixes for substituent groups are considered here in three different sections.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-57.1.1",
@@ -3222,10 +3666,16 @@
         "parent hydride",
         "prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-57.1.1.1 When the free valences are in position 1 of substituent groups derived from mononuclear hydrides carbon, silicon, germanium, tin and lead and from acyclic hydrocarbons, preferred prefixes are of the \u2018alkyl type\u2019 according to P-29.2; preferred prefixes are of the \u2018alkanyl type\u2019 for all mon"
+      "source_quote": "P-57.1.1.1 When the free valences are in position 1 of substituent groups derived from mononuclear hydrides carbon, silicon, germanium, tin and lead and from acyclic hydrocarbons, preferred prefixes are of the ‘alkyl type’ according to P-29.2; preferred prefixes are of the ‘alkanyl type’ for all mon",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.1.2",
@@ -3271,11 +3721,23 @@
         "retained name",
         "prefix"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Examples: \u2013C(CH3)3 tert-butyl (preferred prefix) 1,1-dimethylethyl C6H5-CH2\u2013 benzyl (preferred prefix) phenylmethyl C6H5-CH= benzylidene (preferred prefix) phenylmethylidene C6H5-C\u2261 benzylidyne (preferred prefix) phenylmethylidyne For preferred prefixes, the names \u2018benzyl\u2019, \u2018benzylidene\u2019, and \u2018benzy"
+      "source_quote": "Examples: –C(CH3)3 tert-butyl (preferred prefix) 1,1-dimethylethyl C6H5-CH2– benzyl (preferred prefix) phenylmethyl C6H5-CH= benzylidene (preferred prefix) phenylmethylidene C6H5-C≡ benzylidyne (preferred prefix) phenylmethylidyne For preferred prefixes, the names ‘benzyl’, ‘benzylidene’, and ‘benzy",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.1.3",
@@ -3307,10 +3769,16 @@
       "tables_or_terms": [
         "prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "The prefix \u2018ethylene\u2019, for \u2013H2C-CH2\u2013, is recommended, with unlimited substitution, only for general nomenclature (P-29.6.2.3)."
+      "source_quote": "The prefix ‘ethylene’, for –H2C-CH2–, is recommended, with unlimited substitution, only for general nomenclature (P-29.6.2.3).",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.1.4",
@@ -3340,12 +3808,12 @@
         "retained name",
         "prefix"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "The retained names phenethyl (2-phenylethyl) for C6H5-CH2-CH2\u2013; benzhydryl (diphenylmethyl), for (C6H5)2CH\u2013; isobutyl (2-methylpropyl) for (CH3)2CH-CH2\u2013; sec-butyl (butan-2-yl, 1-methylpropyl) for CH3-CH2-CH(CH3)\u2013; isopentyl (3-methylbutyl) for (CH3)2CH-CH2-CH2\u2013; tert-pentyl (2-methylbutan-2-yl, 1,1"
+      "source_quote": "The retained names phenethyl (2-phenylethyl) for C6H5-CH2-CH2–; benzhydryl (diphenylmethyl), for (C6H5)2CH–; isobutyl (2-methylpropyl) for (CH3)2CH-CH2–; sec-butyl (butan-2-yl, 1-methylpropyl) for CH3-CH2-CH(CH3)–; isopentyl (3-methylbutyl) for (CH3)2CH-CH2-CH2–; tert-pentyl (2-methylbutan-2-yl, 1,1",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-57.1.5.1",
-      "title": "Preferred prefixes derived from cycloalkanes are of the \u2018cycloalkyl type\u2019 (see P-29.2); preferred prefixes derived from cyclic compounds other that cycloalkanes are all of the \u2018alkanyl type\u2019 described above in P-57.1.1.1",
+      "title": "Preferred prefixes derived from cycloalkanes are of the ‘cycloalkyl type’ (see P-29.2); preferred prefixes derived from cyclic compounds other that cycloalkanes are all of the ‘alkanyl type’ described above in P-57.1.1.1",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "suffix_prefix",
@@ -3370,10 +3838,16 @@
       "tables_or_terms": [
         "prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Examples: cyclopropyl (preferred prefix) cyclopropanyl cyclohexyl (preferred prefix) cyclohexanyl silin-4-yl (preferred prefix) bicyclo[2.2.2]octan-2-yl (preferred prefix) bicyclo[2.2.2]oct-2-yl"
+      "source_quote": "Examples: cyclopropyl (preferred prefix) cyclopropanyl cyclohexyl (preferred prefix) cyclohexanyl silin-4-yl (preferred prefix) bicyclo[2.2.2]octan-2-yl (preferred prefix) bicyclo[2.2.2]oct-2-yl",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.1.5.2",
@@ -3403,11 +3877,23 @@
       "tables_or_terms": [
         "prefix"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "The two following prefixes are retained as preferred prefixes with unlimited substitution: phenyl (preferred prefix) 1,4-phenylene (also 1,2- and 1,3-isomers) (preferred prefixes)"
+      "source_quote": "The two following prefixes are retained as preferred prefixes with unlimited substitution: phenyl (preferred prefix) 1,4-phenylene (also 1,2- and 1,3-isomers) (preferred prefixes)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.1.5.3",
@@ -3442,10 +3928,16 @@
       "tables_or_terms": [
         "prefix"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
-      ],
-      "source_quote": "The following retained prefixes are recommended for only general nomenclature, with unlimited substitution except for tolyl for which no substitution is allowed: 2-adamantyl (also 1-isomer) adamantan-2-yl (preferred prefix) 2-anthryl (also 1- and 9-isomers) anthracen-2-yl (preferred prefixes) 3-fury"
+      "source_quote": "The following retained prefixes are recommended for only general nomenclature, with unlimited substitution except for tolyl for which no substitution is allowed: 2-adamantyl (also 1-isomer) adamantan-2-yl (preferred prefix) 2-anthryl (also 1- and 9-isomers) anthracen-2-yl (preferred prefixes) 3-fury",
+      "implementation_requirements": [
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.1.5.4",
@@ -3476,10 +3968,16 @@
       "tables_or_terms": [
         "prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "The retained prefixes furfuryl (2 isomer only) and thenyl (2 isomer only) are no longer recommended (see P-29.6.3)"
+      "source_quote": "The retained prefixes furfuryl (2 isomer only) and thenyl (2 isomer only) are no longer recommended (see P-29.6.3)",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.1.6",
@@ -3519,10 +4017,16 @@
         "prefix",
         "spiro"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-57.1.6.1 All preferred prefixes derived from parent hydrides whose degree of hydrogenation has been modified are formed systematically according to rules discussed in P-32."
+      "source_quote": "P-57.1.6.1 All preferred prefixes derived from parent hydrides whose degree of hydrogenation has been modified are formed systematically according to rules discussed in P-32.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.1.6.2",
@@ -3581,10 +4085,16 @@
         "prefix",
         "locant"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Examples: hept-2-en-4-yl [alkanyl type; see P-29.2 method (2)] (preferred prefix)1-propylbut-2-en-1-yl [alkyl type; see P-29.2 method (1)] (2) In acyclic prefixes derived from alkanes modified by skeletal replacement (\u2018a\u2019) nomenclature, the \u2018a\u2019 prefixes have seniority over suffixes, such as \u2018yl\u2019 and"
+      "source_quote": "Examples: hept-2-en-4-yl [alkanyl type; see P-29.2 method (2)] (preferred prefix)1-propylbut-2-en-1-yl [alkyl type; see P-29.2 method (1)] (2) In acyclic prefixes derived from alkanes modified by skeletal replacement (‘a’) nomenclature, the ‘a’ prefixes have seniority over suffixes, such as ‘yl’ and",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.1.6.3",
@@ -3621,10 +4131,16 @@
         "prefix",
         "Table 3.2"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "There are no retained prefixes derived from parent hydrides with a modified degree of hydrogenation recommended as preferred prefixes."
+      "source_quote": "There are no retained prefixes derived from parent hydrides with a modified degree of hydrogenation recommended as preferred prefixes.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.2",
@@ -3660,10 +4176,16 @@
         "retained name",
         "prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Names of prefixes derived from characteristic groups are either retained names or are systematically formed by substitutive nomenclature."
+      "source_quote": "Names of prefixes derived from characteristic groups are either retained names or are systematically formed by substitutive nomenclature.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.3",
@@ -3705,10 +4227,16 @@
         "prefix",
         "functional parent compound"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Retained prefixes corresponding to functional parent compounds used as preferred prefixes are described in P-34.2."
+      "source_quote": "Retained prefixes corresponding to functional parent compounds used as preferred prefixes are described in P-34.2.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-57.4",
@@ -3755,10 +4283,16 @@
         "retained name",
         "prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "At each step, when a choice is possible, the largest nomenclaturally significant component is chosen."
+      "source_quote": "At each step, when a choice is possible, the largest nomenclaturally significant component is chosen.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-58.1",
@@ -3803,10 +4337,16 @@
       "tables_or_terms": [
         "preferred IUPAC name"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Section P-45 contains the hierarchical rules for choosing a preferred IUPAC name based on an order of seniority (see P-44) for determining the one and only parent structure."
+      "source_quote": "Section P-45 contains the hierarchical rules for choosing a preferred IUPAC name based on an order of seniority (see P-44) for determining the one and only parent structure.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-58.2.1",
@@ -3892,10 +4432,16 @@
         "ring assembly",
         "spiro"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Indicated hydrogen, if needed, is always cited at the front of the name of a spiro ring system, a bridged ring system, or a ring assembly, which is a change from its position in previous recommendations for bridged ring systems and ring assemblies where it was kept with the name of the individual ri"
+      "source_quote": "Indicated hydrogen, if needed, is always cited at the front of the name of a spiro ring system, a bridged ring system, or a ring assembly, which is a change from its position in previous recommendations for bridged ring systems and ring assemblies where it was kept with the name of the individual ri",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-58.2.2.1",
@@ -3948,15 +4494,27 @@
         "added indicated hydrogen",
         "hydro prefix"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-58.2.2.2 When there is a choice, \u2018added indicated hydrogen\u2019 positions are assigned to peripheral ring atoms, with the lowest locants consistent with the arrangement of double bonds in the compound as required."
+      "source_quote": "P-58.2.2.2 When there is a choice, ‘added indicated hydrogen’ positions are assigned to peripheral ring atoms, with the lowest locants consistent with the arrangement of double bonds in the compound as required.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-58.2.3",
-      "title": "Specific rules related to indicated hydrogen, \u2018added indicated hydrogen\u2019 and hydro prefixes",
+      "title": "Specific rules related to indicated hydrogen, ‘added indicated hydrogen’ and hydro prefixes",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "numbering",
@@ -4009,10 +4567,16 @@
         "added indicated hydrogen",
         "hydro prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-58.2.3.1.1 When there are an equal number of indicated hydrogen atoms and principal characteristic groups or free valences to be accommodated, the indicated hydrogen atoms are placed at peripheral atoms that will accommodate these principal characteristic groups or free valences."
+      "source_quote": "P-58.2.3.1.1 When there are an equal number of indicated hydrogen atoms and principal characteristic groups or free valences to be accommodated, the indicated hydrogen atoms are placed at peripheral atoms that will accommodate these principal characteristic groups or free valences.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-58.2.3.1.3",
@@ -4064,11 +4628,23 @@
         "added indicated hydrogen",
         "hydro prefix"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "(1) at least one of the indicated hydrogen atoms is assigned to a nonfusion peripheral atom having the lowest locants consistent with the mancude system of double bonds as established in P-58.2.1.2."
+      "source_quote": "(1) at least one of the indicated hydrogen atoms is assigned to a nonfusion peripheral atom having the lowest locants consistent with the mancude system of double bonds as established in P-58.2.1.2.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-58.2.3.1.4",
@@ -4109,8 +4685,8 @@
         "indicated hydrogen",
         "added indicated hydrogen"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "4,4a-dihydro-2H,5H-benzo[1,2-b:4,3-c\u2032]dipyran-5,6(6aH)-dione (PIN) (not 4,4a-dihydro-2H,4H-benzo[1,2-b:4,3-c\u2032]dipyran-5,6(4aH,6aH)-dione) Explanation: The indicated hydrogen atoms cannot accommodate both \u2018-one\u2019 principal characteristic group positions; therefore one indicted hydrogen atom is assigne"
+      "source_quote": "4,4a-dihydro-2H,5H-benzo[1,2-b:4,3-c′]dipyran-5,6(6aH)-dione (PIN) (not 4,4a-dihydro-2H,4H-benzo[1,2-b:4,3-c′]dipyran-5,6(4aH,6aH)-dione) Explanation: The indicated hydrogen atoms cannot accommodate both ‘-one’ principal characteristic group positions; therefore one indicted hydrogen atom is assigne",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-58.2.4",
@@ -4143,8 +4719,8 @@
         "indicated hydrogen",
         "added indicated hydrogen"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: 1,3-dioxo-1,3-dihydro-2H-isoindole-2,5-diyl (preferred prefix) 4-iminonaphthalen-1(4H)-one (PIN)"
+      "source_quote": "Examples: 1,3-dioxo-1,3-dihydro-2H-isoindole-2,5-diyl (preferred prefix) 4-iminonaphthalen-1(4H)-one (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-58.2.5",
@@ -4188,10 +4764,16 @@
         "hydro prefix",
         "detachable prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "1) allows for hydro prefixes to be either nondetachable, i.e., they must always be cited directly in front of the name of a fully unsaturated parent structure, thus creating a parent hydride separate and distinct from the fully unsaturated analogue, or detachable, i.e., cited as prefixes in front of"
+      "source_quote": "1) allows for hydro prefixes to be either nondetachable, i.e., they must always be cited directly in front of the name of a fully unsaturated parent structure, thus creating a parent hydride separate and distinct from the fully unsaturated analogue, or detachable, i.e., cited as prefixes in front of",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-58.3",
@@ -4247,10 +4829,16 @@
         "prefix",
         "functional parent compound"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "P-58.3.2 When one or more atoms of a homogeneous heteroatomic chain can be expressed by a principal characteristic group, a functional parent compound, or a compulsory prefix, the principal characteristic group or compulsory prefix group is expressed."
+      "source_quote": "P-58.3.2 When one or more atoms of a homogeneous heteroatomic chain can be expressed by a principal characteristic group, a functional parent compound, or a compulsory prefix, the principal characteristic group or compulsory prefix group is expressed.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-59.0",
@@ -4275,8 +4863,8 @@
       "tables_or_terms": [
         "preferred IUPAC name"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "This Section describes the procedure for the systematic formation of a preferred IUPAC name for an organic compound."
+      "source_quote": "This Section describes the procedure for the systematic formation of a preferred IUPAC name for an organic compound.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-59.1",
@@ -4387,11 +4975,23 @@
         "indicated hydrogen",
         "added indicated hydrogen"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "The procedure for formation of a preferred systematic name for an organic compound involves a number of steps outlined in this and in the following subsections, to be taken as far as they are applicable in the following order."
+      "source_quote": "The procedure for formation of a preferred systematic name for an organic compound involves a number of steps outlined in this and in the following subsections, to be taken as far as they are applicable in the following order.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-59.1.9",
@@ -4455,11 +5055,23 @@
         "locant",
         "Table 5.1"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Characteristic groups that can be cited as suffixes in substitutive nomenclature are not necessarily identical with groups designated by the name of a corresponding functional class when functional class names are formed (e.g., butanone and ethyl methyl ketone, where \u2018one\u2019 denotes =O and \u2018ketone\u2019 de"
+      "source_quote": "Characteristic groups that can be cited as suffixes in substitutive nomenclature are not necessarily identical with groups designated by the name of a corresponding functional class when functional class names are formed (e.g., butanone and ethyl methyl ketone, where ‘one’ denotes =O and ‘ketone’ de",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-59.1.10",
@@ -4516,10 +5128,16 @@
         "dehydro prefix",
         "detachable prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "When the parent hydride (principal chain, ring, or ring system), principal group and substituents have been selected and named, the numbering of the complete compound is allocated using the rule of lowest locants."
+      "source_quote": "When the parent hydride (principal chain, ring, or ring system), principal group and substituents have been selected and named, the numbering of the complete compound is allocated using the rule of lowest locants.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-59.2.1",
@@ -4563,11 +5181,23 @@
         "locant",
         "functional parent compound"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "After the principal characteristic group has been chosen and named, the parent hydride or functional parent compound is chosen by one of the following methods."
+      "source_quote": "After the principal characteristic group has been chosen and named, the parent hydride or functional parent compound is chosen by one of the following methods.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-59.2.1.1",
@@ -4608,8 +5238,8 @@
         "prefix",
         "locant"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Example: Analysis Principal group:>C=Oone Parent hydride: CH3-CH2-CH2-CH2-CH2-CH3hexane Functionalized parent hydrideCH3-CH2-CH2-CH2-CO-CH3 hexan-2-one Subtractive modificationCH3-CH2-CH=CH-CO-CH3hex-3-en-2-one Substituents:\u2013Clchloro \u2013OHhydroxy \u2013CH3methyl Together with other rules, this analysis lea"
+      "source_quote": "Example: Analysis Principal group:>C=Oone Parent hydride: CH3-CH2-CH2-CH2-CH2-CH3hexane Functionalized parent hydrideCH3-CH2-CH2-CH2-CO-CH3 hexan-2-one Subtractive modificationCH3-CH2-CH=CH-CO-CH3hex-3-en-2-one Substituents:–Clchloro –OHhydroxy –CH3methyl Together with other rules, this analysis lea",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-59.2.1.2",
@@ -4668,11 +5298,23 @@
         "parent hydride",
         "prefix"
       ],
-      "unresolved_semantics": [
-        "list_or_table_membership_must_be normalized from source text into controlled vocabulary",
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: Analysis Principal group:(C)OOHoic acid Parent hydride: CH3-CH2-CH2-CH2-CH2-CH3hexane Functionalized parent hydrideCH3-CH2-CH2-CH2-CH2-COOH hexanoic acid Subtractive modificationCH3-CH2-CH=CH-CH2-COOHhex-3-enoic acid Substituents:Cl\u2013chloro C6H11\u2013cyclohexyl HO\u2013hydroxy CH3\u2013methyl Together wit"
+      "source_quote": "Example: Analysis Principal group:(C)OOHoic acid Parent hydride: CH3-CH2-CH2-CH2-CH2-CH3hexane Functionalized parent hydrideCH3-CH2-CH2-CH2-CH2-COOH hexanoic acid Subtractive modificationCH3-CH2-CH=CH-CH2-COOHhex-3-enoic acid Substituents:Cl–chloro C6H11–cyclohexyl HO–hydroxy CH3–methyl Together wit",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        },
+        {
+          "kind": "source_table_required",
+          "resolution": "Rule execution requires a structured source table or allowlist.",
+          "source_notes": [
+            "list_or_table_membership_must_be normalized from source text into controlled vocabulary"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-59.2.1.4",
@@ -4701,8 +5343,8 @@
         "preferred IUPAC name",
         "parent hydride"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Example: Analysis Principal group:\u2013OHol Parent hydride: C6H12cyclohexane Functionalized parent hydrideC6H11-OHcyclohexanol Substituent:\u2013CH2-CH3ethyl Together with other rules, this analysis leads to the preferred IUPAC name: 2-ethylcyclohexan-1-ol (PIN)"
+      "source_quote": "Example: Analysis Principal group:–OHol Parent hydride: C6H12cyclohexane Functionalized parent hydrideC6H11-OHcyclohexanol Substituent:–CH2-CH3ethyl Together with other rules, this analysis leads to the preferred IUPAC name: 2-ethylcyclohexan-1-ol (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-59.2.1.5",
@@ -4760,10 +5402,16 @@
         "prefix",
         "locant"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Analysis Principal group:\u2013COOHcarboxylic acid Parent hydride: 9H-fluorene Functionalized parent hydride 9H-fluorene-2-carboxylic acid Substituents:\u2013C6H5phenyl \u2013COOHcarboxy Together with other rules, this analysis leads to the preferred IUPAC name: 6-(4-carboxyphenyl)-9H-fluorene-2-carboxylic acid (P"
+      "source_quote": "Analysis Principal group:–COOHcarboxylic acid Parent hydride: 9H-fluorene Functionalized parent hydride 9H-fluorene-2-carboxylic acid Substituents:–C6H5phenyl –COOHcarboxy Together with other rules, this analysis leads to the preferred IUPAC name: 6-(4-carboxyphenyl)-9H-fluorene-2-carboxylic acid (P",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-59.2.2",
@@ -4825,14 +5473,20 @@
         "indicated hydrogen",
         "added indicated hydrogen"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "As a consequence, heteroatoms have seniority for low locants and suffixes are assigned the next possible lowest locants."
+      "source_quote": "As a consequence, heteroatoms have seniority for low locants and suffixes are assigned the next possible lowest locants.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-59.2.3.1",
-      "title": "After suffixes, if there is a choice, low locants are assigned to \u2018ene\u2019 and \u2018yne\u2019 endings, and then to detachable prefixes, if applicable",
+      "title": "After suffixes, if there is a choice, low locants are assigned to ‘ene’ and ‘yne’ endings, and then to detachable prefixes, if applicable",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "numbering",
@@ -4907,14 +5561,20 @@
         "dehydro prefix",
         "detachable prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "Example: Analysis Principal characteristic group:=Oone Parent hydride:CH3-[CH2]5-CH3 heptane Functionalized parent hydrideCH3-[CH2]2-CO-[CH2]2-CH3heptan-4-one Substituent prefix\u2013Ffluoro Together with other rules, this analysis leads to the preferred IUPAC name: 7,7,7-trifluorohept-1-en-4-one (PIN) P"
+      "source_quote": "Example: Analysis Principal characteristic group:=Oone Parent hydride:CH3-[CH2]5-CH3 heptane Functionalized parent hydrideCH3-[CH2]2-CO-[CH2]2-CH3heptan-4-one Substituent prefix–Ffluoro Together with other rules, this analysis leads to the preferred IUPAC name: 7,7,7-trifluorohept-1-en-4-one (PIN) P",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-59.2.4",
-      "title": "Seniority of \u2018ene\u2019 and \u2018yne\u2019 endings and hydro prefixes over detachable prefixes",
+      "title": "Seniority of ‘ene’ and ‘yne’ endings and hydro prefixes over detachable prefixes",
       "source_chapter": "P-5",
       "source_url": "https://iupac.qmul.ac.uk/BlueBook/P5.html",
       "rule_type": "numbering",
@@ -4958,8 +5618,8 @@
         "hydro prefix",
         "detachable prefix"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "If there is a choice, low locants are assigned first to \u2018ene\u2019 and \u2018yne\u2019 endings and \u2018hydro/dehydro\u2019 prefixes, then to detachable alphabetized prefixes."
+      "source_quote": "If there is a choice, low locants are assigned first to ‘ene’ and ‘yne’ endings and ‘hydro/dehydro’ prefixes, then to detachable alphabetized prefixes.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-59.2.5",
@@ -5008,10 +5668,16 @@
         "locant",
         "detachable prefix"
       ],
-      "unresolved_semantics": [
-        "referenced_rules_must_be_applied_before_final_candidate_ranking"
-      ],
-      "source_quote": "If there is a choice, low locants are assigned to detachable prefixes considered together, and, if there is a further choice, in alphanumerical order."
+      "source_quote": "If there is a choice, low locants are assigned to detachable prefixes considered together, and, if there is a further choice, in alphanumerical order.",
+      "implementation_requirements": [
+        {
+          "kind": "dependency_graph_linked",
+          "resolution": "Cross-referenced Blue Book rules are represented as dependency edges.",
+          "source_notes": [
+            "referenced_rules_must_be_applied_before_final_candidate_ranking"
+          ]
+        }
+      ]
     }
   ]
 }

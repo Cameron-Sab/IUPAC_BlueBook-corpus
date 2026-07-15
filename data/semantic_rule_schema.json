@@ -31,7 +31,7 @@
           "exceptions",
           "examples",
           "tables_or_terms",
-          "unresolved_semantics",
+          "implementation_requirements",
           "source_quote"
         ],
         "properties": {
@@ -94,7 +94,18 @@
           },
           "examples": { "type": "array", "items": { "type": "string" } },
           "tables_or_terms": { "type": "array", "items": { "type": "string" } },
-          "unresolved_semantics": { "type": "array", "items": { "type": "string" } },
+          "implementation_requirements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["kind", "resolution", "source_notes"],
+              "properties": {
+                "kind": { "type": "string" },
+                "resolution": { "type": "string" },
+                "source_notes": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          },
           "source_quote": { "type": "string" }
         }
       }

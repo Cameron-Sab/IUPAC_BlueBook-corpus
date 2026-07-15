@@ -40,8 +40,8 @@
         "isotopic labeling",
         "Boughton system"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "This Section describes a general system of nomenclature for organic compounds whose isotopic nuclide composition (refs. 12, 14 and 22) deviates from that occurring in nature (for a discussion of the meaning of ‘natural composition’ see ref. 29). Examples of isotopic nuclides for hydrogen are given in Table 8.1, below. This Chapter is derived from Section H of the 1979 Recommendations (ref. 1) and Chapter R-8 in the l993 Recommendations (ref. 2). The present Recommendations replace both those of 1979 and 1993. A bri"
+      "source_quote": "This Section describes a general system of nomenclature for organic compounds whose isotopic nuclide composition (refs. 12, 14 and 22) deviates from that occurring in nature (for a discussion of the meaning of ‘natural composition’ see ref. 29). Examples of isotopic nuclides for hydrogen are given in Table 8.1, below. This Chapter is derived from Section H of the 1979 Recommendations (ref. 1) and Chapter R-8 in the l993 Recommendations (ref. 2). The present Recommendations replace both those of 1979 and 1993. A bri",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-81.1",
@@ -70,8 +70,8 @@
         "mass number",
         "atomic symbol"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "The symbol for denoting a nuclide in the formula and name of an isotopically modified compound consists of the atomic symbol for the element and an arabic numeral in the left superscript position indicating the mass number of the nuclide (see IR-3.2, ref.12)."
+      "source_quote": "The symbol for denoting a nuclide in the formula and name of an isotopically modified compound consists of the atomic symbol for the element and an arabic numeral in the left superscript position indicating the mass number of the nuclide (see IR-3.2, ref.12).",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-81.2",
@@ -128,8 +128,8 @@
         "d",
         "t"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "The atomic symbols used in the nuclide symbol are those given in IUPAC Nomenclature of Inorganic Chemistry (see ref. 12). In the nuclide symbol, the atomic symbol is printed in roman type, italicized atomic symbols being reserved for letter locants, as is customary in the nomenclature of organic compounds and described in P-14.3. For the hydrogen isotopes protium, deuterium, and tritium, the nuclides symbols 1H, 2H, and 3H, are used. The symbols D and T for 2H and 3H, respectively, are used, but not when other modi"
+      "source_quote": "The atomic symbols used in the nuclide symbol are those given in IUPAC Nomenclature of Inorganic Chemistry (see ref. 12). In the nuclide symbol, the atomic symbol is printed in roman type, italicized atomic symbols being reserved for letter locants, as is customary in the nomenclature of organic compounds and described in P-14.3. For the hydrogen isotopes protium, deuterium, and tritium, the nuclides symbols 1H, 2H, and 3H, are used. The symbols D and T for 2H and 3H, respectively, are used, but not when other modi",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-81.3",
@@ -165,8 +165,8 @@
         "3H cation=triton",
         "natural-composition cation=hydron"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Table 8.1 Names of the hydrogen atoms and ions 1H2H3Hnatural composition atomHprotiumdeuteriumtritiumhydrogen anionH–protidedeuteridetritidehydride cationH+protondeuterontritonhydron"
+      "source_quote": "Table 8.1 Names of the hydrogen atoms and ions 1H2H3Hnatural composition atomHprotiumdeuteriumtritiumhydrogen anionH–protidedeuteridetritidehydride cationH+protondeuterontritonhydron",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-81.4",
@@ -193,8 +193,8 @@
         "Examples: CH4 methane CH3-CH2-OH ethanol"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "An isotopically unmodified compound has a macroscopic composition such that its constituent nuclides are present in the proportions occurring in nature. Its formula and name are written in the customary manner. Examples: CH4 methane CH3-CH2-OH ethanol"
+      "source_quote": "An isotopically unmodified compound has a macroscopic composition such that its constituent nuclides are present in the proportions occurring in nature. Its formula and name are written in the customary manner. Examples: CH4 methane CH3-CH2-OH ethanol",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-81.5",
@@ -224,8 +224,8 @@
         "isotopically substituted compound",
         "isotopically labeled compound"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "An isotopically modified compound has a macroscopic composition such that the isotopic ratio of nuclides for at least one element deviates measurably from that occurring in nature. Isotopically modified compounds may be classified as: (1) isotopically substituted compounds: or (2) isotopically labeled compounds."
+      "source_quote": "An isotopically modified compound has a macroscopic composition such that the isotopic ratio of nuclides for at least one element deviates measurably from that occurring in nature. Isotopically modified compounds may be classified as: (1) isotopically substituted compounds: or (2) isotopically labeled compounds.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.0",
@@ -251,8 +251,8 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "An isotopically substituted compound has a composition such that essentially all the molecules of the compound have only the indicated nuclide at each designated position. For all other positions, the absence of nuclide indication means that the nuclide composition is the natural one."
+      "source_quote": "An isotopically substituted compound has a composition such that essentially all the molecules of the compound have only the indicated nuclide at each designated position. For all other positions, the absence of nuclide indication means that the nuclide composition is the natural one.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.1",
@@ -291,8 +291,8 @@
         "Examples: 14CH4 12CHCl3 CH3-CH2H-OH (not CH3-C2HH-OH)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "The structure of an isotopically substituted compound is written in the usual way except that appropriate nuclides symbols are used. When different isotopes of the same element are present in the same position, their symbols are written in order of increasing mass number. Examples: 14CH4 12CHCl3 CH3-CH2H-OH (not CH3-C2HH-OH)"
+      "source_quote": "The structure of an isotopically substituted compound is written in the usual way except that appropriate nuclides symbols are used. When different isotopes of the same element are present in the same position, their symbols are written in order of increasing mass number. Examples: 14CH4 12CHCl3 CH3-CH2H-OH (not CH3-C2HH-OH)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.2",
@@ -350,8 +350,8 @@
         "Examples: 14CH4 (14C)methane (PIN) 12CHCl3 trichloro(12C)methane (PIN) (12C)chloroform CH32H (2H1)methane (PIN) C2H2Cl2 dichloro(2H2)methane (PIN) (2H3)methoxybenzene (PIN) (α,α,α-2H3)anisole C6H5-13CO-13CH3 1-phenyl(1,2-13C2)ethan-1-one (PIN) (1,2-13C2)acetophenone 1,2-di[(13C)methyl]benzene (PIN) (α,α′-13C2)-1,2-xylene (α,α′-13C2)-o-xylene 1-(13C)methyl(2-13C)benzene (PIN) (α,2-13C2)-toluene CH22H-CH2-OH (2-2H1)ethan-1-ol (PIN) 13CH3-CH2-OH (2-13C)ethan-1-ol (PIN) 1-[amino(14C)methyl]cyclopentan-1-ol (PIN) 1-(aminomethyl)cyclopentan-1-(18O)ol (PIN) N-[7-(131I)iodo-9H-fluoren-2-yl]acetamide (PIN) sodium 4-ethoxy-4-oxo(2,3-14C2)butanoate (PIN) sodium ethyl (2,3-14C2)butanedioate sodium ethyl"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "P-82.2.1 The name of an isotopically substituted compound is formed by adding or inserting the nuclide symbol(s) enclosed in parentheses, preceded by any necessary locant(s), letters, and/or numerals, before the part of the compound that is isotopically substituted. Immediately after the parentheses there is neither space nor hyphen, except that when the name, or a part of a name, includes a preceding locant, a hyphen is inserted. When two or more nuclide symbols appear at the same place in the name they are cited "
+      "source_quote": "P-82.2.1 The name of an isotopically substituted compound is formed by adding or inserting the nuclide symbol(s) enclosed in parentheses, preceded by any necessary locant(s), letters, and/or numerals, before the part of the compound that is isotopically substituted. Immediately after the parentheses there is neither space nor hyphen, except that when the name, or a part of a name, includes a preceding locant, a hyphen is inserted. When two or more nuclide symbols appear at the same place in the name they are cited ",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.2.2.1",
@@ -411,8 +411,8 @@
         "bis-",
         "principal characteristic group"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "When two substituent groups are isotopically modified in different ways so that they cannot be combined together using multiplicative terns such as ‘di-’, ‘bis-’, etc., they are cited separately. The isotopically modified substituent is preferred alphabetically to the unmodified substituent. Examples: N-[7-(131I)iodo-6-iodo-9H-fluoren-2-yl]acetamide (PIN) {not N-[6,7-(7-131I)diiodo-9H-fluoren-2-yl]acetamide} 2-(13C)methyl-3-methylpyridine (PIN) [not 2,3-(2-13C)dimethylpyridine] 2-(2,2-2H2)ethyl-3-ethylhexan-1-ol (P"
+      "source_quote": "When two substituent groups are isotopically modified in different ways so that they cannot be combined together using multiplicative terns such as ‘di-’, ‘bis-’, etc., they are cited separately. The isotopically modified substituent is preferred alphabetically to the unmodified substituent. Examples: N-[7-(131I)iodo-6-iodo-9H-fluoren-2-yl]acetamide (PIN) {not N-[6,7-(7-131I)diiodo-9H-fluoren-2-yl]acetamide} 2-(13C)methyl-3-methylpyridine (PIN) [not 2,3-(2-13C)dimethylpyridine] 2-(2,2-2H2)ethyl-3-ethylhexan-1-ol (P",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.2.3",
@@ -453,8 +453,8 @@
         "hydro prefix",
         "mancude ring system"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Isotopically modified hydrogen atoms, when present, are always attached to the skeleton of the isotopically modified compound. According to P-82.2.2, the hydro prefixes must be identical, whether unmodified or isotopically modified, and added in pairs. Isotopically modified or unmodified hydro prefixes are added as detachable substituent prefixes placed at the front of the parent hydride. In these recommendations hydrogenated mancude ring systems are treated as described in P-82.2.2 which is a change from previous "
+      "source_quote": "Isotopically modified hydrogen atoms, when present, are always attached to the skeleton of the isotopically modified compound. According to P-82.2.2, the hydro prefixes must be identical, whether unmodified or isotopically modified, and added in pairs. Isotopically modified or unmodified hydro prefixes are added as detachable substituent prefixes placed at the front of the parent hydride. In these recommendations hydrogenated mancude ring systems are treated as described in P-82.2.2 which is a change from previous ",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.2.4",
@@ -494,8 +494,8 @@
         "Examples: (2-2H1)acetic acid (PIN) CH3-COO2H (O-2H)acetic acid (PIN) acetic (2H)acid CH3-C18O-O2H (O-2H,18O)acetic acid (PIN) CH3-CO-18O2H (18O-2H,18O)acetic acid (PIN) (1-14C)pentan(3H)oic acid (PIN) H14COO– Na+ sodium (14C)formate (PIN) cyclohexane(2H)carboxylic acid (PIN) 4-(2-14C)ethylbenzoic acid (PIN) (1-14C)ethyl propanoate (PIN) ethyl (2-14C)propanoate (PIN) P-82.2.5 In a name consisting of one word, the isotopic descriptor is placed before the name, with an appropriate locant. This method is preferred to that of placing the descriptor before the implied name of the characteristic group. Examples: (N-2H1)acetamide (PIN) (N-2H2)aniline (PIN) (N-2H2)benzenamine"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: (2-2H1)acetic acid (PIN) CH3-COO2H (O-2H)acetic acid (PIN) acetic (2H)acid CH3-C18O-O2H (O-2H,18O)acetic acid (PIN) CH3-CO-18O2H (18O-2H,18O)acetic acid (PIN) (1-14C)pentan(3H)oic acid (PIN) H14COO– Na+ sodium (14C)formate (PIN) cyclohexane(2H)carboxylic acid (PIN) 4-(2-14C)ethylbenzoic acid (PIN) (1-14C)ethyl propanoate (PIN) ethyl (2-14C)propanoate (PIN) P-82.2.5 In a name consisting of one word, the isotopic descriptor is placed before the name, with an appropriate locant. This method is preferred to t"
+      "source_quote": "Examples: (2-2H1)acetic acid (PIN) CH3-COO2H (O-2H)acetic acid (PIN) acetic (2H)acid CH3-C18O-O2H (O-2H,18O)acetic acid (PIN) CH3-CO-18O2H (18O-2H,18O)acetic acid (PIN) (1-14C)pentan(3H)oic acid (PIN) H14COO– Na+ sodium (14C)formate (PIN) cyclohexane(2H)carboxylic acid (PIN) 4-(2-14C)ethylbenzoic acid (PIN) (1-14C)ethyl propanoate (PIN) ethyl (2-14C)propanoate (PIN) P-82.2.5 In a name consisting of one word, the isotopic descriptor is placed before the name, with an appropriate locant. This method is preferred to t",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.3.1",
@@ -537,8 +537,8 @@
         "Example: CH318O2H methan(2H,18O)ol (PIN) P-82.3.2 When several isotopes of the same element are present as nuclides in an isotopically substituted compound, their symbols are arranged in the order of increasing mass number if they are inserted at the same place in the name. Example: (2-2H1,1-3H1)ethan-1-ol (PIN)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "Example: CH318O2H methan(2H,18O)ol (PIN) P-82.3.2 When several isotopes of the same element are present as nuclides in an isotopically substituted compound, their symbols are arranged in the order of increasing mass number if they are inserted at the same place in the name. Example: (2-2H1,1-3H1)ethan-1-ol (PIN)"
+      "source_quote": "Example: CH318O2H methan(2H,18O)ol (PIN) P-82.3.2 When several isotopes of the same element are present as nuclides in an isotopically substituted compound, their symbols are arranged in the order of increasing mass number if they are inserted at the same place in the name. Example: (2-2H1,1-3H1)ethan-1-ol (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.4",
@@ -569,8 +569,8 @@
         "stereoisomerism from isotopic modification",
         "stereoisomeric unmodified analogue"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Two types of stereoisomeric isotopically substituted compounds are possible: (1) those in which the stereoisomerism results from isotopic modification; (2) those whose analogous unmodified compounds are themselves stereoisomers. The nomenclature for stereoisomers of isotopically substituted compounds follows the general methods described in Chapter P-9. Stereodescriptors are cited at the specified place in the name according to the stereochemical rules. When they must be inserted into the name at the same place as "
+      "source_quote": "Two types of stereoisomeric isotopically substituted compounds are possible: (1) those in which the stereoisomerism results from isotopic modification; (2) those whose analogous unmodified compounds are themselves stereoisomers. The nomenclature for stereoisomers of isotopically substituted compounds follows the general methods described in Chapter P-9. Stereodescriptors are cited at the specified place in the name according to the stereochemical rules. When they must be inserted into the name at the same place as ",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.4.1",
@@ -595,8 +595,8 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "(1R)-(1-2H1)ethan-1-ol (PIN) (1E)-(1-2H1)prop-1-ene (PIN) (24R)-5α-(24-2H1)cholestane"
+      "source_quote": "(1R)-(1-2H1)ethan-1-ol (PIN) (1E)-(1-2H1)prop-1-ene (PIN) (24R)-5α-(24-2H1)cholestane",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.4.2",
@@ -637,8 +637,8 @@
         "amino acids",
         "steroids"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Stereochemical affixes (for example D and L) are added according to the rules of special classes, such as carbohydrates, amino acids, steroids, etc., described in Chapter P-10; they usually refer to the parent substance (or unmodified compound) according to the particular class of compounds. In these classes isotopic descriptors may follow the stereochemical descriptors according to biochemical usage (ref. 30). Examples: 5α-(17-2H)pregnane L-(4-13C,35S)methionine 2-deoxy-2-(18F)fluoro-β-D-glucopyranose (2S)-(2-2H)b"
+      "source_quote": "Stereochemical affixes (for example D and L) are added according to the rules of special classes, such as carbohydrates, amino acids, steroids, etc., described in Chapter P-10; they usually refer to the parent substance (or unmodified compound) according to the particular class of compounds. In these classes isotopic descriptors may follow the stereochemical descriptors according to biochemical usage (ref. 30). Examples: 5α-(17-2H)pregnane L-(4-13C,35S)methionine 2-deoxy-2-(18F)fluoro-β-D-glucopyranose (2S)-(2-2H)b",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.5.1",
@@ -676,8 +676,8 @@
         "Examples: 1,1,1-trifluoro(2-2H1)ethane (PIN) 1-chloro-3-fluoro(2-2H)benzene (PIN) 2-methoxy(3,4,5,6-3H4)phenol (PIN)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "Numbering of an isotopically substituted compound is not changed from that of an isotopically unmodified compound. Among the structural features of a compound to be considered successively for numbering as given by P-14.4, the presence of nuclides is considered last with the exception of chirality arising from isotopic modification. Examples: 1,1,1-trifluoro(2-2H1)ethane (PIN) 1-chloro-3-fluoro(2-2H)benzene (PIN) 2-methoxy(3,4,5,6-3H4)phenol (PIN)"
+      "source_quote": "Numbering of an isotopically substituted compound is not changed from that of an isotopically unmodified compound. Among the structural features of a compound to be considered successively for numbering as given by P-14.4, the presence of nuclides is considered last with the exception of chirality arising from isotopic modification. Examples: 1,1,1-trifluoro(2-2H1)ethane (PIN) 1-chloro-3-fluoro(2-2H)benzene (PIN) 2-methoxy(3,4,5,6-3H4)phenol (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.5.2",
@@ -721,8 +721,8 @@
         "Examples: (2-14C)butane (PIN) [not (3-14C)butane] (3-14C,2,2-2H2)butane (PIN) [not (2-14C,3,3-2H2)butane] (2-14C,3-2H1)butane (PIN) [not (3-14C,2-2H1)butane] (3-3H)phenol (PIN) (2R)-(1-2H1)propan-2-ol (PIN) (2R)-(1-131I)iodo-3-iodopropan-2-ol (PIN) (2S,4R)-(4-2H1,2-3H1)pentane (PIN)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "When there is a choice between equivalent numberings in an isotopically unmodified compound, the starting point and the direction of numbering of the analogous isotopically substituted compound are chosen so as to give lowest locants to the modified atoms or groups considered together in one series in increasing numerical order. If a choice still remains, precedence for the lowest locants is given to the nuclide of higher atomic number. In the case of different nuclides of the same element, precedence is given to t"
+      "source_quote": "When there is a choice between equivalent numberings in an isotopically unmodified compound, the starting point and the direction of numbering of the analogous isotopically substituted compound are chosen so as to give lowest locants to the modified atoms or groups considered together in one series in increasing numerical order. If a choice still remains, precedence for the lowest locants is given to the nuclide of higher atomic number. In the case of different nuclides of the same element, precedence is given to t",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.6.1",
@@ -758,8 +758,8 @@
         "Examples: C2H3-CN (2H3)acetonitrile (PIN) (as in trichloroacetonitrile) CH3-CH2-O2H ethan(2H)ol (PIN) (as in ethanol) 13CH3-CH2-OH (2-13C)ethan-1-ol [not (2-13C)ethanol] CH22H-O-C2H2-S-CH2-OOH {[(2H1)methoxy(2H2)methyl]sulfanyl}methaneperoxol (PIN)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "P-82.6.1.1 In preferred IUPAC names, locants are omitted if no locants are necessary in unmodified names. However, if isotopic modification requires a locant to specify its position, then all locants must be specified and none are omitted. Examples: C2H3-CN (2H3)acetonitrile (PIN) (as in trichloroacetonitrile) CH3-CH2-O2H ethan(2H)ol (PIN) (as in ethanol) 13CH3-CH2-OH (2-13C)ethan-1-ol [not (2-13C)ethanol] CH22H-O-C2H2-S-CH2-OOH {[(2H1)methoxy(2H2)methyl]sulfanyl}methaneperoxol (PIN)"
+      "source_quote": "P-82.6.1.1 In preferred IUPAC names, locants are omitted if no locants are necessary in unmodified names. However, if isotopic modification requires a locant to specify its position, then all locants must be specified and none are omitted. Examples: C2H3-CN (2H3)acetonitrile (PIN) (as in trichloroacetonitrile) CH3-CH2-O2H ethan(2H)ol (PIN) (as in ethanol) 13CH3-CH2-OH (2-13C)ethan-1-ol [not (2-13C)ethanol] CH22H-O-C2H2-S-CH2-OOH {[(2H1)methoxy(2H2)methyl]sulfanyl}methaneperoxol (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.6.1.2",
@@ -785,8 +785,8 @@
         "Example: (2,4-2H2,15N)pyridine (PIN)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "Example: (2,4-2H2,15N)pyridine (PIN)"
+      "source_quote": "Example: (2,4-2H2,15N)pyridine (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.6.1.3",
@@ -812,8 +812,8 @@
         "Example: (2H6)benzene (PIN)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "Example: (2H6)benzene (PIN)"
+      "source_quote": "Example: (2H6)benzene (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.6.1.4",
@@ -841,8 +841,8 @@
         "Example: 1-(79Br)bromo(2-13C)benzene (PIN)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "Example: 1-(79Br)bromo(2-13C)benzene (PIN)"
+      "source_quote": "Example: 1-(79Br)bromo(2-13C)benzene (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.6.2",
@@ -875,8 +875,8 @@
         "numeral locants",
         "enclosing marks"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "When locants are needed for defining the structure of the parent structure or of a unit of structure as defined by its appropriate enclosing marks, then all locants must be cited for the parent structure or that structural unit. Specific positions of nuclides must be indicated in the isotopic descriptor by appropriate locants, letters, and/or numerals, preceding the nuclide symbol(s). In preferred names, all locants are placed before the nuclide that is multiplied. Examples: CH3-CH2H-O2H (1-2H1)ethan-1-(2H)ol (PIN)"
+      "source_quote": "When locants are needed for defining the structure of the parent structure or of a unit of structure as defined by its appropriate enclosing marks, then all locants must be cited for the parent structure or that structural unit. Specific positions of nuclides must be indicated in the isotopic descriptor by appropriate locants, letters, and/or numerals, preceding the nuclide symbol(s). In preferred names, all locants are placed before the nuclide that is multiplied. Examples: CH3-CH2H-O2H (1-2H1)ethan-1-(2H)ol (PIN)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.6.3.1",
@@ -922,8 +922,8 @@
         "Greek-letter locant",
         "retained name"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: DL-[methyl-(14C,2H3)]methionine L-(carbamimidoyl-14C,N′-15N)arginine L-(guanidino-14C,N′-15N)arginine (see Rule H-4.21, ref. 1)] [not L-(amidino-14C,N′-15N)arginine] L-(α-2H)phenylalanine P-82.6.3.2 When the nuclide is located at a position in a retained name that is not numbered a systematic name that identifies separately the relevant atom is used for the IUPAC preferred name. For general nomenclature an italicized prefixes or Greek letters may be used to denote its position. benzene(13C)carbonitrile (P"
+      "source_quote": "Examples: DL-[methyl-(14C,2H3)]methionine L-(carbamimidoyl-14C,N′-15N)arginine L-(guanidino-14C,N′-15N)arginine (see Rule H-4.21, ref. 1)] [not L-(amidino-14C,N′-15N)arginine] L-(α-2H)phenylalanine P-82.6.3.2 When the nuclide is located at a position in a retained name that is not numbered a systematic name that identifies separately the relevant atom is used for the IUPAC preferred name. For general nomenclature an italicized prefixes or Greek letters may be used to denote its position. benzene(13C)carbonitrile (P",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-82.6.4",
@@ -953,8 +953,8 @@
         "italicized nuclide symbol locant",
         "italic capital letter locant"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: CH3-CH2-CO-18O-CH2-CH3 18O-ethyl propan(18O1)oate (PIN) CH3-CH2-C18O-O-CH2-CH3 O-ethyl propan(18O1)oate (PIN) CH3-O-CO-18O-CH2-CH3 18O-ethyl O-methyl (18O1)carbonate (PIN) CH3-CH2-O-C18O-18O-CH3 O-ethyl 18O-methyl (18O2)carbonate (PIN) (18O-2H,18O)acetic acid (PIN) (O-2H,18O)acetic acid (PIN) (the ‘18O’ is an isotopic descriptor and the ‘O’ is a locant)"
+      "source_quote": "Examples: CH3-CH2-CO-18O-CH2-CH3 18O-ethyl propan(18O1)oate (PIN) CH3-CH2-C18O-O-CH2-CH3 O-ethyl propan(18O1)oate (PIN) CH3-O-CO-18O-CH2-CH3 18O-ethyl O-methyl (18O1)carbonate (PIN) CH3-CH2-O-C18O-18O-CH3 O-ethyl 18O-methyl (18O2)carbonate (PIN) (18O-2H,18O)acetic acid (PIN) (O-2H,18O)acetic acid (PIN) (the ‘18O’ is an isotopic descriptor and the ‘O’ is a locant)",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83",
@@ -982,8 +982,8 @@
         "isotopically labeled compound",
         "mixture"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "An isotopically labeled compound is a mixture of isotopically unmodified compound with one or more analogous isotopically substituted compound(s). Although an isotopically labeled compound is really a mixture as far as chemical identity is concerned (in the same way as is an unmodified compound), for nomenclature purposes, such mixtures are called ‘isotopically labeled’ compounds."
+      "source_quote": "An isotopically labeled compound is a mixture of isotopically unmodified compound with one or more analogous isotopically substituted compound(s). Although an isotopically labeled compound is really a mixture as far as chemical identity is concerned (in the same way as is an unmodified compound), for nomenclature purposes, such mixtures are called ‘isotopically labeled’ compounds.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.1",
@@ -1013,8 +1013,8 @@
         "Examples: Isotopically substituted compoundwhen added toIsotopically unmodified compoundgives rise toSpecifically labeled compound 13CH4CH4[13C]H4 CH22H2CH4CH2[2H2]"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "An isotopically labeled compound is designated as ‘specifically labeled’ when a unique isotopically substituted compound is formally added to the analogous isotopically unmodified compound. In such a case, both position(s) and number of nuclides are defined. Structures (see P-83.1.1) are identical to those given in Section P-82 for isotopically substituted compounds, except that brackets enclose the nuclide symbol. Examples: Isotopically substituted compoundwhen added toIsotopically unmodified compoundgives rise to"
+      "source_quote": "An isotopically labeled compound is designated as ‘specifically labeled’ when a unique isotopically substituted compound is formally added to the analogous isotopically unmodified compound. In such a case, both position(s) and number of nuclides are defined. Structures (see P-83.1.1) are identical to those given in Section P-82 for isotopically substituted compounds, except that brackets enclose the nuclide symbol. Examples: Isotopically substituted compoundwhen added toIsotopically unmodified compoundgives rise to",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.1.1",
@@ -1047,10 +1047,16 @@
         "multiply labeled",
         "mixed labeled"
       ],
-      "unresolved_semantics": [
-        "Bulk material composition is not represented by the specifically labeled structural formula; implementation must keep formula notation separate from composition modeling."
-      ],
-      "source_quote": "The structural formula of a specifically labeled compound is written in the usual way, but with the appropriate nuclide symbol(s) and multiplying subscript enclosed in square brackets, [ ]. The structural formula is written in the same way as that of an isotopically substituted compound. Although the formula for a specifically labeled compound does not represent the composition of the bulk material, which usually consists overwhelmingly of the isotopically unmodified compound, it does indicate the presence of the c"
+      "source_quote": "The structural formula of a specifically labeled compound is written in the usual way, but with the appropriate nuclide symbol(s) and multiplying subscript enclosed in square brackets, [ ]. The structural formula is written in the same way as that of an isotopically substituted compound. Although the formula for a specifically labeled compound does not represent the composition of the bulk material, which usually consists overwhelmingly of the isotopically unmodified compound, it does indicate the presence of the c",
+      "implementation_requirements": [
+        {
+          "kind": "semantic_compilation_requirement",
+          "resolution": "The draft note is represented as an explicit compilation requirement.",
+          "source_notes": [
+            "Bulk material composition is not represented by the specifically labeled structural formula; implementation must keep formula notation separate from composition modeling."
+          ]
+        }
+      ]
     },
     {
       "rule_id": "P-83.1.2",
@@ -1100,8 +1106,8 @@
         "Examples: [13C]H4 [13C]methane (PIN) CH3[2H] [2H1]methane (PIN) C[2H2]Cl2 dichloro[2H2]methane (PIN) 1-(amino[14C]methyl)cyclopentan-1-ol (PIN) 1-(aminomethyl)cyclopentan-1-[18O]ol (PIN) P-83.1.2.2 All rules given in P-82 to construct names of isotopically substituted compounds are applicable to construct names of specifically labeled compounds, with the exception that the isotopic descriptor is placed in brackets and parentheses are used around complex prefixes. For examples of geminal dicarboxylic acids, see P-82.2.2.2. Examples: benzene-1,3,5-tri([13C]carboxylic acid) (PIN) (not benzene-1,3,5-[1,3,5-13C3]tricarboxylic acid) 3-[13C]carboxy-5-carboxybenzene-1-[18O]carboxylic acid (PIN) (not"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "P-83.1.2.1 The name of a specifically labeled compound is formed by adding or inserting in brackets, [ ], the nuclide symbol(s) preceded by any necessary locants before the denomination of that part of the compound that is isotopically modified. When polylabeling is possible, the number of atoms that have been labeled is always specified as a subscript to the atomic symbol(s) even in the case of monolabeling. This is necessary in order to distinguish between a specifically and a selectively or nonselectively labele"
+      "source_quote": "P-83.1.2.1 The name of a specifically labeled compound is formed by adding or inserting in brackets, [ ], the nuclide symbol(s) preceded by any necessary locants before the denomination of that part of the compound that is isotopically modified. When polylabeling is possible, the number of atoms that have been labeled is always specified as a subscript to the atomic symbol(s) even in the case of monolabeling. This is necessary in order to distinguish between a specifically and a selectively or nonselectively labele",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.2",
@@ -1136,8 +1142,8 @@
         "multiply labeled",
         "mixed labeled"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "An isotopically labeled compound is designated as selectively labeled when a mixture of isotopically substituted compounds is formally added to the analogous isotopically unmodified compound in such a way that the position(s) but not necessarily the number of each labeling nuclide is defined. A selectively labeled compound may be considered as a mixture of specifically labeled compounds. A selectively labeled compound may be: (a) multiply labeled when in the unmodified compound there is more than one atom of the sa"
+      "source_quote": "An isotopically labeled compound is designated as selectively labeled when a mixture of isotopically substituted compounds is formally added to the analogous isotopically unmodified compound in such a way that the position(s) but not necessarily the number of each labeling nuclide is defined. A selectively labeled compound may be considered as a mixture of specifically labeled compounds. A selectively labeled compound may be: (a) multiply labeled when in the unmodified compound there is more than one atom of the sa",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.2.1",
@@ -1186,8 +1192,8 @@
         "semicolon separates multiple subscripts for same nuclide symbol",
         "subscript zero means one mixed-in substituted compound is not modified at indicated position"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "P-83.2.1.1 A selectively labeled compound cannot be described by a unique structural formula; therefore it is represented by inserting the nuclide symbol(s) preceded by any necessary locant(s) (letters and/or numbers) but without multiplying subscripts, enclosed in square brackets, [ ], directly before the usual formula or, if necessary, before parts of the formula that have an independent numbering. Identical locants are not repeated. When different nuclides are present, the nuclide symbols are written in alphabet"
+      "source_quote": "P-83.2.1.1 A selectively labeled compound cannot be described by a unique structural formula; therefore it is represented by inserting the nuclide symbol(s) preceded by any necessary locant(s) (letters and/or numbers) but without multiplying subscripts, enclosed in square brackets, [ ], directly before the usual formula or, if necessary, before parts of the formula that have an independent numbering. Identical locants are not repeated. When different nuclides are present, the nuclide symbols are written in alphabet",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.2.2",
@@ -1227,8 +1233,8 @@
         "Examples: Mixture of isotopically substituted compoundswhen added tois named CH4[2H]methane (PIN) (not [2H4]methane) CH3-CH2-OH[1-2H]ethan-1-ol (PIN) (not [1,1-2H2]ethan-1-ol) CH3-CH2-COO-CH2-CH3[1-14C]ethyl [3-14C]propanoate (PIN) CH3-CH2-OH[2-2H1;2]ethan-1-ol (PIN) CH3-CH2-OH[2-2H2;2]ethan-1-[18O0;1]ol (PIN)"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "The name of a selectively labeled compound is formed in the same way as the name of a specifically labeled compound, except that the multiplying subscripts following the atomic symbols are generally omitted. Identical locants corresponding to the same element are not repeated. The name of a selectively labeled compound differs from the name of the corresponding isotopically substituted compound in the use of square brackets, [ ], surrounding the nuclide descriptor rather than parentheses and in the omission of repe"
+      "source_quote": "The name of a selectively labeled compound is formed in the same way as the name of a specifically labeled compound, except that the multiplying subscripts following the atomic symbols are generally omitted. Identical locants corresponding to the same element are not repeated. The name of a selectively labeled compound differs from the name of the corresponding isotopically substituted compound in the use of square brackets, [ ], surrounding the nuclide descriptor rather than parentheses and in the omission of repe",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.3.1",
@@ -1264,8 +1270,8 @@
       ],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "When only atoms of an element to be modified are present at the same position in a compound, only specific or selective labeling can result. Nonselective labeling requires that the element to be modified be at different positions in the structure. For example, CH4 and CCl3-CH2-CCl3 can only be specifically or selectively labeled with a hydrogen isotope."
+      "source_quote": "When only atoms of an element to be modified are present at the same position in a compound, only specific or selective labeling can result. Nonselective labeling requires that the element to be modified be at different positions in the structure. For example, CH4 and CCl3-CH2-CCl3 can only be specifically or selectively labeled with a hydrogen isotope.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.3.2",
@@ -1294,8 +1300,8 @@
         "Example: [13C]CH3-CH2-CH2-COOH"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "Nonselective labeling is indicated in a formula by inserting the nuclide symbol, enclosed in brackets, directly before the line formula without locants or subscripts. Example: [13C]CH3-CH2-CH2-COOH"
+      "source_quote": "Nonselective labeling is indicated in a formula by inserting the nuclide symbol, enclosed in brackets, directly before the line formula without locants or subscripts. Example: [13C]CH3-CH2-CH2-COOH",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.3.3",
@@ -1331,8 +1337,8 @@
         "Examples: chloro[2H]benzene (PIN) [13C]propane-1,2,3-triol (PIN) [13C]glycerol"
       ],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "The name of a nonselectively labeled compound is formed in the same way as the name of a selectively labeled compound but contains neither locants nor subscripts in the nuclide descriptor. Examples: chloro[2H]benzene (PIN) [13C]propane-1,2,3-triol (PIN) [13C]glycerol"
+      "source_quote": "The name of a nonselectively labeled compound is formed in the same way as the name of a selectively labeled compound but contains neither locants nor subscripts in the nuclide descriptor. Examples: chloro[2H]benzene (PIN) [13C]propane-1,2,3-triol (PIN) [13C]glycerol",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.4",
@@ -1358,8 +1364,8 @@
       "exceptions": [],
       "examples": [],
       "tables_or_terms": [],
-      "unresolved_semantics": [],
-      "source_quote": "P-83.4.1 An isotopically labeled compound may be designated as isotopically deficient when the isotopic content of one or more elements has (have) been depleted, i.e. when one or more nuclide(s) is(are) present in less than the natural ratio."
+      "source_quote": "P-83.4.1 An isotopically labeled compound may be designated as isotopically deficient when the isotopic content of one or more elements has (have) been depleted, i.e. when one or more nuclide(s) is(are) present in less than the natural ratio.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.4.2",
@@ -1391,8 +1397,8 @@
       "tables_or_terms": [
         "def"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Isotope deficiency is denoted in the formula by adding the italicized symbol ‘def’ immediately preceding, and without a hyphen, the appropriate nuclide symbol. Example: [def13C]CHCl3"
+      "source_quote": "Isotope deficiency is denoted in the formula by adding the italicized symbol ‘def’ immediately preceding, and without a hyphen, the appropriate nuclide symbol. Example: [def13C]CHCl3",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.4.3",
@@ -1424,8 +1430,8 @@
       "tables_or_terms": [
         "def"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "The name of an isotopically deficient compound is formed by adding the italicized symbol def immediately preceding, and without a hyphen, the appropriate nuclide symbol, both enclosed in brackets and cited before the name or the part of the name that is isotopically modified. Example: trichloro[def13C]methane (PIN) [def13C]chloroform"
+      "source_quote": "The name of an isotopically deficient compound is formed by adding the italicized symbol def immediately preceding, and without a hyphen, the appropriate nuclide symbol, both enclosed in brackets and cited before the name or the part of the name that is isotopically modified. Example: trichloro[def13C]methane (PIN) [def13C]chloroform",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.5",
@@ -1456,8 +1462,8 @@
       "tables_or_terms": [
         "G general labeling"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "P-83.5.1 In the name of a selectively labeled compound in which all positions of the designated element are labeled, but not necessarily in the same isotopic ratio, the symbol ‘G’ is used in place of locants to indicate a ‘general’ labeling. Examples: Isotopically substituted compoundswhen added tois designated as mixture of substituted compounds (selective labeling) CH3-CH2-CH2-COOH[G-14C]butanoic acid (PIN) D-Glucose in which all six positions are labeled with 14C, but not necessarily uniformly, is designated as "
+      "source_quote": "P-83.5.1 In the name of a selectively labeled compound in which all positions of the designated element are labeled, but not necessarily in the same isotopic ratio, the symbol ‘G’ is used in place of locants to indicate a ‘general’ labeling. Examples: Isotopically substituted compoundswhen added tois designated as mixture of substituted compounds (selective labeling) CH3-CH2-CH2-COOH[G-14C]butanoic acid (PIN) D-Glucose in which all six positions are labeled with 14C, but not necessarily uniformly, is designated as ",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.5.2",
@@ -1492,8 +1498,8 @@
       "tables_or_terms": [
         "U uniform labeling"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Examples: Isotopically substituted compoundswhen added tois designated as mixture of substituted compounds (uniform labeling) CH3-CH2-CH2-COOH[U-14C]butanoic acid (PIN) D-Glucose in which 14C is equally distributed among the six positions is designated as D-[U-14C]glucose. Note: In the case of radioactive nuclides, ‘same isotopic ratio’ means ‘same specific radioactivity’."
+      "source_quote": "Examples: Isotopically substituted compoundswhen added tois designated as mixture of substituted compounds (uniform labeling) CH3-CH2-CH2-COOH[U-14C]butanoic acid (PIN) D-Glucose in which 14C is equally distributed among the six positions is designated as D-[U-14C]glucose. Note: In the case of radioactive nuclides, ‘same isotopic ratio’ means ‘same specific radioactivity’.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-83.5.3",
@@ -1522,8 +1528,8 @@
       "tables_or_terms": [
         "U-locant uniform labeling"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Example: D-glucose in which 14C is equally distributed among positions 1, 3, and 5 is designated as D-[U-1,3,5-14C]glucose."
+      "source_quote": "Example: D-glucose in which 14C is equally distributed among positions 1, 3, and 5 is designated as D-[U-1,3,5-14C]glucose.",
+      "implementation_requirements": []
     },
     {
       "rule_id": "P-84",
@@ -1554,8 +1560,8 @@
       "tables_or_terms": [
         "comparative examples of isotopically modified compounds"
       ],
-      "unresolved_semantics": [],
-      "source_quote": "Types of compoundsFormulaName UnmodifiedCH3-CH2-OHethanol (PIN) Isotopically substituted(2,2,2-2H3)ethan-1-(2H)ol (PIN) (O,2,2,2-2H4)ethan-1-ol Specifically labeled[2,2,2-2H3]ethan-1-[2H]ol (PIN) [O,2,2,2-2H4]ethan-1-ol Selectively labeled[2-2H]ethan-1-[2H]ol (PIN) [2-2H2;2]ethan-1-[18O0;1]ol (PIN) Nonselectively labeled[2H]CH3-CH2-OH[2H]ethanol (PIN) Isotopically deficient[def13C]CH3-CH2-OH[def13C]ethanol (PIN) Continued with P-9 Specification of Configuration and Conformation. Return to: IUPAC Chemical Nomenclatu"
+      "source_quote": "Types of compoundsFormulaName UnmodifiedCH3-CH2-OHethanol (PIN) Isotopically substituted(2,2,2-2H3)ethan-1-(2H)ol (PIN) (O,2,2,2-2H4)ethan-1-ol Specifically labeled[2,2,2-2H3]ethan-1-[2H]ol (PIN) [O,2,2,2-2H4]ethan-1-ol Selectively labeled[2-2H]ethan-1-[2H]ol (PIN) [2-2H2;2]ethan-1-[18O0;1]ol (PIN) Nonselectively labeled[2H]CH3-CH2-OH[2H]ethanol (PIN) Isotopically deficient[def13C]CH3-CH2-OH[def13C]ethanol (PIN) Continued with P-9 Specification of Configuration and Conformation. Return to: IUPAC Chemical Nomenclatu",
+      "implementation_requirements": []
     }
   ]
 }

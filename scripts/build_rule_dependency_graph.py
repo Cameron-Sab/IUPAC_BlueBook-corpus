@@ -7,6 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+NORMALIZED = ROOT / "data" / "bluebook_semantic_rules.normalized.json"
 SEMANTIC = ROOT / "data" / "bluebook_semantic_rules.json"
 OUT_JSON = ROOT / "data" / "bluebook_rule_dependency_graph.json"
 OUT_DOT = ROOT / "data" / "bluebook_rule_dependency_graph.dot"
@@ -17,49 +18,62 @@ REF_RE = re.compile(r"\bP-\d+(?:\.\d+)*\b")
 
 
 def main() -> int:
-    payload = json.loads(SEMANTIC.read_text(encoding="utf-8-sig"))
+    semantic_path = NORMALIZED if NORMALIZED.exists() else SEMANTIC
+    payload = json.loads(semantic_path.read_text(encoding="utf-8-sig"))
     records = payload.get("records", [])
     rule_ids = [record["rule_id"] for record in records]
     rule_id_set = set(rule_ids)
 
     nodes = []
     edges = []
+    edge_keys = set()
     for record in records:
-        source = record["rule_id"]
+        source = record.get("normalized_id", record["rule_id"])
+        rule_id = record["rule_id"]
         nodes.append(
             {
                 "id": source,
+                "rule_id": rule_id,
+                "rule_instance": record.get("rule_instance", 1),
                 "title": record.get("title", ""),
                 "chapter": record.get("source_chapter", ""),
                 "rule_type": record.get("rule_type", "other"),
+                "implementation_status": record.get("implementation_status", payload.get("conversion_status", "")),
             }
         )
-        dependencies = set(record.get("depends_on", []))
-        for field in ("source_quote", "title"):
-            dependencies.update(REF_RE.findall(str(record.get(field, ""))))
-        for field in ("applies_if", "unless", "then", "prefer", "reject"):
-            for item in record.get(field, []):
-                dependencies.update(REF_RE.findall(str(item)))
-        for exception in record.get("exceptions", []):
-            dependencies.update(REF_RE.findall(str(exception.get("condition", ""))))
-            dependencies.update(REF_RE.findall(str(exception.get("effect", ""))))
 
-        for target in sorted(dep for dep in dependencies if dep != source):
-            edges.append(
-                {
-                    "source": source,
-                    "target": target,
-                    "relation": "depends_on",
-                    "target_in_corpus": target in rule_id_set,
-                }
-            )
+        dependency_context = record.get("dependency_context", {})
+        if dependency_context:
+            add_edges(edges, edge_keys, source, rule_id, dependency_context.get("declared", []), "declared_dependency", rule_id_set)
+            add_edges(edges, edge_keys, source, rule_id, dependency_context.get("explicit_references", []), "explicit_reference", rule_id_set)
+            add_edges(edges, edge_keys, source, rule_id, dependency_context.get("hierarchy", []), "hierarchical_parent", rule_id_set)
+            add_edges(edges, edge_keys, source, rule_id, dependency_context.get("exception_references", []), "exception_reference", rule_id_set)
+            add_edges(edges, edge_keys, source, rule_id, dependency_context.get("example_references", []), "example_reference", rule_id_set)
+            add_edges(edges, edge_keys, source, rule_id, dependency_context.get("source_table_references", []), "source_table_requirement", rule_id_set)
+        else:
+            dependencies = set(record.get("depends_on", []))
+            for field in ("source_quote", "title"):
+                dependencies.update(REF_RE.findall(str(record.get(field, ""))))
+            for field in ("applies_if", "unless", "then", "prefer", "reject"):
+                for item in record.get(field, []):
+                    dependencies.update(REF_RE.findall(str(item)))
+            for exception in record.get("exceptions", []):
+                dependencies.update(REF_RE.findall(str(exception.get("condition", ""))))
+                dependencies.update(REF_RE.findall(str(exception.get("effect", ""))))
+            add_edges(edges, edge_keys, source, rule_id, dependencies, "depends_on", rule_id_set)
+
+        for requirement in record.get("implementation_requirements", []):
+            target = requirement.get("kind", "semantic_compilation_requirement")
+            add_edges(edges, edge_keys, source, rule_id, [target], "implementation_requirement", rule_id_set)
 
     graph = {
         "source": payload.get("source"),
+        "built_from": str(semantic_path.relative_to(ROOT)),
         "source_version": payload.get("source_version"),
         "node_count": len(nodes),
         "edge_count": len(edges),
         "missing_target_count": sum(1 for edge in edges if not edge["target_in_corpus"]),
+        "relation_counts": Counter(edge["relation"] for edge in edges),
         "nodes": nodes,
         "edges": edges,
         "chapter_edge_counts": Counter(node["chapter"] for node in nodes),
@@ -69,6 +83,37 @@ def main() -> int:
     OUT_MMD.write_text(to_mermaid(edges), encoding="utf-8")
     print(f"Wrote graph with {len(nodes)} nodes and {len(edges)} edges")
     return 0
+
+
+def add_edges(
+    edges: list[dict[str, object]],
+    edge_keys: set[tuple[str, str, str]],
+    source: str,
+    source_rule_id: str,
+    targets: object,
+    relation: str,
+    rule_id_set: set[str],
+) -> None:
+    if isinstance(targets, str):
+        targets = [targets]
+    for target in sorted({str(target) for target in targets if str(target).strip()}):
+        if target == source_rule_id or target == source:
+            continue
+        key = (source, target, relation)
+        if key in edge_keys:
+            continue
+        edge_keys.add(key)
+        target_is_rule = bool(REF_RE.fullmatch(target))
+        edges.append(
+            {
+                "source": source,
+                "source_rule_id": source_rule_id,
+                "target": target,
+                "relation": relation,
+                "target_kind": "rule" if target_is_rule else "requirement_or_table",
+                "target_in_corpus": target in rule_id_set if target_is_rule else False,
+            }
+        )
 
 
 def to_dot(nodes: list[dict[str, object]], edges: list[dict[str, object]]) -> str:

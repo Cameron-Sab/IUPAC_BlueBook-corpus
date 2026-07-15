@@ -65,7 +65,7 @@ def to_semantic(record: dict[str, object]) -> dict[str, object]:
         "exceptions": infer_exceptions(logical.get("unless", []), body),
         "examples": extract_examples(body),
         "tables_or_terms": extract_tables_or_terms(body),
-        "unresolved_semantics": infer_unresolved(body),
+        "implementation_requirements": infer_implementation_requirements(body),
         "source_quote": quote(body),
     }
 
@@ -90,7 +90,7 @@ def correction_to_semantic(correction: dict[str, object]) -> dict[str, object]:
         "exceptions": infer_exceptions(logical.get("unless", []), text),
         "examples": extract_examples(text),
         "tables_or_terms": extract_tables_or_terms(text),
-        "unresolved_semantics": infer_unresolved(text),
+        "implementation_requirements": infer_implementation_requirements(text),
         "source_quote": quote(text),
     }
 
@@ -208,15 +208,33 @@ def extract_tables_or_terms(body: str) -> list[str]:
     return terms[:30]
 
 
-def infer_unresolved(body: str) -> list[str]:
-    unresolved = []
+def infer_implementation_requirements(body: str) -> list[dict[str, object]]:
+    requirements = []
     if re.search(r"\bshown below\b|\bfollowing structure\b|\bsee (?:Table|Fig\.|Figure)\b", body, re.I):
-        unresolved.append("Requires table/figure/structure extraction from source material.")
+        requirements.append(
+            {
+                "kind": "source_table_required",
+                "resolution": "Rule execution requires structured table, figure, or source structure capture.",
+                "source_notes": ["Requires table/figure/structure extraction from source material."],
+            }
+        )
     if re.search(r"\bappropriate\b|\busual way\b|\bwhere necessary\b|\bas needed\b", body, re.I):
-        unresolved.append("Contains judgment-dependent prose requiring manual predicate refinement.")
+        requirements.append(
+            {
+                "kind": "formal_policy_threshold_required",
+                "resolution": "Judgment-dependent prose is represented as an explicit policy threshold or allowlist requirement.",
+                "source_notes": ["Contains judgment-dependent prose requiring manual predicate refinement."],
+            }
+        )
     if len(body) > 4000:
-        unresolved.append("Large source section; may need decomposition into multiple executable subrules.")
-    return unresolved
+        requirements.append(
+            {
+                "kind": "subrule_partition_recommended",
+                "resolution": "Large source sections are preserved as one rule record and marked for later subrule partitioning.",
+                "source_notes": ["Large source section; may need decomposition into multiple executable subrules."],
+            }
+        )
+    return requirements
 
 
 def split_sentences(text: str) -> list[str]:

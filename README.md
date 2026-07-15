@@ -11,9 +11,16 @@ IUPAC Blue Book HTML chapters and turns the rule sections into JSON records with
 
 Source authority:
 
-- https://iupac.qmul.ac.uk/BlueBook/
-- "Nomenclature of Organic Chemistry. IUPAC Recommendations and Preferred Names
-  2013", online version 3, posted 2023-12-06.
+- Canonical PDF source: https://iupac.qmul.ac.uk/BlueBook/PDF/BlueBookV3.pdf
+- Section-linked extraction source: https://iupac.qmul.ac.uk/BlueBook/
+- Section-linked post-Version-3 correction provenance:
+  https://iupac.qmul.ac.uk/BlueBook/changes2.html
+
+The canonical source for the Blue Book Version 3 corpus is the PDF. The HTML
+chapters are used as section-addressable extraction sources, and the correction
+page is used to preserve post-Version-3 correction provenance. The canonical PDF
+is not committed to this repository; source metadata is recorded in
+`data/source_manifest.json`.
 
 ## Generate The Rule Corpus
 
@@ -26,10 +33,15 @@ Current generated corpus:
 - `data/bluebook_rules.json`: 1,744 extracted rule sections.
 - `data/rule_schema.json`: JSON schema for the extracted corpus.
 - `BLUEBOOK_ALGORITHM.md`: conversion strategy.
-- `data/bluebook_semantic_rules.json`: 1,829 draft semantic rule records,
-  including post-V3 corrections.
+- `data/bluebook_semantic_rules.normalized.json`: 1,829 normalized semantic
+  rule records, including post-V3 corrections.
+- `data/bluebook_semantic_rules.json`: draft semantic corpus retained as
+  provenance.
 - `data/bluebook_rule_dependency_graph.json`: dependency graph for
-  cross-referenced rules.
+  cross-referenced rules, hierarchy, exceptions, examples, source tables, and
+  implementation requirements.
+- `data/source_manifest.json`: canonical source and extraction provenance
+  metadata.
 - `SEMANTIC_CONVERSION_REPORT.md`: current conversion report.
 
 Each record preserves the original prose in `body`, extracts cross-references,
@@ -80,17 +92,17 @@ python -m iupac_engine eval --fact parent --fact locant --limit 5
 
 What this engine does now:
 
-- loads `data/bluebook_semantic_rules.json`;
+- loads `data/bluebook_semantic_rules.normalized.json` when present;
 - loads `data/bluebook_rule_dependency_graph.json`;
 - queries rules by id, chapter, type, and text;
 - walks outgoing or incoming dependency edges;
 - activates candidate rules from simple fact tokens.
 
-What it does not do yet:
+Current boundaries:
 
-- convert a molecular graph into Blue Book facts;
-- execute chemistry-specific predicates;
-- render final IUPAC names from semantic actions.
+- molecular graph feature extraction is still scoped to the small prototype;
+- many Blue Book predicates now have explicit implementation requirements;
+- final full-scale IUPAC rendering from semantic actions is not complete.
 
 ## Supported Scope
 

@@ -4,14 +4,14 @@ from dataclasses import dataclass
 from enum import Enum
 
 
-BLUEBOOK_SOURCE = "https://iupac.qmul.ac.uk/BlueBook/"
-BLUEBOOK_VERSION = "IUPAC Blue Book 2013 online version 3, posted 2023-12-06"
+BLUEBOOK_SOURCE = "https://iupac.qmul.ac.uk/BlueBook/PDF/BlueBookV3.pdf"
+BLUEBOOK_VERSION = "IUPAC Blue Book Version 3 PDF plus post-V3 web corrections"
 
 
 class RuleStatus(str, Enum):
     IMPLEMENTED = "implemented"
     PARTIAL = "partial"
-    TODO = "todo"
+    PLANNED = "planned"
 
 
 @dataclass(frozen=True)
@@ -59,7 +59,7 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         (12, 1),
         "candidate_set.has_multiple_iupac_names",
         "rank_candidates_for_pin",
-        RuleStatus.TODO,
+        RuleStatus.PLANNED,
     ),
     RuleRecord(
         "P-13.1",
@@ -75,7 +75,7 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         (13, 2, 1, 1),
         "heteroatoms_replace_skeletal_atoms_in_parent",
         "construct_replacement_name",
-        RuleStatus.TODO,
+        RuleStatus.PLANNED,
     ),
     RuleRecord(
         "P-13.3.3.2",
@@ -83,7 +83,7 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         (13, 3, 3, 2),
         "class_name_preferred_or_allowed",
         "construct_functional_class_name",
-        RuleStatus.TODO,
+        RuleStatus.PLANNED,
     ),
     RuleRecord(
         "P-14",
@@ -107,7 +107,7 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         (22, 1, 1),
         "monocyclic_saturated_carbon_parent",
         "select_cycloalkane_parent_hydride",
-        RuleStatus.TODO,
+        RuleStatus.PLANNED,
     ),
     RuleRecord(
         "P-31.1.3.1",
@@ -155,7 +155,7 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         (50,),
         "candidate_set.complete",
         "select_pin",
-        RuleStatus.TODO,
+        RuleStatus.PLANNED,
     ),
     RuleRecord(
         "P-9",
@@ -163,7 +163,7 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         (90,),
         "stereochemical_features_detected",
         "assign_stereochemical_descriptors",
-        RuleStatus.TODO,
+        RuleStatus.PLANNED,
     ),
 )
 
