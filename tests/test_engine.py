@@ -6,6 +6,12 @@ def test_simple_alcohol():
     assert result["status"] == "success"
     assert result["name"] == "ethanol"
     assert result["decision_trace"]
+    assert result["rule_set"] == "bluebook-prototype-v0.2"
+    assert [step["rule_id"] for step in result["decision_trace"]] == [
+        "P-41",
+        "P-44.1.1",
+        "P-14.4",
+    ]
 
 
 def test_branched_alcohol_numbering():
@@ -75,8 +81,45 @@ def test_neutral_bracket_atom_is_parsed_when_chemistry_is_supported():
 def test_graph_modifiers_fail_closed_by_feature():
     assert "Formal-charge" in name_smiles("[NH3+]CC(=O)[O-]")["reason"]
     assert "Isotopic" in name_smiles("[13CH3]CO")["reason"]
-    assert "Stereochemical" in name_smiles("N[C@@H](C)C(=O)O")["reason"]
-    assert "Stereochemical" in name_smiles("C/C=C/C")["reason"]
+
+
+def test_absolute_stereodescriptors_use_final_parent_locants():
+    assert name_smiles("N[C@@H](C)C(=O)O")["name"] == "(2S)-2-aminopropanoic acid"
+    assert name_smiles("C[C@H](O)C(=O)O")["name"] == "(2S)-2-hydroxypropanoic acid"
+    assert name_smiles("C/C=C/C")["name"] == "(2E)-but-2-ene"
+    assert name_smiles("C/C=C\\C")["name"] == "(2Z)-but-2-ene"
+
+    explained = name_smiles("C/C=C/C", explain=True)
+    assert explained["decision_trace"][-1]["rule_id"] == "P-93.4"
+
+
+def test_multiple_stereodescriptors_are_locant_ordered():
+    result = name_smiles("O=C(O)[C@H](O)[C@@H](O)C(=O)O")
+    assert result["name"] == "(2R,3R)-2,3-dihydroxybutanedioic acid"
+
+
+def test_stereo_breaks_a_constitutionally_tied_numbering():
+    result = name_smiles("C[C@H](F)C[C@H](F)C")
+    assert result["name"] == "(2R,4S)-2,4-difluoropentane"
+
+
+def test_unnecessary_stereodescriptor_locants_are_omitted():
+    assert name_smiles("[C@H](F)(Cl)Br")["name"] == "(S)-bromochlorofluoromethane"
+    assert name_smiles("Cl/C=C/Cl")["name"] == "(E)-1,2-dichloroethene"
+
+
+def test_unspecified_potential_stereo_is_reported_as_incomplete():
+    tetrahedral = name_smiles("NC(C)C(=O)O")
+    alkene = name_smiles("CC=CC")
+    assert tetrahedral["status"] == "success"
+    assert tetrahedral["stereochemistry_complete"] is False
+    assert alkene["stereochemistry_complete"] is False
+
+
+def test_enhanced_stereo_fails_closed_instead_of_becoming_absolute():
+    result = name_smiles("C[C@H](F)[C@H](Cl)Br |&1:1,3|")
+    assert result["status"] == "unsupported"
+    assert "Enhanced" in result["reason"]
 
 
 def test_aromatic_and_alicyclic_rings_are_distinguished():
@@ -102,11 +145,18 @@ def test_ring_parent_is_preferred_to_an_equally_long_chain():
     assert name_smiles("CCCCCCC1CCCCC1")["name"] == "hexylcyclohexane"
 
 
+def test_ring_parent_is_preferred_even_when_acyclic_branches_are_longer():
+    assert name_smiles("CCCCCCC1CCCC1")["name"] == "hexylcyclopentane"
+    assert (
+        name_smiles("CCCCCCCCC1CCCC1CCCCCCC")["name"]
+        == "1-heptyl-2-octylcyclopentane"
+    )
+
+
 def test_unsupported_ring_families_fail_closed():
     assert "Heterocycle" in name_smiles("O1CCCCC1")["reason"]
     assert "Polycyclic" in name_smiles("C1CCC2CCCCC2C1")["reason"]
     assert "Characteristic-group" in name_smiles("OC1CCCCC1")["reason"]
-    assert "Cycloalkyl-prefix" in name_smiles("CCCCCCC1CCCC1")["reason"]
 
 
 def test_oxo_prefix_with_carboxylic_acid():

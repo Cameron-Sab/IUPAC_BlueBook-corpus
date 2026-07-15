@@ -121,6 +121,8 @@ implemented families:
 - Blue Book Table 1.4 numerical terms and parent roots;
 - saturated monocyclic carbon parents with hydrocarbon, halo, alkyl, alkoxy, or
   simple methylidene substitution;
+- absolute tetrahedral `R`/`S` and alkene `E`/`Z` descriptors when every
+  stereogenic feature maps directly to the final parent numbering;
 - one principal characteristic group among:
   - carboxylic acid;
   - ester;
@@ -135,9 +137,12 @@ implemented families:
 
 Neutral bracket atoms are accepted when their chemistry is otherwise supported.
 Polycyclic, unsaturated-ring, heterocyclic, and aromatic systems, along with
-formal charges, isotopic modification, radicals, stereochemical descriptors,
-disconnected structures, and unsupported elements, currently return structured
-`unsupported` responses rather than guessed names.
+formal charges, isotopic modification, radicals, non-tetrahedral or
+substituent-local stereochemistry, enhanced relative/mixture stereochemistry,
+disconnected structures, and unsupported elements currently return structured
+`unsupported` responses rather than guessed names. Potential stereogenic units
+left unspecified by the input are named constitutionally and reported with
+`stereochemistry_complete: false`.
 
 ## Quick Start
 

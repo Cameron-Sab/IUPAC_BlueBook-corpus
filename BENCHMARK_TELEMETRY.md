@@ -11,21 +11,21 @@ The local dataset is not committed to the repository. It was run from:
 
 Latest local run:
 
-- output directory: `work/local_benchmark/results_chebi_3star_iupac_saturated_monocycles_v2`
+- output directory: `work/local_benchmark/results_chebi_3star_iupac_stereo_corrected`
 - total cases: 44,940
-- exact passes: 1,353
-- exact failures: 43,587
-- false-success name mismatches: 223
+- exact passes: 1,962
+- exact failures: 42,978
+- successful render/name-string mismatches: 602
 
 Failure stages:
 
 | Stage | Count |
 |---|---:|
-| other unsupported scope | 19,691 |
-| ring or aromatic chemistry outside scope | 16,129 |
-| bracket, charge, isotope, or stereochemistry outside scope | 5,747 |
+| other unsupported scope | 18,058 |
+| ring or aromatic chemistry outside scope | 16,720 |
+| bracket, charge, isotope, or stereochemistry outside scope | 5,801 |
 | disconnected salts, mixtures, hydrates, or multi-component structures | 1,797 |
-| successful render but exact-name mismatch | 223 |
+| successful render but exact-name mismatch | 602 |
 
 These stages record only the first blocker returned for each case. Their counts
 are not directly comparable with the earlier handwritten-parser run: the RDKit
@@ -54,6 +54,11 @@ After adding saturated monocyclic hydrocarbon parents:
 - exact passes: 1,353
 - false-success name mismatches: 223
 
+After adding strict parent-locant stereodescriptors:
+
+- exact passes: 1,962
+- successful render/name-string mismatches: 602
+
 This is a net gain of 1,082 exact matches from the initial run. The graph-adapter
 checkpoint added 155 exact matches with zero regressions among the previous 1,180
 passes. Its 38 additional successful renders that disagree with the ChEBI string
@@ -64,6 +69,19 @@ are predominantly retained-name or naming-variant cases such as `ethanal` versus
 The saturated-monocycle checkpoint added 18 exact matches with zero regressions
 among the previous 1,335 passes. Its two additional mismatches are systematic
 names where ChEBI stores retained hydrocarbon names: `p-menthane` and `humulane`.
+
+The corrected stereodescriptor checkpoint added 609 exact matches with zero regressions
+among the previous 1,353 passes. It also made 379 formerly unsupported rows
+renderable but textually different from ChEBI. Many are deliberate name-oracle
+variants, for example `L-serine` versus `(2S)-2-amino-3-hydroxypropanoic acid`,
+`D-glutamine` versus an absolute systematic name, and `meso-erythritol` versus
+an `R/S` systematic name. These rows require accepted-name equivalence classes,
+not forced replacement of systematic output with the benchmark string.
+
+The corrected run preserves stereodescriptor case during comparison, uses
+stereochemistry as the final numbering tie-break, omits unnecessary descriptor
+locants, and applies the PIN rule that a hydrocarbon ring remains senior to an
+acyclic component even when the chain is longer.
 
 ## Fixes Driven By This Benchmark
 
@@ -93,6 +111,8 @@ The benchmark exposed and helped verify fixes for:
 - saturated monocyclic carbon parents, ring-versus-chain parent choice, complete
   ring-numbering enumeration, citation-order tie breaking, and perhalogen locant
   elision.
+- standards-grade RDKit CIP assignment and strict parent-locant rendering of
+  tetrahedral `R`/`S` and double-bond `E`/`Z` descriptors.
 
 ## Benchmark Limitation
 

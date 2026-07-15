@@ -86,7 +86,7 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         RuleStatus.PLANNED,
     ),
     RuleRecord(
-        "P-14",
+        "P-14.4",
         "General rules, locants, lowest locant sets, first point of difference",
         (14,),
         "candidate_numberings_exist",
@@ -107,7 +107,7 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         (22, 1, 1),
         "monocyclic_saturated_carbon_parent",
         "select_cycloalkane_parent_hydride",
-        RuleStatus.PLANNED,
+        RuleStatus.PARTIAL,
     ),
     RuleRecord(
         "P-31.1.3.1",
@@ -150,6 +150,14 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         RuleStatus.PARTIAL,
     ),
     RuleRecord(
+        "P-52.2.8",
+        "Selection between ring and chain parent structures for preferred names",
+        (52, 2, 8),
+        "ring_and_chain_parent_candidates_tied_by_class_and_suffix_count",
+        "prefer_ring_parent_for_pin",
+        RuleStatus.PARTIAL,
+    ),
+    RuleRecord(
         "P-5",
         "Selecting preferred IUPAC names",
         (50,),
@@ -158,12 +166,12 @@ BLUEBOOK_RULEBOOK: tuple[RuleRecord, ...] = (
         RuleStatus.PLANNED,
     ),
     RuleRecord(
-        "P-9",
-        "Specification of configuration and conformation",
-        (90,),
-        "stereochemical_features_detected",
-        "assign_stereochemical_descriptors",
-        RuleStatus.PLANNED,
+        "P-93.4",
+        "Citation and placement of stereodescriptors",
+        (93, 4),
+        "absolute_parent_stereodescriptors_assigned",
+        "render_stereodescriptors_with_final_parent_locants",
+        RuleStatus.PARTIAL,
     ),
 )
 

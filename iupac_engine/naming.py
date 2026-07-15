@@ -18,6 +18,7 @@ class RankingVector:
     substituent_locants: tuple[int, ...]
     citation_locants: tuple[int, ...]
     substituent_names: tuple[str, ...]
+    stereo_rank: tuple[tuple[int, ...], ...]
 
 
 @dataclass(frozen=True)
@@ -42,7 +43,7 @@ def name_molecule(molecule: Molecule, groups: list[FunctionalGroup]) -> tuple[st
     _reject_unsupported_functional_families(molecule, groups, principal)
     trace.append(
         TraceStep(
-            "P-1",
+            "P-41",
             f"Selected principal group: {principal.kind if principal else 'hydrocarbon'}",
             tuple(g.kind for g in groups) or ("hydrocarbon",),
             principal.kind if principal else "hydrocarbon",
@@ -59,7 +60,7 @@ def name_molecule(molecule: Molecule, groups: list[FunctionalGroup]) -> tuple[st
     winner = min(candidates, key=lambda c: c.ranking_vector)
     trace.append(
         TraceStep(
-            "P-2",
+            "P-44.1.1",
             f"Selected parent chain with {len(winner.chain)} carbon atoms",
             tuple("-".join(str(a) for a in c.chain) for c in candidates),
             "-".join(str(a) for a in winner.chain),
@@ -67,14 +68,18 @@ def name_molecule(molecule: Molecule, groups: list[FunctionalGroup]) -> tuple[st
     )
     trace.append(
         TraceStep(
-            "P-3",
+            "P-14.4",
             f"Selected numbering by lexicographic ranking vector {winner.ranking_vector}",
             tuple(str(c.ranking_vector) for c in candidates),
             str(winner.ranking_vector),
         )
     )
 
-    return _render_name(molecule, winner), trace
+    name = _render_name(molecule, winner)
+    name, stereo_trace = _apply_stereodescriptors(molecule, winner.chain, name)
+    if stereo_trace:
+        trace.append(stereo_trace)
+    return name, trace
 
 
 def _name_saturated_monocycle(
@@ -103,20 +108,6 @@ def _name_saturated_monocycle(
     if any(bond.order != 1 or bond.aromatic for bond in ring_bonds):
         raise NamingUnsupported("Unsaturated ring nomenclature is outside the current scope")
 
-    external_carbons = [
-        atom.id
-        for atom in molecule.atoms
-        if atom.element == "C" and atom.id not in ring_atoms
-    ]
-    if external_carbons:
-        longest_external_chain = max(
-            len(path) for path in _all_carbon_paths(molecule, external_carbons)
-        )
-        if longest_external_chain > len(ring_atoms):
-            raise NamingUnsupported(
-                "Cycloalkyl-prefix nomenclature for a longer acyclic parent is outside the current scope"
-            )
-
     orientations = _ring_orientations(molecule, ring_atoms)
     candidates = [
         NumberingCandidate(
@@ -132,15 +123,23 @@ def _name_saturated_monocycle(
 
     trace.append(
         TraceStep(
+            "P-52.2.8",
+            "Selected the hydrocarbon ring as the preferred parent over acyclic components",
+            ("ring parent", "acyclic parent"),
+            "ring parent",
+        )
+    )
+    trace.append(
+        TraceStep(
             "P-22.1.1",
             f"Selected a saturated monocyclic parent with {len(ring_atoms)} carbon atoms",
-            (f"longest external chain: {max((len(path) for path in _all_carbon_paths(molecule, external_carbons)), default=0)}",),
+            (),
             f"{parent_root(len(ring_atoms))}-membered carbon ring",
         )
     )
     trace.append(
         TraceStep(
-            "P-14",
+            "P-14.4",
             f"Selected ring numbering by lexicographic ranking vector {winner.ranking_vector}",
             tuple(str(candidate.ranking_vector) for candidate in candidates),
             str(winner.ranking_vector),
@@ -152,7 +151,12 @@ def _name_saturated_monocycle(
     )
     prefixes = _render_prefixes(substituents, omit_locants=omit_locants)
     parent = f"cyclo{parent_root(len(ring_atoms))}ane"
-    return prefixes + parent, trace
+    name, stereo_trace = _apply_stereodescriptors(
+        molecule, winner.chain, prefixes + parent
+    )
+    if stereo_trace:
+        trace.append(stereo_trace)
+    return name, trace
 
 
 def _ring_orientations(
@@ -186,6 +190,59 @@ def _ring_orientations(
                 raise NamingUnsupported("Unsupported monocyclic ring topology")
             orientations.add(tuple(path))
     return sorted(orientations)
+
+
+def _apply_stereodescriptors(
+    molecule: Molecule,
+    parent: tuple[int, ...],
+    name: str,
+) -> tuple[str, TraceStep | None]:
+    if molecule.stereo_groups:
+        raise NamingUnsupported("Enhanced relative or mixture stereochemistry is outside the current scope")
+    if any(unit.specified not in {"Specified", "Unspecified"} for unit in molecule.potential_stereo):
+        raise NamingUnsupported("Explicit unknown stereochemistry is outside the current scope")
+
+    locants = {atom_id: index + 1 for index, atom_id in enumerate(parent)}
+    descriptors: list[tuple[int, str, bool]] = []
+
+    for atom in molecule.atoms:
+        if not atom.chiral_tag and not atom.cip_label:
+            continue
+        if atom.chiral_tag not in {"CHI_TETRAHEDRAL_CW", "CHI_TETRAHEDRAL_CCW"}:
+            raise NamingUnsupported("Non-tetrahedral stereodescriptor nomenclature is outside the current scope")
+        if atom.cip_label not in {"R", "S", "r", "s"}:
+            raise NamingUnsupported("Unresolved tetrahedral stereochemistry is outside the current scope")
+        if atom.id not in locants:
+            raise NamingUnsupported("Stereochemistry within a substituent is outside the current scope")
+        locant = locants[atom.id]
+        descriptors.append((locant, atom.cip_label, len(parent) > 1))
+
+    for bond in molecule.bonds:
+        if not bond.stereo:
+            continue
+        if bond.cip_label not in {"E", "Z"}:
+            raise NamingUnsupported("Non-E/Z bond stereochemistry is outside the current scope")
+        if bond.order != 2 or bond.a not in locants or bond.b not in locants:
+            raise NamingUnsupported("Stereochemistry within a substituent is outside the current scope")
+        locant = min(locants[bond.a], locants[bond.b])
+        descriptors.append((locant, bond.cip_label, len(parent) > 2))
+
+    if not descriptors:
+        return name, None
+
+    descriptors.sort(key=lambda item: (item[0], item[1]))
+    rendered_descriptors = tuple(
+        f"{locant if include_locant else ''}{descriptor}"
+        for locant, descriptor, include_locant in descriptors
+    )
+    rendered = ",".join(rendered_descriptors)
+    trace = TraceStep(
+        "P-93.4",
+        "Assigned absolute stereodescriptors after final parent numbering",
+        rendered_descriptors,
+        rendered,
+    )
+    return f"({rendered})-{name}", trace
 
 
 def _numbering_candidates(molecule: Molecule, carbon_ids: list[int], principal: FunctionalGroup | None) -> list[NumberingCandidate]:
@@ -301,6 +358,35 @@ def _ranking_vector(
         substituent_locants,
         citation_locants,
         substituent_names,
+        _stereo_ranking_vector(molecule, chain),
+    )
+
+
+def _stereo_ranking_vector(
+    molecule: Molecule, parent: tuple[int, ...]
+) -> tuple[tuple[int, ...], ...]:
+    locants = {atom_id: index + 1 for index, atom_id in enumerate(parent)}
+    by_locant: dict[int, list[int]] = {}
+
+    for atom in molecule.atoms:
+        if atom.id in locants and atom.cip_label in {"R", "S", "r", "s"}:
+            rank = 0 if atom.cip_label in {"R", "r"} else 1
+            by_locant.setdefault(locants[atom.id], []).append(rank)
+
+    for bond in molecule.bonds:
+        if (
+            bond.a in locants
+            and bond.b in locants
+            and bond.cip_label in {"E", "Z"}
+        ):
+            rank = 0 if bond.cip_label == "Z" else 1
+            by_locant.setdefault(min(locants[bond.a], locants[bond.b]), []).append(rank)
+
+    if not by_locant:
+        return ()
+    return tuple(
+        tuple(sorted(by_locant.get(locant, [2])))
+        for locant in range(1, len(parent) + 1)
     )
 
 
@@ -650,7 +736,7 @@ def _render_prefixes(substituents: list[tuple[int, str]], *, omit_locants: bool 
             parts.append(rendered)
         else:
             parts.append(f"{','.join(str(l) for l in locants)}-{rendered}")
-    return "-".join(parts)
+    return "".join(parts) if omit_locants else "-".join(parts)
 
 
 def _needs_substitutive_parentheses(name: str) -> bool:

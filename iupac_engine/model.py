@@ -29,6 +29,21 @@ class Bond:
     aromatic: bool = False
     in_ring: bool = False
     stereo: str | None = None
+    cip_label: str | None = None
+
+
+@dataclass(frozen=True)
+class StereoUnit:
+    kind: str
+    centered_on: int
+    specified: str
+    descriptor: str
+
+
+@dataclass(frozen=True)
+class StereoGroup:
+    kind: str
+    atom_ids: tuple[int, ...]
 
 
 @dataclass
@@ -38,6 +53,8 @@ class Molecule:
     rings: tuple[tuple[int, ...], ...] = ()
     source_smiles: str = ""
     canonical_smiles: str = ""
+    potential_stereo: tuple[StereoUnit, ...] = ()
+    stereo_groups: tuple[StereoGroup, ...] = ()
 
     def neighbors(self, atom_id: int) -> list[tuple[int, BondOrder]]:
         pairs: list[tuple[int, BondOrder]] = []

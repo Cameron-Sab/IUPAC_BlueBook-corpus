@@ -19,7 +19,7 @@ def name_smiles(smiles: str, *, explain: bool = False) -> dict[str, Any]:
             "status": "unsupported",
             "name": None,
             "name_type": "systematic",
-            "rule_set": "prototype-acyclic-v0",
+            "rule_set": "bluebook-prototype-v0.2",
             "supported_scope": False,
             "reason": str(exc),
             "warnings": [],
@@ -31,15 +31,22 @@ def name_smiles(smiles: str, *, explain: bool = False) -> dict[str, Any]:
             "rule_coverage": rulebook_summary(),
         }
 
+    stereochemistry_complete = not any(
+        unit.specified == "Unspecified" for unit in molecule.potential_stereo
+    )
+    warnings = ["Round-trip name-to-structure verification is not implemented in this prototype"]
+    if not stereochemistry_complete:
+        warnings.append("The input leaves one or more potential stereogenic units unspecified")
+
     return {
         "status": "success",
         "name": name,
         "name_type": "systematic",
-        "rule_set": "prototype-acyclic-v0",
+        "rule_set": "bluebook-prototype-v0.2",
         "supported_scope": True,
         "round_trip_verified": False,
-        "warnings": ["Round-trip name-to-structure verification is not implemented in this prototype"],
-        "stereochemistry_complete": True,
+        "warnings": warnings,
+        "stereochemistry_complete": stereochemistry_complete,
         "decision_trace": [step.as_dict() for step in trace] if explain else [],
         "alternative_valid_names": [],
         "bluebook_source": BLUEBOOK_SOURCE,
@@ -62,10 +69,6 @@ def _validate_graph_scope(molecule) -> None:
         raise NamingUnsupported("Isotopic modification nomenclature is outside the current scope")
     if any(atom.radical_electrons for atom in molecule.atoms):
         raise NamingUnsupported("Radical nomenclature is outside the current scope")
-    if any(atom.chiral_tag or atom.cip_label for atom in molecule.atoms) or any(
-        bond.stereo for bond in molecule.bonds
-    ):
-        raise NamingUnsupported("Stereochemical descriptor nomenclature is outside the current scope")
     for atom in molecule.atoms:
         if atom.element not in {"C", "N", "O", "F", "Cl", "Br", "I"}:
             raise NamingUnsupported(f"Unsupported element: {atom.element}")
