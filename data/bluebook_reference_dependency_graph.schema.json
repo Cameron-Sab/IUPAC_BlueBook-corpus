@@ -1,0 +1,446 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/bluebook_reference_dependency_graph.schema.json",
+  "title": "IUPAC Blue Book occurrence-backed source reference dependency graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "conversion_stage",
+    "relation_semantics",
+    "source_artifact",
+    "resolution_artifact",
+    "occurrence_manifest_sha256",
+    "corpus_sha256",
+    "counters",
+    "nodes",
+    "occurrence_manifest",
+    "edges"
+  ],
+  "properties": {
+    "format": {"const": "iupac-bluebook-reference-dependency-graph"},
+    "format_version": {"const": "2.0.0"},
+    "conversion_stage": {"const": "occurrence_reference_aggregation"},
+    "relation_semantics": {"const": "mechanical_source_reference_only"},
+    "source_artifact": {"$ref": "#/$defs/SourceArtifact"},
+    "resolution_artifact": {"$ref": "#/$defs/ResolutionArtifact"},
+    "occurrence_manifest_sha256": {"$ref": "#/$defs/Sha256"},
+    "corpus_sha256": {"$ref": "#/$defs/Sha256"},
+    "counters": {"$ref": "#/$defs/Counters"},
+    "nodes": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/Node"}
+    },
+    "occurrence_manifest": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/OccurrenceManifestEntry"}
+    },
+    "edges": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/Edge"}
+    }
+  },
+  "$defs": {
+    "Sha256": {
+      "type": "string",
+      "pattern": "^[0-9A-F]{64}$"
+    },
+    "RuleId": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    },
+    "DocumentId": {
+      "type": "string",
+      "pattern": "^P-[0-9]+[a-z]?$"
+    },
+    "OccurrenceId": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?:xref:[0-9]{4,}$"
+    },
+    "ResolutionId": {
+      "type": "string",
+      "pattern": "^BBV3-XREF-RES-[0-9]{4}$"
+    },
+    "EdgeId": {
+      "type": "string",
+      "pattern": "^edge:[0-9A-F]{64}$"
+    },
+    "RuleNodeId": {
+      "type": "string",
+      "pattern": "^rule:P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    },
+    "DocumentNodeId": {
+      "type": "string",
+      "pattern": "^document:P-[0-9]+[a-z]?$"
+    },
+    "HistoricalRuleNodeId": {
+      "type": "string",
+      "pattern": "^historical_rule:P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    },
+    "UnresolvedNodeId": {
+      "type": "string",
+      "pattern": "^unresolved:P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    },
+    "SourceArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "format_version",
+        "artifact_sha256",
+        "declared_corpus_sha256",
+        "upstream_artifact_manifest_sha256"
+      ],
+      "properties": {
+        "format": {"const": "iupac-bluebook-reference-occurrences"},
+        "format_version": {"const": "1.0.0"},
+        "artifact_sha256": {"$ref": "#/$defs/Sha256"},
+        "declared_corpus_sha256": {"$ref": "#/$defs/Sha256"},
+        "upstream_artifact_manifest_sha256": {"$ref": "#/$defs/Sha256"}
+      }
+    },
+    "ResolutionArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "format_version",
+        "artifact_sha256",
+        "declared_corpus_sha256",
+        "reference_occurrences_sha256",
+        "source_corpus_sha256",
+        "correction_overlays_sha256",
+        "policy"
+      ],
+      "properties": {
+        "format": {"const": "iupac-bluebook-reference-resolutions"},
+        "format_version": {"const": "1.0.0"},
+        "artifact_sha256": {"$ref": "#/$defs/Sha256"},
+        "declared_corpus_sha256": {"$ref": "#/$defs/Sha256"},
+        "reference_occurrences_sha256": {"$ref": "#/$defs/Sha256"},
+        "source_corpus_sha256": {"$ref": "#/$defs/Sha256"},
+        "correction_overlays_sha256": {"$ref": "#/$defs/Sha256"},
+        "policy": {"const": "exact_occurrence_only_no_generic_parent_fallback"}
+      }
+    },
+    "TargetKindCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rule", "document", "historical_rule", "unresolved"],
+      "properties": {
+        "rule": {"type": "integer", "minimum": 0},
+        "document": {"type": "integer", "minimum": 0},
+        "historical_rule": {"type": "integer", "minimum": 0},
+        "unresolved": {"type": "integer", "minimum": 0}
+      }
+    },
+    "ResolutionKindCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_alias", "historical_deleted_rule"],
+      "properties": {
+        "source_alias": {"type": "integer", "minimum": 0},
+        "historical_deleted_rule": {"type": "integer", "minimum": 0}
+      }
+    },
+    "Counters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_count",
+        "rule_node_count",
+        "document_node_count",
+        "historical_rule_node_count",
+        "unresolved_node_count",
+        "source_rule_count",
+        "target_node_count",
+        "edge_count",
+        "occurrence_count",
+        "edge_target_kind_counts",
+        "occurrence_target_kind_counts",
+        "raw_occurrence_target_kind_counts",
+        "resolution_record_count",
+        "resolution_kind_counts"
+      ],
+      "properties": {
+        "node_count": {"type": "integer", "minimum": 0},
+        "rule_node_count": {"type": "integer", "minimum": 0},
+        "document_node_count": {"type": "integer", "minimum": 0},
+        "historical_rule_node_count": {"type": "integer", "minimum": 0},
+        "unresolved_node_count": {"type": "integer", "const": 0},
+        "source_rule_count": {"type": "integer", "minimum": 0},
+        "target_node_count": {"type": "integer", "minimum": 0},
+        "edge_count": {"type": "integer", "minimum": 0},
+        "occurrence_count": {"type": "integer", "minimum": 0},
+        "edge_target_kind_counts": {"$ref": "#/$defs/TargetKindCounts"},
+        "occurrence_target_kind_counts": {"$ref": "#/$defs/TargetKindCounts"},
+        "raw_occurrence_target_kind_counts": {"$ref": "#/$defs/TargetKindCounts"},
+        "resolution_record_count": {"type": "integer", "minimum": 0},
+        "resolution_kind_counts": {"$ref": "#/$defs/ResolutionKindCounts"}
+      }
+    },
+    "RuleRoles": {
+      "oneOf": [
+        {"const": ["source"]},
+        {"const": ["target"]},
+        {"const": ["source", "target"]}
+      ]
+    },
+    "RuleNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "kind", "roles", "rule_id"],
+      "properties": {
+        "node_id": {"$ref": "#/$defs/RuleNodeId"},
+        "kind": {"const": "rule"},
+        "roles": {"$ref": "#/$defs/RuleRoles"},
+        "rule_id": {"$ref": "#/$defs/RuleId"}
+      }
+    },
+    "DocumentNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "kind", "roles", "document_id"],
+      "properties": {
+        "node_id": {"$ref": "#/$defs/DocumentNodeId"},
+        "kind": {"const": "document"},
+        "roles": {"const": ["target"]},
+        "document_id": {"$ref": "#/$defs/DocumentId"}
+      }
+    },
+    "HistoricalRuleNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "kind",
+        "roles",
+        "historical_rule_id",
+        "tombstone"
+      ],
+      "properties": {
+        "node_id": {"$ref": "#/$defs/HistoricalRuleNodeId"},
+        "kind": {"const": "historical_rule"},
+        "roles": {"const": ["target"]},
+        "historical_rule_id": {"$ref": "#/$defs/RuleId"},
+        "tombstone": {"const": true}
+      }
+    },
+    "UnresolvedNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "kind", "roles", "cited_rule_id"],
+      "properties": {
+        "node_id": {"$ref": "#/$defs/UnresolvedNodeId"},
+        "kind": {"const": "unresolved"},
+        "roles": {"const": ["target"]},
+        "cited_rule_id": {"$ref": "#/$defs/RuleId"}
+      }
+    },
+    "Node": {
+      "oneOf": [
+        {"$ref": "#/$defs/RuleNode"},
+        {"$ref": "#/$defs/DocumentNode"},
+        {"$ref": "#/$defs/HistoricalRuleNode"},
+        {"$ref": "#/$defs/UnresolvedNode"}
+      ]
+    },
+    "TargetIdentity": {
+      "type": "object",
+      "required": ["target_kind", "target_id"],
+      "properties": {
+        "target_kind": {
+          "enum": ["rule", "document", "historical_rule", "unresolved"]
+        },
+        "target_id": {"type": "string"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"target_kind": {"const": "document"}}},
+          "then": {"properties": {"target_id": {"$ref": "#/$defs/DocumentId"}}},
+          "else": {"properties": {"target_id": {"$ref": "#/$defs/RuleId"}}}
+        }
+      ]
+    },
+    "RawTargetIdentity": {
+      "type": "object",
+      "required": ["raw_target_kind", "raw_target_id"],
+      "properties": {
+        "raw_target_kind": {"enum": ["rule", "document", "unresolved"]},
+        "raw_target_id": {"type": "string"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"raw_target_kind": {"const": "document"}}},
+          "then": {
+            "properties": {"raw_target_id": {"$ref": "#/$defs/DocumentId"}}
+          },
+          "else": {
+            "properties": {"raw_target_id": {"$ref": "#/$defs/RuleId"}}
+          }
+        }
+      ]
+    },
+    "OccurrenceManifestEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_ordinal",
+        "occurrence_id",
+        "occurrence_sha256",
+        "edge_id",
+        "source_rule_id",
+        "target_kind",
+        "target_id",
+        "raw_target_kind",
+        "raw_target_id",
+        "resolution_id",
+        "resolution_kind",
+        "reference_kind",
+        "resolution_basis"
+      ],
+      "properties": {
+        "input_ordinal": {"type": "integer", "minimum": 1},
+        "occurrence_id": {"$ref": "#/$defs/OccurrenceId"},
+        "occurrence_sha256": {"$ref": "#/$defs/Sha256"},
+        "edge_id": {"$ref": "#/$defs/EdgeId"},
+        "source_rule_id": {"$ref": "#/$defs/RuleId"},
+        "target_kind": {
+          "enum": ["rule", "document", "historical_rule", "unresolved"]
+        },
+        "target_id": {"type": "string"},
+        "raw_target_kind": {"enum": ["rule", "document", "unresolved"]},
+        "raw_target_id": {"type": "string"},
+        "resolution_id": {
+          "oneOf": [
+            {"$ref": "#/$defs/ResolutionId"},
+            {"type": "null"}
+          ]
+        },
+        "resolution_kind": {
+          "enum": ["source_alias", "historical_deleted_rule", null]
+        },
+        "reference_kind": {"enum": ["href", "text"]},
+        "resolution_basis": {
+          "enum": [
+            "href_anchor",
+            "href_document",
+            "reference_text",
+            "inferred_document",
+            "href"
+          ]
+        }
+      },
+      "allOf": [
+        {"$ref": "#/$defs/TargetIdentity"},
+        {"$ref": "#/$defs/RawTargetIdentity"},
+        {
+          "if": {
+            "properties": {"raw_target_kind": {"const": "unresolved"}}
+          },
+          "then": {
+            "properties": {
+              "resolution_id": {"$ref": "#/$defs/ResolutionId"},
+              "resolution_kind": {
+                "enum": ["source_alias", "historical_deleted_rule"]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "resolution_id": {"type": "null"},
+              "resolution_kind": {"type": "null"}
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {"resolution_kind": {"const": "source_alias"}}
+          },
+          "then": {"properties": {"target_kind": {"const": "rule"}}}
+        },
+        {
+          "if": {
+            "properties": {
+              "resolution_kind": {"const": "historical_deleted_rule"}
+            }
+          },
+          "then": {
+            "properties": {"target_kind": {"const": "historical_rule"}}
+          }
+        },
+        {
+          "if": {"properties": {"raw_target_kind": {"const": "rule"}}},
+          "then": {"properties": {"target_kind": {"const": "rule"}}}
+        },
+        {
+          "if": {"properties": {"raw_target_kind": {"const": "document"}}},
+          "then": {"properties": {"target_kind": {"const": "document"}}}
+        }
+      ]
+    },
+    "Edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "edge_id",
+        "relation",
+        "source_node_id",
+        "source_rule_id",
+        "target_node_id",
+        "target_kind",
+        "target_id",
+        "occurrence_count",
+        "evidence_occurrence_ids"
+      ],
+      "properties": {
+        "edge_id": {"$ref": "#/$defs/EdgeId"},
+        "relation": {"const": "source_reference"},
+        "source_node_id": {"$ref": "#/$defs/RuleNodeId"},
+        "source_rule_id": {"$ref": "#/$defs/RuleId"},
+        "target_node_id": {"type": "string"},
+        "target_kind": {
+          "enum": ["rule", "document", "historical_rule", "unresolved"]
+        },
+        "target_id": {"type": "string"},
+        "occurrence_count": {"type": "integer", "minimum": 1},
+        "evidence_occurrence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/OccurrenceId"}
+        }
+      },
+      "allOf": [
+        {"$ref": "#/$defs/TargetIdentity"},
+        {
+          "if": {"properties": {"target_kind": {"const": "rule"}}},
+          "then": {"properties": {"target_node_id": {"$ref": "#/$defs/RuleNodeId"}}}
+        },
+        {
+          "if": {"properties": {"target_kind": {"const": "document"}}},
+          "then": {
+            "properties": {"target_node_id": {"$ref": "#/$defs/DocumentNodeId"}}
+          }
+        },
+        {
+          "if": {
+            "properties": {"target_kind": {"const": "historical_rule"}}
+          },
+          "then": {
+            "properties": {
+              "target_node_id": {"$ref": "#/$defs/HistoricalRuleNodeId"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"target_kind": {"const": "unresolved"}}},
+          "then": {
+            "properties": {"target_node_id": {"$ref": "#/$defs/UnresolvedNodeId"}}
+          }
+        }
+      ]
+    }
+  }
+}

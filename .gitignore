@@ -5,6 +5,10 @@ __pycache__/
 .ruff_cache/
 .venv/
 venv/
+.cache/
+tmp/
+work/semantic_packets/
+/data/bluebook_v3/bluebook_v3_document_nodes.json
 dist/
 build/
 *.egg-info/

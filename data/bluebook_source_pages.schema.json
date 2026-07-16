@@ -1,0 +1,315 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/bluebook_source_pages.schema.json",
+  "title": "Lossless IUPAC Blue Book V3 PDF page and glyph corpus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_pdf", "page_count", "image_metrics", "image_objects", "pages"],
+  "properties": {
+    "source_pdf": {
+      "const": "https://iupac.qmul.ac.uk/BlueBook/PDF/BlueBookV3.pdf"
+    },
+    "page_count": { "const": 1149 },
+    "image_metrics": { "$ref": "#/$defs/image_metrics" },
+    "image_objects": {
+      "type": "array",
+      "minItems": 10526,
+      "maxItems": 10526,
+      "items": { "$ref": "#/$defs/image_object" }
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1149,
+      "maxItems": 1149,
+      "items": { "$ref": "#/$defs/page" }
+    }
+  },
+  "$defs": {
+    "rule_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{64}$"
+    },
+    "bbox": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": { "type": "number" }
+    },
+    "pdf_value": {
+      "anyOf": [
+        { "type": "null" },
+        { "type": "boolean" },
+        { "type": "integer" },
+        { "type": "number" },
+        { "type": "string" },
+        {
+          "type": "array",
+          "items": { "$ref": "#/$defs/pdf_value" }
+        },
+        {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/pdf_value" }
+        }
+      ]
+    },
+    "image_metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "placement_count",
+        "page_primary_object_count",
+        "primary_object_count",
+        "soft_mask_object_count",
+        "explicit_mask_object_count",
+        "image_object_count",
+        "unique_decoded_payload_count"
+      ],
+      "properties": {
+        "placement_count": { "const": 5413 },
+        "page_primary_object_count": { "const": 5342 },
+        "primary_object_count": { "const": 5294 },
+        "soft_mask_object_count": { "const": 5226 },
+        "explicit_mask_object_count": { "const": 6 },
+        "image_object_count": { "const": 10526 },
+        "unique_decoded_payload_count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "image_dependency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relation", "target_image_object_id"],
+      "properties": {
+        "relation": {
+          "type": "string",
+          "enum": ["soft_mask", "explicit_mask"]
+        },
+        "target_image_object_id": {
+          "type": "string",
+          "pattern": "^pdf-image-object:[0-9]{8}:[0-9]{5}$"
+        }
+      }
+    },
+    "image_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "image_object_id",
+        "object_id",
+        "generation",
+        "roles",
+        "dictionary",
+        "raw_sha256",
+        "raw_byte_count",
+        "decoded_sha256",
+        "decoded_byte_count",
+        "dependencies"
+      ],
+      "properties": {
+        "image_object_id": {
+          "type": "string",
+          "pattern": "^pdf-image-object:[0-9]{8}:[0-9]{5}$"
+        },
+        "object_id": { "type": "integer", "minimum": 1 },
+        "generation": { "type": "integer", "minimum": 0 },
+        "roles": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": ["primary", "soft_mask", "explicit_mask"]
+          }
+        },
+        "dictionary": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": { "$ref": "#/$defs/pdf_value" }
+        },
+        "raw_sha256": { "$ref": "#/$defs/sha256" },
+        "raw_byte_count": { "type": "integer", "minimum": 1 },
+        "decoded_sha256": { "$ref": "#/$defs/sha256" },
+        "decoded_byte_count": { "type": "integer", "minimum": 1 },
+        "dependencies": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/image_dependency" }
+        }
+      }
+    },
+    "run": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "fontname",
+        "size",
+        "x0",
+        "top",
+        "x1",
+        "bottom",
+        "bold",
+        "italic"
+      ],
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "fontname": { "type": "string", "minLength": 1 },
+        "size": { "type": "number", "exclusiveMinimum": 0 },
+        "x0": { "type": "number" },
+        "top": { "type": "number" },
+        "x1": { "type": "number" },
+        "bottom": { "type": "number" },
+        "bold": { "type": "boolean" },
+        "italic": { "type": "boolean" }
+      }
+    },
+    "line": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "uid",
+        "page",
+        "line",
+        "text",
+        "x0",
+        "top",
+        "x1",
+        "bottom",
+        "starts_rule_heading",
+        "rule_id",
+        "starts_chapter",
+        "chapter_id",
+        "runs"
+      ],
+      "properties": {
+        "uid": { "type": "string", "pattern": "^p[0-9]{4}:l[0-9]{3}$" },
+        "page": { "type": "integer", "minimum": 1, "maximum": 1149 },
+        "line": { "type": "integer", "minimum": 1 },
+        "text": { "type": "string", "minLength": 1 },
+        "x0": { "type": "number" },
+        "top": { "type": "number" },
+        "x1": { "type": "number" },
+        "bottom": { "type": "number" },
+        "starts_rule_heading": { "type": "boolean" },
+        "rule_id": {
+          "oneOf": [
+            { "$ref": "#/$defs/rule_id" },
+            { "type": "null" }
+          ]
+        },
+        "starts_chapter": { "type": "boolean" },
+        "chapter_id": {
+          "oneOf": [
+            { "type": "string", "pattern": "^P-(?:10|[1-9])$" },
+            { "type": "null" }
+          ]
+        },
+        "runs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/run" }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "starts_rule_heading": { "const": true } } },
+          "then": { "properties": { "rule_id": { "$ref": "#/$defs/rule_id" } } },
+          "else": { "properties": { "rule_id": { "type": "null" } } }
+        },
+        {
+          "if": { "properties": { "starts_chapter": { "const": true } } },
+          "then": {
+            "properties": {
+              "chapter_id": { "type": "string", "pattern": "^P-(?:10|[1-9])$" }
+            }
+          },
+          "else": { "properties": { "chapter_id": { "type": "null" } } }
+        }
+      ]
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "placement_id",
+        "page",
+        "object_id",
+        "generation",
+        "image_object_id",
+        "resource_name",
+        "bbox",
+        "source_size",
+        "mcid",
+        "tag"
+      ],
+      "properties": {
+        "placement_id": {
+          "type": "string",
+          "pattern": "^p[0-9]{4}:image:[0-9]{3,}$"
+        },
+        "page": { "type": "integer", "minimum": 1, "maximum": 1149 },
+        "object_id": { "type": "integer", "minimum": 1 },
+        "generation": { "type": "integer", "minimum": 0 },
+        "image_object_id": {
+          "type": "string",
+          "pattern": "^pdf-image-object:[0-9]{8}:[0-9]{5}$"
+        },
+        "resource_name": { "type": "string", "minLength": 1 },
+        "bbox": { "$ref": "#/$defs/bbox" },
+        "source_size": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "integer", "minimum": 0 }
+        },
+        "mcid": { "type": ["integer", "null"] },
+        "tag": { "type": ["string", "null"] }
+      }
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["page", "region_id", "source_kind", "text", "lines", "images"],
+      "properties": {
+        "page": { "type": "integer", "minimum": 1, "maximum": 1149 },
+        "region_id": {
+          "type": "string",
+          "enum": [
+            "contents",
+            "membership",
+            "preface_changes_acknowledgements",
+            "glossary",
+            "chapters",
+            "references",
+            "appendix_1",
+            "appendix_2",
+            "appendix_3"
+          ]
+        },
+        "source_kind": {
+          "type": "string",
+          "enum": [
+            "front_matter",
+            "glossary",
+            "normative_chapters",
+            "references",
+            "table",
+            "structure_registry"
+          ]
+        },
+        "text": { "type": "string" },
+        "lines": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/line" }
+        },
+        "images": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/image" }
+        }
+      }
+    }
+  }
+}

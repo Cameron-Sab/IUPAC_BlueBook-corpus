@@ -1,0 +1,362 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/bluebook_clause_inventory.schema.json",
+  "title": "IUPAC Blue Book exhaustive source-clause inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "conversion_stage",
+    "source_corpus_sha256",
+    "document_nodes_sha256",
+    "correction_overlays_sha256",
+    "segmentation_policy",
+    "counters",
+    "records",
+    "corpus_sha256"
+  ],
+  "properties": {
+    "format": { "const": "iupac-bluebook-clause-inventory" },
+    "format_version": { "const": "2.0.0" },
+    "conversion_stage": { "const": "normalized_source_clauses" },
+    "source_corpus_sha256": { "$ref": "#/$defs/sha256" },
+    "document_nodes_sha256": { "$ref": "#/$defs/sha256" },
+    "correction_overlays_sha256": { "$ref": "#/$defs/sha256" },
+    "segmentation_policy": { "$ref": "#/$defs/segmentation_policy" },
+    "counters": { "$ref": "#/$defs/counters" },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/record" }
+    },
+    "corpus_sha256": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "rule_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    },
+    "unit_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?:clause:[0-9]{4,}$"
+    },
+    "node_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?:node:[0-9]{4,}$"
+    },
+    "segmentation_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text_basis",
+        "boundary_policy",
+        "whitespace_policy",
+        "coverage_policy",
+        "asset_policy"
+      ],
+      "properties": {
+        "text_basis": { "const": "normalized document-node field text" },
+        "boundary_policy": {
+          "const": "deterministic sentence and semicolon boundaries with abbreviation and rule-id guards"
+        },
+        "whitespace_policy": {
+          "const": "non-whitespace characters are covered exactly once; inter-segment gaps must be whitespace"
+        },
+        "coverage_policy": {
+          "const": "every document node has one node-coverage entry; every primary field source maps to units and nonprimary fields map to none"
+        },
+        "asset_policy": {
+          "const": "each physical image occurrence is exactly one image or correction-event unit"
+        }
+      }
+    },
+    "counters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_count",
+        "document_node_count",
+        "source_unit_count",
+        "text_unit_count",
+        "asset_unit_count",
+        "event_unit_count",
+        "empty_structural_unit_count",
+        "field_source_count",
+        "primary_field_source_count",
+        "unit_kind_counts"
+      ],
+      "properties": {
+        "record_count": { "type": "integer", "minimum": 1 },
+        "document_node_count": { "type": "integer", "minimum": 1 },
+        "source_unit_count": { "type": "integer", "minimum": 1 },
+        "text_unit_count": { "type": "integer", "minimum": 1 },
+        "asset_unit_count": { "type": "integer", "minimum": 1 },
+        "event_unit_count": { "type": "integer", "minimum": 1 },
+        "empty_structural_unit_count": { "type": "integer", "minimum": 0 },
+        "field_source_count": { "type": "integer", "minimum": 1 },
+        "primary_field_source_count": { "type": "integer", "minimum": 1 },
+        "unit_kind_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "heading_text",
+            "prose_text",
+            "list_item_text",
+            "example_label",
+            "note_text",
+            "table_caption",
+            "table_cell_text",
+            "table_footnote_marker",
+            "table_footnote_text",
+            "figure_caption",
+            "caption_text",
+            "footnote_marker",
+            "footnote_text",
+            "image_asset",
+            "correction_event",
+            "empty_table_cell",
+            "empty_table"
+          ],
+          "properties": {
+            "heading_text": { "type": "integer", "minimum": 0 },
+            "prose_text": { "type": "integer", "minimum": 0 },
+            "list_item_text": { "type": "integer", "minimum": 0 },
+            "example_label": { "type": "integer", "minimum": 0 },
+            "note_text": { "type": "integer", "minimum": 0 },
+            "table_caption": { "type": "integer", "minimum": 0 },
+            "table_cell_text": { "type": "integer", "minimum": 0 },
+            "table_footnote_marker": { "type": "integer", "minimum": 0 },
+            "table_footnote_text": { "type": "integer", "minimum": 0 },
+            "figure_caption": { "type": "integer", "minimum": 0 },
+            "caption_text": { "type": "integer", "minimum": 0 },
+            "footnote_marker": { "type": "integer", "minimum": 0 },
+            "footnote_text": { "type": "integer", "minimum": 0 },
+            "image_asset": { "type": "integer", "minimum": 0 },
+            "correction_event": { "type": "integer", "minimum": 0 },
+            "empty_table_cell": { "type": "integer", "minimum": 0 },
+            "empty_table": { "type": "integer", "minimum": 0 }
+          }
+        }
+      }
+    },
+    "source_unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unit_id",
+        "ordinal",
+        "source_node_id",
+        "node_kind",
+        "unit_kind",
+        "ownership",
+        "source_occurrence_id",
+        "component_path",
+        "field_source_path",
+        "field_source_ids",
+        "provenance_path",
+        "provenance_manifest_sha256",
+        "semantic_cue",
+        "text_start",
+        "text_end",
+        "text",
+        "text_sha256",
+        "component_text_sha256",
+        "payload",
+        "payload_sha256"
+      ],
+      "properties": {
+        "unit_id": { "$ref": "#/$defs/unit_id" },
+        "ordinal": { "type": "integer", "minimum": 1 },
+        "source_node_id": { "$ref": "#/$defs/node_id" },
+        "node_kind": {
+          "type": "string",
+          "enum": [
+            "heading",
+            "paragraph",
+            "prose",
+            "list_item",
+            "table",
+            "figure",
+            "example_block",
+            "note",
+            "caption",
+            "source_event",
+            "footnote",
+            "orphan_cell"
+          ]
+        },
+        "unit_kind": {
+          "type": "string",
+          "enum": [
+            "heading_text",
+            "prose_text",
+            "list_item_text",
+            "example_label",
+            "note_text",
+            "table_caption",
+            "table_cell_text",
+            "table_footnote_marker",
+            "table_footnote_text",
+            "figure_caption",
+            "caption_text",
+            "footnote_marker",
+            "footnote_text",
+            "image_asset",
+            "correction_event",
+            "empty_table_cell",
+            "empty_table"
+          ]
+        },
+        "ownership": { "const": "primary" },
+        "source_occurrence_id": { "type": ["string", "null"] },
+        "component_path": { "type": "string", "pattern": "^/nodes(?:/|$)" },
+        "field_source_path": {
+          "type": ["string", "null"],
+          "pattern": "^/nodes(?:/|$)"
+        },
+        "field_source_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^field:[A-F0-9]{24}$"
+          }
+        },
+        "provenance_path": { "type": "string", "pattern": "^/nodes(?:/|$)" },
+        "provenance_manifest_sha256": { "$ref": "#/$defs/sha256" },
+        "semantic_cue": {
+          "type": ["string", "null"],
+          "enum": [
+            "explicit_order",
+            "criteria",
+            "procedure",
+            "alternatives",
+            "enumeration",
+            "unspecified",
+            null
+          ]
+        },
+        "text_start": { "type": ["integer", "null"], "minimum": 0 },
+        "text_end": { "type": ["integer", "null"], "minimum": 1 },
+        "text": { "type": ["string", "null"], "minLength": 1 },
+        "text_sha256": {
+          "oneOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "component_text_sha256": {
+          "oneOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "payload": { "type": ["object", "null"] },
+        "payload_sha256": {
+          "oneOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "node_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "node_kind", "component_path", "unit_ids"],
+      "properties": {
+        "node_id": { "$ref": "#/$defs/node_id" },
+        "node_kind": { "type": "string", "minLength": 1 },
+        "component_path": { "type": "string", "pattern": "^/nodes(?:/|$)" },
+        "unit_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/unit_id" }
+        }
+      }
+    },
+    "field_source_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field_source_id",
+        "component_path",
+        "field_name",
+        "ownership",
+        "owner_ref",
+        "unit_ids"
+      ],
+      "properties": {
+        "field_source_id": {
+          "type": "string",
+          "pattern": "^field:[A-F0-9]{24}$"
+        },
+        "component_path": { "type": "string", "pattern": "^/nodes(?:/|$)" },
+        "field_name": { "type": "string", "minLength": 1 },
+        "ownership": {
+          "type": "string",
+          "enum": ["primary", "alias", "aggregate", "synthetic"]
+        },
+        "owner_ref": { "type": ["string", "null"] },
+        "unit_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/unit_id" }
+        }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "source_rule_id",
+        "chapter",
+        "document_id",
+        "fragment_ordinal",
+        "source_reference_rule_ids",
+        "correction_overlay_ids",
+        "source_units",
+        "node_coverage",
+        "field_source_coverage",
+        "record_sha256"
+      ],
+      "properties": {
+        "record_id": { "type": "string", "pattern": "^bluebook-v3:P-" },
+        "source_rule_id": { "$ref": "#/$defs/rule_id" },
+        "chapter": { "type": "string", "pattern": "^P-(?:[1-9]|10)$" },
+        "document_id": { "type": "string", "pattern": "^P-(?:[1-9]|10)(?:[ab])?$" },
+        "fragment_ordinal": { "type": "integer", "minimum": 1 },
+        "source_reference_rule_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/rule_id" }
+        },
+        "correction_overlay_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^BBV3-CORR-[A-F0-9]{16}$" }
+        },
+        "source_units": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/source_unit" }
+        },
+        "node_coverage": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/node_coverage" }
+        },
+        "field_source_coverage": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/field_source_coverage" }
+        },
+        "record_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    }
+  }
+}

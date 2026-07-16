@@ -1,0 +1,395 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/bluebook_reference_occurrences.schema.json",
+  "title": "IUPAC Blue Book occurrence-level P-rule cross-references",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "version",
+    "source_scope",
+    "context_characters",
+    "source_document_ids",
+    "source_artifact_manifest_sha256",
+    "source_artifacts",
+    "corpus_sha256",
+    "counters",
+    "occurrences"
+  ],
+  "properties": {
+    "format": {"const": "iupac-bluebook-reference-occurrences"},
+    "version": {"const": "1.0.0"},
+    "source_scope": {
+      "const": "P-rule references in active normative rule fragments of cached official chapter HTML"
+    },
+    "context_characters": {"type": "integer", "minimum": 0},
+    "source_document_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/DocumentId"}
+    },
+    "source_artifact_manifest_sha256": {"$ref": "#/$defs/Sha256"},
+    "source_artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/SourceArtifact"}
+    },
+    "corpus_sha256": {"$ref": "#/$defs/Sha256"},
+    "counters": {"$ref": "#/$defs/Counters"},
+    "occurrences": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/Occurrence"}
+    }
+  },
+  "$defs": {
+    "Sha256": {
+      "type": "string",
+      "pattern": "^[0-9A-F]{64}$"
+    },
+    "RuleId": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    },
+    "DocumentId": {
+      "type": "string",
+      "pattern": "^P-[0-9]+[a-z]?$"
+    },
+    "ArtifactId": {
+      "type": "string",
+      "pattern": "^html:P-[0-9]+[a-z]?$"
+    },
+    "OccurrenceId": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?:xref:[0-9]{4,}$"
+    },
+    "SourceArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "document_id",
+        "cache_path",
+        "source_url",
+        "source_encoding",
+        "source_byte_count",
+        "source_sha256",
+        "active_rule_fragment_count"
+      ],
+      "properties": {
+        "artifact_id": {"$ref": "#/$defs/ArtifactId"},
+        "document_id": {"$ref": "#/$defs/DocumentId"},
+        "cache_path": {"type": "string", "minLength": 1},
+        "source_url": {"type": "string", "format": "uri"},
+        "source_encoding": {"const": "utf-8"},
+        "source_byte_count": {"type": "integer", "minimum": 1},
+        "source_sha256": {"$ref": "#/$defs/Sha256"},
+        "active_rule_fragment_count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "ReferenceKindCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["href", "text"],
+      "properties": {
+        "href": {"type": "integer", "minimum": 0},
+        "text": {"type": "integer", "minimum": 0}
+      }
+    },
+    "TargetResolutionCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["active_rule", "document", "unresolved"],
+      "properties": {
+        "active_rule": {"type": "integer", "minimum": 0},
+        "document": {"type": "integer", "minimum": 0},
+        "unresolved": {"type": "integer", "minimum": 0}
+      }
+    },
+    "Counters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_artifact_count",
+        "source_document_count",
+        "indexed_active_rule_fragment_count",
+        "source_active_rule_fragment_count",
+        "reference_occurrence_count",
+        "reference_kind_counts",
+        "target_resolution_counts",
+        "distinct_source_rule_count",
+        "distinct_target_rule_count"
+      ],
+      "properties": {
+        "source_artifact_count": {"type": "integer", "minimum": 1},
+        "source_document_count": {"type": "integer", "minimum": 0},
+        "indexed_active_rule_fragment_count": {"type": "integer", "minimum": 1},
+        "source_active_rule_fragment_count": {"type": "integer", "minimum": 0},
+        "reference_occurrence_count": {"type": "integer", "minimum": 0},
+        "reference_kind_counts": {"$ref": "#/$defs/ReferenceKindCounts"},
+        "target_resolution_counts": {"$ref": "#/$defs/TargetResolutionCounts"},
+        "distinct_source_rule_count": {"type": "integer", "minimum": 0},
+        "distinct_target_rule_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "ExactSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "offset_unit",
+        "fragment_start_byte",
+        "fragment_end_byte",
+        "document_start_byte",
+        "document_end_byte",
+        "raw_sha256"
+      ],
+      "properties": {
+        "offset_unit": {"const": "byte"},
+        "fragment_start_byte": {"type": "integer", "minimum": 0},
+        "fragment_end_byte": {"type": "integer", "minimum": 1},
+        "document_start_byte": {"type": "integer", "minimum": 0},
+        "document_end_byte": {"type": "integer", "minimum": 1},
+        "raw_sha256": {"$ref": "#/$defs/Sha256"}
+      }
+    },
+    "FragmentBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "document_start_byte",
+        "document_end_byte",
+        "raw_sha256",
+        "active_sha256"
+      ],
+      "properties": {
+        "document_start_byte": {"type": "integer", "minimum": 0},
+        "document_end_byte": {"type": "integer", "minimum": 1},
+        "raw_sha256": {"$ref": "#/$defs/Sha256"},
+        "active_sha256": {"$ref": "#/$defs/Sha256"}
+      }
+    },
+    "SourceBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "source_artifact_sha256",
+        "fragment",
+        "span"
+      ],
+      "properties": {
+        "artifact_id": {"$ref": "#/$defs/ArtifactId"},
+        "source_artifact_sha256": {"$ref": "#/$defs/Sha256"},
+        "fragment": {"$ref": "#/$defs/FragmentBinding"},
+        "span": {"$ref": "#/$defs/ExactSpan"}
+      }
+    },
+    "Context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "character_unit",
+        "radius",
+        "text",
+        "reference_start",
+        "reference_end",
+        "text_sha256"
+      ],
+      "properties": {
+        "character_unit": {"const": "unicode_code_point"},
+        "radius": {"type": "integer", "minimum": 0},
+        "text": {"type": "string"},
+        "reference_start": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "reference_end": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "text_sha256": {"$ref": "#/$defs/Sha256"}
+      }
+    },
+    "DocumentBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "document_id",
+        "cache_path",
+        "source_artifact_sha256"
+      ],
+      "properties": {
+        "artifact_id": {"$ref": "#/$defs/ArtifactId"},
+        "document_id": {"$ref": "#/$defs/DocumentId"},
+        "cache_path": {"type": "string", "minLength": 1},
+        "source_artifact_sha256": {"$ref": "#/$defs/Sha256"}
+      }
+    },
+    "TargetFragment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "anchor",
+        "ordinal",
+        "document_start_byte",
+        "document_end_byte",
+        "raw_sha256",
+        "active_sha256"
+      ],
+      "properties": {
+        "anchor": {"type": "string", "minLength": 1},
+        "ordinal": {"type": "integer", "minimum": 1},
+        "document_start_byte": {"type": "integer", "minimum": 0},
+        "document_end_byte": {"type": "integer", "minimum": 1},
+        "raw_sha256": {"$ref": "#/$defs/Sha256"},
+        "active_sha256": {"$ref": "#/$defs/Sha256"}
+      }
+    },
+    "Href": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "resolved_url",
+        "target_document_id",
+        "target_anchor",
+        "target_rule_id",
+        "cited_target_match",
+        "source"
+      ],
+      "properties": {
+        "value": {"type": "string", "minLength": 1},
+        "resolved_url": {"type": "string", "format": "uri"},
+        "target_document_id": {
+          "oneOf": [
+            {"$ref": "#/$defs/DocumentId"},
+            {"type": "null"}
+          ]
+        },
+        "target_anchor": {"type": ["string", "null"]},
+        "target_rule_id": {
+          "oneOf": [
+            {"$ref": "#/$defs/RuleId"},
+            {"type": "null"}
+          ]
+        },
+        "cited_target_match": {"type": ["boolean", "null"]},
+        "source": {"$ref": "#/$defs/ExactSpan"}
+      }
+    },
+    "Target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rule_id",
+        "resolution",
+        "resolution_basis",
+        "document",
+        "active_fragment"
+      ],
+      "properties": {
+        "rule_id": {"$ref": "#/$defs/RuleId"},
+        "resolution": {
+          "enum": ["active_rule", "document", "unresolved"]
+        },
+        "resolution_basis": {
+          "enum": [
+            "href_anchor",
+            "href_document",
+            "reference_text",
+            "inferred_document",
+            "href"
+          ]
+        },
+        "document": {
+          "oneOf": [
+            {"$ref": "#/$defs/DocumentBinding"},
+            {"type": "null"}
+          ]
+        },
+        "active_fragment": {
+          "oneOf": [
+            {"$ref": "#/$defs/TargetFragment"},
+            {"type": "null"}
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"resolution": {"const": "active_rule"}}},
+          "then": {
+            "properties": {
+              "document": {"$ref": "#/$defs/DocumentBinding"},
+              "active_fragment": {"$ref": "#/$defs/TargetFragment"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"resolution": {"const": "document"}}},
+          "then": {
+            "properties": {
+              "document": {"$ref": "#/$defs/DocumentBinding"},
+              "active_fragment": {"type": "null"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"resolution": {"const": "unresolved"}}},
+          "then": {
+            "properties": {
+              "active_fragment": {"type": "null"}
+            }
+          }
+        }
+      ]
+    },
+    "Occurrence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "occurrence_id",
+        "source_document_id",
+        "source_rule_id",
+        "reference_kind",
+        "reference_text",
+        "cited_rule_id",
+        "href",
+        "target",
+        "context",
+        "source"
+      ],
+      "properties": {
+        "occurrence_id": {"$ref": "#/$defs/OccurrenceId"},
+        "source_document_id": {"$ref": "#/$defs/DocumentId"},
+        "source_rule_id": {"$ref": "#/$defs/RuleId"},
+        "reference_kind": {"enum": ["href", "text"]},
+        "reference_text": {"type": "string", "minLength": 1},
+        "cited_rule_id": {
+          "oneOf": [
+            {"$ref": "#/$defs/RuleId"},
+            {"type": "null"}
+          ]
+        },
+        "href": {
+          "oneOf": [
+            {"$ref": "#/$defs/Href"},
+            {"type": "null"}
+          ]
+        },
+        "target": {"$ref": "#/$defs/Target"},
+        "context": {"$ref": "#/$defs/Context"},
+        "source": {"$ref": "#/$defs/SourceBinding"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"reference_kind": {"const": "href"}}},
+          "then": {"properties": {"href": {"$ref": "#/$defs/Href"}}}
+        },
+        {
+          "if": {"properties": {"reference_kind": {"const": "text"}}},
+          "then": {"properties": {"href": {"type": "null"}}}
+        }
+      ]
+    }
+  }
+}

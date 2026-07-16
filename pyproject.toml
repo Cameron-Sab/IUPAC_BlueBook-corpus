@@ -5,6 +5,13 @@ description = "Scoped deterministic SMILES-to-IUPAC naming engine prototype"
 requires-python = ">=3.10"
 dependencies = ["rdkit>=2025.3"]
 
+[project.optional-dependencies]
+conversion = [
+  "jsonschema>=4.23,<5",
+  "lxml>=5,<7",
+  "pdfplumber==0.11.10",
+]
+
 [tool.pytest.ini_options]
 pythonpath = ["."]
 testpaths = ["tests"]

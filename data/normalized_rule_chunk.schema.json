@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_chunk.schema.json",
+  "title": "IUPAC Blue Book normalized semantic conversion chunk",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "packet_id",
+    "packet_sha256",
+    "schema_sha256",
+    "source_corpus_sha256",
+    "document_nodes_sha256",
+    "correction_overlays_sha256",
+    "clause_inventory_sha256",
+    "reference_occurrences_sha256",
+    "reference_resolutions_sha256",
+    "assigned_rule_ids",
+    "symbol_declarations",
+    "clause_dispositions",
+    "records",
+    "semantic_units",
+    "exceptions",
+    "tables",
+    "figures",
+    "examples",
+    "correction_applications",
+    "references",
+    "chunk_metrics",
+    "chunk_sha256"
+  ],
+  "properties": {
+    "format": { "const": "iupac-bluebook-normalized-rule-chunk" },
+    "format_version": { "const": "1.0.0" },
+    "packet_id": { "type": "string", "pattern": "^P-[0-9]+-part-[0-9]{3}$" },
+    "packet_sha256": { "$ref": "#/$defs/sha256" },
+    "schema_sha256": { "$ref": "#/$defs/sha256" },
+    "source_corpus_sha256": { "$ref": "#/$defs/sha256" },
+    "document_nodes_sha256": { "$ref": "#/$defs/sha256" },
+    "correction_overlays_sha256": { "$ref": "#/$defs/sha256" },
+    "clause_inventory_sha256": { "$ref": "#/$defs/sha256" },
+    "reference_occurrences_sha256": { "$ref": "#/$defs/sha256" },
+    "reference_resolutions_sha256": { "$ref": "#/$defs/sha256" },
+    "assigned_rule_ids": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 24,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/rule_id" }
+    },
+    "symbol_declarations": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/symbol" }
+    },
+    "clause_dispositions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/clause_disposition" }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 24,
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/record" }
+    },
+    "semantic_units": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/semantic_unit" }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/exception" }
+    },
+    "tables": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/table" }
+    },
+    "figures": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/figure" }
+    },
+    "examples": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/example" }
+    },
+    "correction_applications": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/correction_application" }
+    },
+    "references": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/reference" }
+    },
+    "chunk_metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_count",
+        "clause_disposition_count",
+        "compiled_clause_count",
+        "nonoperative_clause_count",
+        "superseded_clause_count",
+        "semantic_unit_count",
+        "exception_count",
+        "table_count",
+        "figure_count",
+        "example_count",
+        "correction_application_count",
+        "reference_count",
+        "symbol_declaration_count"
+      ],
+      "properties": {
+        "record_count": { "type": "integer", "minimum": 1 },
+        "clause_disposition_count": { "type": "integer", "minimum": 1 },
+        "compiled_clause_count": { "type": "integer", "minimum": 0 },
+        "nonoperative_clause_count": { "type": "integer", "minimum": 0 },
+        "superseded_clause_count": { "type": "integer", "minimum": 0 },
+        "semantic_unit_count": { "type": "integer", "minimum": 0 },
+        "exception_count": { "type": "integer", "minimum": 0 },
+        "table_count": { "type": "integer", "minimum": 0 },
+        "figure_count": { "type": "integer", "minimum": 0 },
+        "example_count": { "type": "integer", "minimum": 0 },
+        "correction_application_count": { "type": "integer", "minimum": 0 },
+        "reference_count": { "type": "integer", "minimum": 0 },
+        "symbol_declaration_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "chunk_sha256": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "rule_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    }
+  }
+}

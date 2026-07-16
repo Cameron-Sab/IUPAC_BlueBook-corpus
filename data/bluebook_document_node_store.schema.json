@@ -1,0 +1,302 @@
+{
+  "$defs": {
+    "CorpusCounters": {
+      "additionalProperties": false,
+      "properties": {
+        "active_rule_fragment_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "document_count": {
+          "const": 11
+        },
+        "document_node_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "node_kind_counts": {
+          "$ref": "#/$defs/NodeKindCounts"
+        }
+      },
+      "required": [
+        "active_rule_fragment_count",
+        "document_count",
+        "document_node_count",
+        "node_kind_counts"
+      ],
+      "type": "object"
+    },
+    "CorpusEnvelope": {
+      "additionalProperties": false,
+      "properties": {
+        "corpus_sha256": {
+          "$ref": "#/$defs/Sha256"
+        },
+        "counters": {
+          "$ref": "#/$defs/CorpusCounters"
+        },
+        "format": {
+          "const": "iupac-bluebook-document-nodes"
+        },
+        "metrics": {
+          "$ref": "#/$defs/CorpusMetrics"
+        },
+        "source_scope": {
+          "const": "active normative rule fragments in cached official chapter HTML"
+        },
+        "version": {
+          "const": "2.0.0"
+        }
+      },
+      "required": [
+        "format",
+        "version",
+        "source_scope",
+        "corpus_sha256",
+        "counters",
+        "metrics"
+      ],
+      "type": "object"
+    },
+    "CorpusMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "correction_event_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "distinct_visible_figure_caption_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "distinct_visible_table_caption_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "footnote_block_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "physical_cell_occurrence_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "physical_image_occurrence_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "physical_row_occurrence_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "physical_table_occurrence_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "visible_figure_caption_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "visible_table_caption_count": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "physical_table_occurrence_count",
+        "physical_row_occurrence_count",
+        "physical_cell_occurrence_count",
+        "physical_image_occurrence_count",
+        "correction_event_count",
+        "footnote_block_count",
+        "visible_table_caption_count",
+        "distinct_visible_table_caption_count",
+        "visible_figure_caption_count",
+        "distinct_visible_figure_caption_count"
+      ],
+      "type": "object"
+    },
+    "DocumentId": {
+      "enum": [
+        "P-1",
+        "P-2",
+        "P-3",
+        "P-4",
+        "P-5",
+        "P-6a",
+        "P-6b",
+        "P-7",
+        "P-8",
+        "P-9",
+        "P-10"
+      ],
+      "type": "string"
+    },
+    "NodeKindCounts": {
+      "additionalProperties": false,
+      "properties": {
+        "caption": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "example_block": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "figure": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "footnote": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "heading": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "list_item": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "note": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "orphan_cell": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "paragraph": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "prose": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "source_event": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "table": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "heading",
+        "paragraph",
+        "prose",
+        "list_item",
+        "table",
+        "figure",
+        "example_block",
+        "note",
+        "caption",
+        "source_event",
+        "footnote",
+        "orphan_cell"
+      ],
+      "type": "object"
+    },
+    "Sha256": {
+      "pattern": "^[A-F0-9]{64}$",
+      "type": "string"
+    },
+    "Shard": {
+      "additionalProperties": false,
+      "properties": {
+        "active_rule_fragment_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "byte_count": {
+          "maximum": 99999999,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "document_id": {
+          "$ref": "#/$defs/DocumentId"
+        },
+        "document_node_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "node_kind_counts": {
+          "$ref": "#/$defs/NodeKindCounts"
+        },
+        "ordinal": {
+          "maximum": 11,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "path": {
+          "pattern": "^bluebook_v3_document_nodes\\.P-(?:[1-9]|10|6[ab])\\.json$",
+          "type": "string"
+        },
+        "sha256": {
+          "$ref": "#/$defs/Sha256"
+        }
+      },
+      "required": [
+        "ordinal",
+        "document_id",
+        "path",
+        "byte_count",
+        "sha256",
+        "active_rule_fragment_count",
+        "document_node_count",
+        "node_kind_counts"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/bluebook_document_node_store.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "corpus": {
+      "$ref": "#/$defs/CorpusEnvelope"
+    },
+    "document_count": {
+      "const": 11
+    },
+    "format": {
+      "const": "iupac-bluebook-document-node-store"
+    },
+    "manifest_sha256": {
+      "$ref": "#/$defs/Sha256"
+    },
+    "reconstructed_byte_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "reconstructed_sha256": {
+      "$ref": "#/$defs/Sha256"
+    },
+    "shards": {
+      "items": {
+        "$ref": "#/$defs/Shard"
+      },
+      "maxItems": 11,
+      "minItems": 11,
+      "type": "array"
+    },
+    "version": {
+      "const": "1.0.0"
+    }
+  },
+  "required": [
+    "format",
+    "version",
+    "document_count",
+    "reconstructed_byte_count",
+    "reconstructed_sha256",
+    "corpus",
+    "shards",
+    "manifest_sha256"
+  ],
+  "title": "IUPAC Blue Book document-node GitHub-safe shard manifest",
+  "type": "object"
+}

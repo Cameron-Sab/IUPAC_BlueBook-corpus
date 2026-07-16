@@ -1,0 +1,481 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/bluebook_source_corpus.schema.json",
+  "title": "Lossless IUPAC Blue Book V3 source corpus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format_version",
+    "conversion_stage",
+    "source_document",
+    "reconciliation",
+    "rule_record_count",
+    "non_rule_block_count",
+    "source_line_count",
+    "owned_rule_source_line_count",
+    "owned_non_rule_source_line_count",
+    "source_character_count",
+    "owned_rule_source_character_count",
+    "owned_non_rule_source_character_count",
+    "pdf_image_placement_count",
+    "pdf_page_primary_image_object_count",
+    "pdf_primary_image_object_count",
+    "pdf_soft_mask_image_object_count",
+    "pdf_explicit_mask_image_object_count",
+    "pdf_image_object_count",
+    "pdf_unique_decoded_image_payload_count",
+    "records",
+    "non_rule_blocks"
+  ],
+  "properties": {
+    "format_version": { "const": "2.0.0" },
+    "conversion_stage": { "const": "lossless_source" },
+    "source_document": { "$ref": "#/$defs/source_document" },
+    "reconciliation": { "$ref": "#/$defs/reconciliation" },
+    "rule_record_count": { "type": "integer", "minimum": 1 },
+    "non_rule_block_count": { "type": "integer", "minimum": 1 },
+    "source_line_count": { "type": "integer", "minimum": 1 },
+    "owned_rule_source_line_count": { "type": "integer", "minimum": 1 },
+    "owned_non_rule_source_line_count": { "type": "integer", "minimum": 1 },
+    "source_character_count": { "type": "integer", "minimum": 1 },
+    "owned_rule_source_character_count": { "type": "integer", "minimum": 1 },
+    "owned_non_rule_source_character_count": { "type": "integer", "minimum": 1 },
+    "pdf_image_placement_count": { "type": "integer", "minimum": 1 },
+    "pdf_page_primary_image_object_count": { "type": "integer", "minimum": 1 },
+    "pdf_primary_image_object_count": { "type": "integer", "minimum": 1 },
+    "pdf_soft_mask_image_object_count": { "type": "integer", "minimum": 1 },
+    "pdf_explicit_mask_image_object_count": { "type": "integer", "minimum": 1 },
+    "pdf_image_object_count": { "type": "integer", "minimum": 1 },
+    "pdf_unique_decoded_image_payload_count": { "type": "integer", "minimum": 1 },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/rule_record" }
+    },
+    "non_rule_blocks": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/non_rule_block" }
+    }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "rule_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    },
+    "line_id": { "type": "string", "pattern": "^p[0-9]{4}:l[0-9]{3}$" },
+    "pdf_text_span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["line_id", "text_start", "text_end", "role"],
+      "properties": {
+        "line_id": { "$ref": "#/$defs/line_id" },
+        "text_start": { "type": "integer", "minimum": 0 },
+        "text_end": { "type": "integer", "minimum": 1 },
+        "role": {
+          "type": "string",
+          "enum": [
+            "heading",
+            "heading_label",
+            "heading_title",
+            "body",
+            "printed_text_splice_parent",
+            "printed_text_splice_child"
+          ]
+        }
+      }
+    },
+    "source_line": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["uid", "page", "line", "text", "x0", "top", "x1", "bottom"],
+      "properties": {
+        "uid": { "$ref": "#/$defs/line_id" },
+        "page": { "type": "integer", "minimum": 1, "maximum": 1149 },
+        "line": { "type": "integer", "minimum": 1 },
+        "text": { "type": "string", "minLength": 1 },
+        "x0": { "type": "number" },
+        "top": { "type": "number" },
+        "x1": { "type": "number" },
+        "bottom": { "type": "number" }
+      }
+    },
+    "document_region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["region_id", "source_kind", "page_start", "page_end"],
+      "properties": {
+        "region_id": { "type": "string", "minLength": 1 },
+        "source_kind": {
+          "type": "string",
+          "enum": ["front_matter", "glossary", "normative_chapters", "references", "table", "structure_registry"]
+        },
+        "page_start": { "type": "integer", "minimum": 1, "maximum": 1149 },
+        "page_end": { "type": "integer", "minimum": 1, "maximum": 1149 }
+      }
+    },
+    "html_manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["chapter", "url", "sha256", "byte_count", "active_rule_anchor_count"],
+      "properties": {
+        "chapter": { "type": "string", "pattern": "^P-(?:[1-9]|10)(?:[ab])?$" },
+        "url": { "type": "string", "format": "uri" },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "byte_count": { "type": "integer", "minimum": 1 },
+        "active_rule_anchor_count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "auxiliary_manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_kind", "url", "sha256", "byte_count"],
+      "properties": {
+        "source_kind": {
+          "type": "string",
+          "enum": ["appendix-1", "appendix-2", "appendix-3", "references", "corrections"]
+        },
+        "url": { "type": "string", "format": "uri" },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "byte_count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "source_document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "source_pdf_url",
+        "local_pdf_sha256",
+        "local_pdf_byte_count",
+        "page_count",
+        "pdf_metadata",
+        "toolchain",
+        "document_regions",
+        "html_sources",
+        "auxiliary_html_sources"
+      ],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "source_pdf_url": { "type": "string", "format": "uri" },
+        "local_pdf_sha256": { "$ref": "#/$defs/sha256" },
+        "local_pdf_byte_count": { "type": "integer", "minimum": 1 },
+        "page_count": { "const": 1149 },
+        "pdf_metadata": { "type": "object", "additionalProperties": { "type": "string" } },
+        "toolchain": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["python", "pdfplumber", "lxml"],
+          "properties": {
+            "python": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+            "pdfplumber": { "const": "0.11.10" },
+            "lxml": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" }
+          }
+        },
+        "document_regions": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/document_region" }
+        },
+        "html_sources": {
+          "type": "array",
+          "minItems": 11,
+          "items": { "$ref": "#/$defs/html_manifest" }
+        },
+        "auxiliary_html_sources": {
+          "type": "array",
+          "minItems": 5,
+          "items": { "$ref": "#/$defs/auxiliary_manifest" }
+        }
+      }
+    },
+    "reconciliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pdf_rule_count",
+        "html_rule_count",
+        "merged_rule_count",
+        "pdf_only_rule_ids",
+        "html_only_structurally_aligned_rule_ids",
+        "source_html_anchor_collisions",
+        "audited_source_anomalies",
+        "chapter_masthead_reassignments"
+      ],
+      "properties": {
+        "pdf_rule_count": { "type": "integer", "minimum": 1 },
+        "html_rule_count": { "type": "integer", "minimum": 1 },
+        "merged_rule_count": { "type": "integer", "minimum": 1 },
+        "pdf_only_rule_ids": { "type": "array", "items": { "$ref": "#/$defs/rule_id" } },
+        "html_only_structurally_aligned_rule_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/rule_id" }
+        },
+        "source_html_anchor_collisions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["href", "rule_ids"],
+            "properties": {
+              "href": { "type": "string", "format": "uri-reference" },
+              "rule_ids": {
+                "type": "array",
+                "minItems": 2,
+                "uniqueItems": true,
+                "items": { "$ref": "#/$defs/rule_id" }
+              }
+            }
+          }
+        },
+        "audited_source_anomalies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["rule_id", "kind", "reason"],
+            "properties": {
+              "rule_id": { "$ref": "#/$defs/rule_id" },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "rule_id_exact_with_pdf_layout_reordering",
+                  "rule_id_exact_with_pdf_text_omission",
+                  "structural_heading_restored"
+                ]
+              },
+              "reason": { "type": "string", "minLength": 1 },
+              "defect": { "$ref": "#/$defs/source_defect" }
+            }
+          }
+        },
+        "chapter_masthead_reassignments": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/chapter_masthead_reassignment" }
+        }
+      }
+    },
+    "chapter_masthead_reassignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "previous_rule_id",
+        "previous_rule_end_line",
+        "chapter",
+        "page",
+        "source_line_ids",
+        "block_id"
+      ],
+      "properties": {
+        "previous_rule_id": { "$ref": "#/$defs/rule_id" },
+        "previous_rule_end_line": { "$ref": "#/$defs/line_id" },
+        "chapter": { "type": "string", "pattern": "^P-(?:[1-9]|10)$" },
+        "page": { "type": "integer", "minimum": 48, "maximum": 1066 },
+        "source_line_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/line_id" }
+        },
+        "block_id": { "type": "string", "pattern": "^bluebook-v3:block:[0-9]{4}$" }
+      }
+    },
+    "source_defect": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "after_line", "before_line", "authoritative_source"],
+          "properties": {
+            "kind": { "const": "source_gap_restoration" },
+            "after_line": { "$ref": "#/$defs/line_id" },
+            "before_line": { "$ref": "#/$defs/line_id" },
+            "authoritative_source": { "const": "official_corrected_html" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "line_id", "split_index"],
+          "properties": {
+            "kind": { "const": "printed_text_splice" },
+            "line_id": { "$ref": "#/$defs/line_id" },
+            "split_index": { "type": "integer", "minimum": 1 }
+          }
+        }
+      ]
+    },
+    "pdf_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "printed_rule_id",
+        "pages",
+        "start_line",
+        "end_line",
+        "source_line_ids",
+        "source_spans",
+        "text",
+        "text_sha256"
+      ],
+      "properties": {
+        "printed_rule_id": { "$ref": "#/$defs/rule_id" },
+        "pages": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 48, "maximum": 1066 }
+        },
+        "start_line": { "$ref": "#/$defs/line_id" },
+        "end_line": { "$ref": "#/$defs/line_id" },
+        "source_line_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/line_id" }
+        },
+        "source_spans": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/pdf_text_span" }
+        },
+        "text": { "type": "string", "minLength": 1 },
+        "text_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "html_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "anchor",
+        "text",
+        "text_sha256",
+        "fragment_sha256",
+        "references",
+        "image_urls",
+        "table_count"
+      ],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "anchor": { "type": "string", "minLength": 1 },
+        "text": { "type": "string", "minLength": 1 },
+        "text_sha256": { "$ref": "#/$defs/sha256" },
+        "fragment_sha256": { "$ref": "#/$defs/sha256" },
+        "references": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/rule_id" }
+        },
+        "image_urls": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "format": "uri" }
+        },
+        "table_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "alignment": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "pdf_rule_id", "html_rule_id"],
+          "properties": {
+            "kind": { "const": "rule_id_exact" },
+            "pdf_rule_id": { "$ref": "#/$defs/rule_id" },
+            "html_rule_id": { "$ref": "#/$defs/rule_id" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "pdf_rule_id", "html_rule_id", "reason"],
+          "properties": {
+            "kind": { "const": "structural_heading_restored" },
+            "pdf_rule_id": { "$ref": "#/$defs/rule_id" },
+            "html_rule_id": { "$ref": "#/$defs/rule_id" },
+            "reason": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "pdf_rule_id", "html_rule_id", "reason"],
+          "properties": {
+            "kind": { "const": "rule_id_exact_with_pdf_layout_reordering" },
+            "pdf_rule_id": { "$ref": "#/$defs/rule_id" },
+            "html_rule_id": { "$ref": "#/$defs/rule_id" },
+            "reason": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "pdf_rule_id", "html_rule_id", "reason", "defect"],
+          "properties": {
+            "kind": { "const": "rule_id_exact_with_pdf_text_omission" },
+            "pdf_rule_id": { "$ref": "#/$defs/rule_id" },
+            "html_rule_id": { "$ref": "#/$defs/rule_id" },
+            "reason": { "type": "string", "minLength": 1 },
+            "defect": { "$ref": "#/$defs/source_defect" }
+          }
+        }
+      ]
+    },
+    "rule_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_id", "source_rule_id", "chapter", "source_kind", "pdf", "html", "alignment"],
+      "properties": {
+        "record_id": { "type": "string", "pattern": "^bluebook-v3:P-" },
+        "source_rule_id": { "$ref": "#/$defs/rule_id" },
+        "chapter": { "type": "string", "pattern": "^P-(?:[1-9]|10)$" },
+        "source_kind": { "type": "string", "enum": ["rule_section", "section_heading"] },
+        "pdf": { "$ref": "#/$defs/pdf_source" },
+        "html": { "$ref": "#/$defs/html_source" },
+        "alignment": { "$ref": "#/$defs/alignment" }
+      }
+    },
+    "non_rule_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "block_id",
+        "source_kind",
+        "region_id",
+        "chapter",
+        "pages",
+        "source_line_ids",
+        "text",
+        "text_sha256",
+        "operative"
+      ],
+      "properties": {
+        "block_id": { "type": "string", "pattern": "^bluebook-v3:block:[0-9]{4}$" },
+        "source_kind": {
+          "type": "string",
+          "enum": ["front_matter", "glossary", "chapter_front_matter", "references", "table", "structure_registry"]
+        },
+        "region_id": { "type": "string", "minLength": 1 },
+        "chapter": { "type": ["string", "null"], "pattern": "^P-(?:[1-9]|10)$" },
+        "pages": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 1, "maximum": 1149 }
+        },
+        "source_line_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/line_id" }
+        },
+        "text": { "type": "string", "minLength": 1 },
+        "text_sha256": { "$ref": "#/$defs/sha256" },
+        "operative": { "type": "boolean" }
+      }
+    }
+  }
+}

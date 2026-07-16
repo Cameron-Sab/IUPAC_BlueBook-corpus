@@ -1,0 +1,27 @@
+{
+  "character_ownership_complete": true,
+  "duplicate_html_rule_id_count": 0,
+  "duplicate_pdf_rule_id_count": 0,
+  "html_active_rule_anchor_count": 2554,
+  "html_only_structurally_aligned_rule_ids": [
+    "P-65.1.2.1"
+  ],
+  "html_rule_image_reference_count": 5280,
+  "line_ownership_complete": true,
+  "non_rule_block_count": 19,
+  "page_count": 1149,
+  "pdf_explicit_mask_image_object_count": 6,
+  "pdf_image_object_count": 10526,
+  "pdf_image_placement_count": 5413,
+  "pdf_only_rule_ids": [],
+  "pdf_page_primary_image_object_count": 5342,
+  "pdf_primary_image_object_count": 5294,
+  "pdf_rule_heading_count": 2553,
+  "pdf_sha256": "F577437DA72309EE28B49D290A441BDD340E709225FD07794D7EFCFE5B593F74",
+  "pdf_soft_mask_image_object_count": 5226,
+  "pdf_unique_decoded_image_payload_count": 8813,
+  "rule_record_count": 2554,
+  "source_html_anchor_collision_count": 2,
+  "source_line_count": 39773,
+  "structurally_restored_rule_count": 1
+}

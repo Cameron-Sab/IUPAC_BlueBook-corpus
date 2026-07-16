@@ -1,0 +1,1209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json",
+  "title": "IUPAC Blue Book normalized rule language",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "conversion_stage",
+    "source_snapshot",
+    "symbol_registry",
+    "clause_dispositions",
+    "records",
+    "semantic_units",
+    "exceptions",
+    "tables",
+    "figures",
+    "examples",
+    "correction_applications",
+    "references",
+    "dependency_edges",
+    "metrics",
+    "corpus_sha256"
+  ],
+  "properties": {
+    "format": { "const": "iupac-bluebook-normalized-rule-language" },
+    "format_version": { "const": "3.0.0" },
+    "conversion_stage": { "const": "complete_semantic_ir" },
+    "source_snapshot": { "$ref": "#/$defs/source_snapshot" },
+    "symbol_registry": { "$ref": "#/$defs/symbol_registry" },
+    "clause_dispositions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/clause_disposition" }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/record" }
+    },
+    "semantic_units": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/semantic_unit" }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/exception" }
+    },
+    "tables": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/table" }
+    },
+    "figures": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/figure" }
+    },
+    "examples": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/example" }
+    },
+    "correction_applications": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/correction_application" }
+    },
+    "references": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/reference" }
+    },
+    "dependency_edges": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/dependency_edge" }
+    },
+    "metrics": { "$ref": "#/$defs/metrics" },
+    "corpus_sha256": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:-]*$"
+    },
+    "symbol_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_.]*$"
+    },
+    "rule_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    },
+    "clause_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?:clause:[0-9]{4,}$"
+    },
+    "clause_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/clause_id" }
+    },
+    "source_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_corpus_sha256",
+        "source_pages_sha256",
+        "document_nodes_sha256",
+        "correction_overlays_sha256",
+        "clause_inventory_sha256",
+        "reference_occurrences_sha256",
+        "reference_resolutions_sha256",
+        "effective_through"
+      ],
+      "properties": {
+        "source_corpus_sha256": { "$ref": "#/$defs/sha256" },
+        "source_pages_sha256": { "$ref": "#/$defs/sha256" },
+        "document_nodes_sha256": { "$ref": "#/$defs/sha256" },
+        "correction_overlays_sha256": { "$ref": "#/$defs/sha256" },
+        "clause_inventory_sha256": { "$ref": "#/$defs/sha256" },
+        "reference_occurrences_sha256": { "$ref": "#/$defs/sha256" },
+        "reference_resolutions_sha256": { "$ref": "#/$defs/sha256" },
+        "effective_through": { "type": "string", "format": "date" }
+      }
+    },
+    "object_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "id"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "record",
+            "clause",
+            "semantic_unit",
+            "expression",
+            "statement",
+            "decision_stage",
+            "exception",
+            "table",
+            "table_column",
+            "table_row",
+            "table_cell",
+            "table_footnote",
+            "figure",
+            "example",
+            "correction_application",
+            "reference",
+            "symbol",
+            "chapter",
+            "external"
+          ]
+        },
+        "id": { "type": "string", "minLength": 1 }
+      }
+    },
+    "symbol_grounding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "refs", "primitive"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["primitive", "definition", "table", "composition"]
+        },
+        "refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/object_ref" }
+        },
+        "primitive": { "type": ["string", "null"] }
+      }
+    },
+    "symbol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "symbol_id",
+        "kind",
+        "description",
+        "arguments",
+        "returns",
+        "grounding"
+      ],
+      "properties": {
+        "symbol_id": { "$ref": "#/$defs/symbol_id" },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "entity_type",
+            "predicate",
+            "function",
+            "transformation",
+            "comparator",
+            "reason_code"
+          ]
+        },
+        "description": { "type": "string", "minLength": 1 },
+        "arguments": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/interface_binding" }
+        },
+        "returns": { "type": "string", "minLength": 1 },
+        "grounding": { "$ref": "#/$defs/symbol_grounding" }
+      }
+    },
+    "symbol_registry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["symbols"],
+      "properties": {
+        "symbols": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/symbol" }
+        }
+      }
+    },
+    "compiled_disposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "targets"],
+      "properties": {
+        "kind": { "const": "compiled" },
+        "targets": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/object_ref" }
+        }
+      }
+    },
+    "nonoperative_disposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "reason_code"],
+      "properties": {
+        "kind": { "const": "nonoperative" },
+        "reason_code": {
+          "type": "string",
+          "enum": [
+            "heading_or_title",
+            "example_label",
+            "illustrative_example",
+            "explanatory_note",
+            "historical_context",
+            "rationale",
+            "source_navigation",
+            "citation_only",
+            "structural_layout",
+            "empty_layout_cell",
+            "figure_only",
+            "correction_marker",
+            "bibliographic_material",
+            "duplicate_rendering",
+            "source_artifact"
+          ]
+        }
+      }
+    },
+    "superseded_disposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "correction_application_ids",
+        "successor_clause_ids"
+      ],
+      "properties": {
+        "kind": { "const": "superseded" },
+        "correction_application_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "successor_clause_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/clause_id" }
+        }
+      }
+    },
+    "clause_disposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["clause_id", "role", "force", "disposition"],
+      "properties": {
+        "clause_id": { "$ref": "#/$defs/clause_id" },
+        "role": {
+          "type": "string",
+          "enum": [
+            "heading",
+            "scope",
+            "definition",
+            "condition",
+            "effect",
+            "constraint",
+            "permission",
+            "prohibition",
+            "preference_criterion",
+            "tie_continuation",
+            "procedure_step",
+            "mapping_entry",
+            "exception",
+            "cross_reference",
+            "table_data",
+            "table_layout",
+            "figure_asset",
+            "example",
+            "note",
+            "rationale",
+            "history",
+            "correction_event",
+            "source_metadata"
+          ]
+        },
+        "force": {
+          "type": "string",
+          "enum": [
+            "normative",
+            "informative",
+            "illustrative",
+            "source_metadata",
+            "correction"
+          ]
+        },
+        "disposition": {
+          "oneOf": [
+            { "$ref": "#/$defs/compiled_disposition" },
+            { "$ref": "#/$defs/nonoperative_disposition" },
+            { "$ref": "#/$defs/superseded_disposition" }
+          ]
+        }
+      }
+    },
+    "interface_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type"],
+      "properties": {
+        "name": { "$ref": "#/$defs/identifier" },
+        "type": { "type": "string", "minLength": 1 }
+      }
+    },
+    "expression": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expression_id", "clause_ids", "op"],
+      "properties": {
+        "expression_id": { "$ref": "#/$defs/identifier" },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "op": {
+          "type": "string",
+          "enum": [
+            "literal",
+            "var",
+            "get",
+            "predicate",
+            "function",
+            "all",
+            "any",
+            "not",
+            "exists",
+            "forall",
+            "compare",
+            "table_lookup",
+            "rule_outcome"
+          ]
+        },
+        "value": {},
+        "name": { "$ref": "#/$defs/identifier" },
+        "from": { "$ref": "#/$defs/expression" },
+        "path": { "type": "string", "pattern": "^[a-z][a-z0-9_.]*$" },
+        "symbol": { "$ref": "#/$defs/symbol_id" },
+        "args": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/expression" }
+        },
+        "arg": { "$ref": "#/$defs/expression" },
+        "relation": {
+          "type": "string",
+          "enum": [
+            "eq",
+            "ne",
+            "lt",
+            "le",
+            "gt",
+            "ge",
+            "contains",
+            "member_of",
+            "same_set"
+          ]
+        },
+        "left": { "$ref": "#/$defs/expression" },
+        "right": { "$ref": "#/$defs/expression" },
+        "bind": { "$ref": "#/$defs/identifier" },
+        "in": { "$ref": "#/$defs/expression" },
+        "where": { "$ref": "#/$defs/expression" },
+        "table_id": { "$ref": "#/$defs/identifier" },
+        "key": { "$ref": "#/$defs/expression" },
+        "column_id": { "$ref": "#/$defs/identifier" },
+        "rule_id": { "$ref": "#/$defs/rule_id" },
+        "outcome": { "$ref": "#/$defs/identifier" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "op": { "const": "literal" } } },
+          "then": { "required": ["value"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "var" } } },
+          "then": { "required": ["name"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "get" } } },
+          "then": { "required": ["from", "path"] }
+        },
+        {
+          "if": {
+            "properties": {
+              "op": { "enum": ["predicate", "function"] }
+            }
+          },
+          "then": { "required": ["symbol", "args"] }
+        },
+        {
+          "if": { "properties": { "op": { "enum": ["all", "any"] } } },
+          "then": { "required": ["args"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "not" } } },
+          "then": { "required": ["arg"] }
+        },
+        {
+          "if": {
+            "properties": { "op": { "enum": ["exists", "forall"] } }
+          },
+          "then": { "required": ["bind", "in", "where"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "compare" } } },
+          "then": { "required": ["relation", "left", "right"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "table_lookup" } } },
+          "then": { "required": ["table_id", "key", "column_id"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "rule_outcome" } } },
+          "then": { "required": ["rule_id", "outcome"] }
+        }
+      ]
+    },
+    "statement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement_id", "clause_ids", "op"],
+      "properties": {
+        "statement_id": { "$ref": "#/$defs/identifier" },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "op": {
+          "type": "string",
+          "enum": [
+            "sequence",
+            "branch",
+            "assign",
+            "transform",
+            "render",
+            "reject",
+            "invoke",
+            "iterate",
+            "emit",
+            "assert"
+          ]
+        },
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/statement" }
+        },
+        "when": { "$ref": "#/$defs/expression" },
+        "then": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/statement" }
+        },
+        "else": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/statement" }
+        },
+        "target": { "$ref": "#/$defs/identifier" },
+        "value": { "$ref": "#/$defs/expression" },
+        "transformation": { "$ref": "#/$defs/symbol_id" },
+        "args": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/expression" }
+        },
+        "component": { "$ref": "#/$defs/identifier" },
+        "position": { "$ref": "#/$defs/identifier" },
+        "reason_code": { "$ref": "#/$defs/symbol_id" },
+        "rule_id": { "$ref": "#/$defs/rule_id" },
+        "bindings": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/expression" }
+        },
+        "bind": { "$ref": "#/$defs/identifier" },
+        "in": { "$ref": "#/$defs/expression" },
+        "body": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/statement" }
+        },
+        "stop_when": { "$ref": "#/$defs/expression" },
+        "assertion": { "$ref": "#/$defs/expression" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "op": { "const": "sequence" } } },
+          "then": { "required": ["steps"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "branch" } } },
+          "then": { "required": ["when", "then", "else"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "assign" } } },
+          "then": { "required": ["target", "value"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "transform" } } },
+          "then": { "required": ["target", "transformation", "args"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "render" } } },
+          "then": { "required": ["component", "value", "position"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "reject" } } },
+          "then": { "required": ["target", "reason_code"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "invoke" } } },
+          "then": { "required": ["rule_id", "bindings"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "iterate" } } },
+          "then": { "required": ["bind", "in", "body", "stop_when"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "emit" } } },
+          "then": { "required": ["value"] }
+        },
+        {
+          "if": { "properties": { "op": { "const": "assert" } } },
+          "then": { "required": ["assertion", "reason_code"] }
+        }
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["regimes", "applies_to"],
+      "properties": {
+        "regimes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "preferred_iupac_name",
+              "preselected_name",
+              "general_nomenclature",
+              "retained_name",
+              "class_specific",
+              "all"
+            ]
+          }
+        },
+        "applies_to": { "$ref": "#/$defs/expression" }
+      }
+    },
+    "comparator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "direction", "symbol", "table_id"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["numeric", "lexicographic", "ordered_table", "set_order", "custom"]
+        },
+        "direction": {
+          "type": "string",
+          "enum": ["minimum", "maximum", "source_order", "symbol_defined"]
+        },
+        "symbol": {
+          "oneOf": [
+            { "$ref": "#/$defs/symbol_id" },
+            { "type": "null" }
+          ]
+        },
+        "table_id": {
+          "oneOf": [
+            { "$ref": "#/$defs/identifier" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "decision_stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stage_id",
+        "ordinal",
+        "clause_ids",
+        "guard",
+        "key",
+        "comparator",
+        "on_tie"
+      ],
+      "properties": {
+        "stage_id": { "$ref": "#/$defs/identifier" },
+        "ordinal": { "type": "integer", "minimum": 1 },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "guard": { "$ref": "#/$defs/expression" },
+        "key": { "$ref": "#/$defs/expression" },
+        "comparator": { "$ref": "#/$defs/comparator" },
+        "on_tie": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["mode", "next_stage_id"],
+          "properties": {
+            "mode": { "const": "continue" },
+            "next_stage_id": {
+              "oneOf": [
+                { "$ref": "#/$defs/identifier" },
+                { "type": "null" }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "terminal_tie": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "fallback_ref"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["retain_coequal", "apply_fallback", "reject_ambiguous"]
+        },
+        "fallback_ref": {
+          "oneOf": [
+            { "$ref": "#/$defs/object_ref" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "semantic_unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unit_id",
+        "kind",
+        "force",
+        "clause_ids",
+        "scope",
+        "inputs",
+        "outputs"
+      ],
+      "properties": {
+        "unit_id": { "$ref": "#/$defs/identifier" },
+        "kind": {
+          "type": "string",
+          "enum": ["rule", "decision", "definition", "mapping", "procedure", "constraint"]
+        },
+        "force": {
+          "type": "string",
+          "enum": ["required", "permitted", "prohibited", "preference", "definition"]
+        },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "scope": { "$ref": "#/$defs/scope" },
+        "inputs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/interface_binding" }
+        },
+        "outputs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/interface_binding" }
+        },
+        "when": { "$ref": "#/$defs/expression" },
+        "then": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/statement" }
+        },
+        "else": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/statement" }
+        },
+        "candidates": { "$ref": "#/$defs/expression" },
+        "stages": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/decision_stage" }
+        },
+        "terminal_tie": { "$ref": "#/$defs/terminal_tie" },
+        "term": { "type": "string", "minLength": 1 },
+        "entity_type": { "type": "string", "minLength": 1 },
+        "value": { "$ref": "#/$defs/expression" },
+        "table_id": { "$ref": "#/$defs/identifier" },
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/statement" }
+        },
+        "assertion": { "$ref": "#/$defs/expression" },
+        "on_violation": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/statement" }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "rule" } } },
+          "then": { "required": ["when", "then", "else"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "decision" } } },
+          "then": { "required": ["candidates", "stages", "terminal_tie"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "definition" } } },
+          "then": { "required": ["term", "entity_type", "value"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "mapping" } } },
+          "then": { "required": ["table_id"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "procedure" } } },
+          "then": { "required": ["steps"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "constraint" } } },
+          "then": { "required": ["assertion", "on_violation"] }
+        }
+      ]
+    },
+    "exception_effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "replacement", "guard", "redirect"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["suppress", "replace", "add_guard", "redirect", "change_precedence"]
+        },
+        "replacement": {
+          "oneOf": [
+            { "$ref": "#/$defs/object_ref" },
+            { "type": "null" }
+          ]
+        },
+        "guard": {
+          "oneOf": [
+            { "$ref": "#/$defs/expression" },
+            { "type": "null" }
+          ]
+        },
+        "redirect": {
+          "oneOf": [
+            { "$ref": "#/$defs/object_ref" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "exception": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exception_id",
+        "clause_ids",
+        "when",
+        "target",
+        "effect",
+        "precedence"
+      ],
+      "properties": {
+        "exception_id": { "$ref": "#/$defs/identifier" },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "when": { "$ref": "#/$defs/expression" },
+        "target": { "$ref": "#/$defs/object_ref" },
+        "effect": { "$ref": "#/$defs/exception_effect" },
+        "precedence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["specificity", "source_order"],
+          "properties": {
+            "specificity": { "type": "integer", "minimum": 0 },
+            "source_order": { "type": "integer", "minimum": 1 }
+          }
+        }
+      }
+    },
+    "table_column": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["column_id", "ordinal", "label", "value_type", "clause_ids"],
+      "properties": {
+        "column_id": { "$ref": "#/$defs/identifier" },
+        "ordinal": { "type": "integer", "minimum": 1 },
+        "label": { "type": "string" },
+        "value_type": { "type": "string", "minLength": 1 },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" }
+      }
+    },
+    "table_cell": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cell_id", "column_id", "value", "clause_ids"],
+      "properties": {
+        "cell_id": { "$ref": "#/$defs/identifier" },
+        "column_id": { "$ref": "#/$defs/identifier" },
+        "value": {},
+        "clause_ids": { "$ref": "#/$defs/clause_ids" }
+      }
+    },
+    "table_row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["row_id", "ordinal", "rank_group", "cells", "clause_ids"],
+      "properties": {
+        "row_id": { "$ref": "#/$defs/identifier" },
+        "ordinal": { "type": "integer", "minimum": 1 },
+        "rank_group": { "type": ["integer", "null"], "minimum": 1 },
+        "cells": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/table_cell" }
+        },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" }
+      }
+    },
+    "table_footnote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["footnote_id", "marker", "text", "scope_refs", "clause_ids"],
+      "properties": {
+        "footnote_id": { "$ref": "#/$defs/identifier" },
+        "marker": { "type": "string", "minLength": 1 },
+        "text": { "type": "string", "minLength": 1 },
+        "scope_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/object_ref" }
+        },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" }
+      }
+    },
+    "table_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key_column_ids", "result_column_ids", "cardinality", "ordering"],
+      "properties": {
+        "key_column_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "result_column_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "cardinality": {
+          "type": "string",
+          "enum": ["one_to_one", "one_to_many", "many_to_one", "ranked_list"]
+        },
+        "ordering": {
+          "type": "string",
+          "enum": ["none", "source_order", "ascending", "descending", "rank_groups"]
+        }
+      }
+    },
+    "table": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "table_id",
+        "label",
+        "title",
+        "clause_ids",
+        "columns",
+        "rows",
+        "footnotes",
+        "contract"
+      ],
+      "properties": {
+        "table_id": { "$ref": "#/$defs/identifier" },
+        "label": { "type": ["string", "null"] },
+        "title": { "type": ["string", "null"] },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "columns": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/table_column" }
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/table_row" }
+        },
+        "footnotes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/table_footnote" }
+        },
+        "contract": { "$ref": "#/$defs/table_contract" }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["figure_id", "clause_ids", "kind", "source_urls", "content_sha256"],
+      "properties": {
+        "figure_id": { "$ref": "#/$defs/identifier" },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "kind": {
+          "type": "string",
+          "enum": ["chemical_structure", "scheme", "diagram", "source_icon"]
+        },
+        "source_urls": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "format": "uri" }
+        },
+        "content_sha256": {
+          "oneOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "example_id",
+        "clause_ids",
+        "operative",
+        "input",
+        "accepted_names",
+        "rejected_names",
+        "demonstrates",
+        "explanation"
+      ],
+      "properties": {
+        "example_id": { "$ref": "#/$defs/identifier" },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "operative": { "const": false },
+        "input": {},
+        "accepted_names": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "rejected_names": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "demonstrates": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/object_ref" }
+        },
+        "explanation": { "type": ["string", "null"] }
+      }
+    },
+    "correction_application": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "application_id",
+        "overlay_id",
+        "operation_id",
+        "status",
+        "before_clause_ids",
+        "after_clause_ids",
+        "target_refs",
+        "effective_date",
+        "result_sha256"
+      ],
+      "properties": {
+        "application_id": { "$ref": "#/$defs/identifier" },
+        "overlay_id": { "type": "string", "pattern": "^BBV3-CORR-[A-F0-9]{16}$" },
+        "operation_id": { "type": "string", "minLength": 1 },
+        "status": {
+          "type": "string",
+          "enum": ["applied", "superseded", "inapplicable"]
+        },
+        "before_clause_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/clause_id" }
+        },
+        "after_clause_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/clause_id" }
+        },
+        "target_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/object_ref" }
+        },
+        "effective_date": { "type": ["string", "null"], "format": "date" },
+        "result_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference_id",
+        "clause_ids",
+        "relation",
+        "source",
+        "target",
+        "resolution",
+        "ordered_member_refs"
+      ],
+      "properties": {
+        "reference_id": { "$ref": "#/$defs/identifier" },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "relation": {
+          "type": "string",
+          "enum": [
+            "hierarchy_parent",
+            "cites",
+            "invokes",
+            "exception_to",
+            "overrides",
+            "supersedes",
+            "corrects",
+            "demonstrates",
+            "defines",
+            "uses_table",
+            "uses_figure",
+            "continues",
+            "constrains"
+          ]
+        },
+        "source": { "$ref": "#/$defs/object_ref" },
+        "target": { "$ref": "#/$defs/object_ref" },
+        "resolution": {
+          "type": "string",
+          "enum": ["exact", "range", "deictic", "external"]
+        },
+        "ordered_member_refs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/object_ref" }
+        }
+      }
+    },
+    "dependency_edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "edge_id",
+        "from",
+        "relation",
+        "to",
+        "clause_ids",
+        "derived_from_object_ids"
+      ],
+      "properties": {
+        "edge_id": { "$ref": "#/$defs/identifier" },
+        "from": { "$ref": "#/$defs/object_ref" },
+        "relation": {
+          "type": "string",
+          "enum": [
+            "hierarchy_parent",
+            "cites",
+            "invokes",
+            "exception_to",
+            "overrides",
+            "supersedes",
+            "corrects",
+            "demonstrates",
+            "defines",
+            "uses_table",
+            "uses_figure",
+            "continues",
+            "constrains",
+            "tie_fallback"
+          ]
+        },
+        "to": { "$ref": "#/$defs/object_ref" },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "derived_from_object_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "source_rule_id",
+        "chapter",
+        "clause_ids",
+        "operative",
+        "semantic_unit_ids",
+        "exception_ids",
+        "table_ids",
+        "figure_ids",
+        "example_ids",
+        "correction_application_ids",
+        "reference_ids"
+      ],
+      "properties": {
+        "record_id": { "type": "string", "pattern": "^bluebook-v3:P-" },
+        "source_rule_id": { "$ref": "#/$defs/rule_id" },
+        "chapter": { "type": "string", "pattern": "^P-(?:[1-9]|10)$" },
+        "clause_ids": { "$ref": "#/$defs/clause_ids" },
+        "operative": { "type": "boolean" },
+        "semantic_unit_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "exception_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "table_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "figure_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "example_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "correction_application_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "reference_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_count",
+        "clause_disposition_count",
+        "compiled_clause_count",
+        "nonoperative_clause_count",
+        "superseded_clause_count",
+        "semantic_unit_count",
+        "exception_count",
+        "table_count",
+        "figure_count",
+        "example_count",
+        "correction_application_count",
+        "reference_count",
+        "dependency_edge_count"
+      ],
+      "properties": {
+        "record_count": { "type": "integer", "minimum": 1 },
+        "clause_disposition_count": { "type": "integer", "minimum": 1 },
+        "compiled_clause_count": { "type": "integer", "minimum": 0 },
+        "nonoperative_clause_count": { "type": "integer", "minimum": 0 },
+        "superseded_clause_count": { "type": "integer", "minimum": 0 },
+        "semantic_unit_count": { "type": "integer", "minimum": 0 },
+        "exception_count": { "type": "integer", "minimum": 0 },
+        "table_count": { "type": "integer", "minimum": 0 },
+        "figure_count": { "type": "integer", "minimum": 0 },
+        "example_count": { "type": "integer", "minimum": 0 },
+        "correction_application_count": { "type": "integer", "minimum": 0 },
+        "reference_count": { "type": "integer", "minimum": 0 },
+        "dependency_edge_count": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

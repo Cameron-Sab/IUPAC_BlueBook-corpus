@@ -1,0 +1,53 @@
+{
+  "corpus_sha256": "B6A73595B898C10D1D3AC898DAC2521FFA62268FC54979B590ECC437FA65CEBF",
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "counters": {
+    "raw_unresolved_occurrence_count": 3,
+    "remaining_unresolved_occurrence_count": 0,
+    "resolution_kind_counts": {
+      "historical_deleted_rule": 1,
+      "source_alias": 2
+    },
+    "resolution_record_count": 3
+  },
+  "format": "iupac-bluebook-reference-resolutions",
+  "format_version": "1.0.0",
+  "policy": "exact_occurrence_only_no_generic_parent_fallback",
+  "records": [
+    {
+      "correction_overlay_id": null,
+      "nominal_rule_id": "P-66.1.2.1",
+      "occurrence_id": "P-16.2.4.1:xref:0005",
+      "rationale_code": "nonexistent_subrule_resolved_to_exact_active_parent",
+      "record_sha256": "7C74ADB4C7D4596D2B5A23D270E999839718A6293DFC5A5A11738C9DB28FFD4F",
+      "reference_occurrence_sha256": "697D04EE12E279BD8772B53349BEA87F39B9988F9A443595FFF52B1D5F15FE2F",
+      "resolution_id": "BBV3-XREF-RES-0001",
+      "resolution_kind": "source_alias",
+      "resolved_rule_id": "P-66.1.2"
+    },
+    {
+      "correction_overlay_id": "BBV3-CORR-707A0F8B4E94258D",
+      "nominal_rule_id": "P-65.7.8",
+      "occurrence_id": "P-65.7:xref:0009",
+      "rationale_code": "deleted_by_official_correction",
+      "record_sha256": "5CF220AD48F3D426A7643C2E67C1B50ED989920D3542DBAB1957189AFF90A1D5",
+      "reference_occurrence_sha256": "E5B61C648B4B9860523696780B3DFFA43C546BD19B27E478743F0D9C4CA4826E",
+      "resolution_id": "BBV3-XREF-RES-0002",
+      "resolution_kind": "historical_deleted_rule",
+      "resolved_rule_id": "P-65.7.8"
+    },
+    {
+      "correction_overlay_id": null,
+      "nominal_rule_id": "P-66.1.2.1",
+      "occurrence_id": "P-66.2.1:xref:0001",
+      "rationale_code": "nonexistent_subrule_resolved_to_exact_active_parent",
+      "record_sha256": "B25CFD1D98C112995A98A71C306648982E82F600FDD89C018A496BD5EBA0084C",
+      "reference_occurrence_sha256": "FAD9281905554411E952B683D3B9491A088F54B36A832BF42FCBEAFD719BFCAA",
+      "resolution_id": "BBV3-XREF-RES-0003",
+      "resolution_kind": "source_alias",
+      "resolved_rule_id": "P-66.1.2"
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103"
+}

@@ -1,6 +1,7 @@
 {
   "schema_version": "1.0",
   "access_date": "2026-07-15",
+  "effective_through": "2026-01-22",
   "canonical_source": {
     "title": "Nomenclature of Organic Chemistry: IUPAC Recommendations and Preferred Names 2013, Blue Book Version 3",
     "url": "https://iupac.qmul.ac.uk/BlueBook/PDF/BlueBookV3.pdf",
@@ -43,12 +44,15 @@
     "commit_canonical_pdf": false,
     "preferred_source_storage": "metadata_and_section_links",
     "generated_artifacts": [
-      "data/bluebook_rules.json",
-      "data/bluebook_semantic_rules.json",
-      "data/bluebook_semantic_rules.normalized.json",
-      "data/bluebook_rule_dependency_graph.json",
-      "data/normalized_semantic_rule_schema.json",
-      "data/semantic_rules/*.json"
+      "data/bluebook_v3/bluebook_v3_source_corpus.json",
+      "data/bluebook_v3/bluebook_v3_source_pages.json",
+      "data/bluebook_v3/bluebook_v3_document_nodes/",
+      "data/bluebook_v3/bluebook_v3_correction_overlays.json",
+      "data/bluebook_v3/bluebook_v3_clause_inventory.json",
+      "data/bluebook_v3/bluebook_v3_reference_occurrences.json",
+      "data/bluebook_v3/bluebook_v3_reference_resolutions.json",
+      "data/bluebook_v3/bluebook_v3_reference_dependency_graph.json",
+      "data/bluebook_v3/bluebook_v3_validation_report.json"
     ]
   }
 }

@@ -1,0 +1,429 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/bluebook_correction_overlay.schema.json",
+  "title": "IUPAC Blue Book correction overlays",
+  "description": "Lossless, typed correction overlays extracted from the official Web Blue Book errata page.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "conversion_stage",
+    "source_document",
+    "record_count",
+    "counters",
+    "records"
+  ],
+  "properties": {
+    "format": { "const": "iupac-blue-book-correction-overlays" },
+    "format_version": { "const": "1.0.0" },
+    "conversion_stage": { "const": "lossless_correction_overlay" },
+    "source_document": { "$ref": "#/$defs/source_document" },
+    "record_count": { "type": "integer", "minimum": 1 },
+    "counters": { "$ref": "#/$defs/counters" },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/record" }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{64}$"
+    },
+    "rule_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*$"
+    },
+    "source_document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "source_path",
+        "source_url",
+        "source_sha256",
+        "source_byte_count",
+        "encoding",
+        "segmentation",
+        "dom_model",
+        "toolchain"
+      ],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "source_path": { "type": "string", "minLength": 1 },
+        "source_url": { "type": "string", "format": "uri" },
+        "source_sha256": { "$ref": "#/$defs/sha256" },
+        "source_byte_count": { "type": "integer", "minimum": 1 },
+        "encoding": { "const": "UTF-8" },
+        "segmentation": { "const": "dated-event-header source ranges" },
+        "dom_model": { "const": "canonical correction-overlay DOM over exact source ranges" },
+        "toolchain": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["python", "lxml"],
+          "properties": {
+            "python": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+            "lxml": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" }
+          }
+        }
+      }
+    },
+    "counters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "event_type", "operation_kind", "selector_kind"],
+      "properties": {
+        "status": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["applied", "deleted", "replaced"],
+          "properties": {
+            "applied": { "type": "integer", "minimum": 0 },
+            "deleted": { "type": "integer", "minimum": 0 },
+            "replaced": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "event_type": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["added", "changed", "corrected", "modified"],
+          "properties": {
+            "added": { "type": "integer", "minimum": 0 },
+            "changed": { "type": "integer", "minimum": 0 },
+            "corrected": { "type": "integer", "minimum": 0 },
+            "modified": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "operation_kind": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["addition", "deletion", "instruction", "replacement"],
+          "properties": {
+            "addition": { "type": "integer", "minimum": 0 },
+            "deletion": { "type": "integer", "minimum": 0 },
+            "instruction": { "type": "integer", "minimum": 0 },
+            "replacement": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "selector_kind": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["appendix", "contents", "figure", "location", "page", "rule", "table"],
+          "properties": {
+            "appendix": { "type": "integer", "minimum": 0 },
+            "contents": { "type": "integer", "minimum": 0 },
+            "figure": { "type": "integer", "minimum": 0 },
+            "location": { "type": "integer", "minimum": 0 },
+            "page": { "type": "integer", "minimum": 0 },
+            "rule": { "type": "integer", "minimum": 0 },
+            "table": { "type": "integer", "minimum": 0 }
+          }
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["event_type", "effective_date", "source_text"],
+      "properties": {
+        "event_type": {
+          "type": "string",
+          "enum": ["added", "changed", "corrected", "modified"]
+        },
+        "effective_date": { "type": "string", "format": "date" },
+        "source_text": { "type": "string", "minLength": 1 }
+      }
+    },
+    "selector": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "value"],
+          "properties": {
+            "kind": { "const": "contents" },
+            "value": { "const": "Contents" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "rule_id", "relation"],
+          "properties": {
+            "kind": { "const": "rule" },
+            "rule_id": { "$ref": "#/$defs/rule_id" },
+            "relation": { "type": "string", "enum": ["renamed_from", "target"] }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "page"],
+          "properties": {
+            "kind": { "const": "page" },
+            "page": { "type": "integer", "minimum": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "label"],
+          "properties": {
+            "kind": { "const": "table" },
+            "label": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "label"],
+          "properties": {
+            "kind": { "const": "figure" },
+            "label": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "number"],
+          "properties": {
+            "kind": { "const": "appendix" },
+            "number": { "type": "integer", "minimum": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "text"],
+          "properties": {
+            "kind": { "const": "location" },
+            "text": { "type": "string", "minLength": 1 }
+          }
+        }
+      ]
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["selector_text", "selectors"],
+      "properties": {
+        "selector_text": { "type": "string", "minLength": 1 },
+        "selectors": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/selector" }
+        }
+      }
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "source_path", "source_url"],
+      "properties": {
+        "kind": { "const": "image" },
+        "source_path": { "type": "string", "minLength": 1 },
+        "source_url": { "type": "string", "format": "uri" },
+        "alt_text": { "type": "string", "minLength": 1 },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "operation_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_line_start",
+        "source_line_end",
+        "source_byte_start",
+        "source_byte_end",
+        "fragment_sha256",
+        "source_dom_path"
+      ],
+      "properties": {
+        "source_line_start": { "type": "integer", "minimum": 1 },
+        "source_line_end": { "type": "integer", "minimum": 1 },
+        "source_byte_start": { "type": "integer", "minimum": 0 },
+        "source_byte_end": { "type": "integer", "minimum": 1 },
+        "fragment_sha256": { "$ref": "#/$defs/sha256" },
+        "source_dom_path": {
+          "type": "string",
+          "pattern": "^/html/body/correction-overlay\\[@id='BBV3-CORR-[A-F0-9]{16}'\\]/operation\\[[1-9][0-9]*\\]$"
+        }
+      }
+    },
+    "record_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_path",
+        "source_url",
+        "source_line_start",
+        "source_line_end",
+        "source_byte_start",
+        "source_byte_end",
+        "fragment_sha256",
+        "source_dom_path"
+      ],
+      "properties": {
+        "source_path": { "type": "string", "minLength": 1 },
+        "source_url": { "type": "string", "format": "uri" },
+        "source_line_start": { "type": "integer", "minimum": 1 },
+        "source_line_end": { "type": "integer", "minimum": 1 },
+        "source_byte_start": { "type": "integer", "minimum": 0 },
+        "source_byte_end": { "type": "integer", "minimum": 1 },
+        "fragment_sha256": { "$ref": "#/$defs/sha256" },
+        "source_dom_path": {
+          "type": "string",
+          "pattern": "^/html/body/correction-overlay\\[@id='BBV3-CORR-[A-F0-9]{16}'\\]$"
+        }
+      }
+    },
+    "operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "kind",
+        "source_text",
+        "source_html",
+        "assets",
+        "provenance"
+      ],
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "pattern": "^BBV3-CORR-[A-F0-9]{16}:OP-[0-9]{3}$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["addition", "deletion", "instruction", "replacement"]
+        },
+        "before_text": { "type": "string", "minLength": 1 },
+        "after_text": { "type": "string", "minLength": 1 },
+        "instruction_text": { "type": "string", "minLength": 1 },
+        "source_text": { "type": "string", "minLength": 1 },
+        "source_html": { "type": "string", "minLength": 1 },
+        "assets": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/asset" }
+        },
+        "provenance": { "$ref": "#/$defs/operation_provenance" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "addition" } }, "required": ["kind"] },
+          "then": {
+            "required": ["after_text"],
+            "not": { "anyOf": [{ "required": ["before_text"] }, { "required": ["instruction_text"] }] }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "deletion" } }, "required": ["kind"] },
+          "then": {
+            "required": ["before_text"],
+            "not": { "anyOf": [{ "required": ["after_text"] }, { "required": ["instruction_text"] }] }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "instruction" } }, "required": ["kind"] },
+          "then": {
+            "required": ["instruction_text"],
+            "not": { "anyOf": [{ "required": ["before_text"] }, { "required": ["after_text"] }] }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "replacement" } }, "required": ["kind"] },
+          "then": {
+            "anyOf": [{ "required": ["before_text"] }, { "required": ["after_text"] }],
+            "not": { "required": ["instruction_text"] }
+          }
+        }
+      ]
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference_id",
+        "target_type",
+        "target",
+        "relation",
+        "source_text",
+        "source_dom_path"
+      ],
+      "properties": {
+        "reference_id": {
+          "type": "string",
+          "pattern": "^BBV3-CORR-[A-F0-9]{16}:REF-[0-9]{3}$"
+        },
+        "target_type": { "type": "string", "enum": ["external_rule", "rule"] },
+        "target": { "type": "string", "minLength": 1 },
+        "relation": {
+          "type": "string",
+          "enum": [
+            "conflicts_with",
+            "invokes",
+            "mentions",
+            "renamed_from",
+            "see_also",
+            "supersedes",
+            "target"
+          ]
+        },
+        "source_text": { "type": "string", "minLength": 1 },
+        "source_dom_path": { "type": "string", "minLength": 1 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "target_type": { "const": "rule" } }, "required": ["target_type"] },
+          "then": { "properties": { "target": { "$ref": "#/$defs/rule_id" } } }
+        },
+        {
+          "if": { "properties": { "target_type": { "const": "external_rule" } }, "required": ["target_type"] },
+          "then": { "properties": { "target": { "pattern": "^PhII-[0-9]+(?:\\.[0-9]+)*$" } } }
+        }
+      ]
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "overlay_id",
+        "effective_date",
+        "events",
+        "status",
+        "target",
+        "operations",
+        "references",
+        "source_text",
+        "source_html",
+        "provenance"
+      ],
+      "properties": {
+        "overlay_id": { "type": "string", "pattern": "^BBV3-CORR-[A-F0-9]{16}$" },
+        "effective_date": { "type": "string", "format": "date" },
+        "events": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/event" }
+        },
+        "status": { "type": "string", "enum": ["applied", "deleted", "replaced"] },
+        "target": { "$ref": "#/$defs/target" },
+        "operations": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/operation" }
+        },
+        "references": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/reference" }
+        },
+        "source_text": { "type": "string", "minLength": 1 },
+        "source_html": { "type": "string", "minLength": 1 },
+        "provenance": { "$ref": "#/$defs/record_provenance" }
+      }
+    }
+  }
+}

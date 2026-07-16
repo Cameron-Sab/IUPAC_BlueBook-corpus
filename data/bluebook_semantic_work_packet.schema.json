@@ -1,0 +1,552 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/bluebook_semantic_work_packet.schema.json",
+  "title": "IUPAC Blue Book semantic conversion work packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "packet_id",
+    "source_corpus_sha256",
+    "document_nodes_sha256",
+    "correction_overlays_sha256",
+    "clause_inventory_sha256",
+    "reference_occurrences_sha256",
+    "reference_resolutions_sha256",
+    "output_path",
+    "assigned_rule_ids",
+    "assigned",
+    "context_records",
+    "correction_overlays",
+    "relation_edges",
+    "packet_sha256"
+  ],
+  "properties": {
+    "format": { "const": "iupac-bluebook-semantic-work-packet" },
+    "format_version": { "const": "1.0.0" },
+    "packet_id": { "type": "string", "pattern": "^P-[0-9]+-part-[0-9]{3}$" },
+    "source_corpus_sha256": { "$ref": "#/$defs/sha256" },
+    "document_nodes_sha256": { "$ref": "#/$defs/sha256" },
+    "correction_overlays_sha256": { "$ref": "#/$defs/sha256" },
+    "clause_inventory_sha256": { "$ref": "#/$defs/sha256" },
+    "reference_occurrences_sha256": { "$ref": "#/$defs/sha256" },
+    "reference_resolutions_sha256": { "$ref": "#/$defs/sha256" },
+    "output_path": {
+      "type": "string",
+      "pattern": "^data/bluebook_v3/semantic_chunks/P-[0-9]+-part-[0-9]{3}\\.json$"
+    },
+    "assigned_rule_ids": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 24,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/rule_id" }
+    },
+    "assigned": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 24,
+      "items": { "$ref": "#/$defs/assignment" }
+    },
+    "context_records": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/context_record" }
+    },
+    "correction_overlays": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "relation_edges": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/relation_edge" }
+    },
+    "packet_sha256": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "rule_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+    },
+    "target_id": {
+      "type": "string",
+      "pattern": "^(?:P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?|chapter:P-(?:10|[1-9]))$"
+    },
+    "reference_occurrence_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?:xref:[0-9]{4,}$"
+    },
+    "reference_occurrence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "occurrence_id",
+        "source_document_id",
+        "source_rule_id",
+        "reference_kind",
+        "reference_text",
+        "cited_rule_id",
+        "href",
+        "target",
+        "context",
+        "source"
+      ],
+      "properties": {
+        "occurrence_id": { "$ref": "#/$defs/reference_occurrence_id" },
+        "source_document_id": {
+          "type": "string",
+          "pattern": "^P-[0-9]+[a-z]?$"
+        },
+        "source_rule_id": { "$ref": "#/$defs/rule_id" },
+        "reference_kind": { "type": "string", "enum": ["href", "text"] },
+        "reference_text": { "type": "string", "minLength": 1 },
+        "cited_rule_id": {
+          "oneOf": [
+            { "$ref": "#/$defs/rule_id" },
+            { "type": "null" }
+          ]
+        },
+        "href": { "type": ["object", "null"] },
+        "target": {
+          "type": "object",
+          "required": [
+            "rule_id",
+            "resolution",
+            "resolution_basis",
+            "document",
+            "active_fragment"
+          ],
+          "properties": {
+            "rule_id": { "$ref": "#/$defs/rule_id" },
+            "resolution": {
+              "type": "string",
+              "enum": ["active_rule", "document", "unresolved"]
+            }
+          }
+        },
+        "context": { "type": "object" },
+        "source": { "type": "object" }
+      }
+    },
+    "reference_resolution_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "resolution_id",
+        "occurrence_id",
+        "nominal_rule_id",
+        "resolution_kind",
+        "resolved_rule_id",
+        "rationale_code",
+        "correction_overlay_id",
+        "reference_occurrence_sha256",
+        "record_sha256"
+      ],
+      "properties": {
+        "resolution_id": {
+          "type": "string",
+          "pattern": "^BBV3-XREF-RES-[0-9]{4}$"
+        },
+        "occurrence_id": { "$ref": "#/$defs/reference_occurrence_id" },
+        "nominal_rule_id": { "$ref": "#/$defs/rule_id" },
+        "resolution_kind": {
+          "type": "string",
+          "enum": ["source_alias", "historical_deleted_rule"]
+        },
+        "resolved_rule_id": { "$ref": "#/$defs/rule_id" },
+        "rationale_code": {
+          "type": "string",
+          "enum": [
+            "nonexistent_subrule_resolved_to_exact_active_parent",
+            "deleted_by_official_correction"
+          ]
+        },
+        "correction_overlay_id": {
+          "type": ["string", "null"],
+          "pattern": "^BBV3-CORR-[A-F0-9]{16}$"
+        },
+        "reference_occurrence_sha256": { "$ref": "#/$defs/sha256" },
+        "record_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "assignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_rule_id",
+        "source_record",
+        "document_fragment",
+        "clause_inventory_record",
+        "immediate_parent",
+        "ancestor_chain",
+        "preceding_rule_ids",
+        "following_rule_ids",
+        "outgoing_source_references",
+        "incoming_source_references",
+        "reference_occurrences",
+        "reference_resolutions",
+        "incoming_reference_occurrence_ids",
+        "correction_overlay_ids"
+      ],
+      "properties": {
+        "source_rule_id": { "$ref": "#/$defs/rule_id" },
+        "source_record": { "type": "object" },
+        "document_fragment": { "type": "object" },
+        "clause_inventory_record": { "$ref": "#/$defs/clause_inventory_record" },
+        "immediate_parent": { "$ref": "#/$defs/target_id" },
+        "ancestor_chain": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/target_id" }
+        },
+        "preceding_rule_ids": {
+          "type": "array",
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/rule_id" }
+        },
+        "following_rule_ids": {
+          "type": "array",
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/rule_id" }
+        },
+        "outgoing_source_references": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/rule_id" }
+        },
+        "incoming_source_references": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/rule_id" }
+        },
+        "reference_occurrences": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/reference_occurrence" }
+        },
+        "reference_resolutions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/reference_resolution_record" }
+        },
+        "incoming_reference_occurrence_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/reference_occurrence_id" }
+        },
+        "correction_overlay_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^BBV3-CORR-[A-F0-9]{16}$" }
+        }
+      }
+    },
+    "unit_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?:clause:[0-9]{4,}$"
+    },
+    "node_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?:node:[0-9]{4,}$"
+    },
+    "clause_source_unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unit_id",
+        "ordinal",
+        "source_node_id",
+        "node_kind",
+        "unit_kind",
+        "ownership",
+        "source_occurrence_id",
+        "component_path",
+        "field_source_path",
+        "field_source_ids",
+        "provenance_path",
+        "provenance_manifest_sha256",
+        "semantic_cue",
+        "text_start",
+        "text_end",
+        "text",
+        "text_sha256",
+        "component_text_sha256",
+        "payload",
+        "payload_sha256"
+      ],
+      "properties": {
+        "unit_id": { "$ref": "#/$defs/unit_id" },
+        "ordinal": { "type": "integer", "minimum": 1 },
+        "source_node_id": { "$ref": "#/$defs/node_id" },
+        "node_kind": {
+          "type": "string",
+          "enum": [
+            "heading",
+            "paragraph",
+            "prose",
+            "list_item",
+            "table",
+            "figure",
+            "example_block",
+            "note",
+            "caption",
+            "source_event",
+            "footnote",
+            "orphan_cell"
+          ]
+        },
+        "unit_kind": {
+          "type": "string",
+          "enum": [
+            "heading_text",
+            "prose_text",
+            "list_item_text",
+            "example_label",
+            "note_text",
+            "table_caption",
+            "table_cell_text",
+            "table_footnote_marker",
+            "table_footnote_text",
+            "figure_caption",
+            "caption_text",
+            "footnote_marker",
+            "footnote_text",
+            "image_asset",
+            "correction_event",
+            "empty_table_cell",
+            "empty_table"
+          ]
+        },
+        "ownership": { "const": "primary" },
+        "source_occurrence_id": { "type": ["string", "null"] },
+        "component_path": { "type": "string", "pattern": "^/nodes(?:/|$)" },
+        "field_source_path": {
+          "type": ["string", "null"],
+          "pattern": "^/nodes(?:/|$)"
+        },
+        "field_source_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^field:[A-F0-9]{24}$"
+          }
+        },
+        "provenance_path": { "type": "string", "pattern": "^/nodes(?:/|$)" },
+        "provenance_manifest_sha256": { "$ref": "#/$defs/sha256" },
+        "semantic_cue": {
+          "type": ["string", "null"],
+          "enum": [
+            "explicit_order",
+            "criteria",
+            "procedure",
+            "alternatives",
+            "enumeration",
+            "unspecified",
+            null
+          ]
+        },
+        "text_start": { "type": ["integer", "null"], "minimum": 0 },
+        "text_end": { "type": ["integer", "null"], "minimum": 1 },
+        "text": { "type": ["string", "null"], "minLength": 1 },
+        "text_sha256": {
+          "oneOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "component_text_sha256": {
+          "oneOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "payload": { "type": ["object", "null"] },
+        "payload_sha256": {
+          "oneOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "clause_node_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "node_kind", "component_path", "unit_ids"],
+      "properties": {
+        "node_id": { "$ref": "#/$defs/node_id" },
+        "node_kind": { "type": "string", "minLength": 1 },
+        "component_path": { "type": "string", "pattern": "^/nodes(?:/|$)" },
+        "unit_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/unit_id" }
+        }
+      }
+    },
+    "clause_field_source_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field_source_id",
+        "component_path",
+        "field_name",
+        "ownership",
+        "owner_ref",
+        "unit_ids"
+      ],
+      "properties": {
+        "field_source_id": {
+          "type": "string",
+          "pattern": "^field:[A-F0-9]{24}$"
+        },
+        "component_path": { "type": "string", "pattern": "^/nodes(?:/|$)" },
+        "field_name": { "type": "string", "minLength": 1 },
+        "ownership": {
+          "type": "string",
+          "enum": ["primary", "alias", "aggregate", "synthetic"]
+        },
+        "owner_ref": { "type": ["string", "null"] },
+        "unit_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/unit_id" }
+        }
+      }
+    },
+    "clause_inventory_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "source_rule_id",
+        "chapter",
+        "document_id",
+        "fragment_ordinal",
+        "source_reference_rule_ids",
+        "correction_overlay_ids",
+        "source_units",
+        "node_coverage",
+        "field_source_coverage",
+        "record_sha256"
+      ],
+      "properties": {
+        "record_id": { "type": "string", "pattern": "^bluebook-v3:P-" },
+        "source_rule_id": { "$ref": "#/$defs/rule_id" },
+        "chapter": { "type": "string", "pattern": "^P-(?:[1-9]|10)$" },
+        "document_id": { "type": "string", "pattern": "^P-(?:[1-9]|10)(?:[ab])?$" },
+        "fragment_ordinal": { "type": "integer", "minimum": 1 },
+        "source_reference_rule_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/rule_id" }
+        },
+        "correction_overlay_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^BBV3-CORR-[A-F0-9]{16}$" }
+        },
+        "source_units": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/clause_source_unit" }
+        },
+        "node_coverage": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/clause_node_coverage" }
+        },
+        "field_source_coverage": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/clause_field_source_coverage" }
+        },
+        "record_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "context_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "source_rule_id",
+        "chapter",
+        "source_kind",
+        "title",
+        "pdf_pages",
+        "html_url",
+        "html_anchor",
+        "alignment_kind",
+        "reference_occurrences",
+        "reference_resolutions"
+      ],
+      "properties": {
+        "record_id": { "type": "string", "pattern": "^bluebook-v3:P-" },
+        "source_rule_id": { "$ref": "#/$defs/rule_id" },
+        "chapter": { "type": "string", "pattern": "^P-(?:10|[1-9])$" },
+        "source_kind": { "type": "string", "minLength": 1 },
+        "title": { "type": "string" },
+        "pdf_pages": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 48, "maximum": 1066 }
+        },
+        "html_url": { "type": "string", "format": "uri" },
+        "html_anchor": { "type": "string", "minLength": 1 },
+        "alignment_kind": { "type": "string", "minLength": 1 },
+        "reference_occurrences": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/reference_occurrence" }
+        },
+        "reference_resolutions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/reference_resolution_record" }
+        }
+      }
+    },
+    "relation_edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "relation", "target", "target_kind"],
+      "properties": {
+        "source": { "$ref": "#/$defs/rule_id" },
+        "relation": {
+          "type": "string",
+          "enum": ["hierarchy_parent", "source_citation"]
+        },
+        "target": { "type": "string", "minLength": 1 },
+        "target_kind": {
+          "type": "string",
+          "enum": [
+            "rule",
+            "chapter",
+            "external_or_historical",
+            "historical_deleted_rule"
+          ]
+        },
+        "occurrence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/reference_occurrence_id" }
+        },
+        "multiplicity": { "type": "integer", "minimum": 1 }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "relation": { "const": "source_citation" } },
+            "required": ["relation"]
+          },
+          "then": { "required": ["occurrence_ids", "multiplicity"] }
+        }
+      ]
+    }
+  }
+}

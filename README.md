@@ -1,190 +1,98 @@
-# Deterministic SMILES-to-IUPAC Naming Engine Prototype
+# IUPAC Blue Book Machine-Readable Corpus
 
-This repo now separates the work into two layers:
+This repository converts the IUPAC Blue Book into a provenance-preserving,
+machine-readable rule system before using it in a naming engine.
 
-1. A machine-readable Blue Book rule corpus.
-2. A later naming engine that consumes that corpus.
+The current release checkpoint completes the lossless source layer. It does not
+claim that the semantic rule IR or a universal naming engine is complete.
 
-The corpus work is the important first step. The converter reads the official
-IUPAC Blue Book HTML chapters and turns the rule sections into JSON records with
-`if`, `unless`, `then`, `prefer`, `must_not`, and `definitions` buckets.
+## Source Authority
 
-Source authority:
+- Canonical PDF: https://iupac.qmul.ac.uk/BlueBook/PDF/BlueBookV3.pdf
+- Section-addressable HTML: https://iupac.qmul.ac.uk/BlueBook/
+- Post-Version-3 corrections: https://iupac.qmul.ac.uk/BlueBook/changes2.html
 
-- Canonical PDF source: https://iupac.qmul.ac.uk/BlueBook/PDF/BlueBookV3.pdf
-- Section-linked extraction source: https://iupac.qmul.ac.uk/BlueBook/
-- Section-linked post-Version-3 correction provenance:
-  https://iupac.qmul.ac.uk/BlueBook/changes2.html
+The local source snapshot was retrieved on 2026-07-15 and is effective through
+the latest encoded official correction dated 2026-01-22. The PDF is not stored
+in Git. Exact source URLs, byte lengths, and SHA-256 digests are recorded in the
+generated artifacts and `data/source_manifest.json`.
 
-The canonical source for the Blue Book Version 3 corpus is the PDF. The HTML
-chapters are used as section-addressable extraction sources, and the correction
-page is used to preserve post-Version-3 correction provenance. The canonical PDF
-is not committed to this repository; source metadata is recorded in
-`data/source_manifest.json`.
+## Validated Source Corpus
 
-## Generate The Rule Corpus
+The source release gate currently verifies:
 
-```powershell
-python scripts\bluebook_to_rules.py --out data\bluebook_rules.json
-```
+| Artifact | Coverage |
+|---|---:|
+| PDF source pages | 1,149 |
+| PDF source lines | 39,773 |
+| Active rule records | 2,554 |
+| Lossless document nodes | 14,453 |
+| Tables / rows / cells | 567 / 3,782 / 9,100 |
+| Image occurrences | 5,371 |
+| Correction records / operations | 90 / 108 |
+| Atomic clause units | 32,408 |
+| Field-source ownership records | 38,256 |
+| Cross-reference occurrences | 4,023 |
+| Explicit exceptional resolutions | 3 |
+| Resolved dependency edges | 3,587 |
+| Remaining unresolved reference targets | 0 |
 
-Current generated corpus:
+Important generated files are under `data/bluebook_v3/`:
 
-- `data/bluebook_rules.json`: 1,744 extracted rule sections.
-- `data/rule_schema.json`: JSON schema for the extracted corpus.
-- `BLUEBOOK_ALGORITHM.md`: conversion strategy.
-- `data/bluebook_semantic_rules.normalized.json`: 1,829 normalized semantic
-  rule records, including post-V3 corrections.
-- `data/bluebook_semantic_rules.json`: draft semantic corpus retained as
-  provenance.
-- `data/bluebook_rule_dependency_graph.json`: dependency graph for
-  cross-referenced rules, hierarchy, exceptions, examples, source tables, and
-  implementation requirements.
-- `data/source_manifest.json`: canonical source and extraction provenance
-  metadata.
-- `SEMANTIC_CONVERSION_REPORT.md`: current conversion report.
+- `bluebook_v3_source_corpus.json` and `bluebook_v3_source_pages.json`
+- `bluebook_v3_document_nodes/` (11 GitHub-safe shards plus manifest)
+- `bluebook_v3_correction_overlays.json`
+- `bluebook_v3_clause_inventory.json`
+- `bluebook_v3_reference_occurrences.json`
+- `bluebook_v3_reference_resolutions.json`
+- `bluebook_v3_reference_dependency_graph.json`
+- `bluebook_v3_validation_report.json`
 
-Each record preserves the original prose in `body`, extracts cross-references,
-and provides both raw `logic_clauses` and grouped `logical_form`.
+The document-node shard store reconstructs the canonical 240,001,951-byte
+monolith exactly, including its SHA-256 digest, without committing a file over
+GitHub's 100 MB limit.
 
-Example shape:
+## Semantic Conversion
 
-```json
-{
-  "rule_id": "P-61.2.1",
-  "title": "Acyclic hydrocarbons",
-  "logical_form": {
-    "if": [],
-    "unless": [],
-    "then": [],
-    "prefer": [
-      "Thus, the first criterion to be considered in choosing a preferred parent acyclic chain is the length of the chain; unsaturation is now the second criterion."
-    ],
-    "must_not": [],
-    "definitions": []
-  }
-}
-```
+`data/normalized_rule_language.schema.json` defines the final rule IR.
+`scripts/build_semantic_work_packets.py` deterministically partitions all 2,554
+records and 32,408 clauses into 151 immutable work packets. Each packet carries
+the source record, document fragment, clause inventory, correction overlays,
+reference occurrences, explicit resolutions, neighboring context, and six
+source-artifact hashes.
 
-The old prototype naming engine remains in `iupac_engine/`, but it should be
-treated as secondary scaffolding until the corpus is compiled into executable
-graph predicates.
+A semantic chunk is accepted only if:
 
-## Prototype Engine Notes
+- every assigned clause has exactly one compiled, nonoperative, or superseded
+  disposition;
+- every operative clause reaches typed semantic objects;
+- references and object identifiers resolve uniquely;
+- exception order and dependency projections are deterministic;
+- packet, schema, source, metrics, and content hashes reproduce;
+- no review marker, placeholder, unresolved state, or generic fallback action
+  occurs anywhere in the chunk.
 
-This is a scoped prototype inspired by the attached technical design specification.
-It is not a universal IUPAC implementation. It demonstrates the requested
-architecture: parse a SMILES string into a graph, detect supported structural
-features, generate/rank parent-chain numbering candidates, render a systematic
-name, and return an explanation trace.
+The final semantic corpus is intentionally absent until every packet passes.
+See `docs/NORMALIZED_RULE_LANGUAGE.md` and
+`work/SEMANTIC_IR_CONVERSION_GUIDE.md`.
 
-## Basic Rule Engine
-
-The first rule-set engine is available through `python -m iupac_engine`.
+## Reproduce And Validate
 
 ```powershell
-python -m iupac_engine stats
-python -m iupac_engine rule P-61.2.1
-python -m iupac_engine search locant --chapter P-4 --limit 5
-python -m iupac_engine deps P-61.2.1 --depth 1
-python -m iupac_engine eval --fact parent --fact locant --limit 5
-```
-
-What this engine does now:
-
-- loads `data/bluebook_semantic_rules.normalized.json` when present;
-- loads `data/bluebook_rule_dependency_graph.json`;
-- queries rules by id, chapter, type, and text;
-- walks outgoing or incoming dependency edges;
-- activates candidate rules from simple fact tokens.
-- parses SMILES into canonical, input-order-independent RDKit molecular graphs;
-- preserves ring, aromaticity, charge, isotope, radical, and stereochemical
-  metadata for deterministic nomenclature phases.
-
-Current boundaries:
-
-- graph parsing is broad, but naming support remains deliberately fail-closed;
-- many Blue Book predicates now have explicit implementation requirements;
-- final full-scale IUPAC rendering from semantic actions is not complete.
-
-## Supported Scope
-
-The current prototype supports single-component organic molecules in these
-implemented families:
-
-- carbon parent chains;
-- single, double, and triple bonds;
-- branches;
-- halogen prefixes: fluoro, chloro, bromo, iodo;
-- simple alkyl substituent prefixes;
-- attachment-aware branched alkyl and alkoxy substituent prefixes;
-- Blue Book Table 1.4 numerical terms and parent roots;
-- saturated monocyclic carbon parents with hydrocarbon, halo, alkyl, alkoxy, or
-  simple methylidene substitution;
-- ring-local `ol`, `one`, and `amine` suffixes and directly attached
-  `carboxylic acid`, `carboxamide`, `carbonitrile`, `carbaldehyde`, ester, and
-  carbonyl-halide suffix forms;
-- simple saturated cycloalkyl prefixes on senior acyclic parents;
-- carbon-bound phenyl prefixes;
-- isolated benzene parents, including retained toluene/xylene, phenol, aniline,
-  benzoic acid, benzamide, benzonitrile, benzaldehyde, benzoate, and benzoyl
-  halide forms;
-- absolute tetrahedral `R`/`S` and alkene `E`/`Z` descriptors when every
-  stereogenic feature maps directly to the final parent numbering;
-- one principal characteristic group among:
-  - carboxylic acid;
-  - ester;
-  - acid halide;
-  - primary amide;
-  - nitrile;
-  - aldehyde;
-  - ketone;
-  - alcohol;
-  - amine;
-  - hydrocarbon.
-
-Neutral bracket atoms are accepted when their chemistry is otherwise supported.
-Polycyclic, unsaturated-ring, heterocyclic, and non-benzene aromatic systems, along with
-formal charges, isotopic modification, radicals, non-tetrahedral or
-substituent-local stereochemistry, enhanced relative/mixture stereochemistry,
-disconnected structures, and unsupported elements currently return structured
-`unsupported` responses rather than guessed names. Potential stereogenic units
-left unspecified by the input are named constitutionally and reported with
-`stereochemistry_complete: false`.
-
-## Quick Start
-
-```powershell
-cd outputs\smiles_iupac_engine
-python -m iupac_engine "CC(C)O" --explain
-python -m iupac_engine "CC(=O)O" --json --explain
-```
-
-## Examples
-
-```text
-CCO        -> ethanol
-CC(C)O     -> propan-2-ol
-CCC(=O)C   -> butan-2-one
-CC(=O)O    -> ethanoic acid
-CC(C)Cl    -> 2-chloropropane
-```
-
-## Run Tests
-
-```powershell
+python scripts\fetch_official_sources.py --offline-verify
+python scripts\document_node_store.py verify
+python scripts\build_reference_dependency_graph.py `
+  --out data\bluebook_v3\bluebook_v3_reference_dependency_graph.json
+python scripts\build_semantic_work_packets.py
+python scripts\validate_pdf_rebuild.py --stage source
 python -m pytest
 ```
 
-The implementation is deliberately small, but the internal types are arranged so
-new nomenclature modules can be added without turning the engine into one long
-chain of ad hoc conditionals.
+The full source gate is intentionally expensive: it replays extraction and
+provenance instead of trusting generated counts.
 
-## Example Test Engine
+## Prototype Engine
 
-Run the bundled smoke/conformance harness:
-
-```powershell
-python scripts\example_test_engine.py
-python scripts\example_test_engine.py --markdown-out ..\iupac_prototype_test_audit.md
-```
+The earlier `iupac_engine/` and `scripts/example_test_engine.py` remain as
+separate prototype scaffolding. They are not the authority for this conversion
+and should not be used to infer semantic-corpus completeness.
