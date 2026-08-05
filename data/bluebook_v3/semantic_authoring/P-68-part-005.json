@@ -1,0 +1,3077 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-68-part-005",
+  "mechanical_assets": true,
+  "clauses": [
+    [
+      "scope",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "cross_reference",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "scope",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "scope",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "exception",
+      "normative",
+      "compile"
+    ],
+    [
+      "permission",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "exception",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "permission",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ]
+  ],
+  "symbols": [
+    {
+      "id": "compound.has_identical_chalcogen_chain_terminated_by_acyl",
+      "k": "predicate",
+      "d": "Whether one or two acyl groups terminate a chain of identical chalcogen atoms.",
+      "a": [
+        [
+          "compound",
+          "ChalcogenCompound"
+        ]
+      ],
+      "ret": "boolean"
+    },
+    {
+      "id": "chain.naming_fragments_identical_run",
+      "k": "predicate",
+      "d": "Whether a proposed name construction breaks a run of two or three identical chalcogen atoms.",
+      "a": [
+        [
+          "chain",
+          "ChalcogenChain"
+        ],
+        [
+          "name_plan",
+          "NamePlan"
+        ]
+      ],
+      "ret": "boolean"
+    },
+    {
+      "id": "compound.is_pseudoketone",
+      "k": "predicate",
+      "d": "Whether the chalcogen-chain compound is classified as a pseudoketone.",
+      "a": [
+        [
+          "compound",
+          "ChalcogenCompound"
+        ]
+      ],
+      "ret": "boolean"
+    },
+    {
+      "id": "substitution.includes_nonhydrocarbyl_group",
+      "k": "predicate",
+      "d": "Whether N or S substitution includes a group that is not hydrocarbyl.",
+      "a": [
+        [
+          "compound",
+          "Sulfimide"
+        ]
+      ],
+      "ret": "boolean"
+    }
+  ],
+  "units": [
+    {
+      "id": "acyl_terminated_identical_chalcogen_chain_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        1,
+        2
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "pred",
+          "compound.has_identical_chalcogen_chain_terminated_by_acyl",
+          [
+            "var",
+            "compound"
+          ]
+        ]
+      },
+      "in": [
+        [
+          "compound",
+          "ChalcogenCompound"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "PseudoketoneNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.classification",
+          "pseudoketone"
+        ],
+        [
+          "set",
+          "name_plan.parent",
+          "preferred carbonyl component"
+        ],
+        [
+          "set",
+          "name_plan.multiplicative_nomenclature",
+          "use when its requirements are met"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "alternating_chalcogen_parent_hydride_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        11,
+        12
+      ],
+      "term": "a[ba]n chalcogen compound",
+      "entity": "ParentHydrideClass",
+      "value": [
+        "lit",
+        {
+          "pattern": "a[ba]n",
+          "classification": "parent hydride",
+          "governing_rule": "P-21.2.3.1"
+        }
+      ]
+    },
+    {
+      "id": "heterogeneous_terminal_chalcogen_chain_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        20,
+        21,
+        23
+      ],
+      "in": [
+        [
+          "compound",
+          "HydrogenTerminatedHeterogeneousChalcogenChain"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "ChalcogenChainNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.scope",
+          [
+            "lit",
+            {
+              "pattern": "R-(chalcogen)x-H",
+              "x": ">=3",
+              "excluded_existing_classes": [
+                "alcohol",
+                "thiol",
+                "ether",
+                "sulfide",
+                "hydroperoxide",
+                "peroxide",
+                "chalcogen analogues under P-63"
+              ]
+            }
+          ]
+        ],
+        [
+          "set",
+          "name_plan.parent_hydride_basis",
+          [
+            "lit",
+            {
+              "mononuclear": [
+                "oxidane",
+                "sulfane",
+                "selane",
+                "tellane"
+              ],
+              "dinuclear": [
+                "dioxidane",
+                "disulfane",
+                "diselane",
+                "ditellane"
+              ]
+            }
+          ]
+        ],
+        [
+          "set",
+          "name_plan.suffix_basis",
+          [
+            "lit",
+            {
+              "single_chalcogen": [
+                "ol",
+                "thiol",
+                "selenol",
+                "tellurol"
+              ],
+              "two_chalcogens": [
+                "peroxol",
+                "SO-thioperoxol",
+                "chalcogen analogues"
+              ]
+            }
+          ]
+        ],
+        [
+          "set",
+          "name_plan.suffix_seniority",
+          [
+            "lit",
+            {
+              "higher": "-OH",
+              "lower": "-OOH",
+              "basis": "P-41"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "preserve_identical_chalcogen_run",
+      "k": "constraint",
+      "f": "required",
+      "c": [
+        22
+      ],
+      "in": [
+        [
+          "chain",
+          "ChalcogenChain"
+        ],
+        [
+          "name_plan",
+          "NamePlan"
+        ]
+      ],
+      "assert": [
+        "not",
+        [
+          "pred",
+          "chain.naming_fragments_identical_run",
+          [
+            "var",
+            "chain"
+          ],
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ],
+      "violation": [
+        [
+          "reject",
+          "name_plan",
+          "reason.identical_chalcogen_run_fragmented"
+        ]
+      ]
+    },
+    {
+      "id": "hydrogen_terminated_contiguous_chalcogen_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        37
+      ],
+      "in": [
+        [
+          "compound",
+          "HydrogenTerminatedContiguousChalcogenCompound"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "ParentHydrideNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.parent_basis",
+          "mono-, di-, or polynuclear chalcogen parent hydride"
+        ],
+        [
+          "set",
+          "name_plan.excluded_parent",
+          "oxidane itself"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "organic_terminated_heterogeneous_chalcogen_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        42,
+        45
+      ],
+      "in": [
+        [
+          "compound",
+          "OrganicTerminatedHeterogeneousChalcogenChain"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "SubstitutiveNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.method",
+          "substitutive nomenclature"
+        ],
+        [
+          "set",
+          "name_plan.parent",
+          "preferred organic group"
+        ],
+        [
+          "set",
+          "name_plan.conditional_methods",
+          [
+            "lit",
+            {
+              "multiplicative": "use if requirements are met",
+              "skeletal_replacement_a": "use if requirements are met"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "functional_replacement_substituting_group_method",
+      "k": "procedure",
+      "f": "permitted",
+      "c": [
+        43
+      ],
+      "in": [
+        [
+          "chain",
+          "HeterogeneousChalcogenChain"
+        ]
+      ],
+      "out": [
+        [
+          "substituting_group",
+          "SubstitutingGroup"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "substituting_group.forms",
+          [
+            "lit",
+            [
+              "individual units",
+              "functional-replacement group based on trioxy, tetraoxy, or higher substituting groups"
+            ]
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "substituting_group"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "chalcogen_class_name_derivative_policy",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        65,
+        66
+      ],
+      "in": [
+        [
+          "derivative",
+          "ChalcogenClassNameDerivative"
+        ]
+      ],
+      "out": [
+        [
+          "status",
+          "NameStatus"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "status.historical_basis",
+          "class names formerly used as parent structures"
+        ],
+        [
+          "set",
+          "status.preferred_method",
+          "substitutive nomenclature"
+        ],
+        [
+          "set",
+          "status.class_name_based_names",
+          "retained for general nomenclature only"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "status"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "nonstandard_bonding_chalcogen_parent_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        69
+      ],
+      "in": [
+        [
+          "compound",
+          "NonstandardBondingChalcogenParent"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "LambdaConventionNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.parent_hydrides",
+          [
+            "lit",
+            [
+              "lambda4-sulfane",
+              "lambda6-sulfane",
+              "lambda4-selane",
+              "corresponding tellanes"
+            ]
+          ]
+        ],
+        [
+          "set",
+          "name_plan.convention",
+          "lambda-convention"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "poly_chalcogen_oxide_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        78
+      ],
+      "term": "di- and poly(chalcogen oxide) classes",
+      "entity": "FunctionalClass",
+      "value": [
+        "lit",
+        {
+          "patterns": {
+            "R-[SO]n-R_prime": "di-, tri-, or higher sulfoxide",
+            "R-[SO2]n-R_prime": "di-, tri-, or higher sulfone"
+          },
+          "minimum_n": 2,
+          "analogues": [
+            "selenium",
+            "tellurium"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "poly_chalcogen_oxide_naming_methods",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        79,
+        80,
+        81,
+        82
+      ],
+      "in": [
+        [
+          "compound",
+          "PolyChalcogenOxide"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "PolyChalcogenOxideNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.methods",
+          [
+            "lit",
+            [
+              {
+                "method": "substitutive",
+                "operation": "add suffix -one to the appropriate lambda4 or lambda6 disulfane, diselane, or ditellane parent",
+                "status": "preferred and applicable to mixed sulfoxide-sulfones"
+              },
+              {
+                "method": "functional class",
+                "class_terms": [
+                  "disulfoxide",
+                  "disulfone",
+                  "diselenoxide",
+                  "diselenone"
+                ],
+                "status": "general nomenclature"
+              }
+            ]
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "sulfimide_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        93
+      ],
+      "term": "sulfimide",
+      "entity": "FunctionalClass",
+      "value": [
+        "lit",
+        {
+          "general_structure": "H2S=NH",
+          "IUPAC_class_name": "sulfimide",
+          "CAS_class_name": "sulfilimine",
+          "analogues": [
+            "selenium",
+            "tellurium"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sulfimide_naming_methods",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        94,
+        95,
+        96,
+        97
+      ],
+      "in": [
+        [
+          "compound",
+          "Sulfimide"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "SulfimideNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.methods",
+          [
+            "lit",
+            [
+              {
+                "method": "parent-hydride substitutive",
+                "operation": "add suffix -imine to a parent such as lambda4-sulfane",
+                "status": "preferred"
+              },
+              {
+                "method": "functional-parent substitutive",
+                "parent": "sulfimide",
+                "status": "general nomenclature"
+              }
+            ]
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "nonhydrocarbyl_sulfimide_senior_parent_selection",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        101
+      ],
+      "in": [
+        [
+          "compound",
+          "Sulfimide"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "SeniorParentNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.trigger",
+          "N and/or S substitution by nonhydrocarbyl groups"
+        ],
+        [
+          "set",
+          "name_plan.parent",
+          "senior parent structure created by those groups"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "sulfinylamine_and_sulfonylamine_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        106
+      ],
+      "term": "sulfinylamine and sulfonylamine",
+      "entity": "FunctionalClassMapping",
+      "value": [
+        "lit",
+        {
+          "R-N=S=O": "sulfinylamine",
+          "R-N=S(=O)2": "sulfonylamine",
+          "analogues": [
+            "selenium",
+            "tellurium"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sulfinylamine_and_sulfonylamine_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        107
+      ],
+      "in": [
+        [
+          "compound",
+          "SulfinylamineOrSulfonylamine"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "SubstitutiveNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.method",
+          "substitutive nomenclature"
+        ],
+        [
+          "set",
+          "name_plan.parent_hydride",
+          "lambda4-sulfane or lambda6-sulfane as appropriate"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "sulfonediimine_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        113
+      ],
+      "term": "sulfonediimine",
+      "entity": "FunctionalClass",
+      "value": [
+        "lit",
+        {
+          "general_structure": "RE(=NH)2R_prime",
+          "E": [
+            "S",
+            "Se",
+            "Te"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sulfonediimine_naming_policy",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        114,
+        115
+      ],
+      "in": [
+        [
+          "compound",
+          "Sulfonediimine"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "SulfonediimineNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.preferred_basis",
+          "substitutive nomenclature based on lambda6-sulfane"
+        ],
+        [
+          "reject",
+          "name_plan.class_name_basis",
+          "reason.sulfonediimine_class_name_not_recommended"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "sulfoximide_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        119
+      ],
+      "term": "sulfoximide",
+      "entity": "FunctionalClass",
+      "value": [
+        "lit",
+        {
+          "general_structure": "R2E(=O)=NR_prime",
+          "E": [
+            "S",
+            "Se",
+            "Te"
+          ],
+          "IUPAC_class_name": "sulfoximide",
+          "CAS_class_name": "sulfoximine"
+        }
+      ]
+    },
+    {
+      "id": "sulfoximide_naming_policy",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        120,
+        121
+      ],
+      "in": [
+        [
+          "compound",
+          "Sulfoximide"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "SulfoximideNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.preferred_basis",
+          "substitutive nomenclature based on lambda6-sulfane"
+        ],
+        [
+          "set",
+          "name_plan.permitted_general_basis",
+          "functional parent name sulfoximide"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "sulfur_diimide_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        125
+      ],
+      "term": "sulfur diimide",
+      "entity": "FunctionalClass",
+      "value": [
+        "lit",
+        {
+          "general_structure": "HN=E=NH",
+          "E": [
+            "S",
+            "Se",
+            "Te"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sulfur_diimide_naming_policy",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        126,
+        127
+      ],
+      "in": [
+        [
+          "compound",
+          "SulfurDiimide"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "SulfurDiimideNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.preferred_basis",
+          "substitutive nomenclature based on lambda4-sulfane"
+        ],
+        [
+          "set",
+          "name_plan.functional_class_basis",
+          "sulfur diimide"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "sulfur_triimide_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        131
+      ],
+      "term": "sulfur triimide",
+      "entity": "FunctionalClass",
+      "value": [
+        "lit",
+        {
+          "general_structure": "E(=NH)3",
+          "E": [
+            "S",
+            "Se",
+            "Te"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sulfur_triimide_naming_policy",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        132,
+        133
+      ],
+      "in": [
+        [
+          "compound",
+          "SulfurTriimide"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "SulfurTriimideNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.preferred_basis",
+          "substitutive nomenclature based on lambda6-sulfane"
+        ],
+        [
+          "set",
+          "name_plan.functional_class_basis",
+          "sulfur triimide"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "halogen_expression_by_nomenclature_method",
+      "k": "mapping",
+      "f": "required",
+      "c": [
+        140
+      ],
+      "table": "halogen_nomenclature_method_map"
+    },
+    {
+      "id": "nonstandard_bonding_halogen_parent_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        150
+      ],
+      "in": [
+        [
+          "parent",
+          "CyclicOrAcyclicHalogenParentHydride"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "LambdaConventionNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.nonstandard_bonding_notation",
+          "lambda-convention"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "halogen_acid_name_mapping",
+      "k": "mapping",
+      "f": "definition",
+      "c": [
+        165
+      ],
+      "table": "halogen_acid_names"
+    },
+    {
+      "id": "halogen_acid_derivative_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        166
+      ],
+      "in": [
+        [
+          "derivative",
+          "HalogenAcidDerivative"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "HalogenAcidDerivativeNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.classes",
+          [
+            "lit",
+            {
+              "ester_example": {
+                "structure": "CH3-O-ClO",
+                "name": "methyl chlorite",
+                "basis": "P-67.1.3.2"
+              },
+              "anhydride_example": {
+                "structure": "C6H5-CO-O-Cl",
+                "name": "benzoic hypochlorous anhydride",
+                "basis": "P-67.1.3.3"
+              }
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "halogen_acid_substituent_groups",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        167
+      ],
+      "term": "substituent groups derived from halogen acids",
+      "entity": "SubstituentGroupMapping",
+      "value": [
+        "lit",
+        {
+          "groups": [
+            {
+              "name": "chlorosyl",
+              "formula": "-ClO"
+            },
+            {
+              "name": "bromyl",
+              "formula": "-BrO2"
+            },
+            {
+              "name": "periodyl",
+              "formula": "-IO3"
+            }
+          ],
+          "governing_rule": "P-67.1.4.5",
+          "examples_rule": "P-61.3.2.3"
+        }
+      ]
+    },
+    {
+      "id": "halogen_acid_amide_parent_selection",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        169
+      ],
+      "in": [
+        [
+          "amide",
+          "HalogenAcidAmide"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "HalogenAcidAmideNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan.parent_selection",
+          "apply the P-41 seniority order of classes"
+        ],
+        [
+          "set",
+          "name_plan.status",
+          "preferred IUPAC name"
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name_plan"
+          ]
+        ]
+      ]
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "pseudoketone_excludes_functional_replacement_group_method",
+      "c": [
+        44
+      ],
+      "if": [
+        "pred",
+        "compound.is_pseudoketone",
+        [
+          "var",
+          "compound"
+        ]
+      ],
+      "target": [
+        "semantic_unit",
+        "functional_replacement_substituting_group_method"
+      ],
+      "mode": "suppress",
+      "specificity": 1,
+      "order": 44
+    },
+    {
+      "id": "nonhydrocarbyl_substitution_changes_sulfimide_parent",
+      "c": [
+        101
+      ],
+      "if": [
+        "pred",
+        "substitution.includes_nonhydrocarbyl_group",
+        [
+          "var",
+          "compound"
+        ]
+      ],
+      "target": [
+        "semantic_unit",
+        "sulfimide_naming_methods"
+      ],
+      "mode": "replace",
+      "replacement": [
+        "semantic_unit",
+        "nonhydrocarbyl_sulfimide_senior_parent_selection"
+      ],
+      "specificity": 1,
+      "order": 101
+    }
+  ],
+  "tables": [
+    {
+      "id": "halogen_nomenclature_method_map",
+      "label": "P-68.5.0",
+      "title": "Expression of halogen atoms by nomenclature method",
+      "c": [
+        140
+      ],
+      "cols": [
+        [
+          "method",
+          "Nomenclature method",
+          "string"
+        ],
+        [
+          "expression",
+          "Halogen expression",
+          "string"
+        ],
+        [
+          "basis",
+          "Blue Book basis",
+          "rule_reference"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "substitutive",
+          "v": [
+            "substitutive",
+            "specific prefixes only",
+            "P-61.3"
+          ]
+        },
+        {
+          "id": "functional_class",
+          "v": [
+            "functional class",
+            "class name",
+            "P-15.2"
+          ]
+        },
+        {
+          "id": "functional_replacement",
+          "v": [
+            "functional replacement",
+            "prefixes and infixes",
+            "P-65.2.1.5"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "method"
+        ],
+        "result": [
+          "expression",
+          "basis"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "none"
+      }
+    },
+    {
+      "id": "halogen_acid_names",
+      "label": "P-68.5.2",
+      "title": "Names of chlorine oxoacids and element analogues",
+      "c": [
+        165
+      ],
+      "cols": [
+        [
+          "formula",
+          "Formula",
+          "molecular_formula"
+        ],
+        [
+          "name",
+          "Acid name",
+          "name"
+        ],
+        [
+          "analogue_scope",
+          "Element analogue scope",
+          "set"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "hypohalous",
+          "v": [
+            "HO-X",
+            "hypohalous acid",
+            [
+              "Cl",
+              "Br",
+              "F",
+              "I"
+            ]
+          ]
+        },
+        {
+          "id": "halous",
+          "v": [
+            "HO-XO",
+            "halous acid",
+            [
+              "Cl",
+              "Br",
+              "F",
+              "I"
+            ]
+          ]
+        },
+        {
+          "id": "halic",
+          "v": [
+            "HO-XO2",
+            "halic acid",
+            [
+              "Cl",
+              "Br",
+              "F",
+              "I"
+            ]
+          ]
+        },
+        {
+          "id": "perhalic",
+          "v": [
+            "HO-XO3",
+            "perhalic acid",
+            [
+              "Cl",
+              "Br",
+              "F",
+              "I"
+            ]
+          ]
+        }
+      ],
+      "footnotes": [
+        {
+          "id": "chlorine_examples",
+          "marker": "a",
+          "text": "For X = Cl the names are hypochlorous, chlorous, chloric, and perchloric acid, respectively.",
+          "scope": [
+            [
+              "table",
+              "halogen_acid_names"
+            ]
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "formula"
+        ],
+        "result": [
+          "name",
+          "analogue_scope"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "none"
+      }
+    }
+  ],
+  "figures": [],
+  "examples": [
+    {
+      "id": "acyl_terminated_identical_chalcogen_examples",
+      "c": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              4
+            ],
+            "source_text": "CH3-CH2-CO-O-O-OH\n1-trioxidanylpropan-1-one (PIN)\n1-hydrotrioxypropan-1-one"
+          },
+          {
+            "clause_indexes": [
+              5
+            ],
+            "source_text": "CH3-CH2-CO-S-S-S-CO-CH2-CH3\n1,1′-trisulfanediyldi(propan-1-one) (PIN)\n1,1′-trithiodi(propan-1-one)"
+          },
+          {
+            "clause_indexes": [
+              6,
+              7,
+              8
+            ],
+            "source_text": "CH3-CH2-CO-Se-Se-Se-CH3\n1-(methyltriselanyl)propan-1-one (PIN;\na pseudoketone)\n(not Se-methyldiselanyl propaneselenoate, a pseudoester;\nformation of\nthe pseudoester would require the fragmentation of a homogeneous chain)\n1-(methyltriseleno)propan-1-one"
+          },
+          {
+            "clause_indexes": [
+              9
+            ],
+            "source_text": "CH3-CH2-CO-S-S-S-S-S-CO-CH3\n1-(acetylpentasulfanyl)propan-1-one (PIN)"
+          }
+        ]
+      },
+      "ok": [
+        "1-trioxidanylpropan-1-one",
+        "1-hydrotrioxypropan-1-one",
+        "1,1′-trisulfanediyldi(propan-1-one)",
+        "1,1′-trithiodi(propan-1-one)",
+        "1-(methyltriselanyl)propan-1-one",
+        "1-(methyltriseleno)propan-1-one",
+        "1-(acetylpentasulfanyl)propan-1-one"
+      ],
+      "bad": [
+        "Se-methyldiselanyl propaneselenoate"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "acyl_terminated_identical_chalcogen_chain_naming"
+        ],
+        [
+          "semantic_unit",
+          "preserve_identical_chalcogen_run"
+        ]
+      ],
+      "why": "The examples distinguish pseudoketone naming from pseudoester naming and show that a homogeneous chalcogen chain is not fragmented."
+    },
+    {
+      "id": "alternating_chalcogen_parent_hydride_examples",
+      "c": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              14
+            ],
+            "source_text": "HS-O-SH\ndithioxane (preselected name)"
+          },
+          {
+            "clause_indexes": [
+              15
+            ],
+            "source_text": "CH3-S-O-SH\nmethyldithioxane (PIN)\n(not methylsulfane-OS-thioperoxol)"
+          },
+          {
+            "clause_indexes": [
+              16
+            ],
+            "source_text": "CH3-S-O-S-CH3\ndimethyldithioxane (PIN)"
+          },
+          {
+            "clause_indexes": [
+              17
+            ],
+            "source_text": "C6H5-S-O-S-CH3\nmethyl(phenyl)dithioxane (PIN)"
+          },
+          {
+            "clause_indexes": [
+              18
+            ],
+            "source_text": "HS-O-S-OH\ndithioxanol (preselected name)\n(sulfanyloxy)sulfanol\n(not hydroxysulfane-OS-thioperoxol)"
+          },
+          {
+            "clause_indexes": [
+              19
+            ],
+            "source_text": "HO-S-O-S-OH\ndithioxanediol (preselected name)\n[not oxybis(sulfanol)]"
+          }
+        ]
+      },
+      "ok": [
+        "dithioxane",
+        "methyldithioxane",
+        "dimethyldithioxane",
+        "methyl(phenyl)dithioxane",
+        "dithioxanol",
+        "(sulfanyloxy)sulfanol",
+        "dithioxanediol"
+      ],
+      "bad": [
+        "methylsulfane-OS-thioperoxol",
+        "hydroxysulfane-OS-thioperoxol",
+        "oxybis(sulfanol)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "alternating_chalcogen_parent_hydride_classification"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "heterogeneous_terminal_chalcogen_chain_examples",
+      "c": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              25
+            ],
+            "source_text": "HS-OH\nsulfanol (preselected name)\n(not oxidanethiol)"
+          },
+          {
+            "clause_indexes": [
+              26
+            ],
+            "source_text": "CH3-OO-SH\nmethyldioxidanethiol (PIN)"
+          },
+          {
+            "clause_indexes": [
+              27
+            ],
+            "source_text": "CH3-OOO-SH\nmethyltrioxidanethiol (PIN)"
+          },
+          {
+            "clause_indexes": [
+              28
+            ],
+            "source_text": "CH3-O-SOH\nmethyloxidane-SO-thioperoxol (PIN)"
+          },
+          {
+            "clause_indexes": [
+              29
+            ],
+            "source_text": "CH3-SS-OH\nmethyldisulfanol (PIN)"
+          },
+          {
+            "clause_indexes": [
+              30
+            ],
+            "source_text": "CH3-SSS-SeH\nmethyltrisulfaneselenol (PIN)"
+          },
+          {
+            "clause_indexes": [
+              31
+            ],
+            "source_text": "CH3-OO-SSH\nmethyldioxidanedithioperoxol (PIN)"
+          },
+          {
+            "clause_indexes": [
+              32
+            ],
+            "source_text": "CH3-O-S-SeSeH\nmethoxysulfanediselenoperoxol (PIN)"
+          },
+          {
+            "clause_indexes": [
+              33
+            ],
+            "source_text": "CH3-SS-OOH\nmethyldisulfaneperoxol (PIN)"
+          },
+          {
+            "clause_indexes": [
+              34
+            ],
+            "source_text": "CH3-S-O-S-OH\n[(methylsulfanyl)oxy]sulfanol (PIN)\n[not (methylsulfanyl)oxidane-SO-thioperoxol]"
+          },
+          {
+            "clause_indexes": [
+              35
+            ],
+            "source_text": "4,4′-diselenoxanediyldiphenol (PIN)"
+          }
+        ]
+      },
+      "ok": [
+        "sulfanol",
+        "methyldioxidanethiol",
+        "methyltrioxidanethiol",
+        "methyloxidane-SO-thioperoxol",
+        "methyldisulfanol",
+        "methyltrisulfaneselenol",
+        "methyldioxidanedithioperoxol",
+        "methoxysulfanediselenoperoxol",
+        "methyldisulfaneperoxol",
+        "[(methylsulfanyl)oxy]sulfanol",
+        "4,4′-diselenoxanediyldiphenol"
+      ],
+      "bad": [
+        "oxidanethiol",
+        "(methylsulfanyl)oxidane-SO-thioperoxol"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "heterogeneous_terminal_chalcogen_chain_naming"
+        ],
+        [
+          "semantic_unit",
+          "preserve_identical_chalcogen_run"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "hydrogen_terminated_contiguous_chalcogen_examples",
+      "c": [
+        39,
+        40,
+        41
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              39
+            ],
+            "source_text": "HSe-Te-SeH\ntellanediselenol (preselected name)\n(not selane-TeSe-selenotelluroperoxol)"
+          },
+          {
+            "clause_indexes": [
+              40
+            ],
+            "source_text": "H-OO-S-OH\n(hydroperoxy)sulfanol (preselected name)\n(not dioxidane-SO-peroxol)"
+          },
+          {
+            "clause_indexes": [
+              41
+            ],
+            "source_text": "H-OO-SS-H\ndisulfaneperoxol (preselected name)\n[(not dioxidane(dithioperoxol)]"
+          }
+        ]
+      },
+      "ok": [
+        "tellanediselenol",
+        "(hydroperoxy)sulfanol",
+        "disulfaneperoxol"
+      ],
+      "bad": [
+        "selane-TeSe-selenotelluroperoxol",
+        "dioxidane-SO-peroxol",
+        "dioxidane(dithioperoxol"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "hydrogen_terminated_contiguous_chalcogen_naming"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "organic_terminated_heterogeneous_chalcogen_examples",
+      "c": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        54,
+        56,
+        58,
+        60,
+        62
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              47
+            ],
+            "source_text": "CH3-O-S-O-CH3\n[(methoxysulfanyl)oxy]methane (PIN)\n(methyl-OSO-thiotrioxy)methane\ndimethoxysulfane"
+          },
+          {
+            "clause_indexes": [
+              48
+            ],
+            "source_text": "CH3-OO-S-CH3\n[(methylperoxy)sulfanyl]methane (PIN) [not methyl(methylsulfanyl)dioxidane]\n(methyl-OOS-thiotrioxy)methane"
+          },
+          {
+            "clause_indexes": [
+              49
+            ],
+            "source_text": "CH3-S-S-O-CH2-CH3\n[(methyldisulfanyl)oxy]ethane (PIN)\n[methyl(dithioperoxy)oxy]ethane\n[not ethoxy(methyl)disulfane]\n(methyl-SSO-dithiotrioxy)ethane"
+          },
+          {
+            "clause_indexes": [
+              50
+            ],
+            "source_text": "C6H5-O-S-O-C6H5\n1,1′-[sulfanediylbis(oxy)]dibenzene (PIN)\nOSO-thiotrioxydibenzene"
+          },
+          {
+            "clause_indexes": [
+              51
+            ],
+            "source_text": "CH3-O-S-Se-C6H5\n[(methoxysulfanyl)selanyl]benzene (PIN)\nmethyl-OSSe-selenothiotrioxybenzene"
+          },
+          {
+            "clause_indexes": [
+              52
+            ],
+            "source_text": "1-{[(methylsulfanyl)oxy]selanyl}propan-1-one (PIN)"
+          },
+          {
+            "clause_indexes": [
+              54
+            ],
+            "source_text": "1-[(acetylsulfanyl)peroxy]propan-1-one (PIN)"
+          },
+          {
+            "clause_indexes": [
+              56
+            ],
+            "source_text": "1,1′-[disulfanediylbis(oxy)]di(propan-1-one) (PIN)\n1,1′-[dithioperoxybis(oxy)]di(propan-1-one)"
+          },
+          {
+            "clause_indexes": [
+              58
+            ],
+            "source_text": "3,6-dioxa-5-thia-4-selenanonan-7-one (PIN)"
+          },
+          {
+            "clause_indexes": [
+              60
+            ],
+            "source_text": "1-{[(methylsulfanyl)oxy]selanyl}propane-1-selone (PIN)"
+          },
+          {
+            "clause_indexes": [
+              62
+            ],
+            "source_text": "1-[(methylsulfanyl)peroxy]propan-1-one (PIN)"
+          }
+        ]
+      },
+      "ok": [
+        "[(methoxysulfanyl)oxy]methane",
+        "(methyl-OSO-thiotrioxy)methane",
+        "dimethoxysulfane",
+        "[(methylperoxy)sulfanyl]methane",
+        "(methyl-OOS-thiotrioxy)methane",
+        "[(methyldisulfanyl)oxy]ethane",
+        "[methyl(dithioperoxy)oxy]ethane",
+        "(methyl-SSO-dithiotrioxy)ethane",
+        "1,1′-[sulfanediylbis(oxy)]dibenzene",
+        "OSO-thiotrioxydibenzene",
+        "[(methoxysulfanyl)selanyl]benzene",
+        "methyl-OSSe-selenothiotrioxybenzene",
+        "1-{[(methylsulfanyl)oxy]selanyl}propan-1-one",
+        "1-[(acetylsulfanyl)peroxy]propan-1-one",
+        "1,1′-[disulfanediylbis(oxy)]di(propan-1-one)",
+        "1,1′-[dithioperoxybis(oxy)]di(propan-1-one)",
+        "3,6-dioxa-5-thia-4-selenanonan-7-one",
+        "1-{[(methylsulfanyl)oxy]selanyl}propane-1-selone",
+        "1-[(methylsulfanyl)peroxy]propan-1-one"
+      ],
+      "bad": [
+        "methyl(methylsulfanyl)dioxidane",
+        "ethoxy(methyl)disulfane"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "organic_terminated_heterogeneous_chalcogen_naming"
+        ],
+        [
+          "semantic_unit",
+          "functional_replacement_substituting_group_method"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "nonstandard_bonding_chalcogen_parent_examples",
+      "c": [
+        71,
+        72,
+        73,
+        75
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              71
+            ],
+            "source_text": "CH2=S(CH3)2\ndimethyl(methylidene)-λ4-sulfane (PIN)"
+          },
+          {
+            "clause_indexes": [
+              72
+            ],
+            "source_text": "(CH3-O)4S\ntetramethoxy-λ4-sulfane (PIN)\n[(trimethoxy-λ4-sulfanyl)oxy]methane"
+          },
+          {
+            "clause_indexes": [
+              73
+            ],
+            "source_text": "λ4-thiane (PIN)"
+          },
+          {
+            "clause_indexes": [
+              75
+            ],
+            "source_text": "1H-1λ4,3λ4-dithiepine (PIN)"
+          }
+        ]
+      },
+      "ok": [
+        "dimethyl(methylidene)-λ4-sulfane",
+        "tetramethoxy-λ4-sulfane",
+        "[(trimethoxy-λ4-sulfanyl)oxy]methane",
+        "λ4-thiane",
+        "1H-1λ4,3λ4-dithiepine"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "nonstandard_bonding_chalcogen_parent_naming"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "poly_chalcogen_oxide_examples",
+      "c": [
+        84,
+        86,
+        88,
+        90
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              84
+            ],
+            "source_text": "1,2-dimethyl-1λ4,2λ4-disulfane-1,2-dione (PIN)\ndimethyl disulfoxide"
+          },
+          {
+            "clause_indexes": [
+              86
+            ],
+            "source_text": "1-ethyl-2-methyl-1λ6,2λ6-disulfane-1,1,2,2-tetrone (PIN)\nethyl methyl disulfone"
+          },
+          {
+            "clause_indexes": [
+              88
+            ],
+            "source_text": "1-phenyl-2-(quinolin-7-yl)-1λ6,2λ6-diselane-1,1,2,2-tetrone (PIN)\nphenyl quinolin-7-yl diselenone"
+          },
+          {
+            "clause_indexes": [
+              90
+            ],
+            "source_text": "diethyl-1λ6,2λ4-diselane-1,1,2-trione (PIN)\n[(ethaneseleninyl)selenonyl]ethane\n[(ethylseleninyl)selenonyl]ethane"
+          }
+        ]
+      },
+      "ok": [
+        "1,2-dimethyl-1λ4,2λ4-disulfane-1,2-dione",
+        "dimethyl disulfoxide",
+        "1-ethyl-2-methyl-1λ6,2λ6-disulfane-1,1,2,2-tetrone",
+        "ethyl methyl disulfone",
+        "1-phenyl-2-(quinolin-7-yl)-1λ6,2λ6-diselane-1,1,2,2-tetrone",
+        "phenyl quinolin-7-yl diselenone",
+        "diethyl-1λ6,2λ4-diselane-1,1,2-trione",
+        "[(ethaneseleninyl)selenonyl]ethane",
+        "[(ethylseleninyl)selenonyl]ethane"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "poly_chalcogen_oxide_naming_methods"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "sulfimide_examples",
+      "c": [
+        99,
+        103
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              99
+            ],
+            "source_text": "S,S-diethyl-N-phenyl-λ4-sulfanimine (PIN)\nS,S-diethyl-N-phenylsulfimide"
+          },
+          {
+            "clause_indexes": [
+              103
+            ],
+            "source_text": "N-(diphenyl-λ4-sulfanylidene)benzenesulfonamide (PIN)\nS,S-diphenyl-N-(benzenesulfonyl)sulfimide"
+          }
+        ]
+      },
+      "ok": [
+        "S,S-diethyl-N-phenyl-λ4-sulfanimine",
+        "S,S-diethyl-N-phenylsulfimide",
+        "N-(diphenyl-λ4-sulfanylidene)benzenesulfonamide",
+        "S,S-diphenyl-N-(benzenesulfonyl)sulfimide"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "sulfimide_naming_methods"
+        ],
+        [
+          "semantic_unit",
+          "nonhydrocarbyl_sulfimide_senior_parent_selection"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "sulfinylamine_and_sulfonylamine_examples",
+      "c": [
+        109,
+        110,
+        111
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              109
+            ],
+            "source_text": "C6H5-N=S=O\n(phenylimino)-λ4-sulfanone (PIN)\n(not N-sulfinylaniline)"
+          },
+          {
+            "clause_indexes": [
+              110
+            ],
+            "source_text": "CH3-N=S(=O)2\n(methylimino)-λ6-sulfanedione (PIN)\n(not N-sulfonylmethanamine)"
+          },
+          {
+            "clause_indexes": [
+              111
+            ],
+            "source_text": "(CH3)2S(O)=N-SO2-C6H5\nN-[dimethyl(oxo)-λ6-sulfanylidene]benzenesulfonamide (PIN)\n(benzenesulfonylimino)dimethyl-λ6-sulfanone"
+          }
+        ]
+      },
+      "ok": [
+        "(phenylimino)-λ4-sulfanone",
+        "(methylimino)-λ6-sulfanedione",
+        "N-[dimethyl(oxo)-λ6-sulfanylidene]benzenesulfonamide",
+        "(benzenesulfonylimino)dimethyl-λ6-sulfanone"
+      ],
+      "bad": [
+        "N-sulfinylaniline",
+        "N-sulfonylmethanamine"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "sulfinylamine_and_sulfonylamine_naming"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "sulfonediimine_example",
+      "c": [
+        117
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              117
+            ],
+            "source_text": "(C6H5)2S(=NH)2\ndiphenyl-λ6-sulfanediimine (PIN)\n(not diphenyl sulfonediimine)"
+          }
+        ]
+      },
+      "ok": [
+        "diphenyl-λ6-sulfanediimine"
+      ],
+      "bad": [
+        "diphenyl sulfonediimine"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "sulfonediimine_naming_policy"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "sulfoximide_example",
+      "c": [
+        123
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              123
+            ],
+            "source_text": "(CH3)2S(=O)=N-C6H5\ndimethyl(phenylimino)-λ6-sulfanone (PIN)\nS,S-dimethyl-N-phenylsulfoximide"
+          }
+        ]
+      },
+      "ok": [
+        "dimethyl(phenylimino)-λ6-sulfanone",
+        "S,S-dimethyl-N-phenylsulfoximide"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "sulfoximide_naming_policy"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "sulfur_diimide_example",
+      "c": [
+        129
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              129
+            ],
+            "source_text": "CH3-N=S=N-CH2-CH3\nethyl(methyl)-λ4-sulfanediimine (PIN)\nethylmethylsulfur diimide"
+          }
+        ]
+      },
+      "ok": [
+        "ethyl(methyl)-λ4-sulfanediimine",
+        "ethylmethylsulfur diimide"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "sulfur_diimide_naming_policy"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "sulfur_triimide_example",
+      "c": [
+        135
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              135
+            ],
+            "source_text": "dimethyl(phenyl)-λ6-sulfanetriimine (PIN)\ndimethyl(phenyl)sulfur triimide"
+          }
+        ]
+      },
+      "ok": [
+        "dimethyl(phenyl)-λ6-sulfanetriimine",
+        "dimethyl(phenyl)sulfur triimide"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "sulfur_triimide_naming_policy"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "halogen_expression_method_examples",
+      "c": [
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              142
+            ],
+            "source_text": "CH3-Cl\nchloromethane (PIN)\nmethyl chloride"
+          },
+          {
+            "clause_indexes": [
+              143
+            ],
+            "source_text": "C6H5-ClO\nchlorosylbenzene (PIN)"
+          },
+          {
+            "clause_indexes": [
+              144
+            ],
+            "source_text": "CH3-CH2-CO-Br\npropanoyl bromide (PIN)\npropionyl bromide"
+          },
+          {
+            "clause_indexes": [
+              145
+            ],
+            "source_text": "CH3-CH2-SO2-Cl\nethanesulfonyl chloride (PIN)"
+          },
+          {
+            "clause_indexes": [
+              146
+            ],
+            "source_text": "C6H5-P(O)Cl2\nphenylphosphonic dichloride (PIN)"
+          },
+          {
+            "clause_indexes": [
+              147
+            ],
+            "source_text": "CH3-BCl2\ndichloro(methyl)borane (PIN)"
+          },
+          {
+            "clause_indexes": [
+              148
+            ],
+            "source_text": "CH3P(Cl)(S-C2H5)\nethyl methylphosphonochloridothioite\n(not ethyl methanephosphonochloridothioite)"
+          }
+        ]
+      },
+      "ok": [
+        "chloromethane",
+        "methyl chloride",
+        "chlorosylbenzene",
+        "propanoyl bromide",
+        "propionyl bromide",
+        "ethanesulfonyl chloride",
+        "phenylphosphonic dichloride",
+        "dichloro(methyl)borane",
+        "ethyl methylphosphonochloridothioite"
+      ],
+      "bad": [
+        "ethyl methanephosphonochloridothioite"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "halogen_expression_by_nomenclature_method"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "halogen_parent_hydride_lambda_examples",
+      "c": [
+        152,
+        153,
+        154,
+        155,
+        156,
+        158,
+        160,
+        162
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              152
+            ],
+            "source_text": "C6H5-I(OH)2\nphenyl-λ3-iodanediol (PIN)"
+          },
+          {
+            "clause_indexes": [
+              153
+            ],
+            "source_text": "CH3-ICl2\ndichloro(methyl)-λ3-iodane (PIN)"
+          },
+          {
+            "clause_indexes": [
+              154
+            ],
+            "source_text": "(CH3-CO-O)2I–\nbis(acetyloxy)-λ3-iodanyl (preferred prefix)\n(not diacetoxyiodo)"
+          },
+          {
+            "clause_indexes": [
+              155
+            ],
+            "source_text": "(HO)2I–\ndihydroxy-λ3-iodanyl (preselected name)"
+          },
+          {
+            "clause_indexes": [
+              156
+            ],
+            "source_text": "1-methoxy-1λ3,2-benziodoxol-3(1H)-one (PIN)"
+          },
+          {
+            "clause_indexes": [
+              158
+            ],
+            "source_text": "1H-1λ3-chlorole (PIN)"
+          },
+          {
+            "clause_indexes": [
+              160
+            ],
+            "source_text": "1λ3-bromirane (PIN)"
+          },
+          {
+            "clause_indexes": [
+              162
+            ],
+            "source_text": "1H-1λ3-benziodole (PIN)"
+          }
+        ]
+      },
+      "ok": [
+        "phenyl-λ3-iodanediol",
+        "dichloro(methyl)-λ3-iodane",
+        "bis(acetyloxy)-λ3-iodanyl",
+        "dihydroxy-λ3-iodanyl",
+        "1-methoxy-1λ3,2-benziodoxol-3(1H)-one",
+        "1H-1λ3-chlorole",
+        "1λ3-bromirane",
+        "1H-1λ3-benziodole"
+      ],
+      "bad": [
+        "diacetoxyiodo"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "nonstandard_bonding_halogen_parent_naming"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    },
+    {
+      "id": "halogen_acid_amide_examples",
+      "c": [
+        171,
+        172
+      ],
+      "input": {
+        "cases": [
+          {
+            "clause_indexes": [
+              171
+            ],
+            "source_text": "CH3-NH-BrO2\nmethylbromic amide (PIN)\nN-bromylmethanamine"
+          },
+          {
+            "clause_indexes": [
+              172
+            ],
+            "source_text": "CH3-CH2-NH-Cl\nethylhypochlorous amide (PIN, see P-62.4)\nN-chloroethanamine"
+          }
+        ]
+      },
+      "ok": [
+        "methylbromic amide",
+        "N-bromylmethanamine",
+        "ethylhypochlorous amide",
+        "N-chloroethanamine"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "halogen_acid_amide_parent_selection"
+        ]
+      ],
+      "why": "The source examples instantiate the linked naming rule and preserve each printed alternative and rejection."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {
+      "id": "reference.p68.part005.alternating_parent_hydrides",
+      "c": [
+        12
+      ],
+      "rel": "cites",
+      "o": "P-68.4.2.1:xref:0001",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p68.part005.peroxol_suffixes",
+      "c": [
+        21
+      ],
+      "rel": "cites",
+      "o": "P-68.4.2.2:xref:0003",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p68.part005.halogen_acids",
+      "c": [
+        165
+      ],
+      "rel": "cites",
+      "o": "P-68.5.2:xref:0001",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p68.part005.halogen_acid_substituent_examples",
+      "c": [
+        167
+      ],
+      "rel": "cites",
+      "o": "P-68.5.2:xref:0005",
+      "resolution": "exact"
+    }
+  ],
+  "additional_refs": []
+}
