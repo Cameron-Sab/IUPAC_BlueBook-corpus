@@ -1,0 +1,2591 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    null,
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "permission",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "scope",
+      "informative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "cross_reference",
+      "informative",
+      "compile"
+    ],
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "scope",
+      "normative",
+      "compile"
+    ],
+    [
+      "scope",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ]
+  ],
+  "corrections": [
+    {
+      "id": "correction.p32.part001.isoindolin_systematic_prefix",
+      "overlay": "BBV3-CORR-0154841921D1E8D7",
+      "operation": "BBV3-CORR-0154841921D1E8D7:OP-001",
+      "status": "applied",
+      "before": [
+        165
+      ],
+      "after": [
+        167
+      ],
+      "targets": [
+        [
+          "table",
+          "retained_partially_saturated_polycyclic_prefixes"
+        ]
+      ],
+      "date": "2025-04-09",
+      "sha256": "09786C4A53BD2632518B8CCF6834F5738B71BD251177BE9C798EC7FA950F9621"
+    },
+    {
+      "id": "correction.p32.part001.hydro_and_dehydro_intro",
+      "overlay": "BBV3-CORR-057ACAF4E9AE7708",
+      "operation": "BBV3-CORR-057ACAF4E9AE7708:OP-001",
+      "status": "applied",
+      "before": [
+        97
+      ],
+      "after": [
+        97
+      ],
+      "targets": [
+        [
+          "semantic_unit",
+          "mancude_hydro_dehydro_prefix_formation"
+        ]
+      ],
+      "date": "2025-12-31",
+      "sha256": "596BCC61FB5ECC249A42B04260BC10FFD70AA7C58CAE0E1ADCE200083974FA48"
+    },
+    {
+      "id": "correction.p32.part001.hydro_and_dehydro_section_title",
+      "overlay": "BBV3-CORR-3EA63FF0C5D60A04",
+      "operation": "BBV3-CORR-3EA63FF0C5D60A04:OP-001",
+      "status": "applied",
+      "before": [
+        95
+      ],
+      "after": [
+        96
+      ],
+      "targets": [
+        [
+          "semantic_unit",
+          "mancude_hydro_dehydro_prefix_formation"
+        ]
+      ],
+      "date": "2025-12-31",
+      "sha256": "26440D56674A5DCC21E30013A466E3469F96ACEEF04679D0D817E7CEC3D3DD65"
+    },
+    {
+      "id": "correction.p32.part001.hydro_and_dehydro_chapter_title",
+      "overlay": "BBV3-CORR-E22579BFE95BFA28",
+      "operation": "BBV3-CORR-E22579BFE95BFA28:OP-001",
+      "status": "applied",
+      "before": [
+        1
+      ],
+      "after": [
+        3
+      ],
+      "targets": [
+        [
+          "semantic_unit",
+          "corrected_section_scope"
+        ]
+      ],
+      "date": "2025-12-31",
+      "sha256": "DA0AD497C559CBB4B7C6609B58E86F05693A8E0E5CDC6697718449AE2108872E"
+    }
+  ],
+  "examples": [
+    {
+      "id": "terminal_free_valence_examples",
+      "c": [
+        19,
+        21
+      ],
+      "input": "terminal free valence on unsaturated acyclic chains",
+      "ok": [
+        "but-3-en-1-yl",
+        "prop-2-en-1-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "acyclic_free_valence_locant_priority"
+        ]
+      ],
+      "why": "The free-valence suffix receives locant 1 and the multiple bond is located afterward."
+    },
+    {
+      "id": "butenyl_method_comparison",
+      "c": [
+        25,
+        26
+      ],
+      "input": "same butenyl skeleton named by methods 1 and 2",
+      "ok": [
+        "but-3-en-2-yl",
+        "1-methylprop-2-en-1-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "unsaturated_acyclic_prefix_methods"
+        ]
+      ]
+    },
+    {
+      "id": "isopropenyl_method_comparison",
+      "c": [
+        31,
+        32
+      ],
+      "input": "CH2=C(CH3)-",
+      "ok": [
+        "prop-1-en-2-yl",
+        "1-methylethen-1-yl",
+        "isopropenyl (general nomenclature only)"
+      ],
+      "bad": [
+        "substituted isopropenyl"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "unsaturated_acyclic_prefix_methods"
+        ],
+        [
+          "semantic_unit",
+          "isopropenyl_restrictions"
+        ]
+      ]
+    },
+    {
+      "id": "nonenyl_longest_chain_example",
+      "c": [
+        37,
+        38
+      ],
+      "input": "unsaturated nine-carbon substituent skeleton",
+      "ok": [
+        "non-1-en-4-yl",
+        "1-(prop-2-en-1-yl)hexyl"
+      ],
+      "bad": [
+        "1-pentylbut-3-en-1-yl"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "longest_acyclic_parent_chain_preference"
+        ]
+      ]
+    },
+    {
+      "id": "heptenyl_method_comparison",
+      "c": [
+        43,
+        44
+      ],
+      "input": "heptenyl skeleton",
+      "ok": [
+        "hept-2-en-4-yl",
+        "1-propylbut-2-en-1-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "unsaturated_acyclic_prefix_methods"
+        ]
+      ]
+    },
+    {
+      "id": "diene_diyl_method_comparison",
+      "c": [
+        49,
+        50
+      ],
+      "input": "diene with two free valences",
+      "ok": [
+        "hepta-1,6-diene-3,5-diyl",
+        "1,3-diethenylpropane-1,3-diyl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "unsaturated_acyclic_prefix_methods"
+        ]
+      ]
+    },
+    {
+      "id": "butynyl_example",
+      "c": [
+        53
+      ],
+      "input": "four-carbon alkynyl substituent",
+      "ok": [
+        "but-3-yn-1-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "acyclic_free_valence_locant_priority"
+        ]
+      ]
+    },
+    {
+      "id": "enynylidene_method_comparison",
+      "c": [
+        57,
+        58
+      ],
+      "input": "enyne substituent with a divalent free valence",
+      "ok": [
+        "oct-1-en-6-yn-4-ylidene",
+        "1-(prop-2-en-1-yl)pent-3-yn-1-ylidene"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "unsaturated_acyclic_prefix_methods"
+        ]
+      ]
+    },
+    {
+      "id": "enyne_method_and_locant_comparison",
+      "c": [
+        63,
+        64,
+        67,
+        68
+      ],
+      "input": "enyne substituent",
+      "ok": [
+        "hept-1-en-6-yn-4-yl",
+        "1-(prop-2-yn-1-yl)but-3-en-1-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "mixed_multiple_bond_method_comparison"
+        ]
+      ]
+    },
+    {
+      "id": "heteroatom_unsaturated_prefix_examples",
+      "c": [
+        69,
+        70,
+        72,
+        73,
+        75,
+        76
+      ],
+      "input": "unsaturated nitrogen and antimony parent hydrides",
+      "ok": [
+        "diazenyl",
+        "diazenediyl",
+        "triaz-2-en-1-yl",
+        "distibenyl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "unsaturated_parent_substituent_prefix_formation"
+        ]
+      ]
+    },
+    {
+      "id": "monocyclic_substituent_examples",
+      "c": [
+        81,
+        83
+      ],
+      "input": "unsaturated monocyclic parents",
+      "ok": [
+        "cyclohex-1-en-1-yl",
+        "cyclopent-3-ene-1,2-diyl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "monocyclic_substituent_method"
+        ]
+      ]
+    },
+    {
+      "id": "fixed_numbering_parent_examples",
+      "c": [
+        88,
+        90,
+        92,
+        93
+      ],
+      "input": "fixed-numbering bicyclic, spiro, and heteroacyclic parents",
+      "ok": [
+        "bicyclo[2.2.2]oct-5-en-2-yl",
+        "spiro[4.5]deca-1,9-dien-6-ylidene",
+        "2,5,8,11-tetraoxatridec-12-en-13-yl"
+      ],
+      "bad": [
+        "3,6,9,12-tetraoxatridec-1-en-1-yl"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "fixed_numbering_substituent_locants"
+        ]
+      ]
+    },
+    {
+      "id": "heteromonocyclic_hydro_examples",
+      "c": [
+        102,
+        104,
+        106,
+        108,
+        110
+      ],
+      "input": "partially hydrogenated heteromonocyclic parents",
+      "ok": [
+        "1-azacyclododeca-1,5,7,9,11-pentaen-6-yl",
+        "1-azacyclotrideca-2,4,6,8,10-pentaen-4-yl",
+        "3,4-dihydro-2H-pyran-3-yl",
+        "oxan-3-ylidene",
+        "2,3-dihydropyrazine-1,4-diyl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "heteromonocyclic_modified_parent_locant_priority"
+        ]
+      ]
+    },
+    {
+      "id": "polycyclic_mancude_hydro_examples",
+      "c": [
+        114,
+        116,
+        118
+      ],
+      "input": "partially hydrogenated polycyclic mancude parents",
+      "ok": [
+        "3,4-dihydronaphthalen-1-yl",
+        "1,2-dihydroisoquinolin-3-yl",
+        "1,2,3,4-tetrahydronaphthalene-4a,8a-diyl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "polycyclic_mancude_locant_priority"
+        ]
+      ]
+    },
+    {
+      "id": "added_indicated_hydrogen_examples",
+      "c": [
+        122,
+        124,
+        126,
+        128
+      ],
+      "input": "modified mancude parents requiring added indicated hydrogen",
+      "ok": [
+        "1,3,4,5-tetrahydronaphthalen-4a(2H)-yl",
+        "3,4-dihydroquinolin-2(1H)-ylidene",
+        "5,6,7,8-tetrahydronaphthalen-2(4aH)-ylidene",
+        "3a,4-dihydro-1H-isoindol-2(3H)-yl-1-ylidene"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "added_indicated_hydrogen_locant_priority"
+        ]
+      ]
+    },
+    {
+      "id": "paired_method_example_layout",
+      "c": [
+        27,
+        28,
+        33,
+        34,
+        39,
+        40,
+        45,
+        46,
+        51,
+        52,
+        59,
+        60,
+        65,
+        66
+      ],
+      "input": "empty structure cells preserving the paired source-table layout",
+      "ok": [],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "unsaturated_acyclic_prefix_methods"
+        ]
+      ],
+      "why": "The empty cells are structural evidence linking each pair of rendered molecular structures to its two naming methods."
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "chain_extending_or_suffix_group_substitution",
+      "c": [
+        142
+      ],
+      "if": [
+        "lit",
+        {
+          "substituent_class": [
+            "alkyl",
+            "other carbon-chain-extending group",
+            "characteristic group expressed by suffix"
+          ]
+        }
+      ],
+      "target": [
+        "semantic_unit",
+        "retained_acyclic_substitution_policy"
+      ],
+      "mode": "add_guard",
+      "guard": [
+        "lit",
+        {
+          "substitution_permitted": false
+        }
+      ],
+      "specificity": 1,
+      "order": 142
+    }
+  ],
+  "figures": [
+    {
+      "id": "section_title_correction_marker",
+      "c": [
+        3
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes2.html"
+      ]
+    },
+    {
+      "id": "preferred_method_reference_correction_marker",
+      "c": [
+        17
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "hydro_dehydro_title_correction_marker",
+      "c": [
+        96
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes2.html"
+      ]
+    },
+    {
+      "id": "retained_prefix_term_correction_marker_1",
+      "c": [
+        144
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "retained_prefix_term_correction_marker_2",
+      "c": [
+        147
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "retained_prefix_term_correction_marker_3",
+      "c": [
+        151
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "retained_prefix_term_correction_marker_4",
+      "c": [
+        155
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "isoindolin_name_correction_marker",
+      "c": [
+        167
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes2.html"
+      ]
+    }
+  ],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "mechanical_assets": true,
+  "refs": [
+    {
+      "id": "reference.p32.0.xref.0002",
+      "c": [
+        6
+      ],
+      "rel": "invokes",
+      "o": "P-32.0:xref:0002",
+      "resolution": "exact",
+      "src": [
+        "semantic_unit",
+        "unsaturated_parent_substituent_prefix_formation"
+      ]
+    },
+    {
+      "id": "reference.p32.1.1.xref.0001",
+      "c": [
+        13
+      ],
+      "rel": "invokes",
+      "o": "P-32.1.1:xref:0001",
+      "resolution": "exact",
+      "src": [
+        "semantic_unit",
+        "larger_substituent_prefix_formation"
+      ]
+    },
+    {
+      "id": "reference.p32.1.1.xref.0002",
+      "c": [
+        16
+      ],
+      "rel": "invokes",
+      "o": "P-32.1.1:xref:0002",
+      "resolution": "exact",
+      "src": [
+        "semantic_unit",
+        "longest_acyclic_parent_chain_preference"
+      ]
+    },
+    {
+      "id": "reference.p32.1.1.xref.0004",
+      "c": [
+        69
+      ],
+      "rel": "cites",
+      "o": "P-32.1.1:xref:0004",
+      "resolution": "exact",
+      "src": [
+        "example",
+        "example.p32.part001.heteroatom_unsaturated_prefix_examples"
+      ]
+    },
+    {
+      "id": "reference.p32.1.1.xref.0005",
+      "c": [
+        72
+      ],
+      "rel": "cites",
+      "o": "P-32.1.1:xref:0005",
+      "resolution": "exact",
+      "src": [
+        "example",
+        "example.p32.part001.heteroatom_unsaturated_prefix_examples"
+      ]
+    },
+    {
+      "id": "reference.p32.1.1.xref.0006",
+      "c": [
+        73
+      ],
+      "rel": "cites",
+      "o": "P-32.1.1:xref:0006",
+      "resolution": "exact",
+      "src": [
+        "example",
+        "example.p32.part001.heteroatom_unsaturated_prefix_examples"
+      ]
+    },
+    {
+      "id": "reference.p32.1.1.xref.0007",
+      "c": [
+        75
+      ],
+      "rel": "cites",
+      "o": "P-32.1.1:xref:0007",
+      "resolution": "exact",
+      "src": [
+        "example",
+        "example.p32.part001.heteroatom_unsaturated_prefix_examples"
+      ]
+    }
+  ],
+  "symbols": [],
+  "tables": [
+    {
+      "id": "retained_unsaturated_acyclic_prefixes",
+      "label": "P-32.3",
+      "title": "Retained names for substituent groups derived from unsaturated acyclic parent hydrides",
+      "c": [
+        131,
+        132,
+        133,
+        135,
+        137,
+        138,
+        140,
+        141,
+        143,
+        145,
+        148,
+        150,
+        152,
+        154,
+        156,
+        142,
+        146,
+        149,
+        153
+      ],
+      "cols": [
+        [
+          "retained",
+          "Retained prefix",
+          "String"
+        ],
+        [
+          "structure",
+          "Substituent group",
+          "String"
+        ],
+        [
+          "preferred",
+          "Preferred systematic prefix",
+          "String"
+        ],
+        [
+          "status",
+          "Status and substitution restriction",
+          "String"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "vinyl",
+          "c": [
+            131,
+            141,
+            142,
+            143,
+            145
+          ],
+          "v": [
+            "vinyl",
+            "CH2=CH-",
+            "ethenyl",
+            "general nomenclature only; substitution allowed except by chain-extending or suffix-expressed characteristic groups"
+          ]
+        },
+        {
+          "id": "vinylidene",
+          "c": [
+            132,
+            141,
+            142,
+            143,
+            145
+          ],
+          "v": [
+            "vinylidene",
+            "CH2=C=",
+            "ethenylidene",
+            "general nomenclature only; same substitution restriction"
+          ]
+        },
+        {
+          "id": "allyl",
+          "c": [
+            133,
+            137,
+            141,
+            142,
+            143,
+            145
+          ],
+          "v": [
+            "allyl",
+            "CH2=CH-CH2-",
+            "prop-2-en-1-yl",
+            "general nomenclature only; same substitution restriction"
+          ]
+        },
+        {
+          "id": "allylidene",
+          "c": [
+            135,
+            137,
+            141,
+            142,
+            143,
+            145
+          ],
+          "v": [
+            "allylidene",
+            "CH2=CH-CH=",
+            "prop-2-en-1-ylidene",
+            "general nomenclature only; same substitution restriction"
+          ]
+        },
+        {
+          "id": "allylidyne",
+          "c": [
+            138,
+            140,
+            141,
+            142,
+            143,
+            145
+          ],
+          "v": [
+            "allylidyne",
+            "CH2=CH-C<",
+            "prop-2-en-1-ylidyne",
+            "general nomenclature only; same substitution restriction"
+          ]
+        },
+        {
+          "id": "isopropenyl",
+          "c": [
+            146,
+            148,
+            149,
+            150,
+            152
+          ],
+          "v": [
+            "isopropenyl",
+            "CH2=C(CH3)-",
+            "prop-1-en-2-yl",
+            "general nomenclature only; not substitutable"
+          ]
+        },
+        {
+          "id": "styryl",
+          "c": [
+            153,
+            154,
+            156
+          ],
+          "v": [
+            "styryl",
+            "C6H5-CH=CH-",
+            "2-phenylethen-1-yl",
+            "general nomenclature only; substitution only on the ring"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "retained"
+        ],
+        "result": [
+          "structure",
+          "preferred",
+          "status"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "retained_partially_saturated_polycyclic_prefixes",
+      "label": "Table 3.2",
+      "title": "Retained names of substituent groups for partially saturated polycyclic parent hydrides",
+      "c": [
+        160,
+        161,
+        163,
+        165,
+        168,
+        169,
+        170,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186
+      ],
+      "cols": [
+        [
+          "retained",
+          "Retained prefix",
+          "String"
+        ],
+        [
+          "preferred",
+          "Preferred systematic prefix or prefixes",
+          "String"
+        ],
+        [
+          "isomers",
+          "Also permitted locant isomers",
+          "String"
+        ],
+        [
+          "replacement",
+          "Heteroatom replacement",
+          "String"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "indan",
+          "c": [
+            161
+          ],
+          "v": [
+            "indan-2-yl",
+            "2,3-dihydro-1H-inden-2-yl",
+            "1-, 4-, and 5-isomers",
+            ""
+          ]
+        },
+        {
+          "id": "indolin",
+          "c": [
+            163
+          ],
+          "v": [
+            "indolin-2-yl",
+            "2,3-dihydro-1H-indol-2-yl",
+            "1-, 3-, 4-, 5-, 6-, and 7-isomers",
+            ""
+          ]
+        },
+        {
+          "id": "isoindolin",
+          "c": [
+            165,
+            168
+          ],
+          "v": [
+            "isoindolin-2-yl",
+            "1,3-dihydro-2H-isoindol-2-yl",
+            "1-, 4-, and 5-isomers",
+            ""
+          ]
+        },
+        {
+          "id": "chroman",
+          "c": [
+            169,
+            170
+          ],
+          "v": [
+            "chroman-2-yl",
+            "3,4-dihydro-2H-chromen-2-yl; 3,4-dihydro-2H-1-benzopyran-2-yl",
+            "3-, 4-, 5-, 6-, 7-, and 8-isomers",
+            ""
+          ]
+        },
+        {
+          "id": "thiochroman",
+          "c": [
+            172,
+            173
+          ],
+          "v": [
+            "thiochroman-2-yl",
+            "3,4-dihydro-2H-thiochromen-2-yl; 3,4-dihydro-1-benzothiopyran-2-yl",
+            "3-, 4-, 5-, 6-, 7-, and 8-isomers",
+            "S replaces O"
+          ]
+        },
+        {
+          "id": "selenochroman",
+          "c": [
+            174,
+            175
+          ],
+          "v": [
+            "selenochroman-2-yl",
+            "3,4-dihydro-2H-selenochromen-2-yl; 3,4-dihydro-2H-1-benzoselenopyran-2-yl",
+            "3-, 4-, 5-, 6-, 7-, and 8-isomers",
+            "Se replaces O"
+          ]
+        },
+        {
+          "id": "tellurochroman",
+          "c": [
+            176,
+            177
+          ],
+          "v": [
+            "tellurochroman-2-yl",
+            "3,4-dihydro-2H-tellurochromen-2-yl; 3,4-dihydro-2H-1-benzotelluropyran-2-yl",
+            "3-, 4-, 5-, 6-, 7-, and 8-isomers",
+            "Te replaces O"
+          ]
+        },
+        {
+          "id": "isochroman",
+          "c": [
+            178,
+            179
+          ],
+          "v": [
+            "isochroman-3-yl",
+            "3,4-dihydro-1H-isochromen-3-yl; 3,4-dihydro-1H-2-benzopyran-3-yl",
+            "1-, 4-, 5-, 6-, 7-, and 8-isomers",
+            ""
+          ]
+        },
+        {
+          "id": "isothiochroman",
+          "c": [
+            181,
+            182
+          ],
+          "v": [
+            "isothiochroman-3-yl",
+            "3,4-dihydro-1H-isothiochromen-3-yl; 3,4-dihydro-1H-2-benzothiopyran-3-yl",
+            "1-, 4-, 5-, 6-, 7-, and 8-isomers",
+            "S replaces O"
+          ]
+        },
+        {
+          "id": "isoselenochroman",
+          "c": [
+            183,
+            184
+          ],
+          "v": [
+            "isoselenochroman-3-yl",
+            "3,4-dihydro-1H-isoselenochromen-3-yl; 3,4-dihydro-1H-2-benzoselenopyran-3-yl",
+            "1-, 4-, 5-, 6-, 7-, and 8-isomers",
+            "Se replaces O"
+          ]
+        },
+        {
+          "id": "isotellurochroman",
+          "c": [
+            185,
+            186
+          ],
+          "v": [
+            "isotellurochroman-3-yl",
+            "3,4-dihydro-1H-isotellurochromen-3-yl; 3,4-dihydro-1H-2-benzotelluropyran-3-yl",
+            "1-, 4-, 5-, 6-, 7-, and 8-isomers",
+            "Te replaces O"
+          ]
+        },
+        {
+          "id": "table_caption",
+          "c": [
+            160
+          ],
+          "v": [
+            "Table 3.2",
+            "retained and systematic prefix mapping",
+            "source order",
+            ""
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "retained"
+        ],
+        "result": [
+          "preferred",
+          "isomers",
+          "replacement"
+        ],
+        "cardinality": "one_to_many",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "task_id": "P-32-part-001",
+  "units": [
+    {
+      "id": "corrected_section_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        3
+      ],
+      "term": "P-32 modified-hydrogenation scope",
+      "entity": "NomenclatureSectionScope",
+      "value": [
+        "lit",
+        {
+          "modifiers": [
+            "ene",
+            "yne",
+            "hydro",
+            "dehydro"
+          ],
+          "products": "substituent prefixes"
+        }
+      ]
+    },
+    {
+      "id": "unsaturated_parent_substituent_prefix_formation",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        6,
+        7
+      ],
+      "in": [
+        [
+          "unsaturated_parent_name",
+          "ParentHydrideName"
+        ],
+        [
+          "free_valence_count",
+          "Integer"
+        ]
+      ],
+      "out": [
+        [
+          "substituent_prefix",
+          "SubstituentPrefix"
+        ]
+      ],
+      "steps": [
+        [
+          "invoke",
+          "P-31",
+          {
+            "parent_name": [
+              "var",
+              "unsaturated_parent_name"
+            ]
+          }
+        ],
+        [
+          "set",
+          "free_valence_suffix",
+          [
+            "lit",
+            {
+              "one": "yl",
+              "two_same_atom": "ylidene",
+              "three_same_atom": "ylidyne"
+            }
+          ]
+        ],
+        [
+          "invoke",
+          "P-29",
+          {
+            "operation": [
+              "lit",
+              "form substituent prefix with the appropriate free-valence suffix"
+            ]
+          }
+        ],
+        [
+          "set",
+          "permitted_unsaturation_markers",
+          [
+            "lit",
+            [
+              "ene",
+              "yne",
+              "hydro",
+              "dehydro"
+            ]
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "substituent_prefix"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "unsaturated_acyclic_prefix_methods",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        9
+      ],
+      "term": "methods for naming unsaturated acyclic substituents",
+      "entity": "NomenclatureMethodSet",
+      "value": [
+        "lit",
+        [
+          "select a modified parent structure and add a free-valence suffix",
+          "substitute simple substituents into a larger substituent prefix"
+        ]
+      ]
+    },
+    {
+      "id": "acyclic_free_valence_locant_priority",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        10,
+        11,
+        12
+      ],
+      "in": [
+        [
+          "candidate_parent",
+          "ModifiedAcyclicParentStructure"
+        ]
+      ],
+      "out": [
+        [
+          "locant_assignment",
+          "LocantAssignment"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "priority_order",
+          [
+            "lit",
+            [
+              "free-valence suffix locants",
+              "multiple-bond locants"
+            ]
+          ]
+        ],
+        [
+          "set",
+          "free_valence_positions",
+          [
+            "lit",
+            "any positions in the modified parent structure"
+          ]
+        ],
+        [
+          "set",
+          "citation_policy",
+          [
+            "lit",
+            {
+              "cite_all_free_valence_locants": true,
+              "cite_locant_one": true
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "locant_assignment"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "larger_substituent_prefix_formation",
+      "k": "procedure",
+      "f": "permitted",
+      "c": [
+        13
+      ],
+      "in": [
+        [
+          "larger_prefix",
+          "SubstituentPrefix"
+        ],
+        [
+          "simple_prefixes",
+          "SubstituentPrefixSequence"
+        ]
+      ],
+      "out": [
+        [
+          "compound_prefix",
+          "SubstituentPrefix"
+        ]
+      ],
+      "steps": [
+        [
+          "invoke",
+          "P-29",
+          {
+            "method": [
+              "lit",
+              "substitute simple substituents into a larger substituent prefix"
+            ]
+          }
+        ],
+        [
+          "set",
+          "compound_prefix",
+          [
+            "lit",
+            "result of substitution into the larger prefix"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "longest_acyclic_parent_chain_preference",
+      "k": "rule",
+      "f": "preference",
+      "c": [
+        14,
+        15,
+        16
+      ],
+      "in": [
+        [
+          "candidate_chains",
+          "ParentChainSet"
+        ]
+      ],
+      "out": [
+        [
+          "parent_chain",
+          "ParentChain"
+        ]
+      ],
+      "if": [
+        "lit",
+        {
+          "name_type": "unsaturated acyclic substituent prefix",
+          "regime": "preferred IUPAC name"
+        }
+      ],
+      "then": [
+        [
+          "set",
+          "parent_chain",
+          [
+            "lit",
+            "longest chain, before considering the number or type of multiple bonds"
+          ]
+        ],
+        [
+          "invoke",
+          "P-57.1.1.1",
+          {
+            "purpose": [
+              "lit",
+              "preferred parent-chain selection"
+            ]
+          }
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "mixed_multiple_bond_method_comparison",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        67,
+        68
+      ],
+      "term": "difference between the two acyclic prefix methods",
+      "entity": "MethodComparison",
+      "value": [
+        "lit",
+        {
+          "method_1": "assign lowest locants to the double bond after free-valence priority",
+          "method_2": "select a principal chain that includes the double bond"
+        }
+      ]
+    },
+    {
+      "id": "monocyclic_substituent_method",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        79
+      ],
+      "in": [
+        [
+          "monocyclic_parent",
+          "MonocyclicParentHydride"
+        ]
+      ],
+      "out": [
+        [
+          "substituent_prefix",
+          "SubstituentPrefix"
+        ]
+      ],
+      "steps": [
+        [
+          "invoke",
+          "P-32.1.1",
+          {
+            "method": [
+              "lit",
+              1
+            ],
+            "parent": [
+              "var",
+              "monocyclic_parent"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "fixed_numbering_substituent_locants",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        86
+      ],
+      "in": [
+        [
+          "parent_hydride",
+          "FixedNumberingParentHydride"
+        ]
+      ],
+      "out": [
+        [
+          "locants",
+          "LocantAssignment"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "locants",
+          [
+            "lit",
+            {
+              "direction": "lowest possible",
+              "priority_order": [
+                "free valences",
+                "unsaturated sites"
+              ],
+              "constraint": "retain fixed parent-hydride numbering"
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "mancude_hydro_dehydro_prefix_formation",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        97
+      ],
+      "in": [
+        [
+          "mancude_parent",
+          "MancudeParentHydride"
+        ],
+        [
+          "hydrogenation_change",
+          "HydrogenationChange"
+        ]
+      ],
+      "out": [
+        [
+          "substituent_prefix",
+          "SubstituentPrefix"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "modifying_prefix",
+          [
+            "lit",
+            {
+              "added_hydrogen": "hydro",
+              "removed_hydrogen": "dehydro"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "substituent_prefix"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "modified_mancude_general_locant_priority",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        98
+      ],
+      "in": [
+        [
+          "features",
+          "NomenclatureFeatureSet"
+        ]
+      ],
+      "out": [
+        [
+          "locants",
+          "LocantAssignment"
+        ]
+      ],
+      "steps": [
+        [
+          "invoke",
+          "P-44.2",
+          {
+            "purpose": [
+              "lit",
+              "apply seniority of nomenclature features"
+            ]
+          }
+        ],
+        [
+          "invoke",
+          "P-59.1.10",
+          {
+            "purpose": [
+              "lit",
+              "assign the lowest possible locants among several features"
+            ]
+          }
+        ],
+        [
+          "set",
+          "locants",
+          [
+            "lit",
+            "lowest locants in feature-seniority order"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "indicated_hydrogen_citation_requirement",
+      "k": "constraint",
+      "f": "required",
+      "c": [
+        99
+      ],
+      "in": [
+        [
+          "name",
+          "ModifiedMancudeSubstituentName"
+        ]
+      ],
+      "out": [
+        [
+          "valid",
+          "boolean"
+        ]
+      ],
+      "assert": [
+        "lit",
+        {
+          "cite_indicated_hydrogen": true,
+          "cite_added_indicated_hydrogen": true
+        }
+      ],
+      "violation": [
+        [
+          "reject",
+          "name",
+          "reason.indicated_hydrogen_must_be_cited"
+        ]
+      ]
+    },
+    {
+      "id": "heteromonocyclic_modified_parent_locant_priority",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        100
+      ],
+      "out": [
+        [
+          "locants",
+          "LocantAssignment"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "locants",
+          [
+            "lit",
+            {
+              "direction": "lowest possible",
+              "priority_order": [
+                "heteroatoms",
+                "indicated hydrogen",
+                "free-valence suffixes",
+                "hydro prefixes"
+              ]
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "polycyclic_mancude_locant_priority",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        112
+      ],
+      "out": [
+        [
+          "locants",
+          "LocantAssignment"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "locants",
+          [
+            "lit",
+            {
+              "direction": "lowest possible",
+              "priority_order": [
+                "fixed system numbering",
+                "indicated hydrogen",
+                "free-valence suffixes",
+                "hydro prefixes"
+              ]
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "added_indicated_hydrogen_locant_priority",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        120
+      ],
+      "out": [
+        [
+          "locants",
+          "LocantAssignment"
+        ]
+      ],
+      "steps": [
+        [
+          "invoke",
+          "P-58.2.2",
+          {
+            "method": [
+              "lit",
+              "added indicated hydrogen"
+            ]
+          }
+        ],
+        [
+          "set",
+          "locants",
+          [
+            "lit",
+            {
+              "direction": "lowest possible",
+              "priority_order": [
+                "fixed system numbering",
+                "indicated hydrogen",
+                "free-valence suffixes",
+                "added indicated hydrogen atom",
+                "hydro prefixes"
+              ]
+            }
+          ]
+        ],
+        [
+          "invoke",
+          "P-14.4",
+          {
+            "purpose": [
+              "lit",
+              "apply hydro-prefix locant rules"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "retained_unsaturated_acyclic_prefix_lookup",
+      "k": "mapping",
+      "f": "required",
+      "c": [
+        131,
+        132,
+        133,
+        135,
+        137,
+        138,
+        140,
+        141,
+        143,
+        145,
+        148,
+        150,
+        152,
+        154,
+        156,
+        142,
+        146,
+        149,
+        153
+      ],
+      "in": [
+        [
+          "retained_prefix",
+          "String"
+        ]
+      ],
+      "out": [
+        [
+          "prefix_record",
+          "RetainedPrefixRecord"
+        ]
+      ],
+      "table": "retained_unsaturated_acyclic_prefixes"
+    },
+    {
+      "id": "retained_acyclic_substitution_policy",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        141,
+        142
+      ],
+      "in": [
+        [
+          "prefix",
+          "RetainedUnsaturatedAcyclicPrefix"
+        ],
+        [
+          "substituent",
+          "Substituent"
+        ]
+      ],
+      "out": [
+        [
+          "substitution_permitted",
+          "boolean"
+        ]
+      ],
+      "if": [
+        "lit",
+        {
+          "nomenclature_regime": "general",
+          "prefixes": [
+            "vinyl",
+            "vinylidene",
+            "allyl",
+            "allylidene",
+            "allylidyne"
+          ]
+        }
+      ],
+      "then": [
+        [
+          "set",
+          "substitution_permitted",
+          true
+        ]
+      ],
+      "else": [
+        [
+          "set",
+          "substitution_permitted",
+          false
+        ]
+      ]
+    },
+    {
+      "id": "isopropenyl_restrictions",
+      "k": "constraint",
+      "f": "required",
+      "c": [
+        146,
+        148,
+        149,
+        150,
+        152
+      ],
+      "in": [
+        [
+          "proposed_prefix",
+          "SubstituentPrefix"
+        ]
+      ],
+      "out": [
+        [
+          "status",
+          "PrefixStatus"
+        ]
+      ],
+      "assert": [
+        "lit",
+        {
+          "isopropenyl": {
+            "allowed_regime": "general nomenclature",
+            "substitution_permitted": false,
+            "preferred": false
+          },
+          "preferred_prefix": "prop-1-en-2-yl"
+        }
+      ],
+      "violation": [
+        [
+          "reject",
+          "proposed_prefix",
+          "reason.isopropenyl_not_preferred_or_substitutable"
+        ]
+      ]
+    },
+    {
+      "id": "styryl_restrictions",
+      "k": "constraint",
+      "f": "required",
+      "c": [
+        153,
+        154,
+        156
+      ],
+      "in": [
+        [
+          "proposed_prefix",
+          "SubstituentPrefix"
+        ]
+      ],
+      "out": [
+        [
+          "status",
+          "PrefixStatus"
+        ]
+      ],
+      "assert": [
+        "lit",
+        {
+          "styryl": {
+            "allowed_regime": "general nomenclature",
+            "substitution_sites": "ring only",
+            "preferred": false
+          },
+          "preferred_prefix": "2-phenylethen-1-yl"
+        }
+      ],
+      "violation": [
+        [
+          "reject",
+          "proposed_prefix",
+          "reason.styryl_substitution_limited_to_ring"
+        ]
+      ]
+    },
+    {
+      "id": "retained_partially_saturated_polycyclic_status",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        158,
+        159
+      ],
+      "term": "status of retained partially saturated polycyclic substituent prefixes",
+      "entity": "PrefixStatusPolicy",
+      "value": [
+        "lit",
+        {
+          "retained_forms": {
+            "regime": "general nomenclature only",
+            "fully_substitutable": true
+          },
+          "preferred_forms": "systematic prefixes"
+        }
+      ]
+    },
+    {
+      "id": "retained_partially_saturated_polycyclic_prefix_lookup",
+      "k": "mapping",
+      "f": "required",
+      "c": [
+        160,
+        161,
+        163,
+        165,
+        168,
+        169,
+        170,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186
+      ],
+      "in": [
+        [
+          "retained_prefix",
+          "String"
+        ]
+      ],
+      "out": [
+        [
+          "prefix_record",
+          "RetainedPrefixRecord"
+        ]
+      ],
+      "table": "retained_partially_saturated_polycyclic_prefixes"
+    }
+  ]
+}
