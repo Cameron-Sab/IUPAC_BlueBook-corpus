@@ -1,0 +1,1671 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-70-part-001",
+  "mechanical_assets": true,
+  "clauses": [
+    null,
+    null,
+    null,
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    null,
+    [
+      "condition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "condition",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "mapping_entry",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "condition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "condition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "radical_ion_nomenclature_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "term": "nomenclature of radicals, ions, and related species",
+      "entity": "NomenclatureScope",
+      "value": [
+        "lit",
+        {
+          "scope": [
+            "radicals",
+            "ions",
+            "related species"
+          ],
+          "governing_principles": "organic-compound nomenclature in Chapters P-1 through P-6",
+          "revision_history": [
+            {
+              "year": 1979,
+              "terminology": "free radicals distinguished from substituent-prefix radicals"
+            },
+            {
+              "year": 1993,
+              "change": "the distinction was dropped and the nomenclature revised"
+            }
+          ],
+          "definitions_and_conventions": [
+            "reference 14",
+            "reference 28"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radical_ion_class_seniority",
+      "k": "definition",
+      "f": "preference",
+      "c": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "term": "seniority of radicals and ions as classes",
+      "entity": "ClassSeniorityOrder",
+      "value": [
+        "lit",
+        {
+          "order": [
+            "radicals",
+            "anions",
+            "cations"
+          ],
+          "direction": "decreasing seniority",
+          "relation_to_other_classes": "all precede acids and other classes"
+        }
+      ]
+    },
+    {
+      "id": "radical_ion_name_formation_methods",
+      "k": "definition",
+      "f": "required",
+      "c": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "term": "name formation for radicals and ions",
+      "entity": "NameFormationPolicy",
+      "value": [
+        "lit",
+        {
+          "permitted_name_types": [
+            "substitutive names",
+            "functional class names"
+          ],
+          "substitutive_operations": [
+            "select a parent hydride or parent compound",
+            "apply cumulative suffixes",
+            "apply prefixes"
+          ],
+          "acid_derived_anions": "traditional endings may be used as specified in P-72.2.2.2",
+          "electronic_structure_semantics": "names of di- and trivalent radicals neither indicate nor imply electronic structure or spin multiplicity"
+        }
+      ]
+    },
+    {
+      "id": "formal_operation_affix_mapping",
+      "k": "mapping",
+      "c": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "table": "radical_ion_affixes"
+    },
+    {
+      "id": "cumulative_suffix_multiplicity",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        121,
+        122
+      ],
+      "in": [
+        [
+          "affix",
+          "RadicalIonAffix"
+        ],
+        [
+          "multiplicity",
+          "integer"
+        ]
+      ],
+      "out": [
+        [
+          "multiplying_prefix",
+          "string"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "multiplying_prefix",
+          [
+            "lit",
+            {
+              "basic_prefix_scope": [
+                "yl",
+                "ylidene",
+                "ylidyne",
+                "ide",
+                "uide",
+                "ium",
+                "ylo"
+              ],
+              "separate_multiplicative_prefix_scope": [
+                "ylium",
+                "compound suffixes such as aminium and olate"
+              ],
+              "separate_prefix_series": [
+                "bis",
+                "tris",
+                "etc."
+              ]
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "suffix_citation_order_policy",
+      "k": "definition",
+      "f": "required",
+      "c": [123],
+      "term": "citation order of suffixes and endings",
+      "entity": "SuffixOrderingPolicy",
+      "value": [
+        "lit",
+        {
+          "requirement": "suffixes and endings are cited in the specific orders defined by the subordinate rules"
+        }
+      ]
+    },
+    {
+      "id": "cumulative_suffix_citation_order",
+      "k": "definition",
+      "f": "required",
+      "c": [124],
+      "term": "citation order of cumulative suffixes",
+      "entity": "SuffixCitationOrder",
+      "value": [
+        "lit",
+        {
+          "governing_rule": "reverse the class seniority order in P-70.2",
+          "order": [
+            "ium",
+            "ylium",
+            "ide",
+            "uide",
+            "yl",
+            "ylidene",
+            "ylidyne"
+          ],
+          "direction": "left-to-right citation order"
+        }
+      ]
+    },
+    {
+      "id": "functional_and_cumulative_suffix_ordering",
+      "k": "definition",
+      "f": "required",
+      "c": [
+        128
+      ],
+      "term": "ordering when functional and cumulative suffixes coexist",
+      "entity": "SuffixOrderingPolicy",
+      "value": [
+        "lit",
+        {
+          "method": "apply the specific subordinate rules P-70.3.3.2.1 and P-70.3.3.2.2"
+        }
+      ]
+    },
+    {
+      "id": "defined_compound_suffix_formation",
+      "k": "rule",
+      "f": "permitted",
+      "c": [
+        129
+      ],
+      "in": [
+        [
+          "functional_suffix",
+          "FunctionalSuffix"
+        ],
+        [
+          "cumulative_suffix",
+          "CumulativeSuffix"
+        ]
+      ],
+      "out": [
+        [
+          "compound_suffix",
+          "CompoundSuffix"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "compound_suffix",
+          [
+            "lit",
+            {
+              "operation": "add a cumulative suffix to a functional suffix",
+              "result": "defined compound suffix",
+              "dependency": "P-71.3.2"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "zwitterionic_suffix_order_and_locants",
+      "k": "definition",
+      "f": "required",
+      "c": [
+        135
+      ],
+      "term": "suffix treatment in zwitterionic compounds",
+      "entity": "ZwitterionicSuffixPolicy",
+      "value": [
+        "lit",
+        {
+          "citation_order": "cumulative suffixes precede functional suffixes",
+          "locant_priority": "cumulative suffixes have seniority for lowest locants"
+        }
+      ]
+    },
+    {
+      "id": "preferred_radical_ion_name_policy",
+      "k": "definition",
+      "f": "preference",
+      "c": [
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150
+      ],
+      "term": "preferred IUPAC names for radicals and ions",
+      "entity": "PreferredNamePolicy",
+      "value": [
+        "lit",
+        {
+          "primary_method": "substitutive nomenclature based on carbane and heterane nomenclature with formal-operation suffixes and prefixes",
+          "radical_name_vs_prefix": "the preferred radical name may differ from the preferred substituent prefix",
+          "retained_as_preferred": [
+            "contracted names such as methoxide and ethoxide",
+            "corresponding radical names methoxyl and ethoxyl"
+          ],
+          "retained_general_only": [
+            "onium cation names such as ammonium and sulfonium",
+            "carbene",
+            "amide",
+            "acetyl anion"
+          ],
+          "functional_class_names": {
+            "status": "allowed in general nomenclature",
+            "not_preferred_when": "a systematic or retained preferred name is available"
+          },
+          "preferred_replacements": [
+            {
+              "preferred": "methylium",
+              "general": "methyl cation",
+              "formula": "CH3+"
+            },
+            {
+              "preferred": "acetylium",
+              "general": "acetyl cation",
+              "formula": "CH3-C(O)+"
+            },
+            {
+              "preferred": "ethanide",
+              "general": "ethyl anion",
+              "formula": "CH3-CH2-"
+            },
+            {
+              "preferred": "methaniumyl",
+              "general": "methyl radical cation",
+              "formula": "CH4 radical cation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "exceptions": [],
+  "tables": [
+    {
+      "id": "radical_ion_affixes",
+      "c": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "label": "Table 7.1",
+      "title": "Suffixes or endings and prefixes for radicals and ions in substitutive nomenclature",
+      "cols": [
+        [
+          "species_class",
+          "Species class",
+          "string",
+          [
+            29,
+            74,
+            99
+          ]
+        ],
+        [
+          "formal_operation",
+          "Formal operation",
+          "string",
+          [
+            34,
+            39,
+            54,
+            69,
+            79,
+            89,
+            94,
+            104,
+            109,
+            114
+          ]
+        ],
+        [
+          "site_distribution",
+          "Distribution of affected sites",
+          "string",
+          [
+            44,
+            49,
+            59,
+            64
+          ]
+        ],
+        [
+          "suffix_or_ending",
+          "Suffix or ending",
+          "string",
+          [
+            36,
+            46,
+            51,
+            61,
+            66,
+            71,
+            81,
+            86,
+            91,
+            96,
+            106,
+            111,
+            116
+          ]
+        ],
+        [
+          "prefix",
+          "Prefix",
+          "string",
+          [
+            38
+          ]
+        ]
+      ],
+      "rows": [
+        {
+          "id": "radical_loss_h_one",
+          "rank": 1,
+          "c": [
+            29,
+            34,
+            36,
+            38
+          ],
+          "v": [
+            "radical",
+            "loss of one H radical",
+            "one atom",
+            "yl",
+            "ylo"
+          ]
+        },
+        {
+          "id": "radical_loss_2h_same_atom",
+          "rank": 2,
+          "c": [
+            39,
+            44,
+            46
+          ],
+          "v": [
+            "radical",
+            "loss of two H radicals",
+            "one atom",
+            "ylidene",
+            null
+          ]
+        },
+        {
+          "id": "radical_loss_2h_different_atoms",
+          "rank": 3,
+          "c": [
+            39,
+            49,
+            51
+          ],
+          "v": [
+            "radical",
+            "loss of two H radicals",
+            "different atoms",
+            "diyl",
+            null
+          ]
+        },
+        {
+          "id": "radical_loss_3h_same_atom",
+          "rank": 4,
+          "c": [
+            54,
+            59,
+            61
+          ],
+          "v": [
+            "radical",
+            "loss of three H radicals",
+            "one atom",
+            "ylidyne",
+            null
+          ]
+        },
+        {
+          "id": "radical_loss_3h_different_atoms",
+          "rank": 5,
+          "c": [
+            54,
+            64,
+            66
+          ],
+          "v": [
+            "radical",
+            "loss of three H radicals",
+            "different atoms",
+            "triyl or ylylidene",
+            null
+          ]
+        },
+        {
+          "id": "radical_add_h",
+          "rank": 6,
+          "c": [
+            69,
+            71
+          ],
+          "v": [
+            "radical",
+            "addition of one H radical",
+            null,
+            "hydryl",
+            null
+          ]
+        },
+        {
+          "id": "anion_loss_hydron_ide",
+          "rank": 7,
+          "c": [
+            74,
+            79,
+            81
+          ],
+          "v": [
+            "anion",
+            "loss of H+",
+            null,
+            "ide",
+            null
+          ]
+        },
+        {
+          "id": "anion_loss_hydron_acid_ending",
+          "rank": 8,
+          "c": [
+            74,
+            79,
+            86
+          ],
+          "v": [
+            "anion",
+            "loss of H+ from an acid or related compound",
+            null,
+            "ate or ite ending",
+            null
+          ]
+        },
+        {
+          "id": "anion_add_hydride",
+          "rank": 9,
+          "c": [
+            74,
+            89,
+            91
+          ],
+          "v": [
+            "anion",
+            "addition of H-",
+            null,
+            "uide",
+            null
+          ]
+        },
+        {
+          "id": "anion_add_electron",
+          "rank": 10,
+          "c": [
+            74,
+            94,
+            96
+          ],
+          "v": [
+            "anion",
+            "addition of one electron",
+            null,
+            "elide",
+            null
+          ]
+        },
+        {
+          "id": "cation_loss_hydride",
+          "rank": 11,
+          "c": [
+            99,
+            104,
+            106
+          ],
+          "v": [
+            "cation",
+            "loss of H-",
+            null,
+            "ylium",
+            null
+          ]
+        },
+        {
+          "id": "cation_add_hydron",
+          "rank": 12,
+          "c": [
+            99,
+            109,
+            111
+          ],
+          "v": [
+            "cation",
+            "addition of H+",
+            null,
+            "ium",
+            null
+          ]
+        },
+        {
+          "id": "cation_loss_electron",
+          "rank": 13,
+          "c": [
+            99,
+            114,
+            116
+          ],
+          "v": [
+            "cation",
+            "loss of one electron",
+            null,
+            "elium",
+            null
+          ]
+        }
+      ],
+      "footnotes": [
+        {
+          "id": "electron_affix_recommendation",
+          "marker": "1",
+          "text": "The suffixes elide and elium are recommended for modification of a parent hydride by addition and subtraction of one electron, respectively.",
+          "scope": [
+            [
+              "table",
+              "radical_ion_affixes"
+            ]
+          ],
+          "c": [
+            120
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "species_class",
+          "formal_operation",
+          "site_distribution"
+        ],
+        "result": [
+          "suffix_or_ending",
+          "prefix"
+        ],
+        "cardinality": "one_to_many",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [],
+  "examples": [
+    {
+      "id": "mixed_cumulative_suffix_order",
+      "c": [
+        126
+      ],
+      "input": {
+        "structure": "triazene radical zwitterion with trimethylsilyl and methyl substituents"
+      },
+      "ok": [
+        "3-methyl-1-(trimethylsilyl)triaz-2-en-2-ium-1-id-2-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "cumulative_suffix_citation_order"
+        ]
+      ],
+      "why": "The suffixes are cited in the prescribed order ium, ide, then yl."
+    },
+    {
+      "id": "aminyl_compound_suffix",
+      "c": [
+        131
+      ],
+      "input": {
+        "functional_suffix": "amine",
+        "cumulative_suffix": "yl"
+      },
+      "ok": [
+        "methanaminyl"
+      ],
+      "bad": [
+        "methylazanyl"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "defined_compound_suffix_formation"
+        ]
+      ],
+      "why": "Adding a cumulative suffix to a functional suffix forms the preferred defined compound suffix; methylazanyl is the traditional-name alternative shown."
+    },
+    {
+      "id": "iminyl_compound_suffix",
+      "c": [
+        133
+      ],
+      "input": {
+        "functional_suffix": "imine",
+        "cumulative_suffix": "yl"
+      },
+      "ok": [
+        "propan-1-iminyl"
+      ],
+      "bad": [
+        "propylideneazanyl"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "defined_compound_suffix_formation"
+        ]
+      ],
+      "why": "The defined compound suffix gives the preferred name."
+    },
+    {
+      "id": "zwitterionic_suffix_precedence",
+      "c": [
+        137
+      ],
+      "input": {
+        "compound": "zwitterionic hydrazine sulfonate"
+      },
+      "ok": [
+        "1,1,1-trimethylhydrazin-1-ium-2-sulfonate"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "zwitterionic_suffix_order_and_locants"
+        ]
+      ],
+      "why": "The cumulative suffix precedes the functional suffix and receives the lower locant."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {
+      "id": "reference.p70.part001.chapter_range_start",
+      "c": [5],
+      "rel": "cites",
+      "o": "P-70.1:xref:0001",
+      "target": ["external", "P-1"]
+    },
+    {
+      "id": "reference.p70.part001.chapter_range_end",
+      "c": [5],
+      "rel": "cites",
+      "o": "P-70.1:xref:0002",
+      "target": ["external", "P-6"]
+    }
+  ],
+  "additional_refs": []
+}
