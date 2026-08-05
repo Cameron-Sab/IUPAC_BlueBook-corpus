@@ -4,19 +4,19 @@
   "task_id": "P-74-part-002",
   "mechanical_assets": true,
   "clauses": [
-    null,
+    ["definition","normative","compile"],
     ["condition","normative","compile"],
     ["procedure_step","normative","compile"],
     null,
     ["example","illustrative","compile"],
     null,
-    null,
+    ["definition","normative","compile"],
     ["condition","normative","compile"],
     ["procedure_step","normative","compile"],
     null,
     ["example","illustrative","compile"],
     null,
-    null,
+    ["definition","normative","compile"],
     ["condition","normative","compile"],
     ["procedure_step","normative","compile"],
     null,
@@ -26,41 +26,48 @@
     null,
     ["example","illustrative","compile"],
     null,
-    null,
+    ["definition","normative","compile"],
     ["condition","normative","compile"],
     ["constraint","normative","compile"],
     ["procedure_step","normative","compile"],
     null,
     ["example","illustrative","compile"],
     null,
-    null,
+    ["procedure_step","normative","compile"],
     null,
     null,
     ["example","illustrative","compile"],
     ["example","illustrative","compile"],
-    null,
+    ["definition","normative","compile"],
     ["condition","normative","compile"],
     ["condition","normative","compile"],
-    null,
     ["procedure_step","normative","compile"],
     ["procedure_step","normative","compile"],
-    null,
     ["procedure_step","normative","compile"],
-    null,
-    ["example","illustrative","compile"],
-    null,
-    null,
+    ["heading","informative","skip","heading_or_title"],
     ["procedure_step","normative","compile"],
     null,
     ["example","illustrative","compile"],
     null,
-    ["example","illustrative","compile"],
-    null,
-    null,
+    ["heading","informative","skip","heading_or_title"],
     ["procedure_step","normative","compile"],
     null,
     ["example","illustrative","compile"],
     null,
+    ["example","illustrative","compile"],
+    null,
+    ["heading","informative","skip","heading_or_title"],
+    ["procedure_step","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["procedure_step","normative","compile"],
+    ["procedure_step","normative","compile"],
+    ["procedure_step","normative","compile"],
+    ["procedure_step","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
     null,
     ["procedure_step","normative","compile"],
     ["procedure_step","normative","compile"],
@@ -69,20 +76,13 @@
     null,
     ["example","illustrative","compile"],
     null,
-    null,
-    ["procedure_step","normative","compile"],
-    ["procedure_step","normative","compile"],
-    ["preference_criterion","normative","compile"],
-    null,
-    ["example","illustrative","compile"],
-    null,
-    null,
+    ["definition","normative","compile"],
     ["condition","normative","compile"],
-    null,
+    ["procedure_step","normative","compile"],
     null,
     ["example","illustrative","compile"],
     null,
-    null,
+    ["heading","informative","skip","heading_or_title"],
     ["definition","normative","compile"],
     ["note","informative","compile"],
     ["procedure_step","normative","compile"],
@@ -92,19 +92,19 @@
     null,
     ["example","illustrative","compile"],
     null,
-    null,
+    ["definition","normative","compile"],
     ["condition","normative","compile"],
     ["procedure_step","normative","compile"],
     ["preference_criterion","normative","compile"],
     null,
     ["example","illustrative","compile"],
     null,
-    null,
+    ["definition","normative","compile"],
     ["preference_criterion","normative","compile"],
     null,
     ["example","illustrative","compile"],
     null,
-    null,
+    ["heading","informative","skip","heading_or_title"],
     ["procedure_step","normative","compile"],
     null,
     ["example","illustrative","compile"],
@@ -118,63 +118,63 @@
       "id": "p74221_6_naming_methods",
       "k": "procedure",
       "f": "preference",
-      "c": [2, 3],
+      "c": [1, 2, 3],
       "steps": [
-        ["emit", "R2C--O+=O <-> R2C=O+-O-. Method (1) in P-74.2.2.1 gives preferred IUPAC names."]
+        ["emit", "Carbonyl oxides have the delocalized general structure R2C--O+=O <-> R2C=O+-O-. Method (1) in P-74.2.2.1 gives preferred IUPAC names."]
       ]
     },
     {
       "id": "p74221_7_naming_methods",
       "k": "procedure",
       "f": "preference",
-      "c": [8, 9],
+      "c": [7, 8, 9],
       "steps": [
-        ["emit", "R2C=O+-C-(R)2 <-> R2C+-OC-(R)2. Method (2) in P-74.2.2.1 gives preferred IUPAC names."]
+        ["emit", "Carbonyl ylides have the delocalized general structure R2C=O+-C-(R)2 <-> R2C+-OC-(R)2. Method (2) in P-74.2.2.1 gives preferred IUPAC names."]
       ]
     },
     {
       "id": "p74221_8_naming_methods",
       "k": "procedure",
       "f": "preference",
-      "c": [14, 15],
+      "c": [13, 14, 15],
       "steps": [
-        ["emit", "RR'C=S+-O- <-> RR'C=S=O, where R' = or != H. Method (4) in P-74.2.2.1 gives preferred IUPAC names."]
+        ["emit", "Thioaldehyde S-oxides, thioketone S-oxides, and heterone S-oxides have the delocalized general structure RR'C=S+-O- <-> RR'C=S=O, where R' = or != H. Method (4) in P-74.2.2.1 gives preferred IUPAC names."]
       ]
     },
     {
       "id": "p74221_9_naming_methods",
       "k": "procedure",
       "f": "preference",
-      "c": [24, 25, 26],
+      "c": [23, 24, 25, 26],
       "steps": [
-        ["emit", "R2C=N+(O-)R' <-> R2C+-N(O-)R' where R' != H; compounds where R' = H are not included in this class. Method (3) in P-74.2.2.1 gives preferred IUPAC names."]
+        ["emit", "Nitrones have the delocalized general structure R2C=N+(O-)R' <-> R2C+-N(O-)R' where R' != H; compounds where R' = H are not included in this class. Method (3) in P-74.2.2.1 gives preferred IUPAC names."]
       ]
     },
     {
       "id": "p74221_10_nitro_compound_mapping",
       "k": "procedure",
       "f": "required",
-      "c": [33, 34],
+      "c": [30, 33, 34],
       "steps": [
-        ["emit", "The example maps the displayed nitro compound to nitroethane (PIN)."]
+        ["emit", "Name nitro compounds from the traditional structure R-NO2 using the compulsory prefix 'nitro' (see also P-61.5.1); the example maps the displayed compound to nitroethane (PIN)."]
       ]
     },
     {
       "id": "p74222_dipolar_atom_combinations",
       "k": "procedure",
       "f": "required",
-      "c": [36, 37],
+      "c": [35, 36, 37],
       "steps": [
-        ["emit", "X triple-bond N+--Z- <-> -X=N+=Z <-> -X=N-Z+, where X = C, N or O and Z = C, N or O."]
+        ["emit", "The propargyl (propynyl) type includes compounds with canonical resonance forms X triple-bond N+--Z- <-> -X=N+=Z <-> -X=N-Z+, where X = C, N or O and Z = C, N or O."]
       ]
     },
     {
       "id": "p742221_naming_methods",
       "k": "procedure",
       "f": "preference",
-      "c": [39, 40],
+      "c": [38, 39, 40],
       "steps": [
-        ["emit", "Name these compounds either as zwitterionic compounds without breaking the longest chain of heteroatoms, or by functional class nomenclature using the class names imide, oxide, sulfide, etc."]
+        ["emit", "Nitrile imides, nitrile oxides and chalcogen analogues, and nitrile ylides may be named either as zwitterionic compounds without breaking the longest chain of heteroatoms, or by functional class nomenclature using the class names imide, oxide, sulfide, etc."]
       ]
     },
     {
@@ -208,7 +208,7 @@
       "id": "p742222_azide_naming_methods",
       "k": "procedure",
       "f": "preference",
-      "c": [59, 60, 61, 62],
+      "c": [58, 59, 60, 61, 62],
       "steps": [
         ["emit", "Azides may be named by three methods: (1) substitutively, using the compulsory prefix azido (P-61.7); (2) by functional class nomenclature using the class name azide; (3) as derivatives of the zwitterionic parent hydride 'triazadien-2-ium-1-ide.' Method (1) yields preferred IUPAC names (see also P-61.7)."]
       ]
@@ -217,7 +217,7 @@
       "id": "p742223_diazo_naming_methods",
       "k": "procedure",
       "f": "preference",
-      "c": [67, 68, 69],
+      "c": [66, 67, 68, 69],
       "steps": [
         ["emit", "Diazo compounds may be named in two ways: (1) substitutively by using the compulsory prefix diazo (P-61.4); (2) as derivatives of the zwitterionic parent hydride diazen-2-ium-1-ide. Method (1) leads to preferred IUPAC names (see also P-61.4)."]
       ]
@@ -226,18 +226,18 @@
       "id": "p74223_delocalized_carbene_form",
       "k": "procedure",
       "f": "required",
-      "c": [74],
+      "c": [73, 74],
       "steps": [
-        ["emit", "X2 radical-C=Z <-> +X=C-Z-, where X = C or N and Z = C, N or O."]
+        ["emit", "The carbene type includes compounds with canonical resonance forms X2 radical-C=Z <-> +X=C-Z-, where X = C or N and Z = C, N or O."]
       ]
     },
     {
       "id": "p742231_ylidene_example_rule",
       "k": "procedure",
       "f": "preference",
-      "c": [77],
+      "c": [75, 77],
       "steps": [
-        ["emit", "The displayed delocalized carbene is named using the ylidene form as the preferred IUPAC name."]
+        ["emit", "Acyl carbenes have the generic structure acyl-C2 radical-R. An unspecified acyl carbene is generally a carbonyl carbene and may be named using the longest carbon chain under substitutive nomenclature for radicals, with priority given to the radical cited as suffix (see P-71.2); the displayed compound has the preferred ylidene name."]
       ]
     },
     {
@@ -253,18 +253,18 @@
       "id": "p742233_azanylidene_nitrene_aminylene_naming",
       "k": "procedure",
       "f": "preference",
-      "c": [90, 91, 92],
+      "c": [89, 90, 91, 92],
       "steps": [
-        ["emit", "RC(=N-R')N2 radical <-> RC(N--R')=N+. They may be named substitutively using the parent names azanylidene, nitrene, or aminylene. The use of 'azanylidene' leads to preferred IUPAC names."]
+        ["emit", "Imidoyl nitrenes have the general structure RC(=N-R')N2 radical <-> RC(N--R')=N+. They may be named substitutively using the parent names azanylidene, nitrene, or aminylene. The use of 'azanylidene' leads to preferred IUPAC names."]
       ]
     },
     {
       "id": "p742234_longest_chain_ylidene_naming",
       "k": "procedure",
       "f": "preference",
-      "c": [97],
+      "c": [96, 97],
       "steps": [
-        ["emit", "Preferred IUPAC names are formed by using the longest carbon chain according to the principles of substitutive nomenclature for radicals, low locants being assigned to the suffix 'ylidene'."]
+        ["emit", "Vinyl (ethenyl) carbenes have the structure RR'C=CR''-C2 radical-R'''. Preferred IUPAC names are formed by using the longest carbon chain according to the principles of substitutive nomenclature for radicals, low locants being assigned to the suffix 'ylidene'."]
       ]
     },
     {

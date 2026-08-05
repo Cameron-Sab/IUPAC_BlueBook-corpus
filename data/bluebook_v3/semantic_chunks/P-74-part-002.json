@@ -21,12 +21,12 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 107,
-    "compiled_clause_count": 74,
+    "compiled_clause_count": 87,
     "correction_application_count": 0,
     "example_count": 19,
     "exception_count": 0,
     "figure_count": 19,
-    "nonoperative_clause_count": 33,
+    "nonoperative_clause_count": 20,
     "record_count": 18,
     "reference_count": 32,
     "semantic_unit_count": 18,
@@ -34,16 +34,33 @@
     "symbol_declaration_count": 0,
     "table_count": 0
   },
-  "chunk_sha256": "DC04B7F5E85FF8F8F441A6AAF84D3B211B7A578521B929681B27EBCDD40349EB",
+  "chunk_sha256": "531FA3C76340DE9AB267EA6CCA1326FB1EA840E7D6D508C8DEFC1869FC014744",
   "clause_dispositions": [
     {
       "clause_id": "P-74.2.2.1.6:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p74221_6_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p74221_6_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p74221_6_naming_methods.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p74221_6_naming_methods.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-74.2.2.1.6:clause:0002",
@@ -137,11 +154,28 @@
     {
       "clause_id": "P-74.2.2.1.7:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p74221_7_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p74221_7_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p74221_7_naming_methods.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p74221_7_naming_methods.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-74.2.2.1.7:clause:0002",
@@ -235,11 +269,28 @@
     {
       "clause_id": "P-74.2.2.1.8:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p74221_8_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p74221_8_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p74221_8_naming_methods.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p74221_8_naming_methods.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-74.2.2.1.8:clause:0002",
@@ -389,11 +440,28 @@
     {
       "clause_id": "P-74.2.2.1.9:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p74221_9_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p74221_9_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p74221_9_naming_methods.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p74221_9_naming_methods.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-74.2.2.1.9:clause:0002",
@@ -513,11 +581,28 @@
     {
       "clause_id": "P-74.2.2.1.10:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p74221_10_nitro_compound_mapping",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p74221_10_nitro_compound_mapping.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p74221_10_nitro_compound_mapping.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p74221_10_nitro_compound_mapping.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-74.2.2.1.10:clause:0002",
@@ -605,11 +690,28 @@
     {
       "clause_id": "P-74.2.2.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p74222_dipolar_atom_combinations",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p74222_dipolar_atom_combinations.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p74222_dipolar_atom_combinations.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p74222_dipolar_atom_combinations.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-74.2.2.2:clause:0002",
@@ -666,11 +768,28 @@
     {
       "clause_id": "P-74.2.2.2.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p742221_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p742221_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p742221_naming_methods.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p742221_naming_methods.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-74.2.2.2.1:clause:0002",
@@ -971,11 +1090,28 @@
     {
       "clause_id": "P-74.2.2.2.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p742222_azide_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p742222_azide_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p742222_azide_naming_methods.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p742222_azide_naming_methods.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-74.2.2.2.2:clause:0002",
@@ -1121,11 +1257,28 @@
     {
       "clause_id": "P-74.2.2.2.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p742223_diazo_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p742223_diazo_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p742223_diazo_naming_methods.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p742223_diazo_naming_methods.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-74.2.2.2.3:clause:0002",
@@ -1245,11 +1398,28 @@
     {
       "clause_id": "P-74.2.2.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p74223_delocalized_carbene_form",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p74223_delocalized_carbene_form.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p74223_delocalized_carbene_form.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p74223_delocalized_carbene_form.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-74.2.2.3:clause:0002",
@@ -1280,11 +1450,28 @@
     {
       "clause_id": "P-74.2.2.3.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p742231_ylidene_example_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p742231_ylidene_example_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p742231_ylidene_example_rule.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p742231_ylidene_example_rule.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-74.2.2.3.1:clause:0002",
@@ -1544,11 +1731,28 @@
     {
       "clause_id": "P-74.2.2.3.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p742233_azanylidene_nitrene_aminylene_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p742233_azanylidene_nitrene_aminylene_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p742233_azanylidene_nitrene_aminylene_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p742233_azanylidene_nitrene_aminylene_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-74.2.2.3.3:clause:0002",
@@ -1668,11 +1872,28 @@
     {
       "clause_id": "P-74.2.2.3.4:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p74.part002.p742234_longest_chain_ylidene_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p74.part002.p742234_longest_chain_ylidene_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p74.part002.p742234_longest_chain_ylidene_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p74.part002.p742234_longest_chain_ylidene_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-74.2.2.3.4:clause:0002",
@@ -3635,6 +3856,7 @@
   "semantic_units": [
     {
       "clause_ids": [
+        "P-74.2.2.1.6:clause:0001",
         "P-74.2.2.1.6:clause:0002",
         "P-74.2.2.1.6:clause:0003"
       ],
@@ -3645,6 +3867,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.1.6:clause:0001",
             "P-74.2.2.1.6:clause:0002",
             "P-74.2.2.1.6:clause:0003"
           ],
@@ -3659,6 +3882,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.1.6:clause:0001",
             "P-74.2.2.1.6:clause:0002",
             "P-74.2.2.1.6:clause:0003"
           ],
@@ -3666,12 +3890,13 @@
           "statement_id": "stmt.p74.part002.p74221_6_naming_methods.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.1.6:clause:0001",
               "P-74.2.2.1.6:clause:0002",
               "P-74.2.2.1.6:clause:0003"
             ],
             "expression_id": "expr.p74.part002.p74221_6_naming_methods.steps.1.value",
             "op": "literal",
-            "value": "R2C--O+=O <-> R2C=O+-O-. Method (1) in P-74.2.2.1 gives preferred IUPAC names."
+            "value": "Carbonyl oxides have the delocalized general structure R2C--O+=O <-> R2C=O+-O-. Method (1) in P-74.2.2.1 gives preferred IUPAC names."
           }
         }
       ],
@@ -3679,6 +3904,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.1.7:clause:0001",
         "P-74.2.2.1.7:clause:0002",
         "P-74.2.2.1.7:clause:0003"
       ],
@@ -3689,6 +3915,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.1.7:clause:0001",
             "P-74.2.2.1.7:clause:0002",
             "P-74.2.2.1.7:clause:0003"
           ],
@@ -3703,6 +3930,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.1.7:clause:0001",
             "P-74.2.2.1.7:clause:0002",
             "P-74.2.2.1.7:clause:0003"
           ],
@@ -3710,12 +3938,13 @@
           "statement_id": "stmt.p74.part002.p74221_7_naming_methods.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.1.7:clause:0001",
               "P-74.2.2.1.7:clause:0002",
               "P-74.2.2.1.7:clause:0003"
             ],
             "expression_id": "expr.p74.part002.p74221_7_naming_methods.steps.1.value",
             "op": "literal",
-            "value": "R2C=O+-C-(R)2 <-> R2C+-OC-(R)2. Method (2) in P-74.2.2.1 gives preferred IUPAC names."
+            "value": "Carbonyl ylides have the delocalized general structure R2C=O+-C-(R)2 <-> R2C+-OC-(R)2. Method (2) in P-74.2.2.1 gives preferred IUPAC names."
           }
         }
       ],
@@ -3723,6 +3952,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.1.8:clause:0001",
         "P-74.2.2.1.8:clause:0002",
         "P-74.2.2.1.8:clause:0003"
       ],
@@ -3733,6 +3963,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.1.8:clause:0001",
             "P-74.2.2.1.8:clause:0002",
             "P-74.2.2.1.8:clause:0003"
           ],
@@ -3747,6 +3978,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.1.8:clause:0001",
             "P-74.2.2.1.8:clause:0002",
             "P-74.2.2.1.8:clause:0003"
           ],
@@ -3754,12 +3986,13 @@
           "statement_id": "stmt.p74.part002.p74221_8_naming_methods.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.1.8:clause:0001",
               "P-74.2.2.1.8:clause:0002",
               "P-74.2.2.1.8:clause:0003"
             ],
             "expression_id": "expr.p74.part002.p74221_8_naming_methods.steps.1.value",
             "op": "literal",
-            "value": "RR'C=S+-O- <-> RR'C=S=O, where R' = or != H. Method (4) in P-74.2.2.1 gives preferred IUPAC names."
+            "value": "Thioaldehyde S-oxides, thioketone S-oxides, and heterone S-oxides have the delocalized general structure RR'C=S+-O- <-> RR'C=S=O, where R' = or != H. Method (4) in P-74.2.2.1 gives preferred IUPAC names."
           }
         }
       ],
@@ -3767,6 +4000,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.1.9:clause:0001",
         "P-74.2.2.1.9:clause:0002",
         "P-74.2.2.1.9:clause:0003",
         "P-74.2.2.1.9:clause:0004"
@@ -3778,6 +4012,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.1.9:clause:0001",
             "P-74.2.2.1.9:clause:0002",
             "P-74.2.2.1.9:clause:0003",
             "P-74.2.2.1.9:clause:0004"
@@ -3793,6 +4028,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.1.9:clause:0001",
             "P-74.2.2.1.9:clause:0002",
             "P-74.2.2.1.9:clause:0003",
             "P-74.2.2.1.9:clause:0004"
@@ -3801,13 +4037,14 @@
           "statement_id": "stmt.p74.part002.p74221_9_naming_methods.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.1.9:clause:0001",
               "P-74.2.2.1.9:clause:0002",
               "P-74.2.2.1.9:clause:0003",
               "P-74.2.2.1.9:clause:0004"
             ],
             "expression_id": "expr.p74.part002.p74221_9_naming_methods.steps.1.value",
             "op": "literal",
-            "value": "R2C=N+(O-)R' <-> R2C+-N(O-)R' where R' != H; compounds where R' = H are not included in this class. Method (3) in P-74.2.2.1 gives preferred IUPAC names."
+            "value": "Nitrones have the delocalized general structure R2C=N+(O-)R' <-> R2C+-N(O-)R' where R' != H; compounds where R' = H are not included in this class. Method (3) in P-74.2.2.1 gives preferred IUPAC names."
           }
         }
       ],
@@ -3815,6 +4052,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.1.10:clause:0001",
         "P-74.2.2.1.10:clause:0004",
         "P-74.2.2.1.10:clause:0005"
       ],
@@ -3825,6 +4063,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.1.10:clause:0001",
             "P-74.2.2.1.10:clause:0004",
             "P-74.2.2.1.10:clause:0005"
           ],
@@ -3839,6 +4078,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.1.10:clause:0001",
             "P-74.2.2.1.10:clause:0004",
             "P-74.2.2.1.10:clause:0005"
           ],
@@ -3846,12 +4086,13 @@
           "statement_id": "stmt.p74.part002.p74221_10_nitro_compound_mapping.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.1.10:clause:0001",
               "P-74.2.2.1.10:clause:0004",
               "P-74.2.2.1.10:clause:0005"
             ],
             "expression_id": "expr.p74.part002.p74221_10_nitro_compound_mapping.steps.1.value",
             "op": "literal",
-            "value": "The example maps the displayed nitro compound to nitroethane (PIN)."
+            "value": "Name nitro compounds from the traditional structure R-NO2 using the compulsory prefix 'nitro' (see also P-61.5.1); the example maps the displayed compound to nitroethane (PIN)."
           }
         }
       ],
@@ -3859,6 +4100,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.2:clause:0001",
         "P-74.2.2.2:clause:0002",
         "P-74.2.2.2:clause:0003"
       ],
@@ -3869,6 +4111,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.2:clause:0001",
             "P-74.2.2.2:clause:0002",
             "P-74.2.2.2:clause:0003"
           ],
@@ -3883,6 +4126,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.2:clause:0001",
             "P-74.2.2.2:clause:0002",
             "P-74.2.2.2:clause:0003"
           ],
@@ -3890,12 +4134,13 @@
           "statement_id": "stmt.p74.part002.p74222_dipolar_atom_combinations.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.2:clause:0001",
               "P-74.2.2.2:clause:0002",
               "P-74.2.2.2:clause:0003"
             ],
             "expression_id": "expr.p74.part002.p74222_dipolar_atom_combinations.steps.1.value",
             "op": "literal",
-            "value": "X triple-bond N+--Z- <-> -X=N+=Z <-> -X=N-Z+, where X = C, N or O and Z = C, N or O."
+            "value": "The propargyl (propynyl) type includes compounds with canonical resonance forms X triple-bond N+--Z- <-> -X=N+=Z <-> -X=N-Z+, where X = C, N or O and Z = C, N or O."
           }
         }
       ],
@@ -3903,6 +4148,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.2.1:clause:0001",
         "P-74.2.2.2.1:clause:0002",
         "P-74.2.2.2.1:clause:0003"
       ],
@@ -3913,6 +4159,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.2.1:clause:0001",
             "P-74.2.2.2.1:clause:0002",
             "P-74.2.2.2.1:clause:0003"
           ],
@@ -3927,6 +4174,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.2.1:clause:0001",
             "P-74.2.2.2.1:clause:0002",
             "P-74.2.2.2.1:clause:0003"
           ],
@@ -3934,12 +4182,13 @@
           "statement_id": "stmt.p74.part002.p742221_naming_methods.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.2.1:clause:0001",
               "P-74.2.2.2.1:clause:0002",
               "P-74.2.2.2.1:clause:0003"
             ],
             "expression_id": "expr.p74.part002.p742221_naming_methods.steps.1.value",
             "op": "literal",
-            "value": "Name these compounds either as zwitterionic compounds without breaking the longest chain of heteroatoms, or by functional class nomenclature using the class names imide, oxide, sulfide, etc."
+            "value": "Nitrile imides, nitrile oxides and chalcogen analogues, and nitrile ylides may be named either as zwitterionic compounds without breaking the longest chain of heteroatoms, or by functional class nomenclature using the class names imide, oxide, sulfide, etc."
           }
         }
       ],
@@ -4067,6 +4316,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.2.2:clause:0001",
         "P-74.2.2.2.2:clause:0002",
         "P-74.2.2.2.2:clause:0003",
         "P-74.2.2.2.2:clause:0004",
@@ -4079,6 +4329,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.2.2:clause:0001",
             "P-74.2.2.2.2:clause:0002",
             "P-74.2.2.2.2:clause:0003",
             "P-74.2.2.2.2:clause:0004",
@@ -4095,6 +4346,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.2.2:clause:0001",
             "P-74.2.2.2.2:clause:0002",
             "P-74.2.2.2.2:clause:0003",
             "P-74.2.2.2.2:clause:0004",
@@ -4104,6 +4356,7 @@
           "statement_id": "stmt.p74.part002.p742222_azide_naming_methods.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.2.2:clause:0001",
               "P-74.2.2.2.2:clause:0002",
               "P-74.2.2.2.2:clause:0003",
               "P-74.2.2.2.2:clause:0004",
@@ -4119,6 +4372,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.2.3:clause:0001",
         "P-74.2.2.2.3:clause:0002",
         "P-74.2.2.2.3:clause:0003",
         "P-74.2.2.2.3:clause:0004"
@@ -4130,6 +4384,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.2.3:clause:0001",
             "P-74.2.2.2.3:clause:0002",
             "P-74.2.2.2.3:clause:0003",
             "P-74.2.2.2.3:clause:0004"
@@ -4145,6 +4400,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.2.3:clause:0001",
             "P-74.2.2.2.3:clause:0002",
             "P-74.2.2.2.3:clause:0003",
             "P-74.2.2.2.3:clause:0004"
@@ -4153,6 +4409,7 @@
           "statement_id": "stmt.p74.part002.p742223_diazo_naming_methods.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.2.3:clause:0001",
               "P-74.2.2.2.3:clause:0002",
               "P-74.2.2.2.3:clause:0003",
               "P-74.2.2.2.3:clause:0004"
@@ -4167,6 +4424,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.3:clause:0001",
         "P-74.2.2.3:clause:0002"
       ],
       "force": "required",
@@ -4176,6 +4434,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.3:clause:0001",
             "P-74.2.2.3:clause:0002"
           ],
           "expression_id": "expr.p74.part002.p74223_delocalized_carbene_form.scope",
@@ -4189,17 +4448,19 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.3:clause:0001",
             "P-74.2.2.3:clause:0002"
           ],
           "op": "emit",
           "statement_id": "stmt.p74.part002.p74223_delocalized_carbene_form.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.3:clause:0001",
               "P-74.2.2.3:clause:0002"
             ],
             "expression_id": "expr.p74.part002.p74223_delocalized_carbene_form.steps.1.value",
             "op": "literal",
-            "value": "X2 radical-C=Z <-> +X=C-Z-, where X = C or N and Z = C, N or O."
+            "value": "The carbene type includes compounds with canonical resonance forms X2 radical-C=Z <-> +X=C-Z-, where X = C or N and Z = C, N or O."
           }
         }
       ],
@@ -4207,6 +4468,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.3.1:clause:0001",
         "P-74.2.2.3.1:clause:0003"
       ],
       "force": "preference",
@@ -4216,6 +4478,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.3.1:clause:0001",
             "P-74.2.2.3.1:clause:0003"
           ],
           "expression_id": "expr.p74.part002.p742231_ylidene_example_rule.scope",
@@ -4229,17 +4492,19 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.3.1:clause:0001",
             "P-74.2.2.3.1:clause:0003"
           ],
           "op": "emit",
           "statement_id": "stmt.p74.part002.p742231_ylidene_example_rule.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.3.1:clause:0001",
               "P-74.2.2.3.1:clause:0003"
             ],
             "expression_id": "expr.p74.part002.p742231_ylidene_example_rule.steps.1.value",
             "op": "literal",
-            "value": "The displayed delocalized carbene is named using the ylidene form as the preferred IUPAC name."
+            "value": "Acyl carbenes have the generic structure acyl-C2 radical-R. An unspecified acyl carbene is generally a carbonyl carbene and may be named using the longest carbon chain under substitutive nomenclature for radicals, with priority given to the radical cited as suffix (see P-71.2); the displayed compound has the preferred ylidene name."
           }
         }
       ],
@@ -4307,6 +4572,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.3.3:clause:0001",
         "P-74.2.2.3.3:clause:0002",
         "P-74.2.2.3.3:clause:0003",
         "P-74.2.2.3.3:clause:0004"
@@ -4318,6 +4584,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.3.3:clause:0001",
             "P-74.2.2.3.3:clause:0002",
             "P-74.2.2.3.3:clause:0003",
             "P-74.2.2.3.3:clause:0004"
@@ -4333,6 +4600,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.3.3:clause:0001",
             "P-74.2.2.3.3:clause:0002",
             "P-74.2.2.3.3:clause:0003",
             "P-74.2.2.3.3:clause:0004"
@@ -4341,13 +4609,14 @@
           "statement_id": "stmt.p74.part002.p742233_azanylidene_nitrene_aminylene_naming.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.3.3:clause:0001",
               "P-74.2.2.3.3:clause:0002",
               "P-74.2.2.3.3:clause:0003",
               "P-74.2.2.3.3:clause:0004"
             ],
             "expression_id": "expr.p74.part002.p742233_azanylidene_nitrene_aminylene_naming.steps.1.value",
             "op": "literal",
-            "value": "RC(=N-R')N2 radical <-> RC(N--R')=N+. They may be named substitutively using the parent names azanylidene, nitrene, or aminylene. The use of 'azanylidene' leads to preferred IUPAC names."
+            "value": "Imidoyl nitrenes have the general structure RC(=N-R')N2 radical <-> RC(N--R')=N+. They may be named substitutively using the parent names azanylidene, nitrene, or aminylene. The use of 'azanylidene' leads to preferred IUPAC names."
           }
         }
       ],
@@ -4355,6 +4624,7 @@
     },
     {
       "clause_ids": [
+        "P-74.2.2.3.4:clause:0001",
         "P-74.2.2.3.4:clause:0002"
       ],
       "force": "preference",
@@ -4364,6 +4634,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-74.2.2.3.4:clause:0001",
             "P-74.2.2.3.4:clause:0002"
           ],
           "expression_id": "expr.p74.part002.p742234_longest_chain_ylidene_naming.scope",
@@ -4377,17 +4648,19 @@
       "steps": [
         {
           "clause_ids": [
+            "P-74.2.2.3.4:clause:0001",
             "P-74.2.2.3.4:clause:0002"
           ],
           "op": "emit",
           "statement_id": "stmt.p74.part002.p742234_longest_chain_ylidene_naming.steps.1",
           "value": {
             "clause_ids": [
+              "P-74.2.2.3.4:clause:0001",
               "P-74.2.2.3.4:clause:0002"
             ],
             "expression_id": "expr.p74.part002.p742234_longest_chain_ylidene_naming.steps.1.value",
             "op": "literal",
-            "value": "Preferred IUPAC names are formed by using the longest carbon chain according to the principles of substitutive nomenclature for radicals, low locants being assigned to the suffix 'ylidene'."
+            "value": "Vinyl (ethenyl) carbenes have the structure RR'C=CR''-C2 radical-R'''. Preferred IUPAC names are formed by using the longest carbon chain according to the principles of substitutive nomenclature for radicals, low locants being assigned to the suffix 'ylidene'."
           }
         }
       ],
