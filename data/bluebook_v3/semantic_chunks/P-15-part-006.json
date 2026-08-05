@@ -10,74 +10,392 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 130,
-    "compiled_clause_count": 108,
+    "compiled_clause_count": 120,
     "correction_application_count": 0,
     "example_count": 19,
     "exception_count": 0,
     "figure_count": 21,
-    "nonoperative_clause_count": 22,
+    "nonoperative_clause_count": 10,
     "record_count": 7,
     "reference_count": 9,
-    "semantic_unit_count": 6,
+    "semantic_unit_count": 11,
     "superseded_clause_count": 0,
-    "symbol_declaration_count": 0,
+    "symbol_declaration_count": 12,
     "table_count": 2
   },
-  "chunk_sha256": "0FC8D5717CBBE69A6B504BB724D635E6637AED9F7AE4C7B8B7144B0C6EDE4D00",
+  "chunk_sha256": "749E2431142F797E2BC26D96548962AABB82F6095580726FD085739FA3D3CC0E",
   "clause_dispositions": [
     {
       "clause_id": "P-15.6.1.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_attachment_locant_placement",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.else.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.else.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-15.6.1.2:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_attachment_locant_placement",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.else.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.else.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-15.6.1.2:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_attachment_locant_placement",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.else.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.else.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-15.6.1.2:clause:0004",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_side_chain_greek_locants",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_side_chain_greek_locants.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg3",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_side_chain_greek_locants.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-15.6.1.2:clause:0005",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_side_chain_greek_locants",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_side_chain_greek_locants.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg3",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_side_chain_greek_locants.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "constraint"
     },
     {
       "clause_id": "P-15.6.1.2:clause:0006",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_side_chain_greek_locants",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_side_chain_greek_locants.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg3",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_side_chain_greek_locants.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-15.6.1.2:clause:0007",
@@ -203,20 +521,94 @@
     {
       "clause_id": "P-15.6.1.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_side_chain_extent",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_side_chain_extent.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value.arg3",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_side_chain_extent.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.steps.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-15.6.1.3:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_side_chain_extent",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_side_chain_extent.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value.arg3",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_side_chain_extent.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_side_chain_extent.steps.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-15.6.1.3:clause:0003",
@@ -286,20 +678,166 @@
     {
       "clause_id": "P-15.6.1.4:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.identical_conjunctive_side_chain_multiplication",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg1.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2.left.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg3",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg3.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg3.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.identical_conjunctive_side_chain_multiplication.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.1.value.arg1.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.identical_conjunctive_side_chain_multiplication.then.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-15.6.1.4:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.identical_conjunctive_side_chain_multiplication",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg1.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2.left.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg3",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg3.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg3.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.identical_conjunctive_side_chain_multiplication.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.1.value.arg1.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.identical_conjunctive_side_chain_multiplication.then.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-15.6.1.4:clause:0003",
@@ -397,11 +935,60 @@
     {
       "clause_id": "P-15.6.1.5:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.side_chain_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1.arg.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.side_chain_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value.arg2",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-15.6.1.5:clause:0002",
@@ -417,11 +1004,43 @@
             "kind": "expression"
           },
           {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1.arg.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2.arg2",
+            "kind": "expression"
+          },
+          {
             "id": "stmt.p15.part006.side_chain_selection.steps.1",
             "kind": "statement"
           },
           {
             "id": "expr.p15.part006.side_chain_selection.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value.arg2",
             "kind": "expression"
           }
         ]
@@ -443,11 +1062,43 @@
             "kind": "expression"
           },
           {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1.arg.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2.arg2",
+            "kind": "expression"
+          },
+          {
             "id": "stmt.p15.part006.side_chain_selection.steps.1",
             "kind": "statement"
           },
           {
             "id": "expr.p15.part006.side_chain_selection.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value.arg2",
             "kind": "expression"
           }
         ]
@@ -469,11 +1120,43 @@
             "kind": "expression"
           },
           {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1.arg.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2.arg2",
+            "kind": "expression"
+          },
+          {
             "id": "stmt.p15.part006.side_chain_selection.steps.1",
             "kind": "statement"
           },
           {
             "id": "expr.p15.part006.side_chain_selection.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value.arg2",
             "kind": "expression"
           }
         ]
@@ -495,11 +1178,43 @@
             "kind": "expression"
           },
           {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg1.arg.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope.arg2.arg2",
+            "kind": "expression"
+          },
+          {
             "id": "stmt.p15.part006.side_chain_selection.steps.1",
             "kind": "statement"
           },
           {
             "id": "expr.p15.part006.side_chain_selection.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value.arg2",
             "kind": "expression"
           }
         ]
@@ -575,11 +1290,56 @@
     {
       "clause_id": "P-15.6.1.6:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_senior_cyclic_component_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when.arg1.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when.arg1.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_senior_cyclic_component_selection.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.then.1.value.arg1",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-15.6.1.6:clause:0002",
@@ -4122,7 +4882,10 @@
       "reference_ids": [
         "reference.p_15_6_1_2.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p15.part006.conjunctive_attachment_locant_placement",
+        "unit.p15.part006.conjunctive_side_chain_greek_locants"
+      ],
       "source_rule_id": "P-15.6.1.2",
       "table_ids": []
     },
@@ -4152,7 +4915,9 @@
       "reference_ids": [
         "reference.p_15_6_1_3.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p15.part006.conjunctive_side_chain_extent"
+      ],
       "source_rule_id": "P-15.6.1.3",
       "table_ids": []
     },
@@ -4186,7 +4951,9 @@
       "reference_ids": [
         "reference.p_15_6_1_4.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p15.part006.identical_conjunctive_side_chain_multiplication"
+      ],
       "source_rule_id": "P-15.6.1.4",
       "table_ids": []
     },
@@ -4248,7 +5015,9 @@
         "reference.p_15_6_1_6.hierarchy_parent",
         "reference.P-15.6.1.6:xref:0001"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p15.part006.conjunctive_senior_cyclic_component_selection"
+      ],
       "source_rule_id": "P-15.6.1.6",
       "table_ids": []
     },
@@ -4585,24 +5354,40 @@
   "semantic_units": [
     {
       "clause_ids": [
-        "P-15.6.1.5:clause:0002",
-        "P-15.6.1.5:clause:0003",
-        "P-15.6.1.5:clause:0004",
-        "P-15.6.1.5:clause:0005"
+        "P-15.6.1.2:clause:0001",
+        "P-15.6.1.2:clause:0002",
+        "P-15.6.1.2:clause:0003"
       ],
-      "force": "preference",
-      "inputs": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "cyclic_component",
+          "type": "CyclicComponent"
+        },
+        {
+          "name": "side_chain",
+          "type": "SideChain"
+        }
+      ],
       "kind": "procedure",
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "cyclic_attachment_locant_position",
+          "type": "LocantPosition"
+        },
+        {
+          "name": "side_chain_attachment_locant_citation",
+          "type": "LocantCitationStatus"
+        }
+      ],
       "scope": {
         "applies_to": {
           "clause_ids": [
-            "P-15.6.1.5:clause:0002",
-            "P-15.6.1.5:clause:0003",
-            "P-15.6.1.5:clause:0004",
-            "P-15.6.1.5:clause:0005"
+            "P-15.6.1.2:clause:0001",
+            "P-15.6.1.2:clause:0002",
+            "P-15.6.1.2:clause:0003"
           ],
-          "expression_id": "expr.p15.part006.side_chain_selection.scope",
+          "expression_id": "expr.p15.part006.conjunctive_attachment_locant_placement.scope",
           "op": "literal",
           "value": true
         },
@@ -4613,27 +5398,908 @@
       "steps": [
         {
           "clause_ids": [
+            "P-15.6.1.2:clause:0001",
+            "P-15.6.1.2:clause:0002",
+            "P-15.6.1.2:clause:0003"
+          ],
+          "else": [
+            {
+              "clause_ids": [
+                "P-15.6.1.2:clause:0001",
+                "P-15.6.1.2:clause:0002",
+                "P-15.6.1.2:clause:0003"
+              ],
+              "op": "assign",
+              "statement_id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.else.1",
+              "target": "cyclic_attachment_locant_position",
+              "value": {
+                "clause_ids": [
+                  "P-15.6.1.2:clause:0001",
+                  "P-15.6.1.2:clause:0002",
+                  "P-15.6.1.2:clause:0003"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.else.1.value",
+                "op": "literal",
+                "value": "omitted"
+              }
+            }
+          ],
+          "op": "branch",
+          "statement_id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1",
+          "then": [
+            {
+              "clause_ids": [
+                "P-15.6.1.2:clause:0001",
+                "P-15.6.1.2:clause:0002",
+                "P-15.6.1.2:clause:0003"
+              ],
+              "else": [
+                {
+                  "clause_ids": [
+                    "P-15.6.1.2:clause:0001",
+                    "P-15.6.1.2:clause:0002",
+                    "P-15.6.1.2:clause:0003"
+                  ],
+                  "op": "assign",
+                  "statement_id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.else.1",
+                  "target": "cyclic_attachment_locant_position",
+                  "value": {
+                    "clause_ids": [
+                      "P-15.6.1.2:clause:0001",
+                      "P-15.6.1.2:clause:0002",
+                      "P-15.6.1.2:clause:0003"
+                    ],
+                    "expression_id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.else.1.value",
+                    "op": "literal",
+                    "value": "before_cyclic_component_name"
+                  }
+                }
+              ],
+              "op": "branch",
+              "statement_id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1",
+              "then": [
+                {
+                  "clause_ids": [
+                    "P-15.6.1.2:clause:0001",
+                    "P-15.6.1.2:clause:0002",
+                    "P-15.6.1.2:clause:0003"
+                  ],
+                  "op": "assign",
+                  "statement_id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.then.1",
+                  "target": "cyclic_attachment_locant_position",
+                  "value": {
+                    "clause_ids": [
+                      "P-15.6.1.2:clause:0001",
+                      "P-15.6.1.2:clause:0002",
+                      "P-15.6.1.2:clause:0003"
+                    ],
+                    "expression_id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.then.1.value",
+                    "op": "literal",
+                    "value": "after_cyclic_component_name"
+                  }
+                }
+              ],
+              "when": {
+                "args": [
+                  {
+                    "clause_ids": [
+                      "P-15.6.1.2:clause:0001",
+                      "P-15.6.1.2:clause:0002",
+                      "P-15.6.1.2:clause:0003"
+                    ],
+                    "expression_id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.when.arg1",
+                    "name": "cyclic_component",
+                    "op": "var"
+                  }
+                ],
+                "clause_ids": [
+                  "P-15.6.1.2:clause:0001",
+                  "P-15.6.1.2:clause:0002",
+                  "P-15.6.1.2:clause:0003"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.then.1.when",
+                "op": "predicate",
+                "symbol": "cyclic_component.has_structural_feature_locants_before_name"
+              }
+            }
+          ],
+          "when": {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-15.6.1.2:clause:0001",
+                  "P-15.6.1.2:clause:0002",
+                  "P-15.6.1.2:clause:0003"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when.arg1",
+                "name": "cyclic_component",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-15.6.1.2:clause:0001",
+                  "P-15.6.1.2:clause:0002",
+                  "P-15.6.1.2:clause:0003"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when.arg2",
+                "name": "side_chain",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-15.6.1.2:clause:0001",
+              "P-15.6.1.2:clause:0002",
+              "P-15.6.1.2:clause:0003"
+            ],
+            "expression_id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.1.when",
+            "op": "predicate",
+            "symbol": "conjunctive_nomenclature.cyclic_attachment_locant_is_necessary"
+          }
+        },
+        {
+          "clause_ids": [
+            "P-15.6.1.2:clause:0001",
+            "P-15.6.1.2:clause:0002",
+            "P-15.6.1.2:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p15.part006.conjunctive_attachment_locant_placement.steps.2",
+          "target": "side_chain_attachment_locant_citation",
+          "value": {
+            "clause_ids": [
+              "P-15.6.1.2:clause:0001",
+              "P-15.6.1.2:clause:0002",
+              "P-15.6.1.2:clause:0003"
+            ],
+            "expression_id": "expr.p15.part006.conjunctive_attachment_locant_placement.steps.2.value",
+            "op": "literal",
+            "value": "omitted_because_side_chain_terminates_at_cyclic_component"
+          }
+        }
+      ],
+      "unit_id": "unit.p15.part006.conjunctive_attachment_locant_placement"
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.2:clause:0004",
+        "P-15.6.1.2:clause:0005",
+        "P-15.6.1.2:clause:0006"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "side_chain",
+          "type": "SideChain"
+        },
+        {
+          "name": "principal_characteristic_group",
+          "type": "CharacteristicGroup"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "greek_locant_assignment",
+          "type": "SideChainLocantAssignment"
+        },
+        {
+          "name": "greek_locant_citation_scope",
+          "type": "LocantCitationScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-15.6.1.2:clause:0004",
+            "P-15.6.1.2:clause:0005",
+            "P-15.6.1.2:clause:0006"
+          ],
+          "expression_id": "expr.p15.part006.conjunctive_side_chain_greek_locants.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-15.6.1.2:clause:0004",
+            "P-15.6.1.2:clause:0005",
+            "P-15.6.1.2:clause:0006"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p15.part006.conjunctive_side_chain_greek_locants.steps.1",
+          "target": "greek_locant_assignment",
+          "value": {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-15.6.1.2:clause:0004",
+                  "P-15.6.1.2:clause:0005",
+                  "P-15.6.1.2:clause:0006"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg1",
+                "name": "side_chain",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-15.6.1.2:clause:0004",
+                  "P-15.6.1.2:clause:0005",
+                  "P-15.6.1.2:clause:0006"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg2",
+                "name": "principal_characteristic_group",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-15.6.1.2:clause:0004",
+                  "P-15.6.1.2:clause:0005",
+                  "P-15.6.1.2:clause:0006"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value.arg3",
+                "op": "literal",
+                "value": {
+                  "omit_characteristic_group_carbon": true
+                }
+              }
+            ],
+            "clause_ids": [
+              "P-15.6.1.2:clause:0004",
+              "P-15.6.1.2:clause:0005",
+              "P-15.6.1.2:clause:0006"
+            ],
+            "expression_id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.1.value",
+            "op": "function",
+            "symbol": "locants.assign_greek_letters_from_principal_group_toward_cyclic_component"
+          }
+        },
+        {
+          "clause_ids": [
+            "P-15.6.1.2:clause:0004",
+            "P-15.6.1.2:clause:0005",
+            "P-15.6.1.2:clause:0006"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p15.part006.conjunctive_side_chain_greek_locants.steps.2",
+          "target": "greek_locant_citation_scope",
+          "value": {
+            "clause_ids": [
+              "P-15.6.1.2:clause:0004",
+              "P-15.6.1.2:clause:0005",
+              "P-15.6.1.2:clause:0006"
+            ],
+            "expression_id": "expr.p15.part006.conjunctive_side_chain_greek_locants.steps.2.value",
+            "op": "literal",
+            "value": "other_substituents_on_side_chain_only"
+          }
+        }
+      ],
+      "unit_id": "unit.p15.part006.conjunctive_side_chain_greek_locants"
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.3:clause:0001",
+        "P-15.6.1.3:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "structure",
+          "type": "MolecularStructure"
+        },
+        {
+          "name": "principal_characteristic_group",
+          "type": "CharacteristicGroup"
+        },
+        {
+          "name": "cyclic_component",
+          "type": "CyclicComponent"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "side_chain",
+          "type": "SideChain"
+        },
+        {
+          "name": "other_chain_member_treatment",
+          "type": "SubstituentTreatment"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-15.6.1.3:clause:0001",
+            "P-15.6.1.3:clause:0002"
+          ],
+          "expression_id": "expr.p15.part006.conjunctive_side_chain_extent.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-15.6.1.3:clause:0001",
+            "P-15.6.1.3:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p15.part006.conjunctive_side_chain_extent.steps.1",
+          "target": "side_chain",
+          "value": {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-15.6.1.3:clause:0001",
+                  "P-15.6.1.3:clause:0002"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value.arg1",
+                "name": "structure",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-15.6.1.3:clause:0001",
+                  "P-15.6.1.3:clause:0002"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value.arg2",
+                "name": "principal_characteristic_group",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-15.6.1.3:clause:0001",
+                  "P-15.6.1.3:clause:0002"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value.arg3",
+                "name": "cyclic_component",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-15.6.1.3:clause:0001",
+              "P-15.6.1.3:clause:0002"
+            ],
+            "expression_id": "expr.p15.part006.conjunctive_side_chain_extent.steps.1.value",
+            "op": "function",
+            "symbol": "side_chain.segment_from_principal_group_to_cyclic_component"
+          }
+        },
+        {
+          "clause_ids": [
+            "P-15.6.1.3:clause:0001",
+            "P-15.6.1.3:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p15.part006.conjunctive_side_chain_extent.steps.2",
+          "target": "other_chain_member_treatment",
+          "value": {
+            "clause_ids": [
+              "P-15.6.1.3:clause:0001",
+              "P-15.6.1.3:clause:0002"
+            ],
+            "expression_id": "expr.p15.part006.conjunctive_side_chain_extent.steps.2.value",
+            "op": "literal",
+            "value": {
+              "includes_terminal_extensions": true,
+              "name_as": "substituents",
+              "prefix_and_locant_position": "before_cyclic_component_name"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p15.part006.conjunctive_side_chain_extent"
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.4:clause:0001",
+        "P-15.6.1.4:clause:0002"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "cyclic_component",
+          "type": "CyclicComponent"
+        },
+        {
+          "name": "side_chains",
+          "type": "SideChainCollection"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "multiplicative_prefix",
+          "type": "MultiplicativePrefix"
+        },
+        {
+          "name": "side_chain_locant_notation",
+          "type": "LocantNotation"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-15.6.1.4:clause:0001",
+            "P-15.6.1.4:clause:0002"
+          ],
+          "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-15.6.1.4:clause:0001",
+            "P-15.6.1.4:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p15.part006.identical_conjunctive_side_chain_multiplication.then.1",
+          "target": "multiplicative_prefix",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "clause_ids": [
+                      "P-15.6.1.4:clause:0001",
+                      "P-15.6.1.4:clause:0002"
+                    ],
+                    "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.1.value.arg1.arg1",
+                    "name": "side_chains",
+                    "op": "var"
+                  }
+                ],
+                "clause_ids": [
+                  "P-15.6.1.4:clause:0001",
+                  "P-15.6.1.4:clause:0002"
+                ],
+                "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.1.value.arg1",
+                "op": "function",
+                "symbol": "collection.count"
+              }
+            ],
+            "clause_ids": [
+              "P-15.6.1.4:clause:0001",
+              "P-15.6.1.4:clause:0002"
+            ],
+            "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.1.value",
+            "op": "function",
+            "symbol": "multiplicative_prefix.for_count"
+          }
+        },
+        {
+          "clause_ids": [
+            "P-15.6.1.4:clause:0001",
+            "P-15.6.1.4:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p15.part006.identical_conjunctive_side_chain_multiplication.then.2",
+          "target": "side_chain_locant_notation",
+          "value": {
+            "clause_ids": [
+              "P-15.6.1.4:clause:0001",
+              "P-15.6.1.4:clause:0002"
+            ],
+            "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.then.2.value",
+            "op": "literal",
+            "value": {
+              "replaces": "primes",
+              "style": "superscript_arabic_numbers",
+              "use_for": "all_side_chain_locants"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p15.part006.identical_conjunctive_side_chain_multiplication",
+      "when": {
+        "args": [
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-15.6.1.4:clause:0001",
+                  "P-15.6.1.4:clause:0002"
+                ],
+                "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg1.arg1",
+                "name": "side_chains",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-15.6.1.4:clause:0001",
+              "P-15.6.1.4:clause:0002"
+            ],
+            "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg1",
+            "op": "predicate",
+            "symbol": "side_chains.are_identical"
+          },
+          {
+            "clause_ids": [
+              "P-15.6.1.4:clause:0001",
+              "P-15.6.1.4:clause:0002"
+            ],
+            "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2",
+            "left": {
+              "args": [
+                {
+                  "clause_ids": [
+                    "P-15.6.1.4:clause:0001",
+                    "P-15.6.1.4:clause:0002"
+                  ],
+                  "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2.left.arg1",
+                  "name": "side_chains",
+                  "op": "var"
+                }
+              ],
+              "clause_ids": [
+                "P-15.6.1.4:clause:0001",
+                "P-15.6.1.4:clause:0002"
+              ],
+              "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2.left",
+              "op": "function",
+              "symbol": "collection.count"
+            },
+            "op": "compare",
+            "relation": "ge",
+            "right": {
+              "clause_ids": [
+                "P-15.6.1.4:clause:0001",
+                "P-15.6.1.4:clause:0002"
+              ],
+              "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg2.right",
+              "op": "literal",
+              "value": 2
+            }
+          },
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-15.6.1.4:clause:0001",
+                  "P-15.6.1.4:clause:0002"
+                ],
+                "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg3.arg1",
+                "name": "side_chains",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-15.6.1.4:clause:0001",
+                  "P-15.6.1.4:clause:0002"
+                ],
+                "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg3.arg2",
+                "name": "cyclic_component",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-15.6.1.4:clause:0001",
+              "P-15.6.1.4:clause:0002"
+            ],
+            "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when.arg3",
+            "op": "predicate",
+            "symbol": "side_chains.are_attached_to_cyclic_component"
+          }
+        ],
+        "clause_ids": [
+          "P-15.6.1.4:clause:0001",
+          "P-15.6.1.4:clause:0002"
+        ],
+        "expression_id": "expr.p15.part006.identical_conjunctive_side_chain_multiplication.when",
+        "op": "all"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.5:clause:0001",
+        "P-15.6.1.5:clause:0002",
+        "P-15.6.1.5:clause:0003",
+        "P-15.6.1.5:clause:0004",
+        "P-15.6.1.5:clause:0005"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "cyclic_component",
+          "type": "CyclicComponent"
+        },
+        {
+          "name": "side_chains",
+          "type": "SideChainCollection"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "selected_side_chain",
+          "type": "SideChain"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "args": [
+            {
+              "arg": {
+                "args": [
+                  {
+                    "clause_ids": [
+                      "P-15.6.1.5:clause:0001",
+                      "P-15.6.1.5:clause:0002",
+                      "P-15.6.1.5:clause:0003",
+                      "P-15.6.1.5:clause:0004",
+                      "P-15.6.1.5:clause:0005"
+                    ],
+                    "expression_id": "expr.p15.part006.side_chain_selection.scope.arg1.arg.arg1",
+                    "name": "side_chains",
+                    "op": "var"
+                  }
+                ],
+                "clause_ids": [
+                  "P-15.6.1.5:clause:0001",
+                  "P-15.6.1.5:clause:0002",
+                  "P-15.6.1.5:clause:0003",
+                  "P-15.6.1.5:clause:0004",
+                  "P-15.6.1.5:clause:0005"
+                ],
+                "expression_id": "expr.p15.part006.side_chain_selection.scope.arg1.arg",
+                "op": "predicate",
+                "symbol": "side_chains.are_identical"
+              },
+              "clause_ids": [
+                "P-15.6.1.5:clause:0001",
+                "P-15.6.1.5:clause:0002",
+                "P-15.6.1.5:clause:0003",
+                "P-15.6.1.5:clause:0004",
+                "P-15.6.1.5:clause:0005"
+              ],
+              "expression_id": "expr.p15.part006.side_chain_selection.scope.arg1",
+              "op": "not"
+            },
+            {
+              "args": [
+                {
+                  "clause_ids": [
+                    "P-15.6.1.5:clause:0001",
+                    "P-15.6.1.5:clause:0002",
+                    "P-15.6.1.5:clause:0003",
+                    "P-15.6.1.5:clause:0004",
+                    "P-15.6.1.5:clause:0005"
+                  ],
+                  "expression_id": "expr.p15.part006.side_chain_selection.scope.arg2.arg1",
+                  "name": "side_chains",
+                  "op": "var"
+                },
+                {
+                  "clause_ids": [
+                    "P-15.6.1.5:clause:0001",
+                    "P-15.6.1.5:clause:0002",
+                    "P-15.6.1.5:clause:0003",
+                    "P-15.6.1.5:clause:0004",
+                    "P-15.6.1.5:clause:0005"
+                  ],
+                  "expression_id": "expr.p15.part006.side_chain_selection.scope.arg2.arg2",
+                  "name": "cyclic_component",
+                  "op": "var"
+                }
+              ],
+              "clause_ids": [
+                "P-15.6.1.5:clause:0001",
+                "P-15.6.1.5:clause:0002",
+                "P-15.6.1.5:clause:0003",
+                "P-15.6.1.5:clause:0004",
+                "P-15.6.1.5:clause:0005"
+              ],
+              "expression_id": "expr.p15.part006.side_chain_selection.scope.arg2",
+              "op": "predicate",
+              "symbol": "side_chains.are_attached_to_cyclic_component"
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.1.5:clause:0001",
             "P-15.6.1.5:clause:0002",
             "P-15.6.1.5:clause:0003",
             "P-15.6.1.5:clause:0004",
             "P-15.6.1.5:clause:0005"
           ],
-          "op": "emit",
+          "expression_id": "expr.p15.part006.side_chain_selection.scope",
+          "op": "all"
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-15.6.1.5:clause:0001",
+            "P-15.6.1.5:clause:0002",
+            "P-15.6.1.5:clause:0003",
+            "P-15.6.1.5:clause:0004",
+            "P-15.6.1.5:clause:0005"
+          ],
+          "op": "assign",
           "statement_id": "stmt.p15.part006.side_chain_selection.steps.1",
+          "target": "selected_side_chain",
           "value": {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-15.6.1.5:clause:0001",
+                  "P-15.6.1.5:clause:0002",
+                  "P-15.6.1.5:clause:0003",
+                  "P-15.6.1.5:clause:0004",
+                  "P-15.6.1.5:clause:0005"
+                ],
+                "expression_id": "expr.p15.part006.side_chain_selection.steps.1.value.arg1",
+                "name": "side_chains",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-15.6.1.5:clause:0001",
+                  "P-15.6.1.5:clause:0002",
+                  "P-15.6.1.5:clause:0003",
+                  "P-15.6.1.5:clause:0004",
+                  "P-15.6.1.5:clause:0005"
+                ],
+                "expression_id": "expr.p15.part006.side_chain_selection.steps.1.value.arg2",
+                "op": "literal",
+                "value": {
+                  "ordered_criteria": [
+                    "contains_principal_characteristic_group",
+                    "expresses_greater_number_of_principal_characteristic_groups",
+                    "principal_chain_seniority_order_P_44_3"
+                  ]
+                }
+              }
+            ],
             "clause_ids": [
+              "P-15.6.1.5:clause:0001",
               "P-15.6.1.5:clause:0002",
               "P-15.6.1.5:clause:0003",
               "P-15.6.1.5:clause:0004",
               "P-15.6.1.5:clause:0005"
             ],
             "expression_id": "expr.p15.part006.side_chain_selection.steps.1.value",
-            "op": "literal",
-            "value": "Choose the chain containing the principal characteristic group for conjunctive nomenclature; if more than one side chain contains that group, choose the conjunctive name expressing the greater number of principal characteristic groups. When necessary, select side chains by the seniority order for selecting the principal chain (see P-44.3)."
+            "op": "function",
+            "symbol": "side_chain.select_for_conjunctive_nomenclature"
           }
         }
       ],
       "unit_id": "unit.p15.part006.side_chain_selection"
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.6:clause:0001"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "side_chain",
+          "type": "SideChain"
+        },
+        {
+          "name": "cyclic_components",
+          "type": "CyclicComponentCollection"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "selected_cyclic_component",
+          "type": "CyclicComponent"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-15.6.1.6:clause:0001"
+          ],
+          "expression_id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-15.6.1.6:clause:0001"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p15.part006.conjunctive_senior_cyclic_component_selection.then.1",
+          "target": "selected_cyclic_component",
+          "value": {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-15.6.1.6:clause:0001"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.then.1.value.arg1",
+                "name": "cyclic_components",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-15.6.1.6:clause:0001"
+            ],
+            "expression_id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.then.1.value",
+            "op": "function",
+            "symbol": "ring_seniority.select_according_to_p_44_2"
+          }
+        }
+      ],
+      "unit_id": "unit.p15.part006.conjunctive_senior_cyclic_component_selection",
+      "when": {
+        "args": [
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-15.6.1.6:clause:0001"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when.arg1.arg1",
+                "name": "side_chain",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-15.6.1.6:clause:0001"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when.arg1.arg2",
+                "name": "cyclic_components",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-15.6.1.6:clause:0001"
+            ],
+            "expression_id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when.arg1",
+            "op": "predicate",
+            "symbol": "side_chain.is_linked_to_two_cyclic_components"
+          },
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-15.6.1.6:clause:0001"
+                ],
+                "expression_id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when.arg2.arg1",
+                "name": "cyclic_components",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-15.6.1.6:clause:0001"
+            ],
+            "expression_id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when.arg2",
+            "op": "predicate",
+            "symbol": "cyclic_components.are_different"
+          }
+        ],
+        "clause_ids": [
+          "P-15.6.1.6:clause:0001"
+        ],
+        "expression_id": "expr.p15.part006.conjunctive_senior_cyclic_component_selection.when",
+        "op": "all"
+      }
     },
     {
       "assertion": {
@@ -4875,7 +6541,244 @@
     }
   ],
   "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
-  "symbol_declarations": [],
+  "symbol_declarations": [
+    {
+      "arguments": [
+        {
+          "name": "cyclic_component",
+          "type": "CyclicComponent"
+        },
+        {
+          "name": "side_chain",
+          "type": "SideChain"
+        }
+      ],
+      "description": "Whether conjunctive nomenclature requires the side-chain attachment position on the cyclic component to be cited.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "conjunctive_nomenclature.cyclic_attachment_locant_is_necessary",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "conjunctive_nomenclature.cyclic_attachment_locant_is_necessary"
+    },
+    {
+      "arguments": [
+        {
+          "name": "cyclic_component",
+          "type": "CyclicComponent"
+        }
+      ],
+      "description": "Whether locants for cyclic-component structural features already precede its name.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "cyclic_component.has_structural_feature_locants_before_name",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "cyclic_component.has_structural_feature_locants_before_name"
+    },
+    {
+      "arguments": [
+        {
+          "name": "side_chain",
+          "type": "SideChain"
+        },
+        {
+          "name": "principal_characteristic_group",
+          "type": "CharacteristicGroup"
+        },
+        {
+          "name": "options",
+          "type": "LocantAssignmentOptions"
+        }
+      ],
+      "description": "Assign Greek-letter locants along a conjunctive side chain from the principal characteristic group toward the cyclic component.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "locants.assign_greek_letters_from_principal_group_toward_cyclic_component",
+        "refs": []
+      },
+      "kind": "function",
+      "returns": "SideChainLocantAssignment",
+      "symbol_id": "locants.assign_greek_letters_from_principal_group_toward_cyclic_component"
+    },
+    {
+      "arguments": [
+        {
+          "name": "structure",
+          "type": "MolecularStructure"
+        },
+        {
+          "name": "principal_characteristic_group",
+          "type": "CharacteristicGroup"
+        },
+        {
+          "name": "cyclic_component",
+          "type": "CyclicComponent"
+        }
+      ],
+      "description": "Return the conjunctive side-chain segment extending from the principal characteristic group to the cyclic component.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "side_chain.segment_from_principal_group_to_cyclic_component",
+        "refs": []
+      },
+      "kind": "function",
+      "returns": "SideChain",
+      "symbol_id": "side_chain.segment_from_principal_group_to_cyclic_component"
+    },
+    {
+      "arguments": [
+        {
+          "name": "side_chains",
+          "type": "SideChainCollection"
+        }
+      ],
+      "description": "Whether all side chains in a collection are identical.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "side_chains.are_identical",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "side_chains.are_identical"
+    },
+    {
+      "arguments": [
+        {
+          "name": "side_chains",
+          "type": "SideChainCollection"
+        }
+      ],
+      "description": "Return the number of side chains in a side-chain collection.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "collection.count",
+        "refs": []
+      },
+      "kind": "function",
+      "returns": "integer",
+      "symbol_id": "collection.count"
+    },
+    {
+      "arguments": [
+        {
+          "name": "side_chains",
+          "type": "SideChainCollection"
+        },
+        {
+          "name": "cyclic_component",
+          "type": "CyclicComponent"
+        }
+      ],
+      "description": "Whether the side chains are attached to the specified cyclic component.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "side_chains.are_attached_to_cyclic_component",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "side_chains.are_attached_to_cyclic_component"
+    },
+    {
+      "arguments": [
+        {
+          "name": "count",
+          "type": "integer"
+        }
+      ],
+      "description": "Return the multiplicative prefix corresponding to a side-chain count.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "multiplicative_prefix.for_count",
+        "refs": []
+      },
+      "kind": "function",
+      "returns": "MultiplicativePrefix",
+      "symbol_id": "multiplicative_prefix.for_count"
+    },
+    {
+      "arguments": [
+        {
+          "name": "side_chains",
+          "type": "SideChainCollection"
+        },
+        {
+          "name": "criteria",
+          "type": "SideChainSelectionCriteria"
+        }
+      ],
+      "description": "Select a side chain by the ordered conjunctive-nomenclature criteria.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "side_chain.select_for_conjunctive_nomenclature",
+        "refs": []
+      },
+      "kind": "function",
+      "returns": "SideChain",
+      "symbol_id": "side_chain.select_for_conjunctive_nomenclature"
+    },
+    {
+      "arguments": [
+        {
+          "name": "side_chain",
+          "type": "SideChain"
+        },
+        {
+          "name": "cyclic_components",
+          "type": "CyclicComponentCollection"
+        }
+      ],
+      "description": "Whether a side chain is linked to exactly two cyclic components.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "side_chain.is_linked_to_two_cyclic_components",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "side_chain.is_linked_to_two_cyclic_components"
+    },
+    {
+      "arguments": [
+        {
+          "name": "cyclic_components",
+          "type": "CyclicComponentCollection"
+        }
+      ],
+      "description": "Whether the cyclic components in a collection are different.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "cyclic_components.are_different",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "cyclic_components.are_different"
+    },
+    {
+      "arguments": [
+        {
+          "name": "cyclic_components",
+          "type": "CyclicComponentCollection"
+        }
+      ],
+      "description": "Select the senior ring or ring system using the seniority order in P-44.2.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "ring_seniority.select_according_to_p_44_2",
+        "refs": []
+      },
+      "kind": "function",
+      "returns": "CyclicComponent",
+      "symbol_id": "ring_seniority.select_according_to_p_44_2"
+    }
+  ],
   "tables": [
     {
       "clause_ids": [

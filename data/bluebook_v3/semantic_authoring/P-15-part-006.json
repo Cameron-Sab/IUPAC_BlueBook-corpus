@@ -1,14 +1,14 @@
 {
   "additional_refs": [],
   "clauses": [
-    null, null, null, null, null, null, null,
+    ["procedure_step", "normative", "compile"], ["procedure_step", "normative", "compile"], ["procedure_step", "normative", "compile"], ["procedure_step", "normative", "compile"], ["constraint", "normative", "compile"], ["procedure_step", "normative", "compile"], null,
     ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"],
-    null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, null, null, null, ["example", "illustrative", "compile"], null,
-    ["example", "illustrative", "compile"], null, null, null, null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"],
-    null, null, ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["preference_criterion", "normative", "compile"], ["procedure_step", "normative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"],
-    null, null, null, ["example", "illustrative", "compile"], null, null, ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["condition", "normative", "compile"],
+    null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, ["definition", "normative", "compile"], ["procedure_step", "normative", "compile"], null, ["example", "illustrative", "compile"], null,
+    ["example", "illustrative", "compile"], null, ["condition", "normative", "compile"], ["procedure_step", "normative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"],
+    null, ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["preference_criterion", "normative", "compile"], ["procedure_step", "normative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"],
+    null, ["preference_criterion", "normative", "compile"], null, ["example", "illustrative", "compile"], null, ["heading", "informative", "skip", "heading_or_title"], ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["condition", "normative", "compile"],
     ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["procedure_step", "normative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null,
-    ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, null, ["note", "informative", "compile"], null, null, ["note", "informative", "compile"], ["table_data", "informative", "compile"],
+    ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, ["heading", "informative", "skip", "heading_or_title"], ["note", "informative", "compile"], null, null, ["note", "informative", "compile"], ["table_data", "informative", "compile"],
     ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"],
     ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], null, ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"],
     ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"],
@@ -44,7 +44,20 @@
   "format_version": "1.0.0",
   "mechanical_assets": true,
   "refs": [],
-  "symbols": [],
+  "symbols": [
+    {"id":"conjunctive_nomenclature.cyclic_attachment_locant_is_necessary","k":"predicate","d":"Whether conjunctive nomenclature requires the side-chain attachment position on the cyclic component to be cited.","a":[["cyclic_component","CyclicComponent"],["side_chain","SideChain"]],"ret":"boolean"},
+    {"id":"cyclic_component.has_structural_feature_locants_before_name","k":"predicate","d":"Whether locants for cyclic-component structural features already precede its name.","a":[["cyclic_component","CyclicComponent"]],"ret":"boolean"},
+    {"id":"locants.assign_greek_letters_from_principal_group_toward_cyclic_component","k":"function","d":"Assign Greek-letter locants along a conjunctive side chain from the principal characteristic group toward the cyclic component.","a":[["side_chain","SideChain"],["principal_characteristic_group","CharacteristicGroup"],["options","LocantAssignmentOptions"]],"ret":"SideChainLocantAssignment"},
+    {"id":"side_chain.segment_from_principal_group_to_cyclic_component","k":"function","d":"Return the conjunctive side-chain segment extending from the principal characteristic group to the cyclic component.","a":[["structure","MolecularStructure"],["principal_characteristic_group","CharacteristicGroup"],["cyclic_component","CyclicComponent"]],"ret":"SideChain"},
+    {"id":"side_chains.are_identical","k":"predicate","d":"Whether all side chains in a collection are identical.","a":[["side_chains","SideChainCollection"]],"ret":"boolean"},
+    {"id":"collection.count","k":"function","d":"Return the number of side chains in a side-chain collection.","a":[["side_chains","SideChainCollection"]],"ret":"integer"},
+    {"id":"side_chains.are_attached_to_cyclic_component","k":"predicate","d":"Whether the side chains are attached to the specified cyclic component.","a":[["side_chains","SideChainCollection"],["cyclic_component","CyclicComponent"]],"ret":"boolean"},
+    {"id":"multiplicative_prefix.for_count","k":"function","d":"Return the multiplicative prefix corresponding to a side-chain count.","a":[["count","integer"]],"ret":"MultiplicativePrefix"},
+    {"id":"side_chain.select_for_conjunctive_nomenclature","k":"function","d":"Select a side chain by the ordered conjunctive-nomenclature criteria.","a":[["side_chains","SideChainCollection"],["criteria","SideChainSelectionCriteria"]],"ret":"SideChain"},
+    {"id":"side_chain.is_linked_to_two_cyclic_components","k":"predicate","d":"Whether a side chain is linked to exactly two cyclic components.","a":[["side_chain","SideChain"],["cyclic_components","CyclicComponentCollection"]],"ret":"boolean"},
+    {"id":"cyclic_components.are_different","k":"predicate","d":"Whether the cyclic components in a collection are different.","a":[["cyclic_components","CyclicComponentCollection"]],"ret":"boolean"},
+    {"id":"ring_seniority.select_according_to_p_44_2","k":"function","d":"Select the senior ring or ring system using the seniority order in P-44.2.","a":[["cyclic_components","CyclicComponentCollection"]],"ret":"CyclicComponent"}
+  ],
   "tables": [
     {
       "id":"conjunctive_analysis_example_one",
@@ -88,7 +101,83 @@
   ],
   "task_id": "P-15-part-006",
   "units": [
-    {"id":"side_chain_selection","k":"procedure","f":"preference","c":[33,34,35,36],"steps":[["emit","Choose the chain containing the principal characteristic group for conjunctive nomenclature; if more than one side chain contains that group, choose the conjunctive name expressing the greater number of principal characteristic groups. When necessary, select side chains by the seniority order for selecting the principal chain (see P-44.3)."]]},
+    {
+      "id":"conjunctive_attachment_locant_placement",
+      "k":"procedure",
+      "f":"required",
+      "c":[1,2,3],
+      "in":[["cyclic_component","CyclicComponent"],["side_chain","SideChain"]],
+      "out":[["cyclic_attachment_locant_position","LocantPosition"],["side_chain_attachment_locant_citation","LocantCitationStatus"]],
+      "steps":[
+        ["if",["pred","conjunctive_nomenclature.cyclic_attachment_locant_is_necessary",["var","cyclic_component"],["var","side_chain"]],
+          [["if",["pred","cyclic_component.has_structural_feature_locants_before_name",["var","cyclic_component"]],
+            [["set","cyclic_attachment_locant_position","after_cyclic_component_name"]],
+            [["set","cyclic_attachment_locant_position","before_cyclic_component_name"]]
+          ]],
+          [["set","cyclic_attachment_locant_position","omitted"]]
+        ],
+        ["set","side_chain_attachment_locant_citation","omitted_because_side_chain_terminates_at_cyclic_component"]
+      ]
+    },
+    {
+      "id":"conjunctive_side_chain_greek_locants",
+      "k":"procedure",
+      "f":"required",
+      "c":[4,5,6],
+      "in":[["side_chain","SideChain"],["principal_characteristic_group","CharacteristicGroup"]],
+      "out":[["greek_locant_assignment","SideChainLocantAssignment"],["greek_locant_citation_scope","LocantCitationScope"]],
+      "steps":[
+        ["set","greek_locant_assignment",["call","locants.assign_greek_letters_from_principal_group_toward_cyclic_component",["var","side_chain"],["var","principal_characteristic_group"],{"omit_characteristic_group_carbon":true}]],
+        ["set","greek_locant_citation_scope","other_substituents_on_side_chain_only"]
+      ]
+    },
+    {
+      "id":"conjunctive_side_chain_extent",
+      "k":"procedure",
+      "f":"required",
+      "c":[16,17],
+      "in":[["structure","MolecularStructure"],["principal_characteristic_group","CharacteristicGroup"],["cyclic_component","CyclicComponent"]],
+      "out":[["side_chain","SideChain"],["other_chain_member_treatment","SubstituentTreatment"]],
+      "steps":[
+        ["set","side_chain",["call","side_chain.segment_from_principal_group_to_cyclic_component",["var","structure"],["var","principal_characteristic_group"],["var","cyclic_component"]]],
+        ["set","other_chain_member_treatment",{"name_as":"substituents","prefix_and_locant_position":"before_cyclic_component_name","includes_terminal_extensions":true}]
+      ]
+    },
+    {
+      "id":"identical_conjunctive_side_chain_multiplication",
+      "k":"rule",
+      "f":"required",
+      "c":[23,24],
+      "in":[["cyclic_component","CyclicComponent"],["side_chains","SideChainCollection"]],
+      "out":[["multiplicative_prefix","MultiplicativePrefix"],["side_chain_locant_notation","LocantNotation"]],
+      "if":["all",["pred","side_chains.are_identical",["var","side_chains"]],["cmp","ge",["call","collection.count",["var","side_chains"]],2],["pred","side_chains.are_attached_to_cyclic_component",["var","side_chains"],["var","cyclic_component"]]],
+      "then":[
+        ["set","multiplicative_prefix",["call","multiplicative_prefix.for_count",["call","collection.count",["var","side_chains"]]]],
+        ["set","side_chain_locant_notation",{"style":"superscript_arabic_numbers","use_for":"all_side_chain_locants","replaces":"primes"}]
+      ],
+      "else":[]
+    },
+    {
+      "id":"side_chain_selection",
+      "k":"procedure",
+      "f":"preference",
+      "c":[32,33,34,35,36],
+      "in":[["cyclic_component","CyclicComponent"],["side_chains","SideChainCollection"]],
+      "out":[["selected_side_chain","SideChain"]],
+      "scope":{"r":["all"],"if":["all",["not",["pred","side_chains.are_identical",["var","side_chains"]]],["pred","side_chains.are_attached_to_cyclic_component",["var","side_chains"],["var","cyclic_component"]]]},
+      "steps":[["set","selected_side_chain",["call","side_chain.select_for_conjunctive_nomenclature",["var","side_chains"],{"ordered_criteria":["contains_principal_characteristic_group","expresses_greater_number_of_principal_characteristic_groups","principal_chain_seniority_order_P_44_3"]}]]]
+    },
+    {
+      "id":"conjunctive_senior_cyclic_component_selection",
+      "k":"rule",
+      "f":"preference",
+      "c":[42],
+      "in":[["side_chain","SideChain"],["cyclic_components","CyclicComponentCollection"]],
+      "out":[["selected_cyclic_component","CyclicComponent"]],
+      "if":["all",["pred","side_chain.is_linked_to_two_cyclic_components",["var","side_chain"],["var","cyclic_components"]],["pred","cyclic_components.are_different",["var","cyclic_components"]]],
+      "then":[["set","selected_cyclic_component",["call","ring_seniority.select_according_to_p_44_2",["var","cyclic_components"]]]],
+      "else":[]
+    },
     {"id":"conjunctive_nomenclature_limitations","k":"constraint","f":"required","c":[47,48,49,50,51,52,53],"assert":["lit",true],"violation":[["emit","Do not use conjunctive nomenclature when a double bond links the acyclic component to the ring system; when a double bond or heteroatom is present in the side chain; when two identical characteristic groups are located on the side chain without violating the maximum-number condition; when higher-priority characteristic groups are directly attached to the cyclic component; or when two or more characteristic groups of the principal kind are located on the ring or ring system. Use normal substitutive nomenclature in these cases."]]},
     {"id":"pin_note","k":"procedure","f":"required","c":[66],"steps":[["emit","Note: The PIN is the substitutive name."]]},
     {"id":"analysis_heading","k":"procedure","f":"required","c":[69],"steps":[["emit","Analysis:"]]},
