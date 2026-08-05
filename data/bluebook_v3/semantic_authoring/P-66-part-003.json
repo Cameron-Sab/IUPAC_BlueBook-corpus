@@ -1,0 +1,2478 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "permission",
+      "normative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    [
+      "condition",
+      "normative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "permission",
+      "normative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "condition",
+      "normative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "source_metadata",
+      "skip",
+      "empty_layout_cell"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "source_metadata",
+      "skip",
+      "empty_layout_cell"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "source_metadata",
+      "skip",
+      "empty_layout_cell"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "permission",
+      "normative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "permission",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "permission",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "permission",
+      "normative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    null
+  ],
+  "corrections": [],
+  "examples": [
+    {
+      "id": "cyclic_amino_sulfinic_amides",
+      "c": [
+        4,
+        6
+      ],
+      "ok": [
+        "1lambda4,2-thiazinan-1-one (PIN)",
+        "1,2-thiazinane 1-oxide",
+        "3,4,5,6-tetrahydro-1lambda4,2-thiazin-1-ol (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "cyclic_amino_sulfinic_amide_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "urea_names",
+      "c": [
+        16,
+        18
+      ],
+      "ok": [
+        "urea (PIN)",
+        "carbonic diamide"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "urea_identity_names_and_locants"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "substituted_ureas",
+      "c": [
+        24,
+        26,
+        28
+      ],
+      "ok": [
+        "N,N-prime-dimethylurea (PIN)",
+        "N-(propan-2-ylidene)urea (PIN)",
+        "N-[1-cyano-3-(methylsulfanyl)propyl]-N-prime-methylurea (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "urea_derivative_substitution_and_seniority"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "urea_derived_prefix_examples",
+      "c": [
+        38,
+        40,
+        42,
+        44,
+        46
+      ],
+      "ok": [
+        "2-[(methylcarbamoyl)amino]naphthalene-1-carboxylic acid (PIN)",
+        "7,7-prime-[carbonylbis(azanediyl)]di(naphthalene-2-sulfonic acid) (PIN)",
+        "N-carbamoylbenzamide (PIN)",
+        "N-carbamoylbenzenesulfonamide (PIN)",
+        "N-carbamoyl-2-phenylacetamide (PIN)"
+      ],
+      "bad": [
+        "2-(3-methylureido)naphthalene-1-carboxylic acid",
+        "7,7-prime-ureylenedi(naphthalene-2-sulfonic acid)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "urea_derived_prefix_mapping"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "urea_related_acids",
+      "c": [
+        54,
+        55,
+        56
+      ],
+      "ok": [
+        "carbamoylcarbamic acid (PIN)",
+        "carbamoylcarbamoyl (preferred prefix)",
+        "N-carbamoylglycine"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "urea_related_carboxylic_acid_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "urea_seniority_examples",
+      "c": [
+        61,
+        63,
+        64
+      ],
+      "ok": [
+        "N-[2-(carbamoylamino)ethyl]acetamide (PIN)",
+        "N-[3-(carbamoylamino)propyl]formamide (PIN)"
+      ],
+      "bad": [
+        "N-(3-formamidopropyl)urea",
+        "N-[3-(formylamino)propyl]urea"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "urea_seniority_among_amides"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "carbamimidic_acid_derivatives",
+      "c": [
+        71,
+        74,
+        76,
+        78
+      ],
+      "ok": [
+        "carbamimidic acid (PIN)",
+        "ethyl N-prime-methyl-N,N-diphenylcarbamimidate (PIN)",
+        "ethyl N,N-diphenylcarbamimidate (PIN)",
+        "ethyl N-phenylcarbamimidate (PIN)"
+      ],
+      "bad": [
+        "isourea",
+        "O-ethyl-N,N-diphenylisourea"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "carbamimidic_acid_and_derivative_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "isourea_derived_prefix_example",
+      "c": [
+        84
+      ],
+      "ok": [
+        "7-{[(dimethylamino)ethoxymethylidene]amino}naphthalene-2-carboxylic acid (PIN)"
+      ],
+      "bad": [
+        "7-(2-ethyl-1,1-dimethyl-3-isoureido)naphthalene-2-carboxylic acid"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "isourea_derived_prefix_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "chalcogen_urea_examples",
+      "c": [
+        90,
+        92,
+        96
+      ],
+      "ok": [
+        "carbonothioic diamide",
+        "thiourea (PIN)",
+        "N-(butan-2-yl)selenourea (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "chalcogen_urea_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "chalcogen_isourea_examples",
+      "c": [
+        101,
+        104,
+        106,
+        108,
+        109
+      ],
+      "ok": [
+        "carbamimidothioic acid (PIN)",
+        "ethyl N,N-dimethylcarbamimidothioate (PIN)",
+        "ethyl N-prime-methylcarbamimidothioate (PIN)",
+        "ethyl N-methylcarbamimidothioate (PIN)"
+      ],
+      "bad": [
+        "isothiourea",
+        "S-ethyl-N-methylisothiourea"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "chalcogen_isourea_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "carbamothioylamino_example",
+      "c": [
+        121
+      ],
+      "ok": [
+        "3-(carbamothioylamino)propanoic acid (PIN)",
+        "3-{[amino(sulfanylidene)methyl]amino}propanoic acid"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "chalcogen_urea_isourea_prefix_mapping"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "condensed_urea_examples",
+      "c": [
+        130,
+        132,
+        136,
+        138,
+        140
+      ],
+      "ok": [
+        "2-imidodicarbonic diamide (PIN)",
+        "2,4-diimidotricarbonic diamide (PIN)",
+        "N1-methyl-2-imidodicarbonic diamide (PIN)",
+        "N1-methyl-2-imido-1-thiodicarbonic diamide (PIN)",
+        "N1-methyl-2,4-diimido-3-thiotricarbonic diamide (PIN)"
+      ],
+      "bad": [
+        "biuret as a preferred IUPAC name",
+        "triuret as a preferred IUPAC name"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "condensed_urea_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "higher_polyuret_example",
+      "c": [
+        144
+      ],
+      "ok": [
+        "3,5,7-trioxo-2,4,6,8-tetraazanonane-1,9-diamide (PIN)"
+      ],
+      "bad": [
+        "pentauret as a preferred IUPAC name"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "higher_polyuret_preferred_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "cyanamide_examples",
+      "c": [
+        151,
+        152
+      ],
+      "ok": [
+        "(propan-2-yl)cyanamide (PIN)",
+        "(propan-2-yl)carbononitridic amide",
+        "diethylcyanamide (PIN)",
+        "diethylcarbononitridic amide"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "cyanamide_retained_and_systematic_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "polycarbonic_acid_amides",
+      "c": [
+        157,
+        159,
+        162,
+        164,
+        165,
+        166,
+        168,
+        170
+      ],
+      "ok": [
+        "dicarbonic diamide (PIN)",
+        "tricarbonic diamide (PIN)",
+        "N1-(propan-2-yl)dicarbonic diamide (PIN)",
+        "N-isopropyldicarbonic diamide",
+        "N1-methyl-2-thiotricarbonic diamide (PIN)",
+        "1,2,3-trithiodicarbonic diamide (PIN)",
+        "2-dithioperoxy-1,3-dithiodicarbonic diamide (PIN)"
+      ],
+      "bad": [
+        "thiuram monosulfide",
+        "thiuram disulfide"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "polycarbonic_acid_amide_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule.",
+      "input": {
+        "source_correction_marker": "corrected name incorporated"
+      }
+    },
+    {
+      "id": "polyfunctional_amide_examples",
+      "c": [
+        177,
+        179,
+        181,
+        183,
+        185
+      ],
+      "ok": [
+        "1-(dinitromethyl)hydrazine-1,2-dicarboxamide (PIN)",
+        "N-[({[(acetamidomethyl)nitramido]methyl}nitramido)methyl]prop-2-enamide (PIN)",
+        "2-(1-aminopropan-2-ylidene)hydrazine-1-carboxamide (PIN)",
+        "4-[(2-hydroxyethyl)amino]-N-{2-[(2-hydroxyethyl)amino]ethyl}butanamide (PIN)",
+        "2-amino-N-(2,3-dihydroxypropyl)-N-methylacetamide (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "polyfunctional_amide_seniority"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "imide_examples",
+      "c": [
+        193,
+        195,
+        197,
+        198,
+        200,
+        202,
+        204
+      ],
+      "ok": [
+        "pyrrolidine-2,5-dione (PIN)",
+        "1H-pyrrole-2,5-dione (PIN)",
+        "1-bromopyrrolidine-2,5-dione (PIN)",
+        "hexahydro-1H-isoindole-1,3(2H)-dione (PIN)",
+        "2-phenyl-1H-isoindole-1,3(2H)-dione (PIN)",
+        "1,3-oxazetidine-2,4-dione (PIN)"
+      ],
+      "bad": [
+        "N-bromosuccinimide"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "imide_definition_and_naming"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    },
+    {
+      "id": "imide_prefix_examples",
+      "c": [
+        208,
+        211
+      ],
+      "ok": [
+        "2,5-dioxopyrrolidin-1-yl (preferred prefix)",
+        "7-(1,3-dioxo-1,3-dihydro-2H-isoindol-2-yl)naphthalene-1-carboxylic acid (PIN)",
+        "succinimido",
+        "7-phthalimido-1-naphthoic acid"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "imide_nitrogen_hydrogen_removal_prefixes"
+        ]
+      ],
+      "why": "Source example applying the cited semantic rule."
+    }
+  ],
+  "exceptions": [],
+  "figures": [],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "mechanical_assets": true,
+  "refs": [
+    {
+      "id": "reference.p66.part003.polyfunctional_amide_numbering_second",
+      "c": [
+        175
+      ],
+      "rel": "cites",
+      "o": "P-66.1.7:xref:0003"
+    }
+  ],
+  "symbols": [],
+  "tables": [
+    {
+      "id": "urea_derived_prefixes",
+      "label": "P-66.1.6.1.1.3",
+      "title": "Systematic prefixes for substituent groups derived from urea",
+      "c": [
+        34,
+        35,
+        36
+      ],
+      "cols": [
+        [
+          "group",
+          "Substituent group",
+          "MolecularStructure"
+        ],
+        [
+          "preferred",
+          "Preferred prefix",
+          "String"
+        ],
+        [
+          "alternative",
+          "Systematic alternative",
+          "String"
+        ],
+        [
+          "rejected",
+          "Not recommended",
+          "String"
+        ],
+        [
+          "use",
+          "Use restriction",
+          "String"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "terminal_urea_group",
+          "c": [
+            34
+          ],
+          "v": [
+            "H2N-CO-NH-",
+            "carbamoylamino",
+            "(aminocarbonyl)amino",
+            "ureido",
+            "general prefix use"
+          ]
+        },
+        {
+          "id": "divalent_urea_group",
+          "c": [
+            35,
+            36
+          ],
+          "v": [
+            "-HN-CO-NH-",
+            "carbonylbis(azanediyl)",
+            "carbonylbis(azanediyl)",
+            "ureylene",
+            "multiplicative nomenclature"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "group"
+        ],
+        "result": [
+          "preferred",
+          "alternative",
+          "rejected",
+          "use"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "chalcogen_urea_isourea_prefixes",
+      "label": "P-66.1.6.1.3.3",
+      "title": "Prefixes derived from chalcogen analogues of urea and isourea",
+      "c": [
+        111,
+        113,
+        114,
+        116,
+        117,
+        119
+      ],
+      "cols": [
+        [
+          "group",
+          "Substituent group",
+          "MolecularStructure"
+        ],
+        [
+          "preferred",
+          "Preferred prefix",
+          "String"
+        ],
+        [
+          "alternative",
+          "Systematic alternative",
+          "String"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "carbamothioylamino",
+          "c": [
+            111,
+            113
+          ],
+          "v": [
+            "H2N-CS-NH-",
+            "carbamothioylamino",
+            "[amino(sulfanylidene)methyl]amino"
+          ]
+        },
+        {
+          "id": "c_sulfanylcarbonimidoylamino",
+          "c": [
+            114,
+            116
+          ],
+          "v": [
+            "HN=C(SH)-NH-",
+            "(C-sulfanylcarbonimidoyl)amino",
+            "[imino(sulfanyl)methyl]amino"
+          ]
+        },
+        {
+          "id": "amino_sulfanyl_methylidene_amino",
+          "c": [
+            117,
+            119
+          ],
+          "v": [
+            "H2N-C(SH)=N-",
+            "[amino(sulfanyl)methylidene]amino",
+            "[amino(sulfanyl)methylidene]amino"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "group"
+        ],
+        "result": [
+          "preferred",
+          "alternative"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "task_id": "P-66-part-003",
+  "units": [
+    {
+      "id": "cyclic_amino_sulfinic_amide_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        2
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "CyclicAminoSulfinicAmideOrTautomer"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "NamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "method": "name as a heterocyclic compound"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "urea_identity_names_and_locants",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        12,
+        13,
+        14,
+        15,
+        20
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "Urea"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "UreaNamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "structure": "H2N-CO-NH2",
+              "retained_name": "urea",
+              "retained_name_status": "preferred IUPAC name",
+              "preferred_locants": [
+                "N",
+                "N-prime"
+              ],
+              "systematic_name": "carbonic diamide",
+              "general_numerical_locants": [
+                1,
+                2,
+                3
+              ],
+              "numerical_locants_in_preferred_names": "prohibited",
+              "source_correction_marker": "corrected English incorporated"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "urea_derivative_substitution_and_seniority",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        21,
+        22
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "compound",
+          "SubstitutedUreaOrRelatedAmide"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "AmideName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "urea_rank",
+          [
+            "lit",
+            "amide of carbonic acid"
+          ]
+        ],
+        [
+          "invoke",
+          "P-42.2",
+          {
+            "compound": [
+              "var",
+              "compound"
+            ]
+          }
+        ],
+        [
+          "set",
+          "substitution_site",
+          [
+            "lit",
+            "nitrogen atom or atoms"
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "urea_derived_prefix_mapping",
+      "k": "mapping",
+      "f": "required",
+      "c": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "out": [
+        [
+          "prefix",
+          "UreaDerivedPrefix"
+        ]
+      ],
+      "table": "urea_derived_prefixes"
+    },
+    {
+      "id": "urea_related_carboxylic_acid_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "UreaRelatedCarboxylicAcidOrDerivative"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "NamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "former_names": {
+                "H2N-CO-NH-COOH": "allophanic acid",
+                "H2N-CO-NH-CH2-COOH": "hydantoic acid"
+              },
+              "former_name_status": "not recommended",
+              "preferred_method": "form the acid and derivative names systematically"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "urea_seniority_among_amides",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        58,
+        59
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "candidates",
+          "AmideCandidateList"
+        ]
+      ],
+      "out": [
+        [
+          "senior_amide",
+          "AmideCandidate"
+        ]
+      ],
+      "steps": [
+        [
+          "invoke",
+          "P-42",
+          {
+            "candidates": [
+              "var",
+              "candidates"
+            ]
+          }
+        ],
+        [
+          "set",
+          "ordering",
+          [
+            "lit",
+            "same as the corresponding acids"
+          ]
+        ],
+        [
+          "set",
+          "specific_order",
+          [
+            "lit",
+            "carboxylic-acid amides, including formamide, precede urea"
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "senior_amide"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "carbamimidic_acid_and_derivative_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "CarbamimidicAcidOrDerivative"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "NamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "tautomer_structure": "H2N-C(OH)=NH",
+              "preferred_parent_name": "carbamimidic acid",
+              "systematic_full_name": "carbonamidimidic acid",
+              "isourea_status": "class name only; not recommended as a compound name",
+              "preferred_locants": [
+                "N",
+                "N-prime"
+              ],
+              "numerical_locants": "not used",
+              "unknown_double_bond_position_locants": [
+                "N"
+              ]
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "isourea_derived_prefix_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        80,
+        81,
+        82
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "IsoureaDerivedSubstituentGroup"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "PrefixNamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "mappings": [
+                {
+                  "group": "HN=C(OH)-NH-",
+                  "preferred": "(C-hydroxycarbonimidoyl)amino",
+                  "alternative": "[hydroxy(imino)methyl]amino"
+                },
+                {
+                  "group": "H2N-C(OH)=N-",
+                  "preferred": "[amino(hydroxy)methylidene]amino"
+                }
+              ],
+              "italic_C_purpose": "distinguish carbon attachment from N-substitution",
+              "hydroxy_parentheses_purpose": "show that amino is not hydroxy-substituted",
+              "rejected_prefixes": [
+                "1-isoureido",
+                "3-isoureido"
+              ]
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "chalcogen_urea_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        87,
+        88,
+        89,
+        94
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "ChalcogenAnalogueOfUrea"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "NamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "method": "functional replacement nomenclature",
+              "replacement_prefixes": [
+                "thio",
+                "seleno",
+                "telluro"
+              ],
+              "preferred_locants": [
+                "N",
+                "N-prime"
+              ],
+              "thiourea_general_locants": "numerical locants permitted",
+              "thiourea_preferred_locants": "numerical locants prohibited"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "chalcogen_isourea_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        98,
+        99,
+        100
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "ChalcogenAnalogueOfIsourea"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "NamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "method": "functional replacement nomenclature with the appropriate chalcogen infix",
+              "model_name": "carbamimidothioic acid",
+              "rejected_model_name": "isothiourea",
+              "preferred_known_double_bond_locants": [
+                "N",
+                "N-prime"
+              ],
+              "unknown_double_bond_position_locants": [
+                "S or Se or Te",
+                "N"
+              ]
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "chalcogen_urea_isourea_prefix_mapping",
+      "k": "mapping",
+      "f": "required",
+      "c": [
+        110,
+        111,
+        113,
+        114,
+        116,
+        117,
+        119
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "out": [
+        [
+          "prefix",
+          "ChalcogenUreaDerivedPrefix"
+        ]
+      ],
+      "table": "chalcogen_urea_isourea_prefixes"
+    },
+    {
+      "id": "condensed_urea_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        134
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "CondensedUrea"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "CondensedUreaNamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "structure": "H2N-[CO-NH]n-H",
+              "scope_n": [
+                2,
+                3,
+                4
+              ],
+              "preferred_method": "systematic diamide names of the corresponding imidopolycarbonic acids",
+              "parent_sequence": [
+                "imidodicarbonic acid",
+                "diimidotricarbonic acid",
+                "triimidotetracarbonic acid"
+              ],
+              "biuret_triuret_status": "not recommended as preferred IUPAC names",
+              "chalcogen_analogues": "functional replacement prefixes alphabetized with imido",
+              "preferred_locants": "letter and structural locants prescribed by P-66.4.1.2.2",
+              "former_full_numerical_system": "permitted in general nomenclature only",
+              "numerical_locants_in_preferred_names": "prohibited"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "higher_polyuret_preferred_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        142
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name"
+        ],
+        "if": [
+          "lit",
+          {
+            "condensation_index_n": {
+              "at_least": 5
+            }
+          }
+        ]
+      },
+      "in": [
+        [
+          "compound",
+          "HigherPolyuret"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "PreferredIUPACName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "method",
+          [
+            "lit",
+            "skeletal replacement (a) nomenclature"
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "cyanamide_retained_and_systematic_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        147,
+        148,
+        149
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "CyanamideOrDerivative"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "NamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "structure": "NC-NH2",
+              "retained_name": "cyanamide",
+              "retained_name_status": "preferred IUPAC name",
+              "allowed_substitution_site": "NH2 group",
+              "systematic_functional_replacement_name": "carbononitridic amide"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "polycarbonic_acid_amide_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        154,
+        155,
+        156
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "DiOrPolycarbonicAcidAmide"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "NamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "construction": "add functional class name amide to corresponding acid name",
+              "amino_group_count_marker": {
+                "group_count": 2,
+                "prefix": "di"
+              },
+              "chalcogen_analogues": "use functional replacement prefixes",
+              "numbering": "use numerical and letter locants"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "polyfunctional_amide_seniority",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        173,
+        174,
+        175
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "compound",
+          "PolyfunctionalAmide"
+        ]
+      ],
+      "out": [
+        [
+          "seniority",
+          "SeniorityResult"
+        ],
+        [
+          "numbering",
+          "NumberingResult"
+        ]
+      ],
+      "steps": [
+        [
+          "invoke",
+          "P-41",
+          {
+            "compound": [
+              "var",
+              "compound"
+            ]
+          }
+        ],
+        [
+          "set",
+          "class_order",
+          [
+            "lit",
+            [
+              "acid",
+              "anhydride",
+              "ester",
+              "acid halide",
+              "amide"
+            ]
+          ]
+        ],
+        [
+          "set",
+          "within_amides",
+          [
+            "lit",
+            "same order as corresponding acids"
+          ]
+        ],
+        [
+          "invoke",
+          "P-65.1.2.3",
+          {
+            "compound": [
+              "var",
+              "compound"
+            ]
+          }
+        ],
+        [
+          "invoke",
+          "P-65.1.2.4",
+          {
+            "compound": [
+              "var",
+              "compound"
+            ]
+          }
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "seniority"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "imide_definition_and_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "compound",
+          "Imide"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "ImideName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "class_definition",
+          [
+            "lit",
+            {
+              "structural_grouping": "-CO-NH-CO-"
+            }
+          ]
+        ],
+        [
+          "invoke",
+          "P-66.1.2",
+          {
+            "compound": [
+              "var",
+              "compound"
+            ],
+            "case": [
+              "lit",
+              "acyclic N-acyl primary amide"
+            ]
+          }
+        ],
+        [
+          "set",
+          "cyclic_preferred_method",
+          [
+            "lit",
+            "heterocyclic pseudoketone nomenclature"
+          ]
+        ],
+        [
+          "set",
+          "cyclic_alternative",
+          [
+            "lit",
+            {
+              "dioic acid": "imide",
+              "dicarboxylic acid": "dicarboximide",
+              "retained diacid ic acid": "imide or dicarboximide"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "imide_nitrogen_hydrogen_removal_prefixes",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        206,
+        207
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "subject",
+          "ImideNitrogenHydrogenRemovalGroup"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "PrefixNamingPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "preferred_method": "form the prefix systematically",
+              "general_method": "change final imide in the corresponding imide name to imido"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    }
+  ]
+}
