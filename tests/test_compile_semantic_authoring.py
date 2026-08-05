@@ -13,6 +13,7 @@ from scripts.compile_semantic_authoring import (
     compile_authoring,
     expand_authoring,
 )
+from scripts.compile_semantic_delta import _object_owners
 from scripts.build_compact_semantic_tasks import canonical_json_bytes, load_json
 
 
@@ -221,3 +222,29 @@ def test_direct_cli_help_works() -> None:
 
     assert result.returncode == 0, result.stderr
     assert "compact semantic authoring" in result.stdout
+
+
+def test_correction_application_uses_schema_application_id_for_ownership() -> None:
+    delta = {
+        "semantic_units": [],
+        "exceptions": [],
+        "tables": [],
+        "figures": [],
+        "examples": [],
+        "correction_applications": [
+            {
+                "application_id": "correction.test.application",
+                "before_clause_ids": ["P-1:clause:0001"],
+                "after_clause_ids": ["P-1:clause:0001"],
+            }
+        ],
+    }
+
+    owners, links = _object_owners(
+        delta, {"P-1:clause:0001": "P-1"}
+    )
+
+    assert owners == {"correction.test.application": "P-1"}
+    assert links["P-1"]["correction_application_ids"] == [
+        "correction.test.application"
+    ]

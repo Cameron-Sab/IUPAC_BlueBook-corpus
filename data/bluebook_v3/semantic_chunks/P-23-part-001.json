@@ -1,0 +1,4561 @@
+{
+  "assigned_rule_ids": [
+    "P-23",
+    "P-23.0",
+    "P-23.1",
+    "P-23.1.1",
+    "P-23.1.2",
+    "P-23.1.3",
+    "P-23.1.4",
+    "P-23.1.5",
+    "P-23.1.6",
+    "P-23.1.7",
+    "P-23.1.8",
+    "P-23.1.9",
+    "P-23.2",
+    "P-23.2.1",
+    "P-23.2.2",
+    "P-23.2.3",
+    "P-23.2.4",
+    "P-23.2.5",
+    "P-23.2.5.1",
+    "P-23.2.5.2",
+    "P-23.2.6",
+    "P-23.2.6.1",
+    "P-23.2.6.1.1",
+    "P-23.2.6.1.2"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 87,
+    "compiled_clause_count": 47,
+    "correction_application_count": 0,
+    "example_count": 8,
+    "exception_count": 0,
+    "figure_count": 9,
+    "nonoperative_clause_count": 40,
+    "record_count": 24,
+    "reference_count": 49,
+    "semantic_unit_count": 18,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 0,
+    "table_count": 0
+  },
+  "chunk_sha256": "CBE7FEF3439B453702C0A3A2F509E01DF7FD7D06AC20EC7071B6957EDB4717DA",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-23:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "source_navigation"
+      },
+      "force": "source_metadata",
+      "role": "source_metadata"
+    },
+    {
+      "clause_id": "P-23.0:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.0:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.section_basis_and_supersession",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.section_basis_and_supersession.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.section_basis_and_supersession.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "source_metadata"
+    },
+    {
+      "clause_id": "P-23.0:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.section_basis_and_supersession",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.section_basis_and_supersession.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.section_basis_and_supersession.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "source_metadata"
+    },
+    {
+      "clause_id": "P-23.0:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.section_basis_and_supersession",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.section_basis_and_supersession.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.section_basis_and_supersession.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "source_metadata"
+    },
+    {
+      "clause_id": "P-23.0:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.saturated_von_baeyer_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.saturated_von_baeyer_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.saturated_von_baeyer_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-23.0:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.saturated_von_baeyer_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.saturated_von_baeyer_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.saturated_von_baeyer_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    },
+    {
+      "clause_id": "P-23.0:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.saturated_von_baeyer_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.saturated_von_baeyer_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.saturated_von_baeyer_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    },
+    {
+      "clause_id": "P-23.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.4:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.5:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.5:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.6:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.7:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.8:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.9:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.1.9:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.von_baeyer_rules_applied_in_order",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.von_baeyer_rules_applied_in_order.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.von_baeyer_rules_applied_in_order.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.von_baeyer_rules_applied_in_order.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "source_navigation"
+      },
+      "force": "source_metadata",
+      "role": "source_metadata"
+    },
+    {
+      "clause_id": "P-23.2.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.main_ring_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.main_ring_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_ring_selection.candidates",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p23.part001.main_ring_selection.maximum_skeletal_atom_count",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p23.part001.main_ring_selection.stage.maximum_skeletal_atom_count.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_ring_selection.stage.maximum_skeletal_atom_count.key",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_ring_selection.stage.maximum_skeletal_atom_count.key.from",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-23.2.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.main_ring_bold_line_rendering",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.main_ring_bold_line_rendering.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_ring_bold_line_rendering.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "note"
+    },
+    {
+      "clause_id": "P-23.2.1:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part001.six_membered_main_ring_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part001.main_ring_six_membered",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.2.1:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part001.seven_membered_main_ring_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.1:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part001.main_ring_seven_membered",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.2.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.bicyclic_naming_prefix_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg1.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg2.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg2.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg3",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg3.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg3.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg3.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg4",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg4.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg4.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg4.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.bicyclic_naming_prefix_rule.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_naming_prefix_rule.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-23.2.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.bicyclic_descriptor_format",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_descriptor_format.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.bicyclic_descriptor_format.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_descriptor_format.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.2:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part001.bicyclo_3_2_1_octane_naming_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part001.bicyclo_3_2_1_octane_naming",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.2.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.3:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.bicyclic_numbering_procedure",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_numbering_procedure.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.bicyclic_numbering_procedure.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_numbering_procedure.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.3:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.bicyclic_numbering_procedure",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_numbering_procedure.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.bicyclic_numbering_procedure.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.bicyclic_numbering_procedure.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.3:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.3:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part001.bicyclo_3_2_1_octane_numbering_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.3:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part001.bicyclo_3_2_1_octane_numbering",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.2.3:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part001.bicyclo_4_4_2_dodecane_numbering_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.3:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part001.bicyclo_4_4_2_dodecane_numbering",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.2.4:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.4:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.multiple_bridge_connection_context",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.multiple_bridge_connection_context.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.multiple_bridge_connection_context.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-23.2.4:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.main_bridge_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.main_bridge_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_bridge_selection.candidates",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p23.part001.main_bridge_selection.maximum_atoms_outside_main_ring",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p23.part001.main_bridge_selection.stage.maximum_atoms_outside_main_ring.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_bridge_selection.stage.maximum_atoms_outside_main_ring.key",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_bridge_selection.stage.maximum_atoms_outside_main_ring.key.from",
+            "kind": "expression"
+          },
+          {
+            "id": "unit.p23.part001.main_bridge_rendering_convention",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.main_bridge_rendering_convention.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_bridge_rendering_convention.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-23.2.4:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.secondary_bridge_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.secondary_bridge_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.secondary_bridge_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-23.2.4:clause:0005",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.4:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part001.main_bridge_selection_example",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.2.5:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.5.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.5.1:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.5.1:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.5.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.tricyclic_name_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.tricyclic_name_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.5.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.tricyclic_name_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.tricyclic_name_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.5.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.tricyclic_name_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.tricyclic_name_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.5.1:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.tricyclic_name_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.tricyclic_name_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.5.1:clause:0008",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.5.1:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part001.tricyclo_2_2_1_heptane_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.5.1:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part001.tricyclo_2_2_1_heptane",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.2.5.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.5.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.independent_secondary_bridge_numbering",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.independent_secondary_bridge_numbering.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.independent_secondary_bridge_numbering.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.independent_secondary_bridge_numbering.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.5.2:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.5.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part001.tricyclo_9_3_3_octadecane_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.5.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part001.tricyclo_9_3_3_octadecane",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.2.5.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part001.tricyclo_4_2_2_dodecane_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.2.5.2:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part001.tricyclo_4_2_2_dodecane",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.2.6:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.6:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.polyalicyclic_scope_and_inheritance",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_scope_and_inheritance.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_scope_and_inheritance.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-23.2.6:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.polyalicyclic_scope_and_inheritance",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_scope_and_inheritance.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_scope_and_inheritance.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-23.2.6:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.polyalicyclic_scope_and_inheritance",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_scope_and_inheritance.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_scope_and_inheritance.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.6:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.polyalicyclic_scope_and_inheritance",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_scope_and_inheritance.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_scope_and_inheritance.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.6:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.additional_bridge_selection_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.additional_bridge_selection_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.additional_bridge_selection_rule.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-23.2.6.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.6.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.secondary_bridge_descriptor_rules",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.secondary_bridge_descriptor_rules.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.secondary_bridge_descriptor_rules.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.secondary_bridge_descriptor_rules.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.6.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.secondary_bridge_descriptor_rules",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.secondary_bridge_descriptor_rules.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.secondary_bridge_descriptor_rules.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.secondary_bridge_descriptor_rules.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.6.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.secondary_bridge_descriptor_rules",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.secondary_bridge_descriptor_rules.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.secondary_bridge_descriptor_rules.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.secondary_bridge_descriptor_rules.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-23.2.6.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.polyalicyclic_name_construction_procedure",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_name_construction_procedure.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.polyalicyclic_name_construction_procedure.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_name_construction_procedure.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-23.2.6.1.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.6.1.1:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.6.1.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.6.1.2:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.6.1.2:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.2.6.1.2:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "a six-membered main ring"
+      ],
+      "clause_ids": [
+        "P-23.2.1:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p23.part001.main_ring_selection",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p23.part001.main_ring_six_membered",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p23.part001.six_membered_main_ring_example",
+      "explanation": "The structure illustrates selection and bold-line display of a six-membered main ring.",
+      "input": {
+        "main_ring_size": 6
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "a seven-membered main ring"
+      ],
+      "clause_ids": [
+        "P-23.2.1:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p23.part001.main_ring_selection",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p23.part001.main_ring_seven_membered",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p23.part001.seven_membered_main_ring_example",
+      "explanation": "The structure illustrates selection and bold-line display of a seven-membered main ring.",
+      "input": {
+        "main_ring_size": 7
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "bicyclo[3.2.1]octane"
+      ],
+      "clause_ids": [
+        "P-23.2.2:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p23.part001.bicyclic_naming_prefix_rule",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p23.part001.bicyclic_descriptor_format",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p23.part001.bicyclo_3_2_1_octane_naming",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p23.part001.bicyclo_3_2_1_octane_naming_example",
+      "explanation": "The figure caption identifies bicyclo[3.2.1]octane as a PIN example of the bicyclic naming rule.",
+      "input": {
+        "bridge_lengths": [
+          3,
+          2,
+          1
+        ],
+        "homogeneity": "homogeneous",
+        "saturation": "saturated",
+        "shared_atom_count": 2,
+        "total_skeletal_atoms": 8
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "bicyclo[3.2.1]octane"
+      ],
+      "clause_ids": [
+        "P-23.2.3:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p23.part001.bicyclic_numbering_procedure",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p23.part001.bicyclo_3_2_1_octane_numbering",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p23.part001.bicyclo_3_2_1_octane_numbering_example",
+      "explanation": "The figure caption identifies bicyclo[3.2.1]octane as a PIN example of the numbering procedure.",
+      "input": {
+        "name": "bicyclo[3.2.1]octane",
+        "numbering": "main ring then main bridge"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "bicyclo[4.4.2]dodecane"
+      ],
+      "clause_ids": [
+        "P-23.2.3:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p23.part001.bicyclic_numbering_procedure",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p23.part001.bicyclo_4_4_2_dodecane_numbering",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p23.part001.bicyclo_4_4_2_dodecane_numbering_example",
+      "explanation": "The figure caption identifies bicyclo[4.4.2]dodecane as a PIN example of the numbering procedure.",
+      "input": {
+        "name": "bicyclo[4.4.2]dodecane",
+        "numbering": "main ring then main bridge"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "tricyclo[2.2.1.02,6]heptane"
+      ],
+      "clause_ids": [
+        "P-23.2.5.1:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p23.part001.tricyclic_name_construction",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p23.part001.tricyclo_2_2_1_heptane",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p23.part001.tricyclo_2_2_1_heptane_example",
+      "explanation": "The figure caption identifies tricyclo[2.2.1.02,6]heptane as a PIN example of tricyclic name construction.",
+      "input": {
+        "bridge_lengths": [
+          2,
+          2,
+          1
+        ],
+        "secondary_bridge_attachment_locants": [
+          2,
+          6
+        ]
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "tricyclo[9.3.3.11,11]octadecane"
+      ],
+      "clause_ids": [
+        "P-23.2.5.2:clause:0004"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p23.part001.independent_secondary_bridge_numbering",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p23.part001.tricyclo_9_3_3_octadecane",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p23.part001.tricyclo_9_3_3_octadecane_example",
+      "explanation": "The figure caption identifies tricyclo[9.3.3.11,11]octadecane as a PIN example.",
+      "input": {
+        "name": "tricyclo[9.3.3.11,11]octadecane",
+        "secondary_bridge": "independent"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "tricyclo[4.2.2.22,5]dodecane"
+      ],
+      "clause_ids": [
+        "P-23.2.5.2:clause:0006"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p23.part001.independent_secondary_bridge_numbering",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p23.part001.tricyclo_4_2_2_dodecane",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p23.part001.tricyclo_4_2_2_dodecane_example",
+      "explanation": "The caption states that the secondary bridge is numbered from bridgehead 5, the higher numbered bridgehead.",
+      "input": {
+        "comparison": "bridgehead 5 is higher numbered than bridgehead 2",
+        "name": "tricyclo[4.2.2.22,5]dodecane",
+        "secondary_bridge_start": 5
+      },
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [],
+  "figures": [
+    {
+      "clause_ids": [
+        "P-23.2.1:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part001.main_ring_six_membered",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230201a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.2.1:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part001.main_ring_seven_membered",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230201b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.2.2:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part001.bicyclo_3_2_1_octane_naming",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230202a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.2.3:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part001.bicyclo_3_2_1_octane_numbering",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230201b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.2.3:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part001.bicyclo_4_4_2_dodecane_numbering",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230203a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.2.4:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part001.main_bridge_selection_example",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230204a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.2.5.1:clause:0010"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part001.tricyclo_2_2_1_heptane",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230205a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.2.5.2:clause:0005"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part001.tricyclo_9_3_3_octadecane",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230205b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.2.5.2:clause:0007"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part001.tricyclo_4_2_2_dodecane",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230205c.gif"
+      ]
+    }
+  ],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-23-part-001",
+  "packet_sha256": "4563B8777254B4277951B073FECA0BB6A6C21CCF5324B6E54294FB562363ABF7",
+  "records": [
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23:clause:0001",
+        "P-23:clause:0002"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23",
+      "reference_ids": [
+        "reference.p_23.hierarchy_parent",
+        "reference.P-23:xref:0001",
+        "reference.P-23:xref:0002",
+        "reference.P-23:xref:0003",
+        "reference.P-23:xref:0004",
+        "reference.P-23:xref:0005",
+        "reference.P-23:xref:0006",
+        "reference.P-23:xref:0007",
+        "reference.P-23:xref:0008"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.0:clause:0001",
+        "P-23.0:clause:0002",
+        "P-23.0:clause:0003",
+        "P-23.0:clause:0004",
+        "P-23.0:clause:0005",
+        "P-23.0:clause:0006",
+        "P-23.0:clause:0007"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.0",
+      "reference_ids": [
+        "reference.p_23_0.hierarchy_parent",
+        "reference.p23.part001.xref.p23_0_1",
+        "reference.p23.part001.xref.p23_0_2"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part001.section_basis_and_supersession",
+        "unit.p23.part001.saturated_von_baeyer_scope"
+      ],
+      "source_rule_id": "P-23.0",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.1:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.1",
+      "reference_ids": [
+        "reference.p_23_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.1.1:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.1.1",
+      "reference_ids": [
+        "reference.p_23_1_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.1.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.1.2:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.1.2",
+      "reference_ids": [
+        "reference.p_23_1_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.1.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.1.3:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.1.3",
+      "reference_ids": [
+        "reference.p_23_1_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.1.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.1.4:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.1.4",
+      "reference_ids": [
+        "reference.p_23_1_4.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.1.4",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.1.5:clause:0001",
+        "P-23.1.5:clause:0002"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.1.5",
+      "reference_ids": [
+        "reference.p_23_1_5.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.1.5",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.1.6:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.1.6",
+      "reference_ids": [
+        "reference.p_23_1_6.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.1.6",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.1.7:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.1.7",
+      "reference_ids": [
+        "reference.p_23_1_7.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.1.7",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.1.8:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.1.8",
+      "reference_ids": [
+        "reference.p_23_1_8.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.1.8",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.1.9:clause:0001",
+        "P-23.1.9:clause:0002"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.1.9",
+      "reference_ids": [
+        "reference.p_23_1_9.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.1.9",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2:clause:0001",
+        "P-23.2:clause:0002",
+        "P-23.2:clause:0003"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.2",
+      "reference_ids": [
+        "reference.p_23_2.hierarchy_parent",
+        "reference.P-23.2:xref:0001",
+        "reference.P-23.2:xref:0002",
+        "reference.P-23.2:xref:0003",
+        "reference.P-23.2:xref:0004",
+        "reference.P-23.2:xref:0005",
+        "reference.P-23.2:xref:0006"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part001.von_baeyer_rules_applied_in_order"
+      ],
+      "source_rule_id": "P-23.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.1:clause:0001",
+        "P-23.2.1:clause:0002",
+        "P-23.2.1:clause:0003",
+        "P-23.2.1:clause:0004",
+        "P-23.2.1:clause:0005",
+        "P-23.2.1:clause:0006",
+        "P-23.2.1:clause:0007",
+        "P-23.2.1:clause:0008"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p23.part001.six_membered_main_ring_example",
+        "example.p23.part001.seven_membered_main_ring_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p23.part001.main_ring_six_membered",
+        "figure.p23.part001.main_ring_seven_membered"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.2.1",
+      "reference_ids": [
+        "reference.p_23_2_1.hierarchy_parent",
+        "reference.p23.part001.xref.p23_2_1_1",
+        "reference.p23.part001.xref.p23_2_1_2"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part001.main_ring_selection",
+        "unit.p23.part001.main_ring_bold_line_rendering"
+      ],
+      "source_rule_id": "P-23.2.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.2:clause:0001",
+        "P-23.2.2:clause:0002",
+        "P-23.2.2:clause:0003",
+        "P-23.2.2:clause:0004",
+        "P-23.2.2:clause:0005",
+        "P-23.2.2:clause:0006"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p23.part001.bicyclo_3_2_1_octane_naming_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p23.part001.bicyclo_3_2_1_octane_naming"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.2.2",
+      "reference_ids": [
+        "reference.p_23_2_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part001.bicyclic_naming_prefix_rule",
+        "unit.p23.part001.bicyclic_descriptor_format"
+      ],
+      "source_rule_id": "P-23.2.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.3:clause:0001",
+        "P-23.2.3:clause:0002",
+        "P-23.2.3:clause:0003",
+        "P-23.2.3:clause:0004",
+        "P-23.2.3:clause:0005",
+        "P-23.2.3:clause:0006",
+        "P-23.2.3:clause:0007",
+        "P-23.2.3:clause:0008"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p23.part001.bicyclo_3_2_1_octane_numbering_example",
+        "example.p23.part001.bicyclo_4_4_2_dodecane_numbering_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p23.part001.bicyclo_3_2_1_octane_numbering",
+        "figure.p23.part001.bicyclo_4_4_2_dodecane_numbering"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.2.3",
+      "reference_ids": [
+        "reference.p_23_2_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part001.bicyclic_numbering_procedure"
+      ],
+      "source_rule_id": "P-23.2.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.4:clause:0001",
+        "P-23.2.4:clause:0002",
+        "P-23.2.4:clause:0003",
+        "P-23.2.4:clause:0004",
+        "P-23.2.4:clause:0005",
+        "P-23.2.4:clause:0006"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p23.part001.main_bridge_selection_example"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.2.4",
+      "reference_ids": [
+        "reference.p_23_2_4.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part001.multiple_bridge_connection_context",
+        "unit.p23.part001.main_bridge_selection",
+        "unit.p23.part001.main_bridge_rendering_convention",
+        "unit.p23.part001.secondary_bridge_definition"
+      ],
+      "source_rule_id": "P-23.2.4",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.5:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.2.5",
+      "reference_ids": [
+        "reference.p_23_2_5.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.2.5",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.5.1:clause:0001",
+        "P-23.2.5.1:clause:0002",
+        "P-23.2.5.1:clause:0003",
+        "P-23.2.5.1:clause:0004",
+        "P-23.2.5.1:clause:0005",
+        "P-23.2.5.1:clause:0006",
+        "P-23.2.5.1:clause:0007",
+        "P-23.2.5.1:clause:0008",
+        "P-23.2.5.1:clause:0009",
+        "P-23.2.5.1:clause:0010"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p23.part001.tricyclo_2_2_1_heptane_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p23.part001.tricyclo_2_2_1_heptane"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.2.5.1",
+      "reference_ids": [
+        "reference.p_23_2_5_1.hierarchy_parent",
+        "reference.p23.part001.xref.p23_2_5_1_1"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part001.tricyclic_name_construction"
+      ],
+      "source_rule_id": "P-23.2.5.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.5.2:clause:0001",
+        "P-23.2.5.2:clause:0002",
+        "P-23.2.5.2:clause:0003",
+        "P-23.2.5.2:clause:0004",
+        "P-23.2.5.2:clause:0005",
+        "P-23.2.5.2:clause:0006",
+        "P-23.2.5.2:clause:0007"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p23.part001.tricyclo_9_3_3_octadecane_example",
+        "example.p23.part001.tricyclo_4_2_2_dodecane_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p23.part001.tricyclo_9_3_3_octadecane",
+        "figure.p23.part001.tricyclo_4_2_2_dodecane"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.2.5.2",
+      "reference_ids": [
+        "reference.p_23_2_5_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part001.independent_secondary_bridge_numbering"
+      ],
+      "source_rule_id": "P-23.2.5.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.6:clause:0001",
+        "P-23.2.6:clause:0002",
+        "P-23.2.6:clause:0003",
+        "P-23.2.6:clause:0004",
+        "P-23.2.6:clause:0005",
+        "P-23.2.6:clause:0006"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.2.6",
+      "reference_ids": [
+        "reference.p_23_2_6.hierarchy_parent",
+        "reference.P-23.2.6:xref:0001",
+        "reference.P-23.2.6:xref:0002",
+        "reference.P-23.2.6:xref:0003",
+        "reference.P-23.2.6:xref:0004"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part001.polyalicyclic_scope_and_inheritance",
+        "unit.p23.part001.additional_bridge_selection_rule"
+      ],
+      "source_rule_id": "P-23.2.6",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.6.1:clause:0001",
+        "P-23.2.6.1:clause:0002",
+        "P-23.2.6.1:clause:0003",
+        "P-23.2.6.1:clause:0004",
+        "P-23.2.6.1:clause:0005"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.2.6.1",
+      "reference_ids": [
+        "reference.p_23_2_6_1.hierarchy_parent",
+        "reference.P-23.2.6.1:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part001.secondary_bridge_descriptor_rules",
+        "unit.p23.part001.polyalicyclic_name_construction_procedure"
+      ],
+      "source_rule_id": "P-23.2.6.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.6.1.1:clause:0001",
+        "P-23.2.6.1.1:clause:0002"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.2.6.1.1",
+      "reference_ids": [
+        "reference.p_23_2_6_1_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.2.6.1.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.2.6.1.2:clause:0001",
+        "P-23.2.6.1.2:clause:0002",
+        "P-23.2.6.1.2:clause:0003",
+        "P-23.2.6.1.2:clause:0004"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-23.2.6.1.2",
+      "reference_ids": [
+        "reference.p_23_2_6_1_2.hierarchy_parent",
+        "reference.p23.part001.xref.p23_2_6_1_2_1"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.2.6.1.2",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-23:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-2",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.0:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_0.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.0",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_1_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.1.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_1_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.1.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_1_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.1.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.4:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_1_4.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.1.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.5:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_1_5.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.1.5",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.6:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_1_6.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.1.6",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.7:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_1_7.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.1.7",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.8:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_1_8.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.1.8",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.9:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_1_9.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.1.9",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.4:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_4.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.5:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_5.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.5",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.5.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_5_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.5.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.5.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_5_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.5.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_6.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.6",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_6_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.6.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2.6",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6.1.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_6_1_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.6.1.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2.6.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6.1.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_2_6_1_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.6.1.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.2.6.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23:xref:0001"
+      ],
+      "target": {
+        "id": "P-23.0",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23:xref:0002"
+      ],
+      "target": {
+        "id": "P-23.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23:xref:0003"
+      ],
+      "target": {
+        "id": "P-23.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23:xref:0004"
+      ],
+      "target": {
+        "id": "P-23.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23:xref:0005",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23:xref:0005"
+      ],
+      "target": {
+        "id": "P-23.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23:xref:0006",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23:xref:0006"
+      ],
+      "target": {
+        "id": "P-23.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23:xref:0007",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23:xref:0007"
+      ],
+      "target": {
+        "id": "P-23.6",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23:xref:0008",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23:xref:0008"
+      ],
+      "target": {
+        "id": "P-23.7",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.0:clause:0006"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p23.part001.xref.p23_0_1",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.0",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.0:xref:0001"
+      ],
+      "target": {
+        "id": "P-31.1.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.0:clause:0007"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p23.part001.xref.p23_0_2",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.0",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.0:xref:0002"
+      ],
+      "target": {
+        "id": "P-29",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-23.2.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2:xref:0002"
+      ],
+      "target": {
+        "id": "P-23.2.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2:xref:0003"
+      ],
+      "target": {
+        "id": "P-23.2.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2:xref:0004"
+      ],
+      "target": {
+        "id": "P-23.2.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2:xref:0005",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2:xref:0005"
+      ],
+      "target": {
+        "id": "P-23.2.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2:xref:0006",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2:xref:0006"
+      ],
+      "target": {
+        "id": "P-23.2.6",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.1:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p23.part001.xref.p23_2_1_1",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2.1:xref:0001"
+      ],
+      "target": {
+        "id": "P-23.2.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.1:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p23.part001.xref.p23_2_1_2",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2.1:xref:0002"
+      ],
+      "target": {
+        "id": "P-23.2.6",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.5.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p23.part001.xref.p23_2_5_1_1",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.5.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2.5.1:xref:0001"
+      ],
+      "target": {
+        "id": "P-23.2.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2.6:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.6",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2.6:xref:0001"
+      ],
+      "target": {
+        "id": "P-23.2.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2.6:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.6",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2.6:xref:0002"
+      ],
+      "target": {
+        "id": "P-23.2.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2.6:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.6",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2.6:xref:0003"
+      ],
+      "target": {
+        "id": "P-23.2.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2.6:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.6",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2.6:xref:0004"
+      ],
+      "target": {
+        "id": "P-23.2.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6.1:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-23.2.6.1:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.6.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2.6.1:xref:0001"
+      ],
+      "target": {
+        "id": "P-23.2.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6.1.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p23.part001.xref.p23_2_6_1_2_1",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.2.6.1.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-23.2.6.1.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-23.2.6.1.3",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-23.0:clause:0002",
+        "P-23.0:clause:0003",
+        "P-23.0:clause:0004"
+      ],
+      "entity_type": "SectionProvenance",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "provenance",
+          "type": "SectionProvenance"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.0:clause:0002",
+            "P-23.0:clause:0003",
+            "P-23.0:clause:0004"
+          ],
+          "expression_id": "expr.p23.part001.section_basis_and_supersession.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "P-23 publication basis and supersession",
+      "unit_id": "unit.p23.part001.section_basis_and_supersession",
+      "value": {
+        "clause_ids": [
+          "P-23.0:clause:0002",
+          "P-23.0:clause:0003",
+          "P-23.0:clause:0004"
+        ],
+        "expression_id": "expr.p23.part001.section_basis_and_supersession.value",
+        "op": "literal",
+        "value": {
+          "basis_publication": "Extension and Revision of the von Baeyer system for naming polycyclic compounds (including bicyclic compounds) (IUPAC Recommendations 1999)",
+          "basis_reference": "ref. 7",
+          "modifications_to_1999_publication": false,
+          "supersedes": [
+            "Rules A-31, A-32, and B-14 in the 1979 Recommendations (ref. 1)",
+            "Rule R-2.4.2 in the 1993 Recommendations (ref. 2)"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.0:clause:0005",
+        "P-23.0:clause:0006",
+        "P-23.0:clause:0007"
+      ],
+      "entity_type": "VonBaeyerScope",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "scope",
+          "type": "VonBaeyerScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.0:clause:0005",
+            "P-23.0:clause:0006",
+            "P-23.0:clause:0007"
+          ],
+          "expression_id": "expr.p23.part001.saturated_von_baeyer_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "scope of the saturated von Baeyer system",
+      "unit_id": "unit.p23.part001.saturated_von_baeyer_scope",
+      "value": {
+        "clause_ids": [
+          "P-23.0:clause:0005",
+          "P-23.0:clause:0006",
+          "P-23.0:clause:0007"
+        ],
+        "expression_id": "expr.p23.part001.saturated_von_baeyer_scope.value",
+        "op": "literal",
+        "value": {
+          "derived_substituent_groups": "see Section P-29",
+          "naming_system": "von Baeyer system",
+          "ring_systems": "saturated polyalicyclic ring systems",
+          "unsaturated_systems": "see Section P-31.1.4"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "hydrocarbon",
+          "type": "VonBaeyerHydrocarbon"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "naming_decision",
+          "type": "NamingDecision"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2:clause:0002"
+          ],
+          "expression_id": "expr.p23.part001.von_baeyer_rules_applied_in_order.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-23.2:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.von_baeyer_rules_applied_in_order.steps.1",
+          "target": "naming_decision",
+          "value": {
+            "clause_ids": [
+              "P-23.2:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.von_baeyer_rules_applied_in_order.steps.1.value",
+            "op": "literal",
+            "value": {
+              "ordered_sections": [
+                "P-23.2.1",
+                "P-23.2.2",
+                "P-23.2.3",
+                "P-23.2.4",
+                "P-23.2.5",
+                "P-23.2.6"
+              ],
+              "procedure": "apply the following rules in order until a decision is reached"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.von_baeyer_rules_applied_in_order"
+    },
+    {
+      "candidates": {
+        "clause_ids": [
+          "P-23.2.1:clause:0002"
+        ],
+        "expression_id": "expr.p23.part001.main_ring_selection.candidates",
+        "name": "candidate_main_rings",
+        "op": "var"
+      },
+      "clause_ids": [
+        "P-23.2.1:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "candidate_main_rings",
+          "type": "MainRingSet"
+        }
+      ],
+      "kind": "decision",
+      "outputs": [
+        {
+          "name": "selected_main_ring",
+          "type": "MainRing"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.1:clause:0002"
+          ],
+          "expression_id": "expr.p23.part001.main_ring_selection.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "stages": [
+        {
+          "clause_ids": [
+            "P-23.2.1:clause:0002"
+          ],
+          "comparator": {
+            "direction": "maximum",
+            "kind": "numeric",
+            "symbol": null,
+            "table_id": null
+          },
+          "guard": {
+            "clause_ids": [
+              "P-23.2.1:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.main_ring_selection.stage.maximum_skeletal_atom_count.guard",
+            "op": "literal",
+            "value": true
+          },
+          "key": {
+            "clause_ids": [
+              "P-23.2.1:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.main_ring_selection.stage.maximum_skeletal_atom_count.key",
+            "from": {
+              "clause_ids": [
+                "P-23.2.1:clause:0002"
+              ],
+              "expression_id": "expr.p23.part001.main_ring_selection.stage.maximum_skeletal_atom_count.key.from",
+              "name": "candidate_main_ring",
+              "op": "var"
+            },
+            "op": "get",
+            "path": "skeletal_atom_count"
+          },
+          "on_tie": {
+            "mode": "continue",
+            "next_stage_id": null
+          },
+          "ordinal": 1,
+          "stage_id": "stage.p23.part001.main_ring_selection.maximum_skeletal_atom_count"
+        }
+      ],
+      "terminal_tie": {
+        "fallback_ref": null,
+        "mode": "retain_coequal"
+      },
+      "unit_id": "unit.p23.part001.main_ring_selection"
+    },
+    {
+      "clause_ids": [
+        "P-23.2.1:clause:0003"
+      ],
+      "entity_type": "RingRenderingConvention",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "rendering",
+          "type": "RingRenderingConvention"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.1:clause:0003"
+          ],
+          "expression_id": "expr.p23.part001.main_ring_bold_line_rendering.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "main-ring rendering convention",
+      "unit_id": "unit.p23.part001.main_ring_bold_line_rendering",
+      "value": {
+        "clause_ids": [
+          "P-23.2.1:clause:0003"
+        ],
+        "expression_id": "expr.p23.part001.main_ring_bold_line_rendering.value",
+        "op": "literal",
+        "value": {
+          "applies_in": "subsections P-23.2.1 through P-23.2.6",
+          "component": "main ring",
+          "line_style": "bold"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.2:clause:0002"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "hydrocarbon",
+          "type": "SaturatedHomogeneousBicyclicHydrocarbon"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "name_pattern",
+          "type": "BicyclicNamePattern"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.2:clause:0002"
+          ],
+          "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-23.2.2:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.bicyclic_naming_prefix_rule.then.1",
+          "target": "name_pattern",
+          "value": {
+            "clause_ids": [
+              "P-23.2.2:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.then.1.value",
+            "op": "literal",
+            "value": {
+              "base_name": "the acyclic hydrocarbon having the same total number of skeletal atoms",
+              "prefix": "bicyclo"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.bicyclic_naming_prefix_rule",
+      "when": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-23.2.2:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg1",
+            "left": {
+              "clause_ids": [
+                "P-23.2.2:clause:0002"
+              ],
+              "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg1.left",
+              "from": {
+                "clause_ids": [
+                  "P-23.2.2:clause:0002"
+                ],
+                "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg1.left.from",
+                "name": "hydrocarbon",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "saturation"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-23.2.2:clause:0002"
+              ],
+              "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg1.right",
+              "op": "literal",
+              "value": "saturated"
+            }
+          },
+          {
+            "clause_ids": [
+              "P-23.2.2:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg2",
+            "left": {
+              "clause_ids": [
+                "P-23.2.2:clause:0002"
+              ],
+              "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg2.left",
+              "from": {
+                "clause_ids": [
+                  "P-23.2.2:clause:0002"
+                ],
+                "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg2.left.from",
+                "name": "hydrocarbon",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "homogeneity"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-23.2.2:clause:0002"
+              ],
+              "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg2.right",
+              "op": "literal",
+              "value": "homogeneous"
+            }
+          },
+          {
+            "clause_ids": [
+              "P-23.2.2:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg3",
+            "left": {
+              "clause_ids": [
+                "P-23.2.2:clause:0002"
+              ],
+              "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg3.left",
+              "from": {
+                "clause_ids": [
+                  "P-23.2.2:clause:0002"
+                ],
+                "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg3.left.from",
+                "name": "hydrocarbon",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "topology"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-23.2.2:clause:0002"
+              ],
+              "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg3.right",
+              "op": "literal",
+              "value": "bicyclic"
+            }
+          },
+          {
+            "clause_ids": [
+              "P-23.2.2:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg4",
+            "left": {
+              "clause_ids": [
+                "P-23.2.2:clause:0002"
+              ],
+              "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg4.left",
+              "from": {
+                "clause_ids": [
+                  "P-23.2.2:clause:0002"
+                ],
+                "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg4.left.from",
+                "name": "hydrocarbon",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "shared_atom_count"
+            },
+            "op": "compare",
+            "relation": "ge",
+            "right": {
+              "clause_ids": [
+                "P-23.2.2:clause:0002"
+              ],
+              "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when.arg4.right",
+              "op": "literal",
+              "value": 2
+            }
+          }
+        ],
+        "clause_ids": [
+          "P-23.2.2:clause:0002"
+        ],
+        "expression_id": "expr.p23.part001.bicyclic_naming_prefix_rule.when",
+        "op": "all"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.2:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "bicyclic_system",
+          "type": "BicyclicSystem"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "bridge_descriptor",
+          "type": "VonBaeyerDescriptor"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.2:clause:0003"
+          ],
+          "expression_id": "expr.p23.part001.bicyclic_descriptor_format.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-23.2.2:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.bicyclic_descriptor_format.steps.1",
+          "target": "bridge_descriptor",
+          "value": {
+            "clause_ids": [
+              "P-23.2.2:clause:0003"
+            ],
+            "expression_id": "expr.p23.part001.bicyclic_descriptor_format.steps.1.value",
+            "op": "literal",
+            "value": {
+              "enclosure": "square brackets",
+              "number_style": "arabic numbers",
+              "numbers": "skeletal atoms in each of the two segments connecting the main bridgeheads and in the main bridge",
+              "order": "descending numerical order",
+              "separator": "full stops"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.bicyclic_descriptor_format"
+    },
+    {
+      "clause_ids": [
+        "P-23.2.3:clause:0002",
+        "P-23.2.3:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "bicyclic_system",
+          "type": "BicyclicSystem"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "numbering_sequence",
+          "type": "NumberingSequence"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.3:clause:0002",
+            "P-23.2.3:clause:0003"
+          ],
+          "expression_id": "expr.p23.part001.bicyclic_numbering_procedure.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-23.2.3:clause:0002",
+            "P-23.2.3:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.bicyclic_numbering_procedure.steps.1",
+          "target": "numbering_sequence",
+          "value": {
+            "clause_ids": [
+              "P-23.2.3:clause:0002",
+              "P-23.2.3:clause:0003"
+            ],
+            "expression_id": "expr.p23.part001.bicyclic_numbering_procedure.steps.1.value",
+            "op": "literal",
+            "value": {
+              "completion": "number the main bridge beginning with the atom next to the first bridgehead",
+              "first_path": "the longer segment of the main ring to the second bridgehead",
+              "return_path": "the unnumbered segment of the main ring back to the first bridgehead",
+              "start": "one of the bridgeheads"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.bicyclic_numbering_procedure"
+    },
+    {
+      "clause_ids": [
+        "P-23.2.4:clause:0002"
+      ],
+      "entity_type": "PolycyclicBridgeContext",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "bridge_context",
+          "type": "PolycyclicBridgeContext"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.4:clause:0002"
+          ],
+          "expression_id": "expr.p23.part001.multiple_bridge_connection_context.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "multiple-bridge polycyclic context",
+      "unit_id": "unit.p23.part001.multiple_bridge_connection_context",
+      "value": {
+        "clause_ids": [
+          "P-23.2.4:clause:0002"
+        ],
+        "expression_id": "expr.p23.part001.multiple_bridge_connection_context.value",
+        "op": "literal",
+        "value": {
+          "condition": "a polycyclic ring system has more than one bridge connecting atoms of the main ring and/or the main bridge"
+        }
+      }
+    },
+    {
+      "candidates": {
+        "clause_ids": [
+          "P-23.2.4:clause:0003"
+        ],
+        "expression_id": "expr.p23.part001.main_bridge_selection.candidates",
+        "name": "candidate_bridges",
+        "op": "var"
+      },
+      "clause_ids": [
+        "P-23.2.4:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "candidate_bridges",
+          "type": "BridgeSet"
+        }
+      ],
+      "kind": "decision",
+      "outputs": [
+        {
+          "name": "selected_main_bridge",
+          "type": "MainBridge"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.4:clause:0003"
+          ],
+          "expression_id": "expr.p23.part001.main_bridge_selection.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "stages": [
+        {
+          "clause_ids": [
+            "P-23.2.4:clause:0003"
+          ],
+          "comparator": {
+            "direction": "maximum",
+            "kind": "numeric",
+            "symbol": null,
+            "table_id": null
+          },
+          "guard": {
+            "clause_ids": [
+              "P-23.2.4:clause:0003"
+            ],
+            "expression_id": "expr.p23.part001.main_bridge_selection.stage.maximum_atoms_outside_main_ring.guard",
+            "op": "literal",
+            "value": true
+          },
+          "key": {
+            "clause_ids": [
+              "P-23.2.4:clause:0003"
+            ],
+            "expression_id": "expr.p23.part001.main_bridge_selection.stage.maximum_atoms_outside_main_ring.key",
+            "from": {
+              "clause_ids": [
+                "P-23.2.4:clause:0003"
+              ],
+              "expression_id": "expr.p23.part001.main_bridge_selection.stage.maximum_atoms_outside_main_ring.key.from",
+              "name": "candidate_bridge",
+              "op": "var"
+            },
+            "op": "get",
+            "path": "atoms_not_in_main_ring"
+          },
+          "on_tie": {
+            "mode": "continue",
+            "next_stage_id": null
+          },
+          "ordinal": 1,
+          "stage_id": "stage.p23.part001.main_bridge_selection.maximum_atoms_outside_main_ring"
+        }
+      ],
+      "terminal_tie": {
+        "fallback_ref": null,
+        "mode": "retain_coequal"
+      },
+      "unit_id": "unit.p23.part001.main_bridge_selection"
+    },
+    {
+      "clause_ids": [
+        "P-23.2.4:clause:0003"
+      ],
+      "entity_type": "BridgeRenderingConvention",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "rendering",
+          "type": "BridgeRenderingConvention"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.4:clause:0003"
+          ],
+          "expression_id": "expr.p23.part001.main_bridge_rendering_convention.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "main-ring and main-bridge rendering",
+      "unit_id": "unit.p23.part001.main_bridge_rendering_convention",
+      "value": {
+        "clause_ids": [
+          "P-23.2.4:clause:0003"
+        ],
+        "expression_id": "expr.p23.part001.main_bridge_rendering_convention.value",
+        "op": "literal",
+        "value": {
+          "main_bridge": "dashed lines",
+          "main_ring": "solid bold lines"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.4:clause:0004"
+      ],
+      "entity_type": "SecondaryBridge",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "secondary_bridge",
+          "type": "SecondaryBridge"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.4:clause:0004"
+          ],
+          "expression_id": "expr.p23.part001.secondary_bridge_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "secondary bridge",
+      "unit_id": "unit.p23.part001.secondary_bridge_definition",
+      "value": {
+        "clause_ids": [
+          "P-23.2.4:clause:0004"
+        ],
+        "expression_id": "expr.p23.part001.secondary_bridge_definition.value",
+        "op": "literal",
+        "value": {
+          "definition": "a bridge other than the main bridge",
+          "rendering": "normal solid line"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.5.1:clause:0004",
+        "P-23.2.5.1:clause:0005",
+        "P-23.2.5.1:clause:0006",
+        "P-23.2.5.1:clause:0007"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "tricyclic_system",
+          "type": "TricyclicSystem"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "tricyclic_name",
+          "type": "Name"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.5.1:clause:0004",
+            "P-23.2.5.1:clause:0005",
+            "P-23.2.5.1:clause:0006",
+            "P-23.2.5.1:clause:0007"
+          ],
+          "expression_id": "expr.p23.part001.tricyclic_name_construction.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-23.2.5.1:clause:0004",
+            "P-23.2.5.1:clause:0005",
+            "P-23.2.5.1:clause:0006",
+            "P-23.2.5.1:clause:0007"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.tricyclic_name_construction.steps.1",
+          "target": "tricyclic_name",
+          "value": {
+            "clause_ids": [
+              "P-23.2.5.1:clause:0004",
+              "P-23.2.5.1:clause:0005",
+              "P-23.2.5.1:clause:0006",
+              "P-23.2.5.1:clause:0007"
+            ],
+            "expression_id": "expr.p23.part001.tricyclic_name_construction.steps.1.value",
+            "op": "literal",
+            "value": {
+              "parts": [
+                {
+                  "component": "prefix",
+                  "letter": "a",
+                  "meaning": "three rings in the polyalicyclic system",
+                  "replaces": "bicyclo",
+                  "value": "tricyclo"
+                },
+                {
+                  "component": "bridge_lengths",
+                  "example": "[2.2.1.02,6]",
+                  "letter": "b",
+                  "order": [
+                    "two branches of the main ring",
+                    "main bridge",
+                    "secondary bridge"
+                  ],
+                  "punctuation": "all separated by full stops and placed in brackets",
+                  "secondary_bridge_locants": "superscript locants separated by commas indicating points of attachment to the main ring"
+                },
+                {
+                  "component": "base_name",
+                  "letter": "c",
+                  "value": "the acyclic hydrocarbon having the same total number of skeletal atoms"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.tricyclic_name_construction"
+    },
+    {
+      "clause_ids": [
+        "P-23.2.5.2:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "tricyclic_system",
+          "type": "TricyclicSystem"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "numbering",
+          "type": "NumberingSequence"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.5.2:clause:0002"
+          ],
+          "expression_id": "expr.p23.part001.independent_secondary_bridge_numbering.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-23.2.5.2:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.independent_secondary_bridge_numbering.steps.1",
+          "target": "numbering",
+          "value": {
+            "clause_ids": [
+              "P-23.2.5.2:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.independent_secondary_bridge_numbering.steps.1.value",
+            "op": "literal",
+            "value": {
+              "bridge": "independent secondary bridge",
+              "operation": "continue numbering from that bridgehead",
+              "precondition": "the main ring and main bridge have been numbered",
+              "start": "the higher numbered bridgehead of the main ring"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.independent_secondary_bridge_numbering"
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6:clause:0002",
+        "P-23.2.6:clause:0003",
+        "P-23.2.6:clause:0004",
+        "P-23.2.6:clause:0005"
+      ],
+      "entity_type": "PolyalicyclicApplicationScope",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "scope",
+          "type": "PolyalicyclicApplicationScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.6:clause:0002",
+            "P-23.2.6:clause:0003",
+            "P-23.2.6:clause:0004",
+            "P-23.2.6:clause:0005"
+          ],
+          "expression_id": "expr.p23.part001.polyalicyclic_scope_and_inheritance.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "polyalicyclic von Baeyer application scope",
+      "unit_id": "unit.p23.part001.polyalicyclic_scope_and_inheritance",
+      "value": {
+        "clause_ids": [
+          "P-23.2.6:clause:0002",
+          "P-23.2.6:clause:0003",
+          "P-23.2.6:clause:0004",
+          "P-23.2.6:clause:0005"
+        ],
+        "expression_id": "expr.p23.part001.polyalicyclic_scope_and_inheritance.value",
+        "op": "literal",
+        "value": {
+          "analogues": [
+            "saturated bicyclic ring systems",
+            "saturated tricyclic ring systems"
+          ],
+          "application_inheritance": "follow the naming and numbering rules for bicyclic systems described in P-23.2.1 through P-23.2.4",
+          "rules_covered": [
+            "numbering all secondary bridges",
+            "naming all polyalicyclic systems"
+          ],
+          "secondary_bridges_considered": [
+            "independent",
+            "dependent"
+          ],
+          "source_sections": [
+            "P-23.2.3",
+            "P-23.2.5"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6:clause:0006"
+      ],
+      "entity_type": "BridgeSelectionRequirement",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "selection_requirement",
+          "type": "BridgeSelectionRequirement"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.6:clause:0006"
+          ],
+          "expression_id": "expr.p23.part001.additional_bridge_selection_rule.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "additional bridge-selection rule",
+      "unit_id": "unit.p23.part001.additional_bridge_selection_rule",
+      "value": {
+        "clause_ids": [
+          "P-23.2.6:clause:0006"
+        ],
+        "expression_id": "expr.p23.part001.additional_bridge_selection_rule.value",
+        "op": "literal",
+        "value": {
+          "necessary_to_select": [
+            "main bridge",
+            "secondary bridges"
+          ],
+          "reason": "polycyclic systems require an additional selection rule"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6.1:clause:0002",
+        "P-23.2.6.1:clause:0003",
+        "P-23.2.6.1:clause:0004"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "polyalicyclic_system",
+          "type": "PolyalicyclicSystem"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "descriptor",
+          "type": "VonBaeyerDescriptor"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.6.1:clause:0002",
+            "P-23.2.6.1:clause:0003",
+            "P-23.2.6.1:clause:0004"
+          ],
+          "expression_id": "expr.p23.part001.secondary_bridge_descriptor_rules.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-23.2.6.1:clause:0002",
+            "P-23.2.6.1:clause:0003",
+            "P-23.2.6.1:clause:0004"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.secondary_bridge_descriptor_rules.steps.1",
+          "target": "descriptor",
+          "value": {
+            "clause_ids": [
+              "P-23.2.6.1:clause:0002",
+              "P-23.2.6.1:clause:0003",
+              "P-23.2.6.1:clause:0004"
+            ],
+            "expression_id": "expr.p23.part001.secondary_bridge_descriptor_rules.steps.1.value",
+            "op": "literal",
+            "value": {
+              "attachment_locants": "cite the two attachment-point locants as a pair of superscript arabic numbers, lower first, separated by a comma",
+              "independent_bridge_order": "cite numbers for independent secondary bridges in decreasing order",
+              "secondary_bridge_lengths": "cite the number of atoms in each secondary bridge as an arabic number"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.secondary_bridge_descriptor_rules"
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6.1:clause:0005"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "polyalicyclic_system",
+          "type": "PolyalicyclicSystem"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "Name"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.6.1:clause:0005"
+          ],
+          "expression_id": "expr.p23.part001.polyalicyclic_name_construction_procedure.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-23.2.6.1:clause:0005"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.polyalicyclic_name_construction_procedure.steps.1",
+          "target": "name",
+          "value": {
+            "clause_ids": [
+              "P-23.2.6.1:clause:0005"
+            ],
+            "expression_id": "expr.p23.part001.polyalicyclic_name_construction_procedure.steps.1.value",
+            "op": "literal",
+            "value": {
+              "instructions": "given in the following subsections",
+              "procedure": "construction of names"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.polyalicyclic_name_construction_procedure"
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [],
+  "tables": []
+}

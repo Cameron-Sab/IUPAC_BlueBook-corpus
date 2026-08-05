@@ -1,0 +1,868 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-101-part-001",
+  "clauses": [
+    null,
+    ["note", "informative", "compile"],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    ["definition", "informative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    ["scope", "normative", "compile"],
+    ["exception", "normative", "compile"],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["exception", "normative", "compile"],
+    null,
+    null,
+    null,
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["prohibition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    null,
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_layout", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    null,
+    ["condition", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "section_basis",
+      "k": "definition",
+      "f": "definition",
+      "c": [2],
+      "in": [["section", "NaturalProductsSection"]],
+      "out": [["basis", "SourceBasis"]],
+      "term": "source basis of Section P-101",
+      "entity": "NaturalProductsSection",
+      "value": [
+        "lit",
+        {
+          "source_text": "This Section is based on the recent publication ‘Revised Section F: Natural Products and Related Compounds, IUPAC Recommendations 1999’ and the additional document ‘Corrections and Modifications 2004’ (ref. 9).",
+          "basis_documents": [
+            "Revised Section F: Natural Products and Related Compounds, IUPAC Recommendations 1999",
+            "Corrections and Modifications 2004 (ref. 9)"
+          ],
+          "role": "source_basis"
+        }
+      ]
+    },
+    {
+      "id": "natural_product_parent_structure_class",
+      "k": "definition",
+      "f": "definition",
+      "c": [11],
+      "in": [["compound_class", "NaturalProductStructuralClass"]],
+      "out": [["parent_structure_set", "RelatedParentStructures"]],
+      "term": "natural-product structural class parent structures",
+      "entity": "NaturalProductStructuralClass",
+      "value": [
+        "lit",
+        {
+          "source_text": "Many naturally occurring compounds belong to well defined structural classes, each of which can be characterized by a set of parent structures that are closely related structurally, that is, each can be derived from a fundamental parent structure by one or more defined operations used in systematic substitutive nomenclature (see P-13).",
+          "class_characterization": "a set of closely related parent structures",
+          "derivation_basis": "one or more defined operations used in systematic substitutive nomenclature",
+          "fundamental_parent_required": true,
+          "basis_rule": "P-13"
+        }
+      ]
+    },
+    {
+      "id": "simple_natural_product_systematic_name",
+      "k": "procedure",
+      "f": "required",
+      "c": [12],
+      "in": [["compound", "SimpleNewNaturalProduct"]],
+      "out": [["name_method", "SystematicNameMethod"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "As soon as the structure of a simple new natural product has been fully determined, the trivial name should be abandoned in favor of a systematic name formed by the Rules prescribed in Chapters P-1 through P-9 for systematic nomenclature of organic compounds.",
+            "trigger": "structure fully determined",
+            "abandon": "trivial name",
+            "replacement": "systematic name",
+            "basis": "Rules prescribed in Chapters P-1 through P-9"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "complex_natural_product_semisystematic_name",
+      "k": "procedure",
+      "f": "required",
+      "c": [13],
+      "in": [["compound", "ComplicatedNaturalProduct"]],
+      "out": [["name_method", "SemisystematicNameMethod"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "For a more complicated structure, an existing semisystematic name listed in P-101.2.7 is used to fully name the compound.",
+            "condition": "more complicated structure",
+            "name_method": "existing semisystematic name",
+            "name_source": "P-101.2.7"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "new_parent_structure_formation",
+      "k": "procedure",
+      "f": "required",
+      "c": [14],
+      "in": [["compound", "NaturalProductWithoutKnownParentStructure"]],
+      "out": [["parent_structure", "NewParentStructure"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "If a previously known parent structure cannot be found, a new parent structure is formed and numbered as follows.",
+            "condition": "no previously known parent structure can be found",
+            "action": "form and number a new parent structure",
+            "following": "the subsequent guidelines"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "new_parent_structure_numbering_instruction",
+      "k": "procedure",
+      "f": "required",
+      "c": [15],
+      "in": [["parent_structure", "NewParentStructure"]],
+      "out": [["numbering_method", "ParentStructureNumberingMethod"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "To form and number a new parent structure, the procedure described in the following subsections is followed.",
+            "procedure": "the procedure described in the following subsections",
+            "application": "formation and numbering of a new parent structure"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "new_parent_structure_rules_scope",
+      "k": "procedure",
+      "f": "required",
+      "c": [22],
+      "in": [["parent_structure", "NewParentStructure"]],
+      "out": [["applicable_rules", "ParentStructureRules"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "The following rules are applicable to new parent structures.",
+            "scope": "new parent structures",
+            "application": "the following rules"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "retained_parent_name_status",
+      "k": "definition",
+      "f": "definition",
+      "c": [23],
+      "in": [["parent_name", "ExistingParentStructureName"]],
+      "out": [["status", "NameStatus"]],
+      "term": "retained parent structure name",
+      "entity": "ExistingParentStructureName",
+      "value": [
+        "lit",
+        {
+          "source_text": "Existing parent structure names are considered as retained names if they do not follow the new rules (see Table 10.1).",
+          "condition": "existing parent structure name does not follow the new rules",
+          "status": "retained",
+          "table_reference": "Table 10.1"
+        }
+      ]
+    },
+    {
+      "id": "parent_structure_ending_assignment",
+      "k": "procedure",
+      "f": "required",
+      "c": [30, 31, 32],
+      "in": [["parent_structure", "StereoparentHydride"]],
+      "out": [["ending", "ParentStructureEnding"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "priority": 1,
+            "ending": "ane",
+            "condition": "the entire stereoparent hydride is fully saturated",
+            "source_text": "(a) ‘ane’, if the entire stereoparent hydride is fully saturated;"
+          }
+        ],
+        [
+          "emit",
+          {
+            "priority": 2,
+            "ending": "ene",
+            "condition": "the cyclic or the main chain of the acyclic part contains the maximum number of noncumulative double bonds",
+            "source_text": "(b) ‘ene’, if the cyclic or the main chain of the acyclic part contains the maximum number of noncumulative double bonds;"
+          }
+        ],
+        [
+          "emit",
+          {
+            "priority": 3,
+            "ending": "arane",
+            "condition": "an otherwise fully saturated parent structure contains one or more individual mancude rings",
+            "source_text": "(c) ‘arane’, if, in an otherwise fully saturated parent structure, one or more individual mancude rings is present."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "retained_exceptional_parent_endings",
+      "k": "definition",
+      "f": "definition",
+      "c": [33],
+      "in": [["parent_name", "ExistingParentStructureName"]],
+      "out": [["status", "NameStatus"]],
+      "term": "retained exceptional parent ending",
+      "entity": "ExistingParentStructureName",
+      "value": [
+        "lit",
+        {
+          "source_text": "Existing names of parent structures in which endings are different from those indicated above, for example morphinan and ibogamine, are exceptions and treated as retained names.",
+          "exceptions": ["morphinan", "ibogamine"],
+          "condition": "ending differs from the indicated endings",
+          "status": "retained"
+        }
+      ]
+    },
+    {
+      "id": "parent_structure_numbering_guidelines",
+      "k": "procedure",
+      "f": "required",
+      "c": [38, 39, 40, 41, 42, 43, 44, 45, 46, 47],
+      "in": [["parent_structure", "UnnumberedFundamentalParentStructure"]],
+      "out": [["numbered_parent_structure", "NumberedParentStructure"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "order": 1,
+            "action": "examine the skeleton to identify the senior ring or ring system",
+            "basis_rule": "P-44",
+            "source_text": "(a) examine the skeleton to identify the senior ring or ring system, according to P-44."
+          }
+        ],
+        [
+          "emit",
+          {
+            "order": 2,
+            "action": "assign locant 1",
+            "target": "the atom of the senior ring system whose locant would be 1 according to systematic numbering for that particular ring or ring system",
+            "source_text": "The locant ‘1’ is assigned to the atom of the senior ring system whose locant would be ‘1’ according to systematic numbering for that particular ring or ring system;"
+          }
+        ],
+        [
+          "emit",
+          {
+            "order": 3,
+            "action": "assign all skeletal atoms of the senior ring system consecutive Arabic numbers",
+            "includes": "atoms of fusion positions in fused ring systems",
+            "start": "locant 1",
+            "path": "the path prescribed for that particular type of ring or ring system",
+            "source_text": "(b) assign all skeletal atoms of the senior ring system consecutive Arabic numbers, including atoms of fusion positions in fused ring systems, beginning with the locant ‘1’, and following the path prescribed for that particular type of ring or ring system;"
+          }
+        ],
+        [
+          "emit",
+          {
+            "order": 4,
+            "action": "number acyclic substituents to skeletal atoms of ring components or connecting acyclic structures each in its entirety",
+            "includes": "branches",
+            "order_basis": "increasing value of the locant of the skeletal atom to which it is attached",
+            "source_text": "(c) number acyclic substituents to skeletal atoms of ring components or connecting acyclic structures each in its entirety, including branches, in order of the increasing value of the locant of the skeletal atom to which it is attached;"
+          }
+        ],
+        [
+          "emit",
+          {
+            "order": 5,
+            "action": "number skeletal atoms of acyclic connections to other ring or ring systems consecutively",
+            "start": "the atom next to the senior ring system",
+            "then": "the skeletal atoms of the other rings or ring systems as prescribed in step (b)",
+            "source_text": "(d) number skeletal atoms of acyclic connections to other ring or ring systems, if any, consecutively beginning with the atom next to the senior ring system, followed by the skeletal atoms of the other rings or ring systems as prescribed in (b) above;"
+          }
+        ],
+        [
+          "emit",
+          {
+            "order": 6,
+            "condition": "two or more acyclic connections to other rings or ring systems are present",
+            "order_basis": "lowest numbered attachment position on the senior ring or ring system",
+            "sequence": ["attached connection", "ring attached to it", "acyclic connector at the next lower position", "etc."],
+            "source_text": "if two or more acyclic connections to other rings or ring systems are present, the one attached to the senior ring or ring system at the lowest numbered position is numbered first, then the ring attached to it, followed by the acyclic connector at the next lower position of the senior ring or ring system, etc.;"
+          }
+        ],
+        [
+          "emit",
+          {
+            "order": 7,
+            "condition": "two groups at a geminal disubstituted position",
+            "priority": "larger group in terms of number of skeletal atoms",
+            "source_text": "(e) number the larger group, in terms of the number of skeletal atoms, between two groups at a geminal disubstituted position first;"
+          }
+        ],
+        [
+          "emit",
+          {
+            "order": 8,
+            "condition": "a choice remains",
+            "tie_breaker": "alphanumerical order",
+            "basis_rule": "P-14.5",
+            "source_text": "if there is still a choice, alphanumerical order is followed (Rule P-14.5)."
+          }
+        ],
+        [
+          "emit",
+          {
+            "order": 9,
+            "condition": "the two groups are identical and attached to a properly drawn stereoparent structure",
+            "tie_breaker": "the group that is stereochemically α is numbered first",
+            "basis": "Appendix 3 and P-101.2.6",
+            "source_text": "If the two groups are then identical and attached to a stereoparent structure properly drawn (see Appendix 3), the group that is stereochemically ‘α’ (according to P-101.2.6) is numbered first;"
+          }
+        ],
+        [
+          "emit",
+          {
+            "order": 10,
+            "condition": "the two groups are identical and attached to an acyclic terminal double bond",
+            "tie_breaker": "the group trans to the main chain is numbered first",
+            "basis": "carotenoid recommendations, Rule 12.4 in ref. 40",
+            "source_text": "if the two groups are identical and attached to an acyclic terminal double bond, the group ‘trans’ to the main chain is numbered first, as described in the carotenoid recommendations (Rule 12.4 in ref. 40)."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "individual_ring_letter_identification",
+      "k": "procedure",
+      "f": "prohibited",
+      "c": [49, 50],
+      "in": [["parent_structure", "ParentStructure"]],
+      "out": [["ring_identification", "RingIdentificationConvention"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "Since locants are used to describe skeletal modifications, as indicated in P-101.3, the identification of individual rings by letters A, B, C, etc., used in the past is no longer recommended, except for the rather special case of the removal of a terminal ring (see P-101.3.6).",
+            "usual_convention": "use locants for skeletal modifications",
+            "not_recommended": "identification of individual rings by letters A, B, C, etc.",
+            "exception": "removal of a terminal ring",
+            "exception_basis": "P-101.3.6"
+          }
+        ],
+        [
+          "emit",
+          {
+            "source_text": "Nevertheless, to provide continuity with the use of this system, names using letters to identify rings are given where appropriate, but are no longer recommended.",
+            "continuity_use": "names using letters to identify rings may be given where appropriate",
+            "recommendation_status": "no longer recommended"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "connector_consideration_requirement",
+      "k": "procedure",
+      "f": "required",
+      "c": [52],
+      "in": [["parent_structure", "FundamentalParentStructure"]],
+      "out": [["structural_features", "ParentStructureConnectors"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "For nomenclature purposes, the fundamental parent structures are described by specific arrangements of atoms or groups of atoms called ‘atomic connectors’, ‘terminal segments’ and ‘bond connectors’, that must be taken into consideration in accordance with the additive or subtractive operations modifying a fundamental parent structure.",
+            "terms": ["atomic connectors", "terminal segments", "bond connectors"],
+            "requirement": "must be taken into consideration",
+            "context": "additive or subtractive operations modifying a fundamental parent structure"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "atomic_connector_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [53],
+      "in": [["structure", "ParentStructure"]],
+      "out": [["connector", "AtomicConnector"]],
+      "term": "atomic connector",
+      "entity": "AtomicConnector",
+      "value": [
+        "lit",
+        {
+          "source_text": "An ‘atomic connector’ is a chain of homogeneous skeletal atoms of the same element connecting any combination of bridgehead or ring junction atoms, rings, or ring systems (i.e. ring assemblies), substituted skeletal atoms in parent structure, or heteroatoms.",
+          "composition": "a chain of homogeneous skeletal atoms of the same element",
+          "connects": [
+            "bridgehead or ring junction atoms",
+            "rings or ring systems (ring assemblies)",
+            "substituted skeletal atoms in a parent structure",
+            "heteroatoms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terminal_segment_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [54],
+      "in": [["structure", "SkeletalStructure"]],
+      "out": [["segment", "TerminalSegment"]],
+      "term": "terminal segment",
+      "entity": "TerminalSegment",
+      "value": [
+        "lit",
+        {
+          "source_text": "A ‘terminal segment’ of a skeletal structure is an acyclic portion of homogeneous skeletal atoms connected at only one end by the features of structure that terminate atomic connectors.",
+          "composition": "an acyclic portion of homogeneous skeletal atoms",
+          "connection": "at only one end",
+          "termination": "features of structure that terminate atomic connectors"
+        }
+      ]
+    },
+    {
+      "id": "bond_connector_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [55],
+      "in": [["structure", "ParentStructure"]],
+      "out": [["connector", "BondConnector"]],
+      "term": "bond connector",
+      "entity": "BondConnector",
+      "value": [
+        "lit",
+        {
+          "source_text": "A ‘bond connector’ is a connection between any combination of bridgehead or ring junction atoms, rings, or ring systems (i.e. ring assemblies), substituted skeletal atoms, or heteroatoms.",
+          "connects": [
+            "bridgehead or ring junction atoms",
+            "rings or ring systems (ring assemblies)",
+            "substituted skeletal atoms",
+            "heteroatoms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connector_illustration_scope",
+      "k": "procedure",
+      "f": "permitted",
+      "c": [56],
+      "in": [["connector_terms", "ParentStructureConnectorTerms"]],
+      "out": [["illustration", "ConnectorIllustration"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "The structures below illustrate atomic connectors, bond connectors, and terminal segments.",
+            "illustrated_terms": ["atomic connectors", "bond connectors", "terminal segments"],
+            "table": "table.p101.part001.connector_examples",
+            "figures": [
+              "figure.p101.part001.atomic_connector_cholestane",
+              "figure.p101.part001.atomic_connector_ergoline"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "connector_nor_cross_reference",
+      "k": "procedure",
+      "f": "permitted",
+      "c": [57],
+      "in": [["connector_terms", "ParentStructureConnectorTerms"]],
+      "out": [["illustration_reference", "RuleReference"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "The use of these terms is further illustrated in P-101.3.1 in relation to the removal of skeletal atoms denoted by the prefix ‘nor’.",
+            "further_illustration": "P-101.3.1",
+            "operation": "removal of skeletal atoms",
+            "prefix": "nor"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "connector_table_layout",
+      "k": "procedure",
+      "f": "permitted",
+      "c": [63],
+      "in": [["table", "ConnectorExampleTable"]],
+      "out": [["layout", "TableLayout"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": null,
+            "source_payload": {
+              "cell_kind": "data",
+              "colspan": 2,
+              "column": 1,
+              "row": 3,
+              "rowspan": 1
+            },
+            "layout": "one empty data cell spans both table columns"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "parent_configuration_implied",
+      "k": "procedure",
+      "f": "preference",
+      "c": [74],
+      "in": [["parent_structure", "FundamentalParentStructure"]],
+      "out": [["implied_configuration", "AbsoluteConfiguration"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "The name of a fundamental parent structure usually implies the absolute configuration of all chirality centers and the configuration of double bonds, when applicable, without further specification.",
+            "usual_effect": "name implies configuration",
+            "implies": ["absolute configuration of all chirality centers", "configuration of double bonds when applicable"],
+            "further_specification": "not required"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "alpha_beta_xi_chirality_definition",
+      "k": "procedure",
+      "f": "required",
+      "c": [75],
+      "in": [["parent_structure", "StereoparentStructure"]],
+      "out": [["chirality_description", "AlphaBetaXiDescription"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "All chirality must be defined so that for example with a steroid the stereochemistry at ‘C-5’, when relevant, is indicated by α, β or ξ. When a planar or quasi planar system of rings is denoted as a projection, as in this recommendation, an atom or group attached to the ring is called ‘α’ if it lies below or ‘β’ if it lies above the plane of the paper.",
+            "requirement": "all chirality must be defined",
+            "steroid_example": {"position": "C-5", "descriptors": ["α", "β", "ξ"]},
+            "projection": {
+              "alpha": "attached atom or group lies below the plane of the paper",
+              "beta": "attached atom or group lies above the plane of the paper"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": "stereochemical_orientation_reference",
+      "k": "procedure",
+      "f": "required",
+      "c": [76],
+      "in": [["parent_structure", "StereoparentStructure"]],
+      "out": [["orientation", "StructureOrientation"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "Use of this system requires the orientations of structure as given in the examples used to exemplify the various rules and in Appendix 3.",
+            "requirement": "use the orientations of structure given in the rule examples and Appendix 3",
+            "basis": "Appendix 3 and examples used to exemplify the various rules"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "stereodescriptor_citation",
+      "k": "procedure",
+      "f": "required",
+      "c": [79],
+      "in": [["configuration", "ImplicitOrIndicatedConfiguration"]],
+      "out": [["name_prefix", "StereodescriptorPrefix"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "The stereodescriptors ‘α’, ‘β’, and ‘ξ’ used to describe implicit or indicated configuration are cited before the name of the fundamental parent structure without parentheses.",
+            "descriptors": ["α", "β", "ξ"],
+            "position": "before the name of the fundamental parent structure",
+            "parentheses": "not used"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "modified_parent_alpha_beta_extension",
+      "k": "procedure",
+      "f": "required",
+      "c": [80],
+      "in": [["modified_parent", "ModifiedFundamentalParentStructure"]],
+      "out": [["configuration_symbolism", "AlphaBetaConfigurationSymbolism"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "The ‘α/β’ symbolism is used as defined above and extended in the following way to express different aspects of the configuration of modified fundamental parent structures.",
+            "base_system": "α/β symbolism as defined above",
+            "extension": "the following way",
+            "purpose": "express different aspects of the configuration of modified fundamental parent structures"
+          }
+        ]
+      ]
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "retained_parent_name_exception",
+      "c": [23],
+      "if": ["lit", {"existing_parent_name": true, "follows_new_rules": false}],
+      "target": ["semantic_unit", "new_parent_structure_rules_scope"],
+      "mode": "replace",
+      "replacement": ["semantic_unit", "retained_parent_name_status"],
+      "order": 23,
+      "specificity": 1
+    },
+    {
+      "id": "retained_ending_exception",
+      "c": [33],
+      "if": ["lit", {"existing_parent_name": true, "ending_differs_from_indicated_endings": true}],
+      "target": ["semantic_unit", "parent_structure_ending_assignment"],
+      "mode": "replace",
+      "replacement": ["semantic_unit", "retained_exceptional_parent_endings"],
+      "order": 33,
+      "specificity": 1
+    }
+  ],
+  "tables": [
+    {
+      "id": "connector_examples",
+      "c": [59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72],
+      "label": "Examples",
+      "title": "Atomic connectors, terminal segments, and bond connectors",
+      "cols": [
+        ["structure_a", "Cholestane / left column", "string"],
+        ["structure_b", "Ergoline / right column", "string"]
+      ],
+      "rows": [
+        {
+          "id": "structure_figures",
+          "c": [59, 60],
+          "v": [
+            {"image_asset": "P10gif/P101250a.gif"},
+            {"image_asset": "P10gif/P101250b.gif"}
+          ]
+        },
+        {"id": "structure_names", "c": [61, 62], "v": ["cholestane", "ergoline"]},
+        {"id": "layout_separator", "c": [63], "v": [null, null]},
+        {"id": "connector_headings", "c": [64, 65], "v": ["atomic connectors:", "terminal portions:"]},
+        {
+          "id": "connector_values_cholestane",
+          "c": [66, 67],
+          "v": [
+            "in cholestane: 1-4, 6-7, 11-12, 15-16, and 22-24",
+            "in cholestane: 18, 19, 21, 26, and 27"
+          ]
+        },
+        {
+          "id": "connector_values_ergoline",
+          "c": [68, 69],
+          "v": ["in ergoline: 2, 4, 7-9, and 12-14", "in ergoline: none"]
+        },
+        {"id": "bond_connector_heading", "c": [70], "v": ["bond connectors:", null]},
+        {
+          "id": "bond_connector_values_cholestane",
+          "c": [71],
+          "v": ["In cholestane: 5-10, 8-9, 8-14, 9-10, 13-14, 13-17, and 17-20", null]
+        },
+        {
+          "id": "bond_connector_values_ergoline",
+          "c": [72],
+          "v": ["In ergoline: 1-15, 3-16, 5-6, 5-10, 10-11, 11-16, and 15-16", null]
+        }
+      ],
+      "contract": {
+        "key": ["structure_a"],
+        "result": ["structure_b"],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "atomic_connector_cholestane",
+      "c": [59],
+      "k": "diagram",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P101250a.gif"],
+      "sha256": null
+    },
+    {
+      "id": "atomic_connector_ergoline",
+      "c": [60],
+      "k": "diagram",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P101250b.gif"],
+      "sha256": null
+    },
+    {
+      "id": "stereochemical_configuration",
+      "c": [81],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P101260a.gif"],
+      "sha256": null
+    }
+  ],
+  "examples": [
+    {
+      "id": "cholestane_connector_example",
+      "c": [59, 61, 64, 66, 67, 70, 71],
+      "input": {
+        "compound": "cholestane",
+        "atomic_connectors": "1-4, 6-7, 11-12, 15-16, and 22-24",
+        "terminal_portions": "18, 19, 21, 26, and 27",
+        "bond_connectors": "5-10, 8-9, 8-14, 9-10, 13-14, 13-17, and 17-20"
+      },
+      "ok": ["cholestane"],
+      "bad": [],
+      "shows": [
+        ["table", "connector_examples"],
+        ["figure", "figure.p101.part001.atomic_connector_cholestane"]
+      ],
+      "why": "The example table and structure illustrate atomic connectors, terminal portions, and bond connectors in cholestane."
+    },
+    {
+      "id": "ergoline_connector_example",
+      "c": [60, 62, 65, 68, 69, 70, 72],
+      "input": {
+        "compound": "ergoline",
+        "atomic_connectors": "2, 4, 7-9, and 12-14",
+        "terminal_portions": "none",
+        "bond_connectors": "1-15, 3-16, 5-6, 5-10, 10-11, 11-16, and 15-16"
+      },
+      "ok": ["ergoline"],
+      "bad": [],
+      "shows": [
+        ["table", "connector_examples"],
+        ["figure", "figure.p101.part001.atomic_connector_ergoline"]
+      ],
+      "why": "The example table and structure illustrate atomic connectors, terminal portions, and bond connectors in ergoline."
+    },
+    {
+      "id": "stereochemical_configuration_example",
+      "c": [77, 78, 81],
+      "input": {
+        "implied_beta_positions": [8, 10, 13],
+        "implied_alpha_positions": [9, 14],
+        "unknown_configuration_position": 5,
+        "unknown_descriptor": "ξ",
+        "depiction": "wavy line at position 5"
+      },
+      "ok": [],
+      "bad": [],
+      "shows": [["figure", "figure.p101.part001.stereochemical_configuration"]],
+      "why": "The figure illustrates the implied α and β configurations and the unknown ξ orientation described for the example."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {
+      "id": "reference.p101.part001.systematic_nomenclature_p1",
+      "c": [12],
+      "rel": "cites",
+      "o": "P-101.2.0:xref:0002",
+      "resolution": "external",
+      "target": ["external", "P-1"]
+    },
+    {
+      "id": "reference.p101.part001.systematic_nomenclature_p9",
+      "c": [12],
+      "rel": "cites",
+      "o": "P-101.2.0:xref:0003",
+      "resolution": "external",
+      "target": ["external", "P-9"]
+    },
+    {
+      "id": "reference.p101.part001.trivial_name_basis",
+      "c": [28],
+      "rel": "cites",
+      "o": "P-101.2.2.5:xref:0001",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p101.part001.senior_ring_rule",
+      "c": [38],
+      "rel": "cites",
+      "o": "P-101.2.3.2:xref:0001",
+      "resolution": "exact"
+    }
+  ],
+  "additional_refs": []
+}

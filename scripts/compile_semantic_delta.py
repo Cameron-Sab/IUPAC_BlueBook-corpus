@@ -38,7 +38,7 @@ OBJECT_COLLECTIONS = (
     (
         "correction_applications",
         "correction_application",
-        "correction_application_id",
+        "application_id",
         "correction_application_ids",
     ),
 )
@@ -294,7 +294,17 @@ def _object_owners(
     )
     for collection, _kind, id_field, link_field in OBJECT_COLLECTIONS:
         for obj in delta[collection]:
-            clause_ids = obj.get("clause_ids", [])
+            if collection == "correction_applications":
+                clause_ids = list(
+                    dict.fromkeys(
+                        [
+                            *obj.get("before_clause_ids", []),
+                            *obj.get("after_clause_ids", []),
+                        ]
+                    )
+                )
+            else:
+                clause_ids = obj.get("clause_ids", [])
             if not clause_ids:
                 raise ValueError(f"Semantic object has no source clauses: {obj[id_field]}")
             owners = {clause_owner.get(clause_id) for clause_id in clause_ids}

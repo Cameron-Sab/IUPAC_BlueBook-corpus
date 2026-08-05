@@ -23,6 +23,7 @@
     "format": { "const": "iupac-bluebook-semantic-authoring" },
     "format_version": { "const": "1.0.0" },
     "task_id": { "type": "string", "pattern": "^P-[0-9]+-part-[0-9]{3}$" },
+    "mechanical_assets": { "type": "boolean" },
     "clauses": {
       "type": "array",
       "items": {

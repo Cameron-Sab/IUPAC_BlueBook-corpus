@@ -32,6 +32,23 @@ The sparse view includes only unresolved `U` clause rows, unresolved `X`
 citations, correction `K` rows, and rule-boundary `R` rows. Its task hash binds
 the response to the exact source snapshot.
 
+Source image assets are not semantic authoring work. A deterministic asset
+scaffold, bound to the exact clause-inventory file hash, turns each image clause
+into a typed `figure` with its source URL and provenance clause. New authoring
+skeletons set `mechanical_assets: true`; their corresponding clause slots stay
+`null`, and the strict compiler generates the figure dispositions locally.
+Existing authoring files without that flag retain their original behavior.
+Generated IDs are source-derived, for example clause `P-76:clause:0005` becomes
+`figure.asset.p_76:clause:0005`, so authored examples can reference the figure
+without reproducing its URL payload.
+
+Rebuild or verify the asset scaffold with:
+
+```powershell
+python scripts\build_semantic_asset_scaffold.py
+python scripts\build_semantic_asset_scaffold.py --check
+```
+
 For bounded production waves:
 
 ```powershell
@@ -166,8 +183,11 @@ The authoring compiler rejects:
 
 Current fleet measurements:
 
-- sparse evidence is 5,432,490 bytes versus 6,884,500 bytes for the previous
-  compact views, a 21.09% input reduction;
-- 5,406 clause decisions and 2,918 citations are filled mechanically;
+- sparse evidence is 4,083,099 bytes versus 6,884,500 bytes for the original
+  compact views, a 40.69% input reduction;
+- automatic figures remove another 1,349,391 bytes, or 24.84%, from the first
+  sparse-authoring design;
+- 10,587 clause decisions and 2,918 citations are filled mechanically;
+- 21,821 clauses remain for semantic judgment;
 - compact authoring is 71.6% smaller than its expanded delta in the strict
   representative round-trip test.

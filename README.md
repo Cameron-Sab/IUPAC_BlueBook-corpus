@@ -132,8 +132,8 @@ citation decisions, `scripts/render_semantic_authoring_task.py` shows only the
 remaining evidence, and `scripts/compile_semantic_authoring.py` expands compact
 prefix expressions and statements into the strict delta format.
 
-The sparse views remove 21.09% of fleet input, while representative compact
-authoring is 71.6% smaller than its expanded delta. All generated IDs,
+The sparse views remove 40.69% of the original compact fleet input, while
+representative compact authoring is 71.6% smaller than its expanded delta. All generated IDs,
 provenance, compiled targets, citations, reason symbols, metrics, and hashes are
 local deterministic work. See `docs/SEMANTIC_AUTHORING.md`.
 

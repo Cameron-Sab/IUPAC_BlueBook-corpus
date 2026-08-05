@@ -1,0 +1,1020 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-65-part-008",
+  "clauses": [
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    null,
+    null,
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    null,
+    null,
+    ["condition", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["condition", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    null,
+    ["condition", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "identical_anhydride_linkage_naming_rule",
+      "k": "rule",
+      "f": "required",
+      "c": [1, 3, 4],
+      "scope": {
+        "r": ["preferred_iupac_name", "general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [
+        ["compound", "AnhydrideCompound"],
+        ["class_name", "AnhydrideClassName"],
+        ["multiplicity", "integer"]
+      ],
+      "out": [["naming_pattern", "NamePattern"]],
+      "if": [
+        "cmp",
+        "eq",
+        ["get", ["var", "compound"], "all_anhydride_linkages_identical"],
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "naming_pattern",
+          [
+            "lit",
+            {
+              "example_linkage": "–CO-S-CO–",
+              "class_names": ["thioanhydride"],
+              "multiplicative_prefixes": ["bis-", "tris-", "etc."],
+              "construction": "precede the class name by the multiplicative prefix"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "mixed_chalcogen_seniority_order",
+      "k": "definition",
+      "f": "definition",
+      "c": [5],
+      "scope": {
+        "r": ["preferred_iupac_name", "general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "out": [["order", "ChalcogenSeniorityOrder"]],
+      "term": "seniority order of chalcogen atoms in mixed anhydride linkages",
+      "entity": "ChalcogenSeniorityOrder",
+      "value": [
+        "lit",
+        {
+          "order": ["O", "S", "Se", "Te"],
+          "notation": "O > S > Se > Te",
+          "use": "choose the senior anhydride"
+        }
+      ]
+    },
+    {
+      "id": "senior_anhydride_selection",
+      "k": "decision",
+      "f": "required",
+      "c": [5, 6],
+      "scope": {
+        "r": ["preferred_iupac_name", "general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [["anhydride_candidates", "AnhydrideCandidateSet"]],
+      "out": [["senior_anhydride", "Anhydride"]],
+      "candidates": ["var", "anhydride_candidates"],
+      "stages": [
+        {
+          "id": "chalcogen_seniority",
+          "c": [5, 6],
+          "key": [
+            "get",
+            ["var", "anhydride_candidates"],
+            "chalcogen_seniority_key"
+          ],
+          "cmp": ["lexicographic", "maximum", null, null]
+        }
+      ],
+      "tie": ["reject_ambiguous", null]
+    },
+    {
+      "id": "mixed_anhydride_naming_basis",
+      "k": "procedure",
+      "f": "required",
+      "c": [6, 7],
+      "scope": {
+        "r": ["preferred_iupac_name", "general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [["compound", "MixedAnhydrideCompound"]],
+      "out": [["naming_basis", "AnhydrideNamingBasis"]],
+      "steps": [
+        [
+          "set",
+          "naming_basis",
+          [
+            "lit",
+            {
+              "senior_basis_options": ["anhydride", "di- or polyanhydride"],
+              "other_anhydride_linkages": "named substitutively"
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "carbonyl_chalcogen_analogue_naming_rule",
+      "k": "rule",
+      "f": "required",
+      "c": [16, 18, 19, 20, 21],
+      "scope": {
+        "r": ["preferred_iupac_name", "general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [["compound", "CarbonylChalcogenAnalogue"]],
+      "out": [["naming_components", "AnhydrideAnalogueNamingComponents"]],
+      "if": [
+        "cmp",
+        "eq",
+        ["get", ["var", "compound"], "chalcogen_replaces_carbonyl_oxygen"],
+        ">C=S"
+      ],
+      "then": [
+        [
+          "set",
+          "naming_components",
+          [
+            "lit",
+            {
+              "groups": ["thiocarboxylic acids", "thioacyl groups"],
+              "application": "use in the manner described for anhydrides and polyanhydrides"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "cyclic_anhydride_naming_methods",
+      "k": "rule",
+      "f": "preference",
+      "c": [23, 24, 25, 26],
+      "scope": {
+        "r": ["preferred_iupac_name", "general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [["compound", "CyclicAnhydride"]],
+      "out": [
+        ["naming_methods", "CyclicAnhydrideNamingMethods"],
+        ["preferred_method", "NamingMethod"]
+      ],
+      "if": ["lit", true],
+      "then": [
+        [
+          "set",
+          "naming_methods",
+          [
+            "lit",
+            {
+              "method_1": "heterocyclic pseudoketone",
+              "method_2": "change the class term ‘acid’ to ‘anhydride’ in the systematic or retained name of the dibasic acid"
+            }
+          ]
+        ],
+        ["set", "preferred_method", "heterocyclic pseudoketone"]
+      ],
+      "else": []
+    },
+    {
+      "id": "cyclic_dianhydride_naming_methods",
+      "k": "rule",
+      "f": "preference",
+      "c": [46, 47, 48, 49, 50],
+      "scope": {
+        "r": ["preferred_iupac_name", "general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [["compound", "CyclicDianhydride"]],
+      "out": [
+        ["naming_methods", "CyclicDianhydrideNamingMethods"],
+        ["preferred_method", "NamingMethod"],
+        ["locant_separator", "string"]
+      ],
+      "if": ["lit", true],
+      "then": [
+        [
+          "set",
+          "naming_methods",
+          [
+            "lit",
+            {
+              "method_1": "heterocyclic pseudoketone",
+              "method_2": "change the class term ‘acid’ to ‘dianhydride’ in the systematic or retained name of the tetrabasic acid"
+            }
+          ]
+        ],
+        ["set", "preferred_method", "heterocyclic pseudoketone"],
+        ["set", "locant_separator", ";"]
+      ],
+      "else": []
+    },
+    {
+      "id": "cyclic_dianhydride_locant_separator_constraint",
+      "k": "constraint",
+      "f": "required",
+      "c": [49],
+      "scope": {
+        "r": ["preferred_iupac_name", "general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [["name", "CyclicDianhydrideName"]],
+      "assert": [
+        "cmp",
+        "eq",
+        ["get", ["var", "name"], "pair_acid_group_locant_separator"],
+        ";"
+      ],
+      "violation": [
+        [
+          "reject",
+          "name",
+          "reason.cyclic_dianhydride_locants_not_separated_by_semicolon"
+        ]
+      ]
+    },
+    {
+      "id": "chalcogen_cyclic_anhydride_naming_methods",
+      "k": "rule",
+      "f": "preference",
+      "c": [63, 64, 65, 66],
+      "scope": {
+        "r": ["preferred_iupac_name", "general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [["compound", "ChalcogenCyclicAnhydride"]],
+      "out": [
+        ["naming_methods", "ChalcogenCyclicAnhydrideNamingMethods"],
+        ["preferred_method", "NamingMethod"]
+      ],
+      "if": ["lit", true],
+      "then": [
+        [
+          "set",
+          "naming_methods",
+          [
+            "lit",
+            {
+              "method_1": "heterocyclic pseudoketone",
+              "method_2": "change the class term ‘acid’ to ‘dianhydride’, ‘thioanhydride’, ‘bis(thioanhydride)’, etc., in the systematic or retained name of the dibasic or tetrabasic acid"
+            }
+          ]
+        ],
+        ["set", "preferred_method", "heterocyclic pseudoketone"]
+      ],
+      "else": []
+    }
+  ],
+  "exceptions": [],
+  "tables": [
+    {
+      "id": "cyclic_dianhydride_numbering_examples",
+      "c": [56, 57, 58, 59, 60, 61, 62],
+      "label": null,
+      "title": "Numbering alternatives for a cyclic dianhydride",
+      "cols": [
+        ["numbering_diagram", "Numbering diagram", "string", [56, 57, 58]],
+        ["numbering_label", "Numbering label", "string", [59, 60, 61]],
+        ["name", "Name associated with numbering", "string", [62]]
+      ],
+      "rows": [
+        {
+          "id": "numbering_I",
+          "c": [56, 59, 62],
+          "v": [
+            "P6gif/P650707l.gif",
+            "(I)",
+            "tetrahydro-4,8-ethanopyrano[4,3-c]pyran-1,3,5,7-tetrone (PIN) [numbering shown in (I)]"
+          ]
+        },
+        {
+          "id": "numbering_II",
+          "c": [57, 60, 62],
+          "v": [
+            "P6gif/P650707m.gif",
+            "(II)",
+            "{not 4,9-dioxatricyclo[4.4.2.02,7]dodecane-3,5,8,10-tetrone [numbering shown in (II)]}"
+          ]
+        },
+        {
+          "id": "numbering_III",
+          "c": [58, 61, 62],
+          "v": [
+            "P6gif/P650707n.gif",
+            "(III)",
+            "cyclohexane-1,2,3,4-tetracarboxylic 1,3:2,4-dianhydride [numbering shown in (III)]"
+          ]
+        }
+      ],
+      "contract": {
+        "key": ["numbering_diagram"],
+        "result": ["name"],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "mixed_chalcogen_naphthalene_tris_thioanhydride_asset",
+      "c": [11],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650706i.gif"]
+    },
+    {
+      "id": "mixed_chalcogen_naphthalene_carboxylic_anhydride_asset",
+      "c": [13],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650706j.gif"]
+    },
+    {
+      "id": "mixed_chalcogen_naphthalene_propyl_anhydride_asset",
+      "c": [15],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650706k.gif"]
+    },
+    {
+      "id": "cyclic_anhydride_oxolane_asset",
+      "c": [29],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707a.gif"]
+    },
+    {
+      "id": "cyclic_anhydride_methyl_oxolane_asset",
+      "c": [31],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707b.gif"]
+    },
+    {
+      "id": "cyclic_anhydride_furan_asset",
+      "c": [33],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707c.gif"]
+    },
+    {
+      "id": "cyclic_anhydride_bromo_furan_asset",
+      "c": [35],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707d.gif"]
+    },
+    {
+      "id": "cyclic_anhydride_benzofuran_asset",
+      "c": [37],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707e.gif"]
+    },
+    {
+      "id": "cyclic_anhydride_nitro_benzofuran_asset",
+      "c": [39],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707f.gif"]
+    },
+    {
+      "id": "cyclic_anhydride_naphthalene_asset",
+      "c": [41],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707g.gif"]
+    },
+    {
+      "id": "cyclic_anhydride_camphoric_asset",
+      "c": [43],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707h.gif"]
+    },
+    {
+      "id": "cyclic_anhydride_tetracarboxylic_asset",
+      "c": [45],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707i.gif"]
+    },
+    {
+      "id": "cyclic_dianhydride_cyclobutane_asset",
+      "c": [53],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707j.gif"]
+    },
+    {
+      "id": "cyclic_dianhydride_cyclohexane_asset",
+      "c": [55],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707k.gif"]
+    },
+    {
+      "id": "cyclic_dianhydride_numbering_I_asset",
+      "c": [56],
+      "k": "diagram",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707l.gif"]
+    },
+    {
+      "id": "cyclic_dianhydride_numbering_II_asset",
+      "c": [57],
+      "k": "diagram",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707m.gif"]
+    },
+    {
+      "id": "cyclic_dianhydride_numbering_III_asset",
+      "c": [58],
+      "k": "diagram",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707n.gif"]
+    },
+    {
+      "id": "cyclic_chalcogen_thioanhydride_asset",
+      "c": [69],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707o.gif"]
+    },
+    {
+      "id": "cyclic_chalcogen_dithione_asset",
+      "c": [71],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707p.gif"]
+    },
+    {
+      "id": "cyclic_chalcogen_sulfanylidene_asset",
+      "c": [73],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707q.gif"]
+    },
+    {
+      "id": "cyclic_chalcogen_bis_sulfanylidene_asset",
+      "c": [75],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707r.gif"]
+    },
+    {
+      "id": "cyclic_chalcogen_dithiophene_asset",
+      "c": [77],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P650707s.gif"]
+    }
+  ],
+  "examples": [
+    {
+      "id": "identical_thioanhydride_bis_example",
+      "c": [3],
+      "input": {
+        "structure": "CH3-CO-S-CO-CH2-CH2-CO-S-CO-CH3",
+        "anhydride_linkages": "identical",
+        "class_name": "thioanhydride",
+        "multiplicity": 2,
+        "name_status": "PIN"
+      },
+      "ok": ["diacetic butanedioic bis(thioanhydride) (PIN)"],
+      "bad": [],
+      "shows": [["semantic_unit", "identical_anhydride_linkage_naming_rule"]],
+      "why": "Identical thioanhydride linkages are named with the multiplicative prefix bis-."
+    },
+    {
+      "id": "identical_mixed_chalcogen_bis_thioanhydride_example",
+      "c": [4],
+      "input": {
+        "structure": "CH3-CO-S-SO2-CH2-SO2-S-CO-CH3",
+        "anhydride_linkages": "identical",
+        "class_name": "thioanhydride",
+        "multiplicity": 2,
+        "name_status": "PIN"
+      },
+      "ok": ["diacetic methanedisulfonic bis(thioanhydride) (PIN)"],
+      "bad": [],
+      "shows": [["semantic_unit", "identical_anhydride_linkage_naming_rule"]],
+      "why": "The identical linkages use bis(thioanhydride) after the acetic and methanedisulfonic components."
+    },
+    {
+      "id": "mixed_chalcogen_substitutive_example",
+      "c": [9],
+      "input": {
+        "structure": "CH3-CO-O-CO-CH2-CH2-CH2-CO-S-CO-CH3",
+        "senior_chalcogen": "O",
+        "other_linkage_naming": "substitutive",
+        "name_status": "PIN"
+      },
+      "ok": ["acetic 5-(acetylsulfanyl)-5-oxopentanoic anhydride (PIN)"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "mixed_chalcogen_seniority_order"],
+        ["semantic_unit", "senior_anhydride_selection"],
+        ["semantic_unit", "mixed_anhydride_naming_basis"]
+      ],
+      "why": "O is senior to S, so the oxygen anhydride is the basis and the other linkage is named substitutively."
+    },
+    {
+      "id": "mixed_chalcogen_naphthalene_tris_thioanhydride_example",
+      "c": [10],
+      "input": {
+        "structure": "naphthalene tricarboxylic anhydride system",
+        "anhydride_count": 3,
+        "other_linkages": "thioanhydride",
+        "name_status": "PIN"
+      },
+      "ok": ["3,6-diacetic 2-propanoic naphthalene-2,3,6-tricarboxylic tris(thioanhydride) (PIN)"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "mixed_chalcogen_seniority_order"],
+        ["semantic_unit", "mixed_anhydride_naming_basis"],
+        ["figure", "figure.p65.part008.mixed_chalcogen_naphthalene_tris_thioanhydride_asset"]
+      ],
+      "why": "The figure illustrates a senior anhydride basis with three other linkages expressed as tris(thioanhydride)."
+    },
+    {
+      "id": "mixed_chalcogen_naphthalene_carboxylic_anhydride_example",
+      "c": [12],
+      "input": {
+        "structure": "naphthalene carboxylic anhydride system",
+        "other_linkage": "acetylsulfanyl carbonyl",
+        "name_status": "PIN"
+      },
+      "ok": ["acetic 3-[(acetylsulfanyl)carbonyl]naphthalene-2-carboxylic anhydride (PIN)"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "senior_anhydride_selection"],
+        ["semantic_unit", "mixed_anhydride_naming_basis"],
+        ["figure", "figure.p65.part008.mixed_chalcogen_naphthalene_carboxylic_anhydride_asset"]
+      ],
+      "why": "The example shows an oxygen anhydride used as the senior basis while the sulfur linkage is substitutive."
+    },
+    {
+      "id": "mixed_chalcogen_naphthalene_propyl_anhydride_example",
+      "c": [14],
+      "input": {
+        "structure": "naphthalene carboxylic anhydride system",
+        "other_linkage": "acetylsulfanyl oxopropyl",
+        "name_status": "PIN"
+      },
+      "ok": ["acetic 1-[3-(acetylsulfanyl)-3-oxopropyl]naphthalene-2-carboxylic anhydride (PIN)"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "senior_anhydride_selection"],
+        ["semantic_unit", "mixed_anhydride_naming_basis"],
+        ["figure", "figure.p65.part008.mixed_chalcogen_naphthalene_propyl_anhydride_asset"]
+      ],
+      "why": "The example shows another substitutive name for a non-senior sulfur anhydride linkage."
+    },
+    {
+      "id": "carbonyl_chalcogen_ethanethioic_dianhydride_example",
+      "c": [18],
+      "input": {
+        "structure": "CH3-CS-O-CO-CH2-CH2-CO-O-CO-CH3",
+        "carbonyl_replacement": ">C=S",
+        "group_type": "thiocarboxylic acid and thioacyl group",
+        "name_status": "PIN"
+      },
+      "ok": ["acetic butanedioic ethanethioic dianhydride (PIN)"],
+      "bad": [],
+      "shows": [["semantic_unit", "carbonyl_chalcogen_analogue_naming_rule"]],
+      "why": "A thioacyl carbonyl is named using the thiocarboxylic acid and thioacyl treatment described for dianhydrides."
+    },
+    {
+      "id": "carbonyl_chalcogen_bis_thioic_dianhydride_example",
+      "c": [19],
+      "input": {
+        "structure": "CH3-CO-O-CS-CH2-CH2-CS-O-CO-CH3",
+        "carbonyl_replacement": ">C=S",
+        "group_type": "thiocarboxylic acid and thioacyl group",
+        "name_status": "PIN"
+      },
+      "ok": ["diacetic butanebis(thioic) dianhydride (PIN)"],
+      "bad": [],
+      "shows": [["semantic_unit", "carbonyl_chalcogen_analogue_naming_rule"]],
+      "why": "Both thioic carbonyl replacements are represented in the dianhydride name."
+    },
+    {
+      "id": "carbonyl_chalcogen_sulfanylidenebutanethioic_example",
+      "c": [20],
+      "input": {
+        "structure": "CH3-CO-O-CS-CH2-CH2-CS-S-CS-CH3",
+        "carbonyl_replacement": ">C=S",
+        "group_type": "thioacyl and sulfanylidenes",
+        "name_status": "PIN"
+      },
+      "ok": ["acetic 4-[(ethanethioyl)sulfanyl]-4-sulfanylidenebutanethioic anhydride (PIN)"],
+      "bad": [],
+      "shows": [["semantic_unit", "carbonyl_chalcogen_analogue_naming_rule"]],
+      "why": "The example applies the thioacyl treatment to a sulfur-containing cyclic-anhydride analogue."
+    },
+    {
+      "id": "carbonyl_chalcogen_propanoylsulfanyl_dianhydride_example",
+      "c": [21],
+      "input": {
+        "structure": "CH3-CO-O-CO-CH2-CH2-CO-O-CO-CH2-CH2-CO-S-CO-CH2-CH3",
+        "carbonyl_replacement": ">C=S",
+        "group_type": "propanoylsulfanyl",
+        "name_status": "PIN"
+      },
+      "ok": ["acetic butanedioic 4-oxo-4-(propanoylsulfanyl)butanoic dianhydride (PIN)"],
+      "bad": [],
+      "shows": [["semantic_unit", "carbonyl_chalcogen_analogue_naming_rule"]],
+      "why": "The example extends the anhydride treatment to a longer dianhydride containing a thioacyl linkage."
+    },
+    {
+      "id": "cyclic_anhydride_succinic_example",
+      "c": [28],
+      "input": {
+        "structure": "succinic anhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "dibasic acid class-term replacement"
+      },
+      "ok": [
+        "oxolane-2,5-dione (PIN)",
+        "3,4-dihydrofuran-2,5-dione",
+        "butanedioic anhydride",
+        "succinic anhydride"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_anhydride_oxolane_asset"]
+      ],
+      "why": "The preferred heterocyclic pseudoketone name is shown with systematic and retained acid-derived alternatives."
+    },
+    {
+      "id": "cyclic_anhydride_methyl_succinic_example",
+      "c": [30],
+      "input": {
+        "structure": "methylsuccinic anhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "dibasic acid class-term replacement"
+      },
+      "ok": [
+        "3-methyloxolane-2,5-dione (PIN)",
+        "3-methyl-3,4-dihydrofuran-2,5-dione",
+        "2-methylbutanedioic anhydride",
+        "methylsuccinic anhydride"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_anhydride_methyl_oxolane_asset"]
+      ],
+      "why": "The methyl-substituted example uses the same two naming methods."
+    },
+    {
+      "id": "cyclic_anhydride_maleic_example",
+      "c": [32],
+      "input": {
+        "structure": "maleic anhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "retained acid-derived name"
+      },
+      "ok": ["furan-2,5-dione (PIN)", "maleic anhydride"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_anhydride_furan_asset"]
+      ],
+      "why": "The retained name maleic anhydride is paired with the preferred heterocyclic pseudoketone name."
+    },
+    {
+      "id": "cyclic_anhydride_bromomaleic_example",
+      "c": [34],
+      "input": {
+        "structure": "bromomaleic anhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "retained acid-derived name"
+      },
+      "ok": ["3-bromofuran-2,5-dione (PIN)", "bromomaleic anhydride"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_anhydride_bromo_furan_asset"]
+      ],
+      "why": "The bromo-substituted example illustrates both the preferred and retained-name forms."
+    },
+    {
+      "id": "cyclic_anhydride_phthalic_example",
+      "c": [36],
+      "input": {
+        "structure": "phthalic anhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "systematic or retained dibasic acid name"
+      },
+      "ok": [
+        "2-benzofuran-1,3-dione (PIN)",
+        "isobenzofuran-1,3-dione",
+        "phthalic anhydride"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_anhydride_benzofuran_asset"]
+      ],
+      "why": "The example shows the preferred heterocyclic pseudoketone name and the systematic and retained alternatives."
+    },
+    {
+      "id": "cyclic_anhydride_nitrophthalic_example",
+      "c": [38],
+      "input": {
+        "structure": "4-nitrophthalic anhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "systematic or retained dibasic acid name"
+      },
+      "ok": [
+        "5-nitro-2-benzofuran-1,3-dione (PIN)",
+        "5-nitroisobenzofuran-1,3-dione",
+        "4-nitrophthalic anhydride"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_anhydride_nitro_benzofuran_asset"]
+      ],
+      "why": "The nitro-substituted example preserves the correspondence between heterocyclic and acid-derived forms."
+    },
+    {
+      "id": "cyclic_anhydride_naphthalene_example",
+      "c": [40],
+      "input": {
+        "structure": "naphthalene-1,8-dicarboxylic anhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "dibasic acid class-term replacement"
+      },
+      "ok": [
+        "1H,3H-benzo[de][2]benzopyran-1,3-dione (PIN)",
+        "1H,3H-benzo[de]isochromene-1,3-dione",
+        "naphthalene-1,8-dicarboxylic anhydride"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_anhydride_naphthalene_asset"]
+      ],
+      "why": "The fused-ring example illustrates the preferred heterocyclic pseudoketone method for a dibasic acid anhydride."
+    },
+    {
+      "id": "cyclic_anhydride_camphoric_example",
+      "c": [42],
+      "input": {
+        "structure": "camphoric anhydride",
+        "retained_name_note": "also known as camphoric anhydride"
+      },
+      "ok": ["1,8,8-trimethyl-3-oxabicyclo[3.2.1]octane-2,4-dione (PIN)", "camphoric anhydride"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_anhydride_camphoric_asset"]
+      ],
+      "why": "The bicyclic preferred name is accompanied by the source's retained-name note."
+    },
+    {
+      "id": "cyclic_anhydride_tetracarboxylic_example",
+      "c": [44],
+      "input": {
+        "structure": "cyclohexane-1,2,3,4-tetracarboxylic acid 3,4-anhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "tetracarboxylic acid class-term replacement"
+      },
+      "ok": [
+        "1,3-dioxooctahydro-2-benzofuran-4,5-dicarboxylic acid (PIN)",
+        "1,3-dioxooctahydroisobenzofuran-4,5-dicarboxylic acid",
+        "cyclohexane-1,2,3,4-tetracarboxylic acid 3,4-anhydride"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_anhydride_tetracarboxylic_asset"]
+      ],
+      "why": "The example shows the heterocyclic pseudoketone name alongside the tetrabasic acid-derived form."
+    },
+    {
+      "id": "cyclic_dianhydride_cyclobutane_example",
+      "c": [52],
+      "input": {
+        "structure": "cyclobutane-1,2,3,4-tetracarboxylic dianhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "tetrabasic acid class-term replacement",
+        "name_status": "PIN"
+      },
+      "ok": [
+        "tetrahydrocyclobuta[1,2-c:3,4-c′]difuran-1,3,4,6-tetrone (PIN)",
+        "cyclobutane-1,2,3,4-tetracarboxylic 1,2:3,4-dianhydride"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_dianhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_dianhydride_cyclobutane_asset"]
+      ],
+      "why": "The cyclic dianhydride example illustrates both allowed naming methods."
+    },
+    {
+      "id": "cyclic_dianhydride_cyclohexane_example",
+      "c": [54],
+      "input": {
+        "structure": "cyclohexane-1,2,3,4-tetracarboxylic dianhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "tetrabasic acid class-term replacement",
+        "name_status": "PIN"
+      },
+      "ok": [
+        "hexahydrobenzo[1,2-c:3,4-c′]difuran-1,3,6,8-tetrone (PIN)",
+        "cyclohexane-1,2,3,4-tetracarboxylic 1,2:3,4-dianhydride"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "cyclic_dianhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_dianhydride_cyclohexane_asset"]
+      ],
+      "why": "The second cyclic dianhydride example applies the same preferred heterocyclic method."
+    },
+    {
+      "id": "cyclic_dianhydride_numbering_choice_example",
+      "c": [62],
+      "input": {
+        "numbering_options": ["I", "II", "III"],
+        "preferred_numbering": "I",
+        "locant_separator": ";"
+      },
+      "ok": [
+        "tetrahydro-4,8-ethanopyrano[4,3-c]pyran-1,3,5,7-tetrone (PIN) [numbering shown in (I)]",
+        "cyclohexane-1,2,3,4-tetracarboxylic 1,3:2,4-dianhydride [numbering shown in (III)]"
+      ],
+      "bad": [
+        "4,9-dioxatricyclo[4.4.2.02,7]dodecane-3,5,8,10-tetrone [numbering shown in (II)]"
+      ],
+      "shows": [
+        ["semantic_unit", "cyclic_dianhydride_naming_methods"],
+        ["semantic_unit", "cyclic_dianhydride_locant_separator_constraint"],
+        ["table", "cyclic_dianhydride_numbering_examples"],
+        ["figure", "figure.p65.part008.cyclic_dianhydride_numbering_I_asset"],
+        ["figure", "figure.p65.part008.cyclic_dianhydride_numbering_II_asset"],
+        ["figure", "figure.p65.part008.cyclic_dianhydride_numbering_III_asset"]
+      ],
+      "why": "The table records the three numbering diagrams, the preferred PIN associated with (I), the not-name associated with (II), and the acid-derived name associated with (III)."
+    },
+    {
+      "id": "cyclic_chalcogen_thioanhydride_example",
+      "c": [68],
+      "input": {
+        "structure": "hexahydrophthalic cyclic thioanhydride",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "thioanhydride class-term replacement"
+      },
+      "ok": [
+        "hexahydro-2-benzothiophene-1,3-dione (PIN)",
+        "hexahydrobenzo[c]thiophene-1,3-dione (PIN)",
+        "cyclohexane-1,2-dicarboxylic thioanhydride",
+        "hexahydrophthalic thioanhydride"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "chalcogen_cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_chalcogen_thioanhydride_asset"]
+      ],
+      "why": "Both the preferred heterocyclic pseudoketone names and the thioanhydride class-term names are shown."
+    },
+    {
+      "id": "cyclic_chalcogen_dithione_example",
+      "c": [70],
+      "input": {
+        "structure": "dithione analogue of a cyclic anhydride",
+        "method_1": "heterocyclic pseudoketone"
+      },
+      "ok": ["hexahydro-1H-2-benzopyran-1,3(4H)-dithione (PIN)"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "chalcogen_cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_chalcogen_dithione_asset"]
+      ],
+      "why": "The example demonstrates a chalcogen cyclic anhydride named as a heterocyclic pseudoketone."
+    },
+    {
+      "id": "cyclic_chalcogen_sulfanylidene_example",
+      "c": [72],
+      "input": {
+        "structure": "sulfanylidene cyclic chalcogen anhydride",
+        "method_1": "heterocyclic pseudoketone"
+      },
+      "ok": [
+        "3-sulfanylidene-2-benzothiophen-1-one (PIN)",
+        "3-sulfanylidenebenzo[c]thiophen-1-one"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "chalcogen_cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_chalcogen_sulfanylidene_asset"]
+      ],
+      "why": "The two preferred heterocyclic forms preserve the sulfanylidene description."
+    },
+    {
+      "id": "cyclic_chalcogen_bis_sulfanylidene_example",
+      "c": [74],
+      "input": {
+        "structure": "bis(sulfanylidene) fused cyclic analogue",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "anhydride class-term replacement"
+      },
+      "ok": [
+        "5,7-bis(sulfanylidene)-5,7-dihydro-1H,3H-thieno[3,4-f][2]benzofuran-1,3-dione (PIN)",
+        "5,7-dithioxo-5,7-dihydro-1H,3H-thieno[3,4-f]isobenzofuran-1,3-dione",
+        "1,3-bis(sulfanylidene)-1,3-dihydro-2-benzothiophene-5,6-dicarboxylic anhydride",
+        "1,3-dithioxo-1,3-dihydroisobenzothiophene-5,6-dicarboxylic anhydride"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "chalcogen_cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_chalcogen_bis_sulfanylidene_asset"]
+      ],
+      "why": "The example gives both heterocyclic pseudoketone forms and both acid-derived anhydride forms."
+    },
+    {
+      "id": "cyclic_chalcogen_dithiophene_example",
+      "c": [76],
+      "input": {
+        "structure": "cyclopentane-1,2,3,4-tetracarboxylic bis(thioanhydride)",
+        "method_1": "heterocyclic pseudoketone",
+        "method_2": "bis(thioanhydride) class-term replacement"
+      },
+      "ok": [
+        "tetrahydro-1H-cyclopenta[1,2-c:3,4-c′]dithiophene-1,3,4,6(3aH)-tetrone (PIN)",
+        "cyclopentane-1,2,3,4-tetracaboxylic 1,2:3,4-bis(thioanhydride)"
+      ],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "chalcogen_cyclic_anhydride_naming_methods"],
+        ["figure", "figure.p65.part008.cyclic_chalcogen_dithiophene_asset"]
+      ],
+      "why": "The final example applies the heterocyclic and bis(thioanhydride) methods to a tetrabasic acid analogue."
+    }
+  ],
+  "corrections": [],
+  "refs": [],
+  "additional_refs": []
+}

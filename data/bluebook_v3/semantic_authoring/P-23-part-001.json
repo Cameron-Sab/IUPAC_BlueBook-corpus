@@ -1,0 +1,614 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-23-part-001",
+  "clauses": [
+    null,
+    null,
+    null,
+    ["source_metadata", "informative", "compile"],
+    ["source_metadata", "informative", "compile"],
+    ["source_metadata", "informative", "compile"],
+    ["scope", "normative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    ["procedure_step", "normative", "compile"],
+    null,
+    null,
+    ["preference_criterion", "normative", "compile"],
+    ["note", "informative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["condition", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["condition", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    null,
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["scope", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "section_basis_and_supersession",
+      "k": "definition",
+      "f": "definition",
+      "c": [4, 5, 6],
+      "out": [["provenance", "SectionProvenance"]],
+      "term": "P-23 publication basis and supersession",
+      "entity": "SectionProvenance",
+      "value": ["lit", {
+        "basis_publication": "Extension and Revision of the von Baeyer system for naming polycyclic compounds (including bicyclic compounds) (IUPAC Recommendations 1999)",
+        "basis_reference": "ref. 7",
+        "supersedes": [
+          "Rules A-31, A-32, and B-14 in the 1979 Recommendations (ref. 1)",
+          "Rule R-2.4.2 in the 1993 Recommendations (ref. 2)"
+        ],
+        "modifications_to_1999_publication": false
+      }]
+    },
+    {
+      "id": "saturated_von_baeyer_scope",
+      "k": "definition",
+      "f": "required",
+      "c": [7, 8, 9],
+      "out": [["scope", "VonBaeyerScope"]],
+      "term": "scope of the saturated von Baeyer system",
+      "entity": "VonBaeyerScope",
+      "value": ["lit", {
+        "ring_systems": "saturated polyalicyclic ring systems",
+        "naming_system": "von Baeyer system",
+        "unsaturated_systems": "see Section P-31.1.4",
+        "derived_substituent_groups": "see Section P-29"
+      }]
+    },
+    {
+      "id": "von_baeyer_rules_applied_in_order",
+      "k": "procedure",
+      "f": "required",
+      "c": [23],
+      "in": [["hydrocarbon", "VonBaeyerHydrocarbon"]],
+      "out": [["naming_decision", "NamingDecision"]],
+      "steps": [
+        ["set", "naming_decision", ["lit", {
+          "procedure": "apply the following rules in order until a decision is reached",
+          "ordered_sections": [
+            "P-23.2.1",
+            "P-23.2.2",
+            "P-23.2.3",
+            "P-23.2.4",
+            "P-23.2.5",
+            "P-23.2.6"
+          ]
+        }]]
+      ]
+    },
+    {
+      "id": "main_ring_selection",
+      "k": "decision",
+      "f": "required",
+      "c": [26],
+      "in": [["candidate_main_rings", "MainRingSet"]],
+      "out": [["selected_main_ring", "MainRing"]],
+      "candidates": ["var", "candidate_main_rings"],
+      "stages": [
+        {
+          "id": "maximum_skeletal_atom_count",
+          "c": [26],
+          "key": ["get", ["var", "candidate_main_ring"], "skeletal_atom_count"],
+          "cmp": ["numeric", "maximum", null, null]
+        }
+      ],
+      "tie": ["retain_coequal", null]
+    },
+    {
+      "id": "main_ring_bold_line_rendering",
+      "k": "definition",
+      "f": "definition",
+      "c": [27],
+      "out": [["rendering", "RingRenderingConvention"]],
+      "term": "main-ring rendering convention",
+      "entity": "RingRenderingConvention",
+      "value": ["lit", {
+        "component": "main ring",
+        "line_style": "bold",
+        "applies_in": "subsections P-23.2.1 through P-23.2.6"
+      }]
+    },
+    {
+      "id": "bicyclic_naming_prefix_rule",
+      "k": "rule",
+      "f": "required",
+      "c": [34],
+      "in": [["hydrocarbon", "SaturatedHomogeneousBicyclicHydrocarbon"]],
+      "out": [["name_pattern", "BicyclicNamePattern"]],
+      "if": ["all",
+        ["cmp", "eq", ["get", ["var", "hydrocarbon"], "saturation"], "saturated"],
+        ["cmp", "eq", ["get", ["var", "hydrocarbon"], "homogeneity"], "homogeneous"],
+        ["cmp", "eq", ["get", ["var", "hydrocarbon"], "topology"], "bicyclic"],
+        ["cmp", "ge", ["get", ["var", "hydrocarbon"], "shared_atom_count"], 2]
+      ],
+      "then": [
+        ["set", "name_pattern", ["lit", {
+          "prefix": "bicyclo",
+          "base_name": "the acyclic hydrocarbon having the same total number of skeletal atoms"
+        }]]
+      ],
+      "else": []
+    },
+    {
+      "id": "bicyclic_descriptor_format",
+      "k": "procedure",
+      "f": "required",
+      "c": [35],
+      "in": [["bicyclic_system", "BicyclicSystem"]],
+      "out": [["bridge_descriptor", "VonBaeyerDescriptor"]],
+      "steps": [
+        ["set", "bridge_descriptor", ["lit", {
+          "numbers": "skeletal atoms in each of the two segments connecting the main bridgeheads and in the main bridge",
+          "order": "descending numerical order",
+          "separator": "full stops",
+          "enclosure": "square brackets",
+          "number_style": "arabic numbers"
+        }]]
+      ]
+    },
+    {
+      "id": "bicyclic_numbering_procedure",
+      "k": "procedure",
+      "f": "required",
+      "c": [40, 41],
+      "in": [["bicyclic_system", "BicyclicSystem"]],
+      "out": [["numbering_sequence", "NumberingSequence"]],
+      "steps": [
+        ["set", "numbering_sequence", ["lit", {
+          "start": "one of the bridgeheads",
+          "first_path": "the longer segment of the main ring to the second bridgehead",
+          "return_path": "the unnumbered segment of the main ring back to the first bridgehead",
+          "completion": "number the main bridge beginning with the atom next to the first bridgehead"
+        }]]
+      ]
+    },
+    {
+      "id": "multiple_bridge_connection_context",
+      "k": "definition",
+      "f": "required",
+      "c": [48],
+      "out": [["bridge_context", "PolycyclicBridgeContext"]],
+      "term": "multiple-bridge polycyclic context",
+      "entity": "PolycyclicBridgeContext",
+      "value": ["lit", {
+        "condition": "a polycyclic ring system has more than one bridge connecting atoms of the main ring and/or the main bridge"
+      }]
+    },
+    {
+      "id": "main_bridge_selection",
+      "k": "decision",
+      "f": "required",
+      "c": [49],
+      "in": [["candidate_bridges", "BridgeSet"]],
+      "out": [["selected_main_bridge", "MainBridge"]],
+      "candidates": ["var", "candidate_bridges"],
+      "stages": [
+        {
+          "id": "maximum_atoms_outside_main_ring",
+          "c": [49],
+          "key": ["get", ["var", "candidate_bridge"], "atoms_not_in_main_ring"],
+          "cmp": ["numeric", "maximum", null, null]
+        }
+      ],
+      "tie": ["retain_coequal", null]
+    },
+    {
+      "id": "main_bridge_rendering_convention",
+      "k": "definition",
+      "f": "definition",
+      "c": [49],
+      "out": [["rendering", "BridgeRenderingConvention"]],
+      "term": "main-ring and main-bridge rendering",
+      "entity": "BridgeRenderingConvention",
+      "value": ["lit", {
+        "main_ring": "solid bold lines",
+        "main_bridge": "dashed lines"
+      }]
+    },
+    {
+      "id": "secondary_bridge_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [50],
+      "out": [["secondary_bridge", "SecondaryBridge"]],
+      "term": "secondary bridge",
+      "entity": "SecondaryBridge",
+      "value": ["lit", {
+        "definition": "a bridge other than the main bridge",
+        "rendering": "normal solid line"
+      }]
+    },
+    {
+      "id": "tricyclic_name_construction",
+      "k": "procedure",
+      "f": "required",
+      "c": [57, 58, 59, 60],
+      "in": [["tricyclic_system", "TricyclicSystem"]],
+      "out": [["tricyclic_name", "Name"]],
+      "steps": [
+        ["set", "tricyclic_name", ["lit", {
+          "parts": [
+            {
+              "letter": "a",
+              "component": "prefix",
+              "value": "tricyclo",
+              "replaces": "bicyclo",
+              "meaning": "three rings in the polyalicyclic system"
+            },
+            {
+              "letter": "b",
+              "component": "bridge_lengths",
+              "order": ["two branches of the main ring", "main bridge", "secondary bridge"],
+              "secondary_bridge_locants": "superscript locants separated by commas indicating points of attachment to the main ring",
+              "punctuation": "all separated by full stops and placed in brackets",
+              "example": "[2.2.1.02,6]"
+            },
+            {
+              "letter": "c",
+              "component": "base_name",
+              "value": "the acyclic hydrocarbon having the same total number of skeletal atoms"
+            }
+          ]
+        }]]
+      ]
+    },
+    {
+      "id": "independent_secondary_bridge_numbering",
+      "k": "procedure",
+      "f": "required",
+      "c": [65],
+      "in": [["tricyclic_system", "TricyclicSystem"]],
+      "out": [["numbering", "NumberingSequence"]],
+      "steps": [
+        ["set", "numbering", ["lit", {
+          "precondition": "the main ring and main bridge have been numbered",
+          "bridge": "independent secondary bridge",
+          "start": "the higher numbered bridgehead of the main ring",
+          "operation": "continue numbering from that bridgehead"
+        }]]
+      ]
+    },
+    {
+      "id": "polyalicyclic_scope_and_inheritance",
+      "k": "definition",
+      "f": "required",
+      "c": [72, 73, 74, 75],
+      "out": [["scope", "PolyalicyclicApplicationScope"]],
+      "term": "polyalicyclic von Baeyer application scope",
+      "entity": "PolyalicyclicApplicationScope",
+      "value": ["lit", {
+        "analogues": ["saturated bicyclic ring systems", "saturated tricyclic ring systems"],
+        "source_sections": ["P-23.2.3", "P-23.2.5"],
+        "secondary_bridges_considered": ["independent", "dependent"],
+        "rules_covered": ["numbering all secondary bridges", "naming all polyalicyclic systems"],
+        "application_inheritance": "follow the naming and numbering rules for bicyclic systems described in P-23.2.1 through P-23.2.4"
+      }]
+    },
+    {
+      "id": "additional_bridge_selection_rule",
+      "k": "definition",
+      "f": "required",
+      "c": [76],
+      "out": [["selection_requirement", "BridgeSelectionRequirement"]],
+      "term": "additional bridge-selection rule",
+      "entity": "BridgeSelectionRequirement",
+      "value": ["lit", {
+        "necessary_to_select": ["main bridge", "secondary bridges"],
+        "reason": "polycyclic systems require an additional selection rule"
+      }]
+    },
+    {
+      "id": "secondary_bridge_descriptor_rules",
+      "k": "procedure",
+      "f": "required",
+      "c": [78, 79, 80],
+      "in": [["polyalicyclic_system", "PolyalicyclicSystem"]],
+      "out": [["descriptor", "VonBaeyerDescriptor"]],
+      "steps": [
+        ["set", "descriptor", ["lit", {
+          "secondary_bridge_lengths": "cite the number of atoms in each secondary bridge as an arabic number",
+          "attachment_locants": "cite the two attachment-point locants as a pair of superscript arabic numbers, lower first, separated by a comma",
+          "independent_bridge_order": "cite numbers for independent secondary bridges in decreasing order"
+        }]]
+      ]
+    },
+    {
+      "id": "polyalicyclic_name_construction_procedure",
+      "k": "procedure",
+      "f": "required",
+      "c": [81],
+      "in": [["polyalicyclic_system", "PolyalicyclicSystem"]],
+      "out": [["name", "Name"]],
+      "steps": [
+        ["set", "name", ["lit", {
+          "procedure": "construction of names",
+          "instructions": "given in the following subsections"
+        }]]
+      ]
+    }
+  ],
+  "exceptions": [],
+  "tables": [],
+  "figures": [
+    {
+      "id": "main_ring_six_membered",
+      "c": [30],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230201a.gif"]
+    },
+    {
+      "id": "main_ring_seven_membered",
+      "c": [32],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230201b.gif"]
+    },
+    {
+      "id": "bicyclo_3_2_1_octane_naming",
+      "c": [38],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230202a.gif"]
+    },
+    {
+      "id": "bicyclo_3_2_1_octane_numbering",
+      "c": [44],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230201b.gif"]
+    },
+    {
+      "id": "bicyclo_4_4_2_dodecane_numbering",
+      "c": [46],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230203a.gif"]
+    },
+    {
+      "id": "main_bridge_selection_example",
+      "c": [52],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230204a.gif"]
+    },
+    {
+      "id": "tricyclo_2_2_1_heptane",
+      "c": [63],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230205a.gif"]
+    },
+    {
+      "id": "tricyclo_9_3_3_octadecane",
+      "c": [68],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230205b.gif"]
+    },
+    {
+      "id": "tricyclo_4_2_2_dodecane",
+      "c": [70],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230205c.gif"]
+    }
+  ],
+  "examples": [
+    {
+      "id": "six_membered_main_ring_example",
+      "c": [29],
+      "input": {"main_ring_size": 6},
+      "ok": ["a six-membered main ring"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "main_ring_selection"],
+        ["figure", "figure.p23.part001.main_ring_six_membered"]
+      ],
+      "why": "The structure illustrates selection and bold-line display of a six-membered main ring."
+    },
+    {
+      "id": "seven_membered_main_ring_example",
+      "c": [31],
+      "input": {"main_ring_size": 7},
+      "ok": ["a seven-membered main ring"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "main_ring_selection"],
+        ["figure", "figure.p23.part001.main_ring_seven_membered"]
+      ],
+      "why": "The structure illustrates selection and bold-line display of a seven-membered main ring."
+    },
+    {
+      "id": "bicyclo_3_2_1_octane_naming_example",
+      "c": [37],
+      "input": {
+        "saturation": "saturated",
+        "homogeneity": "homogeneous",
+        "shared_atom_count": 2,
+        "bridge_lengths": [3, 2, 1],
+        "total_skeletal_atoms": 8
+      },
+      "ok": ["bicyclo[3.2.1]octane"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "bicyclic_naming_prefix_rule"],
+        ["semantic_unit", "bicyclic_descriptor_format"],
+        ["figure", "figure.p23.part001.bicyclo_3_2_1_octane_naming"]
+      ],
+      "why": "The figure caption identifies bicyclo[3.2.1]octane as a PIN example of the bicyclic naming rule."
+    },
+    {
+      "id": "bicyclo_3_2_1_octane_numbering_example",
+      "c": [43],
+      "input": {"name": "bicyclo[3.2.1]octane", "numbering": "main ring then main bridge"},
+      "ok": ["bicyclo[3.2.1]octane"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "bicyclic_numbering_procedure"],
+        ["figure", "figure.p23.part001.bicyclo_3_2_1_octane_numbering"]
+      ],
+      "why": "The figure caption identifies bicyclo[3.2.1]octane as a PIN example of the numbering procedure."
+    },
+    {
+      "id": "bicyclo_4_4_2_dodecane_numbering_example",
+      "c": [45],
+      "input": {"name": "bicyclo[4.4.2]dodecane", "numbering": "main ring then main bridge"},
+      "ok": ["bicyclo[4.4.2]dodecane"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "bicyclic_numbering_procedure"],
+        ["figure", "figure.p23.part001.bicyclo_4_4_2_dodecane_numbering"]
+      ],
+      "why": "The figure caption identifies bicyclo[4.4.2]dodecane as a PIN example of the numbering procedure."
+    },
+    {
+      "id": "tricyclo_2_2_1_heptane_example",
+      "c": [62],
+      "input": {"bridge_lengths": [2, 2, 1], "secondary_bridge_attachment_locants": [2, 6]},
+      "ok": ["tricyclo[2.2.1.02,6]heptane"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "tricyclic_name_construction"],
+        ["figure", "figure.p23.part001.tricyclo_2_2_1_heptane"]
+      ],
+      "why": "The figure caption identifies tricyclo[2.2.1.02,6]heptane as a PIN example of tricyclic name construction."
+    },
+    {
+      "id": "tricyclo_9_3_3_octadecane_example",
+      "c": [67],
+      "input": {"name": "tricyclo[9.3.3.11,11]octadecane", "secondary_bridge": "independent"},
+      "ok": ["tricyclo[9.3.3.11,11]octadecane"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "independent_secondary_bridge_numbering"],
+        ["figure", "figure.p23.part001.tricyclo_9_3_3_octadecane"]
+      ],
+      "why": "The figure caption identifies tricyclo[9.3.3.11,11]octadecane as a PIN example."
+    },
+    {
+      "id": "tricyclo_4_2_2_dodecane_example",
+      "c": [69],
+      "input": {
+        "name": "tricyclo[4.2.2.22,5]dodecane",
+        "secondary_bridge_start": 5,
+        "comparison": "bridgehead 5 is higher numbered than bridgehead 2"
+      },
+      "ok": ["tricyclo[4.2.2.22,5]dodecane"],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "independent_secondary_bridge_numbering"],
+        ["figure", "figure.p23.part001.tricyclo_4_2_2_dodecane"]
+      ],
+      "why": "The caption states that the secondary bridge is numbered from bridgehead 5, the higher numbered bridgehead."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {
+      "id": "reference.p23.part001.xref.p23_0_1",
+      "c": [8],
+      "rel": "cites",
+      "o": "P-23.0:xref:0001",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p23.part001.xref.p23_0_2",
+      "c": [9],
+      "rel": "cites",
+      "o": "P-23.0:xref:0002",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p23.part001.xref.p23_2_1_1",
+      "c": [27],
+      "rel": "cites",
+      "o": "P-23.2.1:xref:0001",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p23.part001.xref.p23_2_1_2",
+      "c": [27],
+      "rel": "cites",
+      "o": "P-23.2.1:xref:0002",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p23.part001.xref.p23_2_5_1_1",
+      "c": [54],
+      "rel": "cites",
+      "o": "P-23.2.5.1:xref:0001",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p23.part001.xref.p23_2_6_1_2_1",
+      "c": [84],
+      "rel": "cites",
+      "o": "P-23.2.6.1.2:xref:0001",
+      "resolution": "exact"
+    }
+  ],
+  "additional_refs": []
+}

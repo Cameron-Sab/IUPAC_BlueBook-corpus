@@ -9,10 +9,12 @@ from typing import Any, Mapping, Sequence
 if __package__:
     from scripts.build_compact_semantic_tasks import load_json
     from scripts.render_compact_semantic_task import validate_task
+    from scripts.scaffold_semantic_authoring import scaffold_authoring
     from scripts.scaffold_semantic_delta import scaffold_delta
 else:
     from build_compact_semantic_tasks import load_json
     from render_compact_semantic_task import validate_task
+    from scaffold_semantic_authoring import scaffold_authoring
     from scaffold_semantic_delta import scaffold_delta
 
 
@@ -50,13 +52,23 @@ ROW_FIELDS = {
 
 def authoring_view_rows(task: dict[str, Any]) -> list[list[Any]]:
     validate_task(task)
-    scaffold = scaffold_delta(task)
+    delta_scaffold = scaffold_delta(task)
+    authoring_scaffold = scaffold_authoring(task)
+    ordered_clauses = [
+        unit["clause_id"]
+        for rule in task["rules"]
+        for unit in rule["source_units"]
+    ]
     prefilled_clauses = {
-        item["clause_id"] for item in scaffold["clause_dispositions"]
+        clause_id
+        for clause_id, decision in zip(
+            ordered_clauses, authoring_scaffold["clauses"]
+        )
+        if decision is None
     }
     prefilled_occurrences = {
         occurrence_id
-        for binding in scaffold["citation_bindings"]
+        for binding in delta_scaffold["citation_bindings"]
         for occurrence_id in binding["occurrence_ids"]
     }
     rows: list[list[Any]] = []
@@ -112,7 +124,8 @@ def authoring_view_rows(task: dict[str, Any]) -> list[list[Any]]:
 
 
 def authoring_view_bytes(task: dict[str, Any]) -> bytes:
-    scaffold = scaffold_delta(task)
+    delta_scaffold = scaffold_delta(task)
+    authoring_scaffold = scaffold_authoring(task)
     clause_count = sum(len(rule["source_units"]) for rule in task["rules"])
     citation_count = sum(len(rule["references"]) for rule in task["rules"])
     header = {
@@ -131,13 +144,12 @@ def authoring_view_bytes(task: dict[str, Any]) -> bytes:
                 ],
                 1,
             )
-            if clause_id
-            in {item["clause_id"] for item in scaffold["clause_dispositions"]}
+            if authoring_scaffold["clauses"][index - 1] is None
         ],
         "citation_count": citation_count,
         "mechanical_occurrence_ids": [
             occurrence_id
-            for binding in scaffold["citation_bindings"]
+            for binding in delta_scaffold["citation_bindings"]
             for occurrence_id in binding["occurrence_ids"]
         ],
         "row_fields": ROW_FIELDS,

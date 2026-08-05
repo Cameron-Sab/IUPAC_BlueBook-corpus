@@ -13,6 +13,10 @@ if __package__:
     from scripts import assemble_normalized_rule_corpus as assembler
     from scripts import validate_normalized_rule_chunks as chunk_validator
     from scripts.build_compact_semantic_tasks import canonical_json_bytes, load_json
+    from scripts.build_semantic_asset_scaffold import (
+        load_asset_scaffold,
+        task_asset_figures,
+    )
     from scripts.compile_semantic_delta import compile_delta, finalize_delta
     from scripts.render_compact_semantic_task import validate_task
     from scripts.scaffold_semantic_delta import scaffold_delta
@@ -20,6 +24,7 @@ else:
     import assemble_normalized_rule_corpus as assembler
     import validate_normalized_rule_chunks as chunk_validator
     from build_compact_semantic_tasks import canonical_json_bytes, load_json
+    from build_semantic_asset_scaffold import load_asset_scaffold, task_asset_figures
     from compile_semantic_delta import compile_delta, finalize_delta
     from render_compact_semantic_task import validate_task
     from scaffold_semantic_delta import scaffold_delta
@@ -740,6 +745,7 @@ def _dispositions(
     expander: Expander,
     semantic_payload: Mapping[str, Any],
     scaffold: Mapping[str, Any],
+    mechanical_compiled_clause_ids: set[str],
 ) -> list[dict[str, Any]]:
     clauses = authoring["clauses"]
     if len(clauses) != len(expander.ordered_clauses):
@@ -783,7 +789,26 @@ def _dispositions(
             result.append(prefilled[clause_id])
             continue
         if source is None:
-            raise AuthoringError(f"Unresolved clause decision remains: {clause_id}")
+            if clause_id not in mechanical_compiled_clause_ids:
+                raise AuthoringError(f"Unresolved clause decision remains: {clause_id}")
+            targets = targets_by_clause.get(clause_id, [])
+            if not targets or any(target["kind"] != "figure" for target in targets):
+                raise AuthoringError(
+                    f"Mechanical asset clause has invalid semantic target: {clause_id}"
+                )
+            result.append(
+                {
+                    "clause_id": clause_id,
+                    "role": "figure_asset",
+                    "force": "illustrative",
+                    "disposition": {"kind": "compiled", "targets": targets},
+                }
+            )
+            continue
+        if clause_id in mechanical_compiled_clause_ids:
+            raise AuthoringError(
+                f"Mechanically generated asset clause must remain null: {clause_id}"
+            )
         if not isinstance(source, list) or len(source) < 3:
             raise AuthoringError(f"Malformed clause decision for {clause_id}")
         role, force, disposition = source[:3]
@@ -947,6 +972,30 @@ def expand_authoring(
     expander = Expander(task)
     expander.register_ids(authoring)
     scaffold = scaffold_delta(dict(task))
+    mechanical_figures = (
+        task_asset_figures(task, load_asset_scaffold())
+        if authoring.get("mechanical_assets", False)
+        else []
+    )
+    mechanical_compiled_clause_ids = {
+        clause_id
+        for figure in mechanical_figures
+        for clause_id in figure["clause_ids"]
+    }
+    authored_figures = [expander.figure(figure) for figure in authoring["figures"]]
+    authored_figure_clauses = {
+        clause_id
+        for figure in authored_figures
+        for clause_id in figure["clause_ids"]
+    }
+    duplicate_asset_clauses = (
+        mechanical_compiled_clause_ids.intersection(authored_figure_clauses)
+    )
+    if duplicate_asset_clauses:
+        raise AuthoringError(
+            "Mechanically generated assets must not be reauthored: "
+            f"{sorted(duplicate_asset_clauses)}"
+        )
     semantic_payload: dict[str, Any] = {
         "symbol_declarations": expander.symbols(authoring["symbols"]),
         "semantic_units": [expander.unit(unit) for unit in authoring["units"]],
@@ -954,7 +1003,7 @@ def expand_authoring(
             expander.exception(exception) for exception in authoring["exceptions"]
         ],
         "tables": [expander.table(table) for table in authoring["tables"]],
-        "figures": [expander.figure(figure) for figure in authoring["figures"]],
+        "figures": [*mechanical_figures, *authored_figures],
         "examples": [expander.example(example) for example in authoring["examples"]],
         "correction_applications": [
             expander.correction(correction) for correction in authoring["corrections"]
@@ -966,7 +1015,11 @@ def expand_authoring(
     delta: dict[str, Any] = {
         **semantic_payload,
         "clause_dispositions": _dispositions(
-            authoring, expander, semantic_payload, scaffold
+            authoring,
+            expander,
+            semantic_payload,
+            scaffold,
+            mechanical_compiled_clause_ids,
         ),
         "citation_bindings": _citation_bindings(
             authoring["refs"], expander, task, scaffold

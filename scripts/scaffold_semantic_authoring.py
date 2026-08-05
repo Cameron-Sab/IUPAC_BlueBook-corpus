@@ -7,10 +7,15 @@ from pathlib import Path
 from typing import Any, Mapping, Sequence
 
 if __package__:
+    from scripts.build_semantic_asset_scaffold import (
+        load_asset_scaffold,
+        task_asset_figures,
+    )
     from scripts.build_compact_semantic_tasks import canonical_json_bytes, load_json
     from scripts.render_compact_semantic_task import validate_task
     from scripts.scaffold_semantic_delta import scaffold_delta
 else:
+    from build_semantic_asset_scaffold import load_asset_scaffold, task_asset_figures
     from build_compact_semantic_tasks import canonical_json_bytes, load_json
     from render_compact_semantic_task import validate_task
     from scaffold_semantic_delta import scaffold_delta
@@ -22,6 +27,10 @@ def scaffold_authoring(task: dict[str, Any]) -> dict[str, Any]:
     prefilled = {
         item["clause_id"] for item in scaffold["clause_dispositions"]
     }
+    asset_clauses = {
+        figure["clause_ids"][0]
+        for figure in task_asset_figures(task, load_asset_scaffold())
+    }
     ordered_clauses = [
         unit["clause_id"]
         for rule in task["rules"]
@@ -31,7 +40,11 @@ def scaffold_authoring(task: dict[str, Any]) -> dict[str, Any]:
         "format": "iupac-bluebook-semantic-authoring",
         "format_version": "1.0.0",
         "task_id": task["task_id"],
-        "clauses": [None if clause_id in prefilled else [] for clause_id in ordered_clauses],
+        "mechanical_assets": True,
+        "clauses": [
+            None if clause_id in prefilled or clause_id in asset_clauses else []
+            for clause_id in ordered_clauses
+        ],
         "symbols": [],
         "units": [],
         "exceptions": [],
