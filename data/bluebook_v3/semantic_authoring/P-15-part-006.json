@@ -1,0 +1,98 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    null, null, null, null, null, null, null,
+    ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"],
+    null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, null, null, null, ["example", "illustrative", "compile"], null,
+    ["example", "illustrative", "compile"], null, null, null, null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"],
+    null, null, ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["preference_criterion", "normative", "compile"], ["procedure_step", "normative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"],
+    null, null, null, ["example", "illustrative", "compile"], null, null, ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["condition", "normative", "compile"],
+    ["condition", "normative", "compile"], ["condition", "normative", "compile"], ["procedure_step", "normative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null,
+    ["example", "illustrative", "compile"], null, ["example", "illustrative", "compile"], null, null, ["note", "informative", "compile"], null, null, ["note", "informative", "compile"], ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], null, ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"], ["procedure_step", "normative", "compile"], ["example", "illustrative", "compile"], null, null, ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], null, ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["table_data", "informative", "compile"], ["procedure_step", "normative", "compile"], ["example", "illustrative", "compile"]
+  ],
+  "corrections": [],
+  "examples": [
+    {"id":"side_chain_naphthalene_propanol","c":[8],"input":{"caption":"naphthalene-2-propanol\n3-(naphthalen-2-yl)propan-1-ol (PIN)\n3-(2-naphthyl)propan-1-ol"},"ok":["3-(naphthalen-2-yl)propan-1-ol (PIN)","3-(2-naphthyl)propan-1-ol"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.2:clause:0009"]],"why":"The side-chain locant and Greek-letter attachment convention are illustrated for naphthalene-2-propanol."},
+    {"id":"side_chain_thiazole_acetic_acid","c":[10],"input":{"caption":"1,3-thiazole-2-acetic acid\n(1,3-thiazol-2-yl)acetic acid (PIN)"},"ok":["(1,3-thiazol-2-yl)acetic acid (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.2:clause:0011"]],"why":"The cyclic-component locant is placed before the cyclic component in the preferred name."},
+    {"id":"side_chain_beta_chloronaphthalene_propanol","c":[12],"input":{"caption":"\u03b2-chloronaphthalene-2-propanol\n2-chloro-3-(naphthalen-2-yl)propan-1-ol (PIN)"},"ok":["2-chloro-3-(naphthalen-2-yl)propan-1-ol (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.2:clause:0013"]],"why":"The Greek-letter side-chain locant locates the chloro substituent in the systematic name."},
+    {"id":"side_chain_isoindole_acetic_acid","c":[14],"input":{"caption":"5,6-dimethyl-2H-isoindole-2-acetic acid\n(5,6-dimethyl-2H-isoindol-2-yl)acetic acid (PIN)"},"ok":["(5,6-dimethyl-2H-isoindol-2-yl)acetic acid (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.2:clause:0015"]],"why":"Existing structural locants on the cyclic component determine placement of the attachment locant."},
+    {"id":"terminal_side_chain_methyl_naphthalene","c":[19],"input":{"caption":"\u03b3-methylnaphthalene-2-propanol\n3-(naphthalen-2-yl)butan-1-ol (PIN)\n3-(2-naphthyl)butan-1-ol"},"ok":["3-(naphthalen-2-yl)butan-1-ol (PIN)","3-(2-naphthyl)butan-1-ol"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.3:clause:0005"]],"why":"A terminal side-chain member is named as a substituent, while the side chain extends only to the cyclic component."},
+    {"id":"terminal_side_chain_propylbenzene","c":[21],"input":{"caption":"\u03b1-propylbenzenepropanol\n1-phenylhexan-3-ol (PIN)"},"ok":["1-phenylhexan-3-ol (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.3:clause:0007"]],"why":"The terminal propyl group is expressed as a phenyl substituent in the substitutive PIN."},
+    {"id":"multiple_side_chain_naphthalene","c":[26],"input":{"caption":"naphthalene-2,3-diacetic acid\n2,2\u2032-(naphthalene-2,3-diyl)diacetic acid (PIN)"},"ok":["2,2\u2032-(naphthalene-2,3-diyl)diacetic acid (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.4:clause:0005"]],"why":"Two side chains are represented by the conjunctive parent with both attachment locants."},
+    {"id":"multiple_side_chain_benzene","c":[28],"input":{"caption":"benzene-1,3,5-triacetic acid\n2,2\u2032,2\u2032\u2032-(benzene-1,3,5-triyl)triacetic acid (PIN)"},"ok":["2,2\u2032,2\u2032\u2032-(benzene-1,3,5-triyl)triacetic acid (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.4:clause:0007"]],"why":"Three identical side chains are expressed with the multiplicative suffix and complete locant set."},
+    {"id":"multiple_side_chain_pyridine","c":[30],"input":{"caption":"pyridine-2,3-di(decanoic acid)\n10,10\u2032-(pyridine-2,3-diyl)di(decanoic acid) (PIN)"},"ok":["10,10\u2032-(pyridine-2,3-diyl)di(decanoic acid) (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.4:clause:0009"]],"why":"The cyclic component and multiple side-chain attachment positions are retained in the conjunctive PIN."},
+    {"id":"side_chain_carboxylic_acid_seniority","c":[38],"input":{"caption":"2-(3-hydroxypropyl)quinoline-3-acetic acid\n[2-(3-hydroxypropyl)quinolin-3-yl]acetic acid (PIN)\n(a carboxylic acid is senior to an alcohol)"},"ok":["[2-(3-hydroxypropyl)quinolin-3-yl]acetic acid (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.5:clause:0008"]],"why":"The side chain containing the senior carboxylic acid is selected over the hydroxy-containing alternative."},
+    {"id":"side_chain_multiple_acids","c":[40],"input":{"caption":"1-(2-carboxyethyl)naphthalene-2,3-diacetic acid\n3-[2,3-bis(carboxymethyl)naphthalen-1-yl]propanoic acid (PIN)"},"ok":["3-[2,3-bis(carboxymethyl)naphthalen-1-yl]propanoic acid (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.5:clause:0010"]],"why":"The selected side chain is the one whose conjunctive name expresses the greater number of principal characteristic groups."},
+    {"id":"senior_ring_naphthalene","c":[44],"input":{"caption":"\u03b2-cyclohexylnaphthalene-2-ethanol\n(naphthalene is senior to cyclohexane)\n2-cyclohexyl-2-(naphthalen-2-yl)ethan-1-ol (PIN)"},"ok":["2-cyclohexyl-2-(naphthalen-2-yl)ethan-1-ol (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.1.6:clause:0004"]],"why":"The senior ring system is selected according to the ring and ring-system seniority order."},
+    {"id":"no_conjunctive_double_bond","c":[55],"input":{"caption":"cyclopentylideneacetic acid (PIN)"},"ok":["cyclopentylideneacetic acid (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.2:clause:0011"]],"why":"A double bond linking the acyclic component to the ring system excludes conjunctive nomenclature."},
+    {"id":"no_conjunctive_heteroatom","c":[57],"input":{"caption":"phenylcarbamic acid (PIN)"},"ok":["phenylcarbamic acid (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.2:clause:0013"]],"why":"A heteroatom in the side chain requires normal substitutive nomenclature."},
+    {"id":"no_conjunctive_identical_groups","c":[59],"input":{"caption":"2-cyclohexylhexanedioic acid (PIN)"},"ok":["2-cyclohexylhexanedioic acid (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.2:clause:0015"]],"why":"The side-chain characteristic-group arrangement falls under the stated limitation."},
+    {"id":"no_conjunctive_higher_priority_ring_group","c":[61],"input":{"caption":"2-(hydroxymethyl)benzene-1,4-diol (PIN)"},"ok":["2-(hydroxymethyl)benzene-1,4-diol (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.2:clause:0017"]],"why":"Higher-priority characteristic groups directly attached to the cyclic component exclude conjunctive nomenclature."},
+    {"id":"no_conjunctive_multiple_ring_groups","c":[63],"input":{"caption":"\u03b21,5-dihydroxybenzene-1,3-diethanol\n1-[3-hydroxy-5-(2-hydroxyethyl)phenyl]ethane-1,2-diol (PIN)"},"ok":["1-[3-hydroxy-5-(2-hydroxyethyl)phenyl]ethane-1,2-diol (PIN)"],"bad":[],"shows":[["figure","figure.asset.p_15.6.2:clause:0019"]],"why":"Two characteristic groups of the principal kind on the ring require normal substitutive nomenclature."},
+    {"id":"conjunctive_analysis_example_one","c":[103],"input":{"caption":"4-(2-hydroxyethyl)benzenepropanol\n3-[4-(2-hydroxyethyl)phenyl]propan-1-ol (PIN)"},"ok":["4-(2-hydroxyethyl)benzenepropanol","3-[4-(2-hydroxyethyl)phenyl]propan-1-ol (PIN)"],"bad":[],"shows":[["table","conjunctive_analysis_example_one"],["figure","figure.asset.p_15.6.3:clause:0023"]],"why":"The first analysis table constructs the conjunctive parent, prefix components, and resulting conjunctive and substitutive names."},
+    {"id":"conjunctive_analysis_example_two","c":[130],"input":{"caption":"3-formylbenzeneheptanal\n3-(7-oxoheptyl)benzaldehyde (PIN)"},"ok":["3-formylbenzeneheptanal","3-(7-oxoheptyl)benzaldehyde (PIN)"],"bad":[],"shows":[["table","conjunctive_analysis_example_two"],["figure","figure.asset.p_15.6.3:clause:0041"]],"why":"The second analysis table constructs the benzeneheptanal parent and the formyl prefix before the final names."}
+  ],
+  "exceptions": [],
+  "figures": [],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "mechanical_assets": true,
+  "refs": [],
+  "symbols": [],
+  "tables": [
+    {
+      "id":"conjunctive_analysis_example_one",
+      "c":[70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,88,89,90,91,92,93,94,95,96,97,98,99,100,101],
+      "label":"Example 1 analysis",
+      "title":"Analysis of the conjunctive name construction for benzenepropanol",
+      "cols":[["description","Description","string"],["structure","Structure","string"],["name","Name","string"]],
+      "rows":[
+        {"id":"principal_group","c":[70,71,72],"v":["Principal group","-OH","ol"]},
+        {"id":"principal_group_empty","c":[73,74,75],"v":[null,null,null]},
+        {"id":"parent_label","c":[76,77,78],"v":["Parent:",null,null]},
+        {"id":"ring","c":[79,80,81],"v":["ring:","C6H6","benzene"]},
+        {"id":"chain","c":[82,83,84],"v":["chain:","CH3-CH2-CH3","propane"]},
+        {"id":"conjunctive_parent","c":[85,86],"v":["Conjunctive parent including suffix:",null,{"figure_asset":"figure.asset.p_15.6.3:clause:0023"}]},
+        {"id":"conjunctive_parent_name","c":[88,89],"v":[null,"benzenepropanol",null]},
+        {"id":"prefix","c":[90,91,92],"v":["Prefix:","-CH2-CH2-OH",null]},
+        {"id":"prefix_components","c":[93,94,95],"v":["Prefix components:","-OH\n-CH2-CH3","hydroxy\nethyl"]},
+        {"id":"prefix_components_empty","c":[96,97,98],"v":[null,null,null]},
+        {"id":"prefix_name","c":[99,100,101],"v":["Prefix name",null,"2-hydroxyethyl"]}
+      ],
+      "contract":{"key":["description"],"result":["name"],"cardinality":"one_to_one","ordering":"source_order"}
+    },
+    {
+      "id":"conjunctive_analysis_example_two",
+      "c":[106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,124,125,126,127,128],
+      "label":"Example 2 analysis",
+      "title":"Analysis of the conjunctive name construction for benzeneheptanal",
+      "cols":[["description","Description","string"],["structure","Structure","string"],["name","Name","string"]],
+      "rows":[
+        {"id":"principal_group","c":[106,107,108],"v":["Principal group","-CHO","carbaldehyde or al"]},
+        {"id":"principal_group_empty","c":[109,110,111],"v":[null,null,null]},
+        {"id":"parent_label","c":[112,113,114],"v":["Parent:",null,null]},
+        {"id":"ring","c":[115,116,117],"v":[null,"ring","benzene"]},
+        {"id":"chain","c":[118,119,120],"v":[null,"chain","heptane"]},
+        {"id":"conjunctive_parent","c":[121,122],"v":["Conjunctive parent including suffix:",null,null]},
+        {"id":"conjunctive_parent_name","c":[124,125],"v":[null,"benzeneheptanal",null]},
+        {"id":"prefix","c":[126,127,128],"v":["Prefix:","-CHO","formyl"]}
+      ],
+      "contract":{"key":["description"],"result":["name"],"cardinality":"one_to_one","ordering":"source_order"}
+    }
+  ],
+  "task_id": "P-15-part-006",
+  "units": [
+    {"id":"side_chain_selection","k":"procedure","f":"preference","c":[33,34,35,36],"steps":[["emit","Choose the chain containing the principal characteristic group for conjunctive nomenclature; if more than one side chain contains that group, choose the conjunctive name expressing the greater number of principal characteristic groups. When necessary, select side chains by the seniority order for selecting the principal chain (see P-44.3)."]]},
+    {"id":"conjunctive_nomenclature_limitations","k":"constraint","f":"required","c":[47,48,49,50,51,52,53],"assert":["lit",true],"violation":[["emit","Do not use conjunctive nomenclature when a double bond links the acyclic component to the ring system; when a double bond or heteroatom is present in the side chain; when two identical characteristic groups are located on the side chain without violating the maximum-number condition; when higher-priority characteristic groups are directly attached to the cyclic component; or when two or more characteristic groups of the principal kind are located on the ring or ring system. Use normal substitutive nomenclature in these cases."]]},
+    {"id":"pin_note","k":"procedure","f":"required","c":[66],"steps":[["emit","Note: The PIN is the substitutive name."]]},
+    {"id":"analysis_heading","k":"procedure","f":"required","c":[69],"steps":[["emit","Analysis:"]]},
+    {"id":"analysis_example_one_construction","k":"procedure","f":"required","c":[102],"steps":[["emit","Together with other rules, this analysis leads to the conjunctive name:"]]},
+    {"id":"analysis_example_two_construction","k":"procedure","f":"required","c":[129],"steps":[["emit","Together with other rules, this analysis leads to the conjunctive name:"]]}
+  ]
+}

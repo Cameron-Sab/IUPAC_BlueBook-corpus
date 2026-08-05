@@ -1,0 +1,5969 @@
+{
+  "assigned_rule_ids": [
+    "P-15.6.1.2",
+    "P-15.6.1.3",
+    "P-15.6.1.4",
+    "P-15.6.1.5",
+    "P-15.6.1.6",
+    "P-15.6.2",
+    "P-15.6.3"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 130,
+    "compiled_clause_count": 108,
+    "correction_application_count": 0,
+    "example_count": 19,
+    "exception_count": 0,
+    "figure_count": 21,
+    "nonoperative_clause_count": 22,
+    "record_count": 7,
+    "reference_count": 9,
+    "semantic_unit_count": 6,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 0,
+    "table_count": 2
+  },
+  "chunk_sha256": "0FC8D5717CBBE69A6B504BB724D635E6637AED9F7AE4C7B8B7144B0C6EDE4D00",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-15.6.1.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0005",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0006",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0007",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.side_chain_naphthalene_propanol",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.2:clause:0009",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.side_chain_thiazole_acetic_acid",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.2:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.side_chain_beta_chloronaphthalene_propanol",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.2:clause:0013",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.side_chain_isoindole_acetic_acid",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.2:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.2:clause:0015",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.3:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.3:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.3:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.terminal_side_chain_methyl_naphthalene",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.3:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.3:clause:0005",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.3:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.terminal_side_chain_propylbenzene",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.3:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.3:clause:0007",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.4:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.4:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.4:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.4:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.multiple_side_chain_naphthalene",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.4:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.4:clause:0005",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.4:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.multiple_side_chain_benzene",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.4:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.4:clause:0007",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.4:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.multiple_side_chain_pyridine",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.4:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.4:clause:0009",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.5:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.5:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.side_chain_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.side_chain_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-15.6.1.5:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.side_chain_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.side_chain_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-15.6.1.5:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.side_chain_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.side_chain_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-15.6.1.5:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.side_chain_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.side_chain_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.side_chain_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-15.6.1.5:clause:0006",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.5:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.side_chain_carboxylic_acid_seniority",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.5:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.5:clause:0008",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.5:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.side_chain_multiple_acids",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.5:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.5:clause:0010",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.1.6:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.1.6:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.6:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.senior_ring_naphthalene",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.1.6:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.1.6:clause:0004",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_nomenclature_limitations",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_nomenclature_limitations.violation.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.violation.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_nomenclature_limitations",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_nomenclature_limitations.violation.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.violation.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_nomenclature_limitations",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_nomenclature_limitations.violation.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.violation.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_nomenclature_limitations",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_nomenclature_limitations.violation.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.violation.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_nomenclature_limitations",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_nomenclature_limitations.violation.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.violation.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_nomenclature_limitations",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_nomenclature_limitations.violation.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.violation.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.conjunctive_nomenclature_limitations",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.conjunctive_nomenclature_limitations.violation.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.conjunctive_nomenclature_limitations.violation.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0009",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.no_conjunctive_double_bond",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.2:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.no_conjunctive_heteroatom",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.2:clause:0013",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.no_conjunctive_identical_groups",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.2:clause:0015",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.no_conjunctive_higher_priority_ring_group",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0017",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.2:clause:0017",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0018",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.no_conjunctive_multiple_ring_groups",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.2:clause:0019",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.2:clause:0019",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.pin_note",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.pin_note.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.pin_note.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.pin_note.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "note"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.3:clause:0004",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.analysis_heading",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.analysis_heading.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.analysis_heading.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.analysis_heading.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "note"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.principal_group",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.principal_group",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.principal_group",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.principal_group_empty",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.principal_group_empty",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.principal_group_empty",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.parent_label",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.parent_label",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.parent_label",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.ring",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.ring.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.ring.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.ring.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.ring",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.ring.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.ring.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.ring.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0017",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.ring",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.ring.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.ring.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.ring.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0018",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.chain",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.chain.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.chain.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.chain.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0019",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.chain",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.chain.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.chain.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.chain.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0020",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.chain",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.chain.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.chain.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.chain.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0021",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.conjunctive_parent",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0022",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.conjunctive_parent",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0023",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.3:clause:0023",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0024",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0025",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0026",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0027",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0028",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0029",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix_components",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0030",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix_components",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0031",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix_components",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0032",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix_components_empty",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0033",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix_components_empty",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0034",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix_components_empty",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0035",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix_name",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0036",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix_name",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0037",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_one",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_one.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_one.prefix_name",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0038",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.analysis_example_one_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.analysis_example_one_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.analysis_example_one_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.analysis_example_one_construction.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0039",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.conjunctive_analysis_example_one",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0040",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0041",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.3:clause:0041",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0042",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.principal_group",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0043",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.principal_group",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0044",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.principal_group",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0045",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.principal_group_empty",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0046",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.principal_group_empty",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0047",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.principal_group_empty",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0048",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.parent_label",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0049",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.parent_label",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0050",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.parent_label",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0051",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.ring",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.ring.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.ring.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.ring.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0052",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.ring",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.ring.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.ring.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.ring.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0053",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.ring",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.ring.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.ring.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.ring.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0054",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.chain",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.chain.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.chain.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.chain.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0055",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.chain",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.chain.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.chain.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.chain.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0056",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.chain",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.chain.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.chain.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.chain.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0057",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.conjunctive_parent",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0058",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.conjunctive_parent",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0059",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_15.6.3:clause:0059",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0060",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0061",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0062",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.prefix",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0063",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.prefix",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0064",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p15.part006.conjunctive_analysis_example_two",
+            "kind": "table"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.description",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p15.part006.conjunctive_analysis_example_two.name",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p15.part006.conjunctive_analysis_example_two.prefix",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.description",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.structure",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.name",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0065",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p15.part006.analysis_example_two_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p15.part006.analysis_example_two_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p15.part006.analysis_example_two_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p15.part006.analysis_example_two_construction.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-15.6.3:clause:0066",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p15.part006.conjunctive_analysis_example_two",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "3-(naphthalen-2-yl)propan-1-ol (PIN)",
+        "3-(2-naphthyl)propan-1-ol"
+      ],
+      "clause_ids": [
+        "P-15.6.1.2:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.2:clause:0009",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.side_chain_naphthalene_propanol",
+      "explanation": "The side-chain locant and Greek-letter attachment convention are illustrated for naphthalene-2-propanol.",
+      "input": {
+        "caption": "naphthalene-2-propanol\n3-(naphthalen-2-yl)propan-1-ol (PIN)\n3-(2-naphthyl)propan-1-ol"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(1,3-thiazol-2-yl)acetic acid (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.1.2:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.2:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.side_chain_thiazole_acetic_acid",
+      "explanation": "The cyclic-component locant is placed before the cyclic component in the preferred name.",
+      "input": {
+        "caption": "1,3-thiazole-2-acetic acid\n(1,3-thiazol-2-yl)acetic acid (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2-chloro-3-(naphthalen-2-yl)propan-1-ol (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.1.2:clause:0012"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.2:clause:0013",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.side_chain_beta_chloronaphthalene_propanol",
+      "explanation": "The Greek-letter side-chain locant locates the chloro substituent in the systematic name.",
+      "input": {
+        "caption": "β-chloronaphthalene-2-propanol\n2-chloro-3-(naphthalen-2-yl)propan-1-ol (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(5,6-dimethyl-2H-isoindol-2-yl)acetic acid (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.1.2:clause:0014"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.2:clause:0015",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.side_chain_isoindole_acetic_acid",
+      "explanation": "Existing structural locants on the cyclic component determine placement of the attachment locant.",
+      "input": {
+        "caption": "5,6-dimethyl-2H-isoindole-2-acetic acid\n(5,6-dimethyl-2H-isoindol-2-yl)acetic acid (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "3-(naphthalen-2-yl)butan-1-ol (PIN)",
+        "3-(2-naphthyl)butan-1-ol"
+      ],
+      "clause_ids": [
+        "P-15.6.1.3:clause:0004"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.3:clause:0005",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.terminal_side_chain_methyl_naphthalene",
+      "explanation": "A terminal side-chain member is named as a substituent, while the side chain extends only to the cyclic component.",
+      "input": {
+        "caption": "γ-methylnaphthalene-2-propanol\n3-(naphthalen-2-yl)butan-1-ol (PIN)\n3-(2-naphthyl)butan-1-ol"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-phenylhexan-3-ol (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.1.3:clause:0006"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.3:clause:0007",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.terminal_side_chain_propylbenzene",
+      "explanation": "The terminal propyl group is expressed as a phenyl substituent in the substitutive PIN.",
+      "input": {
+        "caption": "α-propylbenzenepropanol\n1-phenylhexan-3-ol (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2,2′-(naphthalene-2,3-diyl)diacetic acid (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.1.4:clause:0004"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.4:clause:0005",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.multiple_side_chain_naphthalene",
+      "explanation": "Two side chains are represented by the conjunctive parent with both attachment locants.",
+      "input": {
+        "caption": "naphthalene-2,3-diacetic acid\n2,2′-(naphthalene-2,3-diyl)diacetic acid (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2,2′,2′′-(benzene-1,3,5-triyl)triacetic acid (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.1.4:clause:0006"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.4:clause:0007",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.multiple_side_chain_benzene",
+      "explanation": "Three identical side chains are expressed with the multiplicative suffix and complete locant set.",
+      "input": {
+        "caption": "benzene-1,3,5-triacetic acid\n2,2′,2′′-(benzene-1,3,5-triyl)triacetic acid (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "10,10′-(pyridine-2,3-diyl)di(decanoic acid) (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.1.4:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.4:clause:0009",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.multiple_side_chain_pyridine",
+      "explanation": "The cyclic component and multiple side-chain attachment positions are retained in the conjunctive PIN.",
+      "input": {
+        "caption": "pyridine-2,3-di(decanoic acid)\n10,10′-(pyridine-2,3-diyl)di(decanoic acid) (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "[2-(3-hydroxypropyl)quinolin-3-yl]acetic acid (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.1.5:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.5:clause:0008",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.side_chain_carboxylic_acid_seniority",
+      "explanation": "The side chain containing the senior carboxylic acid is selected over the hydroxy-containing alternative.",
+      "input": {
+        "caption": "2-(3-hydroxypropyl)quinoline-3-acetic acid\n[2-(3-hydroxypropyl)quinolin-3-yl]acetic acid (PIN)\n(a carboxylic acid is senior to an alcohol)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "3-[2,3-bis(carboxymethyl)naphthalen-1-yl]propanoic acid (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.1.5:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.5:clause:0010",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.side_chain_multiple_acids",
+      "explanation": "The selected side chain is the one whose conjunctive name expresses the greater number of principal characteristic groups.",
+      "input": {
+        "caption": "1-(2-carboxyethyl)naphthalene-2,3-diacetic acid\n3-[2,3-bis(carboxymethyl)naphthalen-1-yl]propanoic acid (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2-cyclohexyl-2-(naphthalen-2-yl)ethan-1-ol (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.1.6:clause:0003"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.1.6:clause:0004",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.senior_ring_naphthalene",
+      "explanation": "The senior ring system is selected according to the ring and ring-system seniority order.",
+      "input": {
+        "caption": "β-cyclohexylnaphthalene-2-ethanol\n(naphthalene is senior to cyclohexane)\n2-cyclohexyl-2-(naphthalen-2-yl)ethan-1-ol (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "cyclopentylideneacetic acid (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.2:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.2:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.no_conjunctive_double_bond",
+      "explanation": "A double bond linking the acyclic component to the ring system excludes conjunctive nomenclature.",
+      "input": {
+        "caption": "cyclopentylideneacetic acid (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "phenylcarbamic acid (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.2:clause:0012"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.2:clause:0013",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.no_conjunctive_heteroatom",
+      "explanation": "A heteroatom in the side chain requires normal substitutive nomenclature.",
+      "input": {
+        "caption": "phenylcarbamic acid (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2-cyclohexylhexanedioic acid (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.2:clause:0014"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.2:clause:0015",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.no_conjunctive_identical_groups",
+      "explanation": "The side-chain characteristic-group arrangement falls under the stated limitation.",
+      "input": {
+        "caption": "2-cyclohexylhexanedioic acid (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2-(hydroxymethyl)benzene-1,4-diol (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.2:clause:0016"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.2:clause:0017",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.no_conjunctive_higher_priority_ring_group",
+      "explanation": "Higher-priority characteristic groups directly attached to the cyclic component exclude conjunctive nomenclature.",
+      "input": {
+        "caption": "2-(hydroxymethyl)benzene-1,4-diol (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-[3-hydroxy-5-(2-hydroxyethyl)phenyl]ethane-1,2-diol (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.2:clause:0018"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_15.6.2:clause:0019",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.no_conjunctive_multiple_ring_groups",
+      "explanation": "Two characteristic groups of the principal kind on the ring require normal substitutive nomenclature.",
+      "input": {
+        "caption": "β1,5-dihydroxybenzene-1,3-diethanol\n1-[3-hydroxy-5-(2-hydroxyethyl)phenyl]ethane-1,2-diol (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "4-(2-hydroxyethyl)benzenepropanol",
+        "3-[4-(2-hydroxyethyl)phenyl]propan-1-ol (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.3:clause:0039"
+      ],
+      "demonstrates": [
+        {
+          "id": "table.p15.part006.conjunctive_analysis_example_one",
+          "kind": "table"
+        },
+        {
+          "id": "figure.asset.p_15.6.3:clause:0023",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.conjunctive_analysis_example_one",
+      "explanation": "The first analysis table constructs the conjunctive parent, prefix components, and resulting conjunctive and substitutive names.",
+      "input": {
+        "caption": "4-(2-hydroxyethyl)benzenepropanol\n3-[4-(2-hydroxyethyl)phenyl]propan-1-ol (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "3-formylbenzeneheptanal",
+        "3-(7-oxoheptyl)benzaldehyde (PIN)"
+      ],
+      "clause_ids": [
+        "P-15.6.3:clause:0066"
+      ],
+      "demonstrates": [
+        {
+          "id": "table.p15.part006.conjunctive_analysis_example_two",
+          "kind": "table"
+        },
+        {
+          "id": "figure.asset.p_15.6.3:clause:0041",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p15.part006.conjunctive_analysis_example_two",
+      "explanation": "The second analysis table constructs the benzeneheptanal parent and the formyl prefix before the final names.",
+      "input": {
+        "caption": "3-formylbenzeneheptanal\n3-(7-oxoheptyl)benzaldehyde (PIN)"
+      },
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [],
+  "figures": [
+    {
+      "clause_ids": [
+        "P-15.6.1.2:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.2:clause:0009",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.2:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.2:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506d.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.2:clause:0013"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.2:clause:0013",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506e.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.2:clause:0015"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.2:clause:0015",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506f.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.3:clause:0005"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.3:clause:0005",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506g.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.3:clause:0007"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.3:clause:0007",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506h.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.4:clause:0005"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.4:clause:0005",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506i.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.4:clause:0007"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.4:clause:0007",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506j.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.4:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.4:clause:0009",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506k.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.5:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.5:clause:0008",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506l.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.5:clause:0010"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.5:clause:0010",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506m.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.6:clause:0004"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.1.6:clause:0004",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506n.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.2:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.2:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506o.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.2:clause:0013"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.2:clause:0013",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506p.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.2:clause:0015"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.2:clause:0015",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506q.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.2:clause:0017"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.2:clause:0017",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506r.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.2:clause:0019"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.2:clause:0019",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506s.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0004"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.3:clause:0004",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506t.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0023"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.3:clause:0023",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506u.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0041"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.3:clause:0041",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506v.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0059"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_15.6.3:clause:0059",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P1gif/P1506w.gif"
+      ]
+    }
+  ],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-15-part-006",
+  "packet_sha256": "2131D9D0871D0B19B9050B7E61ADE9EA5BA3567AB77FB0FA07FC2981D77FE9FB",
+  "records": [
+    {
+      "chapter": "P-1",
+      "clause_ids": [
+        "P-15.6.1.2:clause:0001",
+        "P-15.6.1.2:clause:0002",
+        "P-15.6.1.2:clause:0003",
+        "P-15.6.1.2:clause:0004",
+        "P-15.6.1.2:clause:0005",
+        "P-15.6.1.2:clause:0006",
+        "P-15.6.1.2:clause:0007",
+        "P-15.6.1.2:clause:0008",
+        "P-15.6.1.2:clause:0009",
+        "P-15.6.1.2:clause:0010",
+        "P-15.6.1.2:clause:0011",
+        "P-15.6.1.2:clause:0012",
+        "P-15.6.1.2:clause:0013",
+        "P-15.6.1.2:clause:0014",
+        "P-15.6.1.2:clause:0015"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p15.part006.side_chain_naphthalene_propanol",
+        "example.p15.part006.side_chain_thiazole_acetic_acid",
+        "example.p15.part006.side_chain_beta_chloronaphthalene_propanol",
+        "example.p15.part006.side_chain_isoindole_acetic_acid"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_15.6.1.2:clause:0009",
+        "figure.asset.p_15.6.1.2:clause:0011",
+        "figure.asset.p_15.6.1.2:clause:0013",
+        "figure.asset.p_15.6.1.2:clause:0015"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-15.6.1.2",
+      "reference_ids": [
+        "reference.p_15_6_1_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-15.6.1.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-1",
+      "clause_ids": [
+        "P-15.6.1.3:clause:0001",
+        "P-15.6.1.3:clause:0002",
+        "P-15.6.1.3:clause:0003",
+        "P-15.6.1.3:clause:0004",
+        "P-15.6.1.3:clause:0005",
+        "P-15.6.1.3:clause:0006",
+        "P-15.6.1.3:clause:0007"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p15.part006.terminal_side_chain_methyl_naphthalene",
+        "example.p15.part006.terminal_side_chain_propylbenzene"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_15.6.1.3:clause:0005",
+        "figure.asset.p_15.6.1.3:clause:0007"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-15.6.1.3",
+      "reference_ids": [
+        "reference.p_15_6_1_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-15.6.1.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-1",
+      "clause_ids": [
+        "P-15.6.1.4:clause:0001",
+        "P-15.6.1.4:clause:0002",
+        "P-15.6.1.4:clause:0003",
+        "P-15.6.1.4:clause:0004",
+        "P-15.6.1.4:clause:0005",
+        "P-15.6.1.4:clause:0006",
+        "P-15.6.1.4:clause:0007",
+        "P-15.6.1.4:clause:0008",
+        "P-15.6.1.4:clause:0009"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p15.part006.multiple_side_chain_naphthalene",
+        "example.p15.part006.multiple_side_chain_benzene",
+        "example.p15.part006.multiple_side_chain_pyridine"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_15.6.1.4:clause:0005",
+        "figure.asset.p_15.6.1.4:clause:0007",
+        "figure.asset.p_15.6.1.4:clause:0009"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-15.6.1.4",
+      "reference_ids": [
+        "reference.p_15_6_1_4.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-15.6.1.4",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-1",
+      "clause_ids": [
+        "P-15.6.1.5:clause:0001",
+        "P-15.6.1.5:clause:0002",
+        "P-15.6.1.5:clause:0003",
+        "P-15.6.1.5:clause:0004",
+        "P-15.6.1.5:clause:0005",
+        "P-15.6.1.5:clause:0006",
+        "P-15.6.1.5:clause:0007",
+        "P-15.6.1.5:clause:0008",
+        "P-15.6.1.5:clause:0009",
+        "P-15.6.1.5:clause:0010"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p15.part006.side_chain_carboxylic_acid_seniority",
+        "example.p15.part006.side_chain_multiple_acids"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_15.6.1.5:clause:0008",
+        "figure.asset.p_15.6.1.5:clause:0010"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-15.6.1.5",
+      "reference_ids": [
+        "reference.p_15_6_1_5.hierarchy_parent",
+        "reference.P-15.6.1.5:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p15.part006.side_chain_selection"
+      ],
+      "source_rule_id": "P-15.6.1.5",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-1",
+      "clause_ids": [
+        "P-15.6.1.6:clause:0001",
+        "P-15.6.1.6:clause:0002",
+        "P-15.6.1.6:clause:0003",
+        "P-15.6.1.6:clause:0004"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p15.part006.senior_ring_naphthalene"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_15.6.1.6:clause:0004"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-15.6.1.6",
+      "reference_ids": [
+        "reference.p_15_6_1_6.hierarchy_parent",
+        "reference.P-15.6.1.6:xref:0001"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-15.6.1.6",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-1",
+      "clause_ids": [
+        "P-15.6.2:clause:0001",
+        "P-15.6.2:clause:0002",
+        "P-15.6.2:clause:0003",
+        "P-15.6.2:clause:0004",
+        "P-15.6.2:clause:0005",
+        "P-15.6.2:clause:0006",
+        "P-15.6.2:clause:0007",
+        "P-15.6.2:clause:0008",
+        "P-15.6.2:clause:0009",
+        "P-15.6.2:clause:0010",
+        "P-15.6.2:clause:0011",
+        "P-15.6.2:clause:0012",
+        "P-15.6.2:clause:0013",
+        "P-15.6.2:clause:0014",
+        "P-15.6.2:clause:0015",
+        "P-15.6.2:clause:0016",
+        "P-15.6.2:clause:0017",
+        "P-15.6.2:clause:0018",
+        "P-15.6.2:clause:0019"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p15.part006.no_conjunctive_double_bond",
+        "example.p15.part006.no_conjunctive_heteroatom",
+        "example.p15.part006.no_conjunctive_identical_groups",
+        "example.p15.part006.no_conjunctive_higher_priority_ring_group",
+        "example.p15.part006.no_conjunctive_multiple_ring_groups"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_15.6.2:clause:0011",
+        "figure.asset.p_15.6.2:clause:0013",
+        "figure.asset.p_15.6.2:clause:0015",
+        "figure.asset.p_15.6.2:clause:0017",
+        "figure.asset.p_15.6.2:clause:0019"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-15.6.2",
+      "reference_ids": [
+        "reference.p_15_6_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p15.part006.conjunctive_nomenclature_limitations"
+      ],
+      "source_rule_id": "P-15.6.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-1",
+      "clause_ids": [
+        "P-15.6.3:clause:0001",
+        "P-15.6.3:clause:0002",
+        "P-15.6.3:clause:0003",
+        "P-15.6.3:clause:0004",
+        "P-15.6.3:clause:0005",
+        "P-15.6.3:clause:0006",
+        "P-15.6.3:clause:0007",
+        "P-15.6.3:clause:0008",
+        "P-15.6.3:clause:0009",
+        "P-15.6.3:clause:0010",
+        "P-15.6.3:clause:0011",
+        "P-15.6.3:clause:0012",
+        "P-15.6.3:clause:0013",
+        "P-15.6.3:clause:0014",
+        "P-15.6.3:clause:0015",
+        "P-15.6.3:clause:0016",
+        "P-15.6.3:clause:0017",
+        "P-15.6.3:clause:0018",
+        "P-15.6.3:clause:0019",
+        "P-15.6.3:clause:0020",
+        "P-15.6.3:clause:0021",
+        "P-15.6.3:clause:0022",
+        "P-15.6.3:clause:0023",
+        "P-15.6.3:clause:0024",
+        "P-15.6.3:clause:0025",
+        "P-15.6.3:clause:0026",
+        "P-15.6.3:clause:0027",
+        "P-15.6.3:clause:0028",
+        "P-15.6.3:clause:0029",
+        "P-15.6.3:clause:0030",
+        "P-15.6.3:clause:0031",
+        "P-15.6.3:clause:0032",
+        "P-15.6.3:clause:0033",
+        "P-15.6.3:clause:0034",
+        "P-15.6.3:clause:0035",
+        "P-15.6.3:clause:0036",
+        "P-15.6.3:clause:0037",
+        "P-15.6.3:clause:0038",
+        "P-15.6.3:clause:0039",
+        "P-15.6.3:clause:0040",
+        "P-15.6.3:clause:0041",
+        "P-15.6.3:clause:0042",
+        "P-15.6.3:clause:0043",
+        "P-15.6.3:clause:0044",
+        "P-15.6.3:clause:0045",
+        "P-15.6.3:clause:0046",
+        "P-15.6.3:clause:0047",
+        "P-15.6.3:clause:0048",
+        "P-15.6.3:clause:0049",
+        "P-15.6.3:clause:0050",
+        "P-15.6.3:clause:0051",
+        "P-15.6.3:clause:0052",
+        "P-15.6.3:clause:0053",
+        "P-15.6.3:clause:0054",
+        "P-15.6.3:clause:0055",
+        "P-15.6.3:clause:0056",
+        "P-15.6.3:clause:0057",
+        "P-15.6.3:clause:0058",
+        "P-15.6.3:clause:0059",
+        "P-15.6.3:clause:0060",
+        "P-15.6.3:clause:0061",
+        "P-15.6.3:clause:0062",
+        "P-15.6.3:clause:0063",
+        "P-15.6.3:clause:0064",
+        "P-15.6.3:clause:0065",
+        "P-15.6.3:clause:0066"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p15.part006.conjunctive_analysis_example_one",
+        "example.p15.part006.conjunctive_analysis_example_two"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_15.6.3:clause:0004",
+        "figure.asset.p_15.6.3:clause:0023",
+        "figure.asset.p_15.6.3:clause:0041",
+        "figure.asset.p_15.6.3:clause:0059"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-15.6.3",
+      "reference_ids": [
+        "reference.p_15_6_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p15.part006.pin_note",
+        "unit.p15.part006.analysis_heading",
+        "unit.p15.part006.analysis_example_one_construction",
+        "unit.p15.part006.analysis_example_two_construction"
+      ],
+      "source_rule_id": "P-15.6.3",
+      "table_ids": [
+        "table.p15.part006.conjunctive_analysis_example_one",
+        "table.p15.part006.conjunctive_analysis_example_two"
+      ]
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-15.6.1.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_15_6_1_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-15.6.1.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-15.6.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_15_6_1_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-15.6.1.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-15.6.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.4:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_15_6_1_4.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-15.6.1.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-15.6.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.5:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_15_6_1_5.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-15.6.1.5",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-15.6.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.6:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_15_6_1_6.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-15.6.1.6",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-15.6.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-15.6.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_15_6_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-15.6.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-15.6",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_15_6_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-15.6.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-15.6",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.5:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-15.6.1.5:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-15.6.1.5",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-15.6.1.5:xref:0001"
+      ],
+      "target": {
+        "id": "P-44.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-15.6.1.6:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-15.6.1.6:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-15.6.1.6",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-15.6.1.6:xref:0001"
+      ],
+      "target": {
+        "id": "P-44.2",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-15.6.1.5:clause:0002",
+        "P-15.6.1.5:clause:0003",
+        "P-15.6.1.5:clause:0004",
+        "P-15.6.1.5:clause:0005"
+      ],
+      "force": "preference",
+      "inputs": [],
+      "kind": "procedure",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-15.6.1.5:clause:0002",
+            "P-15.6.1.5:clause:0003",
+            "P-15.6.1.5:clause:0004",
+            "P-15.6.1.5:clause:0005"
+          ],
+          "expression_id": "expr.p15.part006.side_chain_selection.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-15.6.1.5:clause:0002",
+            "P-15.6.1.5:clause:0003",
+            "P-15.6.1.5:clause:0004",
+            "P-15.6.1.5:clause:0005"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p15.part006.side_chain_selection.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-15.6.1.5:clause:0002",
+              "P-15.6.1.5:clause:0003",
+              "P-15.6.1.5:clause:0004",
+              "P-15.6.1.5:clause:0005"
+            ],
+            "expression_id": "expr.p15.part006.side_chain_selection.steps.1.value",
+            "op": "literal",
+            "value": "Choose the chain containing the principal characteristic group for conjunctive nomenclature; if more than one side chain contains that group, choose the conjunctive name expressing the greater number of principal characteristic groups. When necessary, select side chains by the seniority order for selecting the principal chain (see P-44.3)."
+          }
+        }
+      ],
+      "unit_id": "unit.p15.part006.side_chain_selection"
+    },
+    {
+      "assertion": {
+        "clause_ids": [
+          "P-15.6.2:clause:0002",
+          "P-15.6.2:clause:0003",
+          "P-15.6.2:clause:0004",
+          "P-15.6.2:clause:0005",
+          "P-15.6.2:clause:0006",
+          "P-15.6.2:clause:0007",
+          "P-15.6.2:clause:0008"
+        ],
+        "expression_id": "expr.p15.part006.conjunctive_nomenclature_limitations.assertion",
+        "op": "literal",
+        "value": true
+      },
+      "clause_ids": [
+        "P-15.6.2:clause:0002",
+        "P-15.6.2:clause:0003",
+        "P-15.6.2:clause:0004",
+        "P-15.6.2:clause:0005",
+        "P-15.6.2:clause:0006",
+        "P-15.6.2:clause:0007",
+        "P-15.6.2:clause:0008"
+      ],
+      "force": "required",
+      "inputs": [],
+      "kind": "constraint",
+      "on_violation": [
+        {
+          "clause_ids": [
+            "P-15.6.2:clause:0002",
+            "P-15.6.2:clause:0003",
+            "P-15.6.2:clause:0004",
+            "P-15.6.2:clause:0005",
+            "P-15.6.2:clause:0006",
+            "P-15.6.2:clause:0007",
+            "P-15.6.2:clause:0008"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p15.part006.conjunctive_nomenclature_limitations.violation.1",
+          "value": {
+            "clause_ids": [
+              "P-15.6.2:clause:0002",
+              "P-15.6.2:clause:0003",
+              "P-15.6.2:clause:0004",
+              "P-15.6.2:clause:0005",
+              "P-15.6.2:clause:0006",
+              "P-15.6.2:clause:0007",
+              "P-15.6.2:clause:0008"
+            ],
+            "expression_id": "expr.p15.part006.conjunctive_nomenclature_limitations.violation.1.value",
+            "op": "literal",
+            "value": "Do not use conjunctive nomenclature when a double bond links the acyclic component to the ring system; when a double bond or heteroatom is present in the side chain; when two identical characteristic groups are located on the side chain without violating the maximum-number condition; when higher-priority characteristic groups are directly attached to the cyclic component; or when two or more characteristic groups of the principal kind are located on the ring or ring system. Use normal substitutive nomenclature in these cases."
+          }
+        }
+      ],
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-15.6.2:clause:0002",
+            "P-15.6.2:clause:0003",
+            "P-15.6.2:clause:0004",
+            "P-15.6.2:clause:0005",
+            "P-15.6.2:clause:0006",
+            "P-15.6.2:clause:0007",
+            "P-15.6.2:clause:0008"
+          ],
+          "expression_id": "expr.p15.part006.conjunctive_nomenclature_limitations.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "unit_id": "unit.p15.part006.conjunctive_nomenclature_limitations"
+    },
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [],
+      "kind": "procedure",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-15.6.3:clause:0002"
+          ],
+          "expression_id": "expr.p15.part006.pin_note.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-15.6.3:clause:0002"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p15.part006.pin_note.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-15.6.3:clause:0002"
+            ],
+            "expression_id": "expr.p15.part006.pin_note.steps.1.value",
+            "op": "literal",
+            "value": "Note: The PIN is the substitutive name."
+          }
+        }
+      ],
+      "unit_id": "unit.p15.part006.pin_note"
+    },
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0005"
+      ],
+      "force": "required",
+      "inputs": [],
+      "kind": "procedure",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-15.6.3:clause:0005"
+          ],
+          "expression_id": "expr.p15.part006.analysis_heading.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-15.6.3:clause:0005"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p15.part006.analysis_heading.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-15.6.3:clause:0005"
+            ],
+            "expression_id": "expr.p15.part006.analysis_heading.steps.1.value",
+            "op": "literal",
+            "value": "Analysis:"
+          }
+        }
+      ],
+      "unit_id": "unit.p15.part006.analysis_heading"
+    },
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0038"
+      ],
+      "force": "required",
+      "inputs": [],
+      "kind": "procedure",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-15.6.3:clause:0038"
+          ],
+          "expression_id": "expr.p15.part006.analysis_example_one_construction.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-15.6.3:clause:0038"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p15.part006.analysis_example_one_construction.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-15.6.3:clause:0038"
+            ],
+            "expression_id": "expr.p15.part006.analysis_example_one_construction.steps.1.value",
+            "op": "literal",
+            "value": "Together with other rules, this analysis leads to the conjunctive name:"
+          }
+        }
+      ],
+      "unit_id": "unit.p15.part006.analysis_example_one_construction"
+    },
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0065"
+      ],
+      "force": "required",
+      "inputs": [],
+      "kind": "procedure",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-15.6.3:clause:0065"
+          ],
+          "expression_id": "expr.p15.part006.analysis_example_two_construction.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-15.6.3:clause:0065"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p15.part006.analysis_example_two_construction.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-15.6.3:clause:0065"
+            ],
+            "expression_id": "expr.p15.part006.analysis_example_two_construction.steps.1.value",
+            "op": "literal",
+            "value": "Together with other rules, this analysis leads to the conjunctive name:"
+          }
+        }
+      ],
+      "unit_id": "unit.p15.part006.analysis_example_two_construction"
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [],
+  "tables": [
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0006",
+        "P-15.6.3:clause:0007",
+        "P-15.6.3:clause:0008",
+        "P-15.6.3:clause:0009",
+        "P-15.6.3:clause:0010",
+        "P-15.6.3:clause:0011",
+        "P-15.6.3:clause:0012",
+        "P-15.6.3:clause:0013",
+        "P-15.6.3:clause:0014",
+        "P-15.6.3:clause:0015",
+        "P-15.6.3:clause:0016",
+        "P-15.6.3:clause:0017",
+        "P-15.6.3:clause:0018",
+        "P-15.6.3:clause:0019",
+        "P-15.6.3:clause:0020",
+        "P-15.6.3:clause:0021",
+        "P-15.6.3:clause:0022",
+        "P-15.6.3:clause:0024",
+        "P-15.6.3:clause:0025",
+        "P-15.6.3:clause:0026",
+        "P-15.6.3:clause:0027",
+        "P-15.6.3:clause:0028",
+        "P-15.6.3:clause:0029",
+        "P-15.6.3:clause:0030",
+        "P-15.6.3:clause:0031",
+        "P-15.6.3:clause:0032",
+        "P-15.6.3:clause:0033",
+        "P-15.6.3:clause:0034",
+        "P-15.6.3:clause:0035",
+        "P-15.6.3:clause:0036",
+        "P-15.6.3:clause:0037"
+      ],
+      "columns": [
+        {
+          "clause_ids": [
+            "P-15.6.3:clause:0006",
+            "P-15.6.3:clause:0007",
+            "P-15.6.3:clause:0008",
+            "P-15.6.3:clause:0009",
+            "P-15.6.3:clause:0010",
+            "P-15.6.3:clause:0011",
+            "P-15.6.3:clause:0012",
+            "P-15.6.3:clause:0013",
+            "P-15.6.3:clause:0014",
+            "P-15.6.3:clause:0015",
+            "P-15.6.3:clause:0016",
+            "P-15.6.3:clause:0017",
+            "P-15.6.3:clause:0018",
+            "P-15.6.3:clause:0019",
+            "P-15.6.3:clause:0020",
+            "P-15.6.3:clause:0021",
+            "P-15.6.3:clause:0022",
+            "P-15.6.3:clause:0024",
+            "P-15.6.3:clause:0025",
+            "P-15.6.3:clause:0026",
+            "P-15.6.3:clause:0027",
+            "P-15.6.3:clause:0028",
+            "P-15.6.3:clause:0029",
+            "P-15.6.3:clause:0030",
+            "P-15.6.3:clause:0031",
+            "P-15.6.3:clause:0032",
+            "P-15.6.3:clause:0033",
+            "P-15.6.3:clause:0034",
+            "P-15.6.3:clause:0035",
+            "P-15.6.3:clause:0036",
+            "P-15.6.3:clause:0037"
+          ],
+          "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+          "label": "Description",
+          "ordinal": 1,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-15.6.3:clause:0006",
+            "P-15.6.3:clause:0007",
+            "P-15.6.3:clause:0008",
+            "P-15.6.3:clause:0009",
+            "P-15.6.3:clause:0010",
+            "P-15.6.3:clause:0011",
+            "P-15.6.3:clause:0012",
+            "P-15.6.3:clause:0013",
+            "P-15.6.3:clause:0014",
+            "P-15.6.3:clause:0015",
+            "P-15.6.3:clause:0016",
+            "P-15.6.3:clause:0017",
+            "P-15.6.3:clause:0018",
+            "P-15.6.3:clause:0019",
+            "P-15.6.3:clause:0020",
+            "P-15.6.3:clause:0021",
+            "P-15.6.3:clause:0022",
+            "P-15.6.3:clause:0024",
+            "P-15.6.3:clause:0025",
+            "P-15.6.3:clause:0026",
+            "P-15.6.3:clause:0027",
+            "P-15.6.3:clause:0028",
+            "P-15.6.3:clause:0029",
+            "P-15.6.3:clause:0030",
+            "P-15.6.3:clause:0031",
+            "P-15.6.3:clause:0032",
+            "P-15.6.3:clause:0033",
+            "P-15.6.3:clause:0034",
+            "P-15.6.3:clause:0035",
+            "P-15.6.3:clause:0036",
+            "P-15.6.3:clause:0037"
+          ],
+          "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+          "label": "Structure",
+          "ordinal": 2,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-15.6.3:clause:0006",
+            "P-15.6.3:clause:0007",
+            "P-15.6.3:clause:0008",
+            "P-15.6.3:clause:0009",
+            "P-15.6.3:clause:0010",
+            "P-15.6.3:clause:0011",
+            "P-15.6.3:clause:0012",
+            "P-15.6.3:clause:0013",
+            "P-15.6.3:clause:0014",
+            "P-15.6.3:clause:0015",
+            "P-15.6.3:clause:0016",
+            "P-15.6.3:clause:0017",
+            "P-15.6.3:clause:0018",
+            "P-15.6.3:clause:0019",
+            "P-15.6.3:clause:0020",
+            "P-15.6.3:clause:0021",
+            "P-15.6.3:clause:0022",
+            "P-15.6.3:clause:0024",
+            "P-15.6.3:clause:0025",
+            "P-15.6.3:clause:0026",
+            "P-15.6.3:clause:0027",
+            "P-15.6.3:clause:0028",
+            "P-15.6.3:clause:0029",
+            "P-15.6.3:clause:0030",
+            "P-15.6.3:clause:0031",
+            "P-15.6.3:clause:0032",
+            "P-15.6.3:clause:0033",
+            "P-15.6.3:clause:0034",
+            "P-15.6.3:clause:0035",
+            "P-15.6.3:clause:0036",
+            "P-15.6.3:clause:0037"
+          ],
+          "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+          "label": "Name",
+          "ordinal": 3,
+          "value_type": "string"
+        }
+      ],
+      "contract": {
+        "cardinality": "one_to_one",
+        "key_column_ids": [
+          "column.p15.part006.conjunctive_analysis_example_one.description"
+        ],
+        "ordering": "source_order",
+        "result_column_ids": [
+          "column.p15.part006.conjunctive_analysis_example_one.name"
+        ]
+      },
+      "footnotes": [],
+      "label": "Example 1 analysis",
+      "rows": [
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0006",
+                "P-15.6.3:clause:0007",
+                "P-15.6.3:clause:0008"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": "Principal group"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0006",
+                "P-15.6.3:clause:0007",
+                "P-15.6.3:clause:0008"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": "-OH"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0006",
+                "P-15.6.3:clause:0007",
+                "P-15.6.3:clause:0008"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": "ol"
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0006",
+            "P-15.6.3:clause:0007",
+            "P-15.6.3:clause:0008"
+          ],
+          "ordinal": 1,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.principal_group"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0009",
+                "P-15.6.3:clause:0010",
+                "P-15.6.3:clause:0011"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0009",
+                "P-15.6.3:clause:0010",
+                "P-15.6.3:clause:0011"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.principal_group_empty.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0009",
+                "P-15.6.3:clause:0010",
+                "P-15.6.3:clause:0011"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0009",
+            "P-15.6.3:clause:0010",
+            "P-15.6.3:clause:0011"
+          ],
+          "ordinal": 2,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.principal_group_empty"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0012",
+                "P-15.6.3:clause:0013",
+                "P-15.6.3:clause:0014"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": "Parent:"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0012",
+                "P-15.6.3:clause:0013",
+                "P-15.6.3:clause:0014"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.parent_label.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0012",
+                "P-15.6.3:clause:0013",
+                "P-15.6.3:clause:0014"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0012",
+            "P-15.6.3:clause:0013",
+            "P-15.6.3:clause:0014"
+          ],
+          "ordinal": 3,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.parent_label"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.ring.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0015",
+                "P-15.6.3:clause:0016",
+                "P-15.6.3:clause:0017"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": "ring:"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.ring.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0015",
+                "P-15.6.3:clause:0016",
+                "P-15.6.3:clause:0017"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": "C6H6"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.ring.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0015",
+                "P-15.6.3:clause:0016",
+                "P-15.6.3:clause:0017"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": "benzene"
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0015",
+            "P-15.6.3:clause:0016",
+            "P-15.6.3:clause:0017"
+          ],
+          "ordinal": 4,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.ring"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.chain.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0018",
+                "P-15.6.3:clause:0019",
+                "P-15.6.3:clause:0020"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": "chain:"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.chain.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0018",
+                "P-15.6.3:clause:0019",
+                "P-15.6.3:clause:0020"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": "CH3-CH2-CH3"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.chain.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0018",
+                "P-15.6.3:clause:0019",
+                "P-15.6.3:clause:0020"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": "propane"
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0018",
+            "P-15.6.3:clause:0019",
+            "P-15.6.3:clause:0020"
+          ],
+          "ordinal": 5,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.chain"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0021",
+                "P-15.6.3:clause:0022"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": "Conjunctive parent including suffix:"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0021",
+                "P-15.6.3:clause:0022"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0021",
+                "P-15.6.3:clause:0022"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": {
+                "figure_asset": "figure.asset.p_15.6.3:clause:0023"
+              }
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0021",
+            "P-15.6.3:clause:0022"
+          ],
+          "ordinal": 6,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.conjunctive_parent"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0024",
+                "P-15.6.3:clause:0025"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0024",
+                "P-15.6.3:clause:0025"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": "benzenepropanol"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0024",
+                "P-15.6.3:clause:0025"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0024",
+            "P-15.6.3:clause:0025"
+          ],
+          "ordinal": 7,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.conjunctive_parent_name"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0026",
+                "P-15.6.3:clause:0027",
+                "P-15.6.3:clause:0028"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": "Prefix:"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0026",
+                "P-15.6.3:clause:0027",
+                "P-15.6.3:clause:0028"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": "-CH2-CH2-OH"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0026",
+                "P-15.6.3:clause:0027",
+                "P-15.6.3:clause:0028"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0026",
+            "P-15.6.3:clause:0027",
+            "P-15.6.3:clause:0028"
+          ],
+          "ordinal": 8,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.prefix"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0029",
+                "P-15.6.3:clause:0030",
+                "P-15.6.3:clause:0031"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": "Prefix components:"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0029",
+                "P-15.6.3:clause:0030",
+                "P-15.6.3:clause:0031"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": "-OH\n-CH2-CH3"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0029",
+                "P-15.6.3:clause:0030",
+                "P-15.6.3:clause:0031"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": "hydroxy\nethyl"
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0029",
+            "P-15.6.3:clause:0030",
+            "P-15.6.3:clause:0031"
+          ],
+          "ordinal": 9,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.prefix_components"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0032",
+                "P-15.6.3:clause:0033",
+                "P-15.6.3:clause:0034"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0032",
+                "P-15.6.3:clause:0033",
+                "P-15.6.3:clause:0034"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_components_empty.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0032",
+                "P-15.6.3:clause:0033",
+                "P-15.6.3:clause:0034"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0032",
+            "P-15.6.3:clause:0033",
+            "P-15.6.3:clause:0034"
+          ],
+          "ordinal": 10,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.prefix_components_empty"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0035",
+                "P-15.6.3:clause:0036",
+                "P-15.6.3:clause:0037"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.description",
+              "value": "Prefix name"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0035",
+                "P-15.6.3:clause:0036",
+                "P-15.6.3:clause:0037"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.structure",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_one.prefix_name.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0035",
+                "P-15.6.3:clause:0036",
+                "P-15.6.3:clause:0037"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_one.name",
+              "value": "2-hydroxyethyl"
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0035",
+            "P-15.6.3:clause:0036",
+            "P-15.6.3:clause:0037"
+          ],
+          "ordinal": 11,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_one.prefix_name"
+        }
+      ],
+      "table_id": "table.p15.part006.conjunctive_analysis_example_one",
+      "title": "Analysis of the conjunctive name construction for benzenepropanol"
+    },
+    {
+      "clause_ids": [
+        "P-15.6.3:clause:0042",
+        "P-15.6.3:clause:0043",
+        "P-15.6.3:clause:0044",
+        "P-15.6.3:clause:0045",
+        "P-15.6.3:clause:0046",
+        "P-15.6.3:clause:0047",
+        "P-15.6.3:clause:0048",
+        "P-15.6.3:clause:0049",
+        "P-15.6.3:clause:0050",
+        "P-15.6.3:clause:0051",
+        "P-15.6.3:clause:0052",
+        "P-15.6.3:clause:0053",
+        "P-15.6.3:clause:0054",
+        "P-15.6.3:clause:0055",
+        "P-15.6.3:clause:0056",
+        "P-15.6.3:clause:0057",
+        "P-15.6.3:clause:0058",
+        "P-15.6.3:clause:0060",
+        "P-15.6.3:clause:0061",
+        "P-15.6.3:clause:0062",
+        "P-15.6.3:clause:0063",
+        "P-15.6.3:clause:0064"
+      ],
+      "columns": [
+        {
+          "clause_ids": [
+            "P-15.6.3:clause:0042",
+            "P-15.6.3:clause:0043",
+            "P-15.6.3:clause:0044",
+            "P-15.6.3:clause:0045",
+            "P-15.6.3:clause:0046",
+            "P-15.6.3:clause:0047",
+            "P-15.6.3:clause:0048",
+            "P-15.6.3:clause:0049",
+            "P-15.6.3:clause:0050",
+            "P-15.6.3:clause:0051",
+            "P-15.6.3:clause:0052",
+            "P-15.6.3:clause:0053",
+            "P-15.6.3:clause:0054",
+            "P-15.6.3:clause:0055",
+            "P-15.6.3:clause:0056",
+            "P-15.6.3:clause:0057",
+            "P-15.6.3:clause:0058",
+            "P-15.6.3:clause:0060",
+            "P-15.6.3:clause:0061",
+            "P-15.6.3:clause:0062",
+            "P-15.6.3:clause:0063",
+            "P-15.6.3:clause:0064"
+          ],
+          "column_id": "column.p15.part006.conjunctive_analysis_example_two.description",
+          "label": "Description",
+          "ordinal": 1,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-15.6.3:clause:0042",
+            "P-15.6.3:clause:0043",
+            "P-15.6.3:clause:0044",
+            "P-15.6.3:clause:0045",
+            "P-15.6.3:clause:0046",
+            "P-15.6.3:clause:0047",
+            "P-15.6.3:clause:0048",
+            "P-15.6.3:clause:0049",
+            "P-15.6.3:clause:0050",
+            "P-15.6.3:clause:0051",
+            "P-15.6.3:clause:0052",
+            "P-15.6.3:clause:0053",
+            "P-15.6.3:clause:0054",
+            "P-15.6.3:clause:0055",
+            "P-15.6.3:clause:0056",
+            "P-15.6.3:clause:0057",
+            "P-15.6.3:clause:0058",
+            "P-15.6.3:clause:0060",
+            "P-15.6.3:clause:0061",
+            "P-15.6.3:clause:0062",
+            "P-15.6.3:clause:0063",
+            "P-15.6.3:clause:0064"
+          ],
+          "column_id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+          "label": "Structure",
+          "ordinal": 2,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-15.6.3:clause:0042",
+            "P-15.6.3:clause:0043",
+            "P-15.6.3:clause:0044",
+            "P-15.6.3:clause:0045",
+            "P-15.6.3:clause:0046",
+            "P-15.6.3:clause:0047",
+            "P-15.6.3:clause:0048",
+            "P-15.6.3:clause:0049",
+            "P-15.6.3:clause:0050",
+            "P-15.6.3:clause:0051",
+            "P-15.6.3:clause:0052",
+            "P-15.6.3:clause:0053",
+            "P-15.6.3:clause:0054",
+            "P-15.6.3:clause:0055",
+            "P-15.6.3:clause:0056",
+            "P-15.6.3:clause:0057",
+            "P-15.6.3:clause:0058",
+            "P-15.6.3:clause:0060",
+            "P-15.6.3:clause:0061",
+            "P-15.6.3:clause:0062",
+            "P-15.6.3:clause:0063",
+            "P-15.6.3:clause:0064"
+          ],
+          "column_id": "column.p15.part006.conjunctive_analysis_example_two.name",
+          "label": "Name",
+          "ordinal": 3,
+          "value_type": "string"
+        }
+      ],
+      "contract": {
+        "cardinality": "one_to_one",
+        "key_column_ids": [
+          "column.p15.part006.conjunctive_analysis_example_two.description"
+        ],
+        "ordering": "source_order",
+        "result_column_ids": [
+          "column.p15.part006.conjunctive_analysis_example_two.name"
+        ]
+      },
+      "footnotes": [],
+      "label": "Example 2 analysis",
+      "rows": [
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0042",
+                "P-15.6.3:clause:0043",
+                "P-15.6.3:clause:0044"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.description",
+              "value": "Principal group"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0042",
+                "P-15.6.3:clause:0043",
+                "P-15.6.3:clause:0044"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+              "value": "-CHO"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0042",
+                "P-15.6.3:clause:0043",
+                "P-15.6.3:clause:0044"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.name",
+              "value": "carbaldehyde or al"
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0042",
+            "P-15.6.3:clause:0043",
+            "P-15.6.3:clause:0044"
+          ],
+          "ordinal": 1,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_two.principal_group"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0045",
+                "P-15.6.3:clause:0046",
+                "P-15.6.3:clause:0047"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.description",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0045",
+                "P-15.6.3:clause:0046",
+                "P-15.6.3:clause:0047"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.principal_group_empty.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0045",
+                "P-15.6.3:clause:0046",
+                "P-15.6.3:clause:0047"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.name",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0045",
+            "P-15.6.3:clause:0046",
+            "P-15.6.3:clause:0047"
+          ],
+          "ordinal": 2,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_two.principal_group_empty"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0048",
+                "P-15.6.3:clause:0049",
+                "P-15.6.3:clause:0050"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.description",
+              "value": "Parent:"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0048",
+                "P-15.6.3:clause:0049",
+                "P-15.6.3:clause:0050"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.parent_label.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0048",
+                "P-15.6.3:clause:0049",
+                "P-15.6.3:clause:0050"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.name",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0048",
+            "P-15.6.3:clause:0049",
+            "P-15.6.3:clause:0050"
+          ],
+          "ordinal": 3,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_two.parent_label"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.ring.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0051",
+                "P-15.6.3:clause:0052",
+                "P-15.6.3:clause:0053"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.description",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.ring.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0051",
+                "P-15.6.3:clause:0052",
+                "P-15.6.3:clause:0053"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+              "value": "ring"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.ring.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0051",
+                "P-15.6.3:clause:0052",
+                "P-15.6.3:clause:0053"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.name",
+              "value": "benzene"
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0051",
+            "P-15.6.3:clause:0052",
+            "P-15.6.3:clause:0053"
+          ],
+          "ordinal": 4,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_two.ring"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.chain.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0054",
+                "P-15.6.3:clause:0055",
+                "P-15.6.3:clause:0056"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.description",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.chain.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0054",
+                "P-15.6.3:clause:0055",
+                "P-15.6.3:clause:0056"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+              "value": "chain"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.chain.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0054",
+                "P-15.6.3:clause:0055",
+                "P-15.6.3:clause:0056"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.name",
+              "value": "heptane"
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0054",
+            "P-15.6.3:clause:0055",
+            "P-15.6.3:clause:0056"
+          ],
+          "ordinal": 5,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_two.chain"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0057",
+                "P-15.6.3:clause:0058"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.description",
+              "value": "Conjunctive parent including suffix:"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0057",
+                "P-15.6.3:clause:0058"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0057",
+                "P-15.6.3:clause:0058"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.name",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0057",
+            "P-15.6.3:clause:0058"
+          ],
+          "ordinal": 6,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_two.conjunctive_parent"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0060",
+                "P-15.6.3:clause:0061"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.description",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0060",
+                "P-15.6.3:clause:0061"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+              "value": "benzeneheptanal"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0060",
+                "P-15.6.3:clause:0061"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.name",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0060",
+            "P-15.6.3:clause:0061"
+          ],
+          "ordinal": 7,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_two.conjunctive_parent_name"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.description",
+              "clause_ids": [
+                "P-15.6.3:clause:0062",
+                "P-15.6.3:clause:0063",
+                "P-15.6.3:clause:0064"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.description",
+              "value": "Prefix:"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.structure",
+              "clause_ids": [
+                "P-15.6.3:clause:0062",
+                "P-15.6.3:clause:0063",
+                "P-15.6.3:clause:0064"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.structure",
+              "value": "-CHO"
+            },
+            {
+              "cell_id": "cell.p15.part006.conjunctive_analysis_example_two.prefix.name",
+              "clause_ids": [
+                "P-15.6.3:clause:0062",
+                "P-15.6.3:clause:0063",
+                "P-15.6.3:clause:0064"
+              ],
+              "column_id": "column.p15.part006.conjunctive_analysis_example_two.name",
+              "value": "formyl"
+            }
+          ],
+          "clause_ids": [
+            "P-15.6.3:clause:0062",
+            "P-15.6.3:clause:0063",
+            "P-15.6.3:clause:0064"
+          ],
+          "ordinal": 8,
+          "rank_group": null,
+          "row_id": "row.p15.part006.conjunctive_analysis_example_two.prefix"
+        }
+      ],
+      "table_id": "table.p15.part006.conjunctive_analysis_example_two",
+      "title": "Analysis of the conjunctive name construction for benzeneheptanal"
+    }
+  ]
+}
