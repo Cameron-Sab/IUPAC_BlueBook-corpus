@@ -3,43 +3,43 @@
   "format_version": "1.0.0",
   "task_id": "P-101-part-001",
   "clauses": [
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["note", "informative", "compile"],
     null,
     null,
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["definition", "informative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["condition", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["preference_criterion", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
     ["scope", "normative", "compile"],
     ["exception", "normative", "compile"],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    ["exception", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["exception", "normative", "compile"],
-    null,
-    null,
-    null,
-    null,
+    ["procedure_step", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["procedure_step", "normative", "compile"],
+    ["condition", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
@@ -50,10 +50,10 @@
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["prohibition", "normative", "compile"],
     ["prohibition", "normative", "compile"],
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["procedure_step", "normative", "compile"],
     ["definition", "normative", "compile"],
     ["definition", "normative", "compile"],
@@ -75,7 +75,7 @@
     ["table_data", "illustrative", "compile"],
     ["table_data", "illustrative", "compile"],
     ["table_data", "illustrative", "compile"],
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["condition", "normative", "compile"],
     ["condition", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
@@ -84,7 +84,7 @@
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null
+    ["heading", "informative", "skip", "heading_or_title"]
   ],
   "symbols": [],
   "units": [
@@ -107,6 +107,54 @@
           ],
           "role": "source_basis"
         }
+      ]
+    },
+    {
+      "id": "biological_source_trivial_name_basis",
+      "k": "procedure",
+      "f": "preference",
+      "c": [5, 6],
+      "in": [["compound", "NaturalSourceCompound"]],
+      "out": [["trivial_name", "BiologicallyBasedTrivialName"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.1.1 When a compound is isolated from a natural source and a trivial name is required, the name should be based, whenever possible, on the family, genus, or species name of the biological material from which it has been isolated.",
+            "condition": "a compound is isolated from a natural source and a trivial name is required",
+            "preferred_name_basis": ["family name", "genus name", "species name"],
+            "source_material": "the biological material from which the compound was isolated",
+            "availability": "whenever possible"
+          }
+        ],
+        [
+          "emit",
+          {
+            "source_text": "If appropriate, the class or order might also be used for the name of a compound that occurs in a number of related families.",
+            "condition": "the compound occurs in a number of related families and use is appropriate",
+            "permitted_name_basis": ["class name", "order name"]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "unknown_structure_trivial_name_ending",
+      "k": "procedure",
+      "f": "required",
+      "c": [7],
+      "in": [["trivial_name", "UnknownStructureTrivialName"]],
+      "out": [["ending", "UnknownStructureNameEnding"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.1.2 The ending ‘une’ or, for euphonic reasons, ‘iune’ is used to indicate that the trivial name it terminates describes a compound of unknown structure.",
+            "condition": "the trivial name describes a compound of unknown structure",
+            "default_ending": "une",
+            "euphonic_alternative": "iune",
+            "meaning": "unknown structure"
+          }
+        ]
       ]
     },
     {
@@ -206,6 +254,77 @@
       ]
     },
     {
+      "id": "fundamental_parent_basic_skeleton_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [17],
+      "in": [["compound_class", "NaturalProductStructuralClass"]],
+      "out": [["parent_structure", "FundamentalParentStructure"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.2.1.1 A fundamental parent structure should reflect the basic skeleton (including nonterminal heteroatoms and hetero groups) that is common to most compounds of the class.",
+            "criterion": "reflect the basic skeleton common to most compounds of the class",
+            "includes": ["nonterminal heteroatoms", "nonterminal hetero groups"]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "fundamental_parent_derivability_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [18],
+      "in": [["compound_class", "NaturalProductStructuralClass"]],
+      "out": [["parent_structure", "FundamentalParentStructure"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.2.1.2 Fundamental parent structures should be chosen so that as many natural products as possible can be derived from each by well defined operations and rules of the nomenclature of organic compounds.",
+            "criterion": "maximize the natural products derivable from each parent structure",
+            "derivation_method": "well defined operations and rules of organic nomenclature"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "fundamental_parent_common_configuration_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [19],
+      "in": [["compound_class", "NaturalProductStructuralClass"]],
+      "out": [["parent_structure", "ConfigurationBearingFundamentalParentStructure"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.2.1.3 A fundamental parent structure should include as much configuration as possible that is common to the relevant class of natural products.",
+            "criterion": "include as much common configuration as possible",
+            "scope": "the relevant class of natural products"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "stereoparent_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [20],
+      "in": [["parent_structure", "ConfigurationBearingFundamentalParentStructure"]],
+      "out": [["class", "Stereoparent"]],
+      "term": "stereoparent",
+      "entity": "ConfigurationBearingFundamentalParentStructure",
+      "value": [
+        "lit",
+        {
+          "source_text": "Such parent structures are called ‘stereoparents’.",
+          "refers_to": "fundamental parent structures containing common configuration"
+        }
+      ]
+    },
+    {
       "id": "new_parent_structure_rules_scope",
       "k": "procedure",
       "f": "required",
@@ -243,13 +362,114 @@
       ]
     },
     {
+      "id": "characteristic_group_ring_inclusion",
+      "k": "procedure",
+      "f": "preference",
+      "c": [24],
+      "in": [["parent_structure", "FundamentalParentStructure"]],
+      "out": [["included_feature", "CharacteristicGroupRing"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.2.2.1 A fundamental parent structure should exceptionally include rings that are part of a characteristic group, such as a lactone or cyclic acetal.",
+            "exceptional_inclusion": "rings that are part of a characteristic group",
+            "examples": ["lactone", "cyclic acetal"]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "terminal_heteroatom_characteristic_group_exclusion",
+      "k": "procedure",
+      "f": "prohibited",
+      "c": [25],
+      "in": [["parent_structure", "FundamentalParentStructure"]],
+      "out": [["excluded_feature", "TerminalHeteroatomOrCharacteristicGroup"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.2.2.2 A fundamental parent structure should not contain terminal heteroatoms or characteristic groups (see P-101.2.1.1).",
+            "excluded": ["terminal heteroatoms", "terminal characteristic groups"],
+            "basis_rule": "P-101.2.1.1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "common_acyclic_hydrocarbon_group_inclusion",
+      "k": "procedure",
+      "f": "preference",
+      "c": [26],
+      "in": [["parent_structure", "FundamentalParentStructure"]],
+      "out": [["included_feature", "CommonAcyclicHydrocarbonGroup"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.2.2.3 A fundamental parent structure should contain acyclic hydrocarbon groups that occur in most of the compounds in the natural product class.",
+            "include": "acyclic hydrocarbon groups",
+            "frequency_condition": "occur in most compounds in the natural product class"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "parent_structure_saturation_level_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [27],
+      "in": [["parent_structure", "FundamentalParentStructure"]],
+      "out": [["saturation_level", "RepresentativeSaturationLevel"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.2.2.4 A fundamental parent structure should be as nearly fully saturated or fully unsaturated in terms of maximum number of noncumulative double bonds (mancude rings), while still representing the level of saturation (or unsaturation) of as many related compounds as possible.",
+            "objective": "choose a nearly fully saturated or fully unsaturated parent structure",
+            "unsaturation_measure": "maximum number of noncumulative double bonds in mancude rings",
+            "constraint": "represent the saturation or unsaturation level of as many related compounds as possible"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "semisystematic_parent_name_derivation",
+      "k": "procedure",
+      "f": "preference",
+      "c": [28],
+      "in": [["parent_structure", "FundamentalParentStructure"]],
+      "out": [["name", "SemisystematicParentStructureName"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.2.2.5 A semisystematic name for a fundamental parent structure should be derived, as far as possible, from a trivial name formed in accordance with P-101.",
+            "derivation_basis": "a trivial name formed in accordance with P-101",
+            "availability": "as far as possible",
+            "basis_rule": "P-101"
+          }
+        ]
+      ]
+    },
+    {
       "id": "parent_structure_ending_assignment",
       "k": "procedure",
       "f": "required",
-      "c": [30, 31, 32],
+      "c": [29, 30, 31, 32],
       "in": [["parent_structure", "StereoparentHydride"]],
       "out": [["ending", "ParentStructureEnding"]],
       "steps": [
+        [
+          "emit",
+          {
+            "order": 0,
+            "source_text": "The endings to be used in place of ‘une’ or ‘iune’ must be assigned as follows:",
+            "operation": "replace the unknown-structure ending une or iune",
+            "assignment": "select the applicable ending from the following ordered cases"
+          }
+        ],
         [
           "emit",
           {
@@ -299,13 +519,60 @@
       ]
     },
     {
+      "id": "indicated_hydrogen_parent_isomer_description",
+      "k": "procedure",
+      "f": "required",
+      "c": [34],
+      "in": [["isomer", "FundamentalParentStructureIsomer"]],
+      "out": [["description", "IndicatedHydrogenDescription"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.2.2.6 Indicated hydrogen, as defined in P-14.7, P-25.7 and P-58.2, is used to describe isomers of fundamental parent structures.",
+            "method": "indicated hydrogen",
+            "purpose": "describe isomers of fundamental parent structures",
+            "definition_rules": ["P-14.7", "P-25.7", "P-58.2"]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "established_parent_structure_numbering_pattern",
+      "k": "procedure",
+      "f": "required",
+      "c": [36],
+      "in": [["parent_structure", "FundamentalParentStructureWithEstablishedNumbering"]],
+      "out": [["numbering", "EstablishedNaturalProductNumbering"]],
+      "steps": [
+        [
+          "emit",
+          {
+            "source_text": "P-101.2.3.1 A numbering pattern established among a group of structurally related natural products is used for numbering the skeletal atoms of the fundamental parent structure, providing that all skeletal atoms have been included in the numbering system.",
+            "condition": "a numbering pattern is established among structurally related natural products",
+            "requirement": "all skeletal atoms are included in the numbering system",
+            "action": "use the established pattern to number the fundamental parent structure"
+          }
+        ]
+      ]
+    },
+    {
       "id": "parent_structure_numbering_guidelines",
       "k": "procedure",
       "f": "required",
-      "c": [38, 39, 40, 41, 42, 43, 44, 45, 46, 47],
+      "c": [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47],
       "in": [["parent_structure", "UnnumberedFundamentalParentStructure"]],
       "out": [["numbered_parent_structure", "NumberedParentStructure"]],
       "steps": [
+        [
+          "emit",
+          {
+            "order": 0,
+            "source_text": "P-101.2.3.2 If no numbering pattern has been become established among the members of a group of structurally related natural products, the fundamental parent structure is numbered according to the following guidelines:",
+            "condition": "no numbering pattern is established among structurally related natural products",
+            "action": "apply the following numbering guidelines"
+          }
+        ],
         [
           "emit",
           {

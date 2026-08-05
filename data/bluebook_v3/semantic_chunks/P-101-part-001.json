@@ -27,20 +27,20 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 82,
-    "compiled_clause_count": 52,
+    "compiled_clause_count": 68,
     "correction_application_count": 0,
     "example_count": 3,
     "exception_count": 2,
     "figure_count": 3,
-    "nonoperative_clause_count": 30,
+    "nonoperative_clause_count": 14,
     "record_count": 24,
     "reference_count": 55,
-    "semantic_unit_count": 24,
+    "semantic_unit_count": 37,
     "superseded_clause_count": 0,
     "symbol_declaration_count": 0,
     "table_count": 1
   },
-  "chunk_sha256": "D9D31DB8279C25263BCCA7FE46FBCA23F0CFC1D23135AC243108EF1AE32D62AE",
+  "chunk_sha256": "07A0377EBC256427BD51D5FA0C4DC3F62DA9E4440AC28A7C9F3874714679B4A6",
   "clause_dispositions": [
     {
       "clause_id": "P-101:clause:0001",
@@ -94,29 +94,96 @@
     {
       "clause_id": "P-101.1.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.biological_source_trivial_name_basis",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.biological_source_trivial_name_basis.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.biological_source_trivial_name_basis.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.biological_source_trivial_name_basis.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.biological_source_trivial_name_basis.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.biological_source_trivial_name_basis.steps.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-101.1.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.biological_source_trivial_name_basis",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.biological_source_trivial_name_basis.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.biological_source_trivial_name_basis.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.biological_source_trivial_name_basis.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.biological_source_trivial_name_basis.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.biological_source_trivial_name_basis.steps.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-101.1.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.unknown_structure_trivial_name_ending",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.unknown_structure_trivial_name_ending.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.unknown_structure_trivial_name_ending.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.unknown_structure_trivial_name_ending.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-101.2:clause:0001",
@@ -283,38 +350,102 @@
     {
       "clause_id": "P-101.2.1.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.fundamental_parent_basic_skeleton_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.fundamental_parent_basic_skeleton_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.fundamental_parent_basic_skeleton_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.fundamental_parent_basic_skeleton_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-101.2.1.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.fundamental_parent_derivability_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.fundamental_parent_derivability_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.fundamental_parent_derivability_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.fundamental_parent_derivability_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-101.2.1.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.fundamental_parent_common_configuration_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.fundamental_parent_common_configuration_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.fundamental_parent_common_configuration_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.fundamental_parent_common_configuration_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-101.2.1.3:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.stereoparent_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.stereoparent_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p101.part001.stereoparent_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-101.2.2:clause:0001",
@@ -384,56 +515,182 @@
     {
       "clause_id": "P-101.2.2.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.characteristic_group_ring_inclusion",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.characteristic_group_ring_inclusion.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.characteristic_group_ring_inclusion.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.characteristic_group_ring_inclusion.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "exception"
     },
     {
       "clause_id": "P-101.2.2.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.terminal_heteroatom_characteristic_group_exclusion",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.terminal_heteroatom_characteristic_group_exclusion.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.terminal_heteroatom_characteristic_group_exclusion.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.terminal_heteroatom_characteristic_group_exclusion.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "prohibition"
     },
     {
       "clause_id": "P-101.2.2.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.common_acyclic_hydrocarbon_group_inclusion",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.common_acyclic_hydrocarbon_group_inclusion.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.common_acyclic_hydrocarbon_group_inclusion.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.common_acyclic_hydrocarbon_group_inclusion.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-101.2.2.4:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.parent_structure_saturation_level_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_saturation_level_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_saturation_level_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_saturation_level_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-101.2.2.5:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.semisystematic_parent_name_derivation",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.semisystematic_parent_name_derivation.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.semisystematic_parent_name_derivation.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.semisystematic_parent_name_derivation.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-101.2.2.5:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.parent_structure_ending_assignment",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_ending_assignment.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_ending_assignment.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_ending_assignment.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_ending_assignment.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_ending_assignment.steps.2.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_ending_assignment.steps.3",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_ending_assignment.steps.3.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_ending_assignment.steps.4",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_ending_assignment.steps.4.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-101.2.2.5:clause:0003",
@@ -470,6 +727,14 @@
           },
           {
             "id": "expr.p101.part001.parent_structure_ending_assignment.steps.3.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_ending_assignment.steps.4",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_ending_assignment.steps.4.value",
             "kind": "expression"
           }
         ]
@@ -513,6 +778,14 @@
           {
             "id": "expr.p101.part001.parent_structure_ending_assignment.steps.3.value",
             "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_ending_assignment.steps.4",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_ending_assignment.steps.4.value",
+            "kind": "expression"
           }
         ]
       },
@@ -555,6 +828,14 @@
           {
             "id": "expr.p101.part001.parent_structure_ending_assignment.steps.3.value",
             "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_ending_assignment.steps.4",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_ending_assignment.steps.4.value",
+            "kind": "expression"
           }
         ]
       },
@@ -594,11 +875,28 @@
     {
       "clause_id": "P-101.2.2.6:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.indicated_hydrogen_parent_isomer_description",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.indicated_hydrogen_parent_isomer_description.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.indicated_hydrogen_parent_isomer_description.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.indicated_hydrogen_parent_isomer_description.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-101.2.3:clause:0001",
@@ -612,20 +910,134 @@
     {
       "clause_id": "P-101.2.3.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.established_parent_structure_numbering_pattern",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.established_parent_structure_numbering_pattern.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.established_parent_structure_numbering_pattern.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.established_parent_structure_numbering_pattern.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-101.2.3.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p101.part001.parent_structure_numbering_guidelines",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.2.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.3",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.3.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.4",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.4.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.5",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.5.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.6",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.6.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.7",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.7.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.8",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.8.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.9",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.9.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.10",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-101.2.3.2:clause:0002",
@@ -718,6 +1130,14 @@
           },
           {
             "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
             "kind": "expression"
           }
         ]
@@ -817,6 +1237,14 @@
           {
             "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
             "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
+            "kind": "expression"
           }
         ]
       },
@@ -914,6 +1342,14 @@
           },
           {
             "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
             "kind": "expression"
           }
         ]
@@ -1013,6 +1449,14 @@
           {
             "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
             "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
+            "kind": "expression"
           }
         ]
       },
@@ -1110,6 +1554,14 @@
           },
           {
             "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
             "kind": "expression"
           }
         ]
@@ -1209,6 +1661,14 @@
           {
             "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
             "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
+            "kind": "expression"
           }
         ]
       },
@@ -1306,6 +1766,14 @@
           },
           {
             "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
             "kind": "expression"
           }
         ]
@@ -1405,6 +1873,14 @@
           {
             "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
             "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
+            "kind": "expression"
           }
         ]
       },
@@ -1503,6 +1979,14 @@
           {
             "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
             "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
+            "kind": "expression"
           }
         ]
       },
@@ -1600,6 +2084,14 @@
           },
           {
             "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
             "kind": "expression"
           }
         ]
@@ -2871,12 +3363,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.1.1",
       "reference_ids": [
         "reference.p_101_1_1.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.biological_source_trivial_name_basis"
+      ],
       "source_rule_id": "P-101.1.1",
       "table_ids": []
     },
@@ -2889,12 +3383,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.1.2",
       "reference_ids": [
         "reference.p_101_1_2.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.unknown_structure_trivial_name_ending"
+      ],
       "source_rule_id": "P-101.1.2",
       "table_ids": []
     },
@@ -2985,12 +3481,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.2.1.1",
       "reference_ids": [
         "reference.p_101_2_1_1.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.fundamental_parent_basic_skeleton_selection"
+      ],
       "source_rule_id": "P-101.2.1.1",
       "table_ids": []
     },
@@ -3003,12 +3501,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.2.1.2",
       "reference_ids": [
         "reference.p_101_2_1_2.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.fundamental_parent_derivability_selection"
+      ],
       "source_rule_id": "P-101.2.1.2",
       "table_ids": []
     },
@@ -3022,12 +3522,15 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.2.1.3",
       "reference_ids": [
         "reference.p_101_2_1_3.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.fundamental_parent_common_configuration_selection",
+        "unit.p101.part001.stereoparent_definition"
+      ],
       "source_rule_id": "P-101.2.1.3",
       "table_ids": []
     },
@@ -3065,12 +3568,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.2.2.1",
       "reference_ids": [
         "reference.p_101_2_2_1.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.characteristic_group_ring_inclusion"
+      ],
       "source_rule_id": "P-101.2.2.1",
       "table_ids": []
     },
@@ -3083,13 +3588,15 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.2.2.2",
       "reference_ids": [
         "reference.p_101_2_2_2.hierarchy_parent",
         "reference.P-101.2.2.2:xref:0001"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.terminal_heteroatom_characteristic_group_exclusion"
+      ],
       "source_rule_id": "P-101.2.2.2",
       "table_ids": []
     },
@@ -3102,12 +3609,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.2.2.3",
       "reference_ids": [
         "reference.p_101_2_2_3.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.common_acyclic_hydrocarbon_group_inclusion"
+      ],
       "source_rule_id": "P-101.2.2.3",
       "table_ids": []
     },
@@ -3120,12 +3629,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.2.2.4",
       "reference_ids": [
         "reference.p_101_2_2_4.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.parent_structure_saturation_level_selection"
+      ],
       "source_rule_id": "P-101.2.2.4",
       "table_ids": []
     },
@@ -3152,6 +3663,7 @@
         "reference.p101.part001.trivial_name_basis"
       ],
       "semantic_unit_ids": [
+        "unit.p101.part001.semisystematic_parent_name_derivation",
         "unit.p101.part001.parent_structure_ending_assignment",
         "unit.p101.part001.retained_exceptional_parent_endings"
       ],
@@ -3167,7 +3679,7 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.2.2.6",
       "reference_ids": [
         "reference.p_101_2_2_6.hierarchy_parent",
@@ -3175,7 +3687,9 @@
         "reference.P-101.2.2.6:xref:0002",
         "reference.P-101.2.2.6:xref:0003"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.indicated_hydrogen_parent_isomer_description"
+      ],
       "source_rule_id": "P-101.2.2.6",
       "table_ids": []
     },
@@ -3206,12 +3720,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-101.2.3.1",
       "reference_ids": [
         "reference.p_101_2_3_1.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p101.part001.established_parent_structure_numbering_pattern"
+      ],
       "source_rule_id": "P-101.2.3.1",
       "table_ids": []
     },
@@ -4548,6 +5064,150 @@
     },
     {
       "clause_ids": [
+        "P-101.1.1:clause:0001",
+        "P-101.1.1:clause:0002"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "NaturalSourceCompound"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "trivial_name",
+          "type": "BiologicallyBasedTrivialName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.1.1:clause:0001",
+            "P-101.1.1:clause:0002"
+          ],
+          "expression_id": "expr.p101.part001.biological_source_trivial_name_basis.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.1.1:clause:0001",
+            "P-101.1.1:clause:0002"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.biological_source_trivial_name_basis.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.1.1:clause:0001",
+              "P-101.1.1:clause:0002"
+            ],
+            "expression_id": "expr.p101.part001.biological_source_trivial_name_basis.steps.1.value",
+            "op": "literal",
+            "value": {
+              "availability": "whenever possible",
+              "condition": "a compound is isolated from a natural source and a trivial name is required",
+              "preferred_name_basis": [
+                "family name",
+                "genus name",
+                "species name"
+              ],
+              "source_material": "the biological material from which the compound was isolated",
+              "source_text": "P-101.1.1 When a compound is isolated from a natural source and a trivial name is required, the name should be based, whenever possible, on the family, genus, or species name of the biological material from which it has been isolated."
+            }
+          }
+        },
+        {
+          "clause_ids": [
+            "P-101.1.1:clause:0001",
+            "P-101.1.1:clause:0002"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.biological_source_trivial_name_basis.steps.2",
+          "value": {
+            "clause_ids": [
+              "P-101.1.1:clause:0001",
+              "P-101.1.1:clause:0002"
+            ],
+            "expression_id": "expr.p101.part001.biological_source_trivial_name_basis.steps.2.value",
+            "op": "literal",
+            "value": {
+              "condition": "the compound occurs in a number of related families and use is appropriate",
+              "permitted_name_basis": [
+                "class name",
+                "order name"
+              ],
+              "source_text": "If appropriate, the class or order might also be used for the name of a compound that occurs in a number of related families."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.biological_source_trivial_name_basis"
+    },
+    {
+      "clause_ids": [
+        "P-101.1.2:clause:0001"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "trivial_name",
+          "type": "UnknownStructureTrivialName"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "ending",
+          "type": "UnknownStructureNameEnding"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.1.2:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.unknown_structure_trivial_name_ending.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.1.2:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.unknown_structure_trivial_name_ending.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.1.2:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.unknown_structure_trivial_name_ending.steps.1.value",
+            "op": "literal",
+            "value": {
+              "condition": "the trivial name describes a compound of unknown structure",
+              "default_ending": "une",
+              "euphonic_alternative": "iune",
+              "meaning": "unknown structure",
+              "source_text": "P-101.1.2 The ending ‘une’ or, for euphonic reasons, ‘iune’ is used to indicate that the trivial name it terminates describes a compound of unknown structure."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.unknown_structure_trivial_name_ending"
+    },
+    {
+      "clause_ids": [
         "P-101.2.0:clause:0002"
       ],
       "entity_type": "NaturalProductStructuralClass",
@@ -4817,6 +5477,217 @@
     },
     {
       "clause_ids": [
+        "P-101.2.1.1:clause:0001"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "compound_class",
+          "type": "NaturalProductStructuralClass"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "parent_structure",
+          "type": "FundamentalParentStructure"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.1.1:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.fundamental_parent_basic_skeleton_selection.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.2.1.1:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.fundamental_parent_basic_skeleton_selection.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.2.1.1:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.fundamental_parent_basic_skeleton_selection.steps.1.value",
+            "op": "literal",
+            "value": {
+              "criterion": "reflect the basic skeleton common to most compounds of the class",
+              "includes": [
+                "nonterminal heteroatoms",
+                "nonterminal hetero groups"
+              ],
+              "source_text": "P-101.2.1.1 A fundamental parent structure should reflect the basic skeleton (including nonterminal heteroatoms and hetero groups) that is common to most compounds of the class."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.fundamental_parent_basic_skeleton_selection"
+    },
+    {
+      "clause_ids": [
+        "P-101.2.1.2:clause:0001"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "compound_class",
+          "type": "NaturalProductStructuralClass"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "parent_structure",
+          "type": "FundamentalParentStructure"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.1.2:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.fundamental_parent_derivability_selection.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.2.1.2:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.fundamental_parent_derivability_selection.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.2.1.2:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.fundamental_parent_derivability_selection.steps.1.value",
+            "op": "literal",
+            "value": {
+              "criterion": "maximize the natural products derivable from each parent structure",
+              "derivation_method": "well defined operations and rules of organic nomenclature",
+              "source_text": "P-101.2.1.2 Fundamental parent structures should be chosen so that as many natural products as possible can be derived from each by well defined operations and rules of the nomenclature of organic compounds."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.fundamental_parent_derivability_selection"
+    },
+    {
+      "clause_ids": [
+        "P-101.2.1.3:clause:0001"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "compound_class",
+          "type": "NaturalProductStructuralClass"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "parent_structure",
+          "type": "ConfigurationBearingFundamentalParentStructure"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.1.3:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.fundamental_parent_common_configuration_selection.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.2.1.3:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.fundamental_parent_common_configuration_selection.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.2.1.3:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.fundamental_parent_common_configuration_selection.steps.1.value",
+            "op": "literal",
+            "value": {
+              "criterion": "include as much common configuration as possible",
+              "scope": "the relevant class of natural products",
+              "source_text": "P-101.2.1.3 A fundamental parent structure should include as much configuration as possible that is common to the relevant class of natural products."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.fundamental_parent_common_configuration_selection"
+    },
+    {
+      "clause_ids": [
+        "P-101.2.1.3:clause:0002"
+      ],
+      "entity_type": "ConfigurationBearingFundamentalParentStructure",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "parent_structure",
+          "type": "ConfigurationBearingFundamentalParentStructure"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "class",
+          "type": "Stereoparent"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.1.3:clause:0002"
+          ],
+          "expression_id": "expr.p101.part001.stereoparent_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "stereoparent",
+      "unit_id": "unit.p101.part001.stereoparent_definition",
+      "value": {
+        "clause_ids": [
+          "P-101.2.1.3:clause:0002"
+        ],
+        "expression_id": "expr.p101.part001.stereoparent_definition.value",
+        "op": "literal",
+        "value": {
+          "refers_to": "fundamental parent structures containing common configuration",
+          "source_text": "Such parent structures are called ‘stereoparents’."
+        }
+      }
+    },
+    {
+      "clause_ids": [
         "P-101.2.2:clause:0002"
       ],
       "force": "required",
@@ -4919,6 +5790,285 @@
     },
     {
       "clause_ids": [
+        "P-101.2.2.1:clause:0001"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "parent_structure",
+          "type": "FundamentalParentStructure"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "included_feature",
+          "type": "CharacteristicGroupRing"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.2.1:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.characteristic_group_ring_inclusion.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.2.2.1:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.characteristic_group_ring_inclusion.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.2.2.1:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.characteristic_group_ring_inclusion.steps.1.value",
+            "op": "literal",
+            "value": {
+              "examples": [
+                "lactone",
+                "cyclic acetal"
+              ],
+              "exceptional_inclusion": "rings that are part of a characteristic group",
+              "source_text": "P-101.2.2.1 A fundamental parent structure should exceptionally include rings that are part of a characteristic group, such as a lactone or cyclic acetal."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.characteristic_group_ring_inclusion"
+    },
+    {
+      "clause_ids": [
+        "P-101.2.2.2:clause:0001"
+      ],
+      "force": "prohibited",
+      "inputs": [
+        {
+          "name": "parent_structure",
+          "type": "FundamentalParentStructure"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "excluded_feature",
+          "type": "TerminalHeteroatomOrCharacteristicGroup"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.2.2:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.terminal_heteroatom_characteristic_group_exclusion.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.2.2.2:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.terminal_heteroatom_characteristic_group_exclusion.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.2.2.2:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.terminal_heteroatom_characteristic_group_exclusion.steps.1.value",
+            "op": "literal",
+            "value": {
+              "basis_rule": "P-101.2.1.1",
+              "excluded": [
+                "terminal heteroatoms",
+                "terminal characteristic groups"
+              ],
+              "source_text": "P-101.2.2.2 A fundamental parent structure should not contain terminal heteroatoms or characteristic groups (see P-101.2.1.1)."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.terminal_heteroatom_characteristic_group_exclusion"
+    },
+    {
+      "clause_ids": [
+        "P-101.2.2.3:clause:0001"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "parent_structure",
+          "type": "FundamentalParentStructure"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "included_feature",
+          "type": "CommonAcyclicHydrocarbonGroup"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.2.3:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.common_acyclic_hydrocarbon_group_inclusion.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.2.2.3:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.common_acyclic_hydrocarbon_group_inclusion.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.2.2.3:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.common_acyclic_hydrocarbon_group_inclusion.steps.1.value",
+            "op": "literal",
+            "value": {
+              "frequency_condition": "occur in most compounds in the natural product class",
+              "include": "acyclic hydrocarbon groups",
+              "source_text": "P-101.2.2.3 A fundamental parent structure should contain acyclic hydrocarbon groups that occur in most of the compounds in the natural product class."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.common_acyclic_hydrocarbon_group_inclusion"
+    },
+    {
+      "clause_ids": [
+        "P-101.2.2.4:clause:0001"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "parent_structure",
+          "type": "FundamentalParentStructure"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "saturation_level",
+          "type": "RepresentativeSaturationLevel"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.2.4:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.parent_structure_saturation_level_selection.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.2.2.4:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.parent_structure_saturation_level_selection.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.2.2.4:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.parent_structure_saturation_level_selection.steps.1.value",
+            "op": "literal",
+            "value": {
+              "constraint": "represent the saturation or unsaturation level of as many related compounds as possible",
+              "objective": "choose a nearly fully saturated or fully unsaturated parent structure",
+              "source_text": "P-101.2.2.4 A fundamental parent structure should be as nearly fully saturated or fully unsaturated in terms of maximum number of noncumulative double bonds (mancude rings), while still representing the level of saturation (or unsaturation) of as many related compounds as possible.",
+              "unsaturation_measure": "maximum number of noncumulative double bonds in mancude rings"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.parent_structure_saturation_level_selection"
+    },
+    {
+      "clause_ids": [
+        "P-101.2.2.5:clause:0001"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "parent_structure",
+          "type": "FundamentalParentStructure"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "SemisystematicParentStructureName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.2.5:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.semisystematic_parent_name_derivation.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.2.2.5:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.semisystematic_parent_name_derivation.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.2.2.5:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.semisystematic_parent_name_derivation.steps.1.value",
+            "op": "literal",
+            "value": {
+              "availability": "as far as possible",
+              "basis_rule": "P-101",
+              "derivation_basis": "a trivial name formed in accordance with P-101",
+              "source_text": "P-101.2.2.5 A semisystematic name for a fundamental parent structure should be derived, as far as possible, from a trivial name formed in accordance with P-101."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.semisystematic_parent_name_derivation"
+    },
+    {
+      "clause_ids": [
+        "P-101.2.2.5:clause:0002",
         "P-101.2.2.5:clause:0003",
         "P-101.2.2.5:clause:0004",
         "P-101.2.2.5:clause:0005"
@@ -4940,6 +6090,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-101.2.2.5:clause:0002",
             "P-101.2.2.5:clause:0003",
             "P-101.2.2.5:clause:0004",
             "P-101.2.2.5:clause:0005"
@@ -4955,6 +6106,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-101.2.2.5:clause:0002",
             "P-101.2.2.5:clause:0003",
             "P-101.2.2.5:clause:0004",
             "P-101.2.2.5:clause:0005"
@@ -4963,11 +6115,38 @@
           "statement_id": "stmt.p101.part001.parent_structure_ending_assignment.steps.1",
           "value": {
             "clause_ids": [
+              "P-101.2.2.5:clause:0002",
               "P-101.2.2.5:clause:0003",
               "P-101.2.2.5:clause:0004",
               "P-101.2.2.5:clause:0005"
             ],
             "expression_id": "expr.p101.part001.parent_structure_ending_assignment.steps.1.value",
+            "op": "literal",
+            "value": {
+              "assignment": "select the applicable ending from the following ordered cases",
+              "operation": "replace the unknown-structure ending une or iune",
+              "order": 0,
+              "source_text": "The endings to be used in place of ‘une’ or ‘iune’ must be assigned as follows:"
+            }
+          }
+        },
+        {
+          "clause_ids": [
+            "P-101.2.2.5:clause:0002",
+            "P-101.2.2.5:clause:0003",
+            "P-101.2.2.5:clause:0004",
+            "P-101.2.2.5:clause:0005"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.parent_structure_ending_assignment.steps.2",
+          "value": {
+            "clause_ids": [
+              "P-101.2.2.5:clause:0002",
+              "P-101.2.2.5:clause:0003",
+              "P-101.2.2.5:clause:0004",
+              "P-101.2.2.5:clause:0005"
+            ],
+            "expression_id": "expr.p101.part001.parent_structure_ending_assignment.steps.2.value",
             "op": "literal",
             "value": {
               "condition": "the entire stereoparent hydride is fully saturated",
@@ -4979,19 +6158,21 @@
         },
         {
           "clause_ids": [
+            "P-101.2.2.5:clause:0002",
             "P-101.2.2.5:clause:0003",
             "P-101.2.2.5:clause:0004",
             "P-101.2.2.5:clause:0005"
           ],
           "op": "emit",
-          "statement_id": "stmt.p101.part001.parent_structure_ending_assignment.steps.2",
+          "statement_id": "stmt.p101.part001.parent_structure_ending_assignment.steps.3",
           "value": {
             "clause_ids": [
+              "P-101.2.2.5:clause:0002",
               "P-101.2.2.5:clause:0003",
               "P-101.2.2.5:clause:0004",
               "P-101.2.2.5:clause:0005"
             ],
-            "expression_id": "expr.p101.part001.parent_structure_ending_assignment.steps.2.value",
+            "expression_id": "expr.p101.part001.parent_structure_ending_assignment.steps.3.value",
             "op": "literal",
             "value": {
               "condition": "the cyclic or the main chain of the acyclic part contains the maximum number of noncumulative double bonds",
@@ -5003,19 +6184,21 @@
         },
         {
           "clause_ids": [
+            "P-101.2.2.5:clause:0002",
             "P-101.2.2.5:clause:0003",
             "P-101.2.2.5:clause:0004",
             "P-101.2.2.5:clause:0005"
           ],
           "op": "emit",
-          "statement_id": "stmt.p101.part001.parent_structure_ending_assignment.steps.3",
+          "statement_id": "stmt.p101.part001.parent_structure_ending_assignment.steps.4",
           "value": {
             "clause_ids": [
+              "P-101.2.2.5:clause:0002",
               "P-101.2.2.5:clause:0003",
               "P-101.2.2.5:clause:0004",
               "P-101.2.2.5:clause:0005"
             ],
-            "expression_id": "expr.p101.part001.parent_structure_ending_assignment.steps.3.value",
+            "expression_id": "expr.p101.part001.parent_structure_ending_assignment.steps.4.value",
             "op": "literal",
             "value": {
               "condition": "an otherwise fully saturated parent structure contains one or more individual mancude rings",
@@ -5081,6 +6264,121 @@
     },
     {
       "clause_ids": [
+        "P-101.2.2.6:clause:0001"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "isomer",
+          "type": "FundamentalParentStructureIsomer"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "description",
+          "type": "IndicatedHydrogenDescription"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.2.6:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.indicated_hydrogen_parent_isomer_description.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.2.2.6:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.indicated_hydrogen_parent_isomer_description.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.2.2.6:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.indicated_hydrogen_parent_isomer_description.steps.1.value",
+            "op": "literal",
+            "value": {
+              "definition_rules": [
+                "P-14.7",
+                "P-25.7",
+                "P-58.2"
+              ],
+              "method": "indicated hydrogen",
+              "purpose": "describe isomers of fundamental parent structures",
+              "source_text": "P-101.2.2.6 Indicated hydrogen, as defined in P-14.7, P-25.7 and P-58.2, is used to describe isomers of fundamental parent structures."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.indicated_hydrogen_parent_isomer_description"
+    },
+    {
+      "clause_ids": [
+        "P-101.2.3.1:clause:0001"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "parent_structure",
+          "type": "FundamentalParentStructureWithEstablishedNumbering"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "numbering",
+          "type": "EstablishedNaturalProductNumbering"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-101.2.3.1:clause:0001"
+          ],
+          "expression_id": "expr.p101.part001.established_parent_structure_numbering_pattern.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-101.2.3.1:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.established_parent_structure_numbering_pattern.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-101.2.3.1:clause:0001"
+            ],
+            "expression_id": "expr.p101.part001.established_parent_structure_numbering_pattern.steps.1.value",
+            "op": "literal",
+            "value": {
+              "action": "use the established pattern to number the fundamental parent structure",
+              "condition": "a numbering pattern is established among structurally related natural products",
+              "requirement": "all skeletal atoms are included in the numbering system",
+              "source_text": "P-101.2.3.1 A numbering pattern established among a group of structurally related natural products is used for numbering the skeletal atoms of the fundamental parent structure, providing that all skeletal atoms have been included in the numbering system."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p101.part001.established_parent_structure_numbering_pattern"
+    },
+    {
+      "clause_ids": [
+        "P-101.2.3.2:clause:0001",
         "P-101.2.3.2:clause:0002",
         "P-101.2.3.2:clause:0003",
         "P-101.2.3.2:clause:0004",
@@ -5109,6 +6407,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-101.2.3.2:clause:0001",
             "P-101.2.3.2:clause:0002",
             "P-101.2.3.2:clause:0003",
             "P-101.2.3.2:clause:0004",
@@ -5131,6 +6430,7 @@
       "steps": [
         {
           "clause_ids": [
+            "P-101.2.3.2:clause:0001",
             "P-101.2.3.2:clause:0002",
             "P-101.2.3.2:clause:0003",
             "P-101.2.3.2:clause:0004",
@@ -5146,6 +6446,7 @@
           "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.1",
           "value": {
             "clause_ids": [
+              "P-101.2.3.2:clause:0001",
               "P-101.2.3.2:clause:0002",
               "P-101.2.3.2:clause:0003",
               "P-101.2.3.2:clause:0004",
@@ -5160,15 +6461,16 @@
             "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.1.value",
             "op": "literal",
             "value": {
-              "action": "examine the skeleton to identify the senior ring or ring system",
-              "basis_rule": "P-44",
-              "order": 1,
-              "source_text": "(a) examine the skeleton to identify the senior ring or ring system, according to P-44."
+              "action": "apply the following numbering guidelines",
+              "condition": "no numbering pattern is established among structurally related natural products",
+              "order": 0,
+              "source_text": "P-101.2.3.2 If no numbering pattern has been become established among the members of a group of structurally related natural products, the fundamental parent structure is numbered according to the following guidelines:"
             }
           }
         },
         {
           "clause_ids": [
+            "P-101.2.3.2:clause:0001",
             "P-101.2.3.2:clause:0002",
             "P-101.2.3.2:clause:0003",
             "P-101.2.3.2:clause:0004",
@@ -5184,6 +6486,7 @@
           "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.2",
           "value": {
             "clause_ids": [
+              "P-101.2.3.2:clause:0001",
               "P-101.2.3.2:clause:0002",
               "P-101.2.3.2:clause:0003",
               "P-101.2.3.2:clause:0004",
@@ -5198,15 +6501,16 @@
             "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.2.value",
             "op": "literal",
             "value": {
-              "action": "assign locant 1",
-              "order": 2,
-              "source_text": "The locant ‘1’ is assigned to the atom of the senior ring system whose locant would be ‘1’ according to systematic numbering for that particular ring or ring system;",
-              "target": "the atom of the senior ring system whose locant would be 1 according to systematic numbering for that particular ring or ring system"
+              "action": "examine the skeleton to identify the senior ring or ring system",
+              "basis_rule": "P-44",
+              "order": 1,
+              "source_text": "(a) examine the skeleton to identify the senior ring or ring system, according to P-44."
             }
           }
         },
         {
           "clause_ids": [
+            "P-101.2.3.2:clause:0001",
             "P-101.2.3.2:clause:0002",
             "P-101.2.3.2:clause:0003",
             "P-101.2.3.2:clause:0004",
@@ -5222,6 +6526,7 @@
           "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.3",
           "value": {
             "clause_ids": [
+              "P-101.2.3.2:clause:0001",
               "P-101.2.3.2:clause:0002",
               "P-101.2.3.2:clause:0003",
               "P-101.2.3.2:clause:0004",
@@ -5236,17 +6541,16 @@
             "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.3.value",
             "op": "literal",
             "value": {
-              "action": "assign all skeletal atoms of the senior ring system consecutive Arabic numbers",
-              "includes": "atoms of fusion positions in fused ring systems",
-              "order": 3,
-              "path": "the path prescribed for that particular type of ring or ring system",
-              "source_text": "(b) assign all skeletal atoms of the senior ring system consecutive Arabic numbers, including atoms of fusion positions in fused ring systems, beginning with the locant ‘1’, and following the path prescribed for that particular type of ring or ring system;",
-              "start": "locant 1"
+              "action": "assign locant 1",
+              "order": 2,
+              "source_text": "The locant ‘1’ is assigned to the atom of the senior ring system whose locant would be ‘1’ according to systematic numbering for that particular ring or ring system;",
+              "target": "the atom of the senior ring system whose locant would be 1 according to systematic numbering for that particular ring or ring system"
             }
           }
         },
         {
           "clause_ids": [
+            "P-101.2.3.2:clause:0001",
             "P-101.2.3.2:clause:0002",
             "P-101.2.3.2:clause:0003",
             "P-101.2.3.2:clause:0004",
@@ -5262,6 +6566,7 @@
           "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.4",
           "value": {
             "clause_ids": [
+              "P-101.2.3.2:clause:0001",
               "P-101.2.3.2:clause:0002",
               "P-101.2.3.2:clause:0003",
               "P-101.2.3.2:clause:0004",
@@ -5276,16 +6581,18 @@
             "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.4.value",
             "op": "literal",
             "value": {
-              "action": "number acyclic substituents to skeletal atoms of ring components or connecting acyclic structures each in its entirety",
-              "includes": "branches",
-              "order": 4,
-              "order_basis": "increasing value of the locant of the skeletal atom to which it is attached",
-              "source_text": "(c) number acyclic substituents to skeletal atoms of ring components or connecting acyclic structures each in its entirety, including branches, in order of the increasing value of the locant of the skeletal atom to which it is attached;"
+              "action": "assign all skeletal atoms of the senior ring system consecutive Arabic numbers",
+              "includes": "atoms of fusion positions in fused ring systems",
+              "order": 3,
+              "path": "the path prescribed for that particular type of ring or ring system",
+              "source_text": "(b) assign all skeletal atoms of the senior ring system consecutive Arabic numbers, including atoms of fusion positions in fused ring systems, beginning with the locant ‘1’, and following the path prescribed for that particular type of ring or ring system;",
+              "start": "locant 1"
             }
           }
         },
         {
           "clause_ids": [
+            "P-101.2.3.2:clause:0001",
             "P-101.2.3.2:clause:0002",
             "P-101.2.3.2:clause:0003",
             "P-101.2.3.2:clause:0004",
@@ -5301,6 +6608,7 @@
           "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.5",
           "value": {
             "clause_ids": [
+              "P-101.2.3.2:clause:0001",
               "P-101.2.3.2:clause:0002",
               "P-101.2.3.2:clause:0003",
               "P-101.2.3.2:clause:0004",
@@ -5315,16 +6623,17 @@
             "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.5.value",
             "op": "literal",
             "value": {
-              "action": "number skeletal atoms of acyclic connections to other ring or ring systems consecutively",
-              "order": 5,
-              "source_text": "(d) number skeletal atoms of acyclic connections to other ring or ring systems, if any, consecutively beginning with the atom next to the senior ring system, followed by the skeletal atoms of the other rings or ring systems as prescribed in (b) above;",
-              "start": "the atom next to the senior ring system",
-              "then": "the skeletal atoms of the other rings or ring systems as prescribed in step (b)"
+              "action": "number acyclic substituents to skeletal atoms of ring components or connecting acyclic structures each in its entirety",
+              "includes": "branches",
+              "order": 4,
+              "order_basis": "increasing value of the locant of the skeletal atom to which it is attached",
+              "source_text": "(c) number acyclic substituents to skeletal atoms of ring components or connecting acyclic structures each in its entirety, including branches, in order of the increasing value of the locant of the skeletal atom to which it is attached;"
             }
           }
         },
         {
           "clause_ids": [
+            "P-101.2.3.2:clause:0001",
             "P-101.2.3.2:clause:0002",
             "P-101.2.3.2:clause:0003",
             "P-101.2.3.2:clause:0004",
@@ -5340,6 +6649,7 @@
           "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.6",
           "value": {
             "clause_ids": [
+              "P-101.2.3.2:clause:0001",
               "P-101.2.3.2:clause:0002",
               "P-101.2.3.2:clause:0003",
               "P-101.2.3.2:clause:0004",
@@ -5352,6 +6662,47 @@
               "P-101.2.3.2:clause:0011"
             ],
             "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.6.value",
+            "op": "literal",
+            "value": {
+              "action": "number skeletal atoms of acyclic connections to other ring or ring systems consecutively",
+              "order": 5,
+              "source_text": "(d) number skeletal atoms of acyclic connections to other ring or ring systems, if any, consecutively beginning with the atom next to the senior ring system, followed by the skeletal atoms of the other rings or ring systems as prescribed in (b) above;",
+              "start": "the atom next to the senior ring system",
+              "then": "the skeletal atoms of the other rings or ring systems as prescribed in step (b)"
+            }
+          }
+        },
+        {
+          "clause_ids": [
+            "P-101.2.3.2:clause:0001",
+            "P-101.2.3.2:clause:0002",
+            "P-101.2.3.2:clause:0003",
+            "P-101.2.3.2:clause:0004",
+            "P-101.2.3.2:clause:0005",
+            "P-101.2.3.2:clause:0006",
+            "P-101.2.3.2:clause:0007",
+            "P-101.2.3.2:clause:0008",
+            "P-101.2.3.2:clause:0009",
+            "P-101.2.3.2:clause:0010",
+            "P-101.2.3.2:clause:0011"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.7",
+          "value": {
+            "clause_ids": [
+              "P-101.2.3.2:clause:0001",
+              "P-101.2.3.2:clause:0002",
+              "P-101.2.3.2:clause:0003",
+              "P-101.2.3.2:clause:0004",
+              "P-101.2.3.2:clause:0005",
+              "P-101.2.3.2:clause:0006",
+              "P-101.2.3.2:clause:0007",
+              "P-101.2.3.2:clause:0008",
+              "P-101.2.3.2:clause:0009",
+              "P-101.2.3.2:clause:0010",
+              "P-101.2.3.2:clause:0011"
+            ],
+            "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.7.value",
             "op": "literal",
             "value": {
               "condition": "two or more acyclic connections to other rings or ring systems are present",
@@ -5369,44 +6720,7 @@
         },
         {
           "clause_ids": [
-            "P-101.2.3.2:clause:0002",
-            "P-101.2.3.2:clause:0003",
-            "P-101.2.3.2:clause:0004",
-            "P-101.2.3.2:clause:0005",
-            "P-101.2.3.2:clause:0006",
-            "P-101.2.3.2:clause:0007",
-            "P-101.2.3.2:clause:0008",
-            "P-101.2.3.2:clause:0009",
-            "P-101.2.3.2:clause:0010",
-            "P-101.2.3.2:clause:0011"
-          ],
-          "op": "emit",
-          "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.7",
-          "value": {
-            "clause_ids": [
-              "P-101.2.3.2:clause:0002",
-              "P-101.2.3.2:clause:0003",
-              "P-101.2.3.2:clause:0004",
-              "P-101.2.3.2:clause:0005",
-              "P-101.2.3.2:clause:0006",
-              "P-101.2.3.2:clause:0007",
-              "P-101.2.3.2:clause:0008",
-              "P-101.2.3.2:clause:0009",
-              "P-101.2.3.2:clause:0010",
-              "P-101.2.3.2:clause:0011"
-            ],
-            "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.7.value",
-            "op": "literal",
-            "value": {
-              "condition": "two groups at a geminal disubstituted position",
-              "order": 7,
-              "priority": "larger group in terms of number of skeletal atoms",
-              "source_text": "(e) number the larger group, in terms of the number of skeletal atoms, between two groups at a geminal disubstituted position first;"
-            }
-          }
-        },
-        {
-          "clause_ids": [
+            "P-101.2.3.2:clause:0001",
             "P-101.2.3.2:clause:0002",
             "P-101.2.3.2:clause:0003",
             "P-101.2.3.2:clause:0004",
@@ -5422,6 +6736,7 @@
           "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.8",
           "value": {
             "clause_ids": [
+              "P-101.2.3.2:clause:0001",
               "P-101.2.3.2:clause:0002",
               "P-101.2.3.2:clause:0003",
               "P-101.2.3.2:clause:0004",
@@ -5436,16 +6751,16 @@
             "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.8.value",
             "op": "literal",
             "value": {
-              "basis_rule": "P-14.5",
-              "condition": "a choice remains",
-              "order": 8,
-              "source_text": "if there is still a choice, alphanumerical order is followed (Rule P-14.5).",
-              "tie_breaker": "alphanumerical order"
+              "condition": "two groups at a geminal disubstituted position",
+              "order": 7,
+              "priority": "larger group in terms of number of skeletal atoms",
+              "source_text": "(e) number the larger group, in terms of the number of skeletal atoms, between two groups at a geminal disubstituted position first;"
             }
           }
         },
         {
           "clause_ids": [
+            "P-101.2.3.2:clause:0001",
             "P-101.2.3.2:clause:0002",
             "P-101.2.3.2:clause:0003",
             "P-101.2.3.2:clause:0004",
@@ -5461,6 +6776,7 @@
           "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.9",
           "value": {
             "clause_ids": [
+              "P-101.2.3.2:clause:0001",
               "P-101.2.3.2:clause:0002",
               "P-101.2.3.2:clause:0003",
               "P-101.2.3.2:clause:0004",
@@ -5475,16 +6791,17 @@
             "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.9.value",
             "op": "literal",
             "value": {
-              "basis": "Appendix 3 and P-101.2.6",
-              "condition": "the two groups are identical and attached to a properly drawn stereoparent structure",
-              "order": 9,
-              "source_text": "If the two groups are then identical and attached to a stereoparent structure properly drawn (see Appendix 3), the group that is stereochemically ‘α’ (according to P-101.2.6) is numbered first;",
-              "tie_breaker": "the group that is stereochemically α is numbered first"
+              "basis_rule": "P-14.5",
+              "condition": "a choice remains",
+              "order": 8,
+              "source_text": "if there is still a choice, alphanumerical order is followed (Rule P-14.5).",
+              "tie_breaker": "alphanumerical order"
             }
           }
         },
         {
           "clause_ids": [
+            "P-101.2.3.2:clause:0001",
             "P-101.2.3.2:clause:0002",
             "P-101.2.3.2:clause:0003",
             "P-101.2.3.2:clause:0004",
@@ -5500,6 +6817,7 @@
           "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.10",
           "value": {
             "clause_ids": [
+              "P-101.2.3.2:clause:0001",
               "P-101.2.3.2:clause:0002",
               "P-101.2.3.2:clause:0003",
               "P-101.2.3.2:clause:0004",
@@ -5512,6 +6830,47 @@
               "P-101.2.3.2:clause:0011"
             ],
             "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.10.value",
+            "op": "literal",
+            "value": {
+              "basis": "Appendix 3 and P-101.2.6",
+              "condition": "the two groups are identical and attached to a properly drawn stereoparent structure",
+              "order": 9,
+              "source_text": "If the two groups are then identical and attached to a stereoparent structure properly drawn (see Appendix 3), the group that is stereochemically ‘α’ (according to P-101.2.6) is numbered first;",
+              "tie_breaker": "the group that is stereochemically α is numbered first"
+            }
+          }
+        },
+        {
+          "clause_ids": [
+            "P-101.2.3.2:clause:0001",
+            "P-101.2.3.2:clause:0002",
+            "P-101.2.3.2:clause:0003",
+            "P-101.2.3.2:clause:0004",
+            "P-101.2.3.2:clause:0005",
+            "P-101.2.3.2:clause:0006",
+            "P-101.2.3.2:clause:0007",
+            "P-101.2.3.2:clause:0008",
+            "P-101.2.3.2:clause:0009",
+            "P-101.2.3.2:clause:0010",
+            "P-101.2.3.2:clause:0011"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p101.part001.parent_structure_numbering_guidelines.steps.11",
+          "value": {
+            "clause_ids": [
+              "P-101.2.3.2:clause:0001",
+              "P-101.2.3.2:clause:0002",
+              "P-101.2.3.2:clause:0003",
+              "P-101.2.3.2:clause:0004",
+              "P-101.2.3.2:clause:0005",
+              "P-101.2.3.2:clause:0006",
+              "P-101.2.3.2:clause:0007",
+              "P-101.2.3.2:clause:0008",
+              "P-101.2.3.2:clause:0009",
+              "P-101.2.3.2:clause:0010",
+              "P-101.2.3.2:clause:0011"
+            ],
+            "expression_id": "expr.p101.part001.parent_structure_numbering_guidelines.steps.11.value",
             "op": "literal",
             "value": {
               "basis": "carotenoid recommendations, Rule 12.4 in ref. 40",
