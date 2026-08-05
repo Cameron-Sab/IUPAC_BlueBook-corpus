@@ -13,12 +13,12 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 65,
-    "compiled_clause_count": 44,
+    "compiled_clause_count": 53,
     "correction_application_count": 0,
     "example_count": 18,
     "exception_count": 0,
     "figure_count": 18,
-    "nonoperative_clause_count": 21,
+    "nonoperative_clause_count": 12,
     "record_count": 10,
     "reference_count": 18,
     "semantic_unit_count": 12,
@@ -26,7 +26,7 @@
     "symbol_declaration_count": 1,
     "table_count": 0
   },
-  "chunk_sha256": "4C1F7C43EE9479ADE0ED805DE20A5D8D03645A8D9E63484B103430C24A2287CC",
+  "chunk_sha256": "AB440931183FE808AF892828AD301559571CFA26B71922433F0D51265404C38C",
   "clause_dispositions": [
     {
       "clause_id": "P-106:clause:0001",
@@ -568,20 +568,86 @@
     {
       "clause_id": "P-106.3.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p106.part001.retained_nucleotide_derivative_modification_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p106.part001.retained_nucleotide_derivative_modification_rule.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "permission"
     },
     {
       "clause_id": "P-106.3.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p106.part001.retained_nucleotide_derivative_modification_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p106.part001.retained_nucleotide_derivative_modification_rule.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "permission"
     },
     {
       "clause_id": "P-106.3.1:clause:0003",
@@ -679,11 +745,44 @@
     {
       "clause_id": "P-106.3.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p106.part001.nucleotide_polyphosphate_functional_replacement",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_polyphosphate_functional_replacement.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_polyphosphate_functional_replacement.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_polyphosphate_functional_replacement.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_polyphosphate_functional_replacement.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_polyphosphate_functional_replacement.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p106.part001.nucleotide_polyphosphate_functional_replacement.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_polyphosphate_functional_replacement.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "permission"
     },
     {
       "clause_id": "P-106.3.2:clause:0002",
@@ -863,38 +962,106 @@
     {
       "clause_id": "P-106.3.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p106.part001.nucleotide_characteristic_group_substitution",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_characteristic_group_substitution.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p106.part001.nucleotide_characteristic_group_substitution.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_characteristic_group_substitution.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-106.3.3:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p106.part001.nucleotide_characteristic_group_substitution",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_characteristic_group_substitution.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p106.part001.nucleotide_characteristic_group_substitution.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_characteristic_group_substitution.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-106.3.3:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p106.part001.nucleotide_characteristic_group_substitution",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_characteristic_group_substitution.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p106.part001.nucleotide_characteristic_group_substitution.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_characteristic_group_substitution.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "exception"
     },
     {
       "clause_id": "P-106.3.3:clause:0004",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p106.part001.nucleotide_characteristic_group_substitution",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_characteristic_group_substitution.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p106.part001.nucleotide_characteristic_group_substitution.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p106.part001.nucleotide_characteristic_group_substitution.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "exception"
     },
     {
       "clause_id": "P-106.3.3:clause:0005",
@@ -964,11 +1131,28 @@
     {
       "clause_id": "P-106.3.4:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p106.part001.oligonucleotide_prefix_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p106.part001.oligonucleotide_prefix_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p106.part001.oligonucleotide_prefix_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p106.part001.oligonucleotide_prefix_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-106.3.4:clause:0002",
@@ -1026,11 +1210,44 @@
     {
       "clause_id": "P-106.3.5:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p106.part001.phosphorothioic_acid_prefix",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p106.part001.phosphorothioic_acid_prefix.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.phosphorothioic_acid_prefix.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.phosphorothioic_acid_prefix.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.phosphorothioic_acid_prefix.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p106.part001.phosphorothioic_acid_prefix.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p106.part001.phosphorothioic_acid_prefix.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p106.part001.phosphorothioic_acid_prefix.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-106.3.5:clause:0002",
@@ -2889,6 +3106,7 @@
             "expression_id": "expr.p106.part001.retained_nucleotide_derivative_modification_rule.then.1.value",
             "op": "literal",
             "value": {
+              "naming_basis": "same manner as the corresponding nucleoside",
               "purine_or_pyrimidine_ring": "fully substituted",
               "ribofuranosyl_component": "modified as prescribed for carbohydrates",
               "ribose_modifications": [

@@ -9,20 +9,20 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 56,
-    "compiled_clause_count": 38,
+    "compiled_clause_count": 46,
     "correction_application_count": 4,
     "example_count": 12,
     "exception_count": 0,
     "figure_count": 13,
-    "nonoperative_clause_count": 16,
+    "nonoperative_clause_count": 8,
     "record_count": 6,
     "reference_count": 10,
-    "semantic_unit_count": 8,
+    "semantic_unit_count": 13,
     "superseded_clause_count": 2,
     "symbol_declaration_count": 1,
     "table_count": 1
   },
-  "chunk_sha256": "BDB7BC689AFCC72F28AD1B1FAF54DC5AB4FAE4FC4AAC46602D456F308BA2D342",
+  "chunk_sha256": "9FA2CE6946ABF91CFCA1ABD52393E3C6A67B19D6032F91AC9BDB5555570F5CE3",
   "clause_dispositions": [
     {
       "clause_id": "P-31.2.3.3.5.1:clause:0001",
@@ -686,38 +686,90 @@
     {
       "clause_id": "P-31.2.4.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p31.part003.dehydro_prefix_hydrogen_removal_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p31.part003.dehydro_prefix_hydrogen_removal_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p31.part003.dehydro_prefix_hydrogen_removal_scope.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-31.2.4.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p31.part003.dehydro_prefix_hydrogen_removal_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p31.part003.dehydro_prefix_hydrogen_removal_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p31.part003.dehydro_prefix_hydrogen_removal_scope.value",
+            "kind": "expression"
+          }
+        ]
       },
       "force": "informative",
-      "role": "heading"
+      "role": "scope"
     },
     {
       "clause_id": "P-31.2.4.1:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p31.part003.didehydrobenzene_pin_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p31.part003.didehydrobenzene_pin_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p31.part003.didehydrobenzene_pin_preference.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-31.2.4.1:clause:0004",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p31.part003.didehydroannulene_general_nomenclature_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p31.part003.didehydroannulene_general_nomenclature_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p31.part003.didehydroannulene_general_nomenclature_scope.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "permission"
     },
     {
       "clause_id": "P-31.2.4.1:clause:0005",
@@ -787,38 +839,106 @@
     {
       "clause_id": "P-31.2.4.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p31.part003.dehydro_natural_product_and_carbohydrate_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p31.part003.dehydro_natural_product_and_carbohydrate_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p31.part003.dehydro_natural_product_and_carbohydrate_scope.value",
+            "kind": "expression"
+          }
+        ]
       },
       "force": "informative",
-      "role": "heading"
+      "role": "scope"
     },
     {
       "clause_id": "P-31.2.4.2:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p31.part003.dehydro_natural_product_and_carbohydrate_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p31.part003.dehydro_natural_product_and_carbohydrate_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p31.part003.dehydro_natural_product_and_carbohydrate_scope.value",
+            "kind": "expression"
+          }
+        ]
       },
       "force": "informative",
-      "role": "heading"
+      "role": "scope"
     },
     {
       "clause_id": "P-31.2.4.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p31.part003.hantzsch_widman_hydro_over_dehydro_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "prohibition"
     },
     {
       "clause_id": "P-31.2.4.3:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p31.part003.hantzsch_widman_hydro_over_dehydro_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-31.2.4.3:clause:0003",
@@ -1734,7 +1854,11 @@
       "reference_ids": [
         "reference.p_31_2_4_1.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p31.part003.dehydro_prefix_hydrogen_removal_scope",
+        "unit.p31.part003.didehydrobenzene_pin_preference",
+        "unit.p31.part003.didehydroannulene_general_nomenclature_scope"
+      ],
       "source_rule_id": "P-31.2.4.1",
       "table_ids": []
     },
@@ -1748,13 +1872,15 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-31.2.4.2",
       "reference_ids": [
         "reference.p_31_2_4_2.hierarchy_parent",
         "reference.P-31.2.4.2:xref:0001"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p31.part003.dehydro_natural_product_and_carbohydrate_scope"
+      ],
       "source_rule_id": "P-31.2.4.2",
       "table_ids": []
     },
@@ -1788,7 +1914,9 @@
       "reference_ids": [
         "reference.p_31_2_4_3.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p31.part003.hantzsch_widman_hydro_over_dehydro_preference"
+      ],
       "source_rule_id": "P-31.2.4.3",
       "table_ids": [
         "table.p31.part003.hantzsch_widman_hydro_dehydro_comparison"
@@ -2585,6 +2713,238 @@
         }
       ],
       "unit_id": "unit.p31.part003.polycyclic_component_locant_assignment"
+    },
+    {
+      "clause_ids": [
+        "P-31.2.4.1:clause:0001",
+        "P-31.2.4.1:clause:0002"
+      ],
+      "entity_type": "SubtractivePrefixOperation",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-31.2.4.1:clause:0001",
+            "P-31.2.4.1:clause:0002"
+          ],
+          "expression_id": "expr.p31.part003.dehydro_prefix_hydrogen_removal_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "dehydro subtractive prefix",
+      "unit_id": "unit.p31.part003.dehydro_prefix_hydrogen_removal_scope",
+      "value": {
+        "clause_ids": [
+          "P-31.2.4.1:clause:0001",
+          "P-31.2.4.1:clause:0002"
+        ],
+        "expression_id": "expr.p31.part003.dehydro_prefix_hydrogen_removal_scope.value",
+        "op": "literal",
+        "value": {
+          "operation": "remove hydrogen atoms and form multiple bonds",
+          "prefix": "dehydro",
+          "systematic_organic_nomenclature_use": "very limited"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-31.2.4.1:clause:0003"
+      ],
+      "entity_type": "PreferredNameSelection",
+      "force": "preference",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-31.2.4.1:clause:0003"
+          ],
+          "expression_id": "expr.p31.part003.didehydrobenzene_pin_preference.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "preferred name for dehydrogenated benzene",
+      "unit_id": "unit.p31.part003.didehydrobenzene_pin_preference",
+      "value": {
+        "clause_ids": [
+          "P-31.2.4.1:clause:0003"
+        ],
+        "expression_id": "expr.p31.part003.didehydrobenzene_pin_preference.value",
+        "op": "literal",
+        "value": {
+          "former_name": "benzyne",
+          "former_name_status": "not preferred",
+          "preferred_iupac_name": "1,2-didehydrobenzene"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-31.2.4.1:clause:0004"
+      ],
+      "entity_type": "NomenclatureRegimePermission",
+      "force": "permitted",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-31.2.4.1:clause:0004"
+          ],
+          "expression_id": "expr.p31.part003.didehydroannulene_general_nomenclature_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "didehydro annulene name scope",
+      "unit_id": "unit.p31.part003.didehydroannulene_general_nomenclature_scope",
+      "value": {
+        "clause_ids": [
+          "P-31.2.4.1:clause:0004"
+        ],
+        "expression_id": "expr.p31.part003.didehydroannulene_general_nomenclature_scope.value",
+        "op": "literal",
+        "value": {
+          "general_nomenclature": "acceptable",
+          "name_class": "didehydro[n]annulene",
+          "preferred_iupac_name": false
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-31.2.4.2:clause:0001",
+        "P-31.2.4.2:clause:0002"
+      ],
+      "entity_type": "NomenclatureClassScope",
+      "force": "permitted",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-31.2.4.2:clause:0001",
+            "P-31.2.4.2:clause:0002"
+          ],
+          "expression_id": "expr.p31.part003.dehydro_natural_product_and_carbohydrate_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "dehydro prefix class-specific scope",
+      "unit_id": "unit.p31.part003.dehydro_natural_product_and_carbohydrate_scope",
+      "value": {
+        "clause_ids": [
+          "P-31.2.4.2:clause:0001",
+          "P-31.2.4.2:clause:0002"
+        ],
+        "expression_id": "expr.p31.part003.dehydro_natural_product_and_carbohydrate_scope.value",
+        "op": "literal",
+        "value": {
+          "uses": [
+            {
+              "class": "natural products",
+              "purpose": "preserve semisystematic stereoparent names"
+            },
+            {
+              "class": "carbohydrates",
+              "status": "used"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-31.2.4.3:clause:0001",
+        "P-31.2.4.3:clause:0002"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "heterocycle",
+          "type": "HantzschWidmanHeterocycle"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "unsaturation_naming_method",
+          "type": "NomenclatureMethod"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-31.2.4.3:clause:0001",
+            "P-31.2.4.3:clause:0002"
+          ],
+          "expression_id": "expr.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-31.2.4.3:clause:0001",
+            "P-31.2.4.3:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.then.1",
+          "target": "unsaturation_naming_method",
+          "value": {
+            "clause_ids": [
+              "P-31.2.4.3:clause:0001",
+              "P-31.2.4.3:clause:0002"
+            ],
+            "expression_id": "expr.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.then.1.value",
+            "op": "literal",
+            "value": {
+              "dehydro_prefix": "not recommended",
+              "preferred_prefix": "hydro"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p31.part003.hantzsch_widman_hydro_over_dehydro_preference",
+      "when": {
+        "clause_ids": [
+          "P-31.2.4.3:clause:0001",
+          "P-31.2.4.3:clause:0002"
+        ],
+        "expression_id": "expr.p31.part003.hantzsch_widman_hydro_over_dehydro_preference.when",
+        "op": "literal",
+        "value": {
+          "purpose": "denote double-bond unsaturation",
+          "ring_name_system": "Hantzsch-Widman"
+        }
+      }
     }
   ],
   "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
