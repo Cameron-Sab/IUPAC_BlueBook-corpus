@@ -1,0 +1,2561 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "supersede",
+      [
+        "correction.p13.part002.functional_class_example_two"
+      ],
+      [
+        110
+      ]
+    ],
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "exception",
+      "normative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ]
+  ],
+  "corrections": [
+    {
+      "id": "correction.p13.part002.functional_class_example_two",
+      "overlay": "BBV3-CORR-AFC5030A0E122A92",
+      "operation": "BBV3-CORR-AFC5030A0E122A92:OP-001",
+      "status": "applied",
+      "before": [
+        110
+      ],
+      "after": [
+        112
+      ],
+      "targets": [
+        [
+          "example",
+          "example.p13.part002.functional_class_example_two"
+        ]
+      ],
+      "date": "2025-04-09",
+      "sha256": "F1532A13B291B1A5082C32138477F67067EF5FF30E9E5E1DC7D0A157B733626D"
+    }
+  ],
+  "examples": [
+    {
+      "id": "bipyridine_conjunction",
+      "c": [
+        8,
+        12,
+        14,
+        16
+      ],
+      "input": {
+        "components": [
+          "pyridine",
+          "pyridine"
+        ]
+      },
+      "ok": [
+        "2,2'-bipyridine (PIN)",
+        "2,2'-bipyridyl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "multiplicative_parent_hydride_conjunction"
+        ],
+        [
+          "table",
+          "bi_parent_hydride_example"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.5.1:clause:0008"
+        ]
+      ],
+      "why": "Two pyridine parent hydrides are joined using the multiplicative prefix bi."
+    },
+    {
+      "id": "cyclohexane_ethanol_conjunctive",
+      "c": [
+        27,
+        31,
+        33,
+        35
+      ],
+      "input": {
+        "ring": "cyclohexane",
+        "chain": "ethanol"
+      },
+      "ok": [
+        "cyclohexaneethanol",
+        "2-cyclohexylethan-1-ol (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "conjunctive_nomenclature_method"
+        ],
+        [
+          "table",
+          "conjunctive_nomenclature_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.5.2:clause:0014"
+        ]
+      ]
+    },
+    {
+      "id": "cyclopentane_acetic_acid_conjunctive",
+      "c": [
+        41,
+        43,
+        45
+      ],
+      "input": {
+        "ring": "cyclopentane",
+        "chain": "acetic acid"
+      },
+      "ok": [
+        "cyclopentaneacetic acid",
+        "cyclopentylacetic acid (PIN)",
+        "alpha-ethylcyclopentaneacetic acid",
+        "2-cyclopentylbutanoic acid (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "conjunctive_nomenclature_method"
+        ],
+        [
+          "table",
+          "conjunctive_nomenclature_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.5.2:clause:0024"
+        ]
+      ]
+    },
+    {
+      "id": "cyclopropane_ring_formation",
+      "c": [
+        52,
+        54
+      ],
+      "input": {
+        "parent": "propane"
+      },
+      "ok": [
+        "cyclopropane (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "cyclo_ring_formation_operation"
+        ],
+        [
+          "table",
+          "ring_formation_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.5.3:clause:0006"
+        ]
+      ]
+    },
+    {
+      "id": "cyclo_androstane_ring_formation",
+      "c": [
+        58,
+        60
+      ],
+      "input": {
+        "parent": "5beta,9beta-androstane"
+      },
+      "ok": [
+        "9,19-cyclo-5beta,9beta-androstane"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "cyclo_ring_formation_operation"
+        ],
+        [
+          "table",
+          "ring_formation_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.5.3:clause:0012"
+        ]
+      ]
+    },
+    {
+      "id": "cyclo_fullerene_ring_formation",
+      "c": [
+        61
+      ],
+      "input": {
+        "parent": "(C60-Ih)[5,6]fullerene"
+      },
+      "ok": [
+        "2H-2,9-cyclo-1-nor(C60-Ih)[5,6]fullerene (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "cyclo_ring_formation_operation"
+        ],
+        [
+          "table",
+          "ring_formation_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.5.3:clause:0017"
+        ]
+      ]
+    },
+    {
+      "id": "methylene_dibenzonitrile",
+      "c": [
+        69,
+        70,
+        71,
+        75,
+        77,
+        79,
+        81
+      ],
+      "input": {
+        "parents": "two benzonitriles",
+        "linker": "methylene"
+      },
+      "ok": [
+        "2,2'-methylenedibenzonitrile (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "substitutive_multiplicative_operation"
+        ],
+        [
+          "table",
+          "substitutive_multiplicative_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.6.1:clause:0010"
+        ]
+      ]
+    },
+    {
+      "id": "nitrilotriacetic_acid",
+      "c": [
+        82,
+        83,
+        84,
+        86,
+        87,
+        89,
+        91
+      ],
+      "input": {
+        "parents": "three acetic acids",
+        "linker": "nitrilo"
+      },
+      "ok": [
+        "2,2',2''-nitrilotriacetic acid",
+        "N,N-bis(carboxymethyl)glycine"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "substitutive_multiplicative_operation"
+        ],
+        [
+          "table",
+          "substitutive_multiplicative_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.6.1:clause:0028"
+        ]
+      ]
+    },
+    {
+      "id": "oxydicyclohexane",
+      "c": [
+        93,
+        94,
+        95,
+        99,
+        101,
+        103,
+        105
+      ],
+      "input": {
+        "parents": "two cyclohexanes",
+        "linker": "oxy"
+      },
+      "ok": [
+        "1,1'-oxydicyclohexane (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "substitutive_multiplicative_operation"
+        ],
+        [
+          "table",
+          "substitutive_multiplicative_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.6.1:clause:0034"
+        ]
+      ]
+    },
+    {
+      "id": "functional_class_dipropanedioate",
+      "c": [
+        108
+      ],
+      "input": {
+        "operation": "functional-class multiplication"
+      },
+      "ok": [
+        "dimethyl 1,4-phenylene dipropanedioate (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "functional_class_multiplicative_operation"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.6.2:clause:0004"
+        ]
+      ]
+    },
+    {
+      "id": "functional_class_example_two",
+      "c": [
+        110
+      ],
+      "input": {
+        "operation": "functional-class multiplication"
+      },
+      "ok": [
+        "dimethyl butanedioylbis[oxy(2,1-phenylene)] dibutanedioate (PIN)"
+      ],
+      "bad": [
+        "dimethyl butanedioylbis(oxy-2,1-phenylene) dibutanedioate (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "functional_class_multiplicative_operation"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.6.2:clause:0006"
+        ]
+      ],
+      "why": "The 2025 correction replaces the parenthesized oxy form with bracketed oxy(2,1-phenylene)."
+    },
+    {
+      "id": "spiro_indene_fusion",
+      "c": [
+        123,
+        125,
+        127
+      ],
+      "input": {
+        "components": [
+          "cyclopentane",
+          "1H-indene"
+        ]
+      },
+      "ok": [
+        "spiro[cyclopentane-1,1'-indene] (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "fusion_operation_definition"
+        ],
+        [
+          "table",
+          "fusion_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.7:clause:0010"
+        ]
+      ]
+    },
+    {
+      "id": "benzo_annulene_fusion",
+      "c": [
+        133,
+        135,
+        137,
+        138
+      ],
+      "input": {
+        "components": [
+          "cycloocta-1,3,5,7-tetraene",
+          "benzene"
+        ]
+      },
+      "ok": [
+        "benzo[8]annulene (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "fusion_operation_definition"
+        ],
+        [
+          "table",
+          "fusion_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.7:clause:0020"
+        ]
+      ]
+    },
+    {
+      "id": "demethylmorphine",
+      "c": [
+        161,
+        163,
+        164,
+        165
+      ],
+      "input": {
+        "parent": "morphine",
+        "removed_group": "methyl"
+      },
+      "ok": [
+        "demethylmorphine"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "de_prefix_operation"
+        ],
+        [
+          "table",
+          "de_and_deoxy_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.8.1.1:clause:0005"
+        ]
+      ]
+    },
+    {
+      "id": "deoxy_galactopyranose",
+      "c": [
+        172,
+        174
+      ],
+      "input": {
+        "parent": "beta-D-galactopyranose",
+        "removed_atom": "oxygen at position 4"
+      },
+      "ok": [
+        "4-deoxy-beta-D-xylo-hexopyranose",
+        "(2R,3R,4S,6S)-6-(hydroxymethyl)oxane-2,3,4-triol"
+      ],
+      "bad": [
+        "4-deoxy-beta-D-xylo-galactopyranose"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "deoxy_prefix_operation"
+        ],
+        [
+          "table",
+          "de_and_deoxy_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.8.1.1:clause:0016"
+        ]
+      ]
+    },
+    {
+      "id": "des_proline_oxytocin",
+      "c": [
+        177,
+        179
+      ],
+      "input": {
+        "parent": "oxytocin",
+        "removed_residue": "proline at position 7"
+      },
+      "ok": [
+        "des-7-proline-oxytocin"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "des_prefix_operation"
+        ],
+        [
+          "table",
+          "des_prefix_examples"
+        ]
+      ]
+    },
+    {
+      "id": "des_a_androstane",
+      "c": [
+        183,
+        185
+      ],
+      "input": {
+        "parent": "5alpha-androstane",
+        "removed_ring": "A"
+      },
+      "ok": [
+        "des-A-androstane"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "des_prefix_operation"
+        ],
+        [
+          "table",
+          "des_prefix_examples"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.8.1.2:clause:0008"
+        ]
+      ]
+    },
+    {
+      "id": "anhydro_mannose",
+      "c": [
+        193,
+        195
+      ],
+      "input": {
+        "parent": "2,4,5-tri-O-methyl-D-mannose",
+        "hydroxy_locants": [
+          3,
+          6
+        ]
+      },
+      "ok": [
+        "3,6-anhydro-2,4,5-tri-O-methyl-D-mannose"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "anhydro_prefix_operation"
+        ],
+        [
+          "table",
+          "anhydro_prefix_example"
+        ],
+        [
+          "figure",
+          "figure.asset.p_13.8.2:clause:0007"
+        ]
+      ]
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "deoxy_for_hydroxy_compounds",
+      "c": [
+        166
+      ],
+      "if": [
+        "lit",
+        {
+          "prefix_operation": "de",
+          "substrate": "hydroxy compound"
+        }
+      ],
+      "target": [
+        "semantic_unit",
+        "de_prefix_operation"
+      ],
+      "mode": "replace",
+      "replacement": [
+        "semantic_unit",
+        "deoxy_prefix_operation"
+      ],
+      "order": 166,
+      "specificity": 1
+    }
+  ],
+  "figures": [],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "mechanical_assets": true,
+  "refs": [
+    {
+      "id": "reference.p13.part002.des_terminal_ring_rule",
+      "c": [
+        175
+      ],
+      "rel": "cites",
+      "o": "P-13.8.1.2:xref:0002"
+    },
+    {
+      "id": "reference.p13.part002.des_androstane_example",
+      "c": [
+        185
+      ],
+      "rel": "cites",
+      "o": "P-13.8.1.2:xref:0003"
+    }
+  ],
+  "symbols": [],
+  "tables": [
+    {
+      "id": "bi_parent_hydride_example",
+      "c": [
+        8,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "label": "Example",
+      "title": "Conjunctive construction with bi",
+      "cols": [
+        [
+          "left",
+          "First component",
+          "string"
+        ],
+        [
+          "right",
+          "Second component",
+          "string"
+        ],
+        [
+          "result",
+          "Constructed name",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "bipyridine",
+          "c": [
+            8,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "v": [
+            "pyridine (PIN)",
+            "pyridine (PIN)",
+            "2,2'-bipyridine (PIN); 2,2'-bipyridyl (see P-28.2.1)"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "left",
+          "right"
+        ],
+        "result": [
+          "result"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "conjunctive_nomenclature_examples",
+      "c": [
+        27,
+        31,
+        32,
+        33,
+        34,
+        35,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "label": "Examples",
+      "title": "Component-name juxtaposition",
+      "cols": [
+        [
+          "ring",
+          "Ring component",
+          "string"
+        ],
+        [
+          "chain",
+          "Chain component",
+          "string"
+        ],
+        [
+          "result",
+          "Conjunctive and substitutive names",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "cyclohexane_ethanol",
+          "c": [
+            27,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "v": [
+            "cyclohexane (PIN)",
+            "ethanol (PIN)",
+            "cyclohexaneethanol; 2-cyclohexylethan-1-ol (PIN)"
+          ]
+        },
+        {
+          "id": "cyclopentane_acetic_acid",
+          "c": [
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "v": [
+            "cyclopentane (PIN)",
+            "cyclopentaneacetic acid; cyclopentylacetic acid (PIN)",
+            "alpha-ethylcyclopentaneacetic acid; 2-cyclopentylbutanoic acid (PIN)"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "ring",
+          "chain"
+        ],
+        "result": [
+          "result"
+        ],
+        "cardinality": "one_to_many",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "ring_formation_examples",
+      "c": [
+        52,
+        53,
+        54,
+        58,
+        59,
+        60,
+        61
+      ],
+      "label": "Examples",
+      "title": "Ring formation indicated by cyclo",
+      "cols": [
+        [
+          "parent",
+          "Parent structure",
+          "string"
+        ],
+        [
+          "result",
+          "Ring-formed name",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "propane",
+          "c": [
+            52,
+            53,
+            54
+          ],
+          "v": [
+            "propane (PIN)",
+            "cyclopropane (PIN)"
+          ]
+        },
+        {
+          "id": "androstane",
+          "c": [
+            58,
+            59,
+            60
+          ],
+          "v": [
+            "5beta,9beta-androstane",
+            "9,19-cyclo-5beta,9beta-androstane (see P-101.3.3)"
+          ]
+        },
+        {
+          "id": "fullerene",
+          "c": [
+            61
+          ],
+          "v": [
+            "(C60-Ih)[5,6]fullerene",
+            "2H-2,9-cyclo-1-nor(C60-Ih)[5,6]fullerene (PIN)"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "parent"
+        ],
+        "result": [
+          "result"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "substitutive_multiplicative_examples",
+      "c": [
+        69,
+        70,
+        71,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        93,
+        94,
+        95,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "label": "Examples",
+      "title": "Identical parents linked by multivalent substituent groups",
+      "cols": [
+        [
+          "parents",
+          "Identical parent structures",
+          "string"
+        ],
+        [
+          "linker",
+          "Linking prefix",
+          "string"
+        ],
+        [
+          "result",
+          "Assembly name",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "methylene_dibenzonitrile",
+          "c": [
+            69,
+            70,
+            71,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81
+          ],
+          "v": [
+            "two benzonitrile parents",
+            "methylene (preferred prefix)",
+            "2,2'-methylenedibenzonitrile (PIN)"
+          ]
+        },
+        {
+          "id": "nitrilotriacetic_acid",
+          "c": [
+            82,
+            83,
+            84,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "v": [
+            "three acetic acid parents",
+            "nitrilo (preselected prefix)",
+            "2,2',2''-nitrilotriacetic acid; N,N-bis(carboxymethyl)glycine (see P-103.1, Table 10.4)"
+          ]
+        },
+        {
+          "id": "oxydicyclohexane",
+          "c": [
+            93,
+            94,
+            95,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105
+          ],
+          "v": [
+            "two cyclohexane parents",
+            "oxy (preferred prefix)",
+            "1,1'-oxydicyclohexane (PIN)"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "parents",
+          "linker"
+        ],
+        "result": [
+          "result"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "fusion_examples",
+      "c": [
+        123,
+        124,
+        125,
+        126,
+        127,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138
+      ],
+      "label": "Examples",
+      "title": "Spiro and fused ring-system formation",
+      "cols": [
+        [
+          "component_a",
+          "First ring component",
+          "string"
+        ],
+        [
+          "component_b",
+          "Second ring component",
+          "string"
+        ],
+        [
+          "result",
+          "Fused or spiro name",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "spiro_indene",
+          "c": [
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "v": [
+            "cyclopentane (PIN)",
+            "1H-indene (PIN)",
+            "spiro[cyclopentane-1,1'-indene] (PIN)"
+          ]
+        },
+        {
+          "id": "benzo_annulene",
+          "c": [
+            133,
+            134,
+            135,
+            136,
+            137,
+            138
+          ],
+          "v": [
+            "8-annulene; cycloocta-1,3,5,7-tetraene (PIN)",
+            "benzene (PIN)",
+            "benzo[8]annulene (PIN; see P-25.3.2.1.1)"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "component_a",
+          "component_b"
+        ],
+        "result": [
+          "result"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "subtractive_prefix_meanings",
+      "c": [
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "label": null,
+      "title": "Subtractive-operation prefixes",
+      "cols": [
+        [
+          "prefix",
+          "Prefix",
+          "string"
+        ],
+        [
+          "operation",
+          "Operation",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "abeo",
+          "c": [
+            143,
+            144
+          ],
+          "v": [
+            "abeo",
+            "rearrangement of single bonds in a stereoparent structure (P-101.3.5.1)"
+          ]
+        },
+        {
+          "id": "anhydro",
+          "c": [
+            145,
+            146
+          ],
+          "v": [
+            "anhydro",
+            "loss of H2O from two hydroxy groups with bond formation (P-102.5.6.7)"
+          ]
+        },
+        {
+          "id": "apo",
+          "c": [
+            147,
+            148
+          ],
+          "v": [
+            "apo",
+            "removal of all of a side chain from a carotenoid system (P-101.3.4.2)"
+          ]
+        },
+        {
+          "id": "de",
+          "c": [
+            149,
+            150
+          ],
+          "v": [
+            "de",
+            "remove oxygen from OH in carbohydrate nomenclature (P-102.5.3), or exchange methyl for hydrogen (P-101.7.5)"
+          ]
+        },
+        {
+          "id": "des",
+          "c": [
+            151,
+            152
+          ],
+          "v": [
+            "des",
+            "remove an amino-acid residue from a peptide (P-103.3.5.4), or a terminal unsubstituted ring from a steroid skeleton (P-101.3.6)"
+          ]
+        },
+        {
+          "id": "retro",
+          "c": [
+            153,
+            154
+          ],
+          "v": [
+            "retro",
+            "move double bonds in a carotenoid system (P-101.3.5.2)"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "prefix"
+        ],
+        "result": [
+          "operation"
+        ],
+        "cardinality": "one_to_many",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "de_and_deoxy_examples",
+      "c": [
+        161,
+        162,
+        163,
+        164,
+        165,
+        172,
+        173,
+        174
+      ],
+      "label": "Examples",
+      "title": "Removal operations denoted by de and deoxy",
+      "cols": [
+        [
+          "parent",
+          "Parent",
+          "string"
+        ],
+        [
+          "result",
+          "Subtractive name",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "demethylmorphine",
+          "c": [
+            161,
+            162,
+            163,
+            164,
+            165
+          ],
+          "v": [
+            "morphine",
+            "demethylmorphine (exchange of methyl for H), with the two source systematic names preserved"
+          ]
+        },
+        {
+          "id": "deoxy_galactopyranose",
+          "c": [
+            172,
+            173,
+            174
+          ],
+          "v": [
+            "beta-D-galactopyranose",
+            "4-deoxy-beta-D-xylo-hexopyranose (not 4-deoxy-beta-D-xylo-galactopyranose); (2R,3R,4S,6S)-6-(hydroxymethyl)oxane-2,3,4-triol"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "parent"
+        ],
+        "result": [
+          "result"
+        ],
+        "cardinality": "one_to_many",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "des_prefix_examples",
+      "c": [
+        177,
+        179,
+        183,
+        184,
+        185
+      ],
+      "label": "Examples",
+      "title": "Removal operations denoted by des",
+      "cols": [
+        [
+          "parent",
+          "Parent",
+          "string"
+        ],
+        [
+          "result",
+          "Subtractive name",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "des_proline_oxytocin",
+          "c": [
+            177,
+            179
+          ],
+          "v": [
+            "oxytocin",
+            "des-7-proline-oxytocin (removal of proline at position 7)"
+          ]
+        },
+        {
+          "id": "des_a_androstane",
+          "c": [
+            183,
+            184,
+            185
+          ],
+          "v": [
+            "5alpha-androstane",
+            "des-A-androstane (removal of ring A; P-101.3.6)"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "parent"
+        ],
+        "result": [
+          "result"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "anhydro_prefix_example",
+      "c": [
+        193,
+        194,
+        195
+      ],
+      "label": "Example",
+      "title": "Intramolecular ether formation denoted by anhydro",
+      "cols": [
+        [
+          "parent",
+          "Parent",
+          "string"
+        ],
+        [
+          "result",
+          "Anhydro name",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "anhydro_mannose",
+          "c": [
+            193,
+            194,
+            195
+          ],
+          "v": [
+            "2,4,5-tri-O-methyl-D-mannose",
+            "3,6-anhydro-2,4,5-tri-O-methyl-D-mannose"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "parent"
+        ],
+        "result": [
+          "result"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "task_id": "P-13-part-002",
+  "units": [
+    {
+      "id": "conjunctive_operation_definition",
+      "k": "definition",
+      "c": [
+        2,
+        3
+      ],
+      "out": [
+        [
+          "definition",
+          "NomenclatureOperationDefinition"
+        ]
+      ],
+      "term": "conjunctive operation",
+      "entity": "NomenclatureOperation",
+      "value": [
+        "lit",
+        {
+          "construction": "construct a compound name from component names",
+          "junction_effect": "subtract the same number of hydrogen atoms from each component at each junction site",
+          "methods": [
+            "multiplicative parent-hydride prefix",
+            "component-name juxtaposition",
+            "ring formation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multiplicative_parent_hydride_conjunction",
+      "k": "procedure",
+      "c": [
+        4,
+        5
+      ],
+      "out": [
+        [
+          "constructed_name",
+          "Name"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "constructed_name",
+          [
+            "lit",
+            {
+              "operation": "place multiplicative prefix before corresponding parent-hydride name",
+              "prefix_series": [
+                "bi",
+                "ter",
+                "quater"
+              ],
+              "prefix_selection_reference": "P-14.2.3"
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "conjunctive_nomenclature_method",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "in": [
+        [
+          "structure",
+          "MolecularStructure"
+        ]
+      ],
+      "out": [
+        [
+          "name_plan",
+          "ConjunctiveNamePlan"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name_plan",
+          [
+            "lit",
+            {
+              "construction": "juxtapose component names",
+              "cas_usage": true,
+              "preferred_iupac_name": false,
+              "pin_alternative": {
+                "operation": "substitutive nomenclature",
+                "reference": "P-51"
+              },
+              "common_scope": "ring or ring system joined to one or more carbon chains bearing the principal characteristic group",
+              "chain_terminal_requirements": [
+                "principal characteristic group",
+                "ring or ring system"
+              ],
+              "remaining_structure": "express as substituent prefixes",
+              "locants": {
+                "system": "Greek letters",
+                "sequence": [
+                  "alpha",
+                  "alpha1",
+                  "beta",
+                  "beta1"
+                ],
+                "alpha_position": "atom next to principal characteristic group"
+              }
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "cyclo_ring_formation_operation",
+      "k": "procedure",
+      "c": [
+        47
+      ],
+      "in": [
+        [
+          "parent",
+          "ParentStructure"
+        ],
+        [
+          "atom_pair",
+          "AtomPair"
+        ]
+      ],
+      "out": [
+        [
+          "cyclic_parent",
+          "ParentStructure"
+        ],
+        [
+          "prefix",
+          "Prefix"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "cyclic_parent",
+          [
+            "lit",
+            {
+              "transformation": "directly link two parent atoms and remove one hydrogen from each"
+            }
+          ]
+        ],
+        [
+          "set",
+          "prefix",
+          "cyclo"
+        ]
+      ]
+    },
+    {
+      "id": "multiplicative_operation_definition",
+      "k": "definition",
+      "c": [
+        64
+      ],
+      "term": "multiplicative operation",
+      "entity": "NomenclatureOperation",
+      "value": [
+        "lit",
+        {
+          "purpose": "express multiple occurrences of parent structures connected by a symmetrical multivalent structure"
+        }
+      ]
+    },
+    {
+      "id": "substitutive_multiplicative_operation",
+      "k": "procedure",
+      "c": [
+        65,
+        66,
+        67
+      ],
+      "in": [
+        [
+          "identical_parents",
+          "ParentStructureCollection"
+        ],
+        [
+          "linker",
+          "MultivalentSubstituentGroup"
+        ]
+      ],
+      "out": [
+        [
+          "assembly_name",
+          "Name"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "assembly_name",
+          [
+            "lit",
+            {
+              "operation": "interconnect identical parent structures by a di- or polyvalent substituent group",
+              "eligible_parents": [
+                "functionalized parent hydrides",
+                "functional parents",
+                "rings or ring systems"
+              ],
+              "nomenclature": "substitutive"
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "functional_class_multiplicative_operation",
+      "k": "procedure",
+      "c": [
+        106
+      ],
+      "in": [
+        [
+          "identical_parents",
+          "ParentStructureCollection"
+        ],
+        [
+          "linker_name",
+          "FunctionalClassName"
+        ]
+      ],
+      "out": [
+        [
+          "assembly_name",
+          "Name"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "assembly_name",
+          [
+            "lit",
+            {
+              "operation": "link identical parent structures with a bi- or multivalent functional-class name",
+              "nomenclature": "functional class"
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "fusion_operation_definition",
+      "k": "definition",
+      "c": [
+        114,
+        115,
+        116
+      ],
+      "term": "fusion operation",
+      "entity": "RingSystemOperation",
+      "value": [
+        "lit",
+        {
+          "operation": "unite two rings or ring systems with common atoms or common atoms and bonds",
+          "spiro_system": {
+            "shared": "one atom"
+          },
+          "fused_ring_system": {
+            "shared": "atoms and bonds"
+          }
+        }
+      ]
+    },
+    {
+      "id": "subtractive_operation_definition",
+      "k": "definition",
+      "c": [
+        140,
+        141,
+        142
+      ],
+      "term": "subtractive operation",
+      "entity": "NomenclatureOperation",
+      "value": [
+        "lit",
+        {
+          "natural_product_scope": "loss of a group by exchange for hydrogen",
+          "also_includes": "loss of water with concomitant bond formation",
+          "prefix_table": "subtractive_prefix_meanings"
+        }
+      ]
+    },
+    {
+      "id": "subtractive_prefix_mapping",
+      "k": "mapping",
+      "c": [
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "in": [
+        [
+          "prefix",
+          "SubtractivePrefix"
+        ]
+      ],
+      "out": [
+        [
+          "operation",
+          "SubtractiveOperation"
+        ]
+      ],
+      "table": "subtractive_prefix_meanings"
+    },
+    {
+      "id": "de_prefix_operation",
+      "k": "procedure",
+      "c": [
+        156
+      ],
+      "in": [
+        [
+          "group_or_atom",
+          "GroupOrAtom"
+        ]
+      ],
+      "out": [
+        [
+          "modified_structure",
+          "MolecularStructure"
+        ],
+        [
+          "prefix",
+          "Prefix"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "modified_structure",
+          [
+            "lit",
+            {
+              "remove": "named group or atom other than hydrogen",
+              "replace_with": "necessary hydrogen atoms"
+            }
+          ]
+        ],
+        [
+          "set",
+          "prefix",
+          "de"
+        ]
+      ]
+    },
+    {
+      "id": "deoxy_prefix_operation",
+      "k": "procedure",
+      "c": [
+        167
+      ],
+      "in": [
+        [
+          "hydroxy_compound",
+          "HydroxyCompound"
+        ]
+      ],
+      "out": [
+        [
+          "modified_structure",
+          "MolecularStructure"
+        ],
+        [
+          "prefix",
+          "Prefix"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "modified_structure",
+          [
+            "lit",
+            {
+              "remove": "oxygen atom from an OH group",
+              "reconnect": "the hydrogen atom",
+              "principal_usage": "carbohydrate nomenclature",
+              "reference": "P-102.5.3"
+            }
+          ]
+        ],
+        [
+          "set",
+          "prefix",
+          "deoxy"
+        ]
+      ]
+    },
+    {
+      "id": "des_prefix_operation",
+      "k": "procedure",
+      "c": [
+        175
+      ],
+      "in": [
+        [
+          "parent",
+          "NaturalProductParent"
+        ]
+      ],
+      "out": [
+        [
+          "modified_parent",
+          "NaturalProductParent"
+        ],
+        [
+          "prefix",
+          "Prefix"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "modified_parent",
+          [
+            "lit",
+            {
+              "alternatives": [
+                {
+                  "scope": "polypeptide",
+                  "operation": "remove an amino-acid residue and rejoin the chain",
+                  "reference": "P-103.3.5.4"
+                },
+                {
+                  "scope": "stereoparent",
+                  "operation": "remove a terminal ring",
+                  "reference": "P-101.3.6"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "set",
+          "prefix",
+          "des"
+        ]
+      ]
+    },
+    {
+      "id": "anhydro_prefix_operation",
+      "k": "procedure",
+      "c": [
+        187,
+        188
+      ],
+      "in": [
+        [
+          "monosaccharide",
+          "MonosaccharideOrDerivative"
+        ],
+        [
+          "hydroxy_group_pair",
+          "LocantedHydroxyGroupPair"
+        ]
+      ],
+      "out": [
+        [
+          "intramolecular_ether",
+          "MolecularStructure"
+        ],
+        [
+          "prefix",
+          "DetachablePrefix"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "intramolecular_ether",
+          [
+            "lit",
+            {
+              "operation": "eliminate water from two hydroxy groups in one molecule and form the intramolecular ether"
+            }
+          ]
+        ],
+        [
+          "set",
+          "prefix",
+          [
+            "lit",
+            {
+              "text": "anhydro",
+              "preceded_by": "locant pair identifying the two hydroxy groups",
+              "placement": "alphabetical order",
+              "reference": "P-102.5.6.7.1"
+            }
+          ]
+        ]
+      ]
+    }
+  ]
+}
