@@ -3,7 +3,7 @@
   "format_version": "1.0.0",
   "task_id": "P-27-part-002",
   "clauses": [
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["prohibition", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["definition", "normative", "compile"],

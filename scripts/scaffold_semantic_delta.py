@@ -35,6 +35,7 @@ def _is_mechanical_heading(text: str | None) -> bool:
     if match is None:
         return False
     label = (match.group("label") or "").strip()
+    label = re.sub(r"\s+\((?:see\s+)?refs?\.[^)]*\)\s*$", "", label, flags=re.I)
     return not label or re.search(r"[a-z]", label) is None
 
 

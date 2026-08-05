@@ -3,7 +3,7 @@
   "format_version": "1.0.0",
   "task_id": "P-67-part-004",
   "clauses": [
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["definition", "normative", "compile"],
     ["constraint", "normative", "compile"],
     ["preference_criterion", "normative", "compile"],

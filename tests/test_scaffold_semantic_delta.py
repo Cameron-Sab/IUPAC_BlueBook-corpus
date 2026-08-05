@@ -57,6 +57,19 @@ def test_uppercase_section_heading_is_mechanically_discarded() -> None:
     assert disposition["disposition"]["reason_code"] == "heading_or_title"
 
 
+def test_uppercase_heading_with_reference_note_is_mechanically_discarded() -> None:
+    unit = {
+        "clause_id": "P-81.3:clause:0001",
+        "unit_kind": "heading_text",
+        "node_kind": "heading",
+        "ancestor_node_kinds": [],
+        "semantic_cue": None,
+        "text": "P-81.3 NAMES FOR HYDROGEN ATOMS AND IONS (see refs. 30, 33)",
+    }
+
+    assert _nonoperative_disposition(unit) is not None
+
+
 def load_task(task_id: str) -> dict:
     return json.loads((TASK_DIR / f"{task_id}.json").read_bytes())
 

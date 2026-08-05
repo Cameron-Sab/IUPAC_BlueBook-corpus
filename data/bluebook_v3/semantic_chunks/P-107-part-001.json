@@ -1,0 +1,5808 @@
+{
+  "assigned_rule_ids": [
+    "P-107",
+    "P-107.0",
+    "P-107.1",
+    "P-107.2",
+    "P-107.3",
+    "P-107.3.1",
+    "P-107.3.2",
+    "P-107.3.3",
+    "P-107.3.4",
+    "P-107.3.5",
+    "P-107.3.6",
+    "P-107.4",
+    "P-107.4.1",
+    "P-107.4.2",
+    "P-107.4.3",
+    "P-107.4.3.1",
+    "P-107.4.3.2",
+    "P-107.4.3.3"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 111,
+    "compiled_clause_count": 84,
+    "correction_application_count": 0,
+    "example_count": 18,
+    "exception_count": 0,
+    "figure_count": 21,
+    "nonoperative_clause_count": 27,
+    "record_count": 18,
+    "reference_count": 25,
+    "semantic_unit_count": 47,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 1,
+    "table_count": 0
+  },
+  "chunk_sha256": "0F98A488233F4510E739B4BFA333AA003196201264C7C2769A6CB190292C8055",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-107:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "source_navigation"
+      },
+      "force": "source_metadata",
+      "role": "source_metadata"
+    },
+    {
+      "clause_id": "P-107.0:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.0:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.lipid_nomenclature_publication_history",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.lipid_nomenclature_publication_history.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.lipid_nomenclature_publication_history.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "note"
+    },
+    {
+      "clause_id": "P-107.0:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.lipid_nomenclature_publication_history",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.lipid_nomenclature_publication_history.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.lipid_nomenclature_publication_history.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "note"
+    },
+    {
+      "clause_id": "P-107.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.lipid_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.lipid_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.lipid_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.lipid_classes",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.lipid_classes.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.lipid_classes.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.lipid_naming_system",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.lipid_naming_system.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.lipid_naming_system.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.sphinganine_retained_name",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.sphinganine_retained_name.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.sphinganine_retained_name.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.glyceride_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glyceride_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.glyceride_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.glyceride_subdivision",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glyceride_subdivision.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.glyceride_subdivision.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.individual_glyceride_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.individual_glyceride_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.individual_glyceride_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.individual_glyceride_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.glycerol_general_name_permission",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glycerol_general_name_permission.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.glycerol_general_name_permission.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.glycerol_general_name_permission.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-107.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.glycerol_natural_product_status",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glycerol_natural_product_status.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.glycerol_natural_product_status.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.2:clause:0007",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.2:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.tri_o_octadecanoylglycerol",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.2:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.2:clause:0009",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.2:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.mixed_acyl_glycerol",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.2:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.2:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.2:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phospholipid_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phospholipid_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phospholipid_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.2:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidic_acid_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidic_acid_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidic_acid_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.2:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphoglyceride_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphoglyceride_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphoglyceride_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.2:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphoglyceride_included_terms",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphoglyceride_included_terms.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphoglyceride_included_terms.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.3.1:clause:0001",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidic_acid_generic_structure",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidic_acid_generic_structure.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidic_acid_generic_structure.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.3.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.three_sn_phosphatidic_acid",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.3.1:clause:0003",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.3.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidic_acid_short_name",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidic_acid_short_name.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.phosphatidic_acid_short_name.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidic_acid_short_name.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.3.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.two_phosphatidic_acid",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.3.1:clause:0006",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.3.1:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidyl_retained_group_name",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidyl_retained_group_name.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidyl_retained_group_name.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.3.1:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.phosphatidyl_group",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.1:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.3.1:clause:0009",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.stereospecific_glycerol_numbering",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.stereospecific_glycerol_numbering.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.stereospecific_glycerol_numbering.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.stereospecific_c1_assignment",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.stereospecific_c1_assignment.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.stereospecific_c1_assignment.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.stereospecific_c1_assignment.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.sn_descriptor_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.sn_descriptor_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.sn_descriptor_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.sn_descriptor_format",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.sn_descriptor_format.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.sn_descriptor_format.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.sn_descriptor_format.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.glycerol_configuration_descriptors",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glycerol_configuration_descriptors.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.glycerol_configuration_descriptors.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.glycerol_configuration_descriptors.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0007",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.sn_glycerol_1_phosphate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.3.2:clause:0009",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.sn_glycerol_3_phosphate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.2:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.3.2:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.3.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.3.3:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidylserine_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylserine_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylserine_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.3.3:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidylserine_semisystematic_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylserine_semisystematic_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.phosphatidylserine_semisystematic_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylserine_semisystematic_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.3.3:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.3:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.phosphatidylserine_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.3:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.3.3:clause:0006",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.3.4:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.3.4:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidylcholine_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylcholine_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylcholine_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.3.4:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidylcholine_semisystematic_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylcholine_semisystematic_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.phosphatidylcholine_semisystematic_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylcholine_semisystematic_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.3.4:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.4:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.phosphatidylcholine_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.4:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.3.4:clause:0006",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.3.5:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.3.5:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidylethanolamine_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylethanolamine_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylethanolamine_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.3.5:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidylethanolamine_semisystematic_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylethanolamine_semisystematic_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.phosphatidylethanolamine_semisystematic_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylethanolamine_semisystematic_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.3.5:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.5:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.phosphatidylethanolamine_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.5:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.3.5:clause:0006",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.3.5:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p107.part001.phosphatidylethanolamine_correction_marker",
+            "kind": "figure"
+          },
+          {
+            "id": "unit.p107.part001.phosphatidylethanolamine_name_correction_event",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylethanolamine_name_correction_event.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylethanolamine_name_correction_event.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "correction",
+      "role": "correction_event"
+    },
+    {
+      "clause_id": "P-107.3.6:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.3.6:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidylinositol_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylinositol_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylinositol_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.3.6:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.phosphatidylinositol_semisystematic_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylinositol_semisystematic_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.phosphatidylinositol_semisystematic_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylinositol_semisystematic_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.3.6:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.6:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.phosphatidylinositol_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.3.6:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.3.6:clause:0006",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.3.6:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p107.part001.phosphatidylinositol_correction_marker",
+            "kind": "figure"
+          },
+          {
+            "id": "unit.p107.part001.phosphatidylinositol_name_correction_event",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylinositol_name_correction_event.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.phosphatidylinositol_name_correction_event.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "correction",
+      "role": "correction_event"
+    },
+    {
+      "clause_id": "P-107.4:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.4.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.4.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.glycolipid_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glycolipid_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.glycolipid_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.4.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.glycoglycerolipid_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glycoglycerolipid_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.glycoglycerolipid_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.4.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.glycosphingolipid_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glycosphingolipid_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.glycosphingolipid_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.4.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.glycophosphatidylinositol_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glycophosphatidylinositol_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.glycophosphatidylinositol_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.4.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.specific_glycolipid_systematic_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.specific_glycolipid_systematic_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.specific_glycolipid_systematic_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.specific_glycolipid_systematic_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.4.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.4.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.glycoglycerolipid_parent_and_numbering",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glycoglycerolipid_parent_and_numbering.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.glycoglycerolipid_parent_and_numbering.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.glycoglycerolipid_parent_and_numbering.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.4.2:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.galactosyl_dioctadecanoyl_glycerol",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.4.2:clause:0005",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.4.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p107.part001.glycoglycerolipid_correction_marker",
+            "kind": "figure"
+          },
+          {
+            "id": "unit.p107.part001.glycoglycerolipid_name_correction_event",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.glycoglycerolipid_name_correction_event.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.glycoglycerolipid_name_correction_event.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "correction",
+      "role": "correction_event"
+    },
+    {
+      "clause_id": "P-107.4.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0001",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.sphinganine_name_formation",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.sphinganine_name_formation.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.sphinganine_name_formation.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.sphinganine_name_formation.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.sphinganine_name_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.sphinganine_name_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.sphinganine_name_preference.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.sphinganine_name_preference.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.sphinganine_caption",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.4.3.1:clause:0004",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.sphinganine_derivative_name_generation",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.sphinganine_derivative_name_generation.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.sphinganine_derivative_name_generation.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.sphinganine_derivative_name_generation.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.other_sphingoid_derivative_systematic_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.other_sphingoid_derivative_systematic_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.other_sphingoid_derivative_systematic_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p107.part001.other_sphingoid_derivative_systematic_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0007",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.sphing_4_enine",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.4.3.1:clause:0009",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.icosasphinganine",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.4.3.1:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.sphinganine_diastereoisomer",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.3.1:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.4.3.1:clause:0013",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.4.3.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.4.3.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.ceramide_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.ceramide_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.ceramide_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.4.3.2:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.3.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.hexadecanoyl_sphing_4_enine",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.3.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.4.3.2:clause:0005",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-107.4.3.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-107.4.3.3:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.neutral_glycosphingolipid_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.neutral_glycosphingolipid_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.neutral_glycosphingolipid_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.4.3.3:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.neutral_glycosphingolipid_implicit_linkage",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.neutral_glycosphingolipid_implicit_linkage.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.neutral_glycosphingolipid_implicit_linkage.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-107.4.3.3:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p107.part001.preferred_glycosphingolipid_locants",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p107.part001.preferred_glycosphingolipid_locants.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.preferred_glycosphingolipid_locants.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p107.part001.preferred_glycosphingolipid_locants.assertion.from",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p107.part001.preferred_glycosphingolipid_locants.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-107.4.3.3:clause:0005",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.3.3:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p107.part001.neutral_galactosyl_ceramide",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-107.4.3.3:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_107.4.3.3:clause:0007",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "tri-O-octadecanoylglycerol",
+        "propane-1,2,3-triyl trioctadecanoate"
+      ],
+      "clause_ids": [
+        "P-107.2:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.individual_glyceride_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.2:clause:0009",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.tri_o_octadecanoylglycerol",
+      "explanation": "The caption gives semisystematic and systematic names for the triglyceride.",
+      "input": {
+        "caption": "tri-O-octadecanoylglycerol\npropane-1,2,3-triyl trioctadecanoate"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(2S)-2-O-acetyl-1-O-hexadecanoyl-3-O-[(9Z)-octadec-9-enoyl]glycerol",
+        "(2S)-2-O-acetyl-1-O-oleoyl-3-O-palmitoylglycerol",
+        "(2S)-propane-1,2,3-triyl 2-acetate 1-hexadecanoate 3-[(9Z)-octadec-9-enoate]"
+      ],
+      "clause_ids": [
+        "P-107.2:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.individual_glyceride_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.2:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.mixed_acyl_glycerol",
+      "explanation": "The caption illustrates numbering and alternative retained-acyl and systematic forms.",
+      "input": {
+        "acyl_groups": [
+          "acetyl",
+          "hexadecanoyl",
+          "(9Z)-octadec-9-enoyl"
+        ]
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "a 3-sn-phosphatidic acid"
+      ],
+      "clause_ids": [
+        "P-107.3.1:clause:0002"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.phosphatidic_acid_short_name",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.3.1:clause:0003",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.three_sn_phosphatidic_acid",
+      "explanation": "The caption identifies the 3-sn class and points to stereospecific numbering.",
+      "input": {
+        "caption": "a 3-sn-phosphatidic acid",
+        "numbering_reference": "P-107.3.2"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "a 2-phosphatidic acid"
+      ],
+      "clause_ids": [
+        "P-107.3.1:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.asset.p_107.3.1:clause:0006",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.two_phosphatidic_acid",
+      "explanation": "The caption illustrates a phosphatidic acid esterified at position 2.",
+      "input": {
+        "caption": "a 2-phosphatidic acid"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "phosphatidyl"
+      ],
+      "clause_ids": [
+        "P-107.3.1:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.phosphatidyl_retained_group_name",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.3.1:clause:0009",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.phosphatidyl_group",
+      "explanation": "The caption depicts the retained monovalent acyl-group name.",
+      "input": {
+        "caption": "phosphatidyl"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "sn-glycerol 1-phosphate",
+        "(2S)-2,3-dihydroxypropyl dihydrogen phosphate"
+      ],
+      "clause_ids": [
+        "P-107.3.2:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.sn_descriptor_format",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.3.2:clause:0009",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.sn_glycerol_1_phosphate",
+      "explanation": "The example relates an sn-glycerol name to its systematic stereochemical name.",
+      "input": {
+        "stereospecific_name": "sn-glycerol 1-phosphate"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "sn-glycerol 3-phosphate",
+        "(2R)-2,3-dihydroxypropyl dihydrogen phosphate"
+      ],
+      "clause_ids": [
+        "P-107.3.2:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.sn_descriptor_format",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.3.2:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.sn_glycerol_3_phosphate",
+      "explanation": "The example relates the opposite numbered sn-glycerol phosphate to its systematic name.",
+      "input": {
+        "stereospecific_name": "sn-glycerol 3-phosphate"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,2-di(octadecanoyl)-sn-glycero-3-phospho-L-serine",
+        "O-{[(2R)-2,3-bis(octadecanoyloxy)propoxy]hydroxyphosphoryl}-L-serine"
+      ],
+      "clause_ids": [
+        "P-107.3.3:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.phosphatidylserine_semisystematic_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.3.3:clause:0006",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.phosphatidylserine_example",
+      "explanation": "The caption gives semisystematic and substitutive names for a phosphatidylserine.",
+      "input": {
+        "compound_class": "phosphatidylserine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(7R)-7-(hexadecanoyloxy)-4-hydroxy-N,N,N-trimethyl-4,10-dioxo-3,5,9-trioxa-4lambda5-phosphapentacosan-1-aminium hydroxide"
+      ],
+      "clause_ids": [
+        "P-107.3.4:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.phosphatidylcholine_semisystematic_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.3.4:clause:0006",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.phosphatidylcholine_example",
+      "explanation": "The caption illustrates the substitutive name of a specific phosphatidylcholine.",
+      "input": {
+        "compound_class": "phosphatidylcholine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,2-di(hexadecanoyl)-sn-glycero-3-phosphoethanolamine",
+        "(2R)-3-{[(2-aminoethoxy)hydroxyphosphoryl]oxy}propane-1,2-diyl di(hexadecanoate)"
+      ],
+      "clause_ids": [
+        "P-107.3.5:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.phosphatidylethanolamine_semisystematic_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.3.5:clause:0006",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.phosphatidylethanolamine_example",
+      "explanation": "The caption gives semisystematic and substitutive names for a specific compound.",
+      "input": {
+        "compound_class": "phosphatidylethanolamine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "L-myo-inositol 2-[(2R)-2,3-bis(hexadecanoyloxy)propyl hydrogen phosphate]",
+        "(2R)-3-[(hydroxy{[(1s,2R,3R,4s,5S,6S)-2,3,4,5,6-pentahydroxycyclohexyl]oxy}phosphoryl)oxy]propane-1,2-diyl di(hexadecanoate)"
+      ],
+      "clause_ids": [
+        "P-107.3.6:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.phosphatidylinositol_semisystematic_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.3.6:clause:0006",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.phosphatidylinositol_example",
+      "explanation": "The caption gives inositol-based and substitutive names for a specific phosphatidylinositol.",
+      "input": {
+        "compound_class": "phosphatidylinositol"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "3-O-beta-D-galactopyranosyl-1,2-di-O-octadecanoyl-sn-glycerol",
+        "(2S)-3-(beta-D-galactopyranosyloxy)propane-1,2-diyl di(octadecanoate)"
+      ],
+      "clause_ids": [
+        "P-107.4.2:clause:0004"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.glycoglycerolipid_parent_and_numbering",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.4.2:clause:0005",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.galactosyl_dioctadecanoyl_glycerol",
+      "explanation": "The caption illustrates glycerol-based and systematic names for a glycoglycerolipid.",
+      "input": {
+        "configuration_numbering_basis": "P-107.3.2",
+        "parent": "glycerol"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "sphinganine",
+        "(2S,3R)-2-aminooctadecane-1,3-diol"
+      ],
+      "clause_ids": [
+        "P-107.4.3.1:clause:0003"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.sphinganine_retained_name",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.4.3.1:clause:0004",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.sphinganine_caption",
+      "explanation": "The caption pairs the retained name with its systematic name.",
+      "input": {
+        "retained_name": "sphinganine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(4E)-sphing-4-enine",
+        "(2S,3R,4E)-2-aminooctadec-4-ene-1,3-diol"
+      ],
+      "clause_ids": [
+        "P-107.4.3.1:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.sphinganine_derivative_name_generation",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.4.3.1:clause:0009",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.sphing_4_enine",
+      "explanation": "The example derives an unsaturated name from retained sphinganine.",
+      "input": {
+        "derivative": "unsaturated sphinganine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "icosasphinganine",
+        "(2S,3R)-2-aminoicosane-1,3-diol"
+      ],
+      "clause_ids": [
+        "P-107.4.3.1:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.other_sphingoid_derivative_systematic_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.4.3.1:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.icosasphinganine",
+      "explanation": "The caption gives a chain-length homologue and its systematic name.",
+      "input": {
+        "derivative": "sphinganine chain-length homologue"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(2S,3S)-2-aminooctadecane-1,3-diol"
+      ],
+      "clause_ids": [
+        "P-107.4.3.1:clause:0012"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.other_sphingoid_derivative_systematic_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.4.3.1:clause:0013",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.sphinganine_diastereoisomer",
+      "explanation": "The different diastereoisomer is named systematically.",
+      "input": {
+        "derivative": "sphinganine diastereoisomer"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(4E)-N-hexadecanoylsphing-4-enine",
+        "N-[(2S,3R,4E)-1,3-dihydroxyoctadec-4-en-2-yl]hexadecanamide"
+      ],
+      "clause_ids": [
+        "P-107.4.3.2:clause:0004"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.ceramide_definition",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.4.3.2:clause:0005",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.hexadecanoyl_sphing_4_enine",
+      "explanation": "The caption gives retained-parent and systematic names for an N-acylsphingoid.",
+      "input": {
+        "compound_class": "ceramide"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(4E,14E)-1-O-(beta-D-galactopyranosyl)-N-hexadecanoylsphinga-4,14-dienine",
+        "N-[(2S,3R,4E,14E)-1-(beta-D-galactopyranosyloxy)-3-hydroxyoctadeca-4,14-dien-2-yl]hexadecanamide"
+      ],
+      "clause_ids": [
+        "P-107.4.3.3:clause:0006"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p107.part001.neutral_glycosphingolipid_definition",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p107.part001.preferred_glycosphingolipid_locants",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_107.4.3.3:clause:0007",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p107.part001.neutral_galactosyl_ceramide",
+      "explanation": "The preferred systematic name includes the complete stereochemical locants.",
+      "input": {
+        "compound_class": "neutral glycosphingolipid"
+      },
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [],
+  "figures": [
+    {
+      "clause_ids": [
+        "P-107.2:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.2:clause:0009",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107200a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.2:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107200b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.1:clause:0003"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.3.1:clause:0003",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107310a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.1:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.3.1:clause:0006",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107310b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.1:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.3.1:clause:0009",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107310c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.2:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.3.2:clause:0009",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107320a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.2:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.3.2:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107320b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.3:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.3.3:clause:0006",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107330a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.4:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.3.4:clause:0006",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107340a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.5:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.3.5:clause:0006",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107350a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.6:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.3.6:clause:0006",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107360a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.4.2:clause:0005"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.4.2:clause:0005",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107420a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.1:clause:0004"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.4.3.1:clause:0004",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107431a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.1:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.4.3.1:clause:0009",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107431b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.1:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.4.3.1:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107431c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.1:clause:0013"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.4.3.1:clause:0013",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107431d.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.2:clause:0005"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.4.3.2:clause:0005",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107432a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.3:clause:0007"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_107.4.3.3:clause:0007",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P107433a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.5:clause:0007"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p107.part001.phosphatidylethanolamine_correction_marker",
+      "kind": "source_icon",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.3.6:clause:0007"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p107.part001.phosphatidylinositol_correction_marker",
+      "kind": "source_icon",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-107.4.2:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p107.part001.glycoglycerolipid_correction_marker",
+      "kind": "source_icon",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    }
+  ],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-107-part-001",
+  "packet_sha256": "73D3F19B6AC5ACCE45AECCB76BBC7BD305B7760028B1C59E7B439D87FCD63269",
+  "records": [
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107:clause:0001",
+        "P-107:clause:0002"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-107",
+      "reference_ids": [
+        "reference.p_107.hierarchy_parent",
+        "reference.P-107:xref:0001",
+        "reference.P-107:xref:0002",
+        "reference.P-107:xref:0003",
+        "reference.P-107:xref:0004",
+        "reference.P-107:xref:0005"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-107",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.0:clause:0001",
+        "P-107.0:clause:0002",
+        "P-107.0:clause:0003"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.0",
+      "reference_ids": [
+        "reference.p_107_0.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.lipid_nomenclature_publication_history"
+      ],
+      "source_rule_id": "P-107.0",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.1:clause:0001",
+        "P-107.1:clause:0002",
+        "P-107.1:clause:0003",
+        "P-107.1:clause:0004",
+        "P-107.1:clause:0005"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.1",
+      "reference_ids": [
+        "reference.p_107_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.lipid_definition",
+        "unit.p107.part001.lipid_classes",
+        "unit.p107.part001.lipid_naming_system",
+        "unit.p107.part001.sphinganine_retained_name"
+      ],
+      "source_rule_id": "P-107.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.2:clause:0001",
+        "P-107.2:clause:0002",
+        "P-107.2:clause:0003",
+        "P-107.2:clause:0004",
+        "P-107.2:clause:0005",
+        "P-107.2:clause:0006",
+        "P-107.2:clause:0007",
+        "P-107.2:clause:0008",
+        "P-107.2:clause:0009",
+        "P-107.2:clause:0010",
+        "P-107.2:clause:0011",
+        "P-107.2:clause:0012",
+        "P-107.2:clause:0013",
+        "P-107.2:clause:0014",
+        "P-107.2:clause:0015"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.tri_o_octadecanoylglycerol",
+        "example.p107.part001.mixed_acyl_glycerol"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.2:clause:0009",
+        "figure.asset.p_107.2:clause:0011"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.2",
+      "reference_ids": [
+        "reference.p_107_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.glyceride_definition",
+        "unit.p107.part001.glyceride_subdivision",
+        "unit.p107.part001.individual_glyceride_naming",
+        "unit.p107.part001.glycerol_general_name_permission",
+        "unit.p107.part001.glycerol_natural_product_status",
+        "unit.p107.part001.phospholipid_definition",
+        "unit.p107.part001.phosphatidic_acid_definition",
+        "unit.p107.part001.phosphoglyceride_definition",
+        "unit.p107.part001.phosphoglyceride_included_terms"
+      ],
+      "source_rule_id": "P-107.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.3:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-107.3",
+      "reference_ids": [
+        "reference.p_107_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-107.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.3.1:clause:0001",
+        "P-107.3.1:clause:0002",
+        "P-107.3.1:clause:0003",
+        "P-107.3.1:clause:0004",
+        "P-107.3.1:clause:0005",
+        "P-107.3.1:clause:0006",
+        "P-107.3.1:clause:0007",
+        "P-107.3.1:clause:0008",
+        "P-107.3.1:clause:0009"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.three_sn_phosphatidic_acid",
+        "example.p107.part001.two_phosphatidic_acid",
+        "example.p107.part001.phosphatidyl_group"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.3.1:clause:0003",
+        "figure.asset.p_107.3.1:clause:0006",
+        "figure.asset.p_107.3.1:clause:0009"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.3.1",
+      "reference_ids": [
+        "reference.p_107_3_1.hierarchy_parent",
+        "reference.P-107.3.1:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.phosphatidic_acid_generic_structure",
+        "unit.p107.part001.phosphatidic_acid_short_name",
+        "unit.p107.part001.phosphatidyl_retained_group_name"
+      ],
+      "source_rule_id": "P-107.3.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.3.2:clause:0001",
+        "P-107.3.2:clause:0002",
+        "P-107.3.2:clause:0003",
+        "P-107.3.2:clause:0004",
+        "P-107.3.2:clause:0005",
+        "P-107.3.2:clause:0006",
+        "P-107.3.2:clause:0007",
+        "P-107.3.2:clause:0008",
+        "P-107.3.2:clause:0009",
+        "P-107.3.2:clause:0010",
+        "P-107.3.2:clause:0011"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.sn_glycerol_1_phosphate",
+        "example.p107.part001.sn_glycerol_3_phosphate"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.3.2:clause:0009",
+        "figure.asset.p_107.3.2:clause:0011"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.3.2",
+      "reference_ids": [
+        "reference.p_107_3_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.stereospecific_glycerol_numbering",
+        "unit.p107.part001.stereospecific_c1_assignment",
+        "unit.p107.part001.sn_descriptor_definition",
+        "unit.p107.part001.sn_descriptor_format",
+        "unit.p107.part001.glycerol_configuration_descriptors"
+      ],
+      "source_rule_id": "P-107.3.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.3.3:clause:0001",
+        "P-107.3.3:clause:0002",
+        "P-107.3.3:clause:0003",
+        "P-107.3.3:clause:0004",
+        "P-107.3.3:clause:0005",
+        "P-107.3.3:clause:0006"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.phosphatidylserine_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.3.3:clause:0006"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.3.3",
+      "reference_ids": [
+        "reference.p_107_3_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.phosphatidylserine_definition",
+        "unit.p107.part001.phosphatidylserine_semisystematic_naming"
+      ],
+      "source_rule_id": "P-107.3.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.3.4:clause:0001",
+        "P-107.3.4:clause:0002",
+        "P-107.3.4:clause:0003",
+        "P-107.3.4:clause:0004",
+        "P-107.3.4:clause:0005",
+        "P-107.3.4:clause:0006"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.phosphatidylcholine_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.3.4:clause:0006"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.3.4",
+      "reference_ids": [
+        "reference.p_107_3_4.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.phosphatidylcholine_definition",
+        "unit.p107.part001.phosphatidylcholine_semisystematic_naming"
+      ],
+      "source_rule_id": "P-107.3.4",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.3.5:clause:0001",
+        "P-107.3.5:clause:0002",
+        "P-107.3.5:clause:0003",
+        "P-107.3.5:clause:0004",
+        "P-107.3.5:clause:0005",
+        "P-107.3.5:clause:0006",
+        "P-107.3.5:clause:0007"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.phosphatidylethanolamine_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.3.5:clause:0006",
+        "figure.p107.part001.phosphatidylethanolamine_correction_marker"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.3.5",
+      "reference_ids": [
+        "reference.p_107_3_5.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.phosphatidylethanolamine_definition",
+        "unit.p107.part001.phosphatidylethanolamine_semisystematic_naming",
+        "unit.p107.part001.phosphatidylethanolamine_name_correction_event"
+      ],
+      "source_rule_id": "P-107.3.5",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.3.6:clause:0001",
+        "P-107.3.6:clause:0002",
+        "P-107.3.6:clause:0003",
+        "P-107.3.6:clause:0004",
+        "P-107.3.6:clause:0005",
+        "P-107.3.6:clause:0006",
+        "P-107.3.6:clause:0007"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.phosphatidylinositol_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.3.6:clause:0006",
+        "figure.p107.part001.phosphatidylinositol_correction_marker"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.3.6",
+      "reference_ids": [
+        "reference.p_107_3_6.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.phosphatidylinositol_definition",
+        "unit.p107.part001.phosphatidylinositol_semisystematic_naming",
+        "unit.p107.part001.phosphatidylinositol_name_correction_event"
+      ],
+      "source_rule_id": "P-107.3.6",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.4:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-107.4",
+      "reference_ids": [
+        "reference.p_107_4.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-107.4",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.4.1:clause:0001",
+        "P-107.4.1:clause:0002",
+        "P-107.4.1:clause:0003",
+        "P-107.4.1:clause:0004",
+        "P-107.4.1:clause:0005",
+        "P-107.4.1:clause:0006"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.4.1",
+      "reference_ids": [
+        "reference.p_107_4_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.glycolipid_definition",
+        "unit.p107.part001.glycoglycerolipid_definition",
+        "unit.p107.part001.glycosphingolipid_definition",
+        "unit.p107.part001.glycophosphatidylinositol_definition",
+        "unit.p107.part001.specific_glycolipid_systematic_naming"
+      ],
+      "source_rule_id": "P-107.4.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.4.2:clause:0001",
+        "P-107.4.2:clause:0002",
+        "P-107.4.2:clause:0003",
+        "P-107.4.2:clause:0004",
+        "P-107.4.2:clause:0005",
+        "P-107.4.2:clause:0006"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.galactosyl_dioctadecanoyl_glycerol"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.4.2:clause:0005",
+        "figure.p107.part001.glycoglycerolipid_correction_marker"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.4.2",
+      "reference_ids": [
+        "reference.p_107_4_2.hierarchy_parent",
+        "reference.P-107.4.2:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.glycoglycerolipid_parent_and_numbering",
+        "unit.p107.part001.glycoglycerolipid_name_correction_event"
+      ],
+      "source_rule_id": "P-107.4.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.4.3:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-107.4.3",
+      "reference_ids": [
+        "reference.p_107_4_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-107.4.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.4.3.1:clause:0001",
+        "P-107.4.3.1:clause:0002",
+        "P-107.4.3.1:clause:0003",
+        "P-107.4.3.1:clause:0004",
+        "P-107.4.3.1:clause:0005",
+        "P-107.4.3.1:clause:0006",
+        "P-107.4.3.1:clause:0007",
+        "P-107.4.3.1:clause:0008",
+        "P-107.4.3.1:clause:0009",
+        "P-107.4.3.1:clause:0010",
+        "P-107.4.3.1:clause:0011",
+        "P-107.4.3.1:clause:0012",
+        "P-107.4.3.1:clause:0013"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.sphinganine_caption",
+        "example.p107.part001.sphing_4_enine",
+        "example.p107.part001.icosasphinganine",
+        "example.p107.part001.sphinganine_diastereoisomer"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.4.3.1:clause:0004",
+        "figure.asset.p_107.4.3.1:clause:0009",
+        "figure.asset.p_107.4.3.1:clause:0011",
+        "figure.asset.p_107.4.3.1:clause:0013"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.4.3.1",
+      "reference_ids": [
+        "reference.p_107_4_3_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.sphinganine_name_formation",
+        "unit.p107.part001.sphinganine_name_preference",
+        "unit.p107.part001.sphinganine_derivative_name_generation",
+        "unit.p107.part001.other_sphingoid_derivative_systematic_naming"
+      ],
+      "source_rule_id": "P-107.4.3.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.4.3.2:clause:0001",
+        "P-107.4.3.2:clause:0002",
+        "P-107.4.3.2:clause:0003",
+        "P-107.4.3.2:clause:0004",
+        "P-107.4.3.2:clause:0005"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.hexadecanoyl_sphing_4_enine"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.4.3.2:clause:0005"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.4.3.2",
+      "reference_ids": [
+        "reference.p_107_4_3_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.ceramide_definition"
+      ],
+      "source_rule_id": "P-107.4.3.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-107.4.3.3:clause:0001",
+        "P-107.4.3.3:clause:0002",
+        "P-107.4.3.3:clause:0003",
+        "P-107.4.3.3:clause:0004",
+        "P-107.4.3.3:clause:0005",
+        "P-107.4.3.3:clause:0006",
+        "P-107.4.3.3:clause:0007"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p107.part001.neutral_galactosyl_ceramide"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_107.4.3.3:clause:0007"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-107.4.3.3",
+      "reference_ids": [
+        "reference.p_107_4_3_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p107.part001.neutral_glycosphingolipid_definition",
+        "unit.p107.part001.neutral_glycosphingolipid_implicit_linkage",
+        "unit.p107.part001.preferred_glycosphingolipid_locants"
+      ],
+      "source_rule_id": "P-107.4.3.3",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-107:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-10",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.0:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_0.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.0",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_3_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_3_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.3.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_3_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.3.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.4:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_3_4.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.3.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.5:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_3_5.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.3.5",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.6:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_3_6.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.3.6",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_4.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_4_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.4.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_4_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.4.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_4_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.4.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_4_3_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.4.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.4.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_4_3_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.4.3.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.4.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_107_4_3_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.4.3.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-107.4.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-107:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-107:xref:0001"
+      ],
+      "target": {
+        "id": "P-107.0",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-107:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-107:xref:0002"
+      ],
+      "target": {
+        "id": "P-107.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-107:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-107:xref:0003"
+      ],
+      "target": {
+        "id": "P-107.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-107:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-107:xref:0004"
+      ],
+      "target": {
+        "id": "P-107.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-107:xref:0005",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-107:xref:0005"
+      ],
+      "target": {
+        "id": "P-107.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.1:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-107.3.1:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-107.3.1:xref:0001"
+      ],
+      "target": {
+        "id": "P-107.3.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.2:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-107.4.2:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-107.4.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-107.4.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-107.3.2",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-107.0:clause:0002",
+        "P-107.0:clause:0003"
+      ],
+      "entity_type": "LipidNomenclaturePublicationHistory",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.0:clause:0002",
+            "P-107.0:clause:0003"
+          ],
+          "expression_id": "expr.p107.part001.lipid_nomenclature_publication_history.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "publication history of lipid nomenclature",
+      "unit_id": "unit.p107.part001.lipid_nomenclature_publication_history",
+      "value": {
+        "clause_ids": [
+          "P-107.0:clause:0002",
+          "P-107.0:clause:0003"
+        ],
+        "expression_id": "expr.p107.part001.lipid_nomenclature_publication_history.value",
+        "op": "literal",
+        "value": {
+          "glycolipid_revision": {
+            "reference": 50,
+            "year": 1997
+          },
+          "lipids_phospholipids_and_glycolipids": {
+            "reference": 48,
+            "year": 1976
+          }
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.1:clause:0002"
+      ],
+      "entity_type": "BiologicalSubstance",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "substance",
+          "type": "BiologicalSubstance"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "is_lipid",
+          "type": "Boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.1:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.lipid_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "lipid",
+      "unit_id": "unit.p107.part001.lipid_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.1:clause:0002"
+        ],
+        "expression_id": "expr.p107.part001.lipid_definition.value",
+        "op": "literal",
+        "value": {
+          "origin": "biological",
+          "solubility": "soluble in nonpolar solvents",
+          "term_scope": "loosely defined"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.1:clause:0003"
+      ],
+      "entity_type": "LipidClass",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.1:clause:0003"
+          ],
+          "expression_id": "expr.p107.part001.lipid_classes.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "classes of lipids",
+      "unit_id": "unit.p107.part001.lipid_classes",
+      "value": {
+        "clause_ids": [
+          "P-107.1:clause:0003"
+        ],
+        "expression_id": "expr.p107.part001.lipid_classes.value",
+        "op": "literal",
+        "value": {
+          "nonsaponifiable": [
+            "steroids"
+          ],
+          "saponifiable": [
+            "glycerides (fats and oils)",
+            "phospholipids"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.1:clause:0004"
+      ],
+      "entity_type": "LipidName",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.1:clause:0004"
+          ],
+          "expression_id": "expr.p107.part001.lipid_naming_system.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "lipid nomenclature",
+      "unit_id": "unit.p107.part001.lipid_naming_system",
+      "value": {
+        "clause_ids": [
+          "P-107.1:clause:0004"
+        ],
+        "expression_id": "expr.p107.part001.lipid_naming_system.value",
+        "op": "literal",
+        "value": {
+          "analogy": "carbohydrate nomenclature",
+          "name_types": [
+            "retained names",
+            "systematic names"
+          ],
+          "systematic_context": "specialized lipid nomenclature"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.1:clause:0005"
+      ],
+      "entity_type": "LipidParentName",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.1:clause:0005"
+          ],
+          "expression_id": "expr.p107.part001.sphinganine_retained_name.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "sphinganine",
+      "unit_id": "unit.p107.part001.sphinganine_retained_name",
+      "value": {
+        "clause_ids": [
+          "P-107.1:clause:0005"
+        ],
+        "expression_id": "expr.p107.part001.sphinganine_retained_name.value",
+        "op": "literal",
+        "value": {
+          "scope": [
+            "the diol",
+            "its derivatives"
+          ],
+          "status": "retained in lipid nomenclature",
+          "systematic_name": "(2S,3R)-2-aminooctadecane-1,3-diol"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0002"
+      ],
+      "entity_type": "Glyceride",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.2:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.glyceride_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "glyceride",
+      "unit_id": "unit.p107.part001.glyceride_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.2:clause:0002"
+        ],
+        "expression_id": "expr.p107.part001.glyceride_definition.value",
+        "op": "literal",
+        "value": {
+          "acid_components": "fatty acids",
+          "alcohol": "glycerol (propane-1,2,3-triol)",
+          "compound_class": "ester"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0003"
+      ],
+      "entity_type": "GlycerideClass",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.2:clause:0003"
+          ],
+          "expression_id": "expr.p107.part001.glyceride_subdivision.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "customary glyceride subdivision",
+      "unit_id": "unit.p107.part001.glyceride_subdivision",
+      "value": {
+        "clause_ids": [
+          "P-107.2:clause:0003"
+        ],
+        "expression_id": "expr.p107.part001.glyceride_subdivision.value",
+        "op": "literal",
+        "value": [
+          {
+            "acyl_group_count": 3,
+            "class": "triglyceride",
+            "positions": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "acyl_group_count": 2,
+            "class": "diglyceride",
+            "positions": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "acyl_group_count": 1,
+            "class": "monoglyceride",
+            "positions": [
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0004"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "glyceride",
+          "type": "Glyceride"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "LipidName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.2:clause:0004"
+          ],
+          "expression_id": "expr.p107.part001.individual_glyceride_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.2:clause:0004"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.individual_glyceride_naming.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.2:clause:0004"
+            ],
+            "expression_id": "expr.p107.part001.individual_glyceride_naming.steps.1.value",
+            "op": "literal",
+            "value": {
+              "multiplicative_prefix_basis": "number of acyl groups",
+              "pattern": "mono-, di-, or tri-O-acylglycerol"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.individual_glyceride_naming"
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0005"
+      ],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "OrganicCompound"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "parent_name",
+          "type": "Name"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.2:clause:0005"
+          ],
+          "expression_id": "expr.p107.part001.glycerol_general_name_permission.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.2:clause:0005"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.glycerol_general_name_permission.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.2:clause:0005"
+            ],
+            "expression_id": "expr.p107.part001.glycerol_general_name_permission.steps.1.value",
+            "op": "literal",
+            "value": {
+              "allowed_parent_name": "glycerol",
+              "scope": "general nomenclature"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.glycerol_general_name_permission"
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0006"
+      ],
+      "entity_type": "NaturalProductParentName",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.2:clause:0006"
+          ],
+          "expression_id": "expr.p107.part001.glycerol_natural_product_status.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "glycerol",
+      "unit_id": "unit.p107.part001.glycerol_natural_product_status",
+      "value": {
+        "clause_ids": [
+          "P-107.2:clause:0006"
+        ],
+        "expression_id": "expr.p107.part001.glycerol_natural_product_status.value",
+        "op": "literal",
+        "value": {
+          "especially": "lipid nomenclature",
+          "field": "natural products",
+          "status": "retained name"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0012"
+      ],
+      "entity_type": "Phospholipid",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.2:clause:0012"
+          ],
+          "expression_id": "expr.p107.part001.phospholipid_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "phospholipid",
+      "unit_id": "unit.p107.part001.phospholipid_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.2:clause:0012"
+        ],
+        "expression_id": "expr.p107.part001.phospholipid_definition.value",
+        "op": "literal",
+        "value": {
+          "included_classes": [
+            "phosphatidic acids",
+            "phosphoglycerides"
+          ],
+          "phosphoric_acid_form": [
+            "monoester",
+            "diester"
+          ],
+          "superclass": "lipid"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0013"
+      ],
+      "entity_type": "PhosphatidicAcid",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.2:clause:0013"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidic_acid_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "phosphatidic acid",
+      "unit_id": "unit.p107.part001.phosphatidic_acid_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.2:clause:0013"
+        ],
+        "expression_id": "expr.p107.part001.phosphatidic_acid_definition.value",
+        "op": "literal",
+        "value": {
+          "fatty_acid_esterified_hydroxy_groups": 2,
+          "parent": "glycerol",
+          "phosphoric_acid_esterified_hydroxy_groups": 1,
+          "phosphoric_acid_site": "commonly but not necessarily primary"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0014"
+      ],
+      "entity_type": "Phosphoglyceride",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.2:clause:0014"
+          ],
+          "expression_id": "expr.p107.part001.phosphoglyceride_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "phosphoglyceride",
+      "unit_id": "unit.p107.part001.phosphoglyceride_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.2:clause:0014"
+        ],
+        "expression_id": "expr.p107.part001.phosphoglyceride_definition.value",
+        "op": "literal",
+        "value": {
+          "compound_class": "phosphoric diester",
+          "excluded_alcohol_name": "ethanolamine",
+          "relationship": "ester of a phosphatidic acid",
+          "typical_alcohols": [
+            "2-aminoethanol",
+            "choline",
+            "glycerol",
+            "inositol",
+            "serine"
+          ],
+          "typical_polar_head_group": "OH or NH2 on the esterified alcohol"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.2:clause:0015"
+      ],
+      "entity_type": "PhosphoglycerideClass",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.2:clause:0015"
+          ],
+          "expression_id": "expr.p107.part001.phosphoglyceride_included_terms.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "included phosphoglyceride terms",
+      "unit_id": "unit.p107.part001.phosphoglyceride_included_terms",
+      "value": {
+        "clause_ids": [
+          "P-107.2:clause:0015"
+        ],
+        "expression_id": "expr.p107.part001.phosphoglyceride_included_terms.value",
+        "op": "literal",
+        "value": [
+          "lecithins",
+          "cephalins"
+        ]
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.1:clause:0001"
+      ],
+      "entity_type": "PhosphatidicAcid",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.1:clause:0001"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidic_acid_generic_structure.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "generic structure of a phosphatidic acid",
+      "unit_id": "unit.p107.part001.phosphatidic_acid_generic_structure",
+      "value": {
+        "clause_ids": [
+          "P-107.3.1:clause:0001"
+        ],
+        "expression_id": "expr.p107.part001.phosphatidic_acid_generic_structure.value",
+        "op": "literal",
+        "value": {
+          "illustration": "following generic-structure figure",
+          "structure": "glycerol bearing one phosphoric-acid ester and two fatty-acid esters"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.1:clause:0004"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "ThreeSnPhosphatidicAcid"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "Name"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.1:clause:0004"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidic_acid_short_name.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.3.1:clause:0004"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.phosphatidic_acid_short_name.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.3.1:clause:0004"
+            ],
+            "expression_id": "expr.p107.part001.phosphatidic_acid_short_name.steps.1.value",
+            "op": "literal",
+            "value": {
+              "omitted_qualifier": "3-sn",
+              "usual_name": "phosphatidic acid"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.phosphatidic_acid_short_name"
+    },
+    {
+      "clause_ids": [
+        "P-107.3.1:clause:0007"
+      ],
+      "entity_type": "MonovalentAcylGroup",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.1:clause:0007"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidyl_retained_group_name.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "phosphatidyl",
+      "unit_id": "unit.p107.part001.phosphatidyl_retained_group_name",
+      "value": {
+        "clause_ids": [
+          "P-107.3.1:clause:0007"
+        ],
+        "expression_id": "expr.p107.part001.phosphatidyl_retained_group_name.value",
+        "op": "literal",
+        "value": {
+          "derived_from": "phosphatidic acid",
+          "status": "retained name",
+          "valence": 1
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.2:clause:0002"
+      ],
+      "entity_type": "GlycerolDerivativeNumbering",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.2:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.stereospecific_glycerol_numbering.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "stereospecific numbering",
+      "unit_id": "unit.p107.part001.stereospecific_glycerol_numbering",
+      "value": {
+        "clause_ids": [
+          "P-107.3.2:clause:0002"
+        ],
+        "expression_id": "expr.p107.part001.stereospecific_glycerol_numbering.value",
+        "op": "literal",
+        "value": {
+          "abbreviation": "sn",
+          "purpose": "designate the configuration of glycerol derivatives"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.2:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "fischer_projection",
+          "type": "GlycerolFischerProjection"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "c1_atom",
+          "type": "Atom"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.2:clause:0003"
+          ],
+          "expression_id": "expr.p107.part001.stereospecific_c1_assignment.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.3.2:clause:0003"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.stereospecific_c1_assignment.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.3.2:clause:0003"
+            ],
+            "expression_id": "expr.p107.part001.stereospecific_c1_assignment.steps.1.value",
+            "op": "literal",
+            "value": {
+              "c1": "top carbon atom",
+              "projection": "vertical carbon chain with the hydroxy group at carbon 2 to the left"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.stereospecific_c1_assignment"
+    },
+    {
+      "clause_ids": [
+        "P-107.3.2:clause:0004"
+      ],
+      "entity_type": "Stereodescriptor",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.2:clause:0004"
+          ],
+          "expression_id": "expr.p107.part001.sn_descriptor_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "sn",
+      "unit_id": "unit.p107.part001.sn_descriptor_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.3.2:clause:0004"
+        ],
+        "expression_id": "expr.p107.part001.sn_descriptor_definition.value",
+        "op": "literal",
+        "value": {
+          "expansion": "stereospecifically numbered",
+          "purpose": "distinguish stereospecific numbering from conventional numbering that conveys no steric information"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.2:clause:0005"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "glycerol_term",
+          "type": "GlycerolTerm"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "rendered_term",
+          "type": "NameComponent"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.2:clause:0005"
+          ],
+          "expression_id": "expr.p107.part001.sn_descriptor_format.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.3.2:clause:0005"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.sn_descriptor_format.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.3.2:clause:0005"
+            ],
+            "expression_id": "expr.p107.part001.sn_descriptor_format.steps.1.value",
+            "op": "literal",
+            "value": {
+              "case": "lowercase",
+              "descriptor": "sn",
+              "position": "immediately before glycerol term",
+              "sentence_initial_style": "lowercase italic",
+              "separator": "hyphen",
+              "style": "italic"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.sn_descriptor_format"
+    },
+    {
+      "clause_ids": [
+        "P-107.3.2:clause:0006"
+      ],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "configuration_status",
+          "type": "ConfigurationStatus"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "descriptor",
+          "type": "Stereodescriptor"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.2:clause:0006"
+          ],
+          "expression_id": "expr.p107.part001.glycerol_configuration_descriptors.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.3.2:clause:0006"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.glycerol_configuration_descriptors.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.3.2:clause:0006"
+            ],
+            "expression_id": "expr.p107.part001.glycerol_configuration_descriptors.steps.1.value",
+            "op": "literal",
+            "value": {
+              "racemate": "rac",
+              "unknown_or_unspecified": "Xi"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.glycerol_configuration_descriptors"
+    },
+    {
+      "clause_ids": [
+        "P-107.3.3:clause:0002"
+      ],
+      "entity_type": "Phosphatidylserine",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.3:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidylserine_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "phosphatidylserine",
+      "unit_id": "unit.p107.part001.phosphatidylserine_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.3.3:clause:0002"
+        ],
+        "expression_id": "expr.p107.part001.phosphatidylserine_definition.value",
+        "op": "literal",
+        "value": {
+          "parent_class": "acyl derivative of phosphatidic acid",
+          "phosphoric_acid_esterifying_component": "serine",
+          "usual_component": "L-serine"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.3:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "Phosphatidylserine"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "SemisystematicName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.3:clause:0003"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidylserine_semisystematic_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.3.3:clause:0003"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.phosphatidylserine_semisystematic_naming.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.3.3:clause:0003"
+            ],
+            "expression_id": "expr.p107.part001.phosphatidylserine_semisystematic_naming.steps.1.value",
+            "op": "literal",
+            "value": {
+              "method": "principles, rules, and conventions of substitutive nomenclature"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.phosphatidylserine_semisystematic_naming"
+    },
+    {
+      "clause_ids": [
+        "P-107.3.4:clause:0002"
+      ],
+      "entity_type": "Phosphatidylcholine",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.4:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidylcholine_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "phosphatidylcholine",
+      "unit_id": "unit.p107.part001.phosphatidylcholine_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.3.4:clause:0002"
+        ],
+        "expression_id": "expr.p107.part001.phosphatidylcholine_definition.value",
+        "op": "literal",
+        "value": {
+          "parent_class": "acyl derivative of phosphatidic acid",
+          "phosphoric_acid_esterifying_component": "choline"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.4:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "Phosphatidylcholine"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "SemisystematicName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.4:clause:0003"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidylcholine_semisystematic_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.3.4:clause:0003"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.phosphatidylcholine_semisystematic_naming.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.3.4:clause:0003"
+            ],
+            "expression_id": "expr.p107.part001.phosphatidylcholine_semisystematic_naming.steps.1.value",
+            "op": "literal",
+            "value": {
+              "method": "principles, rules, and conventions of substitutive nomenclature"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.phosphatidylcholine_semisystematic_naming"
+    },
+    {
+      "clause_ids": [
+        "P-107.3.5:clause:0002"
+      ],
+      "entity_type": "PhosphatidylAminoethanol",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.5:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidylethanolamine_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "phosphatidylethanolamine",
+      "unit_id": "unit.p107.part001.phosphatidylethanolamine_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.3.5:clause:0002"
+        ],
+        "expression_id": "expr.p107.part001.phosphatidylethanolamine_definition.value",
+        "op": "literal",
+        "value": {
+          "more_correct_term": "phosphatidyl(amino)ethanol",
+          "parent_class": "acyl derivative of phosphatidic acid",
+          "phosphoric_acid_esterifying_component": "2-aminoethanol"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.5:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "PhosphatidylAminoethanol"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "SemisystematicName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.5:clause:0003"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidylethanolamine_semisystematic_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.3.5:clause:0003"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.phosphatidylethanolamine_semisystematic_naming.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.3.5:clause:0003"
+            ],
+            "expression_id": "expr.p107.part001.phosphatidylethanolamine_semisystematic_naming.steps.1.value",
+            "op": "literal",
+            "value": {
+              "method": "principles, rules, and conventions of substitutive nomenclature"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.phosphatidylethanolamine_semisystematic_naming"
+    },
+    {
+      "clause_ids": [
+        "P-107.3.5:clause:0007"
+      ],
+      "entity_type": "CorrectionEvent",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.5:clause:0007"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidylethanolamine_name_correction_event.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "P-107.3.5 example correction event",
+      "unit_id": "unit.p107.part001.phosphatidylethanolamine_name_correction_event",
+      "value": {
+        "clause_ids": [
+          "P-107.3.5:clause:0007"
+        ],
+        "expression_id": "expr.p107.part001.phosphatidylethanolamine_name_correction_event.value",
+        "op": "literal",
+        "value": {
+          "action": "marks the preceding example as the correct name",
+          "description": "correct name",
+          "event_kind": "correction",
+          "source_icon_url": "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+          "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.6:clause:0002"
+      ],
+      "entity_type": "Phosphatidylinositol",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.6:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidylinositol_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "phosphatidylinositol",
+      "unit_id": "unit.p107.part001.phosphatidylinositol_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.3.6:clause:0002"
+        ],
+        "expression_id": "expr.p107.part001.phosphatidylinositol_definition.value",
+        "op": "literal",
+        "value": {
+          "parent_class": "acyl derivative of phosphatidic acid",
+          "phosphoric_acid_esterifying_component": "inositol"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.3.6:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "Phosphatidylinositol"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "SemisystematicName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.6:clause:0003"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidylinositol_semisystematic_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.3.6:clause:0003"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.phosphatidylinositol_semisystematic_naming.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.3.6:clause:0003"
+            ],
+            "expression_id": "expr.p107.part001.phosphatidylinositol_semisystematic_naming.steps.1.value",
+            "op": "literal",
+            "value": {
+              "method": "principles, rules, and conventions of substitutive nomenclature"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.phosphatidylinositol_semisystematic_naming"
+    },
+    {
+      "clause_ids": [
+        "P-107.3.6:clause:0007"
+      ],
+      "entity_type": "CorrectionEvent",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.3.6:clause:0007"
+          ],
+          "expression_id": "expr.p107.part001.phosphatidylinositol_name_correction_event.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "P-107.3.6 example correction event",
+      "unit_id": "unit.p107.part001.phosphatidylinositol_name_correction_event",
+      "value": {
+        "clause_ids": [
+          "P-107.3.6:clause:0007"
+        ],
+        "expression_id": "expr.p107.part001.phosphatidylinositol_name_correction_event.value",
+        "op": "literal",
+        "value": {
+          "action": "marks the preceding example as the correct name",
+          "description": "correct name",
+          "event_kind": "correction",
+          "source_icon_url": "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+          "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.1:clause:0002"
+      ],
+      "entity_type": "Glycolipid",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.1:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.glycolipid_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "glycolipid",
+      "unit_id": "unit.p107.part001.glycolipid_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.4.1:clause:0002"
+        ],
+        "expression_id": "expr.p107.part001.glycolipid_definition.value",
+        "op": "literal",
+        "value": {
+          "hydrophobic_moiety_examples": [
+            "acyl glycerol",
+            "sphingoid (long-chain aliphatic amino alcohol)",
+            "ceramide (N-acyl-sphingoid)",
+            "prenylphosphate"
+          ],
+          "linkage": "glycosidic",
+          "linked_to": "hydrophobic moiety",
+          "minimum_monosaccharide_residues": 1
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.1:clause:0003"
+      ],
+      "entity_type": "Glycoglycerolipid",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.1:clause:0003"
+          ],
+          "expression_id": "expr.p107.part001.glycoglycerolipid_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "glycoglycerolipid",
+      "unit_id": "unit.p107.part001.glycoglycerolipid_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.4.1:clause:0003"
+        ],
+        "expression_id": "expr.p107.part001.glycoglycerolipid_definition.value",
+        "op": "literal",
+        "value": {
+          "minimum_glycerol_residues": 1,
+          "superclass": "glycolipid"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.1:clause:0004"
+      ],
+      "entity_type": "Glycosphingolipid",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.1:clause:0004"
+          ],
+          "expression_id": "expr.p107.part001.glycosphingolipid_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "glycosphingolipid",
+      "unit_id": "unit.p107.part001.glycosphingolipid_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.4.1:clause:0004"
+        ],
+        "expression_id": "expr.p107.part001.glycosphingolipid_definition.value",
+        "op": "literal",
+        "value": {
+          "minimum_monosaccharide_residues": 1,
+          "required_hydrophobic_component": [
+            "sphingoid",
+            "ceramide"
+          ],
+          "superclass": "lipid"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.1:clause:0005"
+      ],
+      "entity_type": "Glycophosphatidylinositol",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.1:clause:0005"
+          ],
+          "expression_id": "expr.p107.part001.glycophosphatidylinositol_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "glycophosphatidylinositol",
+      "unit_id": "unit.p107.part001.glycophosphatidylinositol_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.4.1:clause:0005"
+        ],
+        "expression_id": "expr.p107.part001.glycophosphatidylinositol_definition.value",
+        "op": "literal",
+        "value": {
+          "structure": "saccharides glycosidically linked to the inositol moiety of a phosphatidylinositol",
+          "superclass": "glycolipid"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.1:clause:0006"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "SpecificGlycolipid"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "SystematicName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.1:clause:0006"
+          ],
+          "expression_id": "expr.p107.part001.specific_glycolipid_systematic_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.4.1:clause:0006"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.specific_glycolipid_systematic_naming.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.4.1:clause:0006"
+            ],
+            "expression_id": "expr.p107.part001.specific_glycolipid_systematic_naming.steps.1.value",
+            "op": "literal",
+            "value": {
+              "required_method": "systematic nomenclature"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.specific_glycolipid_systematic_naming"
+    },
+    {
+      "clause_ids": [
+        "P-107.4.2:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "Glycoglycerolipid"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name_basis",
+          "type": "GlycerolNameBasis"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.2:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.glycoglycerolipid_parent_and_numbering.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.4.2:clause:0002"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.glycoglycerolipid_parent_and_numbering.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.4.2:clause:0002"
+            ],
+            "expression_id": "expr.p107.part001.glycoglycerolipid_parent_and_numbering.steps.1.value",
+            "op": "literal",
+            "value": {
+              "configuration_numbering_basis": "P-107.3.2",
+              "parent": "glycerol"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.glycoglycerolipid_parent_and_numbering"
+    },
+    {
+      "clause_ids": [
+        "P-107.4.2:clause:0006"
+      ],
+      "entity_type": "CorrectionEvent",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.2:clause:0006"
+          ],
+          "expression_id": "expr.p107.part001.glycoglycerolipid_name_correction_event.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "P-107.4.2 example correction event",
+      "unit_id": "unit.p107.part001.glycoglycerolipid_name_correction_event",
+      "value": {
+        "clause_ids": [
+          "P-107.4.2:clause:0006"
+        ],
+        "expression_id": "expr.p107.part001.glycoglycerolipid_name_correction_event.value",
+        "op": "literal",
+        "value": {
+          "action": "marks the preceding example as corrected",
+          "description": "corrected name",
+          "event_kind": "correction",
+          "source_icon_url": "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+          "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.1:clause:0001"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "amino_alcohol",
+          "type": "AliphaticAminoAlcohol"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "parent_name",
+          "type": "LipidParentName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.3.1:clause:0001"
+          ],
+          "expression_id": "expr.p107.part001.sphinganine_name_formation.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.4.3.1:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.sphinganine_name_formation.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.4.3.1:clause:0001"
+            ],
+            "expression_id": "expr.p107.part001.sphinganine_name_formation.steps.1.value",
+            "op": "literal",
+            "value": {
+              "retained_parent_name": "sphinganine",
+              "structure": "aliphatic amino alcohol having the described absolute configuration"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.sphinganine_name_formation"
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.1:clause:0002"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "Sphinganine"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "preferred_name",
+          "type": "PreferredName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.3.1:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.sphinganine_name_preference.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.4.3.1:clause:0002"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.sphinganine_name_preference.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.4.3.1:clause:0002"
+            ],
+            "expression_id": "expr.p107.part001.sphinganine_name_preference.steps.1.value",
+            "op": "literal",
+            "value": {
+              "nonpreferred_systematic_alternative": "(2S,3R)-2-aminooctadecane-1,3-diol",
+              "preferred": "sphinganine"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.sphinganine_name_preference"
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.1:clause:0005"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "derivative",
+          "type": "SphinganineDerivative"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "SphinganineBasedName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.3.1:clause:0005"
+          ],
+          "expression_id": "expr.p107.part001.sphinganine_derivative_name_generation.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.4.3.1:clause:0005"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.sphinganine_derivative_name_generation.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.4.3.1:clause:0005"
+            ],
+            "expression_id": "expr.p107.part001.sphinganine_derivative_name_generation.steps.1.value",
+            "op": "literal",
+            "value": {
+              "covered_derivatives": [
+                "unsaturated",
+                "N-substituted",
+                "O-substituted"
+              ],
+              "retained_parent": "sphinganine"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.sphinganine_derivative_name_generation"
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.1:clause:0006"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "derivative",
+          "type": "OtherSphingoidDerivative"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "SystematicName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.3.1:clause:0006"
+          ],
+          "expression_id": "expr.p107.part001.other_sphingoid_derivative_systematic_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-107.4.3.1:clause:0006"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p107.part001.other_sphingoid_derivative_systematic_naming.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-107.4.3.1:clause:0006"
+            ],
+            "expression_id": "expr.p107.part001.other_sphingoid_derivative_systematic_naming.steps.1.value",
+            "op": "literal",
+            "value": {
+              "method": "principles, rules, and conventions of substitutive nomenclature",
+              "systematically_named_derivatives": [
+                "hydroxy",
+                "oxo",
+                "amino",
+                "different chain length",
+                "other diastereoisomers"
+              ]
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p107.part001.other_sphingoid_derivative_systematic_naming"
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.2:clause:0002"
+      ],
+      "entity_type": "Ceramide",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.3.2:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.ceramide_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "ceramide",
+      "unit_id": "unit.p107.part001.ceramide_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.4.3.2:clause:0002"
+        ],
+        "expression_id": "expr.p107.part001.ceramide_definition.value",
+        "op": "literal",
+        "value": {
+          "structure_class": "N-acylsphingoid"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.3:clause:0002"
+      ],
+      "entity_type": "NeutralGlycosphingolipid",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.3.3:clause:0002"
+          ],
+          "expression_id": "expr.p107.part001.neutral_glycosphingolipid_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "neutral glycosphingolipid",
+      "unit_id": "unit.p107.part001.neutral_glycosphingolipid_definition",
+      "value": {
+        "clause_ids": [
+          "P-107.4.3.3:clause:0002"
+        ],
+        "expression_id": "expr.p107.part001.neutral_glycosphingolipid_definition.value",
+        "op": "literal",
+        "value": {
+          "parent_options": [
+            "sphingoid",
+            "ceramide"
+          ],
+          "structure_class": "carbohydrate-containing derivative"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-107.4.3.3:clause:0003"
+      ],
+      "entity_type": "NeutralGlycosphingolipidName",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.3.3:clause:0003"
+          ],
+          "expression_id": "expr.p107.part001.neutral_glycosphingolipid_implicit_linkage.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "implicit carbohydrate linkage in a neutral glycosphingolipid",
+      "unit_id": "unit.p107.part001.neutral_glycosphingolipid_implicit_linkage",
+      "value": {
+        "clause_ids": [
+          "P-107.4.3.3:clause:0003"
+        ],
+        "expression_id": "expr.p107.part001.neutral_glycosphingolipid_implicit_linkage.value",
+        "op": "literal",
+        "value": {
+          "attachment_site": "1-O",
+          "carbohydrate_attachment": "glycosidic linkage"
+        }
+      }
+    },
+    {
+      "assertion": {
+        "clause_ids": [
+          "P-107.4.3.3:clause:0004"
+        ],
+        "expression_id": "expr.p107.part001.preferred_glycosphingolipid_locants.assertion",
+        "from": {
+          "clause_ids": [
+            "P-107.4.3.3:clause:0004"
+          ],
+          "expression_id": "expr.p107.part001.preferred_glycosphingolipid_locants.assertion.from",
+          "name": "name",
+          "op": "var"
+        },
+        "op": "get",
+        "path": "includes_all_locants"
+      },
+      "clause_ids": [
+        "P-107.4.3.3:clause:0004"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "PreferredSystematicGlycosphingolipidName"
+        }
+      ],
+      "kind": "constraint",
+      "on_violation": [
+        {
+          "clause_ids": [
+            "P-107.4.3.3:clause:0004"
+          ],
+          "op": "reject",
+          "reason_code": "reason.preferred_systematic_name_missing_locants",
+          "statement_id": "stmt.p107.part001.preferred_glycosphingolipid_locants.violation.1",
+          "target": "name"
+        }
+      ],
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-107.4.3.3:clause:0004"
+          ],
+          "expression_id": "expr.p107.part001.preferred_glycosphingolipid_locants.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "unit_id": "unit.p107.part001.preferred_glycosphingolipid_locants"
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [
+    {
+      "arguments": [],
+      "description": "Reason emitted when preferred systematic name missing locants.",
+      "grounding": {
+        "kind": "composition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "stmt.p107.part001.preferred_glycosphingolipid_locants.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "kind": "reason_code",
+      "returns": "reason_code",
+      "symbol_id": "reason.preferred_systematic_name_missing_locants"
+    }
+  ],
+  "tables": []
+}
