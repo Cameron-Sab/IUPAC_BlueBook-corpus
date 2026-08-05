@@ -1,0 +1,2789 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "prohibition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "permission",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "rationale",
+      "informative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "history",
+      "informative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ]
+  ],
+  "corrections": [],
+  "examples": [
+    {
+      "id": "chloromethylsilane_grouping",
+      "c": [
+        15,
+        16
+      ],
+      "input": "Cl-CH2-SiH3\n(chloromethyl)silane [PIN;\nthe name chloro(methyl)silane would describe the structure Cl-SiH2-CH3]",
+      "ok": [
+        "(chloromethyl)silane (PIN)"
+      ],
+      "bad": [
+        "chloro(methyl)silane"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_compound_complex_and_multiplied_components"
+        ]
+      ]
+    },
+    {
+      "id": "bis_hydroxyethoxy_acetic_acid",
+      "c": [
+        17
+      ],
+      "input": "(HO-CH2-CH2-O)2CH-COOH\nbis(2-hydroxyethoxy)acetic acid (PIN)",
+      "ok": [
+        "bis(2-hydroxyethoxy)acetic acid (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_compound_complex_and_multiplied_components"
+        ]
+      ]
+    },
+    {
+      "id": "tri_decyl_cyclohexane",
+      "c": [
+        18
+      ],
+      "input": "1,3,5-tri(decyl)cycohexane (PIN)\n(not 1,3,5-tris(decyl)cyclohexane)",
+      "ok": [
+        "1,3,5-tri(decyl)cyclohexane (PIN)"
+      ],
+      "bad": [
+        "1,3,5-tris(decyl)cyclohexane"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_compound_complex_and_multiplied_components"
+        ]
+      ]
+    },
+    {
+      "id": "methylene_di_cyclohexane_carboxylic_acid",
+      "c": [
+        20
+      ],
+      "input": "4,4′-methylenedi(cyclohexane-1-carboxylic acid) (PIN)",
+      "ok": [
+        "4,4′-methylenedi(cyclohexane-1-carboxylic acid) (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_compound_complex_and_multiplied_components"
+        ]
+      ]
+    },
+    {
+      "id": "butane_bis_thioic_acid",
+      "c": [
+        22
+      ],
+      "input": "H{S/O}C-CH2-CH2-C{O/S}H\nbutanebis(thioic acid) (PIN)",
+      "ok": [
+        "butanebis(thioic acid) (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_compound_complex_and_multiplied_components"
+        ]
+      ]
+    },
+    {
+      "id": "oxydi_tetradecane_diyl",
+      "c": [
+        23,
+        24
+      ],
+      "input": "–CH-[CH2]12-CH2-O-CH2-[CH2]12-CH2–\noxydi(tetradecane-14,1-diyl) (preferred prefix;\nnote the order of the substituent locants used in multiplicative nomenclature)",
+      "ok": [
+        "oxydi(tetradecane-14,1-diyl) (preferred prefix)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_compound_complex_and_multiplied_components"
+        ]
+      ]
+    },
+    {
+      "id": "di_tridecyl_benzene",
+      "c": [
+        25
+      ],
+      "input": "1,4-di(tridecyl)benzene (PIN)",
+      "ok": [
+        "1,4-di(tridecyl)benzene (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_compound_complex_and_multiplied_components"
+        ]
+      ]
+    },
+    {
+      "id": "naphthalenyl_acetic_acid",
+      "c": [
+        30
+      ],
+      "input": "(naphthalen-2-yl)acetic acid (PIN)\n(the locant ‘2’ for acetic acid is not cited, see P-14.3.4.6)\nnaphthalene-2-acetic acid",
+      "ok": [
+        "(naphthalen-2-yl)acetic acid (PIN)",
+        "naphthalene-2-acetic acid"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_separate_substituent_locants"
+        ]
+      ]
+    },
+    {
+      "id": "pyridinyl_benzamide",
+      "c": [
+        32
+      ],
+      "input": "4-(pyridin-4-yl)benzamide (PIN)\n[former name 4-(4-pyridinyl)benzamide]\n4-(4-pyridyl)benzamide",
+      "ok": [
+        "4-(pyridin-4-yl)benzamide (PIN)",
+        "4-(4-pyridyl)benzamide"
+      ],
+      "bad": [
+        "4-(4-pyridinyl)benzamide"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_separate_substituent_locants"
+        ]
+      ]
+    },
+    {
+      "id": "naphthalenyl_phenyldiazene",
+      "c": [
+        34,
+        35
+      ],
+      "input": "(naphthalen-2-yl)(phenyl)diazene (PIN;\nsee P-68.3.1.3.2.2)\n(2-naphthyl)phenyldiazene",
+      "ok": [
+        "(naphthalen-2-yl)(phenyl)diazene (PIN)",
+        "(2-naphthyl)phenyldiazene"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_separate_substituent_locants"
+        ]
+      ]
+    },
+    {
+      "id": "furanyl_pyrrolyl_amine",
+      "c": [
+        37
+      ],
+      "input": "N-(furan-2-yl)-1H-pyrrol-2-amine (PIN)\n(furan-2-yl)(1H-pyrrol-2-yl)amine\n(2-furyl)(pyrrol-2-yl)amine",
+      "ok": [
+        "N-(furan-2-yl)-1H-pyrrol-2-amine (PIN)",
+        "(furan-2-yl)(1H-pyrrol-2-yl)amine",
+        "(2-furyl)(pyrrol-2-yl)amine"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_separate_substituent_locants"
+        ]
+      ]
+    },
+    {
+      "id": "multi_substituted_silane",
+      "c": [
+        46
+      ],
+      "input": "butyl(ethyl)(methyl)(propyl)silane (PIN)",
+      "ok": [
+        "butyl(ethyl)(methyl)(propyl)silane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "chloro_methyl_silane",
+      "c": [
+        48
+      ],
+      "input": "CH3-SiH2Cl\nchloro(methyl)silane (PIN)",
+      "ok": [
+        "chloro(methyl)silane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "ethyl_methyl_propyl_phosphane",
+      "c": [
+        49
+      ],
+      "input": "ethyl(methyl)(propyl)phosphane (PIN)",
+      "ok": [
+        "ethyl(methyl)(propyl)phosphane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "ethyl_methyl_propan_2_yl_phosphane",
+      "c": [
+        51
+      ],
+      "input": "ethyl(methyl)(propan-2-yl)phosphane (PIN)\nethyl(isopropyl)(methyl)phosphane",
+      "ok": [
+        "ethyl(methyl)(propan-2-yl)phosphane (PIN)",
+        "ethyl(isopropyl)(methyl)phosphane"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "chloromethyl_methyl_silane",
+      "c": [
+        53,
+        54
+      ],
+      "input": "ClCH2-SiH2-CH3\n(chloromethyl)(methyl)silane (PIN;\nP-68.2.6.1)",
+      "ok": [
+        "(chloromethyl)(methyl)silane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "bromomethyl_chloromethyl_silane",
+      "c": [
+        55,
+        56
+      ],
+      "input": "BrCH2-SiH2-CH2Cl\n(bromomethyl)(chloromethyl)silane (PIN;\nP-68.2.6.1)",
+      "ok": [
+        "(bromomethyl)(chloromethyl)silane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "ethyl_di_methyl_phosphane",
+      "c": [
+        57
+      ],
+      "input": "ethyldi(methyl)phosphane (PIN)",
+      "ok": [
+        "ethyldi(methyl)phosphane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "ethyl_di_propan_2_yl_silane",
+      "c": [
+        59
+      ],
+      "input": "ethyldi(propan-2-yl)silane (PIN)\nethyldi(isopropyl)silane",
+      "ok": [
+        "ethyldi(propan-2-yl)silane (PIN)",
+        "ethyldi(isopropyl)silane"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "ethyl_methyl_propyl_silanecarboxylic_acid",
+      "c": [
+        61
+      ],
+      "input": "ethyl(methyl)(propyl)silanecarboxylic acid (PIN)",
+      "ok": [
+        "ethyl(methyl)(propyl)silanecarboxylic acid (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "methyl_phenyl_phosphinic_acid",
+      "c": [
+        64
+      ],
+      "input": "methyl(phenyl)phosphinic acid (PIN)",
+      "ok": [
+        "methyl(phenyl)phosphinic acid (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "cyclopropyl_phenyl_methanol",
+      "c": [
+        67
+      ],
+      "input": "cyclopropyl(phenyl)methanol (PIN)",
+      "ok": [
+        "cyclopropyl(phenyl)methanol (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "mononuclear_parent_multiple_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "bromo_nitro_phenyl_acetic_acid",
+      "c": [
+        75
+      ],
+      "input": "bromo(nitro)(phenyl)acetic acid (PIN)",
+      "ok": [
+        "bromo(nitro)(phenyl)acetic acid (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "unique_position_parent_substitution"
+        ]
+      ]
+    },
+    {
+      "id": "diethyl_ethyl_methyl_propanedioate",
+      "c": [
+        78
+      ],
+      "input": "diethyl ethyl(methyl)propanedioate (PIN)",
+      "ok": [
+        "diethyl ethyl(methyl)propanedioate (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "unique_position_parent_substitution"
+        ]
+      ]
+    },
+    {
+      "id": "bromo_chloro_acetic_acid",
+      "c": [
+        81
+      ],
+      "input": "bromo(chloro)acetic acid (PIN)",
+      "ok": [
+        "bromo(chloro)acetic acid (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "unique_position_parent_substitution"
+        ]
+      ]
+    },
+    {
+      "id": "cyclopropyl_fluoro_acetonitrile",
+      "c": [
+        84
+      ],
+      "input": "cyclopropyl(fluoro)acetonitrile (PIN)",
+      "ok": [
+        "cyclopropyl(fluoro)acetonitrile (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "unique_position_parent_substitution"
+        ]
+      ]
+    },
+    {
+      "id": "cyclohexanecarbonyl_benzene_carbothioic_acid",
+      "c": [
+        90
+      ],
+      "input": "4-(cyclohexanecarbonyl)benzene-1-carbothioic acid (PIN)",
+      "ok": [
+        "4-(cyclohexanecarbonyl)benzene-1-carbothioic acid (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parent_hydride_name_inside_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "di_benzenesulfinyl_acetic_acid",
+      "c": [
+        92
+      ],
+      "input": "di(benzenesulfinyl)acetic acid (PIN)",
+      "ok": [
+        "di(benzenesulfinyl)acetic acid (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parent_hydride_name_inside_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "chloroethyl_propyl_amine",
+      "c": [
+        98
+      ],
+      "input": "(2-chloroethyl)(propyl)amine (P-62.2.2.1)\nN-(2-chloroethyl)propan-1-amine (PIN)",
+      "ok": [
+        "(2-chloroethyl)(propyl)amine",
+        "N-(2-chloroethyl)propan-1-amine (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "amine_parent_structure_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "butyl_ethyl_propyl_amine",
+      "c": [
+        99
+      ],
+      "input": "butyl(ethyl)(propyl)amine (P-62.2.2.1)\nN-ethyl-N-propylbutan-1-amine (PIN)",
+      "ok": [
+        "butyl(ethyl)(propyl)amine",
+        "N-ethyl-N-propylbutan-1-amine (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "amine_parent_structure_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "butyl_ethyl_methyl_amine",
+      "c": [
+        100
+      ],
+      "input": "butyl(ethyl)(methyl)amine (P-62.2.2.1)\nN-ethyl-N-methylbutan-1-amine (PIN)",
+      "ok": [
+        "butyl(ethyl)(methyl)amine",
+        "N-ethyl-N-methylbutan-1-amine (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "amine_parent_structure_substituent_parentheses"
+        ]
+      ]
+    },
+    {
+      "id": "bicyclo_compound_locant",
+      "c": [
+        103
+      ],
+      "input": "bicyclo[8.5.1]hexadeca-1(15),10-diene (PIN, P-31.1.1.1)",
+      "ok": [
+        "bicyclo[8.5.1]hexadeca-1(15),10-diene (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_compound_locants_phanes_and_fullerenes"
+        ]
+      ]
+    },
+    {
+      "id": "dibenzenacycloheptaphane",
+      "c": [
+        104
+      ],
+      "input": "1(1,3),4(1,4)-dibenzenacycloheptaphane (PIN, P-26.4.2.2)",
+      "ok": [
+        "1(1,3),4(1,4)-dibenzenacycloheptaphane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_compound_locants_phanes_and_fullerenes"
+        ]
+      ]
+    },
+    {
+      "id": "fullerene_identifier",
+      "c": [
+        105
+      ],
+      "input": "(C60-Ih)[5,6]fullerene (PIN, P-27.2.2)",
+      "ok": [
+        "(C60-Ih)[5,6]fullerene (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_compound_locants_phanes_and_fullerenes"
+        ]
+      ]
+    },
+    {
+      "id": "added_indicated_hydrogen",
+      "c": [
+        108
+      ],
+      "input": "phosphinin-2(1H)-one (PIN, P-14.7.2)",
+      "ok": [
+        "phosphinin-2(1H)-one (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_indicated_hydrogen_stereo_and_isotope_descriptors"
+        ]
+      ]
+    },
+    {
+      "id": "e_stereodescriptor",
+      "c": [
+        109
+      ],
+      "input": "(2E)-but-2-ene (PIN, P-93.4.2.1.1)",
+      "ok": [
+        "(2E)-but-2-ene (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_indicated_hydrogen_stereo_and_isotope_descriptors"
+        ]
+      ]
+    },
+    {
+      "id": "isotopically_substituted_methane",
+      "c": [
+        110
+      ],
+      "input": "(13C)methane (PIN, P-82.2.1)",
+      "ok": [
+        "(13C)methane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_indicated_hydrogen_stereo_and_isotope_descriptors"
+        ]
+      ]
+    },
+    {
+      "id": "thioacetyl_benzoic_acid",
+      "c": [
+        113
+      ],
+      "input": "4-(thioacetyl)benzoic acid\n4-(ethanethioyl)benzoic acid (PIN, P-65.1.5.1)",
+      "ok": [
+        "4-(thioacetyl)benzoic acid",
+        "4-(ethanethioyl)benzoic acid (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_functional_replacement_modification"
+        ]
+      ]
+    },
+    {
+      "id": "bis_oxadiazole_carboxylic_acid",
+      "c": [
+        117,
+        118
+      ],
+      "input": "[benzo[1,2-c:3,4-c′]bis([1,2,5]oxadiazole)]-4-carboxylic acid (PIN;\nP-65.1.2.2.2)",
+      "ok": [
+        "[benzo[1,2-c:3,4-c′]bis([1,2,5]oxadiazole)]-4-carboxylic acid (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "multiparent_structure_enclosure_before_suffix"
+        ]
+      ]
+    },
+    {
+      "id": "di_annulene_carbonitrile",
+      "c": [
+        119,
+        120
+      ],
+      "input": "(benzo[1,2:4,5]di[7]annulene)-2-carbonitrile (PIN;\n(P-66.5.1.1.3)",
+      "ok": [
+        "(benzo[1,2:4,5]di[7]annulene)-2-carbonitrile (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "multiparent_structure_enclosure_before_suffix"
+        ]
+      ]
+    },
+    {
+      "id": "bis_silanyl_methyl",
+      "c": [
+        123,
+        124
+      ],
+      "input": "disilylmethyl (preferred prefix;\nsee P-68.2.5)\n\nbis(silanyl)methyl",
+      "ok": [
+        "disilylmethyl (preferred prefix)",
+        "bis(silanyl)methyl"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_after_complex_multiplicative_prefixes"
+        ]
+      ]
+    },
+    {
+      "id": "propane_2_thiol_linear_formula",
+      "c": [
+        127
+      ],
+      "input": "propane-2-thiol (PIN)",
+      "ok": [
+        "propane-2-thiol (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_in_linear_formulas"
+        ]
+      ]
+    },
+    {
+      "id": "hydroxybutanone_linear_formula",
+      "c": [
+        129
+      ],
+      "input": "3-hydroxybutan-2-one (PIN)",
+      "ok": [
+        "3-hydroxybutan-2-one (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_in_linear_formulas"
+        ]
+      ]
+    },
+    {
+      "id": "dimethylpentane_linear_formula",
+      "c": [
+        131
+      ],
+      "input": "2,2-dimethylpentane (PIN)",
+      "ok": [
+        "2,2-dimethylpentane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_in_linear_formulas"
+        ]
+      ]
+    },
+    {
+      "id": "biphenyl_radical_dianion",
+      "c": [
+        135
+      ],
+      "input": "[C6H5-C6H5](2•)(2–)\n[1,1′-biphenyl]dielide (PIN)\nbiphenyl diradical\ndianion biphenyl diradical ion(2–)",
+      "ok": [
+        "[1,1′-biphenyl]dielide (PIN)",
+        "biphenyl diradical dianion",
+        "biphenyl diradical ion(2−)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "parentheses_for_multiple_radical_dots_and_charges"
+        ]
+      ]
+    },
+    {
+      "id": "naphthoazulene_fusion_descriptor",
+      "c": [
+        140
+      ],
+      "input": "naphtho[2,1-a]azulene (PIN, P-25.3.1.3)",
+      "ok": [
+        "naphtho[2,1-a]azulene (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_fusion_bridges_ring_assemblies_and_spiro_components"
+        ]
+      ]
+    },
+    {
+      "id": "bicyclooctane_bridge_lengths",
+      "c": [
+        141
+      ],
+      "input": "bicyclo[3.2.1]octane (PIN, P-23.2.2)",
+      "ok": [
+        "bicyclo[3.2.1]octane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_fusion_bridges_ring_assemblies_and_spiro_components"
+        ]
+      ]
+    },
+    {
+      "id": "spirodecane_bridge_lengths",
+      "c": [
+        142
+      ],
+      "input": "spiro[4.5]decane (PIN, P-24.2.1)",
+      "ok": [
+        "spiro[4.5]decane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_fusion_bridges_ring_assemblies_and_spiro_components"
+        ]
+      ]
+    },
+    {
+      "id": "bipyridin_ring_assembly",
+      "c": [
+        143
+      ],
+      "input": "[2,2′-bipyridin]-5-yl (preferred prefix, P-29.3.5)",
+      "ok": [
+        "[2,2′-bipyridin]-5-yl (preferred prefix)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_fusion_bridges_ring_assemblies_and_spiro_components"
+        ]
+      ]
+    },
+    {
+      "id": "spiro_cyclohexane_indene",
+      "c": [
+        144
+      ],
+      "input": "spiro[cyclohexane-1,1′-indene] (PIN, P-24.5.1)",
+      "ok": [
+        "spiro[cyclohexane-1,1′-indene] (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_fusion_bridges_ring_assemblies_and_spiro_components"
+        ]
+      ]
+    },
+    {
+      "id": "epipropenylidene_bridge_locants",
+      "c": [
+        147
+      ],
+      "input": "6,7-(epiprop[1]en[1]yl[3]ylidene)benzo[a]cyclohepta[e][8]annulene (PIN, P-25.4.3.4.2)",
+      "ok": [
+        "6,7-(epiprop[1]en[1]yl[3]ylidene)benzo[a]cyclohepta[e][8]annulene (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_component_structural_feature_locants"
+        ]
+      ]
+    },
+    {
+      "id": "pyrido_oxazine_component_locants",
+      "c": [
+        148
+      ],
+      "input": "5H-pyrido[2,3-d][1,2]oxazine [PIN, P-25.3.2.4 (d)]",
+      "ok": [
+        "5H-pyrido[2,3-d][1,2]oxazine (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_component_structural_feature_locants"
+        ]
+      ]
+    },
+    {
+      "id": "ten_annulene_ring_size",
+      "c": [
+        151
+      ],
+      "input": "[10]annulene (P-22.1.2)\ncyclodeca-1,3,5,7,9-pentaene (PIN)",
+      "ok": [
+        "[10]annulene",
+        "cyclodeca-1,3,5,7,9-pentaene (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_annulene_and_fullerene_ring_size"
+        ]
+      ]
+    },
+    {
+      "id": "fullerene_ring_size",
+      "c": [
+        152
+      ],
+      "input": "(C60-Ih)[5,6]fullerene (PIN, P-27.2.2)",
+      "ok": [
+        "(C60-Ih)[5,6]fullerene (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_annulene_and_fullerene_ring_size"
+        ]
+      ]
+    },
+    {
+      "id": "nested_hydroxyselanyl_substituent",
+      "c": [
+        155
+      ],
+      "input": "4-[(hydroxyselanyl)methyl]benzoic acid (PIN, P-63.4.2.2)",
+      "ok": [
+        "4-[(hydroxyselanyl)methyl]benzoic acid (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_nested_substituent_prefixes"
+        ]
+      ]
+    },
+    {
+      "id": "isotopically_labeled_methane",
+      "c": [
+        158
+      ],
+      "input": "[13C]methane (PIN, P-83.1.2.1)",
+      "ok": [
+        "[13C]methane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_isotopically_labeled_descriptors"
+        ]
+      ]
+    },
+    {
+      "id": "heptacontane_repeated_chain_group",
+      "c": [
+        161
+      ],
+      "input": "CH3-[CH2]68-CH3\nheptacontane (PIN, P-21.2.1)",
+      "ok": [
+        "heptacontane (PIN)"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "brackets_for_repeated_formula_groups"
+        ]
+      ]
+    }
+  ],
+  "exceptions": [],
+  "figures": [
+    {
+      "id": "source_correction_icon_009",
+      "c": [
+        9
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "source_correction_icon_040",
+      "c": [
+        40
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "source_correction_icon_044",
+      "c": [
+        44
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "source_correction_icon_063",
+      "c": [
+        63
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "source_correction_icon_066",
+      "c": [
+        66
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "source_correction_icon_069",
+      "c": [
+        69
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "source_correction_icon_077",
+      "c": [
+        77
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "source_correction_icon_080",
+      "c": [
+        80
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "source_correction_icon_083",
+      "c": [
+        83
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    },
+    {
+      "id": "source_correction_icon_086",
+      "c": [
+        86
+      ],
+      "k": "source_icon",
+      "urls": [
+        "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+        "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+      ]
+    }
+  ],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "mechanical_assets": true,
+  "refs": [
+    {
+      "id": "reference.p16.5.1.3.1.xref.0001",
+      "c": [
+        54
+      ],
+      "rel": "cites",
+      "o": "P-16.5.1.3.1:xref:0001"
+    },
+    {
+      "id": "reference.p16.5.1.3.1.xref.0002",
+      "c": [
+        56
+      ],
+      "rel": "cites",
+      "o": "P-16.5.1.3.1:xref:0002"
+    },
+    {
+      "id": "reference.p16.5.1.5.xref.0001",
+      "c": [
+        98
+      ],
+      "rel": "cites",
+      "o": "P-16.5.1.5:xref:0001"
+    },
+    {
+      "id": "reference.p16.5.1.5.xref.0002",
+      "c": [
+        99
+      ],
+      "rel": "cites",
+      "o": "P-16.5.1.5:xref:0002"
+    },
+    {
+      "id": "reference.p16.5.1.5.xref.0003",
+      "c": [
+        100
+      ],
+      "rel": "cites",
+      "o": "P-16.5.1.5:xref:0003"
+    },
+    {
+      "id": "reference.p16.5.1.10.xref.0001",
+      "c": [
+        121
+      ],
+      "rel": "cites",
+      "o": "P-16.5.1.10:xref:0001"
+    }
+  ],
+  "symbols": [],
+  "tables": [],
+  "task_id": "P-16-part-002",
+  "units": [
+    {
+      "id": "sesqui_term_and_name_restriction",
+      "k": "definition",
+      "f": "required",
+      "c": [
+        1,
+        2
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "out": [
+        [
+          "meaning",
+          "NumericalTermMeaning"
+        ]
+      ],
+      "term": "sesqui",
+      "entity": "NumericalDescriptiveTerm",
+      "value": [
+        "lit",
+        {
+          "meaning": "one and a half times as great",
+          "allowed_use": "general descriptive term",
+          "example": "sesquisiloxanes",
+          "prohibited_use": "numerical prefix in an IUPAC name"
+        }
+      ]
+    },
+    {
+      "id": "enclosing_marks_general_policy",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "policy",
+          "EnclosingMarkPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "policy",
+          [
+            "lit",
+            {
+              "marks": [
+                "parentheses",
+                "brackets",
+                "braces"
+              ],
+              "purpose": "set off structural name parts so the structure is conveyed clearly",
+              "organic_and_inorganic_names": "same use",
+              "inorganic_formulas": "different conventions",
+              "preferred_iupac_names": "enclosing marks must not be omitted",
+              "general_nomenclature": "marks may be omitted only when no ambiguity is possible"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "parentheses_for_compound_complex_and_multiplied_components",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        11,
+        12,
+        13
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "ParenthesisPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "around": [
+                "compound prefixes",
+                "complex prefixes",
+                "terms following bis, tris, and higher multiplicative prefixes",
+                "a multiplied parent compound consisting of a parent hydride and substituent suffix",
+                "a multiplied substituent prefix even when preceded by di, tri, or another basic numerical prefix"
+              ]
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "parentheses_separate_substituent_locants",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        27,
+        28
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "ParenthesisPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "around": "simple substituent prefixes",
+              "purpose": "separate locants of the same type that refer to different structural elements",
+              "applies_when": "a structural-feature locant is implicit as well as when explicit",
+              "status": "recommended for clarity",
+              "historical_contrast": "free-valence locants were formerly placed before the name, as in 2-naphthyl"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "mononuclear_parent_multiple_substituent_parentheses",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        41,
+        42,
+        43
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "SubstituentEnclosurePattern"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "scope": "mononuclear parent hydride with two or more substituents",
+              "first_substituent": "no enclosing marks unless compound or locanted",
+              "second_and_later_substituents": "each enclosed in parentheses, including simple substituents",
+              "multiplicative_prefixes": "di, tri, and analogous prefixes remain outside the parentheses"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "unique_position_parent_substitution",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "SubstitutionLocantAndEnclosurePolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "unique_substitutable_position": "simple substituents require no locant",
+              "second_and_later_simple_substituents": "use enclosing marks according to P-16.5.1.3.1",
+              "parent_selection_exception": "for acetic acid, alkyl substitution requires a different parent structure",
+              "additional_substitutable_positions": "locants are required, as for acetamide"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "parent_hydride_name_inside_substituent_parentheses",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        87,
+        88
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "ParenthesisPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "around": "a substituent prefix containing the name of a parent hydride",
+              "purpose": "prevent the appearance of two parent hydrides in one substitutive name",
+              "status": "change from the 1993 Guide",
+              "example_case": "cyclohexanecarbonyl"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "amine_parent_structure_substituent_parentheses",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        94,
+        95,
+        96
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "ParenthesisPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "scope": "amines named with amine as the parent structure and several different substituent groups",
+              "around": "each adjacent simple hydrocarbyl substituent prefix as needed to make the grouping explicit",
+              "purpose": "ensure specificity and distinguish these names from older names",
+              "nesting": "use other enclosing marks when parentheses are already occupied"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "parentheses_for_compound_locants_phanes_and_fullerenes",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        101
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "ParenthesisPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "uses": [
+                "isolate the second locant of a compound locant",
+                "enclose locants denoting ring numbering in phane nomenclature",
+                "enclose fullerene identifiers"
+              ]
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "parentheses_for_indicated_hydrogen_stereo_and_isotope_descriptors",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        106
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "ParenthesisPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "enclose": [
+                "added indicated hydrogen and its locant",
+                "stereodescriptors including E, Z, R, and S",
+                "descriptors for isotopically substituted compounds"
+              ]
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "parentheses_for_functional_replacement_modification",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        111
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "ParenthesisPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "purpose": "clarify a modification made by functional replacement prefixes"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "multiparent_structure_enclosure_before_suffix",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        115
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "MultiparentEnclosurePattern"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "scope": "multiparent system substituted by one group cited only as a suffix",
+              "enclose": "the entire parent structure, including di or bis",
+              "marks": "parentheses, or another enclosing mark when parentheses are already present"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "parentheses_after_complex_multiplicative_prefixes",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        121
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "ParenthesisPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "enclose": "terms modified by bis, tris, tetrakis, and analogous numerical prefixes"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "parentheses_in_linear_formulas",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        125
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "FormulaEnclosurePattern"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "enclose": "groups attached to a chain in a linear formula"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "parentheses_for_multiple_radical_dots_and_charges",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        133
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "FormulaEnclosurePattern"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "enclose": "multiple dots and charges in radical-ion structures"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "brackets_for_fusion_bridges_ring_assemblies_and_spiro_components",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        137,
+        138
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "BracketPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "enclose": [
+                "fusion-site descriptors in fused ring systems",
+                "numbers denoting bridge lengths in von Baeyer polyalicyclic systems",
+                "numbers denoting chain lengths connecting spiro atoms",
+                "ring-assembly names followed by a principal-group or cumulative suffix",
+                "component names in von Baeyer spiro names"
+              ]
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "brackets_for_component_structural_feature_locants",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        145
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "BracketPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "enclose": "locants describing structural features of components",
+              "examples": [
+                "double bonds in bridges",
+                "heteroatoms of component rings in fused-ring names"
+              ]
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "brackets_for_annulene_and_fullerene_ring_size",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        149
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "BracketPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "enclose": "numerals describing ring size in annulenes and fullerenes"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "brackets_for_nested_substituent_prefixes",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        153
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "BracketPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "enclose": "a substituent prefix in which parentheses are already used"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "brackets_for_isotopically_labeled_descriptors",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        156
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "BracketPlacement"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "enclose": "descriptors for isotopically labeled compounds"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "brackets_for_repeated_formula_groups",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        159
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "context",
+          "NomenclatureContext"
+        ]
+      ],
+      "out": [
+        [
+          "placement",
+          "FormulaEnclosurePattern"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "placement",
+          [
+            "lit",
+            {
+              "enclose": "a group repeated in a chain formula"
+            }
+          ]
+        ]
+      ],
+      "else": []
+    }
+  ]
+}
