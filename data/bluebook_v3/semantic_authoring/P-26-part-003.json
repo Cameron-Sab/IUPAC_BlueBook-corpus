@@ -1,0 +1,294 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-26-part-003",
+  "clauses": [
+    null,
+    ["condition", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["condition", "normative", "compile"],
+    null,
+    null,
+    ["figure_asset", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["table_layout", "illustrative", "compile"],
+    ["table_layout", "illustrative", "compile"],
+    ["table_layout", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_layout", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["correction_event", "correction", "compile"],
+    ["example", "illustrative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["scope", "informative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["cross_reference", "informative", "compile"]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "simultaneous_skeletal_replacement_application",
+      "k": "definition",
+      "f": "required",
+      "c": [2],
+      "term": "simultaneous skeletal replacement",
+      "entity": "SkeletalReplacementApplication",
+      "value": ["lit", {
+        "condition": "skeletal replacement occurs in both simplified skeletons and amplificants",
+        "rules_applied": ["P-26.5.1", "P-26.5.2"],
+        "application": "apply both rules"
+      }]
+    },
+    {
+      "id": "heterophane_heteroatom_numbering_criteria",
+      "k": "definition",
+      "f": "required",
+      "c": [7],
+      "term": "heterophane numbering criteria",
+      "entity": "HeterophaneNumberingCriteria",
+      "value": ["lit", {
+        "scope": ["heterocyclic amplificants named by skeletal replacement nomenclature", "simplified phane skeletons in which skeletal replacement has taken place"],
+        "application": "apply the following criteria in the order given until a decision is reached"
+      }]
+    },
+    {
+      "id": "primary_heteroatom_locant_criteria",
+      "k": "decision",
+      "f": "preference",
+      "c": [16, 17, 18, 19, 21, 22],
+      "in": [["numbering_choices", "NumberingChoiceSet"]],
+      "out": [["selected_numbering", "NumberingChoice"]],
+      "candidates": ["var", "numbering_choices"],
+      "stages": [
+        {
+          "id": "heteroatoms_without_regard_to_kind",
+          "c": [16, 17],
+          "key": ["lit", {"criterion": "locant set for heteroatoms without regard to kind", "example_sets": ["2,5", "3,6"]}],
+          "cmp": ["lexicographic", "minimum", null, null]
+        },
+        {
+          "id": "primary_heteroatom_locants",
+          "c": [18, 19],
+          "key": ["lit", {"criterion": "primary locant set for heteroatoms", "comparison": "ascending locant set", "example_sets": ["1,2,5,7", "1,4,5,6"]}],
+          "cmp": ["lexicographic", "minimum", null, null]
+        },
+        {
+          "id": "senior_amplificant_locant",
+          "c": [21, 22],
+          "key": ["lit", {"criterion": "senior amplificant receives the lowest possible locant", "senior_amplificant": "pyridina"}],
+          "cmp": ["numeric", "minimum", null, null]
+        }
+      ],
+      "tie": ["retain_coequal", null]
+    },
+    {
+      "id": "heteroatom_seniority_and_composite_locants",
+      "k": "decision",
+      "f": "preference",
+      "c": [26, 27, 35, 36, 37, 39, 40],
+      "in": [["numbering_choices", "NumberingChoiceSet"]],
+      "out": [["selected_numbering", "NumberingChoice"]],
+      "candidates": ["var", "numbering_choices"],
+      "stages": [
+        {
+          "id": "replacement_prefix_seniority",
+          "c": [26, 27],
+          "key": ["lit", {"seniority_order": ["oxa", "thia", "selena", "tellura", "aza", "phospha", "arsa", "stiba", "bisa", "sila", "germa", "stanna", "plumba", "borana", "alumina", "galla", "inda", "thalla"], "example": "thia is senior to aza"}],
+          "cmp": ["lexicographic", "minimum", null, null]
+        },
+        {
+          "id": "primary_and_composite_locant_sets",
+          "c": [35, 36],
+          "key": ["lit", {"criterion": "primary locant sets and primary locant sets including composite locants", "ignore_heteroatom_kind": true}],
+          "cmp": ["lexicographic", "minimum", null, null]
+        },
+        {
+          "id": "senior_prefix_composite_locants",
+          "c": [37, 39, 40],
+          "key": ["lit", {"criterion": "locant set including composite locants for the senior replacement prefix", "senior_prefix": "oxa"}],
+          "cmp": ["lexicographic", "minimum", null, null]
+        }
+      ],
+      "tie": ["retain_coequal", null]
+    },
+    {
+      "id": "phane_part_two_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [43, 44, 45, 46],
+      "term": "other aspects of phane nomenclature",
+      "entity": "PhaneNomenclatureCoverage",
+      "value": ["lit", {
+        "part_two": {
+          "characteristic_group_suffixes": ["amines", "hydroxy compounds", "ketones"],
+          "hydrogenation_degree_modification": true
+        },
+        "source_sections": ["P-62.2.5.3", "P-63.1.2", "P-64.2.2.3", "P-31.1.6", "P-31.2.3.3.4"],
+        "source_text": [
+          "Part II of phane nomenclature discusses phane parent hydrides substituted by characteristic groups cited as suffixes.",
+          "Examples are given for amines, hydroxy compounds, and ketones.",
+          "Part II also discusses modification of the degree of hydrogenation.",
+          "The topic is more fully developed in Sections P-31.1.6 and P-31.2.3.3.4."
+        ]
+      }]
+    }
+  ],
+  "exceptions": [],
+  "tables": [
+    {
+      "id": "heteroatom_primary_locant_examples",
+      "c": [10, 11, 12, 13, 14, 15, 16, 17],
+      "label": null,
+      "title": "Primary locant set comparisons without regard to heteroatom kind",
+      "cols": [
+        ["candidate_or_asset", "Candidate or asset", "string", [10, 12, 16]],
+        ["comparison_marker", "Comparison", "string", [11, 17]],
+        ["explanation", "Explanation", "string", [16, 17]]
+      ],
+      "rows": [
+        {"id": "first_comparison", "c": [10, 11, 12], "v": ["P2gif/P260504a.gif", "not", "P2gif/P260504b.gif"]},
+        {"id": "layout_row", "c": [13, 14, 15], "v": [null, null, null]},
+        {"id": "locant_set_comparison", "c": [16, 17], "v": ["Step 1: 1,7(1,3)-dibenzenacyclododecaphane; Step 2: 5-oxa-2-thia-1,7(1,3)-dibenzenacyclododecaphane (I) (PIN); not 3-oxa-6-thia-1,7(1,3)-dibenzenacyclododecaphane (II)", null, "the locant set of the heteroatoms in (I), 2,5, is lower than the locant set in (II), 3,6"]}
+      ],
+      "contract": {
+        "key": ["candidate_or_asset"],
+        "result": ["comparison_marker", "explanation"],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "heteroatom_seniority_locant_examples",
+      "c": [29, 30, 31, 32, 33, 34, 35, 36, 37, 38],
+      "label": null,
+      "title": "Senior replacement prefix and composite locant comparisons",
+      "cols": [
+        ["candidate_or_asset", "Candidate or asset", "string", [29, 31, 32, 35, 38]],
+        ["comparison_marker", "Comparison", "string", [30, 32, 34, 36]],
+        ["explanation", "Explanation", "string", [32, 35, 36, 37, 38]]
+      ],
+      "rows": [
+        {"id": "seniority_example", "c": [29, 30, 31], "v": ["P2gif/P260504f.gif", "not", "P2gif/P260504g.gif"]},
+        {"id": "labelled_candidates", "c": [32, 33, 34], "v": ["(I)", null, "(II)"]},
+        {"id": "composite_locant_comparison", "c": [35, 36, 37], "v": ["Step 1: 3(2,5)-furana-1,5(1,5)-dicyclotetradecanacyclododecaphane; Step 2: 14,2,4,514,6,12-hexaoxa-114,54-dithia-3(2,5)-furana-1,5(1,5)-dicyclotetradecanacyclododecaphane (I) (PIN)", "Both names have the same primary locant sets and the same composite locant sets for heteroatoms without regard to kind.", "The composite locant set for senior prefix oxa in (I), 14,2,4,514,6,12, is lower than in (II), 114,2,4,54,6,12."]},
+        {"id": "correction_marker", "c": [38], "v": ["correction marker: added missing hyphen", null, "changes.html"]}
+      ],
+      "contract": {
+        "key": ["candidate_or_asset"],
+        "result": ["comparison_marker", "explanation"],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [
+    {"id": "simultaneous_replacement_example", "c": [5], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P260503a.gif"]},
+    {"id": "primary_locant_table_a", "c": [10], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P260504a.gif"]},
+    {"id": "primary_locant_table_b", "c": [12], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P260504b.gif"]},
+    {"id": "primary_locant_example_c", "c": [20], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P260504c.gif"]},
+    {"id": "primary_locant_example_d", "c": [23], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P260504d.gif"]},
+    {"id": "seniority_example_e", "c": [28], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P260504e.gif"]},
+    {"id": "seniority_table_f", "c": [29], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P260504f.gif"]},
+    {"id": "seniority_table_g", "c": [31], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P260504g.gif"]},
+    {"id": "senior_prefix_example_h", "c": [41], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P260504h.gif"]},
+    {"id": "added_hyphen_correction_marker", "c": [38], "k": "source_icon", "urls": ["https://iupac.qmul.ac.uk/greek/ALTER.GIF", "https://iupac.qmul.ac.uk/BlueBook/changes.html"]}
+  ],
+  "examples": [
+    {
+      "id": "simultaneous_replacement_pin",
+      "c": [4],
+      "input": {"step_1": "1(1,4)-bicyclo[2.2.1]heptana-11(1,4)-benzenacycloicosaphane", "step_2": "17,3,6,9,13,16,19-heptaoxa-1(1,4)-bicyclo[2.2.1]heptana-11(1,4)-benzenacycloicosaphane"},
+      "ok": ["17,3,6,9,13,16,19-heptaoxa-1(1,4)-bicyclo[2.2.1]heptana-11(1,4)-benzenacycloicosaphane"],
+      "bad": [],
+      "shows": [["semantic_unit", "simultaneous_skeletal_replacement_application"], ["figure", "figure.p26.part003.simultaneous_replacement_example"]],
+      "why": "Both skeletal replacement rules are applied when replacement occurs in the simplified skeleton and in amplificants."
+    },
+    {
+      "id": "primary_heteroatom_locant_set",
+      "c": [16, 17],
+      "input": {"candidates": ["I", "II"], "heteroatom_locant_sets": {"I": "2,5", "II": "3,6"}},
+      "ok": ["5-oxa-2-thia-1,7(1,3)-dibenzenacyclododecaphane"],
+      "bad": ["3-oxa-6-thia-1,7(1,3)-dibenzenacyclododecaphane"],
+      "shows": [["semantic_unit", "heterophane_heteroatom_numbering_criteria"], ["table", "heteroatom_primary_locant_examples"]],
+      "why": "The lower set of heteroatom locants, 2,5 rather than 3,6, is selected."
+    },
+    {
+      "id": "primary_locant_set_comparison",
+      "c": [18, 19],
+      "input": {"candidate_sets": ["1,2,5,7", "1,4,5,6"]},
+      "ok": ["2,7-dioxa-18,52-diaza-1,5(1,5)-dicycloundecana-3(1,3)-benzenacycloheptaphane"],
+      "bad": ["4,6-dioxa-12,58-diaza-1,5(1,5)-dicycloundecana-3(1,3)-benzenacycloheptaphane"],
+      "shows": [["semantic_unit", "heterophane_heteroatom_numbering_criteria"]],
+      "why": "The primary locant set 1,2,5,7 is lower than 1,4,5,6."
+    },
+    {
+      "id": "senior_amplificant_lowest_locant",
+      "c": [21, 22],
+      "input": {"senior_amplificant": "pyridina"},
+      "ok": ["6-oxa-2-thia-4-selena-1(4)-pyridina-3,5(1,4),7(1)-tribenzenaheptaphane"],
+      "bad": ["2-oxa-6-thia-4-selena-7(4)-pyridina-1(1),3,5(1,4)-tribenzenaheptaphane"],
+      "shows": [["semantic_unit", "heterophane_heteroatom_numbering_criteria"], ["figure", "figure.p26.part003.primary_locant_example_c"]],
+      "why": "The senior amplificant pyridina receives the lowest possible locant."
+    },
+    {
+      "id": "thia_before_aza_locant",
+      "c": [26, 27],
+      "input": {"replacement_prefixes": ["thia", "aza"]},
+      "ok": ["2-thia-6-aza-1,4(1,4)-dibenzenacyclohexaphane"],
+      "bad": ["6-thia-2-aza-1,4(1,4)-dibenzenacyclohexaphane"],
+      "shows": [["semantic_unit", "heteroatom_seniority_and_composite_locants"], ["figure", "figure.p26.part003.seniority_example_e"]],
+      "why": "Thia is senior to aza in skeletal replacement nomenclature and must receive the lower locant."
+    },
+    {
+      "id": "senior_oxa_composite_locants",
+      "c": [35, 36, 37],
+      "input": {"candidates": ["I", "II"], "primary_locant_sets_equal": true, "senior_prefix": "oxa"},
+      "ok": ["14,2,4,514,6,12-hexaoxa-114,54-dithia-3(2,5)-furana-1,5(1,5)-dicyclotetradecanacyclododecaphane"],
+      "bad": ["114,2,4,54,6,12-hexaoxa-14,514-dithia-3(2,5)-furana-1,5(1,5)-dicyclotetradecanacyclododecaphane"],
+      "shows": [["semantic_unit", "heteroatom_seniority_and_composite_locants"], ["table", "heteroatom_seniority_locant_examples"]],
+      "why": "When the primary locant sets tie, the composite locant set for the senior oxa prefix selects (I)."
+    },
+    {
+      "id": "senior_oxa_lowest_locant",
+      "c": [39, 40],
+      "input": {"senior_replacement_prefix": "oxa"},
+      "ok": ["2-oxa-6-thia-4-selena-1,7(4)-dipyridina-3,5(1,4)-dibenzenaheptaphane"],
+      "bad": ["6-oxa-2-thia-4-selena-1,7(4)-dipyridina-3,5(1,4)-dibenzenaheptaphane"],
+      "shows": [["semantic_unit", "heteroatom_seniority_and_composite_locants"], ["figure", "figure.p26.part003.senior_prefix_example_h"]],
+      "why": "The senior replacement prefix oxa receives the lowest locant."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p26.part003.p26_5_4_2_xref_0001", "c": [24], "rel": "cites", "o": "P-26.5.4.2:xref:0001"},
+    {"id": "reference.p26.part003.p26_5_4_2_xref_0003", "c": [27], "rel": "cites", "o": "P-26.5.4.2:xref:0003"},
+    {"id": "reference.p26.part003.p26_6_xref_0005", "c": [46], "rel": "cites", "o": "P-26.6:xref:0005"}
+  ],
+  "additional_refs": []
+}

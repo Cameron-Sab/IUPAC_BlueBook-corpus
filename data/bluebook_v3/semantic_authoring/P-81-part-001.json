@@ -1,0 +1,323 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-81-part-001",
+  "clauses": [
+    null,
+    null,
+    ["definition", "normative", "compile"],
+    null,
+    ["constraint", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["effect", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["table_data", "normative", "compile"],
+    ["table_layout", "normative", "compile"],
+    ["table_layout", "normative", "compile"],
+    ["table_layout", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_layout", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_layout", "normative", "compile"],
+    null,
+    ["definition", "normative", "compile"],
+    ["effect", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    null,
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"]
+  ],
+  "symbols": [
+    {
+      "id": "nuclide_descriptor.has_other_modifying_nuclides",
+      "k": "predicate",
+      "d": "An isotopic descriptor contains modifying nuclides in addition to the hydrogen nuclide under consideration.",
+      "a": [["descriptor", "isotopic_descriptor"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "other_modifying_nuclides_present"]
+    },
+    {
+      "id": "name.is_boughton_system_name",
+      "k": "predicate",
+      "d": "A name is formed according to the Boughton system.",
+      "a": [["name", "name"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "boughton_system_name"]
+    },
+    {
+      "id": "name.uses_lowercase_d_or_t_outside_boughton",
+      "k": "predicate",
+      "d": "A name uses only a lower-case d or t as an atomic symbol outside the Boughton system.",
+      "a": [["name", "name"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "lowercase_d_or_t_outside_boughton"]
+    }
+  ],
+  "units": [
+    {
+      "id": "nuclide_symbol_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [3],
+      "in": [["compound", "isotopically_modified_compound"]],
+      "out": [["nuclide_symbol", "nuclide_symbol"]],
+      "term": "nuclide symbol",
+      "entity": "nuclide",
+      "value": ["lit", {
+        "parts": ["atomic symbol for the element", "arabic numeral indicating the mass number"],
+        "mass_number_position": "left superscript",
+        "contexts": ["formula", "name of an isotopically modified compound"],
+        "source_references": ["IR-3.2", "ref. 12"]
+      }]
+    },
+    {
+      "id": "authorized_atomic_symbol_source",
+      "k": "definition",
+      "f": "definition",
+      "c": [5],
+      "in": [["element", "element"]],
+      "out": [["atomic_symbol", "atomic_symbol"]],
+      "term": "authorized atomic symbol",
+      "entity": "element",
+      "value": ["lit", {
+        "source": "IUPAC Nomenclature of Inorganic Chemistry",
+        "reference": "ref. 12",
+        "use": "atomic symbols used in nuclide symbols"
+      }]
+    },
+    {
+      "id": "nuclide_atomic_symbol_typography",
+      "k": "definition",
+      "f": "definition",
+      "c": [6],
+      "in": [["nuclide_symbol", "nuclide_symbol"]],
+      "out": [["typography", "typography_rule"]],
+      "term": "nuclide atomic-symbol typography",
+      "entity": "nuclide_symbol",
+      "value": ["lit", {
+        "atomic_symbol_type": "roman",
+        "italic_atomic_symbols": "reserved for letter locants",
+        "organic_nomenclature_context": "customary practice described in P-14.3"
+      }]
+    },
+    {
+      "id": "hydrogen_nuclide_symbols",
+      "k": "definition",
+      "f": "definition",
+      "c": [7],
+      "in": [["isotope", "hydrogen_isotope"]],
+      "out": [["nuclide_symbol", "nuclide_symbol"]],
+      "term": "hydrogen isotope nuclide symbols",
+      "entity": "hydrogen_isotope",
+      "value": ["lit", {
+        "protium": "1H",
+        "deuterium": "2H",
+        "tritium": "3H"
+      }]
+    },
+    {
+      "id": "hydrogen_nuclide_abbreviation_rule",
+      "k": "rule",
+      "f": "required",
+      "c": [8],
+      "in": [["descriptor", "isotopic_descriptor"]],
+      "out": [["hydrogen_symbols", "nuclide_symbol_set"]],
+      "if": ["not", ["pred", "nuclide_descriptor.has_other_modifying_nuclides", ["var", "descriptor"]]],
+      "then": [["set", "hydrogen_symbols", ["lit", ["D for 2H", "T for 3H"]]]],
+      "else": [["set", "hydrogen_symbols", ["lit", ["2H", "3H"]]]]
+    },
+    {
+      "id": "lowercase_symbol_boughton_policy",
+      "k": "rule",
+      "f": "required",
+      "c": [9],
+      "in": [["name", "name"]],
+      "out": [["atomic_symbol_policy", "symbol_policy"]],
+      "if": ["lit", true],
+      "then": [["set", "atomic_symbol_policy", "lower-case d and t are not atomic symbols in other cases"]],
+      "else": []
+    },
+    {
+      "id": "boughton_lowercase_symbol_permission",
+      "k": "definition",
+      "f": "definition",
+      "c": [9],
+      "in": [["name", "name"]],
+      "out": [["permission", "symbol_policy"]],
+      "term": "Boughton lower-case hydrogen symbol exception",
+      "entity": "name",
+      "value": ["lit", {"system": "Boughton", "symbols": ["d", "t"], "replaces": ["2H", "3H"]}]
+    },
+    {
+      "id": "lowercase_symbol_recommendation",
+      "k": "rule",
+      "f": "preference",
+      "c": [10],
+      "scope": {"r": ["all"], "if": ["lit", true]},
+      "in": [["name", "name"]],
+      "out": [["recommendation_status", "recommendation_status"]],
+      "if": ["pred", "name.uses_lowercase_d_or_t_outside_boughton", ["var", "name"]],
+      "then": [["set", "recommendation_status", "not recommended"]],
+      "else": []
+    },
+    {
+      "id": "hydrogen_atom_ion_names_source_context",
+      "k": "definition",
+      "f": "definition",
+      "c": [12],
+      "in": [["table", "hydrogen_atom_ion_table"]],
+      "out": [["source_context", "text"]],
+      "term": "hydrogen atom and ion name table context",
+      "entity": "hydrogen_atom_ion_table",
+      "value": ["lit", {"source_references": ["refs. 30", "33"]}]
+    },
+    {
+      "id": "isotopically_unmodified_compound",
+      "k": "definition",
+      "f": "definition",
+      "c": [41],
+      "in": [["compound", "compound"]],
+      "out": [["result", "boolean"]],
+      "term": "isotopically unmodified compound",
+      "entity": "compound",
+      "value": ["lit", {
+        "composition": "constituent nuclides present in the proportions occurring in nature",
+        "macroscopic": true
+      }]
+    },
+    {
+      "id": "customary_unmodified_formula_and_name",
+      "k": "rule",
+      "f": "required",
+      "c": [42],
+      "in": [["compound", "isotopically_unmodified_compound"]],
+      "out": [["rendering", "formula_and_name"]],
+      "if": ["lit", true],
+      "then": [["set", "rendering", "formula and name written in the customary manner"]],
+      "else": []
+    },
+    {
+      "id": "isotopically_modified_compound",
+      "k": "definition",
+      "f": "definition",
+      "c": [47],
+      "in": [["compound", "compound"]],
+      "out": [["result", "boolean"]],
+      "term": "isotopically modified compound",
+      "entity": "compound",
+      "value": ["lit", {
+        "composition": "isotopic ratio of nuclides for at least one element deviates measurably from that occurring in nature",
+        "macroscopic": true
+      }]
+    },
+    {
+      "id": "isotopically_modified_compound_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [48, 49, 50],
+      "in": [["compound", "isotopically_modified_compound"]],
+      "out": [["classification", "isotopic_modification_class"]],
+      "term": "isotopically modified compound classification",
+      "entity": "isotopically_modified_compound",
+      "value": ["lit", {
+        "classes": ["isotopically substituted compound", "isotopically labeled compound"]
+      }]
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "boughton_lowercase_symbol_exception",
+      "c": [9],
+      "if": ["pred", "name.is_boughton_system_name", ["var", "name"]],
+      "target": ["semantic_unit", "lowercase_symbol_boughton_policy"],
+      "mode": "replace",
+      "replacement": ["semantic_unit", "boughton_lowercase_symbol_permission"],
+      "specificity": 1,
+      "order": 1
+    }
+  ],
+  "tables": [
+    {
+      "id": "hydrogen_atom_ion_names",
+      "c": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+      "label": "Table 8.1",
+      "title": "Names of the hydrogen atoms and ions",
+      "cols": [
+        ["charge_class", "Charge class", "string", [14, 15, 21, 27, 33]],
+        ["hydrogen_symbol", "Hydrogen symbol", "string", [14, 15, 16, 17, 18, 22, 28, 34]],
+        ["protium_column", "1H", "string", [16, 23, 29, 35]],
+        ["deuterium_column", "2H", "string", [17, 24, 30, 36]],
+        ["tritium_column", "3H", "string", [18, 25, 31, 37]],
+        ["natural_composition_column", "Natural composition", "string", [19, 26, 32, 38]]
+      ],
+      "rows": [
+        {"id": "header_band", "c": [13], "v": [null, null, null, null, null, null]},
+        {"id": "nuclide_headers", "c": [14, 15, 16, 17, 18, 19], "v": [null, null, "1H", "2H", "3H", "natural\ncomposition"]},
+        {"id": "section_band", "c": [20], "v": [null, null, null, null, null, null]},
+        {"id": "atom", "c": [21, 22, 23, 24, 25, 26], "v": ["atom", "H", "protium", "deuterium", "tritium", "hydrogen"]},
+        {"id": "anion", "c": [27, 28, 29, 30, 31, 32], "v": ["anion", "H\u2013", "protide", "deuteride", "tritide", "hydride"]},
+        {"id": "cation", "c": [33, 34, 35, 36, 37, 38], "v": ["cation", "H+", "proton", "deuteron", "triton", "hydron"]},
+        {"id": "footer_band", "c": [39], "v": [null, null, null, null, null, null]}
+      ],
+      "contract": {
+        "key": ["charge_class"],
+        "result": ["hydrogen_symbol", "protium_column", "deuterium_column", "tritium_column", "natural_composition_column"],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [],
+  "examples": [
+    {
+      "id": "unmodified_methane",
+      "c": [44],
+      "input": "CH4",
+      "ok": ["methane"],
+      "bad": [],
+      "shows": [["semantic_unit", "isotopically_unmodified_compound"]],
+      "why": "The methane example has the natural isotopic composition and is written in the customary manner."
+    },
+    {
+      "id": "unmodified_ethanol",
+      "c": [45],
+      "input": "CH3-CH2-OH",
+      "ok": ["ethanol"],
+      "bad": [],
+      "shows": [["semantic_unit", "isotopically_unmodified_compound"]],
+      "why": "The ethanol example has the natural isotopic composition and is written in the customary manner."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p81.2.xref.0001", "c": [6], "rel": "cites", "o": "P-81.2:xref:0001"}
+  ],
+  "additional_refs": []
+}

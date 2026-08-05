@@ -1,0 +1,1782 @@
+{
+  "assigned_rule_ids": [
+    "P-50"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 24,
+    "compiled_clause_count": 23,
+    "correction_application_count": 0,
+    "example_count": 0,
+    "exception_count": 0,
+    "figure_count": 0,
+    "nonoperative_clause_count": 1,
+    "record_count": 1,
+    "reference_count": 19,
+    "semantic_unit_count": 8,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 0,
+    "table_count": 0
+  },
+  "chunk_sha256": "DD9810B218F918CAD42F118D5DCFB4EA638BC7FBD0A6D4D4BE1B6E9227B12640",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-50:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-50:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.pin_selection_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.pin_selection_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.pin_selection_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-50:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.pin_selection_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.pin_selection_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.pin_selection_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-50:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.principal_nomenclature_type",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.principal_nomenclature_type.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.principal_nomenclature_type.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-50:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.principal_nomenclature_type",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.principal_nomenclature_type.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.principal_nomenclature_type.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "rationale"
+    },
+    {
+      "clause_id": "P-50:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.principal_nomenclature_type",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.principal_nomenclature_type.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.principal_nomenclature_type.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-50:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.principal_nomenclature_type",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.principal_nomenclature_type.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.principal_nomenclature_type.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-50:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.functional_class_nomenclature_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.functional_class_nomenclature_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.functional_class_nomenclature_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-50:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.multiplicative_nomenclature_condition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.multiplicative_nomenclature_condition.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.multiplicative_nomenclature_condition.then.1.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.multiplicative_nomenclature_condition.then.1.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.else.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-50:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.multiplicative_nomenclature_condition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.multiplicative_nomenclature_condition.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.multiplicative_nomenclature_condition.then.1.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.multiplicative_nomenclature_condition.then.1.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.else.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-50:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.skeletal_replacement_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.skeletal_replacement_scope.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.skeletal_replacement_scope.then.1.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.skeletal_replacement_scope.then.1.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.else.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-50:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.skeletal_replacement_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.skeletal_replacement_scope.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.skeletal_replacement_scope.then.1.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.skeletal_replacement_scope.then.1.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.skeletal_replacement_scope.then.1.else.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "prohibition"
+    },
+    {
+      "clause_id": "P-50:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.parent_structure_and_phane_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-50:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.parent_structure_and_phane_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-50:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.parent_structure_and_phane_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    },
+    {
+      "clause_id": "P-50:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.parent_structure_and_phane_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    },
+    {
+      "clause_id": "P-50:clause:0017",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.parent_structure_and_phane_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-50:clause:0018",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.parent_structure_and_phane_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.parent_structure_and_phane_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-50:clause:0019",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.retained_or_systematic_component_choice",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.retained_or_systematic_component_choice.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.retained_or_systematic_component_choice.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-50:clause:0020",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.retained_or_systematic_component_choice",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.retained_or_systematic_component_choice.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p50.part001.retained_or_systematic_component_choice.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-50:clause:0021",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.hierarchical_preferred_parent_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.hierarchical_preferred_parent_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.hierarchical_preferred_parent_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.hierarchical_preferred_parent_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    },
+    {
+      "clause_id": "P-50:clause:0022",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.hierarchical_preferred_parent_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.hierarchical_preferred_parent_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.hierarchical_preferred_parent_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.hierarchical_preferred_parent_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-50:clause:0023",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.hierarchical_preferred_parent_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.hierarchical_preferred_parent_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.hierarchical_preferred_parent_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.hierarchical_preferred_parent_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-50:clause:0024",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p50.part001.hierarchical_preferred_parent_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p50.part001.hierarchical_preferred_parent_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p50.part001.hierarchical_preferred_parent_selection.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p50.part001.hierarchical_preferred_parent_selection.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [],
+  "exceptions": [],
+  "figures": [],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-50-part-001",
+  "packet_sha256": "E899065B9043D27D155FE7422E17E7F3B58878EEF23FE5CDAFFDCDCED4A52A70",
+  "records": [
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-50:clause:0001",
+        "P-50:clause:0002",
+        "P-50:clause:0003",
+        "P-50:clause:0004",
+        "P-50:clause:0005",
+        "P-50:clause:0006",
+        "P-50:clause:0007",
+        "P-50:clause:0008",
+        "P-50:clause:0009",
+        "P-50:clause:0010",
+        "P-50:clause:0011",
+        "P-50:clause:0012",
+        "P-50:clause:0013",
+        "P-50:clause:0014",
+        "P-50:clause:0015",
+        "P-50:clause:0016",
+        "P-50:clause:0017",
+        "P-50:clause:0018",
+        "P-50:clause:0019",
+        "P-50:clause:0020",
+        "P-50:clause:0021",
+        "P-50:clause:0022",
+        "P-50:clause:0023",
+        "P-50:clause:0024"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-50",
+      "reference_ids": [
+        "reference.p_50.hierarchy_parent",
+        "reference.p50.xref.0001",
+        "reference.p50.xref.0002",
+        "reference.p50.xref.0003",
+        "reference.P-50:xref:0004",
+        "reference.p50.xref.0005",
+        "reference.P-50:xref:0006",
+        "reference.P-50:xref:0007",
+        "reference.P-50:xref:0008",
+        "reference.p50.xref.0009",
+        "reference.p50.xref.0010",
+        "reference.p50.xref.0011",
+        "reference.p50.xref.0012",
+        "reference.p50.xref.0013",
+        "reference.p50.xref.0014",
+        "reference.P-50:xref:0015",
+        "reference.P-50:xref:0016",
+        "reference.P-50:xref:0017",
+        "reference.p50.xref.0018"
+      ],
+      "semantic_unit_ids": [
+        "unit.p50.part001.pin_selection_scope",
+        "unit.p50.part001.principal_nomenclature_type",
+        "unit.p50.part001.functional_class_nomenclature_scope",
+        "unit.p50.part001.multiplicative_nomenclature_condition",
+        "unit.p50.part001.skeletal_replacement_scope",
+        "unit.p50.part001.parent_structure_and_phane_scope",
+        "unit.p50.part001.retained_or_systematic_component_choice",
+        "unit.p50.part001.hierarchical_preferred_parent_selection"
+      ],
+      "source_rule_id": "P-50",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-50:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_50.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-5",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0001",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0001"
+      ],
+      "target": {
+        "id": "P-1",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0002",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0002"
+      ],
+      "target": {
+        "id": "P-4",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0003",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0003"
+      ],
+      "target": {
+        "id": "P-6",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-50:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0004"
+      ],
+      "target": {
+        "id": "P-10",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0007"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0005",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0005"
+      ],
+      "target": {
+        "id": "P-1",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0008"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-50:xref:0006",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0006"
+      ],
+      "target": {
+        "id": "P-51.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0009"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-50:xref:0007",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0007"
+      ],
+      "target": {
+        "id": "P-51.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0011"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-50:xref:0008",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0008"
+      ],
+      "target": {
+        "id": "P-51.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0012"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0009",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0009"
+      ],
+      "target": {
+        "id": "P-2",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0015"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0010",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0010"
+      ],
+      "target": {
+        "id": "P-52.2.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0016"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0011",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0011"
+      ],
+      "target": {
+        "id": "P-52.2.7",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0017"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0012",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0012"
+      ],
+      "target": {
+        "id": "P-2",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0018"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0013",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0013"
+      ],
+      "target": {
+        "id": "P-3",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0020"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0014",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0014"
+      ],
+      "target": {
+        "id": "P-4",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0021"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-50:xref:0015",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0015"
+      ],
+      "target": {
+        "id": "P-44",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0022"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-50:xref:0016",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0016"
+      ],
+      "target": {
+        "id": "P-45",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0021"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-50:xref:0017",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0017"
+      ],
+      "target": {
+        "id": "P-44",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0024"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p50.xref.0018",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-50",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-50:xref:0018"
+      ],
+      "target": {
+        "id": "P-58",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-50:clause:0002",
+        "P-50:clause:0003"
+      ],
+      "entity_type": "PreferredNameSelectionScope",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "selection_scope",
+          "type": "PreferredNameSelectionScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-50:clause:0002",
+            "P-50:clause:0003"
+          ],
+          "expression_id": "expr.p50.part001.pin_selection_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "preferred IUPAC name selection scope",
+      "unit_id": "unit.p50.part001.pin_selection_scope",
+      "value": {
+        "clause_ids": [
+          "P-50:clause:0002",
+          "P-50:clause:0003"
+        ],
+        "expression_id": "expr.p50.part001.pin_selection_scope.value",
+        "op": "literal",
+        "value": {
+          "chapters": {
+            "application": [
+              "P-1",
+              "P-2",
+              "P-3",
+              "P-4",
+              "P-6",
+              "P-7",
+              "P-8",
+              "P-9",
+              "P-10"
+            ],
+            "selection_rules": [
+              "P-1",
+              "P-2",
+              "P-3",
+              "P-4"
+            ]
+          },
+          "multiple_names": true,
+          "preferred_name": "one name is selected as the preferred IUPAC name (PIN)"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0004",
+        "P-50:clause:0005",
+        "P-50:clause:0006",
+        "P-50:clause:0007"
+      ],
+      "entity_type": "NomenclaturePolicy",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "nomenclature_policy",
+          "type": "NomenclaturePolicy"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-50:clause:0004",
+            "P-50:clause:0005",
+            "P-50:clause:0006",
+            "P-50:clause:0007"
+          ],
+          "expression_id": "expr.p50.part001.principal_nomenclature_type.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "principal and alternative nomenclature types",
+      "unit_id": "unit.p50.part001.principal_nomenclature_type",
+      "value": {
+        "clause_ids": [
+          "P-50:clause:0004",
+          "P-50:clause:0005",
+          "P-50:clause:0006",
+          "P-50:clause:0007"
+        ],
+        "expression_id": "expr.p50.part001.principal_nomenclature_type.value",
+        "op": "literal",
+        "value": {
+          "alternative_types": "Other types are recommended where substitutive nomenclature was never recommended for a class or where another method simplifies a long cumbersome name.",
+          "chapter_P1": "Several nomenclature types are discussed and all are used to generate preferred IUPAC names and names for general nomenclature.",
+          "principal_type": "substitutive nomenclature"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0008"
+      ],
+      "entity_type": "NomenclatureScope",
+      "force": "permitted",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "scope",
+          "type": "NomenclatureScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-50:clause:0008"
+          ],
+          "expression_id": "expr.p50.part001.functional_class_nomenclature_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "functional class nomenclature scope",
+      "unit_id": "unit.p50.part001.functional_class_nomenclature_scope",
+      "value": {
+        "clause_ids": [
+          "P-50:clause:0008"
+        ],
+        "expression_id": "expr.p50.part001.functional_class_nomenclature_scope.value",
+        "op": "literal",
+        "value": {
+          "method": "functional class nomenclature",
+          "purpose": "well defined classes",
+          "uses": [
+            "acid halides",
+            "esters"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0009",
+        "P-50:clause:0010"
+      ],
+      "else": [],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "molecule",
+          "type": "Molecule"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "recommended_method",
+          "type": "NomenclatureMethod"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-50:clause:0009",
+            "P-50:clause:0010"
+          ],
+          "expression_id": "expr.p50.part001.multiplicative_nomenclature_condition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-50:clause:0009",
+            "P-50:clause:0010"
+          ],
+          "else": [
+            {
+              "clause_ids": [
+                "P-50:clause:0009",
+                "P-50:clause:0010"
+              ],
+              "op": "assign",
+              "statement_id": "stmt.p50.part001.multiplicative_nomenclature_condition.then.1.else.1",
+              "target": "recommended_method",
+              "value": {
+                "clause_ids": [
+                  "P-50:clause:0009",
+                  "P-50:clause:0010"
+                ],
+                "expression_id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.else.1.value",
+                "op": "literal",
+                "value": "substitutive"
+              }
+            }
+          ],
+          "op": "branch",
+          "statement_id": "stmt.p50.part001.multiplicative_nomenclature_condition.then.1",
+          "then": [
+            {
+              "clause_ids": [
+                "P-50:clause:0009",
+                "P-50:clause:0010"
+              ],
+              "op": "assign",
+              "statement_id": "stmt.p50.part001.multiplicative_nomenclature_condition.then.1.then.1",
+              "target": "recommended_method",
+              "value": {
+                "clause_ids": [
+                  "P-50:clause:0009",
+                  "P-50:clause:0010"
+                ],
+                "expression_id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.then.1.value",
+                "op": "literal",
+                "value": "multiplicative"
+              }
+            }
+          ],
+          "when": {
+            "clause_ids": [
+              "P-50:clause:0009",
+              "P-50:clause:0010"
+            ],
+            "expression_id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when",
+            "left": {
+              "clause_ids": [
+                "P-50:clause:0009",
+                "P-50:clause:0010"
+              ],
+              "expression_id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when.left",
+              "from": {
+                "clause_ids": [
+                  "P-50:clause:0009",
+                  "P-50:clause:0010"
+                ],
+                "expression_id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when.left.from",
+                "name": "molecule",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "multiplicative_conditions_fulfilled"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-50:clause:0009",
+                "P-50:clause:0010"
+              ],
+              "expression_id": "expr.p50.part001.multiplicative_nomenclature_condition.then.1.when.right",
+              "op": "literal",
+              "value": true
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p50.part001.multiplicative_nomenclature_condition",
+      "when": {
+        "clause_ids": [
+          "P-50:clause:0009",
+          "P-50:clause:0010"
+        ],
+        "expression_id": "expr.p50.part001.multiplicative_nomenclature_condition.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0011",
+        "P-50:clause:0012"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "molecule",
+          "type": "Molecule"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "skeletal_replacement_status",
+          "type": "NomenclatureStatus"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-50:clause:0011",
+            "P-50:clause:0012"
+          ],
+          "expression_id": "expr.p50.part001.skeletal_replacement_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-50:clause:0011",
+            "P-50:clause:0012"
+          ],
+          "else": [
+            {
+              "clause_ids": [
+                "P-50:clause:0011",
+                "P-50:clause:0012"
+              ],
+              "op": "assign",
+              "statement_id": "stmt.p50.part001.skeletal_replacement_scope.then.1.else.1",
+              "target": "skeletal_replacement_status",
+              "value": {
+                "clause_ids": [
+                  "P-50:clause:0011",
+                  "P-50:clause:0012"
+                ],
+                "expression_id": "expr.p50.part001.skeletal_replacement_scope.then.1.else.1.value",
+                "op": "literal",
+                "value": "simplifying_method"
+              }
+            }
+          ],
+          "op": "branch",
+          "statement_id": "stmt.p50.part001.skeletal_replacement_scope.then.1",
+          "then": [
+            {
+              "clause_ids": [
+                "P-50:clause:0011",
+                "P-50:clause:0012"
+              ],
+              "op": "assign",
+              "statement_id": "stmt.p50.part001.skeletal_replacement_scope.then.1.then.1",
+              "target": "skeletal_replacement_status",
+              "value": {
+                "clause_ids": [
+                  "P-50:clause:0011",
+                  "P-50:clause:0012"
+                ],
+                "expression_id": "expr.p50.part001.skeletal_replacement_scope.then.1.then.1.value",
+                "op": "literal",
+                "value": "mandatory"
+              }
+            }
+          ],
+          "when": {
+            "clause_ids": [
+              "P-50:clause:0011",
+              "P-50:clause:0012"
+            ],
+            "expression_id": "expr.p50.part001.skeletal_replacement_scope.then.1.when",
+            "left": {
+              "clause_ids": [
+                "P-50:clause:0011",
+                "P-50:clause:0012"
+              ],
+              "expression_id": "expr.p50.part001.skeletal_replacement_scope.then.1.when.left",
+              "from": {
+                "clause_ids": [
+                  "P-50:clause:0011",
+                  "P-50:clause:0012"
+                ],
+                "expression_id": "expr.p50.part001.skeletal_replacement_scope.then.1.when.left.from",
+                "name": "molecule",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "saturated_heterocycle_over_ten_or_heteropolycyclic_bridged_or_spiro"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-50:clause:0011",
+                "P-50:clause:0012"
+              ],
+              "expression_id": "expr.p50.part001.skeletal_replacement_scope.then.1.when.right",
+              "op": "literal",
+              "value": true
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p50.part001.skeletal_replacement_scope",
+      "when": {
+        "clause_ids": [
+          "P-50:clause:0011",
+          "P-50:clause:0012"
+        ],
+        "expression_id": "expr.p50.part001.skeletal_replacement_scope.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0013",
+        "P-50:clause:0014",
+        "P-50:clause:0015",
+        "P-50:clause:0016",
+        "P-50:clause:0017",
+        "P-50:clause:0018"
+      ],
+      "entity_type": "ParentStructureSelectionScope",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "specialized_selection_scope",
+          "type": "ParentStructureSelectionScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-50:clause:0013",
+            "P-50:clause:0014",
+            "P-50:clause:0015",
+            "P-50:clause:0016",
+            "P-50:clause:0017",
+            "P-50:clause:0018"
+          ],
+          "expression_id": "expr.p50.part001.parent_structure_and_phane_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "specialized preferred-parent selection scope",
+      "unit_id": "unit.p50.part001.parent_structure_and_phane_scope",
+      "value": {
+        "clause_ids": [
+          "P-50:clause:0013",
+          "P-50:clause:0014",
+          "P-50:clause:0015",
+          "P-50:clause:0016",
+          "P-50:clause:0017",
+          "P-50:clause:0018"
+        ],
+        "expression_id": "expr.p50.part001.parent_structure_and_phane_scope.value",
+        "op": "literal",
+        "value": {
+          "chapter_P2": "Most rules generate preferred names of cyclic and acyclic compounds directly.",
+          "derived_substituent_groups": "Selection of preferred names is also needed for substituent groups derived from parent hydrides.",
+          "phane_nomenclature": "Recommended when rings, ring systems, and chains are composed of entities that are themselves rings or ring systems, whether or not interconnected by chains.",
+          "phane_selection_rules": [
+            "P-52.2.5"
+          ],
+          "ring_assemblies": "Preferred-name selection for ring assemblies is treated in P-52.2.7.",
+          "saturation": "The hydro/dehydro prefixes and ene/yne endings express the level of saturation."
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0019",
+        "P-50:clause:0020"
+      ],
+      "entity_type": "ParentComponentNameChoice",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "component_choice",
+          "type": "ParentComponentNameChoice"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-50:clause:0019",
+            "P-50:clause:0020"
+          ],
+          "expression_id": "expr.p50.part001.retained_or_systematic_component_choice.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "retained or systematic component choice",
+      "unit_id": "unit.p50.part001.retained_or_systematic_component_choice",
+      "value": {
+        "clause_ids": [
+          "P-50:clause:0019",
+          "P-50:clause:0020"
+        ],
+        "expression_id": "expr.p50.part001.retained_or_systematic_component_choice.value",
+        "op": "literal",
+        "value": {
+          "characteristic_groups_as_prefixes": "Selection is between retained names and systematic names as components of preferred IUPAC names.",
+          "substituted_parent_exception": "Substituted parent structures are analyzed as preferred IUPAC names despite the otherwise unequivocal seniority orders in Chapter P-4."
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-50:clause:0021",
+        "P-50:clause:0022",
+        "P-50:clause:0023",
+        "P-50:clause:0024"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "Compound"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "preferred_parent_name",
+          "type": "Name"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-50:clause:0021",
+            "P-50:clause:0022",
+            "P-50:clause:0023",
+            "P-50:clause:0024"
+          ],
+          "expression_id": "expr.p50.part001.hierarchical_preferred_parent_selection.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-50:clause:0021",
+            "P-50:clause:0022",
+            "P-50:clause:0023",
+            "P-50:clause:0024"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p50.part001.hierarchical_preferred_parent_selection.steps.1",
+          "target": "preferred_parent_name",
+          "value": {
+            "clause_ids": [
+              "P-50:clause:0021",
+              "P-50:clause:0022",
+              "P-50:clause:0023",
+              "P-50:clause:0024"
+            ],
+            "expression_id": "expr.p50.part001.hierarchical_preferred_parent_selection.steps.1.value",
+            "op": "literal",
+            "value": {
+              "algorithm": "hierarchical rules based on seniority orders",
+              "discussion": "P-58",
+              "parent_structure_rules": "P-44",
+              "result": "one and only preferred parent name based on the senior parent structure",
+              "selection_concept": "Selection of preferred IUPAC names in P-45"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p50.part001.hierarchical_preferred_parent_selection"
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [],
+  "tables": []
+}

@@ -1,0 +1,247 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-72-part-002",
+  "clauses": [
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["condition", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["note", "informative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    null,
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"]
+  ],
+  "symbols": [
+    {
+      "id": "prefix.append_cumulative_suffix",
+      "k": "transformation",
+      "d": "Forms a prefix by adding a cumulative yl or ylidene suffix to a parent-anion name and eliding its final e.",
+      "a": [["parent_anion_name", "string"], ["suffix", "string"]],
+      "ret": "prefix",
+      "g": ["primitive", [], "append_cumulative_suffix_eliding_final_e"]
+    },
+    {
+      "id": "prefix.apply_multiplying_prefix",
+      "k": "transformation",
+      "d": "Adds a multiplying prefix to denote the multiplicity of free valences.",
+      "a": [["free_valence_count", "integer"]],
+      "ret": "prefix",
+      "g": ["primitive", [], "denote_free_valence_multiplicity"]
+    },
+    {
+      "id": "prefix.assign_low_free_valence_locants",
+      "k": "transformation",
+      "d": "Assigns low locants to free valences when a choice exists.",
+      "a": [["free_valence_locants", "LocantSet"]],
+      "ret": "prefix",
+      "g": ["primitive", [], "assign_low_free_valence_locants"]
+    }
+  ],
+  "units": [
+    {
+      "id": "systematically_formed_anionic_prefixes",
+      "k": "procedure",
+      "f": "required",
+      "c": [2, 3, 4],
+      "in": [["parent_anion_name", "string"], ["suffix", "string"], ["free_valence_count", "integer"], ["free_valence_locants", "LocantSet"]],
+      "out": [["prefix", "Prefix"]],
+      "steps": [
+        ["xform", "prefix", "prefix.append_cumulative_suffix", ["var", "parent_anion_name"], ["var", "suffix"]],
+        ["xform", "prefix", "prefix.apply_multiplying_prefix", ["var", "free_valence_count"]],
+        ["xform", "prefix", "prefix.assign_low_free_valence_locants", ["var", "free_valence_locants"]]
+      ]
+    },
+    {
+      "id": "anion_parent_choice",
+      "k": "decision",
+      "f": "preference",
+      "c": [17, 18, 23, 28, 32, 33, 38],
+      "in": [["parent_candidates", "AnionicParentSet"]],
+      "out": [["selected_parent", "AnionicParent"]],
+      "candidates": ["var", "parent_candidates"],
+      "stages": [
+        {
+          "id": "maximum_anionic_centers",
+          "c": [17, 18],
+          "key": ["get", ["var", "parent_candidates"], "anionic_center_count_including_suffixes"],
+          "cmp": ["numeric", "maximum", null, null]
+        },
+        {
+          "id": "maximum_ide_and_uide_centers",
+          "c": [23],
+          "key": ["get", ["var", "parent_candidates"], "ide_and_uide_center_count"],
+          "cmp": ["numeric", "maximum", null, null]
+        },
+        {
+          "id": "maximum_uide_centers",
+          "c": [28],
+          "key": ["get", ["var", "parent_candidates"], "uide_center_count"],
+          "cmp": ["numeric", "maximum", null, null]
+        },
+        {
+          "id": "senior_anionic_class",
+          "c": [32, 33],
+          "key": ["get", ["var", "parent_candidates"], "senior_anionic_center_class_rank"],
+          "cmp": ["numeric", "maximum", null, null]
+        },
+        {
+          "id": "suffix_and_parent_seniority",
+          "c": [38],
+          "key": ["get", ["var", "parent_candidates"], "corresponding_suffix_and_parent_seniority_key"],
+          "cmp": ["lexicographic", "maximum", null, null]
+        }
+      ],
+      "tie": ["reject_ambiguous", null]
+    },
+    {
+      "id": "anionic_class_seniority_order",
+      "k": "definition",
+      "f": "definition",
+      "c": [32, 33],
+      "out": [["seniority_order", "AnionicClassSeniorityOrder"]],
+      "term": "seniority order of anionic classes",
+      "entity": "AnionicClassSeniorityOrder",
+      "value": ["lit", {
+        "order": ["N", "P", "As", "Sb", "Bi", "Si", "Ge", "Sn", "Pb", "B", "Al", "Ga", "In", "Tl", "O", "S", "Se", "Te", "C"],
+        "basis": "seniority order of classes",
+        "replaced_basis": "skeletal replacement a prefixes"
+      }]
+    },
+    {
+      "id": "anionic_class_seniority_callout_mapping",
+      "k": "mapping",
+      "c": [32, 33],
+      "table": "anionic_class_seniority_callout"
+    },
+    {
+      "id": "uide_suffix_lambda_preference",
+      "k": "definition",
+      "f": "preference",
+      "c": [45, 47, 49],
+      "out": [["suffix_policy", "AnionicSuffixPolicy"]],
+      "term": "uide preference with the lambda convention",
+      "entity": "AnionicSuffixPolicy",
+      "value": ["lit", {
+        "preferred_suffix": "uide",
+        "scope": "parent hydride named by the lambda convention",
+        "examples": ["methylsilanuide", "hexafluoro-lambda5-iodanuide"]
+      }]
+    },
+    {
+      "id": "ide_suffix_lambda_exception",
+      "k": "definition",
+      "f": "preference",
+      "c": [50, 51, 53, 54, 55],
+      "out": [["suffix_policy", "AnionicSuffixPolicy"]],
+      "term": "ide preference for lambda-convention anionic centers",
+      "entity": "AnionicSuffixPolicy",
+      "value": ["lit", {
+        "preferred_suffix": "ide",
+        "scope": "the lambda convention is involved in both anionic centers",
+        "consistency": "Identical groups, if possible, must not be named differently within one name.",
+        "examples": ["methanide", "1lambda6,3lambda6-dithiocane-1,3-diide"]
+      }]
+    }
+  ],
+  "exceptions": [],
+  "tables": [
+    {
+      "id": "anionic_class_seniority_callout",
+      "c": [32, 33],
+      "label": null,
+      "title": "Seniority order for anionic parent selection",
+      "cols": [
+        ["class_order", "Class order", "string", [32]],
+        ["basis", "Basis of order", "string", [33]]
+      ],
+      "rows": [
+        {"id": "seniority_order", "c": [32, 33], "v": ["N > P > As > Sb > Bi > Si > Ge > Sn > Pb > B > Al > Ga > In > Tl > O > S > Se > Te > C", "seniority of classes rather than skeletal replacement a prefixes"]}
+      ],
+      "contract": {"key": ["class_order"], "result": ["basis"], "cardinality": "one_to_one", "ordering": "source_order"}
+    }
+  ],
+  "figures": [
+    {"id": "methanidyl_prefix_structure", "c": [13], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P72630a.gif"]},
+    {"id": "benzoborol_prefix_structure", "c": [15], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P72630b.gif"]},
+    {"id": "anionic_centers_example", "c": [22], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P72700a.gif"]},
+    {"id": "ide_uide_seniority_example", "c": [27], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P72700b.gif"]},
+    {"id": "uide_center_seniority_example", "c": [31], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P72700c.gif"]},
+    {"id": "class_seniority_example", "c": [37], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P72700d.gif"]},
+    {"id": "ring_chain_seniority_example", "c": [41], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P72700e.gif"]},
+    {"id": "carboxylate_olate_seniority_example", "c": [43], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P72700f.gif"]},
+    {"id": "methylsilanuide_structure", "c": [48], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P72810a.gif"]},
+    {"id": "dithiocane_suffix_structure", "c": [56], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P72820a.gif"]}
+  ],
+  "examples": [
+    {"id": "methanidyl", "c": [6], "input": {"free_valences": 1, "parent_anion": "methanide"}, "ok": ["methanidyl"], "bad": [], "shows": [["semantic_unit", "systematically_formed_anionic_prefixes"]], "why": "A single free valence gives the preferred prefix methanidyl."},
+    {"id": "azanidyl", "c": [7], "input": {"free_valences": 1, "parent_anion": "azanide"}, "ok": ["azanidyl"], "bad": ["amidyl"], "shows": [["semantic_unit", "systematically_formed_anionic_prefixes"]], "why": "The systematic prefix is preselected and the alternative amidyl is shown for comparison."},
+    {"id": "azanediidyl", "c": [8], "input": {"free_valences": 2, "parent_anion": "azanide"}, "ok": ["azanediidyl"], "bad": [], "shows": [["semantic_unit", "systematically_formed_anionic_prefixes"]], "why": "The multiplying prefix denotes two free valences."},
+    {"id": "boranuidyl", "c": [9], "input": {"free_valences": 1, "parent_anion": "boranuide"}, "ok": ["boranuidyl"], "bad": [], "shows": [["semantic_unit", "systematically_formed_anionic_prefixes"]], "why": "The prefix is formed from the parent anion by the cumulative suffix rule."},
+    {"id": "azanidylidene", "c": [10], "input": {"free_valence_type": "double", "parent_anion": "azanide"}, "ok": ["azanidylidene"], "bad": ["amidylidene"], "shows": [["semantic_unit", "systematically_formed_anionic_prefixes"]], "why": "The ylidene suffix denotes the double-bonded free valence."},
+    {"id": "disulfanidyl", "c": [11], "input": {"free_valences": 2, "parent_anion": "disulfane"}, "ok": ["disulfanidyl"], "bad": [], "shows": [["semantic_unit", "systematically_formed_anionic_prefixes"]], "why": "The example illustrates a multiplying prefix for a disulfanyl group."},
+    {"id": "cyclopentadienide_diyl", "c": [12], "input": {"structure": "cyclopenta-1,4-dien-3-ide"}, "ok": ["cyclopenta-1,4-dien-3-ide-1,2-diyl"], "bad": [], "shows": [["semantic_unit", "systematically_formed_anionic_prefixes"]], "why": "The caption identifies the preferred prefix for two free valences."},
+    {"id": "benzoborol_ylidene", "c": [14], "input": {"structure": "2H-2-benzoborol-2-uid"}, "ok": ["2H-2-benzoborol-2-uid-2-ylidene"], "bad": [], "shows": [["semantic_unit", "systematically_formed_anionic_prefixes"]], "why": "The caption illustrates a preferred ylidene prefix."},
+    {"id": "maximum_anionic_centers", "c": [20, 21], "input": {"candidates": ["1-(borinan-1-uid-4-yl)ethane-1,2-bis(olate)", "4-(1,2-dioxidoethyl)borinan-1-uide"]}, "ok": ["1-(borinan-1-uid-4-yl)ethane-1,2-bis(olate)"], "bad": ["4-(1,2-dioxidoethyl)borinan-1-uide"], "shows": [["semantic_unit", "anion_parent_choice"]], "why": "Two anionic centres are senior to one under the first criterion."},
+    {"id": "maximum_ide_uide_centers", "c": [25, 26], "input": {"candidates": ["2-(2-carboxylatoethyl)-1,1,5,5-tetracyanopentane-1,5-diide", "1,1-dicyano-4-(dicyanomethanidyl)heptan-1-id-7-oate"]}, "ok": ["2-(2-carboxylatoethyl)-1,1,5,5-tetracyanopentane-1,5-diide"], "bad": ["1,1-dicyano-4-(dicyanomethanidyl)heptan-1-id-7-oate"], "shows": [["semantic_unit", "anion_parent_choice"]], "why": "Diide is senior to idoate under the second criterion."},
+    {"id": "maximum_uide_centers", "c": [30], "input": {"candidates": ["(2-phosphanidylethyl)arsanuide", "(2-arsanuidylethyl)phosphanide"]}, "ok": ["(2-phosphanidylethyl)arsanuide"], "bad": ["(2-arsanuidylethyl)phosphanide"], "shows": [["semantic_unit", "anion_parent_choice"]], "why": "The parent with the maximum number of uide centers is selected."},
+    {"id": "senior_anionic_class", "c": [35, 36], "input": {"candidates": ["(2-silanidylethyl)phosphanide", "(2-phosphanidylethyl)silanide"]}, "ok": ["(2-silanidylethyl)phosphanide"], "bad": ["(2-phosphanidylethyl)silanide"], "shows": [["semantic_unit", "anion_parent_choice"], ["semantic_unit", "anionic_class_seniority_order"]], "why": "P is senior to Si in the stated class order."},
+    {"id": "ring_over_chain", "c": [40], "input": {"candidates": ["2-(carboxylatomethyl)benzoate", "chain_parent"], "seniority": "ring over chain"}, "ok": ["2-(carboxylatomethyl)benzoate"], "bad": [], "shows": [["semantic_unit", "anion_parent_choice"]], "why": "The ring parent is senior to a chain in the further-choice criterion."},
+    {"id": "carboxylate_over_olate", "c": [42], "input": {"candidates": ["3-oxidonaphthalene-2-carboxylate", "olate_parent"], "seniority": "carboxylate over olate"}, "ok": ["3-oxidonaphthalene-2-carboxylate"], "bad": [], "shows": [["semantic_unit", "anion_parent_choice"]], "why": "Carboxylate is senior to olate in the example."},
+    {"id": "methylsilanuide", "c": [47], "input": {"parent": "methylsilane", "lambda_convention": true}, "ok": ["methylsilanuide"], "bad": ["methyl-lambda6-silanide"], "shows": [["semantic_unit", "uide_suffix_lambda_preference"]], "why": "Uide is preferred with a parent hydride named by the lambda convention."},
+    {"id": "iodanuide", "c": [49], "input": {"structure": "F6I", "lambda_convention": true}, "ok": ["hexafluoro-lambda5-iodanuide"], "bad": ["hexafluoro-lambda7-iodanide"], "shows": [["semantic_unit", "uide_suffix_lambda_preference"]], "why": "The preselected uide name illustrates the same preference."},
+    {"id": "methanide", "c": [53], "input": {"structure": "H3C", "lambda_convention": true}, "ok": ["methanide"], "bad": ["lambda2-methanuide"], "shows": [["semantic_unit", "ide_suffix_lambda_exception"]], "why": "Ide is preferred in the stated lambda-convention exception."},
+    {"id": "dithiocane_ide_consistency", "c": [54, 55], "input": {"structure": "dithiocane", "lambda_convention": true}, "ok": ["1lambda6,3lambda6-dithiocane-1,3-diide"], "bad": ["1lambda4,3lambda4-dithiocane-1,3-diuide", "1lambda4,3lambda6-dithiocan-3-id-1-uide"], "shows": [["semantic_unit", "ide_suffix_lambda_exception"]], "why": "Identical groups are kept consistent and the ide form is preferred when both anionic centers use the lambda convention."}
+  ],
+  "corrections": [],
+  "refs": [],
+  "additional_refs": []
+}

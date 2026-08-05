@@ -1,0 +1,3639 @@
+{
+  "assigned_rule_ids": [
+    "P-81",
+    "P-81.1",
+    "P-81.2",
+    "P-81.3",
+    "P-81.4",
+    "P-81.5"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 50,
+    "compiled_clause_count": 43,
+    "correction_application_count": 0,
+    "example_count": 2,
+    "exception_count": 1,
+    "figure_count": 0,
+    "nonoperative_clause_count": 7,
+    "record_count": 6,
+    "reference_count": 7,
+    "semantic_unit_count": 13,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 3,
+    "table_count": 1
+  },
+  "chunk_sha256": "96EC36A2BB7EECF05EB3BE45C5C09C27838C1D87604143D21AB822FE786AB62D",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-81:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-81.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-81.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.nuclide_symbol_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.nuclide_symbol_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.nuclide_symbol_definition.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-81.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-81.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.authorized_atomic_symbol_source",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.authorized_atomic_symbol_source.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.authorized_atomic_symbol_source.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-81.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.nuclide_atomic_symbol_typography",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.nuclide_atomic_symbol_typography.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.nuclide_atomic_symbol_typography.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-81.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.hydrogen_nuclide_symbols",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.hydrogen_nuclide_symbols.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.hydrogen_nuclide_symbols.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-81.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.hydrogen_nuclide_abbreviation_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.when.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.when.arg.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p81.part001.hydrogen_nuclide_abbreviation_rule.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p81.part001.hydrogen_nuclide_abbreviation_rule.else.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.else.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "effect"
+    },
+    {
+      "clause_id": "P-81.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "exception.p81.part001.boughton_lowercase_symbol_exception",
+            "kind": "exception"
+          },
+          {
+            "id": "unit.p81.part001.lowercase_symbol_boughton_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.lowercase_symbol_boughton_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.lowercase_symbol_boughton_policy.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p81.part001.lowercase_symbol_boughton_policy.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p81.part001.lowercase_symbol_boughton_policy.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "unit.p81.part001.boughton_lowercase_symbol_permission",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.boughton_lowercase_symbol_permission.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.boughton_lowercase_symbol_permission.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.exception.boughton_lowercase_symbol_exception.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.exception.boughton_lowercase_symbol_exception.when.arg1",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-81.2:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.lowercase_symbol_recommendation",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.lowercase_symbol_recommendation.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.lowercase_symbol_recommendation.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.lowercase_symbol_recommendation.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p81.part001.lowercase_symbol_recommendation.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p81.part001.lowercase_symbol_recommendation.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-81.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-81.3:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.hydrogen_atom_ion_names_source_context",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.hydrogen_atom_ion_names_source_context.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.hydrogen_atom_ion_names_source_context.value",
+            "kind": "expression"
+          },
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.header_band",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_layout"
+    },
+    {
+      "clause_id": "P-81.3:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.nuclide_headers",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_layout"
+    },
+    {
+      "clause_id": "P-81.3:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.nuclide_headers",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_layout"
+    },
+    {
+      "clause_id": "P-81.3:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.nuclide_headers",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.nuclide_headers",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.nuclide_headers",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.nuclide_headers",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.section_band",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_layout"
+    },
+    {
+      "clause_id": "P-81.3:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.atom",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.atom",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.atom",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.atom",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.atom",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.atom",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.atom.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0017",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.anion",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0018",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.anion",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0019",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.anion",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0020",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.anion",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0021",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.anion",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0022",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.anion",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.anion.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0023",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.cation",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0024",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.cation",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0025",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.cation",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0026",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.cation",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0027",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.cation",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0028",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.cation",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.cation.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-81.3:clause:0029",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p81.part001.hydrogen_atom_ion_names",
+            "kind": "table"
+          },
+          {
+            "id": "row.p81.part001.hydrogen_atom_ion_names.footer_band",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.charge_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.hydrogen_symbol",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.protium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.deuterium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.tritium_column",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.natural_composition_column",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "table_layout"
+    },
+    {
+      "clause_id": "P-81.4:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-81.4:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.isotopically_unmodified_compound",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.isotopically_unmodified_compound.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.isotopically_unmodified_compound.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-81.4:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.customary_unmodified_formula_and_name",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.customary_unmodified_formula_and_name.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.customary_unmodified_formula_and_name.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p81.part001.customary_unmodified_formula_and_name.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p81.part001.customary_unmodified_formula_and_name.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "effect"
+    },
+    {
+      "clause_id": "P-81.4:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-81.4:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p81.part001.unmodified_methane",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-81.4:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p81.part001.unmodified_ethanol",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-81.5:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-81.5:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.isotopically_modified_compound",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.isotopically_modified_compound.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.isotopically_modified_compound.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-81.5:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.isotopically_modified_compound_classification",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.isotopically_modified_compound_classification.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.isotopically_modified_compound_classification.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-81.5:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.isotopically_modified_compound_classification",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.isotopically_modified_compound_classification.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.isotopically_modified_compound_classification.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-81.5:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p81.part001.isotopically_modified_compound_classification",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p81.part001.isotopically_modified_compound_classification.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p81.part001.isotopically_modified_compound_classification.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "methane"
+      ],
+      "clause_ids": [
+        "P-81.4:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p81.part001.isotopically_unmodified_compound",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p81.part001.unmodified_methane",
+      "explanation": "The methane example has the natural isotopic composition and is written in the customary manner.",
+      "input": "CH4",
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "ethanol"
+      ],
+      "clause_ids": [
+        "P-81.4:clause:0006"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p81.part001.isotopically_unmodified_compound",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p81.part001.unmodified_ethanol",
+      "explanation": "The ethanol example has the natural isotopic composition and is written in the customary manner.",
+      "input": "CH3-CH2-OH",
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [
+    {
+      "clause_ids": [
+        "P-81.2:clause:0006"
+      ],
+      "effect": {
+        "guard": null,
+        "mode": "replace",
+        "redirect": null,
+        "replacement": {
+          "id": "unit.p81.part001.boughton_lowercase_symbol_permission",
+          "kind": "semantic_unit"
+        }
+      },
+      "exception_id": "exception.p81.part001.boughton_lowercase_symbol_exception",
+      "precedence": {
+        "source_order": 1,
+        "specificity": 1
+      },
+      "target": {
+        "id": "unit.p81.part001.lowercase_symbol_boughton_policy",
+        "kind": "semantic_unit"
+      },
+      "when": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-81.2:clause:0006"
+            ],
+            "expression_id": "expr.p81.part001.exception.boughton_lowercase_symbol_exception.when.arg1",
+            "name": "name",
+            "op": "var"
+          }
+        ],
+        "clause_ids": [
+          "P-81.2:clause:0006"
+        ],
+        "expression_id": "expr.p81.part001.exception.boughton_lowercase_symbol_exception.when",
+        "op": "predicate",
+        "symbol": "name.is_boughton_system_name"
+      }
+    }
+  ],
+  "figures": [],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-81-part-001",
+  "packet_sha256": "AE1DE3BD4B36A35E499F21F8E66D08D48729FE5BD8EBD8165F3C0D5A442CF928",
+  "records": [
+    {
+      "chapter": "P-8",
+      "clause_ids": [
+        "P-81:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-81",
+      "reference_ids": [
+        "reference.p_81.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-81",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-8",
+      "clause_ids": [
+        "P-81.1:clause:0001",
+        "P-81.1:clause:0002"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-81.1",
+      "reference_ids": [
+        "reference.p_81_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p81.part001.nuclide_symbol_definition"
+      ],
+      "source_rule_id": "P-81.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-8",
+      "clause_ids": [
+        "P-81.2:clause:0001",
+        "P-81.2:clause:0002",
+        "P-81.2:clause:0003",
+        "P-81.2:clause:0004",
+        "P-81.2:clause:0005",
+        "P-81.2:clause:0006",
+        "P-81.2:clause:0007"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [
+        "exception.p81.part001.boughton_lowercase_symbol_exception"
+      ],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-81.2",
+      "reference_ids": [
+        "reference.p_81_2.hierarchy_parent",
+        "reference.p81.2.xref.0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p81.part001.authorized_atomic_symbol_source",
+        "unit.p81.part001.nuclide_atomic_symbol_typography",
+        "unit.p81.part001.hydrogen_nuclide_symbols",
+        "unit.p81.part001.hydrogen_nuclide_abbreviation_rule",
+        "unit.p81.part001.lowercase_symbol_boughton_policy",
+        "unit.p81.part001.boughton_lowercase_symbol_permission",
+        "unit.p81.part001.lowercase_symbol_recommendation"
+      ],
+      "source_rule_id": "P-81.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-8",
+      "clause_ids": [
+        "P-81.3:clause:0001",
+        "P-81.3:clause:0002",
+        "P-81.3:clause:0003",
+        "P-81.3:clause:0004",
+        "P-81.3:clause:0005",
+        "P-81.3:clause:0006",
+        "P-81.3:clause:0007",
+        "P-81.3:clause:0008",
+        "P-81.3:clause:0009",
+        "P-81.3:clause:0010",
+        "P-81.3:clause:0011",
+        "P-81.3:clause:0012",
+        "P-81.3:clause:0013",
+        "P-81.3:clause:0014",
+        "P-81.3:clause:0015",
+        "P-81.3:clause:0016",
+        "P-81.3:clause:0017",
+        "P-81.3:clause:0018",
+        "P-81.3:clause:0019",
+        "P-81.3:clause:0020",
+        "P-81.3:clause:0021",
+        "P-81.3:clause:0022",
+        "P-81.3:clause:0023",
+        "P-81.3:clause:0024",
+        "P-81.3:clause:0025",
+        "P-81.3:clause:0026",
+        "P-81.3:clause:0027",
+        "P-81.3:clause:0028",
+        "P-81.3:clause:0029"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-81.3",
+      "reference_ids": [
+        "reference.p_81_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p81.part001.hydrogen_atom_ion_names_source_context"
+      ],
+      "source_rule_id": "P-81.3",
+      "table_ids": [
+        "table.p81.part001.hydrogen_atom_ion_names"
+      ]
+    },
+    {
+      "chapter": "P-8",
+      "clause_ids": [
+        "P-81.4:clause:0001",
+        "P-81.4:clause:0002",
+        "P-81.4:clause:0003",
+        "P-81.4:clause:0004",
+        "P-81.4:clause:0005",
+        "P-81.4:clause:0006"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p81.part001.unmodified_methane",
+        "example.p81.part001.unmodified_ethanol"
+      ],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-81.4",
+      "reference_ids": [
+        "reference.p_81_4.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p81.part001.isotopically_unmodified_compound",
+        "unit.p81.part001.customary_unmodified_formula_and_name"
+      ],
+      "source_rule_id": "P-81.4",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-8",
+      "clause_ids": [
+        "P-81.5:clause:0001",
+        "P-81.5:clause:0002",
+        "P-81.5:clause:0003",
+        "P-81.5:clause:0004",
+        "P-81.5:clause:0005"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-81.5",
+      "reference_ids": [
+        "reference.p_81_5.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p81.part001.isotopically_modified_compound",
+        "unit.p81.part001.isotopically_modified_compound_classification"
+      ],
+      "source_rule_id": "P-81.5",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-81:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_81.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-81",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-8",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_81_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-81.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-81",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_81_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-81.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-81",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_81_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-81.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-81",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.4:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_81_4.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-81.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-81",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.5:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_81_5.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-81.5",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-81",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p81.2.xref.0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-81.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-81.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-14.3",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-81.1:clause:0002"
+      ],
+      "entity_type": "nuclide",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "isotopically_modified_compound"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "nuclide_symbol",
+          "type": "nuclide_symbol"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.1:clause:0002"
+          ],
+          "expression_id": "expr.p81.part001.nuclide_symbol_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "nuclide symbol",
+      "unit_id": "unit.p81.part001.nuclide_symbol_definition",
+      "value": {
+        "clause_ids": [
+          "P-81.1:clause:0002"
+        ],
+        "expression_id": "expr.p81.part001.nuclide_symbol_definition.value",
+        "op": "literal",
+        "value": {
+          "contexts": [
+            "formula",
+            "name of an isotopically modified compound"
+          ],
+          "mass_number_position": "left superscript",
+          "parts": [
+            "atomic symbol for the element",
+            "arabic numeral indicating the mass number"
+          ],
+          "source_references": [
+            "IR-3.2",
+            "ref. 12"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.2:clause:0002"
+      ],
+      "entity_type": "element",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "element",
+          "type": "element"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "atomic_symbol",
+          "type": "atomic_symbol"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.2:clause:0002"
+          ],
+          "expression_id": "expr.p81.part001.authorized_atomic_symbol_source.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "authorized atomic symbol",
+      "unit_id": "unit.p81.part001.authorized_atomic_symbol_source",
+      "value": {
+        "clause_ids": [
+          "P-81.2:clause:0002"
+        ],
+        "expression_id": "expr.p81.part001.authorized_atomic_symbol_source.value",
+        "op": "literal",
+        "value": {
+          "reference": "ref. 12",
+          "source": "IUPAC Nomenclature of Inorganic Chemistry",
+          "use": "atomic symbols used in nuclide symbols"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.2:clause:0003"
+      ],
+      "entity_type": "nuclide_symbol",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "nuclide_symbol",
+          "type": "nuclide_symbol"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "typography",
+          "type": "typography_rule"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.2:clause:0003"
+          ],
+          "expression_id": "expr.p81.part001.nuclide_atomic_symbol_typography.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "nuclide atomic-symbol typography",
+      "unit_id": "unit.p81.part001.nuclide_atomic_symbol_typography",
+      "value": {
+        "clause_ids": [
+          "P-81.2:clause:0003"
+        ],
+        "expression_id": "expr.p81.part001.nuclide_atomic_symbol_typography.value",
+        "op": "literal",
+        "value": {
+          "atomic_symbol_type": "roman",
+          "italic_atomic_symbols": "reserved for letter locants",
+          "organic_nomenclature_context": "customary practice described in P-14.3"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.2:clause:0004"
+      ],
+      "entity_type": "hydrogen_isotope",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "isotope",
+          "type": "hydrogen_isotope"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "nuclide_symbol",
+          "type": "nuclide_symbol"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.2:clause:0004"
+          ],
+          "expression_id": "expr.p81.part001.hydrogen_nuclide_symbols.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "hydrogen isotope nuclide symbols",
+      "unit_id": "unit.p81.part001.hydrogen_nuclide_symbols",
+      "value": {
+        "clause_ids": [
+          "P-81.2:clause:0004"
+        ],
+        "expression_id": "expr.p81.part001.hydrogen_nuclide_symbols.value",
+        "op": "literal",
+        "value": {
+          "deuterium": "2H",
+          "protium": "1H",
+          "tritium": "3H"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.2:clause:0005"
+      ],
+      "else": [
+        {
+          "clause_ids": [
+            "P-81.2:clause:0005"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p81.part001.hydrogen_nuclide_abbreviation_rule.else.1",
+          "target": "hydrogen_symbols",
+          "value": {
+            "clause_ids": [
+              "P-81.2:clause:0005"
+            ],
+            "expression_id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.else.1.value",
+            "op": "literal",
+            "value": [
+              "2H",
+              "3H"
+            ]
+          }
+        }
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "descriptor",
+          "type": "isotopic_descriptor"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "hydrogen_symbols",
+          "type": "nuclide_symbol_set"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.2:clause:0005"
+          ],
+          "expression_id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-81.2:clause:0005"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p81.part001.hydrogen_nuclide_abbreviation_rule.then.1",
+          "target": "hydrogen_symbols",
+          "value": {
+            "clause_ids": [
+              "P-81.2:clause:0005"
+            ],
+            "expression_id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.then.1.value",
+            "op": "literal",
+            "value": [
+              "D for 2H",
+              "T for 3H"
+            ]
+          }
+        }
+      ],
+      "unit_id": "unit.p81.part001.hydrogen_nuclide_abbreviation_rule",
+      "when": {
+        "arg": {
+          "args": [
+            {
+              "clause_ids": [
+                "P-81.2:clause:0005"
+              ],
+              "expression_id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.when.arg.arg1",
+              "name": "descriptor",
+              "op": "var"
+            }
+          ],
+          "clause_ids": [
+            "P-81.2:clause:0005"
+          ],
+          "expression_id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.when.arg",
+          "op": "predicate",
+          "symbol": "nuclide_descriptor.has_other_modifying_nuclides"
+        },
+        "clause_ids": [
+          "P-81.2:clause:0005"
+        ],
+        "expression_id": "expr.p81.part001.hydrogen_nuclide_abbreviation_rule.when",
+        "op": "not"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.2:clause:0006"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "name"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "atomic_symbol_policy",
+          "type": "symbol_policy"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.2:clause:0006"
+          ],
+          "expression_id": "expr.p81.part001.lowercase_symbol_boughton_policy.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-81.2:clause:0006"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p81.part001.lowercase_symbol_boughton_policy.then.1",
+          "target": "atomic_symbol_policy",
+          "value": {
+            "clause_ids": [
+              "P-81.2:clause:0006"
+            ],
+            "expression_id": "expr.p81.part001.lowercase_symbol_boughton_policy.then.1.value",
+            "op": "literal",
+            "value": "lower-case d and t are not atomic symbols in other cases"
+          }
+        }
+      ],
+      "unit_id": "unit.p81.part001.lowercase_symbol_boughton_policy",
+      "when": {
+        "clause_ids": [
+          "P-81.2:clause:0006"
+        ],
+        "expression_id": "expr.p81.part001.lowercase_symbol_boughton_policy.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.2:clause:0006"
+      ],
+      "entity_type": "name",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "name"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "permission",
+          "type": "symbol_policy"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.2:clause:0006"
+          ],
+          "expression_id": "expr.p81.part001.boughton_lowercase_symbol_permission.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "Boughton lower-case hydrogen symbol exception",
+      "unit_id": "unit.p81.part001.boughton_lowercase_symbol_permission",
+      "value": {
+        "clause_ids": [
+          "P-81.2:clause:0006"
+        ],
+        "expression_id": "expr.p81.part001.boughton_lowercase_symbol_permission.value",
+        "op": "literal",
+        "value": {
+          "replaces": [
+            "2H",
+            "3H"
+          ],
+          "symbols": [
+            "d",
+            "t"
+          ],
+          "system": "Boughton"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.2:clause:0007"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "name"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "recommendation_status",
+          "type": "recommendation_status"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.2:clause:0007"
+          ],
+          "expression_id": "expr.p81.part001.lowercase_symbol_recommendation.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-81.2:clause:0007"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p81.part001.lowercase_symbol_recommendation.then.1",
+          "target": "recommendation_status",
+          "value": {
+            "clause_ids": [
+              "P-81.2:clause:0007"
+            ],
+            "expression_id": "expr.p81.part001.lowercase_symbol_recommendation.then.1.value",
+            "op": "literal",
+            "value": "not recommended"
+          }
+        }
+      ],
+      "unit_id": "unit.p81.part001.lowercase_symbol_recommendation",
+      "when": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-81.2:clause:0007"
+            ],
+            "expression_id": "expr.p81.part001.lowercase_symbol_recommendation.when.arg1",
+            "name": "name",
+            "op": "var"
+          }
+        ],
+        "clause_ids": [
+          "P-81.2:clause:0007"
+        ],
+        "expression_id": "expr.p81.part001.lowercase_symbol_recommendation.when",
+        "op": "predicate",
+        "symbol": "name.uses_lowercase_d_or_t_outside_boughton"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.3:clause:0002"
+      ],
+      "entity_type": "hydrogen_atom_ion_table",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "table",
+          "type": "hydrogen_atom_ion_table"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "source_context",
+          "type": "text"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.3:clause:0002"
+          ],
+          "expression_id": "expr.p81.part001.hydrogen_atom_ion_names_source_context.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "hydrogen atom and ion name table context",
+      "unit_id": "unit.p81.part001.hydrogen_atom_ion_names_source_context",
+      "value": {
+        "clause_ids": [
+          "P-81.3:clause:0002"
+        ],
+        "expression_id": "expr.p81.part001.hydrogen_atom_ion_names_source_context.value",
+        "op": "literal",
+        "value": {
+          "source_references": [
+            "refs. 30",
+            "33"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.4:clause:0002"
+      ],
+      "entity_type": "compound",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "compound"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "result",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.4:clause:0002"
+          ],
+          "expression_id": "expr.p81.part001.isotopically_unmodified_compound.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "isotopically unmodified compound",
+      "unit_id": "unit.p81.part001.isotopically_unmodified_compound",
+      "value": {
+        "clause_ids": [
+          "P-81.4:clause:0002"
+        ],
+        "expression_id": "expr.p81.part001.isotopically_unmodified_compound.value",
+        "op": "literal",
+        "value": {
+          "composition": "constituent nuclides present in the proportions occurring in nature",
+          "macroscopic": true
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.4:clause:0003"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "isotopically_unmodified_compound"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "rendering",
+          "type": "formula_and_name"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.4:clause:0003"
+          ],
+          "expression_id": "expr.p81.part001.customary_unmodified_formula_and_name.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-81.4:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p81.part001.customary_unmodified_formula_and_name.then.1",
+          "target": "rendering",
+          "value": {
+            "clause_ids": [
+              "P-81.4:clause:0003"
+            ],
+            "expression_id": "expr.p81.part001.customary_unmodified_formula_and_name.then.1.value",
+            "op": "literal",
+            "value": "formula and name written in the customary manner"
+          }
+        }
+      ],
+      "unit_id": "unit.p81.part001.customary_unmodified_formula_and_name",
+      "when": {
+        "clause_ids": [
+          "P-81.4:clause:0003"
+        ],
+        "expression_id": "expr.p81.part001.customary_unmodified_formula_and_name.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.5:clause:0002"
+      ],
+      "entity_type": "compound",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "compound"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "result",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.5:clause:0002"
+          ],
+          "expression_id": "expr.p81.part001.isotopically_modified_compound.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "isotopically modified compound",
+      "unit_id": "unit.p81.part001.isotopically_modified_compound",
+      "value": {
+        "clause_ids": [
+          "P-81.5:clause:0002"
+        ],
+        "expression_id": "expr.p81.part001.isotopically_modified_compound.value",
+        "op": "literal",
+        "value": {
+          "composition": "isotopic ratio of nuclides for at least one element deviates measurably from that occurring in nature",
+          "macroscopic": true
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-81.5:clause:0003",
+        "P-81.5:clause:0004",
+        "P-81.5:clause:0005"
+      ],
+      "entity_type": "isotopically_modified_compound",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "isotopically_modified_compound"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "classification",
+          "type": "isotopic_modification_class"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-81.5:clause:0003",
+            "P-81.5:clause:0004",
+            "P-81.5:clause:0005"
+          ],
+          "expression_id": "expr.p81.part001.isotopically_modified_compound_classification.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "isotopically modified compound classification",
+      "unit_id": "unit.p81.part001.isotopically_modified_compound_classification",
+      "value": {
+        "clause_ids": [
+          "P-81.5:clause:0003",
+          "P-81.5:clause:0004",
+          "P-81.5:clause:0005"
+        ],
+        "expression_id": "expr.p81.part001.isotopically_modified_compound_classification.value",
+        "op": "literal",
+        "value": {
+          "classes": [
+            "isotopically substituted compound",
+            "isotopically labeled compound"
+          ]
+        }
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [
+    {
+      "arguments": [
+        {
+          "name": "descriptor",
+          "type": "isotopic_descriptor"
+        }
+      ],
+      "description": "An isotopic descriptor contains modifying nuclides in addition to the hydrogen nuclide under consideration.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "other_modifying_nuclides_present",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "nuclide_descriptor.has_other_modifying_nuclides"
+    },
+    {
+      "arguments": [
+        {
+          "name": "name",
+          "type": "name"
+        }
+      ],
+      "description": "A name is formed according to the Boughton system.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "boughton_system_name",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "name.is_boughton_system_name"
+    },
+    {
+      "arguments": [
+        {
+          "name": "name",
+          "type": "name"
+        }
+      ],
+      "description": "A name uses only a lower-case d or t as an atomic symbol outside the Boughton system.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "lowercase_d_or_t_outside_boughton",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "name.uses_lowercase_d_or_t_outside_boughton"
+    }
+  ],
+  "tables": [
+    {
+      "clause_ids": [
+        "P-81.3:clause:0002",
+        "P-81.3:clause:0003",
+        "P-81.3:clause:0004",
+        "P-81.3:clause:0005",
+        "P-81.3:clause:0006",
+        "P-81.3:clause:0007",
+        "P-81.3:clause:0008",
+        "P-81.3:clause:0009",
+        "P-81.3:clause:0010",
+        "P-81.3:clause:0011",
+        "P-81.3:clause:0012",
+        "P-81.3:clause:0013",
+        "P-81.3:clause:0014",
+        "P-81.3:clause:0015",
+        "P-81.3:clause:0016",
+        "P-81.3:clause:0017",
+        "P-81.3:clause:0018",
+        "P-81.3:clause:0019",
+        "P-81.3:clause:0020",
+        "P-81.3:clause:0021",
+        "P-81.3:clause:0022",
+        "P-81.3:clause:0023",
+        "P-81.3:clause:0024",
+        "P-81.3:clause:0025",
+        "P-81.3:clause:0026",
+        "P-81.3:clause:0027",
+        "P-81.3:clause:0028",
+        "P-81.3:clause:0029"
+      ],
+      "columns": [
+        {
+          "clause_ids": [
+            "P-81.3:clause:0004",
+            "P-81.3:clause:0005",
+            "P-81.3:clause:0011",
+            "P-81.3:clause:0017",
+            "P-81.3:clause:0023"
+          ],
+          "column_id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+          "label": "Charge class",
+          "ordinal": 1,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-81.3:clause:0004",
+            "P-81.3:clause:0005",
+            "P-81.3:clause:0006",
+            "P-81.3:clause:0007",
+            "P-81.3:clause:0008",
+            "P-81.3:clause:0012",
+            "P-81.3:clause:0018",
+            "P-81.3:clause:0024"
+          ],
+          "column_id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+          "label": "Hydrogen symbol",
+          "ordinal": 2,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-81.3:clause:0006",
+            "P-81.3:clause:0013",
+            "P-81.3:clause:0019",
+            "P-81.3:clause:0025"
+          ],
+          "column_id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+          "label": "1H",
+          "ordinal": 3,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-81.3:clause:0007",
+            "P-81.3:clause:0014",
+            "P-81.3:clause:0020",
+            "P-81.3:clause:0026"
+          ],
+          "column_id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+          "label": "2H",
+          "ordinal": 4,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-81.3:clause:0008",
+            "P-81.3:clause:0015",
+            "P-81.3:clause:0021",
+            "P-81.3:clause:0027"
+          ],
+          "column_id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+          "label": "3H",
+          "ordinal": 5,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-81.3:clause:0009",
+            "P-81.3:clause:0016",
+            "P-81.3:clause:0022",
+            "P-81.3:clause:0028"
+          ],
+          "column_id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+          "label": "Natural composition",
+          "ordinal": 6,
+          "value_type": "string"
+        }
+      ],
+      "contract": {
+        "cardinality": "one_to_one",
+        "key_column_ids": [
+          "column.p81.part001.hydrogen_atom_ion_names.charge_class"
+        ],
+        "ordering": "source_order",
+        "result_column_ids": [
+          "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+          "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+          "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+          "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+          "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column"
+        ]
+      },
+      "footnotes": [],
+      "label": "Table 8.1",
+      "rows": [
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.charge_class",
+              "clause_ids": [
+                "P-81.3:clause:0003"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.hydrogen_symbol",
+              "clause_ids": [
+                "P-81.3:clause:0003"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.protium_column",
+              "clause_ids": [
+                "P-81.3:clause:0003"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.deuterium_column",
+              "clause_ids": [
+                "P-81.3:clause:0003"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.tritium_column",
+              "clause_ids": [
+                "P-81.3:clause:0003"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.header_band.natural_composition_column",
+              "clause_ids": [
+                "P-81.3:clause:0003"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-81.3:clause:0003"
+          ],
+          "ordinal": 1,
+          "rank_group": null,
+          "row_id": "row.p81.part001.hydrogen_atom_ion_names.header_band"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.charge_class",
+              "clause_ids": [
+                "P-81.3:clause:0004",
+                "P-81.3:clause:0005",
+                "P-81.3:clause:0006",
+                "P-81.3:clause:0007",
+                "P-81.3:clause:0008",
+                "P-81.3:clause:0009"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.hydrogen_symbol",
+              "clause_ids": [
+                "P-81.3:clause:0004",
+                "P-81.3:clause:0005",
+                "P-81.3:clause:0006",
+                "P-81.3:clause:0007",
+                "P-81.3:clause:0008",
+                "P-81.3:clause:0009"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.protium_column",
+              "clause_ids": [
+                "P-81.3:clause:0004",
+                "P-81.3:clause:0005",
+                "P-81.3:clause:0006",
+                "P-81.3:clause:0007",
+                "P-81.3:clause:0008",
+                "P-81.3:clause:0009"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+              "value": "1H"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.deuterium_column",
+              "clause_ids": [
+                "P-81.3:clause:0004",
+                "P-81.3:clause:0005",
+                "P-81.3:clause:0006",
+                "P-81.3:clause:0007",
+                "P-81.3:clause:0008",
+                "P-81.3:clause:0009"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+              "value": "2H"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.tritium_column",
+              "clause_ids": [
+                "P-81.3:clause:0004",
+                "P-81.3:clause:0005",
+                "P-81.3:clause:0006",
+                "P-81.3:clause:0007",
+                "P-81.3:clause:0008",
+                "P-81.3:clause:0009"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+              "value": "3H"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.nuclide_headers.natural_composition_column",
+              "clause_ids": [
+                "P-81.3:clause:0004",
+                "P-81.3:clause:0005",
+                "P-81.3:clause:0006",
+                "P-81.3:clause:0007",
+                "P-81.3:clause:0008",
+                "P-81.3:clause:0009"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+              "value": "natural\ncomposition"
+            }
+          ],
+          "clause_ids": [
+            "P-81.3:clause:0004",
+            "P-81.3:clause:0005",
+            "P-81.3:clause:0006",
+            "P-81.3:clause:0007",
+            "P-81.3:clause:0008",
+            "P-81.3:clause:0009"
+          ],
+          "ordinal": 2,
+          "rank_group": null,
+          "row_id": "row.p81.part001.hydrogen_atom_ion_names.nuclide_headers"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.charge_class",
+              "clause_ids": [
+                "P-81.3:clause:0010"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.hydrogen_symbol",
+              "clause_ids": [
+                "P-81.3:clause:0010"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.protium_column",
+              "clause_ids": [
+                "P-81.3:clause:0010"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.deuterium_column",
+              "clause_ids": [
+                "P-81.3:clause:0010"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.tritium_column",
+              "clause_ids": [
+                "P-81.3:clause:0010"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.section_band.natural_composition_column",
+              "clause_ids": [
+                "P-81.3:clause:0010"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-81.3:clause:0010"
+          ],
+          "ordinal": 3,
+          "rank_group": null,
+          "row_id": "row.p81.part001.hydrogen_atom_ion_names.section_band"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.atom.charge_class",
+              "clause_ids": [
+                "P-81.3:clause:0011",
+                "P-81.3:clause:0012",
+                "P-81.3:clause:0013",
+                "P-81.3:clause:0014",
+                "P-81.3:clause:0015",
+                "P-81.3:clause:0016"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+              "value": "atom"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.atom.hydrogen_symbol",
+              "clause_ids": [
+                "P-81.3:clause:0011",
+                "P-81.3:clause:0012",
+                "P-81.3:clause:0013",
+                "P-81.3:clause:0014",
+                "P-81.3:clause:0015",
+                "P-81.3:clause:0016"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+              "value": "H"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.atom.protium_column",
+              "clause_ids": [
+                "P-81.3:clause:0011",
+                "P-81.3:clause:0012",
+                "P-81.3:clause:0013",
+                "P-81.3:clause:0014",
+                "P-81.3:clause:0015",
+                "P-81.3:clause:0016"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+              "value": "protium"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.atom.deuterium_column",
+              "clause_ids": [
+                "P-81.3:clause:0011",
+                "P-81.3:clause:0012",
+                "P-81.3:clause:0013",
+                "P-81.3:clause:0014",
+                "P-81.3:clause:0015",
+                "P-81.3:clause:0016"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+              "value": "deuterium"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.atom.tritium_column",
+              "clause_ids": [
+                "P-81.3:clause:0011",
+                "P-81.3:clause:0012",
+                "P-81.3:clause:0013",
+                "P-81.3:clause:0014",
+                "P-81.3:clause:0015",
+                "P-81.3:clause:0016"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+              "value": "tritium"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.atom.natural_composition_column",
+              "clause_ids": [
+                "P-81.3:clause:0011",
+                "P-81.3:clause:0012",
+                "P-81.3:clause:0013",
+                "P-81.3:clause:0014",
+                "P-81.3:clause:0015",
+                "P-81.3:clause:0016"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+              "value": "hydrogen"
+            }
+          ],
+          "clause_ids": [
+            "P-81.3:clause:0011",
+            "P-81.3:clause:0012",
+            "P-81.3:clause:0013",
+            "P-81.3:clause:0014",
+            "P-81.3:clause:0015",
+            "P-81.3:clause:0016"
+          ],
+          "ordinal": 4,
+          "rank_group": null,
+          "row_id": "row.p81.part001.hydrogen_atom_ion_names.atom"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.anion.charge_class",
+              "clause_ids": [
+                "P-81.3:clause:0017",
+                "P-81.3:clause:0018",
+                "P-81.3:clause:0019",
+                "P-81.3:clause:0020",
+                "P-81.3:clause:0021",
+                "P-81.3:clause:0022"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+              "value": "anion"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.anion.hydrogen_symbol",
+              "clause_ids": [
+                "P-81.3:clause:0017",
+                "P-81.3:clause:0018",
+                "P-81.3:clause:0019",
+                "P-81.3:clause:0020",
+                "P-81.3:clause:0021",
+                "P-81.3:clause:0022"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+              "value": "H–"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.anion.protium_column",
+              "clause_ids": [
+                "P-81.3:clause:0017",
+                "P-81.3:clause:0018",
+                "P-81.3:clause:0019",
+                "P-81.3:clause:0020",
+                "P-81.3:clause:0021",
+                "P-81.3:clause:0022"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+              "value": "protide"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.anion.deuterium_column",
+              "clause_ids": [
+                "P-81.3:clause:0017",
+                "P-81.3:clause:0018",
+                "P-81.3:clause:0019",
+                "P-81.3:clause:0020",
+                "P-81.3:clause:0021",
+                "P-81.3:clause:0022"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+              "value": "deuteride"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.anion.tritium_column",
+              "clause_ids": [
+                "P-81.3:clause:0017",
+                "P-81.3:clause:0018",
+                "P-81.3:clause:0019",
+                "P-81.3:clause:0020",
+                "P-81.3:clause:0021",
+                "P-81.3:clause:0022"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+              "value": "tritide"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.anion.natural_composition_column",
+              "clause_ids": [
+                "P-81.3:clause:0017",
+                "P-81.3:clause:0018",
+                "P-81.3:clause:0019",
+                "P-81.3:clause:0020",
+                "P-81.3:clause:0021",
+                "P-81.3:clause:0022"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+              "value": "hydride"
+            }
+          ],
+          "clause_ids": [
+            "P-81.3:clause:0017",
+            "P-81.3:clause:0018",
+            "P-81.3:clause:0019",
+            "P-81.3:clause:0020",
+            "P-81.3:clause:0021",
+            "P-81.3:clause:0022"
+          ],
+          "ordinal": 5,
+          "rank_group": null,
+          "row_id": "row.p81.part001.hydrogen_atom_ion_names.anion"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.cation.charge_class",
+              "clause_ids": [
+                "P-81.3:clause:0023",
+                "P-81.3:clause:0024",
+                "P-81.3:clause:0025",
+                "P-81.3:clause:0026",
+                "P-81.3:clause:0027",
+                "P-81.3:clause:0028"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+              "value": "cation"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.cation.hydrogen_symbol",
+              "clause_ids": [
+                "P-81.3:clause:0023",
+                "P-81.3:clause:0024",
+                "P-81.3:clause:0025",
+                "P-81.3:clause:0026",
+                "P-81.3:clause:0027",
+                "P-81.3:clause:0028"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+              "value": "H+"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.cation.protium_column",
+              "clause_ids": [
+                "P-81.3:clause:0023",
+                "P-81.3:clause:0024",
+                "P-81.3:clause:0025",
+                "P-81.3:clause:0026",
+                "P-81.3:clause:0027",
+                "P-81.3:clause:0028"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+              "value": "proton"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.cation.deuterium_column",
+              "clause_ids": [
+                "P-81.3:clause:0023",
+                "P-81.3:clause:0024",
+                "P-81.3:clause:0025",
+                "P-81.3:clause:0026",
+                "P-81.3:clause:0027",
+                "P-81.3:clause:0028"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+              "value": "deuteron"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.cation.tritium_column",
+              "clause_ids": [
+                "P-81.3:clause:0023",
+                "P-81.3:clause:0024",
+                "P-81.3:clause:0025",
+                "P-81.3:clause:0026",
+                "P-81.3:clause:0027",
+                "P-81.3:clause:0028"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+              "value": "triton"
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.cation.natural_composition_column",
+              "clause_ids": [
+                "P-81.3:clause:0023",
+                "P-81.3:clause:0024",
+                "P-81.3:clause:0025",
+                "P-81.3:clause:0026",
+                "P-81.3:clause:0027",
+                "P-81.3:clause:0028"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+              "value": "hydron"
+            }
+          ],
+          "clause_ids": [
+            "P-81.3:clause:0023",
+            "P-81.3:clause:0024",
+            "P-81.3:clause:0025",
+            "P-81.3:clause:0026",
+            "P-81.3:clause:0027",
+            "P-81.3:clause:0028"
+          ],
+          "ordinal": 6,
+          "rank_group": null,
+          "row_id": "row.p81.part001.hydrogen_atom_ion_names.cation"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.charge_class",
+              "clause_ids": [
+                "P-81.3:clause:0029"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.charge_class",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.hydrogen_symbol",
+              "clause_ids": [
+                "P-81.3:clause:0029"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.hydrogen_symbol",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.protium_column",
+              "clause_ids": [
+                "P-81.3:clause:0029"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.protium_column",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.deuterium_column",
+              "clause_ids": [
+                "P-81.3:clause:0029"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.deuterium_column",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.tritium_column",
+              "clause_ids": [
+                "P-81.3:clause:0029"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.tritium_column",
+              "value": null
+            },
+            {
+              "cell_id": "cell.p81.part001.hydrogen_atom_ion_names.footer_band.natural_composition_column",
+              "clause_ids": [
+                "P-81.3:clause:0029"
+              ],
+              "column_id": "column.p81.part001.hydrogen_atom_ion_names.natural_composition_column",
+              "value": null
+            }
+          ],
+          "clause_ids": [
+            "P-81.3:clause:0029"
+          ],
+          "ordinal": 7,
+          "rank_group": null,
+          "row_id": "row.p81.part001.hydrogen_atom_ion_names.footer_band"
+        }
+      ],
+      "table_id": "table.p81.part001.hydrogen_atom_ion_names",
+      "title": "Names of the hydrogen atoms and ions"
+    }
+  ]
+}

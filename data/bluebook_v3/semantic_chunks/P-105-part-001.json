@@ -1,0 +1,1807 @@
+{
+  "assigned_rule_ids": [
+    "P-105",
+    "P-105.0",
+    "P-105.1",
+    "P-105.2",
+    "P-105.2.1",
+    "P-105.2.2"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 44,
+    "compiled_clause_count": 33,
+    "correction_application_count": 0,
+    "example_count": 15,
+    "exception_count": 0,
+    "figure_count": 15,
+    "nonoperative_clause_count": 11,
+    "record_count": 6,
+    "reference_count": 12,
+    "semantic_unit_count": 4,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 0,
+    "table_count": 0
+  },
+  "chunk_sha256": "15F9C0ADE0BDAAA0426839AF702E478D9FBA6950F4B0A53A67D0404F93ACCDB7",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-105:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-105:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "source_navigation"
+      },
+      "force": "source_metadata",
+      "role": "source_metadata"
+    },
+    {
+      "clause_id": "P-105.0:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-105.0:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p105.part001.nucleoside_nomenclature_reference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p105.part001.nucleoside_nomenclature_reference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p105.part001.nucleoside_nomenclature_reference.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "note"
+    },
+    {
+      "clause_id": "P-105.0:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p105.part001.nucleoside_derivative_naming_basis",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p105.part001.nucleoside_derivative_naming_basis.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p105.part001.nucleoside_derivative_naming_basis.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p105.part001.nucleoside_derivative_naming_basis.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-105.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-105.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p105.part001.retained_nucleoside_names",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p105.part001.retained_nucleoside_names.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p105.part001.retained_nucleoside_names.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-105.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.adenosine_retained_name",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.retained_adenosine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.guanosine_retained_name",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.retained_guanosine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.1:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.inosine_retained_name",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.1:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.retained_inosine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.1:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.xanthosine_retained_name",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.1:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.retained_xanthosine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.1:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.cytidine_retained_name",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.1:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.retained_cytidine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.1:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.thymidine_retained_name",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.1:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.retained_thymidine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.1:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.uridine_retained_name",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.1:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.retained_uridine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.deoxy_methylguanosine_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.deoxy_methylguanosine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.fluoro_iodo_methylcytidine_example",
+            "kind": "example"
+          },
+          {
+            "id": "unit.p105.part001.nucleoside_oxo_replacement_permission",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p105.part001.nucleoside_oxo_replacement_permission.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p105.part001.nucleoside_oxo_replacement_permission.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.fluoro_iodo_methylcytidine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.fluoromethylidene_cytidine_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.fluoromethylidene_cytidine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.ethyl_thiouridine_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.ethyl_thiouridine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.hydroxyethyl_thioguanosine_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.hydroxyethyl_thioguanosine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.triacetyladenosine_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.2.1:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.triacetyladenosine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.2.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-105.2.2:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.2.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.propanoic_acid_nucleoside_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.2.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.propanoic_acid_nucleoside_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-105.2.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p105.part001.cyclic_carbonate_guanosine_example",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-105.2.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p105.part001.cyclic_carbonate_guanosine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "adenosine"
+      ],
+      "clause_ids": [
+        "P-105.1:clause:0003"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p105.part001.retained_nucleoside_names",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p105.part001.retained_adenosine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.adenosine_retained_name",
+      "explanation": "Adenosine is shown as a retained nucleoside name.",
+      "input": {
+        "retained_name": "adenosine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "guanosine"
+      ],
+      "clause_ids": [
+        "P-105.1:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p105.part001.retained_nucleoside_names",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p105.part001.retained_guanosine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.guanosine_retained_name",
+      "explanation": "Guanosine is shown as a retained nucleoside name.",
+      "input": {
+        "retained_name": "guanosine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "inosine"
+      ],
+      "clause_ids": [
+        "P-105.1:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p105.part001.retained_nucleoside_names",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p105.part001.retained_inosine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.inosine_retained_name",
+      "explanation": "Inosine is shown as a retained nucleoside name.",
+      "input": {
+        "retained_name": "inosine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "xanthosine"
+      ],
+      "clause_ids": [
+        "P-105.1:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p105.part001.retained_nucleoside_names",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p105.part001.retained_xanthosine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.xanthosine_retained_name",
+      "explanation": "Xanthosine is shown as a retained nucleoside name.",
+      "input": {
+        "retained_name": "xanthosine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "cytidine"
+      ],
+      "clause_ids": [
+        "P-105.1:clause:0011"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p105.part001.retained_nucleoside_names",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p105.part001.retained_cytidine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.cytidine_retained_name",
+      "explanation": "Cytidine is shown as a retained nucleoside name.",
+      "input": {
+        "retained_name": "cytidine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "thymidine"
+      ],
+      "clause_ids": [
+        "P-105.1:clause:0013"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p105.part001.retained_nucleoside_names",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p105.part001.retained_thymidine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.thymidine_retained_name",
+      "explanation": "Thymidine is shown as a retained nucleoside name.",
+      "input": {
+        "retained_name": "thymidine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "uridine"
+      ],
+      "clause_ids": [
+        "P-105.1:clause:0015"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p105.part001.retained_nucleoside_names",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p105.part001.retained_uridine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.uridine_retained_name",
+      "explanation": "Uridine is shown as a retained nucleoside name.",
+      "input": {
+        "retained_name": "uridine"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2′-deoxy-1-methylguanosine"
+      ],
+      "clause_ids": [
+        "P-105.2.1:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p105.part001.deoxy_methylguanosine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.deoxy_methylguanosine_example",
+      "explanation": "Example of substitution on a nucleoside having a retained name.",
+      "input": {
+        "structure_figure": "P10gif/P105210a.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2′-deoxy-2′-fluoro-5-iodo-5′-O-methylcytidine",
+        "4-amino-1-[(2R,3R,4R,5R)-3-fluoro-4-hydroxy-5-(methoxymethyl)oxolan-2-yl]-5-iodopyrimidin-2(1H)-one"
+      ],
+      "clause_ids": [
+        "P-105.2.1:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p105.part001.nucleoside_oxo_replacement_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.p105.part001.fluoro_iodo_methylcytidine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.fluoro_iodo_methylcytidine_example",
+      "explanation": "The example states that replacement of a hydroxy group by a fluorine atom at the same position is allowed.",
+      "input": {
+        "allowed_replacement": "hydroxy group by fluorine at the same position",
+        "structure_figure": "P10gif/P105210b.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(2′E)-2′-deoxy-2′-(fluoromethylidene)cytidine",
+        "4-amino-1-[(2R,3E,4S,5R)-3-(fluoromethylidene)-4-hydroxy-5-(hydroxymethyl)oxolan-2-yl]pyrimidin-2(1H)-one"
+      ],
+      "clause_ids": [
+        "P-105.2.1:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p105.part001.fluoromethylidene_cytidine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.fluoromethylidene_cytidine_example",
+      "explanation": "Example of fluoromethylidene substitution on a nucleoside.",
+      "input": {
+        "structure_figure": "P10gif/P105210c.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "5-ethyl-4-thiouridine"
+      ],
+      "clause_ids": [
+        "P-105.2.1:clause:0011"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p105.part001.ethyl_thiouridine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.ethyl_thiouridine_example",
+      "explanation": "Example of substitution on a retained nucleoside name.",
+      "input": {
+        "structure_figure": "P10gif/P105210d.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "N2-(2-hydroxyethyl)-5′-S-methyl-5′-thioguanosine"
+      ],
+      "clause_ids": [
+        "P-105.2.1:clause:0013"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p105.part001.hydroxyethyl_thioguanosine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.hydroxyethyl_thioguanosine_example",
+      "explanation": "Example of substitution on a retained nucleoside name.",
+      "input": {
+        "structure_figure": "P10gif/P105210e.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2′,3′,5′-tri-O-acetyladenosine",
+        "adenosine 2′,3′,5′-triacetate"
+      ],
+      "clause_ids": [
+        "P-105.2.1:clause:0015"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p105.part001.triacetyladenosine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.triacetyladenosine_example",
+      "explanation": "The figure gives both the substituted retained-name form and the corresponding acetate form.",
+      "input": {
+        "structure_figure": "P10gif/P105210f.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "3-[4-(methylamino)-2-oxo-1-β-D-ribofuranosyl-1,2-dihydropyrimidin-5-yl]propanoic acid"
+      ],
+      "clause_ids": [
+        "P-105.2.2:clause:0003"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p105.part001.propanoic_acid_nucleoside_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.propanoic_acid_nucleoside_example",
+      "explanation": "Example of a substituted nucleoside named with a carboxylic-acid principal group.",
+      "input": {
+        "structure_figure": "P10gif/P105220a.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2′,3′-dideoxyguanosine-2′,3′-diyl carbonate",
+        "guanosine cyclic-2′,3′-carbonate"
+      ],
+      "clause_ids": [
+        "P-105.2.2:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p105.part001.cyclic_carbonate_guanosine_structure",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p105.part001.cyclic_carbonate_guanosine_example",
+      "explanation": "The example presents the cyclic-carbonate name and its retained-name alternative; see P-101.7.4.",
+      "input": {
+        "cross_reference": "P-101.7.4",
+        "structure_figure": "P10gif/P105220b.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [],
+  "figures": [
+    {
+      "clause_ids": [
+        "P-105.1:clause:0004"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.retained_adenosine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105100a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.1:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.retained_guanosine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105100b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.1:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.retained_inosine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105100c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.1:clause:0010"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.retained_xanthosine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105100d.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.1:clause:0012"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.retained_cytidine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105100e.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.1:clause:0014"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.retained_thymidine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105100f.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.1:clause:0016"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.retained_uridine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105100g.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.deoxy_methylguanosine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105210a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.fluoro_iodo_methylcytidine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105210b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0010"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.fluoromethylidene_cytidine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105210c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0012"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.ethyl_thiouridine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105210d.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0014"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.hydroxyethyl_thioguanosine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105210e.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0016"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.triacetyladenosine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105210f.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.2.2:clause:0004"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.propanoic_acid_nucleoside_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105220a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-105.2.2:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p105.part001.cyclic_carbonate_guanosine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P10gif/P105220b.gif"
+      ]
+    }
+  ],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-105-part-001",
+  "packet_sha256": "B49A016C672A96027DFE8BF2C05EE8BD942B5EF74CEC5914C6FEE4543CE48DB9",
+  "records": [
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-105:clause:0001",
+        "P-105:clause:0002"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-105",
+      "reference_ids": [
+        "reference.p_105.hierarchy_parent",
+        "reference.P-105:xref:0001",
+        "reference.P-105:xref:0002",
+        "reference.P-105:xref:0003"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-105",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-105.0:clause:0001",
+        "P-105.0:clause:0002",
+        "P-105.0:clause:0003"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-105.0",
+      "reference_ids": [
+        "reference.p_105_0.hierarchy_parent",
+        "reference.P-105.0:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p105.part001.nucleoside_nomenclature_reference",
+        "unit.p105.part001.nucleoside_derivative_naming_basis"
+      ],
+      "source_rule_id": "P-105.0",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-105.1:clause:0001",
+        "P-105.1:clause:0002",
+        "P-105.1:clause:0003",
+        "P-105.1:clause:0004",
+        "P-105.1:clause:0005",
+        "P-105.1:clause:0006",
+        "P-105.1:clause:0007",
+        "P-105.1:clause:0008",
+        "P-105.1:clause:0009",
+        "P-105.1:clause:0010",
+        "P-105.1:clause:0011",
+        "P-105.1:clause:0012",
+        "P-105.1:clause:0013",
+        "P-105.1:clause:0014",
+        "P-105.1:clause:0015",
+        "P-105.1:clause:0016"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p105.part001.adenosine_retained_name",
+        "example.p105.part001.guanosine_retained_name",
+        "example.p105.part001.inosine_retained_name",
+        "example.p105.part001.xanthosine_retained_name",
+        "example.p105.part001.cytidine_retained_name",
+        "example.p105.part001.thymidine_retained_name",
+        "example.p105.part001.uridine_retained_name"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p105.part001.retained_adenosine_structure",
+        "figure.p105.part001.retained_guanosine_structure",
+        "figure.p105.part001.retained_inosine_structure",
+        "figure.p105.part001.retained_xanthosine_structure",
+        "figure.p105.part001.retained_cytidine_structure",
+        "figure.p105.part001.retained_thymidine_structure",
+        "figure.p105.part001.retained_uridine_structure"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-105.1",
+      "reference_ids": [
+        "reference.p_105_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p105.part001.retained_nucleoside_names"
+      ],
+      "source_rule_id": "P-105.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-105.2:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-105.2",
+      "reference_ids": [
+        "reference.p_105_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-105.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-105.2.1:clause:0001",
+        "P-105.2.1:clause:0002",
+        "P-105.2.1:clause:0003",
+        "P-105.2.1:clause:0004",
+        "P-105.2.1:clause:0005",
+        "P-105.2.1:clause:0006",
+        "P-105.2.1:clause:0007",
+        "P-105.2.1:clause:0008",
+        "P-105.2.1:clause:0009",
+        "P-105.2.1:clause:0010",
+        "P-105.2.1:clause:0011",
+        "P-105.2.1:clause:0012",
+        "P-105.2.1:clause:0013",
+        "P-105.2.1:clause:0014",
+        "P-105.2.1:clause:0015",
+        "P-105.2.1:clause:0016"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p105.part001.deoxy_methylguanosine_example",
+        "example.p105.part001.fluoro_iodo_methylcytidine_example",
+        "example.p105.part001.fluoromethylidene_cytidine_example",
+        "example.p105.part001.ethyl_thiouridine_example",
+        "example.p105.part001.hydroxyethyl_thioguanosine_example",
+        "example.p105.part001.triacetyladenosine_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p105.part001.deoxy_methylguanosine_structure",
+        "figure.p105.part001.fluoro_iodo_methylcytidine_structure",
+        "figure.p105.part001.fluoromethylidene_cytidine_structure",
+        "figure.p105.part001.ethyl_thiouridine_structure",
+        "figure.p105.part001.hydroxyethyl_thioguanosine_structure",
+        "figure.p105.part001.triacetyladenosine_structure"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-105.2.1",
+      "reference_ids": [
+        "reference.p_105_2_1.hierarchy_parent",
+        "reference.P-105.2.1:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p105.part001.nucleoside_oxo_replacement_permission"
+      ],
+      "source_rule_id": "P-105.2.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-105.2.2:clause:0001",
+        "P-105.2.2:clause:0002",
+        "P-105.2.2:clause:0003",
+        "P-105.2.2:clause:0004",
+        "P-105.2.2:clause:0005",
+        "P-105.2.2:clause:0006"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p105.part001.propanoic_acid_nucleoside_example",
+        "example.p105.part001.cyclic_carbonate_guanosine_example"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p105.part001.propanoic_acid_nucleoside_structure",
+        "figure.p105.part001.cyclic_carbonate_guanosine_structure"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-105.2.2",
+      "reference_ids": [
+        "reference.p_105_2_2.hierarchy_parent",
+        "reference.P-105.2.2:xref:0001"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-105.2.2",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-105:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_105.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-10",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.0:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_105_0.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105.0",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-105",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_105_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-105",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_105_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-105",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_105_2_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105.2.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-105.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.2.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_105_2_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105.2.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-105.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-105:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-105:xref:0001"
+      ],
+      "target": {
+        "id": "P-105.0",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-105:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-105:xref:0002"
+      ],
+      "target": {
+        "id": "P-105.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-105:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-105:xref:0003"
+      ],
+      "target": {
+        "id": "P-105.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.0:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-105.0:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105.0",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-105.0:xref:0001"
+      ],
+      "target": {
+        "id": "P-102",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-105.2.1:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105.2.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-105.2.1:xref:0001"
+      ],
+      "target": {
+        "id": "P-102.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.2.2:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-105.2.2:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-105.2.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-105.2.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-101.7.4",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-105.0:clause:0002"
+      ],
+      "entity_type": "nucleoside",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "nucleoside"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "source",
+          "type": "reference"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-105.0:clause:0002"
+          ],
+          "expression_id": "expr.p105.part001.nucleoside_nomenclature_reference.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "nucleoside nomenclature reference",
+      "unit_id": "unit.p105.part001.nucleoside_nomenclature_reference",
+      "value": {
+        "clause_ids": [
+          "P-105.0:clause:0002"
+        ],
+        "expression_id": "expr.p105.part001.nucleoside_nomenclature_reference.value",
+        "op": "literal",
+        "value": {
+          "document": "Abbreviations and Symbols for Nucleic Acids, Polynucleotides and their Constituents",
+          "reference": "ref. 47",
+          "role": "exemplifies nucleoside nomenclature"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.0:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "derivative",
+          "type": "nucleoside_derivative"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "naming_basis",
+          "type": "procedure_basis"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-105.0:clause:0003"
+          ],
+          "expression_id": "expr.p105.part001.nucleoside_derivative_naming_basis.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-105.0:clause:0003"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p105.part001.nucleoside_derivative_naming_basis.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-105.0:clause:0003"
+            ],
+            "expression_id": "expr.p105.part001.nucleoside_derivative_naming_basis.steps.1.value",
+            "op": "literal",
+            "value": {
+              "carbohydrate_moiety_modifications": "adapted from P-102",
+              "general_substitution": "adapted from the general rules of substitution of organic compounds"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p105.part001.nucleoside_derivative_naming_basis"
+    },
+    {
+      "clause_ids": [
+        "P-105.1:clause:0002"
+      ],
+      "entity_type": "nucleoside_name",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "nucleoside_name"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "retained",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-105.1:clause:0002"
+          ],
+          "expression_id": "expr.p105.part001.retained_nucleoside_names.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "retained names of nucleosides",
+      "unit_id": "unit.p105.part001.retained_nucleoside_names",
+      "value": {
+        "clause_ids": [
+          "P-105.1:clause:0002"
+        ],
+        "expression_id": "expr.p105.part001.retained_nucleoside_names.value",
+        "op": "literal",
+        "value": {
+          "names": [
+            "adenosine",
+            "guanosine",
+            "inosine",
+            "xanthosine",
+            "cytidine",
+            "thymidine",
+            "uridine"
+          ],
+          "status": "retained"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0007"
+      ],
+      "entity_type": "nucleoside",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "nucleoside",
+          "type": "nucleoside"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "permission",
+          "type": "naming_permission"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-105.2.1:clause:0007"
+          ],
+          "expression_id": "expr.p105.part001.nucleoside_oxo_replacement_permission.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "oxo-to-fluoro replacement permission in the example",
+      "unit_id": "unit.p105.part001.nucleoside_oxo_replacement_permission",
+      "value": {
+        "clause_ids": [
+          "P-105.2.1:clause:0007"
+        ],
+        "expression_id": "expr.p105.part001.nucleoside_oxo_replacement_permission.value",
+        "op": "literal",
+        "value": {
+          "replacement": "hydroxy group by a fluorine atom at the same position",
+          "status": "allowed"
+        }
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [],
+  "tables": []
+}

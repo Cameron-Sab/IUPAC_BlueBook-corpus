@@ -1,0 +1,327 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-55-part-001",
+  "clauses": [
+    null,
+    ["definition", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["history", "informative", "skip", "historical_context"],
+    ["history", "informative", "skip", "historical_context"],
+    ["note", "informative", "compile"],
+    ["rationale", "informative", "skip", "rationale"],
+    ["history", "informative", "skip", "historical_context"],
+    ["constraint", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["cross_reference", "informative", "skip", "citation_only"],
+    ["constraint", "normative", "compile"],
+    ["exception", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["cross_reference", "informative", "compile"]
+  ],
+  "symbols": [
+    {
+      "id": "name.is_no_substitution_exception",
+      "k": "predicate",
+      "d": "A retained name is one of the exceptions for which no substitution is allowed.",
+      "a": [["name", "retained_name"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "no_substitution_exception"]
+    },
+    {
+      "id": "name.is_non_substitutable_functional_parent",
+      "k": "predicate",
+      "d": "A functional parent retained name is anisole or tert-butoxy and cannot be substituted.",
+      "a": [["name", "retained_name"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "non_substitutable_functional_parent"]
+    },
+    {
+      "id": "name.is_limited_substitution_functional_parent",
+      "k": "predicate",
+      "d": "A functional parent retained name is formic acid or formyl and has limited substitutability.",
+      "a": [["name", "retained_name"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "limited_substitution_functional_parent"]
+    }
+  ],
+  "units": [
+    {
+      "id": "retained_name_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [2],
+      "in": [["name", "name"]],
+      "out": [["result", "boolean"]],
+      "term": "retained name",
+      "entity": "name",
+      "value": ["lit", {
+        "definition": "A trivial name retained for naming an organic compound is a retained name.",
+        "name_class": "trivial name retained for organic-compound naming"
+      }]
+    },
+    {
+      "id": "retained_name_parent_compound_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [3],
+      "in": [["compound", "compound"]],
+      "out": [["result", "boolean"]],
+      "term": "compound type eligible for a retained name",
+      "entity": "compound",
+      "value": ["lit", {
+        "eligible_parent_types": ["parent hydride", "functional parent compound"],
+        "permission": "may have a retained name"
+      }]
+    },
+    {
+      "id": "cyclic_parent_hydride_retention_context",
+      "k": "definition",
+      "f": "definition",
+      "c": [6],
+      "in": [["parent_hydride", "parent_hydride"]],
+      "out": [["context", "text"]],
+      "term": "cyclic parent hydride retained-name context",
+      "entity": "parent_hydride",
+      "value": ["lit", {
+        "use": "Most cyclic parent hydrides are used as components in systematic fusion nomenclature.",
+        "discussion": "P-52"
+      }]
+    },
+    {
+      "id": "preferred_retained_name_restriction",
+      "k": "definition",
+      "f": "definition",
+      "c": [9, 10],
+      "in": [["name", "retained_name"]],
+      "out": [["name_use", "nomenclature_use"]],
+      "term": "retained-name nomenclature use",
+      "entity": "retained_name",
+      "value": ["lit", {
+        "preferred_iupac_name_use": "sharply limited for functional parent compounds",
+        "general_nomenclature_use": "all retained names in the 1993 list can be used",
+        "specialized_nomenclature_use": "all retained names in the 1993 list can be used",
+        "source_list": "1993 Recommendations"
+      }]
+    },
+    {
+      "id": "retained_name_classes",
+      "k": "definition",
+      "f": "definition",
+      "c": [11, 12, 13],
+      "in": [["name", "retained_name"]],
+      "out": [["classification", "retained_name_class"]],
+      "term": "retained-name classes",
+      "entity": "retained_name",
+      "value": ["lit", {
+        "classes": [
+          {"class": "preferred IUPAC name retained name", "status": "used as preferred IUPAC names"},
+          {"class": "general-nomenclature retained name", "status": "recommended for general nomenclature"}
+        ]
+      }]
+    },
+    {
+      "id": "retained_name_substitution_categories",
+      "k": "definition",
+      "f": "definition",
+      "c": [14, 15],
+      "in": [["structure", "retained_name_structure"]],
+      "out": [["substitutability", "substitutability_status"]],
+      "term": "retained-name substitution category",
+      "entity": "retained_name_structure",
+      "value": ["lit", {
+        "categories": [
+          "substitutable without restriction",
+          "substitutable in a limited way",
+          "not substitutable"
+        ],
+        "basis": "structure corresponding to a retained name"
+      }]
+    },
+    {
+      "id": "preferred_retained_name_substitution_policy",
+      "k": "rule",
+      "f": "required",
+      "c": [17],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "in": [["structure", "retained_name_structure"]],
+      "out": [["substitutability", "substitutability_status"]],
+      "if": ["lit", true],
+      "then": [["set", "substitutability", {"parent_hydrides": "mostly fully substitutable", "functional_parent_compounds": "mostly substitutable in a limited way", "limiting_factors": ["presence of a characteristic group", "seniority of classes"]}]],
+      "else": []
+    },
+    {
+      "id": "general_retained_name_use",
+      "k": "rule",
+      "f": "required",
+      "c": [19, 20],
+      "scope": {"r": ["general_nomenclature", "class_specific"], "if": ["lit", true]},
+      "in": [["name", "retained_name"]],
+      "out": [["use_status", "nomenclature_use"]],
+      "if": ["lit", true],
+      "then": [["set", "use_status", {"must_be_used_as": "in the past", "traditional_nomenclature": "can still be applied in its diversity and adaptability", "substitution_rules": "less strict"}]],
+      "else": []
+    },
+    {
+      "id": "preferred_iupac_name_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [21],
+      "in": [["name", "name"]],
+      "out": [["scope", "nomenclature_scope"]],
+      "term": "scope of this Section",
+      "entity": "nomenclature_scope",
+      "value": ["lit", {"names_discussed": "preferred IUPAC names only"}]
+    },
+    {
+      "id": "organic_functional_retained_name_inventory",
+      "k": "definition",
+      "f": "definition",
+      "c": [22],
+      "in": [["name", "retained_name"]],
+      "out": [["inventory_reference", "reference"]],
+      "term": "organic functional parent retained-name inventory",
+      "entity": "retained_name",
+      "value": ["lit", {"listed_in": "P-34.1", "use": "preferred IUPAC names"}]
+    },
+    {
+      "id": "functional_parent_substitution_policy",
+      "k": "mapping",
+      "f": "required",
+      "c": [23],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "in": [["name", "retained_name"]],
+      "out": [["substitutability", "substitutability_status"]],
+      "table": "functional_parent_substitution_status"
+    },
+    {
+      "id": "functional_parent_limited_substitution",
+      "k": "definition",
+      "f": "definition",
+      "c": [23],
+      "in": [["name", "retained_name"]],
+      "out": [["result", "substitutability_status"]],
+      "term": "limited substitution for specified functional parents",
+      "entity": "retained_name",
+      "value": ["lit", {"names": ["formic acid", "formyl group"], "status": "substitutable with limitations"}]
+    },
+    {
+      "id": "inorganic_parent_compound_reference",
+      "k": "definition",
+      "f": "definition",
+      "c": [24],
+      "in": [["compound", "parent_compound"]],
+      "out": [["reference", "reference"]],
+      "term": "inorganic parent-compound rule location",
+      "entity": "parent_compound",
+      "value": ["lit", {"see": ["P-67.1.2", "P-67.2.1"]}]
+    },
+    {
+      "id": "organic_functional_general_nomenclature_reference",
+      "k": "definition",
+      "f": "definition",
+      "c": [25],
+      "in": [["compound", "functional_parent_compound"]],
+      "out": [["reference", "reference"]],
+      "term": "general-nomenclature functional-parent rule location",
+      "entity": "functional_parent_compound",
+      "value": ["lit", {"see": "P-34.1.3"}]
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "no_substitution_allowed_for_preferred_retained_names",
+      "c": [18],
+      "if": ["pred", "name.is_no_substitution_exception", ["var", "name"]],
+      "target": ["semantic_unit", "preferred_retained_name_substitution_policy"],
+      "mode": "suppress",
+      "specificity": 2,
+      "order": 1
+    },
+    {
+      "id": "anisole_and_tert_butoxy_no_substitution",
+      "c": [23],
+      "if": ["pred", "name.is_non_substitutable_functional_parent", ["var", "name"]],
+      "target": ["semantic_unit", "functional_parent_substitution_policy"],
+      "mode": "suppress",
+      "specificity": 2,
+      "order": 2
+    },
+    {
+      "id": "formic_acid_and_formyl_limited_substitution",
+      "c": [23],
+      "if": ["pred", "name.is_limited_substitution_functional_parent", ["var", "name"]],
+      "target": ["semantic_unit", "functional_parent_substitution_policy"],
+      "mode": "replace",
+      "replacement": ["semantic_unit", "functional_parent_limited_substitution"],
+      "specificity": 2,
+      "order": 3
+    }
+  ],
+  "tables": [
+    {
+      "id": "functional_parent_substitution_status",
+      "c": [23],
+      "label": null,
+      "title": "Substitution status of specified functional parent compounds",
+      "cols": [
+        ["retained_structure", "Retained structure", "string", [23]],
+        ["substitution_status", "Substitution status", "string", [23]],
+        ["qualification", "Qualification", "string", [23]]
+      ],
+      "rows": [
+        {"id": "all_other_structures", "c": [23], "v": ["all other structures", "allowed", "substitution is allowed"]},
+        {"id": "anisole", "c": [23], "v": ["anisole", "not allowed", "exception"]},
+        {"id": "tert_butoxy", "c": [23], "v": ["tert-butoxy", "not allowed", "exception"]},
+        {"id": "formic_acid", "c": [23], "v": ["formic acid", "limited", "substitutable with limitations"]},
+        {"id": "formyl_group", "c": [23], "v": ["formyl group", "limited", "substitutable with limitations"]}
+      ],
+      "contract": {
+        "key": ["retained_structure"],
+        "result": ["substitution_status", "qualification"],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [],
+  "examples": [
+    {
+      "id": "retained_name_class_examples",
+      "c": [12, 13],
+      "input": {"classes": ["preferred IUPAC name retained name", "general-nomenclature retained name"]},
+      "ok": [],
+      "bad": [],
+      "shows": [["semantic_unit", "retained_name_classes"]],
+      "why": "The two recognized classes distinguish retained names used as preferred IUPAC names from those recommended for general nomenclature."
+    },
+    {
+      "id": "functional_parent_substitution_examples",
+      "c": [23],
+      "input": {"structures": ["anisole", "tert-butoxy", "formic acid", "formyl group"]},
+      "ok": ["formic acid: limited substitution", "formyl group: limited substitution"],
+      "bad": ["anisole: substitution", "tert-butoxy: substitution"],
+      "shows": [["table", "functional_parent_substitution_status"], ["exception", "anisole_and_tert_butoxy_no_substitution"], ["exception", "formic_acid_and_formyl_limited_substitution"]],
+      "why": "The named retained structures illustrate the unrestricted default and the stated no-substitution and limited-substitution exceptions."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p55.xref.0001", "c": [6], "rel": "cites", "o": "P-55:xref:0001"},
+    {"id": "reference.p55.xref.0002", "c": [16], "rel": "cites", "o": "P-55:xref:0002"},
+    {"id": "reference.p55.xref.0003", "c": [22], "rel": "cites", "o": "P-55:xref:0003"},
+    {"id": "reference.p55.xref.0005", "c": [24], "rel": "cites", "o": "P-55:xref:0005"},
+    {"id": "reference.p55.xref.0006", "c": [25], "rel": "cites", "o": "P-55:xref:0006"}
+  ],
+  "additional_refs": []
+}

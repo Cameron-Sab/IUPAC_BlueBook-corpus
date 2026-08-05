@@ -1,0 +1,254 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-60-part-001",
+  "clauses": [
+    null,
+    ["scope", "informative", "compile"],
+    null,
+    ["scope", "informative", "compile"],
+    ["scope", "informative", "compile"],
+    ["scope", "informative", "compile"],
+    ["scope", "informative", "compile"],
+    ["scope", "informative", "compile"],
+    ["scope", "informative", "compile"],
+    ["scope", "informative", "compile"],
+    null,
+    ["definition", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"]
+  ],
+  "symbols": [
+    {
+      "id": "name.is_incorrect_name",
+      "k": "predicate",
+      "d": "A name is not constructed in accordance with the rule described in this Chapter.",
+      "a": [["name", "name"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "incorrect_name"]
+    }
+  ],
+  "units": [
+    {
+      "id": "chapter_recommendation_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [2],
+      "in": [["chapter", "chapter"]],
+      "out": [["purpose", "scope"]],
+      "term": "application scope of Chapter P-6",
+      "entity": "chapter",
+      "value": ["lit", {"purpose": "illustrate application of general principles and specific rules from preceding sections to various compound types"}]
+    },
+    {
+      "id": "chapter_topical_outline",
+      "k": "definition",
+      "f": "definition",
+      "c": [4, 5, 6, 7, 8, 9, 10],
+      "in": [["section", "section"]],
+      "out": [["coverage", "scope"]],
+      "term": "Chapter P-6 topical outline",
+      "entity": "section",
+      "value": ["lit", {
+        "P-61": {"topic": "hydrocarbons named substitutively only by the prefix mode", "includes": ["substituents derived from other parent hydrides", "characteristic groups always used as prefixes for hydrocarbons"]},
+        "P-62_to_P-66": {"topic": "compounds named by suffixes, prefixes, and other types of nomenclature", "traditional_classes": "acids to imines"},
+        "P-67": {"topic": "organic derivatives of noncarbon acids and functional replacement analogues"},
+        "P-68": {"topic": "organic compounds of Groups 13, 14, 15, 16, and 17 elements outside P-62 to P-67"},
+        "P-69": {"topic": "organometallic compounds"},
+        "source_references": ["P-41", "P-61", "P-62", "P-66", "P-67", "P-68", "P-69"]
+      }]
+    },
+    {
+      "id": "systematic_name_presentation",
+      "k": "definition",
+      "f": "definition",
+      "c": [12, 13],
+      "in": [["name", "name"]],
+      "out": [["presentation", "naming_presentation"]],
+      "term": "systematic presentation of names",
+      "entity": "name",
+      "value": ["lit", {
+        "presentation": "names described in Chapter P-6 are presented in a systematic way",
+        "preferred_name_methods": "general methods recommended to generate IUPAC preferred names are described in simplified form with reference to full descriptions"
+      }]
+    },
+    {
+      "id": "suffix_substitutive_method",
+      "k": "definition",
+      "f": "required",
+      "c": [14, 15],
+      "in": [["parent", "parent_hydride"], ["suffix", "suffix"]],
+      "out": [["name", "name"]],
+      "term": "substitutive suffix method",
+      "entity": "name",
+      "value": ["lit", {
+        "method": "follow P-15.1",
+        "operation": "add a suffix to the name of a parent hydride",
+        "suffix_examples": ["al", "ol", "yl", "carbaldehyde", "carboxylic acid"],
+        "elision": "elide the final e of the parent hydride, if present, before a, i, o, u, or y",
+        "source_reference": "P-15.1"
+      }]
+    },
+    {
+      "id": "prefix_substitutive_method",
+      "k": "definition",
+      "f": "required",
+      "c": [16, 17, 18],
+      "in": [["parent", "parent_hydride_or_compound"], ["prefix", "prefix"]],
+      "out": [["name", "name"]],
+      "term": "substitutive prefix method",
+      "entity": "name",
+      "value": ["lit", {
+        "method": "follow the general method",
+        "operation": "add a prefix to the name of a parent hydride or parent compound",
+        "prefix_examples": ["amino", "hydroxy"],
+        "elision": "there is no elision of the last letter of these prefixes in order to preserve their formal identity"
+      }]
+    },
+    {
+      "id": "functional_class_nomenclature_method",
+      "k": "definition",
+      "f": "required",
+      "c": [19, 20],
+      "in": [["substituents", "substituent_group_set"], ["class", "functional_class"]],
+      "out": [["name", "name"]],
+      "term": "functional class nomenclature method",
+      "entity": "name",
+      "value": ["lit", {
+        "method": "follow P-15.2",
+        "class_examples": ["alcohol", "oxide", "ketone"],
+        "construction": "cite the class name preceded by substituent-group names",
+        "ordering": "substituent groups in alphabetical order",
+        "spacing": "separated by a space if required",
+        "source_reference": "P-15.2"
+      }]
+    },
+    {
+      "id": "skeletal_replacement_method",
+      "k": "definition",
+      "f": "required",
+      "c": [21],
+      "in": [["parent", "parent_hydride"]],
+      "out": [["name", "name"]],
+      "term": "skeletal replacement nomenclature method",
+      "entity": "name",
+      "value": ["lit", {"method": "follow the methodology described in P-15.4", "notation": "a nomenclature"}]
+    },
+    {
+      "id": "functional_parent_name_presentation",
+      "k": "definition",
+      "f": "required",
+      "c": [22],
+      "in": [["parent", "functional_parent"]],
+      "out": [["name_status", "name_status"]],
+      "term": "functional parent name presentation",
+      "entity": "functional_parent",
+      "value": ["lit", {"presentations": ["preferred names", "names usable in general nomenclature"]}]
+    },
+    {
+      "id": "preferred_name_marking",
+      "k": "definition",
+      "f": "required",
+      "c": [23, 24],
+      "in": [["name", "name"]],
+      "out": [["marking", "name_marking"]],
+      "term": "preferred IUPAC name marking",
+      "entity": "name",
+      "value": ["lit", {
+        "method_indicator_phrases": ["This method generates preferred IUPAC names", "Method (1) leads to preferred IUPAC names"],
+        "abbreviation": "PIN",
+        "placement": "after names that are preferred IUPAC names"
+      }]
+    },
+    {
+      "id": "no_longer_recommended_name_status",
+      "k": "definition",
+      "f": "required",
+      "c": [25, 26],
+      "in": [["name", "name"]],
+      "out": [["status", "recommendation_status"]],
+      "term": "no longer recommended name status",
+      "entity": "name",
+      "value": ["lit", {
+        "status_phrase": "no longer recommended",
+        "applies_to": "names recommended in the past but not included in these recommendations",
+        "example": {"prefix": "methylene", "designates": "=CH2", "status": "no longer recommended"}
+      }]
+    },
+    {
+      "id": "incorrect_name_status",
+      "k": "definition",
+      "f": "prohibited",
+      "c": [27, 28, 30, 31],
+      "in": [["name", "name"]],
+      "out": [["status", "name_status"]],
+      "term": "incorrect name",
+      "entity": "name",
+      "value": ["lit", {
+        "indicator": "name preceded by not",
+        "meaning": "not constructed in accordance with the rule described in this Chapter",
+        "status": "incorrect name",
+        "use_status": "not an alternative to a preferred IUPAC name",
+        "example": {"name": "ethanolamine", "fault": "presence of two suffixes", "preferred_iupac_name": "2-aminoethan-1-ol"}
+      }]
+    },
+    {
+      "id": "incorrect_name_prohibition",
+      "k": "constraint",
+      "f": "prohibited",
+      "c": [29],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "in": [["name", "name"]],
+      "assert": ["not", ["pred", "name.is_incorrect_name", ["var", "name"]]],
+      "violation": [["reject", "name", "reason.incorrect_name_not_used"]]
+    }
+  ],
+  "exceptions": [],
+  "tables": [],
+  "figures": [],
+  "examples": [
+    {
+      "id": "methylene_no_longer_recommended",
+      "c": [26],
+      "input": {"prefix": "methylene", "designated_group": "=CH2"},
+      "ok": [],
+      "bad": ["methylene"],
+      "shows": [["semantic_unit", "no_longer_recommended_name_status"]],
+      "why": "Methylene is identified as no longer recommended for designating the =CH2 group."
+    },
+    {
+      "id": "ethanolamine_incorrect_name",
+      "c": [30, 31],
+      "input": {"name": "ethanolamine", "reason": "two suffixes"},
+      "ok": ["2-aminoethan-1-ol"],
+      "bad": ["ethanolamine"],
+      "shows": [["semantic_unit", "incorrect_name_status"], ["semantic_unit", "incorrect_name_prohibition"]],
+      "why": "Ethanolamine is badly constructed because it contains two suffixes and is not an alternative to 2-aminoethan-1-ol."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p60.1.xref.0002", "c": [6], "rel": "cites", "o": "P-60.1:xref:0002"},
+    {"id": "reference.p60.1.xref.0007", "c": [9], "rel": "cites", "o": "P-60.1:xref:0007"},
+    {"id": "reference.p60.2.xref.0001", "c": [14], "rel": "cites", "o": "P-60.2:xref:0001"},
+    {"id": "reference.p60.2.xref.0002", "c": [19], "rel": "cites", "o": "P-60.2:xref:0002"}
+  ],
+  "additional_refs": []
+}

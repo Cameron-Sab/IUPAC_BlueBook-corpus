@@ -37,6 +37,7 @@ For bounded production waves:
 ```powershell
 python scripts\plan_semantic_authoring_waves.py `
   --max-view-bytes 50000 `
+  --max-unresolved-clauses 100 `
   --max-tasks 4 `
   --lanes 4 `
   --output work\semantic_authoring_plan.json
@@ -45,7 +46,9 @@ python scripts\plan_semantic_authoring_waves.py `
 The planner strictly audits existing deltas, excludes completed tasks, measures
 the sparse evidence for every remaining task, and emits deterministic batches
 from smallest to largest. `--skip-task` reserves work already assigned to an
-active worker. Oversized tasks remain isolated rather than being silently split.
+active worker. Both evidence bytes and unresolved clause counts bound normal
+batches. Oversized individual tasks remain isolated rather than being silently
+split.
 
 After strict compilation, run the semantic quality audit:
 

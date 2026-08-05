@@ -13,14 +13,25 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def record(task_id: str, size: int) -> dict:
-    return {"task_id": task_id, "view_bytes": size}
+    return {
+        "task_id": task_id,
+        "view_bytes": size,
+        "unresolved_clause_count": size,
+    }
 
 
 def test_pack_tasks_is_deterministic_smallest_first_and_bounded() -> None:
     tasks = [record("P-3", 40), record("P-1", 10), record("P-2", 20)]
 
-    first = pack_tasks(tasks, max_view_bytes=30, max_tasks=2)
-    second = pack_tasks(list(reversed(tasks)), max_view_bytes=30, max_tasks=2)
+    first = pack_tasks(
+        tasks, max_view_bytes=30, max_unresolved_clauses=30, max_tasks=2
+    )
+    second = pack_tasks(
+        list(reversed(tasks)),
+        max_view_bytes=30,
+        max_unresolved_clauses=30,
+        max_tasks=2,
+    )
 
     assert first == second
     assert [[item["task_id"] for item in batch] for batch in first] == [
@@ -36,7 +47,12 @@ def test_pack_tasks_is_deterministic_smallest_first_and_bounded() -> None:
 
 
 def test_oversized_single_task_is_preserved() -> None:
-    assert pack_tasks([record("P-1", 99)], max_view_bytes=30, max_tasks=2) == [
+    assert pack_tasks(
+        [record("P-1", 99)],
+        max_view_bytes=30,
+        max_unresolved_clauses=30,
+        max_tasks=2,
+    ) == [
         [record("P-1", 99)]
     ]
 
@@ -47,6 +63,25 @@ def test_oversized_single_task_is_preserved() -> None:
 def test_invalid_limits_fail(max_view_bytes: int, max_tasks: int) -> None:
     with pytest.raises(ValueError, match="positive"):
         pack_tasks([], max_view_bytes=max_view_bytes, max_tasks=max_tasks)
+
+
+def test_clause_limit_splits_small_byte_tasks() -> None:
+    tasks = [
+        {"task_id": "P-1", "view_bytes": 5, "unresolved_clause_count": 60},
+        {"task_id": "P-2", "view_bytes": 5, "unresolved_clause_count": 50},
+    ]
+
+    batches = pack_tasks(
+        tasks,
+        max_view_bytes=100,
+        max_unresolved_clauses=100,
+        max_tasks=4,
+    )
+
+    assert [[item["task_id"] for item in batch] for batch in batches] == [
+        ["P-1"],
+        ["P-2"],
+    ]
 
 
 def test_direct_cli_help_works() -> None:

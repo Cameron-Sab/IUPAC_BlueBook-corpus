@@ -32,23 +32,34 @@ DEFAULT_DELTA_DIR = ROOT / "data" / "bluebook_v3" / "semantic_deltas"
 
 
 def pack_tasks(
-    tasks: Sequence[Mapping[str, Any]], *, max_view_bytes: int, max_tasks: int
+    tasks: Sequence[Mapping[str, Any]],
+    *,
+    max_view_bytes: int,
+    max_unresolved_clauses: int = 100,
+    max_tasks: int,
 ) -> list[list[Mapping[str, Any]]]:
-    if max_view_bytes < 1 or max_tasks < 1:
+    if max_view_bytes < 1 or max_unresolved_clauses < 1 or max_tasks < 1:
         raise ValueError("Wave limits must be positive")
     ordered = sorted(tasks, key=lambda item: (item["view_bytes"], item["task_id"]))
     batches: list[list[Mapping[str, Any]]] = []
     current: list[Mapping[str, Any]] = []
     current_bytes = 0
+    current_clauses = 0
     for task in ordered:
         task_bytes = int(task["view_bytes"])
+        task_clauses = int(task.get("unresolved_clause_count", 0))
         exceeds_bytes = current and current_bytes + task_bytes > max_view_bytes
-        if exceeds_bytes or len(current) >= max_tasks:
+        exceeds_clauses = (
+            current and current_clauses + task_clauses > max_unresolved_clauses
+        )
+        if exceeds_bytes or exceeds_clauses or len(current) >= max_tasks:
             batches.append(current)
             current = []
             current_bytes = 0
+            current_clauses = 0
         current.append(task)
         current_bytes += task_bytes
+        current_clauses += task_clauses
     if current:
         batches.append(current)
     return batches
@@ -59,6 +70,7 @@ def build_plan(
     task_dir: Path = DEFAULT_TASK_DIR,
     delta_dir: Path = DEFAULT_DELTA_DIR,
     max_view_bytes: int = 50_000,
+    max_unresolved_clauses: int = 100,
     max_tasks: int = 4,
     lanes: int = 4,
     skip_task_ids: Sequence[str] = (),
@@ -95,7 +107,12 @@ def build_plan(
             }
         )
 
-    packed = pack_tasks(records, max_view_bytes=max_view_bytes, max_tasks=max_tasks)
+    packed = pack_tasks(
+        records,
+        max_view_bytes=max_view_bytes,
+        max_unresolved_clauses=max_unresolved_clauses,
+        max_tasks=max_tasks,
+    )
     batches = []
     for index, tasks in enumerate(packed, 1):
         batches.append(
@@ -134,6 +151,7 @@ def build_plan(
         "task_manifest_sha256": manifest["manifest_sha256"],
         "limits": {
             "max_view_bytes_per_batch": max_view_bytes,
+            "max_unresolved_clauses_per_batch": max_unresolved_clauses,
             "max_tasks_per_batch": max_tasks,
             "lanes_per_wave": lanes,
         },
@@ -163,6 +181,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--task-dir", type=Path, default=DEFAULT_TASK_DIR)
     parser.add_argument("--delta-dir", type=Path, default=DEFAULT_DELTA_DIR)
     parser.add_argument("--max-view-bytes", type=int, default=50_000)
+    parser.add_argument("--max-unresolved-clauses", type=int, default=100)
     parser.add_argument("--max-tasks", type=int, default=4)
     parser.add_argument("--lanes", type=int, default=4)
     parser.add_argument("--skip-task", action="append", default=[])
@@ -177,6 +196,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             task_dir=args.task_dir,
             delta_dir=args.delta_dir,
             max_view_bytes=args.max_view_bytes,
+            max_unresolved_clauses=args.max_unresolved_clauses,
             max_tasks=args.max_tasks,
             lanes=args.lanes,
             skip_task_ids=args.skip_task,

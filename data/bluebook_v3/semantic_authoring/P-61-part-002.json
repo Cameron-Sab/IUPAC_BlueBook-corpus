@@ -1,0 +1,301 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-61-part-002",
+  "clauses": [
+    null,
+    ["table_data", "informative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "informative", "compile"],
+    ["definition", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["history", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["table_data", "informative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["table_data", "informative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["table_data", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["tie_continuation", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "isocyano_recommendation",
+      "k": "rule",
+      "f": "preference",
+      "c": [3, 5, 6],
+      "in": [["compound", "Compound"]],
+      "out": [["naming_mode", "NomenclatureMode"], ["prefix", "Prefix"], ["preferred", "boolean"]],
+      "if": ["cmp", "eq", ["get", ["var", "compound"], "contains_nc_group_attached_to_parent_hydride"], true],
+      "then": [
+        ["set", "naming_mode", "substitutive"],
+        ["set", "prefix", "isocyano"],
+        ["set", "preferred", true]
+      ],
+      "else": []
+    },
+    {
+      "id": "isocyanide_history_and_change",
+      "k": "definition",
+      "f": "definition",
+      "c": [2, 4],
+      "out": [["record", "IsocyanideRecommendationHistory"]],
+      "term": "isocyanide recommendation history",
+      "entity": "IsocyanideRecommendationHistory",
+      "value": ["lit", {
+        "change": "The current recommendation is a change from earlier recommendations.",
+        "current_method": "Preferred names use substitutive nomenclature and the prefix isocyano attached directly to a parent hydride.",
+        "previous_method": "Functional class names were previously recommended for this class."
+      }]
+    },
+    {
+      "id": "fulminate_structure_history",
+      "k": "definition",
+      "f": "definition",
+      "c": [12, 13, 16],
+      "out": [["record", "FulminateRecommendationHistory"]],
+      "term": "fulminate structure and recommendation history",
+      "entity": "FulminateRecommendationHistory",
+      "value": ["lit", {
+        "earlier_structure": "HO-N#C",
+        "earlier_names": ["fulminate", "fulminato"],
+        "literature_structure": "HCNO",
+        "current_change": "The potentially ambiguous historical names are replaced by systematic substitutive names."
+      }]
+    },
+    {
+      "id": "unacceptable_fulminate_names",
+      "k": "constraint",
+      "f": "prohibited",
+      "c": [14],
+      "in": [["name", "Name"]],
+      "assert": ["not", ["cmp", "member_of", ["var", "name"], ["lit", ["fulminic acid", "fulminato", "isofulminic acid", "isofulminate"]]]],
+      "violation": [["reject", "name", "reason.fulminate_name_not_acceptable"]]
+    },
+    {
+      "id": "preferred_fulminic_structures",
+      "k": "rule",
+      "f": "preference",
+      "c": [15],
+      "in": [["structure", "Structure"]],
+      "out": [["preferred_name", "Name"]],
+      "if": ["lit", true],
+      "then": [
+        ["if", ["cmp", "eq", ["get", ["var", "structure"], "connectivity"], "HCNO"],
+          [["set", "preferred_name", "formonitrile oxide"]],
+          [["set", "preferred_name", ["lit", {"basis": "hydroxylamine", "status": "preferred IUPAC name"}]]]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "fulminate_change_table",
+      "k": "mapping",
+      "c": [16],
+      "table": "fulminate_change_callout"
+    },
+    {
+      "id": "detachable_prefix_alphabetization",
+      "k": "procedure",
+      "f": "required",
+      "c": [23, 24, 28, 29],
+      "in": [["prefixes", "PrefixSet"]],
+      "out": [["ordered_prefixes", "PrefixSequence"]],
+      "steps": [
+        ["set", "ordered_prefixes", ["lit", {
+          "primary_order": "alphanumerical",
+          "locant_tie_order": ["prefixes_as_a_set", "first_prefix_cited_in_name"],
+          "excluded_from_alphabetization": ["hydro", "dehydro"]
+        }]]
+      ]
+    },
+    {
+      "id": "hydro_dehydro_placement",
+      "k": "procedure",
+      "f": "required",
+      "c": [25, 26, 27],
+      "in": [["prefix_sequence", "PrefixSequence"]],
+      "out": [["rendered_prefix_sequence", "NameComponentSequence"]],
+      "steps": [
+        ["set", "rendered_prefix_sequence", ["lit", {
+          "detachable": true,
+          "alphabetized_with_other_prefixes": false,
+          "position": "after_alphabetized_prefixes_before_parent_hydride_and_nondetachable_prefixes"
+        }]]
+      ]
+    },
+    {
+      "id": "hydro_dehydro_placement_callout",
+      "k": "mapping",
+      "c": [25, 26, 27],
+      "table": "hydro_dehydro_callout"
+    },
+    {
+      "id": "functional_class_principal_group_selection",
+      "k": "decision",
+      "f": "required",
+      "c": [30],
+      "in": [["candidate_characteristic_groups", "CharacteristicGroupSet"]],
+      "out": [["principal_group", "CharacteristicGroup"]],
+      "candidates": ["var", "candidate_characteristic_groups"],
+      "stages": [
+        {
+          "id": "class_and_pseudohalide_seniority",
+          "c": [30],
+          "key": ["get", ["var", "candidate_characteristic_groups"], "compound_class_halide_pseudohalide_seniority_key"],
+          "cmp": ["lexicographic", "minimum", null, null]
+        }
+      ],
+      "tie": ["reject_ambiguous", null]
+    },
+    {
+      "id": "substitutive_names_preferred",
+      "k": "rule",
+      "f": "preference",
+      "c": [31],
+      "in": [["name", "Name"]],
+      "out": [["preferred_iupac_name", "boolean"]],
+      "if": ["cmp", "eq", ["get", ["var", "name"], "nomenclature_type"], "substitutive"],
+      "then": [["set", "preferred_iupac_name", true]],
+      "else": []
+    },
+    {
+      "id": "low_locants_as_a_set",
+      "k": "decision",
+      "f": "preference",
+      "c": [32, 34, 36],
+      "in": [["locant_assignments", "LocantAssignmentSet"]],
+      "out": [["selected_assignment", "LocantAssignment"]],
+      "candidates": ["var", "locant_assignments"],
+      "stages": [
+        {
+          "id": "low_locant_set",
+          "c": [32, 34, 36],
+          "key": ["get", ["var", "locant_assignments"], "low_locant_set"],
+          "cmp": ["numeric", "minimum", null, null]
+        }
+      ],
+      "tie": ["retain_coequal", null]
+    },
+    {
+      "id": "low_locants_to_first_prefix",
+      "k": "decision",
+      "f": "preference",
+      "c": [38, 40, 42, 44],
+      "in": [["locant_assignments", "LocantAssignmentSet"]],
+      "out": [["selected_assignment", "LocantAssignment"]],
+      "candidates": ["var", "locant_assignments"],
+      "stages": [
+        {
+          "id": "first_prefix_cited",
+          "c": [38, 40, 42, 44],
+          "key": ["get", ["var", "locant_assignments"], "locant_for_first_prefix_cited"],
+          "cmp": ["numeric", "minimum", null, null]
+        }
+      ],
+      "tie": ["retain_coequal", null]
+    }
+  ],
+  "exceptions": [],
+  "tables": [
+    {
+      "id": "isocyano_recommendation_callout",
+      "c": [2, 3, 4],
+      "label": null,
+      "title": "Changes in recommendations for isocyanides",
+      "cols": [
+        ["change", "Change", "string", [2]],
+        ["current", "Current recommendation", "string", [3]],
+        ["previous", "Previous recommendation", "string", [4]]
+      ],
+      "rows": [
+        {"id": "isocyano", "c": [2, 3, 4], "v": ["change in recommendations", "preferred substitutive names with the prefix isocyano", "functional class names"]}
+      ],
+      "contract": {"key": ["change"], "result": ["current", "previous"], "cardinality": "one_to_one", "ordering": "source_order"}
+    },
+    {
+      "id": "fulminate_change_callout",
+      "c": [16],
+      "label": null,
+      "title": "Change from fulminate terminology",
+      "cols": [
+        ["change", "Change", "string", [16]],
+        ["replacement", "Replacement method", "string", [16]]
+      ],
+      "rows": [
+        {"id": "systematic_names", "c": [16], "v": ["ambiguous historical names", "systematic substitutive names"]}
+      ],
+      "contract": {"key": ["change"], "result": ["replacement"], "cardinality": "one_to_one", "ordering": "source_order"}
+    },
+    {
+      "id": "hydro_dehydro_callout",
+      "c": [25, 26, 27],
+      "label": null,
+      "title": "Placement of hydro and dehydro prefixes",
+      "cols": [
+        ["change", "Change", "string", [25]],
+        ["status", "Prefix status", "string", [26]],
+        ["placement", "Name placement", "string", [27]]
+      ],
+      "rows": [
+        {"id": "hydro_dehydro", "c": [25, 26, 27], "v": ["change from previous recommendations", "detachable but not alphabetized with other substituent prefixes", "immediately before the parent hydride after alphabetized prefixes and before nondetachable prefixes"]}
+      ],
+      "contract": {"key": ["change"], "result": ["status", "placement"], "cardinality": "one_to_one", "ordering": "source_order"}
+    }
+  ],
+  "figures": [
+    {"id": "isocyanobenzoic_acid_structure", "c": [10], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P610900a.gif"]},
+    {"id": "low_locant_set_example_one", "c": [35], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P611101a.gif"]},
+    {"id": "low_locant_set_example_two", "c": [37], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P611101b.gif"]},
+    {"id": "first_prefix_example_one", "c": [41], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P611102a.gif"]},
+    {"id": "first_prefix_example_two", "c": [43], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P611102b.gif"]},
+    {"id": "first_prefix_example_three", "c": [45], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P6gif/P611102c.gif"]}
+  ],
+  "examples": [
+    {"id": "isocyanobenzene", "c": [8], "input": {"structure": "C6H5-NC"}, "ok": ["isocyanobenzene"], "bad": ["phenyl isocyanide"], "shows": [["semantic_unit", "isocyano_recommendation"]], "why": "The NC group attached to a parent hydride is named substitutively with isocyano for a preferred name."},
+    {"id": "isocyanobenzoic_acid", "c": [9], "input": {"structure": "isocyano-substituted benzoic acid"}, "ok": ["4-isocyanobenzoic acid"], "bad": [], "shows": [], "why": "The caption identifies a preferred substitutive name for an isocyano compound."},
+    {"id": "formonitrile_oxide", "c": [18], "input": {"structure": "H-C#N=O"}, "ok": ["formonitrile oxide"], "bad": [], "shows": [["semantic_unit", "preferred_fulminic_structures"]], "why": "HCNO is assigned the preferred name formonitrile oxide."},
+    {"id": "formonitrile_oxide_prefix", "c": [19], "input": {"structure": "-C#N=O"}, "ok": ["(oxo-lambda5-azanylidyne)methyl"], "bad": ["isofulminato"], "shows": [["semantic_unit", "unacceptable_fulminate_names"]], "why": "The systematic preferred prefix replaces the unacceptable historical prefix."},
+    {"id": "hydroxylamine_isomer", "c": [20], "input": {"structure": "HO-N=C"}, "ok": ["lambda2-methylidenehydroxylamine", "N-hydroxy-lambda2-methanamine"], "bad": [], "shows": [["semantic_unit", "preferred_fulminic_structures"]], "why": "The isomer is named on the basis of hydroxylamine."},
+    {"id": "hydroxylamine_prefix", "c": [21], "input": {"structure": "-O-N=C"}, "ok": ["(lambda2-methylideneamino)oxy"], "bad": ["fulminato"], "shows": [["semantic_unit", "unacceptable_fulminate_names"]], "why": "The systematic preferred prefix replaces fulminato."},
+    {"id": "low_locants_as_set_examples", "c": [34, 36], "input": {"selection": "low locants as a set", "names": ["4-azido-1-fluoro-2-nitrobenzene", "N'-nitro-N-nitroso-N-propylguanidine"]}, "ok": ["4-azido-1-fluoro-2-nitrobenzene", "N'-nitro-N-nitroso-N-propylguanidine"], "bad": [], "shows": [["semantic_unit", "low_locants_as_a_set"]], "why": "The examples illustrate assignment of low locants to the prefix set without regard to kind."},
+    {"id": "first_prefix_trichlorotrimethylpentasilane", "c": [40], "input": {"name": "1,1,1-trichloro-5,5,5-trimethylpentasilane", "parent_status": "preselected"}, "ok": ["1,1,1-trichloro-5,5,5-trimethylpentasilane"], "bad": [], "shows": [["semantic_unit", "low_locants_to_first_prefix"]], "why": "The first cited prefix receives the lower locants when a choice remains."},
+    {"id": "first_prefix_bromo_chloroethane", "c": [42], "input": {"name": "1-bromo-2-chloroethane"}, "ok": ["1-bromo-2-chloroethane"], "bad": [], "shows": [["semantic_unit", "low_locants_to_first_prefix"]], "why": "The example illustrates the first-prefix locant criterion."},
+    {"id": "first_prefix_isocyanate", "c": [44], "input": {"name": "1-azido-4-isocyanatobenzene"}, "ok": ["1-azido-4-isocyanatobenzene", "4-isocyanatophenyl azide"], "bad": [], "shows": [["semantic_unit", "low_locants_to_first_prefix"]], "why": "The example illustrates the locant result for the first cited prefix."}
+  ],
+  "corrections": [],
+  "refs": [],
+  "additional_refs": []
+}

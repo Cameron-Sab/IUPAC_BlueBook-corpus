@@ -1,0 +1,170 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-50-part-001",
+  "clauses": [
+    null,
+    ["scope", "normative", "compile"],
+    ["scope", "informative", "compile"],
+    ["definition", "normative", "compile"],
+    ["rationale", "informative", "compile"],
+    ["scope", "informative", "compile"],
+    ["scope", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["scope", "informative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["scope", "normative", "compile"],
+    ["scope", "informative", "compile"],
+    ["definition", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["cross_reference", "informative", "compile"]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "pin_selection_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [2, 3],
+      "out": [["selection_scope", "PreferredNameSelectionScope"]],
+      "term": "preferred IUPAC name selection scope",
+      "entity": "PreferredNameSelectionScope",
+      "value": ["lit", {
+        "multiple_names": true,
+        "preferred_name": "one name is selected as the preferred IUPAC name (PIN)",
+        "chapters": {"selection_rules": ["P-1", "P-2", "P-3", "P-4"], "application": ["P-1", "P-2", "P-3", "P-4", "P-6", "P-7", "P-8", "P-9", "P-10"]}
+      }]
+    },
+    {
+      "id": "principal_nomenclature_type",
+      "k": "definition",
+      "f": "definition",
+      "c": [4, 5, 6, 7],
+      "out": [["nomenclature_policy", "NomenclaturePolicy"]],
+      "term": "principal and alternative nomenclature types",
+      "entity": "NomenclaturePolicy",
+      "value": ["lit", {
+        "principal_type": "substitutive nomenclature",
+        "alternative_types": "Other types are recommended where substitutive nomenclature was never recommended for a class or where another method simplifies a long cumbersome name.",
+        "chapter_P1": "Several nomenclature types are discussed and all are used to generate preferred IUPAC names and names for general nomenclature."
+      }]
+    },
+    {
+      "id": "functional_class_nomenclature_scope",
+      "k": "definition",
+      "f": "permitted",
+      "c": [8],
+      "out": [["scope", "NomenclatureScope"]],
+      "term": "functional class nomenclature scope",
+      "entity": "NomenclatureScope",
+      "value": ["lit", {"method": "functional class nomenclature", "uses": ["acid halides", "esters"], "purpose": "well defined classes"}]
+    },
+    {
+      "id": "multiplicative_nomenclature_condition",
+      "k": "rule",
+      "f": "permitted",
+      "c": [9, 10],
+      "in": [["molecule", "Molecule"]],
+      "out": [["recommended_method", "NomenclatureMethod"]],
+      "if": ["lit", true],
+      "then": [
+        ["if", ["cmp", "eq", ["get", ["var", "molecule"], "multiplicative_conditions_fulfilled"], true],
+          [["set", "recommended_method", "multiplicative"]],
+          [["set", "recommended_method", "substitutive"]]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "skeletal_replacement_scope",
+      "k": "rule",
+      "f": "required",
+      "c": [11, 12],
+      "in": [["molecule", "Molecule"]],
+      "out": [["skeletal_replacement_status", "NomenclatureStatus"]],
+      "if": ["lit", true],
+      "then": [
+        ["if", ["cmp", "eq", ["get", ["var", "molecule"], "saturated_heterocycle_over_ten_or_heteropolycyclic_bridged_or_spiro"], true],
+          [["set", "skeletal_replacement_status", "mandatory"]],
+          [["set", "skeletal_replacement_status", "simplifying_method"]]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "parent_structure_and_phane_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [13, 14, 15, 16, 17, 18],
+      "out": [["specialized_selection_scope", "ParentStructureSelectionScope"]],
+      "term": "specialized preferred-parent selection scope",
+      "entity": "ParentStructureSelectionScope",
+      "value": ["lit", {
+        "chapter_P2": "Most rules generate preferred names of cyclic and acyclic compounds directly.",
+        "phane_nomenclature": "Recommended when rings, ring systems, and chains are composed of entities that are themselves rings or ring systems, whether or not interconnected by chains.",
+        "phane_selection_rules": ["P-52.2.5"],
+        "ring_assemblies": "Preferred-name selection for ring assemblies is treated in P-52.2.7.",
+        "derived_substituent_groups": "Selection of preferred names is also needed for substituent groups derived from parent hydrides.",
+        "saturation": "The hydro/dehydro prefixes and ene/yne endings express the level of saturation."
+      }]
+    },
+    {
+      "id": "retained_or_systematic_component_choice",
+      "k": "definition",
+      "f": "definition",
+      "c": [19, 20],
+      "out": [["component_choice", "ParentComponentNameChoice"]],
+      "term": "retained or systematic component choice",
+      "entity": "ParentComponentNameChoice",
+      "value": ["lit", {
+        "characteristic_groups_as_prefixes": "Selection is between retained names and systematic names as components of preferred IUPAC names.",
+        "substituted_parent_exception": "Substituted parent structures are analyzed as preferred IUPAC names despite the otherwise unequivocal seniority orders in Chapter P-4."
+      }]
+    },
+    {
+      "id": "hierarchical_preferred_parent_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [21, 22, 23, 24],
+      "in": [["compound", "Compound"]],
+      "out": [["preferred_parent_name", "Name"]],
+      "steps": [
+        ["set", "preferred_parent_name", ["lit", {
+          "parent_structure_rules": "P-44",
+          "selection_concept": "Selection of preferred IUPAC names in P-45",
+          "algorithm": "hierarchical rules based on seniority orders",
+          "result": "one and only preferred parent name based on the senior parent structure",
+          "discussion": "P-58"
+        }]]
+      ]
+    }
+  ],
+  "exceptions": [],
+  "tables": [],
+  "figures": [],
+  "examples": [],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p50.xref.0001", "c": [2], "rel": "cites", "o": "P-50:xref:0001", "target": ["external", "P-1"]},
+    {"id": "reference.p50.xref.0002", "c": [3], "rel": "cites", "o": "P-50:xref:0002", "target": ["external", "P-4"]},
+    {"id": "reference.p50.xref.0003", "c": [3], "rel": "cites", "o": "P-50:xref:0003", "target": ["external", "P-6"]},
+    {"id": "reference.p50.xref.0005", "c": [7], "rel": "cites", "o": "P-50:xref:0005", "target": ["external", "P-1"]},
+    {"id": "reference.p50.xref.0009", "c": [12], "rel": "cites", "o": "P-50:xref:0009", "target": ["external", "P-2"]},
+    {"id": "reference.p50.xref.0010", "c": [15], "rel": "cites", "o": "P-50:xref:0010"},
+    {"id": "reference.p50.xref.0011", "c": [16], "rel": "cites", "o": "P-50:xref:0011"},
+    {"id": "reference.p50.xref.0012", "c": [17], "rel": "cites", "o": "P-50:xref:0012", "target": ["external", "P-2"]},
+    {"id": "reference.p50.xref.0013", "c": [18], "rel": "cites", "o": "P-50:xref:0013", "target": ["external", "P-3"]},
+    {"id": "reference.p50.xref.0014", "c": [20], "rel": "cites", "o": "P-50:xref:0014", "target": ["external", "P-4"]},
+    {"id": "reference.p50.xref.0018", "c": [24], "rel": "cites", "o": "P-50:xref:0018"}
+  ],
+  "additional_refs": []
+}
