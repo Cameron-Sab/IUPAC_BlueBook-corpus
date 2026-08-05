@@ -1,0 +1,2303 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    null,
+    null,
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null
+  ],
+  "corrections": [
+    {
+      "id": "correction.p82.part001.characteristic_group_spelling",
+      "overlay": "BBV3-CORR-E220AD72977C19AF",
+      "operation": "BBV3-CORR-E220AD72977C19AF:OP-001",
+      "status": "applied",
+      "before": [
+        59
+      ],
+      "after": [
+        59
+      ],
+      "targets": [
+        [
+          "semantic_unit",
+          "characteristic_group_principal_selection"
+        ]
+      ],
+      "date": "2024-11-20",
+      "sha256": "86560320244D7ABE57A1D6A883991171C39C410DEFE2803C57135351D512C383"
+    }
+  ],
+  "examples": [
+    {
+      "id": "isotopic_structure_notation_examples",
+      "c": [
+        10,
+        11,
+        12
+      ],
+      "input": "isotopically substituted methane, chloroform, and ethanol structures",
+      "ok": [
+        "14CH4",
+        "12CHCl3",
+        "CH3-CH2H-OH"
+      ],
+      "bad": [
+        "CH3-C2HH-OH"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "isotopic_structure_notation"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "isotopic_descriptor_name_examples",
+      "c": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        30,
+        32,
+        33,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ],
+      "input": "structures carrying the nuclides shown at the source-designated positions",
+      "ok": [
+        "(14C)methane (PIN)",
+        "trichloro(12C)methane (PIN)",
+        "(12C)chloroform",
+        "(2H1)methane (PIN)",
+        "dichloro(2H2)methane (PIN)",
+        "(2H3)methoxybenzene (PIN)",
+        "(alpha,alpha,alpha-2H3)anisole",
+        "1-phenyl(1,2-13C2)ethan-1-one (PIN)",
+        "(1,2-13C2)acetophenone",
+        "1,2-di[(13C)methyl]benzene (PIN)",
+        "(alpha,alpha-prime-13C2)-1,2-xylene",
+        "(alpha,alpha-prime-13C2)-o-xylene",
+        "1-(13C)methyl(2-13C)benzene (PIN)",
+        "(alpha,2-13C2)-toluene",
+        "(2-2H1)ethan-1-ol (PIN)",
+        "(2-13C)ethan-1-ol (PIN)",
+        "1-[amino(14C)methyl]cyclopentan-1-ol (PIN)",
+        "1-(aminomethyl)cyclopentan-1-(18O)ol (PIN)",
+        "N-[7-(131I)iodo-9H-fluoren-2-yl]acetamide (PIN)",
+        "sodium 4-ethoxy-4-oxo(2,3-14C2)butanoate (PIN)",
+        "sodium ethyl (2,3-14C2)butanedioate",
+        "sodium ethyl (2,3-14C2)succinate",
+        "4-[(3-14C)thiolan-2-yl]pyridine (PIN)",
+        "4-[tetrahydro(3-14C)thiophen-2-yl]pyridine",
+        "2-(35Cl)chloro-3-(2H3)methyl(1-2H1)pentane (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "isotopic_descriptor_name_construction"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "differently_modified_substituent_examples",
+      "c": [
+        53,
+        55,
+        57
+      ],
+      "input": "otherwise identical substituents carrying different isotopic modifications",
+      "ok": [
+        "N-[7-(131I)iodo-6-iodo-9H-fluoren-2-yl]acetamide (PIN)",
+        "2-(13C)methyl-3-methylpyridine (PIN)",
+        "2-(2,2-2H2)ethyl-3-ethylhexan-1-ol (PIN)"
+      ],
+      "bad": [
+        "N-[6,7-(7-131I)diiodo-9H-fluoren-2-yl]acetamide",
+        "2,3-(2-13C)dimethylpyridine"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "differently_modified_substituent_citation"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "differently_modified_characteristic_group_examples",
+      "c": [
+        63,
+        65,
+        67,
+        69
+      ],
+      "input": "cyclohexane bearing differently isotopically modified carboxylic acid groups",
+      "ok": [
+        "cyclohexane-1,1-di[(14C)carboxylic acid] (PIN)",
+        "1-carboxycyclohexane-1-(13C,2H)carboxylic acid (PIN)",
+        "1-(2H)carboxycyclohexane-1-(13C)carboxylic acid (PIN)",
+        "1-(13C)carboxycyclohexane-1-(14C)carboxylic acid (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "characteristic_group_principal_selection"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "hydro_prefix_isotopic_examples",
+      "c": [
+        77,
+        79,
+        81,
+        83,
+        85,
+        86,
+        87
+      ],
+      "input": "isotopically modified indole and hydrogenated naphthalenol structures",
+      "ok": [
+        "(15N)-1H-indole (PIN)",
+        "2,3-dihydro(15N)-1H-indole (PIN)",
+        "2,3-dihydro(2,3-2H2,15N)-1H-indole (PIN)",
+        "2,3-di[(2H)hydro](2,3-2H2,15N)-1H-indole (PIN)",
+        "6-methyl-2,3-di[(2H)hydro]-1,4-dihydro(2,3-2H2)naphthalen-1-ol (PIN)"
+      ],
+      "bad": [
+        "(2,3-2H2)dihydro(2,3-2H2,1-15N)-1H-indole",
+        "6-methyl-1,4-dihydro-2,3-di[(2H)hydro](2,3-2H2)naphthalen-1-ol",
+        "6-methyl[(2,3-2H2)-1,2,3,4-tetrahydro](2,3-2H2)naphthalen-1-ol"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "hydro_prefix_isotopic_naming"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "multiword_descriptor_placement_examples",
+      "c": [
+        91,
+        93,
+        94,
+        95,
+        96,
+        98,
+        99,
+        101,
+        103,
+        105
+      ],
+      "input": "multiword acid, salt, and ester names with isotopic modification",
+      "ok": [
+        "(2-2H1)acetic acid (PIN)",
+        "(O-2H)acetic acid (PIN)",
+        "acetic (2H)acid",
+        "(O-2H,18O)acetic acid (PIN)",
+        "(18O-2H,18O)acetic acid (PIN)",
+        "(1-14C)pentan(3H)oic acid (PIN)",
+        "sodium (14C)formate (PIN)",
+        "cyclohexane(2H)carboxylic acid (PIN)",
+        "4-(2-14C)ethylbenzoic acid (PIN)",
+        "(1-14C)ethyl propanoate (PIN)",
+        "ethyl (2-14C)propanoate (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "multiword_isotopic_descriptor_placement"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "one_word_descriptor_placement_examples",
+      "c": [
+        110,
+        113
+      ],
+      "input": "one-word amide and amine names with nitrogen-bound deuterium",
+      "ok": [
+        "(N-2H1)acetamide (PIN)",
+        "(N-2H2)aniline (PIN)",
+        "(N-2H2)benzenamine"
+      ],
+      "bad": [
+        "acet(2H)amide"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "one_word_isotopic_descriptor_placement"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "different_element_nuclide_symbol_order_example",
+      "c": [
+        118
+      ],
+      "input": "nuclides of different elements inserted at the same place in a name",
+      "ok": [
+        "methan(2H,18O)ol (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "different_element_nuclide_symbol_order"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "same_element_nuclide_symbol_order_example",
+      "c": [
+        121
+      ],
+      "input": "several hydrogen nuclides inserted at the same place in a name",
+      "ok": [
+        "(2-2H1,1-3H1)ethan-1-ol (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "same_element_nuclide_symbol_order"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "isotopically_created_stereoisomer_examples",
+      "c": [
+        131,
+        133,
+        135
+      ],
+      "input": "stereoisomerism created by isotopic substitution",
+      "ok": [
+        "(1R)-(1-2H1)ethan-1-ol (PIN)",
+        "(1E)-(1-2H1)prop-1-ene (PIN)",
+        "(24R)-5alpha-(24-2H1)cholestane"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "isotopic_stereodescriptor_placement"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "special_class_stereochemical_affix_examples",
+      "c": [
+        142,
+        144,
+        146,
+        148,
+        150,
+        152
+      ],
+      "input": "isotopically substituted stereoisomers in special classes and general stereochemistry",
+      "ok": [
+        "5alpha-(17-2H)pregnane",
+        "L-(4-13C,35S)methionine",
+        "2-deoxy-2-(18F)fluoro-beta-D-glucopyranose",
+        "(2S)-(2-2H)butan-2-ol (PIN)",
+        "(2E)-1-chloro(2-2H)but-2-ene (PIN)",
+        "(2R,3R)-3-chloro(2-2H)butan-2-ol (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "special_class_stereochemical_affix_placement"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "unmodified_numbering_preservation_examples",
+      "c": [
+        159,
+        161,
+        163
+      ],
+      "input": "isotopically modified structures retaining the unmodified compound numbering",
+      "ok": [
+        "1,1,1-trifluoro(2-2H1)ethane (PIN)",
+        "1-chloro-3-fluoro(2-2H)benzene (PIN)",
+        "2-methoxy(3,4,5,6-3H4)phenol (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "numbering_relative_to_unmodified_compound"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "equivalent_numbering_priority_examples",
+      "c": [
+        170,
+        172,
+        174,
+        176,
+        178,
+        180,
+        182
+      ],
+      "input": "structures with equivalent unmodified numberings resolved by isotopic priority",
+      "ok": [
+        "(2-14C)butane (PIN)",
+        "(3-14C,2,2-2H2)butane (PIN)",
+        "(2-14C,3-2H1)butane (PIN)",
+        "(3-3H)phenol (PIN)",
+        "(2R)-(1-2H1)propan-2-ol (PIN)",
+        "(2R)-(1-131I)iodo-3-iodopropan-2-ol (PIN)",
+        "(2S,4R)-(4-2H1,2-3H1)pentane (PIN)"
+      ],
+      "bad": [
+        "(3-14C)butane",
+        "(2-14C,3,3-2H2)butane",
+        "(3-14C,2-2H1)butane"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "equivalent_isotopic_numbering_priority"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "preferred_name_locant_omission_examples",
+      "c": [
+        189,
+        190,
+        191,
+        192
+      ],
+      "input": "preferred names where unmodified and isotopically modified locant requirements differ",
+      "ok": [
+        "(2H3)acetonitrile (PIN)",
+        "ethan(2H)ol (PIN)",
+        "(2-13C)ethan-1-ol",
+        "{[(2H1)methoxy(2H2)methyl]sulfanyl}methaneperoxol (PIN)"
+      ],
+      "bad": [
+        "(2-13C)ethanol"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "preferred_name_locant_omission"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    },
+    {
+      "id": "single_element_atom_locant_omission_example",
+      "c": [
+        195
+      ],
+      "input": "pyridine with two deuterium atoms and its sole nitrogen atom isotopically specified",
+      "ok": [
+        "(2,4-2H2,15N)pyridine (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "single_element_atom_locant_omission"
+        ]
+      ],
+      "why": "The source examples instantiate the cited isotopic nomenclature rule."
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "preceding_locant_hyphen_exception",
+      "c": [
+        15
+      ],
+      "if": [
+        "lit",
+        {
+          "name_part_has_preceding_locant": true
+        }
+      ],
+      "target": [
+        "semantic_unit",
+        "descriptor_closed_joining"
+      ],
+      "mode": "replace",
+      "replacement": [
+        "semantic_unit",
+        "descriptor_preceding_locant_hyphen_joining"
+      ],
+      "order": 15,
+      "specificity": 1
+    }
+  ],
+  "figures": [],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "mechanical_assets": true,
+  "refs": [
+    {
+      "id": "reference.p82.part001.mixed_polysubstitution",
+      "c": [
+        18
+      ],
+      "rel": "cites",
+      "o": "P-82.2.1:xref:0002",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p82.part001.hydro_prefix_compounds",
+      "c": [
+        19
+      ],
+      "rel": "cites",
+      "o": "P-82.2.1:xref:0003",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p82.part001.hydro_prefix_pairing",
+      "c": [
+        73
+      ],
+      "rel": "cites",
+      "o": "P-82.2.3:xref:0001",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p82.part001.mancude_ring_policy",
+      "c": [
+        75
+      ],
+      "rel": "cites",
+      "o": "P-82.2.3:xref:0002",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p82.part001.rejected_hydro_names",
+      "c": [
+        87
+      ],
+      "rel": "cites",
+      "o": "P-82.2.3:xref:0003",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p82.part001.stereochemical_methods",
+      "c": [
+        127
+      ],
+      "rel": "cites",
+      "o": "P-82.4:xref:0001",
+      "resolution": "external"
+    }
+  ],
+  "symbols": [],
+  "tables": [],
+  "task_id": "P-82-part-001",
+  "units": [
+    {
+      "id": "isotopically_substituted_compound_composition",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        4,
+        5
+      ],
+      "scope": {
+        "r": [
+          "all"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "term": "isotopically substituted compound",
+      "entity": "IsotopicallySubstitutedCompound",
+      "value": [
+        "lit",
+        {
+          "designated_positions": "essentially all molecules contain only the indicated nuclide at each designated position",
+          "undesignated_positions": "absence of a nuclide indication denotes natural nuclide composition"
+        }
+      ]
+    },
+    {
+      "id": "isotopic_structure_notation",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        7,
+        8
+      ],
+      "in": [
+        [
+          "structure",
+          "IsotopicallySubstitutedStructure"
+        ]
+      ],
+      "out": [
+        [
+          "notation",
+          "IsotopicStructureNotation"
+        ]
+      ],
+      "scope": {
+        "r": [
+          "all"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "steps": [
+        [
+          "set",
+          "notation.base_representation",
+          [
+            "lit",
+            "usual structural representation"
+          ]
+        ],
+        [
+          "set",
+          "notation.nuclide_symbols",
+          [
+            "lit",
+            "appropriate nuclide symbols at modified positions"
+          ]
+        ],
+        [
+          "set",
+          "notation.same_element_same_position_order",
+          [
+            "lit",
+            "increasing mass number"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "isotopic_descriptor_name_construction",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        14,
+        16,
+        17
+      ],
+      "in": [
+        [
+          "name",
+          "CompoundName"
+        ],
+        [
+          "modifications",
+          "IsotopicModificationSet"
+        ]
+      ],
+      "out": [
+        [
+          "isotopic_name",
+          "IsotopicallyModifiedName"
+        ]
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "steps": [
+        [
+          "set",
+          "isotopic_name.descriptor",
+          [
+            "lit",
+            {
+              "form": "nuclide symbols enclosed in parentheses",
+              "prefix_fields": [
+                "necessary locants",
+                "letters",
+                "numerals"
+              ],
+              "position": "before the name part that is isotopically substituted"
+            }
+          ]
+        ],
+        [
+          "set",
+          "isotopic_name.same_insertion_point_order",
+          [
+            "lit",
+            [
+              "alphabetical order of nuclide symbols",
+              "increasing mass number where needed"
+            ]
+          ]
+        ],
+        [
+          "set",
+          "isotopic_name.single_position_multiplicity",
+          [
+            "lit",
+            {
+              "required": true,
+              "placement": "right subscript to each atomic symbol",
+              "include_monosubstitution": true
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "descriptor_closed_joining",
+      "k": "definition",
+      "f": "required",
+      "c": [
+        15
+      ],
+      "term": "default isotopic descriptor joining",
+      "entity": "DescriptorJoiningRule",
+      "value": [
+        "lit",
+        {
+          "space_after_parentheses": false,
+          "hyphen_after_parentheses": false
+        }
+      ]
+    },
+    {
+      "id": "descriptor_preceding_locant_hyphen_joining",
+      "k": "definition",
+      "f": "required",
+      "c": [
+        15
+      ],
+      "term": "preceding-locant isotopic descriptor joining",
+      "entity": "DescriptorJoiningRule",
+      "value": [
+        "lit",
+        {
+          "space_after_parentheses": false,
+          "hyphen_after_parentheses": true
+        }
+      ]
+    },
+    {
+      "id": "isotopic_special_case_routing",
+      "k": "definition",
+      "f": "required",
+      "c": [
+        18,
+        19
+      ],
+      "term": "isotopic naming special-case dependency",
+      "entity": "RuleDependencyMap",
+      "value": [
+        "lit",
+        {
+          "mixed_modified_and_unmodified_polysubstitution": "P-82.2.2",
+          "hydro_prefix_modification": "P-82.2.3"
+        }
+      ]
+    },
+    {
+      "id": "nonidentical_equivalent_unit_separation",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        46,
+        47,
+        48
+      ],
+      "in": [
+        [
+          "units",
+          "EquivalentStructuralUnitSet"
+        ]
+      ],
+      "out": [
+        [
+          "name_components",
+          "NameComponentSequence"
+        ]
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "if": [
+        "lit",
+        {
+          "equivalent_positions": true,
+          "identical_units": true,
+          "isotopic_modification_identical": false
+        }
+      ],
+      "then": [
+        [
+          "set",
+          "name_components.expression",
+          [
+            "lit",
+            "express each differently modified atom or group separately"
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "differently_modified_substituent_citation",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        50,
+        51
+      ],
+      "in": [
+        [
+          "substituents",
+          "SubstituentSet"
+        ]
+      ],
+      "out": [
+        [
+          "ordered_citations",
+          "SubstituentCitationSequence"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "ordered_citations.grouping",
+          [
+            "lit",
+            "cite separately when different isotopic modifications prevent multiplicative combination"
+          ]
+        ],
+        [
+          "set",
+          "ordered_citations.alphabetical_priority",
+          [
+            "lit",
+            "isotopically modified substituent before the corresponding unmodified substituent"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "characteristic_group_principal_selection",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        59,
+        60,
+        61
+      ],
+      "in": [
+        [
+          "candidate_groups",
+          "DifferentlyModifiedCharacteristicGroupSet"
+        ]
+      ],
+      "out": [
+        [
+          "principal_group",
+          "CharacteristicGroup"
+        ],
+        [
+          "prefix_groups",
+          "CharacteristicGroupSet"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "candidate_groups"
+      ],
+      "stages": [
+        {
+          "id": "greatest_modification_count",
+          "c": [
+            59,
+            60
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate_groups"
+            ],
+            "isotopic_modification_count"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "higher_nuclide_atomic_number",
+          "c": [
+            61
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate_groups"
+            ],
+            "highest_nuclide_atomic_number"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "higher_nuclide_mass_number",
+          "c": [
+            61
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate_groups"
+            ],
+            "highest_nuclide_mass_number"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        }
+      ],
+      "tie": [
+        "retain_coequal",
+        null
+      ]
+    },
+    {
+      "id": "hydro_prefix_isotopic_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        72,
+        73,
+        74,
+        75
+      ],
+      "in": [
+        [
+          "compound",
+          "HydrogenatedMancudeCompound"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "IsotopicallyModifiedName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "compound.modified_hydrogen_attachment",
+          [
+            "lit",
+            "skeleton"
+          ]
+        ],
+        [
+          "set",
+          "name.hydro_prefix_pairing",
+          [
+            "lit",
+            {
+              "identical": true,
+              "added_in_pairs": true,
+              "modification": "modified or unmodified"
+            }
+          ]
+        ],
+        [
+          "set",
+          "name.hydro_prefix_form",
+          [
+            "lit",
+            {
+              "kind": "detachable substituent prefix",
+              "position": "front of parent hydride"
+            }
+          ]
+        ],
+        [
+          "set",
+          "name.hydrogenated_mancude_ring_policy",
+          [
+            "lit",
+            "apply P-82.2.2"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "multiword_isotopic_descriptor_placement",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        89
+      ],
+      "in": [
+        [
+          "name",
+          "MultiwordCompoundName"
+        ],
+        [
+          "nuclides",
+          "NuclideSet"
+        ]
+      ],
+      "out": [
+        [
+          "descriptor_position",
+          "NamePosition"
+        ]
+      ],
+      "if": [
+        "lit",
+        {
+          "word_count_greater_than_one": true,
+          "unambiguous_locants_available": false,
+          "locants_unnecessary": false
+        }
+      ],
+      "then": [
+        [
+          "set",
+          "descriptor_position",
+          [
+            "lit",
+            "before the word or word part containing the nuclides"
+          ]
+        ]
+      ],
+      "else": [
+        [
+          "set",
+          "descriptor_position",
+          [
+            "lit",
+            "use the available or unnecessary locant convention"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "one_word_isotopic_descriptor_placement",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        107,
+        108
+      ],
+      "in": [
+        [
+          "name",
+          "OneWordCompoundName"
+        ]
+      ],
+      "out": [
+        [
+          "descriptor_position",
+          "NamePosition"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "descriptor_position",
+          [
+            "lit",
+            "before the complete name with an appropriate locant"
+          ]
+        ],
+        [
+          "set",
+          "placement_preference",
+          [
+            "lit",
+            "preferred over placement before an implied characteristic-group name"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "deleted_acet_deuterium_amide_correction_event",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        112
+      ],
+      "term": "P-82.2.5 deleted example correction",
+      "entity": "CorrectionEvent",
+      "value": [
+        "lit",
+        {
+          "event_kind": "correction",
+          "action": "deleted",
+          "description": "deleted acet(2H)amide",
+          "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html",
+          "source_icon_url": "https://iupac.qmul.ac.uk/greek/ALTER.GIF"
+        }
+      ]
+    },
+    {
+      "id": "different_element_nuclide_symbol_order",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        116
+      ],
+      "in": [
+        [
+          "nuclides",
+          "NuclideSetAtOneNamePosition"
+        ]
+      ],
+      "out": [
+        [
+          "ordered_nuclides",
+          "NuclideSequence"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "nuclides"
+      ],
+      "stages": [
+        {
+          "id": "different_elements_alphabetically",
+          "c": [
+            116
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "nuclides"
+            ],
+            "element_symbol"
+          ],
+          "cmp": [
+            "lexicographic",
+            "minimum",
+            null,
+            null
+          ]
+        }
+      ],
+      "tie": [
+        "retain_coequal",
+        null
+      ]
+    },
+    {
+      "id": "same_element_nuclide_symbol_order",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        119
+      ],
+      "in": [
+        [
+          "nuclides",
+          "SameElementNuclideSetAtOneNamePosition"
+        ]
+      ],
+      "out": [
+        [
+          "ordered_nuclides",
+          "NuclideSequence"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "nuclides"
+      ],
+      "stages": [
+        {
+          "id": "increasing_mass_number",
+          "c": [
+            119
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "nuclides"
+            ],
+            "mass_number"
+          ],
+          "cmp": [
+            "numeric",
+            "minimum",
+            null,
+            null
+          ]
+        }
+      ],
+      "tie": [
+        "retain_coequal",
+        null
+      ]
+    },
+    {
+      "id": "isotopic_stereoisomer_categories",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        124,
+        125,
+        126
+      ],
+      "term": "stereoisomeric isotopically substituted compound category",
+      "entity": "IsotopicStereoisomerCategory",
+      "value": [
+        "lit",
+        [
+          "stereoisomerism resulting from isotopic modification",
+          "isotopically substituted analogue of an already stereoisomeric unmodified compound"
+        ]
+      ]
+    },
+    {
+      "id": "isotopic_stereodescriptor_placement",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        127,
+        128,
+        129
+      ],
+      "in": [
+        [
+          "name",
+          "IsotopicStereoisomerName"
+        ]
+      ],
+      "out": [
+        [
+          "rendered_name",
+          "StereochemicallySpecifiedName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "rendered_name.method",
+          [
+            "lit",
+            "general stereochemical methods of Chapter P-9"
+          ]
+        ],
+        [
+          "set",
+          "rendered_name.stereodescriptor_position",
+          [
+            "lit",
+            "position specified by the applicable stereochemical rule"
+          ]
+        ],
+        [
+          "set",
+          "rendered_name.same_position_order",
+          [
+            "lit",
+            [
+              "stereodescriptor",
+              "isotopic descriptor"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "special_class_stereochemical_affix_placement",
+      "k": "procedure",
+      "f": "permitted",
+      "c": [
+        138,
+        139,
+        140
+      ],
+      "in": [
+        [
+          "name",
+          "SpecialClassIsotopicName"
+        ]
+      ],
+      "out": [
+        [
+          "rendered_name",
+          "SpecialClassName"
+        ]
+      ],
+      "scope": {
+        "r": [
+          "class_specific",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          {
+            "class_in": [
+              "carbohydrate",
+              "amino acid",
+              "steroid",
+              "other P-10 special class"
+            ]
+          }
+        ]
+      },
+      "steps": [
+        [
+          "set",
+          "rendered_name.stereochemical_affix",
+          [
+            "lit",
+            "apply the special-class rule, normally by reference to the unmodified parent substance"
+          ]
+        ],
+        [
+          "set",
+          "rendered_name.biochemical_order",
+          [
+            "lit",
+            [
+              "stereochemical descriptor",
+              "isotopic descriptor"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "numbering_relative_to_unmodified_compound",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        156,
+        157
+      ],
+      "in": [
+        [
+          "numbering_choices",
+          "IsotopicNumberingChoiceSet"
+        ]
+      ],
+      "out": [
+        [
+          "selected_numbering",
+          "NumberingChoice"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "numbering_choices"
+      ],
+      "stages": [
+        {
+          "id": "preserve_unmodified_numbering",
+          "c": [
+            156
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "numbering_choices"
+            ],
+            "difference_from_unmodified_numbering"
+          ],
+          "cmp": [
+            "numeric",
+            "minimum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "isotopically_induced_chirality",
+          "c": [
+            157
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "numbering_choices"
+            ],
+            "isotopically_induced_chirality_priority"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "nuclide_presence_last",
+          "c": [
+            157
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "numbering_choices"
+            ],
+            "nuclide_locant_sequence"
+          ],
+          "cmp": [
+            "lexicographic",
+            "minimum",
+            null,
+            null
+          ]
+        }
+      ],
+      "tie": [
+        "retain_coequal",
+        null
+      ]
+    },
+    {
+      "id": "equivalent_isotopic_numbering_priority",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        166,
+        167,
+        168
+      ],
+      "in": [
+        [
+          "numbering_choices",
+          "EquivalentIsotopicNumberingChoiceSet"
+        ]
+      ],
+      "out": [
+        [
+          "selected_numbering",
+          "NumberingChoice"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "numbering_choices"
+      ],
+      "stages": [
+        {
+          "id": "lowest_modified_position_locant_sequence",
+          "c": [
+            166
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "numbering_choices"
+            ],
+            "modified_atom_or_group_locant_sequence"
+          ],
+          "cmp": [
+            "lexicographic",
+            "minimum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "higher_atomic_number_nuclide_gets_lower_locant",
+          "c": [
+            167
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "numbering_choices"
+            ],
+            "higher_atomic_number_nuclide_locant"
+          ],
+          "cmp": [
+            "numeric",
+            "minimum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "higher_mass_number_nuclide_gets_lower_locant",
+          "c": [
+            168
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "numbering_choices"
+            ],
+            "higher_mass_number_nuclide_locant"
+          ],
+          "cmp": [
+            "numeric",
+            "minimum",
+            null,
+            null
+          ]
+        }
+      ],
+      "tie": [
+        "retain_coequal",
+        null
+      ]
+    },
+    {
+      "id": "preferred_name_locant_omission",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        186,
+        187
+      ],
+      "in": [
+        [
+          "name",
+          "IsotopicallyModifiedName"
+        ]
+      ],
+      "out": [
+        [
+          "locant_policy",
+          "LocantPolicy"
+        ]
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "if": [
+        "lit",
+        {
+          "unmodified_name_requires_locants": false,
+          "isotopic_modification_requires_position_locant": false
+        }
+      ],
+      "then": [
+        [
+          "set",
+          "locant_policy",
+          [
+            "lit",
+            "omit locants"
+          ]
+        ]
+      ],
+      "else": [
+        [
+          "set",
+          "locant_policy",
+          [
+            "lit",
+            "specify every locant; omit none"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "single_element_atom_locant_omission",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        193
+      ],
+      "in": [
+        [
+          "structure",
+          "IsotopicallyModifiedStructure"
+        ]
+      ],
+      "out": [
+        [
+          "locant_policy",
+          "LocantPolicy"
+        ]
+      ],
+      "if": [
+        "lit",
+        {
+          "atom_count_for_element": 1
+        }
+      ],
+      "then": [
+        [
+          "set",
+          "locant_policy",
+          [
+            "lit",
+            "omit element-position locant"
+          ]
+        ]
+      ],
+      "else": []
+    }
+  ]
+}
