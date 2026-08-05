@@ -84,6 +84,25 @@ The final semantic corpus is intentionally absent until every packet passes.
 See `docs/NORMALIZED_RULE_LANGUAGE.md` and
 `work/SEMANTIC_IR_CONVERSION_GUIDE.md`.
 
+## Executable Rule ABI
+
+`scripts/compile_executable_rule_bundle.py` compiles normalized semantic IR into
+a deterministic `ordered-if-then-v1` JSON bundle. The bundle contains typed
+entrypoints, `when`/`then`/`else` programs, decisions, exceptions, tables,
+dependency edges, and an explicit host capability contract. A partial bundle
+requires `--allow-partial` and cannot be labeled complete.
+
+`iupac_rule_runtime/` is a safe reference interpreter for that ABI. It uses a
+closed opcode set, never evaluates code from JSON, verifies the bundle hash,
+and reports every missing or incorrectly typed chemistry operation before
+execution. See `docs/EXECUTABLE_RULE_BUNDLE.md` and
+`data/executable_rule_bundle.schema.json`.
+
+```powershell
+python scripts\compile_executable_rule_bundle.py `
+  data\bluebook_v3\bluebook_v3_rule_ir.json
+```
+
 ## Reproduce And Validate
 
 ```powershell

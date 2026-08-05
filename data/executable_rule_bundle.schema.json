@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/executable_rule_bundle.schema.json",
+  "title": "IUPAC Blue Book executable rule bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "execution_model",
+    "complete",
+    "sources",
+    "type_registry",
+    "capability_contract",
+    "entrypoints",
+    "execution_order",
+    "programs",
+    "exceptions",
+    "tables",
+    "dependency_edges",
+    "metrics",
+    "bundle_sha256"
+  ],
+  "properties": {
+    "format": { "const": "iupac-bluebook-executable-rule-bundle" },
+    "format_version": { "const": "1.0.0" },
+    "execution_model": { "const": "ordered-if-then-v1" },
+    "complete": { "type": "boolean" },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/source" }
+    },
+    "type_registry": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "capability_contract": { "$ref": "#/$defs/capability_contract" },
+    "entrypoints": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entrypoint" }
+    },
+    "execution_order": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/identifier" }
+    },
+    "programs": {
+      "type": "array",
+      "items": {
+        "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/semantic_unit"
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/exception"
+      }
+    },
+    "tables": {
+      "type": "array",
+      "items": {
+        "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/table"
+      }
+    },
+    "dependency_edges": {
+      "type": "array",
+      "items": {
+        "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/dependency_edge"
+      }
+    },
+    "metrics": { "$ref": "#/$defs/metrics" },
+    "bundle_sha256": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.:-]*$"
+    },
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type"],
+      "properties": {
+        "name": { "$ref": "#/$defs/identifier" },
+        "type": { "type": "string", "minLength": 1 }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "format_version",
+        "content_sha256",
+        "task_id",
+        "assigned_rule_ids"
+      ],
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": [
+            "iupac-bluebook-normalized-rule-language",
+            "iupac-bluebook-normalized-rule-chunk"
+          ]
+        },
+        "format_version": { "type": "string", "minLength": 1 },
+        "content_sha256": { "$ref": "#/$defs/sha256" },
+        "task_id": {
+          "oneOf": [
+            { "$ref": "#/$defs/identifier" },
+            { "type": "null" }
+          ]
+        },
+        "assigned_rule_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
+          }
+        }
+      }
+    },
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["symbol_id", "kind", "arguments", "returns", "description"],
+      "properties": {
+        "symbol_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_.]*$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["predicate", "function", "transformation", "comparator"]
+        },
+        "arguments": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/binding" }
+        },
+        "returns": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 }
+      }
+    },
+    "capability_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "external_rule_dependencies"],
+      "properties": {
+        "required": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/capability" }
+        },
+        "external_rule_dependencies": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "entrypoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entrypoint_id", "program_ids", "input_bindings"],
+      "properties": {
+        "entrypoint_id": { "$ref": "#/$defs/identifier" },
+        "program_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "input_bindings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/binding" }
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_count",
+        "entrypoint_count",
+        "program_count",
+        "exception_count",
+        "table_count",
+        "required_capability_count",
+        "external_rule_dependency_count",
+        "dependency_edge_count"
+      ],
+      "properties": {
+        "source_count": { "type": "integer", "minimum": 1 },
+        "entrypoint_count": { "type": "integer", "minimum": 0 },
+        "program_count": { "type": "integer", "minimum": 0 },
+        "exception_count": { "type": "integer", "minimum": 0 },
+        "table_count": { "type": "integer", "minimum": 0 },
+        "required_capability_count": { "type": "integer", "minimum": 0 },
+        "external_rule_dependency_count": { "type": "integer", "minimum": 0 },
+        "dependency_edge_count": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}
