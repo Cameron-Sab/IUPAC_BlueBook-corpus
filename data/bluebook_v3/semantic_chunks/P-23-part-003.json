@@ -5,38 +5,72 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 18,
-    "compiled_clause_count": 14,
+    "compiled_clause_count": 16,
     "correction_application_count": 0,
-    "example_count": 5,
+    "example_count": 6,
     "exception_count": 0,
     "figure_count": 5,
-    "nonoperative_clause_count": 4,
+    "nonoperative_clause_count": 2,
     "record_count": 2,
     "reference_count": 2,
-    "semantic_unit_count": 3,
+    "semantic_unit_count": 4,
     "superseded_clause_count": 0,
     "symbol_declaration_count": 0,
     "table_count": 1
   },
-  "chunk_sha256": "36B88FC06FD928C3658F2253753F118D95EC13931A58A73C45C246EDA2AAF9AB",
+  "chunk_sha256": "D392C4BB6431DA1BEB0A701E8AA6C70A8510CDBE1EA28761C78527AC28D6D66F",
   "clause_dispositions": [
     {
       "clause_id": "P-23.6.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part003.nonstandard_bonding_number_low_locants",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part003.nonstandard_bonding_number_low_locants.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part003.nonstandard_bonding_number_low_locants.candidates",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p23.part003.nonstandard_bonding_number_low_locants.decreasing_bonding_number_locants",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p23.part003.nonstandard_bonding_number_low_locants.stage.decreasing_bonding_number_locants.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part003.nonstandard_bonding_number_low_locants.stage.decreasing_bonding_number_locants.key",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part003.nonstandard_bonding_number_low_locants.stage.decreasing_bonding_number_locants.key.from",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-23.6.2:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part003.lambda5_arsenic_lower_locant",
+            "kind": "example"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "illustrative",
+      "role": "example"
     },
     {
       "clause_id": "P-23.6.2:clause:0003",
@@ -360,6 +394,30 @@
   "examples": [
     {
       "accepted_names": [
+        "lower locant assigned to the λ5 arsenic atom"
+      ],
+      "clause_ids": [
+        "P-23.6.2:clause:0002"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p23.part003.nonstandard_bonding_number_low_locants",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p23.part003.lambda5_arsenic_lower_locant",
+      "explanation": "For arsenic, the lower locant is assigned to the atom with bonding number 5.",
+      "input": {
+        "bonding_descriptor": "λ5",
+        "bonding_number": 5,
+        "element": "arsenic",
+        "numbering_context": "choice between numbering assignments"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
         "2λ5,3-diarsabicyclo[2.2.1]heptane"
       ],
       "clause_ids": [
@@ -550,6 +608,7 @@
       ],
       "correction_application_ids": [],
       "example_ids": [
+        "example.p23.part003.lambda5_arsenic_lower_locant",
         "example.p23.part003.diarsabicyclo_heptane_pin"
       ],
       "exception_ids": [],
@@ -561,7 +620,9 @@
       "reference_ids": [
         "reference.p_23_6_2.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part003.nonstandard_bonding_number_low_locants"
+      ],
       "source_rule_id": "P-23.6.2",
       "table_ids": []
     },
@@ -656,6 +717,94 @@
   ],
   "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
   "semantic_units": [
+    {
+      "candidates": {
+        "clause_ids": [
+          "P-23.6.2:clause:0001"
+        ],
+        "expression_id": "expr.p23.part003.nonstandard_bonding_number_low_locants.candidates",
+        "name": "numbering_choices",
+        "op": "var"
+      },
+      "clause_ids": [
+        "P-23.6.2:clause:0001"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "numbering_choices",
+          "type": "VonBaeyerNumberingChoiceSet"
+        }
+      ],
+      "kind": "decision",
+      "outputs": [
+        {
+          "name": "selected_numbering",
+          "type": "VonBaeyerNumberingChoice"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.6.2:clause:0001"
+          ],
+          "expression_id": "expr.p23.part003.nonstandard_bonding_number_low_locants.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "stages": [
+        {
+          "clause_ids": [
+            "P-23.6.2:clause:0001"
+          ],
+          "comparator": {
+            "direction": "minimum",
+            "kind": "lexicographic",
+            "symbol": null,
+            "table_id": null
+          },
+          "guard": {
+            "clause_ids": [
+              "P-23.6.2:clause:0001"
+            ],
+            "expression_id": "expr.p23.part003.nonstandard_bonding_number_low_locants.stage.decreasing_bonding_number_locants.guard",
+            "op": "literal",
+            "value": true
+          },
+          "key": {
+            "clause_ids": [
+              "P-23.6.2:clause:0001"
+            ],
+            "expression_id": "expr.p23.part003.nonstandard_bonding_number_low_locants.stage.decreasing_bonding_number_locants.key",
+            "from": {
+              "clause_ids": [
+                "P-23.6.2:clause:0001"
+              ],
+              "expression_id": "expr.p23.part003.nonstandard_bonding_number_low_locants.stage.decreasing_bonding_number_locants.key.from",
+              "name": "numbering_choices",
+              "op": "var"
+            },
+            "op": "get",
+            "path": "locant_sequence_for_nonstandard_bonding_numbers_descending"
+          },
+          "on_tie": {
+            "mode": "continue",
+            "next_stage_id": null
+          },
+          "ordinal": 1,
+          "stage_id": "stage.p23.part003.nonstandard_bonding_number_low_locants.decreasing_bonding_number_locants"
+        }
+      ],
+      "terminal_tie": {
+        "fallback_ref": null,
+        "mode": "retain_coequal"
+      },
+      "unit_id": "unit.p23.part003.nonstandard_bonding_number_low_locants"
+    },
     {
       "clause_ids": [
         "P-23.7:clause:0002"

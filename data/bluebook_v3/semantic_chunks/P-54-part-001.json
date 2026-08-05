@@ -1,0 +1,6642 @@
+{
+  "assigned_rule_ids": [
+    "P-54",
+    "P-54.1",
+    "P-54.2",
+    "P-54.3",
+    "P-54.4",
+    "P-54.4.1",
+    "P-54.4.2",
+    "P-54.4.3",
+    "P-54.4.3.1",
+    "P-54.4.3.2",
+    "P-54.4.4"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 119,
+    "compiled_clause_count": 96,
+    "correction_application_count": 3,
+    "example_count": 26,
+    "exception_count": 2,
+    "figure_count": 31,
+    "nonoperative_clause_count": 22,
+    "record_count": 11,
+    "reference_count": 36,
+    "semantic_unit_count": 27,
+    "superseded_clause_count": 1,
+    "symbol_declaration_count": 3,
+    "table_count": 3
+  },
+  "chunk_sha256": "1DB7CC00C662A91F50DECE61699DC20CFB7E98595B66D2CB766AEB2B68D110D9",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-54:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-54.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-54.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.parent_hydride_hydrogenation_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.parent_hydride_hydrogenation_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "table.p54.part001.parent_hydride_hydrogenation_method_inventory",
+            "kind": "table"
+          },
+          {
+            "id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.parent_class",
+            "kind": "table_column"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-54.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.parent_hydride_hydrogenation_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.parent_hydride_hydrogenation_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "table.p54.part001.parent_hydride_hydrogenation_method_inventory",
+            "kind": "table"
+          },
+          {
+            "id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.parent_class",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.method",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.effect",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p54.part001.parent_hydride_hydrogenation_method_inventory.acyclic_endings",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.acyclic_endings.parent_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.acyclic_endings.method",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.acyclic_endings.effect",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.parent_hydride_hydrogenation_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.parent_hydride_hydrogenation_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "table.p54.part001.parent_hydride_hydrogenation_method_inventory",
+            "kind": "table"
+          },
+          {
+            "id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.parent_class",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.method",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.effect",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_hydro",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_hydro.parent_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_hydro.method",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_hydro.effect",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.parent_hydride_hydrogenation_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.parent_hydride_hydrogenation_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "table.p54.part001.parent_hydride_hydrogenation_method_inventory",
+            "kind": "table"
+          },
+          {
+            "id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.parent_class",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.method",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.effect",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_dehydro",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_dehydro.parent_class",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_dehydro.method",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_dehydro.effect",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.systematic_and_retained_parent_hydride_modification",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.systematic_and_retained_parent_hydride_modification.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.systematic_and_retained_parent_hydride_modification.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.systematic_and_retained_parent_hydride_modification.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.systematic_and_retained_parent_hydride_modification.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-54.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-54.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.monocyclic_carbocycle_hydrogenation_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.monocyclic_carbocycle_hydrogenation_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "table.p54.part001.monocyclic_carbocycle_method_inventory",
+            "kind": "table"
+          },
+          {
+            "id": "column.p54.part001.monocyclic_carbocycle_method_inventory.method",
+            "kind": "table_column"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-54.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.monocyclic_carbocycle_hydrogenation_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.monocyclic_carbocycle_hydrogenation_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "table.p54.part001.monocyclic_carbocycle_method_inventory",
+            "kind": "table"
+          },
+          {
+            "id": "column.p54.part001.monocyclic_carbocycle_method_inventory.method",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.monocyclic_carbocycle_method_inventory.name_form",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.monocyclic_carbocycle_method_inventory.pin_status",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p54.part001.monocyclic_carbocycle_method_inventory.ene_yne",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.ene_yne.method",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.ene_yne.name_form",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.ene_yne.pin_status",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.monocyclic_carbocycle_hydrogenation_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.monocyclic_carbocycle_hydrogenation_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "table.p54.part001.monocyclic_carbocycle_method_inventory",
+            "kind": "table"
+          },
+          {
+            "id": "column.p54.part001.monocyclic_carbocycle_method_inventory.method",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.monocyclic_carbocycle_method_inventory.name_form",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.monocyclic_carbocycle_method_inventory.pin_status",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p54.part001.monocyclic_carbocycle_method_inventory.annulene",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.annulene.method",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.annulene.name_form",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.annulene.pin_status",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-54.2:clause:0006",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.2:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.cyclooctatetraene_annulene",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.2:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.2:clause:0008",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.2:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.cyclododecapentaenyne_annulene",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.2:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.2:clause:0010",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.2:clause:0011",
+      "disposition": {
+        "correction_application_ids": [
+          "correction.p54.part001.annulene_structure",
+          "correction.p54.part001.annulene_pin",
+          "correction.p54.part001.annulene_numbering"
+        ],
+        "kind": "superseded",
+        "successor_clause_ids": [
+          "P-54.2:clause:0009",
+          "P-54.2:clause:0010"
+        ]
+      },
+      "force": "correction",
+      "role": "correction_event"
+    },
+    {
+      "clause_id": "P-54.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-54.3:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "exception.p54.part001.benzene_cyclohexane_ring_assembly_exception",
+            "kind": "exception"
+          },
+          {
+            "id": "unit.p54.part001.ring_assembly_hydro_prefix_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.ring_assembly_hydro_prefix_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.ring_assembly_hydro_prefix_preference.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.ring_assembly_hydro_prefix_preference.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.ring_assembly_hydro_prefix_preference.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "unit.p54.part001.benzene_cyclohexane_substitutive_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.benzene_cyclohexane_substitutive_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.benzene_cyclohexane_substitutive_preference.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.benzene_cyclohexane_substitutive_preference.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.benzene_cyclohexane_substitutive_preference.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.exception.benzene_cyclohexane_ring_assembly_exception.when",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-54.3:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "exception.p54.part001.phane_name_precedence_exception",
+            "kind": "exception"
+          },
+          {
+            "id": "unit.p54.part001.phane_name_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.phane_name_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.phane_name_preference.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.phane_name_preference.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.phane_name_preference.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.exception.phane_name_precedence_exception.when",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-54.3:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.3:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.cyclohexylbenzene_ring_assembly",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.3:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.3:clause:0006",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.3:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.3:clause:0007",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.3:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.corrected_ring_assembly_locants_event",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.corrected_ring_assembly_locants_event.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.corrected_ring_assembly_locants_event.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "correction",
+      "role": "correction_event"
+    },
+    {
+      "clause_id": "P-54.3:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.hexahydrobipyridine_ring_assembly",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.3:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.pentacyclohexanaheptaphane_ring_assembly",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.3:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.3:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-54.4:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.hydro_dehydro_prefix_classification",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.hydro_dehydro_prefix_classification.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.hydro_dehydro_prefix_classification.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-54.4:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "historical_context"
+      },
+      "force": "informative",
+      "role": "history"
+    },
+    {
+      "clause_id": "P-54.4:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.hydrogenation_modifier_locant_assignment",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.hydrogenation_modifier_locant_assignment.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.hydrogenation_modifier_locant_assignment.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.hydrogenation_modifier_locant_assignment.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.hantzsch_widman_pin_saturation_states",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.hantzsch_widman_pin_saturation_states.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.hantzsch_widman_pin_saturation_states.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.partially_unsaturated_hantzsch_widman_hydro_pin",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.partially_unsaturated_hantzsch_widman_hydro_pin.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.partially_unsaturated_hantzsch_widman_hydro_pin.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.partially_unsaturated_hantzsch_widman_hydro_pin.steps.1.arg1",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.dehydro_hantzsch_widman_general_only",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg1.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg1.arg.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg1.arg.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg2.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg2.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.dehydro_hantzsch_widman_general_only.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.hantzsch_widman_final_e_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.hantzsch_widman_final_e_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "table.p54.part001.hantzsch_widman_final_e_by_regime",
+            "kind": "table"
+          },
+          {
+            "id": "column.p54.part001.hantzsch_widman_final_e_by_regime.regime",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.hantzsch_widman_final_e_by_regime.final_e_status",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p54.part001.hantzsch_widman_final_e_by_regime.pin",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p54.part001.hantzsch_widman_final_e_by_regime.pin.regime",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.hantzsch_widman_final_e_by_regime.pin.final_e_status",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.hantzsch_widman_final_e_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.hantzsch_widman_final_e_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "table.p54.part001.hantzsch_widman_final_e_by_regime",
+            "kind": "table"
+          },
+          {
+            "id": "column.p54.part001.hantzsch_widman_final_e_by_regime.regime",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p54.part001.hantzsch_widman_final_e_by_regime.final_e_status",
+            "kind": "table_column"
+          },
+          {
+            "id": "row.p54.part001.hantzsch_widman_final_e_by_regime.general",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p54.part001.hantzsch_widman_final_e_by_regime.general.regime",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p54.part001.hantzsch_widman_final_e_by_regime.general.final_e_status",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0007",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "historical_context"
+      },
+      "force": "informative",
+      "role": "history"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0008",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "historical_context"
+      },
+      "force": "informative",
+      "role": "history"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0009",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.phosphole_fully_unsaturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.1:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.phosphole_partially_unsaturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.1:clause:0013",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.phospholane_fully_saturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.1:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.1:clause:0015",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.saturated_heteromonocycle_pin_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.saturated_heteromonocycle_pin_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.saturated_heteromonocycle_pin_methods.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.nonpreferred_saturated_ring_names_general_permission",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.nonpreferred_saturated_ring_names_general_permission.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.nonpreferred_saturated_ring_names_general_permission.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.nonpreferred_saturated_ring_names_general_permission.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.nonpreferred_saturated_ring_names_general_permission.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.phosphole_saturated_pair",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0006",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.phosphole_saturated_pair",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0008",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.siline_silinane_pair",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0010",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.siline_silinane_pair",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0012",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.furan_oxolane_pair",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0014",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.furan_oxolane_pair",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0016",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0017",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.pyridine_piperidine_pair",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0018",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0018",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0019",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.pyridine_piperidine_pair",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0020",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0020",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0021",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.thiazepine_thiazepane_pair",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0022",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0022",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0023",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.thiazepine_thiazepane_pair",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0024",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0024",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0025",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.cyclopentaazane_pentazolidine",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0026",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.cyclopentaazane_pentazolidine",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.2:clause:0027",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.2:clause:0027",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0001",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.retained_fusion_name_fully_unsaturated_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.retained_fusion_name_fully_unsaturated_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.retained_fusion_name_fully_unsaturated_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.retained_fusion_name_fully_unsaturated_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.retained_fusion_name_fully_unsaturated_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.retained_fusion_name_fully_unsaturated_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.fused_system_hydro_pin_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.fused_system_hydro_pin_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.fused_system_hydro_pin_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.fused_system_hydro_pin_construction.steps.1.arg1",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.mancude_ring_assembly_hydro_pin_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.mancude_ring_assembly_hydro_pin_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.mancude_ring_assembly_hydro_pin_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.mancude_ring_assembly_hydro_pin_construction.steps.1.arg1",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.hydro_prefix_classification_for_fused_systems",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.hydro_prefix_classification_for_fused_systems.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.hydro_prefix_classification_for_fused_systems.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0006",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "historical_context"
+      },
+      "force": "informative",
+      "role": "history"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.fused_system_hydro_locant_assignment",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.fused_system_hydro_locant_assignment.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.fused_system_hydro_locant_assignment.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.fused_system_hydro_locant_assignment.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0008",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.naphthalene_fully_unsaturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.3.1:clause:0010",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.dihydronaphthalene_partially_saturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.3.1:clause:0012",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.decahydronaphthalene_fully_saturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.3.1:clause:0014",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.dithiepinofuran_fully_unsaturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.3.1:clause:0016",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0017",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.dithiepinofuran_partially_saturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0018",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.3.1:clause:0018",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0019",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.dithiepinofuran_fully_saturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0020",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.3.1:clause:0020",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0021",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.binaphthalene_fully_unsaturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0022",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.3.1:clause:0022",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0023",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.binaphthalene_partially_saturated",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.1:clause:0024",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.3.1:clause:0024",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.3.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-54.4.3.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.partially_saturated_heterocycle_retained_name_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.partially_saturated_heterocycle_retained_name_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.partially_saturated_heterocycle_retained_name_policy.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.partially_saturated_heterocycle_retained_name_policy.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.partially_saturated_heterocycle_retained_name_policy.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-54.4.3.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.partially_saturated_heterocycle_hydro_pin_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.partially_saturated_heterocycle_hydro_pin_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.partially_saturated_heterocycle_hydro_pin_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.partially_saturated_heterocycle_hydro_pin_construction.steps.1.arg1",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.4.3.2:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.indane_general_and_indene_pin",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.3.2:clause:0006",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.3.2:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.isothiochroman_general_and_benzothiopyran_pin",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.3.2:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.3.2:clause:0008",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.dehydro_mancude_pin_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_mancude_pin_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.dehydro_mancude_pin_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_mancude_pin_construction.steps.1.arg1",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.dehydro_saturated_parent_general_permission",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_saturated_parent_general_permission.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_saturated_parent_general_permission.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.dehydro_saturated_parent_general_permission.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_saturated_parent_general_permission.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.dehydro_prefix_classification",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_prefix_classification.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_prefix_classification.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0005",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "historical_context"
+      },
+      "force": "informative",
+      "role": "history"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p54.part001.dehydro_modifier_locant_assignment",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_modifier_locant_assignment.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p54.part001.dehydro_modifier_locant_assignment.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p54.part001.dehydro_modifier_locant_assignment.steps.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0007",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.didehydrobenzene",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.4:clause:0009",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p54.part001.didehydropiperidine",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-54.4.4:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_54.4.4:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [
+    {
+      "after_clause_ids": [
+        "P-54.2:clause:0011"
+      ],
+      "application_id": "correction.p54.part001.annulene_structure",
+      "before_clause_ids": [
+        "P-54.2:clause:0010"
+      ],
+      "effective_date": "2024-09-04",
+      "operation_id": "BBV3-CORR-37E2F626D7C39515:OP-001",
+      "overlay_id": "BBV3-CORR-37E2F626D7C39515",
+      "result_sha256": "B9EC929AF496CAEE332D4E78A049E7D77F8D1D6D9290A5F26338B024705A9354",
+      "status": "applied",
+      "target_refs": [
+        {
+          "id": "figure.asset.p_54.2:clause:0010",
+          "kind": "figure"
+        }
+      ]
+    },
+    {
+      "after_clause_ids": [
+        "P-54.2:clause:0011"
+      ],
+      "application_id": "correction.p54.part001.annulene_pin",
+      "before_clause_ids": [
+        "P-54.2:clause:0009"
+      ],
+      "effective_date": "2024-09-04",
+      "operation_id": "BBV3-CORR-37E2F626D7C39515:OP-002",
+      "overlay_id": "BBV3-CORR-37E2F626D7C39515",
+      "result_sha256": "8020CFC1B07218A9AE76483DB80CACC70AA1AEFBC3869A725880D088C34512F3",
+      "status": "applied",
+      "target_refs": [
+        {
+          "id": "example.p54.part001.cyclododecapentaenyne_annulene",
+          "kind": "example"
+        }
+      ]
+    },
+    {
+      "after_clause_ids": [
+        "P-54.2:clause:0011"
+      ],
+      "application_id": "correction.p54.part001.annulene_numbering",
+      "before_clause_ids": [
+        "P-54.2:clause:0009"
+      ],
+      "effective_date": "2024-09-04",
+      "operation_id": "BBV3-CORR-37E2F626D7C39515:OP-003",
+      "overlay_id": "BBV3-CORR-37E2F626D7C39515",
+      "result_sha256": "71548BC43A20B10EDF5C71F4F92CEE9839EF3A05BF758AB9192A79BEC2D4087E",
+      "status": "applied",
+      "target_refs": [
+        {
+          "id": "example.p54.part001.cyclododecapentaenyne_annulene",
+          "kind": "example"
+        }
+      ]
+    }
+  ],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "cycloocta-1,3,5,7-tetraene (PIN)",
+        "[8]annulene"
+      ],
+      "clause_ids": [
+        "P-54.2:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.2:clause:0008",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.cyclooctatetraene_annulene",
+      "explanation": "The ene-ending name is the preferred form; the annulene parent name is also shown.",
+      "input": {
+        "structure": "P5gif/P540200a.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(1Z,3E,5Z,7E,9Z)-cyclododeca-1,3,5,7,9-pentaen-11-yne (PIN)",
+        "1,2-didehydro[12]annulene"
+      ],
+      "clause_ids": [
+        "P-54.2:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.2:clause:0010",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.cyclododecapentaenyne_annulene",
+      "explanation": "The corrected example contrasts the preferred ene/yne form with the didehydro annulene name.",
+      "input": {
+        "numbering": "shown",
+        "structure": "P5gif/P540200b.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "cyclohexylbenzene (PIN)",
+        "1,2,3,4,5,6-hexahydro-1,1'-biphenyl"
+      ],
+      "clause_ids": [
+        "P-54.3:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.benzene_cyclohexane_substitutive_preference",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "exception.p54.part001.benzene_cyclohexane_ring_assembly_exception",
+          "kind": "exception"
+        },
+        {
+          "id": "figure.asset.p_54.3:clause:0006",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.cyclohexylbenzene_ring_assembly",
+      "explanation": "The benzene-cyclohexane two-ring exception prefers the substitutive name.",
+      "input": {
+        "structure": "P5gif/P540300a.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,2,3,4,5,6-hexahydro-2,2'-bipyridine (PIN)",
+        "2-(piperidin-2-yl)pyridine"
+      ],
+      "clause_ids": [
+        "P-54.3:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.ring_assembly_hydro_prefix_preference",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.3:clause:0007",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.hexahydrobipyridine_ring_assembly",
+      "explanation": "The corrected locants illustrate the preferred hydro-prefix assembly name.",
+      "input": {
+        "structure": "P5gif/P540300b.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1(1),4(1,4)-dibenzena-2,3,5,6(1,4),7(1)-pentacyclohexanaheptaphane (PIN)",
+        "14-[4-(4'-phenyl[1,1'-bi(cyclohexan)]-4-yl)phenyl]-11,21:24,31-tercyclohexane"
+      ],
+      "clause_ids": [
+        "P-54.3:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.phane_name_preference",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "exception.p54.part001.phane_name_precedence_exception",
+          "kind": "exception"
+        },
+        {
+          "id": "figure.asset.p_54.3:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.pentacyclohexanaheptaphane_ring_assembly",
+      "explanation": "When phane-name requirements are met, the phane form is the preferred IUPAC name.",
+      "input": {
+        "structure": "P5gif/P540300c.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1H-phosphole (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.1:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.hantzsch_widman_pin_saturation_states",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.1:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.phosphole_fully_unsaturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540401a.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2,3-dihydro-1H-phosphole (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.1:clause:0012"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.partially_unsaturated_hantzsch_widman_hydro_pin",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p54.part001.dehydro_hantzsch_widman_general_only",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.1:clause:0013",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.phosphole_partially_unsaturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540401b.gif"
+      },
+      "operative": false,
+      "rejected_names": [
+        "2,3-didehydrophospholane as a PIN"
+      ]
+    },
+    {
+      "accepted_names": [
+        "phospholane (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.1:clause:0014"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.hantzsch_widman_pin_saturation_states",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.1:clause:0015",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.phospholane_fully_saturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540401c.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1H-phosphole (PIN)",
+        "phospholane (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.2:clause:0005",
+        "P-54.4.2:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.saturated_heteromonocycle_pin_methods",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p54.part001.nonpreferred_saturated_ring_names_general_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0006",
+          "kind": "figure"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0008",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.phosphole_saturated_pair",
+      "explanation": null,
+      "input": {
+        "structures": [
+          "P5gif/P540402a.gif",
+          "P5gif/P540402b.gif"
+        ]
+      },
+      "operative": false,
+      "rejected_names": [
+        "2,3,4,5-tetrahydro-1H-phosphole as a PIN"
+      ]
+    },
+    {
+      "accepted_names": [
+        "siline (PIN)",
+        "silinane (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.2:clause:0009",
+        "P-54.4.2:clause:0011"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.saturated_heteromonocycle_pin_methods",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p54.part001.nonpreferred_saturated_ring_names_general_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0010",
+          "kind": "figure"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0012",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.siline_silinane_pair",
+      "explanation": null,
+      "input": {
+        "structures": [
+          "P5gif/P540402c.gif",
+          "P5gif/P540402d.gif"
+        ]
+      },
+      "operative": false,
+      "rejected_names": [
+        "hexahydrosiline as a PIN"
+      ]
+    },
+    {
+      "accepted_names": [
+        "furan (PIN)",
+        "oxolane (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.2:clause:0013",
+        "P-54.4.2:clause:0015"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.saturated_heteromonocycle_pin_methods",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p54.part001.nonpreferred_saturated_ring_names_general_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0014",
+          "kind": "figure"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0016",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.furan_oxolane_pair",
+      "explanation": null,
+      "input": {
+        "structures": [
+          "P5gif/P540402e.gif",
+          "P5gif/P540402f.gif"
+        ]
+      },
+      "operative": false,
+      "rejected_names": [
+        "tetrahydrofuran as a PIN"
+      ]
+    },
+    {
+      "accepted_names": [
+        "pyridine (PIN)",
+        "piperidine (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.2:clause:0017",
+        "P-54.4.2:clause:0019"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.saturated_heteromonocycle_pin_methods",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p54.part001.nonpreferred_saturated_ring_names_general_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0018",
+          "kind": "figure"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0020",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.pyridine_piperidine_pair",
+      "explanation": null,
+      "input": {
+        "structures": [
+          "P5gif/P540402g.gif",
+          "P5gif/P540402h.gif"
+        ]
+      },
+      "operative": false,
+      "rejected_names": [
+        "hexahydropyridine as a PIN"
+      ]
+    },
+    {
+      "accepted_names": [
+        "1,4-thiazepine (PIN)",
+        "1,4-thiazepane (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.2:clause:0021",
+        "P-54.4.2:clause:0023"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.saturated_heteromonocycle_pin_methods",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p54.part001.nonpreferred_saturated_ring_names_general_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0022",
+          "kind": "figure"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0024",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.thiazepine_thiazepane_pair",
+      "explanation": null,
+      "input": {
+        "structures": [
+          "P5gif/P540402i.gif",
+          "P5gif/P540402j.gif"
+        ]
+      },
+      "operative": false,
+      "rejected_names": [
+        "hexahydro-1,4-thiazepine as a PIN"
+      ]
+    },
+    {
+      "accepted_names": [
+        "cyclopentaazane",
+        "pentazolidine (preselected name)"
+      ],
+      "clause_ids": [
+        "P-54.4.2:clause:0025",
+        "P-54.4.2:clause:0026"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.saturated_heteromonocycle_pin_methods",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.2:clause:0027",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.cyclopentaazane_pentazolidine",
+      "explanation": "The split caption identifies the systematic and preselected names for the same saturated ring.",
+      "input": {
+        "structure": "P5gif/P540402k.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "naphthalene (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.3.1:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.hydro_prefix_classification_for_fused_systems",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.3.1:clause:0010",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.naphthalene_fully_unsaturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540403a.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,2-dihydronaphthalene (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.3.1:clause:0011"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.fused_system_hydro_locant_assignment",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.3.1:clause:0012",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.dihydronaphthalene_partially_saturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540403b.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "decahydronaphthalene (PIN)",
+        "bicyclo[4.4.0]decane"
+      ],
+      "clause_ids": [
+        "P-54.4.3.1:clause:0013"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.fused_system_hydro_locant_assignment",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.3.1:clause:0014",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.decahydronaphthalene_fully_saturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540403c.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2H-[1,4]dithiepino[2,3-c]furan (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.3.1:clause:0015"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.hydro_prefix_classification_for_fused_systems",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.3.1:clause:0016",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.dithiepinofuran_fully_unsaturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540403d.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "3,4-dihydro-2H-[1,4]dithiepino[2,3-c]furan (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.3.1:clause:0017"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.fused_system_hydro_locant_assignment",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.3.1:clause:0018",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.dithiepinofuran_partially_saturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540403e.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "hexahydro-2H-[1,4]dithiepino[2,3-c]furan (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.3.1:clause:0019"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.fused_system_hydro_locant_assignment",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.3.1:clause:0020",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.dithiepinofuran_fully_saturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540403f.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2,2'-binaphthalene (PIN)",
+        "2,2'-binaphthyl"
+      ],
+      "clause_ids": [
+        "P-54.4.3.1:clause:0021"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.hydro_prefix_classification_for_fused_systems",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.3.1:clause:0022",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.binaphthalene_fully_unsaturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540403g.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,2-dihydro-2,2'-binaphthalene (PIN)",
+        "1,2-dihydro-2,2'-binaphthyl",
+        "1,2-dihydro-2-(naphthalen-2-yl)naphthalene"
+      ],
+      "clause_ids": [
+        "P-54.4.3.1:clause:0023"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.fused_system_hydro_locant_assignment",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.3.1:clause:0024",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.binaphthalene_partially_saturated",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540403h.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2,3-dihydro-1H-indene (PIN)",
+        "indane in general nomenclature"
+      ],
+      "clause_ids": [
+        "P-54.4.3.2:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.partially_saturated_heterocycle_retained_name_policy",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p54.part001.partially_saturated_heterocycle_hydro_pin_construction",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.3.2:clause:0006",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.indane_general_and_indene_pin",
+      "explanation": null,
+      "input": {
+        "general_name": "indane",
+        "structure": "P5gif/P540403i.gif"
+      },
+      "operative": false,
+      "rejected_names": [
+        "indane as a PIN"
+      ]
+    },
+    {
+      "accepted_names": [
+        "3,4-dihydro-1H-2-benzothiopyran (PIN)",
+        "isothiochroman in general nomenclature"
+      ],
+      "clause_ids": [
+        "P-54.4.3.2:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.partially_saturated_heterocycle_retained_name_policy",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p54.part001.partially_saturated_heterocycle_hydro_pin_construction",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.3.2:clause:0008",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.isothiochroman_general_and_benzothiopyran_pin",
+      "explanation": null,
+      "input": {
+        "general_name": "isothiochroman",
+        "structure": "P5gif/P540403j.gif"
+      },
+      "operative": false,
+      "rejected_names": [
+        "isothiochroman as a PIN"
+      ]
+    },
+    {
+      "accepted_names": [
+        "1,2-didehydrobenzene (PIN)",
+        "cyclohexa-1,3-dien-5-yne"
+      ],
+      "clause_ids": [
+        "P-54.4.4:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.dehydro_mancude_pin_construction",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p54.part001.dehydro_modifier_locant_assignment",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.4:clause:0009",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.didehydrobenzene",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540404a.gif"
+      },
+      "operative": false,
+      "rejected_names": [
+        "benzyne"
+      ]
+    },
+    {
+      "accepted_names": [
+        "1,2-didehydropiperidine",
+        "2,3,4,5-tetrahydropyridine (PIN)"
+      ],
+      "clause_ids": [
+        "P-54.4.4:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p54.part001.dehydro_saturated_parent_general_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_54.4.4:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p54.part001.didehydropiperidine",
+      "explanation": null,
+      "input": {
+        "structure": "P5gif/P540404b.gif"
+      },
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [
+    {
+      "clause_ids": [
+        "P-54.3:clause:0003"
+      ],
+      "effect": {
+        "guard": null,
+        "mode": "replace",
+        "redirect": null,
+        "replacement": {
+          "id": "unit.p54.part001.phane_name_preference",
+          "kind": "semantic_unit"
+        }
+      },
+      "exception_id": "exception.p54.part001.phane_name_precedence_exception",
+      "precedence": {
+        "source_order": 2,
+        "specificity": 2
+      },
+      "target": {
+        "id": "unit.p54.part001.ring_assembly_hydro_prefix_preference",
+        "kind": "semantic_unit"
+      },
+      "when": {
+        "clause_ids": [
+          "P-54.3:clause:0003"
+        ],
+        "expression_id": "expr.p54.part001.exception.phane_name_precedence_exception.when",
+        "op": "literal",
+        "value": {
+          "phane_name_requirements": "met"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.3:clause:0002"
+      ],
+      "effect": {
+        "guard": null,
+        "mode": "replace",
+        "redirect": null,
+        "replacement": {
+          "id": "unit.p54.part001.benzene_cyclohexane_substitutive_preference",
+          "kind": "semantic_unit"
+        }
+      },
+      "exception_id": "exception.p54.part001.benzene_cyclohexane_ring_assembly_exception",
+      "precedence": {
+        "source_order": 1,
+        "specificity": 1
+      },
+      "target": {
+        "id": "unit.p54.part001.ring_assembly_hydro_prefix_preference",
+        "kind": "semantic_unit"
+      },
+      "when": {
+        "clause_ids": [
+          "P-54.3:clause:0002"
+        ],
+        "expression_id": "expr.p54.part001.exception.benzene_cyclohexane_ring_assembly_exception.when",
+        "op": "literal",
+        "value": {
+          "ring_count": 2,
+          "ring_types": [
+            "benzene",
+            "cyclohexane"
+          ]
+        }
+      }
+    }
+  ],
+  "figures": [
+    {
+      "clause_ids": [
+        "P-54.2:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.2:clause:0008",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540200a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.2:clause:0010"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.2:clause:0010",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540200b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.3:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.3:clause:0006",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540300a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.3:clause:0007"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.3:clause:0007",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540300b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.3:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.3:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540300c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.1:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.1:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540401a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.1:clause:0013"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.1:clause:0013",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540401b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.1:clause:0015"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.1:clause:0015",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540401c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0006",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0008",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0010"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0010",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0012"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0012",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402d.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0014"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0014",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402e.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0016"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0016",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402f.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0018"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0018",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402g.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0020"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0020",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402h.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0022"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0022",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402i.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0024"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0024",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402j.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0027"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.2:clause:0027",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540402k.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0010"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.3.1:clause:0010",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540403a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0012"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.3.1:clause:0012",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540403b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0014"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.3.1:clause:0014",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540403c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0016"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.3.1:clause:0016",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540403d.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0018"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.3.1:clause:0018",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540403e.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0020"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.3.1:clause:0020",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540403f.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0022"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.3.1:clause:0022",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540403g.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0024"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.3.1:clause:0024",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540403h.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.2:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.3.2:clause:0006",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540403i.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.2:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.3.2:clause:0008",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540403j.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.4:clause:0009",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540404a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_54.4.4:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P5gif/P540404b.gif"
+      ]
+    }
+  ],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-54-part-001",
+  "packet_sha256": "BD4F066F9A41AF975CFA3C2B1D63084362659F6EE81EC9F9C16963DBC48B1B16",
+  "records": [
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-54",
+      "reference_ids": [
+        "reference.p_54.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-54",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54.1:clause:0001",
+        "P-54.1:clause:0002",
+        "P-54.1:clause:0003",
+        "P-54.1:clause:0004",
+        "P-54.1:clause:0005",
+        "P-54.1:clause:0006"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-54.1",
+      "reference_ids": [
+        "reference.p_54_1.hierarchy_parent",
+        "reference.P-54.1:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p54.part001.parent_hydride_hydrogenation_methods",
+        "unit.p54.part001.systematic_and_retained_parent_hydride_modification"
+      ],
+      "source_rule_id": "P-54.1",
+      "table_ids": [
+        "table.p54.part001.parent_hydride_hydrogenation_method_inventory"
+      ]
+    },
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54.2:clause:0001",
+        "P-54.2:clause:0002",
+        "P-54.2:clause:0003",
+        "P-54.2:clause:0004",
+        "P-54.2:clause:0005",
+        "P-54.2:clause:0006",
+        "P-54.2:clause:0007",
+        "P-54.2:clause:0008",
+        "P-54.2:clause:0009",
+        "P-54.2:clause:0010",
+        "P-54.2:clause:0011"
+      ],
+      "correction_application_ids": [
+        "correction.p54.part001.annulene_structure",
+        "correction.p54.part001.annulene_pin",
+        "correction.p54.part001.annulene_numbering"
+      ],
+      "example_ids": [
+        "example.p54.part001.cyclooctatetraene_annulene",
+        "example.p54.part001.cyclododecapentaenyne_annulene"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_54.2:clause:0008",
+        "figure.asset.p_54.2:clause:0010"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-54.2",
+      "reference_ids": [
+        "reference.p_54_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p54.part001.monocyclic_carbocycle_hydrogenation_methods",
+        "unit.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles"
+      ],
+      "source_rule_id": "P-54.2",
+      "table_ids": [
+        "table.p54.part001.monocyclic_carbocycle_method_inventory"
+      ]
+    },
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54.3:clause:0001",
+        "P-54.3:clause:0002",
+        "P-54.3:clause:0003",
+        "P-54.3:clause:0004",
+        "P-54.3:clause:0005",
+        "P-54.3:clause:0006",
+        "P-54.3:clause:0007",
+        "P-54.3:clause:0008",
+        "P-54.3:clause:0009",
+        "P-54.3:clause:0010",
+        "P-54.3:clause:0011"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p54.part001.cyclohexylbenzene_ring_assembly",
+        "example.p54.part001.hexahydrobipyridine_ring_assembly",
+        "example.p54.part001.pentacyclohexanaheptaphane_ring_assembly"
+      ],
+      "exception_ids": [
+        "exception.p54.part001.phane_name_precedence_exception",
+        "exception.p54.part001.benzene_cyclohexane_ring_assembly_exception"
+      ],
+      "figure_ids": [
+        "figure.asset.p_54.3:clause:0006",
+        "figure.asset.p_54.3:clause:0007",
+        "figure.asset.p_54.3:clause:0011"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-54.3",
+      "reference_ids": [
+        "reference.p_54_3.hierarchy_parent",
+        "reference.P-54.3:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p54.part001.ring_assembly_hydro_prefix_preference",
+        "unit.p54.part001.benzene_cyclohexane_substitutive_preference",
+        "unit.p54.part001.phane_name_preference",
+        "unit.p54.part001.corrected_ring_assembly_locants_event"
+      ],
+      "source_rule_id": "P-54.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54.4:clause:0001",
+        "P-54.4:clause:0002",
+        "P-54.4:clause:0003",
+        "P-54.4:clause:0004"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-54.4",
+      "reference_ids": [
+        "reference.p_54_4.hierarchy_parent",
+        "reference.p54.part001.p54_4_xref_0001",
+        "reference.P-54.4:xref:0002",
+        "reference.P-54.4:xref:0003",
+        "reference.P-54.4:xref:0004",
+        "reference.p54.part001.p54_4_xref_0005"
+      ],
+      "semantic_unit_ids": [
+        "unit.p54.part001.hydro_dehydro_prefix_classification",
+        "unit.p54.part001.hydrogenation_modifier_locant_assignment"
+      ],
+      "source_rule_id": "P-54.4",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54.4.1:clause:0001",
+        "P-54.4.1:clause:0002",
+        "P-54.4.1:clause:0003",
+        "P-54.4.1:clause:0004",
+        "P-54.4.1:clause:0005",
+        "P-54.4.1:clause:0006",
+        "P-54.4.1:clause:0007",
+        "P-54.4.1:clause:0008",
+        "P-54.4.1:clause:0009",
+        "P-54.4.1:clause:0010",
+        "P-54.4.1:clause:0011",
+        "P-54.4.1:clause:0012",
+        "P-54.4.1:clause:0013",
+        "P-54.4.1:clause:0014",
+        "P-54.4.1:clause:0015"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p54.part001.phosphole_fully_unsaturated",
+        "example.p54.part001.phosphole_partially_unsaturated",
+        "example.p54.part001.phospholane_fully_saturated"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_54.4.1:clause:0011",
+        "figure.asset.p_54.4.1:clause:0013",
+        "figure.asset.p_54.4.1:clause:0015"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-54.4.1",
+      "reference_ids": [
+        "reference.p_54_4_1.hierarchy_parent",
+        "reference.P-54.4.1:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p54.part001.hantzsch_widman_pin_saturation_states",
+        "unit.p54.part001.partially_unsaturated_hantzsch_widman_hydro_pin",
+        "unit.p54.part001.dehydro_hantzsch_widman_general_only",
+        "unit.p54.part001.hantzsch_widman_final_e_policy"
+      ],
+      "source_rule_id": "P-54.4.1",
+      "table_ids": [
+        "table.p54.part001.hantzsch_widman_final_e_by_regime"
+      ]
+    },
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54.4.2:clause:0001",
+        "P-54.4.2:clause:0002",
+        "P-54.4.2:clause:0003",
+        "P-54.4.2:clause:0004",
+        "P-54.4.2:clause:0005",
+        "P-54.4.2:clause:0006",
+        "P-54.4.2:clause:0007",
+        "P-54.4.2:clause:0008",
+        "P-54.4.2:clause:0009",
+        "P-54.4.2:clause:0010",
+        "P-54.4.2:clause:0011",
+        "P-54.4.2:clause:0012",
+        "P-54.4.2:clause:0013",
+        "P-54.4.2:clause:0014",
+        "P-54.4.2:clause:0015",
+        "P-54.4.2:clause:0016",
+        "P-54.4.2:clause:0017",
+        "P-54.4.2:clause:0018",
+        "P-54.4.2:clause:0019",
+        "P-54.4.2:clause:0020",
+        "P-54.4.2:clause:0021",
+        "P-54.4.2:clause:0022",
+        "P-54.4.2:clause:0023",
+        "P-54.4.2:clause:0024",
+        "P-54.4.2:clause:0025",
+        "P-54.4.2:clause:0026",
+        "P-54.4.2:clause:0027"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p54.part001.phosphole_saturated_pair",
+        "example.p54.part001.siline_silinane_pair",
+        "example.p54.part001.furan_oxolane_pair",
+        "example.p54.part001.pyridine_piperidine_pair",
+        "example.p54.part001.thiazepine_thiazepane_pair",
+        "example.p54.part001.cyclopentaazane_pentazolidine"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_54.4.2:clause:0006",
+        "figure.asset.p_54.4.2:clause:0008",
+        "figure.asset.p_54.4.2:clause:0010",
+        "figure.asset.p_54.4.2:clause:0012",
+        "figure.asset.p_54.4.2:clause:0014",
+        "figure.asset.p_54.4.2:clause:0016",
+        "figure.asset.p_54.4.2:clause:0018",
+        "figure.asset.p_54.4.2:clause:0020",
+        "figure.asset.p_54.4.2:clause:0022",
+        "figure.asset.p_54.4.2:clause:0024",
+        "figure.asset.p_54.4.2:clause:0027"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-54.4.2",
+      "reference_ids": [
+        "reference.p_54_4_2.hierarchy_parent",
+        "reference.P-54.4.2:xref:0001",
+        "reference.P-54.4.2:xref:0002",
+        "reference.P-54.4.2:xref:0003",
+        "reference.P-54.4.2:xref:0004"
+      ],
+      "semantic_unit_ids": [
+        "unit.p54.part001.saturated_heteromonocycle_pin_methods",
+        "unit.p54.part001.nonpreferred_saturated_ring_names_general_permission"
+      ],
+      "source_rule_id": "P-54.4.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54.4.3:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-54.4.3",
+      "reference_ids": [
+        "reference.p_54_4_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-54.4.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54.4.3.1:clause:0001",
+        "P-54.4.3.1:clause:0002",
+        "P-54.4.3.1:clause:0003",
+        "P-54.4.3.1:clause:0004",
+        "P-54.4.3.1:clause:0005",
+        "P-54.4.3.1:clause:0006",
+        "P-54.4.3.1:clause:0007",
+        "P-54.4.3.1:clause:0008",
+        "P-54.4.3.1:clause:0009",
+        "P-54.4.3.1:clause:0010",
+        "P-54.4.3.1:clause:0011",
+        "P-54.4.3.1:clause:0012",
+        "P-54.4.3.1:clause:0013",
+        "P-54.4.3.1:clause:0014",
+        "P-54.4.3.1:clause:0015",
+        "P-54.4.3.1:clause:0016",
+        "P-54.4.3.1:clause:0017",
+        "P-54.4.3.1:clause:0018",
+        "P-54.4.3.1:clause:0019",
+        "P-54.4.3.1:clause:0020",
+        "P-54.4.3.1:clause:0021",
+        "P-54.4.3.1:clause:0022",
+        "P-54.4.3.1:clause:0023",
+        "P-54.4.3.1:clause:0024"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p54.part001.naphthalene_fully_unsaturated",
+        "example.p54.part001.dihydronaphthalene_partially_saturated",
+        "example.p54.part001.decahydronaphthalene_fully_saturated",
+        "example.p54.part001.dithiepinofuran_fully_unsaturated",
+        "example.p54.part001.dithiepinofuran_partially_saturated",
+        "example.p54.part001.dithiepinofuran_fully_saturated",
+        "example.p54.part001.binaphthalene_fully_unsaturated",
+        "example.p54.part001.binaphthalene_partially_saturated"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_54.4.3.1:clause:0010",
+        "figure.asset.p_54.4.3.1:clause:0012",
+        "figure.asset.p_54.4.3.1:clause:0014",
+        "figure.asset.p_54.4.3.1:clause:0016",
+        "figure.asset.p_54.4.3.1:clause:0018",
+        "figure.asset.p_54.4.3.1:clause:0020",
+        "figure.asset.p_54.4.3.1:clause:0022",
+        "figure.asset.p_54.4.3.1:clause:0024"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-54.4.3.1",
+      "reference_ids": [
+        "reference.p_54_4_3_1.hierarchy_parent",
+        "reference.P-54.4.3.1:xref:0001",
+        "reference.p54.part001.p54_4_3_1_xref_0002",
+        "reference.P-54.4.3.1:xref:0003",
+        "reference.P-54.4.3.1:xref:0004",
+        "reference.P-54.4.3.1:xref:0005",
+        "reference.p54.part001.p54_4_3_1_xref_0006"
+      ],
+      "semantic_unit_ids": [
+        "unit.p54.part001.retained_fusion_name_fully_unsaturated_scope",
+        "unit.p54.part001.fused_system_hydro_pin_construction",
+        "unit.p54.part001.mancude_ring_assembly_hydro_pin_construction",
+        "unit.p54.part001.hydro_prefix_classification_for_fused_systems",
+        "unit.p54.part001.fused_system_hydro_locant_assignment"
+      ],
+      "source_rule_id": "P-54.4.3.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54.4.3.2:clause:0001",
+        "P-54.4.3.2:clause:0002",
+        "P-54.4.3.2:clause:0003",
+        "P-54.4.3.2:clause:0004",
+        "P-54.4.3.2:clause:0005",
+        "P-54.4.3.2:clause:0006",
+        "P-54.4.3.2:clause:0007",
+        "P-54.4.3.2:clause:0008"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p54.part001.indane_general_and_indene_pin",
+        "example.p54.part001.isothiochroman_general_and_benzothiopyran_pin"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_54.4.3.2:clause:0006",
+        "figure.asset.p_54.4.3.2:clause:0008"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-54.4.3.2",
+      "reference_ids": [
+        "reference.p_54_4_3_2.hierarchy_parent",
+        "reference.P-54.4.3.2:xref:0001",
+        "reference.P-54.4.3.2:xref:0002"
+      ],
+      "semantic_unit_ids": [
+        "unit.p54.part001.partially_saturated_heterocycle_retained_name_policy",
+        "unit.p54.part001.partially_saturated_heterocycle_hydro_pin_construction"
+      ],
+      "source_rule_id": "P-54.4.3.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-54.4.4:clause:0001",
+        "P-54.4.4:clause:0002",
+        "P-54.4.4:clause:0003",
+        "P-54.4.4:clause:0004",
+        "P-54.4.4:clause:0005",
+        "P-54.4.4:clause:0006",
+        "P-54.4.4:clause:0007",
+        "P-54.4.4:clause:0008",
+        "P-54.4.4:clause:0009",
+        "P-54.4.4:clause:0010",
+        "P-54.4.4:clause:0011"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p54.part001.didehydrobenzene",
+        "example.p54.part001.didehydropiperidine"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_54.4.4:clause:0009",
+        "figure.asset.p_54.4.4:clause:0011"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-54.4.4",
+      "reference_ids": [
+        "reference.p_54_4_4.hierarchy_parent",
+        "reference.p54.part001.p54_4_4_xref_0001",
+        "reference.P-54.4.4:xref:0002",
+        "reference.P-54.4.4:xref:0003",
+        "reference.P-54.4.4:xref:0004",
+        "reference.p54.part001.p54_4_4_xref_0005"
+      ],
+      "semantic_unit_ids": [
+        "unit.p54.part001.dehydro_mancude_pin_construction",
+        "unit.p54.part001.dehydro_saturated_parent_general_permission",
+        "unit.p54.part001.dehydro_prefix_classification",
+        "unit.p54.part001.dehydro_modifier_locant_assignment"
+      ],
+      "source_rule_id": "P-54.4.4",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-54:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-5",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-54",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-54",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-54",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54_4.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-54",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54_4_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-54.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54_4_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-54.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54_4_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-54.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54_4_3_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-54.4.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54_4_3_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-54.4.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_54_4_4.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-54.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.1:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.1:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.1:xref:0001"
+      ],
+      "target": {
+        "id": "P-54.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.3:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.3:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.3:xref:0001"
+      ],
+      "target": {
+        "id": "P-52.2.5.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p54.part001.p54_4_xref_0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4:xref:0001"
+      ],
+      "target": {
+        "id": "P-14.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4:xref:0002"
+      ],
+      "target": {
+        "id": "P-15.1.5.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4:xref:0003"
+      ],
+      "target": {
+        "id": "P-31.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4:xref:0004"
+      ],
+      "target": {
+        "id": "P-58.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4:clause:0004"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p54.part001.p54_4_xref_0005",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4:xref:0005"
+      ],
+      "target": {
+        "id": "P-14.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.1:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.1:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.1:xref:0001"
+      ],
+      "target": {
+        "id": "P-22.2.2.1.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.2:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-22.2.2.1.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.2:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.2:xref:0002"
+      ],
+      "target": {
+        "id": "P-54.4.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.2:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.2:xref:0003"
+      ],
+      "target": {
+        "id": "P-22.2.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0026"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.2:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.2:xref:0004"
+      ],
+      "target": {
+        "id": "P-22.2.2.1.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.3.1:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.3.1:xref:0001"
+      ],
+      "target": {
+        "id": "P-25",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p54.part001.p54_4_3_1_xref_0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.3.1:xref:0002"
+      ],
+      "target": {
+        "id": "P-14.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0006"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.3.1:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.3.1:xref:0003"
+      ],
+      "target": {
+        "id": "P-15.1.5.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0006"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.3.1:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.3.1:xref:0004"
+      ],
+      "target": {
+        "id": "P-31.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0006"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.3.1:xref:0005",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.3.1:xref:0005"
+      ],
+      "target": {
+        "id": "P-58.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0007"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p54.part001.p54_4_3_1_xref_0006",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.3.1:xref:0006"
+      ],
+      "target": {
+        "id": "P-14.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.2:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.3.2:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.3.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-31.2.3.3.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.3.2:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.3.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.3.2:xref:0002"
+      ],
+      "target": {
+        "id": "P-54.4.3.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0004"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p54.part001.p54_4_4_xref_0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.4:xref:0001"
+      ],
+      "target": {
+        "id": "P-14.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.4:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.4:xref:0002"
+      ],
+      "target": {
+        "id": "P-15.1.5.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.4:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.4:xref:0003"
+      ],
+      "target": {
+        "id": "P-31.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-54.4.4:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.4:xref:0004"
+      ],
+      "target": {
+        "id": "P-58.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0006"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p54.part001.p54_4_4_xref_0005",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-54.4.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-54.4.4:xref:0005"
+      ],
+      "target": {
+        "id": "P-14.4",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-54.1:clause:0002",
+        "P-54.1:clause:0003",
+        "P-54.1:clause:0004",
+        "P-54.1:clause:0005"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "parent_hydride_class",
+          "type": "ParentHydrideClass"
+        }
+      ],
+      "kind": "mapping",
+      "outputs": [
+        {
+          "name": "modification_method",
+          "type": "HydrogenationModificationMethod"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.1:clause:0002",
+            "P-54.1:clause:0003",
+            "P-54.1:clause:0004",
+            "P-54.1:clause:0005"
+          ],
+          "expression_id": "expr.p54.part001.parent_hydride_hydrogenation_methods.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "table_id": "table.p54.part001.parent_hydride_hydrogenation_method_inventory",
+      "unit_id": "unit.p54.part001.parent_hydride_hydrogenation_methods"
+    },
+    {
+      "clause_ids": [
+        "P-54.1:clause:0006"
+      ],
+      "else": [],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "systematic_name",
+          "type": "Name"
+        },
+        {
+          "name": "retained_name",
+          "type": "Name"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "modification_policy",
+          "type": "HydrogenationModificationPolicy"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.1:clause:0006"
+          ],
+          "expression_id": "expr.p54.part001.systematic_and_retained_parent_hydride_modification.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-54.1:clause:0006"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.systematic_and_retained_parent_hydride_modification.then.1",
+          "target": "modification_policy",
+          "value": {
+            "clause_ids": [
+              "P-54.1:clause:0006"
+            ],
+            "expression_id": "expr.p54.part001.systematic_and_retained_parent_hydride_modification.then.1.value",
+            "op": "literal",
+            "value": {
+              "result": "preferred IUPAC names",
+              "systematic_and_retained_names": "may be modified alike or by different methods"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.systematic_and_retained_parent_hydride_modification",
+      "when": {
+        "clause_ids": [
+          "P-54.1:clause:0006"
+        ],
+        "expression_id": "expr.p54.part001.systematic_and_retained_parent_hydride_modification.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.2:clause:0002",
+        "P-54.2:clause:0003",
+        "P-54.2:clause:0004"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "method",
+          "type": "MonocyclicCarbocycleMethod"
+        }
+      ],
+      "kind": "mapping",
+      "outputs": [
+        {
+          "name": "name_form",
+          "type": "NameForm"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.2:clause:0002",
+            "P-54.2:clause:0003",
+            "P-54.2:clause:0004"
+          ],
+          "expression_id": "expr.p54.part001.monocyclic_carbocycle_hydrogenation_methods.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "table_id": "table.p54.part001.monocyclic_carbocycle_method_inventory",
+      "unit_id": "unit.p54.part001.monocyclic_carbocycle_hydrogenation_methods"
+    },
+    {
+      "clause_ids": [
+        "P-54.2:clause:0005"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "carbocycle",
+          "type": "MonocyclicCarbocycle"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "selected_method",
+          "type": "MonocyclicCarbocycleMethod"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.2:clause:0005"
+          ],
+          "expression_id": "expr.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-54.2:clause:0005"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles.then.1",
+          "target": "selected_method",
+          "value": {
+            "clause_ids": [
+              "P-54.2:clause:0005"
+            ],
+            "expression_id": "expr.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles.then.1.value",
+            "op": "literal",
+            "value": "ene_yne_endings"
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles",
+      "when": {
+        "clause_ids": [
+          "P-54.2:clause:0005"
+        ],
+        "expression_id": "expr.p54.part001.prefer_ene_yne_method_for_monocyclic_carbocycles.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.3:clause:0002"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "assembly",
+          "type": "RingAssembly"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "selected_method",
+          "type": "HydrogenationModificationMethod"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.3:clause:0002"
+          ],
+          "expression_id": "expr.p54.part001.ring_assembly_hydro_prefix_preference.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-54.3:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.ring_assembly_hydro_prefix_preference.then.1",
+          "target": "selected_method",
+          "value": {
+            "clause_ids": [
+              "P-54.3:clause:0002"
+            ],
+            "expression_id": "expr.p54.part001.ring_assembly_hydro_prefix_preference.then.1.value",
+            "op": "literal",
+            "value": "hydro_prefixes"
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.ring_assembly_hydro_prefix_preference",
+      "when": {
+        "clause_ids": [
+          "P-54.3:clause:0002"
+        ],
+        "expression_id": "expr.p54.part001.ring_assembly_hydro_prefix_preference.when",
+        "op": "literal",
+        "value": {
+          "contains": [
+            "mancude rings",
+            "saturated rings"
+          ],
+          "rings": "otherwise identical"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.3:clause:0002"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "assembly",
+          "type": "RingAssembly"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "selected_method",
+          "type": "HydrogenationModificationMethod"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.3:clause:0002"
+          ],
+          "expression_id": "expr.p54.part001.benzene_cyclohexane_substitutive_preference.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-54.3:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.benzene_cyclohexane_substitutive_preference.then.1",
+          "target": "selected_method",
+          "value": {
+            "clause_ids": [
+              "P-54.3:clause:0002"
+            ],
+            "expression_id": "expr.p54.part001.benzene_cyclohexane_substitutive_preference.then.1.value",
+            "op": "literal",
+            "value": "substitutive_nomenclature"
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.benzene_cyclohexane_substitutive_preference",
+      "when": {
+        "clause_ids": [
+          "P-54.3:clause:0002"
+        ],
+        "expression_id": "expr.p54.part001.benzene_cyclohexane_substitutive_preference.when",
+        "op": "literal",
+        "value": {
+          "ring_count": 2,
+          "ring_types": [
+            "benzene",
+            "cyclohexane"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.3:clause:0003"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "assembly",
+          "type": "RingAssembly"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "selected_method",
+          "type": "HydrogenationModificationMethod"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.3:clause:0003"
+          ],
+          "expression_id": "expr.p54.part001.phane_name_preference.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-54.3:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.phane_name_preference.then.1",
+          "target": "selected_method",
+          "value": {
+            "clause_ids": [
+              "P-54.3:clause:0003"
+            ],
+            "expression_id": "expr.p54.part001.phane_name_preference.then.1.value",
+            "op": "literal",
+            "value": "phane_nomenclature"
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.phane_name_preference",
+      "when": {
+        "clause_ids": [
+          "P-54.3:clause:0003"
+        ],
+        "expression_id": "expr.p54.part001.phane_name_preference.when",
+        "op": "literal",
+        "value": {
+          "phane_name_requirements": "met"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.3:clause:0008"
+      ],
+      "entity_type": "CorrectionEvent",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "event",
+          "type": "CorrectionEvent"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.3:clause:0008"
+          ],
+          "expression_id": "expr.p54.part001.corrected_ring_assembly_locants_event.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "P-54.3 corrected-locants source event",
+      "unit_id": "unit.p54.part001.corrected_ring_assembly_locants_event",
+      "value": {
+        "clause_ids": [
+          "P-54.3:clause:0008"
+        ],
+        "expression_id": "expr.p54.part001.corrected_ring_assembly_locants_event.value",
+        "op": "literal",
+        "value": {
+          "description": "corrected locants",
+          "details_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html",
+          "event_kind": "correction"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4:clause:0002"
+      ],
+      "entity_type": "HydrogenationPrefix",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "prefix",
+          "type": "HydrogenationPrefix"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "classification",
+          "type": "PrefixClassification"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4:clause:0002"
+          ],
+          "expression_id": "expr.p54.part001.hydro_dehydro_prefix_classification.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "hydro and dehydro prefix classification",
+      "unit_id": "unit.p54.part001.hydro_dehydro_prefix_classification",
+      "value": {
+        "clause_ids": [
+          "P-54.4:clause:0002"
+        ],
+        "expression_id": "expr.p54.part001.hydro_dehydro_prefix_classification.value",
+        "op": "literal",
+        "value": {
+          "alphabetized_detachable_prefix": false,
+          "detachable": true,
+          "prefixes": [
+            "hydro",
+            "dehydro"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4:clause:0004"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "parent_hydride",
+          "type": "ParentHydride"
+        },
+        {
+          "name": "modifiers",
+          "type": "HydrogenationModifiers"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "locants",
+          "type": "LocantAssignment"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4:clause:0004"
+          ],
+          "expression_id": "expr.p54.part001.hydrogenation_modifier_locant_assignment.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-54.4:clause:0004"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.hydrogenation_modifier_locant_assignment.steps.1",
+          "target": "locants",
+          "value": {
+            "clause_ids": [
+              "P-54.4:clause:0004"
+            ],
+            "expression_id": "expr.p54.part001.hydrogenation_modifier_locant_assignment.steps.1.value",
+            "op": "literal",
+            "value": {
+              "parent_numbering": "retained",
+              "principle": "lowest locants",
+              "priorities_before_hydrogenation_modifiers": [
+                "indicated hydrogen",
+                "added indicated hydrogen",
+                "suffixes"
+              ]
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.hydrogenation_modifier_locant_assignment"
+    },
+    {
+      "clause_ids": [
+        "P-54.4.1:clause:0002"
+      ],
+      "entity_type": "HantzschWidmanRing",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "ring",
+          "type": "HantzschWidmanRing"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "pin_saturation_state",
+          "type": "SaturationState"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.1:clause:0002"
+          ],
+          "expression_id": "expr.p54.part001.hantzsch_widman_pin_saturation_states.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "preferred Hantzsch-Widman saturation state",
+      "unit_id": "unit.p54.part001.hantzsch_widman_pin_saturation_states",
+      "value": {
+        "clause_ids": [
+          "P-54.4.1:clause:0002"
+        ],
+        "expression_id": "expr.p54.part001.hantzsch_widman_pin_saturation_states.value",
+        "op": "literal",
+        "value": {
+          "preferred_states": [
+            "fully unsaturated",
+            "fully saturated"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.1:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "fully_unsaturated_name",
+          "type": "HantzschWidmanName"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "partially_unsaturated_name",
+          "type": "HantzschWidmanName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.1:clause:0003"
+          ],
+          "expression_id": "expr.p54.part001.partially_unsaturated_hantzsch_widman_hydro_pin.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "steps": [
+        {
+          "args": [
+            {
+              "clause_ids": [
+                "P-54.4.1:clause:0003"
+              ],
+              "expression_id": "expr.p54.part001.partially_unsaturated_hantzsch_widman_hydro_pin.steps.1.arg1",
+              "name": "fully_unsaturated_name",
+              "op": "var"
+            }
+          ],
+          "clause_ids": [
+            "P-54.4.1:clause:0003"
+          ],
+          "op": "transform",
+          "statement_id": "stmt.p54.part001.partially_unsaturated_hantzsch_widman_hydro_pin.steps.1",
+          "target": "partially_unsaturated_name",
+          "transformation": "name.add_hydro_prefixes"
+        }
+      ],
+      "unit_id": "unit.p54.part001.partially_unsaturated_hantzsch_widman_hydro_pin"
+    },
+    {
+      "assertion": {
+        "args": [
+          {
+            "arg": {
+              "clause_ids": [
+                "P-54.4.1:clause:0004"
+              ],
+              "expression_id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg1.arg",
+              "left": {
+                "clause_ids": [
+                  "P-54.4.1:clause:0004"
+                ],
+                "expression_id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg1.arg.left",
+                "name": "name",
+                "op": "var"
+              },
+              "op": "compare",
+              "relation": "contains",
+              "right": {
+                "clause_ids": [
+                  "P-54.4.1:clause:0004"
+                ],
+                "expression_id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg1.arg.right",
+                "op": "literal",
+                "value": "dehydro"
+              }
+            },
+            "clause_ids": [
+              "P-54.4.1:clause:0004"
+            ],
+            "expression_id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg1",
+            "op": "not"
+          },
+          {
+            "clause_ids": [
+              "P-54.4.1:clause:0004"
+            ],
+            "expression_id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg2",
+            "left": {
+              "clause_ids": [
+                "P-54.4.1:clause:0004"
+              ],
+              "expression_id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg2.left",
+              "from": {
+                "clause_ids": [
+                  "P-54.4.1:clause:0004"
+                ],
+                "expression_id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg2.left.from",
+                "name": "name",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "regime"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-54.4.1:clause:0004"
+              ],
+              "expression_id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion.arg2.right",
+              "op": "literal",
+              "value": "general_nomenclature"
+            }
+          }
+        ],
+        "clause_ids": [
+          "P-54.4.1:clause:0004"
+        ],
+        "expression_id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.assertion",
+        "op": "any"
+      },
+      "clause_ids": [
+        "P-54.4.1:clause:0004"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "HantzschWidmanName"
+        }
+      ],
+      "kind": "constraint",
+      "on_violation": [
+        {
+          "clause_ids": [
+            "P-54.4.1:clause:0004"
+          ],
+          "op": "reject",
+          "reason_code": "reason.dehydro_hantzsch_widman_name_not_allowed_as_pin",
+          "statement_id": "stmt.p54.part001.dehydro_hantzsch_widman_general_only.violation.1",
+          "target": "name"
+        }
+      ],
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.1:clause:0004"
+          ],
+          "expression_id": "expr.p54.part001.dehydro_hantzsch_widman_general_only.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "unit_id": "unit.p54.part001.dehydro_hantzsch_widman_general_only"
+    },
+    {
+      "clause_ids": [
+        "P-54.4.1:clause:0005",
+        "P-54.4.1:clause:0006"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "nomenclature_regime",
+          "type": "NomenclatureRegime"
+        }
+      ],
+      "kind": "mapping",
+      "outputs": [
+        {
+          "name": "final_e_status",
+          "type": "OrthographicRequirement"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.1:clause:0005",
+            "P-54.4.1:clause:0006"
+          ],
+          "expression_id": "expr.p54.part001.hantzsch_widman_final_e_policy.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "table_id": "table.p54.part001.hantzsch_widman_final_e_by_regime",
+      "unit_id": "unit.p54.part001.hantzsch_widman_final_e_policy"
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0002"
+      ],
+      "entity_type": "SaturatedHeteromonocycle",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "ring",
+          "type": "SaturatedHeteromonocycle"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "preferred_method",
+          "type": "HeteromonocycleNamingMethod"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.2:clause:0002"
+          ],
+          "expression_id": "expr.p54.part001.saturated_heteromonocycle_pin_methods.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "preferred saturated heteromonocycle naming method",
+      "unit_id": "unit.p54.part001.saturated_heteromonocycle_pin_methods",
+      "value": {
+        "clause_ids": [
+          "P-54.4.2:clause:0002"
+        ],
+        "expression_id": "expr.p54.part001.saturated_heteromonocycle_pin_methods.value",
+        "op": "literal",
+        "value": {
+          "methods": [
+            "Hantzsch-Widman name",
+            "retained name from Table 2.3"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.2:clause:0003"
+      ],
+      "else": [],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "SaturatedHeteromonocycleName"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "use_status",
+          "type": "NomenclatureUseStatus"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.2:clause:0003"
+          ],
+          "expression_id": "expr.p54.part001.nonpreferred_saturated_ring_names_general_permission.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-54.4.2:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.nonpreferred_saturated_ring_names_general_permission.then.1",
+          "target": "use_status",
+          "value": {
+            "clause_ids": [
+              "P-54.4.2:clause:0003"
+            ],
+            "expression_id": "expr.p54.part001.nonpreferred_saturated_ring_names_general_permission.then.1.value",
+            "op": "literal",
+            "value": {
+              "general_nomenclature": "permitted",
+              "preferred_iupac_name": false
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.nonpreferred_saturated_ring_names_general_permission",
+      "when": {
+        "clause_ids": [
+          "P-54.4.2:clause:0003"
+        ],
+        "expression_id": "expr.p54.part001.nonpreferred_saturated_ring_names_general_permission.when",
+        "op": "literal",
+        "value": {
+          "derived_by": [
+            "maximum hydro prefixes on Hantzsch-Widman or retained names",
+            "cyclo nomenclature"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0001",
+        "P-54.4.3.1:clause:0002"
+      ],
+      "entity_type": "FusedRingSystem",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "ring_system",
+          "type": "FusedRingSystem"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "name_status",
+          "type": "NomenclatureUseStatus"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.3.1:clause:0001",
+            "P-54.4.3.1:clause:0002"
+          ],
+          "expression_id": "expr.p54.part001.retained_fusion_name_fully_unsaturated_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "retained fusion name for a fully unsaturated compound",
+      "unit_id": "unit.p54.part001.retained_fusion_name_fully_unsaturated_scope",
+      "value": {
+        "clause_ids": [
+          "P-54.4.3.1:clause:0001",
+          "P-54.4.3.1:clause:0002"
+        ],
+        "expression_id": "expr.p54.part001.retained_fusion_name_fully_unsaturated_scope.value",
+        "op": "literal",
+        "value": {
+          "name_form": "retained fusion name",
+          "saturation_state": "fully unsaturated",
+          "status": "preferred IUPAC name"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "retained_fusion_name",
+          "type": "RetainedFusionName"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "FusedRingSystemName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.3.1:clause:0003"
+          ],
+          "expression_id": "expr.p54.part001.fused_system_hydro_pin_construction.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "steps": [
+        {
+          "args": [
+            {
+              "clause_ids": [
+                "P-54.4.3.1:clause:0003"
+              ],
+              "expression_id": "expr.p54.part001.fused_system_hydro_pin_construction.steps.1.arg1",
+              "name": "retained_fusion_name",
+              "op": "var"
+            }
+          ],
+          "clause_ids": [
+            "P-54.4.3.1:clause:0003"
+          ],
+          "op": "transform",
+          "statement_id": "stmt.p54.part001.fused_system_hydro_pin_construction.steps.1",
+          "target": "name",
+          "transformation": "name.add_hydro_prefixes"
+        }
+      ],
+      "unit_id": "unit.p54.part001.fused_system_hydro_pin_construction"
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0004"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "ring_assembly",
+          "type": "MancudeRingAssembly"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "RingAssemblyName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.3.1:clause:0004"
+          ],
+          "expression_id": "expr.p54.part001.mancude_ring_assembly_hydro_pin_construction.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "steps": [
+        {
+          "args": [
+            {
+              "clause_ids": [
+                "P-54.4.3.1:clause:0004"
+              ],
+              "expression_id": "expr.p54.part001.mancude_ring_assembly_hydro_pin_construction.steps.1.arg1",
+              "name": "ring_assembly",
+              "op": "var"
+            }
+          ],
+          "clause_ids": [
+            "P-54.4.3.1:clause:0004"
+          ],
+          "op": "transform",
+          "statement_id": "stmt.p54.part001.mancude_ring_assembly_hydro_pin_construction.steps.1",
+          "target": "name",
+          "transformation": "name.add_hydro_prefixes"
+        }
+      ],
+      "unit_id": "unit.p54.part001.mancude_ring_assembly_hydro_pin_construction"
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0005"
+      ],
+      "entity_type": "HydrogenationPrefix",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "prefix",
+          "type": "HydrogenationPrefix"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "classification",
+          "type": "PrefixClassification"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.3.1:clause:0005"
+          ],
+          "expression_id": "expr.p54.part001.hydro_prefix_classification_for_fused_systems.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "hydro prefix classification",
+      "unit_id": "unit.p54.part001.hydro_prefix_classification_for_fused_systems",
+      "value": {
+        "clause_ids": [
+          "P-54.4.3.1:clause:0005"
+        ],
+        "expression_id": "expr.p54.part001.hydro_prefix_classification_for_fused_systems.value",
+        "op": "literal",
+        "value": {
+          "alphabetized_detachable_prefix": false,
+          "detachable": true,
+          "prefix": "hydro"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.1:clause:0007"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "parent_hydride",
+          "type": "FusedRingParentHydride"
+        },
+        {
+          "name": "hydro_prefixes",
+          "type": "HydroPrefixes"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "locants",
+          "type": "LocantAssignment"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.3.1:clause:0007"
+          ],
+          "expression_id": "expr.p54.part001.fused_system_hydro_locant_assignment.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-54.4.3.1:clause:0007"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.fused_system_hydro_locant_assignment.steps.1",
+          "target": "locants",
+          "value": {
+            "clause_ids": [
+              "P-54.4.3.1:clause:0007"
+            ],
+            "expression_id": "expr.p54.part001.fused_system_hydro_locant_assignment.steps.1.value",
+            "op": "literal",
+            "value": {
+              "parent_numbering": "retained",
+              "principle": "lowest locants",
+              "priorities_before_hydro": [
+                "indicated hydrogen",
+                "added indicated hydrogen",
+                "suffixes"
+              ]
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.fused_system_hydro_locant_assignment"
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.2:clause:0002"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "retained_name",
+          "type": "PartiallySaturatedHeterocycleRetainedName"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "use_status",
+          "type": "NomenclatureUseStatus"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.3.2:clause:0002"
+          ],
+          "expression_id": "expr.p54.part001.partially_saturated_heterocycle_retained_name_policy.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-54.4.3.2:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.partially_saturated_heterocycle_retained_name_policy.then.1",
+          "target": "use_status",
+          "value": {
+            "clause_ids": [
+              "P-54.4.3.2:clause:0002"
+            ],
+            "expression_id": "expr.p54.part001.partially_saturated_heterocycle_retained_name_policy.then.1.value",
+            "op": "literal",
+            "value": {
+              "general_nomenclature": "acceptable",
+              "preferred_iupac_name": false
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.partially_saturated_heterocycle_retained_name_policy",
+      "when": {
+        "clause_ids": [
+          "P-54.4.3.2:clause:0002"
+        ],
+        "expression_id": "expr.p54.part001.partially_saturated_heterocycle_retained_name_policy.when",
+        "op": "literal",
+        "value": {
+          "names": [
+            "indane",
+            "indoline",
+            "isoindoline",
+            "chromane",
+            "isochromane",
+            "chalcogen analogues"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.3.2:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "retained_mancude_name",
+          "type": "RetainedMancudeName"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "PartiallySaturatedHeterocycleName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.3.2:clause:0003"
+          ],
+          "expression_id": "expr.p54.part001.partially_saturated_heterocycle_hydro_pin_construction.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "steps": [
+        {
+          "args": [
+            {
+              "clause_ids": [
+                "P-54.4.3.2:clause:0003"
+              ],
+              "expression_id": "expr.p54.part001.partially_saturated_heterocycle_hydro_pin_construction.steps.1.arg1",
+              "name": "retained_mancude_name",
+              "op": "var"
+            }
+          ],
+          "clause_ids": [
+            "P-54.4.3.2:clause:0003"
+          ],
+          "op": "transform",
+          "statement_id": "stmt.p54.part001.partially_saturated_heterocycle_hydro_pin_construction.steps.1",
+          "target": "name",
+          "transformation": "name.add_hydro_prefixes"
+        }
+      ],
+      "unit_id": "unit.p54.part001.partially_saturated_heterocycle_hydro_pin_construction"
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "mancude_parent",
+          "type": "MancudeParentHydride"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "ParentHydrideName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.4:clause:0002"
+          ],
+          "expression_id": "expr.p54.part001.dehydro_mancude_pin_construction.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "steps": [
+        {
+          "args": [
+            {
+              "clause_ids": [
+                "P-54.4.4:clause:0002"
+              ],
+              "expression_id": "expr.p54.part001.dehydro_mancude_pin_construction.steps.1.arg1",
+              "name": "mancude_parent",
+              "op": "var"
+            }
+          ],
+          "clause_ids": [
+            "P-54.4.4:clause:0002"
+          ],
+          "op": "transform",
+          "statement_id": "stmt.p54.part001.dehydro_mancude_pin_construction.steps.1",
+          "target": "name",
+          "transformation": "name.add_dehydro_prefixes"
+        }
+      ],
+      "unit_id": "unit.p54.part001.dehydro_mancude_pin_construction"
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0003"
+      ],
+      "else": [],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "saturated_parent",
+          "type": "SaturatedParentHydride"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "introduced_bond_types",
+          "type": "BondTypeSet"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.4:clause:0003"
+          ],
+          "expression_id": "expr.p54.part001.dehydro_saturated_parent_general_permission.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-54.4.4:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.dehydro_saturated_parent_general_permission.then.1",
+          "target": "introduced_bond_types",
+          "value": {
+            "clause_ids": [
+              "P-54.4.4:clause:0003"
+            ],
+            "expression_id": "expr.p54.part001.dehydro_saturated_parent_general_permission.then.1.value",
+            "op": "literal",
+            "value": [
+              "double",
+              "triple"
+            ]
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.dehydro_saturated_parent_general_permission",
+      "when": {
+        "clause_ids": [
+          "P-54.4.4:clause:0003"
+        ],
+        "expression_id": "expr.p54.part001.dehydro_saturated_parent_general_permission.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0004"
+      ],
+      "entity_type": "HydrogenationPrefix",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "prefix",
+          "type": "HydrogenationPrefix"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "classification",
+          "type": "PrefixClassification"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.4:clause:0004"
+          ],
+          "expression_id": "expr.p54.part001.dehydro_prefix_classification.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "dehydro prefix classification",
+      "unit_id": "unit.p54.part001.dehydro_prefix_classification",
+      "value": {
+        "clause_ids": [
+          "P-54.4.4:clause:0004"
+        ],
+        "expression_id": "expr.p54.part001.dehydro_prefix_classification.value",
+        "op": "literal",
+        "value": {
+          "alphabetized_detachable_prefix": false,
+          "detachable": true,
+          "prefix": "dehydro"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-54.4.4:clause:0006"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "parent_hydride",
+          "type": "ParentHydride"
+        },
+        {
+          "name": "dehydro_prefixes",
+          "type": "DehydroPrefixes"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "locants",
+          "type": "LocantAssignment"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-54.4.4:clause:0006"
+          ],
+          "expression_id": "expr.p54.part001.dehydro_modifier_locant_assignment.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-54.4.4:clause:0006"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p54.part001.dehydro_modifier_locant_assignment.steps.1",
+          "target": "locants",
+          "value": {
+            "clause_ids": [
+              "P-54.4.4:clause:0006"
+            ],
+            "expression_id": "expr.p54.part001.dehydro_modifier_locant_assignment.steps.1.value",
+            "op": "literal",
+            "value": {
+              "parent_numbering": "retained",
+              "principle": "lowest locants",
+              "priorities_before_dehydro": [
+                "indicated hydrogen",
+                "added indicated hydrogen",
+                "suffixes"
+              ]
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p54.part001.dehydro_modifier_locant_assignment"
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [
+    {
+      "arguments": [
+        {
+          "name": "source",
+          "type": "name"
+        }
+      ],
+      "description": "Add the required hydro prefixes to a parent or retained name.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "add_hydro_prefixes",
+        "refs": []
+      },
+      "kind": "transformation",
+      "returns": "name",
+      "symbol_id": "name.add_hydro_prefixes"
+    },
+    {
+      "arguments": [
+        {
+          "name": "source",
+          "type": "name"
+        }
+      ],
+      "description": "Add the required dehydro prefixes to a parent name.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "add_dehydro_prefixes",
+        "refs": []
+      },
+      "kind": "transformation",
+      "returns": "name",
+      "symbol_id": "name.add_dehydro_prefixes"
+    },
+    {
+      "arguments": [],
+      "description": "Reason emitted when dehydro hantzsch widman name not allowed as pin.",
+      "grounding": {
+        "kind": "composition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "stmt.p54.part001.dehydro_hantzsch_widman_general_only.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "kind": "reason_code",
+      "returns": "reason_code",
+      "symbol_id": "reason.dehydro_hantzsch_widman_name_not_allowed_as_pin"
+    }
+  ],
+  "tables": [
+    {
+      "clause_ids": [
+        "P-54.1:clause:0002",
+        "P-54.1:clause:0003",
+        "P-54.1:clause:0004",
+        "P-54.1:clause:0005"
+      ],
+      "columns": [
+        {
+          "clause_ids": [
+            "P-54.1:clause:0002",
+            "P-54.1:clause:0003",
+            "P-54.1:clause:0004",
+            "P-54.1:clause:0005"
+          ],
+          "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.parent_class",
+          "label": "Parent class",
+          "ordinal": 1,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-54.1:clause:0003",
+            "P-54.1:clause:0004",
+            "P-54.1:clause:0005"
+          ],
+          "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.method",
+          "label": "Method",
+          "ordinal": 2,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-54.1:clause:0003",
+            "P-54.1:clause:0004",
+            "P-54.1:clause:0005"
+          ],
+          "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.effect",
+          "label": "Effect",
+          "ordinal": 3,
+          "value_type": "string"
+        }
+      ],
+      "contract": {
+        "cardinality": "one_to_one",
+        "key_column_ids": [
+          "column.p54.part001.parent_hydride_hydrogenation_method_inventory.parent_class",
+          "column.p54.part001.parent_hydride_hydrogenation_method_inventory.method"
+        ],
+        "ordering": "source_order",
+        "result_column_ids": [
+          "column.p54.part001.parent_hydride_hydrogenation_method_inventory.effect"
+        ]
+      },
+      "footnotes": [],
+      "label": null,
+      "rows": [
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.acyclic_endings.parent_class",
+              "clause_ids": [
+                "P-54.1:clause:0003"
+              ],
+              "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.parent_class",
+              "value": "acyclic parent hydride"
+            },
+            {
+              "cell_id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.acyclic_endings.method",
+              "clause_ids": [
+                "P-54.1:clause:0003"
+              ],
+              "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.method",
+              "value": "change ane to ene or yne"
+            },
+            {
+              "cell_id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.acyclic_endings.effect",
+              "clause_ids": [
+                "P-54.1:clause:0003"
+              ],
+              "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.effect",
+              "value": "introduce double or triple bond endings"
+            }
+          ],
+          "clause_ids": [
+            "P-54.1:clause:0003"
+          ],
+          "ordinal": 1,
+          "rank_group": null,
+          "row_id": "row.p54.part001.parent_hydride_hydrogenation_method_inventory.acyclic_endings"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_hydro.parent_class",
+              "clause_ids": [
+                "P-54.1:clause:0004"
+              ],
+              "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.parent_class",
+              "value": "mancude compound"
+            },
+            {
+              "cell_id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_hydro.method",
+              "clause_ids": [
+                "P-54.1:clause:0004"
+              ],
+              "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.method",
+              "value": "use hydro prefixes"
+            },
+            {
+              "cell_id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_hydro.effect",
+              "clause_ids": [
+                "P-54.1:clause:0004"
+              ],
+              "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.effect",
+              "value": "saturate one or more double bonds"
+            }
+          ],
+          "clause_ids": [
+            "P-54.1:clause:0004"
+          ],
+          "ordinal": 2,
+          "rank_group": null,
+          "row_id": "row.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_hydro"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_dehydro.parent_class",
+              "clause_ids": [
+                "P-54.1:clause:0005"
+              ],
+              "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.parent_class",
+              "value": "mancude compound"
+            },
+            {
+              "cell_id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_dehydro.method",
+              "clause_ids": [
+                "P-54.1:clause:0005"
+              ],
+              "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.method",
+              "value": "use dehydro prefixes"
+            },
+            {
+              "cell_id": "cell.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_dehydro.effect",
+              "clause_ids": [
+                "P-54.1:clause:0005"
+              ],
+              "column_id": "column.p54.part001.parent_hydride_hydrogenation_method_inventory.effect",
+              "value": "introduce triple bonds"
+            }
+          ],
+          "clause_ids": [
+            "P-54.1:clause:0005"
+          ],
+          "ordinal": 3,
+          "rank_group": null,
+          "row_id": "row.p54.part001.parent_hydride_hydrogenation_method_inventory.mancude_dehydro"
+        }
+      ],
+      "table_id": "table.p54.part001.parent_hydride_hydrogenation_method_inventory",
+      "title": "Methods for modifying the degree of hydrogenation of parent hydrides"
+    },
+    {
+      "clause_ids": [
+        "P-54.2:clause:0002",
+        "P-54.2:clause:0003",
+        "P-54.2:clause:0004"
+      ],
+      "columns": [
+        {
+          "clause_ids": [
+            "P-54.2:clause:0002",
+            "P-54.2:clause:0003",
+            "P-54.2:clause:0004"
+          ],
+          "column_id": "column.p54.part001.monocyclic_carbocycle_method_inventory.method",
+          "label": "Method",
+          "ordinal": 1,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-54.2:clause:0003",
+            "P-54.2:clause:0004"
+          ],
+          "column_id": "column.p54.part001.monocyclic_carbocycle_method_inventory.name_form",
+          "label": "Name form",
+          "ordinal": 2,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-54.2:clause:0003",
+            "P-54.2:clause:0004"
+          ],
+          "column_id": "column.p54.part001.monocyclic_carbocycle_method_inventory.pin_status",
+          "label": "PIN status",
+          "ordinal": 3,
+          "value_type": "string"
+        }
+      ],
+      "contract": {
+        "cardinality": "one_to_one",
+        "key_column_ids": [
+          "column.p54.part001.monocyclic_carbocycle_method_inventory.method"
+        ],
+        "ordering": "source_order",
+        "result_column_ids": [
+          "column.p54.part001.monocyclic_carbocycle_method_inventory.name_form",
+          "column.p54.part001.monocyclic_carbocycle_method_inventory.pin_status"
+        ]
+      },
+      "footnotes": [],
+      "label": null,
+      "rows": [
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.ene_yne.method",
+              "clause_ids": [
+                "P-54.2:clause:0003"
+              ],
+              "column_id": "column.p54.part001.monocyclic_carbocycle_method_inventory.method",
+              "value": "ene_yne_endings"
+            },
+            {
+              "cell_id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.ene_yne.name_form",
+              "clause_ids": [
+                "P-54.2:clause:0003"
+              ],
+              "column_id": "column.p54.part001.monocyclic_carbocycle_method_inventory.name_form",
+              "value": "use ene and yne endings"
+            },
+            {
+              "cell_id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.ene_yne.pin_status",
+              "clause_ids": [
+                "P-54.2:clause:0003"
+              ],
+              "column_id": "column.p54.part001.monocyclic_carbocycle_method_inventory.pin_status",
+              "value": "preferred"
+            }
+          ],
+          "clause_ids": [
+            "P-54.2:clause:0003"
+          ],
+          "ordinal": 1,
+          "rank_group": null,
+          "row_id": "row.p54.part001.monocyclic_carbocycle_method_inventory.ene_yne"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.annulene.method",
+              "clause_ids": [
+                "P-54.2:clause:0004"
+              ],
+              "column_id": "column.p54.part001.monocyclic_carbocycle_method_inventory.method",
+              "value": "annulene_parent"
+            },
+            {
+              "cell_id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.annulene.name_form",
+              "clause_ids": [
+                "P-54.2:clause:0004"
+              ],
+              "column_id": "column.p54.part001.monocyclic_carbocycle_method_inventory.name_form",
+              "value": "use the parent name annulene"
+            },
+            {
+              "cell_id": "cell.p54.part001.monocyclic_carbocycle_method_inventory.annulene.pin_status",
+              "clause_ids": [
+                "P-54.2:clause:0004"
+              ],
+              "column_id": "column.p54.part001.monocyclic_carbocycle_method_inventory.pin_status",
+              "value": "not selected as preferred method"
+            }
+          ],
+          "clause_ids": [
+            "P-54.2:clause:0004"
+          ],
+          "ordinal": 2,
+          "rank_group": null,
+          "row_id": "row.p54.part001.monocyclic_carbocycle_method_inventory.annulene"
+        }
+      ],
+      "table_id": "table.p54.part001.monocyclic_carbocycle_method_inventory",
+      "title": "Methods for modifying monocyclic carbocycle hydrogenation"
+    },
+    {
+      "clause_ids": [
+        "P-54.4.1:clause:0005",
+        "P-54.4.1:clause:0006"
+      ],
+      "columns": [
+        {
+          "clause_ids": [
+            "P-54.4.1:clause:0005",
+            "P-54.4.1:clause:0006"
+          ],
+          "column_id": "column.p54.part001.hantzsch_widman_final_e_by_regime.regime",
+          "label": "Nomenclature regime",
+          "ordinal": 1,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-54.4.1:clause:0005",
+            "P-54.4.1:clause:0006"
+          ],
+          "column_id": "column.p54.part001.hantzsch_widman_final_e_by_regime.final_e_status",
+          "label": "Final e status",
+          "ordinal": 2,
+          "value_type": "string"
+        }
+      ],
+      "contract": {
+        "cardinality": "one_to_one",
+        "key_column_ids": [
+          "column.p54.part001.hantzsch_widman_final_e_by_regime.regime"
+        ],
+        "ordering": "source_order",
+        "result_column_ids": [
+          "column.p54.part001.hantzsch_widman_final_e_by_regime.final_e_status"
+        ]
+      },
+      "footnotes": [],
+      "label": null,
+      "rows": [
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p54.part001.hantzsch_widman_final_e_by_regime.pin.regime",
+              "clause_ids": [
+                "P-54.4.1:clause:0005"
+              ],
+              "column_id": "column.p54.part001.hantzsch_widman_final_e_by_regime.regime",
+              "value": "preferred IUPAC name"
+            },
+            {
+              "cell_id": "cell.p54.part001.hantzsch_widman_final_e_by_regime.pin.final_e_status",
+              "clause_ids": [
+                "P-54.4.1:clause:0005"
+              ],
+              "column_id": "column.p54.part001.hantzsch_widman_final_e_by_regime.final_e_status",
+              "value": "required"
+            }
+          ],
+          "clause_ids": [
+            "P-54.4.1:clause:0005"
+          ],
+          "ordinal": 1,
+          "rank_group": null,
+          "row_id": "row.p54.part001.hantzsch_widman_final_e_by_regime.pin"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p54.part001.hantzsch_widman_final_e_by_regime.general.regime",
+              "clause_ids": [
+                "P-54.4.1:clause:0006"
+              ],
+              "column_id": "column.p54.part001.hantzsch_widman_final_e_by_regime.regime",
+              "value": "general nomenclature"
+            },
+            {
+              "cell_id": "cell.p54.part001.hantzsch_widman_final_e_by_regime.general.final_e_status",
+              "clause_ids": [
+                "P-54.4.1:clause:0006"
+              ],
+              "column_id": "column.p54.part001.hantzsch_widman_final_e_by_regime.final_e_status",
+              "value": "optional"
+            }
+          ],
+          "clause_ids": [
+            "P-54.4.1:clause:0006"
+          ],
+          "ordinal": 2,
+          "rank_group": null,
+          "row_id": "row.p54.part001.hantzsch_widman_final_e_by_regime.general"
+        }
+      ],
+      "table_id": "table.p54.part001.hantzsch_widman_final_e_by_regime",
+      "title": "Final e in Hantzsch-Widman names"
+    }
+  ]
+}

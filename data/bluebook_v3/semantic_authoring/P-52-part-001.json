@@ -1,0 +1,913 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-52-part-001",
+  "mechanical_assets": true,
+  "clauses": [
+    ["scope","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    ["effect","normative","compile"],
+    ["permission","normative","compile"],
+    null,
+    null,
+    ["cross_reference","informative","compile"],
+    ["effect","normative","compile"],
+    ["permission","normative","compile"],
+    ["cross_reference","informative","compile"],
+    ["effect","normative","compile"],
+    ["permission","normative","compile"],
+    ["cross_reference","informative","compile"],
+    ["history","informative","compile"],
+    ["rationale","informative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    ["cross_reference","informative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    null,
+    ["scope","normative","compile"],
+    ["constraint","normative","compile"],
+    ["permission","normative","compile"],
+    ["history","informative","compile"],
+    ["history","informative","compile"],
+    ["preference_criterion","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    ["permission","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    ["cross_reference","informative","compile"],
+    null,
+    ["scope","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    ["permission","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["scope","normative","compile"],
+    ["effect","normative","compile"],
+    ["permission","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["effect","normative","compile"],
+    ["permission","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["effect","normative","compile"],
+    ["permission","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    null,
+    null,
+    ["scope","normative","compile"],
+    ["effect","normative","compile"],
+    ["constraint","normative","compile"],
+    ["permission","normative","compile"],
+    ["permission","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["scope","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    ["permission","normative","compile"],
+    ["constraint","normative","compile"],
+    ["permission","normative","compile"],
+    ["history","informative","compile"],
+    ["history","informative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["scope","normative","compile"],
+    ["effect","normative","compile"],
+    ["cross_reference","informative","compile"],
+    ["permission","normative","compile"],
+    ["prohibition","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["scope","normative","compile"],
+    ["scope","normative","compile"],
+    ["constraint","normative","compile"],
+    ["permission","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    ["history","informative","compile"],
+    ["constraint","normative","compile"],
+    ["history","informative","compile"],
+    ["permission","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["scope","normative","compile"],
+    ["effect","normative","compile"],
+    ["prohibition","normative","compile"],
+    ["example","illustrative","compile"],
+    ["cross_reference","informative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    ["cross_reference","informative","compile"],
+    null
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "parent_hydride_name_selection",
+      "k": "definition",
+      "f": "preference",
+      "c": [1, 2, 3, 4],
+      "out": [["selection_policy", "ParentHydrideNameSelectionPolicy"]],
+      "term": "preferred and preselected parent-hydride name selection",
+      "entity": "ParentHydrideNameSelectionPolicy",
+      "value": ["lit", {
+        "single_method": "The single resulting name is naturally the preferred IUPAC name.",
+        "multiple_methods": "Choose a preferred IUPAC name and, in some cases, a preselected name.",
+        "retained_names": "Some retained names are preferred IUPAC names and are also available in general nomenclature.",
+        "parent_hydride_scope": "Chapter P-2"
+      }]
+    },
+    {
+      "id": "mononuclear_parent_hydride_name_policy",
+      "k": "definition",
+      "f": "preference",
+      "c": [7, 8, 9],
+      "out": [["name_policy", "MononuclearParentHydrideNamePolicy"]],
+      "term": "mononuclear parent-hydride preselected and retained names",
+      "entity": "MononuclearParentHydrideNamePolicy",
+      "value": ["lit", {
+        "source_rule": "P-21.1.1",
+        "preselected_names": {
+          "PH3": "phosphane",
+          "AsH3": "arsane",
+          "SbH3": "stibane",
+          "BiH3": "bismuthane"
+        },
+        "general_nomenclature_retained_names": ["phosphine", "arsine", "stibine", "bismuthine"]
+      }]
+    },
+    {
+      "id": "homogeneous_acyclic_polynuclear_parent_hydride_policy",
+      "k": "definition",
+      "f": "preference",
+      "c": [10, 11, 12],
+      "out": [["name_policy", "PolynuclearParentHydrideNamePolicy"]],
+      "term": "homogeneous acyclic polynuclear parent-hydride names",
+      "entity": "PolynuclearParentHydrideNamePolicy",
+      "value": ["lit", {
+        "source_rule": "P-21.2.2",
+        "structure": "NH2-NH2",
+        "preselected_name": "hydrazine",
+        "general_nomenclature_name": "diazane"
+      }]
+    },
+    {
+      "id": "alternating_acyclic_parent_hydride_policy_history",
+      "k": "definition",
+      "f": "definition",
+      "c": [13, 14, 15],
+      "out": [["policy_change", "NomenclaturePolicyChange"]],
+      "term": "policy changes for alternating acyclic parent hydrides",
+      "entity": "NomenclaturePolicyChange",
+      "value": ["lit", {
+        "current_policy": "Recognize the amine characteristic group in a(ba)n parent hydrides.",
+        "earlier_policy": "The amine characteristic group was not recognized.",
+        "earlier_conflict": "Carbon was not excluded as a b element, causing conflicts with heterane priority."
+      }]
+    },
+    {
+      "id": "alternating_acyclic_parent_hydride_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [17, 18, 19, 20],
+      "out": [["name_examples", "ParentHydrideNameExamples"]],
+      "term": "alternating acyclic parent-hydride name examples",
+      "entity": "ParentHydrideNameExamples",
+      "value": ["lit", {
+        "SnH3-O-SnH2-O-SnH3": "tristannoxane",
+        "CH3-NH-CH3": "N-methylmethanamine",
+        "HSe-S-Se-S-SeH": "triselenathiane",
+        "SiH3-NH-SiH2-NH-SiH3": "N,N'-disilylsilanediamine"
+      }]
+    },
+    {
+      "id": "nonstandard_bonding_number_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [21, 23, 24, 25, 26, 27, 28, 29, 30],
+      "out": [["name_examples", "NonstandardBondingNumberNameExamples"]],
+      "term": "preselected names with nonstandard bonding numbers",
+      "entity": "NonstandardBondingNumberNameExamples",
+      "value": ["lit", {
+        "PH5": "lambda(5)-phosphane",
+        "AsH5": "lambda(5)-arsane",
+        "SH4": "lambda(4)-sulfane",
+        "SH6": "lambda(6)-sulfane",
+        "IH3": "lambda(3)-iodane",
+        "IH5": "lambda(5)-iodane",
+        "SbH5": "lambda(5)-stibane",
+        "sulfur_chain": "2-lambda(4)-trisulfane"
+      }]
+    },
+    {
+      "id": "hantzsch_widman_final_e_policy_preselected_names",
+      "k": "definition",
+      "f": "required",
+      "c": [32, 33, 34, 35, 36],
+      "out": [["ending_policy", "HantzschWidmanEndingPolicy"]],
+      "term": "final e policy for Hantzsch-Widman names",
+      "entity": "HantzschWidmanEndingPolicy",
+      "value": ["lit", {
+        "preferred_iupac_names": "The final e is required.",
+        "general_nomenclature": "The final e is optional.",
+        "1979_rules": "The final e was omitted when the ring contained no nitrogen.",
+        "1993_guide": "That omission became optional."
+      }]
+    },
+    {
+      "id": "homogeneous_heteromonocycle_name_selection",
+      "k": "definition",
+      "f": "preference",
+      "c": [37, 38, 39],
+      "out": [["selection_policy", "HomogeneousHeteromonocycleNameSelection"]],
+      "term": "name selection for homogeneous heteromonocyclic parent hydrides",
+      "entity": "HomogeneousHeteromonocycleNameSelection",
+      "value": ["lit", {
+        "at_most_ten_ring_members": "Use the Hantzsch-Widman name as the preselected name.",
+        "more_than_ten_ring_members": "Use the skeletal replacement name as the preselected name.",
+        "general_nomenclature": "A name formed with the prefix cyclo is an alternative."
+      }]
+    },
+    {
+      "id": "homogeneous_heteromonocycle_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [41, 43, 45, 46],
+      "out": [["name_examples", "HeteromonocycleNameExamples"]],
+      "term": "homogeneous heteromonocyclic parent-hydride examples",
+      "entity": "HeteromonocycleNameExamples",
+      "value": ["lit", {
+        "pentazolidine": "preselected name; cyclopentaazane is the alternative",
+        "hexagerminane": "preselected name; cyclohexagermane is the alternative",
+        "dodecasilacyclododecane": "preselected name; cyclododecasilane is the alternative"
+      }]
+    },
+    {
+      "id": "alternating_heteromonocycle_name_selection",
+      "k": "definition",
+      "f": "preference",
+      "c": [48, 49, 50, 51],
+      "out": [["selection_policy", "AlternatingHeteromonocycleNameSelection"]],
+      "term": "name selection for alternating heterogeneous heteromonocycles",
+      "entity": "AlternatingHeteromonocycleNameSelection",
+      "value": ["lit", {
+        "at_most_ten_ring_members": "Use the Hantzsch-Widman name as the preselected name.",
+        "more_than_ten_ring_members": "Use the skeletal replacement name as the preselected name.",
+        "general_nomenclature_only": "A name formed with the prefix cyclo is an alternative."
+      }]
+    },
+    {
+      "id": "alternating_heteromonocycle_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [53, 55],
+      "out": [["name_examples", "AlternatingHeteromonocycleExamples"]],
+      "term": "alternating heterogeneous heteromonocycle examples",
+      "entity": "AlternatingHeteromonocycleExamples",
+      "value": ["lit", {
+        "six_membered": "1,3,5,2,4,6-triphosphatriborinane",
+        "fourteen_membered": "1,3,5,7,9,11,13-heptaoxa-2,4,6,8,10,12,14-heptasilacyclotetradecane"
+      }]
+    },
+    {
+      "id": "same_heteroatom_von_baeyer_name_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [58, 59],
+      "in": [["parent_hydride", "SameHeteroatomVonBaeyerOrSpiroParentHydride"]],
+      "out": [["name_policy", "PolycyclicParentHydrideNamePolicy"]],
+      "steps": [
+        ["set", "name_policy", ["lit", {
+          "preselected_name": "Cite bicyclo, spiro, or another appropriate prefix and bracketed descriptor, followed by a numerical prefix for the total heteroatom count and the mononuclear parent-hydride name.",
+          "general_nomenclature": "Use the skeletal replacement name as an alternative.",
+          "references": ["P-23.4", "P-24.2.4.2"]
+        }]]
+      ]
+    },
+    {
+      "id": "heterocyclic_noncarbon_polycycle_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [57],
+      "out": [["scope", "HeterocyclicNoncarbonPolycycleScope"]],
+      "term": "heterocyclic noncarbon von Baeyer and spiro compounds",
+      "entity": "HeterocyclicNoncarbonPolycycleScope",
+      "value": ["lit", {"rule": "P-52.1.6", "scope": ["von Baeyer compounds", "spiro compounds"]}]
+    },
+    {
+      "id": "same_heteroatom_von_baeyer_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [61, 63],
+      "out": [["name_examples", "VonBaeyerParentHydrideExamples"]],
+      "term": "same-heteroatom von Baeyer parent-hydride examples",
+      "entity": "VonBaeyerParentHydrideExamples",
+      "value": ["lit", {
+        "bicyclic": "bicyclo[4.2.1]nonasilane",
+        "tricyclic": "tricyclo[5.3.1.1(2,6)]dodecasilane"
+      }]
+    },
+    {
+      "id": "alternating_heteroatom_polycycle_name_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [65, 66],
+      "in": [["parent_hydride", "AlternatingHeteroatomVonBaeyerOrSpiroParentHydride"]],
+      "out": [["name_policy", "PolycyclicParentHydrideNamePolicy"]],
+      "steps": [
+        ["set", "name_policy", ["lit", {
+          "preselected_name": "Cite the appropriate polycyclic prefix and bracketed descriptor, then the number and skeletal-replacement name of the a heteroatom and the skeletal-replacement name of the b heteroatom.",
+          "general_nomenclature": "Use the skeletal replacement name as an alternative.",
+          "reference": "P-24.2.4.3"
+        }]]
+      ]
+    },
+    {
+      "id": "alternating_heteroatom_polycycle_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [68, 70],
+      "out": [["name_examples", "AlternatingHeteroatomPolycycleExamples"]],
+      "term": "alternating-heteroatom polycyclic parent-hydride examples",
+      "entity": "AlternatingHeteroatomPolycycleExamples",
+      "value": ["lit", {
+        "spiro": "spiro[5.5]pentasiloxane",
+        "tricyclic": "tricyclo[3.3.1.1(3,7)]tetrasiloxane"
+      }]
+    },
+    {
+      "id": "fused_heteropolycycle_name_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [72, 73],
+      "in": [["ring_system", "FusedHeterobiOrHeteropolycyclicRingSystem"]],
+      "out": [["name_policy", "FusedRingNamePolicy"]],
+      "steps": [
+        ["set", "name_policy", ["lit", {
+          "preselected_name": "Apply fusion nomenclature principles.",
+          "general_nomenclature": "Prefix the appropriate a prefixes to the hydrocarbon fused-ring-system name.",
+          "reference": "P-25.3.2.4"
+        }]]
+      ]
+    },
+    {
+      "id": "fused_heteropolycycle_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [75, 77],
+      "out": [["name_examples", "FusedHeteropolycycleExamples"]],
+      "term": "fused heterobi- and heteropolycyclic examples",
+      "entity": "FusedHeteropolycycleExamples",
+      "value": ["lit", {
+        "arsenic_system": "1H,4H-pentarsolopentarsole",
+        "azaboron_system": "[1,3,5,2,4,6]triazatriborinino[1,2-a][1,3,5,2,4,6]triazatriborinine"
+      }]
+    },
+    {
+      "id": "acyclic_and_monocyclic_hydrocarbon_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [82],
+      "out": [["scope", "HydrocarbonPreferredNameScope"]],
+      "term": "preferred-name selection for acyclic and monocyclic hydrocarbons",
+      "entity": "HydrocarbonPreferredNameScope",
+      "value": ["lit", {"rule": "P-52.2.1", "scope": ["acyclic hydrocarbons", "monocyclic hydrocarbons"]}]
+    },
+    {
+      "id": "lower_acyclic_hydrocarbon_retained_names",
+      "k": "definition",
+      "f": "preference",
+      "c": [83, 84, 85],
+      "out": [["name_policy", "AcyclicHydrocarbonRetainedNamePolicy"]],
+      "term": "preferred retained names of lower acyclic hydrocarbons",
+      "entity": "AcyclicHydrocarbonRetainedNamePolicy",
+      "value": ["lit", {
+        "preferred_names": {"CH4": "methane", "CH3-CH3": "ethane", "CH3-CH2-CH3": "propane", "CH3-CH2-CH2-CH3": "butane", "HC#CH": "acetylene"},
+        "acetylene_pin_substitution": "not allowed",
+        "acetylene_general_nomenclature": "limited substitution is allowed",
+        "reference": "P-15.1.8.2.2"
+      }]
+    },
+    {
+      "id": "annulene_and_cycloalkene_name_policy",
+      "k": "definition",
+      "f": "preference",
+      "c": [86, 87],
+      "out": [["name_policy", "AnnuleneAndCycloalkeneNamePolicy"]],
+      "term": "annulene and cycloalkene preferred-name policy",
+      "entity": "AnnuleneAndCycloalkeneNamePolicy",
+      "value": ["lit", {
+        "annulene_fusion_use": "Use [n]annulene as a parent component in preferred fusion names.",
+        "annulene_general_use": "An [n]annulene name may name the monocycle itself in general nomenclature.",
+        "cycloalkene_pin": "Generate cycloalkene and cycloalkapolyene PINs from the corresponding cycloalkane names.",
+        "references": ["P-25.3.2.1.1", "P-31.1.3.1"]
+      }]
+    },
+    {
+      "id": "hydrocarbon_annulene_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [89, 91],
+      "out": [["name_examples", "HydrocarbonAnnuleneExamples"]],
+      "term": "hydrocarbon and annulene name examples",
+      "entity": "HydrocarbonAnnuleneExamples",
+      "value": ["lit", {
+        "six_membered": "benzene is the PIN, not [6]annulene",
+        "seven_membered": "cyclohepta-1,3,5-triene is the PIN; 1H-[7]annulene is preferred for the fusion parent component"
+      }]
+    },
+    {
+      "id": "heteroacyclic_and_heteromonocycle_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [93],
+      "out": [["scope", "HeteroParentHydridePreferredNameScope"]],
+      "term": "preferred-name selection for heteroacyclic and heteromonocyclic parent hydrides",
+      "entity": "HeteroParentHydridePreferredNameScope",
+      "value": ["lit", {"rule": "P-52.2.2", "scope": ["heteroacyclic parent hydrides", "heteromonocycles"]}]
+    },
+    {
+      "id": "formazan_and_hydrazine_preferred_names",
+      "k": "definition",
+      "f": "preference",
+      "c": [94, 95],
+      "out": [["preferred_names", "RetainedHeteroacyclicPreferredNames"]],
+      "term": "retained preferred names for formazan and hydrazine",
+      "entity": "RetainedHeteroacyclicPreferredNames",
+      "value": ["lit", {"HN=N-CH=N-NH2": "formazan", "H2N-NH2": "hydrazine"}]
+    },
+    {
+      "id": "hantzsch_widman_final_e_policy_preferred_names",
+      "k": "definition",
+      "f": "required",
+      "c": [96, 97, 98, 99, 100, 101],
+      "out": [["ending_policy", "HantzschWidmanEndingPolicy"]],
+      "term": "final e policy for preferred Hantzsch-Widman names",
+      "entity": "HantzschWidmanEndingPolicy",
+      "value": ["lit", {
+        "preferred_iupac_names": "The final e is required.",
+        "general_nomenclature": "The final e is optional.",
+        "1979_rules": "The final e was omitted when the ring contained no nitrogen.",
+        "1993_guide": "That omission became optional."
+      }]
+    },
+    {
+      "id": "heteromonocyclic_retained_name_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [103, 105],
+      "out": [["name_examples", "HeteromonocyclicRetainedNameExamples"]],
+      "term": "preferred and retained heteromonocyclic name examples",
+      "entity": "HeteromonocyclicRetainedNameExamples",
+      "value": ["lit", {
+        "oxygen_ring": {"pin": "1,2-oxazole", "general_name": "isoxazole"},
+        "sulfur_ring": {"pin": "1,3-thiazole", "general_name": "thiazole"}
+      }]
+    },
+    {
+      "id": "large_unsaturated_heteromonocycle_name_policy",
+      "k": "procedure",
+      "f": "required",
+      "c": [107, 108, 109, 110, 111],
+      "in": [["heteromonocycle", "UnsaturatedHeteromonocycle"]],
+      "out": [["name_policy", "UnsaturatedHeteromonocycleNamePolicy"]],
+      "steps": [
+        ["set", "name_policy", ["lit", {
+          "scope": "more than ten ring members",
+          "pin_formation": "Change the ane ending of the saturated skeletal-replacement name to ene, diene, and so on.",
+          "general_nomenclature": "An [n]annulene name may name the heteromonocycle itself.",
+          "fusion_nomenclature": "Do not use annulene to designate the heterocyclic component."
+        }]]
+      ]
+    },
+    {
+      "id": "large_unsaturated_heteromonocycle_example",
+      "k": "definition",
+      "f": "preference",
+      "c": [113],
+      "out": [["name_example", "UnsaturatedHeteromonocycleNameExample"]],
+      "term": "thirteen-membered aza heteromonocycle name example",
+      "entity": "UnsaturatedHeteromonocycleNameExample",
+      "value": ["lit", {
+        "pin": "1-azacyclotrideca-2,4,6,8,10,12-hexaene",
+        "principal_fusion_component": "1-azacyclotridecine",
+        "attached_fusion_component": "1-azacyclotridecino",
+        "general_name": "1H-1-aza[13]annulene"
+      }]
+    },
+    {
+      "id": "fusion_ring_size_policy",
+      "k": "definition",
+      "f": "required",
+      "c": [116, 117, 118, 119, 120, 121, 122, 123],
+      "out": [["fusion_policy", "FusionRingSizePolicy"]],
+      "term": "ring-size requirement for preferred fusion names",
+      "entity": "FusionRingSizePolicy",
+      "value": ["lit", {
+        "preferred_iupac_name_requirement": "At least two rings must each have five or more members.",
+        "general_nomenclature": "Ring size is unrestricted; names such as cyclopropabenzene and cyclobutabenzene may be used.",
+        "fallback": "When a fusion name is unavailable, use an unsaturated von Baeyer ring-system name as the PIN.",
+        "history": {
+          "1998_and_1993": "No restriction was placed on the sizes of the two fused rings.",
+          "1979": "The current five-membered-ring requirement is consistent with that edition."
+        }
+      }]
+    },
+    {
+      "id": "fusion_nomenclature_preferred_name_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [115],
+      "out": [["scope", "FusionNomenclaturePreferredNameScope"]],
+      "term": "preferred IUPAC names in fusion nomenclature",
+      "entity": "FusionNomenclaturePreferredNameScope",
+      "value": ["lit", {"rule": "P-52.2.4", "scope": "preferred IUPAC names generated by fusion nomenclature"}]
+    },
+    {
+      "id": "fusion_ring_size_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [125, 127],
+      "out": [["name_examples", "FusionRingSizeExamples"]],
+      "term": "fusion ring-size fallback examples",
+      "entity": "FusionRingSizeExamples",
+      "value": ["lit", {
+        "cyclopropabenzene": "bicyclo[4.1.0]hepta-1,3,5-triene is the PIN",
+        "cyclobutabenzene": "bicyclo[4.2.0]octa-1,3,5,7-tetraene is the PIN"
+      }]
+    },
+    {
+      "id": "large_heteromonocycle_fusion_component_policy",
+      "k": "definition",
+      "f": "required",
+      "c": [129, 130, 131],
+      "out": [["component_policy", "FusionComponentNamePolicy"]],
+      "term": "large heteromonocycle names used in fusion nomenclature",
+      "entity": "FusionComponentNamePolicy",
+      "value": ["lit", {
+        "allowed": "For rings with more than ten members and the maximum number of noncumulative double bonds, ine-ending names are used as parent and attached components in preferred fusion names.",
+        "not_recommended": "Do not generate heterocyclic fusion names from skeletal-replacement-modified annulene names."
+      }]
+    },
+    {
+      "id": "large_heteromonocycle_fusion_examples",
+      "k": "definition",
+      "f": "preference",
+      "c": [132, 133, 135, 136],
+      "out": [["name_examples", "FusionComponentNameExamples"]],
+      "term": "large heteromonocycle fusion-name examples",
+      "entity": "FusionComponentNameExamples",
+      "value": ["lit", {
+        "example_one": "9H-dibenzo[g,p][1,3,6,9,12,15,18]heptaoxacycloicosine",
+        "example_two": "[1,4,7,10]tetraoxacyclohexadecino[13,12-b:14,15-b']dipyridine"
+      }]
+    }
+  ],
+  "tables": [],
+  "figures": [],
+  "examples": [
+    {
+      "id": "tristannoxane",
+      "c": [17],
+      "input": "SnH3-O-SnH2-O-SnH3",
+      "ok": ["tristannoxane (preselected name)"],
+      "bad": ["bis(stannyloxy)stannane"],
+      "shows": [["semantic_unit", "alternating_acyclic_parent_hydride_examples"]],
+      "why": "The source selects tristannoxane and explicitly rejects the alternative."
+    },
+    {
+      "id": "methylmethanamine",
+      "c": [18],
+      "input": "CH3-NH-CH3",
+      "ok": ["N-methylmethanamine (PIN)"],
+      "bad": ["dicarbazane"],
+      "shows": [["semantic_unit", "alternating_acyclic_parent_hydride_examples"]],
+      "why": "The amine-based name is the PIN and dicarbazane is excluded."
+    },
+    {
+      "id": "triselenathiane",
+      "c": [19],
+      "input": "HSe-S-Se-S-SeH",
+      "ok": ["triselenathiane (preselected name)"],
+      "bad": [],
+      "shows": [["semantic_unit", "alternating_acyclic_parent_hydride_examples"]],
+      "why": "The example identifies triselenathiane as the preselected name."
+    },
+    {
+      "id": "disilylsilanediamine",
+      "c": [20],
+      "input": "SiH3-NH-SiH2-NH-SiH3",
+      "ok": ["N,N'-disilylsilanediamine"],
+      "bad": ["trisilazane"],
+      "shows": [["semantic_unit", "alternating_acyclic_parent_hydride_examples"]],
+      "why": "The name is based on preselected silane and the source rejects trisilazane."
+    },
+    {
+      "id": "lambda5_phosphane",
+      "c": [23],
+      "input": "PH5",
+      "ok": ["lambda(5)-phosphane (preselected name)", "phosphorane"],
+      "bad": [],
+      "shows": [["semantic_unit", "nonstandard_bonding_number_examples"]],
+      "why": "The lambda name is identified as preselected and phosphorane is also displayed."
+    },
+    {
+      "id": "lambda5_arsane",
+      "c": [24],
+      "input": "AsH5",
+      "ok": ["lambda(5)-arsane (preselected name)", "arsorane"],
+      "bad": [],
+      "shows": [["semantic_unit", "nonstandard_bonding_number_examples"]],
+      "why": "The lambda name is identified as preselected and arsorane is also displayed."
+    },
+    {
+      "id": "lambda4_sulfane",
+      "c": [25],
+      "input": "SH4",
+      "ok": ["lambda(4)-sulfane (preselected name)"],
+      "bad": ["sulfurane"],
+      "shows": [["semantic_unit", "nonstandard_bonding_number_examples"]],
+      "why": "The lambda name is preselected and sulfurane is explicitly rejected."
+    },
+    {
+      "id": "lambda6_sulfane",
+      "c": [26],
+      "input": "SH6",
+      "ok": ["lambda(6)-sulfane (preselected name)"],
+      "bad": ["persulfurane"],
+      "shows": [["semantic_unit", "nonstandard_bonding_number_examples"]],
+      "why": "The lambda name is preselected and persulfurane is explicitly rejected."
+    },
+    {
+      "id": "lambda3_iodane",
+      "c": [27],
+      "input": "IH3",
+      "ok": ["lambda(3)-iodane (preselected name)"],
+      "bad": ["iodinane"],
+      "shows": [["semantic_unit", "nonstandard_bonding_number_examples"]],
+      "why": "The lambda name is preselected and iodinane is explicitly rejected."
+    },
+    {
+      "id": "lambda5_iodane",
+      "c": [28],
+      "input": "IH5",
+      "ok": ["lambda(5)-iodane (preselected name)"],
+      "bad": ["periodinane"],
+      "shows": [["semantic_unit", "nonstandard_bonding_number_examples"]],
+      "why": "The lambda name is preselected and periodinane is explicitly rejected."
+    },
+    {
+      "id": "lambda5_stibane",
+      "c": [29],
+      "input": "SbH5",
+      "ok": ["lambda(5)-stibane (preselected name)", "stiborane"],
+      "bad": [],
+      "shows": [["semantic_unit", "nonstandard_bonding_number_examples"]],
+      "why": "The lambda name is identified as preselected and stiborane is also displayed."
+    },
+    {
+      "id": "lambda4_trisulfane",
+      "c": [30],
+      "input": "nonstandard-bonding sulfur chain",
+      "ok": ["2-lambda(4)-trisulfane (preselected name)"],
+      "bad": [],
+      "shows": [["semantic_unit", "nonstandard_bonding_number_examples"]],
+      "why": "The figure caption identifies the lambda name as preselected."
+    },
+    {
+      "id": "pentazolidine",
+      "c": [41],
+      "input": "five-membered homogeneous nitrogen heteromonocycle",
+      "ok": ["pentazolidine (preselected name)", "cyclopentaazane (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "homogeneous_heteromonocycle_examples"]],
+      "why": "The example contrasts the preselected Hantzsch-Widman name with the cyclo alternative."
+    },
+    {
+      "id": "hexagerminane",
+      "c": [43],
+      "input": "six-membered homogeneous germanium heteromonocycle",
+      "ok": ["hexagerminane (preselected name)", "cyclohexagermane (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "homogeneous_heteromonocycle_examples"]],
+      "why": "The example contrasts the preselected Hantzsch-Widman name with the cyclo alternative."
+    },
+    {
+      "id": "dodecasilacyclododecane",
+      "c": [45, 46],
+      "input": "twelve-membered homogeneous silicon heteromonocycle",
+      "ok": ["dodecasilacyclododecane (preselected name)", "cyclododecasilane (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "homogeneous_heteromonocycle_examples"]],
+      "why": "The example contrasts the preselected skeletal-replacement name with the cyclo alternative."
+    },
+    {
+      "id": "triphosphatriborinane",
+      "c": [53],
+      "input": "six-membered alternating phosphorus-boron heteromonocycle",
+      "ok": ["1,3,5,2,4,6-triphosphatriborinane (preselected name)", "cyclotriboraphosphane (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "alternating_heteromonocycle_examples"]],
+      "why": "The example gives the preselected Hantzsch-Widman name and the cyclo alternative."
+    },
+    {
+      "id": "heptasilacyclotetradecane",
+      "c": [55],
+      "input": "fourteen-membered alternating oxygen-silicon heteromonocycle",
+      "ok": ["1,3,5,7,9,11,13-heptaoxa-2,4,6,8,10,12,14-heptasilacyclotetradecane (preselected name)", "cycloheptasiloxane (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "alternating_heteromonocycle_examples"]],
+      "why": "The example gives the preselected skeletal-replacement name and the cyclo alternative."
+    },
+    {
+      "id": "nonasilane_von_baeyer",
+      "c": [61],
+      "input": "same-heteroatom bicyclic parent hydride",
+      "ok": ["bicyclo[4.2.1]nonasilane (preselected name)", "nonasilabicyclo[4.2.1]nonane (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "same_heteroatom_von_baeyer_examples"]],
+      "why": "The example contrasts the preselected von Baeyer form with the skeletal-replacement alternative."
+    },
+    {
+      "id": "dodecasilane_von_baeyer",
+      "c": [63],
+      "input": "same-heteroatom tricyclic parent hydride",
+      "ok": ["tricyclo[5.3.1.1(2,6)]dodecasilane (preselected name)", "dodecasilatricyclo[5.3.1.1(2,6)]dodecane (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "same_heteroatom_von_baeyer_examples"]],
+      "why": "The example contrasts the preselected von Baeyer form with the skeletal-replacement alternative."
+    },
+    {
+      "id": "pentasiloxane_spiro",
+      "c": [68],
+      "input": "alternating oxygen-silicon spiro parent hydride",
+      "ok": ["spiro[5.5]pentasiloxane (preselected name)", "1,3,5,7,9,11-hexaoxa-2,4,6,8,10-pentasilaspiro[5.5]undecane (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "alternating_heteroatom_polycycle_examples"]],
+      "why": "The example contrasts the preselected spiro form with the skeletal-replacement alternative."
+    },
+    {
+      "id": "tetrasiloxane_tricyclo",
+      "c": [70],
+      "input": "alternating oxygen-silicon tricyclic parent hydride",
+      "ok": ["tricyclo[3.3.1.1(3,7)]tetrasiloxane (preselected name)", "2,4,6,8,9,10-hexaoxa-1,3,5,7-tetrasilaadamantane", "2,4,6,8,9,10-hexaoxa-1,3,5,7-tetrasilatricyclo[3.3.1.1(3,7)]decane"],
+      "bad": [],
+      "shows": [["semantic_unit", "alternating_heteroatom_polycycle_examples"]],
+      "why": "The example gives the preselected name and two skeletal-replacement alternatives."
+    },
+    {
+      "id": "pentarsolopentarsole",
+      "c": [75],
+      "input": "fused arsenic heterobicycle",
+      "ok": ["1H,4H-pentarsolopentarsole (preselected name)", "1H,4H-octaarsapentalene (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "fused_heteropolycycle_examples"]],
+      "why": "The fusion name is preselected and the skeletal-replacement hydrocarbon name is also shown."
+    },
+    {
+      "id": "triazatriborinine_fusion",
+      "c": [77],
+      "input": "fused alternating nitrogen-boron heterobicycle",
+      "ok": ["[1,3,5,2,4,6]triazatriborinino[1,2-a][1,3,5,2,4,6]triazatriborinine (preselected name)", "1,3,4a,6,8-pentaaza-2,4,5,7,8a-pentaboranaphthalene (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "fused_heteropolycycle_examples"]],
+      "why": "The fusion name is preselected and the skeletal-replacement hydrocarbon name is also shown."
+    },
+    {
+      "id": "benzene_not_annulene",
+      "c": [89],
+      "input": "six-membered mancude hydrocarbon",
+      "ok": ["benzene (PIN)"],
+      "bad": ["[6]annulene"],
+      "shows": [["semantic_unit", "hydrocarbon_annulene_examples"]],
+      "why": "The retained name benzene is the PIN and [6]annulene is explicitly rejected."
+    },
+    {
+      "id": "cycloheptatriene_annulene",
+      "c": [91],
+      "input": "seven-membered mancude hydrocarbon",
+      "ok": ["cyclohepta-1,3,5-triene (PIN)", "1H-[7]annulene (preferred fusion parent-component name)"],
+      "bad": [],
+      "shows": [["semantic_unit", "hydrocarbon_annulene_examples"]],
+      "why": "The two names are preferred in the distinct whole-parent and fusion-component contexts stated."
+    },
+    {
+      "id": "oxazole_isoxazole",
+      "c": [103],
+      "input": "oxygen-nitrogen five-membered heteromonocycle",
+      "ok": ["1,2-oxazole (PIN)", "isoxazole (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "heteromonocyclic_retained_name_examples"]],
+      "why": "The locanted Hantzsch-Widman name is the PIN and the retained name is allowed generally."
+    },
+    {
+      "id": "thiazole_retained_name",
+      "c": [105],
+      "input": "sulfur-nitrogen five-membered heteromonocycle",
+      "ok": ["1,3-thiazole (PIN)", "thiazole (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "heteromonocyclic_retained_name_examples"]],
+      "why": "The locanted Hantzsch-Widman name is the PIN and the retained name is allowed generally."
+    },
+    {
+      "id": "azacyclotrideca_hexaene",
+      "c": [113],
+      "input": "thirteen-membered unsaturated aza heteromonocycle",
+      "ok": ["1-azacyclotrideca-2,4,6,8,10,12-hexaene (PIN)", "1-azacyclotridecine (principal fusion component)", "1-azacyclotridecino (attached fusion component)", "1H-1-aza[13]annulene (general nomenclature)"],
+      "bad": [],
+      "shows": [["semantic_unit", "large_unsaturated_heteromonocycle_name_policy"], ["semantic_unit", "large_unsaturated_heteromonocycle_example"]],
+      "why": "The example assigns each name to its preferred or general-nomenclature context."
+    },
+    {
+      "id": "cyclopropabenzene_fallback",
+      "c": [125],
+      "input": "benzene fused to a three-membered ring",
+      "ok": ["1H-cyclopropabenzene (general nomenclature)", "bicyclo[4.1.0]hepta-1,3,5-triene (PIN)"],
+      "bad": [],
+      "shows": [["semantic_unit", "fusion_ring_size_policy"], ["semantic_unit", "fusion_ring_size_examples"]],
+      "why": "The small-ring fusion name is general, while the von Baeyer fallback is the PIN."
+    },
+    {
+      "id": "cyclobutabenzene_fallback",
+      "c": [127],
+      "input": "benzene fused to a four-membered ring",
+      "ok": ["cyclobutabenzene (general nomenclature)", "bicyclo[4.2.0]octa-1,3,5,7-tetraene (PIN)"],
+      "bad": [],
+      "shows": [["semantic_unit", "fusion_ring_size_policy"], ["semantic_unit", "fusion_ring_size_examples"]],
+      "why": "The small-ring fusion name is general, while the von Baeyer fallback is the PIN."
+    },
+    {
+      "id": "heptaoxacycloicosine_fusion",
+      "c": [132, 133],
+      "input": "large oxygen heteromonocycle used in a fused system",
+      "ok": ["9H-dibenzo[g,p][1,3,6,9,12,15,18]heptaoxacycloicosine (PIN)"],
+      "bad": [],
+      "shows": [["semantic_unit", "large_heteromonocycle_fusion_component_policy"], ["semantic_unit", "large_heteromonocycle_fusion_examples"]],
+      "why": "The example illustrates an ine-ending large heteromonocycle used in a preferred fusion name."
+    },
+    {
+      "id": "tetraoxacyclohexadecino_fusion",
+      "c": [135, 136],
+      "input": "large oxygen heteromonocycle used as an attached fusion component",
+      "ok": ["[1,4,7,10]tetraoxacyclohexadecino[13,12-b:14,15-b']dipyridine (PIN)"],
+      "bad": [],
+      "shows": [["semantic_unit", "large_heteromonocycle_fusion_component_policy"], ["semantic_unit", "large_heteromonocycle_fusion_examples"]],
+      "why": "The example illustrates an ino-form large heteromonocycle used as an attached component in a preferred fusion name."
+    }
+  ],
+  "exceptions": [],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p52.part001.p52_xref_0002", "c": [2], "rel": "cites", "o": "P-52:xref:0002", "target": ["external", "P-2"]},
+    {"id": "reference.p52.part001.p52_1_1_xref_0001", "c": [7], "rel": "cites", "o": "P-52.1.1:xref:0001"},
+    {"id": "reference.p52.part001.p52_1_2_xref_0001", "c": [10], "rel": "cites", "o": "P-52.1.2:xref:0001"},
+    {"id": "reference.p52.part001.p52_1_3_xref_0001", "c": [13], "rel": "cites", "o": "P-52.1.3:xref:0001"},
+    {"id": "reference.p52.part001.p52_1_4_xref_0001", "c": [21], "rel": "cites", "o": "P-52.1.4:xref:0001"},
+    {"id": "reference.p52.part001.p52_2_1_1_xref_0001", "c": [85], "rel": "cites", "o": "P-52.2.1.1:xref:0001"},
+    {"id": "reference.p52.part001.p52_2_1_2_xref_0001", "c": [86], "rel": "cites", "o": "P-52.2.1.2:xref:0001"},
+    {"id": "reference.p52.part001.p52_2_1_2_xref_0003", "c": [91], "rel": "cites", "o": "P-52.2.1.2:xref:0003"}
+  ],
+  "additional_refs": []
+}

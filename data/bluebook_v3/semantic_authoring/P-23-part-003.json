@@ -3,8 +3,8 @@
   "format_version": "1.0.0",
   "task_id": "P-23-part-003",
   "clauses": [
-    null,
-    null,
+    ["preference_criterion", "normative", "compile"],
+    ["example", "illustrative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
@@ -24,6 +24,28 @@
   ],
   "symbols": [],
   "units": [
+    {
+      "id": "nonstandard_bonding_number_low_locants",
+      "k": "decision",
+      "f": "preference",
+      "c": [1],
+      "in": [["numbering_choices", "VonBaeyerNumberingChoiceSet"]],
+      "out": [["selected_numbering", "VonBaeyerNumberingChoice"]],
+      "candidates": ["var", "numbering_choices"],
+      "stages": [
+        {
+          "id": "decreasing_bonding_number_locants",
+          "c": [1],
+          "key": [
+            "get",
+            ["var", "numbering_choices"],
+            "locant_sequence_for_nonstandard_bonding_numbers_descending"
+          ],
+          "cmp": ["lexicographic", "minimum", null, null]
+        }
+      ],
+      "tie": ["retain_coequal", null]
+    },
     {
       "id": "retained_adamantane_cubane_policy",
       "k": "definition",
@@ -165,6 +187,20 @@
     }
   ],
   "examples": [
+    {
+      "id": "lambda5_arsenic_lower_locant",
+      "c": [2],
+      "input": {
+        "element": "arsenic",
+        "bonding_number": 5,
+        "bonding_descriptor": "\u03bb5",
+        "numbering_context": "choice between numbering assignments"
+      },
+      "ok": ["lower locant assigned to the \u03bb5 arsenic atom"],
+      "bad": [],
+      "shows": [["semantic_unit", "nonstandard_bonding_number_low_locants"]],
+      "why": "For arsenic, the lower locant is assigned to the atom with bonding number 5."
+    },
     {
       "id": "diarsabicyclo_heptane_pin",
       "c": [4],

@@ -8,12 +8,12 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 45,
-    "compiled_clause_count": 36,
+    "compiled_clause_count": 38,
     "correction_application_count": 0,
     "example_count": 10,
     "exception_count": 0,
     "figure_count": 6,
-    "nonoperative_clause_count": 9,
+    "nonoperative_clause_count": 7,
     "record_count": 5,
     "reference_count": 11,
     "semantic_unit_count": 13,
@@ -21,7 +21,7 @@
     "symbol_declaration_count": 1,
     "table_count": 3
   },
-  "chunk_sha256": "D7FE40307052E59857931EBEF97E64FAB9B4CF5D030019669CFEAB1F91883818",
+  "chunk_sha256": "8C4A5C4554C37973ACEED9364A2E977173DB280352BF140D0CAAE1E9F877FEEE",
   "clause_dispositions": [
     {
       "clause_id": "P-61.9:clause:0001",
@@ -1011,11 +1011,40 @@
     {
       "clause_id": "P-61.11.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p61.part002.low_locants_as_a_set",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p61.part002.low_locants_as_a_set.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p61.part002.low_locants_as_a_set.candidates",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p61.part002.low_locants_as_a_set.low_locant_set",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p61.part002.low_locants_as_a_set.stage.low_locant_set.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p61.part002.low_locants_as_a_set.stage.low_locant_set.key",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p61.part002.low_locants_as_a_set.stage.low_locant_set.key.from",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-61.11.1:clause:0002",
@@ -1141,11 +1170,40 @@
     {
       "clause_id": "P-61.11.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p61.part002.low_locants_to_first_prefix",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p61.part002.low_locants_to_first_prefix.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p61.part002.low_locants_to_first_prefix.candidates",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p61.part002.low_locants_to_first_prefix.first_prefix_cited",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p61.part002.low_locants_to_first_prefix.stage.first_prefix_cited.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p61.part002.low_locants_to_first_prefix.stage.first_prefix_cited.key",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p61.part002.low_locants_to_first_prefix.stage.first_prefix_cited.key.from",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-61.11.2:clause:0002",

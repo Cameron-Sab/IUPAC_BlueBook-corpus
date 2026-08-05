@@ -3,14 +3,14 @@
   "format_version": "1.0.0",
   "task_id": "P-26-part-003",
   "clauses": [
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["condition", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["condition", "normative", "compile"],
-    null,
+    ["preference_criterion", "normative", "compile"],
     null,
     ["figure_asset", "illustrative", "compile"],
     ["table_data", "illustrative", "compile"],
@@ -26,7 +26,7 @@
     ["example", "illustrative", "compile"],
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null,
+    ["preference_criterion", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["preference_criterion", "normative", "compile"],
@@ -81,21 +81,21 @@
       "id": "primary_heteroatom_locant_criteria",
       "k": "decision",
       "f": "preference",
-      "c": [16, 17, 18, 19, 21, 22],
+      "c": [8, 16, 17, 18, 19, 21, 22],
       "in": [["numbering_choices", "NumberingChoiceSet"]],
       "out": [["selected_numbering", "NumberingChoice"]],
       "candidates": ["var", "numbering_choices"],
       "stages": [
         {
-          "id": "heteroatoms_without_regard_to_kind",
-          "c": [16, 17],
-          "key": ["lit", {"criterion": "locant set for heteroatoms without regard to kind", "example_sets": ["2,5", "3,6"]}],
+          "id": "primary_heteroatom_locants_without_regard_to_kind",
+          "c": [8, 16, 17, 18, 19],
+          "key": ["lit", {"criterion": "primary locant set for heteroatoms", "ignore_heteroatom_kind": true, "include_superscript_numbers": false, "example_sets": ["2,5", "3,6", "1,2,5,7", "1,4,5,6"]}],
           "cmp": ["lexicographic", "minimum", null, null]
         },
         {
-          "id": "primary_heteroatom_locants",
-          "c": [18, 19],
-          "key": ["lit", {"criterion": "primary locant set for heteroatoms", "comparison": "ascending locant set", "example_sets": ["1,2,5,7", "1,4,5,6"]}],
+          "id": "complete_heteroatom_locants_if_primary_sets_tie",
+          "c": [8],
+          "key": ["lit", {"criterion": "complete heteroatom locant set", "applies_if": "primary locant sets are identical", "includes": ["primary locants", "superscript numbers"], "ignore_heteroatom_kind": true}],
           "cmp": ["lexicographic", "minimum", null, null]
         },
         {
@@ -111,27 +111,27 @@
       "id": "heteroatom_seniority_and_composite_locants",
       "k": "decision",
       "f": "preference",
-      "c": [26, 27, 35, 36, 37, 39, 40],
+      "c": [24, 26, 27, 35, 36, 37, 39, 40],
       "in": [["numbering_choices", "NumberingChoiceSet"]],
       "out": [["selected_numbering", "NumberingChoice"]],
       "candidates": ["var", "numbering_choices"],
       "stages": [
         {
           "id": "replacement_prefix_seniority",
-          "c": [26, 27],
-          "key": ["lit", {"seniority_order": ["oxa", "thia", "selena", "tellura", "aza", "phospha", "arsa", "stiba", "bisa", "sila", "germa", "stanna", "plumba", "borana", "alumina", "galla", "inda", "thalla"], "example": "thia is senior to aza"}],
+          "c": [24, 26, 27],
+          "key": ["lit", {"seniority_order": ["O", "S", "Se", "Te", "N", "P", "As", "Sb", "Bi", "Si", "Ge", "Sn", "Pb", "B", "Al", "Ga", "In", "Tl"], "replacement_prefix_order": ["oxa", "thia", "selena", "tellura", "aza", "phospha", "arsa", "stiba", "bisa", "sila", "germa", "stanna", "plumba", "borana", "alumina", "galla", "inda", "thalla"], "example": "thia is senior to aza"}],
           "cmp": ["lexicographic", "minimum", null, null]
         },
         {
-          "id": "primary_and_composite_locant_sets",
-          "c": [35, 36],
-          "key": ["lit", {"criterion": "primary locant sets and primary locant sets including composite locants", "ignore_heteroatom_kind": true}],
+          "id": "primary_locants_by_heteroatom_seniority",
+          "c": [24, 35, 36],
+          "key": ["lit", {"criterion": "primary locant sets for heteroatoms in seniority order", "include_superscript_numbers": false}],
           "cmp": ["lexicographic", "minimum", null, null]
         },
         {
-          "id": "senior_prefix_composite_locants",
-          "c": [37, 39, 40],
-          "key": ["lit", {"criterion": "locant set including composite locants for the senior replacement prefix", "senior_prefix": "oxa"}],
+          "id": "complete_locants_by_heteroatom_seniority_if_primary_sets_tie",
+          "c": [24, 37, 39, 40],
+          "key": ["lit", {"criterion": "complete locant sets for heteroatoms in seniority order", "applies_if": "primary locant sets are identical", "includes": ["primary locants", "superscript numbers"], "example_senior_prefix": "oxa"}],
           "cmp": ["lexicographic", "minimum", null, null]
         }
       ],

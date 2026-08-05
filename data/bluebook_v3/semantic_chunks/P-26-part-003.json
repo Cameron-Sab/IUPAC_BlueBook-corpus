@@ -8,12 +8,12 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 46,
-    "compiled_clause_count": 38,
+    "compiled_clause_count": 40,
     "correction_application_count": 0,
     "example_count": 7,
     "exception_count": 0,
     "figure_count": 10,
-    "nonoperative_clause_count": 8,
+    "nonoperative_clause_count": 6,
     "record_count": 5,
     "reference_count": 16,
     "semantic_unit_count": 5,
@@ -21,7 +21,7 @@
     "symbol_declaration_count": 0,
     "table_count": 2
   },
-  "chunk_sha256": "42A7E1D1318F37FF5EFBC4C4450E0016F1BCB15FAB59FFDA1CB8CAA78B617CD5",
+  "chunk_sha256": "AD633DA9FC91B81EC1F5BF110088B559455B9FA2B4046A5ACE39DA9CE6A06519",
   "clause_dispositions": [
     {
       "clause_id": "P-26.5.3:clause:0001",
@@ -125,11 +125,48 @@
     {
       "clause_id": "P-26.5.4.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p26.part003.primary_heteroatom_locant_criteria",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.candidates",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p26.part003.primary_heteroatom_locant_criteria.primary_heteroatom_locants_without_regard_to_kind",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.key",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p26.part003.primary_heteroatom_locant_criteria.complete_heteroatom_locants_if_primary_sets_tie",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.complete_heteroatom_locants_if_primary_sets_tie.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.complete_heteroatom_locants_if_primary_sets_tie.key",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-26.5.4.1:clause:0002",
@@ -362,15 +399,15 @@
             "kind": "expression"
           },
           {
-            "id": "stage.p26.part003.primary_heteroatom_locant_criteria.heteroatoms_without_regard_to_kind",
+            "id": "stage.p26.part003.primary_heteroatom_locant_criteria.primary_heteroatom_locants_without_regard_to_kind",
             "kind": "decision_stage"
           },
           {
-            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.heteroatoms_without_regard_to_kind.guard",
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.guard",
             "kind": "expression"
           },
           {
-            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.heteroatoms_without_regard_to_kind.key",
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.key",
             "kind": "expression"
           },
           {
@@ -428,15 +465,15 @@
             "kind": "expression"
           },
           {
-            "id": "stage.p26.part003.primary_heteroatom_locant_criteria.heteroatoms_without_regard_to_kind",
+            "id": "stage.p26.part003.primary_heteroatom_locant_criteria.primary_heteroatom_locants_without_regard_to_kind",
             "kind": "decision_stage"
           },
           {
-            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.heteroatoms_without_regard_to_kind.guard",
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.guard",
             "kind": "expression"
           },
           {
-            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.heteroatoms_without_regard_to_kind.key",
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.key",
             "kind": "expression"
           },
           {
@@ -494,15 +531,15 @@
             "kind": "expression"
           },
           {
-            "id": "stage.p26.part003.primary_heteroatom_locant_criteria.primary_heteroatom_locants",
+            "id": "stage.p26.part003.primary_heteroatom_locant_criteria.primary_heteroatom_locants_without_regard_to_kind",
             "kind": "decision_stage"
           },
           {
-            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants.guard",
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.guard",
             "kind": "expression"
           },
           {
-            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants.key",
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.key",
             "kind": "expression"
           }
         ]
@@ -532,15 +569,15 @@
             "kind": "expression"
           },
           {
-            "id": "stage.p26.part003.primary_heteroatom_locant_criteria.primary_heteroatom_locants",
+            "id": "stage.p26.part003.primary_heteroatom_locant_criteria.primary_heteroatom_locants_without_regard_to_kind",
             "kind": "decision_stage"
           },
           {
-            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants.guard",
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.guard",
             "kind": "expression"
           },
           {
-            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants.key",
+            "id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.key",
             "kind": "expression"
           }
         ]
@@ -655,11 +692,60 @@
     {
       "clause_id": "P-26.5.4.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p26.part003.heteroatom_seniority_and_composite_locants",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.candidates",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.replacement_prefix_seniority",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.replacement_prefix_seniority.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.replacement_prefix_seniority.key",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.primary_locants_by_heteroatom_seniority",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_locants_by_heteroatom_seniority.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_locants_by_heteroatom_seniority.key",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.complete_locants_by_heteroatom_seniority_if_primary_sets_tie",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.complete_locants_by_heteroatom_seniority_if_primary_sets_tie.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.complete_locants_by_heteroatom_seniority_if_primary_sets_tie.key",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-26.5.4.2:clause:0002",
@@ -998,15 +1084,15 @@
             "kind": "expression"
           },
           {
-            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.primary_and_composite_locant_sets",
+            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.primary_locants_by_heteroatom_seniority",
             "kind": "decision_stage"
           },
           {
-            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_and_composite_locant_sets.guard",
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_locants_by_heteroatom_seniority.guard",
             "kind": "expression"
           },
           {
-            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_and_composite_locant_sets.key",
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_locants_by_heteroatom_seniority.key",
             "kind": "expression"
           },
           {
@@ -1064,15 +1150,15 @@
             "kind": "expression"
           },
           {
-            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.primary_and_composite_locant_sets",
+            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.primary_locants_by_heteroatom_seniority",
             "kind": "decision_stage"
           },
           {
-            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_and_composite_locant_sets.guard",
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_locants_by_heteroatom_seniority.guard",
             "kind": "expression"
           },
           {
-            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_and_composite_locant_sets.key",
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_locants_by_heteroatom_seniority.key",
             "kind": "expression"
           },
           {
@@ -1130,15 +1216,15 @@
             "kind": "expression"
           },
           {
-            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.senior_prefix_composite_locants",
+            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.complete_locants_by_heteroatom_seniority_if_primary_sets_tie",
             "kind": "decision_stage"
           },
           {
-            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.senior_prefix_composite_locants.guard",
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.complete_locants_by_heteroatom_seniority_if_primary_sets_tie.guard",
             "kind": "expression"
           },
           {
-            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.senior_prefix_composite_locants.key",
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.complete_locants_by_heteroatom_seniority_if_primary_sets_tie.key",
             "kind": "expression"
           },
           {
@@ -1234,15 +1320,15 @@
             "kind": "expression"
           },
           {
-            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.senior_prefix_composite_locants",
+            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.complete_locants_by_heteroatom_seniority_if_primary_sets_tie",
             "kind": "decision_stage"
           },
           {
-            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.senior_prefix_composite_locants.guard",
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.complete_locants_by_heteroatom_seniority_if_primary_sets_tie.guard",
             "kind": "expression"
           },
           {
-            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.senior_prefix_composite_locants.key",
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.complete_locants_by_heteroatom_seniority_if_primary_sets_tie.key",
             "kind": "expression"
           }
         ]
@@ -1272,15 +1358,15 @@
             "kind": "expression"
           },
           {
-            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.senior_prefix_composite_locants",
+            "id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.complete_locants_by_heteroatom_seniority_if_primary_sets_tie",
             "kind": "decision_stage"
           },
           {
-            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.senior_prefix_composite_locants.guard",
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.complete_locants_by_heteroatom_seniority_if_primary_sets_tie.guard",
             "kind": "expression"
           },
           {
-            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.senior_prefix_composite_locants.key",
+            "id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.complete_locants_by_heteroatom_seniority_if_primary_sets_tie.key",
             "kind": "expression"
           }
         ]
@@ -2328,6 +2414,7 @@
     {
       "candidates": {
         "clause_ids": [
+          "P-26.5.4.1:clause:0001",
           "P-26.5.4.1:clause:0009",
           "P-26.5.4.1:clause:0010",
           "P-26.5.4.1:clause:0011",
@@ -2340,6 +2427,7 @@
         "op": "var"
       },
       "clause_ids": [
+        "P-26.5.4.1:clause:0001",
         "P-26.5.4.1:clause:0009",
         "P-26.5.4.1:clause:0010",
         "P-26.5.4.1:clause:0011",
@@ -2364,6 +2452,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-26.5.4.1:clause:0001",
             "P-26.5.4.1:clause:0009",
             "P-26.5.4.1:clause:0010",
             "P-26.5.4.1:clause:0011",
@@ -2382,48 +2471,9 @@
       "stages": [
         {
           "clause_ids": [
+            "P-26.5.4.1:clause:0001",
             "P-26.5.4.1:clause:0009",
-            "P-26.5.4.1:clause:0010"
-          ],
-          "comparator": {
-            "direction": "minimum",
-            "kind": "lexicographic",
-            "symbol": null,
-            "table_id": null
-          },
-          "guard": {
-            "clause_ids": [
-              "P-26.5.4.1:clause:0009",
-              "P-26.5.4.1:clause:0010"
-            ],
-            "expression_id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.heteroatoms_without_regard_to_kind.guard",
-            "op": "literal",
-            "value": true
-          },
-          "key": {
-            "clause_ids": [
-              "P-26.5.4.1:clause:0009",
-              "P-26.5.4.1:clause:0010"
-            ],
-            "expression_id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.heteroatoms_without_regard_to_kind.key",
-            "op": "literal",
-            "value": {
-              "criterion": "locant set for heteroatoms without regard to kind",
-              "example_sets": [
-                "2,5",
-                "3,6"
-              ]
-            }
-          },
-          "on_tie": {
-            "mode": "continue",
-            "next_stage_id": "stage.p26.part003.primary_heteroatom_locant_criteria.primary_heteroatom_locants"
-          },
-          "ordinal": 1,
-          "stage_id": "stage.p26.part003.primary_heteroatom_locant_criteria.heteroatoms_without_regard_to_kind"
-        },
-        {
-          "clause_ids": [
+            "P-26.5.4.1:clause:0010",
             "P-26.5.4.1:clause:0011",
             "P-26.5.4.1:clause:0012"
           ],
@@ -2435,26 +2485,76 @@
           },
           "guard": {
             "clause_ids": [
+              "P-26.5.4.1:clause:0001",
+              "P-26.5.4.1:clause:0009",
+              "P-26.5.4.1:clause:0010",
               "P-26.5.4.1:clause:0011",
               "P-26.5.4.1:clause:0012"
             ],
-            "expression_id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants.guard",
+            "expression_id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.guard",
             "op": "literal",
             "value": true
           },
           "key": {
             "clause_ids": [
+              "P-26.5.4.1:clause:0001",
+              "P-26.5.4.1:clause:0009",
+              "P-26.5.4.1:clause:0010",
               "P-26.5.4.1:clause:0011",
               "P-26.5.4.1:clause:0012"
             ],
-            "expression_id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants.key",
+            "expression_id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.primary_heteroatom_locants_without_regard_to_kind.key",
             "op": "literal",
             "value": {
-              "comparison": "ascending locant set",
               "criterion": "primary locant set for heteroatoms",
               "example_sets": [
+                "2,5",
+                "3,6",
                 "1,2,5,7",
                 "1,4,5,6"
+              ],
+              "ignore_heteroatom_kind": true,
+              "include_superscript_numbers": false
+            }
+          },
+          "on_tie": {
+            "mode": "continue",
+            "next_stage_id": "stage.p26.part003.primary_heteroatom_locant_criteria.complete_heteroatom_locants_if_primary_sets_tie"
+          },
+          "ordinal": 1,
+          "stage_id": "stage.p26.part003.primary_heteroatom_locant_criteria.primary_heteroatom_locants_without_regard_to_kind"
+        },
+        {
+          "clause_ids": [
+            "P-26.5.4.1:clause:0001"
+          ],
+          "comparator": {
+            "direction": "minimum",
+            "kind": "lexicographic",
+            "symbol": null,
+            "table_id": null
+          },
+          "guard": {
+            "clause_ids": [
+              "P-26.5.4.1:clause:0001"
+            ],
+            "expression_id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.complete_heteroatom_locants_if_primary_sets_tie.guard",
+            "op": "literal",
+            "value": true
+          },
+          "key": {
+            "clause_ids": [
+              "P-26.5.4.1:clause:0001"
+            ],
+            "expression_id": "expr.p26.part003.primary_heteroatom_locant_criteria.stage.complete_heteroatom_locants_if_primary_sets_tie.key",
+            "op": "literal",
+            "value": {
+              "applies_if": "primary locant sets are identical",
+              "criterion": "complete heteroatom locant set",
+              "ignore_heteroatom_kind": true,
+              "includes": [
+                "primary locants",
+                "superscript numbers"
               ]
             }
           },
@@ -2463,7 +2563,7 @@
             "next_stage_id": "stage.p26.part003.primary_heteroatom_locant_criteria.senior_amplificant_locant"
           },
           "ordinal": 2,
-          "stage_id": "stage.p26.part003.primary_heteroatom_locant_criteria.primary_heteroatom_locants"
+          "stage_id": "stage.p26.part003.primary_heteroatom_locant_criteria.complete_heteroatom_locants_if_primary_sets_tie"
         },
         {
           "clause_ids": [
@@ -2514,6 +2614,7 @@
     {
       "candidates": {
         "clause_ids": [
+          "P-26.5.4.2:clause:0001",
           "P-26.5.4.2:clause:0003",
           "P-26.5.4.2:clause:0004",
           "P-26.5.4.2:clause:0012",
@@ -2527,6 +2628,7 @@
         "op": "var"
       },
       "clause_ids": [
+        "P-26.5.4.2:clause:0001",
         "P-26.5.4.2:clause:0003",
         "P-26.5.4.2:clause:0004",
         "P-26.5.4.2:clause:0012",
@@ -2552,6 +2654,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-26.5.4.2:clause:0001",
             "P-26.5.4.2:clause:0003",
             "P-26.5.4.2:clause:0004",
             "P-26.5.4.2:clause:0012",
@@ -2571,6 +2674,7 @@
       "stages": [
         {
           "clause_ids": [
+            "P-26.5.4.2:clause:0001",
             "P-26.5.4.2:clause:0003",
             "P-26.5.4.2:clause:0004"
           ],
@@ -2582,6 +2686,7 @@
           },
           "guard": {
             "clause_ids": [
+              "P-26.5.4.2:clause:0001",
               "P-26.5.4.2:clause:0003",
               "P-26.5.4.2:clause:0004"
             ],
@@ -2591,6 +2696,7 @@
           },
           "key": {
             "clause_ids": [
+              "P-26.5.4.2:clause:0001",
               "P-26.5.4.2:clause:0003",
               "P-26.5.4.2:clause:0004"
             ],
@@ -2598,7 +2704,7 @@
             "op": "literal",
             "value": {
               "example": "thia is senior to aza",
-              "seniority_order": [
+              "replacement_prefix_order": [
                 "oxa",
                 "thia",
                 "selena",
@@ -2617,18 +2723,39 @@
                 "galla",
                 "inda",
                 "thalla"
+              ],
+              "seniority_order": [
+                "O",
+                "S",
+                "Se",
+                "Te",
+                "N",
+                "P",
+                "As",
+                "Sb",
+                "Bi",
+                "Si",
+                "Ge",
+                "Sn",
+                "Pb",
+                "B",
+                "Al",
+                "Ga",
+                "In",
+                "Tl"
               ]
             }
           },
           "on_tie": {
             "mode": "continue",
-            "next_stage_id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.primary_and_composite_locant_sets"
+            "next_stage_id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.primary_locants_by_heteroatom_seniority"
           },
           "ordinal": 1,
           "stage_id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.replacement_prefix_seniority"
         },
         {
           "clause_ids": [
+            "P-26.5.4.2:clause:0001",
             "P-26.5.4.2:clause:0012",
             "P-26.5.4.2:clause:0013"
           ],
@@ -2640,34 +2767,37 @@
           },
           "guard": {
             "clause_ids": [
+              "P-26.5.4.2:clause:0001",
               "P-26.5.4.2:clause:0012",
               "P-26.5.4.2:clause:0013"
             ],
-            "expression_id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_and_composite_locant_sets.guard",
+            "expression_id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_locants_by_heteroatom_seniority.guard",
             "op": "literal",
             "value": true
           },
           "key": {
             "clause_ids": [
+              "P-26.5.4.2:clause:0001",
               "P-26.5.4.2:clause:0012",
               "P-26.5.4.2:clause:0013"
             ],
-            "expression_id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_and_composite_locant_sets.key",
+            "expression_id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.primary_locants_by_heteroatom_seniority.key",
             "op": "literal",
             "value": {
-              "criterion": "primary locant sets and primary locant sets including composite locants",
-              "ignore_heteroatom_kind": true
+              "criterion": "primary locant sets for heteroatoms in seniority order",
+              "include_superscript_numbers": false
             }
           },
           "on_tie": {
             "mode": "continue",
-            "next_stage_id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.senior_prefix_composite_locants"
+            "next_stage_id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.complete_locants_by_heteroatom_seniority_if_primary_sets_tie"
           },
           "ordinal": 2,
-          "stage_id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.primary_and_composite_locant_sets"
+          "stage_id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.primary_locants_by_heteroatom_seniority"
         },
         {
           "clause_ids": [
+            "P-26.5.4.2:clause:0001",
             "P-26.5.4.2:clause:0014",
             "P-26.5.4.2:clause:0016",
             "P-26.5.4.2:clause:0017"
@@ -2680,25 +2810,32 @@
           },
           "guard": {
             "clause_ids": [
+              "P-26.5.4.2:clause:0001",
               "P-26.5.4.2:clause:0014",
               "P-26.5.4.2:clause:0016",
               "P-26.5.4.2:clause:0017"
             ],
-            "expression_id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.senior_prefix_composite_locants.guard",
+            "expression_id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.complete_locants_by_heteroatom_seniority_if_primary_sets_tie.guard",
             "op": "literal",
             "value": true
           },
           "key": {
             "clause_ids": [
+              "P-26.5.4.2:clause:0001",
               "P-26.5.4.2:clause:0014",
               "P-26.5.4.2:clause:0016",
               "P-26.5.4.2:clause:0017"
             ],
-            "expression_id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.senior_prefix_composite_locants.key",
+            "expression_id": "expr.p26.part003.heteroatom_seniority_and_composite_locants.stage.complete_locants_by_heteroatom_seniority_if_primary_sets_tie.key",
             "op": "literal",
             "value": {
-              "criterion": "locant set including composite locants for the senior replacement prefix",
-              "senior_prefix": "oxa"
+              "applies_if": "primary locant sets are identical",
+              "criterion": "complete locant sets for heteroatoms in seniority order",
+              "example_senior_prefix": "oxa",
+              "includes": [
+                "primary locants",
+                "superscript numbers"
+              ]
             }
           },
           "on_tie": {
@@ -2706,7 +2843,7 @@
             "next_stage_id": null
           },
           "ordinal": 3,
-          "stage_id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.senior_prefix_composite_locants"
+          "stage_id": "stage.p26.part003.heteroatom_seniority_and_composite_locants.complete_locants_by_heteroatom_seniority_if_primary_sets_tie"
         }
       ],
       "terminal_tie": {
