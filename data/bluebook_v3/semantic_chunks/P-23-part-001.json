@@ -27,20 +27,20 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 87,
-    "compiled_clause_count": 47,
+    "compiled_clause_count": 67,
     "correction_application_count": 0,
     "example_count": 8,
     "exception_count": 0,
     "figure_count": 9,
-    "nonoperative_clause_count": 40,
+    "nonoperative_clause_count": 20,
     "record_count": 24,
     "reference_count": 49,
-    "semantic_unit_count": 18,
+    "semantic_unit_count": 30,
     "superseded_clause_count": 0,
     "symbol_declaration_count": 0,
     "table_count": 0
   },
-  "chunk_sha256": "CBE7FEF3439B453702C0A3A2F509E01DF7FD7D06AC20EC7071B6957EDB4717DA",
+  "chunk_sha256": "D42692523CB99118A639400C7D68CE1B2A1565339443127E4AFC83A50AE5059C",
   "clause_dispositions": [
     {
       "clause_id": "P-23:clause:0001",
@@ -213,101 +213,248 @@
     {
       "clause_id": "P-23.1.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.bridgehead_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.bridgehead_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bridgehead_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.1.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.bridge_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.bridge_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.bridge_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.1.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.main_ring_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.main_ring_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_ring_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.1.4:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.main_bridge_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.main_bridge_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_bridge_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.1.5:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.main_bridgeheads_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.main_bridgeheads_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_bridgeheads_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.1.5:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.main_bridgeheads_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.main_bridgeheads_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.main_bridgeheads_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.1.6:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.secondary_bridge_general_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.secondary_bridge_general_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.secondary_bridge_general_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.1.7:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.independent_secondary_bridge_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.independent_secondary_bridge_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.independent_secondary_bridge_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.1.8:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.dependent_secondary_bridge_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.dependent_secondary_bridge_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.dependent_secondary_bridge_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.1.9:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.polycyclic_system_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.polycyclic_system_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part001.polycyclic_system_definition.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.1.9:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.ring_count_prefix_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.ring_count_prefix_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.ring_count_prefix_rule.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.ring_count_prefix_rule.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-23.2:clause:0001",
@@ -917,29 +1064,80 @@
     {
       "clause_id": "P-23.2.5.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.tricyclic_name_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.tricyclic_name_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "scope"
     },
     {
       "clause_id": "P-23.2.5.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.tricyclic_name_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.tricyclic_name_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.2.5.1:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.tricyclic_name_construction",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.tricyclic_name_construction.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.tricyclic_name_construction.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-23.2.5.1:clause:0004",
@@ -1417,56 +1615,158 @@
     {
       "clause_id": "P-23.2.6.1.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.polyalicyclic_ring_prefix_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_ring_prefix_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.polyalicyclic_ring_prefix_rule.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_ring_prefix_rule.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-23.2.6.1.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.polyalicyclic_ring_prefix_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_ring_prefix_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.polyalicyclic_ring_prefix_rule.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.polyalicyclic_ring_prefix_rule.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-23.2.6.1.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.additional_secondary_bridge_descriptor_format",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.additional_secondary_bridge_descriptor_format.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.additional_secondary_bridge_descriptor_format.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.additional_secondary_bridge_descriptor_format.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-23.2.6.1.2:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.additional_secondary_bridge_descriptor_format",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.additional_secondary_bridge_descriptor_format.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.additional_secondary_bridge_descriptor_format.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.additional_secondary_bridge_descriptor_format.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-23.2.6.1.2:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.additional_secondary_bridge_descriptor_format",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.additional_secondary_bridge_descriptor_format.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.additional_secondary_bridge_descriptor_format.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.additional_secondary_bridge_descriptor_format.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-23.2.6.1.2:clause:0004",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part001.additional_secondary_bridge_descriptor_format",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part001.additional_secondary_bridge_descriptor_format.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p23.part001.additional_secondary_bridge_descriptor_format.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p23.part001.additional_secondary_bridge_descriptor_format.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     }
   ],
   "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
@@ -1890,12 +2190,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.1.1",
       "reference_ids": [
         "reference.p_23_1_1.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.bridgehead_definition"
+      ],
       "source_rule_id": "P-23.1.1",
       "table_ids": []
     },
@@ -1908,12 +2210,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.1.2",
       "reference_ids": [
         "reference.p_23_1_2.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.bridge_definition"
+      ],
       "source_rule_id": "P-23.1.2",
       "table_ids": []
     },
@@ -1926,12 +2230,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.1.3",
       "reference_ids": [
         "reference.p_23_1_3.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.main_ring_definition"
+      ],
       "source_rule_id": "P-23.1.3",
       "table_ids": []
     },
@@ -1944,12 +2250,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.1.4",
       "reference_ids": [
         "reference.p_23_1_4.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.main_bridge_definition"
+      ],
       "source_rule_id": "P-23.1.4",
       "table_ids": []
     },
@@ -1963,12 +2271,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.1.5",
       "reference_ids": [
         "reference.p_23_1_5.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.main_bridgeheads_definition"
+      ],
       "source_rule_id": "P-23.1.5",
       "table_ids": []
     },
@@ -1981,12 +2291,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.1.6",
       "reference_ids": [
         "reference.p_23_1_6.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.secondary_bridge_general_definition"
+      ],
       "source_rule_id": "P-23.1.6",
       "table_ids": []
     },
@@ -1999,12 +2311,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.1.7",
       "reference_ids": [
         "reference.p_23_1_7.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.independent_secondary_bridge_definition"
+      ],
       "source_rule_id": "P-23.1.7",
       "table_ids": []
     },
@@ -2017,12 +2331,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.1.8",
       "reference_ids": [
         "reference.p_23_1_8.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.dependent_secondary_bridge_definition"
+      ],
       "source_rule_id": "P-23.1.8",
       "table_ids": []
     },
@@ -2036,12 +2352,15 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.1.9",
       "reference_ids": [
         "reference.p_23_1_9.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.polycyclic_system_definition",
+        "unit.p23.part001.ring_count_prefix_rule"
+      ],
       "source_rule_id": "P-23.1.9",
       "table_ids": []
     },
@@ -2352,12 +2671,14 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.2.6.1.1",
       "reference_ids": [
         "reference.p_23_2_6_1_1.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.polyalicyclic_ring_prefix_rule"
+      ],
       "source_rule_id": "P-23.2.6.1.1",
       "table_ids": []
     },
@@ -2373,13 +2694,15 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-23.2.6.1.2",
       "reference_ids": [
         "reference.p_23_2_6_1_2.hierarchy_parent",
         "reference.p23.part001.xref.p23_2_6_1_2_1"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p23.part001.additional_secondary_bridge_descriptor_format"
+      ],
       "source_rule_id": "P-23.2.6.1.2",
       "table_ids": []
     }
@@ -3474,6 +3797,440 @@
     },
     {
       "clause_ids": [
+        "P-23.1.1:clause:0001"
+      ],
+      "entity_type": "Bridgehead",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "bridgehead",
+          "type": "Bridgehead"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.1.1:clause:0001"
+          ],
+          "expression_id": "expr.p23.part001.bridgehead_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "bridgehead",
+      "unit_id": "unit.p23.part001.bridgehead_definition",
+      "value": {
+        "clause_ids": [
+          "P-23.1.1:clause:0001"
+        ],
+        "expression_id": "expr.p23.part001.bridgehead_definition.value",
+        "op": "literal",
+        "value": {
+          "definition": "a skeletal atom of the ring system bonded to three or more skeletal atoms",
+          "excluded_neighbors": [
+            "hydrogen"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.2:clause:0001"
+      ],
+      "entity_type": "Bridge",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "bridge",
+          "type": "Bridge"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.1.2:clause:0001"
+          ],
+          "expression_id": "expr.p23.part001.bridge_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "bridge",
+      "unit_id": "unit.p23.part001.bridge_definition",
+      "value": {
+        "clause_ids": [
+          "P-23.1.2:clause:0001"
+        ],
+        "expression_id": "expr.p23.part001.bridge_definition.value",
+        "op": "literal",
+        "value": {
+          "allowed_forms": [
+            "unbranched chain of atoms",
+            "atom",
+            "valence bond"
+          ],
+          "connects": "two bridgeheads"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.3:clause:0001"
+      ],
+      "entity_type": "MainRing",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "main_ring",
+          "type": "MainRing"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.1.3:clause:0001"
+          ],
+          "expression_id": "expr.p23.part001.main_ring_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "main ring",
+      "unit_id": "unit.p23.part001.main_ring_definition",
+      "value": {
+        "clause_ids": [
+          "P-23.1.3:clause:0001"
+        ],
+        "expression_id": "expr.p23.part001.main_ring_definition.value",
+        "op": "literal",
+        "value": {
+          "selection": "the ring system including as many skeletal atoms of the polycyclic system as possible"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.4:clause:0001"
+      ],
+      "entity_type": "MainBridge",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "main_bridge",
+          "type": "MainBridge"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.1.4:clause:0001"
+          ],
+          "expression_id": "expr.p23.part001.main_bridge_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "main bridge",
+      "unit_id": "unit.p23.part001.main_bridge_definition",
+      "value": {
+        "clause_ids": [
+          "P-23.1.4:clause:0001"
+        ],
+        "expression_id": "expr.p23.part001.main_bridge_definition.value",
+        "op": "literal",
+        "value": {
+          "bicyclic_system": "the bridge included in the bicyclic system",
+          "polycyclic_system": "the first selected bridge"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.5:clause:0001",
+        "P-23.1.5:clause:0002"
+      ],
+      "entity_type": "BridgeheadPair",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "main_bridgeheads",
+          "type": "BridgeheadPair"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.1.5:clause:0001",
+            "P-23.1.5:clause:0002"
+          ],
+          "expression_id": "expr.p23.part001.main_bridgeheads_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "main bridgeheads",
+      "unit_id": "unit.p23.part001.main_bridgeheads_definition",
+      "value": {
+        "clause_ids": [
+          "P-23.1.5:clause:0001",
+          "P-23.1.5:clause:0002"
+        ],
+        "expression_id": "expr.p23.part001.main_bridgeheads_definition.value",
+        "op": "literal",
+        "value": {
+          "connection": "connected by the main bridge",
+          "count": 2,
+          "membership": "both are included in the main ring"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.6:clause:0001"
+      ],
+      "entity_type": "SecondaryBridge",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "secondary_bridge",
+          "type": "SecondaryBridge"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.1.6:clause:0001"
+          ],
+          "expression_id": "expr.p23.part001.secondary_bridge_general_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "secondary bridge",
+      "unit_id": "unit.p23.part001.secondary_bridge_general_definition",
+      "value": {
+        "clause_ids": [
+          "P-23.1.6:clause:0001"
+        ],
+        "expression_id": "expr.p23.part001.secondary_bridge_general_definition.value",
+        "op": "literal",
+        "value": {
+          "definition": "a bridge not included in the main ring or the main bridge"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.7:clause:0001"
+      ],
+      "entity_type": "IndependentSecondaryBridge",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "bridge",
+          "type": "IndependentSecondaryBridge"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.1.7:clause:0001"
+          ],
+          "expression_id": "expr.p23.part001.independent_secondary_bridge_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "independent secondary bridge",
+      "unit_id": "unit.p23.part001.independent_secondary_bridge_definition",
+      "value": {
+        "clause_ids": [
+          "P-23.1.7:clause:0001"
+        ],
+        "expression_id": "expr.p23.part001.independent_secondary_bridge_definition.value",
+        "op": "literal",
+        "value": {
+          "links": "bridgeheads that are part of the main ring or main bridge"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.8:clause:0001"
+      ],
+      "entity_type": "DependentSecondaryBridge",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "bridge",
+          "type": "DependentSecondaryBridge"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.1.8:clause:0001"
+          ],
+          "expression_id": "expr.p23.part001.dependent_secondary_bridge_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "dependent secondary bridge",
+      "unit_id": "unit.p23.part001.dependent_secondary_bridge_definition",
+      "value": {
+        "clause_ids": [
+          "P-23.1.8:clause:0001"
+        ],
+        "expression_id": "expr.p23.part001.dependent_secondary_bridge_definition.value",
+        "op": "literal",
+        "value": {
+          "links": "bridgeheads where at least one is part of a secondary bridge"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.9:clause:0001"
+      ],
+      "entity_type": "PolycyclicSystem",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "polycyclic_system",
+          "type": "PolycyclicSystem"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.1.9:clause:0001"
+          ],
+          "expression_id": "expr.p23.part001.polycyclic_system_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "polycyclic system",
+      "unit_id": "unit.p23.part001.polycyclic_system_definition",
+      "value": {
+        "clause_ids": [
+          "P-23.1.9:clause:0001"
+        ],
+        "expression_id": "expr.p23.part001.polycyclic_system_definition.value",
+        "op": "literal",
+        "value": {
+          "ring_count": "the minimum number of scissions required to convert the system into an acyclic skeleton"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.1.9:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "ring_count",
+          "type": "integer"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "prefix",
+          "type": "NameComponent"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.1.9:clause:0002"
+          ],
+          "expression_id": "expr.p23.part001.ring_count_prefix_rule.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-23.1.9:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.ring_count_prefix_rule.steps.1",
+          "target": "prefix",
+          "value": {
+            "clause_ids": [
+              "P-23.1.9:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.ring_count_prefix_rule.steps.1.value",
+            "op": "literal",
+            "value": {
+              "attachment": "nondetachable",
+              "mapping": {
+                "2": "bicyclo",
+                "3": "tricyclo",
+                "4": "tetracyclo",
+                "higher": "corresponding numerical polycyclo prefix"
+              },
+              "prohibited_for_two_rings": "dicyclo"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.ring_count_prefix_rule"
+    },
+    {
+      "clause_ids": [
         "P-23.2:clause:0002"
       ],
       "force": "required",
@@ -4184,6 +4941,9 @@
     },
     {
       "clause_ids": [
+        "P-23.2.5.1:clause:0001",
+        "P-23.2.5.1:clause:0002",
+        "P-23.2.5.1:clause:0003",
         "P-23.2.5.1:clause:0004",
         "P-23.2.5.1:clause:0005",
         "P-23.2.5.1:clause:0006",
@@ -4206,6 +4966,9 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-23.2.5.1:clause:0001",
+            "P-23.2.5.1:clause:0002",
+            "P-23.2.5.1:clause:0003",
             "P-23.2.5.1:clause:0004",
             "P-23.2.5.1:clause:0005",
             "P-23.2.5.1:clause:0006",
@@ -4222,6 +4985,9 @@
       "steps": [
         {
           "clause_ids": [
+            "P-23.2.5.1:clause:0001",
+            "P-23.2.5.1:clause:0002",
+            "P-23.2.5.1:clause:0003",
             "P-23.2.5.1:clause:0004",
             "P-23.2.5.1:clause:0005",
             "P-23.2.5.1:clause:0006",
@@ -4232,6 +4998,9 @@
           "target": "tricyclic_name",
           "value": {
             "clause_ids": [
+              "P-23.2.5.1:clause:0001",
+              "P-23.2.5.1:clause:0002",
+              "P-23.2.5.1:clause:0003",
               "P-23.2.5.1:clause:0004",
               "P-23.2.5.1:clause:0005",
               "P-23.2.5.1:clause:0006",
@@ -4240,6 +5009,11 @@
             "expression_id": "expr.p23.part001.tricyclic_name_construction.steps.1.value",
             "op": "literal",
             "value": {
+              "basis": "a bicyclic system described in P-23.2.2",
+              "independent_secondary_bridge": {
+                "attachment_locants": "a pair of superscript arabic numbers, lower first and separated by a comma",
+                "length": "number of atoms, expressed as an arabic number"
+              },
               "parts": [
                 {
                   "component": "prefix",
@@ -4499,6 +5273,142 @@
         }
       ],
       "unit_id": "unit.p23.part001.secondary_bridge_descriptor_rules"
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6.1.1:clause:0001",
+        "P-23.2.6.1.1:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "polyalicyclic_system",
+          "type": "PolyalicyclicSystem"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "prefix",
+          "type": "NameComponent"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.6.1.1:clause:0001",
+            "P-23.2.6.1.1:clause:0002"
+          ],
+          "expression_id": "expr.p23.part001.polyalicyclic_ring_prefix_rule.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-23.2.6.1.1:clause:0001",
+            "P-23.2.6.1.1:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.polyalicyclic_ring_prefix_rule.steps.1",
+          "target": "prefix",
+          "value": {
+            "clause_ids": [
+              "P-23.2.6.1.1:clause:0001",
+              "P-23.2.6.1.1:clause:0002"
+            ],
+            "expression_id": "expr.p23.part001.polyalicyclic_ring_prefix_rule.steps.1.value",
+            "op": "literal",
+            "value": {
+              "indicates": "number of rings in the polyalicyclic system",
+              "replaces": "bicyclo",
+              "ring_count": "number of bond cuts needed to transform the system into an acyclic skeleton, whether unbranched or branched",
+              "series": [
+                "tricyclo",
+                "tetracyclo",
+                "corresponding higher prefix"
+              ]
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.polyalicyclic_ring_prefix_rule"
+    },
+    {
+      "clause_ids": [
+        "P-23.2.6.1.2:clause:0001",
+        "P-23.2.6.1.2:clause:0002",
+        "P-23.2.6.1.2:clause:0003",
+        "P-23.2.6.1.2:clause:0004"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "polyalicyclic_system",
+          "type": "PolyalicyclicSystem"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "descriptor",
+          "type": "VonBaeyerDescriptor"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.2.6.1.2:clause:0001",
+            "P-23.2.6.1.2:clause:0002",
+            "P-23.2.6.1.2:clause:0003",
+            "P-23.2.6.1.2:clause:0004"
+          ],
+          "expression_id": "expr.p23.part001.additional_secondary_bridge_descriptor_format.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-23.2.6.1.2:clause:0001",
+            "P-23.2.6.1.2:clause:0002",
+            "P-23.2.6.1.2:clause:0003",
+            "P-23.2.6.1.2:clause:0004"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p23.part001.additional_secondary_bridge_descriptor_format.steps.1",
+          "target": "descriptor",
+          "value": {
+            "clause_ids": [
+              "P-23.2.6.1.2:clause:0001",
+              "P-23.2.6.1.2:clause:0002",
+              "P-23.2.6.1.2:clause:0003",
+              "P-23.2.6.1.2:clause:0004"
+            ],
+            "expression_id": "expr.p23.part001.additional_secondary_bridge_descriptor_format.steps.1.value",
+            "op": "literal",
+            "value": {
+              "attachment_locants": "locants from the already numbered bicyclic structure, separated by a comma",
+              "descriptor_name": "von Baeyer descriptor",
+              "enclosure": "brackets",
+              "order": "decreasing numerical order",
+              "ordering_exception": "as provided by P-23.2.6.1.3",
+              "position": "after the numbers describing the bicyclic system",
+              "secondary_bridge_lengths": "arabic numbers separated by full stops",
+              "superscript_binding": "each attachment-locant pair is superscripted to the arabic number denoting that bridge's length"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p23.part001.additional_secondary_bridge_descriptor_format"
     },
     {
       "clause_ids": [

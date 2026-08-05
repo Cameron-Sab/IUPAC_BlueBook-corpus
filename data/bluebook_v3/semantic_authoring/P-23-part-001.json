@@ -3,7 +3,7 @@
   "format_version": "1.0.0",
   "task_id": "P-23-part-001",
   "clauses": [
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     null,
     null,
     ["source_metadata", "informative", "compile"],
@@ -13,21 +13,21 @@
     ["cross_reference", "informative", "compile"],
     ["cross_reference", "informative", "compile"],
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
     null,
     ["procedure_step", "normative", "compile"],
     null,
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["preference_criterion", "normative", "compile"],
     ["note", "informative", "compile"],
     null,
@@ -35,13 +35,13 @@
     ["figure_asset", "illustrative", "compile"],
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["condition", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     null,
@@ -49,47 +49,47 @@
     ["figure_asset", "illustrative", "compile"],
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["condition", "normative", "compile"],
     ["preference_criterion", "normative", "compile"],
     ["definition", "normative", "compile"],
     null,
     ["figure_asset", "illustrative", "compile"],
-    null,
-    null,
-    null,
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["scope", "normative", "compile"],
+    ["definition", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
-    null,
-    ["example", "illustrative", "compile"],
-    ["figure_asset", "illustrative", "compile"],
-    null,
     ["procedure_step", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["procedure_step", "normative", "compile"],
+    null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
     ["scope", "normative", "compile"],
     ["scope", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["preference_criterion", "normative", "compile"],
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["procedure_step", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
     ["preference_criterion", "normative", "compile"],
     ["procedure_step", "normative", "compile"],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    ["procedure_step", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["definition", "normative", "compile"]
   ],
   "symbols": [],
   "units": [
@@ -125,6 +125,134 @@
         "unsaturated_systems": "see Section P-31.1.4",
         "derived_substituent_groups": "see Section P-29"
       }]
+    },
+    {
+      "id": "bridgehead_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [11],
+      "out": [["bridgehead", "Bridgehead"]],
+      "term": "bridgehead",
+      "entity": "Bridgehead",
+      "value": ["lit", {
+        "definition": "a skeletal atom of the ring system bonded to three or more skeletal atoms",
+        "excluded_neighbors": ["hydrogen"]
+      }]
+    },
+    {
+      "id": "bridge_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [12],
+      "out": [["bridge", "Bridge"]],
+      "term": "bridge",
+      "entity": "Bridge",
+      "value": ["lit", {
+        "connects": "two bridgeheads",
+        "allowed_forms": ["unbranched chain of atoms", "atom", "valence bond"]
+      }]
+    },
+    {
+      "id": "main_ring_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [13],
+      "out": [["main_ring", "MainRing"]],
+      "term": "main ring",
+      "entity": "MainRing",
+      "value": ["lit", {
+        "selection": "the ring system including as many skeletal atoms of the polycyclic system as possible"
+      }]
+    },
+    {
+      "id": "main_bridge_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [14],
+      "out": [["main_bridge", "MainBridge"]],
+      "term": "main bridge",
+      "entity": "MainBridge",
+      "value": ["lit", {
+        "bicyclic_system": "the bridge included in the bicyclic system",
+        "polycyclic_system": "the first selected bridge"
+      }]
+    },
+    {
+      "id": "main_bridgeheads_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [15, 16],
+      "out": [["main_bridgeheads", "BridgeheadPair"]],
+      "term": "main bridgeheads",
+      "entity": "BridgeheadPair",
+      "value": ["lit", {
+        "count": 2,
+        "membership": "both are included in the main ring",
+        "connection": "connected by the main bridge"
+      }]
+    },
+    {
+      "id": "secondary_bridge_general_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [17],
+      "out": [["secondary_bridge", "SecondaryBridge"]],
+      "term": "secondary bridge",
+      "entity": "SecondaryBridge",
+      "value": ["lit", {
+        "definition": "a bridge not included in the main ring or the main bridge"
+      }]
+    },
+    {
+      "id": "independent_secondary_bridge_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [18],
+      "out": [["bridge", "IndependentSecondaryBridge"]],
+      "term": "independent secondary bridge",
+      "entity": "IndependentSecondaryBridge",
+      "value": ["lit", {
+        "links": "bridgeheads that are part of the main ring or main bridge"
+      }]
+    },
+    {
+      "id": "dependent_secondary_bridge_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [19],
+      "out": [["bridge", "DependentSecondaryBridge"]],
+      "term": "dependent secondary bridge",
+      "entity": "DependentSecondaryBridge",
+      "value": ["lit", {
+        "links": "bridgeheads where at least one is part of a secondary bridge"
+      }]
+    },
+    {
+      "id": "polycyclic_system_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [20],
+      "out": [["polycyclic_system", "PolycyclicSystem"]],
+      "term": "polycyclic system",
+      "entity": "PolycyclicSystem",
+      "value": ["lit", {
+        "ring_count": "the minimum number of scissions required to convert the system into an acyclic skeleton"
+      }]
+    },
+    {
+      "id": "ring_count_prefix_rule",
+      "k": "procedure",
+      "f": "required",
+      "c": [21],
+      "in": [["ring_count", "integer"]],
+      "out": [["prefix", "NameComponent"]],
+      "steps": [
+        ["set", "prefix", ["lit", {
+          "attachment": "nondetachable",
+          "mapping": {"2": "bicyclo", "3": "tricyclo", "4": "tetracyclo", "higher": "corresponding numerical polycyclo prefix"},
+          "prohibited_for_two_rings": "dicyclo"
+        }]]
+      ]
     },
     {
       "id": "von_baeyer_rules_applied_in_order",
@@ -293,11 +421,16 @@
       "id": "tricyclic_name_construction",
       "k": "procedure",
       "f": "required",
-      "c": [57, 58, 59, 60],
+      "c": [54, 55, 56, 57, 58, 59, 60],
       "in": [["tricyclic_system", "TricyclicSystem"]],
       "out": [["tricyclic_name", "Name"]],
       "steps": [
         ["set", "tricyclic_name", ["lit", {
+          "basis": "a bicyclic system described in P-23.2.2",
+          "independent_secondary_bridge": {
+            "length": "number of atoms, expressed as an arabic number",
+            "attachment_locants": "a pair of superscript arabic numbers, lower first and separated by a comma"
+          },
           "parts": [
             {
               "letter": "a",
@@ -380,6 +513,42 @@
           "secondary_bridge_lengths": "cite the number of atoms in each secondary bridge as an arabic number",
           "attachment_locants": "cite the two attachment-point locants as a pair of superscript arabic numbers, lower first, separated by a comma",
           "independent_bridge_order": "cite numbers for independent secondary bridges in decreasing order"
+        }]]
+      ]
+    },
+    {
+      "id": "polyalicyclic_ring_prefix_rule",
+      "k": "procedure",
+      "f": "required",
+      "c": [82, 83],
+      "in": [["polyalicyclic_system", "PolyalicyclicSystem"]],
+      "out": [["prefix", "NameComponent"]],
+      "steps": [
+        ["set", "prefix", ["lit", {
+          "series": ["tricyclo", "tetracyclo", "corresponding higher prefix"],
+          "replaces": "bicyclo",
+          "indicates": "number of rings in the polyalicyclic system",
+          "ring_count": "number of bond cuts needed to transform the system into an acyclic skeleton, whether unbranched or branched"
+        }]]
+      ]
+    },
+    {
+      "id": "additional_secondary_bridge_descriptor_format",
+      "k": "procedure",
+      "f": "required",
+      "c": [84, 85, 86, 87],
+      "in": [["polyalicyclic_system", "PolyalicyclicSystem"]],
+      "out": [["descriptor", "VonBaeyerDescriptor"]],
+      "steps": [
+        ["set", "descriptor", ["lit", {
+          "secondary_bridge_lengths": "arabic numbers separated by full stops",
+          "position": "after the numbers describing the bicyclic system",
+          "order": "decreasing numerical order",
+          "ordering_exception": "as provided by P-23.2.6.1.3",
+          "attachment_locants": "locants from the already numbered bicyclic structure, separated by a comma",
+          "superscript_binding": "each attachment-locant pair is superscripted to the arabic number denoting that bridge's length",
+          "descriptor_name": "von Baeyer descriptor",
+          "enclosure": "brackets"
         }]]
       ]
     },
