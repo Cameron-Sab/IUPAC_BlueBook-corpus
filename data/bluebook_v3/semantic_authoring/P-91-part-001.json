@@ -1,0 +1,541 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-91-part-001",
+  "mechanical_assets": true,
+  "clauses": [
+    null,
+    null,
+    null,
+    ["constraint", "normative", "compile"],
+    ["history", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    null,
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    null,
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    null,
+    ["mapping_entry", "normative", "compile"],
+    ["exception", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["definition", "informative", "compile"],
+    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["scope", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["definition", "informative", "compile"],
+    null,
+    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["scope", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["effect", "normative", "compile"],
+    ["effect", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["mapping_entry", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["preference_criterion", "normative", "compile"],
+    ["rationale", "informative", "compile"],
+    ["rationale", "informative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["effect", "normative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["correction_event", "correction", "compile"],
+    ["example", "illustrative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["note", "informative", "compile"]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "graphical_recommendation_basis",
+      "k": "definition",
+      "f": "required",
+      "c": [4, 5, 6],
+      "out": [["recommendation", "StereochemicalDrawingRecommendation"]],
+      "term": "care and recommendation basis for stereochemical drawings",
+      "entity": "StereochemicalDrawingRecommendation",
+      "value": ["lit", {
+        "requirement": "prepare configuration-bearing structural diagrams with extra care",
+        "historical_recommendation": {"year": 1996, "reference": 37},
+        "current_recommendation": {"title": "Graphical representation of stereochemical configuration, IUPAC Recommendations 2006", "reference": 38}
+      }]
+    },
+    {
+      "id": "graphical_bond_convention",
+      "k": "mapping",
+      "f": "required",
+      "c": [7, 8, 10, 11, 13, 14, 16],
+      "in": [["bond_representation", "GraphicalBondRepresentation"]],
+      "out": [["spatial_interpretation", "BondSpatialInterpretation"]],
+      "table": "graphical_bond_conventions"
+    },
+    {
+      "id": "natural_product_graphical_conventions",
+      "k": "definition",
+      "f": "required",
+      "c": [17],
+      "out": [["convention", "NaturalProductDrawingConvention"]],
+      "term": "natural-product graphical convention override",
+      "entity": "NaturalProductDrawingConvention",
+      "value": ["lit", {"default": "P-91.1 bond conventions", "exception_domain": "carbohydrates", "exception_source": "P-10"}]
+    },
+    {
+      "id": "single_graph_absolute_configuration",
+      "k": "definition",
+      "f": "definition",
+      "c": [18],
+      "out": [["meaning", "GraphicalConfigurationMeaning"]],
+      "term": "single graphical representation in P-9",
+      "entity": "GraphicalConfigurationMeaning",
+      "value": ["lit", {"one_representation_depicts": "absolute configuration", "applies_to": "chiral molecule"}]
+    },
+    {
+      "id": "stereodescriptor_affix_definition",
+      "k": "procedure",
+      "f": "required",
+      "c": [20, 21],
+      "in": [["base_name", "ConfigurationNeutralName"], ["configuration", "OrganicCompoundConfiguration"]],
+      "out": [["configured_name", "StereochemicallySpecifiedName"]],
+      "steps": [
+        ["set", "configured_name.affixes", ["lit", "one or more stereodescriptors"]],
+        ["set", "configured_name.base_name", ["var", "base_name"]],
+        ["emit", ["var", "configured_name"]]
+      ]
+    },
+    {
+      "id": "stereodescriptor_primary_types",
+      "k": "definition",
+      "f": "definition",
+      "c": [24],
+      "out": [["taxonomy", "StereodescriptorTaxonomy"]],
+      "term": "primary stereodescriptor types",
+      "entity": "StereodescriptorTaxonomy",
+      "value": ["lit", {"types": ["CIP stereodescriptors", "other acceptable stereodescriptors"]}]
+    },
+    {
+      "id": "other_acceptable_descriptor_types",
+      "k": "definition",
+      "f": "definition",
+      "c": [45],
+      "out": [["taxonomy", "OtherAcceptableStereodescriptorTaxonomy"]],
+      "term": "other acceptable stereodescriptor types",
+      "entity": "OtherAcceptableStereodescriptorTaxonomy",
+      "value": ["lit", {"categories": ["substitutive nomenclature", "natural-product nomenclature"]}]
+    },
+    {
+      "id": "substitutive_descriptor_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [49, 50, 51, 59],
+      "out": [["scope", "SubstitutiveStereodescriptorScope"]],
+      "term": "substitutive stereodescriptor scope",
+      "entity": "SubstitutiveStereodescriptorScope",
+      "value": ["lit", {"scopes": ["preferred IUPAC names", "general nomenclature", "general nomenclature only"]}]
+    },
+    {
+      "id": "cip_descriptor_scope",
+      "k": "definition",
+      "f": "preference",
+      "c": [27],
+      "out": [["scope", "CIPStereodescriptorScope"]],
+      "term": "recommended CIP stereodescriptor scope",
+      "entity": "CIPStereodescriptorScope",
+      "value": ["lit", {"purpose": "specify organic-compound configuration", "applies_in": ["P-1 through P-8", "P-10 natural products"], "description_and_examples": "P-9"}]
+    },
+    {
+      "id": "preferred_cip_descriptor_assignment",
+      "k": "mapping",
+      "f": "preference",
+      "c": [28, 29, 30, 31, 32, 33],
+      "in": [["stereogenic_entity", "StereogenicEntity"]],
+      "out": [["descriptor_set", "PreferredCIPDescriptorSet"]],
+      "table": "preferred_cip_descriptors"
+    },
+    {
+      "id": "relative_and_racemate_descriptor_preference",
+      "k": "procedure",
+      "f": "preference",
+      "c": [34, 35],
+      "in": [["configuration_kind", "ConfigurationKind"]],
+      "out": [["descriptor", "PreferredStereodescriptor"]],
+      "steps": [
+        ["emit", ["lit", {
+          "relative_configuration": {"preferred": "rel associated with R or S", "over": ["R*", "S*"]},
+          "racemate": {"preferred": "rac", "over": ["RS", "SR"]}
+        }]]
+      ]
+    },
+    {
+      "id": "general_cip_descriptor_assignment",
+      "k": "mapping",
+      "f": "required",
+      "c": [36, 37, 38, 39, 40],
+      "in": [["stereogenic_entity", "StereogenicEntity"]],
+      "out": [["descriptor_set", "GeneralCIPDescriptorSet"]],
+      "table": "general_cip_descriptors"
+    },
+    {
+      "id": "cip_reflection_and_collation_behavior",
+      "k": "definition",
+      "f": "required",
+      "c": [41, 42, 43],
+      "out": [["behavior", "CIPDescriptorBehavior"]],
+      "term": "CIP descriptor reflection and collation behavior",
+      "entity": "CIPDescriptorBehavior",
+      "value": ["lit", {
+        "capitalized": {"mirror_behavior": "variant", "example": "R becomes S and S becomes R"},
+        "lower_case": {"mirror_behavior": "invariant", "example": "r remains r and s remains s"},
+        "typography": "italic",
+        "collation": "excluded from the primary stage of alphanumerical order",
+        "collation_rule": "P-16.6"
+      }]
+    },
+    {
+      "id": "ez_descriptor_assignment",
+      "k": "procedure",
+      "f": "required",
+      "c": [52, 53, 54, 55, 56, 57],
+      "in": [["stereogenic_bond_system", "DiastereomorphicBondSystem"]],
+      "out": [["descriptor", "EZDescriptor"]],
+      "steps": [
+        ["set", "eligible_systems", ["lit", ["alkene", "cumulene", "oxime-like system", "fractional bond order between one and two", "multiple bonds involving elements other than carbon"]]],
+        ["set", "terminal_groups", ["lit", "highest-CIP-priority group at each terminal doubly bonded atom"]],
+        ["set", "reference_plane", ["lit", "plane through the double bond and perpendicular to the plane of the bonds from terminal atoms to compared groups"]],
+        ["set", "descriptor.same_side", ["lit", "Z"]],
+        ["set", "descriptor.opposite_side", ["lit", "E"]],
+        ["emit", ["var", "descriptor"]]
+      ]
+    },
+    {
+      "id": "high_coordination_descriptor_assignment",
+      "k": "mapping",
+      "f": "required",
+      "c": [58],
+      "in": [["coordination_geometry", "StereogenicCoordinationGeometry"]],
+      "out": [["descriptor_set", "HighCoordinationDescriptorSet"]],
+      "table": "high_coordination_descriptors"
+    },
+    {
+      "id": "general_noncip_descriptor_assignment",
+      "k": "mapping",
+      "f": "required",
+      "c": [60, 61],
+      "in": [["configuration_context", "NonCIPConfigurationContext"]],
+      "out": [["descriptor_set", "GeneralNonCIPDescriptorSet"]],
+      "table": "general_noncip_descriptors"
+    },
+    {
+      "id": "locanted_and_unspecified_descriptor_procedure",
+      "k": "procedure",
+      "f": "required",
+      "c": [62, 63, 64, 65],
+      "in": [["stereogenic_unit", "StereogenicUnit"], ["configuration_status", "ConfigurationStatus"]],
+      "out": [["descriptor", "LocantedStereodescriptor"]],
+      "steps": [
+        ["set", "descriptor.locant", ["lit", "required locant for each stereogenic unit in a PIN"]],
+        ["set", "descriptor.unknown_or_inhomogeneous", ["lit", {"lower_case_descriptor_class": "small xi", "capitalized_descriptor_class": "capital Xi", "typography": "italic"}]],
+        ["set", "descriptor.small_xi_replaces", ["lit", ["r", "s", "m", "p"]]],
+        ["set", "descriptor.capital_xi_replaces", ["lit", ["R", "S", "M", "P", "E", "Z", "seqCis", "seqTrans"]]],
+        ["emit", ["var", "descriptor"]]
+      ]
+    },
+    {
+      "id": "natural_product_descriptor_assignment",
+      "k": "mapping",
+      "f": "required",
+      "c": [67, 68, 69, 70, 71, 72, 73, 74],
+      "in": [["natural_product_context", "NaturalProductConfigurationContext"]],
+      "out": [["descriptor", "NaturalProductStereodescriptor"]],
+      "table": "natural_product_stereodescriptors"
+    },
+    {
+      "id": "ring_system_descriptor_requirement",
+      "k": "mapping",
+      "f": "preference",
+      "c": [76, 77, 78, 79, 80, 81],
+      "in": [["ring_system", "UnsaturatedRingSystem"]],
+      "out": [["requirement", "StereodescriptorRequirement"]],
+      "table": "ring_system_descriptor_requirements"
+    },
+    {
+      "id": "stereodescriptor_base_name_invariance",
+      "k": "procedure",
+      "f": "required",
+      "c": [83, 84, 85, 86],
+      "in": [["compound", "ChemicalCompound"]],
+      "out": [["base_name", "ConfigurationNeutralName"]],
+      "steps": [
+        ["invoke", "P-59.1", {"compound": ["var", "compound"]}],
+        ["set", "base_name.invariant_under_stereodescriptors", true],
+        ["set", "base_name.numbering_invariant_under_stereodescriptors", true],
+        ["set", "base_name.nesting_exception", ["lit", "nesting symbols may alter the pre-affix nesting pattern; see P-16.5.4.1 and P-93.6"]],
+        ["emit", ["var", "base_name"]]
+      ]
+    },
+    {
+      "id": "stereodescriptor_placement",
+      "k": "procedure",
+      "f": "required",
+      "c": [87, 88, 89, 90, 91, 92],
+      "in": [["descriptor", "Stereodescriptor"], ["name_part", "NamePart"]],
+      "out": [["rendered_descriptor", "RenderedStereodescriptor"]],
+      "steps": [
+        ["set", "rendered_descriptor.position", ["lit", {"general": "immediately before the name part to which it relates", "parent_structure": "front of complete name", "substituent": "front of corresponding prefix"}]],
+        ["set", "rendered_descriptor.enclosure", ["lit", "parentheses followed by a hyphen"]],
+        ["set", "rendered_descriptor.locant", ["lit", "numerical or letter locant when present"]],
+        ["invoke", "P-14.4", {"name_part": ["var", "name_part"]}],
+        ["emit", ["var", "rendered_descriptor"]]
+      ]
+    },
+    {
+      "id": "corrected_but_2_ene_name_event",
+      "k": "definition",
+      "f": "definition",
+      "c": [96],
+      "out": [["event", "CorrectionEvent"]],
+      "term": "P-91.3 corrected-name source event",
+      "entity": "CorrectionEvent",
+      "value": ["lit", {"event_kind": "correction", "description": "corrected name", "target_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html", "icon_url": "https://iupac.qmul.ac.uk/greek/ALTER.GIF"}]
+    },
+    {
+      "id": "multiple_stereodescriptor_placement",
+      "k": "procedure",
+      "f": "required",
+      "c": [105, 106, 107],
+      "in": [["stereogenic_units", "StereogenicUnitSet"]],
+      "out": [["descriptor_set", "RenderedStereodescriptorSet"]],
+      "steps": [
+        ["each", "unit", ["var", "stereogenic_units"], [["emit", ["lit", "apply descriptor assignment to unit"]]], false],
+        ["set", "descriptor_set.order", ["lit", "increasing locants"]],
+        ["set", "descriptor_set.syntax", ["lit", "locanted symbols comma-separated within parentheses, followed by a hyphen, before the complete name or substituent"]],
+        ["emit", ["var", "descriptor_set"]]
+      ]
+    },
+    {
+      "id": "illustration_scope_note",
+      "k": "definition",
+      "f": "definition",
+      "c": [117],
+      "out": [["scope_note", "IllustrationScope"]],
+      "term": "descriptor omission in partial illustration",
+      "entity": "IllustrationScope",
+      "value": ["lit", {"illustrated_feature": "double bonds only", "omitted_descriptor": "chirality center at C-4", "omission_scope": "example caption only"}]
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "carbohydrate_graphical_convention_exception",
+      "c": [17],
+      "if": ["lit", {"domain": "natural products", "class": "carbohydrates"}],
+      "target": ["semantic_unit", "graphical_bond_convention"],
+      "mode": "replace",
+      "replacement": ["semantic_unit", "natural_product_graphical_conventions"],
+      "order": 17,
+      "specificity": 1
+    }
+  ],
+  "tables": [
+    {
+      "id": "graphical_bond_conventions",
+      "label": "P-91.1",
+      "title": "Graphical bond conventions for configuration",
+      "c": [7, 8, 10, 11, 13, 14, 16],
+      "cols": [["representation", "Representation", "String"], ["meaning", "Spatial meaning", "String"], ["orientation", "Orientation rule", "String"]],
+      "rows": [
+        {"id": "plain_line", "v": ["plain line", "bond approximately in drawing plane", "not directional"]},
+        {"id": "solid_wedge", "v": ["solid wedge", "bond to atom above drawing plane", "in-plane atom at narrow end"]},
+        {"id": "hashed_wedge", "v": ["hashed wedge", "bond to atom below drawing plane", "in-plane atom at narrow end"]},
+        {"id": "wavy_line", "v": ["constant-amplitude wavy line", "unknown configuration", "explicit uncertainty"]}
+      ],
+      "contract": {"key": ["representation"], "result": ["meaning", "orientation"], "cardinality": "one_to_one", "ordering": "source_order"}
+    },
+    {
+      "id": "preferred_cip_descriptors",
+      "label": "P-91.2.1.1",
+      "title": "Preferred CIP stereodescriptors",
+      "c": [28, 29, 30, 31, 32, 33],
+      "cols": [["entity", "Stereogenic entity", "String"], ["configuration", "Configuration", "String"], ["descriptors", "Descriptors", "String"]],
+      "rows": [
+        {"id": "quadriligant_center", "v": ["tetracoordinate quadriligant chirality center", "absolute", "R, S"]},
+        {"id": "pseudoasymmetric_center", "v": ["pseudoasymmetric center", "absolute", "r, s"]},
+        {"id": "axial_or_planar_helicity", "v": ["axial or planar entity under helicity rule", "absolute", "M, P"]},
+        {"id": "pseudoasymmetric_helicity", "v": ["pseudoasymmetric entity under helicity rule", "absolute", "m, p"]},
+        {"id": "enantiomorphic_double_bond", "v": ["enantiomorphic double bond", "configuration", "seqCis, seqTrans"]}
+      ],
+      "contract": {"key": ["entity", "configuration"], "result": ["descriptors"], "cardinality": "one_to_one", "ordering": "source_order"}
+    },
+    {
+      "id": "general_cip_descriptors",
+      "label": "P-91.2.1.1 general nomenclature",
+      "title": "CIP stereodescriptors recommended for general nomenclature",
+      "c": [36, 37, 38, 39, 40],
+      "cols": [["entity", "Stereogenic entity", "String"], ["descriptors", "Descriptors", "String"]],
+      "rows": [
+        {"id": "axial_chirality", "v": ["molecular entity with axial chirality", "Ra, Sa"]},
+        {"id": "planar_chirality", "v": ["molecular entity with planar chirality", "Rp, Sp"]},
+        {"id": "pseudoasymmetric_axis", "v": ["pseudoasymmetric stereogenic axis", "ra, sa"]},
+        {"id": "pseudoasymmetric_plane", "v": ["pseudoasymmetric stereogenic plane", "rp, sp"]}
+      ],
+      "contract": {"key": ["entity"], "result": ["descriptors"], "cardinality": "one_to_one", "ordering": "source_order"}
+    },
+    {
+      "id": "high_coordination_descriptors",
+      "label": "P-91.2.1.2.1(a)(ii)",
+      "title": "Descriptors for high-coordinate stereogenic centers",
+      "c": [58],
+      "cols": [["coordination", "Coordination", "String"], ["geometries", "Geometries", "String"], ["descriptors", "Descriptors", "String"]],
+      "rows": [
+        {"id": "pentacoordinate", "v": ["pentacoordinate pentaligant", "trigonal bipyramid or square pyramid", "A, C"]},
+        {"id": "hexacoordinate", "v": ["hexacoordinate hexaligant", "octahedron", "A, C"]}
+      ],
+      "contract": {"key": ["coordination"], "result": ["geometries", "descriptors"], "cardinality": "one_to_one", "ordering": "source_order"}
+    },
+    {
+      "id": "general_noncip_descriptors",
+      "label": "P-91.2.1.2.1(b)",
+      "title": "Other descriptors recommended for general nomenclature",
+      "c": [60, 61],
+      "cols": [["context", "Configuration context", "String"], ["descriptors", "Descriptors", "String"], ["reference", "Detailed rule", "String"]],
+      "rows": [
+        {"id": "diastereomorphic_double_bonds", "v": ["diastereomorphic double bonds", "cis, trans", "P-93.4.2.1.1"]},
+        {"id": "alicyclic_relative_configuration", "v": ["relative configuration of alicyclic compounds", "r, c, t", "P-93.5.1.3"]},
+        {"id": "von_baeyer_relative_configuration", "v": ["relative configuration of some von Baeyer ring systems", "endo, exo, syn, anti", "P-93.5.2.2.1"]}
+      ],
+      "contract": {"key": ["context"], "result": ["descriptors", "reference"], "cardinality": "one_to_one", "ordering": "source_order"}
+    },
+    {
+      "id": "natural_product_stereodescriptors",
+      "label": "P-91.2.1.2.2",
+      "title": "Stereodescriptors used in natural-product nomenclature",
+      "c": [67, 68, 69, 70, 71, 72, 73, 74],
+      "cols": [["context", "Natural-product context", "String"], ["descriptors", "Descriptors", "String"], ["dependency", "Detailed source", "String"]],
+      "rows": [
+        {"id": "dl_classes", "v": ["carbohydrates; amino acids and peptides; cyclitols", "D, L", "P-102; P-103; P-104"]},
+        {"id": "carbohydrate_systematic", "v": ["systematic carbohydrate nomenclature", "erythro, threo, arabino, gluco and related descriptors", "P-102"]},
+        {"id": "natural_product_absolute", "v": ["alkaloids; terpenes and terpenoids; steroids; other natural products", "alpha, beta", "P-101"]},
+        {"id": "carotenoids", "v": ["carotenoids and similar compounds", "cis, trans, all-E, all-trans", "P-101.6"]},
+        {"id": "symmetric_carbohydrates", "v": ["symmetric optically inactive alditols and aldaric acids", "meso", "P-102.5.6.5.2; P-102.5.6.6.5"]},
+        {"id": "non_5050_diastereoisomer_formation", "v": ["reaction at a nonstereogenic center of a chiral molecule, or chiral compound with racemic compound, not normally producing 50:50 mixture", "ambo", "P-93.1.4; P-103.3.4"]}
+      ],
+      "contract": {"key": ["context"], "result": ["descriptors", "dependency"], "cardinality": "one_to_one", "ordering": "source_order"}
+    },
+    {
+      "id": "ring_system_descriptor_requirements",
+      "label": "P-91.2.2",
+      "title": "Omission or requirement of double-bond stereodescriptors",
+      "c": [76, 77, 78, 79, 80, 81],
+      "cols": [["system", "Ring-system condition", "String"], ["requirement", "Descriptor requirement", "String"], ["reason_or_scope", "Reason or scope", "String"]],
+      "rows": [
+        {"id": "rings_3_to_7", "v": ["three- through seven-membered unsaturated alicyclic ring with fixed double-bond configuration", "omit", "name is unambiguous; Z for hydrocarbons and Z or E according to ligands"]},
+        {"id": "ring_8_monoene_pin", "v": ["eight-membered ring with one double bond in a PIN", "require locanted Z or E", "(Z)-cyclooctene or (E)-cyclooctene"]},
+        {"id": "ring_8_polyene", "v": ["eight-membered ring with two, three, or four double bonds", "omit", "for example cycloocta-1,3,5,7-tetraene"]},
+        {"id": "rings_9_plus", "v": ["ring of nine or more members", "require", "all such rings"]},
+        {"id": "other_ring_systems", "v": ["von Baeyer, spiro, fused, cyclophane, or assembly of identical rings/ring systems", "omit as recommended", "P-93.5.2.3; P-93.5.3.3; P-93.5.4; P-93.5.5.3; P-93.5.7.3"]}
+      ],
+      "contract": {"key": ["system"], "result": ["requirement", "reason_or_scope"], "cardinality": "one_to_one", "ordering": "source_order"}
+    }
+  ],
+  "figures": [],
+  "examples": [
+    {"id": "bromochlorofluoromethane", "c": [94], "input": {"caption": "(R)-bromo(chloro)(fluoro)methane (PIN)"}, "ok": ["(R)-bromo(chloro)(fluoro)methane (PIN)"], "bad": [], "shows": [["semantic_unit", "stereodescriptor_placement"], ["figure", "figure.asset.p_91.3:clause:0014"]], "why": "A parent-structure descriptor is parenthesized at the front of the complete PIN."},
+    {"id": "but_2_ene", "c": [97], "input": {"caption": "(2Z)-but-2-ene (PIN)"}, "ok": ["(2Z)-but-2-ene (PIN)"], "bad": [], "shows": [["semantic_unit", "ez_descriptor_assignment"], ["semantic_unit", "stereodescriptor_placement"], ["figure", "figure.asset.p_91.3:clause:0017"]], "why": "The locanted Z descriptor precedes the complete name."},
+    {"id": "pent_1_en_3_ol", "c": [99], "input": {"caption": "(3R)-pent-1-en-3-ol (PIN)"}, "ok": ["(3R)-pent-1-en-3-ol (PIN)"], "bad": [], "shows": [["semantic_unit", "preferred_cip_descriptor_assignment"], ["semantic_unit", "stereodescriptor_placement"], ["figure", "figure.asset.p_91.3:clause:0019"]], "why": "The chirality-center descriptor carries its locant and precedes the PIN."},
+    {"id": "chloropropylbenzene", "c": [101], "input": {"caption": "[(1R)-1-chloropropyl]benzene (PIN)"}, "ok": ["[(1R)-1-chloropropyl]benzene (PIN)"], "bad": [], "shows": [["semantic_unit", "stereodescriptor_placement"], ["figure", "figure.asset.p_91.3:clause:0021"]], "why": "A descriptor relating to a substituent is placed at the front of that prefix."},
+    {"id": "butan_2_yl_chlorohexanoate", "c": [103], "input": {"caption": "(2S)-butan-2-yl (4R)-4-chlorohexanoate (PIN)"}, "ok": ["(2S)-butan-2-yl (4R)-4-chlorohexanoate (PIN)"], "bad": [], "shows": [["semantic_unit", "stereodescriptor_placement"], ["figure", "figure.asset.p_91.3:clause:0023"]], "why": "Each descriptor is placed before the name part to which it relates."},
+    {"id": "dihydroxybutanoic_acid", "c": [109], "input": {"caption": "(2S,3S)-3-chloro-2-hydroxybutanoic acid (PIN)"}, "ok": ["(2S,3S)-3-chloro-2-hydroxybutanoic acid (PIN)"], "bad": [], "shows": [["semantic_unit", "multiple_stereodescriptor_placement"], ["figure", "figure.asset.p_91.3:clause:0029"]], "why": "Multiple locanted descriptors are comma-separated and ordered by increasing locants."},
+    {"id": "chloroheptene", "c": [111], "input": {"caption": "(2Z,6S)-6-chlorohept-2-ene (PIN)"}, "ok": ["(2Z,6S)-6-chlorohept-2-ene (PIN)"], "bad": [], "shows": [["semantic_unit", "multiple_stereodescriptor_placement"], ["figure", "figure.asset.p_91.3:clause:0031"]], "why": "Different descriptor classes share one locant-ordered descriptor set."},
+    {"id": "unknown_chlorocyclododecene", "c": [113], "input": {"caption": "(1\u039e)-1-chlorocyclododec-1-ene (PIN)"}, "ok": ["(1\u039e)-1-chlorocyclododec-1-ene (PIN)"], "bad": [], "shows": [["semantic_unit", "locanted_and_unspecified_descriptor_procedure"], ["figure", "figure.asset.p_91.3:clause:0033"]], "why": "Capital Xi replaces a capitalized descriptor when configuration is unknown or inhomogeneous."},
+    {"id": "propenyl_heptadiene", "c": [115], "input": {"caption": "(5Z)-4-[(1E)-prop-1-en-1-yl]hepta-1,5-diene (PIN)"}, "ok": ["(5Z)-4-[(1E)-prop-1-en-1-yl]hepta-1,5-diene (PIN)"], "bad": [], "shows": [["semantic_unit", "stereodescriptor_placement"], ["semantic_unit", "illustration_scope_note"], ["figure", "figure.asset.p_91.3:clause:0035"]], "why": "Parent and substituent double-bond descriptors are placed with their respective name parts; the unillustrated C-4 chirality descriptor is intentionally absent."}
+  ],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p91.part001.cip_scope_p1", "c": [27], "rel": "cites", "o": "P-91.2.1.1:xref:0001", "resolution": "external", "target": ["external", "P-1"]},
+    {"id": "reference.p91.part001.cip_scope_p8", "c": [27], "rel": "cites", "o": "P-91.2.1.1:xref:0002", "resolution": "external", "target": ["external", "P-8"]},
+    {"id": "reference.p91.part001.cip_scope_p10", "c": [27], "rel": "cites", "o": "P-91.2.1.1:xref:0003", "resolution": "exact"},
+    {"id": "reference.p91.part001.dl_p102", "c": [67], "rel": "cites", "o": "P-91.2.1.2.2:xref:0002", "resolution": "exact"},
+    {"id": "reference.p91.part001.carbohydrate_p102", "c": [68], "rel": "cites", "o": "P-91.2.1.2.2:xref:0005", "resolution": "exact"},
+    {"id": "reference.p91.part001.pin_formation", "c": [83], "rel": "invokes", "o": "P-91.3:xref:0001", "resolution": "exact"},
+    {"id": "reference.p91.part001.nesting_p936", "c": [86], "rel": "cites", "o": "P-91.3:xref:0003", "resolution": "exact"},
+    {"id": "reference.p91.part001.numbering", "c": [92], "rel": "invokes", "o": "P-91.3:xref:0004", "resolution": "exact"},
+    {"id": "reference.p91.part001.numbering_example", "c": [111], "rel": "cites", "o": "P-91.3:xref:0006", "resolution": "exact"}
+  ],
+  "additional_refs": []
+}
