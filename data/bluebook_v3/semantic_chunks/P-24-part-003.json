@@ -11,12 +11,12 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 88,
-    "compiled_clause_count": 66,
+    "compiled_clause_count": 75,
     "correction_application_count": 0,
     "example_count": 11,
     "exception_count": 0,
     "figure_count": 13,
-    "nonoperative_clause_count": 22,
+    "nonoperative_clause_count": 13,
     "record_count": 8,
     "reference_count": 20,
     "semantic_unit_count": 15,
@@ -24,7 +24,7 @@
     "symbol_declaration_count": 0,
     "table_count": 1
   },
-  "chunk_sha256": "7B51033E75570B01222BAC7115B673A55584606BB9B8AE0D32CE6B25ADE17A07",
+  "chunk_sha256": "1EF0EF9368E837C2BBC8795DECF66A7C25069CAD939A56A9F175125785B41610",
   "clause_dispositions": [
     {
       "clause_id": "P-24.8.2:clause:0001",
@@ -414,47 +414,112 @@
     {
       "clause_id": "P-24.8.4.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p24.part003.different_component_monospiro_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p24.part003.different_component_monospiro_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p24.part003.different_component_monospiro_naming.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-24.8.4.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p24.part003.different_component_monospiro_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p24.part003.different_component_monospiro_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p24.part003.different_component_monospiro_naming.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-24.8.4.1:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p24.part003.different_component_monospiro_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p24.part003.different_component_monospiro_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p24.part003.different_component_monospiro_naming.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-24.8.4.1:clause:0004",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p24.part003.different_component_monospiro_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p24.part003.different_component_monospiro_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p24.part003.different_component_monospiro_naming.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-24.8.4.1:clause:0005",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p24.part003.different_component_monospiro_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p24.part003.different_component_monospiro_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p24.part003.different_component_monospiro_naming.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-24.8.4.1:clause:0006",
@@ -742,20 +807,46 @@
     {
       "clause_id": "P-24.8.4.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p24.part003.three_components_two_individual_rings",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p24.part003.three_components_two_individual_rings.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p24.part003.three_components_two_individual_rings.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-24.8.4.2:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p24.part003.three_components_two_individual_rings",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p24.part003.three_components_two_individual_rings.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p24.part003.three_components_two_individual_rings.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-24.8.4.2:clause:0003",
@@ -853,20 +944,46 @@
     {
       "clause_id": "P-24.8.4.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p24.part003.bis_identical_components",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p24.part003.bis_identical_components.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p24.part003.bis_identical_components.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-24.8.4.3:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p24.part003.bis_identical_components",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p24.part003.bis_identical_components.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p24.part003.bis_identical_components.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-24.8.4.3:clause:0003",
@@ -3431,6 +3548,11 @@
     },
     {
       "clause_ids": [
+        "P-24.8.4.1:clause:0001",
+        "P-24.8.4.1:clause:0002",
+        "P-24.8.4.1:clause:0003",
+        "P-24.8.4.1:clause:0004",
+        "P-24.8.4.1:clause:0005",
         "P-24.8.4.1:clause:0007",
         "P-24.8.4.1:clause:0009",
         "P-24.8.4.1:clause:0010",
@@ -3450,6 +3572,11 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-24.8.4.1:clause:0001",
+            "P-24.8.4.1:clause:0002",
+            "P-24.8.4.1:clause:0003",
+            "P-24.8.4.1:clause:0004",
+            "P-24.8.4.1:clause:0005",
             "P-24.8.4.1:clause:0007",
             "P-24.8.4.1:clause:0009",
             "P-24.8.4.1:clause:0010",
@@ -3473,6 +3600,11 @@
       "unit_id": "unit.p24.part003.different_component_monospiro_naming",
       "value": {
         "clause_ids": [
+          "P-24.8.4.1:clause:0001",
+          "P-24.8.4.1:clause:0002",
+          "P-24.8.4.1:clause:0003",
+          "P-24.8.4.1:clause:0004",
+          "P-24.8.4.1:clause:0005",
           "P-24.8.4.1:clause:0007",
           "P-24.8.4.1:clause:0009",
           "P-24.8.4.1:clause:0010",
@@ -3517,6 +3649,8 @@
     },
     {
       "clause_ids": [
+        "P-24.8.4.2:clause:0001",
+        "P-24.8.4.2:clause:0002",
         "P-24.8.4.2:clause:0004",
         "P-24.8.4.2:clause:0006",
         "P-24.8.4.2:clause:0007"
@@ -3529,6 +3663,8 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-24.8.4.2:clause:0001",
+            "P-24.8.4.2:clause:0002",
             "P-24.8.4.2:clause:0004",
             "P-24.8.4.2:clause:0006",
             "P-24.8.4.2:clause:0007"
@@ -3545,6 +3681,8 @@
       "unit_id": "unit.p24.part003.three_components_two_individual_rings",
       "value": {
         "clause_ids": [
+          "P-24.8.4.2:clause:0001",
+          "P-24.8.4.2:clause:0002",
           "P-24.8.4.2:clause:0004",
           "P-24.8.4.2:clause:0006",
           "P-24.8.4.2:clause:0007"
@@ -3564,6 +3702,8 @@
     },
     {
       "clause_ids": [
+        "P-24.8.4.3:clause:0001",
+        "P-24.8.4.3:clause:0002",
         "P-24.8.4.3:clause:0004",
         "P-24.8.4.3:clause:0006"
       ],
@@ -3575,6 +3715,8 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-24.8.4.3:clause:0001",
+            "P-24.8.4.3:clause:0002",
             "P-24.8.4.3:clause:0004",
             "P-24.8.4.3:clause:0006"
           ],
@@ -3590,6 +3732,8 @@
       "unit_id": "unit.p24.part003.bis_identical_components",
       "value": {
         "clause_ids": [
+          "P-24.8.4.3:clause:0001",
+          "P-24.8.4.3:clause:0002",
           "P-24.8.4.3:clause:0004",
           "P-24.8.4.3:clause:0006"
         ],
