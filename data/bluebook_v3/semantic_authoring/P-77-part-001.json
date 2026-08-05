@@ -3,20 +3,20 @@
   "clauses": [
     null,
     null,
-    null,
-    null,
-    ["figure_asset", "illustrative", "compile"],
-    ["figure_asset", "illustrative", "compile"],
-    ["figure_asset", "illustrative", "compile"],
-    ["figure_asset", "illustrative", "compile"],
-    ["figure_asset", "illustrative", "compile"],
-    ["figure_asset", "illustrative", "compile"],
-    null,
-    null,
+    ["procedure_step", "normative", "compile"],
     null,
     ["figure_asset", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["permission", "normative", "compile"],
     null,
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["permission", "normative", "compile"],
     ["permission", "normative", "compile"],
     ["condition", "normative", "compile"],
     ["permission", "normative", "compile"],
@@ -25,20 +25,20 @@
     ["figure_asset", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
     null,
-    null,
+    ["procedure_step", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null,
-    null,
-    ["example", "illustrative", "compile"],
-    null,
-    null,
+    ["procedure_step", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     null,
+    ["procedure_step", "normative", "compile"],
     null,
+    ["example", "illustrative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["permission", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"]
@@ -126,15 +126,206 @@
   "format": "iupac-bluebook-semantic-authoring",
   "format_version": "1.0.0",
   "refs": [],
-  "symbols": [],
+  "symbols": [
+    {
+      "id": "salt.construct_preferred_binary_name",
+      "k": "transformation",
+      "d": "Construct a preferred binary salt name by citing the cation name followed by the anion name.",
+      "a": [["salt", "OrganicSalt"]],
+      "ret": "name",
+      "g": ["primitive", [], "construct_preferred_binary_salt_name"]
+    },
+    {
+      "id": "salt.apply_substitutive_nomenclature",
+      "k": "transformation",
+      "d": "Derive the preferred IUPAC name of an organic monosalt by substitutive nomenclature.",
+      "a": [["salt", "OrganicMonosalt"]],
+      "ret": "name",
+      "g": ["primitive", [], "apply_substitutive_salt_nomenclature"]
+    }
+  ],
   "tables": [],
   "task_id": "P-77-part-001",
   "units": [
     {
+      "id": "organic_base_salt_preferred_binary_name",
+      "k": "rule",
+      "f": "required",
+      "c": [3],
+      "scope": {
+        "r": ["preferred_iupac_name"],
+        "if": ["lit", true]
+      },
+      "in": [["salt", "OrganicBaseSalt"]],
+      "out": [["name", "name"]],
+      "if": ["lit", true],
+      "then": [
+        [
+          "xform",
+          "name",
+          "salt.construct_preferred_binary_name",
+          ["var", "salt"]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "polyamine_monosalt_preferred_substitutive_name",
+      "k": "rule",
+      "f": "required",
+      "c": [11],
+      "scope": {
+        "r": ["preferred_iupac_name"],
+        "if": ["lit", true]
+      },
+      "in": [["salt", "PolyamineMonosalt"]],
+      "out": [["name", "name"]],
+      "if": ["lit", true],
+      "then": [
+        [
+          "xform",
+          "name",
+          "salt.apply_substitutive_nomenclature",
+          ["var", "salt"]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "polyamine_monosalt_general_adduct_name",
+      "k": "rule",
+      "f": "permitted",
+      "c": [12],
+      "scope": {
+        "r": ["general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [["salt", "PolyamineMonosalt"]],
+      "out": [["allowed_methods", "GeneralSaltNamingMethods"]],
+      "if": ["lit", true],
+      "then": [
+        [
+          "set",
+          "allowed_methods",
+          ["lit", ["adduct name"]]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "alcohol_derived_salt_preferred_binary_name",
+      "k": "rule",
+      "f": "required",
+      "c": [25],
+      "scope": {
+        "r": ["preferred_iupac_name"],
+        "if": ["lit", true]
+      },
+      "in": [["salt", "AlcoholDerivedSalt"]],
+      "out": [["name", "name"]],
+      "if": ["lit", true],
+      "then": [
+        [
+          "xform",
+          "name",
+          "salt.construct_preferred_binary_name",
+          ["var", "salt"]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "polyhydroxy_monosalt_preferred_substitutive_name",
+      "k": "rule",
+      "f": "required",
+      "c": [30],
+      "scope": {
+        "r": ["preferred_iupac_name"],
+        "if": ["lit", true]
+      },
+      "in": [["salt", "PolyhydroxyMonosalt"]],
+      "out": [["name", "name"]],
+      "if": ["lit", true],
+      "then": [
+        [
+          "xform",
+          "name",
+          "salt.apply_substitutive_nomenclature",
+          ["var", "salt"]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "organic_acid_salt_preferred_binary_name",
+      "k": "rule",
+      "f": "required",
+      "c": [34],
+      "scope": {
+        "r": ["preferred_iupac_name"],
+        "if": ["lit", true]
+      },
+      "in": [["salt", "OrganicAcidSalt"]],
+      "out": [["name", "name"]],
+      "if": ["lit", true],
+      "then": [
+        [
+          "xform",
+          "name",
+          "salt.construct_preferred_binary_name",
+          ["var", "salt"]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "polybasic_organic_acid_salt_preferred_substitutive_name",
+      "k": "rule",
+      "f": "required",
+      "c": [37],
+      "scope": {
+        "r": ["preferred_iupac_name"],
+        "if": ["lit", true]
+      },
+      "in": [["salt", "PolybasicOrganicAcidSalt"]],
+      "out": [["name", "name"]],
+      "if": ["lit", true],
+      "then": [
+        [
+          "xform",
+          "name",
+          "salt.apply_substitutive_nomenclature",
+          ["var", "salt"]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "polybasic_organic_acid_salt_general_names",
+      "k": "rule",
+      "f": "permitted",
+      "c": [38],
+      "scope": {
+        "r": ["general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [["salt", "PolybasicOrganicAcidSalt"]],
+      "out": [["allowed_methods", "GeneralSaltNamingMethods"]],
+      "if": ["lit", true],
+      "then": [
+        [
+          "set",
+          "allowed_methods",
+          ["lit", ["hydrogen salt method", "descriptive phrase"]]
+        ]
+      ],
+      "else": []
+    },
+    {
       "id": "traditional_salt_naming_methods",
       "k": "definition",
       "f": "definition",
-      "c": [17, 18, 19, 20],
+      "c": [16, 17, 18, 19, 20],
       "term": "traditional methods for naming salts of organic bases",
       "entity": "SaltNamingMethodSet",
       "value": ["lit", {
