@@ -11,12 +11,12 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 93,
-    "compiled_clause_count": 76,
+    "compiled_clause_count": 79,
     "correction_application_count": 0,
     "example_count": 24,
     "exception_count": 0,
     "figure_count": 24,
-    "nonoperative_clause_count": 17,
+    "nonoperative_clause_count": 14,
     "record_count": 8,
     "reference_count": 15,
     "semantic_unit_count": 8,
@@ -24,7 +24,7 @@
     "symbol_declaration_count": 0,
     "table_count": 0
   },
-  "chunk_sha256": "77BB60DF760BA6DB5AE63E8C34A8FD5F83982CD62C347CBCB1F274C46BA60DBF",
+  "chunk_sha256": "2F49DF373CD325FAC599C92E3C6F954317064DBDFF5366CDF1D827D7F2358C12",
   "clause_dispositions": [
     {
       "clause_id": "P-66.6.4:clause:0001",
@@ -302,29 +302,92 @@
     {
       "clause_id": "P-66.6.5.1.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.acetal_and_ketal_class_and_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-66.6.5.1.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.acetal_and_ketal_class_and_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-66.6.5.1.1:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.acetal_and_ketal_class_and_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-66.6.5.1.1:clause:0004",
@@ -3333,6 +3396,7 @@
     },
     {
       "clause_ids": [
+        "P-66.6.5.1.1:clause:0001",
         "P-66.6.5.1.1:clause:0002",
         "P-66.6.5.1.1:clause:0003",
         "P-66.6.5.1.1:clause:0004",
@@ -3357,6 +3421,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-66.6.5.1.1:clause:0001",
             "P-66.6.5.1.1:clause:0002",
             "P-66.6.5.1.1:clause:0003",
             "P-66.6.5.1.1:clause:0004",
@@ -3375,6 +3440,7 @@
       "then": [
         {
           "clause_ids": [
+            "P-66.6.5.1.1:clause:0001",
             "P-66.6.5.1.1:clause:0002",
             "P-66.6.5.1.1:clause:0003",
             "P-66.6.5.1.1:clause:0004",
@@ -3386,6 +3452,7 @@
           "target": "naming_options",
           "value": {
             "clause_ids": [
+              "P-66.6.5.1.1:clause:0001",
               "P-66.6.5.1.1:clause:0002",
               "P-66.6.5.1.1:clause:0003",
               "P-66.6.5.1.1:clause:0004",
@@ -3421,6 +3488,7 @@
       "unit_id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
       "when": {
         "clause_ids": [
+          "P-66.6.5.1.1:clause:0001",
           "P-66.6.5.1.1:clause:0002",
           "P-66.6.5.1.1:clause:0003",
           "P-66.6.5.1.1:clause:0004",
