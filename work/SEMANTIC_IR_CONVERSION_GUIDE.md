@@ -9,7 +9,8 @@ Conversion is source compilation, not prose summarization and not engine work.
 Each converter receives a hash-verified compact task or its JSON Lines model
 view. The task contains only evidence needed for semantic decisions:
 
-- ordered atomic clauses, node kinds, semantic cues, and linked payloads;
+- ordered atomic clauses, node and ancestor kinds, semantic cues, and linked
+  payloads;
 - occurrence-level outgoing citations with local text context;
 - every occurrence-level citation and any exact resolution overlay;
 - applicable correction overlays;

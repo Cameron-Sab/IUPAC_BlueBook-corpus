@@ -127,6 +127,7 @@
         "ordinal",
         "unit_kind",
         "node_kind",
+        "ancestor_node_kinds",
         "semantic_cue",
         "text",
         "text_sha256",
@@ -139,6 +140,10 @@
         "ordinal": { "type": "integer", "minimum": 1 },
         "unit_kind": { "type": "string", "minLength": 1 },
         "node_kind": { "type": "string", "minLength": 1 },
+        "ancestor_node_kinds": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
         "semantic_cue": { "type": ["string", "null"] },
         "text": { "type": ["string", "null"] },
         "text_sha256": {

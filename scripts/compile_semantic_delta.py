@@ -131,6 +131,7 @@ def _compatibility_packet(task: Mapping[str, Any]) -> dict[str, Any]:
                         {
                             "unit_id": unit["clause_id"],
                             "unit_kind": unit["unit_kind"],
+                            "ancestor_node_kinds": unit["ancestor_node_kinds"],
                             "semantic_cue": unit["semantic_cue"],
                         }
                         for unit in rule["source_units"]

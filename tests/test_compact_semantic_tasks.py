@@ -98,10 +98,10 @@ def test_compact_tasks_are_complete_schema_valid_and_self_hashed() -> None:
     assert manifest["assigned_reference_resolution_count"] == 3
 
 
-def test_compact_model_view_removes_over_98_percent_of_legacy_packet_bytes() -> None:
+def test_compact_model_view_removes_over_97_percent_of_legacy_packet_bytes() -> None:
     tasks, manifest = tasks_and_manifest()
-    assert manifest["task_file_bytes"] < 16_000_000
-    assert manifest["model_view_bytes"] < LEGACY_PACKET_BYTES * 0.02
+    assert manifest["task_file_bytes"] < 17_000_000
+    assert manifest["model_view_bytes"] < LEGACY_PACKET_BYTES * 0.03
     assert manifest["model_view_bytes"] == sum(
         len(model_view_bytes(task)) for task in tasks
     )
@@ -119,6 +119,28 @@ def test_model_view_is_source_bound_and_rule_selectable() -> None:
     assert [row[1] for row in rows if row[0] == "C"] == [
         unit["clause_id"] for unit in task["rules"][0]["source_units"]
     ]
+
+
+def test_compact_tasks_preserve_example_ancestor_context() -> None:
+    tasks, _manifest = tasks_and_manifest()
+    units = [
+        unit for task in tasks for rule in task["rules"] for unit in rule["source_units"]
+    ]
+    labels = [unit for unit in units if unit["node_kind"] == "example_block"]
+    descendants = [
+        unit for unit in units if "example_block" in unit["ancestor_node_kinds"]
+    ]
+    assert len(labels) == 1_745
+    assert len(descendants) == 14_528
+    assert all(unit["unit_kind"] == "example_label" for unit in labels)
+
+    task = task_by_id("P-12-part-001")
+    rows = [
+        json.loads(line)
+        for line in model_view_bytes(task).decode("utf-8").splitlines()[1:]
+    ]
+    first_example_child = next(row for row in rows if row[1] == "P-12.1:clause:0025")
+    assert first_example_child[4] == ["example_block"]
 
 
 def test_byte_exact_check_rejects_stale_or_extra_tasks(tmp_path: Path) -> None:
@@ -178,6 +200,19 @@ def test_delta_compiler_rejects_stale_delta_hash() -> None:
     delta["clause_dispositions"][0]["role"] = "source_metadata"
     with pytest.raises(ValueError, match="Delta SHA-256"):
         compile_delta(delta, task)
+
+
+def test_strict_gate_rejects_nonoperative_example_descendant() -> None:
+    task = deepcopy(task_by_id("P-40-part-001"))
+    task["rules"][0]["source_units"][0]["ancestor_node_kinds"] = ["example_block"]
+    task["task_sha256"] = digest_without_field(task, "task_sha256")
+    delta = base_delta()
+    finalize_delta(delta, task)
+    _chunk, result = compile_delta(delta, task)
+    assert result["passed"] is False
+    assert "disposition.example_context_nonoperative" in {
+        error["code"] for error in result["errors"]
+    }
 
 
 def test_delta_compiler_rejects_ambiguous_target_without_semantic_override() -> None:

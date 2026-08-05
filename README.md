@@ -58,8 +58,10 @@ GitHub's 100 MB limit.
 `scripts/build_compact_semantic_tasks.py` deterministically partitions all 2,554
 records and 32,408 clauses into 151 source-bound tasks without copying full
 source records, document fragments, and provenance into every task. The tasks
-occupy 15,908,183 bytes; their token-efficient JSON Lines model views occupy
-6,565,658 bytes, 98.04% less than the former 335,255,522-byte packet set.
+occupy 16,936,679 bytes; their token-efficient JSON Lines model views occupy
+6,884,500 bytes, 97.95% less than the former 335,255,522-byte packet set. The
+model view preserves ordered ancestor kinds so prose nested inside examples,
+notes, figures, or other containers cannot lose its local semantic context.
 
 Converters emit only a semantic decision delta. The compiler generates record
 envelopes, hierarchy edges, citation targets, occurrence and resolution
@@ -102,6 +104,24 @@ provenance instead of trusting generated counts.
 The delta progress auditor returns success for valid partial progress, but
 `--require-complete` succeeds only when all 151 deltas compile and pass. Invalid
 or extra deltas always fail. Legacy manual chunks are not counted.
+
+## Local Nomenclature Benchmark
+
+`scripts/benchmark_chebi_iupac_names.py` joins the ChEBI compounds, names, and
+structures downloads without copying those datasets into this repository. It
+selects active three-star compounds and active English `IUPAC NAME` rows,
+verifies structures independently with RDKit, and compares each name to its
+structure with OPSIN. Detailed cases and reports are written under the ignored
+`work/benchmarks/` directory.
+
+```powershell
+python scripts\benchmark_chebi_iupac_names.py
+```
+
+This is an independent name-to-structure consistency benchmark, not proof that
+an unfinished semantic conversion or naming engine is complete. Exact-name,
+connectivity, stereochemistry/protonation, parser failure, and unscorable
+dataset outcomes remain separate.
 
 ## Prototype Engine
 

@@ -601,10 +601,29 @@ def _validate_disposition_semantics(
     source_units: dict[str, Mapping[str, Any]] = {}
     for assignment in _list(packet.get("assigned")):
         inventory = _mapping(_mapping(assignment).get("clause_inventory_record"))
+        ancestor_kinds_by_unit: dict[str, list[str]] = {}
+        coverage = list(map(_mapping, _list(inventory.get("node_coverage"))))
+        for node in coverage:
+            component_path = node.get("component_path")
+            if not isinstance(component_path, str):
+                continue
+            ancestor_kinds = [
+                str(candidate.get("node_kind"))
+                for candidate in coverage
+                if isinstance(candidate.get("component_path"), str)
+                and candidate.get("component_path") != component_path
+                and component_path.startswith(str(candidate.get("component_path")) + "/")
+            ]
+            for unit_id in _list(node.get("unit_ids")):
+                if isinstance(unit_id, str):
+                    ancestor_kinds_by_unit[unit_id] = ancestor_kinds
         for unit in _list(inventory.get("source_units")):
-            source_unit = _mapping(unit)
+            source_unit = dict(_mapping(unit))
             unit_id = source_unit.get("unit_id")
             if isinstance(unit_id, str):
+                source_unit.setdefault(
+                    "ancestor_node_kinds", ancestor_kinds_by_unit.get(unit_id, [])
+                )
                 source_units[unit_id] = source_unit
 
     for index, raw_disposition in enumerate(_list(chunk.get("clause_dispositions"))):
@@ -618,6 +637,7 @@ def _validate_disposition_semantics(
         force = disposition.get("force")
         unit_kind = source_unit.get("unit_kind")
         semantic_cue = source_unit.get("semantic_cue")
+        ancestor_node_kinds = _list(source_unit.get("ancestor_node_kinds"))
         path = ("clause_dispositions", index, "disposition")
 
         audit.require(
@@ -656,6 +676,14 @@ def _validate_disposition_semantics(
             not (role == "example" and unit_kind != "example_label"),
             "disposition.example_nonoperative",
             "Example evidence must reach a typed example unless it is only a label",
+            path=path,
+            clause_id=clause_id,
+            unit_kind=unit_kind,
+        )
+        audit.require(
+            "example_block" not in ancestor_node_kinds,
+            "disposition.example_context_nonoperative",
+            "Source content nested inside an example block must reach typed evidence",
             path=path,
             clause_id=clause_id,
             unit_kind=unit_kind,

@@ -92,6 +92,7 @@ def model_view_bytes(task: Mapping[str, Any]) -> bytes:
                 "clause_id",
                 "unit_kind",
                 "node_kind",
+                "ancestor_node_kinds",
                 "semantic_cue",
                 "text",
                 "payload",
@@ -135,6 +136,7 @@ def model_view_bytes(task: Mapping[str, Any]) -> bytes:
                         unit["clause_id"],
                         unit["unit_kind"],
                         unit["node_kind"],
+                        unit["ancestor_node_kinds"],
                         unit["semantic_cue"],
                         unit["text"],
                         unit["payload"],
@@ -191,12 +193,35 @@ def file_hash(path: Path) -> str:
     return sha256_bytes(path.read_bytes())
 
 
-def compact_source_unit(unit: Mapping[str, Any]) -> dict[str, Any]:
+def unit_ancestor_kinds(
+    inventory_record: Mapping[str, Any],
+) -> dict[str, list[str]]:
+    coverage = inventory_record["node_coverage"]
+    result: dict[str, list[str]] = {}
+    for node in coverage:
+        path = node["component_path"]
+        ancestors = [
+            candidate["node_kind"]
+            for candidate in coverage
+            if candidate["component_path"] != path
+            and path.startswith(candidate["component_path"] + "/")
+        ]
+        for unit_id in node["unit_ids"]:
+            if unit_id in result:
+                raise ValueError(f"Source unit occurs under multiple nodes: {unit_id}")
+            result[unit_id] = ancestors
+    return result
+
+
+def compact_source_unit(
+    unit: Mapping[str, Any], ancestor_node_kinds: Sequence[str]
+) -> dict[str, Any]:
     return {
         "clause_id": unit["unit_id"],
         "ordinal": unit["ordinal"],
         "unit_kind": unit["unit_kind"],
         "node_kind": unit["node_kind"],
+        "ancestor_node_kinds": list(ancestor_node_kinds),
         "semantic_cue": unit["semantic_cue"],
         "text": unit["text"],
         "text_sha256": unit["text_sha256"],
@@ -314,6 +339,7 @@ def build_tasks(
         for source_record in partition:
             rule_id = source_record["source_rule_id"]
             inventory_record = clause_by_rule[rule_id]
+            ancestors_by_unit = unit_ancestor_kinds(inventory_record)
             rule_occurrences = occurrences_by_rule.get(rule_id, [])
             compact_references = []
             for occurrence in rule_occurrences:
@@ -343,7 +369,9 @@ def build_tasks(
                         for record in records[index + 1 : index + 3]
                     ],
                     "source_units": [
-                        compact_source_unit(unit)
+                        compact_source_unit(
+                            unit, ancestors_by_unit[unit["unit_id"]]
+                        )
                         for unit in inventory_record["source_units"]
                     ],
                     "references": compact_references,
