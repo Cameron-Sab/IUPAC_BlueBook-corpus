@@ -1,0 +1,549 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-26-part-001",
+  "mechanical_assets": true,
+  "clauses": [
+    null,
+    null,
+    null,
+    ["note", "informative", "compile"],
+    ["condition", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["note", "informative", "compile"],
+    ["definition", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    null,
+    ["scope", "informative", "compile"],
+    ["scope", "informative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["note", "illustrative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["definition", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["definition", "normative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["definition", "normative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["note", "informative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["procedure_step", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["effect", "normative", "compile"],
+    ["effect", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["scope", "informative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["exception", "normative", "compile"],
+    ["cross_reference", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["condition", "normative", "compile"],
+    ["exception", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["condition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["preference_criterion", "normative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["procedure_step", "normative", "compile"],
+    ["note", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["condition", "normative", "compile"]
+  ],
+  "symbols": [
+    {"id": "amplificant.has_locants", "k": "predicate", "d": "Whether a heterocyclic amplificant requires locants in its rendered prefix.", "a": [["amplificant", "HeterocyclicAmplificant"]], "ret": "boolean"},
+    {"id": "phane.preserved_amplificant_attachment_bonds_remain", "k": "predicate", "d": "Whether bonds joining an amplificant to the surrounding skeleton are preserved through simplification and amplification.", "a": [["parent", "PhaneParentSkeleton"], ["simplified", "SimplifiedPhaneParentGraph"]], "ret": "boolean"},
+    {"id": "phane.amplificants_have_expressible_amplification_prefixes", "k": "predicate", "d": "Whether every selected amplificant can be represented by an allowed amplification prefix.", "a": [["skeleton", "SimplifiedPhaneParentGraph"]], "ret": "boolean"},
+    {"id": "parent.is_mancude_monocycle_or_polycycle", "k": "predicate", "d": "Whether a parent is an allowed mancude monocyclic ring or polycyclic ring system.", "a": [["parent", "ParentHydride"]], "ret": "boolean"},
+    {"id": "parent.is_bridged_fused_ring_system", "k": "predicate", "d": "Whether a parent is an allowed bridged fused ring system.", "a": [["parent", "ParentHydride"]], "ret": "boolean"},
+    {"id": "parent.is_saturated_monocycle", "k": "predicate", "d": "Whether a parent is an allowed saturated monocyclic ring.", "a": [["parent", "ParentHydride"]], "ret": "boolean"},
+    {"id": "parent.is_saturated_von_baeyer_hydrocarbon", "k": "predicate", "d": "Whether a parent is an allowed saturated bicycloalkane or polycycloalkane named by von Baeyer nomenclature.", "a": [["parent", "ParentHydride"]], "ret": "boolean"},
+    {"id": "parent.is_spiro_alkane", "k": "predicate", "d": "Whether a parent is an allowed spiro alkane.", "a": [["parent", "ParentHydride"]], "ret": "boolean"},
+    {"id": "parent.is_stereoparent", "k": "predicate", "d": "Whether a parent is an allowed stereoparent such as gonane or morphinan.", "a": [["parent", "ParentHydride"]], "ret": "boolean"},
+    {"id": "name.is_spirobi_name", "k": "predicate", "d": "Whether a candidate is a spirobi parent hydride name.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "name.is_spiro_with_fused_or_polycycloalkane_component", "k": "predicate", "d": "Whether a spiro candidate contains a fused-ring or polycycloalkane component.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "name.is_ring_assembly_name", "k": "predicate", "d": "Whether a candidate is a ring-assembly name.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "name.has_hydro_prefix_modification", "k": "predicate", "d": "Whether a candidate parent name is modified by hydro prefixes.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "name.has_ene_or_yne_ending_modification", "k": "predicate", "d": "Whether a candidate parent name is modified by ene or yne endings.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "name.has_skeletal_replacement_terms", "k": "predicate", "d": "Whether a candidate parent name contains skeletal-replacement a terms.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "name.has_characteristic_group_suffix", "k": "predicate", "d": "Whether a candidate parent name is modified by a characteristic-group suffix.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "name.has_substitutive_prefix", "k": "predicate", "d": "Whether a candidate parent name is modified by a substitutive prefix.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "name.is_retained_functional_parent_name", "k": "predicate", "d": "Whether a candidate is a retained functional-parent name.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "name.is_functional_class_name", "k": "predicate", "d": "Whether a candidate cyclic compound name was formed by functional-class nomenclature.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "name.is_retained_partially_hydrogenated_parent_name", "k": "predicate", "d": "Whether a candidate is a retained partially hydrogenated parent hydride name.", "a": [["name", "ParentStructureName"]], "ret": "boolean"},
+    {"id": "prefix.is_simple_amplification_prefix", "k": "predicate", "d": "Whether an amplification prefix is simple and accepts di, tri, tetra, and higher simple multiplicative terms.", "a": [["prefix", "AmplificationPrefix"]], "ret": "boolean"},
+    {"id": "prefix.begins_with_multiplying_prefix", "k": "predicate", "d": "Whether an amplification prefix already begins with a multiplying prefix.", "a": [["prefix", "AmplificationPrefix"]], "ret": "boolean"},
+    {"id": "prefix.begins_with_multipliable_name_component", "k": "predicate", "d": "Whether the first name component could itself take a multiplying prefix and therefore requires bis, tris, or tetrakis.", "a": [["prefix", "AmplificationPrefix"]], "ret": "boolean"},
+    {"id": "simplified_skeleton.is_linear", "k": "predicate", "d": "Whether a simplified phane skeleton is unbranched and acyclic.", "a": [["skeleton", "SimplifiedPhaneParentGraph"]], "ret": "boolean"},
+    {"id": "amplificant.enclose_in_brackets", "k": "transformation", "d": "Enclose a locanted heterocyclic amplificant in brackets.", "a": [["amplificant", "HeterocyclicAmplificant"]], "ret": "AmplificantRendering"},
+    {"id": "phane.simplify_significant_cyclic_segments_to_superatoms", "k": "transformation", "d": "Replace nomenclaturally significant cyclic segments by superatoms to form the simplified phane parent graph.", "a": [["parent", "PhaneParentSkeleton"]], "ret": "SimplifiedPhaneParentGraph"},
+    {"id": "phane.combine_skeletal_name_and_amplification_prefixes", "k": "transformation", "d": "Combine a simplified skeletal name with amplification prefixes and their superatom and attachment locants.", "a": [["skeleton", "SimplifiedPhaneParentGraph"]], "ret": "PhaneParentName"},
+    {"id": "phane.compose_simplified_skeletal_name", "k": "transformation", "d": "Compose a simplified skeletal name from topology, node count, and the term phane.", "a": [["skeleton", "SimplifiedPhaneParentGraph"], ["options", "SimplifiedSkeletalNameOptions"]], "ret": "SimplifiedSkeletalName"},
+    {"id": "phane.apply_structure_class_numbering", "k": "transformation", "d": "Apply the Chapter P-2 numbering system for the simplified skeleton's structure class.", "a": [["skeleton", "SimplifiedPhaneParentGraph"], ["authority", "string"]], "ret": "SkeletalNumbering"},
+    {"id": "phane.assign_lowest_superatom_locant_set", "k": "transformation", "d": "Choose the lowest superatom locant set by first point of difference.", "a": [["numbering", "SkeletalNumbering"], ["criterion", "string"]], "ret": "SkeletalNumbering"},
+    {"id": "prefix.apply_simple_multiplicative_term", "k": "transformation", "d": "Apply the appropriate simple multiplicative term to a simple amplification prefix.", "a": [["prefix", "AmplificationPrefix"], ["multiplicity", "integer"], ["terms", "MultiplicativeTermSet"]], "ret": "AmplificationPrefix"},
+    {"id": "prefix.apply_complex_multiplicative_term", "k": "transformation", "d": "Apply bis, tris, tetrakis, or the corresponding higher term to a complex amplification prefix.", "a": [["prefix", "AmplificationPrefix"], ["multiplicity", "integer"], ["terms", "MultiplicativeTermSet"]], "ret": "AmplificationPrefix"}
+  ],
+  "units": [
+    {
+      "id": "phane_source_revision_context",
+      "k": "definition",
+      "f": "definition",
+      "c": [4],
+      "term": "phane nomenclature source revision",
+      "entity": "RecommendationRevisionContext",
+      "value": ["lit", {
+        "basis": "Phane nomenclature, Part I. Phane parent names (reference 5)",
+        "edition_change": "heterocyclic amplificants requiring locants use brackets",
+        "other_recommendation_changes": false
+      }]
+    },
+    {
+      "id": "heterocyclic_amplificant_locant_bracketing",
+      "k": "rule",
+      "f": "required",
+      "c": [5],
+      "in": [["amplificant", "HeterocyclicAmplificant"]],
+      "out": [["rendering", "AmplificantRendering"]],
+      "if": ["pred", "amplificant.has_locants", ["var", "amplificant"]],
+      "then": [["xform", "rendering", "amplificant.enclose_in_brackets", ["var", "amplificant"]]],
+      "else": [["set", "rendering", ["var", "amplificant"]]]
+    },
+    {
+      "id": "phane_nomenclature_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [6, 12],
+      "term": "phane nomenclature",
+      "entity": "NomenclatureMethod",
+      "value": ["lit", {
+        "structure_scope": "cyclic or acyclic compounds composed of rings or ring systems linked directly or through atoms or chains",
+        "names": ["cyclophanes", "linear compounds"],
+        "preferred_iupac_name_dependency": "P-52.2.5"
+      }]
+    },
+    {
+      "id": "cyclophane_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [7, 8, 9, 10, 11],
+      "term": "cyclophane",
+      "entity": "CompoundClass",
+      "value": ["lit", {
+        "recognized_class": true,
+        "current_requirements": {
+          "ring_components": "saturated and/or mancude rings, ring systems, or assemblies thereof",
+          "alternate_components": "atoms and/or saturated or unsaturated chains",
+          "arrangement": "alternate components of a large ring"
+        },
+        "historical_use": "two 1,4-phenylene groups held face to face by -[CH2]n- bridges",
+        "bibliographic_references": [19, 23]
+      }]
+    },
+    {
+      "id": "phane_terminology_inventory",
+      "k": "definition",
+      "f": "definition",
+      "c": [14, 15],
+      "term": "phane construction terminology",
+      "entity": "TerminologyInventory",
+      "value": ["lit", {
+        "covers": ["operations", "phane-name components", "structural details involved in the operations"]
+      }]
+    },
+    {
+      "id": "simplification_and_amplification",
+      "k": "procedure",
+      "f": "required",
+      "c": [17, 18, 19, 20, 21, 22, 23, 24],
+      "in": [["phane_parent_skeleton", "PhaneParentSkeleton"]],
+      "out": [["phane_parent_name", "PhaneParentName"], ["simplified_skeleton", "SimplifiedPhaneParentGraph"]],
+      "steps": [
+        ["xform", "simplified_skeleton", "phane.simplify_significant_cyclic_segments_to_superatoms", ["var", "phane_parent_skeleton"]],
+        ["assert", ["pred", "phane.preserved_amplificant_attachment_bonds_remain", ["var", "phane_parent_skeleton"], ["var", "simplified_skeleton"]], "reason.phane.attachment_bonds_must_be_preserved"],
+        ["xform", "phane_parent_name", "phane.combine_skeletal_name_and_amplification_prefixes", ["var", "simplified_skeleton"]],
+        ["emit", ["lit", {
+          "reverse_operation": "amplification or phane replacement",
+          "illustration": "Fig. 2.1, Phane nomenclature conversion diagram"
+        }]]
+      ]
+    },
+    {
+      "id": "simplified_skeleton_terms",
+      "k": "definition",
+      "f": "definition",
+      "c": [27, 28, 29, 30, 31, 32],
+      "term": "simplified phane parent graph terminology",
+      "entity": "SimplifiedPhaneParentGraph",
+      "value": ["lit", {
+        "simplified_skeleton": "graph at which simplification ends and amplification starts",
+        "representation": "simplified phane parent graph",
+        "name": "simplified skeletal name",
+        "numbering": "specific skeletal numbering implied by the name",
+        "skeletal_locants": "primary locants for the phane parent hydride",
+        "figure_convention": "large numbers in Fig. 2.1; unchanged between simplified and parent skeletons"
+      }]
+    },
+    {
+      "id": "superatom_terms",
+      "k": "definition",
+      "f": "definition",
+      "c": [34, 35],
+      "term": "superatom",
+      "entity": "SimplifiedSkeletonNode",
+      "value": ["lit", {
+        "definition": "an atom-like node that appears on simplification and disappears on amplification",
+        "locants": "superatom locants",
+        "figure_example": "bullet symbols at positions 1 and 4 in graph B of Fig. 2.1"
+      }]
+    },
+    {
+      "id": "amplificant_terms",
+      "k": "definition",
+      "f": "definition",
+      "c": [37, 38, 39, 40, 41],
+      "term": "amplificant",
+      "entity": "Amplificant",
+      "value": ["lit", {
+        "definition": "multiatomic ring or ring-system unit replacing a superatom during amplification",
+        "name_expression": "amplification prefix",
+        "numbering": "each prefix implies a specific amplificant numbering",
+        "locants": "amplificant locants",
+        "figure_example": "six-membered rings and smaller numbers in graph A of Fig. 2.1"
+      }]
+    },
+    {
+      "id": "attachment_atom_terms",
+      "k": "definition",
+      "f": "definition",
+      "c": [43, 44],
+      "term": "attachment atom and attachment locant",
+      "entity": "AmplificantAttachment",
+      "value": ["lit", {
+        "attachment_atom": "amplificant atom bearing a bond retained through simplification and amplification",
+        "attachment_locant": "locant of an attachment atom",
+        "figure_examples": {"upper_ring": [1, 4], "lower_ring": [1, 3]}
+      }]
+    },
+    {
+      "id": "phane_parent_terms",
+      "k": "definition",
+      "f": "definition",
+      "c": [46, 47, 48, 49],
+      "term": "phane parent",
+      "entity": "PhaneParent",
+      "value": ["lit", {
+        "skeleton": "skeletal graph at the start of simplification or resulting from amplification",
+        "name_components": ["simplified skeletal name", "amplification prefixes", "superatom locants", "attachment locants"],
+        "parent_extensions": ["substituent prefixes", "hydrogenation prefixes and endings", "characteristic group suffixes"],
+        "parent_hydride_condition": "no other name components are present",
+        "parent_hydride_implication": "all skeletal bond orders and hydrogen counts are implied"
+      }]
+    },
+    {
+      "id": "simplified_skeletal_name_construction",
+      "k": "procedure",
+      "f": "required",
+      "c": [53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64],
+      "in": [["simplified_skeleton", "SimplifiedPhaneParentGraph"]],
+      "out": [["name", "SimplifiedSkeletalName"], ["numbering", "SkeletalNumbering"]],
+      "steps": [
+        ["assert", ["pred", "phane.amplificants_have_expressible_amplification_prefixes", ["var", "simplified_skeleton"]], "reason.phane.amplificants_must_have_prefixes"],
+        ["xform", "name", "phane.compose_simplified_skeletal_name", ["var", "simplified_skeleton"], ["lit", {
+          "ordered_components": ["structure-type prefix when applicable", "node-count numerical term", "phane"],
+          "structure_types": ["unbranched acyclic", "monocyclic", "polycyclic von Baeyer", "spiro"],
+          "linear_prefix": null,
+          "purpose": "parent for amplification only"
+        }]],
+        ["set", "name.default_bond_order", 1],
+        ["set", "name.unmarked_node", ["lit", {"element": "carbon", "bonding_number": 4}]],
+        ["xform", "numbering", "phane.apply_structure_class_numbering", ["var", "simplified_skeleton"], ["lit", "Chapter P-2"]],
+        ["xform", "numbering", "phane.assign_lowest_superatom_locant_set", ["var", "numbering"], ["lit", "first point of difference in increasing numerical order"]],
+        ["emit", ["var", "name"]]
+      ]
+    },
+    {
+      "id": "amplification_prefix_formation",
+      "k": "mapping",
+      "f": "required",
+      "c": [85],
+      "in": [["parent_hydride_name", "ParentHydrideName"]],
+      "out": [["amplification_prefix", "AmplificationPrefix"]],
+      "table": "amplification_prefix_endings"
+    },
+    {
+      "id": "allowed_amplification_prefix_parents",
+      "k": "rule",
+      "f": "required",
+      "c": [99, 100, 101],
+      "in": [["parent_hydride", "ParentHydride"]],
+      "out": [["allowed", "boolean"], ["prefix_numbering", "Numbering"]],
+      "if": ["any",
+        ["pred", "parent.is_mancude_monocycle_or_polycycle", ["var", "parent_hydride"]],
+        ["pred", "parent.is_bridged_fused_ring_system", ["var", "parent_hydride"]],
+        ["pred", "parent.is_saturated_monocycle", ["var", "parent_hydride"]],
+        ["pred", "parent.is_saturated_von_baeyer_hydrocarbon", ["var", "parent_hydride"]],
+        ["pred", "parent.is_spiro_alkane", ["var", "parent_hydride"]],
+        ["pred", "parent.is_stereoparent", ["var", "parent_hydride"]]
+      ],
+      "then": [
+        ["set", "allowed", true],
+        ["set", "prefix_numbering", ["get", ["var", "parent_hydride"], "retained_numbering"]]
+      ],
+      "else": [["set", "allowed", false]]
+    },
+    {
+      "id": "disallowed_amplification_prefix_parents",
+      "k": "constraint",
+      "f": "prohibited",
+      "c": [103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115],
+      "in": [["candidate_name", "ParentStructureName"]],
+      "out": [["valid", "boolean"]],
+      "assert": ["not", ["any",
+        ["pred", "name.is_spirobi_name", ["var", "candidate_name"]],
+        ["pred", "name.is_spiro_with_fused_or_polycycloalkane_component", ["var", "candidate_name"]],
+        ["pred", "name.is_ring_assembly_name", ["var", "candidate_name"]],
+        ["pred", "name.has_hydro_prefix_modification", ["var", "candidate_name"]],
+        ["pred", "name.has_ene_or_yne_ending_modification", ["var", "candidate_name"]],
+        ["pred", "name.has_skeletal_replacement_terms", ["var", "candidate_name"]],
+        ["pred", "name.has_characteristic_group_suffix", ["var", "candidate_name"]],
+        ["pred", "name.has_substitutive_prefix", ["var", "candidate_name"]],
+        ["pred", "name.is_retained_functional_parent_name", ["var", "candidate_name"]],
+        ["pred", "name.is_functional_class_name", ["var", "candidate_name"]],
+        ["pred", "name.is_retained_partially_hydrogenated_parent_name", ["var", "candidate_name"]]
+      ]],
+      "violation": [["reject", "candidate_name", "reason.phane.disallowed_amplification_prefix_parent"]]
+    },
+    {
+      "id": "amplification_prefix_citation_order",
+      "k": "decision",
+      "f": "preference",
+      "c": [117],
+      "in": [["prefixes", "AmplificationPrefixSet"]],
+      "out": [["ordered_prefixes", "AmplificationPrefixSequence"]],
+      "candidates": ["var", "prefixes"],
+      "stages": [{
+        "id": "decreasing_ring_seniority",
+        "c": [117],
+        "key": ["get", ["var", "prefixes"], "ring_seniority"],
+        "cmp": ["numeric", "maximum", null, null]
+      }],
+      "tie": ["retain_coequal", null]
+    },
+    {
+      "id": "identical_amplificant_multiplicity",
+      "k": "definition",
+      "f": "definition",
+      "c": [119, 120],
+      "term": "multiple identical amplificants",
+      "entity": "AmplificantMultiplicity",
+      "value": ["lit", {
+        "expression": "use an appropriate simple or complex multiplicative term",
+        "available_families": [["di", "tri", "etc."], ["bis", "tris", "etc."]],
+        "identical_attachment_locants_required": false
+      }]
+    },
+    {
+      "id": "simple_amplification_prefix_multiplication",
+      "k": "rule",
+      "f": "required",
+      "c": [121],
+      "in": [["amplification_prefix", "AmplificationPrefix"], ["multiplicity", "integer"]],
+      "out": [["multiplied_prefix", "AmplificationPrefix"]],
+      "if": ["pred", "prefix.is_simple_amplification_prefix", ["var", "amplification_prefix"]],
+      "then": [["xform", "multiplied_prefix", "prefix.apply_simple_multiplicative_term", ["var", "amplification_prefix"], ["var", "multiplicity"], ["lit", ["di", "tri", "tetra", "etc."]]]],
+      "else": []
+    },
+    {
+      "id": "complex_amplification_prefix_multiplication",
+      "k": "rule",
+      "f": "required",
+      "c": [122, 123],
+      "in": [["amplification_prefix", "AmplificationPrefix"], ["multiplicity", "integer"]],
+      "out": [["multiplied_prefix", "AmplificationPrefix"]],
+      "if": ["any",
+        ["pred", "prefix.begins_with_multiplying_prefix", ["var", "amplification_prefix"]],
+        ["pred", "prefix.begins_with_multipliable_name_component", ["var", "amplification_prefix"]]
+      ],
+      "then": [["xform", "multiplied_prefix", "prefix.apply_complex_multiplicative_term", ["var", "amplification_prefix"], ["var", "multiplicity"], ["lit", ["bis", "tris", "tetrakis", "etc."]]]],
+      "else": []
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "linear_simplified_skeleton_omits_structure_prefix",
+      "c": [62],
+      "if": ["pred", "simplified_skeleton.is_linear", ["var", "simplified_skeleton"]],
+      "target": ["semantic_unit", "simplified_skeletal_name_construction"],
+      "mode": "add_guard",
+      "guard": ["lit", {"structure_type_prefix": null}],
+      "specificity": 1,
+      "order": 62
+    },
+    {
+      "id": "stereoparents_allowed_for_amplification",
+      "c": [100],
+      "if": ["pred", "parent.is_stereoparent", ["var", "parent_hydride"]],
+      "target": ["semantic_unit", "allowed_amplification_prefix_parents"],
+      "mode": "add_guard",
+      "guard": ["lit", {"allowed": true, "examples": ["gonane", "morphinan"]}],
+      "specificity": 1,
+      "order": 100
+    }
+  ],
+  "tables": [
+    {
+      "id": "amplification_prefix_endings",
+      "c": [87, 88, 89, 90, 91, 92, 93, 94, 95, 96],
+      "label": null,
+      "title": "Formation of amplification prefixes from allowed parent hydride names",
+      "cols": [
+        ["parent_name", "Parent hydride name", "string", [87, 89, 91, 93, 95]],
+        ["amplification_prefix", "Preferred amplification prefix", "string", [88, 90, 92, 94, 96]],
+        ["operation", "Ending operation", "string", [87, 88, 89, 90, 91, 92, 93, 94, 95, 96]]
+      ],
+      "rows": [
+        {"id": "pyrrole", "c": [87, 88], "v": ["pyrrole", "pyrrola", "change final e to a"]},
+        {"id": "furan", "c": [89, 90], "v": ["furan", "furana", "add a when no final e is present"]},
+        {"id": "pyran", "c": [91, 92], "v": ["pyran", "pyrana", "add a when no final e is present"]},
+        {"id": "naphthalene", "c": [93, 94], "v": ["naphthalene", "naphthalena", "change final e to a"]},
+        {"id": "anthracene", "c": [95, 96], "v": ["anthracene", "anthracena", "change final e to a"]}
+      ],
+      "contract": {
+        "key": ["parent_name"],
+        "result": ["amplification_prefix", "operation"],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [],
+  "examples": [
+    {
+      "id": "unbranched_acyclic_skeleton",
+      "c": [67],
+      "input": {"structure_type": "unbranched acyclic", "node_count": 9},
+      "ok": ["nonaphane"],
+      "bad": [],
+      "shows": [["semantic_unit", "simplified_skeletal_name_construction"]],
+      "why": "A linear phane uses the node-count term and phane without a structure-type prefix."
+    },
+    {
+      "id": "monocyclic_skeleton",
+      "c": [71, 72, 73],
+      "input": {"structure_type": "monocyclic", "node_count": 7},
+      "ok": ["cycloheptaphane"],
+      "bad": [],
+      "shows": [["semantic_unit", "simplified_skeletal_name_construction"]],
+      "why": "A monocyclic seven-node simplified skeleton uses cyclo plus hepta plus phane."
+    },
+    {
+      "id": "von_baeyer_skeleton",
+      "c": [77],
+      "input": {"structure_type": "polycyclic von Baeyer", "bridge_descriptor": "[6.6.0]", "node_count": 14},
+      "ok": ["bicyclo[6.6.0]tetradecaphane"],
+      "bad": [],
+      "shows": [["semantic_unit", "simplified_skeletal_name_construction"]],
+      "why": "The von Baeyer descriptor precedes the node-count term and phane."
+    },
+    {
+      "id": "spiro_skeleton",
+      "c": [81],
+      "input": {"structure_type": "spiro", "ring_descriptor": "[5.7]", "node_count": 13},
+      "ok": ["spiro[5.7]tridecaphane"],
+      "bad": [],
+      "shows": [["semantic_unit", "simplified_skeletal_name_construction"]],
+      "why": "The spiro descriptor precedes the node-count term and phane."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {
+      "id": "reference.p26.part001.chapter_p2_numbering",
+      "c": [63],
+      "rel": "invokes",
+      "o": "P-26.2.1:xref:0007",
+      "resolution": "external",
+      "target": ["external", "P-2"]
+    }
+  ],
+  "additional_refs": []
+}
