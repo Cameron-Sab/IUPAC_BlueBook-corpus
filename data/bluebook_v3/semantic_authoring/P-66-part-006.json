@@ -1,0 +1,396 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-66-part-006",
+  "mechanical_assets": true,
+  "clauses": [["preference_criterion","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],["example","illustrative","compile"],["preference_criterion","normative","compile"],["preference_criterion","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],null,["condition","normative","compile"],["procedure_step","normative","compile"],["procedure_step","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],["example","illustrative","compile"],null,["condition","normative","compile"],["procedure_step","normative","compile"],["procedure_step","normative","compile"],["procedure_step","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],["example","illustrative","compile"],["example","illustrative","compile"],null,["heading","informative","skip","heading_or_title"],["heading","informative","skip","heading_or_title"],["definition","normative","compile"],["prohibition","normative","compile"],["definition","normative","compile"],["procedure_step","normative","compile"],null,["condition","normative","compile"],["permission","normative","compile"],["preference_criterion","normative","compile"],["procedure_step","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["condition","normative","compile"],null,["example","illustrative","compile"],null,["condition","normative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["heading","informative","skip","heading_or_title"],["preference_criterion","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["preference_criterion","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],null,["heading","informative","skip","heading_or_title"],["definition","normative","compile"],["preference_criterion","normative","compile"],["prohibition","normative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,null,null,["heading","informative","skip","heading_or_title"],["definition","normative","compile"],["definition","normative","compile"],["permission","normative","compile"],["preference_criterion","normative","compile"],["preference_criterion","normative","compile"],["source_metadata","informative","skip","source_navigation"],["heading","informative","skip","heading_or_title"],["definition","normative","compile"],["procedure_step","normative","compile"],["procedure_step","normative","compile"],["procedure_step","normative","compile"],["preference_criterion","normative","compile"],["procedure_step","normative","compile"],["heading","informative","skip","heading_or_title"],["procedure_step","normative","compile"],["procedure_step","normative","compile"],["procedure_step","normative","compile"],["procedure_step","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["condition","normative","compile"],null,["example","illustrative","compile"],null,["preference_criterion","normative","compile"],null,["example","illustrative","compile"],["example","illustrative","compile"],["example","illustrative","compile"],["example","illustrative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["preference_criterion","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["heading","informative","skip","heading_or_title"],["preference_criterion","normative","compile"],["example","illustrative","compile"],["example","illustrative","compile"],["example","illustrative","compile"],["example","illustrative","compile"],["permission","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],null,["example","illustrative","compile"],null,["permission","normative","compile"],["prohibition","normative","compile"],["preference_criterion","normative","compile"],null,["example","illustrative","compile"],["example","illustrative","compile"]],
+  "symbols": [],
+  "units": [
+    {
+      "id": "hydrazonamide_group_prefix_mapping",
+      "k": "mapping",
+      "f": "required",
+      "c": [1,2],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",true]},
+      "out": [["prefix","HydrazineGroupPrefix"]],
+      "table": "hydrazonamide_group_prefixes"
+    },
+    {
+      "id": "hydrazide_group_prefix_mapping",
+      "k": "mapping",
+      "f": "required",
+      "c": [8,9,10],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",true]},
+      "out": [["prefix","HydrazineGroupPrefix"]],
+      "table": "hydrazide_group_prefixes"
+    },
+    {
+      "id": "hydrazonamide_prefix_formation",
+      "k": "procedure",
+      "f": "required",
+      "c": [14,15,16,17],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",{"senior_principal_characteristic_group_present":true}]},
+      "in": [["group","HydrazonamideGroup"]],
+      "out": [["prefix","PrefixName"]],
+      "steps": [
+        ["set","methods",["lit",[
+          {"id":1,"operation":"replace final e of complete amide name by o","kind":"substitutive","status":"preferred"},
+          {"id":2,"operation":"substitute the acyl-group name onto amino","kind":"acylamino prefix","status":"general"}
+        ]]],
+        ["set","chalcogen_scope",["lit",["sulfur","selenium","tellurium"]]],
+        ["emit",["var","methods"]]
+      ]
+    },
+    {
+      "id": "imidic_hydrazide_prefix_formation",
+      "k": "procedure",
+      "f": "required",
+      "c": [22,23,24,25,26],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",{"senior_principal_characteristic_group_present":true}]},
+      "in": [["group","ImidicHydrazideGroup"]],
+      "out": [["prefix","PrefixName"]],
+      "steps": [
+        ["set","methods",["lit",[
+          {"id":1,"operation":"replace final e of the corresponding hydrazide name by o","status":"preferred"},
+          {"id":2,"operation":"form an acylhydrazinyl prefix","status":"general"}
+        ]]],
+        ["set","hydrazinyl_numbering",["lit",{"locants":[1,2]}]],
+        ["set","analogue_scope",["lit",["sulfur","selenium","tellurium"]]],
+        ["emit",["var","methods"]]
+      ]
+    },
+    {
+      "id": "hydrazidine_class_and_suffix_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [34,35,36,37,39,40,41,42,43],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",true]},
+      "in": [["compound","Hydrazidine"]],
+      "out": [["naming_policy","HydrazidineNamingPolicy"]],
+      "if": ["lit",true],
+      "then": [["set","naming_policy",["lit",{
+        "general_structure":"R-C(=N-NH2)-NH-NH2",
+        "class_name":"hydrazidine",
+        "systematic_suffixes":["hydrazonohydrazide","carbohydrazonohydrazide"],
+        "suffix_basis":"corresponding hydrazide",
+        "former_hydrazone_method":"no longer recommended",
+        "nitrogen_locants":"assigned by the source locant scheme; when needed, the parent-attachment locant is a superscript arabic number on the appropriate N locant",
+        "retained_acid_derivatives":{"general_nomenclature":"replace ohydrazide by hydrazonohydrazide","preferred_iupac_name":"form systematically"},
+        "property_transfer":"preferred and nonsubstitutable status transfers from the corresponding hydrazide"
+      }]]],
+      "else": []
+    },
+    {
+      "id": "chalcogen_acid_hydrazidine_analogy",
+      "k": "rule",
+      "f": "required",
+      "c": [61],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",true]},
+      "in": [["compound","ChalcogenAcidDerivedHydrazidine"]],
+      "out": [["method","HydrazidineNamingMethod"]],
+      "if": ["lit",true],
+      "then": [["set","method",["lit",{"apply":"hydrazidine principles","acid_classes":["sulfonic","sulfinic","selenium analogues","tellurium analogues"]}]]],
+      "else": []
+    },
+    {
+      "id": "carbonic_acid_hydrazidine_procedure",
+      "k": "procedure",
+      "f": "required",
+      "c": [65],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",true]},
+      "in": [["compound","CarbonicAcidDerivedHydrazidine"]],
+      "out": [["name","HydrazidineName"]],
+      "steps": [["invoke","P-66.3.5",{"compound":["var","compound"]}],["emit",["var","name"]]]
+    },
+    {
+      "id": "hydrazidine_prefixes_with_senior_group",
+      "k": "rule",
+      "f": "required",
+      "c": [72,73],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",{"senior_characteristic_group_present":true}]},
+      "in": [["group","HydrazidineCharacteristicGroup"]],
+      "out": [["prefix","PrefixName"]],
+      "if": ["lit",true],
+      "then": [["set","prefix",["lit",{
+        "for_group":"-C(=N-NH2)-NH-NH2",
+        "default":[{"name":"hydrazinecarbohydrazonoyl","status":"preferred"},{"name":"C-hydrazinylcarbonohydrazonoyl","status":"general"}],
+        "terminal_chain_preference":{"names":["hydrazinyl","hydrazinylidene"],"reason":"avoid fragmenting the carbon chain"}
+      }]]],
+      "else": []
+    },
+    {
+      "id": "hydrazidine_chain_prefixes_with_senior_group",
+      "k": "mapping",
+      "f": "required",
+      "c": [81,82],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",{"senior_characteristic_group_present":true}]},
+      "out": [["prefix","PrefixName"]],
+      "table": "hydrazidine_chain_prefixes"
+    },
+    {
+      "id": "amidoxime_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [87],
+      "scope": {"r":["all"],"if":["lit",true]},
+      "out": [["class","ChemicalClass"]],
+      "term": "amide oxime",
+      "entity": "ChemicalClass",
+      "value": ["lit",{"formal_origin":"oxime of a carboxamide","general_structure":"R-C(=N-OH)-NH2","includes":"derivatives formed by substitution"}]
+    },
+    {
+      "id": "amidoxime_preferred_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [88,89],
+      "scope": {"r":["preferred_iupac_name"],"if":["lit",true]},
+      "in": [["compound","Amidoxime"]],
+      "out": [["name","PreferredIUPACName"]],
+      "if": ["lit",true],
+      "then": [["set","name",["lit",{"construction":"N'-hydroxy or N'-(alkyloxy) derivative of a carboximidamide (amidine)","deprecated_suffixes":["amide oxime","carboxamide oxime"]}]]],
+      "else": []
+    },
+    {
+      "id": "nitrile_and_cyanide_class_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [98,99],
+      "scope": {"r":["all"],"if":["lit",true]},
+      "out": [["class","ChemicalClass"]],
+      "term": "nitrile",
+      "entity": "ChemicalClass",
+      "value": ["lit",{"general_structure":"R-C#N","class_names":["nitrile","cyanide"],"formal_parent":"hydrocyanic acid (H-C#N)","attachment_scope":"R may attach through carbon or a heteroatom","substitutive_class":"nitrile"}]
+    },
+    {
+      "id": "nitrile_introductory_naming_policy",
+      "k": "rule",
+      "f": "required",
+      "c": [100,101,102],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",true]},
+      "in": [["compound","Nitrile"]],
+      "out": [["policy","NitrileNamingPolicy"]],
+      "if": ["lit",true],
+      "then": [["set","policy",["lit",{"substitutive":"nitrile nomenclature","functional_class_alternative":"cyanide","formonitrile":"preferred IUPAC parent name; substituted names remain preferred when permitted"}]]],
+      "else": []
+    },
+    {
+      "id": "preferred_nitrile_naming_methods",
+      "k": "procedure",
+      "f": "required",
+      "c": [105,106,107,108,109,110],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",true]},
+      "in": [["compound","Nitrile"]],
+      "out": [["name","NitrileName"]],
+      "steps": [
+        ["set","methods",["lit",[
+          {"id":1,"kind":"substitutive","suffix_rules":[{"suffix":"nitrile","group":"-(C)N"},{"suffix":"carbonitrile","group":"-CN"}]},
+          {"id":2,"kind":"retained acid derivation","operation":"replace ic acid or oic acid with onitrile","property_transfer":"preferred and nonsubstitutable status follows the corresponding acid","references":["P-65.1.1.1","P-65.1.1.2"]},
+          {"id":3,"kind":"functional class","class_name":"cyanide"}
+        ]]],
+        ["emit",["var","methods"]]
+      ]
+    },
+    {
+      "id": "acyclic_mono_and_dinitrile_methods",
+      "k": "procedure",
+      "f": "required",
+      "c": [112,113,114,115,116],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",true]},
+      "in": [["compound","AcyclicMonoOrDinitrile"]],
+      "out": [["name","NitrileName"]],
+      "steps": [
+        ["set","methods",["lit",[
+          {"id":1,"kind":"substitutive","suffix":"nitrile","status":"preferred IUPAC name"},
+          {"id":2,"kind":"functional class","class_name":"cyanide","status":"general nomenclature"}
+        ]]],
+        ["emit",["var","methods"]]
+      ]
+    },
+    {
+      "id": "polycyano_unbranched_alkane_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [122],
+      "scope": {"r":["preferred_iupac_name"],"if":["lit",{"unbranched_alkane":true,"terminal_cyano_group_count":{"greater_than":2}}]},
+      "in": [["compound","PolycyanoAlkane"]],
+      "out": [["name","PreferredIUPACName"]],
+      "if": ["lit",true],
+      "then": [["set","name",["lit",{"parent":"parent hydride","suffix":"carbonitrile","prefix":"appropriate multiplicative prefix","locants":"required for all cyano groups"}]]],
+      "else": []
+    },
+    {
+      "id": "ring_or_heteroatom_carbonitrile_suffix",
+      "k": "rule",
+      "f": "required",
+      "c": [126],
+      "scope": {"r":["preferred_iupac_name"],"if":["lit",true]},
+      "in": [["compound","RingOrHeteroatomAttachedNitrile"]],
+      "out": [["suffix","Suffix"]],
+      "if": ["lit",{"cyano_attachment":["ring","ring system","acyclic heteroatom"]}],
+      "then": [["set","suffix",["lit","carbonitrile"]]],
+      "else": []
+    },
+    {
+      "id": "cyano_prefix_requirement",
+      "k": "rule",
+      "f": "required",
+      "c": [137,138],
+      "scope": {"r":["preferred_iupac_name"],"if":["lit",true]},
+      "in": [["compound","CompoundWithCyanoGroup"]],
+      "out": [["prefix","Prefix"]],
+      "if": ["lit",{"any_of":["senior principal characteristic group is present","not all cyano groups can be principal characteristic groups","cyano group is at the end of a chain"]}],
+      "then": [["set","prefix",["lit","cyano"]]],
+      "else": []
+    },
+    {
+      "id": "retained_nitrile_pin_policy",
+      "k": "rule",
+      "f": "required",
+      "c": [147],
+      "scope": {"r":["preferred_iupac_name"],"if":["lit",true]},
+      "in": [["parent_name","RetainedNitrileName"]],
+      "out": [["substitution_policy","SubstitutionPolicy"]],
+      "if": ["lit",true],
+      "then": [["set","substitution_policy",["lit",{"names":["formonitrile","acetonitrile","benzonitrile","oxalonitrile"],"status":"preferred IUPAC names","default":"unlimited substitution"}]]],
+      "else": []
+    },
+    {
+      "id": "formonitrile_substitution_policy",
+      "k": "rule",
+      "f": "required",
+      "c": [147],
+      "scope": {"r":["preferred_iupac_name"],"if":["lit",{"parent_name":"formonitrile"}]},
+      "out": [["substitution_policy","SubstitutionPolicy"]],
+      "if": ["lit",true],
+      "then": [["set","substitution_policy",["lit",{"follows":"formic acid substitution rules","reference":"P-65.1.8"}]]],
+      "else": []
+    },
+    {
+      "id": "oxalonitrile_substitution_policy",
+      "k": "constraint",
+      "f": "required",
+      "c": [147],
+      "scope": {"r":["preferred_iupac_name"],"if":["lit",{"parent_name":"oxalonitrile"}]},
+      "out": [["substitution_policy","SubstitutionPolicy"]],
+      "assert": ["lit",{"substitution_allowed":false}],
+      "violation": [["reject","substitution","oxalonitrile_has_no_substitutable_position"]]
+    },
+    {
+      "id": "limited_general_retained_nitrile_names",
+      "k": "rule",
+      "f": "permitted",
+      "c": [152,153],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",true]},
+      "out": [["policy","RetainedNitrilePolicy"]],
+      "if": ["lit",true],
+      "then": [["set","policy",["lit",{"general_nomenclature":{"retained_names":["furonitrile","phthalonitrile","isophthalonitrile","terephthalonitrile"],"substitution":"unlimited"},"preferred_iupac_name":"systematic name under P-65.1.2"}]]],
+      "else": []
+    },
+    {
+      "id": "general_only_retained_acid_nitriles",
+      "k": "constraint",
+      "f": "required",
+      "c": [159,160,161],
+      "scope": {"r":["preferred_iupac_name","general_nomenclature"],"if":["lit",{"derived_from_retained_acid_name_in":"P-65.1.1.2.2"}]},
+      "out": [["policy","RetainedNitrilePolicy"]],
+      "assert": ["lit",{"general_nomenclature_only":true,"substitution_allowed":false,"preferred_iupac_name":"systematic under P-66.5.1.1"}],
+      "violation": [["reject","retained_nitrile_name","retained_acid_nitrile_not_permitted_as_pin_or_when_substituted"]]
+    }
+  ],
+  "exceptions": [
+    {"id":"oxalonitrile_substitution_exception","c":[147],"if":["lit",{"parent_name":"oxalonitrile"}],"target":["semantic_unit","retained_nitrile_pin_policy"],"mode":"replace","replacement":["semantic_unit","oxalonitrile_substitution_policy"],"order":147,"specificity":2},
+    {"id":"formonitrile_substitution_exception","c":[147],"if":["lit",{"parent_name":"formonitrile"}],"target":["semantic_unit","retained_nitrile_pin_policy"],"mode":"replace","replacement":["semantic_unit","formonitrile_substitution_policy"],"order":147,"specificity":1}
+  ],
+  "tables": [
+    {
+      "id":"hydrazonamide_group_prefixes",
+      "label":"P-66.4.2.3.3 group-prefix mapping",
+      "title":"Preferred and permitted prefixes for hydrazonamide groups",
+      "c":[1,2],
+      "cols":[["group","Group","MolecularStructure"],["preferred","Preferred prefix","String"],["alternatives","Other permitted prefixes","StringList"]],
+      "rows":[
+        {"id":"nh_ch_n_nh2","c":[1],"v":["-NH-CH=N-NH2","methanehydrazonamido",["(hydrazinylidenemethyl)amino","(methanehydrazonoyl)amino"]]},
+        {"id":"n_ch_nh_nh2","c":[2],"v":["-N=CH-NH-NH2","(hydrazinylmethylidene)amino",[]]}
+      ],
+      "contract":{"key":["group"],"result":["preferred","alternatives"],"cardinality":"one_to_one","ordering":"none"}
+    },
+    {
+      "id":"hydrazide_group_prefixes",
+      "label":"P-66.4.2.3.4 group-prefix mapping",
+      "title":"Preferred and permitted prefixes for hydrazide groups",
+      "c":[8,9,10],
+      "cols":[["group","Group","MolecularStructure"],["preferred","Preferred prefix","String"],["alternatives","Other permitted prefixes","StringList"]],
+      "rows":[
+        {"id":"h2n_ch_n_nh","c":[8],"v":["H2N-CH=N-NH-","(aminomethylidene)hydrazinyl",[]]},
+        {"id":"hn_ch_nh_nh","c":[9],"v":["HN=CH-NH-NH-","methanimidohydrazido",["2-(methanimidoyl)hydrazin-1-yl","2-(iminomethyl)hydrazin-1-yl"]]},
+        {"id":"hc_nnh2_nh","c":[10],"v":["HC(=NNH2)-NH-","methanehydrazonamido",["(methanehydrazonoyl)amino"]]}
+      ],
+      "contract":{"key":["group"],"result":["preferred","alternatives"],"cardinality":"one_to_one","ordering":"none"}
+    },
+    {
+      "id":"hydrazidine_chain_prefixes",
+      "label":"P-66.4.3.4.2 hydrazidine chain-prefix mapping",
+      "title":"Prefixes for hydrazidine groups in the presence of a senior group",
+      "c":[81,82],
+      "cols":[["group","Group","MolecularStructure"],["preferred","Preferred prefix","String"],["alternatives","Other permitted prefixes","StringList"]],
+      "rows":[
+        {"id":"nh_nh_ch_n_nh2","c":[81],"v":["-NH-NH-CH=N-NH2","2-(methanehydrazonoyl)hydrazin-1-yl",["2-(hydrazinylidenemethyl)hydrazin-1-yl"]]},
+        {"id":"nh_n_ch_nh_nh2","c":[82],"v":["-NH-N=CH-NH-NH2","(hydrazinylmethylidene)hydrazinyl",[]]}
+      ],
+      "contract":{"key":["group"],"result":["preferred","alternatives"],"cardinality":"one_to_one","ordering":"none"}
+    }
+  ],
+  "figures": [],
+  "examples": [
+    {"id":"hydrazinylmethylidene_amino_benzoic_acid","c":[4],"ok":["4-[(hydrazinylmethylidene)amino]benzoic acid (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazonamide_group_prefix_mapping"]]},
+    {"id":"cyanoethyl_methanehydrazonamide","c":[6,7],"input":{"formula":"H2N-N=CH-NH-CH2-CH2-CN"},"ok":["N-(2-cyanoethyl)methanehydrazonamide (PIN)"],"bad":["3-[(methanehydrazonoyl)amino]propanenitrile","3-[(hydrazinylidenemethyl)amino]propanenitrile"],"shows":[["semantic_unit","hydrazonamide_group_prefix_mapping"]]},
+    {"id":"aminomethylidene_hydrazinyl_propanoic_acid","c":[12],"ok":["3-[2-(aminomethylidene)hydrazin-1-yl]propanoic acid (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazide_group_prefix_mapping"]]},
+    {"id":"ethanehydrazonamido_propanoic_acid","c":[19],"input":{"formula":"CH3-C(=N-NH2)-NH-CH2-CH2-COOH"},"ok":["3-(ethanehydrazonamido)propanoic acid (PIN)","3-[(ethanehydrazonoyl)amino]propanoic acid"],"bad":[],"shows":[["semantic_unit","hydrazonamide_prefix_formation"]]},
+    {"id":"benzenesulfinohydrazonamido_benzoic_acid","c":[20],"ok":["4-(benzenesulfinohydrazonamido)benzoic acid (PIN)","4-[(benzenesulfinohydrazonoyl)amino]benzoic acid"],"bad":[],"shows":[["semantic_unit","hydrazonamide_prefix_formation"]]},
+    {"id":"methanimidohydrazido_propanoic_acid","c":[28],"input":{"formula":"HN=CH-NH-NH-CH2-CH2-COOH"},"ok":["3-(methanimidohydrazido)propanoic acid (PIN)","3-(2-methanimidoylhydrazin-1-yl)propanoic acid"],"bad":[],"shows":[["semantic_unit","imidic_hydrazide_prefix_formation"]]},
+    {"id":"ethanimidohydrazido_acetate","c":[29],"input":{"formula":"CH3-C(=NH)-NH-NH-CH2-CO-O-CH3"},"ok":["methyl (ethanimidohydrazido)acetate (PIN)","methyl [2-(ethanimidoyl)hydrazin-1-yl]acetate"],"bad":[],"shows":[["semantic_unit","imidic_hydrazide_prefix_formation"]]},
+    {"id":"benzenecarboximidohydrazido_benzoic_acid","c":[30],"ok":["4-(benzenecarboximidohydrazido)benzoic acid (PIN)","4-[2-(benzenecarboximidoyl)hydrazin-1-yl]benzoic acid"],"bad":[],"shows":[["semantic_unit","imidic_hydrazide_prefix_formation"]]},
+    {"id":"methanehydrazonohydrazide","c":[45],"ok":["methanehydrazonohydrazide (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazidine_class_and_suffix_naming"]]},
+    {"id":"butanehydrazonohydrazide","c":[47],"ok":["butanehydrazonohydrazide (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazidine_class_and_suffix_naming"]]},
+    {"id":"ethanedihydrazonohydrazide","c":[49],"ok":["ethanedihydrazonohydrazide (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazidine_class_and_suffix_naming"]]},
+    {"id":"dimethyl_thiophene_carbohydrazonohydrazide","c":[51],"ok":["N',N''-dimethylthiophene-2-carbohydrazonohydrazide (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazidine_class_and_suffix_naming"]]},
+    {"id":"dibenzylidene_thiazole_carbohydrazonohydrazide","c":[53],"ok":["N',N''-dibenzylidene-1,3-thiazole-4-carbohydrazonohydrazide (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazidine_class_and_suffix_naming"]]},
+    {"id":"tetramethyl_naphthalene_dicarbohydrazonohydrazide","c":[55],"ok":["N'2,N'2,N6,1-tetramethylnaphthalene-2,6-dicarbohydrazonohydrazide (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazidine_class_and_suffix_naming"]]},
+    {"id":"substituted_cyclohexane_dicarbohydrazonohydrazide","c":[57],"ok":["N'1,N'1-diethyl-N'''1,N'''1-dimethylcyclohexane-1,1-dicarbohydrazonohydrazide (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazidine_class_and_suffix_naming"]]},
+    {"id":"substituted_cyclohexane_tricarbohydrazonohydrazide","c":[59],"ok":["N'1,N'1-diethyl-N'''1,N'''1,N3-trimethylcyclohexane-1,1,3-tricarbohydrazonohydrazide (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazidine_class_and_suffix_naming"]]},
+    {"id":"benzenesulfinohydrazonohydrazide","c":[63],"ok":["benzenesulfinohydrazonohydrazide (PIN)"],"bad":[],"shows":[["semantic_unit","chalcogen_acid_hydrazidine_analogy"]]},
+    {"id":"hydrazinecarbohydrazonohydrazide","c":[67],"ok":["hydrazinecarbohydrazonohydrazide (PIN)","carbonohydrazonic dihydrazide"],"bad":[],"shows":[["semantic_unit","carbonic_acid_hydrazidine_procedure"]]},
+    {"id":"dicarbonohydrazonic_dihydrazide","c":[69],"ok":["dicarbonohydrazonic dihydrazide (PIN)"],"bad":["dihydrazonodicarbonic dihydrazide"],"shows":[["semantic_unit","carbonic_acid_hydrazidine_procedure"]]},
+    {"id":"terminal_chain_hydrazidine_prefix","c":[75],"ok":["3-hydrazinyl-3-hydrazinylidenepropanoic acid (PIN)","(hydrazinecarbohydrazonoyl)acetic acid","(C-hydrazinylcarbonohydrazonoyl)acetic acid"],"bad":[],"shows":[["semantic_unit","hydrazidine_prefixes_with_senior_group"]]},
+    {"id":"benzoic_acid_hydrazidine_prefix","c":[77],"ok":["3-(hydrazinecarbohydrazonoyl)benzoic acid (PIN)","3-(C-hydrazinylcarbonohydrazonoyl)benzoic acid","3-[hydrazinyl(hydrazinylidene)methyl]benzoic acid"],"bad":[],"shows":[["semantic_unit","hydrazidine_prefixes_with_senior_group"]]},
+    {"id":"carbamimidoyloxy_methanimidohydrazido","c":[79],"ok":["4-[C-(carbamimidoyloxy)methanimidohydrazido]benzoic acid (PIN)","4-{2-[C-(carbamimidoyloxy)methanimidoyl]hydrazin-1-yl}benzoic acid"],"bad":[],"shows":[["semantic_unit","hydrazidine_prefixes_with_senior_group"]]},
+    {"id":"hydrazinylmethylidene_hydrazinyl_acetic_acid","c":[84],"ok":["[(hydrazinylmethylidene)hydrazinyl]acetic acid (PIN)"],"bad":[],"shows":[["semantic_unit","hydrazidine_chain_prefixes_with_senior_group"]]},
+    {"id":"hydroxy_methyl_ethanimidamide","c":[91],"ok":["N'-hydroxy-N-methylethanimidamide (PIN)","N'-hydroxy-N-methylacetimidamide"],"bad":["N-methylacetamide oxime"],"shows":[["semantic_unit","amidoxime_preferred_naming"]]},
+    {"id":"ethoxy_imidazole_carboximidamide","c":[93],"ok":["N'-ethoxy-1H-imidazole-2-carboximidamide (PIN)"],"bad":["imidazole-2-carboxamide O-ethyloxime"],"shows":[["semantic_unit","amidoxime_preferred_naming"]]},
+    {"id":"hexanenitrile","c":[118],"ok":["hexanenitrile (PIN)","pentyl cyanide"],"bad":[],"shows":[["semantic_unit","acyclic_mono_and_dinitrile_methods"]]},
+    {"id":"pentanedinitrile","c":[120],"ok":["pentanedinitrile (PIN)","propane-1,3-diyl dicyanide"],"bad":[],"shows":[["semantic_unit","acyclic_mono_and_dinitrile_methods"]]},
+    {"id":"butane_tricarbonitrile","c":[124],"ok":["butane-1,1,1-tricarbonitrile (PIN)"],"bad":[],"shows":[["semantic_unit","polycyano_unbranched_alkane_naming"]]},
+    {"id":"silanecarbonitrile","c":[128],"input":{"formula":"H3Si-CN"},"ok":["silanecarbonitrile (PIN)","silyl cyanide"],"bad":[],"shows":[["semantic_unit","ring_or_heteroatom_carbonitrile_suffix"]]},
+    {"id":"hydrazinecarbonitrile","c":[129,130],"input":{"formula":"H2N-NH-CN"},"ok":["hydrazinecarbonitrile","cyanohydrazide (PIN)","hydrazinyl cyanide"],"bad":[],"shows":[["semantic_unit","ring_or_heteroatom_carbonitrile_suffix"]]},
+    {"id":"cyclohexanecarbonitrile","c":[131],"ok":["cyclohexanecarbonitrile (PIN)","cyclohexyl cyanide"],"bad":[],"shows":[["semantic_unit","ring_or_heteroatom_carbonitrile_suffix"]]},
+    {"id":"piperidine_carbonitrile","c":[133],"ok":["piperidine-1-carbonitrile (PIN)"],"bad":[],"shows":[["semantic_unit","ring_or_heteroatom_carbonitrile_suffix"]]},
+    {"id":"benzo_di_annulene_carbonitrile","c":[135],"ok":["(benzo[1,2:4,5]di[7]annulene)-2-carbonitrile (PIN)","(benzo[1,2:4,5]dicycloheptene)-2-carbonitrile"],"bad":[],"shows":[["semantic_unit","ring_or_heteroatom_carbonitrile_suffix"]]},
+    {"id":"cyanofuran_carboxylic_acid","c":[140],"ok":["5-cyanofuran-2-carboxylic acid (PIN)","5-cyano-2-furoic acid"],"bad":[],"shows":[["semantic_unit","cyano_prefix_requirement"]]},
+    {"id":"cyanopropanoic_acid","c":[142],"ok":["3-cyanopropanoic acid (PIN)"],"bad":[],"shows":[["semantic_unit","cyano_prefix_requirement"]]},
+    {"id":"cyanomethyl_heptanedinitrile","c":[144],"ok":["4-(cyanomethyl)heptanedinitrile (PIN)"],"bad":[],"shows":[["semantic_unit","cyano_prefix_requirement"]]},
+    {"id":"formonitrile","c":[148],"input":{"formula":"HCN"},"ok":["formonitrile (PIN)","methanenitrile","hydrogen cyanide"],"bad":[],"shows":[["semantic_unit","retained_nitrile_pin_policy"]]},
+    {"id":"acetonitrile","c":[149],"input":{"formula":"CH3-CN"},"ok":["acetonitrile (PIN)","ethanenitrile"],"bad":[],"shows":[["semantic_unit","retained_nitrile_pin_policy"]]},
+    {"id":"benzonitrile","c":[150],"input":{"formula":"C6H5-CN"},"ok":["benzonitrile (PIN)","benzenecarbonitrile"],"bad":[],"shows":[["semantic_unit","retained_nitrile_pin_policy"]]},
+    {"id":"oxalonitrile","c":[151],"input":{"formula":"NC-CN"},"ok":["oxalonitrile (PIN)","ethanedinitrile"],"bad":[],"shows":[["semantic_unit","oxalonitrile_substitution_policy"]]},
+    {"id":"phthalonitrile","c":[155],"ok":["phthalonitrile","benzene-1,2-dicarbonitrile (PIN)"],"bad":[],"shows":[["semantic_unit","limited_general_retained_nitrile_names"]]},
+    {"id":"terephthalonitrile","c":[157],"ok":["terephthalonitrile","benzene-1,4-dicarbonitrile (PIN)"],"bad":[],"shows":[["semantic_unit","limited_general_retained_nitrile_names"]]},
+    {"id":"propiononitrile","c":[163],"input":{"formula":"CH3-CH2-CN"},"ok":["propiononitrile","propanenitrile (PIN)"],"bad":[],"shows":[["semantic_unit","general_only_retained_acid_nitriles"]]},
+    {"id":"succinonitrile","c":[164],"input":{"formula":"NC-CH2-CH2-CN"},"ok":["succinonitrile","butanedinitrile (PIN)"],"bad":[],"shows":[["semantic_unit","general_only_retained_acid_nitriles"]]}
+  ],
+  "corrections": [],
+  "refs": [
+    {"id":"reference.p66.part006.carbonohydrazonic_example","c":[67],"rel":"cites","o":"P-66.4.3.3:xref:0002"},
+    {"id":"reference.p66.part006.dicarbonohydrazonic_example","c":[69],"rel":"cites","o":"P-66.4.3.3:xref:0003"}
+  ],
+  "additional_refs": []
+}
