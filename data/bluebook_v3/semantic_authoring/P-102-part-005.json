@@ -1,0 +1,395 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-102-part-005",
+  "clauses": [
+    null,
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["permission", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    null,
+    null,
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["definition", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["procedure_step", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["cross_reference", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "c_glycosyl_compound_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [2],
+      "in": [["compound", "C_GlycosylCompound"]],
+      "out": [["naming_method", "NamingMethod"]],
+      "steps": [
+        ["emit", {"source_text": "Compounds arising formally from the elimination of water from the glycosidic hydroxy group and a hydrogen atom bound to a carbon atom (thus creating a C-C bond) are named using the appropriate glycosyl group.", "formation": "formal elimination of water from the glycosidic hydroxy group and a hydrogen atom bound to carbon", "bond_created": "C-C", "naming_basis": "appropriate glycosyl group"}]
+      ]
+    },
+    {
+      "id": "glycosyl_halide_pseudohalide_functional_class_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [7],
+      "in": [["compound", "GlycosylHalideOrPseudohalide"]],
+      "out": [["naming_method", "NamingMethod"]],
+      "steps": [
+        ["emit", {"source_text": "Glycosyl halides and pseudohalides are named by using functional class nomenclature, by adding, as a separate word, the class name ‘chloride’, ‘isocyanate’, etc. to the name of the appropriate glycosyl group.", "nomenclature": "functional class nomenclature", "operation": "add the class name as a separate word", "class_name_examples": ["chloride", "isocyanate", "etc."], "base": "appropriate glycosyl group"}]
+      ]
+    },
+    {
+      "id": "position_1_oxoacid_ester_treatment",
+      "k": "procedure",
+      "f": "required",
+      "c": [8],
+      "in": [["compound", "GlycosylOxoacidEster"]],
+      "out": [["treatment", "NamingTreatment"]],
+      "steps": [
+        ["emit", {"source_text": "Esters of oxoacids in position 1 are treated as described for esters at other positions (see P-102.5.6.1).", "scope": "esters of oxoacids in position 1", "treatment": "as described for esters at other positions", "basis_rule": "P-102.5.6.1"}]
+      ]
+    },
+    {
+      "id": "non_anomeric_monosaccharide_free_valence_permission",
+      "k": "rule",
+      "f": "permitted",
+      "c": [15],
+      "in": [["monosaccharide", "Monosaccharide"]],
+      "out": [["free_valence_permission", "NamingPermission"]],
+      "if": ["lit", true],
+      "then": [
+        ["set", "free_valence_permission", ["lit", {"removed_atom": "hydrogen", "allowed_positions": "any position other than C-1", "source_text": "A hydrogen atom may be removed from any position of a monosaccharide other than C-1."}]]
+      ],
+      "else": []
+    },
+    {
+      "id": "non_anomeric_free_valence_yl_locant_rule",
+      "k": "procedure",
+      "f": "required",
+      "c": [16],
+      "in": [["substituent", "MonosaccharideSubstituent"]],
+      "out": [["free_valence_notation", "SubstituentNotation"]],
+      "steps": [
+        ["emit", {"source_text": "This formation of a free valence is denoted by the suffix ‘yl’, but a locant is necessary to indicate the position of the free valence and to distinguish such a name from that of glycosyl substituents for which the locant ‘1’ is omitted.", "suffix": "yl", "locant": "required for the free-valence position", "glycosyl_locant_1": "omitted for glycosyl substituents", "purpose": "distinguish non-anomeric substituent names from glycosyl substituent names"}]
+      ]
+    },
+    {
+      "id": "substituent_prefix_n_C_O_yl_formation",
+      "k": "procedure",
+      "f": "required",
+      "c": [17],
+      "in": [["monosaccharide_name", "MonosaccharideName"]],
+      "out": [["substituent_prefix", "SubstituentPrefix"]],
+      "steps": [
+        ["emit", {"source_text": "These prefixes can be formed by replacing the final letter ‘e’ of the systematic or trivial name of a monosaccharide by n-C-yl, n-O-yl.", "source_name_types": ["systematic", "trivial"], "operation": "replace the final letter e", "replacement_forms": ["n-C-yl", "n-O-yl"]}]
+      ]
+    },
+    {
+      "id": "free_valence_carbon_symbol_omission",
+      "k": "procedure",
+      "f": "required",
+      "c": [18],
+      "in": [["free_valence", "MonosaccharideFreeValence"]],
+      "out": [["free_valence_notation", "SubstituentNotation"]],
+      "steps": [
+        ["emit", {"source_text": "The symbol ‘C’ is omitted when the free valence is derived from a position at which hydrogen atoms only are attached.", "symbol": "C", "omission_condition": "the source position has hydrogen atoms only attached"}]
+      ]
+    },
+    {
+      "id": "disaccharide_oligosaccharide_nomenclature_basis",
+      "k": "procedure",
+      "f": "required",
+      "c": [33],
+      "in": [["saccharide", "DisaccharideOrOligosaccharide"]],
+      "out": [["naming_basis", "NamingBasis"]],
+      "steps": [
+        ["emit", {"source_text": "Names of disaccharides and oligosaccharides are formed by the principles, rules, and conventions described above for monosaccharides.", "applies_to": ["disaccharides", "oligosaccharides"], "basis": "principles, rules, and conventions described above for monosaccharides"}]
+      ]
+    },
+    {
+      "id": "disaccharide_without_hemiacetal_glycosyl_glycoside_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [37],
+      "in": [["disaccharide", "DisaccharideWithoutFreeHemiacetal"]],
+      "out": [["naming_method", "NamingMethod"]],
+      "steps": [
+        ["emit", {"source_text": "Disaccharides which can be regarded as formed by elimination of one molecule of water from two glycosidic (anomeric) hydroxy groups, are named as glycosyl glycosides.", "formation": "elimination of one molecule of water from two glycosidic (anomeric) hydroxy groups", "name_pattern": "glycosyl glycoside", "free_hemiacetal_group": false}]
+      ]
+    },
+    {
+      "id": "disaccharide_parent_selection",
+      "k": "procedure",
+      "f": "required",
+      "c": [38],
+      "in": [["disaccharide", "DisaccharideWithoutFreeHemiacetal"]],
+      "out": [["parent_selection", "ParentSelection"]],
+      "steps": [
+        ["emit", {"source_text": "The parent (cited as the ‘glycoside’) is chosen in accordance with criteria described in P-102.4.", "parent_role": "glycoside", "selection_basis": "criteria described in P-102.4"}]
+      ]
+    },
+    {
+      "id": "disaccharide_anomeric_descriptor_requirement",
+      "k": "constraint",
+      "f": "required",
+      "c": [39],
+      "in": [["name", "DisaccharideName"]],
+      "assert": ["cmp", "eq", ["get", ["var", "name"], "both_anomeric_descriptors_cited"], true],
+      "violation": [["reject", "name", "reason.both_anomeric_descriptors_required"]]
+    },
+    {
+      "id": "disaccharide_with_hemiacetal_glycosylglycose_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [44],
+      "in": [["disaccharide", "DisaccharideWithFreeHemiacetal"]],
+      "out": [["naming_method", "NamingMethod"]],
+      "steps": [
+        ["emit", {"source_text": "Disaccharides which can be regarded as formed by elimination of one molecule of water from one glycosidic (anomeric) hydroxy group and one alcoholic hydroxy group, are named as glycosylglycoses.", "formation": "elimination of one molecule of water from one glycosidic (anomeric) hydroxy group and one alcoholic hydroxy group", "name_pattern": "glycosylglycose", "free_hemiacetal_group": true}]
+      ]
+    },
+    {
+      "id": "glycosylglycose_locant_descriptor_requirement",
+      "k": "constraint",
+      "f": "required",
+      "c": [45],
+      "in": [["name", "GlycosylglycoseName"]],
+      "assert": ["all", ["cmp", "eq", ["get", ["var", "name"], "locants_cited"], true], ["cmp", "eq", ["get", ["var", "name"], "anomeric_descriptors_cited"], true]],
+      "violation": [["reject", "name", "reason.glycosylglycose_locants_and_anomeric_descriptors_required"]]
+    },
+    {
+      "id": "glycosylglycose_locant_methods",
+      "k": "procedure",
+      "f": "required",
+      "c": [46],
+      "in": [["name", "GlycosylglycoseName"]],
+      "out": [["locant_methods", "LocantMethods"]],
+      "steps": [
+        ["emit", {"source_text": "There are two established methods for citing locants:", "method_count": 2, "methods": ["parenthetical locants between components with an arrow from the glycosyl locant to the glycose locant", "locants at the front of the glycosyl component"]}]
+      ]
+    },
+    {
+      "id": "glycosylglycose_parenthetical_arrow_locants",
+      "k": "rule",
+      "f": "permitted",
+      "c": [47],
+      "in": [["name", "GlycosylglycoseName"]],
+      "out": [["locant_method", "LocantMethod"]],
+      "if": ["lit", true],
+      "then": [
+        ["set", "locant_method", ["lit", {"method": "parenthetical between components", "arrow_direction": "from glycosyl component locant to glycose component locant", "source_text": "(1) in parentheses between the components with an arrow going from the locant of the glycosyl component to that of the glycose component;"}]]
+      ],
+      "else": []
+    },
+    {
+      "id": "glycosylglycose_front_glycosyl_locants",
+      "k": "rule",
+      "f": "permitted",
+      "c": [48],
+      "in": [["name", "GlycosylglycoseName"]],
+      "out": [["locant_method", "LocantMethod"]],
+      "if": ["lit", true],
+      "then": [
+        ["set", "locant_method", ["lit", {"method": "at the front of the glycosyl component", "source_text": "(2) at the front of the glycosyl component."}]]
+      ],
+      "else": []
+    },
+    {
+      "id": "oligosaccharide_definition_and_unit_terms",
+      "k": "definition",
+      "f": "definition",
+      "c": [54],
+      "in": [["saccharide", "Saccharide"]],
+      "out": [["classification", "OligosaccharideClassification"]],
+      "term": "oligosaccharide",
+      "entity": "saccharide",
+      "value": ["lit", {"source_text": "Oligosaccharides are multicomponent saccharides generally with more than two monosaccharide units According to the number of units, they are called trisaccharides, tetrasaccharides, etc.", "definition": "multicomponent saccharide generally with more than two monosaccharide units", "unit_count_names": {"three": "trisaccharide", "four": "tetrasaccharide", "higher_counts": "etc."}}]
+    },
+    {
+      "id": "oligosaccharide_polysaccharide_boundary",
+      "k": "definition",
+      "f": "definition",
+      "c": [55],
+      "in": [["oligosaccharide", "Oligosaccharide"]],
+      "out": [["unit_boundary", "UnitBoundary"]],
+      "term": "oligosaccharide-to-polysaccharide unit boundary",
+      "entity": "oligosaccharide",
+      "value": ["lit", {"source_text": "The number of units involved before they become polysaccharides is not defined.", "number_of_units_before_polysaccharide": "not defined"}]
+    },
+    {
+      "id": "trisaccharide_glycosyl_glycosyl_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [57],
+      "in": [["trisaccharide", "Trisaccharide"]],
+      "out": [["naming_method", "NamingMethod"]],
+      "steps": [
+        ["emit", {"source_text": "A trisaccharide, for example, is named as a glycosylglycosyl glycoside or glycosyl glycosylglycoside as required.", "name_patterns": ["glycosylglycosyl glycoside", "glycosyl glycosylglycoside"], "application": "as required"}]
+      ]
+    },
+    {
+      "id": "trisaccharide_glycoside_choice",
+      "k": "procedure",
+      "f": "permitted",
+      "c": [58],
+      "in": [["trisaccharide", "TrisaccharideWithoutFreeHemiacetal"]],
+      "out": [["glycoside_choice", "ParentSelection"]],
+      "steps": [
+        ["emit", {"source_text": "A choice between the two residues linked through their anomeric positions for citation as the ‘glycoside’ portion can be made on the basis of P-102.4.", "choice": "between the two residues linked through their anomeric positions", "citation_role": "glycoside portion", "basis_rule": "P-102.4"}]
+      ]
+    },
+    {
+      "id": "trisaccharide_sequential_naming_permission",
+      "k": "procedure",
+      "f": "permitted",
+      "c": [59],
+      "in": [["trisaccharide", "TrisaccharideWithoutFreeHemiacetal"]],
+      "out": [["naming_method", "NamingMethod"]],
+      "steps": [
+        ["emit", {"source_text": "Alternatively, a sequential (end-to-end) naming approach may be used, regardless of P-102.4.", "alternative": "sequential (end-to-end) naming approach", "basis_rule_independence": "regardless of P-102.4"}]
+      ]
+    },
+    {
+      "id": "trisaccharide_disaccharide_naming_method",
+      "k": "procedure",
+      "f": "required",
+      "c": [60],
+      "in": [["trisaccharide", "Trisaccharide"]],
+      "out": [["naming_method", "NamingMethod"]],
+      "steps": [
+        ["emit", {"source_text": "The name is formed by the preferred method for naming disaccharides.", "method": "preferred method for naming disaccharides"}]
+      ]
+    },
+    {
+      "id": "free_hemiacetal_oligosaccharide_glycosylglycosen_glycose_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [65],
+      "in": [["oligosaccharide", "OligosaccharideWithFreeHemiacetal"]],
+      "out": [["naming_method", "NamingMethod"]],
+      "steps": [
+        ["emit", {"source_text": "An oligosaccharide of this type is named as a glycosyl[glycosyl]nglycose, the ‘glycose’ portion being the parent.", "name_pattern": "glycosyl[glycosyl]nglycose", "parent": "glycose portion"}]
+      ]
+    },
+    {
+      "id": "free_hemiacetal_oligosaccharide_right_hand_glycose_convention",
+      "k": "procedure",
+      "f": "required",
+      "c": [66],
+      "in": [["name", "OligosaccharideName"]],
+      "out": [["depiction_convention", "NameDepictionConvention"]],
+      "steps": [
+        ["emit", {"source_text": "The conventional depiction has the ‘glycose’ portion on the right.", "glycose_position": "right"}]
+      ]
+    },
+    {
+      "id": "free_hemiacetal_oligosaccharide_naming_basis",
+      "k": "procedure",
+      "f": "required",
+      "c": [67],
+      "in": [["oligosaccharide", "OligosaccharideWithFreeHemiacetal"]],
+      "out": [["naming_basis", "NamingBasis"]],
+      "steps": [
+        ["emit", {"source_text": "Names are formed as described in P-102.7.2.1.", "basis_rule": "P-102.7.2.1"}]
+      ]
+    }
+  ],
+  "exceptions": [],
+  "tables": [],
+  "figures": [
+    {"id": "c_glycosyl_compound_structure", "c": [5], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102614a.gif"], "sha256": null},
+    {"id": "glycosyl_bromide_structure", "c": [11], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102615a.gif"], "sha256": null},
+    {"id": "glycosyl_nitrate_structure", "c": [13], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102615b.gif"], "sha256": null},
+    {"id": "fructosyl_free_valence_structure", "c": [21], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102620a.gif"], "sha256": null},
+    {"id": "glucosyl_C_free_valence_structure", "c": [23], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102620b.gif"], "sha256": null},
+    {"id": "D_glucosyl_C_free_valence_structure", "c": [25], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102620c.gif"], "sha256": null},
+    {"id": "ribopyranosidyl_O_free_valence_structure", "c": [27], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102620d.gif"], "sha256": null},
+    {"id": "glucopyranosyl_acetic_acid_structure", "c": [31], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102620e.gif"], "sha256": null},
+    {"id": "sucrose_structure", "c": [42], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102711a.gif"], "sha256": null},
+    {"id": "maltose_structure", "c": [52], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102712a.gif"], "sha256": null},
+    {"id": "raffinose_structure", "c": [63], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102721a.gif"], "sha256": null},
+    {"id": "panose_structure", "c": [70], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P10gif/P102722a.gif"], "sha256": null}
+  ],
+  "examples": [
+    {"id": "c_glycosyl_compound_example", "c": [4], "input": {"caption": "6-(β-D-glucopyranosyl)-5,7-dihydroxy-2-(4-hydroxyphenyl)-4H-chromen-4-one\n6-(β-D-glucopyranosyl)-5,7-dihydroxy-2-(4-hydroxyphenyl)-4H-1-benzopyran-4-one\n6-(β-D-glucopyranosyl)-4′,5,7-dihydroxyflavone", "figure": "P10gif/P102614a.gif"}, "ok": ["6-(β-D-glucopyranosyl)-5,7-dihydroxy-2-(4-hydroxyphenyl)-4H-chromen-4-one", "6-(β-D-glucopyranosyl)-5,7-dihydroxy-2-(4-hydroxyphenyl)-4H-1-benzopyran-4-one", "6-(β-D-glucopyranosyl)-4′,5,7-dihydroxyflavone"], "bad": [], "shows": [["semantic_unit", "c_glycosyl_compound_naming"], ["figure", "figure.p102.part005.c_glycosyl_compound_structure"]], "why": "The figure gives three names for the C-glycosyl compound."},
+    {"id": "glycosyl_bromide_example", "c": [10], "input": {"caption": "2,3,4,6-tetra-O-acetyl-α-D-glucopyranosyl bromide", "figure": "P10gif/P102615a.gif"}, "ok": ["2,3,4,6-tetra-O-acetyl-α-D-glucopyranosyl bromide"], "bad": [], "shows": [["semantic_unit", "glycosyl_halide_pseudohalide_functional_class_naming"], ["figure", "figure.p102.part005.glycosyl_bromide_structure"]], "why": "Example of functional class nomenclature for a glycosyl halide."},
+    {"id": "glycosyl_nitrate_example", "c": [12], "input": {"caption": "2,3-diazido-6-bromo-2,3,6-trideoxy-α-D-mannopyranose 4-benzoate 1-nitrate", "figure": "P10gif/P102615b.gif"}, "ok": ["2,3-diazido-6-bromo-2,3,6-trideoxy-α-D-mannopyranose 4-benzoate 1-nitrate"], "bad": [], "shows": [["semantic_unit", "position_1_oxoacid_ester_treatment"], ["figure", "figure.p102.part005.glycosyl_nitrate_structure"]], "why": "Example involving a glycosyl ester in position 1."},
+    {"id": "fructosyl_free_valence_example", "c": [20], "input": {"caption": "1-deoxy-D-fructos-1-yl", "figure": "P10gif/P102620a.gif"}, "ok": ["1-deoxy-D-fructos-1-yl"], "bad": [], "shows": [["semantic_unit", "non_anomeric_monosaccharide_free_valence_permission"], ["semantic_unit", "non_anomeric_free_valence_yl_locant_rule"], ["figure", "figure.p102.part005.fructosyl_free_valence_structure"]], "why": "Example of a non-glycosyl monosaccharide substituent name."},
+    {"id": "glucosyl_C_free_valence_example", "c": [22], "input": {"caption": "2-amino-2-deoxy-D-glucos-2-C-yl", "figure": "P10gif/P102620b.gif"}, "ok": ["2-amino-2-deoxy-D-glucos-2-C-yl"], "bad": [], "shows": [["semantic_unit", "substituent_prefix_n_C_O_yl_formation"], ["semantic_unit", "free_valence_carbon_symbol_omission"], ["figure", "figure.p102.part005.glucosyl_C_free_valence_structure"]], "why": "Example of a free valence derived from a carbon position."},
+    {"id": "D_glucosyl_C_free_valence_example", "c": [24], "input": {"caption": "D-glucos-2-C-yl", "figure": "P10gif/P102620c.gif"}, "ok": ["D-glucos-2-C-yl"], "bad": [], "shows": [["semantic_unit", "free_valence_carbon_symbol_omission"], ["figure", "figure.p102.part005.D_glucosyl_C_free_valence_structure"]], "why": "Example of the C-designated free valence form."},
+    {"id": "ribopyranosidyl_O_free_valence_example", "c": [26], "input": {"caption": "methyl β-D-ribopyranosid-2-O-yl", "figure": "P10gif/P102620d.gif"}, "ok": ["methyl β-D-ribopyranosid-2-O-yl"], "bad": [], "shows": [["semantic_unit", "substituent_prefix_n_C_O_yl_formation"], ["figure", "figure.p102.part005.ribopyranosidyl_O_free_valence_structure"]], "why": "Example of an O-designated free valence in a glycoside."},
+    {"id": "glucopyranosyl_acetic_acid_example", "c": [28, 29, 30], "input": {"caption": "(β-D-glucopyranos-2-O-yl)acetic acid\n(not 2-O-(carboxymethyl)-β-D-glucopyranose;\nthis name is not constructed according to P-102.6.1.2;\na carboxylic acid is senior to a hydroxy compound)", "figure": "P10gif/P102620e.gif"}, "ok": ["(β-D-glucopyranos-2-O-yl)acetic acid"], "bad": ["2-O-(carboxymethyl)-β-D-glucopyranose"], "shows": [["semantic_unit", "free_valence_carbon_symbol_omission"], ["figure", "figure.p102.part005.glucopyranosyl_acetic_acid_structure"]], "why": "The accepted name uses the glucopyranos-2-O-yl substituent; the rejected name is not constructed according to P-102.6.1.2, and the carboxylic acid is senior to a hydroxy compound."},
+    {"id": "sucrose_disaccharide_example", "c": [41], "input": {"caption": "β-D-fructofuranosyl α-D-glucopyranoside\n(not α-D-glucopyranosyl β-D-fructofuranoside\nfructo precedes gluco in the alphabetical order)\nsucrose (trivial name)", "figure": "P10gif/P102711a.gif"}, "ok": ["β-D-fructofuranosyl α-D-glucopyranoside", "sucrose (trivial name)"], "bad": ["α-D-glucopyranosyl β-D-fructofuranoside"], "shows": [["semantic_unit", "disaccharide_without_hemiacetal_glycosyl_glycoside_naming"], ["semantic_unit", "disaccharide_parent_selection"], ["semantic_unit", "disaccharide_anomeric_descriptor_requirement"], ["figure", "figure.p102.part005.sucrose_structure"]], "why": "The glycoside portion is selected using the stated criteria, both anomeric descriptors are shown, and fructo precedes gluco in alphabetical order; sucrose is the trivial name."},
+    {"id": "maltose_disaccharide_example", "c": [50, 51], "input": {"caption": "(1) α-D-glucopyranosyl-(1→4)-β-D-glucopyranose\n(2) 4-O-α-D-glucopyranosyl-β-D-glucopyranose\nβ-maltose (trivial name;\nnot β-D-maltose)", "figure": "P10gif/P102712a.gif"}, "ok": ["α-D-glucopyranosyl-(1→4)-β-D-glucopyranose", "4-O-α-D-glucopyranosyl-β-D-glucopyranose", "β-maltose (trivial name)"], "bad": ["β-D-maltose"], "shows": [["semantic_unit", "disaccharide_with_hemiacetal_glycosylglycose_naming"], ["semantic_unit", "glycosylglycose_locant_descriptor_requirement"], ["semantic_unit", "glycosylglycose_locant_methods"], ["semantic_unit", "glycosylglycose_parenthetical_arrow_locants"], ["semantic_unit", "glycosylglycose_front_glycosyl_locants"], ["figure", "figure.p102.part005.maltose_structure"]], "why": "The example gives both established locant methods, with the arrow from glycosyl to glycose, and shows the trivial name; β-D-maltose is not the full name."},
+    {"id": "raffinose_oligosaccharide_example", "c": [62], "input": {"caption": "β-D-fructofuranosyl α-D-galactopyranosyl-(1→6)-α-D-glucopyranoside\n(glucose, not fructose, is selected as the ‘glycoside’)\n\nα-D-galactopyranosyl-(1→6)-α-D-glucopyranosyl β-D-fructofuranoside (sequential method)\nraffinose (trivial name)", "figure": "P10gif/P102721a.gif"}, "ok": ["β-D-fructofuranosyl α-D-galactopyranosyl-(1→6)-α-D-glucopyranoside", "α-D-galactopyranosyl-(1→6)-α-D-glucopyranosyl β-D-fructofuranoside (sequential method)", "raffinose (trivial name)"], "bad": [], "shows": [["semantic_unit", "trisaccharide_glycosyl_glycosyl_naming"], ["semantic_unit", "trisaccharide_glycoside_choice"], ["semantic_unit", "trisaccharide_sequential_naming_permission"], ["semantic_unit", "trisaccharide_disaccharide_naming_method"], ["figure", "figure.p102.part005.raffinose_structure"]], "why": "The example shows selection of glucose rather than fructose as the glycoside and the alternative sequential method; raffinose is the trivial name."},
+    {"id": "panose_oligosaccharide_example", "c": [69], "input": {"caption": "α-D-glucopyranosyl-(1→6)-α-D-glucopyranosyl-(1→4)-D-glucopyranose\npanose (trivial name)", "figure": "P10gif/P102722a.gif"}, "ok": ["α-D-glucopyranosyl-(1→6)-α-D-glucopyranosyl-(1→4)-D-glucopyranose", "panose (trivial name)"], "bad": [], "shows": [["semantic_unit", "free_hemiacetal_oligosaccharide_glycosylglycosen_glycose_naming"], ["semantic_unit", "free_hemiacetal_oligosaccharide_right_hand_glycose_convention"], ["semantic_unit", "free_hemiacetal_oligosaccharide_naming_basis"], ["figure", "figure.p102.part005.panose_structure"]], "why": "The example depicts the glycose portion on the right and applies the naming method described for oligosaccharides without a free hemiacetal group."}
+  ],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p102.part005.disaccharide_parent_criteria", "c": [38], "rel": "cites", "o": "P-102.7.1.1:xref:0001"},
+    {"id": "reference.p102.part005.trisaccharide_glycoside_criteria", "c": [58], "rel": "cites", "o": "P-102.7.2.1:xref:0001"},
+    {"id": "reference.p102.part005.trisaccharide_sequential_independence", "c": [59], "rel": "cites", "o": "P-102.7.2.1:xref:0002"},
+    {"id": "reference.p102.part005.free_hemiacetal_oligosaccharide_basis", "c": [67], "rel": "cites", "o": "P-102.7.2.2:xref:0001"}
+  ],
+  "additional_refs": []
+}

@@ -1,0 +1,303 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-51-part-002",
+  "clauses": [
+    null,
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["scope", "normative", "compile"],
+    ["note", "informative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["cross_reference", "normative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["constraint", "informative", "compile"],
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["cross_reference", "normative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["correction_event", "correction", "compile"],
+    null,
+    null,
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["cross_reference", "normative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["cross_reference", "normative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["preference_criterion", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"]
+  ],
+  "units": [
+    {
+      "id": "skeletal_replacement_recommended_method",
+      "k": "definition",
+      "f": "preference",
+      "c": [2],
+      "scope": {"r": ["all"], "if": ["lit", true]},
+      "in": [["compound", "HeterocyclicCompound"]],
+      "out": [["method", "NamingMethod"]],
+      "term": "recommended_method_for_certain_heterocyclic_compounds",
+      "entity": "NamingMethod",
+      "value": ["lit", {
+        "method": "skeletal replacement ('a') nomenclature",
+        "recommendation": "only recommended method",
+        "applies_to": "certain heterocyclic compounds"
+      }]
+    },
+    {
+      "id": "metal_prefix_skeletal_replacement_scope",
+      "k": "definition",
+      "f": "required",
+      "c": [4, 5, 12],
+      "scope": {"r": ["all"], "if": ["lit", true]},
+      "term": "metal_prefix_and_hantzsch_widman_scope",
+      "entity": "SkeletalReplacementScope",
+      "value": ["lit", {
+        "less_than_ten_ring_members": {
+          "condition": "the skeletal replacement ('a') prefix represents a metal",
+          "definition_reference": "P-69.4",
+          "status": "possible"
+        },
+        "groups_1_to_12_adaptation": {
+          "scope": "elements of Groups 1-12 and their skeletal replacement ('a') prefixes",
+          "assessment": "major change from previous recommendations",
+          "pin_status": "names of organometallic compounds involving these elements are not PINs at this time"
+        },
+        "groups_13_to_16_option": {
+          "scope": "metallic elements in addition to the metals in Groups 13 through 16 in the Hantzsch-Widman system and their skeletal replacement ('a') prefixes",
+          "assessment": "major change from previous recommendations",
+          "definition_reference": "P-69.4"
+        }
+      }]
+    },
+    {
+      "id": "heteropolycyclic_name_correction_event",
+      "k": "definition",
+      "f": "definition",
+      "c": [26],
+      "scope": {"r": ["all"], "if": ["lit", true]},
+      "term": "BBV3-CORR-B21D65F1448C13C6",
+      "entity": "CorrectionEvent",
+      "value": ["lit", {
+        "overlay_id": "BBV3-CORR-B21D65F1448C13C6",
+        "status": "replaced",
+        "effective_date": "2025-12-03",
+        "target": "P-51.4.2.4, example that replaced printed compound",
+        "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes2.html",
+        "operations": [
+          {
+            "operation_id": "BBV3-CORR-B21D65F1448C13C6:OP-001",
+            "kind": "replacement",
+            "before": "1,3a1,4-triazaphenylene (PIN)",
+            "after": "1,3a1,4-triazaphenalene (PIN)",
+            "source": "for 1,3a1,4-triazaphenylene (PIN) read 1,3a1,4-triazaphenalene (PIN)"
+          },
+          {
+            "operation_id": "BBV3-CORR-B21D65F1448C13C6:OP-002",
+            "kind": "replacement",
+            "before": "[not 1,4,9b-triazaphenylene; see P-25.3.3.3]",
+            "after": "[not 1,4,9b-triazaphenalene; see P-25.3.3.3]",
+            "source": "for [not 1,4,9b-triazaphenylene; see P-25.3.3.3] read [not 1,4,9b-triazaphenalene; see P-25.3.3.3]"
+          }
+        ]
+      }]
+    },
+    {
+      "id": "heterocyclic_assembly_parent_choice",
+      "k": "definition",
+      "f": "required",
+      "c": [31, 32],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "term": "parent_choice_before_skeletal_replacement",
+      "entity": "ParentChoiceProcedure",
+      "value": ["lit", {
+        "order": "choose the preferred IUPAC name of the heterocyclic parent structure before insertion of skeletal replacement ('a') prefixes",
+        "assemblies": "assemblies of identical heterocyclic compounds composed of von Baeyer-type heterocyclic compounds and monocyclic compounds having more than ten members",
+        "example_reference": "P-28.3.1"
+      }]
+    },
+    {
+      "id": "substitutive_nomenclature_preference",
+      "k": "definition",
+      "f": "preference",
+      "c": [43],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "term": "preferred_nomenclature_when_conjunctive_and_substitutive_are_available",
+      "entity": "NomenclaturePreference",
+      "value": ["lit", {
+        "condition": "there is a choice between conjunctive nomenclature and substitutive nomenclature",
+        "preferred_method": "substitutive nomenclature",
+        "included_methods": ["multiplicative nomenclature", "skeletal replacement nomenclature"],
+        "qualification": "when the conditions for their use are fulfilled",
+        "reference": "P-51"
+      }]
+    }
+  ],
+  "tables": [],
+  "figures": [
+    {"id": "skeletal_replacement_example_a", "c": [8], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510402a.gif"]},
+    {"id": "skeletal_replacement_example_b", "c": [11], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510402b.gif"]},
+    {"id": "von_baeyer_example_c", "c": [16], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510402c.gif"]},
+    {"id": "spiro_example_d", "c": [20], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510402d.gif"]},
+    {"id": "heteropolycyclic_example_e", "c": [25], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510402e.gif"]},
+    {"id": "heterocyclic_assembly_example_f", "c": [33], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510402f.gif"]},
+    {"id": "heterocyclic_assembly_example_g", "c": [36], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510402g.gif"]},
+    {"id": "acceptable_name_types_example_h", "c": [41], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510402h.gif"]},
+    {"id": "conjunctive_substitutive_example_a", "c": [46], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510500a.gif"]},
+    {"id": "conjunctive_substitutive_example_b", "c": [48], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510500b.gif"]},
+    {"id": "conjunctive_substitutive_example_c", "c": [50], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510500c.gif"]},
+    {"id": "conjunctive_substitutive_example_d", "c": [52], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P5gif/P510500d.gif"]},
+    {"id": "heteropolycyclic_correction_marker", "c": [26], "k": "source_icon", "urls": ["https://iupac.qmul.ac.uk/greek/ALTER.GIF", "https://iupac.qmul.ac.uk/BlueBook/changes2.html"]}
+  ],
+  "examples": [
+    {
+      "id": "aza_cyclododeca_hexaene",
+      "c": [7],
+      "input": "a heterocyclic compound named by skeletal replacement nomenclature",
+      "ok": ["1-azacyclododeca-1,3,5,7,9,11-hexaene"],
+      "bad": [],
+      "shows": [["figure", "figure.p51.part002.skeletal_replacement_example_a"]],
+      "why": "The example illustrates a preferred name generated by skeletal replacement nomenclature."
+    },
+    {
+      "id": "platinole_hantzsch_widman_and_skeletal_replacement",
+      "c": [9, 10],
+      "input": "a heterocyclic compound containing platinum",
+      "ok": ["1,1-dichloro-2,3,4,5-tetramethylplatinole (Hantzsch-Widman name)", "1,1-dichloro-2,3,4,5-tetramethyl-1-platinacyclopenta-2,4-diene"],
+      "bad": [],
+      "shows": [["figure", "figure.p51.part002.skeletal_replacement_example_b"]],
+      "why": "The figure gives the Hantzsch-Widman name and the skeletal replacement name; the latter is identified as a skeletal replacement name and the source directs the reader to P-69.4."
+    },
+    {
+      "id": "von_baeyer_dioxabicyclo",
+      "c": [15],
+      "input": "a heterocyclic von Baeyer ring system",
+      "ok": ["2,6-dioxabicyclo[3.3.2]decane"],
+      "bad": [],
+      "shows": [["figure", "figure.p51.part002.von_baeyer_example_c"]],
+      "why": "The example illustrates skeletal replacement nomenclature for a heterocyclic von Baeyer ring system."
+    },
+    {
+      "id": "spiro_aza_thia",
+      "c": [19],
+      "input": "a heterocyclic spiro parent hydride consisting of saturated monocyclic rings",
+      "ok": ["7-aza-1-thiaspiro[4.5]decane"],
+      "bad": [],
+      "shows": [["figure", "figure.p51.part002.spiro_example_d"]],
+      "why": "The example illustrates skeletal replacement nomenclature for a heterocyclic spiro parent hydride."
+    },
+    {
+      "id": "heteropolycyclic_triazaphenalene",
+      "c": [23, 24],
+      "input": "a heteropolycyclic ring system for which fusion nomenclature based on heterocyclic parent rings is not applicable",
+      "ok": ["1,3a1,4-triazaphenalene (PIN)"],
+      "bad": ["1,3a1,4-triazaphenylene (PIN)", "1,4,9b-triazaphenalene"],
+      "shows": [["figure", "figure.p51.part002.heteropolycyclic_example_e"]],
+      "why": "The corrected example gives 1,3a1,4-triazaphenalene as the PIN and states that 1,4,9b-triazaphenalene is not the name; the correction overlay replaces triazaphenylene with triazaphenalene in both statements."
+    },
+    {
+      "id": "tercycloundecane_parent_choice",
+      "c": [31, 32],
+      "input": "an assembly of identical heterocyclic compounds of the von Baeyer type",
+      "ok": ["13,23,34-trioxa-11,21:26,31-tercycloundecane", "3,3\u2032,4\u2032\u2032-trioxa-1,1\u2032:6\u2032,1\u2032\u2032-tercycloundecane"],
+      "bad": ["13,23:29,34-ter-1-oxacycloundecane"],
+      "shows": [["figure", "figure.p51.part002.heterocyclic_assembly_example_f"], ["semantic_unit", "heterocyclic_assembly_parent_choice"]],
+      "why": "The preferred parent structure is selected before skeletal replacement prefixes are inserted; the source identifies the first name as the PIN and rejects the alternative."
+    },
+    {
+      "id": "terbicyclo_parent_choice",
+      "c": [34, 35],
+      "input": "an assembly of identical heterocyclic compounds with a von Baeyer-type parent",
+      "ok": ["23-thia-12,22:26,32-terbicyclo[2.2.1]heptane", "3\u2032-thia-2,2\u2032:6\u2032,2\u2032\u2032-terbicyclo[2.2.1]heptane"],
+      "bad": ["2,6-bis(bicyclo[2.2.1]heptan-2-yl)-3-thiabicyclo[2.2.1]heptane"],
+      "shows": [["figure", "figure.p51.part002.heterocyclic_assembly_example_g"], ["semantic_unit", "heterocyclic_assembly_parent_choice"]],
+      "why": "The example applies the parent-choice-before-insertion rule and gives the preferred name, the related name, and the explicitly rejected alternative."
+    },
+    {
+      "id": "acceptable_unsaturated_heteromonocyclic_names",
+      "c": [40],
+      "input": "an unsaturated heteromonocyclic compound for which three names are acceptable",
+      "ok": ["1-azacyclotrideca-2,4,6,8,10,12-hexaene", "1-azacyclotridecine", "1H-1-aza[13]annulene"],
+      "bad": [],
+      "shows": [["figure", "figure.p51.part002.acceptable_name_types_example_h"]],
+      "why": "The source identifies the first name as the PIN and a skeletal replacement name, the second as a skeletal relacement ('a') name for use in fusion nomenclature, and the third as 1H-1-aza[13]annulene."
+    },
+    {
+      "id": "naphthalene_diacetic_substitutive",
+      "c": [45],
+      "input": "naphthalene-2,3-diacetic acid",
+      "ok": ["2,2\u2032-(naphthalene-2,3-diyl)diacetic acid"],
+      "bad": ["naphthalene-2,3-diacetic acid"],
+      "shows": [["figure", "figure.p51.part002.conjunctive_substitutive_example_a"], ["semantic_unit", "substitutive_nomenclature_preference"]],
+      "why": "The preferred IUPAC name uses substitutive nomenclature."
+    },
+    {
+      "id": "benzene_triacetic_substitutive",
+      "c": [47],
+      "input": "benzene-1,3,5-triacetic acid",
+      "ok": ["2,2\u2032,2\u2032\u2032-(benzene-1,3,5-triyl)triacetic acid"],
+      "bad": ["benzene-1,3,5-triacetic acid"],
+      "shows": [["figure", "figure.p51.part002.conjunctive_substitutive_example_b"], ["semantic_unit", "substitutive_nomenclature_preference"]],
+      "why": "The preferred IUPAC name uses substitutive nomenclature, including multiplicative nomenclature where applicable."
+    },
+    {
+      "id": "quinoline_acetic_acid_seniority",
+      "c": [49],
+      "input": "2-(3-hydroxypropyl)quinoline-3-acetic acid",
+      "ok": ["[2-(3-hydroxypropyl)quinolin-3-yl]acetic acid"],
+      "bad": ["2-(3-hydroxypropyl)quinoline-3-acetic acid"],
+      "shows": [["figure", "figure.p51.part002.conjunctive_substitutive_example_c"], ["semantic_unit", "substitutive_nomenclature_preference"]],
+      "why": "The source explicitly states that a carboxylic acid is senior to an alcohol."
+    },
+    {
+      "id": "naphthalene_carboxyethyl_diacetic",
+      "c": [51],
+      "input": "1-(2-carboxyethyl)naphthalene-2,3-diacetic acid",
+      "ok": ["3-[2,3-bis(carboxymethyl)naphthalen-1-yl]propanoic acid"],
+      "bad": ["1-(2-carboxyethyl)naphthalene-2,3-diacetic acid"],
+      "shows": [["figure", "figure.p51.part002.conjunctive_substitutive_example_d"], ["semantic_unit", "substitutive_nomenclature_preference"]],
+      "why": "The preferred IUPAC name is formed by substitutive nomenclature."
+    }
+  ],
+  "exceptions": [],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p51.part002.p51_4_2_1_xref_0002", "c": [4], "rel": "cites", "o": "P-51.4.2.1:xref:0002"},
+    {"id": "reference.p51.part002.p51_4_2_1_xref_0003", "c": [9], "rel": "cites", "o": "P-51.4.2.1:xref:0003"},
+    {"id": "reference.p51.part002.p51_4_2_1_xref_0004", "c": [12], "rel": "cites", "o": "P-51.4.2.1:xref:0004"},
+    {"id": "reference.p51.part002.p51_4_2_6_xref_0002", "c": [32], "rel": "cites", "o": "P-51.4.2.6:xref:0002"},
+    {"id": "reference.p51.part002.p51_4_2_6_xref_0003", "c": [35], "rel": "cites", "o": "P-51.4.2.6:xref:0003"},
+    {"id": "reference.p51.part002.p51_4_2_7_xref_0001", "c": [40], "rel": "cites", "o": "P-51.4.2.7:xref:0001"}
+  ],
+  "symbols": [],
+  "additional_refs": []
+}

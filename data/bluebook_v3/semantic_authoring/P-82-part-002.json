@@ -1,0 +1,387 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-82-part-002",
+  "clauses": [
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["condition", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["correction_event", "correction", "compile"],
+    null,
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["correction_event", "correction", "compile"],
+    ["constraint", "normative", "compile"],
+    ["permission", "informative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["correction_event", "correction", "compile"],
+    ["condition", "normative", "compile"],
+    ["note", "informative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"]
+  ],
+  "units": [
+    {
+      "id": "isotope_locant_placement_rules",
+      "k": "definition",
+      "f": "required",
+      "c": [10, 11, 12],
+      "scope": {"r": ["all"], "if": ["lit", true]},
+      "term": "nuclide_locant_placement",
+      "entity": "NuclideLocantRule",
+      "value": ["lit", {
+        "parent_structure": "When locants are needed for defining the structure of the parent structure or of a unit of structure as defined by its appropriate enclosing marks, then all locants must be cited for the parent structure or that structural unit.",
+        "specific_nuclide_positions": "Specific positions of nuclides must be indicated in the isotopic descriptor by appropriate locants, letters, and/or numerals, preceding the nuclide symbol(s).",
+        "preferred_names": "In preferred names, all locants are placed before the nuclide that is multiplied."
+      }]
+    },
+    {
+      "id": "deleted_deuterated_glyceraldehyde_correction_event",
+      "k": "definition",
+      "f": "definition",
+      "c": [19],
+      "scope": {"r": ["all"], "if": ["lit", true]},
+      "term": "P-82.6.2_correction_event",
+      "entity": "CorrectionEvent",
+      "value": ["lit", {
+        "event_kind": "correction",
+        "action": "deleted",
+        "description": "deleted D-(O-2H)glycer(2H)aldehyde",
+        "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html",
+        "source_icon_url": "https://iupac.qmul.ac.uk/greek/ALTER.GIF"
+      }]
+    },
+    {
+      "id": "retained_name_unlocanted_nuclide_rule",
+      "k": "definition",
+      "f": "required",
+      "c": [31, 32],
+      "scope": {"r": ["preferred_iupac_name", "general_nomenclature"], "if": ["lit", true]},
+      "term": "nuclide_in_unlocanted_retained_name",
+      "entity": "NuclideLocationRule",
+      "value": ["lit", {
+        "preferred_iupac_name": "When the nuclide is located at a position in a retained name that is not numbered a systematic name that identifies separately the relevant atom is used for the IUPAC preferred name.",
+        "general_nomenclature": "For general nomenclature an italicized prefixes or Greek letters may be used to denote its position."
+      }]
+    },
+    {
+      "id": "added_isotope_section_correction_event",
+      "k": "definition",
+      "f": "definition",
+      "c": [30],
+      "scope": {"r": ["all"], "if": ["lit", true]},
+      "term": "P-82.6.3.2_correction_event",
+      "entity": "CorrectionEvent",
+      "value": ["lit", {
+        "event_kind": "correction",
+        "action": "added",
+        "description": "added new section",
+        "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html",
+        "source_icon_url": "https://iupac.qmul.ac.uk/greek/ALTER.GIF"
+      }]
+    },
+    {
+      "id": "unlocanted_nuclide_group_symbol_rule",
+      "k": "definition",
+      "f": "required",
+      "c": [43, 44],
+      "scope": {"r": ["preferred_iupac_name", "general_nomenclature"], "if": ["lit", true]},
+      "term": "nuclide_in_entire_linked_group_symbol",
+      "entity": "NuclideLocationRule",
+      "value": ["lit", {
+        "condition": "a nuclide occupies a position that is not numbered or its position cannot be easily defined according to rule P-82.6.3.1",
+        "action": "include the nuclide symbol in the entire symbol of the group through which it is linked to the main part of the structure",
+        "use": "useful in general nomenclature in which many names are constructed without locants"
+      }]
+    },
+    {
+      "id": "changed_section_reference_correction_event",
+      "k": "definition",
+      "f": "definition",
+      "c": [42],
+      "scope": {"r": ["all"], "if": ["lit", true]},
+      "term": "P-82.6.3.3_correction_event",
+      "entity": "CorrectionEvent",
+      "value": ["lit", {
+        "event_kind": "correction",
+        "action": "changed",
+        "description": "changed from P-82.6.3.2",
+        "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html",
+        "source_icon_url": "https://iupac.qmul.ac.uk/greek/ALTER.GIF"
+      }]
+    }
+  ],
+  "tables": [],
+  "figures": [
+    {"id": "deuterated_benzene", "c": [4], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82613a.gif"]},
+    {"id": "bromo_carbon_benzene", "c": [8], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82614a.gif"]},
+    {"id": "pentanone_deuterium", "c": [16], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82620a.gif"]},
+    {"id": "glyceraldehyde_deuterium", "c": [18], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82620b.gif"]},
+    {"id": "methionine_isotopes", "c": [24], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82631a.gif"]},
+    {"id": "arginine_isotopes", "c": [26], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82631b.gif"]},
+    {"id": "phenylalanine_deuterium", "c": [28], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82631c.gif"]},
+    {"id": "carbon_nitrile_isotope", "c": [34], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82631c1.gif"]},
+    {"id": "carbonyl_carboxylic_acid_isotope", "c": [36], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82631c2.gif"]},
+    {"id": "phosphonic_acid_carbonyl_isotope", "c": [38], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82631c3.gif"]},
+    {"id": "phenylmethyl_hydrazine_isotope", "c": [40], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82631c4.gif"]},
+    {"id": "diazene_nitrogen_isotope", "c": [47], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82632a.gif"]},
+    {"id": "trisulfanyl_sulfur_isotope", "c": [50], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82632b.gif"]},
+    {"id": "diazene_oxide_nitrogen_isotope", "c": [52], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82632c.gif"]},
+    {"id": "isotope_acetic_acid_descriptor", "c": [60], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82640a.gif"]},
+    {"id": "isotope_acetic_acid_locant", "c": [62], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P82640b.gif"]},
+    {"id": "deleted_glyceraldehyde_correction_marker", "c": [19], "k": "source_icon", "urls": ["https://iupac.qmul.ac.uk/greek/ALTER.GIF", "https://iupac.qmul.ac.uk/BlueBook/changes.html"]},
+    {"id": "added_section_correction_marker", "c": [30], "k": "source_icon", "urls": ["https://iupac.qmul.ac.uk/greek/ALTER.GIF", "https://iupac.qmul.ac.uk/BlueBook/changes.html"]},
+    {"id": "changed_section_correction_marker", "c": [42], "k": "source_icon", "urls": ["https://iupac.qmul.ac.uk/greek/ALTER.GIF", "https://iupac.qmul.ac.uk/BlueBook/changes.html"]}
+  ],
+  "examples": [
+    {
+      "id": "deuterated_benzene",
+      "c": [3],
+      "input": "benzene with six deuterium nuclides",
+      "ok": ["(2H6)benzene (PIN)"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.deuterated_benzene"]],
+      "why": "The parent structure is benzene and the isotopic descriptor identifies six deuterium nuclides."
+    },
+    {
+      "id": "bromo_carbon_benzene",
+      "c": [7],
+      "input": "bromobenzene containing 79Br and 2-13C",
+      "ok": ["1-(79Br)bromo(2-13C)benzene (PIN)"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.bromo_carbon_benzene"]],
+      "why": "The locants, letters, and numerals precede the nuclide symbols in the isotopic descriptor."
+    },
+    {
+      "id": "deuterated_ethanol",
+      "c": [14],
+      "input": "CH3-CH2H-O2H",
+      "ok": ["(1-2H1)ethan-1-(2H)ol (PIN)"],
+      "bad": [],
+      "shows": [],
+      "why": "The source gives this structure and preferred name as an example of isotope locants in a name."
+    },
+    {
+      "id": "deuterated_pentanone",
+      "c": [15],
+      "input": "pentan-2-one with five deuterium nuclides at the cited positions",
+      "ok": ["(1,1,1,3,3-2H5)pentan-2-one (PIN)"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.pentanone_deuterium"]],
+      "why": "All locants for the multiplied nuclide are placed before the nuclide in the preferred name."
+    },
+    {
+      "id": "deuterated_glyceraldehyde",
+      "c": [17],
+      "input": "a deuterated glyceraldehyde structure",
+      "ok": ["(2R)-2-(2H)hydroxy-3-hydroxy(1-2H)propanal (PIN)", "D-(2-O,1-2H2)glyceraldehyde"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.glyceraldehyde_deuterium"]],
+      "why": "The source gives both the systematic preferred name and the D descriptor example; the accompanying correction event deletes D-(O-2H)glycer(2H)aldehyde."
+    },
+    {
+      "id": "isotopic_methionine",
+      "c": [23],
+      "input": "DL-methionine labeled at methyl carbon with 14C and three deuteriums",
+      "ok": ["DL-[methyl-(14C,2H3)]methionine"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.methionine_isotopes"]],
+      "why": "The isotope symbols and multiplicity are included in the bracketed descriptor."
+    },
+    {
+      "id": "isotopic_arginine",
+      "c": [25],
+      "input": "L-arginine labeled at the carbamimidoyl or guanidino group",
+      "ok": ["L-(carbamimidoyl-14C,N\u2032-15N)arginine", "L-(guanidino-14C,N\u2032-15N)arginine"],
+      "bad": ["L-(amidino-14C,N\u2032-15N)arginine"],
+      "shows": [["figure", "figure.p82.part002.arginine_isotopes"]],
+      "why": "The source gives both accepted forms, cites Rule H-4.21, ref. 1, and explicitly marks the amidino form as not acceptable."
+    },
+    {
+      "id": "alpha_deuterated_phenylalanine",
+      "c": [27],
+      "input": "phenylalanine deuterated at the alpha position",
+      "ok": ["L-(\u03b1-2H)phenylalanine"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.phenylalanine_deuterium"]],
+      "why": "The Greek letter identifies the alpha position in the isotopic descriptor."
+    },
+    {
+      "id": "carbon_nitrile_retained_name",
+      "c": [33],
+      "input": "a carbon-13 labeled nitrile expressed with a retained name",
+      "ok": ["benzene(13C)carbonitrile (PIN)", "(cyano-13C)benzonitrile"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.carbon_nitrile_isotope"], ["semantic_unit", "retained_name_unlocanted_nuclide_rule"]],
+      "why": "The systematic name identifies the relevant atom separately, while the general-nomenclature form uses the italicized cyano prefix."
+    },
+    {
+      "id": "carbon_carboxylic_acid_retained_name",
+      "c": [35],
+      "input": "a carbon-13 labeled benzoic acid expressed with a retained name",
+      "ok": ["benzene(13C)carboxylic acid (PIN)", "(carboxyl-13C)benzoic acid"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.carbonyl_carboxylic_acid_isotope"], ["semantic_unit", "retained_name_unlocanted_nuclide_rule"]],
+      "why": "The systematic preferred name identifies the carbon atom and the general-nomenclature form uses carboxyl-13C."
+    },
+    {
+      "id": "phosphonic_acid_carbonyl_isotope",
+      "c": [37],
+      "input": "a carbon-14 labeled benzoylphosphonic acid",
+      "ok": ["[benzene[14C]carbonyl]phosphonic acid (PIN)", "[phenyl[14C]carbonyl]phosphonic acid", "[carbonyl-14C]benzoylphosphonic acid"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.phosphonic_acid_carbonyl_isotope"], ["semantic_unit", "retained_name_unlocanted_nuclide_rule"]],
+      "why": "The source provides the preferred name and two general-nomenclature forms."
+    },
+    {
+      "id": "phenylmethyl_hydrazine_isotope",
+      "c": [39],
+      "input": "a carbon-13 labeled phenylmethylhydrazine",
+      "ok": ["[phenyl(13C)methyl]hydrazine (PIN)", "[(\u03b1-13C)benzyl]hydrazine"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.phenylmethyl_hydrazine_isotope"], ["semantic_unit", "retained_name_unlocanted_nuclide_rule"]],
+      "why": "The systematic preferred name identifies the relevant atom and the general-nomenclature form uses the alpha prefix."
+    },
+    {
+      "id": "diazene_nitrogen_isotope",
+      "c": [46],
+      "input": "a diazene with an unnumbered nitrogen-15 position",
+      "ok": ["1-(naphthalen-2-yl)-2-phenyl(1-15N)diazene (PIN)", "naphthalene-2-(15N=N)azobenzene"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.diazene_nitrogen_isotope"]],
+      "why": "The nuclide symbol is included in the full symbol of the group through which it is linked to the main structure."
+    },
+    {
+      "id": "propylidene_hydrazine_isotope",
+      "c": [48],
+      "input": "CH3-CH2-CH=15N-NH2",
+      "ok": ["1-propylidene(1-15N)hydrazine (PIN)", "propanal (15N-NH2)hydrazone"],
+      "bad": [],
+      "shows": [],
+      "why": "The source gives systematic and general-nomenclature names for this unlocanted nuclide example."
+    },
+    {
+      "id": "trisulfanyl_sulfur_isotope",
+      "c": [49],
+      "input": "a trisulfanyl propanoic acid with sulfur-34",
+      "ok": ["3-[ethyl(2-34S)trisulfanyl]propanoic acid (PIN)", "3-[ethyl(S-34S-S)trithio]propionic acid"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.trisulfanyl_sulfur_isotope"]],
+      "why": "The source gives both names and cites Rule H-4.22, ref. 1."
+    },
+    {
+      "id": "diazene_oxide_nitrogen_isotope",
+      "c": [51],
+      "input": "a chloronaphthyl phenyl diazene 2-oxide with nitrogen-15",
+      "ok": ["1-(1-chloronaphthalen-2-yl)-2-phenyl(1-15N)diazene 2-oxide (PIN)", "1-chloro-2-(phenyl-ON15N-azoxy)naphthalene"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.diazene_oxide_nitrogen_isotope"]],
+      "why": "The nuclide is included in the linked group symbol in both the systematic and general-nomenclature examples."
+    },
+    {
+      "id": "oxygen_isotope_carbonate_ether_one",
+      "c": [55],
+      "input": "CH3-CH2-CO-18O-CH2-CH3",
+      "ok": ["18O-ethyl propan(18O1)oate (PIN)"],
+      "bad": [],
+      "shows": [],
+      "why": "The source gives the preferred name for this oxygen-18 labeled ester."
+    },
+    {
+      "id": "oxygen_isotope_carbonate_ether_two",
+      "c": [56],
+      "input": "CH3-CH2-C18O-O-CH2-CH3",
+      "ok": ["O-ethyl propan(18O1)oate (PIN)"],
+      "bad": [],
+      "shows": [],
+      "why": "The source distinguishes the locant O from the isotopic descriptor 18O."
+    },
+    {
+      "id": "oxygen_isotope_carbonate_ether_three",
+      "c": [57],
+      "input": "CH3-O-CO-18O-CH2-CH3",
+      "ok": ["18O-ethyl O-methyl (18O1)carbonate (PIN)"],
+      "bad": [],
+      "shows": [],
+      "why": "The preferred name places the oxygen-18 descriptor and identifies the O-methyl group."
+    },
+    {
+      "id": "oxygen_isotope_carbonate_ether_four",
+      "c": [58],
+      "input": "CH3-CH2-O-C18O-18O-CH3",
+      "ok": ["O-ethyl 18O-methyl (18O2)carbonate (PIN)"],
+      "bad": [],
+      "shows": [],
+      "why": "The preferred name records the two oxygen-18 atoms in the multiplied descriptor."
+    },
+    {
+      "id": "oxygen_deuterium_acetic_acid_descriptor",
+      "c": [59],
+      "input": "acetic acid with deuterium and oxygen-18 in the isotopic descriptor",
+      "ok": ["(18O-2H,18O)acetic acid (PIN)"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.isotope_acetic_acid_descriptor"]],
+      "why": "The example places 18O and 2H in the isotopic descriptor."
+    },
+    {
+      "id": "oxygen_deuterium_acetic_acid_locant",
+      "c": [61],
+      "input": "acetic acid with an O locant and an oxygen-18 isotopic descriptor",
+      "ok": ["(O-2H,18O)acetic acid (PIN)"],
+      "bad": [],
+      "shows": [["figure", "figure.p82.part002.isotope_acetic_acid_locant"]],
+      "why": "The source explicitly states that 18O is an isotopic descriptor and O is a locant."
+    }
+  ],
+  "exceptions": [],
+  "corrections": [],
+  "refs": [],
+  "symbols": [],
+  "additional_refs": []
+}
