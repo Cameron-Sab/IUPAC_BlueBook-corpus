@@ -10,12 +10,12 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 77,
-    "compiled_clause_count": 62,
+    "compiled_clause_count": 70,
     "correction_application_count": 0,
     "example_count": 27,
     "exception_count": 0,
     "figure_count": 22,
-    "nonoperative_clause_count": 15,
+    "nonoperative_clause_count": 7,
     "record_count": 7,
     "reference_count": 9,
     "semantic_unit_count": 9,
@@ -23,16 +23,49 @@
     "symbol_declaration_count": 1,
     "table_count": 1
   },
-  "chunk_sha256": "32DC41832CDD4C048A467691119152248EE67B528E943ABA72335369DA89346A",
+  "chunk_sha256": "2F679488F2A6E882C70C6BBDB08A5243451E78112A4902211D1DACE8CC217663",
   "clause_dispositions": [
     {
       "clause_id": "P-65.7.6.4.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p65.part008.identical_anhydride_linkage_naming_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p65.part008.identical_anhydride_linkage_naming_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.identical_anhydride_linkage_naming_rule.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.identical_anhydride_linkage_naming_rule.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.identical_anhydride_linkage_naming_rule.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.identical_anhydride_linkage_naming_rule.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.identical_anhydride_linkage_naming_rule.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.identical_anhydride_linkage_naming_rule.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-65.7.6.4.1:clause:0002",
@@ -138,29 +171,132 @@
     {
       "clause_id": "P-65.7.6.4.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p65.part008.mixed_chalcogen_seniority_order",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p65.part008.mixed_chalcogen_seniority_order.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.mixed_chalcogen_seniority_order.value",
+            "kind": "expression"
+          },
+          {
+            "id": "unit.p65.part008.senior_anhydride_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p65.part008.senior_anhydride_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.senior_anhydride_selection.candidates",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p65.part008.senior_anhydride_selection.chalcogen_seniority",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p65.part008.senior_anhydride_selection.stage.chalcogen_seniority.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.senior_anhydride_selection.stage.chalcogen_seniority.key",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.senior_anhydride_selection.stage.chalcogen_seniority.key.from",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-65.7.6.4.2:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p65.part008.senior_anhydride_selection",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p65.part008.senior_anhydride_selection.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.senior_anhydride_selection.candidates",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p65.part008.senior_anhydride_selection.chalcogen_seniority",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p65.part008.senior_anhydride_selection.stage.chalcogen_seniority.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.senior_anhydride_selection.stage.chalcogen_seniority.key",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.senior_anhydride_selection.stage.chalcogen_seniority.key.from",
+            "kind": "expression"
+          },
+          {
+            "id": "unit.p65.part008.mixed_anhydride_naming_basis",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p65.part008.mixed_anhydride_naming_basis.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.mixed_anhydride_naming_basis.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.mixed_anhydride_naming_basis.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "permission"
     },
     {
       "clause_id": "P-65.7.6.4.2:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p65.part008.mixed_anhydride_naming_basis",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p65.part008.mixed_anhydride_naming_basis.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.mixed_anhydride_naming_basis.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.mixed_anhydride_naming_basis.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-65.7.6.4.2:clause:0004",
@@ -272,11 +408,44 @@
     {
       "clause_id": "P-65.7.6.4.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p65.part008.carbonyl_chalcogen_analogue_naming_rule",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p65.part008.carbonyl_chalcogen_analogue_naming_rule.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.carbonyl_chalcogen_analogue_naming_rule.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.carbonyl_chalcogen_analogue_naming_rule.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.carbonyl_chalcogen_analogue_naming_rule.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.carbonyl_chalcogen_analogue_naming_rule.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.carbonyl_chalcogen_analogue_naming_rule.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.carbonyl_chalcogen_analogue_naming_rule.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-65.7.6.4.3:clause:0002",
@@ -483,11 +652,40 @@
     {
       "clause_id": "P-65.7.7.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p65.part008.cyclic_anhydride_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p65.part008.cyclic_anhydride_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.cyclic_anhydride_naming_methods.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.cyclic_anhydride_naming_methods.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.cyclic_anhydride_naming_methods.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.cyclic_anhydride_naming_methods.then.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.cyclic_anhydride_naming_methods.then.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-65.7.7.1:clause:0002",
@@ -867,11 +1065,48 @@
     {
       "clause_id": "P-65.7.7.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p65.part008.cyclic_dianhydride_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p65.part008.cyclic_dianhydride_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.cyclic_dianhydride_naming_methods.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.cyclic_dianhydride_naming_methods.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.cyclic_dianhydride_naming_methods.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.cyclic_dianhydride_naming_methods.then.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.cyclic_dianhydride_naming_methods.then.2.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.cyclic_dianhydride_naming_methods.then.3",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.cyclic_dianhydride_naming_methods.then.3.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-65.7.7.2:clause:0002",
@@ -1439,11 +1674,40 @@
     {
       "clause_id": "P-65.7.7.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p65.part008.chalcogen_cyclic_anhydride_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p65.part008.chalcogen_cyclic_anhydride_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p65.part008.chalcogen_cyclic_anhydride_naming_methods.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.chalcogen_cyclic_anhydride_naming_methods.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.chalcogen_cyclic_anhydride_naming_methods.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p65.part008.chalcogen_cyclic_anhydride_naming_methods.then.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p65.part008.chalcogen_cyclic_anhydride_naming_methods.then.2.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-65.7.7.3:clause:0002",
