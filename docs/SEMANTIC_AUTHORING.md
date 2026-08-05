@@ -42,6 +42,11 @@ Generated IDs are source-derived, for example clause `P-76:clause:0005` becomes
 `figure.asset.p_76:clause:0005`, so authored examples can reference the figure
 without reproducing its URL payload.
 
+`heading_text` describes the source HTML node, not the clause's semantic force.
+Only bare rule identifiers and clearly all-uppercase section labels are skipped
+mechanically. Mixed-case heading clauses must receive an explicit authoring
+decision because Blue Book headings frequently contain operative rule prose.
+
 Rebuild or verify the asset scaffold with:
 
 ```powershell

@@ -17,6 +17,7 @@ from scripts.compile_semantic_delta import compile_delta
 from scripts.render_compact_semantic_task import validate_task
 from scripts.scaffold_semantic_delta import (
     FORBIDDEN_OUTPUT_RE,
+    _nonoperative_disposition,
     scaffold_delta,
     scaffold_metrics,
 )
@@ -25,6 +26,35 @@ from scripts.validate_normalized_rule_chunks import digest_without_field as delt
 
 ROOT = Path(__file__).resolve().parents[1]
 TASK_DIR = ROOT / "work" / "compact_semantic_tasks"
+
+
+def test_sentence_shaped_heading_is_not_mechanically_discarded() -> None:
+    unit = {
+        "clause_id": "P-94.2.1:clause:0001",
+        "unit_kind": "heading_text",
+        "node_kind": "heading",
+        "ancestor_node_kinds": [],
+        "semantic_cue": None,
+        "text": "P-94.2.1 In an assembly of attached atoms, the smaller angle is termed the torsion angle.",
+    }
+
+    assert _nonoperative_disposition(unit) is None
+
+
+def test_uppercase_section_heading_is_mechanically_discarded() -> None:
+    unit = {
+        "clause_id": "P-94.2:clause:0001",
+        "unit_kind": "heading_text",
+        "node_kind": "heading",
+        "ancestor_node_kinds": [],
+        "semantic_cue": None,
+        "text": "P-94.2 TORSION ANGLE",
+    }
+
+    disposition = _nonoperative_disposition(unit)
+
+    assert disposition is not None
+    assert disposition["disposition"]["reason_code"] == "heading_or_title"
 
 
 def load_task(task_id: str) -> dict:

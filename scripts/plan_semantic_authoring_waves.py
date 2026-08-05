@@ -87,7 +87,7 @@ def build_plan(
     if unknown_skips:
         raise ValueError(f"Unknown skipped tasks: {sorted(unknown_skips)}")
 
-    missing = set(progress["missing_task_ids"])
+    missing = set(progress["missing_task_ids"]) | set(progress["stale_task_ids"])
     records = []
     for entry in manifest["tasks"]:
         task_id = entry["task_id"]

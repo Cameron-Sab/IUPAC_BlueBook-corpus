@@ -13,6 +13,7 @@ if __package__:
     )
     from scripts.compile_semantic_delta import compile_delta
     from scripts.render_compact_semantic_task import validate_task
+    from scripts.scaffold_semantic_authoring import scaffold_authoring
 else:
     from build_compact_semantic_tasks import (  # type: ignore[no-redef]
         DEFAULT_OUTPUT as DEFAULT_TASK_DIR,
@@ -21,10 +22,26 @@ else:
     )
     from compile_semantic_delta import compile_delta  # type: ignore[no-redef]
     from render_compact_semantic_task import validate_task  # type: ignore[no-redef]
+    from scaffold_semantic_authoring import scaffold_authoring  # type: ignore[no-redef]
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DELTA_DIR = ROOT / "data" / "bluebook_v3" / "semantic_deltas"
+
+
+def _stale_authoring_reason(task: dict[str, Any], path: Path) -> str | None:
+    authoring = load_json(path)
+    expected = scaffold_authoring(task)["clauses"]
+    actual = authoring.get("clauses")
+    if not isinstance(actual, list) or len(actual) != len(expected):
+        return "authoring clause slots do not match the current task"
+    owns_mechanical_assets = authoring.get("mechanical_assets") is True
+    for index, (decision, scaffolded) in enumerate(zip(actual, expected), 1):
+        if owns_mechanical_assets and scaffolded is None and decision is not None:
+            return f"clause {index} overrides a mechanical decision"
+        if scaffolded == [] and (decision is None or decision == []):
+            return f"clause {index} is unresolved under the current scaffold"
+    return None
 
 
 def audit_progress(
@@ -42,6 +59,10 @@ def audit_progress(
     delta_paths = {
         path.stem: path for path in delta_dir.glob("*.json")
     } if delta_dir.exists() else {}
+    authoring_dir = delta_dir.parent / "semantic_authoring"
+    authoring_paths = {
+        path.stem: path for path in authoring_dir.glob("*.json")
+    } if authoring_dir.exists() else {}
     unexpected = sorted(set(delta_paths).difference(expected_set))
     if unexpected:
         raise ValueError(f"Unexpected semantic delta files: {unexpected}")
@@ -49,6 +70,7 @@ def audit_progress(
     completed = []
     missing = []
     invalid = []
+    stale = []
     completed_rules = 0
     completed_clauses = 0
     for entry in expected_entries:
@@ -75,6 +97,15 @@ def audit_progress(
                 }
             )
             continue
+        authoring_path = authoring_paths.get(task_id)
+        if authoring_path is not None:
+            try:
+                stale_reason = _stale_authoring_reason(task, authoring_path)
+            except (KeyError, TypeError, ValueError, OSError) as error:
+                stale_reason = f"authoring file is invalid: {error}"
+            if stale_reason is not None:
+                stale.append({"task_id": task_id, "error": stale_reason})
+                continue
         completed.append(task_id)
         completed_rules += len(task["assigned_rule_ids"])
         completed_clauses += task["metrics"]["clause_count"]
@@ -82,12 +113,13 @@ def audit_progress(
     return {
         "format": "iupac-bluebook-semantic-delta-progress",
         "format_version": "1.0.0",
-        "complete": not missing and not invalid,
+        "complete": not missing and not stale and not invalid,
         "passed": not invalid,
         "task_manifest_sha256": manifest["manifest_sha256"],
         "expected_task_count": len(expected_ids),
         "completed_task_count": len(completed),
         "missing_task_count": len(missing),
+        "stale_task_count": len(stale),
         "invalid_task_count": len(invalid),
         "completed_rule_count": completed_rules,
         "expected_rule_count": manifest["assigned_rule_count"],
@@ -95,6 +127,8 @@ def audit_progress(
         "expected_clause_count": manifest["assigned_clause_count"],
         "completed_task_ids": completed,
         "missing_task_ids": missing,
+        "stale_task_ids": [item["task_id"] for item in stale],
+        "stale_tasks": stale,
         "invalid_tasks": invalid,
     }
 
@@ -127,10 +161,18 @@ def main(argv: Sequence[str] | None = None) -> int:
     displayed = report if args.verbose else {
         key: value
         for key, value in report.items()
-        if key not in {"completed_task_ids", "missing_task_ids", "invalid_tasks"}
+        if key not in {
+            "completed_task_ids",
+            "missing_task_ids",
+            "stale_task_ids",
+            "stale_tasks",
+            "invalid_tasks",
+        }
     }
     if not args.verbose and report["invalid_tasks"]:
         displayed["invalid_tasks"] = report["invalid_tasks"]
+    if not args.verbose and report["stale_tasks"]:
+        displayed["stale_tasks"] = report["stale_tasks"]
     print(json.dumps(displayed, indent=2, ensure_ascii=False))
     if not report["passed"]:
         return 1

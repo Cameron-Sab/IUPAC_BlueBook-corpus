@@ -20,10 +20,22 @@ else:
 NAVIGATION_LINE_RE = re.compile(
     r"^P-[0-9]+(?:\.[0-9]+)*(?:\([a-z0-9]+\))?(?:\s+.+)?$"
 )
+HEADING_LINE_RE = re.compile(
+    r"^P-[0-9]+(?:\.[0-9]+)*(?:\([a-z0-9]+\))?(?:\s+(?P<label>.*))?$"
+)
 FORBIDDEN_OUTPUT_RE = re.compile(
     r"\b(?:todo|unresolved|placeholder|not_started|manual_review)\b",
     re.IGNORECASE,
 )
+
+
+def _is_mechanical_heading(text: str | None) -> bool:
+    """Return true only when heading text is provably nonoperative."""
+    match = HEADING_LINE_RE.fullmatch((text or "").strip())
+    if match is None:
+        return False
+    label = (match.group("label") or "").strip()
+    return not label or re.search(r"[a-z]", label) is None
 
 
 def _nonoperative_disposition(unit: Mapping[str, Any]) -> dict[str, Any] | None:
@@ -32,7 +44,11 @@ def _nonoperative_disposition(unit: Mapping[str, Any]) -> dict[str, Any] | None:
 
     unit_kind = unit["unit_kind"]
     node_kind = unit["node_kind"]
-    if unit_kind == "heading_text" and node_kind == "heading":
+    if (
+        unit_kind == "heading_text"
+        and node_kind == "heading"
+        and _is_mechanical_heading(unit.get("text"))
+    ):
         return {
             "clause_id": unit["clause_id"],
             "role": "heading",

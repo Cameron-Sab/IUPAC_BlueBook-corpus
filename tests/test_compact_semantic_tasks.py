@@ -10,6 +10,7 @@ import pytest
 from scripts.build_compact_semantic_tasks import (
     BASE,
     build_tasks,
+    canonical_json_bytes,
     digest_without_field,
     file_hash,
     load_json,
@@ -22,6 +23,7 @@ from scripts.compile_semantic_delta import compile_delta, finalize_delta
 from scripts.migrate_normalized_chunk_to_delta import migrate_chunk
 from scripts.audit_semantic_delta_progress import audit_progress
 from scripts.render_compact_semantic_task import select_rules, validate_task
+from scripts.scaffold_semantic_authoring import scaffold_authoring
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -258,6 +260,29 @@ def test_progress_auditor_never_counts_missing_deltas_as_complete(
     assert partial["completed_task_ids"] == ["P-40-part-001"]
     assert partial["completed_rule_count"] == 1
     assert partial["completed_clause_count"] == 7
+
+
+def test_progress_auditor_reopens_stale_authoring(tmp_path: Path) -> None:
+    tasks, manifest = tasks_and_manifest()
+    task_dir = tmp_path / "tasks"
+    delta_dir = tmp_path / "deltas"
+    authoring_dir = tmp_path / "semantic_authoring"
+    write_or_check(task_dir, tasks, manifest, check=False)
+    delta_dir.mkdir()
+    authoring_dir.mkdir()
+    fixture = ROOT / "tests" / "fixtures" / "P-40-part-001.delta.json"
+    (delta_dir / "P-40-part-001.json").write_bytes(fixture.read_bytes())
+    task = load_json(task_dir / "P-40-part-001.json")
+    authoring = scaffold_authoring(task)
+    (authoring_dir / "P-40-part-001.json").write_bytes(
+        canonical_json_bytes(authoring)
+    )
+
+    report = audit_progress(task_dir, delta_dir)
+
+    assert report["completed_task_count"] == 0
+    assert report["stale_task_ids"] == ["P-40-part-001"]
+    assert "is unresolved under the current scaffold" in report["stale_tasks"][0]["error"]
 
 
 def test_direct_cli_help_works() -> None:
