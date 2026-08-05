@@ -12,20 +12,20 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 52,
-    "compiled_clause_count": 34,
+    "compiled_clause_count": 43,
     "correction_application_count": 0,
     "example_count": 12,
     "exception_count": 0,
     "figure_count": 13,
-    "nonoperative_clause_count": 18,
+    "nonoperative_clause_count": 9,
     "record_count": 9,
     "reference_count": 24,
-    "semantic_unit_count": 5,
+    "semantic_unit_count": 10,
     "superseded_clause_count": 0,
     "symbol_declaration_count": 0,
     "table_count": 0
   },
-  "chunk_sha256": "BD64AD95D886A47D01C149B85F279D03E4EFF36500BF4043685507BDF9132C57",
+  "chunk_sha256": "5BFCA081D956C040F6D2C51105846D01F48ED9AE54E80586E82228B70A64459A",
   "clause_dispositions": [
     {
       "clause_id": "P-51.4.2:clause:0001",
@@ -61,11 +61,24 @@
     {
       "clause_id": "P-51.4.2.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p51.part002.metal_prefix_skeletal_replacement_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p51.part002.metal_prefix_skeletal_replacement_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p51.part002.metal_prefix_skeletal_replacement_scope.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "scope"
     },
     {
       "clause_id": "P-51.4.2.1:clause:0002",
@@ -215,11 +228,24 @@
     {
       "clause_id": "P-51.4.2.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p51.part002.von_baeyer_skeletal_replacement_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p51.part002.von_baeyer_skeletal_replacement_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p51.part002.von_baeyer_skeletal_replacement_scope.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "scope"
     },
     {
       "clause_id": "P-51.4.2.2:clause:0002",
@@ -261,11 +287,24 @@
     {
       "clause_id": "P-51.4.2.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p51.part002.spiro_skeletal_replacement_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p51.part002.spiro_skeletal_replacement_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p51.part002.spiro_skeletal_replacement_scope.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "scope"
     },
     {
       "clause_id": "P-51.4.2.3:clause:0002",
@@ -307,11 +346,24 @@
     {
       "clause_id": "P-51.4.2.4:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p51.part002.heteropolycyclic_skeletal_replacement_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p51.part002.heteropolycyclic_skeletal_replacement_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p51.part002.heteropolycyclic_skeletal_replacement_scope.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "scope"
     },
     {
       "clause_id": "P-51.4.2.4:clause:0002",
@@ -393,29 +445,76 @@
     {
       "clause_id": "P-51.4.2.5:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p51.part002.heterophane_and_heterofullerene_skeletal_replacement_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p51.part002.heterophane_and_heterofullerene_skeletal_replacement_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p51.part002.heterophane_and_heterofullerene_skeletal_replacement_scope.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "scope"
     },
     {
       "clause_id": "P-51.4.2.6:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p51.part002.heterocyclic_assembly_parent_choice",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p51.part002.heterocyclic_assembly_parent_choice.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p51.part002.heterocyclic_assembly_parent_choice.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p51.part002.heterocyclic_assembly_parent_choice.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-51.4.2.6:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p51.part002.heterocyclic_assembly_parent_choice",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p51.part002.heterocyclic_assembly_parent_choice.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p51.part002.heterocyclic_assembly_parent_choice.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p51.part002.heterocyclic_assembly_parent_choice.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "scope"
     },
     {
       "clause_id": "P-51.4.2.6:clause:0003",
@@ -444,7 +543,11 @@
             "kind": "expression"
           },
           {
-            "id": "expr.p51.part002.heterocyclic_assembly_parent_choice.value",
+            "id": "stmt.p51.part002.heterocyclic_assembly_parent_choice.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p51.part002.heterocyclic_assembly_parent_choice.steps.1.value",
             "kind": "expression"
           }
         ]
@@ -470,7 +573,11 @@
             "kind": "expression"
           },
           {
-            "id": "expr.p51.part002.heterocyclic_assembly_parent_choice.value",
+            "id": "stmt.p51.part002.heterocyclic_assembly_parent_choice.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p51.part002.heterocyclic_assembly_parent_choice.steps.1.value",
             "kind": "expression"
           }
         ]
@@ -537,20 +644,46 @@
     {
       "clause_id": "P-51.4.2.7:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p51.part002.acceptable_name_choice_by_nomenclature_type",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p51.part002.acceptable_name_choice_by_nomenclature_type.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p51.part002.acceptable_name_choice_by_nomenclature_type.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-51.4.2.7:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p51.part002.acceptable_name_choice_by_nomenclature_type",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p51.part002.acceptable_name_choice_by_nomenclature_type.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p51.part002.acceptable_name_choice_by_nomenclature_type.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "scope"
     },
     {
       "clause_id": "P-51.4.2.7:clause:0003",
@@ -1258,7 +1391,9 @@
         "reference.p_51_4_2_2.hierarchy_parent",
         "reference.P-51.4.2.2:xref:0001"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p51.part002.von_baeyer_skeletal_replacement_scope"
+      ],
       "source_rule_id": "P-51.4.2.2",
       "table_ids": []
     },
@@ -1284,7 +1419,9 @@
         "reference.p_51_4_2_3.hierarchy_parent",
         "reference.P-51.4.2.3:xref:0001"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p51.part002.spiro_skeletal_replacement_scope"
+      ],
       "source_rule_id": "P-51.4.2.3",
       "table_ids": []
     },
@@ -1315,6 +1452,7 @@
         "reference.P-51.4.2.4:xref:0002"
       ],
       "semantic_unit_ids": [
+        "unit.p51.part002.heteropolycyclic_skeletal_replacement_scope",
         "unit.p51.part002.heteropolycyclic_name_correction_event"
       ],
       "source_rule_id": "P-51.4.2.4",
@@ -1329,14 +1467,16 @@
       "example_ids": [],
       "exception_ids": [],
       "figure_ids": [],
-      "operative": false,
+      "operative": true,
       "record_id": "bluebook-v3:P-51.4.2.5",
       "reference_ids": [
         "reference.p_51_4_2_5.hierarchy_parent",
         "reference.P-51.4.2.5:xref:0001",
         "reference.P-51.4.2.5:xref:0002"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p51.part002.heterophane_and_heterofullerene_skeletal_replacement_scope"
+      ],
       "source_rule_id": "P-51.4.2.5",
       "table_ids": []
     },
@@ -1400,7 +1540,9 @@
         "reference.p_51_4_2_7.hierarchy_parent",
         "reference.p51.part002.p51_4_2_7_xref_0001"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p51.part002.acceptable_name_choice_by_nomenclature_type"
+      ],
       "source_rule_id": "P-51.4.2.7",
       "table_ids": []
     },
@@ -1987,6 +2129,7 @@
     },
     {
       "clause_ids": [
+        "P-51.4.2.1:clause:0001",
         "P-51.4.2.1:clause:0002",
         "P-51.4.2.1:clause:0003",
         "P-51.4.2.1:clause:0010"
@@ -1999,6 +2142,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-51.4.2.1:clause:0001",
             "P-51.4.2.1:clause:0002",
             "P-51.4.2.1:clause:0003",
             "P-51.4.2.1:clause:0010"
@@ -2015,6 +2159,7 @@
       "unit_id": "unit.p51.part002.metal_prefix_skeletal_replacement_scope",
       "value": {
         "clause_ids": [
+          "P-51.4.2.1:clause:0001",
           "P-51.4.2.1:clause:0002",
           "P-51.4.2.1:clause:0003",
           "P-51.4.2.1:clause:0010"
@@ -2036,7 +2181,186 @@
             "condition": "the skeletal replacement ('a') prefix represents a metal",
             "definition_reference": "P-69.4",
             "status": "possible"
+          },
+          "more_than_ten_ring_atoms": {
+            "method": "skeletal replacement ('a') nomenclature",
+            "purpose": "derive preferred IUPAC names for heteromonocyclic compounds",
+            "reference": "P-22.2.3"
           }
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-51.4.2.2:clause:0001"
+      ],
+      "entity_type": "SkeletalReplacementScope",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "scope",
+          "type": "SkeletalReplacementScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-51.4.2.2:clause:0001"
+          ],
+          "expression_id": "expr.p51.part002.von_baeyer_skeletal_replacement_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "term": "skeletal replacement scope for heterocyclic von Baeyer ring systems",
+      "unit_id": "unit.p51.part002.von_baeyer_skeletal_replacement_scope",
+      "value": {
+        "clause_ids": [
+          "P-51.4.2.2:clause:0001"
+        ],
+        "expression_id": "expr.p51.part002.von_baeyer_skeletal_replacement_scope.value",
+        "op": "literal",
+        "value": {
+          "applies_to": "heterocyclic von Baeyer ring systems",
+          "method": "skeletal replacement ('a') nomenclature",
+          "purpose": "derive preferred IUPAC names",
+          "reference": "P-23.3.1"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-51.4.2.3:clause:0001"
+      ],
+      "entity_type": "SkeletalReplacementScope",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "scope",
+          "type": "SkeletalReplacementScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-51.4.2.3:clause:0001"
+          ],
+          "expression_id": "expr.p51.part002.spiro_skeletal_replacement_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "term": "skeletal replacement scope for heterocyclic spiro parent hydrides",
+      "unit_id": "unit.p51.part002.spiro_skeletal_replacement_scope",
+      "value": {
+        "clause_ids": [
+          "P-51.4.2.3:clause:0001"
+        ],
+        "expression_id": "expr.p51.part002.spiro_skeletal_replacement_scope.value",
+        "op": "literal",
+        "value": {
+          "applies_to": "heterocyclic spiro parent hydrides consisting of two or more saturated monocyclic rings",
+          "method": "skeletal replacement ('a') nomenclature",
+          "purpose": "derive preferred IUPAC names",
+          "reference": "P-24.2.4.1.1"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-51.4.2.4:clause:0001"
+      ],
+      "entity_type": "SkeletalReplacementScope",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "scope",
+          "type": "SkeletalReplacementScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-51.4.2.4:clause:0001"
+          ],
+          "expression_id": "expr.p51.part002.heteropolycyclic_skeletal_replacement_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "term": "skeletal replacement scope for heteropolycyclic ring systems",
+      "unit_id": "unit.p51.part002.heteropolycyclic_skeletal_replacement_scope",
+      "value": {
+        "clause_ids": [
+          "P-51.4.2.4:clause:0001"
+        ],
+        "expression_id": "expr.p51.part002.heteropolycyclic_skeletal_replacement_scope.value",
+        "op": "literal",
+        "value": {
+          "applies_to": "heteropolycyclic ring systems for which fusion nomenclature based on heterocyclic parent rings is not applicable",
+          "method": "skeletal replacement ('a') nomenclature",
+          "purpose": "derive preferred IUPAC names",
+          "reference": "P-25.5.1"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-51.4.2.5:clause:0001"
+      ],
+      "entity_type": "SkeletalReplacementScope",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "scope",
+          "type": "SkeletalReplacementScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-51.4.2.5:clause:0001"
+          ],
+          "expression_id": "expr.p51.part002.heterophane_and_heterofullerene_skeletal_replacement_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "term": "skeletal replacement scope for heterophanes and heterofullerenes",
+      "unit_id": "unit.p51.part002.heterophane_and_heterofullerene_skeletal_replacement_scope",
+      "value": {
+        "clause_ids": [
+          "P-51.4.2.5:clause:0001"
+        ],
+        "expression_id": "expr.p51.part002.heterophane_and_heterofullerene_skeletal_replacement_scope.value",
+        "op": "literal",
+        "value": {
+          "applies_to": {
+            "heterofullerenes": "P-27.5",
+            "heterophane_ring_systems": "P-26.5"
+          },
+          "method": "skeletal replacement ('a') nomenclature",
+          "purpose": "derive preferred IUPAC names"
         }
       }
     },
@@ -2097,17 +2421,30 @@
     },
     {
       "clause_ids": [
+        "P-51.4.2.6:clause:0001",
+        "P-51.4.2.6:clause:0002",
         "P-51.4.2.6:clause:0004",
         "P-51.4.2.6:clause:0005"
       ],
-      "entity_type": "ParentChoiceProcedure",
       "force": "required",
-      "inputs": [],
-      "kind": "definition",
-      "outputs": [],
+      "inputs": [
+        {
+          "name": "assembly",
+          "type": "HeterocyclicCompoundAssembly"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "preferred_parent_name",
+          "type": "Name"
+        }
+      ],
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-51.4.2.6:clause:0001",
+            "P-51.4.2.6:clause:0002",
             "P-51.4.2.6:clause:0004",
             "P-51.4.2.6:clause:0005"
           ],
@@ -2119,19 +2456,81 @@
           "preferred_iupac_name"
         ]
       },
-      "term": "parent_choice_before_skeletal_replacement",
-      "unit_id": "unit.p51.part002.heterocyclic_assembly_parent_choice",
+      "steps": [
+        {
+          "clause_ids": [
+            "P-51.4.2.6:clause:0001",
+            "P-51.4.2.6:clause:0002",
+            "P-51.4.2.6:clause:0004",
+            "P-51.4.2.6:clause:0005"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p51.part002.heterocyclic_assembly_parent_choice.steps.1",
+          "target": "preferred_parent_name",
+          "value": {
+            "clause_ids": [
+              "P-51.4.2.6:clause:0001",
+              "P-51.4.2.6:clause:0002",
+              "P-51.4.2.6:clause:0004",
+              "P-51.4.2.6:clause:0005"
+            ],
+            "expression_id": "expr.p51.part002.heterocyclic_assembly_parent_choice.steps.1.value",
+            "op": "literal",
+            "value": {
+              "applies_when": "necessary",
+              "assembly_reference": "P-28.4",
+              "example_reference": "P-28.3.1",
+              "order": "choose the preferred IUPAC name of the heterocyclic parent structure before insertion of skeletal replacement ('a') prefixes",
+              "scope": "assemblies of identical heterocyclic compounds composed of von Baeyer-type heterocyclic compounds and monocyclic compounds having more than ten members"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p51.part002.heterocyclic_assembly_parent_choice"
+    },
+    {
+      "clause_ids": [
+        "P-51.4.2.7:clause:0001",
+        "P-51.4.2.7:clause:0002"
+      ],
+      "entity_type": "AcceptableNameSelectionPolicy",
+      "force": "preference",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "selection_policy",
+          "type": "AcceptableNameSelectionPolicy"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-51.4.2.7:clause:0001",
+            "P-51.4.2.7:clause:0002"
+          ],
+          "expression_id": "expr.p51.part002.acceptable_name_choice_by_nomenclature_type.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "term": "choice_between_acceptable_names_by_nomenclature_type",
+      "unit_id": "unit.p51.part002.acceptable_name_choice_by_nomenclature_type",
       "value": {
         "clause_ids": [
-          "P-51.4.2.6:clause:0004",
-          "P-51.4.2.6:clause:0005"
+          "P-51.4.2.7:clause:0001",
+          "P-51.4.2.7:clause:0002"
         ],
-        "expression_id": "expr.p51.part002.heterocyclic_assembly_parent_choice.value",
+        "expression_id": "expr.p51.part002.acceptable_name_choice_by_nomenclature_type.value",
         "op": "literal",
         "value": {
-          "assemblies": "assemblies of identical heterocyclic compounds composed of von Baeyer-type heterocyclic compounds and monocyclic compounds having more than ten members",
-          "example_reference": "P-28.3.1",
-          "order": "choose the preferred IUPAC name of the heterocyclic parent structure before insertion of skeletal replacement ('a') prefixes"
+          "applies_to": "a choice between two or more acceptable names",
+          "case": "unsaturated heteromonocyclic compounds for which three names are acceptable",
+          "criterion": "the type of nomenclature used",
+          "reference": "P-52.2.3"
         }
       }
     },

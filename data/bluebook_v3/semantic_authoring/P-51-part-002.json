@@ -3,9 +3,9 @@
   "format_version": "1.0.0",
   "task_id": "P-51-part-002",
   "clauses": [
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["preference_criterion", "normative", "compile"],
-    null,
+    ["scope", "normative", "compile"],
     ["scope", "normative", "compile"],
     ["note", "informative", "compile"],
     null,
@@ -15,23 +15,23 @@
     ["cross_reference", "normative", "compile"],
     ["figure_asset", "illustrative", "compile"],
     ["constraint", "informative", "compile"],
-    null,
-    null,
-    ["example", "illustrative", "compile"],
-    ["figure_asset", "illustrative", "compile"],
-    null,
+    ["scope", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
+    ["scope", "normative", "compile"],
     null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["scope", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["cross_reference", "normative", "compile"],
     ["figure_asset", "illustrative", "compile"],
     ["correction_event", "correction", "compile"],
-    null,
-    null,
-    null,
+    ["scope", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["scope", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["cross_reference", "normative", "compile"],
@@ -39,12 +39,12 @@
     ["example", "illustrative", "compile"],
     ["cross_reference", "normative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null,
-    null,
+    ["preference_criterion", "normative", "compile"],
+    ["scope", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["preference_criterion", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
@@ -77,11 +77,16 @@
       "id": "metal_prefix_skeletal_replacement_scope",
       "k": "definition",
       "f": "required",
-      "c": [4, 5, 12],
+      "c": [3, 4, 5, 12],
       "scope": {"r": ["all"], "if": ["lit", true]},
       "term": "metal_prefix_and_hantzsch_widman_scope",
       "entity": "SkeletalReplacementScope",
       "value": ["lit", {
+        "more_than_ten_ring_atoms": {
+          "method": "skeletal replacement ('a') nomenclature",
+          "purpose": "derive preferred IUPAC names for heteromonocyclic compounds",
+          "reference": "P-22.2.3"
+        },
         "less_than_ten_ring_members": {
           "condition": "the skeletal replacement ('a') prefix represents a metal",
           "definition_reference": "P-69.4",
@@ -97,6 +102,72 @@
           "assessment": "major change from previous recommendations",
           "definition_reference": "P-69.4"
         }
+      }]
+    },
+    {
+      "id": "von_baeyer_skeletal_replacement_scope",
+      "k": "definition",
+      "f": "required",
+      "c": [13],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "out": [["scope", "SkeletalReplacementScope"]],
+      "term": "skeletal replacement scope for heterocyclic von Baeyer ring systems",
+      "entity": "SkeletalReplacementScope",
+      "value": ["lit", {
+        "method": "skeletal replacement ('a') nomenclature",
+        "applies_to": "heterocyclic von Baeyer ring systems",
+        "purpose": "derive preferred IUPAC names",
+        "reference": "P-23.3.1"
+      }]
+    },
+    {
+      "id": "spiro_skeletal_replacement_scope",
+      "k": "definition",
+      "f": "required",
+      "c": [17],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "out": [["scope", "SkeletalReplacementScope"]],
+      "term": "skeletal replacement scope for heterocyclic spiro parent hydrides",
+      "entity": "SkeletalReplacementScope",
+      "value": ["lit", {
+        "method": "skeletal replacement ('a') nomenclature",
+        "applies_to": "heterocyclic spiro parent hydrides consisting of two or more saturated monocyclic rings",
+        "purpose": "derive preferred IUPAC names",
+        "reference": "P-24.2.4.1.1"
+      }]
+    },
+    {
+      "id": "heteropolycyclic_skeletal_replacement_scope",
+      "k": "definition",
+      "f": "required",
+      "c": [21],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "out": [["scope", "SkeletalReplacementScope"]],
+      "term": "skeletal replacement scope for heteropolycyclic ring systems",
+      "entity": "SkeletalReplacementScope",
+      "value": ["lit", {
+        "method": "skeletal replacement ('a') nomenclature",
+        "applies_to": "heteropolycyclic ring systems for which fusion nomenclature based on heterocyclic parent rings is not applicable",
+        "purpose": "derive preferred IUPAC names",
+        "reference": "P-25.5.1"
+      }]
+    },
+    {
+      "id": "heterophane_and_heterofullerene_skeletal_replacement_scope",
+      "k": "definition",
+      "f": "required",
+      "c": [27],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "out": [["scope", "SkeletalReplacementScope"]],
+      "term": "skeletal replacement scope for heterophanes and heterofullerenes",
+      "entity": "SkeletalReplacementScope",
+      "value": ["lit", {
+        "method": "skeletal replacement ('a') nomenclature",
+        "applies_to": {
+          "heterophane_ring_systems": "P-26.5",
+          "heterofullerenes": "P-27.5"
+        },
+        "purpose": "derive preferred IUPAC names"
       }]
     },
     {
@@ -133,16 +204,36 @@
     },
     {
       "id": "heterocyclic_assembly_parent_choice",
-      "k": "definition",
+      "k": "procedure",
       "f": "required",
-      "c": [31, 32],
+      "c": [28, 29, 31, 32],
       "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
-      "term": "parent_choice_before_skeletal_replacement",
-      "entity": "ParentChoiceProcedure",
+      "in": [["assembly", "HeterocyclicCompoundAssembly"]],
+      "out": [["preferred_parent_name", "Name"]],
+      "steps": [
+        ["set", "preferred_parent_name", ["lit", {
+          "order": "choose the preferred IUPAC name of the heterocyclic parent structure before insertion of skeletal replacement ('a') prefixes",
+          "applies_when": "necessary",
+          "scope": "assemblies of identical heterocyclic compounds composed of von Baeyer-type heterocyclic compounds and monocyclic compounds having more than ten members",
+          "assembly_reference": "P-28.4",
+          "example_reference": "P-28.3.1"
+        }]]
+      ]
+    },
+    {
+      "id": "acceptable_name_choice_by_nomenclature_type",
+      "k": "definition",
+      "f": "preference",
+      "c": [37, 38],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "out": [["selection_policy", "AcceptableNameSelectionPolicy"]],
+      "term": "choice_between_acceptable_names_by_nomenclature_type",
+      "entity": "AcceptableNameSelectionPolicy",
       "value": ["lit", {
-        "order": "choose the preferred IUPAC name of the heterocyclic parent structure before insertion of skeletal replacement ('a') prefixes",
-        "assemblies": "assemblies of identical heterocyclic compounds composed of von Baeyer-type heterocyclic compounds and monocyclic compounds having more than ten members",
-        "example_reference": "P-28.3.1"
+        "criterion": "the type of nomenclature used",
+        "applies_to": "a choice between two or more acceptable names",
+        "case": "unsaturated heteromonocyclic compounds for which three names are acceptable",
+        "reference": "P-52.2.3"
       }]
     },
     {
