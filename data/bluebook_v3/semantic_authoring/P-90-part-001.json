@@ -1,0 +1,234 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-90-part-001",
+  "clauses": [
+    null,
+    ["scope", "informative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "normative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["scope", "informative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["effect", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "configuration_and_conformation_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [2],
+      "out": [["scope", "StereochemicalSpecificationScope"]],
+      "term": "configuration and conformation scope",
+      "entity": "StereochemicalSpecificationScope",
+      "value": ["lit", {
+        "chapter_scope": "main_principles_only",
+        "specifies": ["configuration", "conformation"],
+        "compound_domain": "organic_compounds"
+      }]
+    },
+    {
+      "id": "stereochemical_affix_attachment",
+      "k": "definition",
+      "f": "definition",
+      "c": [3],
+      "out": [["affix_semantics", "StereochemicalAffixSemantics"]],
+      "term": "stereochemical affix attachment",
+      "entity": "StereochemicalAffixSemantics",
+      "value": ["lit", {
+        "base_name": "name_without_stereochemical_configuration_or_conformation",
+        "attached_items": "one_or_more_affixes",
+        "indicates": "organic_compound_structure"
+      }]
+    },
+    {
+      "id": "stereodescriptor",
+      "k": "definition",
+      "f": "definition",
+      "c": [4],
+      "out": [["descriptor", "Stereodescriptor"]],
+      "term": "stereodescriptor",
+      "entity": "Stereodescriptor",
+      "value": ["lit", {
+        "general_term_for": "affixes_indicating_stereochemical_structure"
+      }]
+    },
+    {
+      "id": "stereoisomer_name_difference",
+      "k": "definition",
+      "f": "definition",
+      "c": [5],
+      "out": [["name_relation", "StereoisomerNameRelation"]],
+      "term": "stereoisomer name difference",
+      "entity": "StereoisomerNameRelation",
+      "value": ["lit", {
+        "stereoisomer_types": ["stereoisomer", "enantiomer"],
+        "name_difference": "stereodescriptors_used",
+        "other_name_components": "same"
+      }]
+    },
+    {
+      "id": "cis_trans_name_variation",
+      "k": "definition",
+      "f": "definition",
+      "c": [6],
+      "out": [["name_relation", "CisTransNameRelation"]],
+      "term": "cis trans name variation",
+      "entity": "CisTransNameRelation",
+      "value": ["lit", {
+        "isomer_class": "cis_trans_isomers",
+        "possible_name_difference_causes": ["different_stereodescriptors", "different_nomenclature_type"]
+      }]
+    },
+    {
+      "id": "retained_name_stereochemical_description",
+      "k": "definition",
+      "f": "definition",
+      "c": [7],
+      "out": [["retained_name_behavior", "RetainedNameStereochemistry"]],
+      "term": "retained name stereochemical description",
+      "entity": "RetainedNameStereochemistry",
+      "value": ["lit", {
+        "retained_names_may_imply": "stereochemical_description",
+        "examples": ["maleic acid", "cholesterol"],
+        "natural_products_reference": "P-10"
+      }]
+    },
+    {
+      "id": "cip_priority_system",
+      "k": "definition",
+      "f": "definition",
+      "c": [8],
+      "out": [["priority_system", "CIPPrioritySystem"]],
+      "term": "CIP priority system",
+      "entity": "CIPPrioritySystem",
+      "value": ["lit", {
+        "purpose": "unambiguous_description_of_stereoisomers",
+        "recommended_by": ["Cahn", "Ingold", "Prelog"],
+        "orders": "seniority",
+        "ordered_entities": ["atoms", "groups"],
+        "attachment_sites": ["carbon", "other_atoms"],
+        "bibliographic_references": ["refs. 34", "35"]
+      }]
+    },
+    {
+      "id": "sequence_rules_priority",
+      "k": "definition",
+      "f": "required",
+      "c": [9],
+      "out": [["priority_method", "SequenceRulePriority"]],
+      "term": "sequence rules establish priority",
+      "entity": "SequenceRulePriority",
+      "value": ["lit", {
+        "priority_established_by": "application_of_sequence_rules"
+      }]
+    },
+    {
+      "id": "sequence_rules_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [10],
+      "out": [["discussion_scope", "RuleDiscussionScope"]],
+      "term": "sequence rules discussion scope",
+      "entity": "RuleDiscussionScope",
+      "value": ["lit", {
+        "rules": "sequence_rules",
+        "discussed_in": "P-92"
+      }]
+    },
+    {
+      "id": "sequence_rule_application_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [11],
+      "out": [["application_scope", "StereogenicUnitApplication"]],
+      "term": "sequence rule application scope",
+      "entity": "StereogenicUnitApplication",
+      "value": ["lit", {
+        "application_described_for": "stereogenic_units",
+        "emphasis": "most_usual_organic_compounds"
+      }]
+    },
+    {
+      "id": "synthetic_and_natural_product_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [12],
+      "out": [["scope", "CompoundDiscussionScope"]],
+      "term": "synthetic and natural product discussion scope",
+      "entity": "CompoundDiscussionScope",
+      "value": ["lit", {
+        "synthetic_compounds_discussed_in": "P-93",
+        "natural_products_discussed_in": "P-10"
+      }]
+    },
+    {
+      "id": "preferred_stereodescriptor_selection",
+      "k": "definition",
+      "f": "preference",
+      "c": [13],
+      "out": [["preference", "PreferredStereodescriptor"]],
+      "term": "preferred stereodescriptor selection",
+      "entity": "PreferredStereodescriptor",
+      "value": ["lit", {
+        "applies_when": "different_stereodescriptors_are_recommended",
+        "isomer_classes": ["cis_isomer", "trans_isomer", "diastereoisomer", "enantiomer"],
+        "selection": "one_recommended_descriptor_is_preferred"
+      }]
+    },
+    {
+      "id": "preferred_iupac_name_generation",
+      "k": "definition",
+      "f": "preference",
+      "c": [14],
+      "out": [["name_generation", "PreferredIUPACNameGeneration"]],
+      "term": "preferred IUPAC name generation",
+      "entity": "PreferredIUPACNameGeneration",
+      "value": ["lit", {
+        "input": "preferred_stereodescriptor",
+        "output": "preferred_IUPAC_name"
+      }]
+    },
+    {
+      "id": "general_nomenclature_descriptor_permission",
+      "k": "definition",
+      "f": "permitted",
+      "c": [15],
+      "out": [["descriptor_permission", "GeneralNomenclaturePermission"]],
+      "term": "appropriate descriptor in general nomenclature",
+      "entity": "GeneralNomenclaturePermission",
+      "value": ["lit", {
+        "nomenclature_context": "general_nomenclature",
+        "permitted_descriptor": "any_appropriate_descriptor"
+      }]
+    }
+  ],
+  "exceptions": [],
+  "tables": [],
+  "figures": [
+    {"id": "but_2_ene_stereodescriptor_comparison", "c": [17, 18], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P9gif/P90000a.gif"], "sha256": "9D734712B395B50BADEA271B3B185023ED817873F102336B550932749170A2F6"}
+  ],
+  "examples": [
+    {"id": "maleic_acid_retained_name", "c": [7], "input": "maleic acid", "ok": ["maleic acid"], "shows": [["semantic_unit", "retained_name_stereochemical_description"]], "why": "Retained name whose stereochemical description is implied."},
+    {"id": "cholesterol_retained_name", "c": [7], "input": "cholesterol", "ok": ["cholesterol"], "shows": [["semantic_unit", "retained_name_stereochemical_description"]], "why": "Retained name whose stereochemical description is implied."},
+    {"id": "but_2_ene_preferred_and_general_names", "c": [17, 18], "input": "but-2-ene", "ok": ["(2Z)-but-2-ene (PIN)", "cis-but-2-ene"], "shows": [["semantic_unit", "preferred_stereodescriptor_selection"], ["semantic_unit", "preferred_iupac_name_generation"], ["semantic_unit", "general_nomenclature_descriptor_permission"], ["figure", "figure.p90.part001.but_2_ene_stereodescriptor_comparison"]], "why": "The preferred stereodescriptor yields the PIN, while general nomenclature permits the appropriate cis descriptor."}
+  ],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p90.part001.p10_retained", "c": [7], "rel": "cites", "o": "P-90:xref:0001", "resolution": "exact"},
+    {"id": "reference.p90.part001.p92", "c": [10], "rel": "cites", "o": "P-90:xref:0002", "resolution": "exact"},
+    {"id": "reference.p90.part001.p10_scope", "c": [12], "rel": "cites", "o": "P-90:xref:0004", "resolution": "exact"}
+  ],
+  "additional_refs": []
+}

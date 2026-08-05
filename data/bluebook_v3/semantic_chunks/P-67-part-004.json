@@ -1,0 +1,550 @@
+{
+  "assigned_rule_ids": [
+    "P-67.3.2"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 10,
+    "compiled_clause_count": 8,
+    "correction_application_count": 0,
+    "example_count": 3,
+    "exception_count": 0,
+    "figure_count": 0,
+    "nonoperative_clause_count": 2,
+    "record_count": 1,
+    "reference_count": 2,
+    "semantic_unit_count": 5,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 0,
+    "table_count": 0
+  },
+  "chunk_sha256": "968BDABA26EBE8B8068544FA97ED3C01270E968517C40633D59EC79A0A5BBC5E",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-67.3.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-67.3.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p67.part004.disulfurous_acid_homogeneous_diacid_structure",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p67.part004.disulfurous_acid_homogeneous_diacid_structure.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p67.part004.disulfurous_acid_homogeneous_diacid_structure.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-67.3.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p67.part004.disulfurous_acid_name_collision",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p67.part004.disulfurous_acid_name_collision.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p67.part004.disulfurous_acid_name_collision.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-67.3.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p67.part004.substitutive_name_method",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p67.part004.substitutive_name_method.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p67.part004.substitutive_name_method.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-67.3.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p67.part004.disulfurous_acid_systematic_name_reservation",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p67.part004.disulfurous_acid_systematic_name_reservation.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p67.part004.disulfurous_acid_systematic_name_reservation.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-67.3.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p67.part004.preselected_name_assignment",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p67.part004.preselected_name_assignment.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p67.part004.preselected_name_assignment.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-67.3.2:clause:0007",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-67.3.2:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p67.part004.homogeneous_diacid_preselected_name",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-67.3.2:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p67.part004.dimethoxy_dithioxane_dione_pin",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-67.3.2:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p67.part004.dimethoxy_dithioxane_diimine_pin",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "1,3-dihydroxy-1λ4,3λ4-dithioxane-1,3-dione"
+      ],
+      "clause_ids": [
+        "P-67.3.2:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p67.part004.preselected_name_assignment",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p67.part004.homogeneous_diacid_preselected_name",
+      "explanation": "The structure is assigned the preselected substitutive name shown in the example.",
+      "input": {
+        "name_role": "preselected name",
+        "structure": "HO-SO-O-SO-OH"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,3-dimethoxy-1λ4,3λ4-dithioxane-1,3-dione"
+      ],
+      "clause_ids": [
+        "P-67.3.2:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p67.part004.substitutive_name_method",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p67.part004.dimethoxy_dithioxane_dione_pin",
+      "explanation": "The methyl-substituted structure is named by the substitutive method and the result is a PIN.",
+      "input": {
+        "name_role": "preferred IUPAC name",
+        "structure": "CH3-O-S(=O)-O-S(=O)-O-CH3"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,3-dimethoxy-1λ4,3λ4-dithioxane-1,3-diimine"
+      ],
+      "clause_ids": [
+        "P-67.3.2:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p67.part004.substitutive_name_method",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p67.part004.dimethoxy_dithioxane_diimine_pin",
+      "explanation": "The imine analogue is named by the same substitutive framework with the terminal functional class reflected in diimine.",
+      "input": {
+        "name_role": "preferred IUPAC name",
+        "structure": "CH3-O-S(=NH)-O-S(=NH)-O-CH3"
+      },
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [],
+  "figures": [],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-67-part-004",
+  "packet_sha256": "85C39588A9681329BE272B0C775B4A761D77302B570106C03CE7D87739F3D338",
+  "records": [
+    {
+      "chapter": "P-6",
+      "clause_ids": [
+        "P-67.3.2:clause:0001",
+        "P-67.3.2:clause:0002",
+        "P-67.3.2:clause:0003",
+        "P-67.3.2:clause:0004",
+        "P-67.3.2:clause:0005",
+        "P-67.3.2:clause:0006",
+        "P-67.3.2:clause:0007",
+        "P-67.3.2:clause:0008",
+        "P-67.3.2:clause:0009",
+        "P-67.3.2:clause:0010"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p67.part004.homogeneous_diacid_preselected_name",
+        "example.p67.part004.dimethoxy_dithioxane_dione_pin",
+        "example.p67.part004.dimethoxy_dithioxane_diimine_pin"
+      ],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-67.3.2",
+      "reference_ids": [
+        "reference.p_67_3_2.hierarchy_parent",
+        "citation.p67.2"
+      ],
+      "semantic_unit_ids": [
+        "unit.p67.part004.disulfurous_acid_homogeneous_diacid_structure",
+        "unit.p67.part004.disulfurous_acid_name_collision",
+        "unit.p67.part004.substitutive_name_method",
+        "unit.p67.part004.disulfurous_acid_systematic_name_reservation",
+        "unit.p67.part004.preselected_name_assignment"
+      ],
+      "source_rule_id": "P-67.3.2",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-67.3.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_67_3_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-67.3.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-67.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-67.3.2:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "citation.p67.2",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-67.3.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-67.3.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-67.2",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-67.3.2:clause:0002"
+      ],
+      "entity_type": "HomogeneousDiacidName",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-67.3.2:clause:0002"
+          ],
+          "expression_id": "expr.p67.part004.disulfurous_acid_homogeneous_diacid_structure.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "disulfurous acid",
+      "unit_id": "unit.p67.part004.disulfurous_acid_homogeneous_diacid_structure",
+      "value": {
+        "clause_ids": [
+          "P-67.3.2:clause:0002"
+        ],
+        "expression_id": "expr.p67.part004.disulfurous_acid_homogeneous_diacid_structure.value",
+        "op": "literal",
+        "value": {
+          "basis": "P-67.2",
+          "class": "homogeneous diacid",
+          "name": "disulfurous acid",
+          "structure": "HO-SO-O-SO-OH"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-67.3.2:clause:0003"
+      ],
+      "entity_type": "NameCollisionResolution",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-67.3.2:clause:0003"
+          ],
+          "expression_id": "expr.p67.part004.disulfurous_acid_name_collision.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "disulfurous acid name collision",
+      "unit_id": "unit.p67.part004.disulfurous_acid_name_collision",
+      "value": {
+        "clause_ids": [
+          "P-67.3.2:clause:0003"
+        ],
+        "expression_id": "expr.p67.part004.disulfurous_acid_name_collision.value",
+        "op": "literal",
+        "value": {
+          "consequence": "assign a different name to the target structure",
+          "reported_name": "disulfurous acid",
+          "reported_structure": "HO-SO-SO2-OH",
+          "source": "Nomenclature of Inorganic Chemistry, ref. 12",
+          "target_structure": "HO-SO-O-SO-OH"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-67.3.2:clause:0004"
+      ],
+      "entity_type": "NamingMethodSelection",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-67.3.2:clause:0004"
+          ],
+          "expression_id": "expr.p67.part004.substitutive_name_method.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "substitutive naming method",
+      "unit_id": "unit.p67.part004.substitutive_name_method",
+      "value": {
+        "clause_ids": [
+          "P-67.3.2:clause:0004"
+        ],
+        "expression_id": "expr.p67.part004.substitutive_name_method.value",
+        "op": "literal",
+        "value": {
+          "applies_to": "HO-SO-O-SO-OH",
+          "method": "substitutive",
+          "reason": "the name disulfurous acid is already used for another structure"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-67.3.2:clause:0005"
+      ],
+      "entity_type": "SystematicNameAvailability",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-67.3.2:clause:0005"
+          ],
+          "expression_id": "expr.p67.part004.disulfurous_acid_systematic_name_reservation.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "systematic-name availability for disulfurous acid",
+      "unit_id": "unit.p67.part004.disulfurous_acid_systematic_name_reservation",
+      "value": {
+        "clause_ids": [
+          "P-67.3.2:clause:0005"
+        ],
+        "expression_id": "expr.p67.part004.disulfurous_acid_systematic_name_reservation.value",
+        "op": "literal",
+        "value": {
+          "name": "disulfurous acid",
+          "reason": "used for HO-SO-SO2-OH in the Nomenclature of Inorganic Chemistry, ref. 12",
+          "structure": "HO-SO-O-SO-OH",
+          "systematic_name_use": "not available"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-67.3.2:clause:0006"
+      ],
+      "entity_type": "PreselectedNameAssignment",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-67.3.2:clause:0006"
+          ],
+          "expression_id": "expr.p67.part004.preselected_name_assignment.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "preselected name for HO-SO-O-SO-OH",
+      "unit_id": "unit.p67.part004.preselected_name_assignment",
+      "value": {
+        "clause_ids": [
+          "P-67.3.2:clause:0006"
+        ],
+        "expression_id": "expr.p67.part004.preselected_name_assignment.value",
+        "op": "literal",
+        "value": {
+          "name": "1,3-dihydroxy-1λ4,3λ4-dithioxane-1,3-dione",
+          "status": "preselected name",
+          "structure": "HO-SO-O-SO-OH"
+        }
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [],
+  "tables": []
+}

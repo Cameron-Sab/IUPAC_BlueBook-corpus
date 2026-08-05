@@ -1,0 +1,1555 @@
+{
+  "assigned_rule_ids": [
+    "P-77",
+    "P-77.1",
+    "P-77.1.1",
+    "P-77.1.2",
+    "P-77.1.3",
+    "P-77.2",
+    "P-77.2.1",
+    "P-77.2.2",
+    "P-77.3",
+    "P-77.3.1",
+    "P-77.3.2"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 41,
+    "compiled_clause_count": 21,
+    "correction_application_count": 0,
+    "example_count": 10,
+    "exception_count": 0,
+    "figure_count": 7,
+    "nonoperative_clause_count": 20,
+    "record_count": 11,
+    "reference_count": 16,
+    "semantic_unit_count": 1,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 0,
+    "table_count": 0
+  },
+  "chunk_sha256": "BED8275F93529C7F634DB53D4D9B4E1EEE8C18188790244FF9E27212B184B9DD",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-77:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.1.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.1.1:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.1.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.anilinium_chloride",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.anilinium_chloride",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.1.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.anilinium_chloride",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.anilinium_chloride",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.1.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.bis_methanaminium_sulfate",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.bis_methanaminium_sulfate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.1.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.bis_methanaminium_sulfate",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.bis_methanaminium_sulfate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.1.1:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.diethylethanaminium_hydrogen_sulfate",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.diethylethanaminium_hydrogen_sulfate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.1.1:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.diethylethanaminium_hydrogen_sulfate",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.diethylethanaminium_hydrogen_sulfate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.1.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.1.2:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.1.2:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.1.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.aminoethanaminium_chloride",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.aminoethanaminium_chloride",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.1.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.aminoethanaminium_chloride",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.aminoethanaminium_chloride",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.1.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.1.3:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p77.part001.traditional_salt_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p77.part001.traditional_salt_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p77.part001.traditional_salt_naming_methods.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-77.1.3:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p77.part001.traditional_salt_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p77.part001.traditional_salt_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p77.part001.traditional_salt_naming_methods.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-77.1.3:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p77.part001.traditional_salt_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p77.part001.traditional_salt_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p77.part001.traditional_salt_naming_methods.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-77.1.3:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p77.part001.traditional_salt_naming_methods",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p77.part001.traditional_salt_naming_methods.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p77.part001.traditional_salt_naming_methods.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-77.1.3:clause:0006",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.1.3:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.1.3:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.2.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.2.1:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.2.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p77.part001.sodium_methoxide",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.2.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.sodium_thiolate",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.sodium_thiolate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.2.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.sodium_thiolate",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.sodium_thiolate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-77.2.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.2.2:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.2.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p77.part001.potassium_hydroxyethanolate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.3.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.3.1:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.3.1:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p77.part001.sodium_acetate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.3.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.3.2:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-77.3.2:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.3.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.potassium_carboxypropanoate",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.potassium_carboxypropanoate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-77.3.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p77.part001.potassium_carboxypropanoate",
+            "kind": "figure"
+          },
+          {
+            "id": "example.p77.part001.potassium_carboxypropanoate",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "anilinium choride (PIN)",
+        "benzenaminium chloride"
+      ],
+      "clause_ids": [
+        "P-77.1.1:clause:0003",
+        "P-77.1.1:clause:0004"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p77.part001.anilinium_chloride",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p77.part001.anilinium_chloride",
+      "explanation": null,
+      "input": {
+        "figure_id": "figure.p77.part001.anilinium_chloride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "bis(methanaminium) sulfate (PIN)"
+      ],
+      "clause_ids": [
+        "P-77.1.1:clause:0005",
+        "P-77.1.1:clause:0006"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p77.part001.bis_methanaminium_sulfate",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p77.part001.bis_methanaminium_sulfate",
+      "explanation": null,
+      "input": {
+        "figure_id": "figure.p77.part001.bis_methanaminium_sulfate"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "N,N-diethylethanaminium hydrogen sulfate (PIN)"
+      ],
+      "clause_ids": [
+        "P-77.1.1:clause:0007",
+        "P-77.1.1:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p77.part001.diethylethanaminium_hydrogen_sulfate",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p77.part001.diethylethanaminium_hydrogen_sulfate",
+      "explanation": null,
+      "input": {
+        "figure_id": "figure.p77.part001.diethylethanaminium_hydrogen_sulfate"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2-aminoethan-1-aminium chloride (PIN)",
+        "ethane-1,2-diamine monohydrochloride"
+      ],
+      "clause_ids": [
+        "P-77.1.2:clause:0004",
+        "P-77.1.2:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p77.part001.aminoethanaminium_chloride",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p77.part001.aminoethanaminium_chloride",
+      "explanation": null,
+      "input": {
+        "figure_id": "figure.p77.part001.aminoethanaminium_chloride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "(1) N,N-dimethyl-1,3-thiazolidin-2-amine—sulfuric acid (2/1)",
+        "(2) bis(N,N-dimethyl-1,3-thiazolidin-2-amine) sulfate"
+      ],
+      "clause_ids": [
+        "P-77.1.3:clause:0007",
+        "P-77.1.3:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid",
+      "explanation": null,
+      "input": {
+        "figure_id": "figure.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "sodium methoxide (PIN)",
+        "sodium methanolate"
+      ],
+      "clause_ids": [
+        "P-77.2.1:clause:0003"
+      ],
+      "demonstrates": [],
+      "example_id": "example.p77.part001.sodium_methoxide",
+      "explanation": null,
+      "input": "CH3-O− Na+",
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "sodium 4-methylbenzene-1-thiolate (PIN)"
+      ],
+      "clause_ids": [
+        "P-77.2.1:clause:0004",
+        "P-77.2.1:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p77.part001.sodium_thiolate",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p77.part001.sodium_thiolate",
+      "explanation": null,
+      "input": {
+        "figure_id": "figure.p77.part001.sodium_thiolate"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "potassium 2-hydroxyethan-1-olate (PIN)"
+      ],
+      "clause_ids": [
+        "P-77.2.2:clause:0003"
+      ],
+      "demonstrates": [],
+      "example_id": "example.p77.part001.potassium_hydroxyethanolate",
+      "explanation": null,
+      "input": "HO-CH2-CH2-O− K+",
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "sodium acetate (PIN)"
+      ],
+      "clause_ids": [
+        "P-77.3.1:clause:0003"
+      ],
+      "demonstrates": [],
+      "example_id": "example.p77.part001.sodium_acetate",
+      "explanation": null,
+      "input": "CH3-CO-O− Na+",
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "potassium 3-carboxypropanoate (PIN)",
+        "butanedioic acid monopotassium salt"
+      ],
+      "clause_ids": [
+        "P-77.3.2:clause:0004",
+        "P-77.3.2:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "figure.p77.part001.potassium_carboxypropanoate",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p77.part001.potassium_carboxypropanoate",
+      "explanation": null,
+      "input": {
+        "figure_id": "figure.p77.part001.potassium_carboxypropanoate"
+      },
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [],
+  "figures": [
+    {
+      "clause_ids": [
+        "P-77.1.1:clause:0003",
+        "P-77.1.1:clause:0004"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p77.part001.anilinium_chloride",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P7gif/P77110a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-77.1.1:clause:0005",
+        "P-77.1.1:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p77.part001.bis_methanaminium_sulfate",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P7gif/P77110b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-77.1.1:clause:0007",
+        "P-77.1.1:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p77.part001.diethylethanaminium_hydrogen_sulfate",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P7gif/P77110c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-77.1.2:clause:0004",
+        "P-77.1.2:clause:0005"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p77.part001.aminoethanaminium_chloride",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P7gif/P77120a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-77.1.3:clause:0007",
+        "P-77.1.3:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P7gif/P77130a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-77.2.1:clause:0004",
+        "P-77.2.1:clause:0005"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p77.part001.sodium_thiolate",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P7gif/P77210a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-77.3.2:clause:0004",
+        "P-77.3.2:clause:0005"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p77.part001.potassium_carboxypropanoate",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P7gif/P77320a.gif"
+      ]
+    }
+  ],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-77-part-001",
+  "packet_sha256": "899286F7AD1353403380A413049E5126F8C5AEE33D756B17986003DF3F8C639D",
+  "records": [
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-77",
+      "reference_ids": [
+        "reference.p_77.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-77",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77.1:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-77.1",
+      "reference_ids": [
+        "reference.p_77_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-77.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77.1.1:clause:0001",
+        "P-77.1.1:clause:0002",
+        "P-77.1.1:clause:0003",
+        "P-77.1.1:clause:0004",
+        "P-77.1.1:clause:0005",
+        "P-77.1.1:clause:0006",
+        "P-77.1.1:clause:0007",
+        "P-77.1.1:clause:0008"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p77.part001.anilinium_chloride",
+        "example.p77.part001.bis_methanaminium_sulfate",
+        "example.p77.part001.diethylethanaminium_hydrogen_sulfate"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p77.part001.anilinium_chloride",
+        "figure.p77.part001.bis_methanaminium_sulfate",
+        "figure.p77.part001.diethylethanaminium_hydrogen_sulfate"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-77.1.1",
+      "reference_ids": [
+        "reference.p_77_1_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-77.1.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77.1.2:clause:0001",
+        "P-77.1.2:clause:0002",
+        "P-77.1.2:clause:0003",
+        "P-77.1.2:clause:0004",
+        "P-77.1.2:clause:0005"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p77.part001.aminoethanaminium_chloride"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p77.part001.aminoethanaminium_chloride"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-77.1.2",
+      "reference_ids": [
+        "reference.p_77_1_2.hierarchy_parent",
+        "reference.P-77.1.2:xref:0001"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-77.1.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77.1.3:clause:0001",
+        "P-77.1.3:clause:0002",
+        "P-77.1.3:clause:0003",
+        "P-77.1.3:clause:0004",
+        "P-77.1.3:clause:0005",
+        "P-77.1.3:clause:0006",
+        "P-77.1.3:clause:0007",
+        "P-77.1.3:clause:0008"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-77.1.3",
+      "reference_ids": [
+        "reference.p_77_1_3.hierarchy_parent",
+        "reference.P-77.1.3:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p77.part001.traditional_salt_naming_methods"
+      ],
+      "source_rule_id": "P-77.1.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77.2:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-77.2",
+      "reference_ids": [
+        "reference.p_77_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-77.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77.2.1:clause:0001",
+        "P-77.2.1:clause:0002",
+        "P-77.2.1:clause:0003",
+        "P-77.2.1:clause:0004",
+        "P-77.2.1:clause:0005"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p77.part001.sodium_methoxide",
+        "example.p77.part001.sodium_thiolate"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p77.part001.sodium_thiolate"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-77.2.1",
+      "reference_ids": [
+        "reference.p_77_2_1.hierarchy_parent",
+        "reference.P-77.2.1:xref:0001"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-77.2.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77.2.2:clause:0001",
+        "P-77.2.2:clause:0002",
+        "P-77.2.2:clause:0003"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p77.part001.potassium_hydroxyethanolate"
+      ],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-77.2.2",
+      "reference_ids": [
+        "reference.p_77_2_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-77.2.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77.3:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-77.3",
+      "reference_ids": [
+        "reference.p_77_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-77.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77.3.1:clause:0001",
+        "P-77.3.1:clause:0002",
+        "P-77.3.1:clause:0003"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p77.part001.sodium_acetate"
+      ],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-77.3.1",
+      "reference_ids": [
+        "reference.p_77_3_1.hierarchy_parent",
+        "reference.P-77.3.1:xref:0001"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-77.3.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-7",
+      "clause_ids": [
+        "P-77.3.2:clause:0001",
+        "P-77.3.2:clause:0002",
+        "P-77.3.2:clause:0003",
+        "P-77.3.2:clause:0004",
+        "P-77.3.2:clause:0005"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p77.part001.potassium_carboxypropanoate"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p77.part001.potassium_carboxypropanoate"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-77.3.2",
+      "reference_ids": [
+        "reference.p_77_3_2.hierarchy_parent",
+        "reference.P-77.3.2:xref:0001"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-77.3.2",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-77:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-7",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-77",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.1.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77_1_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.1.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-77.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.1.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77_1_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.1.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-77.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.1.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77_1_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.1.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-77.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-77",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.2.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77_2_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.2.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-77.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.2.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77_2_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.2.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-77.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-77",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.3.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77_3_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-77.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.3.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_77_3_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.3.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-77.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.1.2:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-77.1.2:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.1.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-77.1.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-77.1.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.1.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-77.1.3:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.1.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-77.1.3:xref:0001"
+      ],
+      "target": {
+        "id": "P-77.1.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.2.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-77.2.1:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.2.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-77.2.1:xref:0001"
+      ],
+      "target": {
+        "id": "P-72.2.2.2.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.3.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-77.3.1:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.3.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-77.3.1:xref:0001"
+      ],
+      "target": {
+        "id": "P-72.2.2.2.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-77.3.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-77.3.2:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-77.3.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-77.3.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-65.6.2.3",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-77.1.3:clause:0002",
+        "P-77.1.3:clause:0003",
+        "P-77.1.3:clause:0004",
+        "P-77.1.3:clause:0005"
+      ],
+      "entity_type": "SaltNamingMethodSet",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-77.1.3:clause:0002",
+            "P-77.1.3:clause:0003",
+            "P-77.1.3:clause:0004",
+            "P-77.1.3:clause:0005"
+          ],
+          "expression_id": "expr.p77.part001.traditional_salt_naming_methods.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "traditional methods for naming salts of organic bases",
+      "unit_id": "unit.p77.part001.traditional_salt_naming_methods",
+      "value": {
+        "clause_ids": [
+          "P-77.1.3:clause:0002",
+          "P-77.1.3:clause:0003",
+          "P-77.1.3:clause:0004",
+          "P-77.1.3:clause:0005"
+        ],
+        "expression_id": "expr.p77.part001.traditional_salt_naming_methods.value",
+        "op": "literal",
+        "value": {
+          "condition": "P-77.1.2 cannot be applied",
+          "methods": [
+            {
+              "method": "adduct",
+              "ordinal": 1,
+              "preferred_name_condition": "the acid components of the adducts are organic compounds"
+            },
+            {
+              "method": "unaltered base followed by the name of the anion",
+              "ordinal": 2
+            },
+            {
+              "hydrohalide_names": [
+                "hydrofluoride",
+                "hydrobromide",
+                "hydrochloride",
+                "hydroiodide"
+              ],
+              "method": "unaltered base followed by a hydrohalide name",
+              "only_for": "salts of hydrohalogen acids",
+              "ordinal": 3
+            }
+          ],
+          "source_text": [
+            "(1) as adducts.",
+            "The names of these adducts are preferred IUPAC names only when the acid components of the adducts are organic compounds;",
+            "(2) the unaltered name of the base followed by the name of the anion;",
+            "(3) for salts of hydrohalogen acids only, the unaltered name of the base is followed by hydrofluoride, hydrobromide, hydrochloride, or hydroiodide, as the case may be."
+          ]
+        }
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [],
+  "tables": []
+}

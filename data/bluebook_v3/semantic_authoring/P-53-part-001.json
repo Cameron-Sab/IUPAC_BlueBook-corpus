@@ -1,0 +1,240 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-53-part-001",
+  "clauses": [
+    null,
+    ["preference_criterion", "normative", "compile"],
+    ["history", "informative", "skip", "historical_context"],
+    ["effect", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["exception", "normative", "compile"],
+    ["exception", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["cross_reference", "informative", "skip", "citation_only"]
+  ],
+  "symbols": [
+    {
+      "id": "name.is_retained_parent_hydride_name",
+      "k": "predicate",
+      "d": "A name is a retained name of a parent hydride.",
+      "a": [["name", "name"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "retained_parent_hydride_name"]
+    },
+    {
+      "id": "name.is_cyclic_mancude_retained_name",
+      "k": "predicate",
+      "d": "A name is a retained name of a cyclic mancude compound.",
+      "a": [["name", "name"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "cyclic_mancude_retained_name"]
+    },
+    {
+      "id": "name.is_retained_parent_name",
+      "k": "predicate",
+      "d": "A name is a retained parent name.",
+      "a": [["name", "name"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "retained_parent_name"]
+    },
+    {
+      "id": "name.accepts_suffix_and_prefix_substituents_without_restriction",
+      "k": "predicate",
+      "d": "A retained parent name accepts substituent groups cited as suffixes and prefixes without restriction.",
+      "a": [["name", "retained_parent_name"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "unrestricted_suffix_and_prefix_substitution"]
+    },
+    {
+      "id": "name.has_limited_substitutability",
+      "k": "predicate",
+      "d": "A retained parent name has limited capacity for substitution.",
+      "a": [["name", "retained_parent_name"]],
+      "ret": "boolean",
+      "g": [
+        "definition",
+        [["semantic_unit", "limited_substitutability_retained_names"]],
+        null
+      ]
+    },
+    {
+      "id": "name.is_no_longer_recommended_retained_name",
+      "k": "predicate",
+      "d": "A retained name is no longer recommended for preferred-name selection.",
+      "a": [["name", "retained_parent_name"]],
+      "ret": "boolean",
+      "g": [
+        "definition",
+        [["semantic_unit", "no_longer_recommended_retained_names"]],
+        null
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "recommend_retained_parent_hydride_names",
+      "k": "rule",
+      "f": "preference",
+      "c": [2],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "in": [["name", "name"]],
+      "out": [["recommendation_status", "recommendation_status"]],
+      "if": ["pred", "name.is_retained_parent_hydride_name", ["var", "name"]],
+      "then": [["set", "recommendation_status", "recommended"]],
+      "else": []
+    },
+    {
+      "id": "cyclic_mancude_fusion_component",
+      "k": "rule",
+      "f": "required",
+      "c": [4],
+      "in": [["name", "name"]],
+      "out": [["fusion_component", "boolean"]],
+      "if": ["pred", "name.is_cyclic_mancude_retained_name", ["var", "name"]],
+      "then": [["set", "fusion_component", true]],
+      "else": []
+    },
+    {
+      "id": "cyclic_mancude_derivative_parent_use",
+      "k": "rule",
+      "f": "preference",
+      "c": [5],
+      "scope": {
+        "r": ["preferred_iupac_name", "general_nomenclature"],
+        "if": ["lit", true]
+      },
+      "in": [["name", "name"], ["derivative", "compound"]],
+      "out": [
+        ["parent_name_status", "recommendation_status"],
+        ["general_nomenclature_use", "boolean"]
+      ],
+      "if": ["pred", "name.is_cyclic_mancude_retained_name", ["var", "name"]],
+      "then": [
+        ["set", "parent_name_status", "preferred_iupac_name"],
+        ["set", "general_nomenclature_use", true]
+      ],
+      "else": []
+    },
+    {
+      "id": "retained_parent_name_unrestricted_substitutability",
+      "k": "constraint",
+      "f": "required",
+      "c": [6, 7],
+      "scope": {"r": ["retained_name"], "if": ["lit", true]},
+      "in": [["name", "retained_parent_name"]],
+      "assert": [
+        "any",
+        ["not", ["pred", "name.is_retained_parent_name", ["var", "name"]]],
+        [
+          "pred",
+          "name.accepts_suffix_and_prefix_substituents_without_restriction",
+          ["var", "name"]
+        ]
+      ],
+      "violation": [
+        ["reject", "name", "reason.retained_parent_name_not_fully_substitutable"]
+      ]
+    },
+    {
+      "id": "limited_substitutability_retained_names",
+      "k": "definition",
+      "c": [8, 9],
+      "scope": {"r": ["retained_name"], "if": ["lit", true]},
+      "in": [["name", "retained_parent_name"]],
+      "out": [["result", "boolean"]],
+      "term": "retained parent name with limited substitutability",
+      "entity": "retained_parent_name",
+      "value": [
+        "cmp",
+        "member_of",
+        ["var", "name"],
+        ["lit", ["toluene", "xylene", "mesitylene"]]
+      ]
+    },
+    {
+      "id": "no_longer_recommended_retained_names",
+      "k": "definition",
+      "c": [10],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "in": [["name", "retained_parent_name"]],
+      "out": [["result", "boolean"]],
+      "term": "retained name no longer recommended",
+      "entity": "retained_parent_name",
+      "value": [
+        "cmp",
+        "member_of",
+        ["var", "name"],
+        ["lit", ["cumene", "cymene"]]
+      ]
+    },
+    {
+      "id": "exclude_no_longer_recommended_retained_names",
+      "k": "constraint",
+      "f": "preference",
+      "c": [10],
+      "scope": {"r": ["preferred_iupac_name"], "if": ["lit", true]},
+      "in": [["name", "retained_parent_name"]],
+      "assert": [
+        "not",
+        ["pred", "name.is_no_longer_recommended_retained_name", ["var", "name"]]
+      ],
+      "violation": [
+        ["reject", "name", "reason.name_not_recommended_for_preferred_selection"]
+      ]
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "limited_substitutability_retained_names",
+      "c": [8, 9],
+      "if": ["pred", "name.has_limited_substitutability", ["var", "name"]],
+      "target": [
+        "semantic_unit",
+        "retained_parent_name_unrestricted_substitutability"
+      ],
+      "mode": "suppress",
+      "specificity": 1,
+      "order": 1
+    }
+  ],
+  "tables": [],
+  "figures": [],
+  "examples": [
+    {
+      "id": "limited_substitutability_name_examples",
+      "c": [9],
+      "input": {
+        "names": ["toluene", "xylene", "mesitylene"],
+        "substitutability": "limited"
+      },
+      "ok": [],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "limited_substitutability_retained_names"],
+        ["exception", "limited_substitutability_retained_names"]
+      ],
+      "why": "These substituted-benzene retained names have limited capacity for substitution."
+    },
+    {
+      "id": "no_longer_recommended_name_examples",
+      "c": [10],
+      "input": {
+        "names": ["cumene", "cymene"],
+        "recommendation_status": "not_recommended"
+      },
+      "ok": [],
+      "bad": [],
+      "shows": [
+        ["semantic_unit", "no_longer_recommended_retained_names"],
+        ["semantic_unit", "exclude_no_longer_recommended_retained_names"]
+      ],
+      "why": "These retained names are examples that are no longer recommended."
+    }
+  ],
+  "corrections": [],
+  "refs": [],
+  "additional_refs": []
+}

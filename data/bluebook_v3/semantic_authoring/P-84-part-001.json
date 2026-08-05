@@ -1,0 +1,85 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-84-part-001",
+  "clauses": [
+    null,
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_layout", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_layout", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"],
+    ["table_data", "illustrative", "compile"]
+  ],
+  "symbols": [],
+  "units": [],
+  "exceptions": [],
+  "tables": [
+    {
+      "id": "comparative_isotopic_examples",
+      "c": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28],
+      "label": null,
+      "title": "Comparative examples of formulas and names of isotopically modified compounds",
+      "cols": [
+        ["type", "Types of compounds", "string", [2, 5, 6, 9, 12, 15, 18, 23, 26]],
+        ["formula", "Formula", "string", [3, 7, 10, 13, 16, 19, 24, 27]],
+        ["name", "Name", "string", [4, 8, 11, 14, 17, 20, 21, 22, 25, 28]]
+      ],
+      "rows": [
+        {"id": "layout_separator", "c": [5], "v": [null, null, null]},
+        {"id": "unmodified", "c": [6, 7, 8], "v": ["Unmodified", "CH3-CH2-OH", "ethanol (PIN)"]},
+        {"id": "isotopically_substituted", "c": [9, 10, 11], "v": ["Isotopically substituted", {"image_asset": "P8gif/P84000a.gif"}, "(2,2,2-2H3)ethan-1-(2H)ol (PIN)\n(O,2,2,2-2H4)ethan-1-ol"]},
+        {"id": "specifically_labeled", "c": [12, 13, 14], "v": ["Specifically labeled", {"image_asset": "P8gif/P84000b.gif"}, "[2,2,2-2H3]ethan-1-[2H]ol (PIN)\n[O,2,2,2-2H4]ethan-1-ol"]},
+        {"id": "selectively_labeled_located", "c": [15, 16, 17], "v": ["Selectively labeled", {"image_asset": "P8gif/P84000c.gif"}, "[2-2H]ethan-1-[2H]ol (PIN)"]},
+        {"id": "selectively_labeled_mixed", "c": [18, 19, 20, 21, 22], "v": ["", {"image_asset": "P8gif/P84000d.gif"}, "[2-2H2;2]ethan-1-[18O0;1]ol (PIN)"]},
+        {"id": "nonselectively_labeled", "c": [23, 24, 25], "v": ["Nonselectively labeled", "[2H]CH3-CH2-OH", "[2H]ethanol (PIN)"]},
+        {"id": "isotopically_deficient", "c": [26, 27, 28], "v": ["Isotopically deficient", "[def13C]CH3-CH2-OH", "[def13C]ethanol (PIN)"]}
+      ],
+      "contract": {
+        "key": ["type"],
+        "result": ["formula", "name"],
+        "cardinality": "one_to_many",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [
+    {"id": "isotopically_substituted_formula", "c": [10], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P84000a.gif"], "sha256": "484213984EBC1644E03AB1AEDC8566C0C70D25E9C968A397C4FC0E1C896F9E94"},
+    {"id": "specifically_labeled_formula", "c": [13], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P84000b.gif"], "sha256": "AFE6D942661BE2D9B33FC828D563E5F64C3260C59B4809087FB106440428C3C0"},
+    {"id": "selectively_labeled_formula", "c": [16], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P84000c.gif"], "sha256": "B7C51E43D8F5202C90C5A6FFE405591FB41607158F08BBD8DD4BE48CCA10BAA4"},
+    {"id": "selectively_labeled_mixed_formula", "c": [19], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P8gif/P84000d.gif"], "sha256": "FECDC577E6D15F986B322CD115B96DDA23FFF90C484437B516B5C3C9DBC92474"}
+  ],
+  "examples": [
+    {"id": "unmodified_ethanol", "c": [6, 7, 8], "input": "CH3-CH2-OH", "ok": ["ethanol (PIN)"], "shows": [["table", "comparative_isotopic_examples"]], "why": "Comparative example of an isotopically unmodified compound."},
+    {"id": "isotopically_substituted_ethanol", "c": [9, 10, 11], "input": {"formula_image": "P8gif/P84000a.gif"}, "ok": ["(2,2,2-2H3)ethan-1-(2H)ol (PIN)", "(O,2,2,2-2H4)ethan-1-ol"], "shows": [["table", "comparative_isotopic_examples"], ["figure", "figure.p84.part001.isotopically_substituted_formula"]], "why": "Comparative example of isotopic substitution."},
+    {"id": "specifically_labeled_ethanol", "c": [12, 13, 14], "input": {"formula_image": "P8gif/P84000b.gif"}, "ok": ["[2,2,2-2H3]ethan-1-[2H]ol (PIN)", "[O,2,2,2-2H4]ethan-1-ol"], "shows": [["table", "comparative_isotopic_examples"], ["figure", "figure.p84.part001.specifically_labeled_formula"]], "why": "Comparative example of specific isotopic labeling."},
+    {"id": "selectively_labeled_ethanol", "c": [15, 16, 17], "input": {"formula_image": "P8gif/P84000c.gif"}, "ok": ["[2-2H]ethan-1-[2H]ol (PIN)"], "shows": [["table", "comparative_isotopic_examples"], ["figure", "figure.p84.part001.selectively_labeled_formula"]], "why": "Comparative example of selective labeling at specified positions."},
+    {"id": "selectively_labeled_mixed_ethanol", "c": [18, 19, 20, 21, 22], "input": {"formula_image": "P8gif/P84000d.gif"}, "ok": ["[2-2H2;2]ethan-1-[18O0;1]ol (PIN)"], "shows": [["table", "comparative_isotopic_examples"], ["figure", "figure.p84.part001.selectively_labeled_mixed_formula"]], "why": "Comparative example of selective labeling with mixed isotopic ratios."},
+    {"id": "nonselectively_labeled_ethanol", "c": [23, 24, 25], "input": "[2H]CH3-CH2-OH", "ok": ["[2H]ethanol (PIN)"], "shows": [["table", "comparative_isotopic_examples"]], "why": "Comparative example of nonselective labeling."},
+    {"id": "isotopically_deficient_ethanol", "c": [26, 27, 28], "input": "[def13C]CH3-CH2-OH", "ok": ["[def13C]ethanol (PIN)"], "shows": [["table", "comparative_isotopic_examples"]], "why": "Comparative example of isotopic deficiency."}
+  ],
+  "corrections": [],
+  "refs": [],
+  "additional_refs": []
+}

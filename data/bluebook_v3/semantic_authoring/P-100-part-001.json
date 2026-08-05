@@ -1,0 +1,110 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    null,
+    ["scope", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["cross_reference", "informative", "compile"],
+    ["note", "informative", "compile"]
+  ],
+  "corrections": [],
+  "examples": [],
+  "exceptions": [],
+  "figures": [],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "refs": [
+    {"id": "reference.p100.xref.0001", "c": [6], "rel": "cites", "o": "P-100:xref:0001", "target": ["external", "P-1"]},
+    {"id": "reference.p100.xref.0002", "c": [6], "rel": "cites", "o": "P-100:xref:0002", "target": ["external", "P-9"]},
+    {"id": "reference.p100.xref.0003", "c": [14], "rel": "cites", "o": "P-100:xref:0003", "target": ["external", "P-2"]}
+  ],
+  "symbols": [],
+  "tables": [],
+  "task_id": "P-100-part-001",
+  "units": [
+    {
+      "id": "natural_product_nomenclature_overview",
+      "k": "definition",
+      "f": "definition",
+      "c": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      "term": "natural-product nomenclature overview",
+      "entity": "NaturalProductNomenclatureOverview",
+      "value": ["lit", {
+        "levels": 3,
+        "trivial_names": {
+          "assignment": "A new compound, isolated from a natural source, is generally given a \u2018trivial\u2019 name.",
+          "origin": "By common usage, these trivial names are commonly related to the biological origin of the material, but frequently not in a rational way, since the available structure is not known with great detail.",
+          "chemical_status": "These trivial names are considered to be ephemeral and replaced for chemical purposes by names describing the skeleton, the characteristic groups, and the organyl substituent groups."
+        },
+        "systematic_names": {
+          "availability": "When the full structure is known, a \u2018systematic name\u2019 may be generated in accordance with Rules described in Chapters P-1 through P-9 of these recommendations.",
+          "limitation": "However, this name may be too cumbersome to be continually inserted into the text of a scientific paper."
+        },
+        "semisystematic_names": {
+          "purpose": "To overcome this difficulty and show the close similarity to related compounds, a \u2018semisystematic name\u2019 can be formed.",
+          "pin_status": "Preferred IUPAC names (PINs) are not identified for the compounds in this Chapter.",
+          "future_choice": "The choice between a semisystematic name and a systematic name will be made in cooperation with the IUPAC-IUBMB Joint Commission on Biochemical Nomenclature and will appear in a future publication.",
+          "basis": "Semisystematic names are based on specific parent structures, generally including the configuration, that can later on be used to describe a compound fully by using the rules of systematic nomenclature."
+        },
+        "parent_structure_types": [
+          {
+            "kind": "parent hydride",
+            "definition": "structures that do not have terminal heteroatoms or functional groups and therefore consist only of skeletal atoms and hydrogen",
+            "uses": ["steroid", "terpene", "carotene", "corrinoid", "tetrapyrrole", "lignan", "neolignan", "alkaloid"],
+            "treatment": "This type of semisystematic parent is analogous to the parents described in Chapter P-2 and is treated in the same manner to generate complete names."
+          },
+          {
+            "kind": "functional parent",
+            "definition": "functional parents, which are analogous to the functional parents described in Section P-34",
+            "uses": ["amino acid and peptide", "carbohydrate", "cyclitol", "nucleoside and nucleotide", "lipid"],
+            "modification": "they have characteristic groups implied in their name, and can be modified by specific rules and by methods used in systematic nomenclature"
+          }
+        ],
+        "section_map": {
+          "P-101": "Section P-101 describes the rules to form trivial names and semisystematic names used as parent hydrides, and those related to their skeletal transformation and functionalization for naming alkaloids, steroids, terpenes, and some related compounds.",
+          "P-102": "Section P-102 describes the rules for naming carbohydrates",
+          "P-103": "P-103 deals with the nomenclature of amino acids and peptides",
+          "P-104": "P-104 describes the nomenclature for cyclitols",
+          "P-105": "P-105 deals with nucleosides and nucleotides",
+          "P-106": "P-106 deals with nucleosides and nucleotides",
+          "P-107": "P-107 discusses the nomenclature of lipids"
+        },
+        "consultation": "If difficulties are encountered, consultation of the full publications may be necessary, as indicated in each Section.",
+        "source_text": [
+          "In the field of natural products, three levels of nomenclature are recognized.",
+          "A new compound, isolated from a natural source, is generally given a \u2018trivial\u2019 name.",
+          "By common usage, these trivial names are commonly related to the biological origin of the material, but frequently not in a rational way, since the available structure is not known with great detail.",
+          "These trivial names are considered to be ephemeral and replaced for chemical purposes by names describing the skeleton, the characteristic groups, and the organyl substituent groups.",
+          "When the full structure is known, a \u2018systematic name\u2019 may be generated in accordance with Rules described in Chapters P-1 through P-9 of these recommendations.",
+          "However, this name may be too cumbersome to be continually inserted into the text of a scientific paper.",
+          "To overcome this difficulty and show the close similarity to related compounds, a \u2018semisystematic name\u2019 can be formed.",
+          "Preferred IUPAC names (PINs) are not identified for the compounds in this Chapter.",
+          "The choice between a semisystematic name and a systematic name will be made in cooperation with the IUPAC-IUBMB Joint Commission on Biochemical Nomenclature and will appear in a future publication.",
+          "Semisystematic names are based on specific parent structures, generally including the configuration, that can later on be used to describe a compound fully by using the rules of systematic nomenclature.",
+          "There are two general types of semisystematic parent structures used for naming natural products and related compounds:",
+          "(a) parent hydrides, i.e., structures that do not have terminal heteroatoms or functional groups and therefore consist only of skeletal atoms and hydrogen, for example, in steroid (ref.16), terpene, carotene (ref. 40), corrinoid (ref. 45), tetrapyrrole (ref. 17), lignan and neolignan (ref. 46), and alkaloid nomenclature.",
+          "This type of semisystematic parent is analogous to the parents described in Chapter P-2 and is treated in the same manner to generate complete names;",
+          "(b) functional parents, which are analogous to the functional parents described in Section P-34, and used in amino acid and peptide (ref. 18), carbohydrate (ref. 27), cyclitol (ref. 39), nucleoside and nucleotide (ref. 47), and lipid (ref. 48) nomenclature;",
+          "they have characteristic groups implied in their name, and can be modified by specific rules and by methods used in systematic nomenclature.",
+          "Section P-101 describes the rules to form trivial names and semisystematic names used as parent hydrides, and those related to their skeletal transformation and functionalization for naming alkaloids, steroids, terpenes, and some related compounds.",
+          "Section P-102 describes the rules for naming carbohydrates, P-103 deals with the nomenclature of amino acids and peptides, P-104 describes the nomenclature for cyclitols, P-105 and P-106 deal with nucleosides and nucleotides, and finally P-107 discusses the nomenclature of lipids.",
+          "If difficulties are encountered, consultation of the full publications may be necessary, as indicated in each Section."
+        ]
+      }]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-67-part-004",
+  "clauses": [
+    null,
+    ["definition", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["preference_criterion", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "disulfurous_acid_homogeneous_diacid_structure",
+      "k": "definition",
+      "f": "definition",
+      "c": [2],
+      "term": "disulfurous acid",
+      "entity": "HomogeneousDiacidName",
+      "value": [
+        "lit",
+        {
+          "name": "disulfurous acid",
+          "structure": "HO-SO-O-SO-OH",
+          "class": "homogeneous diacid",
+          "basis": "P-67.2"
+        }
+      ]
+    },
+    {
+      "id": "disulfurous_acid_name_collision",
+      "k": "definition",
+      "f": "definition",
+      "c": [3],
+      "term": "disulfurous acid name collision",
+      "entity": "NameCollisionResolution",
+      "value": [
+        "lit",
+        {
+          "reported_structure": "HO-SO-SO2-OH",
+          "reported_name": "disulfurous acid",
+          "source": "Nomenclature of Inorganic Chemistry, ref. 12",
+          "target_structure": "HO-SO-O-SO-OH",
+          "consequence": "assign a different name to the target structure"
+        }
+      ]
+    },
+    {
+      "id": "substitutive_name_method",
+      "k": "definition",
+      "f": "definition",
+      "c": [4],
+      "term": "substitutive naming method",
+      "entity": "NamingMethodSelection",
+      "value": [
+        "lit",
+        {
+          "method": "substitutive",
+          "applies_to": "HO-SO-O-SO-OH",
+          "reason": "the name disulfurous acid is already used for another structure"
+        }
+      ]
+    },
+    {
+      "id": "disulfurous_acid_systematic_name_reservation",
+      "k": "definition",
+      "f": "definition",
+      "c": [5],
+      "term": "systematic-name availability for disulfurous acid",
+      "entity": "SystematicNameAvailability",
+      "value": [
+        "lit",
+        {
+          "name": "disulfurous acid",
+          "structure": "HO-SO-O-SO-OH",
+          "systematic_name_use": "not available",
+          "reason": "used for HO-SO-SO2-OH in the Nomenclature of Inorganic Chemistry, ref. 12"
+        }
+      ]
+    },
+    {
+      "id": "preselected_name_assignment",
+      "k": "definition",
+      "f": "definition",
+      "c": [6],
+      "term": "preselected name for HO-SO-O-SO-OH",
+      "entity": "PreselectedNameAssignment",
+      "value": [
+        "lit",
+        {
+          "structure": "HO-SO-O-SO-OH",
+          "name": "1,3-dihydroxy-1λ4,3λ4-dithioxane-1,3-dione",
+          "status": "preselected name"
+        }
+      ]
+    }
+  ],
+  "exceptions": [],
+  "tables": [],
+  "figures": [],
+  "examples": [
+    {
+      "id": "homogeneous_diacid_preselected_name",
+      "c": [8],
+      "input": {
+        "structure": "HO-SO-O-SO-OH",
+        "name_role": "preselected name"
+      },
+      "ok": ["1,3-dihydroxy-1λ4,3λ4-dithioxane-1,3-dione"],
+      "bad": [],
+      "shows": [["semantic_unit", "preselected_name_assignment"]],
+      "why": "The structure is assigned the preselected substitutive name shown in the example."
+    },
+    {
+      "id": "dimethoxy_dithioxane_dione_pin",
+      "c": [9],
+      "input": {
+        "structure": "CH3-O-S(=O)-O-S(=O)-O-CH3",
+        "name_role": "preferred IUPAC name"
+      },
+      "ok": ["1,3-dimethoxy-1λ4,3λ4-dithioxane-1,3-dione"],
+      "bad": [],
+      "shows": [["semantic_unit", "substitutive_name_method"]],
+      "why": "The methyl-substituted structure is named by the substitutive method and the result is a PIN."
+    },
+    {
+      "id": "dimethoxy_dithioxane_diimine_pin",
+      "c": [10],
+      "input": {
+        "structure": "CH3-O-S(=NH)-O-S(=NH)-O-CH3",
+        "name_role": "preferred IUPAC name"
+      },
+      "ok": ["1,3-dimethoxy-1λ4,3λ4-dithioxane-1,3-diimine"],
+      "bad": [],
+      "shows": [["semantic_unit", "substitutive_name_method"]],
+      "why": "The imine analogue is named by the same substitutive framework with the terminal functional class reflected in diimine."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {
+      "id": "citation.p67.2",
+      "c": [2],
+      "rel": "cites",
+      "o": "P-67.3.2:xref:0001"
+    }
+  ],
+  "additional_refs": []
+}

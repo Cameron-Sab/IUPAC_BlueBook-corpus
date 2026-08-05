@@ -1,0 +1,139 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    null,
+    null,
+    ["correction_event", "correction", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    null,
+    ["definition", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["definition", "informative", "compile"]
+  ],
+  "corrections": [],
+  "examples": [
+    {"id": "multiplicative_nomenclature", "c": [8], "input": "2,2\u2032,2\u2032\u2032-nitrilotri(ethan-1-ol)", "ok": ["2,2\u2032,2\u2032\u2032-nitrilotri(ethan-1-ol) (PIN, P-15.3.2.1)"]},
+    {"id": "spiro_bicyclo", "c": [11], "input": "7,7\u2032-spirobi[bicyclo[4.1.0]heptane]", "ok": ["7,7\u2032-spirobi[bicyclo[4.1.0]heptane] (PIN, P-24.3.1)"]},
+    {"id": "dispiroter_naphthalene", "c": [12], "input": "1H,1\u2032H,1\u2032\u2032H,3\u2032H-2,2\u2032:7\u2032,2\u2032\u2032-dispiroter[naphthalene]", "ok": ["1H,1\u2032H,1\u2032\u2032H,3\u2032H-2,2\u2032:7\u2032,2\u2032\u2032-dispiroter[naphthalene] (PIN, P-24.4.1)"]},
+    {"id": "spiro_cyclohexane_indene", "c": [13], "input": "spiro[cyclohexane-1,1\u2032-indene]", "ok": ["spiro[cyclohexane-1,1\u2032-indene] (PIN, P-24.5.1)"]},
+    {"id": "bi_cyclopropane", "c": [16], "input": "1,1\u2032-bi(cyclopropane)", "ok": ["1,1\u2032-bi(cyclopropane) (PIN, P-28.2.1)"]},
+    {"id": "biphenyl", "c": [17], "input": "1,1\u2032-biphenyl", "ok": ["1,1\u2032-biphenyl (PIN, P-28.2.1)"]},
+    {"id": "biindene", "c": [18], "input": "3a,3\u2032a-biindene", "ok": ["3a,3\u2032a-biindene (PIN, P-28.2.3)"]},
+    {"id": "fusion_multiparent", "c": [22], "input": "pyrido[1\u2032\u2032,2\u2032\u2032:1\u2032,2\u2032]imidazo[4\u2032,5\u2032:5,6]pyrazino[2,3-b]phenazine", "ok": ["pyrido[1\u2032\u2032,2\u2032\u2032:1\u2032,2\u2032]imidazo[4\u2032,5\u2032:5,6]pyrazino[2,3-b]phenazine (PIN, P-25.3.4.1.1)"]},
+    {"id": "fusion_difuro", "c": [23], "input": "difuro[3,2-b:2\u2032,3\u2032-e]pyridine", "ok": ["difuro[3,2-b:2\u2032,3\u2032-e]pyridine (PIN, P-25.3.4.1.2)"]},
+    {"id": "fusion_oxathiine", "c": [24], "input": "cyclopenta[1,2-b:5,1-b\u2032]bis([1,4]oxathiine)", "ok": ["cyclopenta[1,2-b:5,1-b\u2032]bis([1,4]oxathiine) (PIN, P-25.3.7.1)"]},
+    {"id": "fullerene_ortho_fusion", "c": [27], "input": "3\u2032H-cyclopropa[1,9](C60-Ih)[5,6]fullerene", "ok": ["3\u2032H-cyclopropa[1,9](C60-Ih)[5,6]fullerene (PIN, P-27.6.1)"]},
+    {"id": "natural_product_fusion", "c": [30], "input": "naphtho[2\u2032,1\u2032:2,3]-5\u03b1-androstane", "ok": ["naphtho[2\u2032,1\u2032:2,3]-5\u03b1-androstane (P-101.5.1.1)"]}
+  ],
+  "exceptions": [],
+  "figures": [
+    {"id": "modified_text_icon", "c": [3], "k": "source_icon", "urls": ["https://iupac.qmul.ac.uk/greek/ALTER.GIF", "https://iupac.qmul.ac.uk/BlueBook/changes.html"]}
+  ],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "refs": [
+    {"id": "reference.p16.9.4.xref.0005", "c": [16], "rel": "cites", "o": "P-16.9.4:xref:0005"},
+    {"id": "reference.p16.9.4.xref.0006", "c": [17], "rel": "cites", "o": "P-16.9.4:xref:0006"}
+  ],
+  "symbols": [],
+  "tables": [],
+  "task_id": "P-16-part-004",
+  "units": [
+    {
+      "id": "prime_locant_usage",
+      "k": "definition",
+      "f": "definition",
+      "c": [4, 5, 6, 9, 14],
+      "term": "uses of primes in locants",
+      "entity": "PrimeMarkUsage",
+      "value": ["lit", {
+        "general_rule": "primes, double primes, triple primes, and further prime marks differentiate identical locants other than N locants",
+        "placement": "primes are added after the number, not after the letter",
+        "contexts": [
+          {"context": "multiplicative nomenclature", "purpose": "denote multiplied units and modify locants accordingly"},
+          {"context": "spiro-fused compounds", "purpose": "denote positions in polycyclic systems, identical or different"},
+          {"context": "ring assemblies", "purpose": "number identical ring components"}
+        ],
+        "source_text": [
+          "primes are added after the number, not after the letter).",
+          "Such usage occurs:",
+          "(a) in multiplicative nomenclature to denote multiplied units and modify locants accordingly;",
+          "(b) in spiro-fused compounds, to denote positions in polycyclic systems, identical or different;",
+          "(c) in ring assemblies, to number identical ring components;"
+        ]
+      }]
+    },
+    {
+      "id": "prime_locant_usage_fusion_and_specialized",
+      "k": "definition",
+      "f": "definition",
+      "c": [20, 25, 28],
+      "term": "uses of primes in fusion and specialized nomenclature",
+      "entity": "PrimeMarkUsage",
+      "value": ["lit", {
+        "general_rule": "primes differentiate identical locants in the cited nomenclature contexts",
+        "contexts": [
+          {"context": "fusion nomenclature", "purpose": "identify first and higher attached components, identical attached components, and multiparent names"},
+          {"context": "fullerenes ortho-fused to organic ring or ring systems", "purpose": "identify positions in the nonfullerene component"},
+          {"context": "natural product nomenclature", "purpose": "identify positions in ring(s) fused to a fundamental parent hydride"}
+        ],
+        "source_text": [
+          "(a) in fusion nomenclature, to identify first and higher attached components, identical attached components, and multiparent names;",
+          "(b) in fullerenes ortho-fused to organic ring or ring systems, to identify positions in the nonfullerene component;",
+          "(c) in natural product nomenclature, to identify positions in ring(s) fused to a fundamental parent hydride;"
+        ]
+      }]
+    },
+    {
+      "id": "multiple_prime_grouping",
+      "k": "definition",
+      "f": "definition",
+      "c": [32, 33, 34, 35, 36, 37],
+      "term": "multiple-prime grouping convention",
+      "entity": "PrimeGroupingConvention",
+      "value": ["lit", {
+        "long_strings": "may be needed with ring assemblies and polyspiro compound",
+        "counting": {"difficulty": "It is difficult to count long streams of primes.", "ungrouped_count": 8, "grouped_form": "\u2032\u2032\u2032 \u2032\u2032\u2032 \u2032\u2032", "grouped_count": 8},
+        "current_convention": "long strings of primes are broken into groups of three",
+        "historical_change": {"publication": "publication on spiro compounds", "former_spacing": "a space after every four primes"},
+        "source_text": [
+          "Long strings of primes may be needed with ring assemblies and polyspiro compound.",
+          "It is difficult to count long streams of primes.",
+          "For example, how many primes appear in this string: \u2032\u2032\u2032\u2032\u2032\u2032\u2032\u2032\u2009?",
+          "It is eight.",
+          "In these recommendations, to simplify the counting process, long strings of primes are broken into groups of three as: \u2032\u2032\u2032 \u2032\u2032\u2032 \u2032\u2032, which has the same number of primes as the string above.",
+          "This is a change from the publication on spiro compounds (ref. 8) in which multiple primes were separated by a space after every four primes."
+        ]
+      }]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-76-part-001",
+  "clauses": [
+    null,
+    ["effect", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"]
+  ],
+  "symbols": [
+    {
+      "id": "structure.has_one_delocalized_radical_or_ionic_center",
+      "k": "predicate",
+      "d": "A structure has one radical or ionic center in an otherwise conjugated double-bond structure.",
+      "a": [["structure", "conjugated_structure"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "structure_predicate"]
+    },
+    {
+      "id": "name.add_appropriate_suffix_without_locants",
+      "k": "transformation",
+      "d": "Denote one delocalized radical or ionic center by the appropriate suffix and omit locants.",
+      "a": [["structure", "conjugated_structure"]],
+      "ret": "name",
+      "g": ["primitive", [], "name_transformation"]
+    }
+  ],
+  "units": [
+    {
+      "id": "delocalized_center_naming",
+      "k": "rule",
+      "f": "required",
+      "c": [2],
+      "in": [["structure", "conjugated_structure"]],
+      "out": [["name", "name"]],
+      "if": [
+        "pred",
+        "structure.has_one_delocalized_radical_or_ionic_center",
+        ["var", "structure"]
+      ],
+      "then": [
+        [
+          "xform",
+          "name",
+          "name.add_appropriate_suffix_without_locants",
+          ["var", "structure"]
+        ]
+      ],
+      "else": []
+    }
+  ],
+  "exceptions": [],
+  "tables": [],
+  "figures": [
+    {
+      "id": "cyclopentadienyl_center_structure",
+      "c": [5],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P76100a.gif"],
+      "sha256": null
+    },
+    {
+      "id": "benzo_annulenylium_structure",
+      "c": [7],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P76100b.gif"],
+      "sha256": null
+    },
+    {
+      "id": "pentadienyl_structure",
+      "c": [9],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P76100c.gif"],
+      "sha256": null
+    }
+  ],
+  "examples": [
+    {
+      "id": "cyclopentadienyl_center_names",
+      "c": [4, 5],
+      "input": {
+        "delocalized_center": "one radical or ionic center",
+        "x_options": [
+          {"x": "\u2022", "name": "cyclopentadienyl (PIN)"},
+          {"x": "+", "name": "cyclopentadienylium (PIN)"},
+          {"x": "\u2013", "name": "cyclopentadienide (PIN)"}
+        ]
+      },
+      "ok": [
+        "cyclopentadienyl (PIN)",
+        "cyclopentadienylium (PIN)",
+        "cyclopentadienide (PIN)"
+      ],
+      "bad": [],
+      "shows": [["figure", "figure.p76.part001.cyclopentadienyl_center_structure"]],
+      "why": "The appropriate suffix identifies the radical or ionic center without locants."
+    },
+    {
+      "id": "benzo_annulenylium_name",
+      "c": [6, 7],
+      "input": {"delocalized_center": "ionic", "structure": "benzo[7]annulene"},
+      "ok": ["benzo[7]annulenylium (PIN)"],
+      "bad": [],
+      "shows": [["figure", "figure.p76.part001.benzo_annulenylium_structure"]],
+      "why": "The delocalized ionic center is denoted by the suffix in the preferred IUPAC name."
+    },
+    {
+      "id": "pentadienyl_name",
+      "c": [8, 9],
+      "input": {"delocalized_center": "radical", "structure": "pentadiene"},
+      "ok": ["pentadienyl (PIN)"],
+      "bad": [],
+      "shows": [["figure", "figure.p76.part001.pentadienyl_structure"]],
+      "why": "The radical suffix is used without locants for the delocalized center."
+    }
+  ],
+  "corrections": [],
+  "refs": [],
+  "additional_refs": []
+}

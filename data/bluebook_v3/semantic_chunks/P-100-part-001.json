@@ -1,0 +1,910 @@
+{
+  "assigned_rule_ids": [
+    "P-100"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 19,
+    "compiled_clause_count": 18,
+    "correction_application_count": 0,
+    "example_count": 0,
+    "exception_count": 0,
+    "figure_count": 0,
+    "nonoperative_clause_count": 1,
+    "record_count": 1,
+    "reference_count": 12,
+    "semantic_unit_count": 1,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 0,
+    "table_count": 0
+  },
+  "chunk_sha256": "8E9D4F546C9E9183D959030C00E22D5029D79C52CC2FA3982B304E02C122E2FB",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-100:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-100:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-100:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-100:clause:0017",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    },
+    {
+      "clause_id": "P-100:clause:0018",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    },
+    {
+      "clause_id": "P-100:clause:0019",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p100.part001.natural_product_nomenclature_overview",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "note"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [],
+  "exceptions": [],
+  "figures": [],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-100-part-001",
+  "packet_sha256": "4C2523FEA21BA0492A3514C26EE6D90134ABDD739196E66F7A14F0A42D9EE153",
+  "records": [
+    {
+      "chapter": "P-10",
+      "clause_ids": [
+        "P-100:clause:0001",
+        "P-100:clause:0002",
+        "P-100:clause:0003",
+        "P-100:clause:0004",
+        "P-100:clause:0005",
+        "P-100:clause:0006",
+        "P-100:clause:0007",
+        "P-100:clause:0008",
+        "P-100:clause:0009",
+        "P-100:clause:0010",
+        "P-100:clause:0011",
+        "P-100:clause:0012",
+        "P-100:clause:0013",
+        "P-100:clause:0014",
+        "P-100:clause:0015",
+        "P-100:clause:0016",
+        "P-100:clause:0017",
+        "P-100:clause:0018",
+        "P-100:clause:0019"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-100",
+      "reference_ids": [
+        "reference.p_100.hierarchy_parent",
+        "reference.p100.xref.0001",
+        "reference.p100.xref.0002",
+        "reference.p100.xref.0003",
+        "reference.P-100:xref:0004",
+        "reference.P-100:xref:0005",
+        "reference.P-100:xref:0006",
+        "reference.P-100:xref:0007",
+        "reference.P-100:xref:0008",
+        "reference.P-100:xref:0009",
+        "reference.P-100:xref:0010",
+        "reference.P-100:xref:0011"
+      ],
+      "semantic_unit_ids": [
+        "unit.p100.part001.natural_product_nomenclature_overview"
+      ],
+      "source_rule_id": "P-100",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-100:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_100.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-10",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0006"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p100.xref.0001",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0001"
+      ],
+      "target": {
+        "id": "P-1",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0006"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p100.xref.0002",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0002"
+      ],
+      "target": {
+        "id": "P-9",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0014"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p100.xref.0003",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0003"
+      ],
+      "target": {
+        "id": "P-2",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0015"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-100:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0004"
+      ],
+      "target": {
+        "id": "P-34",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0017"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-100:xref:0005",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0005"
+      ],
+      "target": {
+        "id": "P-101",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0018"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-100:xref:0006",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0006"
+      ],
+      "target": {
+        "id": "P-102",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0018"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-100:xref:0007",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0007"
+      ],
+      "target": {
+        "id": "P-103",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0018"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-100:xref:0008",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0008"
+      ],
+      "target": {
+        "id": "P-104",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0018"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-100:xref:0009",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0009"
+      ],
+      "target": {
+        "id": "P-105",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0018"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-100:xref:0010",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0010"
+      ],
+      "target": {
+        "id": "P-106",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-100:clause:0018"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-100:xref:0011",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-100",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-100:xref:0011"
+      ],
+      "target": {
+        "id": "P-107",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-100:clause:0002",
+        "P-100:clause:0003",
+        "P-100:clause:0004",
+        "P-100:clause:0005",
+        "P-100:clause:0006",
+        "P-100:clause:0007",
+        "P-100:clause:0008",
+        "P-100:clause:0009",
+        "P-100:clause:0010",
+        "P-100:clause:0011",
+        "P-100:clause:0012",
+        "P-100:clause:0013",
+        "P-100:clause:0014",
+        "P-100:clause:0015",
+        "P-100:clause:0016",
+        "P-100:clause:0017",
+        "P-100:clause:0018",
+        "P-100:clause:0019"
+      ],
+      "entity_type": "NaturalProductNomenclatureOverview",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-100:clause:0002",
+            "P-100:clause:0003",
+            "P-100:clause:0004",
+            "P-100:clause:0005",
+            "P-100:clause:0006",
+            "P-100:clause:0007",
+            "P-100:clause:0008",
+            "P-100:clause:0009",
+            "P-100:clause:0010",
+            "P-100:clause:0011",
+            "P-100:clause:0012",
+            "P-100:clause:0013",
+            "P-100:clause:0014",
+            "P-100:clause:0015",
+            "P-100:clause:0016",
+            "P-100:clause:0017",
+            "P-100:clause:0018",
+            "P-100:clause:0019"
+          ],
+          "expression_id": "expr.p100.part001.natural_product_nomenclature_overview.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "natural-product nomenclature overview",
+      "unit_id": "unit.p100.part001.natural_product_nomenclature_overview",
+      "value": {
+        "clause_ids": [
+          "P-100:clause:0002",
+          "P-100:clause:0003",
+          "P-100:clause:0004",
+          "P-100:clause:0005",
+          "P-100:clause:0006",
+          "P-100:clause:0007",
+          "P-100:clause:0008",
+          "P-100:clause:0009",
+          "P-100:clause:0010",
+          "P-100:clause:0011",
+          "P-100:clause:0012",
+          "P-100:clause:0013",
+          "P-100:clause:0014",
+          "P-100:clause:0015",
+          "P-100:clause:0016",
+          "P-100:clause:0017",
+          "P-100:clause:0018",
+          "P-100:clause:0019"
+        ],
+        "expression_id": "expr.p100.part001.natural_product_nomenclature_overview.value",
+        "op": "literal",
+        "value": {
+          "consultation": "If difficulties are encountered, consultation of the full publications may be necessary, as indicated in each Section.",
+          "levels": 3,
+          "parent_structure_types": [
+            {
+              "definition": "structures that do not have terminal heteroatoms or functional groups and therefore consist only of skeletal atoms and hydrogen",
+              "kind": "parent hydride",
+              "treatment": "This type of semisystematic parent is analogous to the parents described in Chapter P-2 and is treated in the same manner to generate complete names.",
+              "uses": [
+                "steroid",
+                "terpene",
+                "carotene",
+                "corrinoid",
+                "tetrapyrrole",
+                "lignan",
+                "neolignan",
+                "alkaloid"
+              ]
+            },
+            {
+              "definition": "functional parents, which are analogous to the functional parents described in Section P-34",
+              "kind": "functional parent",
+              "modification": "they have characteristic groups implied in their name, and can be modified by specific rules and by methods used in systematic nomenclature",
+              "uses": [
+                "amino acid and peptide",
+                "carbohydrate",
+                "cyclitol",
+                "nucleoside and nucleotide",
+                "lipid"
+              ]
+            }
+          ],
+          "section_map": {
+            "P-101": "Section P-101 describes the rules to form trivial names and semisystematic names used as parent hydrides, and those related to their skeletal transformation and functionalization for naming alkaloids, steroids, terpenes, and some related compounds.",
+            "P-102": "Section P-102 describes the rules for naming carbohydrates",
+            "P-103": "P-103 deals with the nomenclature of amino acids and peptides",
+            "P-104": "P-104 describes the nomenclature for cyclitols",
+            "P-105": "P-105 deals with nucleosides and nucleotides",
+            "P-106": "P-106 deals with nucleosides and nucleotides",
+            "P-107": "P-107 discusses the nomenclature of lipids"
+          },
+          "semisystematic_names": {
+            "basis": "Semisystematic names are based on specific parent structures, generally including the configuration, that can later on be used to describe a compound fully by using the rules of systematic nomenclature.",
+            "future_choice": "The choice between a semisystematic name and a systematic name will be made in cooperation with the IUPAC-IUBMB Joint Commission on Biochemical Nomenclature and will appear in a future publication.",
+            "pin_status": "Preferred IUPAC names (PINs) are not identified for the compounds in this Chapter.",
+            "purpose": "To overcome this difficulty and show the close similarity to related compounds, a ‘semisystematic name’ can be formed."
+          },
+          "source_text": [
+            "In the field of natural products, three levels of nomenclature are recognized.",
+            "A new compound, isolated from a natural source, is generally given a ‘trivial’ name.",
+            "By common usage, these trivial names are commonly related to the biological origin of the material, but frequently not in a rational way, since the available structure is not known with great detail.",
+            "These trivial names are considered to be ephemeral and replaced for chemical purposes by names describing the skeleton, the characteristic groups, and the organyl substituent groups.",
+            "When the full structure is known, a ‘systematic name’ may be generated in accordance with Rules described in Chapters P-1 through P-9 of these recommendations.",
+            "However, this name may be too cumbersome to be continually inserted into the text of a scientific paper.",
+            "To overcome this difficulty and show the close similarity to related compounds, a ‘semisystematic name’ can be formed.",
+            "Preferred IUPAC names (PINs) are not identified for the compounds in this Chapter.",
+            "The choice between a semisystematic name and a systematic name will be made in cooperation with the IUPAC-IUBMB Joint Commission on Biochemical Nomenclature and will appear in a future publication.",
+            "Semisystematic names are based on specific parent structures, generally including the configuration, that can later on be used to describe a compound fully by using the rules of systematic nomenclature.",
+            "There are two general types of semisystematic parent structures used for naming natural products and related compounds:",
+            "(a) parent hydrides, i.e., structures that do not have terminal heteroatoms or functional groups and therefore consist only of skeletal atoms and hydrogen, for example, in steroid (ref.16), terpene, carotene (ref. 40), corrinoid (ref. 45), tetrapyrrole (ref. 17), lignan and neolignan (ref. 46), and alkaloid nomenclature.",
+            "This type of semisystematic parent is analogous to the parents described in Chapter P-2 and is treated in the same manner to generate complete names;",
+            "(b) functional parents, which are analogous to the functional parents described in Section P-34, and used in amino acid and peptide (ref. 18), carbohydrate (ref. 27), cyclitol (ref. 39), nucleoside and nucleotide (ref. 47), and lipid (ref. 48) nomenclature;",
+            "they have characteristic groups implied in their name, and can be modified by specific rules and by methods used in systematic nomenclature.",
+            "Section P-101 describes the rules to form trivial names and semisystematic names used as parent hydrides, and those related to their skeletal transformation and functionalization for naming alkaloids, steroids, terpenes, and some related compounds.",
+            "Section P-102 describes the rules for naming carbohydrates, P-103 deals with the nomenclature of amino acids and peptides, P-104 describes the nomenclature for cyclitols, P-105 and P-106 deal with nucleosides and nucleotides, and finally P-107 discusses the nomenclature of lipids.",
+            "If difficulties are encountered, consultation of the full publications may be necessary, as indicated in each Section."
+          ],
+          "systematic_names": {
+            "availability": "When the full structure is known, a ‘systematic name’ may be generated in accordance with Rules described in Chapters P-1 through P-9 of these recommendations.",
+            "limitation": "However, this name may be too cumbersome to be continually inserted into the text of a scientific paper."
+          },
+          "trivial_names": {
+            "assignment": "A new compound, isolated from a natural source, is generally given a ‘trivial’ name.",
+            "chemical_status": "These trivial names are considered to be ephemeral and replaced for chemical purposes by names describing the skeleton, the characteristic groups, and the organyl substituent groups.",
+            "origin": "By common usage, these trivial names are commonly related to the biological origin of the material, but frequently not in a rational way, since the available structure is not known with great detail."
+          }
+        }
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [],
+  "tables": []
+}

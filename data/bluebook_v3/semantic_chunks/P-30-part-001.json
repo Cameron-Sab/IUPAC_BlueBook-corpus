@@ -1,0 +1,1250 @@
+{
+  "assigned_rule_ids": [
+    "P-30"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 13,
+    "compiled_clause_count": 12,
+    "correction_application_count": 0,
+    "example_count": 4,
+    "exception_count": 2,
+    "figure_count": 0,
+    "nonoperative_clause_count": 1,
+    "record_count": 1,
+    "reference_count": 5,
+    "semantic_unit_count": 12,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 0,
+    "table_count": 0
+  },
+  "chunk_sha256": "A747EE05F222EB4AD5B0548FEBCC56AFA9B5C8754C690F47A3DB8E54C042D857",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-30:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-30:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p30.part001.affix_structure_and_substitution",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.affix_structure_and_substitution.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.affix_structure_and_substitution.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-30:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "exception.p30.part001.characteristic_substituent_exceptions",
+            "kind": "exception"
+          },
+          {
+            "id": "unit.p30.part001.characteristic_substituent_classification",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.characteristic_substituent_classification.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.characteristic_substituent_classification.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.exception.characteristic_substituent_exceptions.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.exception.characteristic_substituent_exceptions.guard",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-30:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p30.part001.functionality_general_view",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.functionality_general_view.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.functionality_general_view.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "rationale"
+    },
+    {
+      "clause_id": "P-30:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p30.part001.carbon_carbon_unsaturation_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.carbon_carbon_unsaturation_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.carbon_carbon_unsaturation_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-30:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p30.part001.unsaturation_hydrogenation_equivalence",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.unsaturation_hydrogenation_equivalence.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.unsaturation_hydrogenation_equivalence.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "rationale"
+    },
+    {
+      "clause_id": "P-30:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p30.part001.acetic_acid_functional_parent",
+            "kind": "example"
+          },
+          {
+            "id": "example.p30.part001.phosphonic_acid_functional_parent",
+            "kind": "example"
+          },
+          {
+            "id": "unit.p30.part001.functional_parent_compound",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.functional_parent_compound.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.functional_parent_compound.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-30:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p30.part001.butanoic_acid_functionalized_parent_hydride",
+            "kind": "example"
+          },
+          {
+            "id": "example.p30.part001.ethanol_functionalized_parent_hydride",
+            "kind": "example"
+          },
+          {
+            "id": "unit.p30.part001.distinction_functionalized_parent_hydride",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.distinction_functionalized_parent_hydride.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.distinction_functionalized_parent_hydride.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-30:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "exception.p30.part001.ionic_and_radical_centers_outside_functionality",
+            "kind": "exception"
+          },
+          {
+            "id": "unit.p30.part001.functionalized_parent_hydride",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.functionalized_parent_hydride.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.functionalized_parent_hydride.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.exception.ionic_and_radical_centers_outside_functionality.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.exception.ionic_and_radical_centers_outside_functionality.guard",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-30:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p30.part001.ionic_or_radical_center_as_function",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.ionic_or_radical_center_as_function.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.ionic_or_radical_center_as_function.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "effect"
+    },
+    {
+      "clause_id": "P-30:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p30.part001.chapter_introduction_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.chapter_introduction_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.chapter_introduction_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-30:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p30.part001.group_suffix_or_prefix",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.group_suffix_or_prefix.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.group_suffix_or_prefix.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-30:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p30.part001.detachable_prefix_alphabetization",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p30.part001.detachable_prefix_alphabetization.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p30.part001.detachable_prefix_alphabetization.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "acetic acid"
+      ],
+      "clause_ids": [
+        "P-30:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p30.part001.functional_parent_compound",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p30.part001.acetic_acid_functional_parent",
+      "explanation": "Example of a functional parent compound.",
+      "input": "CH3-COOH",
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "phosphonic acid"
+      ],
+      "clause_ids": [
+        "P-30:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p30.part001.functional_parent_compound",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p30.part001.phosphonic_acid_functional_parent",
+      "explanation": "Example of a functional parent compound.",
+      "input": "HP(O)(OH)2",
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "butanoic acid"
+      ],
+      "clause_ids": [
+        "P-30:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p30.part001.distinction_functionalized_parent_hydride",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p30.part001.butanoic_acid_functionalized_parent_hydride",
+      "explanation": "Example of a characteristic group expressed as a suffix on a parent hydride.",
+      "input": "butanoic acid",
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "ethanol"
+      ],
+      "clause_ids": [
+        "P-30:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p30.part001.distinction_functionalized_parent_hydride",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p30.part001.ethanol_functionalized_parent_hydride",
+      "explanation": "Example of a characteristic group expressed as a suffix on a parent hydride.",
+      "input": "ethanol",
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [
+    {
+      "clause_ids": [
+        "P-30:clause:0003"
+      ],
+      "effect": {
+        "guard": {
+          "clause_ids": [
+            "P-30:clause:0003"
+          ],
+          "expression_id": "expr.p30.part001.exception.characteristic_substituent_exceptions.guard",
+          "op": "literal",
+          "value": {
+            "groups": [
+              "-COOH",
+              "-CN"
+            ],
+            "recognized_exception_to_customary_classification": true
+          }
+        },
+        "mode": "add_guard",
+        "redirect": null,
+        "replacement": null
+      },
+      "exception_id": "exception.p30.part001.characteristic_substituent_exceptions",
+      "precedence": {
+        "source_order": 1,
+        "specificity": 0
+      },
+      "target": {
+        "id": "unit.p30.part001.characteristic_substituent_classification",
+        "kind": "semantic_unit"
+      },
+      "when": {
+        "clause_ids": [
+          "P-30:clause:0003"
+        ],
+        "expression_id": "expr.p30.part001.exception.characteristic_substituent_exceptions.when",
+        "op": "literal",
+        "value": {
+          "customary_link_condition": "not_carbon_carbon",
+          "group_examples": [
+            "-COOH",
+            "-CN"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0009"
+      ],
+      "effect": {
+        "guard": {
+          "clause_ids": [
+            "P-30:clause:0009"
+          ],
+          "expression_id": "expr.p30.part001.exception.ionic_and_radical_centers_outside_functionality.guard",
+          "op": "literal",
+          "value": {
+            "strictly_outside_functionality_concept": true
+          }
+        },
+        "mode": "add_guard",
+        "redirect": null,
+        "replacement": null
+      },
+      "exception_id": "exception.p30.part001.ionic_and_radical_centers_outside_functionality",
+      "precedence": {
+        "source_order": 2,
+        "specificity": 0
+      },
+      "target": {
+        "id": "unit.p30.part001.functionalized_parent_hydride",
+        "kind": "semantic_unit"
+      },
+      "when": {
+        "clause_ids": [
+          "P-30:clause:0009"
+        ],
+        "expression_id": "expr.p30.part001.exception.ionic_and_radical_centers_outside_functionality.when",
+        "op": "literal",
+        "value": {
+          "entity_types": [
+            "ion",
+            "radical"
+          ],
+          "scope": "functionality"
+        }
+      }
+    }
+  ],
+  "figures": [],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-30-part-001",
+  "packet_sha256": "B5231B9727674E2DDBB0A7F2D3DDF8775E5C5616D28FAE32EC44D6830F6F7004",
+  "records": [
+    {
+      "chapter": "P-3",
+      "clause_ids": [
+        "P-30:clause:0001",
+        "P-30:clause:0002",
+        "P-30:clause:0003",
+        "P-30:clause:0004",
+        "P-30:clause:0005",
+        "P-30:clause:0006",
+        "P-30:clause:0007",
+        "P-30:clause:0008",
+        "P-30:clause:0009",
+        "P-30:clause:0010",
+        "P-30:clause:0011",
+        "P-30:clause:0012",
+        "P-30:clause:0013"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p30.part001.acetic_acid_functional_parent",
+        "example.p30.part001.phosphonic_acid_functional_parent",
+        "example.p30.part001.butanoic_acid_functionalized_parent_hydride",
+        "example.p30.part001.ethanol_functionalized_parent_hydride"
+      ],
+      "exception_ids": [
+        "exception.p30.part001.characteristic_substituent_exceptions",
+        "exception.p30.part001.ionic_and_radical_centers_outside_functionality"
+      ],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-30",
+      "reference_ids": [
+        "reference.p_30.hierarchy_parent",
+        "reference.p30.part001.p3",
+        "reference.p30.part001.p2",
+        "reference.p30.part001.p7",
+        "reference.p30.part001.p14_5"
+      ],
+      "semantic_unit_ids": [
+        "unit.p30.part001.affix_structure_and_substitution",
+        "unit.p30.part001.characteristic_substituent_classification",
+        "unit.p30.part001.functionality_general_view",
+        "unit.p30.part001.carbon_carbon_unsaturation_scope",
+        "unit.p30.part001.unsaturation_hydrogenation_equivalence",
+        "unit.p30.part001.functional_parent_compound",
+        "unit.p30.part001.distinction_functionalized_parent_hydride",
+        "unit.p30.part001.functionalized_parent_hydride",
+        "unit.p30.part001.ionic_or_radical_center_as_function",
+        "unit.p30.part001.chapter_introduction_scope",
+        "unit.p30.part001.group_suffix_or_prefix",
+        "unit.p30.part001.detachable_prefix_alphabetization"
+      ],
+      "source_rule_id": "P-30",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-30:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_30.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-30",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-3",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p30.part001.p3",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-30",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-30:xref:0001"
+      ],
+      "target": {
+        "id": "P-3",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0005"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p30.part001.p2",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-30",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-30:xref:0002"
+      ],
+      "target": {
+        "id": "P-2",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0011"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p30.part001.p7",
+      "relation": "cites",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-30",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-30:xref:0003"
+      ],
+      "target": {
+        "id": "P-7",
+        "kind": "external"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0013"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p30.part001.p14_5",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-30",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-30:xref:0004"
+      ],
+      "target": {
+        "id": "P-14.5",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-30:clause:0002"
+      ],
+      "entity_type": "ParentNameAffixSemantics",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "parent_name",
+          "type": "ParentName"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "affix_semantics",
+          "type": "ParentNameAffixSemantics"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0002"
+          ],
+          "expression_id": "expr.p30.part001.affix_structure_and_substitution.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "parent name affix semantics",
+      "unit_id": "unit.p30.part001.affix_structure_and_substitution",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0002"
+        ],
+        "expression_id": "expr.p30.part001.affix_structure_and_substitution.value",
+        "op": "literal",
+        "value": {
+          "attached_affix_types": [
+            "prefix",
+            "suffix"
+          ],
+          "attached_to": "parent_name",
+          "specifies": "particular_molecular_structure",
+          "substituent_replaces": "hydrogen_atoms_of_parent_hydride_or_parent_structure",
+          "usual_representation": "substituent"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0003"
+      ],
+      "entity_type": "CharacteristicSubstituentCriterion",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "classification",
+          "type": "CharacteristicSubstituentCriterion"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0003"
+          ],
+          "expression_id": "expr.p30.part001.characteristic_substituent_classification.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "characteristic substituent classification",
+      "unit_id": "unit.p30.part001.characteristic_substituent_classification",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0003"
+        ],
+        "expression_id": "expr.p30.part001.characteristic_substituent_classification.value",
+        "op": "literal",
+        "value": {
+          "classification_status": "customary_with_recognized_exceptions",
+          "customary_condition": {
+            "link_between_substituent_and_parent": "not_carbon_carbon"
+          },
+          "examples": [
+            "-OH",
+            "=O",
+            "-NH2"
+          ],
+          "recognized_exceptions": [
+            "-COOH",
+            "-CN"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0004"
+      ],
+      "entity_type": "FunctionalityConcept",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "functionality",
+          "type": "FunctionalityConcept"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0004"
+          ],
+          "expression_id": "expr.p30.part001.functionality_general_view.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "general view of functionality",
+      "unit_id": "unit.p30.part001.functionality_general_view",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0004"
+        ],
+        "expression_id": "expr.p30.part001.functionality_general_view.value",
+        "op": "literal",
+        "value": {
+          "implies_presence_of": [
+            "heteroatoms"
+          ],
+          "policy": "retain_general_view_without_attempting_precise_limits",
+          "precise_application_limits": "not_defined"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0005"
+      ],
+      "entity_type": "NomenclatureScope",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "scope",
+          "type": "NomenclatureScope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0005"
+          ],
+          "expression_id": "expr.p30.part001.carbon_carbon_unsaturation_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "carbon-carbon unsaturation as functionality",
+      "unit_id": "unit.p30.part001.carbon_carbon_unsaturation_scope",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0005"
+        ],
+        "expression_id": "expr.p30.part001.carbon_carbon_unsaturation_scope.value",
+        "op": "literal",
+        "value": {
+          "classification": "special_type_of_functionality",
+          "contexts": [
+            "acyclic_compounds",
+            "alicyclic_compounds"
+          ],
+          "feature": "carbon_carbon_unsaturation",
+          "not_treated_in_chapter": "P-2",
+          "not_treated_in_subject": "parent_hydrides",
+          "treated_in_chapter": "P-3"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0006"
+      ],
+      "entity_type": "NomenclatureEquivalence",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "equivalence",
+          "type": "NomenclatureEquivalence"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0006"
+          ],
+          "expression_id": "expr.p30.part001.unsaturation_hydrogenation_equivalence.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "unsaturation and hydrogenation equivalence",
+      "unit_id": "unit.p30.part001.unsaturation_hydrogenation_equivalence",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0006"
+        ],
+        "expression_id": "expr.p30.part001.unsaturation_hydrogenation_equivalence.value",
+        "op": "literal",
+        "value": {
+          "for_nomenclature": true,
+          "left_operation": "express_acyclic_and_alicyclic_unsaturation_by_endings",
+          "relation": "essentially_equivalent",
+          "right_operation": "express_mancude_parent_hydride_saturation_by_hydro_dehydro_prefixes"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0007"
+      ],
+      "entity_type": "FunctionalParentCompound",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "compound_class",
+          "type": "FunctionalParentCompound"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0007"
+          ],
+          "expression_id": "expr.p30.part001.functional_parent_compound.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "functional parent compound",
+      "unit_id": "unit.p30.part001.functional_parent_compound",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0007"
+        ],
+        "expression_id": "expr.p30.part001.functional_parent_compound.value",
+        "op": "literal",
+        "value": {
+          "examples": [
+            {
+              "formula": "CH3-COOH",
+              "name": "acetic acid"
+            },
+            {
+              "formula": "HP(O)(OH)2",
+              "name": "phosphonic acid"
+            }
+          ],
+          "has": [
+            "substitutable_hydrogen_atoms",
+            "characteristics_normally_associated_with_functionality"
+          ],
+          "may_be_treated_as": "parent_structure"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0008"
+      ],
+      "entity_type": "ParentCompoundDistinction",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "distinction",
+          "type": "ParentCompoundDistinction"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0008"
+          ],
+          "expression_id": "expr.p30.part001.distinction_functionalized_parent_hydride.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "functional parent compound distinction",
+      "unit_id": "unit.p30.part001.distinction_functionalized_parent_hydride",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0008"
+        ],
+        "expression_id": "expr.p30.part001.distinction_functionalized_parent_hydride.value",
+        "op": "literal",
+        "value": {
+          "examples_of_functionalized_parent_hydrides": [
+            "butanoic acid",
+            "ethanol"
+          ],
+          "functional_parent_compound": "parent_like_structure_with_functionality_characteristics",
+          "functionalized_parent_hydride": "parent_hydride_with_characteristic_group_introduced_as_suffix",
+          "must_distinguish": true
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0009"
+      ],
+      "entity_type": "FunctionalizedParentHydride",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "compound_class",
+          "type": "FunctionalizedParentHydride"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0009"
+          ],
+          "expression_id": "expr.p30.part001.functionalized_parent_hydride.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "functionalized parent hydride",
+      "unit_id": "unit.p30.part001.functionalized_parent_hydride",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0009"
+        ],
+        "expression_id": "expr.p30.part001.functionalized_parent_hydride.value",
+        "op": "literal",
+        "value": {
+          "alternate_term": "functionalized parent hydride",
+          "introduced_characteristic_group": "suffix_attached_to_parent_hydride",
+          "strict_functionality_scope_excludes": [
+            "ions",
+            "radicals"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0010"
+      ],
+      "entity_type": "CenterFunctionTreatment",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "center_treatment",
+          "type": "CenterFunctionTreatment"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0010"
+          ],
+          "expression_id": "expr.p30.part001.ionic_or_radical_center_as_function.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "ionic or radical center treatment",
+      "unit_id": "unit.p30.part001.ionic_or_radical_center_as_function",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0010"
+        ],
+        "expression_id": "expr.p30.part001.ionic_or_radical_center_as_function.value",
+        "op": "literal",
+        "value": {
+          "centers": [
+            "ionic_center",
+            "radical_center"
+          ],
+          "expression": [
+            "suffixes",
+            "prefixes"
+          ],
+          "same_expression_as": "characteristic_groups",
+          "treated_like": "function"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0011"
+      ],
+      "entity_type": "ChapterTreatmentCoverage",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "coverage",
+          "type": "ChapterTreatmentCoverage"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0011"
+          ],
+          "expression_id": "expr.p30.part001.chapter_introduction_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "chapter treatment introduction",
+      "unit_id": "unit.p30.part001.chapter_introduction_scope",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0011"
+        ],
+        "expression_id": "expr.p30.part001.chapter_introduction_scope.value",
+        "op": "literal",
+        "value": {
+          "treatment_is_introduced_in": [
+            "P-30",
+            "P-7"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0012"
+      ],
+      "entity_type": "NameGroupExpression",
+      "force": "permitted",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "name_expression",
+          "type": "NameGroupExpression"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0012"
+          ],
+          "expression_id": "expr.p30.part001.group_suffix_or_prefix.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "group expression as suffix or prefix",
+      "unit_id": "unit.p30.part001.group_suffix_or_prefix",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0012"
+        ],
+        "expression_id": "expr.p30.part001.group_suffix_or_prefix.value",
+        "op": "literal",
+        "value": {
+          "choice_available": true,
+          "group_expression_positions": [
+            "suffix",
+            "prefix"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-30:clause:0013"
+      ],
+      "entity_type": "DetachablePrefixBehavior",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "prefix_behavior",
+          "type": "DetachablePrefixBehavior"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-30:clause:0013"
+          ],
+          "expression_id": "expr.p30.part001.detachable_prefix_alphabetization.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "detachable alphabetizable prefixes",
+      "unit_id": "unit.p30.part001.detachable_prefix_alphabetization",
+      "value": {
+        "clause_ids": [
+          "P-30:clause:0013"
+        ],
+        "expression_id": "expr.p30.part001.detachable_prefix_alphabetization.value",
+        "op": "literal",
+        "value": {
+          "parent_hydride_prefix_reference": "P-14.5",
+          "prefixes_are": [
+            "detachable",
+            "alphabetizable"
+          ],
+          "same_behavior_as": "prefixes_derived_from_parent_hydrides"
+        }
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [],
+  "tables": []
+}

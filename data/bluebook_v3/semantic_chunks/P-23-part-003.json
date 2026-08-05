@@ -1,0 +1,971 @@
+{
+  "assigned_rule_ids": [
+    "P-23.6.2",
+    "P-23.7"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 18,
+    "compiled_clause_count": 14,
+    "correction_application_count": 0,
+    "example_count": 5,
+    "exception_count": 0,
+    "figure_count": 5,
+    "nonoperative_clause_count": 4,
+    "record_count": 2,
+    "reference_count": 2,
+    "semantic_unit_count": 3,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 0,
+    "table_count": 1
+  },
+  "chunk_sha256": "36B88FC06FD928C3658F2253753F118D95EC13931A58A73C45C246EDA2AAF9AB",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-23.6.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.6.2:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.6.2:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.6.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part003.diarsabicyclo_heptane_pin",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.6.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part003.diarsabicyclo_heptane_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.7:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-23.7:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part003.retained_adamantane_cubane_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part003.retained_adamantane_cubane_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part003.retained_adamantane_cubane_policy.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-23.7:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part003.quinuclidine_general_only_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part003.quinuclidine_general_only_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part003.quinuclidine_general_only_policy.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-23.7:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p23.part003.prismane_not_recommended_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p23.part003.prismane_not_recommended_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p23.part003.prismane_not_recommended_policy.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "prohibition"
+    },
+    {
+      "clause_id": "P-23.7:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "table.p23.part003.retained_von_baeyer_names",
+            "kind": "table"
+          },
+          {
+            "id": "column.p23.part003.retained_von_baeyer_names.retained_name",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p23.part003.retained_von_baeyer_names.systematic_name",
+            "kind": "table_column"
+          },
+          {
+            "id": "column.p23.part003.retained_von_baeyer_names.nomenclature_status",
+            "kind": "table_column"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "table_data"
+    },
+    {
+      "clause_id": "P-23.7:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part003.adamantane_retained_pin",
+            "kind": "example"
+          },
+          {
+            "id": "row.p23.part003.retained_von_baeyer_names.adamantane",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.adamantane.retained_name",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.adamantane.systematic_name",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.adamantane.nomenclature_status",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.7:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part003.adamantane_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.7:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part003.cubane_retained_pin",
+            "kind": "example"
+          },
+          {
+            "id": "row.p23.part003.retained_von_baeyer_names.cubane",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.cubane.retained_name",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.cubane.systematic_name",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.cubane.nomenclature_status",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.7:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part003.cubane_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.7:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part003.quinuclidine_general_name",
+            "kind": "example"
+          },
+          {
+            "id": "row.p23.part003.retained_von_baeyer_names.quinuclidine",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.quinuclidine.retained_name",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.quinuclidine.systematic_name",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.quinuclidine.nomenclature_status",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.7:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part003.quinuclidine_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-23.7:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p23.part003.prismane_systematic_replacement",
+            "kind": "example"
+          },
+          {
+            "id": "row.p23.part003.retained_von_baeyer_names.prismane",
+            "kind": "table_row"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.prismane.retained_name",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.prismane.systematic_name",
+            "kind": "table_cell"
+          },
+          {
+            "id": "cell.p23.part003.retained_von_baeyer_names.prismane.nomenclature_status",
+            "kind": "table_cell"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-23.7:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.p23.part003.tetracyclo_hexane_structure",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "2λ5,3-diarsabicyclo[2.2.1]heptane"
+      ],
+      "clause_ids": [
+        "P-23.6.2:clause:0004"
+      ],
+      "demonstrates": [],
+      "example_id": "example.p23.part003.diarsabicyclo_heptane_pin",
+      "explanation": "The figure caption identifies the illustrated parent hydride name as a PIN.",
+      "input": {
+        "name": "2λ5,3-diarsabicyclo[2.2.1]heptane",
+        "name_role": "preferred IUPAC name"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "adamantane"
+      ],
+      "clause_ids": [
+        "P-23.7:clause:0006"
+      ],
+      "demonstrates": [
+        {
+          "id": "table.p23.part003.retained_von_baeyer_names",
+          "kind": "table"
+        }
+      ],
+      "example_id": "example.p23.part003.adamantane_retained_pin",
+      "explanation": "Adamantane is retained for general nomenclature and is also a preferred IUPAC name.",
+      "input": {
+        "retained_name": "adamantane",
+        "scope": [
+          "general nomenclature",
+          "preferred IUPAC name"
+        ],
+        "systematic_name": "tricyclo[3.3.1.13,7]decane"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "cubane"
+      ],
+      "clause_ids": [
+        "P-23.7:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "table.p23.part003.retained_von_baeyer_names",
+          "kind": "table"
+        }
+      ],
+      "example_id": "example.p23.part003.cubane_retained_pin",
+      "explanation": "Cubane is retained for general nomenclature and is also a preferred IUPAC name.",
+      "input": {
+        "retained_name": "cubane",
+        "scope": [
+          "general nomenclature",
+          "preferred IUPAC name"
+        ],
+        "systematic_name": "pentacyclo[4.2.0.02,5.03,8.04,7]octane"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "quinuclidine",
+        "1-azabicyclo[2.2.2]octane"
+      ],
+      "clause_ids": [
+        "P-23.7:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "table.p23.part003.retained_von_baeyer_names",
+          "kind": "table"
+        }
+      ],
+      "example_id": "example.p23.part003.quinuclidine_general_name",
+      "explanation": "Quinuclidine is retained in general nomenclature, while the systematic PIN is 1-azabicyclo[2.2.2]octane.",
+      "input": {
+        "retained_name": "quinuclidine",
+        "scope": "general nomenclature only",
+        "systematic_name": "1-azabicyclo[2.2.2]octane"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "tetracyclo[2.2.0.02,6.03,5]hexane"
+      ],
+      "clause_ids": [
+        "P-23.7:clause:0012"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p23.part003.prismane_not_recommended_policy",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p23.part003.prismane_systematic_replacement",
+      "explanation": "The systematic name is the PIN and prismane is no longer recommended.",
+      "input": {
+        "former_name": "prismane",
+        "preferred_name": "tetracyclo[2.2.0.02,6.03,5]hexane"
+      },
+      "operative": false,
+      "rejected_names": [
+        "prismane"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "figures": [
+    {
+      "clause_ids": [
+        "P-23.6.2:clause:0005"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part003.diarsabicyclo_heptane_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230602a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.7:clause:0007"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part003.adamantane_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230700a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.7:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part003.cubane_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230700b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.7:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part003.quinuclidine_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230700c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-23.7:clause:0013"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.p23.part003.tetracyclo_hexane_structure",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P2gif/P230700d.gif"
+      ]
+    }
+  ],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-23-part-003",
+  "packet_sha256": "E779F74993642C68F21F47489CF11F8900514117C9DC9F2550D4E40CAE559A79",
+  "records": [
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.6.2:clause:0001",
+        "P-23.6.2:clause:0002",
+        "P-23.6.2:clause:0003",
+        "P-23.6.2:clause:0004",
+        "P-23.6.2:clause:0005"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p23.part003.diarsabicyclo_heptane_pin"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p23.part003.diarsabicyclo_heptane_structure"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.6.2",
+      "reference_ids": [
+        "reference.p_23_6_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-23.6.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-23.7:clause:0001",
+        "P-23.7:clause:0002",
+        "P-23.7:clause:0003",
+        "P-23.7:clause:0004",
+        "P-23.7:clause:0005",
+        "P-23.7:clause:0006",
+        "P-23.7:clause:0007",
+        "P-23.7:clause:0008",
+        "P-23.7:clause:0009",
+        "P-23.7:clause:0010",
+        "P-23.7:clause:0011",
+        "P-23.7:clause:0012",
+        "P-23.7:clause:0013"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p23.part003.adamantane_retained_pin",
+        "example.p23.part003.cubane_retained_pin",
+        "example.p23.part003.quinuclidine_general_name",
+        "example.p23.part003.prismane_systematic_replacement"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.p23.part003.adamantane_structure",
+        "figure.p23.part003.cubane_structure",
+        "figure.p23.part003.quinuclidine_structure",
+        "figure.p23.part003.tetracyclo_hexane_structure"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-23.7",
+      "reference_ids": [
+        "reference.p_23_7.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p23.part003.retained_adamantane_cubane_policy",
+        "unit.p23.part003.quinuclidine_general_only_policy",
+        "unit.p23.part003.prismane_not_recommended_policy"
+      ],
+      "source_rule_id": "P-23.7",
+      "table_ids": [
+        "table.p23.part003.retained_von_baeyer_names"
+      ]
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-23.6.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_6_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.6.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23.6",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.7:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_23_7.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-23.7",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-23",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-23.7:clause:0002"
+      ],
+      "entity_type": "RetainedParentNamePolicy",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.7:clause:0002"
+          ],
+          "expression_id": "expr.p23.part003.retained_adamantane_cubane_policy.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "retained names adamantane and cubane",
+      "unit_id": "unit.p23.part003.retained_adamantane_cubane_policy",
+      "value": {
+        "clause_ids": [
+          "P-23.7:clause:0002"
+        ],
+        "expression_id": "expr.p23.part003.retained_adamantane_cubane_policy.value",
+        "op": "literal",
+        "value": {
+          "names": [
+            "adamantane",
+            "cubane"
+          ],
+          "status": "retained",
+          "uses": [
+            "general nomenclature",
+            "preferred IUPAC name"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.7:clause:0003"
+      ],
+      "entity_type": "RetainedParentNamePolicy",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.7:clause:0003"
+          ],
+          "expression_id": "expr.p23.part003.quinuclidine_general_only_policy.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "retained name quinuclidine",
+      "unit_id": "unit.p23.part003.quinuclidine_general_only_policy",
+      "value": {
+        "clause_ids": [
+          "P-23.7:clause:0003"
+        ],
+        "expression_id": "expr.p23.part003.quinuclidine_general_only_policy.value",
+        "op": "literal",
+        "value": {
+          "name": "quinuclidine",
+          "preferred_iupac_name": false,
+          "table": "Table 2.6",
+          "uses": [
+            "general nomenclature"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-23.7:clause:0004"
+      ],
+      "entity_type": "NameRecommendationStatus",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-23.7:clause:0004"
+          ],
+          "expression_id": "expr.p23.part003.prismane_not_recommended_policy.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "prismane recommendation status",
+      "unit_id": "unit.p23.part003.prismane_not_recommended_policy",
+      "value": {
+        "clause_ids": [
+          "P-23.7:clause:0004"
+        ],
+        "expression_id": "expr.p23.part003.prismane_not_recommended_policy.value",
+        "op": "literal",
+        "value": {
+          "name": "prismane",
+          "status": "no longer recommended",
+          "systematic_name": "tetracyclo[2.2.0.02,6.03,5]hexane"
+        }
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [],
+  "tables": [
+    {
+      "clause_ids": [
+        "P-23.7:clause:0005"
+      ],
+      "columns": [
+        {
+          "clause_ids": [
+            "P-23.7:clause:0005"
+          ],
+          "column_id": "column.p23.part003.retained_von_baeyer_names.retained_name",
+          "label": "Retained name",
+          "ordinal": 1,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-23.7:clause:0005"
+          ],
+          "column_id": "column.p23.part003.retained_von_baeyer_names.systematic_name",
+          "label": "Systematic name",
+          "ordinal": 2,
+          "value_type": "string"
+        },
+        {
+          "clause_ids": [
+            "P-23.7:clause:0005"
+          ],
+          "column_id": "column.p23.part003.retained_von_baeyer_names.nomenclature_status",
+          "label": "Nomenclature status",
+          "ordinal": 3,
+          "value_type": "string"
+        }
+      ],
+      "contract": {
+        "cardinality": "one_to_one",
+        "key_column_ids": [
+          "column.p23.part003.retained_von_baeyer_names.retained_name"
+        ],
+        "ordering": "source_order",
+        "result_column_ids": [
+          "column.p23.part003.retained_von_baeyer_names.systematic_name",
+          "column.p23.part003.retained_von_baeyer_names.nomenclature_status"
+        ]
+      },
+      "footnotes": [],
+      "label": "Table 2.6",
+      "rows": [
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.adamantane.retained_name",
+              "clause_ids": [
+                "P-23.7:clause:0006"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.retained_name",
+              "value": "adamantane"
+            },
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.adamantane.systematic_name",
+              "clause_ids": [
+                "P-23.7:clause:0006"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.systematic_name",
+              "value": "tricyclo[3.3.1.13,7]decane"
+            },
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.adamantane.nomenclature_status",
+              "clause_ids": [
+                "P-23.7:clause:0006"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.nomenclature_status",
+              "value": "general nomenclature and preferred IUPAC name"
+            }
+          ],
+          "clause_ids": [
+            "P-23.7:clause:0006"
+          ],
+          "ordinal": 1,
+          "rank_group": null,
+          "row_id": "row.p23.part003.retained_von_baeyer_names.adamantane"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.cubane.retained_name",
+              "clause_ids": [
+                "P-23.7:clause:0008"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.retained_name",
+              "value": "cubane"
+            },
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.cubane.systematic_name",
+              "clause_ids": [
+                "P-23.7:clause:0008"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.systematic_name",
+              "value": "pentacyclo[4.2.0.02,5.03,8.04,7]octane"
+            },
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.cubane.nomenclature_status",
+              "clause_ids": [
+                "P-23.7:clause:0008"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.nomenclature_status",
+              "value": "general nomenclature and preferred IUPAC name"
+            }
+          ],
+          "clause_ids": [
+            "P-23.7:clause:0008"
+          ],
+          "ordinal": 2,
+          "rank_group": null,
+          "row_id": "row.p23.part003.retained_von_baeyer_names.cubane"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.quinuclidine.retained_name",
+              "clause_ids": [
+                "P-23.7:clause:0010"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.retained_name",
+              "value": "quinuclidine"
+            },
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.quinuclidine.systematic_name",
+              "clause_ids": [
+                "P-23.7:clause:0010"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.systematic_name",
+              "value": "1-azabicyclo[2.2.2]octane"
+            },
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.quinuclidine.nomenclature_status",
+              "clause_ids": [
+                "P-23.7:clause:0010"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.nomenclature_status",
+              "value": "general nomenclature only; systematic name is PIN"
+            }
+          ],
+          "clause_ids": [
+            "P-23.7:clause:0010"
+          ],
+          "ordinal": 3,
+          "rank_group": null,
+          "row_id": "row.p23.part003.retained_von_baeyer_names.quinuclidine"
+        },
+        {
+          "cells": [
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.prismane.retained_name",
+              "clause_ids": [
+                "P-23.7:clause:0012"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.retained_name",
+              "value": "prismane"
+            },
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.prismane.systematic_name",
+              "clause_ids": [
+                "P-23.7:clause:0012"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.systematic_name",
+              "value": "tetracyclo[2.2.0.02,6.03,5]hexane"
+            },
+            {
+              "cell_id": "cell.p23.part003.retained_von_baeyer_names.prismane.nomenclature_status",
+              "clause_ids": [
+                "P-23.7:clause:0012"
+              ],
+              "column_id": "column.p23.part003.retained_von_baeyer_names.nomenclature_status",
+              "value": "not recommended; systematic name is PIN"
+            }
+          ],
+          "clause_ids": [
+            "P-23.7:clause:0012"
+          ],
+          "ordinal": 4,
+          "rank_group": null,
+          "row_id": "row.p23.part003.retained_von_baeyer_names.prismane"
+        }
+      ],
+      "table_id": "table.p23.part003.retained_von_baeyer_names",
+      "title": "Retained names for von Baeyer parent hydrides"
+    }
+  ]
+}

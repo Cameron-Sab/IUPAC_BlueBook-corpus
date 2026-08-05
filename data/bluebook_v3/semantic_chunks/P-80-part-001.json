@@ -1,0 +1,318 @@
+{
+  "assigned_rule_ids": [
+    "P-80"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 9,
+    "compiled_clause_count": 1,
+    "correction_application_count": 0,
+    "example_count": 0,
+    "exception_count": 0,
+    "figure_count": 0,
+    "nonoperative_clause_count": 8,
+    "record_count": 1,
+    "reference_count": 1,
+    "semantic_unit_count": 1,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 2,
+    "table_count": 0
+  },
+  "chunk_sha256": "ACC47D6E3CC7C3C32252011B06F8EAA96CD0F64A954576647E70F6500AF5D973",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-80:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-80:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p80.part001.isotopic_nomenclature_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p80.part001.isotopic_nomenclature_scope.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p80.part001.isotopic_nomenclature_scope.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p80.part001.isotopic_nomenclature_scope.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p80.part001.isotopic_nomenclature_scope.value.arg1.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p80.part001.isotopic_nomenclature_scope.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p80.part001.isotopic_nomenclature_scope.value.arg2.arg1",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-80:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "source_navigation"
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    },
+    {
+      "clause_id": "P-80:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "historical_context"
+      },
+      "force": "informative",
+      "role": "history"
+    },
+    {
+      "clause_id": "P-80:clause:0005",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "historical_context"
+      },
+      "force": "informative",
+      "role": "history"
+    },
+    {
+      "clause_id": "P-80:clause:0006",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "citation_only"
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    },
+    {
+      "clause_id": "P-80:clause:0007",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "historical_context"
+      },
+      "force": "informative",
+      "role": "history"
+    },
+    {
+      "clause_id": "P-80:clause:0008",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "historical_context"
+      },
+      "force": "informative",
+      "role": "history"
+    },
+    {
+      "clause_id": "P-80:clause:0009",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "rationale"
+      },
+      "force": "informative",
+      "role": "rationale"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [],
+  "exceptions": [],
+  "figures": [],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-80-part-001",
+  "packet_sha256": "CC62B0AD93C2DC2BC551069B20D7FC510817005C38201BC3AC79E10E93292516",
+  "records": [
+    {
+      "chapter": "P-8",
+      "clause_ids": [
+        "P-80:clause:0001",
+        "P-80:clause:0002",
+        "P-80:clause:0003",
+        "P-80:clause:0004",
+        "P-80:clause:0005",
+        "P-80:clause:0006",
+        "P-80:clause:0007",
+        "P-80:clause:0008",
+        "P-80:clause:0009"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-80",
+      "reference_ids": [
+        "reference.p_80.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p80.part001.isotopic_nomenclature_scope"
+      ],
+      "source_rule_id": "P-80",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-80:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_80.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-80",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-8",
+        "kind": "chapter"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-80:clause:0002"
+      ],
+      "entity_type": "organic_compound",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "organic_compound"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "result",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-80:clause:0002"
+          ],
+          "expression_id": "expr.p80.part001.isotopic_nomenclature_scope.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "organic compound within the scope of isotopic nomenclature",
+      "unit_id": "unit.p80.part001.isotopic_nomenclature_scope",
+      "value": {
+        "args": [
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-80:clause:0002"
+                ],
+                "expression_id": "expr.p80.part001.isotopic_nomenclature_scope.value.arg1.arg1",
+                "name": "compound",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-80:clause:0002"
+            ],
+            "expression_id": "expr.p80.part001.isotopic_nomenclature_scope.value.arg1",
+            "op": "predicate",
+            "symbol": "compound.is_organic"
+          },
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-80:clause:0002"
+                ],
+                "expression_id": "expr.p80.part001.isotopic_nomenclature_scope.value.arg2.arg1",
+                "name": "compound",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-80:clause:0002"
+            ],
+            "expression_id": "expr.p80.part001.isotopic_nomenclature_scope.value.arg2",
+            "op": "predicate",
+            "symbol": "compound.isotopic_nuclide_composition_deviates_from_natural"
+          }
+        ],
+        "clause_ids": [
+          "P-80:clause:0002"
+        ],
+        "expression_id": "expr.p80.part001.isotopic_nomenclature_scope.value",
+        "op": "all"
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [
+    {
+      "arguments": [
+        {
+          "name": "compound",
+          "type": "compound"
+        }
+      ],
+      "description": "A compound is an organic compound.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "organic_compound",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "compound.is_organic"
+    },
+    {
+      "arguments": [
+        {
+          "name": "compound",
+          "type": "organic_compound"
+        }
+      ],
+      "description": "A compound's isotopic nuclide composition deviates from natural composition.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "isotopic_composition_deviation_from_natural",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "compound.isotopic_nuclide_composition_deviates_from_natural"
+    }
+  ],
+  "tables": []
+}

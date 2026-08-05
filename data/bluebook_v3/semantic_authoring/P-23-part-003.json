@@ -1,0 +1,235 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-23-part-003",
+  "clauses": [
+    null,
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["definition", "normative", "compile"],
+    ["scope", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["table_data", "informative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "retained_adamantane_cubane_policy",
+      "k": "definition",
+      "f": "definition",
+      "c": [7],
+      "term": "retained names adamantane and cubane",
+      "entity": "RetainedParentNamePolicy",
+      "value": [
+        "lit",
+        {
+          "names": ["adamantane", "cubane"],
+          "uses": ["general nomenclature", "preferred IUPAC name"],
+          "status": "retained"
+        }
+      ]
+    },
+    {
+      "id": "quinuclidine_general_only_policy",
+      "k": "definition",
+      "f": "definition",
+      "c": [8],
+      "term": "retained name quinuclidine",
+      "entity": "RetainedParentNamePolicy",
+      "value": [
+        "lit",
+        {
+          "name": "quinuclidine",
+          "uses": ["general nomenclature"],
+          "preferred_iupac_name": false,
+          "table": "Table 2.6"
+        }
+      ]
+    },
+    {
+      "id": "prismane_not_recommended_policy",
+      "k": "definition",
+      "f": "definition",
+      "c": [9],
+      "term": "prismane recommendation status",
+      "entity": "NameRecommendationStatus",
+      "value": [
+        "lit",
+        {
+          "name": "prismane",
+          "status": "no longer recommended",
+          "systematic_name": "tetracyclo[2.2.0.02,6.03,5]hexane"
+        }
+      ]
+    }
+  ],
+  "exceptions": [],
+  "tables": [
+    {
+      "id": "retained_von_baeyer_names",
+      "c": [10],
+      "label": "Table 2.6",
+      "title": "Retained names for von Baeyer parent hydrides",
+      "cols": [
+        ["retained_name", "Retained name", "string", [10]],
+        ["systematic_name", "Systematic name", "string", [10]],
+        ["nomenclature_status", "Nomenclature status", "string", [10]]
+      ],
+      "rows": [
+        {
+          "id": "adamantane",
+          "c": [11],
+          "v": [
+            "adamantane",
+            "tricyclo[3.3.1.13,7]decane",
+            "general nomenclature and preferred IUPAC name"
+          ]
+        },
+        {
+          "id": "cubane",
+          "c": [13],
+          "v": [
+            "cubane",
+            "pentacyclo[4.2.0.02,5.03,8.04,7]octane",
+            "general nomenclature and preferred IUPAC name"
+          ]
+        },
+        {
+          "id": "quinuclidine",
+          "c": [15],
+          "v": [
+            "quinuclidine",
+            "1-azabicyclo[2.2.2]octane",
+            "general nomenclature only; systematic name is PIN"
+          ]
+        },
+        {
+          "id": "prismane",
+          "c": [17],
+          "v": [
+            "prismane",
+            "tetracyclo[2.2.0.02,6.03,5]hexane",
+            "not recommended; systematic name is PIN"
+          ]
+        }
+      ],
+      "contract": {
+        "key": ["retained_name"],
+        "result": ["systematic_name", "nomenclature_status"],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "diarsabicyclo_heptane_structure",
+      "c": [5],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230602a.gif"]
+    },
+    {
+      "id": "adamantane_structure",
+      "c": [12],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230700a.gif"]
+    },
+    {
+      "id": "cubane_structure",
+      "c": [14],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230700b.gif"]
+    },
+    {
+      "id": "quinuclidine_structure",
+      "c": [16],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230700c.gif"]
+    },
+    {
+      "id": "tetracyclo_hexane_structure",
+      "c": [18],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P230700d.gif"]
+    }
+  ],
+  "examples": [
+    {
+      "id": "diarsabicyclo_heptane_pin",
+      "c": [4],
+      "input": {
+        "name": "2λ5,3-diarsabicyclo[2.2.1]heptane",
+        "name_role": "preferred IUPAC name"
+      },
+      "ok": ["2λ5,3-diarsabicyclo[2.2.1]heptane"],
+      "bad": [],
+      "shows": [],
+      "why": "The figure caption identifies the illustrated parent hydride name as a PIN."
+    },
+    {
+      "id": "adamantane_retained_pin",
+      "c": [11],
+      "input": {
+        "retained_name": "adamantane",
+        "systematic_name": "tricyclo[3.3.1.13,7]decane",
+        "scope": ["general nomenclature", "preferred IUPAC name"]
+      },
+      "ok": ["adamantane"],
+      "bad": [],
+      "shows": [["table", "retained_von_baeyer_names"]],
+      "why": "Adamantane is retained for general nomenclature and is also a preferred IUPAC name."
+    },
+    {
+      "id": "cubane_retained_pin",
+      "c": [13],
+      "input": {
+        "retained_name": "cubane",
+        "systematic_name": "pentacyclo[4.2.0.02,5.03,8.04,7]octane",
+        "scope": ["general nomenclature", "preferred IUPAC name"]
+      },
+      "ok": ["cubane"],
+      "bad": [],
+      "shows": [["table", "retained_von_baeyer_names"]],
+      "why": "Cubane is retained for general nomenclature and is also a preferred IUPAC name."
+    },
+    {
+      "id": "quinuclidine_general_name",
+      "c": [15],
+      "input": {
+        "retained_name": "quinuclidine",
+        "systematic_name": "1-azabicyclo[2.2.2]octane",
+        "scope": "general nomenclature only"
+      },
+      "ok": ["quinuclidine", "1-azabicyclo[2.2.2]octane"],
+      "bad": [],
+      "shows": [["table", "retained_von_baeyer_names"]],
+      "why": "Quinuclidine is retained in general nomenclature, while the systematic PIN is 1-azabicyclo[2.2.2]octane."
+    },
+    {
+      "id": "prismane_systematic_replacement",
+      "c": [17],
+      "input": {
+        "former_name": "prismane",
+        "preferred_name": "tetracyclo[2.2.0.02,6.03,5]hexane"
+      },
+      "ok": ["tetracyclo[2.2.0.02,6.03,5]hexane"],
+      "bad": ["prismane"],
+      "shows": [["semantic_unit", "prismane_not_recommended_policy"]],
+      "why": "The systematic name is the PIN and prismane is no longer recommended."
+    }
+  ],
+  "corrections": [],
+  "refs": [],
+  "additional_refs": []
+}

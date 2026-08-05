@@ -1,0 +1,221 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-27-part-002",
+  "clauses": [
+    null,
+    ["prohibition", "normative", "compile"],
+    ["procedure_step", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["note", "informative", "compile"],
+    ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"],
+    ["table_data", "informative", "compile"]
+  ],
+  "symbols": [
+    {
+      "id": "fullerene.can_form_spiro_directly",
+      "k": "predicate",
+      "d": "Whether a fullerene can form a spiro compound directly.",
+      "a": [["fullerene", "Fullerene"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "fullerene.can_form_spiro_directly"]
+    },
+    {
+      "id": "fullerene.spiroring_fused_to_fullerene",
+      "k": "predicate",
+      "d": "Whether a spiro ring system is fused to a fullerene.",
+      "a": [["fullerene", "Fullerene"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "fullerene.spiroring_fused_to_fullerene"]
+    }
+  ],
+  "units": [
+    {
+      "id": "direct_spiro_fullerene_prohibition",
+      "k": "constraint",
+      "f": "prohibited",
+      "c": [2],
+      "in": [
+        ["fullerene", "Fullerene"],
+        ["spiro_system", "SpiroSystem"]
+      ],
+      "assert": [
+        "all",
+        [
+          "not",
+          ["pred", "fullerene.can_form_spiro_directly", ["var", "fullerene"]]
+        ],
+        [
+          "not",
+          [
+            "pred",
+            "fullerene.spiroring_fused_to_fullerene",
+            ["var", "fullerene"]
+          ]
+        ]
+      ],
+      "violation": [
+        ["reject", "spiro_system", "reason.direct_spiro_fullerene"]
+      ]
+    },
+    {
+      "id": "spiro_fullerene_naming_procedure",
+      "k": "procedure",
+      "f": "required",
+      "c": [3],
+      "in": [
+        ["spiro_fullerene", "SpiroFullereneParentHydride"],
+        ["polycyclic_ring_system", "PolycyclicRingSystem"]
+      ],
+      "steps": [
+        [
+          "invoke",
+          "P-24.5",
+          {
+            "compound": ["var", "spiro_fullerene"],
+            "ring_system": ["var", "polycyclic_ring_system"]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "spiro_fullerene_locant_order",
+      "k": "definition",
+      "f": "definition",
+      "c": [4],
+      "term": "locant order for spiro fullerene parent hydrides",
+      "entity": "LocantOrderingPolicy",
+      "value": [
+        "lit",
+        {
+          "applies_to": "spiro fullerene parent hydrides",
+          "unprimed_locants_required": false,
+          "ordering": "alphanumerical",
+          "qualification": "locants are not necessarily unprimed"
+        }
+      ]
+    },
+    {
+      "id": "spiro_homofullerene_example",
+      "k": "definition",
+      "f": "definition",
+      "c": [9],
+      "term": "fullerene numbering classification source",
+      "entity": "FullereneNumberingClassification",
+      "value": [
+        "lit",
+        {
+          "source": "Part II of fullerene nomenclature, ref. 11",
+          "subject": "numbering a wide variety of fullerene structures",
+          "classification_basis": [
+            "symmetry axis",
+            "contiguous helical numbering pathway"
+          ]
+        }
+      ]
+    }
+  ],
+  "exceptions": [],
+  "tables": [
+    {
+      "id": "fullerene_numbering_classes",
+      "c": [10, 11, 12, 13, 14, 15],
+      "label": "Fullerene numbering classes",
+      "title": "Classes of fullerene structures addressed by the numbering rules",
+      "cols": [
+        ["ordinal", "Class", "integer", [10, 11, 12, 13, 14, 15]],
+        ["symmetry_condition", "Symmetry condition", "string", [10, 11, 12, 13, 14, 15]],
+        ["helical_pathway", "Helical numbering pathway", "string", [10, 11, 12, 13, 14, 15]],
+        ["classification_text", "Classification", "string", [10, 11, 12, 13, 14, 15]]
+      ],
+      "rows": [
+        {
+          "id": "symmetry_axis_contiguous_helical",
+          "c": [10, 11],
+          "v": [
+            1,
+            "Cn; n>1",
+            "contiguous",
+            "Fullerenes having at least one symmetry axis (Cn; n>1) and a contiguous helical numbering pathway"
+          ]
+        },
+        {
+          "id": "symmetry_axis_no_contiguous_helical",
+          "c": [12, 13],
+          "v": [
+            2,
+            "Cn; n>1",
+            "none",
+            "Fullerenes having at least one symmetry axis (Cn; n>1) but no contiguous helical numbering pathway"
+          ]
+        },
+        {
+          "id": "cs_contiguous_helical",
+          "c": [14],
+          "v": [
+            3,
+            "Cs",
+            "contiguous",
+            "Fullerenes belonging to the Cs point group and having a contiguous helical numbering pathway"
+          ]
+        },
+        {
+          "id": "ci_or_c1_contiguous_helical",
+          "c": [15],
+          "v": [
+            4,
+            "Ci or C1",
+            "contiguous",
+            "Fullerenes belonging to the Ci or C1 point groups and having a contiguous helical numbering pathway"
+          ]
+        }
+      ],
+      "contract": {
+        "key": ["ordinal"],
+        "result": ["classification_text"],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "spiro_homofullerene_structure",
+      "c": [7],
+      "k": "chemical_structure",
+      "urls": ["https://iupac.qmul.ac.uk/BlueBook/P2gif/P270603a.gif"]
+    }
+  ],
+  "examples": [
+    {
+      "id": "spiro_homofullerene_pin",
+      "c": [6],
+      "input": {
+        "parent_hydride": "spiro[cyclohexane-1,1′a-[1(9)a]homo(C60-Ih)[5,6]fullerene]",
+        "name_role": "preferred IUPAC name"
+      },
+      "ok": ["spiro[cyclohexane-1,1′a-[1(9)a]homo(C60-Ih)[5,6]fullerene]"],
+      "bad": [],
+      "shows": [["semantic_unit", "spiro_fullerene_naming_procedure"]],
+      "why": "The illustrated homofullerene spiro parent hydride is named by the normal procedure for this class of spiro system."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {
+      "id": "citation.p27.24.5",
+      "c": [3],
+      "rel": "cites",
+      "o": "P-27.6.3:xref:0001"
+    }
+  ],
+  "additional_refs": []
+}

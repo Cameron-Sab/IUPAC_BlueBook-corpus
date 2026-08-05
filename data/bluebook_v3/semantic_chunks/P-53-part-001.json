@@ -1,0 +1,1387 @@
+{
+  "assigned_rule_ids": [
+    "P-53"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 11,
+    "compiled_clause_count": 8,
+    "correction_application_count": 0,
+    "example_count": 2,
+    "exception_count": 1,
+    "figure_count": 0,
+    "nonoperative_clause_count": 3,
+    "record_count": 1,
+    "reference_count": 7,
+    "semantic_unit_count": 7,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 8,
+    "table_count": 0
+  },
+  "chunk_sha256": "F2970472C165E6CABC5AA8998CCF8ABC2853C97E96A51884C24A0B4A5EC2CDC0",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-53:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-53:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p53.part001.recommend_retained_parent_hydride_names",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p53.part001.recommend_retained_parent_hydride_names.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.recommend_retained_parent_hydride_names.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.recommend_retained_parent_hydride_names.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p53.part001.recommend_retained_parent_hydride_names.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p53.part001.recommend_retained_parent_hydride_names.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-53:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "historical_context"
+      },
+      "force": "informative",
+      "role": "history"
+    },
+    {
+      "clause_id": "P-53:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p53.part001.cyclic_mancude_fusion_component",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p53.part001.cyclic_mancude_fusion_component.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.cyclic_mancude_fusion_component.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.cyclic_mancude_fusion_component.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p53.part001.cyclic_mancude_fusion_component.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p53.part001.cyclic_mancude_fusion_component.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "effect"
+    },
+    {
+      "clause_id": "P-53:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p53.part001.cyclic_mancude_derivative_parent_use",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p53.part001.cyclic_mancude_derivative_parent_use.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.cyclic_mancude_derivative_parent_use.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.cyclic_mancude_derivative_parent_use.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p53.part001.cyclic_mancude_derivative_parent_use.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p53.part001.cyclic_mancude_derivative_parent_use.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p53.part001.cyclic_mancude_derivative_parent_use.then.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p53.part001.cyclic_mancude_derivative_parent_use.then.2.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-53:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p53.part001.retained_parent_name_unrestricted_substitutability",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg1.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg1.arg.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p53.part001.retained_parent_name_unrestricted_substitutability.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-53:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p53.part001.retained_parent_name_unrestricted_substitutability",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg1.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg1.arg.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p53.part001.retained_parent_name_unrestricted_substitutability.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-53:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "exception.p53.part001.limited_substitutability_retained_names",
+            "kind": "exception"
+          },
+          {
+            "id": "unit.p53.part001.limited_substitutability_retained_names",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p53.part001.limited_substitutability_retained_names.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.limited_substitutability_retained_names.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.limited_substitutability_retained_names.value.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.limited_substitutability_retained_names.value.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.exception.limited_substitutability_retained_names.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.exception.limited_substitutability_retained_names.when.arg1",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "exception"
+    },
+    {
+      "clause_id": "P-53:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "exception.p53.part001.limited_substitutability_retained_names",
+            "kind": "exception"
+          },
+          {
+            "id": "example.p53.part001.limited_substitutability_name_examples",
+            "kind": "example"
+          },
+          {
+            "id": "unit.p53.part001.limited_substitutability_retained_names",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p53.part001.limited_substitutability_retained_names.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.limited_substitutability_retained_names.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.limited_substitutability_retained_names.value.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.limited_substitutability_retained_names.value.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.exception.limited_substitutability_retained_names.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.exception.limited_substitutability_retained_names.when.arg1",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "exception"
+    },
+    {
+      "clause_id": "P-53:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p53.part001.no_longer_recommended_name_examples",
+            "kind": "example"
+          },
+          {
+            "id": "unit.p53.part001.no_longer_recommended_retained_names",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p53.part001.no_longer_recommended_retained_names.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.no_longer_recommended_retained_names.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.no_longer_recommended_retained_names.value.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.no_longer_recommended_retained_names.value.right",
+            "kind": "expression"
+          },
+          {
+            "id": "unit.p53.part001.exclude_no_longer_recommended_retained_names",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p53.part001.exclude_no_longer_recommended_retained_names.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.exclude_no_longer_recommended_retained_names.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.exclude_no_longer_recommended_retained_names.assertion.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p53.part001.exclude_no_longer_recommended_retained_names.assertion.arg.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p53.part001.exclude_no_longer_recommended_retained_names.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-53:clause:0011",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "citation_only"
+      },
+      "force": "informative",
+      "role": "cross_reference"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [],
+      "clause_ids": [
+        "P-53:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p53.part001.limited_substitutability_retained_names",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "exception.p53.part001.limited_substitutability_retained_names",
+          "kind": "exception"
+        }
+      ],
+      "example_id": "example.p53.part001.limited_substitutability_name_examples",
+      "explanation": "These substituted-benzene retained names have limited capacity for substitution.",
+      "input": {
+        "names": [
+          "toluene",
+          "xylene",
+          "mesitylene"
+        ],
+        "substitutability": "limited"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [],
+      "clause_ids": [
+        "P-53:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p53.part001.no_longer_recommended_retained_names",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p53.part001.exclude_no_longer_recommended_retained_names",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p53.part001.no_longer_recommended_name_examples",
+      "explanation": "These retained names are examples that are no longer recommended.",
+      "input": {
+        "names": [
+          "cumene",
+          "cymene"
+        ],
+        "recommendation_status": "not_recommended"
+      },
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [
+    {
+      "clause_ids": [
+        "P-53:clause:0008",
+        "P-53:clause:0009"
+      ],
+      "effect": {
+        "guard": null,
+        "mode": "suppress",
+        "redirect": null,
+        "replacement": null
+      },
+      "exception_id": "exception.p53.part001.limited_substitutability_retained_names",
+      "precedence": {
+        "source_order": 1,
+        "specificity": 1
+      },
+      "target": {
+        "id": "unit.p53.part001.retained_parent_name_unrestricted_substitutability",
+        "kind": "semantic_unit"
+      },
+      "when": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-53:clause:0008",
+              "P-53:clause:0009"
+            ],
+            "expression_id": "expr.p53.part001.exception.limited_substitutability_retained_names.when.arg1",
+            "name": "name",
+            "op": "var"
+          }
+        ],
+        "clause_ids": [
+          "P-53:clause:0008",
+          "P-53:clause:0009"
+        ],
+        "expression_id": "expr.p53.part001.exception.limited_substitutability_retained_names.when",
+        "op": "predicate",
+        "symbol": "name.has_limited_substitutability"
+      }
+    }
+  ],
+  "figures": [],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-53-part-001",
+  "packet_sha256": "A55A673BCDC16C9D537BA67AA99F92DB18E0364B108718BA28E527B161A79CCE",
+  "records": [
+    {
+      "chapter": "P-5",
+      "clause_ids": [
+        "P-53:clause:0001",
+        "P-53:clause:0002",
+        "P-53:clause:0003",
+        "P-53:clause:0004",
+        "P-53:clause:0005",
+        "P-53:clause:0006",
+        "P-53:clause:0007",
+        "P-53:clause:0008",
+        "P-53:clause:0009",
+        "P-53:clause:0010",
+        "P-53:clause:0011"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p53.part001.limited_substitutability_name_examples",
+        "example.p53.part001.no_longer_recommended_name_examples"
+      ],
+      "exception_ids": [
+        "exception.p53.part001.limited_substitutability_retained_names"
+      ],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-53",
+      "reference_ids": [
+        "reference.p_53.hierarchy_parent",
+        "reference.P-53:xref:0001",
+        "reference.P-53:xref:0002",
+        "reference.P-53:xref:0003",
+        "reference.P-53:xref:0004",
+        "reference.P-53:xref:0005",
+        "reference.P-53:xref:0006"
+      ],
+      "semantic_unit_ids": [
+        "unit.p53.part001.recommend_retained_parent_hydride_names",
+        "unit.p53.part001.cyclic_mancude_fusion_component",
+        "unit.p53.part001.cyclic_mancude_derivative_parent_use",
+        "unit.p53.part001.retained_parent_name_unrestricted_substitutability",
+        "unit.p53.part001.limited_substitutability_retained_names",
+        "unit.p53.part001.no_longer_recommended_retained_names",
+        "unit.p53.part001.exclude_no_longer_recommended_retained_names"
+      ],
+      "source_rule_id": "P-53",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-53:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_53.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-53",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-5",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-53:clause:0011"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-53:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-53",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-53:xref:0001"
+      ],
+      "target": {
+        "id": "P-21.1.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-53:clause:0011"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-53:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-53",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-53:xref:0002"
+      ],
+      "target": {
+        "id": "P-21.1.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-53:clause:0011"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-53:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-53",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-53:xref:0003"
+      ],
+      "target": {
+        "id": "P-22.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-53:clause:0011"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-53:xref:0004",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-53",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-53:xref:0004"
+      ],
+      "target": {
+        "id": "P-22.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-53:clause:0011"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-53:xref:0005",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-53",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-53:xref:0005"
+      ],
+      "target": {
+        "id": "P-25.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-53:clause:0011"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-53:xref:0006",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-53",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-53:xref:0006"
+      ],
+      "target": {
+        "id": "P-25.2",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-53:clause:0002"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "name"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "recommendation_status",
+          "type": "recommendation_status"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-53:clause:0002"
+          ],
+          "expression_id": "expr.p53.part001.recommend_retained_parent_hydride_names.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-53:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p53.part001.recommend_retained_parent_hydride_names.then.1",
+          "target": "recommendation_status",
+          "value": {
+            "clause_ids": [
+              "P-53:clause:0002"
+            ],
+            "expression_id": "expr.p53.part001.recommend_retained_parent_hydride_names.then.1.value",
+            "op": "literal",
+            "value": "recommended"
+          }
+        }
+      ],
+      "unit_id": "unit.p53.part001.recommend_retained_parent_hydride_names",
+      "when": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-53:clause:0002"
+            ],
+            "expression_id": "expr.p53.part001.recommend_retained_parent_hydride_names.when.arg1",
+            "name": "name",
+            "op": "var"
+          }
+        ],
+        "clause_ids": [
+          "P-53:clause:0002"
+        ],
+        "expression_id": "expr.p53.part001.recommend_retained_parent_hydride_names.when",
+        "op": "predicate",
+        "symbol": "name.is_retained_parent_hydride_name"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-53:clause:0004"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "name"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "fusion_component",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-53:clause:0004"
+          ],
+          "expression_id": "expr.p53.part001.cyclic_mancude_fusion_component.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-53:clause:0004"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p53.part001.cyclic_mancude_fusion_component.then.1",
+          "target": "fusion_component",
+          "value": {
+            "clause_ids": [
+              "P-53:clause:0004"
+            ],
+            "expression_id": "expr.p53.part001.cyclic_mancude_fusion_component.then.1.value",
+            "op": "literal",
+            "value": true
+          }
+        }
+      ],
+      "unit_id": "unit.p53.part001.cyclic_mancude_fusion_component",
+      "when": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-53:clause:0004"
+            ],
+            "expression_id": "expr.p53.part001.cyclic_mancude_fusion_component.when.arg1",
+            "name": "name",
+            "op": "var"
+          }
+        ],
+        "clause_ids": [
+          "P-53:clause:0004"
+        ],
+        "expression_id": "expr.p53.part001.cyclic_mancude_fusion_component.when",
+        "op": "predicate",
+        "symbol": "name.is_cyclic_mancude_retained_name"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-53:clause:0005"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "name"
+        },
+        {
+          "name": "derivative",
+          "type": "compound"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "parent_name_status",
+          "type": "recommendation_status"
+        },
+        {
+          "name": "general_nomenclature_use",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-53:clause:0005"
+          ],
+          "expression_id": "expr.p53.part001.cyclic_mancude_derivative_parent_use.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-53:clause:0005"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p53.part001.cyclic_mancude_derivative_parent_use.then.1",
+          "target": "parent_name_status",
+          "value": {
+            "clause_ids": [
+              "P-53:clause:0005"
+            ],
+            "expression_id": "expr.p53.part001.cyclic_mancude_derivative_parent_use.then.1.value",
+            "op": "literal",
+            "value": "preferred_iupac_name"
+          }
+        },
+        {
+          "clause_ids": [
+            "P-53:clause:0005"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p53.part001.cyclic_mancude_derivative_parent_use.then.2",
+          "target": "general_nomenclature_use",
+          "value": {
+            "clause_ids": [
+              "P-53:clause:0005"
+            ],
+            "expression_id": "expr.p53.part001.cyclic_mancude_derivative_parent_use.then.2.value",
+            "op": "literal",
+            "value": true
+          }
+        }
+      ],
+      "unit_id": "unit.p53.part001.cyclic_mancude_derivative_parent_use",
+      "when": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-53:clause:0005"
+            ],
+            "expression_id": "expr.p53.part001.cyclic_mancude_derivative_parent_use.when.arg1",
+            "name": "name",
+            "op": "var"
+          }
+        ],
+        "clause_ids": [
+          "P-53:clause:0005"
+        ],
+        "expression_id": "expr.p53.part001.cyclic_mancude_derivative_parent_use.when",
+        "op": "predicate",
+        "symbol": "name.is_cyclic_mancude_retained_name"
+      }
+    },
+    {
+      "assertion": {
+        "args": [
+          {
+            "arg": {
+              "args": [
+                {
+                  "clause_ids": [
+                    "P-53:clause:0006",
+                    "P-53:clause:0007"
+                  ],
+                  "expression_id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg1.arg.arg1",
+                  "name": "name",
+                  "op": "var"
+                }
+              ],
+              "clause_ids": [
+                "P-53:clause:0006",
+                "P-53:clause:0007"
+              ],
+              "expression_id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg1.arg",
+              "op": "predicate",
+              "symbol": "name.is_retained_parent_name"
+            },
+            "clause_ids": [
+              "P-53:clause:0006",
+              "P-53:clause:0007"
+            ],
+            "expression_id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg1",
+            "op": "not"
+          },
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-53:clause:0006",
+                  "P-53:clause:0007"
+                ],
+                "expression_id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg2.arg1",
+                "name": "name",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-53:clause:0006",
+              "P-53:clause:0007"
+            ],
+            "expression_id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion.arg2",
+            "op": "predicate",
+            "symbol": "name.accepts_suffix_and_prefix_substituents_without_restriction"
+          }
+        ],
+        "clause_ids": [
+          "P-53:clause:0006",
+          "P-53:clause:0007"
+        ],
+        "expression_id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.assertion",
+        "op": "any"
+      },
+      "clause_ids": [
+        "P-53:clause:0006",
+        "P-53:clause:0007"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "retained_parent_name"
+        }
+      ],
+      "kind": "constraint",
+      "on_violation": [
+        {
+          "clause_ids": [
+            "P-53:clause:0006",
+            "P-53:clause:0007"
+          ],
+          "op": "reject",
+          "reason_code": "reason.retained_parent_name_not_fully_substitutable",
+          "statement_id": "stmt.p53.part001.retained_parent_name_unrestricted_substitutability.violation.1",
+          "target": "name"
+        }
+      ],
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-53:clause:0006",
+            "P-53:clause:0007"
+          ],
+          "expression_id": "expr.p53.part001.retained_parent_name_unrestricted_substitutability.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "retained_name"
+        ]
+      },
+      "unit_id": "unit.p53.part001.retained_parent_name_unrestricted_substitutability"
+    },
+    {
+      "clause_ids": [
+        "P-53:clause:0008",
+        "P-53:clause:0009"
+      ],
+      "entity_type": "retained_parent_name",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "retained_parent_name"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "result",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-53:clause:0008",
+            "P-53:clause:0009"
+          ],
+          "expression_id": "expr.p53.part001.limited_substitutability_retained_names.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "retained_name"
+        ]
+      },
+      "term": "retained parent name with limited substitutability",
+      "unit_id": "unit.p53.part001.limited_substitutability_retained_names",
+      "value": {
+        "clause_ids": [
+          "P-53:clause:0008",
+          "P-53:clause:0009"
+        ],
+        "expression_id": "expr.p53.part001.limited_substitutability_retained_names.value",
+        "left": {
+          "clause_ids": [
+            "P-53:clause:0008",
+            "P-53:clause:0009"
+          ],
+          "expression_id": "expr.p53.part001.limited_substitutability_retained_names.value.left",
+          "name": "name",
+          "op": "var"
+        },
+        "op": "compare",
+        "relation": "member_of",
+        "right": {
+          "clause_ids": [
+            "P-53:clause:0008",
+            "P-53:clause:0009"
+          ],
+          "expression_id": "expr.p53.part001.limited_substitutability_retained_names.value.right",
+          "op": "literal",
+          "value": [
+            "toluene",
+            "xylene",
+            "mesitylene"
+          ]
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-53:clause:0010"
+      ],
+      "entity_type": "retained_parent_name",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "retained_parent_name"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "result",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-53:clause:0010"
+          ],
+          "expression_id": "expr.p53.part001.no_longer_recommended_retained_names.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "term": "retained name no longer recommended",
+      "unit_id": "unit.p53.part001.no_longer_recommended_retained_names",
+      "value": {
+        "clause_ids": [
+          "P-53:clause:0010"
+        ],
+        "expression_id": "expr.p53.part001.no_longer_recommended_retained_names.value",
+        "left": {
+          "clause_ids": [
+            "P-53:clause:0010"
+          ],
+          "expression_id": "expr.p53.part001.no_longer_recommended_retained_names.value.left",
+          "name": "name",
+          "op": "var"
+        },
+        "op": "compare",
+        "relation": "member_of",
+        "right": {
+          "clause_ids": [
+            "P-53:clause:0010"
+          ],
+          "expression_id": "expr.p53.part001.no_longer_recommended_retained_names.value.right",
+          "op": "literal",
+          "value": [
+            "cumene",
+            "cymene"
+          ]
+        }
+      }
+    },
+    {
+      "assertion": {
+        "arg": {
+          "args": [
+            {
+              "clause_ids": [
+                "P-53:clause:0010"
+              ],
+              "expression_id": "expr.p53.part001.exclude_no_longer_recommended_retained_names.assertion.arg.arg1",
+              "name": "name",
+              "op": "var"
+            }
+          ],
+          "clause_ids": [
+            "P-53:clause:0010"
+          ],
+          "expression_id": "expr.p53.part001.exclude_no_longer_recommended_retained_names.assertion.arg",
+          "op": "predicate",
+          "symbol": "name.is_no_longer_recommended_retained_name"
+        },
+        "clause_ids": [
+          "P-53:clause:0010"
+        ],
+        "expression_id": "expr.p53.part001.exclude_no_longer_recommended_retained_names.assertion",
+        "op": "not"
+      },
+      "clause_ids": [
+        "P-53:clause:0010"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "retained_parent_name"
+        }
+      ],
+      "kind": "constraint",
+      "on_violation": [
+        {
+          "clause_ids": [
+            "P-53:clause:0010"
+          ],
+          "op": "reject",
+          "reason_code": "reason.name_not_recommended_for_preferred_selection",
+          "statement_id": "stmt.p53.part001.exclude_no_longer_recommended_retained_names.violation.1",
+          "target": "name"
+        }
+      ],
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-53:clause:0010"
+          ],
+          "expression_id": "expr.p53.part001.exclude_no_longer_recommended_retained_names.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "unit_id": "unit.p53.part001.exclude_no_longer_recommended_retained_names"
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [
+    {
+      "arguments": [
+        {
+          "name": "name",
+          "type": "name"
+        }
+      ],
+      "description": "A name is a retained name of a parent hydride.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "retained_parent_hydride_name",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "name.is_retained_parent_hydride_name"
+    },
+    {
+      "arguments": [
+        {
+          "name": "name",
+          "type": "name"
+        }
+      ],
+      "description": "A name is a retained name of a cyclic mancude compound.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "cyclic_mancude_retained_name",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "name.is_cyclic_mancude_retained_name"
+    },
+    {
+      "arguments": [
+        {
+          "name": "name",
+          "type": "name"
+        }
+      ],
+      "description": "A name is a retained parent name.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "retained_parent_name",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "name.is_retained_parent_name"
+    },
+    {
+      "arguments": [
+        {
+          "name": "name",
+          "type": "retained_parent_name"
+        }
+      ],
+      "description": "A retained parent name accepts substituent groups cited as suffixes and prefixes without restriction.",
+      "grounding": {
+        "kind": "primitive",
+        "primitive": "unrestricted_suffix_and_prefix_substitution",
+        "refs": []
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "name.accepts_suffix_and_prefix_substituents_without_restriction"
+    },
+    {
+      "arguments": [
+        {
+          "name": "name",
+          "type": "retained_parent_name"
+        }
+      ],
+      "description": "A retained parent name has limited capacity for substitution.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "unit.p53.part001.limited_substitutability_retained_names",
+            "kind": "semantic_unit"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "name.has_limited_substitutability"
+    },
+    {
+      "arguments": [
+        {
+          "name": "name",
+          "type": "retained_parent_name"
+        }
+      ],
+      "description": "A retained name is no longer recommended for preferred-name selection.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "unit.p53.part001.no_longer_recommended_retained_names",
+            "kind": "semantic_unit"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "name.is_no_longer_recommended_retained_name"
+    },
+    {
+      "arguments": [],
+      "description": "Reason emitted when name not recommended for preferred selection.",
+      "grounding": {
+        "kind": "composition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "stmt.p53.part001.exclude_no_longer_recommended_retained_names.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "kind": "reason_code",
+      "returns": "reason_code",
+      "symbol_id": "reason.name_not_recommended_for_preferred_selection"
+    },
+    {
+      "arguments": [],
+      "description": "Reason emitted when retained parent name not fully substitutable.",
+      "grounding": {
+        "kind": "composition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "stmt.p53.part001.retained_parent_name_unrestricted_substitutability.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "kind": "reason_code",
+      "returns": "reason_code",
+      "symbol_id": "reason.retained_parent_name_not_fully_substitutable"
+    }
+  ],
+  "tables": []
+}

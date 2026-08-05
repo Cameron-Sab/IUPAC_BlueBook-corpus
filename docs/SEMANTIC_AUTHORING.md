@@ -32,6 +32,33 @@ The sparse view includes only unresolved `U` clause rows, unresolved `X`
 citations, correction `K` rows, and rule-boundary `R` rows. Its task hash binds
 the response to the exact source snapshot.
 
+For bounded production waves:
+
+```powershell
+python scripts\plan_semantic_authoring_waves.py `
+  --max-view-bytes 50000 `
+  --max-tasks 4 `
+  --lanes 4 `
+  --output work\semantic_authoring_plan.json
+```
+
+The planner strictly audits existing deltas, excludes completed tasks, measures
+the sparse evidence for every remaining task, and emits deterministic batches
+from smallest to largest. `--skip-task` reserves work already assigned to an
+active worker. Oversized tasks remain isolated rather than being silently split.
+
+After strict compilation, run the semantic quality audit:
+
+```powershell
+python scripts\audit_semantic_authoring_quality.py `
+  data\bluebook_v3\semantic_authoring\P-53-part-001.json `
+  --require-clean
+```
+
+This second gate flags clauses marked nonoperative despite source semantic cues,
+normative nomenclature language, or close rule context. It is deliberately
+conservative: findings require review and are not automatically rewritten.
+
 ## Clause Decisions
 
 Clause slots use compact arrays:

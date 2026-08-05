@@ -1,0 +1,156 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    null,
+    null,
+    null,
+    null,
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    null,
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    ["permission", "normative", "compile"],
+    ["condition", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    null,
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    null,
+    null,
+    null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"]
+  ],
+  "corrections": [],
+  "examples": [
+    {
+      "id": "anilinium_chloride",
+      "c": [5, 6],
+      "input": {"figure_id": "figure.p77.part001.anilinium_chloride"},
+      "ok": ["anilinium choride (PIN)", "benzenaminium chloride"],
+      "shows": [["figure", "figure.p77.part001.anilinium_chloride"]]
+    },
+    {
+      "id": "bis_methanaminium_sulfate",
+      "c": [7, 8],
+      "input": {"figure_id": "figure.p77.part001.bis_methanaminium_sulfate"},
+      "ok": ["bis(methanaminium) sulfate (PIN)"],
+      "shows": [["figure", "figure.p77.part001.bis_methanaminium_sulfate"]]
+    },
+    {
+      "id": "diethylethanaminium_hydrogen_sulfate",
+      "c": [9, 10],
+      "input": {"figure_id": "figure.p77.part001.diethylethanaminium_hydrogen_sulfate"},
+      "ok": ["N,N-diethylethanaminium hydrogen sulfate (PIN)"],
+      "shows": [["figure", "figure.p77.part001.diethylethanaminium_hydrogen_sulfate"]]
+    },
+    {
+      "id": "aminoethanaminium_chloride",
+      "c": [14, 15],
+      "input": {"figure_id": "figure.p77.part001.aminoethanaminium_chloride"},
+      "ok": ["2-aminoethan-1-aminium chloride (PIN)", "ethane-1,2-diamine monohydrochloride"],
+      "shows": [["figure", "figure.p77.part001.aminoethanaminium_chloride"]]
+    },
+    {
+      "id": "dimethyl_thiazolidin_amine_sulfuric_acid",
+      "c": [22, 23],
+      "input": {"figure_id": "figure.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid"},
+      "ok": ["(1) N,N-dimethyl-1,3-thiazolidin-2-amine\u2014sulfuric acid (2/1)", "(2) bis(N,N-dimethyl-1,3-thiazolidin-2-amine) sulfate"],
+      "shows": [["figure", "figure.p77.part001.dimethyl_thiazolidin_amine_sulfuric_acid"]]
+    },
+    {
+      "id": "sodium_methoxide",
+      "c": [27],
+      "input": "CH3-O\u2212 Na+",
+      "ok": ["sodium methoxide (PIN)", "sodium methanolate"]
+    },
+    {
+      "id": "sodium_thiolate",
+      "c": [28, 29],
+      "input": {"figure_id": "figure.p77.part001.sodium_thiolate"},
+      "ok": ["sodium 4-methylbenzene-1-thiolate (PIN)"],
+      "shows": [["figure", "figure.p77.part001.sodium_thiolate"]]
+    },
+    {
+      "id": "potassium_hydroxyethanolate",
+      "c": [32],
+      "input": "HO-CH2-CH2-O\u2212 K+",
+      "ok": ["potassium 2-hydroxyethan-1-olate (PIN)"]
+    },
+    {
+      "id": "sodium_acetate",
+      "c": [36],
+      "input": "CH3-CO-O\u2212 Na+",
+      "ok": ["sodium acetate (PIN)"]
+    },
+    {
+      "id": "potassium_carboxypropanoate",
+      "c": [40, 41],
+      "input": {"figure_id": "figure.p77.part001.potassium_carboxypropanoate"},
+      "ok": ["potassium 3-carboxypropanoate (PIN)", "butanedioic acid monopotassium salt"],
+      "shows": [["figure", "figure.p77.part001.potassium_carboxypropanoate"]]
+    }
+  ],
+  "exceptions": [],
+  "figures": [
+    {"id": "anilinium_chloride", "c": [5, 6], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P77110a.gif"]},
+    {"id": "bis_methanaminium_sulfate", "c": [7, 8], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P77110b.gif"]},
+    {"id": "diethylethanaminium_hydrogen_sulfate", "c": [9, 10], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P77110c.gif"]},
+    {"id": "aminoethanaminium_chloride", "c": [14, 15], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P77120a.gif"]},
+    {"id": "dimethyl_thiazolidin_amine_sulfuric_acid", "c": [22, 23], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P77130a.gif"]},
+    {"id": "sodium_thiolate", "c": [28, 29], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P77210a.gif"]},
+    {"id": "potassium_carboxypropanoate", "c": [40, 41], "k": "chemical_structure", "urls": ["https://iupac.qmul.ac.uk/BlueBook/P7gif/P77320a.gif"]}
+  ],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "refs": [],
+  "symbols": [],
+  "tables": [],
+  "task_id": "P-77-part-001",
+  "units": [
+    {
+      "id": "traditional_salt_naming_methods",
+      "k": "definition",
+      "f": "definition",
+      "c": [17, 18, 19, 20],
+      "term": "traditional methods for naming salts of organic bases",
+      "entity": "SaltNamingMethodSet",
+      "value": ["lit", {
+        "condition": "P-77.1.2 cannot be applied",
+        "methods": [
+          {"ordinal": 1, "method": "adduct", "preferred_name_condition": "the acid components of the adducts are organic compounds"},
+          {"ordinal": 2, "method": "unaltered base followed by the name of the anion"},
+          {"ordinal": 3, "method": "unaltered base followed by a hydrohalide name", "only_for": "salts of hydrohalogen acids", "hydrohalide_names": ["hydrofluoride", "hydrobromide", "hydrochloride", "hydroiodide"]}
+        ],
+        "source_text": [
+          "(1) as adducts.",
+          "The names of these adducts are preferred IUPAC names only when the acid components of the adducts are organic compounds;",
+          "(2) the unaltered name of the base followed by the name of the anion;",
+          "(3) for salts of hydrohalogen acids only, the unaltered name of the base is followed by hydrofluoride, hydrobromide, hydrochloride, or hydroiodide, as the case may be."
+        ]
+      }]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-80-part-001",
+  "clauses": [
+    null,
+    ["scope", "normative", "compile"],
+    ["cross_reference", "informative", "skip", "source_navigation"],
+    ["history", "informative", "skip", "historical_context"],
+    ["history", "informative", "skip", "historical_context"],
+    ["cross_reference", "informative", "skip", "citation_only"],
+    ["history", "informative", "skip", "historical_context"],
+    ["history", "informative", "skip", "historical_context"],
+    ["rationale", "informative", "skip", "rationale"]
+  ],
+  "symbols": [
+    {
+      "id": "compound.is_organic",
+      "k": "predicate",
+      "d": "A compound is an organic compound.",
+      "a": [["compound", "compound"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "organic_compound"]
+    },
+    {
+      "id": "compound.isotopic_nuclide_composition_deviates_from_natural",
+      "k": "predicate",
+      "d": "A compound's isotopic nuclide composition deviates from natural composition.",
+      "a": [["compound", "organic_compound"]],
+      "ret": "boolean",
+      "g": ["primitive", [], "isotopic_composition_deviation_from_natural"]
+    }
+  ],
+  "units": [
+    {
+      "id": "isotopic_nomenclature_scope",
+      "k": "definition",
+      "c": [2],
+      "in": [["compound", "organic_compound"]],
+      "out": [["result", "boolean"]],
+      "term": "organic compound within the scope of isotopic nomenclature",
+      "entity": "organic_compound",
+      "value": [
+        "all",
+        ["pred", "compound.is_organic", ["var", "compound"]],
+        [
+          "pred",
+          "compound.isotopic_nuclide_composition_deviates_from_natural",
+          ["var", "compound"]
+        ]
+      ]
+    }
+  ],
+  "exceptions": [],
+  "tables": [],
+  "figures": [],
+  "examples": [],
+  "corrections": [],
+  "refs": [],
+  "additional_refs": []
+}

@@ -1,0 +1,305 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-30-part-001",
+  "clauses": [
+    null,
+    ["definition", "normative", "compile"],
+    ["definition", "informative", "compile"],
+    ["rationale", "informative", "compile"],
+    ["scope", "informative", "compile"],
+    ["rationale", "informative", "compile"],
+    ["definition", "informative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["definition", "informative", "compile"],
+    ["effect", "normative", "compile"],
+    ["scope", "informative", "compile"],
+    ["permission", "normative", "compile"],
+    ["permission", "normative", "compile"]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "affix_structure_and_substitution",
+      "k": "definition",
+      "f": "definition",
+      "c": [2],
+      "in": [["parent_name", "ParentName"]],
+      "out": [["affix_semantics", "ParentNameAffixSemantics"]],
+      "term": "parent name affix semantics",
+      "entity": "ParentNameAffixSemantics",
+      "value": ["lit", {
+        "attached_affix_types": ["prefix", "suffix"],
+        "attached_to": "parent_name",
+        "specifies": "particular_molecular_structure",
+        "usual_representation": "substituent",
+        "substituent_replaces": "hydrogen_atoms_of_parent_hydride_or_parent_structure"
+      }]
+    },
+    {
+      "id": "characteristic_substituent_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [3],
+      "out": [["classification", "CharacteristicSubstituentCriterion"]],
+      "term": "characteristic substituent classification",
+      "entity": "CharacteristicSubstituentCriterion",
+      "value": ["lit", {
+        "customary_condition": {
+          "link_between_substituent_and_parent": "not_carbon_carbon"
+        },
+        "examples": ["-OH", "=O", "-NH2"],
+        "recognized_exceptions": ["-COOH", "-CN"],
+        "classification_status": "customary_with_recognized_exceptions"
+      }]
+    },
+    {
+      "id": "functionality_general_view",
+      "k": "definition",
+      "f": "definition",
+      "c": [4],
+      "out": [["functionality", "FunctionalityConcept"]],
+      "term": "general view of functionality",
+      "entity": "FunctionalityConcept",
+      "value": ["lit", {
+        "implies_presence_of": ["heteroatoms"],
+        "precise_application_limits": "not_defined",
+        "policy": "retain_general_view_without_attempting_precise_limits"
+      }]
+    },
+    {
+      "id": "carbon_carbon_unsaturation_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [5],
+      "out": [["scope", "NomenclatureScope"]],
+      "term": "carbon-carbon unsaturation as functionality",
+      "entity": "NomenclatureScope",
+      "value": ["lit", {
+        "feature": "carbon_carbon_unsaturation",
+        "contexts": ["acyclic_compounds", "alicyclic_compounds"],
+        "classification": "special_type_of_functionality",
+        "treated_in_chapter": "P-3",
+        "not_treated_in_chapter": "P-2",
+        "not_treated_in_subject": "parent_hydrides"
+      }]
+    },
+    {
+      "id": "unsaturation_hydrogenation_equivalence",
+      "k": "definition",
+      "f": "definition",
+      "c": [6],
+      "out": [["equivalence", "NomenclatureEquivalence"]],
+      "term": "unsaturation and hydrogenation equivalence",
+      "entity": "NomenclatureEquivalence",
+      "value": ["lit", {
+        "for_nomenclature": true,
+        "left_operation": "express_acyclic_and_alicyclic_unsaturation_by_endings",
+        "right_operation": "express_mancude_parent_hydride_saturation_by_hydro_dehydro_prefixes",
+        "relation": "essentially_equivalent"
+      }]
+    },
+    {
+      "id": "functional_parent_compound",
+      "k": "definition",
+      "f": "definition",
+      "c": [7],
+      "out": [["compound_class", "FunctionalParentCompound"]],
+      "term": "functional parent compound",
+      "entity": "FunctionalParentCompound",
+      "value": ["lit", {
+        "may_be_treated_as": "parent_structure",
+        "has": ["substitutable_hydrogen_atoms", "characteristics_normally_associated_with_functionality"],
+        "examples": [
+          {"name": "acetic acid", "formula": "CH3-COOH"},
+          {"name": "phosphonic acid", "formula": "HP(O)(OH)2"}
+        ]
+      }]
+    },
+    {
+      "id": "distinction_functionalized_parent_hydride",
+      "k": "definition",
+      "f": "definition",
+      "c": [8],
+      "out": [["distinction", "ParentCompoundDistinction"]],
+      "term": "functional parent compound distinction",
+      "entity": "ParentCompoundDistinction",
+      "value": ["lit", {
+        "functional_parent_compound": "parent_like_structure_with_functionality_characteristics",
+        "functionalized_parent_hydride": "parent_hydride_with_characteristic_group_introduced_as_suffix",
+        "examples_of_functionalized_parent_hydrides": ["butanoic acid", "ethanol"],
+        "must_distinguish": true
+      }]
+    },
+    {
+      "id": "functionalized_parent_hydride",
+      "k": "definition",
+      "f": "definition",
+      "c": [9],
+      "out": [["compound_class", "FunctionalizedParentHydride"]],
+      "term": "functionalized parent hydride",
+      "entity": "FunctionalizedParentHydride",
+      "value": ["lit", {
+        "alternate_term": "functionalized parent hydride",
+        "introduced_characteristic_group": "suffix_attached_to_parent_hydride",
+        "strict_functionality_scope_excludes": ["ions", "radicals"]
+      }]
+    },
+    {
+      "id": "ionic_or_radical_center_as_function",
+      "k": "definition",
+      "f": "required",
+      "c": [10],
+      "out": [["center_treatment", "CenterFunctionTreatment"]],
+      "term": "ionic or radical center treatment",
+      "entity": "CenterFunctionTreatment",
+      "value": ["lit", {
+        "centers": ["ionic_center", "radical_center"],
+        "treated_like": "function",
+        "expression": ["suffixes", "prefixes"],
+        "same_expression_as": "characteristic_groups"
+      }]
+    },
+    {
+      "id": "chapter_introduction_scope",
+      "k": "definition",
+      "f": "definition",
+      "c": [11],
+      "out": [["coverage", "ChapterTreatmentCoverage"]],
+      "term": "chapter treatment introduction",
+      "entity": "ChapterTreatmentCoverage",
+      "value": ["lit", {
+        "treatment_is_introduced_in": ["P-30", "P-7"]
+      }]
+    },
+    {
+      "id": "group_suffix_or_prefix",
+      "k": "definition",
+      "f": "permitted",
+      "c": [12],
+      "out": [["name_expression", "NameGroupExpression"]],
+      "term": "group expression as suffix or prefix",
+      "entity": "NameGroupExpression",
+      "value": ["lit", {
+        "group_expression_positions": ["suffix", "prefix"],
+        "choice_available": true
+      }]
+    },
+    {
+      "id": "detachable_prefix_alphabetization",
+      "k": "definition",
+      "f": "required",
+      "c": [13],
+      "out": [["prefix_behavior", "DetachablePrefixBehavior"]],
+      "term": "detachable alphabetizable prefixes",
+      "entity": "DetachablePrefixBehavior",
+      "value": ["lit", {
+        "prefixes_are": ["detachable", "alphabetizable"],
+        "same_behavior_as": "prefixes_derived_from_parent_hydrides",
+        "parent_hydride_prefix_reference": "P-14.5"
+      }]
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "characteristic_substituent_exceptions",
+      "c": [3],
+      "if": ["lit", {
+        "customary_link_condition": "not_carbon_carbon",
+        "group_examples": ["-COOH", "-CN"]
+      }],
+      "target": ["semantic_unit", "characteristic_substituent_classification"],
+      "mode": "add_guard",
+      "guard": ["lit", {
+        "recognized_exception_to_customary_classification": true,
+        "groups": ["-COOH", "-CN"]
+      }],
+      "order": 1
+    },
+    {
+      "id": "ionic_and_radical_centers_outside_functionality",
+      "c": [9],
+      "if": ["lit", {
+        "entity_types": ["ion", "radical"],
+        "scope": "functionality"
+      }],
+      "target": ["semantic_unit", "functionalized_parent_hydride"],
+      "mode": "add_guard",
+      "guard": ["lit", {
+        "strictly_outside_functionality_concept": true
+      }],
+      "order": 2
+    }
+  ],
+  "tables": [],
+  "figures": [],
+  "examples": [
+    {
+      "id": "acetic_acid_functional_parent",
+      "c": [7],
+      "input": "CH3-COOH",
+      "ok": ["acetic acid"],
+      "shows": [["semantic_unit", "functional_parent_compound"]],
+      "why": "Example of a functional parent compound."
+    },
+    {
+      "id": "phosphonic_acid_functional_parent",
+      "c": [7],
+      "input": "HP(O)(OH)2",
+      "ok": ["phosphonic acid"],
+      "shows": [["semantic_unit", "functional_parent_compound"]],
+      "why": "Example of a functional parent compound."
+    },
+    {
+      "id": "butanoic_acid_functionalized_parent_hydride",
+      "c": [8],
+      "input": "butanoic acid",
+      "ok": ["butanoic acid"],
+      "shows": [["semantic_unit", "distinction_functionalized_parent_hydride"]],
+      "why": "Example of a characteristic group expressed as a suffix on a parent hydride."
+    },
+    {
+      "id": "ethanol_functionalized_parent_hydride",
+      "c": [8],
+      "input": "ethanol",
+      "ok": ["ethanol"],
+      "shows": [["semantic_unit", "distinction_functionalized_parent_hydride"]],
+      "why": "Example of a characteristic group expressed as a suffix on a parent hydride."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {
+      "id": "reference.p30.part001.p3",
+      "c": [5],
+      "rel": "cites",
+      "o": "P-30:xref:0001",
+      "resolution": "external",
+      "target": ["external", "P-3"]
+    },
+    {
+      "id": "reference.p30.part001.p2",
+      "c": [5],
+      "rel": "cites",
+      "o": "P-30:xref:0002",
+      "resolution": "external",
+      "target": ["external", "P-2"]
+    },
+    {
+      "id": "reference.p30.part001.p7",
+      "c": [11],
+      "rel": "cites",
+      "o": "P-30:xref:0003",
+      "resolution": "external",
+      "target": ["external", "P-7"]
+    },
+    {
+      "id": "reference.p30.part001.p14_5",
+      "c": [13],
+      "rel": "cites",
+      "o": "P-30:xref:0004",
+      "resolution": "exact"
+    }
+  ],
+  "additional_refs": []
+}
