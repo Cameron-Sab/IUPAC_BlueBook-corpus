@@ -1,0 +1,1208 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-75-part-001",
+  "mechanical_assets": true,
+  "clauses": [
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "informative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "radical_ion_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        2
+      ],
+      "term": "radical ion",
+      "entity": "MolecularEntity",
+      "value": [
+        "lit",
+        {
+          "has_at_least_one_radical_center": true,
+          "has_at_least_one_ionic_center": true,
+          "centers_may_share_atom": true,
+          "centers_may_be_on_different_parent_atoms": true
+        }
+      ]
+    },
+    {
+      "id": "radical_ion_formal_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        3
+      ],
+      "steps": [
+        [
+          "emit",
+          "Radical ions are formally named as described in the following subsections."
+        ]
+      ]
+    },
+    {
+      "id": "electron_radical_ion_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "steps": [
+        [
+          "emit",
+          "Radical ions formed by addition or removal of electrons may be named in two ways. Method (1) is substitutive nomenclature: a radical ion derived formally from a neutral parent hydride, parent compound, or hydro derivative of either is named by adding the suffix elide or elium to the neutral parent structure; numerical prefixes such as di and tri denote the number of added or removed electrons."
+        ],
+        [
+          "emit",
+          "The elide and elium method may indicate a global structure when the positions of radical and/or ionic centers are unknown or when naming a specific structure is unnecessary or undesirable. These suffixes cannot be used in the presence of other suffixes."
+        ],
+        [
+          "emit",
+          "Method (2) is functional class nomenclature: add the separate words radical cation or radical anion to the name of the neutral parent hydride or parent compound having the same molecular formula. Multiplying prefixes such as di and tri denote multiple radical or ionic centers. The terms radical ion may also be used, followed by a charge number indicating the appropriate charge sign."
+        ],
+        [
+          "emit",
+          "The substitutive method leads to preferred IUPAC names."
+        ]
+      ]
+    },
+    {
+      "id": "parent_hydride_radical_ion_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "steps": [
+        [
+          "emit",
+          "For radical ions derived from parent hydrides, the order of seniority is radicals > anions > cations and is reflected in a preferred IUPAC name."
+        ],
+        [
+          "emit",
+          "Suffixes assigned to anionic and/or cationic centers are placed first after the name of the parent structure, whether parent hydride, functional parent hydride, or functionalized parent hydride, followed by suffixes attributed to radical centers."
+        ],
+        [
+          "emit",
+          "A radical ion formally derived by removal of one or more hydrogen atoms from one or more skeletal atoms of an ionic or zwitterionic parent hydride is named by adding yl or ylidene, with appropriate multiplying prefixes before yl or ylidene, and by eliding the final e of the ionic parent hydride name."
+        ],
+        [
+          "emit",
+          "Skeletal positions bearing radical centers have preference over positions bearing ionic centers when low locants are assigned."
+        ]
+      ]
+    },
+    {
+      "id": "added_indicated_hydrogen_method",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "steps": [
+        [
+          "emit",
+          "Where a mancude parent hydride has too few hydrogen atoms to apply directly the yl, ylidene, ide, or ylium recommendations of P-71.1, P-72.1, and P-73.2, the radical and ionic centers are derived formally from a dihydro derivative of the cyclic parent hydride."
+        ],
+        [
+          "emit",
+          "Radical ions may also be described by applying the principle of added indicated hydrogen."
+        ],
+        [
+          "emit",
+          "In the added indicated hydrogen method, describe the hydro derivative by specifying the hydrogen atom of the dihydro pair that remains after creation of the radical center. Cite italic capital H and the locant of the skeletal atom bearing that hydrogen, enclose both in parentheses, and insert them into the corresponding parent hydride name immediately after the locant for the radical center."
+        ],
+        [
+          "emit",
+          "Create the ionic center next by subtraction of a hydron."
+        ],
+        [
+          "emit",
+          "For clarity, cite the added hydrogen in names."
+        ],
+        [
+          "emit",
+          "Preferred IUPAC names are formed by the added indicated hydrogen method."
+        ]
+      ]
+    },
+    {
+      "id": "ionic_suffix_group_radical_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        71
+      ],
+      "steps": [
+        [
+          "emit",
+          "When ions may be named using modified suffixes, add the suffixes denoting radical centers to the name of the cationic or anionic parent hydride."
+        ]
+      ]
+    },
+    {
+      "id": "separate_parent_radical_ion_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        89,
+        90
+      ],
+      "steps": [
+        [
+          "emit",
+          "Radical centers have priority over ionic centers."
+        ],
+        [
+          "emit",
+          "A radical ion formally derived by subtraction of one or more hydrogen atoms from an ionic or zwitterionic compound, where the ionic and radical centers cannot be included in the same parent structure, is named by expressing the ionic center or the part containing it by substituent prefixes attached to the name of the parent radical."
+        ]
+      ]
+    }
+  ],
+  "exceptions": [],
+  "tables": [
+    {
+      "id": "radical_cation_table_example",
+      "c": [
+        39,
+        40,
+        41
+      ],
+      "label": "Examples of radical cations",
+      "title": "Radical cation example and names",
+      "cols": [
+        [
+          "structure",
+          "Structure",
+          "string",
+          [
+            39,
+            40
+          ]
+        ],
+        [
+          "name",
+          "Name",
+          "string",
+          [
+            41
+          ]
+        ]
+      ],
+      "rows": [
+        {
+          "id": "benzenelium",
+          "c": [
+            39,
+            40,
+            41
+          ],
+          "v": [
+            "or [C6H6]\\u00b7+",
+            "benzenelium (PIN)\\nbenzeniumyl"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "structure"
+        ],
+        "result": [
+          "name"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [],
+  "examples": [
+    {
+      "id": "biphenyl_radical_ion",
+      "c": [
+        15
+      ],
+      "input": "[C6H5-C6H5](2\\u00b7)(2\\u2212)",
+      "ok": [
+        "[1,1\\u2032-biphenyl]dielide (PIN)",
+        "biphenyl diradical dianion",
+        "biphenyl diradical ion(2\\u2212)"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "The substitutive elide name is preferred; functional-class names are also shown."
+    },
+    {
+      "id": "azulene_radical_cation",
+      "c": [
+        16
+      ],
+      "input": "[C10H8]\\u00b7+",
+      "ok": [
+        "azulenelium (PIN)",
+        "azulene radical cation",
+        "azulene radical ion(1+)"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "The elium substitutive name is preferred; radical-cation functional-class names are also shown."
+    },
+    {
+      "id": "azanidyl_example",
+      "c": [
+        23
+      ],
+      "input": "HN\\u00b7\\u2212",
+      "ok": [
+        "azanidyl (preselected name)",
+        "aminidyl"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "Example of a radical anion named with an idyl ending."
+    },
+    {
+      "id": "ethan_idyl_example",
+      "c": [
+        24
+      ],
+      "input": {
+        "caption": "ethan-2-id-1-yl (PIN)",
+        "figure": "figure.asset.p_75.2.1:clause:0004"
+      },
+      "ok": [
+        "ethan-2-id-1-yl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.1:clause:0004"
+        ]
+      ],
+      "why": "The generated structure figure illustrates a preferred radical-anion name."
+    },
+    {
+      "id": "trimethylboranuidyl_example",
+      "c": [
+        26
+      ],
+      "input": "(CH3)3B\\u00b7\\u2212",
+      "ok": [
+        "trimethylboranuidyl (PIN)",
+        "trimethyl-1\\u03bb5-boranidyl"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "The example shows the preferred boranuidyl name and the alternative lambda form."
+    },
+    {
+      "id": "thiiran_idyl_example",
+      "c": [
+        27
+      ],
+      "input": {
+        "caption": "1\\u03bb4-thiiran-1-id-1-yl (PIN)",
+        "figure": "figure.asset.p_75.2.1:clause:0007"
+      },
+      "ok": [
+        "1\\u03bb4-thiiran-1-id-1-yl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.1:clause:0007"
+        ]
+      ],
+      "why": "The figure illustrates a preferred idyl name for a radical anion."
+    },
+    {
+      "id": "diphenylpropane_diidyl_example",
+      "c": [
+        29
+      ],
+      "input": {
+        "caption": "1,3-diphenylpropane-1,3-diid-2-yl (PIN)",
+        "figure": "figure.asset.p_75.2.1:clause:0009"
+      },
+      "ok": [
+        "1,3-diphenylpropane-1,3-diid-2-yl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.1:clause:0009"
+        ]
+      ],
+      "why": "The multiplying diid suffix denotes two anionic centers."
+    },
+    {
+      "id": "methoxycarbonyl_methanidylidene",
+      "c": [
+        31
+      ],
+      "input": "CH3-O-CO-C2\\u00b7\\u2212",
+      "ok": [
+        "(methoxycarbonyl)methanidylidene (PIN)"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "The example demonstrates the ylidene form for the radical anion."
+    },
+    {
+      "id": "methyliumyl_example",
+      "c": [
+        33
+      ],
+      "input": "H2C\\u00b7+",
+      "ok": [
+        "methyliumyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "Example of a radical cation named with the yliumyl ending."
+    },
+    {
+      "id": "silaniumyl_example",
+      "c": [
+        34
+      ],
+      "input": "H4Si\\u00b7+",
+      "ok": [
+        "silaniumyl (preselected name)"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "Example of a preselected radical-cation name."
+    },
+    {
+      "id": "ethaniumyliumyl_unknown_centers",
+      "c": [
+        35
+      ],
+      "input": "[CH3-CH2]\\u00b72+",
+      "ok": [
+        "ethaniumyliumyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "The name is global because the locations of the radical and ionic centers are unknown."
+    },
+    {
+      "id": "ethan_locanted_centers",
+      "c": [
+        36
+      ],
+      "input": {
+        "caption": "ethan-1-ium-1-ylium-1-yl (PIN)\\n(location of radical and ionic centers as indicated by locants)",
+        "figure": "figure.asset.p_75.2.2:clause:0006"
+      },
+      "ok": [
+        "ethan-1-ium-1-ylium-1-yl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.2:clause:0006"
+        ]
+      ],
+      "why": "Locants specify the locations of the radical and ionic centers."
+    },
+    {
+      "id": "benzenelium_table",
+      "c": [
+        41
+      ],
+      "input": "[C6H6]\\u00b7+",
+      "ok": [
+        "benzenelium (PIN)",
+        "benzeniumyl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "table",
+          "radical_cation_table_example"
+        ]
+      ],
+      "why": "The table records the preferred elium name and the alternative benzeniumyl name."
+    },
+    {
+      "id": "trithiolane_yliumyl",
+      "c": [
+        42
+      ],
+      "input": {
+        "caption": "4,5-bis(trifluoromethyl)-1,2,3-trithiolan-5-ylium-4-yl (PIN)",
+        "figure": "figure.asset.p_75.2.2:clause:0012"
+      },
+      "ok": [
+        "4,5-bis(trifluoromethyl)-1,2,3-trithiolan-5-ylium-4-yl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.2:clause:0012"
+        ]
+      ],
+      "why": "Example of a radical cation derived from a parent hydride."
+    },
+    {
+      "id": "diethylethanaminiumyl_boranuidyl",
+      "c": [
+        45
+      ],
+      "input": {
+        "caption": "(N,N-diethylethanaminiumyl)boranuidyl (PIN)",
+        "figure": "figure.asset.p_75.2.3:clause:0003"
+      },
+      "ok": [
+        "(N,N-diethylethanaminiumyl)boranuidyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.3:clause:0003"
+        ]
+      ],
+      "why": "Example of a zwitterionic radical ion with ionic and radical suffix centers."
+    },
+    {
+      "id": "triazene_zwitterionic_radical",
+      "c": [
+        47
+      ],
+      "input": {
+        "caption": "3-methyl-1-(trimethylsilyl)triaz-2-en-2-ium-1-id-2-yl (PIN)",
+        "figure": "figure.asset.p_75.2.3:clause:0005"
+      },
+      "ok": [
+        "3-methyl-1-(trimethylsilyl)triaz-2-en-2-ium-1-id-2-yl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.3:clause:0005"
+        ]
+      ],
+      "why": "Example of a zwitterionic radical ion named with both ionic and radical suffixes."
+    },
+    {
+      "id": "dihydroanthracen_idyl",
+      "c": [
+        57
+      ],
+      "input": {
+        "caption": "9,10-dihydroanthracen-10-id-9-yl (PIN)",
+        "figure": "figure.asset.p_75.2.4:clause:0010"
+      },
+      "ok": [
+        "9,10-dihydroanthracen-10-id-9-yl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.4:clause:0010"
+        ]
+      ],
+      "why": "Example of the added indicated hydrogen method for a radical anion."
+    },
+    {
+      "id": "dihydronaphthalen_idyl",
+      "c": [
+        59
+      ],
+      "input": {
+        "caption": "1,4-dihydronaphthalen-4-id-1-yl",
+        "figure": "figure.asset.p_75.2.4:clause:0012"
+      },
+      "ok": [
+        "1,4-dihydronaphthalen-4-id-1-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.4:clause:0012"
+        ]
+      ],
+      "why": "Example of explicit added hydrogen in a radical-anion name."
+    },
+    {
+      "id": "dihydrophenanthren_yliumyl",
+      "c": [
+        61
+      ],
+      "input": {
+        "caption": "9,10-dihydrophenanthren-10-ylium-9-yl (PIN)",
+        "figure": "figure.asset.p_75.2.4:clause:0014"
+      },
+      "ok": [
+        "9,10-dihydrophenanthren-10-ylium-9-yl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.4:clause:0014"
+        ]
+      ],
+      "why": "Example of the added indicated hydrogen method for a radical cation."
+    },
+    {
+      "id": "ethyl_oxopyridiniumyl",
+      "c": [
+        63
+      ],
+      "input": {
+        "caption": "1-ethyl-2-oxopyridin-1-ium-1(2H)-yl (PIN)\\n1-ethyl-2-oxo-1,2-dihydropyridin-1-ium-1-yl",
+        "figure": "figure.asset.p_75.2.4:clause:0016"
+      },
+      "ok": [
+        "1-ethyl-2-oxopyridin-1-ium-1(2H)-yl (PIN)",
+        "1-ethyl-2-oxo-1,2-dihydropyridin-1-ium-1-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.4:clause:0016"
+        ]
+      ],
+      "why": "The preferred name cites the indicated hydrogen; the alternative hydro name is also shown."
+    },
+    {
+      "id": "fullerene_x_radical",
+      "c": [
+        65
+      ],
+      "input": {
+        "caption": "X = \\u00b7 ;",
+        "figure": "figure.asset.p_75.2.4:clause:0020"
+      },
+      "ok": [
+        "X = \\u00b7 ;"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.4:clause:0020"
+        ]
+      ],
+      "why": "The caption identifies the radical-center case in the fullerene examples."
+    },
+    {
+      "id": "fullerene_y_cation",
+      "c": [
+        66
+      ],
+      "input": {
+        "caption": "Y = +\\n(C60-Ih)[5,6]fulleren-9-ylium-1(9H)-yl (PIN)\\n1,9-dihydro(C60-Ih)[5,6]fulleren-9-ylium-1-yl\\nX = \\u00b7 ;",
+        "figure": "figure.asset.p_75.2.4:clause:0020"
+      },
+      "ok": [
+        "(C60-Ih)[5,6]fulleren-9-ylium-1(9H)-yl (PIN)",
+        "1,9-dihydro(C60-Ih)[5,6]fulleren-9-ylium-1-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.4:clause:0020"
+        ]
+      ],
+      "why": "The cationic fullerene example uses the ylium suffix and cites the added hydrogen."
+    },
+    {
+      "id": "fullerene_y_anion",
+      "c": [
+        67
+      ],
+      "input": {
+        "caption": "Y = \\u2212\\nC60-Ih)[5,6]fulleren-9-id-1(9H)-yl (PIN)\\n1,9-dihydro(C60-Ih)[5,6]fulleren-9-id-1-yl",
+        "figure": "figure.asset.p_75.2.4:clause:0020"
+      },
+      "ok": [
+        "C60-Ih)[5,6]fulleren-9-id-1(9H)-yl (PIN)",
+        "1,9-dihydro(C60-Ih)[5,6]fulleren-9-id-1-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.2.4:clause:0020"
+        ]
+      ],
+      "why": "The anionic fullerene example uses the id suffix and cites the added hydrogen."
+    },
+    {
+      "id": "benzenaminiumyl",
+      "c": [
+        73
+      ],
+      "input": {
+        "caption": "benzenaminiumyl (PIN)",
+        "figure": "figure.asset.p_75.3.1:clause:0005"
+      },
+      "ok": [
+        "benzenaminiumyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.3.1:clause:0005"
+        ]
+      ],
+      "why": "The radical suffix is added to the ionic parent hydride name."
+    },
+    {
+      "id": "methanaminidyl",
+      "c": [
+        75
+      ],
+      "input": {
+        "caption": "methanaminidyl (PIN)",
+        "figure": "figure.asset.p_75.3.1:clause:0007"
+      },
+      "ok": [
+        "methanaminidyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.3.1:clause:0007"
+        ]
+      ],
+      "why": "The example applies the radical suffix to an ionic suffix group."
+    },
+    {
+      "id": "acetamidyliumyl",
+      "c": [
+        77
+      ],
+      "input": "CH3-CO-N\\u00b7+",
+      "ok": [
+        "acetamidyliumyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "Example of a radical ion on an ionic suffix group."
+    },
+    {
+      "id": "benzonitriliumyl",
+      "c": [
+        78
+      ],
+      "input": "C6H5-C\\u2261N\\u00b7+",
+      "ok": [
+        "benzonitriliumyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "Example of a radical ion on a nitrilium ionic suffix group."
+    },
+    {
+      "id": "acetyl_methyl_oxidaniumyl",
+      "c": [
+        81
+      ],
+      "input": {
+        "caption": "acetyl(methyl)oxidaniumyl (PIN)",
+        "figure": "figure.asset.p_75.3.2:clause:0004"
+      },
+      "ok": [
+        "acetyl(methyl)oxidaniumyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.3.2:clause:0004"
+        ]
+      ],
+      "why": "Example of a radical ion named outside the ionic suffix-group cases."
+    },
+    {
+      "id": "propyloxidaniumyl",
+      "c": [
+        83
+      ],
+      "input": {
+        "caption": "propyloxidaniumyl (PIN)",
+        "figure": "figure.asset.p_75.3.2:clause:0006"
+      },
+      "ok": [
+        "propyloxidaniumyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.3.2:clause:0006"
+        ]
+      ],
+      "why": "Example of an oxidaniumyl radical ion name."
+    },
+    {
+      "id": "acetylazanidyl",
+      "c": [
+        85
+      ],
+      "input": "CH3-CO-N\\u00b7\\u2212",
+      "ok": [
+        "acetylazanidyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [],
+      "why": "Example of an anionic radical ion named outside the ionic suffix-group cases."
+    },
+    {
+      "id": "benzenesulfonyl_hydrazinidyl",
+      "c": [
+        86
+      ],
+      "input": {
+        "caption": "2-(benzenesulfonyl)hydrazin-1-id-1-yl (PIN)\\n2-(benzenesulfonyl)diazan-1-id-1-yl",
+        "figure": "figure.asset.p_75.3.2:clause:0009"
+      },
+      "ok": [
+        "2-(benzenesulfonyl)hydrazin-1-id-1-yl (PIN)",
+        "2-(benzenesulfonyl)diazan-1-id-1-yl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.3.2:clause:0009"
+        ]
+      ],
+      "why": "The example gives the preferred hydrazinidyl name and its diazan alternative."
+    },
+    {
+      "id": "oxidaniumylidyne_ethyl",
+      "c": [
+        92
+      ],
+      "input": {
+        "caption": "(oxidaniumylidyne)ethyl (PIN)",
+        "figure": "figure.asset.p_75.4:clause:0006"
+      },
+      "ok": [
+        "(oxidaniumylidyne)ethyl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.4:clause:0006"
+        ]
+      ],
+      "why": "The ionic part is expressed as a substituent prefix on the parent radical."
+    },
+    {
+      "id": "ethoxy_oxidophenylmethyl",
+      "c": [
+        94
+      ],
+      "input": {
+        "caption": "ethoxy(oxido)(phenyl)methyl (PIN)\\n\\u03b1-ethoxy-\\u03b1-oxidobenzyl",
+        "figure": "figure.asset.p_75.4:clause:0008"
+      },
+      "ok": [
+        "ethoxy(oxido)(phenyl)methyl (PIN)",
+        "\\u03b1-ethoxy-\\u03b1-oxidobenzyl"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.4:clause:0008"
+        ]
+      ],
+      "why": "The preferred parent-radical name and the alternative retained form are shown."
+    },
+    {
+      "id": "bis_benzothiazolium_pentadienyl",
+      "c": [
+        96
+      ],
+      "input": {
+        "caption": "1,5-bis(3-ethyl-1,3-benzothiazol-3-ium-2-yl)penta-1,4-dien-3-yl (PIN)",
+        "figure": "figure.asset.p_75.4:clause:0010"
+      },
+      "ok": [
+        "1,5-bis(3-ethyl-1,3-benzothiazol-3-ium-2-yl)penta-1,4-dien-3-yl (PIN)"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_75.4:clause:0010"
+        ]
+      ],
+      "why": "The example expresses ionic centers in substituent prefixes attached to the parent radical."
+    }
+  ],
+  "corrections": [],
+  "refs": [],
+  "additional_refs": []
+}
