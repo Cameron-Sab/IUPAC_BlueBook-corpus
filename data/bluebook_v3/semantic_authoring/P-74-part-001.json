@@ -1,0 +1,2400 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    null,
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "tie_continuation",
+      "normative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "exception",
+      "normative",
+      "compile"
+    ],
+    [
+      "exception",
+      "normative",
+      "compile"
+    ],
+    [
+      "exception",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null
+  ],
+  "corrections": [],
+  "examples": [
+    {
+      "id": "source_example_01",
+      "c": [
+        23
+      ],
+      "input": "Displayed source structure in P-74.1.1",
+      "ok": [
+        "1,2,2,2-tetramethylhydrazin-2-ium-1-ide (PIN)"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.1:clause:0012"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.1."
+    },
+    {
+      "id": "source_example_02",
+      "c": [
+        25
+      ],
+      "input": "Displayed source structure in P-74.1.1",
+      "ok": [
+        "5H-11λ5-indolo[2,3-b]quinolizin-11-ylium-5-ide (PIN)"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.1:clause:0014"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.1."
+    },
+    {
+      "id": "source_example_03",
+      "c": [
+        27
+      ],
+      "input": "Displayed source structure in P-74.1.1",
+      "ok": [
+        "2,2-diphenyl-4λ5-[1,3,4,2]dioxazaborolo[4,5-a]pyridin-4-ylium-2-uide (PIN)"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.1:clause:0016"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.1."
+    },
+    {
+      "id": "source_example_04",
+      "c": [
+        29
+      ],
+      "input": "Displayed source structure in P-74.1.1",
+      "ok": [
+        "6,6-dihydroxy-6,11-dihydro-5λ5-[1,3]benzimidazolo[1,2-b][2,1]benzazaborol-5-ylium-6-uide (PIN) 6,6-dihydroxy-6,11-dihydro-5λ5-benzimidazolo[1,2-b][2,1]benzazaborol-5-ylium-6-uide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.1:clause:0018"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.1."
+    },
+    {
+      "id": "source_example_05",
+      "c": [
+        31
+      ],
+      "input": "Displayed source structure in P-74.1.1",
+      "ok": [
+        "2-methyl-4-oxo-3,4-dihydro-1H-2-benzoselenopyran-2-ium-3-ide (PIN)\n(not 2-methyl-3,4-dihydro-1H-2-benzoselenopyran-2-ium-3-id-4-one)\n\n2-methyl-4-oxo-3,4-dihydro-1H-isoselenochromen-2-ium-3-ide\n(not 2-methyl-3,4-dihydro-1H-isoselenochromen-2-ium-3-id-4-one)"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.1:clause:0020"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.1."
+    },
+    {
+      "id": "source_example_06",
+      "c": [
+        33
+      ],
+      "input": "Displayed source structure in P-74.1.1",
+      "ok": [
+        "5λ5,7λ5-spiro[[1,3,2]diazaborolo[3,4-a:5,1-a′]dipyridine-6,10′-phenoxaborinine]-5,7-bis(ylium)-6-uide (PIN)"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.1:clause:0022"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.1."
+    },
+    {
+      "id": "source_example_07",
+      "c": [
+        41
+      ],
+      "input": "Displayed source structure in P-74.1.2",
+      "ok": [
+        "1,1,1-trimethylhydrazin-1-ium-2-sulfonate (PIN)"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.2:clause:0007"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.2."
+    },
+    {
+      "id": "source_example_08",
+      "c": [
+        43
+      ],
+      "input": "Displayed source structure in P-74.1.2",
+      "ok": [
+        "1-methyl-4,6-diphenylpyridin-1-ium-2-carboxylate (PIN)"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.2:clause:0009"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.2."
+    },
+    {
+      "id": "source_example_09",
+      "c": [
+        45
+      ],
+      "input": "Displayed source structure in P-74.1.2",
+      "ok": [
+        "N,1,4-triphenyl-1H-1,2,4-triazol-4-ium-3-aminide (PIN)\nN-(1,4-diphenyl-1H-1,2,4-triazol-4-ium-3-yl)benzenaminide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.2:clause:0011"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.2."
+    },
+    {
+      "id": "source_example_10",
+      "c": [
+        50
+      ],
+      "input": "Displayed source structure in P-74.1.3",
+      "ok": [
+        "trimethyl{2-[methyldi(phenyl)phosphaniumyl]ethen-1-yl}boranuide (PIN)\ntrimethyl{2-[methyldi(phenyl)phosphoniumyl]ethen-1-yl}boranuide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.3:clause:0005"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.3."
+    },
+    {
+      "id": "source_example_11",
+      "c": [
+        52
+      ],
+      "input": "Displayed source structure in P-74.1.3",
+      "ok": [
+        "(N,N-dimethylmethanaminiumyl)acetate (PIN)\n(trimethylammoniumyl)acetate"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.3:clause:0007"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.3."
+    },
+    {
+      "id": "source_example_12",
+      "c": [
+        54,
+        55
+      ],
+      "input": "Displayed source structure in P-74.1.3",
+      "ok": [
+        "methyl{[(methanaminiumyl)boranuidyl]azaniumyl}boranuide (PIN)\n2,4-diaza-3,5-diborahexane-2,4-diium-\n3,5-diuide 3,5-diazonia-2,4-diboranuidahexane\n\n[not 1-methyl-3-(methanaminiumyl)diborazan-2-ium-1,3-diuide;",
+        "names such as diborazane are no longer named as parent hydrides, see P-21.2.3.1)"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.1.3:clause:0010"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.1.3."
+    },
+    {
+      "id": "source_example_13",
+      "c": [
+        78
+      ],
+      "input": "Displayed source structure in P-74.2.1.1.1",
+      "ok": [
+        "(1) 2-(N,N-dimethylmethanaminiumyl)propan-2-ide (PIN)\n2-(trimethylammoniumyl)propan-2-ide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.1.1.1:clause:0005"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.1.1.1."
+    },
+    {
+      "id": "source_example_14",
+      "c": [
+        83
+      ],
+      "input": "Displayed source structure in P-74.2.1.1.2",
+      "ok": [
+        "(1) 2-(trimethylphosphaniumyl)propan-2-ide (PIN)\n2-(trimethylphosphoniumyl)propan-2-ide\n(2) trimethyl(propan-2-ylidene)-λ5-phosphane\n(isopropylidene)tri(methyl)phosphorane"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.1.1.2:clause:0005"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.1.1.2."
+    },
+    {
+      "id": "source_example_15",
+      "c": [
+        88
+      ],
+      "input": "Displayed source structure in P-74.2.1.1.3",
+      "ok": [
+        "(1) 3-(dimethyloxidaniumyl)pentan-3-ide (PIN)\n3-(dimethyloxoniumyl)pentan-3-ide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.1.1.3:clause:0005"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.1.1.3."
+    },
+    {
+      "id": "source_example_16",
+      "c": [
+        93
+      ],
+      "input": "Displayed source structure in P-74.2.1.1.4",
+      "ok": [
+        "(1) 3-(dimethylsulfaniumyl)pentan-3-ide (PIN)\n3-(dimethylsulfoniumyl)pentan-3-ide\n(2) dimethyl(pentan-3-ylidene)-λ4-sulfane"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.1.1.4:clause:0005"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.1.1.4."
+    },
+    {
+      "id": "source_example_17",
+      "c": [
+        107
+      ],
+      "input": "Displayed source structure in P-74.2.1.2",
+      "ok": [
+        "(2) N,N-dimethylmethanamine N-oxide (PIN)\n(trimethyl)amine oxide\n(1) (trimethylazaniumyl)oxidanide\n(trimethylammoniumyl)oxidanide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.1.2:clause:0013"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.1.2."
+    },
+    {
+      "id": "source_example_18",
+      "c": [
+        115
+      ],
+      "input": "Displayed source structure in P-74.2.1.3",
+      "ok": [
+        "(1) 1,2,2-trimethylhydrazin-2-ium-1-ide (PIN)\n1,2,2-trimethyldiazan-2-ium-1-ide\n(2) N-methylmethanamine N-methylimide\nN,N′-dimethylmethanamine imide\n(dimethyl)amine N-methylimide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.1.3:clause:0008"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.1.3."
+    },
+    {
+      "id": "source_example_19",
+      "c": [
+        125
+      ],
+      "input": "Displayed source structure in P-74.2.1.4",
+      "ok": [
+        "(3) triphenyl-λ5-phosphanone (PIN)\n(2) triphenylphosphane oxide\n(1) (triphenylphosphaniumyl)oxidanide\n(triphenylphosphoniumyl)oxidanide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.1.4:clause:0010"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.1.4."
+    },
+    {
+      "id": "source_example_20",
+      "c": [
+        135
+      ],
+      "input": "Displayed source structure in P-74.2.1.5",
+      "ok": [
+        "(3) N-ethyl-P,P,P-triphenyl-λ5-phosphanimine (PIN)\n(1) ethyl(triphenylphosphaniumyl)azanide\n(2) triphenylphosphane N-ethylimide\nN-ethyl-P,P,P-triphenylphosphane imide\nN-ethyl-P,P,P-triphenylphosphine imide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.1.5:clause:0009"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.1.5."
+    },
+    {
+      "id": "source_example_21",
+      "c": [
+        159,
+        160
+      ],
+      "input": "Displayed source structure in P-74.2.2.1.1",
+      "ok": [
+        "1,2,3-trimethyltriaz-2-en-2-ium-1-ide (PIN;",
+        "the preferred name is based on the unbroken nitrogen chain)\ndimethyldiazene methylimide\n\ntrimethyldiazene imide\n[methyl(methylimino)ammoniumyl]methanaminide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.2.1.1:clause:0007"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.2.1.1."
+    },
+    {
+      "id": "source_example_22",
+      "c": [
+        166
+      ],
+      "input": "Displayed source structure in P-74.2.2.1.2",
+      "ok": [
+        "1,2-dimethyl-2-methylidenehydrazin-2-ium-1-ide (PIN)\nN-methylmethanimine methylimide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.2.1.2:clause:0006"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.2.1.2."
+    },
+    {
+      "id": "source_example_23",
+      "c": [
+        172
+      ],
+      "input": "Displayed source structure in P-74.2.2.1.3",
+      "ok": [
+        "2-(N-methylpropan-2-iminiumyl)propan-2-ide (PIN)\n2-[methyl(propan-2-ylidene)ammoniumyl]propan-2-ide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.2.1.3:clause:0006"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.2.1.3."
+    },
+    {
+      "id": "source_example_24",
+      "c": [
+        177,
+        178
+      ],
+      "input": "Displayed source structure in P-74.2.2.1.4",
+      "ok": [
+        "_",
+        "diphenyldiazene oxide (PIN)\n(diphenyldiazeniumyl)oxidanide\nazoxybenzene\n1,2-diphenyl-1λ5-diazen-1-one"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.2.1.4:clause:0006"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.2.1.4."
+    },
+    {
+      "id": "source_example_25",
+      "c": [
+        184
+      ],
+      "input": "Displayed source structure in P-74.2.2.1.5",
+      "ok": [
+        "N-[(propan-2-ylidene)oxidaniumyl]methanaminide (PIN)\nN-[(propan-2-ylidene)oxoniumyl]methanaminide\npropan-2-one methylimide\nN-methylpropan-2-one imide"
+      ],
+      "shows": [
+        [
+          "figure",
+          "figure.asset.p_74.2.2.1.5:clause:0006"
+        ]
+      ],
+      "why": "Preserves the displayed names and structure evidence for P-74.2.2.1.5."
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "azoxy_heteroatom_oxide_exception",
+      "c": [
+        153
+      ],
+      "if": [
+        "lit",
+        {
+          "class": "azoxy compound",
+          "rule": "P-74.2.2.1.4"
+        }
+      ],
+      "target": [
+        "semantic_unit",
+        "allyl_preferred_naming"
+      ],
+      "mode": "replace",
+      "replacement": [
+        "semantic_unit",
+        "allyl_azoxy_exception_method"
+      ],
+      "specificity": 2,
+      "order": 1
+    },
+    {
+      "id": "nitrone_heteroatom_oxide_exception",
+      "c": [
+        153
+      ],
+      "if": [
+        "lit",
+        {
+          "class": "nitrone",
+          "rule": "P-74.2.2.1.9"
+        }
+      ],
+      "target": [
+        "semantic_unit",
+        "allyl_preferred_naming"
+      ],
+      "mode": "replace",
+      "replacement": [
+        "semantic_unit",
+        "allyl_nitrone_exception_method"
+      ],
+      "specificity": 2,
+      "order": 2
+    },
+    {
+      "id": "heterone_s_oxide_lambda_exception",
+      "c": [
+        154
+      ],
+      "if": [
+        "lit",
+        {
+          "class": "heterone S-oxide",
+          "rule": "P-74.2.2.1.8"
+        }
+      ],
+      "target": [
+        "semantic_unit",
+        "allyl_preferred_naming"
+      ],
+      "mode": "replace",
+      "replacement": [
+        "semantic_unit",
+        "allyl_heterone_s_oxide_exception_method"
+      ],
+      "specificity": 2,
+      "order": 3
+    }
+  ],
+  "figures": [],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "mechanical_assets": true,
+  "refs": [
+    {
+      "id": "reference.p74.part001.p73_4",
+      "c": [
+        14,
+        15,
+        16
+      ],
+      "rel": "cites",
+      "o": "P-74.1.1:xref:0002",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p74.part001.p68_1_6_2",
+      "c": [
+        33,
+        35
+      ],
+      "rel": "cites",
+      "o": "P-74.1.1:xref:0003",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p74.part001.p62_5_lambda",
+      "c": [
+        104
+      ],
+      "rel": "cites",
+      "o": "P-74.2.1.2:xref:0001",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p74.part001.p62_5_pin",
+      "c": [
+        105
+      ],
+      "rel": "cites",
+      "o": "P-74.2.1.2:xref:0002",
+      "resolution": "exact"
+    }
+  ],
+  "symbols": [],
+  "tables": [
+    {
+      "id": "same_parent_ionic_suffix_order",
+      "c": [
+        14,
+        16,
+        17,
+        18,
+        19
+      ],
+      "label": null,
+      "title": "Cumulative ionic suffix order and low-locant seniority",
+      "cols": [
+        [
+          "suffix",
+          "Suffix",
+          "string"
+        ],
+        [
+          "citation_rank",
+          "Citation rank",
+          "integer"
+        ],
+        [
+          "low_locant_rank",
+          "Low-locant seniority rank",
+          "integer"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "ium",
+          "c": [
+            14,
+            19
+          ],
+          "v": [
+            "ium",
+            1,
+            4
+          ]
+        },
+        {
+          "id": "ylium",
+          "c": [
+            14,
+            19
+          ],
+          "v": [
+            "ylium",
+            2,
+            3
+          ]
+        },
+        {
+          "id": "ide",
+          "c": [
+            14,
+            16,
+            19
+          ],
+          "v": [
+            "ide",
+            3,
+            2
+          ]
+        },
+        {
+          "id": "uide",
+          "c": [
+            14,
+            16,
+            19
+          ],
+          "v": [
+            "uide",
+            4,
+            1
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "suffix"
+        ],
+        "result": [
+          "citation_rank",
+          "low_locant_rank"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "ylide_naming_method_inventory",
+      "c": [
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "label": null,
+      "title": "Ylide naming methods",
+      "cols": [
+        [
+          "method",
+          "Method",
+          "string"
+        ],
+        [
+          "applicability",
+          "Applicability",
+          "string"
+        ],
+        [
+          "pin_status",
+          "PIN status",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "zwitterionic",
+          "c": [
+            71,
+            74
+          ],
+          "v": [
+            "zwitterionic compound",
+            "all ylides",
+            "preferred"
+          ]
+        },
+        {
+          "id": "lambda",
+          "c": [
+            72
+          ],
+          "v": [
+            "lambda convention",
+            "X is P, As, Sb, Bi, S, Se, or Te",
+            "alternative"
+          ]
+        },
+        {
+          "id": "functional_class",
+          "c": [
+            73
+          ],
+          "v": [
+            "functional class oxide, sulfide, or imide",
+            "class-dependent",
+            "alternative"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "method"
+        ],
+        "result": [
+          "applicability",
+          "pin_status"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "allyl_type_naming_method_inventory",
+      "c": [
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "label": null,
+      "title": "Allyl-type 1,3-dipolar naming methods",
+      "cols": [
+        [
+          "method",
+          "Method",
+          "string"
+        ],
+        [
+          "default_status",
+          "Default status",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "zwitterion",
+          "c": [
+            147,
+            151
+          ],
+          "v": [
+            "parent hydride generating a zwitterion",
+            "preferred by default"
+          ]
+        },
+        {
+          "id": "cationic_substituent",
+          "c": [
+            148
+          ],
+          "v": [
+            "cationic substituent in a parent anion",
+            "alternative"
+          ]
+        },
+        {
+          "id": "functional_class",
+          "c": [
+            149,
+            153
+          ],
+          "v": [
+            "functional class imide or oxide",
+            "alternative; preferred for stated oxide exceptions"
+          ]
+        },
+        {
+          "id": "lambda",
+          "c": [
+            150,
+            154
+          ],
+          "v": [
+            "lambda convention",
+            "alternative; preferred for heterone S-oxides"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "method"
+        ],
+        "result": [
+          "default_status"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "task_id": "P-74-part-001",
+  "units": [
+    {
+      "id": "zwitterion_scope_definition",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "term": "zwitterionic compound",
+      "entity": "ChemicalSpecies",
+      "value": [
+        "lit",
+        {
+          "has_positive_ionic_center": true,
+          "has_negative_ionic_center": true,
+          "typical_net_charge": 0,
+          "represented_as_zwitterionic_in_section": true,
+          "included_classes": [
+            "inner salt",
+            "dipolar compound"
+          ],
+          "section_partition": {
+            "P-74.1": "ionic centers on the same or different parent structures",
+            "P-74.2": "1,2- and 1,3-dipolar compounds"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zwitterion_ionic_center_seniority",
+      "k": "rule",
+      "f": "preference",
+      "c": [
+        9,
+        10
+      ],
+      "in": [
+        [
+          "zwitterion",
+          "ZwitterionicCompound"
+        ]
+      ],
+      "out": [
+        [
+          "parent_selection",
+          "ParentSelection"
+        ],
+        [
+          "locant_priority",
+          "LocantPriority"
+        ]
+      ],
+      "if": [
+        "lit",
+        true
+      ],
+      "then": [
+        [
+          "set",
+          "parent_selection",
+          [
+            "lit",
+            "anionic parent structure"
+          ]
+        ],
+        [
+          "set",
+          "locant_priority",
+          [
+            "lit",
+            [
+              "anionic centers",
+              "cationic centers"
+            ]
+          ]
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "cas_reverse_seniority_note",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        11
+      ],
+      "steps": [
+        [
+          "emit",
+          {
+            "external_system": "CAS",
+            "priority": [
+              "cationic centers",
+              "anionic centers"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "same_parent_zwitterion_naming",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "in": [
+        [
+          "parent_hydride",
+          "ParentHydride"
+        ],
+        [
+          "ionic_centers",
+          "IonicCenterSet"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "SystematicName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name",
+          [
+            "lit",
+            {
+              "construction": "append cumulative ionic suffixes to the parent hydride name",
+              "citation_order": [
+                "ium",
+                "ylium",
+                "ide",
+                "uide"
+              ],
+              "preferred_over": "ionic replacement prefixes",
+              "lower_locant_seniority": [
+                "uide (uida)",
+                "ide (ida)",
+                "ylium (ylia)",
+                "ium (onia)"
+              ],
+              "elision": "elide terminal e before i, y, or a cumulative suffix beginning with a vowel",
+              "multiplication": "use di/tri or bis/tris as appropriate for each suffix type",
+              "neutral_for_nomenclature": false
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "same_parent_methodology_change_note",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        21
+      ],
+      "steps": [
+        [
+          "emit",
+          "This treatment changes RC-84.1.1 (reference 3) and is illustrated by the final example in P-74.1.1."
+        ]
+      ]
+    },
+    {
+      "id": "intramolecular_adduct_cross_reference_note",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        35
+      ],
+      "steps": [
+        [
+          "emit",
+          "For the alternative representation as an intramolecular adduct, apply P-68.1.6.2."
+        ]
+      ]
+    },
+    {
+      "id": "characteristic_group_zwitterion_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        37,
+        38,
+        39
+      ],
+      "in": [
+        [
+          "ionic_parent_hydride",
+          "IonicParentHydride"
+        ],
+        [
+          "characteristic_groups",
+          "CharacteristicGroupSet"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "SystematicName"
+        ],
+        [
+          "locant_priority",
+          "LocantPriority"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name",
+          [
+            "lit",
+            {
+              "construction": "add the appropriate ionic suffix to the ionic parent hydride name",
+              "suffix_order": [
+                "cationic",
+                "anionic"
+              ]
+            }
+          ]
+        ],
+        [
+          "set",
+          "locant_priority",
+          [
+            "lit",
+            [
+              "ionic centers on skeletal atoms",
+              "attachment positions of suffix-expressed characteristic groups"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "different_parent_zwitterion_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        48
+      ],
+      "in": [
+        [
+          "cationic_parts",
+          "CationicStructureSet"
+        ],
+        [
+          "anionic_parent",
+          "AnionicParentStructure"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "SystematicName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name",
+          [
+            "lit",
+            "prefix the cationic-center name or cation-containing structural parts to the anionic parent-structure name"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "obsolete_diborazane_parent_note",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        55
+      ],
+      "steps": [
+        [
+          "emit",
+          "Do not use names such as diborazane as parent hydrides; apply P-21.2.3.1."
+        ]
+      ]
+    },
+    {
+      "id": "dipolar_compound_definitions",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        58,
+        59,
+        60,
+        61,
+        62
+      ],
+      "term": "dipolar compound",
+      "entity": "ElectricallyNeutralMolecule",
+      "value": [
+        "lit",
+        {
+          "major_canonical_form": "carries a positive and a negative charge",
+          "charge_delocalization": "usual but not required",
+          "subclasses": {
+            "1,2-dipolar": "opposite charges on adjacent atoms",
+            "1,3-dipolar": "a significant canonical form separates charge over three atoms"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ylide_definition_and_method_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "in": [
+        [
+          "ylide",
+          "Ylide"
+        ]
+      ],
+      "out": [
+        [
+          "naming_method",
+          "NamingMethod"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "naming_method",
+          [
+            "lit",
+            {
+              "structure": "RmX+-Y-Rn with an anionic Y directly attached to formally positive heteroatom X",
+              "representations": {
+                "second_row_saturated_X": "charge-separated form",
+                "third_or_later_row_X": "uncharged canonical form RmX=YRn usually shown"
+              },
+              "subclasses": [
+                "nitrogen ylide",
+                "phosphorus ylide",
+                "oxygen ylide",
+                "sulfur ylide",
+                "selenium ylide",
+                "tellurium ylide"
+              ],
+              "allowed_methods": [
+                "zwitterionic",
+                "lambda convention for P, As, Sb, Bi, S, Se, or Te",
+                "functional class oxide/sulfide/imide"
+              ],
+              "preferred_method": "zwitterionic"
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "nitrogen_ylide_structure",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        76
+      ],
+      "term": "nitrogen ylide",
+      "entity": "YlideClass",
+      "value": [
+        "lit",
+        {
+          "general_structure": "R3N+-C-R2"
+        }
+      ]
+    },
+    {
+      "id": "phosphorus_ylide_structure",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        81
+      ],
+      "term": "phosphorus ylide",
+      "entity": "YlideClass",
+      "value": [
+        "lit",
+        {
+          "canonical_forms": "R3P+-C-R2 <-> R3P=CR2"
+        }
+      ]
+    },
+    {
+      "id": "oxygen_ylide_structure",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        86
+      ],
+      "term": "oxygen ylide",
+      "entity": "YlideClass",
+      "value": [
+        "lit",
+        {
+          "general_structure": "R2O+-C-R2"
+        }
+      ]
+    },
+    {
+      "id": "sulfur_ylide_structure_and_analogues",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        91,
+        95
+      ],
+      "term": "sulfur ylide",
+      "entity": "YlideClass",
+      "value": [
+        "lit",
+        {
+          "canonical_forms": "R2S+-C-R2 <-> R2S=CR2",
+          "method_analogues": [
+            "selenium",
+            "tellurium"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amine_and_imine_chalcogenide_method_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "in": [
+        [
+          "compound",
+          "AmineOrImineChalcogenide"
+        ],
+        [
+          "amine_oxide_count",
+          "Integer"
+        ]
+      ],
+      "out": [
+        [
+          "preferred_method",
+          "NamingMethod"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "preferred_method",
+          [
+            "lit",
+            {
+              "generic_formulae": {
+                "amine_oxide": "R3N+-O-",
+                "imine_oxide": "R2C=N+(R)-O-"
+              },
+              "chalcogen_replacements": [
+                "S",
+                "Se",
+                "Te"
+              ],
+              "allowed_methods": [
+                "zwitterionic",
+                "functional class oxide/sulfide/selenide/telluride"
+              ],
+              "one_amine_oxide_PIN": "functional class",
+              "two_amine_oxides_PIN": "lambda convention under P-62.5",
+              "zwitterionic_name_is_PIN": false
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "amine_imide_method_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        110,
+        111,
+        112,
+        113
+      ],
+      "steps": [
+        [
+          "emit",
+          {
+            "term": "amine imide (not amine imine)",
+            "formula": "R3N+-N-R",
+            "methods": [
+              "zwitterion based on hydrazine without breaking the nitrogen chain",
+              "functional class name with imide after the amine name"
+            ],
+            "preferred_method": "hydrazine-based zwitterion"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "phosphine_chalcogenide_method_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        127
+      ],
+      "steps": [
+        [
+          "emit",
+          {
+            "formula": "R3P+-O- <-> R3P=O",
+            "chalcogen_analogues": [
+              "phosphine sulfide",
+              "phosphine selenide",
+              "phosphine telluride"
+            ],
+            "methods": [
+              "zwitterionic",
+              "functional class oxide/sulfide/selenide/telluride",
+              "heterone suffix -one on lambda5-phosphane"
+            ],
+            "preferred_method": "heterone suffix -one on lambda5-phosphane",
+            "element_analogues": [
+              "arsine compounds",
+              "stibine compounds"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "phosphine_imide_method_selection",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        129,
+        130,
+        131,
+        132,
+        133,
+        137
+      ],
+      "steps": [
+        [
+          "emit",
+          {
+            "formula": "R3P+-N-R <-> R3P=N-R",
+            "methods": [
+              "zwitterionic",
+              "functional class imide",
+              "heterimine suffix -imine on lambda5-phosphane"
+            ],
+            "preferred_method": "heterimine suffix -imine on lambda5-phosphane",
+            "element_analogues": [
+              "arsine imides",
+              "stibine imides"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "one_three_dipolar_subclasses",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        139,
+        140
+      ],
+      "term": "1,3-dipolar compound",
+      "entity": "DipolarCompound",
+      "value": [
+        "lit",
+        {
+          "criterion": "a significant canonical resonance form distributes charge over three atoms",
+          "subclasses_continue_in_child_rules": true
+        }
+      ]
+    },
+    {
+      "id": "allyl_type_structure",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        142,
+        143,
+        144
+      ],
+      "term": "allyl-type 1,3-dipolar compound",
+      "entity": "DipolarCompound",
+      "value": [
+        "lit",
+        {
+          "atom_constraints": {
+            "Y_or_Z": [
+              "C",
+              "N",
+              "O"
+            ],
+            "X": [
+              "N",
+              "O"
+            ]
+          },
+          "canonical_forms": [
+            "Z=X+-Y-",
+            "Z--X+=Y",
+            "Z+-X-Y-",
+            "Z--X-Y+"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "allyl_preferred_naming",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152
+      ],
+      "out": [
+        [
+          "preferred_method",
+          "NamingMethod"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "preferred_method",
+          [
+            "lit",
+            {
+              "canonical_form_basis": "first canonical form",
+              "other_canonical_forms_may_be_named": true,
+              "methods": [
+                "zwitterionic parent hydride",
+                "cationic substituent in a parent anion",
+                "functional class imide/oxide",
+                "lambda convention"
+              ],
+              "default_PIN_policy": "express the zwitterionic nature",
+              "exception_count": 3
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "allyl_azoxy_exception_method",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        153
+      ],
+      "steps": [
+        [
+          "emit",
+          "For azoxy compounds under P-74.2.2.1.4, use the heteroatom-oxide method rather than the default zwitterionic preference."
+        ]
+      ]
+    },
+    {
+      "id": "allyl_nitrone_exception_method",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        153
+      ],
+      "steps": [
+        [
+          "emit",
+          "For nitrones under P-74.2.2.1.9, use the heteroatom-oxide method rather than the default zwitterionic preference."
+        ]
+      ]
+    },
+    {
+      "id": "allyl_heterone_s_oxide_exception_method",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        154
+      ],
+      "steps": [
+        [
+          "emit",
+          "For heterone S-oxides under P-74.2.2.1.8, use the lambda-convention method rather than the default zwitterionic preference."
+        ]
+      ]
+    },
+    {
+      "id": "azo_imide_naming",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        155,
+        156,
+        157
+      ],
+      "steps": [
+        [
+          "emit",
+          {
+            "class": "azo imide",
+            "canonical_forms": "RN=N+(R)-N--R- <-> RN--N+(R)=NR",
+            "preferred_method": "method 1 of P-74.2.2.1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "azomethine_imide_naming",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        162,
+        163,
+        164
+      ],
+      "steps": [
+        [
+          "emit",
+          {
+            "class": "azomethine imide",
+            "canonical_forms": "R-N--N+(R)=CR2 <-> R-N=N+(R)-C-R2",
+            "preferred_method": "method 1 of P-74.2.2.1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "azomethine_ylide_naming",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        168,
+        169,
+        170
+      ],
+      "steps": [
+        [
+          "emit",
+          {
+            "class": "azomethine ylide",
+            "canonical_forms": "R2C--N+(R)=CR2 <-> R2C=N+(R)-C-R2",
+            "preferred_method": "method 2 of P-74.2.2.1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "azoxy_compound_naming",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        174,
+        175
+      ],
+      "steps": [
+        [
+          "emit",
+          {
+            "class": "azoxy compound",
+            "general_structure": "R-N=N+(O-)-R",
+            "preferred_method": "method 3 of P-74.2.2.1",
+            "related_rule": "P-68.3.1.3.3.1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "carbonyl_imide_naming",
+      "k": "procedure",
+      "f": "preference",
+      "c": [
+        180,
+        181,
+        182
+      ],
+      "steps": [
+        [
+          "emit",
+          {
+            "class": "carbonyl imide",
+            "canonical_forms": "R2C=O+-N--R <-> R2C+-O-N--R",
+            "preferred_method": "method 2 of P-74.2.2.1"
+          }
+        ]
+      ]
+    }
+  ]
+}
