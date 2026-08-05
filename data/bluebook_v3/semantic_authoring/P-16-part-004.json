@@ -1,8 +1,8 @@
 {
   "additional_refs": [],
   "clauses": [
-    null,
-    null,
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
     ["correction_event", "correction", "compile"],
     ["definition", "normative", "compile"],
     ["definition", "normative", "compile"],
@@ -19,7 +19,7 @@
     ["example", "illustrative", "compile"],
     ["example", "illustrative", "compile"],
     ["example", "illustrative", "compile"],
-    null,
+    ["definition", "normative", "compile"],
     ["definition", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
@@ -31,7 +31,7 @@
     ["definition", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
     ["definition", "informative", "compile"],
     ["definition", "informative", "compile"],
     ["definition", "informative", "compile"],
@@ -72,18 +72,22 @@
       "id": "prime_locant_usage",
       "k": "definition",
       "f": "definition",
-      "c": [4, 5, 6, 9, 14],
+      "c": [1, 2, 4, 5, 6, 9, 14],
       "term": "uses of primes in locants",
       "entity": "PrimeMarkUsage",
       "value": ["lit", {
         "general_rule": "primes, double primes, triple primes, and further prime marks differentiate identical locants other than N locants",
         "placement": "primes are added after the number, not after the letter",
+        "locant_examples": ["1", "1′", "1′′"],
+        "fused_ring_component_example": {"accepted": "4′a", "rejected": "4a′"},
         "contexts": [
           {"context": "multiplicative nomenclature", "purpose": "denote multiplied units and modify locants accordingly"},
           {"context": "spiro-fused compounds", "purpose": "denote positions in polycyclic systems, identical or different"},
           {"context": "ring assemblies", "purpose": "number identical ring components"}
         ],
         "source_text": [
+          "P-16.9.4 Primes (′), double primes (′′), triple primes (′′′), etc., are also used to differentiate identical locants other than N locants, for example 1, 1′, 1′′, 4′a (not 4a′;",
+          "for locants of a fused ring component,",
           "primes are added after the number, not after the letter).",
           "Such usage occurs:",
           "(a) in multiplicative nomenclature to denote multiplied units and modify locants accordingly;",
@@ -96,17 +100,19 @@
       "id": "prime_locant_usage_fusion_and_specialized",
       "k": "definition",
       "f": "definition",
-      "c": [20, 25, 28],
+      "c": [19, 20, 25, 28],
       "term": "uses of primes in fusion and specialized nomenclature",
       "entity": "PrimeMarkUsage",
       "value": ["lit", {
         "general_rule": "primes differentiate identical locants in the cited nomenclature contexts",
+        "lead_in": "primes also occur in the listed nomenclature contexts",
         "contexts": [
           {"context": "fusion nomenclature", "purpose": "identify first and higher attached components, identical attached components, and multiparent names"},
           {"context": "fullerenes ortho-fused to organic ring or ring systems", "purpose": "identify positions in the nonfullerene component"},
           {"context": "natural product nomenclature", "purpose": "identify positions in ring(s) fused to a fundamental parent hydride"}
         ],
         "source_text": [
+          "P-16.9.5 Primes also occur:",
           "(a) in fusion nomenclature, to identify first and higher attached components, identical attached components, and multiparent names;",
           "(b) in fullerenes ortho-fused to organic ring or ring systems, to identify positions in the nonfullerene component;",
           "(c) in natural product nomenclature, to identify positions in ring(s) fused to a fundamental parent hydride;"

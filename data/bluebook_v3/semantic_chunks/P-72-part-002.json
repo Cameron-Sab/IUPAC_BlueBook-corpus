@@ -8,12 +8,12 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 56,
-    "compiled_clause_count": 42,
+    "compiled_clause_count": 45,
     "correction_application_count": 0,
     "example_count": 18,
     "exception_count": 0,
     "figure_count": 10,
-    "nonoperative_clause_count": 14,
+    "nonoperative_clause_count": 11,
     "record_count": 5,
     "reference_count": 8,
     "semantic_unit_count": 6,
@@ -21,7 +21,7 @@
     "symbol_declaration_count": 3,
     "table_count": 1
   },
-  "chunk_sha256": "A7738E00139DACE3F93C3EE427292993C39D29C213BB8D097519CA3E08B69B88",
+  "chunk_sha256": "2A35BF809B2C074152B5F5BA1736D13EDCC0DFF8CD01B9460981005639949A90",
   "clause_dispositions": [
     {
       "clause_id": "P-72.6.3:clause:0001",
@@ -941,11 +941,24 @@
     {
       "clause_id": "P-72.8.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p72.part002.uide_suffix_lambda_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p72.part002.uide_suffix_lambda_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p72.part002.uide_suffix_lambda_preference.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-72.8.1:clause:0002",
@@ -1025,20 +1038,46 @@
     {
       "clause_id": "P-72.8.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p72.part002.ide_suffix_lambda_exception",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p72.part002.ide_suffix_lambda_exception.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p72.part002.ide_suffix_lambda_exception.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-72.8.2:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p72.part002.ide_suffix_lambda_exception",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p72.part002.ide_suffix_lambda_exception.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p72.part002.ide_suffix_lambda_exception.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-72.8.2:clause:0003",

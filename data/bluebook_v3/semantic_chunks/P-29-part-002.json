@@ -10,20 +10,20 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 112,
-    "compiled_clause_count": 94,
+    "compiled_clause_count": 98,
     "correction_application_count": 0,
     "example_count": 43,
     "exception_count": 0,
     "figure_count": 27,
-    "nonoperative_clause_count": 18,
+    "nonoperative_clause_count": 14,
     "record_count": 7,
     "reference_count": 13,
-    "semantic_unit_count": 11,
+    "semantic_unit_count": 12,
     "superseded_clause_count": 0,
     "symbol_declaration_count": 1,
     "table_count": 1
   },
-  "chunk_sha256": "4E3FC756574DA1E8B21506ADB6F2B2DE0500BCFBD8ABF7EC1197E6D99E564336",
+  "chunk_sha256": "D8C6271C7F29F98D609ACD15D01A87CC697A86993D602067886FA3B5075E9A1A",
   "clause_dispositions": [
     {
       "clause_id": "P-29.6:clause:0001",
@@ -642,20 +642,62 @@
     {
       "clause_id": "P-29.6.2.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p29.part002.benzyl_general_substitution_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p29.part002.benzyl_general_substitution_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p29.part002.benzyl_general_substitution_policy.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p29.part002.benzyl_general_substitution_policy.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p29.part002.benzyl_general_substitution_policy.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-29.6.2.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p29.part002.benzyl_general_substitution_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p29.part002.benzyl_general_substitution_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p29.part002.benzyl_general_substitution_policy.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p29.part002.benzyl_general_substitution_policy.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p29.part002.benzyl_general_substitution_policy.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "permission"
     },
     {
       "clause_id": "P-29.6.2.1:clause:0003",
@@ -849,11 +891,32 @@
     {
       "clause_id": "P-29.6.2.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p29.part002.restricted_retained_prefix_general_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p29.part002.restricted_retained_prefix_general_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p29.part002.restricted_retained_prefix_general_policy.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p29.part002.restricted_retained_prefix_general_policy.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p29.part002.restricted_retained_prefix_general_policy.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "constraint"
     },
     {
       "clause_id": "P-29.6.2.2:clause:0002",
@@ -993,11 +1056,32 @@
     {
       "clause_id": "P-29.6.2.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p29.part002.ethylene_and_ring_prefix_policy",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p29.part002.ethylene_and_ring_prefix_policy.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p29.part002.ethylene_and_ring_prefix_policy.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p29.part002.ethylene_and_ring_prefix_policy.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p29.part002.ethylene_and_ring_prefix_policy.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "constraint"
     },
     {
       "clause_id": "P-29.6.2.3:clause:0002",
@@ -2214,6 +2298,10 @@
       ],
       "demonstrates": [
         {
+          "id": "unit.p29.part002.restricted_retained_prefix_general_policy",
+          "kind": "semantic_unit"
+        },
+        {
           "id": "figure.asset.p_29.6.2.2:clause:0004",
           "kind": "figure"
         }
@@ -2232,6 +2320,10 @@
         "P-29.6.2.2:clause:0005"
       ],
       "demonstrates": [
+        {
+          "id": "unit.p29.part002.restricted_retained_prefix_general_policy",
+          "kind": "semantic_unit"
+        },
         {
           "id": "figure.asset.p_29.6.2.2:clause:0006",
           "kind": "figure"
@@ -2252,6 +2344,10 @@
         "P-29.6.2.2:clause:0007"
       ],
       "demonstrates": [
+        {
+          "id": "unit.p29.part002.restricted_retained_prefix_general_policy",
+          "kind": "semantic_unit"
+        },
         {
           "id": "figure.asset.p_29.6.2.2:clause:0008",
           "kind": "figure"
@@ -2276,6 +2372,10 @@
         "P-29.6.2.2:clause:0010"
       ],
       "demonstrates": [
+        {
+          "id": "unit.p29.part002.restricted_retained_prefix_general_policy",
+          "kind": "semantic_unit"
+        },
         {
           "id": "figure.asset.p_29.6.2.2:clause:0011",
           "kind": "figure"
@@ -3234,7 +3334,9 @@
       "reference_ids": [
         "reference.p_29_6_2_2.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p29.part002.restricted_retained_prefix_general_policy"
+      ],
       "source_rule_id": "P-29.6.2.2",
       "table_ids": []
     },
@@ -4055,6 +4157,8 @@
     },
     {
       "clause_ids": [
+        "P-29.6.2.1:clause:0001",
+        "P-29.6.2.1:clause:0002",
         "P-29.6.2.1:clause:0003",
         "P-29.6.2.1:clause:0004"
       ],
@@ -4076,6 +4180,8 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-29.6.2.1:clause:0001",
+            "P-29.6.2.1:clause:0002",
             "P-29.6.2.1:clause:0003",
             "P-29.6.2.1:clause:0004"
           ],
@@ -4090,6 +4196,8 @@
       "then": [
         {
           "clause_ids": [
+            "P-29.6.2.1:clause:0001",
+            "P-29.6.2.1:clause:0002",
             "P-29.6.2.1:clause:0003",
             "P-29.6.2.1:clause:0004"
           ],
@@ -4098,6 +4206,8 @@
           "target": "allowed_substitution",
           "value": {
             "clause_ids": [
+              "P-29.6.2.1:clause:0001",
+              "P-29.6.2.1:clause:0002",
               "P-29.6.2.1:clause:0003",
               "P-29.6.2.1:clause:0004"
             ],
@@ -4123,6 +4233,8 @@
       "unit_id": "unit.p29.part002.benzyl_general_substitution_policy",
       "when": {
         "clause_ids": [
+          "P-29.6.2.1:clause:0001",
+          "P-29.6.2.1:clause:0002",
           "P-29.6.2.1:clause:0003",
           "P-29.6.2.1:clause:0004"
         ],
@@ -4133,6 +4245,77 @@
     },
     {
       "clause_ids": [
+        "P-29.6.2.2:clause:0001"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "prefix",
+          "type": "RestrictedRetainedPrefix"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "policy",
+          "type": "PrefixSubstitutionPolicy"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-29.6.2.2:clause:0001"
+          ],
+          "expression_id": "expr.p29.part002.restricted_retained_prefix_general_policy.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-29.6.2.2:clause:0001"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p29.part002.restricted_retained_prefix_general_policy.then.1",
+          "target": "policy",
+          "value": {
+            "clause_ids": [
+              "P-29.6.2.2:clause:0001"
+            ],
+            "expression_id": "expr.p29.part002.restricted_retained_prefix_general_policy.then.1.value",
+            "op": "literal",
+            "value": {
+              "prefixes": [
+                "isopropyl",
+                "isopropylidene",
+                "trityl"
+              ],
+              "retained": true,
+              "substitution": "not allowed",
+              "substitution_scope": "any kind",
+              "usage": "general nomenclature"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p29.part002.restricted_retained_prefix_general_policy",
+      "when": {
+        "clause_ids": [
+          "P-29.6.2.2:clause:0001"
+        ],
+        "expression_id": "expr.p29.part002.restricted_retained_prefix_general_policy.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-29.6.2.3:clause:0001",
         "P-29.6.2.3:clause:0003",
         "P-29.6.2.3:clause:0004"
       ],
@@ -4154,6 +4337,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-29.6.2.3:clause:0001",
             "P-29.6.2.3:clause:0003",
             "P-29.6.2.3:clause:0004"
           ],
@@ -4168,6 +4352,7 @@
       "then": [
         {
           "clause_ids": [
+            "P-29.6.2.3:clause:0001",
             "P-29.6.2.3:clause:0003",
             "P-29.6.2.3:clause:0004"
           ],
@@ -4176,6 +4361,7 @@
           "target": "policy",
           "value": {
             "clause_ids": [
+              "P-29.6.2.3:clause:0001",
               "P-29.6.2.3:clause:0003",
               "P-29.6.2.3:clause:0004"
             ],
@@ -4201,6 +4387,7 @@
       "unit_id": "unit.p29.part002.ethylene_and_ring_prefix_policy",
       "when": {
         "clause_ids": [
+          "P-29.6.2.3:clause:0001",
           "P-29.6.2.3:clause:0003",
           "P-29.6.2.3:clause:0004"
         ],

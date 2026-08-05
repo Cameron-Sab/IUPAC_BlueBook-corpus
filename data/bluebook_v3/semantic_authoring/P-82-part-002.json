@@ -3,15 +3,15 @@
   "format_version": "1.0.0",
   "task_id": "P-82-part-002",
   "clauses": [
-    null,
-    null,
-    ["example", "illustrative", "compile"],
-    ["figure_asset", "illustrative", "compile"],
-    null,
+    ["condition", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
+    ["constraint", "normative", "compile"],
     null,
+    ["example", "illustrative", "compile"],
+    ["figure_asset", "illustrative", "compile"],
+    ["heading", "informative", "skip", "heading_or_title"],
     ["condition", "normative", "compile"],
     ["condition", "normative", "compile"],
     ["condition", "normative", "compile"],
@@ -22,8 +22,8 @@
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
     ["correction_event", "correction", "compile"],
-    null,
-    null,
+    ["heading", "informative", "skip", "heading_or_title"],
+    ["permission", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
@@ -55,7 +55,7 @@
     ["figure_asset", "illustrative", "compile"],
     ["example", "illustrative", "compile"],
     ["figure_asset", "illustrative", "compile"],
-    null,
+    ["procedure_step", "normative", "compile"],
     null,
     ["example", "illustrative", "compile"],
     ["example", "illustrative", "compile"],
@@ -67,6 +67,27 @@
     ["figure_asset", "illustrative", "compile"]
   ],
   "units": [
+    {
+      "id": "omit_locants_for_uniform_complete_isotopic_modification",
+      "k": "definition",
+      "f": "required",
+      "c": [1],
+      "scope": {"r": ["all"], "if": ["lit", {"all_positions": "completely_isotopically_substituted_or_modified", "modification_uniform": true}]},
+      "term": "isotopic locant omission",
+      "entity": "IsotopicLocantRule",
+      "value": ["lit", {"locants": "omitted"}]
+    },
+    {
+      "id": "retain_locants_when_isomers_are_possible",
+      "k": "constraint",
+      "f": "required",
+      "c": [5],
+      "in": [["isotopic_structure", "IsotopicallyModifiedStructure"]],
+      "out": [["locant_requirement", "LocantRequirement"]],
+      "scope": {"r": ["all"], "if": ["lit", {"isomerism_possible": true}]},
+      "assert": ["lit", {"locants": "not_omitted"}],
+      "violation": [["reject", "locant_omission", "isotopic_locants_required_when_isomers_are_possible"]]
+    },
     {
       "id": "isotope_locant_placement_rules",
       "k": "definition",
@@ -80,6 +101,16 @@
         "specific_nuclide_positions": "Specific positions of nuclides must be indicated in the isotopic descriptor by appropriate locants, letters, and/or numerals, preceding the nuclide symbol(s).",
         "preferred_names": "In preferred names, all locants are placed before the nuclide that is multiplied."
       }]
+    },
+    {
+      "id": "unlocanted_nuclide_position_designator_permission",
+      "k": "definition",
+      "f": "permitted",
+      "c": [21],
+      "scope": {"r": ["general_nomenclature"], "if": ["lit", {"nuclide_position_numbered": false}]},
+      "term": "designator for an unnumbered nuclide position",
+      "entity": "NuclidePositionDesignator",
+      "value": ["lit", {"permitted_forms": ["italicized prefix", "Greek letter"], "purpose": "denote position"}]
     },
     {
       "id": "deleted_deuterated_glyceraldehyde_correction_event",
@@ -155,6 +186,16 @@
         "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html",
         "source_icon_url": "https://iupac.qmul.ac.uk/greek/ALTER.GIF"
       }]
+    },
+    {
+      "id": "differentiate_same_element_nuclides_typographically",
+      "k": "procedure",
+      "f": "required",
+      "c": [53],
+      "in": [["nuclides", "NuclideSet"]],
+      "out": [["distinguished_designators", "NuclideDesignatorSet"]],
+      "scope": {"r": ["all"], "if": ["lit", {"same_element": true, "different_nuclides": true}]},
+      "steps": [["set", "distinguished_designators", ["lit", {"use": ["italicized nuclide symbols", "italic capital letters"]}]]]
     }
   ],
   "tables": [],

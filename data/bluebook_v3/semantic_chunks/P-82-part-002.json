@@ -11,29 +11,42 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 62,
-    "compiled_clause_count": 48,
+    "compiled_clause_count": 52,
     "correction_application_count": 0,
     "example_count": 22,
     "exception_count": 0,
     "figure_count": 19,
-    "nonoperative_clause_count": 14,
+    "nonoperative_clause_count": 10,
     "record_count": 8,
     "reference_count": 9,
-    "semantic_unit_count": 6,
+    "semantic_unit_count": 10,
     "superseded_clause_count": 0,
-    "symbol_declaration_count": 0,
+    "symbol_declaration_count": 1,
     "table_count": 0
   },
-  "chunk_sha256": "C758087F68A5858A44317F7C2D1B1B56175807C67C4D5055FCE73F2565A4AE85",
+  "chunk_sha256": "9E09C76F03A18BF8E1724F8B2467CB9EF3C927A4605988CC44B461C620A2B361",
   "clause_dispositions": [
     {
       "clause_id": "P-82.6.1.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p82.part002.omit_locants_for_uniform_complete_isotopic_modification",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p82.part002.omit_locants_for_uniform_complete_isotopic_modification.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p82.part002.omit_locants_for_uniform_complete_isotopic_modification.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "condition"
     },
     {
       "clause_id": "P-82.6.1.3:clause:0002",
@@ -75,11 +88,28 @@
     {
       "clause_id": "P-82.6.1.4:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p82.part002.retain_locants_when_isomers_are_possible",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p82.part002.retain_locants_when_isomers_are_possible.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p82.part002.retain_locants_when_isomers_are_possible.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p82.part002.retain_locants_when_isomers_are_possible.violation.1",
+            "kind": "statement"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "constraint"
     },
     {
       "clause_id": "P-82.6.1.4:clause:0002",
@@ -310,11 +340,24 @@
     {
       "clause_id": "P-82.6.3.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p82.part002.unlocanted_nuclide_position_designator_permission",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p82.part002.unlocanted_nuclide_position_designator_permission.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p82.part002.unlocanted_nuclide_position_designator_permission.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "permission"
     },
     {
       "clause_id": "P-82.6.3.1:clause:0002",
@@ -789,11 +832,28 @@
     {
       "clause_id": "P-82.6.4:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p82.part002.differentiate_same_element_nuclides_typographically",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p82.part002.differentiate_same_element_nuclides_typographically.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p82.part002.differentiate_same_element_nuclides_typographically.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p82.part002.differentiate_same_element_nuclides_typographically.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-82.6.4:clause:0002",
@@ -1581,7 +1641,9 @@
       "reference_ids": [
         "reference.p_82_6_1_3.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p82.part002.omit_locants_for_uniform_complete_isotopic_modification"
+      ],
       "source_rule_id": "P-82.6.1.3",
       "table_ids": []
     },
@@ -1606,7 +1668,9 @@
       "reference_ids": [
         "reference.p_82_6_1_4.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p82.part002.retain_locants_when_isomers_are_possible"
+      ],
       "source_rule_id": "P-82.6.1.4",
       "table_ids": []
     },
@@ -1696,7 +1760,9 @@
       "reference_ids": [
         "reference.p_82_6_3_1.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p82.part002.unlocanted_nuclide_position_designator_permission"
+      ],
       "source_rule_id": "P-82.6.3.1",
       "table_ids": []
     },
@@ -1819,7 +1885,9 @@
       "reference_ids": [
         "reference.p_82_6_4.hierarchy_parent"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p82.part002.differentiate_same_element_nuclides_typographically"
+      ],
       "source_rule_id": "P-82.6.4",
       "table_ids": []
     }
@@ -2005,6 +2073,100 @@
   "semantic_units": [
     {
       "clause_ids": [
+        "P-82.6.1.3:clause:0001"
+      ],
+      "entity_type": "IsotopicLocantRule",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-82.6.1.3:clause:0001"
+          ],
+          "expression_id": "expr.p82.part002.omit_locants_for_uniform_complete_isotopic_modification.scope",
+          "op": "literal",
+          "value": {
+            "all_positions": "completely_isotopically_substituted_or_modified",
+            "modification_uniform": true
+          }
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "isotopic locant omission",
+      "unit_id": "unit.p82.part002.omit_locants_for_uniform_complete_isotopic_modification",
+      "value": {
+        "clause_ids": [
+          "P-82.6.1.3:clause:0001"
+        ],
+        "expression_id": "expr.p82.part002.omit_locants_for_uniform_complete_isotopic_modification.value",
+        "op": "literal",
+        "value": {
+          "locants": "omitted"
+        }
+      }
+    },
+    {
+      "assertion": {
+        "clause_ids": [
+          "P-82.6.1.4:clause:0001"
+        ],
+        "expression_id": "expr.p82.part002.retain_locants_when_isomers_are_possible.assertion",
+        "op": "literal",
+        "value": {
+          "locants": "not_omitted"
+        }
+      },
+      "clause_ids": [
+        "P-82.6.1.4:clause:0001"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "isotopic_structure",
+          "type": "IsotopicallyModifiedStructure"
+        }
+      ],
+      "kind": "constraint",
+      "on_violation": [
+        {
+          "clause_ids": [
+            "P-82.6.1.4:clause:0001"
+          ],
+          "op": "reject",
+          "reason_code": "isotopic_locants_required_when_isomers_are_possible",
+          "statement_id": "stmt.p82.part002.retain_locants_when_isomers_are_possible.violation.1",
+          "target": "locant_omission"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "locant_requirement",
+          "type": "LocantRequirement"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-82.6.1.4:clause:0001"
+          ],
+          "expression_id": "expr.p82.part002.retain_locants_when_isomers_are_possible.scope",
+          "op": "literal",
+          "value": {
+            "isomerism_possible": true
+          }
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "unit_id": "unit.p82.part002.retain_locants_when_isomers_are_possible"
+    },
+    {
+      "clause_ids": [
         "P-82.6.2:clause:0002",
         "P-82.6.2:clause:0003",
         "P-82.6.2:clause:0004"
@@ -2043,6 +2205,47 @@
           "parent_structure": "When locants are needed for defining the structure of the parent structure or of a unit of structure as defined by its appropriate enclosing marks, then all locants must be cited for the parent structure or that structural unit.",
           "preferred_names": "In preferred names, all locants are placed before the nuclide that is multiplied.",
           "specific_nuclide_positions": "Specific positions of nuclides must be indicated in the isotopic descriptor by appropriate locants, letters, and/or numerals, preceding the nuclide symbol(s)."
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-82.6.3.1:clause:0001"
+      ],
+      "entity_type": "NuclidePositionDesignator",
+      "force": "permitted",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-82.6.3.1:clause:0001"
+          ],
+          "expression_id": "expr.p82.part002.unlocanted_nuclide_position_designator_permission.scope",
+          "op": "literal",
+          "value": {
+            "nuclide_position_numbered": false
+          }
+        },
+        "regimes": [
+          "general_nomenclature"
+        ]
+      },
+      "term": "designator for an unnumbered nuclide position",
+      "unit_id": "unit.p82.part002.unlocanted_nuclide_position_designator_permission",
+      "value": {
+        "clause_ids": [
+          "P-82.6.3.1:clause:0001"
+        ],
+        "expression_id": "expr.p82.part002.unlocanted_nuclide_position_designator_permission.value",
+        "op": "literal",
+        "value": {
+          "permitted_forms": [
+            "italicized prefix",
+            "Greek letter"
+          ],
+          "purpose": "denote position"
         }
       }
     },
@@ -2243,9 +2446,86 @@
           "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html"
         }
       }
+    },
+    {
+      "clause_ids": [
+        "P-82.6.4:clause:0001"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "nuclides",
+          "type": "NuclideSet"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "distinguished_designators",
+          "type": "NuclideDesignatorSet"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-82.6.4:clause:0001"
+          ],
+          "expression_id": "expr.p82.part002.differentiate_same_element_nuclides_typographically.scope",
+          "op": "literal",
+          "value": {
+            "different_nuclides": true,
+            "same_element": true
+          }
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-82.6.4:clause:0001"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p82.part002.differentiate_same_element_nuclides_typographically.steps.1",
+          "target": "distinguished_designators",
+          "value": {
+            "clause_ids": [
+              "P-82.6.4:clause:0001"
+            ],
+            "expression_id": "expr.p82.part002.differentiate_same_element_nuclides_typographically.steps.1.value",
+            "op": "literal",
+            "value": {
+              "use": [
+                "italicized nuclide symbols",
+                "italic capital letters"
+              ]
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p82.part002.differentiate_same_element_nuclides_typographically"
     }
   ],
   "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
-  "symbol_declarations": [],
+  "symbol_declarations": [
+    {
+      "arguments": [],
+      "description": "Reason emitted when isotopic locants required when isomers are possible.",
+      "grounding": {
+        "kind": "composition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "stmt.p82.part002.retain_locants_when_isomers_are_possible.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "kind": "reason_code",
+      "returns": "reason_code",
+      "symbol_id": "isotopic_locants_required_when_isomers_are_possible"
+    }
+  ],
   "tables": []
 }

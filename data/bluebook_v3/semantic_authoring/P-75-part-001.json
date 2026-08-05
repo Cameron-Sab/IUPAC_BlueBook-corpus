@@ -89,18 +89,12 @@
       "normative",
       "compile"
     ],
-    null,
     [
-      "example",
-      "illustrative",
-      "compile"
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
     ],
-    [
-      "example",
-      "illustrative",
-      "compile"
-    ],
-    null,
     [
       "example",
       "illustrative",
@@ -117,6 +111,11 @@
       "illustrative",
       "compile"
     ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
     null,
     [
       "example",
@@ -124,6 +123,17 @@
       "compile"
     ],
     null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
     [
       "example",
       "illustrative",
@@ -167,7 +177,12 @@
       "compile"
     ],
     null,
-    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
     [
       "example",
       "illustrative",
@@ -180,7 +195,12 @@
       "compile"
     ],
     null,
-    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
     [
       "procedure_step",
       "normative",
@@ -253,7 +273,12 @@
     ],
     null,
     null,
-    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
     [
       "procedure_step",
       "normative",
@@ -282,7 +307,12 @@
       "illustrative",
       "compile"
     ],
-    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
     null,
     [
       "example",

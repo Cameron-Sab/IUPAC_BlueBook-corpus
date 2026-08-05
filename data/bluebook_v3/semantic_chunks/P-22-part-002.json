@@ -9,20 +9,20 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 81,
-    "compiled_clause_count": 65,
+    "compiled_clause_count": 69,
     "correction_application_count": 1,
     "example_count": 23,
     "exception_count": 1,
     "figure_count": 23,
-    "nonoperative_clause_count": 15,
+    "nonoperative_clause_count": 11,
     "record_count": 6,
     "reference_count": 28,
-    "semantic_unit_count": 11,
+    "semantic_unit_count": 15,
     "superseded_clause_count": 1,
     "symbol_declaration_count": 1,
     "table_count": 0
   },
-  "chunk_sha256": "8A359AFCB195E84872BA271EA0A7B26781054131C90737C5F0FB20459ACED332",
+  "chunk_sha256": "57E6FDAE950D1757784897789DC9D66DA02E5BF87A4030A45C4D086A86804DAC",
   "clause_dispositions": [
     {
       "clause_id": "P-22.2.4:clause:0001",
@@ -819,29 +819,76 @@
     {
       "clause_id": "P-22.2.7.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p22.part002.lambda_convention_for_nonstandard_bonding_numbers",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p22.part002.lambda_convention_for_nonstandard_bonding_numbers.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p22.part002.lambda_convention_for_nonstandard_bonding_numbers.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-22.2.7.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p22.part002.lambda_bonding_number_symbol_placement",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p22.part002.lambda_bonding_number_symbol_placement.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p22.part002.lambda_bonding_number_symbol_placement.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p22.part002.lambda_bonding_number_symbol_placement.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-22.2.7.1:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p22.part002.lambda_name_indicated_hydrogen_placement",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p22.part002.lambda_name_indicated_hydrogen_placement.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p22.part002.lambda_name_indicated_hydrogen_placement.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p22.part002.lambda_name_indicated_hydrogen_placement.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-22.2.7.1:clause:0004",
@@ -1177,11 +1224,36 @@
     {
       "clause_id": "P-22.2.7.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p22.part002.same_heteroatom_bonding_number_locant_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p22.part002.same_heteroatom_bonding_number_locant_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p22.part002.same_heteroatom_bonding_number_locant_preference.candidates",
+            "kind": "expression"
+          },
+          {
+            "id": "stage.p22.part002.same_heteroatom_bonding_number_locant_preference.decreasing_bonding_number",
+            "kind": "decision_stage"
+          },
+          {
+            "id": "expr.p22.part002.same_heteroatom_bonding_number_locant_preference.stage.decreasing_bonding_number.guard",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p22.part002.same_heteroatom_bonding_number_locant_preference.stage.decreasing_bonding_number.key",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-22.2.7.2:clause:0002",
@@ -2395,7 +2467,11 @@
         "reference.p_22_2_7_1.hierarchy_parent",
         "reference.P-22.2.7.1:xref:0001"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p22.part002.lambda_convention_for_nonstandard_bonding_numbers",
+        "unit.p22.part002.lambda_bonding_number_symbol_placement",
+        "unit.p22.part002.lambda_name_indicated_hydrogen_placement"
+      ],
       "source_rule_id": "P-22.2.7.1",
       "table_ids": []
     },
@@ -2425,7 +2501,9 @@
         "reference.p_22_2_7_2.hierarchy_parent",
         "reference.P-22.2.7.2:xref:0001"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p22.part002.same_heteroatom_bonding_number_locant_preference"
+      ],
       "source_rule_id": "P-22.2.7.2",
       "table_ids": []
     }
@@ -3605,6 +3683,242 @@
           "use": "generate preferred IUPAC names for organic derivatives of these heteromonocyclic hydrides"
         }
       }
+    },
+    {
+      "clause_ids": [
+        "P-22.2.7.1:clause:0001"
+      ],
+      "entity_type": "LambdaConventionApplication",
+      "force": "required",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-22.2.7.1:clause:0001"
+          ],
+          "expression_id": "expr.p22.part002.lambda_convention_for_nonstandard_bonding_numbers.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "lambda convention for heteromonocycles",
+      "unit_id": "unit.p22.part002.lambda_convention_for_nonstandard_bonding_numbers",
+      "value": {
+        "clause_ids": [
+          "P-22.2.7.1:clause:0001"
+        ],
+        "expression_id": "expr.p22.part002.lambda_convention_for_nonstandard_bonding_numbers.value",
+        "op": "literal",
+        "value": {
+          "applies_to": "heteroatoms with nonstandard bonding numbers in heteromonocycles",
+          "notation": "lambda convention"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-22.2.7.1:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "heteroatom_locant",
+          "type": "Locant"
+        },
+        {
+          "name": "bonding_number",
+          "type": "BondingNumber"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "lambda_descriptor",
+          "type": "LambdaDescriptor"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-22.2.7.1:clause:0002"
+          ],
+          "expression_id": "expr.p22.part002.lambda_bonding_number_symbol_placement.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-22.2.7.1:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p22.part002.lambda_bonding_number_symbol_placement.steps.1",
+          "target": "lambda_descriptor",
+          "value": {
+            "clause_ids": [
+              "P-22.2.7.1:clause:0002"
+            ],
+            "expression_id": "expr.p22.part002.lambda_bonding_number_symbol_placement.steps.1.value",
+            "op": "literal",
+            "value": {
+              "form": "lambda superscript n",
+              "position": "immediately after the locant denoting the nonstandard-bonding heteroatom"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p22.part002.lambda_bonding_number_symbol_placement"
+    },
+    {
+      "clause_ids": [
+        "P-22.2.7.1:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "heteromonocycle",
+          "type": "HeteromonocyclicParentHydride"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "ParentHydrideName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-22.2.7.1:clause:0003"
+          ],
+          "expression_id": "expr.p22.part002.lambda_name_indicated_hydrogen_placement.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-22.2.7.1:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p22.part002.lambda_name_indicated_hydrogen_placement.steps.1",
+          "target": "name",
+          "value": {
+            "clause_ids": [
+              "P-22.2.7.1:clause:0003"
+            ],
+            "expression_id": "expr.p22.part002.lambda_name_indicated_hydrogen_placement.steps.1.value",
+            "op": "literal",
+            "value": {
+              "component": "H",
+              "locants": "appropriate indicated-hydrogen locants",
+              "position": "front of the complete name",
+              "when": "indicated hydrogen is required for saturated skeletal atoms"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p22.part002.lambda_name_indicated_hydrogen_placement"
+    },
+    {
+      "candidates": {
+        "clause_ids": [
+          "P-22.2.7.2:clause:0001"
+        ],
+        "expression_id": "expr.p22.part002.same_heteroatom_bonding_number_locant_preference.candidates",
+        "name": "locant_assignments",
+        "op": "var"
+      },
+      "clause_ids": [
+        "P-22.2.7.2:clause:0001"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "locant_assignments",
+          "type": "LocantAssignmentSet"
+        }
+      ],
+      "kind": "decision",
+      "outputs": [
+        {
+          "name": "selected_assignment",
+          "type": "LocantAssignment"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-22.2.7.2:clause:0001"
+          ],
+          "expression_id": "expr.p22.part002.same_heteroatom_bonding_number_locant_preference.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "stages": [
+        {
+          "clause_ids": [
+            "P-22.2.7.2:clause:0001"
+          ],
+          "comparator": {
+            "direction": "minimum",
+            "kind": "lexicographic",
+            "symbol": null,
+            "table_id": null
+          },
+          "guard": {
+            "clause_ids": [
+              "P-22.2.7.2:clause:0001"
+            ],
+            "expression_id": "expr.p22.part002.same_heteroatom_bonding_number_locant_preference.stage.decreasing_bonding_number.guard",
+            "op": "literal",
+            "value": true
+          },
+          "key": {
+            "clause_ids": [
+              "P-22.2.7.2:clause:0001"
+            ],
+            "expression_id": "expr.p22.part002.same_heteroatom_bonding_number_locant_preference.stage.decreasing_bonding_number.key",
+            "op": "literal",
+            "value": {
+              "criterion": "assign the lower locant in decreasing order of bonding number",
+              "example_order": [
+                "lambda6",
+                "lambda4"
+              ]
+            }
+          },
+          "on_tie": {
+            "mode": "continue",
+            "next_stage_id": null
+          },
+          "ordinal": 1,
+          "stage_id": "stage.p22.part002.same_heteroatom_bonding_number_locant_preference.decreasing_bonding_number"
+        }
+      ],
+      "terminal_tie": {
+        "fallback_ref": null,
+        "mode": "retain_coequal"
+      },
+      "unit_id": "unit.p22.part002.same_heteroatom_bonding_number_locant_preference"
     }
   ],
   "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",

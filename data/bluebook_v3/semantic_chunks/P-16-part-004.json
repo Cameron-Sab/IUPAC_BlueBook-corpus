@@ -6,12 +6,12 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 37,
-    "compiled_clause_count": 27,
+    "compiled_clause_count": 30,
     "correction_application_count": 0,
     "example_count": 12,
     "exception_count": 0,
     "figure_count": 1,
-    "nonoperative_clause_count": 10,
+    "nonoperative_clause_count": 7,
     "record_count": 3,
     "reference_count": 15,
     "semantic_unit_count": 3,
@@ -19,25 +19,51 @@
     "symbol_declaration_count": 0,
     "table_count": 0
   },
-  "chunk_sha256": "C5C17F5C9CAEC0DC811DA399FB77C6BCA2708262AEE1CB627BAF000CBF668F48",
+  "chunk_sha256": "6D756B89D85813E854404F62397CDC19752ECDA5DF8622F56B6CA1C4B7724DFA",
   "clause_dispositions": [
     {
       "clause_id": "P-16.9.4:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p16.part004.prime_locant_usage",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p16.part004.prime_locant_usage.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p16.part004.prime_locant_usage.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-16.9.4:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p16.part004.prime_locant_usage",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p16.part004.prime_locant_usage.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p16.part004.prime_locant_usage.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-16.9.4:clause:0003",
@@ -291,11 +317,24 @@
     {
       "clause_id": "P-16.9.5:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p16.part004.prime_locant_usage_fusion_and_specialized",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p16.part004.prime_locant_usage_fusion_and_specialized.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p16.part004.prime_locant_usage_fusion_and_specialized.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-16.9.5:clause:0002",
@@ -1236,6 +1275,8 @@
   "semantic_units": [
     {
       "clause_ids": [
+        "P-16.9.4:clause:0001",
+        "P-16.9.4:clause:0002",
         "P-16.9.4:clause:0004",
         "P-16.9.4:clause:0005",
         "P-16.9.4:clause:0006",
@@ -1250,6 +1291,8 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-16.9.4:clause:0001",
+            "P-16.9.4:clause:0002",
             "P-16.9.4:clause:0004",
             "P-16.9.4:clause:0005",
             "P-16.9.4:clause:0006",
@@ -1268,6 +1311,8 @@
       "unit_id": "unit.p16.part004.prime_locant_usage",
       "value": {
         "clause_ids": [
+          "P-16.9.4:clause:0001",
+          "P-16.9.4:clause:0002",
           "P-16.9.4:clause:0004",
           "P-16.9.4:clause:0005",
           "P-16.9.4:clause:0006",
@@ -1291,9 +1336,20 @@
               "purpose": "number identical ring components"
             }
           ],
+          "fused_ring_component_example": {
+            "accepted": "4′a",
+            "rejected": "4a′"
+          },
           "general_rule": "primes, double primes, triple primes, and further prime marks differentiate identical locants other than N locants",
+          "locant_examples": [
+            "1",
+            "1′",
+            "1′′"
+          ],
           "placement": "primes are added after the number, not after the letter",
           "source_text": [
+            "P-16.9.4 Primes (′), double primes (′′), triple primes (′′′), etc., are also used to differentiate identical locants other than N locants, for example 1, 1′, 1′′, 4′a (not 4a′;",
+            "for locants of a fused ring component,",
             "primes are added after the number, not after the letter).",
             "Such usage occurs:",
             "(a) in multiplicative nomenclature to denote multiplied units and modify locants accordingly;",
@@ -1305,6 +1361,7 @@
     },
     {
       "clause_ids": [
+        "P-16.9.5:clause:0001",
         "P-16.9.5:clause:0002",
         "P-16.9.5:clause:0007",
         "P-16.9.5:clause:0010"
@@ -1317,6 +1374,7 @@
       "scope": {
         "applies_to": {
           "clause_ids": [
+            "P-16.9.5:clause:0001",
             "P-16.9.5:clause:0002",
             "P-16.9.5:clause:0007",
             "P-16.9.5:clause:0010"
@@ -1333,6 +1391,7 @@
       "unit_id": "unit.p16.part004.prime_locant_usage_fusion_and_specialized",
       "value": {
         "clause_ids": [
+          "P-16.9.5:clause:0001",
           "P-16.9.5:clause:0002",
           "P-16.9.5:clause:0007",
           "P-16.9.5:clause:0010"
@@ -1355,7 +1414,9 @@
             }
           ],
           "general_rule": "primes differentiate identical locants in the cited nomenclature contexts",
+          "lead_in": "primes also occur in the listed nomenclature contexts",
           "source_text": [
+            "P-16.9.5 Primes also occur:",
             "(a) in fusion nomenclature, to identify first and higher attached components, identical attached components, and multiparent names;",
             "(b) in fullerenes ortho-fused to organic ring or ring systems, to identify positions in the nonfullerene component;",
             "(c) in natural product nomenclature, to identify positions in ring(s) fused to a fundamental parent hydride;"
