@@ -13,20 +13,20 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 93,
-    "compiled_clause_count": 73,
+    "compiled_clause_count": 81,
     "correction_application_count": 0,
     "example_count": 24,
     "exception_count": 0,
     "figure_count": 24,
-    "nonoperative_clause_count": 20,
+    "nonoperative_clause_count": 12,
     "record_count": 10,
     "reference_count": 21,
-    "semantic_unit_count": 20,
+    "semantic_unit_count": 28,
     "superseded_clause_count": 0,
     "symbol_declaration_count": 1,
     "table_count": 0
   },
-  "chunk_sha256": "A48945E4FE6208042F5DA86DA5D38FCAF437DA920EDD975A765568747CF85CAF",
+  "chunk_sha256": "B78797AA742CDCE5447671FBF425DBFC18831888AC408B41EEED046976CF7C1E",
   "clause_dispositions": [
     {
       "clause_id": "P-104:clause:0001",
@@ -212,29 +212,80 @@
     {
       "clause_id": "P-104.2.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p104.part001.inositol_stereoisomer_prefix_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p104.part001.inositol_stereoisomer_prefix_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p104.part001.inositol_stereoisomer_prefix_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p104.part001.inositol_stereoisomer_prefix_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-104.2.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p104.part001.inositol_positional_number_parentheses",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p104.part001.inositol_positional_number_parentheses.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p104.part001.inositol_positional_number_parentheses.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p104.part001.inositol_positional_number_parentheses.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-104.2.1:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p104.part001.inositol_prefix_name_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p104.part001.inositol_prefix_name_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p104.part001.inositol_prefix_name_preference.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p104.part001.inositol_prefix_name_preference.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-104.2.1:clause:0004",
@@ -569,20 +620,54 @@
     {
       "clause_id": "P-104.2.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p104.part001.non_inositol_cyclitol_systematic_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p104.part001.non_inositol_cyclitol_systematic_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p104.part001.non_inositol_cyclitol_systematic_naming.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p104.part001.non_inositol_cyclitol_systematic_naming.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-104.2.2:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p104.part001.non_inositol_cyclitol_systematic_method_preference",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p104.part001.non_inositol_cyclitol_systematic_method_preference.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p104.part001.non_inositol_cyclitol_systematic_method_preference.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p104.part001.non_inositol_cyclitol_systematic_method_preference.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "preference_criterion"
     },
     {
       "clause_id": "P-104.2.2:clause:0003",
@@ -652,29 +737,76 @@
     {
       "clause_id": "P-104.2.3:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p104.part001.cyclitol_positional_locant_assignment",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p104.part001.cyclitol_positional_locant_assignment.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p104.part001.cyclitol_positional_locant_assignment.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p104.part001.cyclitol_positional_locant_assignment.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-104.2.3:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p104.part001.cyclitol_ring_plane_substituent_sets",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p104.part001.cyclitol_ring_plane_substituent_sets.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p104.part001.cyclitol_ring_plane_substituent_sets.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "definition"
     },
     {
       "clause_id": "P-104.2.3:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p104.part001.cyclitol_positional_criteria_sequence",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p104.part001.cyclitol_positional_criteria_sequence.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p104.part001.cyclitol_positional_criteria_sequence.steps.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p104.part001.cyclitol_positional_criteria_sequence.steps.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-104.2.3:clause:0004",
@@ -2745,6 +2877,9 @@
         "reference.p_104_2_1.hierarchy_parent"
       ],
       "semantic_unit_ids": [
+        "unit.p104.part001.inositol_stereoisomer_prefix_naming",
+        "unit.p104.part001.inositol_positional_number_parentheses",
+        "unit.p104.part001.inositol_prefix_name_preference",
         "unit.p104.part001.absolute_configuration_definition",
         "unit.p104.part001.planar_ring_dl_assignment",
         "unit.p104.part001.dl_descriptor_placement"
@@ -2779,7 +2914,10 @@
         "reference.p_104_2_2.hierarchy_parent",
         "reference.p104.part001.sequence_rules"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p104.part001.non_inositol_cyclitol_systematic_naming",
+        "unit.p104.part001.non_inositol_cyclitol_systematic_method_preference"
+      ],
       "source_rule_id": "P-104.2.2",
       "table_ids": []
     },
@@ -2831,6 +2969,9 @@
         "reference.P-104.2.3:xref:0001"
       ],
       "semantic_unit_ids": [
+        "unit.p104.part001.cyclitol_positional_locant_assignment",
+        "unit.p104.part001.cyclitol_ring_plane_substituent_sets",
+        "unit.p104.part001.cyclitol_positional_criteria_sequence",
         "unit.p104.part001.positional_numbering_criteria",
         "unit.p104.part001.fractional_positional_expression"
       ],
@@ -3684,6 +3825,170 @@
     },
     {
       "clause_ids": [
+        "P-104.2.1:clause:0001"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "stereoisomer",
+          "type": "InositolStereoisomer"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "InositolStereoisomerName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-104.2.1:clause:0001"
+          ],
+          "expression_id": "expr.p104.part001.inositol_stereoisomer_prefix_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-104.2.1:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p104.part001.inositol_stereoisomer_prefix_naming.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-104.2.1:clause:0001"
+            ],
+            "expression_id": "expr.p104.part001.inositol_stereoisomer_prefix_naming.steps.1.value",
+            "op": "literal",
+            "value": {
+              "base_name": "inositol",
+              "operation": "add stereoisomeric prefix",
+              "prefix_position": "at the front",
+              "prefix_style": "italicized",
+              "source_text": "P-104.2.1 Stereoisomeric inositols are described by adding italicized prefixes at the front of the name ‘inositol’."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p104.part001.inositol_stereoisomer_prefix_naming"
+    },
+    {
+      "clause_ids": [
+        "P-104.2.1:clause:0002"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "positional_numbers",
+          "type": "CyclitolPositionalNumbers"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "rendered_positional_numbers",
+          "type": "ParenthesizedPositionalNumbers"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-104.2.1:clause:0002"
+          ],
+          "expression_id": "expr.p104.part001.inositol_positional_number_parentheses.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-104.2.1:clause:0002"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p104.part001.inositol_positional_number_parentheses.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-104.2.1:clause:0002"
+            ],
+            "expression_id": "expr.p104.part001.inositol_positional_number_parentheses.steps.1.value",
+            "op": "literal",
+            "value": {
+              "rendering": "parentheses",
+              "source_text": "Positional numbers described in the following method are indicated in parentheses.",
+              "subject": "positional numbers"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p104.part001.inositol_positional_number_parentheses"
+    },
+    {
+      "clause_ids": [
+        "P-104.2.1:clause:0003"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "PrefixDenotedInositolName"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "preference",
+          "type": "NomenclaturePreference"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-104.2.1:clause:0003"
+          ],
+          "expression_id": "expr.p104.part001.inositol_prefix_name_preference.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-104.2.1:clause:0003"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p104.part001.inositol_prefix_name_preference.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-104.2.1:clause:0003"
+            ],
+            "expression_id": "expr.p104.part001.inositol_prefix_name_preference.steps.1.value",
+            "op": "literal",
+            "value": {
+              "name_class": "names denoted by the stereoisomeric prefixes",
+              "source_text": "Names denoted by the prefixes are preferred.",
+              "status": "preferred"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p104.part001.inositol_prefix_name_preference"
+    },
+    {
+      "clause_ids": [
         "P-104.2.1:clause:0022"
       ],
       "force": "required",
@@ -3853,6 +4158,278 @@
         }
       ],
       "unit_id": "unit.p104.part001.dl_descriptor_placement"
+    },
+    {
+      "clause_ids": [
+        "P-104.2.2:clause:0001"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "cyclitol",
+          "type": "NonInositolCyclitol"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "SystematicCyclitolName"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-104.2.2:clause:0001"
+          ],
+          "expression_id": "expr.p104.part001.non_inositol_cyclitol_systematic_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-104.2.2:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p104.part001.non_inositol_cyclitol_systematic_naming.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-104.2.2:clause:0001"
+            ],
+            "expression_id": "expr.p104.part001.non_inositol_cyclitol_systematic_naming.steps.1.value",
+            "op": "literal",
+            "value": {
+              "name_type": "systematic",
+              "parent": "cyclohexane",
+              "scope": "cyclitols other than inositols",
+              "source_text": "P-104.2.2 Cyclitols, with the exception of inositols, are named systematically from cyclohexane as the parent using the CIP method and its Sequence Rules for describing stereoisomers.",
+              "stereoisomer_method": "CIP method and Sequence Rules"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p104.part001.non_inositol_cyclitol_systematic_naming"
+    },
+    {
+      "clause_ids": [
+        "P-104.2.2:clause:0002"
+      ],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "cyclitol",
+          "type": "NonInositolCyclitol"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "preferred_method",
+          "type": "CyclitolStereoisomerNamingMethod"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-104.2.2:clause:0002"
+          ],
+          "expression_id": "expr.p104.part001.non_inositol_cyclitol_systematic_method_preference.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-104.2.2:clause:0002"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p104.part001.non_inositol_cyclitol_systematic_method_preference.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-104.2.2:clause:0002"
+            ],
+            "expression_id": "expr.p104.part001.non_inositol_cyclitol_systematic_method_preference.steps.1.value",
+            "op": "literal",
+            "value": {
+              "alternative_rule": "P-104.2.3",
+              "over": "positional-number method",
+              "preferred": "systematic naming using the CIP method and Sequence Rules",
+              "source_text": "This method is preferred to the method of positional numbers described in P-104.2.3."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p104.part001.non_inositol_cyclitol_systematic_method_preference"
+    },
+    {
+      "clause_ids": [
+        "P-104.2.3:clause:0001"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "cyclitol",
+          "type": "Cyclitol"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "numbering",
+          "type": "CyclitolRingNumbering"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-104.2.3:clause:0001"
+          ],
+          "expression_id": "expr.p104.part001.cyclitol_positional_locant_assignment.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-104.2.3:clause:0001"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p104.part001.cyclitol_positional_locant_assignment.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-104.2.3:clause:0001"
+            ],
+            "expression_id": "expr.p104.part001.cyclitol_positional_locant_assignment.steps.1.value",
+            "op": "literal",
+            "value": {
+              "considerations": [
+                "steric relations",
+                "nature of ring substituents"
+              ],
+              "determines": "direction of numbering",
+              "locant_targets": "hydroxy groups",
+              "source_text": "P-104.2.3 Locants are assigned to hydroxy groups in cyclitols, and thus the direction of numbering is described, with reference to the steric relations and nature of the substituents attached to the ring."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p104.part001.cyclitol_positional_locant_assignment"
+    },
+    {
+      "clause_ids": [
+        "P-104.2.3:clause:0002"
+      ],
+      "entity_type": "CyclitolSubstituentSets",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "substituents",
+          "type": "CyclitolRingSubstituents"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "sets",
+          "type": "CyclitolSubstituentSets"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-104.2.3:clause:0002"
+          ],
+          "expression_id": "expr.p104.part001.cyclitol_ring_plane_substituent_sets.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "cyclitol ring-plane substituent sets",
+      "unit_id": "unit.p104.part001.cyclitol_ring_plane_substituent_sets",
+      "value": {
+        "clause_ids": [
+          "P-104.2.3:clause:0002"
+        ],
+        "expression_id": "expr.p104.part001.cyclitol_ring_plane_substituent_sets.value",
+        "op": "literal",
+        "value": {
+          "above_ring_plane": "one set",
+          "below_ring_plane": "another set",
+          "source_text": "The substituents lying above the plane of the ring constitute a set, and those lying below another set."
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-104.2.3:clause:0003"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "substituent_sets",
+          "type": "CyclitolSubstituentSets"
+        }
+      ],
+      "kind": "procedure",
+      "outputs": [
+        {
+          "name": "criterion_application",
+          "type": "CyclitolPositionalCriterionApplication"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-104.2.3:clause:0003"
+          ],
+          "expression_id": "expr.p104.part001.cyclitol_positional_criteria_sequence.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "steps": [
+        {
+          "clause_ids": [
+            "P-104.2.3:clause:0003"
+          ],
+          "op": "emit",
+          "statement_id": "stmt.p104.part001.cyclitol_positional_criteria_sequence.steps.1",
+          "value": {
+            "clause_ids": [
+              "P-104.2.3:clause:0003"
+            ],
+            "expression_id": "expr.p104.part001.cyclitol_positional_criteria_sequence.steps.1.value",
+            "op": "literal",
+            "value": {
+              "application_order": "successive",
+              "criteria_rule": "P-104.2.3(a)-(f)",
+              "objective": "relate lowest locants to one substituent set",
+              "source_text": "Lowest locants are related to one set of the substituents according to the following criteria, which are applied successively until a decision is reached:",
+              "stop_condition": "a decision is reached"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p104.part001.cyclitol_positional_criteria_sequence"
     },
     {
       "clause_ids": [
