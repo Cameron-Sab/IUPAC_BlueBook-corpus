@@ -1,0 +1,3879 @@
+{
+  "assigned_rule_ids": [
+    "P-66.6.4",
+    "P-66.6.5",
+    "P-66.6.5.1",
+    "P-66.6.5.1.1",
+    "P-66.6.5.1.2",
+    "P-66.6.5.2",
+    "P-66.6.5.3",
+    "P-66.6.5.4"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 93,
+    "compiled_clause_count": 76,
+    "correction_application_count": 0,
+    "example_count": 24,
+    "exception_count": 0,
+    "figure_count": 24,
+    "nonoperative_clause_count": 17,
+    "record_count": 8,
+    "reference_count": 15,
+    "semantic_unit_count": 8,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 0,
+    "table_count": 0
+  },
+  "chunk_sha256": "77BB60DF760BA6DB5AE63E8C34A8FD5F83982CD62C347CBCB1F274C46BA60DBF",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-66.6.4:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.polyfunctional_aldehyde_prefix_expression",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.polyfunctional_aldehyde_prefix_expression.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.polyfunctional_aldehyde_prefix_expression.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.polyfunctional_aldehyde_prefix_expression.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.polyfunctional_aldehyde_prefix_expression.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.polyfunctional_aldehyde_seniority",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.polyfunctional_aldehyde_seniority.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.polyfunctional_aldehyde_seniority.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.polyfunctional_aldehyde_seniority.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.polyfunctional_aldehyde_seniority.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0004",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.polyfunctional_aldehyde_3_oxobutanal",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.4:clause:0006",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.polyfunctional_aldehyde_2_methylidenehexanal",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.4:clause:0008",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.polyfunctional_aldehyde_2_hydroxybenzaldehyde",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.4:clause:0010",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.polyfunctional_aldehyde_furan_carbaldehyde",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.4:clause:0012",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.polyfunctional_aldehyde_phenoxyacetaldehyde",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.4:clause:0014",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.polyfunctional_aldehyde_fluoro_methylbenzaldehyde",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.4:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.4:clause:0016",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-66.6.5:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "source_navigation"
+      },
+      "force": "source_metadata",
+      "role": "source_metadata"
+    },
+    {
+      "clause_id": "P-66.6.5.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0003",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.acetal_and_ketal_class_and_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.acetal_and_ketal_class_and_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.acetal_and_ketal_class_and_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.acetal_and_ketal_class_and_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0007",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.acetal_propanal_diethyl",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.1.1:clause:0009",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.ketal_cyclohexanone_ethyl_methyl",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.1.1:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.diketals_cyclohexane_1",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.1.1:clause:0013",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.diketals_cyclohexane_2",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.1.1:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.1.1:clause:0015",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.cyclic_acetal_and_ketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.cyclic_acetal_and_ketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "condition"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.cyclic_acetal_and_ketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.cyclic_acetal_and_ketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.cyclic_acetal_and_ketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.cyclic_acetal_and_ketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0005",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.cyclic_acetal_propanal_ethylene",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.1.2:clause:0007",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.cyclic_ketal_cyclohexanone_ethylene",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.1.2:clause:0009",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.cyclic_ketal_silyl_substituted",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.1.2:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.cyclic_ketal_brackets_correction_event",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_ketal_brackets_correction_event.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.cyclic_ketal_brackets_correction_event.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "correction",
+      "role": "correction_event"
+    },
+    {
+      "clause_id": "P-66.6.5.1.2:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.cyclic_ketal_silyl_substituted",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0007",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.hemiacetal_butanal_ethyl",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.2:clause:0009",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.hemiketal_cyclohexanone_methyl",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.2:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.2:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_acetal_and_ketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_acetal_and_ketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_acetal_and_ketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_acetal_and_ketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_acetal_and_ketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_acetal_and_ketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0008",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.dithioacetal_pentanal_dimethyl",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.3:clause:0010",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.monothioacetal_propanal_s_ethyl_o_methyl",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.3:clause:0012",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.monothioketal_cyclopentanone",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.3:clause:0014",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.cyclic_monothioacetal",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0016",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.3:clause:0016",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0017",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.selenothioketal_cyclohexanone",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0018",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.3:clause:0018",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0019",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.cyclic_monoselenoketal",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.3:clause:0020",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.3:clause:0020",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "preference_criterion"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "procedure_step"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0009",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "example_label"
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.dithiohemiacetal_propanal",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.4:clause:0011",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.monothiohemiacetal_propanal",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.4:clause:0013",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0014",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p66.part008.selenothiohemiketal_cyclopentanone",
+            "kind": "example"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "example"
+    },
+    {
+      "clause_id": "P-66.6.5.4:clause:0015",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "figure.asset.p_66.6.5.4:clause:0015",
+            "kind": "figure"
+          }
+        ]
+      },
+      "force": "illustrative",
+      "role": "figure_asset"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "3-oxobutanal (PIN)"
+      ],
+      "clause_ids": [
+        "P-66.6.4:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.polyfunctional_aldehyde_prefix_expression",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.4:clause:0006",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.polyfunctional_aldehyde_3_oxobutanal",
+      "explanation": "The aldehyde is the principal function and the ketone is expressed by the oxo prefix.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.4:clause:0006"
+      },
+      "operative": false,
+      "rejected_names": [
+        "3-oxobutyraldehyde"
+      ]
+    },
+    {
+      "accepted_names": [
+        "2-methylidenehexanal (PIN)"
+      ],
+      "clause_ids": [
+        "P-66.6.4:clause:0007"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.polyfunctional_aldehyde_seniority",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.4:clause:0008",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.polyfunctional_aldehyde_2_methylidenehexanal",
+      "explanation": "The longest chain is selected as the principal chain, consistent with the cited acid seniority rules.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.4:clause:0008"
+      },
+      "operative": false,
+      "rejected_names": [
+        "2-butylprop-2-enal"
+      ]
+    },
+    {
+      "accepted_names": [
+        "2-hydroxybenzaldehyde (PIN)"
+      ],
+      "clause_ids": [
+        "P-66.6.4:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.polyfunctional_aldehyde_prefix_expression",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.4:clause:0010",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.polyfunctional_aldehyde_2_hydroxybenzaldehyde",
+      "explanation": "The hydroxy group is expressed as a prefix in the presence of the aldehyde group.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.4:clause:0010"
+      },
+      "operative": false,
+      "rejected_names": [
+        "salicylaldehyde"
+      ]
+    },
+    {
+      "accepted_names": [
+        "5-(hydroxymethyl)furan-2-carbaldehyde (PIN)",
+        "5-(hydroxymethyl)-2-furaldehyde"
+      ],
+      "clause_ids": [
+        "P-66.6.4:clause:0011"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.polyfunctional_aldehyde_prefix_expression",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.4:clause:0012",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.polyfunctional_aldehyde_furan_carbaldehyde",
+      "explanation": "The aldehyde is named by the carbaldehyde construction and the hydroxy group is expressed as hydroxymethyl.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.4:clause:0012"
+      },
+      "operative": false,
+      "rejected_names": [
+        "5-(hydroxymethyl)furfural"
+      ]
+    },
+    {
+      "accepted_names": [
+        "phenoxyacetaldehyde (PIN)"
+      ],
+      "clause_ids": [
+        "P-66.6.4:clause:0013"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.polyfunctional_aldehyde_prefix_expression",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.4:clause:0014",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.polyfunctional_aldehyde_phenoxyacetaldehyde",
+      "explanation": "The phenoxy substituent is retained in the aldehyde name.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.4:clause:0014"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "3-fluoro-2-methylbenzaldehyde (PIN)"
+      ],
+      "clause_ids": [
+        "P-66.6.4:clause:0015"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.polyfunctional_aldehyde_prefix_expression",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.4:clause:0016",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.polyfunctional_aldehyde_fluoro_methylbenzaldehyde",
+      "explanation": "Fluoro and methyl substituents are expressed on the benzaldehyde parent.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.4:clause:0016"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,1-diethoxypropane (PIN)",
+        "propanal diethyl acetal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.1.1:clause:0009",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.acetal_propanal_diethyl",
+      "explanation": "The example gives the preferred substitutive name and the functional class name.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.1.1:clause:0009"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-ethoxy-1-methoxycyclohexane (PIN)",
+        "cyclohexanone ethyl methyl ketal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.1.1:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.ketal_cyclohexanone_ethyl_methyl",
+      "explanation": "The ketal example contrasts the substitutive and functional class names.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.1.1:clause:0011"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,1-diethoxy-4,4-dimethoxycyclohexane (PIN)",
+        "cyclohexane-1,4-dione 1,1-diethyl 4,4-dimethyl diketal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0012"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.1.1:clause:0013",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.diketals_cyclohexane_1",
+      "explanation": "The example applies the two naming methods to a compound with two ketal functions.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.1.1:clause:0013"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-ethoxy-1,4,4-trimethoxycyclohexane (PIN)",
+        "cyclohexane-1,4-dione 1-ethyl 1,4,4-trimethyl diketal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0014"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.1.1:clause:0015",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.diketals_cyclohexane_2",
+      "explanation": "The example shows ordered O-substituent naming for a mixed diketal.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.1.1:clause:0015"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2-ethyl-1,3-dioxolane (PIN)",
+        "propanal ethylene acetal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0006"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.cyclic_acetal_and_ketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.1.2:clause:0007",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.cyclic_acetal_propanal_ethylene",
+      "explanation": "The cyclic acetal is named as a heterocyclic compound, with a functional class alternative.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.1.2:clause:0007"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,4-dioxaspiro[4.5]decane (PIN)",
+        "cyclohexanone ethylene ketal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.cyclic_acetal_and_ketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.1.2:clause:0009",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.cyclic_ketal_cyclohexanone_ethylene",
+      "explanation": "The cyclic ketal is named as a spiro compound under Section P-24.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.1.2:clause:0009"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "[2-(1,3-dioxolan-2-yl)ethyl]tri(methyl)silane (PIN)",
+        "3-(trimethylsilyl)propanal ethylene ketal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0010",
+        "P-66.6.5.1.2:clause:0013"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.cyclic_acetal_and_ketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.1.2:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.cyclic_ketal_silyl_substituted",
+      "explanation": "The example includes the corrected bracketed preferred name and the functional class name.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.1.2:clause:0011"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-ethoxybutan-1-ol (PIN)",
+        "butanal ethyl hemiacetal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.2:clause:0008"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.hemiacetal_and_hemiketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.2:clause:0009",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.hemiacetal_butanal_ethyl",
+      "explanation": "The hemiacetal is shown with its preferred substitutive and functional class names.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.2:clause:0009"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-methoxycyclohexan-1-ol (PIN)",
+        "cyclohexanone methyl hemiketal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.2:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.hemiacetal_and_hemiketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.2:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.hemiketal_cyclohexanone_methyl",
+      "explanation": "The ketone derivative is denoted by the class name hemiketal.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.2:clause:0011"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,1-bis(methylsulfanyl)pentane (PIN)",
+        "pentanal dimethyl dithioacetal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.3:clause:0009"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.3:clause:0010",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.dithioacetal_pentanal_dimethyl",
+      "explanation": "The sulfur analogue is named substitutively and by functional class nomenclature.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.3:clause:0010"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-(ethylsulfanyl)-1-methoxypropane (PIN)",
+        "propanal S-ethyl O-methyl monothioacetal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.3:clause:0011"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.3:clause:0012",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.monothioacetal_propanal_s_ethyl_o_methyl",
+      "explanation": "Capital italic S and O locants provide structural specificity in the functional class name.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.3:clause:0012"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-ethoxy-1-(ethylsulfanyl)cyclopentane (PIN)",
+        "cyclopentanone diethyl monothioketal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.3:clause:0013"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.3:clause:0014",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.monothioketal_cyclopentanone",
+      "explanation": "The mixed O/S ketal is represented by the preferred substitutive and functional class names.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.3:clause:0014"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "2-methyl-1,3-oxathiolane (PIN)",
+        "acetaldehyde ethylene monothioacetal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.3:clause:0015"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.3:clause:0016",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.cyclic_monothioacetal",
+      "explanation": "The cyclic sulfur analogue is named as a heterocyclic compound and by functional class nomenclature.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.3:clause:0016"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-(ethylselanyl)-1-(methylsulfanyl)cyclohexane (PIN)",
+        "cyclohexanone Se-ethyl S-methyl selenothioketal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.3:clause:0017"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.3:clause:0018",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.selenothioketal_cyclohexanone",
+      "explanation": "The mixed selenium and sulfur analogue follows the sulfur naming treatment with Se and S locants.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.3:clause:0018"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-oxa-4-selenaspiro[4.4]nonane (PIN)",
+        "cyclopentanone ethylene monoselenoketal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.3:clause:0019"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.3:clause:0020",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.cyclic_monoselenoketal",
+      "explanation": "The selenium cyclic ketal demonstrates the same treatment extended to selenium.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.3:clause:0020"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-(ethylsulfanyl)propane-1-thiol (PIN)",
+        "propanal ethyl dithiohemiacetal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.4:clause:0010"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.4:clause:0011",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.dithiohemiacetal_propanal",
+      "explanation": "The sulfur hemiacetal is named by the hydroxy-parent-derived substitutive method and by functional class nomenclature.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.4:clause:0011"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-ethoxypropane-1-thiol (PIN)",
+        "propanal O-ethyl monothiohemiacetal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.4:clause:0012"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.4:clause:0013",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.monothiohemiacetal_propanal",
+      "explanation": "The O/S hemiacetal demonstrates the monothiohemiacetal class name.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.4:clause:0013"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1-(ethylsulfanyl)cyclopentane-1-selenol (PIN)",
+        "cyclopentanone S-ethyl selenothiohemiketal"
+      ],
+      "clause_ids": [
+        "P-66.6.5.4:clause:0014"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "figure.asset.p_66.6.5.4:clause:0015",
+          "kind": "figure"
+        }
+      ],
+      "example_id": "example.p66.part008.selenothiohemiketal_cyclopentanone",
+      "explanation": "The mixed selenium and sulfur hemiketal follows the sulfur analogue treatment.",
+      "input": {
+        "structure_figure": "figure.asset.p_66.6.5.4:clause:0015"
+      },
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [],
+  "figures": [
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0006"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.4:clause:0006",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66640a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0008"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.4:clause:0008",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66640b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0010"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.4:clause:0010",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66640c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0012"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.4:clause:0012",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66640d.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0014"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.4:clause:0014",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66640e.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0016"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.4:clause:0016",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66640f.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.1.1:clause:0009",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66651a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.1.1:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66651b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0013"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.1.1:clause:0013",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66651c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0015"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.1.1:clause:0015",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66651d.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0007"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.1.2:clause:0007",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66651e.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.1.2:clause:0009",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66651f.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.1.2:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66651g.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.2:clause:0009"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.2:clause:0009",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66652a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.2:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.2:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66652b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.3:clause:0010"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.3:clause:0010",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66653a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.3:clause:0012"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.3:clause:0012",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66653b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.3:clause:0014"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.3:clause:0014",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66653c.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.3:clause:0016"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.3:clause:0016",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66653d.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.3:clause:0018"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.3:clause:0018",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66653e.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.3:clause:0020"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.3:clause:0020",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66653f.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.4:clause:0011"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.4:clause:0011",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66654a.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.4:clause:0013"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.4:clause:0013",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66654b.gif"
+      ]
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.4:clause:0015"
+      ],
+      "content_sha256": null,
+      "figure_id": "figure.asset.p_66.6.5.4:clause:0015",
+      "kind": "chemical_structure",
+      "source_urls": [
+        "https://iupac.qmul.ac.uk/BlueBook/P6agif/P66654c.gif"
+      ]
+    }
+  ],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-66-part-008",
+  "packet_sha256": "2429043210B891A70020E5CFD26B918EBCCF9EEF46C4F04DA8D14F7A5591E4D5",
+  "records": [
+    {
+      "chapter": "P-6",
+      "clause_ids": [
+        "P-66.6.4:clause:0001",
+        "P-66.6.4:clause:0002",
+        "P-66.6.4:clause:0003",
+        "P-66.6.4:clause:0004",
+        "P-66.6.4:clause:0005",
+        "P-66.6.4:clause:0006",
+        "P-66.6.4:clause:0007",
+        "P-66.6.4:clause:0008",
+        "P-66.6.4:clause:0009",
+        "P-66.6.4:clause:0010",
+        "P-66.6.4:clause:0011",
+        "P-66.6.4:clause:0012",
+        "P-66.6.4:clause:0013",
+        "P-66.6.4:clause:0014",
+        "P-66.6.4:clause:0015",
+        "P-66.6.4:clause:0016"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p66.part008.polyfunctional_aldehyde_3_oxobutanal",
+        "example.p66.part008.polyfunctional_aldehyde_2_methylidenehexanal",
+        "example.p66.part008.polyfunctional_aldehyde_2_hydroxybenzaldehyde",
+        "example.p66.part008.polyfunctional_aldehyde_furan_carbaldehyde",
+        "example.p66.part008.polyfunctional_aldehyde_phenoxyacetaldehyde",
+        "example.p66.part008.polyfunctional_aldehyde_fluoro_methylbenzaldehyde"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_66.6.4:clause:0006",
+        "figure.asset.p_66.6.4:clause:0008",
+        "figure.asset.p_66.6.4:clause:0010",
+        "figure.asset.p_66.6.4:clause:0012",
+        "figure.asset.p_66.6.4:clause:0014",
+        "figure.asset.p_66.6.4:clause:0016"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-66.6.4",
+      "reference_ids": [
+        "reference.p_66_6_4.hierarchy_parent",
+        "reference.P-66.6.4:xref:0001",
+        "reference.p66.part008.p66_6_4_xref_0002",
+        "reference.P-66.6.4:xref:0003"
+      ],
+      "semantic_unit_ids": [
+        "unit.p66.part008.polyfunctional_aldehyde_prefix_expression",
+        "unit.p66.part008.polyfunctional_aldehyde_seniority"
+      ],
+      "source_rule_id": "P-66.6.4",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-6",
+      "clause_ids": [
+        "P-66.6.5:clause:0001",
+        "P-66.6.5:clause:0002"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-66.6.5",
+      "reference_ids": [
+        "reference.p_66_6_5.hierarchy_parent",
+        "reference.P-66.6.5:xref:0001",
+        "reference.P-66.6.5:xref:0002",
+        "reference.P-66.6.5:xref:0003"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-66.6.5",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-6",
+      "clause_ids": [
+        "P-66.6.5.1:clause:0001"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": false,
+      "record_id": "bluebook-v3:P-66.6.5.1",
+      "reference_ids": [
+        "reference.p_66_6_5_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [],
+      "source_rule_id": "P-66.6.5.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-6",
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0001",
+        "P-66.6.5.1.1:clause:0002",
+        "P-66.6.5.1.1:clause:0003",
+        "P-66.6.5.1.1:clause:0004",
+        "P-66.6.5.1.1:clause:0005",
+        "P-66.6.5.1.1:clause:0006",
+        "P-66.6.5.1.1:clause:0007",
+        "P-66.6.5.1.1:clause:0008",
+        "P-66.6.5.1.1:clause:0009",
+        "P-66.6.5.1.1:clause:0010",
+        "P-66.6.5.1.1:clause:0011",
+        "P-66.6.5.1.1:clause:0012",
+        "P-66.6.5.1.1:clause:0013",
+        "P-66.6.5.1.1:clause:0014",
+        "P-66.6.5.1.1:clause:0015"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p66.part008.acetal_propanal_diethyl",
+        "example.p66.part008.ketal_cyclohexanone_ethyl_methyl",
+        "example.p66.part008.diketals_cyclohexane_1",
+        "example.p66.part008.diketals_cyclohexane_2"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_66.6.5.1.1:clause:0009",
+        "figure.asset.p_66.6.5.1.1:clause:0011",
+        "figure.asset.p_66.6.5.1.1:clause:0013",
+        "figure.asset.p_66.6.5.1.1:clause:0015"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-66.6.5.1.1",
+      "reference_ids": [
+        "reference.p_66_6_5_1_1.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p66.part008.acetal_and_ketal_class_and_naming"
+      ],
+      "source_rule_id": "P-66.6.5.1.1",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-6",
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0001",
+        "P-66.6.5.1.2:clause:0002",
+        "P-66.6.5.1.2:clause:0003",
+        "P-66.6.5.1.2:clause:0004",
+        "P-66.6.5.1.2:clause:0005",
+        "P-66.6.5.1.2:clause:0006",
+        "P-66.6.5.1.2:clause:0007",
+        "P-66.6.5.1.2:clause:0008",
+        "P-66.6.5.1.2:clause:0009",
+        "P-66.6.5.1.2:clause:0010",
+        "P-66.6.5.1.2:clause:0011",
+        "P-66.6.5.1.2:clause:0012",
+        "P-66.6.5.1.2:clause:0013"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p66.part008.cyclic_acetal_propanal_ethylene",
+        "example.p66.part008.cyclic_ketal_cyclohexanone_ethylene",
+        "example.p66.part008.cyclic_ketal_silyl_substituted"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_66.6.5.1.2:clause:0007",
+        "figure.asset.p_66.6.5.1.2:clause:0009",
+        "figure.asset.p_66.6.5.1.2:clause:0011"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-66.6.5.1.2",
+      "reference_ids": [
+        "reference.p_66_6_5_1_2.hierarchy_parent",
+        "reference.P-66.6.5.1.2:xref:0001"
+      ],
+      "semantic_unit_ids": [
+        "unit.p66.part008.cyclic_acetal_and_ketal_naming",
+        "unit.p66.part008.cyclic_ketal_brackets_correction_event"
+      ],
+      "source_rule_id": "P-66.6.5.1.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-6",
+      "clause_ids": [
+        "P-66.6.5.2:clause:0001",
+        "P-66.6.5.2:clause:0002",
+        "P-66.6.5.2:clause:0003",
+        "P-66.6.5.2:clause:0004",
+        "P-66.6.5.2:clause:0005",
+        "P-66.6.5.2:clause:0006",
+        "P-66.6.5.2:clause:0007",
+        "P-66.6.5.2:clause:0008",
+        "P-66.6.5.2:clause:0009",
+        "P-66.6.5.2:clause:0010",
+        "P-66.6.5.2:clause:0011"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p66.part008.hemiacetal_butanal_ethyl",
+        "example.p66.part008.hemiketal_cyclohexanone_methyl"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_66.6.5.2:clause:0009",
+        "figure.asset.p_66.6.5.2:clause:0011"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-66.6.5.2",
+      "reference_ids": [
+        "reference.p_66_6_5_2.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p66.part008.hemiacetal_and_hemiketal_naming"
+      ],
+      "source_rule_id": "P-66.6.5.2",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-6",
+      "clause_ids": [
+        "P-66.6.5.3:clause:0001",
+        "P-66.6.5.3:clause:0002",
+        "P-66.6.5.3:clause:0003",
+        "P-66.6.5.3:clause:0004",
+        "P-66.6.5.3:clause:0005",
+        "P-66.6.5.3:clause:0006",
+        "P-66.6.5.3:clause:0007",
+        "P-66.6.5.3:clause:0008",
+        "P-66.6.5.3:clause:0009",
+        "P-66.6.5.3:clause:0010",
+        "P-66.6.5.3:clause:0011",
+        "P-66.6.5.3:clause:0012",
+        "P-66.6.5.3:clause:0013",
+        "P-66.6.5.3:clause:0014",
+        "P-66.6.5.3:clause:0015",
+        "P-66.6.5.3:clause:0016",
+        "P-66.6.5.3:clause:0017",
+        "P-66.6.5.3:clause:0018",
+        "P-66.6.5.3:clause:0019",
+        "P-66.6.5.3:clause:0020"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p66.part008.dithioacetal_pentanal_dimethyl",
+        "example.p66.part008.monothioacetal_propanal_s_ethyl_o_methyl",
+        "example.p66.part008.monothioketal_cyclopentanone",
+        "example.p66.part008.cyclic_monothioacetal",
+        "example.p66.part008.selenothioketal_cyclohexanone",
+        "example.p66.part008.cyclic_monoselenoketal"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_66.6.5.3:clause:0010",
+        "figure.asset.p_66.6.5.3:clause:0012",
+        "figure.asset.p_66.6.5.3:clause:0014",
+        "figure.asset.p_66.6.5.3:clause:0016",
+        "figure.asset.p_66.6.5.3:clause:0018",
+        "figure.asset.p_66.6.5.3:clause:0020"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-66.6.5.3",
+      "reference_ids": [
+        "reference.p_66_6_5_3.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p66.part008.chalcogen_acetal_and_ketal_naming"
+      ],
+      "source_rule_id": "P-66.6.5.3",
+      "table_ids": []
+    },
+    {
+      "chapter": "P-6",
+      "clause_ids": [
+        "P-66.6.5.4:clause:0001",
+        "P-66.6.5.4:clause:0002",
+        "P-66.6.5.4:clause:0003",
+        "P-66.6.5.4:clause:0004",
+        "P-66.6.5.4:clause:0005",
+        "P-66.6.5.4:clause:0006",
+        "P-66.6.5.4:clause:0007",
+        "P-66.6.5.4:clause:0008",
+        "P-66.6.5.4:clause:0009",
+        "P-66.6.5.4:clause:0010",
+        "P-66.6.5.4:clause:0011",
+        "P-66.6.5.4:clause:0012",
+        "P-66.6.5.4:clause:0013",
+        "P-66.6.5.4:clause:0014",
+        "P-66.6.5.4:clause:0015"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p66.part008.dithiohemiacetal_propanal",
+        "example.p66.part008.monothiohemiacetal_propanal",
+        "example.p66.part008.selenothiohemiketal_cyclopentanone"
+      ],
+      "exception_ids": [],
+      "figure_ids": [
+        "figure.asset.p_66.6.5.4:clause:0011",
+        "figure.asset.p_66.6.5.4:clause:0013",
+        "figure.asset.p_66.6.5.4:clause:0015"
+      ],
+      "operative": true,
+      "record_id": "bluebook-v3:P-66.6.5.4",
+      "reference_ids": [
+        "reference.p_66_6_5_4.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming"
+      ],
+      "source_rule_id": "P-66.6.5.4",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_66_6_4.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-66.6",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_66_6_5.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-66.6",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_66_6_5_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-66.6.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_66_6_5_1_1.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5.1.1",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-66.6.5.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_66_6_5_1_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5.1.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-66.6.5.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.2:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_66_6_5_2.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-66.6.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.3:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_66_6_5_3.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5.3",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-66.6.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.4:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_66_6_5_4.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "P-66.6.5",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-66.6.4:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-66.6.4:xref:0001"
+      ],
+      "target": {
+        "id": "P-65.1.2.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p66.part008.p66_6_4_xref_0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-66.6.4:xref:0002"
+      ],
+      "target": {
+        "id": "P-65.1.2.4",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0007"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-66.6.4:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.4",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-66.6.4:xref:0003"
+      ],
+      "target": {
+        "id": "P-44.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-66.6.5:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-66.6.5:xref:0001"
+      ],
+      "target": {
+        "id": "P-66.6.5.1",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-66.6.5:xref:0002",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-66.6.5:xref:0002"
+      ],
+      "target": {
+        "id": "P-66.6.5.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5:clause:0002"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-66.6.5:xref:0003",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-66.6.5:xref:0003"
+      ],
+      "target": {
+        "id": "P-66.6.5.3",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0003"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-66.6.5.1.2:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-66.6.5.1.2",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-66.6.5.1.2:xref:0001"
+      ],
+      "target": {
+        "id": "P-24",
+        "kind": "rule"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0002"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "PolyfunctionalAldehyde"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "naming_rule",
+          "type": "NamePattern"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-66.6.4:clause:0002"
+          ],
+          "expression_id": "expr.p66.part008.polyfunctional_aldehyde_prefix_expression.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-66.6.4:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p66.part008.polyfunctional_aldehyde_prefix_expression.then.1",
+          "target": "naming_rule",
+          "value": {
+            "clause_ids": [
+              "P-66.6.4:clause:0002"
+            ],
+            "expression_id": "expr.p66.part008.polyfunctional_aldehyde_prefix_expression.then.1.value",
+            "op": "literal",
+            "value": {
+              "operation": "express by prefixes",
+              "prefix_expressions": [
+                "ketones",
+                "pseudoketones",
+                "heterones",
+                "hydroxy compounds",
+                "amines",
+                "imines"
+              ],
+              "principal_function": "aldehyde",
+              "source_text": "In the presence of an aldehyde group, ketones, pseudoketones, heterones, hydroxy compounds, amines, and imines are expressed by prefixes."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p66.part008.polyfunctional_aldehyde_prefix_expression",
+      "when": {
+        "clause_ids": [
+          "P-66.6.4:clause:0002"
+        ],
+        "expression_id": "expr.p66.part008.polyfunctional_aldehyde_prefix_expression.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.4:clause:0003"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "PolyfunctionalAldehyde"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "numbering_basis",
+          "type": "NumberingSeniority"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-66.6.4:clause:0003"
+          ],
+          "expression_id": "expr.p66.part008.polyfunctional_aldehyde_seniority.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-66.6.4:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p66.part008.polyfunctional_aldehyde_seniority.then.1",
+          "target": "numbering_basis",
+          "value": {
+            "clause_ids": [
+              "P-66.6.4:clause:0003"
+            ],
+            "expression_id": "expr.p66.part008.polyfunctional_aldehyde_seniority.then.1.value",
+            "op": "literal",
+            "value": {
+              "references": [
+                "P-65.1.2.3",
+                "P-65.1.2.4"
+              ],
+              "rule": "seniority for numbering polyfunctional aldehydes follows the seniority described for acids",
+              "source_text": "Seniority for numbering polyfunctional aldehydes follows that described for acids."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p66.part008.polyfunctional_aldehyde_seniority",
+      "when": {
+        "clause_ids": [
+          "P-66.6.4:clause:0003"
+        ],
+        "expression_id": "expr.p66.part008.polyfunctional_aldehyde_seniority.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.1:clause:0002",
+        "P-66.6.5.1.1:clause:0003",
+        "P-66.6.5.1.1:clause:0004",
+        "P-66.6.5.1.1:clause:0005",
+        "P-66.6.5.1.1:clause:0006"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "AcetalOrKetal"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "naming_options",
+          "type": "AcetalNamingOptions"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-66.6.5.1.1:clause:0002",
+            "P-66.6.5.1.1:clause:0003",
+            "P-66.6.5.1.1:clause:0004",
+            "P-66.6.5.1.1:clause:0005",
+            "P-66.6.5.1.1:clause:0006"
+          ],
+          "expression_id": "expr.p66.part008.acetal_and_ketal_class_and_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-66.6.5.1.1:clause:0002",
+            "P-66.6.5.1.1:clause:0003",
+            "P-66.6.5.1.1:clause:0004",
+            "P-66.6.5.1.1:clause:0005",
+            "P-66.6.5.1.1:clause:0006"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p66.part008.acetal_and_ketal_class_and_naming.then.1",
+          "target": "naming_options",
+          "value": {
+            "clause_ids": [
+              "P-66.6.5.1.1:clause:0002",
+              "P-66.6.5.1.1:clause:0003",
+              "P-66.6.5.1.1:clause:0004",
+              "P-66.6.5.1.1:clause:0005",
+              "P-66.6.5.1.1:clause:0006"
+            ],
+            "expression_id": "expr.p66.part008.acetal_and_ketal_class_and_naming.then.1.value",
+            "op": "literal",
+            "value": {
+              "acetal_structure": "RR'C(O-R'')(O-R''')",
+              "class_name": "acetal",
+              "hydrogen_allowed_on_R_or_R_prime": true,
+              "ketal_subclass": "neither R nor R' may be hydrogen",
+              "methods": [
+                {
+                  "construction": "alkoxy, alkyloxy, aryloxy, etc. derivatives of an appropriate parent hydride or functional parent compound",
+                  "kind": "substitutive",
+                  "method": 1,
+                  "status": "preferred IUPAC name"
+                },
+                {
+                  "construction": "cite the aldehyde or ketone, the O-substituents in alphanumerical order if required, and finally acetal or ketal",
+                  "kind": "functional class nomenclature",
+                  "method": 2,
+                  "status": "general nomenclature"
+                }
+              ],
+              "source_text": "Acetals (ketals) are named in two ways; method (1), the substitutive method, leads to preferred IUPAC names."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p66.part008.acetal_and_ketal_class_and_naming",
+      "when": {
+        "clause_ids": [
+          "P-66.6.5.1.1:clause:0002",
+          "P-66.6.5.1.1:clause:0003",
+          "P-66.6.5.1.1:clause:0004",
+          "P-66.6.5.1.1:clause:0005",
+          "P-66.6.5.1.1:clause:0006"
+        ],
+        "expression_id": "expr.p66.part008.acetal_and_ketal_class_and_naming.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0002",
+        "P-66.6.5.1.2:clause:0003",
+        "P-66.6.5.1.2:clause:0004"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "CyclicAcetalOrKetal"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "naming_options",
+          "type": "CyclicAcetalNamingOptions"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-66.6.5.1.2:clause:0002",
+            "P-66.6.5.1.2:clause:0003",
+            "P-66.6.5.1.2:clause:0004"
+          ],
+          "expression_id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-66.6.5.1.2:clause:0002",
+            "P-66.6.5.1.2:clause:0003",
+            "P-66.6.5.1.2:clause:0004"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p66.part008.cyclic_acetal_and_ketal_naming.then.1",
+          "target": "naming_options",
+          "value": {
+            "clause_ids": [
+              "P-66.6.5.1.2:clause:0002",
+              "P-66.6.5.1.2:clause:0003",
+              "P-66.6.5.1.2:clause:0004"
+            ],
+            "expression_id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.then.1.value",
+            "op": "literal",
+            "value": {
+              "cyclic_acetal": {
+                "method": "name as a heterocyclic compound",
+                "principal_function": true,
+                "status": "preferred IUPAC name"
+              },
+              "cyclic_ketal": {
+                "method": "name as a spiro compound under Section P-24",
+                "status": "preferred IUPAC name"
+              },
+              "general_nomenclature": {
+                "allowed_method": "functional class nomenclature using the appropriate divalent substituent groups"
+              },
+              "source_text": "Cyclic acetals as the principal function are named as heterocyclic compounds; cyclic ketals are spiro compounds named in accordance with Section P-24; functional class nomenclature may be used in general nomenclature."
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p66.part008.cyclic_acetal_and_ketal_naming",
+      "when": {
+        "clause_ids": [
+          "P-66.6.5.1.2:clause:0002",
+          "P-66.6.5.1.2:clause:0003",
+          "P-66.6.5.1.2:clause:0004"
+        ],
+        "expression_id": "expr.p66.part008.cyclic_acetal_and_ketal_naming.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.2:clause:0002",
+        "P-66.6.5.2:clause:0003",
+        "P-66.6.5.2:clause:0004",
+        "P-66.6.5.2:clause:0005",
+        "P-66.6.5.2:clause:0006"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "HemiacetalOrHemiketal"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "naming_options",
+          "type": "HemiacetalNamingOptions"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-66.6.5.2:clause:0002",
+            "P-66.6.5.2:clause:0003",
+            "P-66.6.5.2:clause:0004",
+            "P-66.6.5.2:clause:0005",
+            "P-66.6.5.2:clause:0006"
+          ],
+          "expression_id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-66.6.5.2:clause:0002",
+            "P-66.6.5.2:clause:0003",
+            "P-66.6.5.2:clause:0004",
+            "P-66.6.5.2:clause:0005",
+            "P-66.6.5.2:clause:0006"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p66.part008.hemiacetal_and_hemiketal_naming.then.1",
+          "target": "naming_options",
+          "value": {
+            "clause_ids": [
+              "P-66.6.5.2:clause:0002",
+              "P-66.6.5.2:clause:0003",
+              "P-66.6.5.2:clause:0004",
+              "P-66.6.5.2:clause:0005",
+              "P-66.6.5.2:clause:0006"
+            ],
+            "expression_id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.then.1.value",
+            "op": "literal",
+            "value": {
+              "class_name": "hemiacetal",
+              "functional_class_method": {
+                "hemiacetal": "use the class name hemiacetal",
+                "hemiketal": "use the class name hemiketal for ketone derivatives"
+              },
+              "preferred_method": "substitutive alkoxy, alkyloxy, aryloxy, etc. derivative of an appropriate hydroxy parent compound such as an alcohol",
+              "source_text": "These substitutive names are the preferred IUPAC names; other names use functional class nomenclature.",
+              "structure": "RR'C(OH)(O-R'')"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p66.part008.hemiacetal_and_hemiketal_naming",
+      "when": {
+        "clause_ids": [
+          "P-66.6.5.2:clause:0002",
+          "P-66.6.5.2:clause:0003",
+          "P-66.6.5.2:clause:0004",
+          "P-66.6.5.2:clause:0005",
+          "P-66.6.5.2:clause:0006"
+        ],
+        "expression_id": "expr.p66.part008.hemiacetal_and_hemiketal_naming.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.3:clause:0002",
+        "P-66.6.5.3:clause:0003",
+        "P-66.6.5.3:clause:0004",
+        "P-66.6.5.3:clause:0005",
+        "P-66.6.5.3:clause:0006",
+        "P-66.6.5.3:clause:0007"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "ChalcogenAcetalOrKetal"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "naming_options",
+          "type": "ChalcogenAcetalNamingOptions"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-66.6.5.3:clause:0002",
+            "P-66.6.5.3:clause:0003",
+            "P-66.6.5.3:clause:0004",
+            "P-66.6.5.3:clause:0005",
+            "P-66.6.5.3:clause:0006",
+            "P-66.6.5.3:clause:0007"
+          ],
+          "expression_id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-66.6.5.3:clause:0002",
+            "P-66.6.5.3:clause:0003",
+            "P-66.6.5.3:clause:0004",
+            "P-66.6.5.3:clause:0005",
+            "P-66.6.5.3:clause:0006",
+            "P-66.6.5.3:clause:0007"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p66.part008.chalcogen_acetal_and_ketal_naming.then.1",
+          "target": "naming_options",
+          "value": {
+            "clause_ids": [
+              "P-66.6.5.3:clause:0002",
+              "P-66.6.5.3:clause:0003",
+              "P-66.6.5.3:clause:0004",
+              "P-66.6.5.3:clause:0005",
+              "P-66.6.5.3:clause:0006",
+              "P-66.6.5.3:clause:0007"
+            ],
+            "expression_id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.then.1.value",
+            "op": "literal",
+            "value": {
+              "analogue_treatment": "selenium, tellurium, and mixed chalcogen analogues are treated in the same way as sulfur analogues",
+              "chalcogens": [
+                "sulfur",
+                "selenium",
+                "tellurium",
+                "mixed chalcogens"
+              ],
+              "class_names": {
+                "first": "dithioacetal",
+                "second": "monothioacetal"
+              },
+              "functional_class_names": [
+                "monothioacetal",
+                "dithioketal"
+              ],
+              "preferred_method": "substitutive alkylsulfanyl, arylsulfanyl, alkoxy, or aryloxy derivatives of a parent hydride",
+              "source_text": "Substitutive names are preferred IUPAC names; other names can be generated by functional class nomenclature.",
+              "structural_specificity": "use capital italic letter locants",
+              "structures": [
+                "RR'C(S-R'')(S-R''')",
+                "RR'C(S-R'')(O-R''')"
+              ]
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p66.part008.chalcogen_acetal_and_ketal_naming",
+      "when": {
+        "clause_ids": [
+          "P-66.6.5.3:clause:0002",
+          "P-66.6.5.3:clause:0003",
+          "P-66.6.5.3:clause:0004",
+          "P-66.6.5.3:clause:0005",
+          "P-66.6.5.3:clause:0006",
+          "P-66.6.5.3:clause:0007"
+        ],
+        "expression_id": "expr.p66.part008.chalcogen_acetal_and_ketal_naming.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.4:clause:0002",
+        "P-66.6.5.4:clause:0003",
+        "P-66.6.5.4:clause:0004",
+        "P-66.6.5.4:clause:0005",
+        "P-66.6.5.4:clause:0006",
+        "P-66.6.5.4:clause:0007",
+        "P-66.6.5.4:clause:0008"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "ChalcogenHemiacetalOrHemiketal"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "naming_options",
+          "type": "ChalcogenHemiacetalNamingOptions"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-66.6.5.4:clause:0002",
+            "P-66.6.5.4:clause:0003",
+            "P-66.6.5.4:clause:0004",
+            "P-66.6.5.4:clause:0005",
+            "P-66.6.5.4:clause:0006",
+            "P-66.6.5.4:clause:0007",
+            "P-66.6.5.4:clause:0008"
+          ],
+          "expression_id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-66.6.5.4:clause:0002",
+            "P-66.6.5.4:clause:0003",
+            "P-66.6.5.4:clause:0004",
+            "P-66.6.5.4:clause:0005",
+            "P-66.6.5.4:clause:0006",
+            "P-66.6.5.4:clause:0007",
+            "P-66.6.5.4:clause:0008"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1",
+          "target": "naming_options",
+          "value": {
+            "clause_ids": [
+              "P-66.6.5.4:clause:0002",
+              "P-66.6.5.4:clause:0003",
+              "P-66.6.5.4:clause:0004",
+              "P-66.6.5.4:clause:0005",
+              "P-66.6.5.4:clause:0006",
+              "P-66.6.5.4:clause:0007",
+              "P-66.6.5.4:clause:0008"
+            ],
+            "expression_id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.then.1.value",
+            "op": "literal",
+            "value": {
+              "analogue_treatment": "selenium, tellurium, and mixed analogues are treated in the same way as sulfur analogues",
+              "class_names": {
+                "first": "dithiohemiacetal",
+                "second": "monothiohemiacetal"
+              },
+              "functional_class_method": "other names can be generated by functional class nomenclature",
+              "generic_names": [
+                "monoselenohemiacetals",
+                "ditellurohemiacetals",
+                "selenothiohemiacetals"
+              ],
+              "preferred_method": "substitutive alkylsulfanyl, arylsulfanyl, alkoxy, or aryloxy derivatives of a hydroxy parent compound",
+              "source_text": "The substitutive names are preferred IUPAC names.",
+              "structural_specificity": "use capital italic letter locants",
+              "structures": [
+                "RR'C(SH)(S-R'')",
+                "RR'C(OH)(S-R'')",
+                "RR'C(SH)(O-R'')"
+              ]
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming",
+      "when": {
+        "clause_ids": [
+          "P-66.6.5.4:clause:0002",
+          "P-66.6.5.4:clause:0003",
+          "P-66.6.5.4:clause:0004",
+          "P-66.6.5.4:clause:0005",
+          "P-66.6.5.4:clause:0006",
+          "P-66.6.5.4:clause:0007",
+          "P-66.6.5.4:clause:0008"
+        ],
+        "expression_id": "expr.p66.part008.chalcogen_hemiacetal_and_hemiketal_naming.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-66.6.5.1.2:clause:0012"
+      ],
+      "entity_type": "CorrectionEvent",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "event",
+          "type": "CorrectionEvent"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-66.6.5.1.2:clause:0012"
+          ],
+          "expression_id": "expr.p66.part008.cyclic_ketal_brackets_correction_event.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "P-66.6.5.1.2_correction_event",
+      "unit_id": "unit.p66.part008.cyclic_ketal_brackets_correction_event",
+      "value": {
+        "clause_ids": [
+          "P-66.6.5.1.2:clause:0012"
+        ],
+        "expression_id": "expr.p66.part008.cyclic_ketal_brackets_correction_event.value",
+        "op": "literal",
+        "value": {
+          "action": "added brackets",
+          "description": "click for list of details",
+          "event_kind": "correction",
+          "source_icon_url": "https://iupac.qmul.ac.uk/greek/ALTER.GIF",
+          "source_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html",
+          "target_url": "https://iupac.qmul.ac.uk/BlueBook/changes.html"
+        }
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [],
+  "tables": []
+}
