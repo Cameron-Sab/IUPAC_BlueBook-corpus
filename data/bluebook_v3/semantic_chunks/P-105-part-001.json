@@ -9,20 +9,20 @@
   ],
   "chunk_metrics": {
     "clause_disposition_count": 44,
-    "compiled_clause_count": 33,
+    "compiled_clause_count": 37,
     "correction_application_count": 0,
     "example_count": 15,
     "exception_count": 0,
     "figure_count": 15,
-    "nonoperative_clause_count": 11,
+    "nonoperative_clause_count": 7,
     "record_count": 6,
     "reference_count": 12,
-    "semantic_unit_count": 4,
+    "semantic_unit_count": 8,
     "superseded_clause_count": 0,
     "symbol_declaration_count": 0,
     "table_count": 0
   },
-  "chunk_sha256": "15F9C0ADE0BDAAA0426839AF702E478D9FBA6950F4B0A53A67D0404F93ACCDB7",
+  "chunk_sha256": "9D27632BF3C61FE631976C215DAF9DF81600CC7916252F07600B02FE68BE8086",
   "clause_dispositions": [
     {
       "clause_id": "P-105:clause:0001",
@@ -338,29 +338,92 @@
     {
       "clause_id": "P-105.2.1:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p105.part001.retained_nucleoside_ring_substitution_permission",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p105.part001.retained_nucleoside_ring_substitution_permission.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p105.part001.retained_nucleoside_ring_substitution_permission.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p105.part001.retained_nucleoside_ring_substitution_permission.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p105.part001.retained_nucleoside_ring_substitution_permission.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "permission"
     },
     {
       "clause_id": "P-105.2.1:clause:0002",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p105.part001.nucleoside_oxo_functional_replacement",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p105.part001.nucleoside_oxo_functional_replacement.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p105.part001.nucleoside_oxo_functional_replacement.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p105.part001.nucleoside_oxo_functional_replacement.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p105.part001.nucleoside_oxo_functional_replacement.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-105.2.1:clause:0003",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p105.part001.ribofuranosyl_component_modification_permission",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p105.part001.ribofuranosyl_component_modification_permission.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p105.part001.ribofuranosyl_component_modification_permission.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p105.part001.ribofuranosyl_component_modification_permission.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p105.part001.ribofuranosyl_component_modification_permission.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "permission"
     },
     {
       "clause_id": "P-105.2.1:clause:0004",
@@ -554,11 +617,32 @@
     {
       "clause_id": "P-105.2.2:clause:0001",
       "disposition": {
-        "kind": "nonoperative",
-        "reason_code": "heading_or_title"
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p105.part001.higher_priority_group_nucleoside_substitutive_naming",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p105.part001.higher_priority_group_nucleoside_substitutive_naming.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p105.part001.higher_priority_group_nucleoside_substitutive_naming.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p105.part001.higher_priority_group_nucleoside_substitutive_naming.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p105.part001.higher_priority_group_nucleoside_substitutive_naming.then.1.value",
+            "kind": "expression"
+          }
+        ]
       },
-      "force": "informative",
-      "role": "heading"
+      "force": "normative",
+      "role": "procedure_step"
     },
     {
       "clause_id": "P-105.2.2:clause:0002",
@@ -815,6 +899,14 @@
       ],
       "demonstrates": [
         {
+          "id": "unit.p105.part001.retained_nucleoside_ring_substitution_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p105.part001.ribofuranosyl_component_modification_permission",
+          "kind": "semantic_unit"
+        },
+        {
           "id": "figure.p105.part001.deoxy_methylguanosine_structure",
           "kind": "figure"
         }
@@ -836,6 +928,14 @@
         "P-105.2.1:clause:0007"
       ],
       "demonstrates": [
+        {
+          "id": "unit.p105.part001.retained_nucleoside_ring_substitution_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p105.part001.ribofuranosyl_component_modification_permission",
+          "kind": "semantic_unit"
+        },
         {
           "id": "unit.p105.part001.nucleoside_oxo_replacement_permission",
           "kind": "semantic_unit"
@@ -864,6 +964,10 @@
       ],
       "demonstrates": [
         {
+          "id": "unit.p105.part001.ribofuranosyl_component_modification_permission",
+          "kind": "semantic_unit"
+        },
+        {
           "id": "figure.p105.part001.fluoromethylidene_cytidine_structure",
           "kind": "figure"
         }
@@ -885,6 +989,14 @@
       ],
       "demonstrates": [
         {
+          "id": "unit.p105.part001.retained_nucleoside_ring_substitution_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p105.part001.nucleoside_oxo_functional_replacement",
+          "kind": "semantic_unit"
+        },
+        {
           "id": "figure.p105.part001.ethyl_thiouridine_structure",
           "kind": "figure"
         }
@@ -905,6 +1017,18 @@
         "P-105.2.1:clause:0013"
       ],
       "demonstrates": [
+        {
+          "id": "unit.p105.part001.retained_nucleoside_ring_substitution_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p105.part001.nucleoside_oxo_functional_replacement",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p105.part001.ribofuranosyl_component_modification_permission",
+          "kind": "semantic_unit"
+        },
         {
           "id": "figure.p105.part001.hydroxyethyl_thioguanosine_structure",
           "kind": "figure"
@@ -928,6 +1052,10 @@
       ],
       "demonstrates": [
         {
+          "id": "unit.p105.part001.ribofuranosyl_component_modification_permission",
+          "kind": "semantic_unit"
+        },
+        {
           "id": "figure.p105.part001.triacetyladenosine_structure",
           "kind": "figure"
         }
@@ -948,6 +1076,10 @@
         "P-105.2.2:clause:0003"
       ],
       "demonstrates": [
+        {
+          "id": "unit.p105.part001.higher_priority_group_nucleoside_substitutive_naming",
+          "kind": "semantic_unit"
+        },
         {
           "id": "figure.p105.part001.propanoic_acid_nucleoside_structure",
           "kind": "figure"
@@ -970,6 +1102,14 @@
         "P-105.2.2:clause:0005"
       ],
       "demonstrates": [
+        {
+          "id": "unit.p105.part001.ribofuranosyl_component_modification_permission",
+          "kind": "semantic_unit"
+        },
+        {
+          "id": "unit.p105.part001.higher_priority_group_nucleoside_substitutive_naming",
+          "kind": "semantic_unit"
+        },
         {
           "id": "figure.p105.part001.cyclic_carbonate_guanosine_structure",
           "kind": "figure"
@@ -1318,6 +1458,9 @@
         "reference.P-105.2.1:xref:0001"
       ],
       "semantic_unit_ids": [
+        "unit.p105.part001.retained_nucleoside_ring_substitution_permission",
+        "unit.p105.part001.nucleoside_oxo_functional_replacement",
+        "unit.p105.part001.ribofuranosyl_component_modification_permission",
         "unit.p105.part001.nucleoside_oxo_replacement_permission"
       ],
       "source_rule_id": "P-105.2.1",
@@ -1349,7 +1492,9 @@
         "reference.p_105_2_2.hierarchy_parent",
         "reference.P-105.2.2:xref:0001"
       ],
-      "semantic_unit_ids": [],
+      "semantic_unit_ids": [
+        "unit.p105.part001.higher_priority_group_nucleoside_substitutive_naming"
+      ],
       "source_rule_id": "P-105.2.2",
       "table_ids": []
     }
@@ -1752,6 +1897,253 @@
           ],
           "status": "retained"
         }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0001"
+      ],
+      "else": [],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "nucleoside",
+          "type": "retained_name_nucleoside"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "substitution_scope",
+          "type": "ring_substitution_scope"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-105.2.1:clause:0001"
+          ],
+          "expression_id": "expr.p105.part001.retained_nucleoside_ring_substitution_permission.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-105.2.1:clause:0001"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p105.part001.retained_nucleoside_ring_substitution_permission.then.1",
+          "target": "substitution_scope",
+          "value": {
+            "clause_ids": [
+              "P-105.2.1:clause:0001"
+            ],
+            "expression_id": "expr.p105.part001.retained_nucleoside_ring_substitution_permission.then.1.value",
+            "op": "literal",
+            "value": {
+              "purine_ring": "fully substitutable",
+              "pyrimidine_ring": "fully substitutable"
+            }
+          }
+        }
+      ],
+      "unit_id": "unit.p105.part001.retained_nucleoside_ring_substitution_permission",
+      "when": {
+        "clause_ids": [
+          "P-105.2.1:clause:0001"
+        ],
+        "expression_id": "expr.p105.part001.retained_nucleoside_ring_substitution_permission.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0002"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "nucleoside",
+          "type": "oxo_bearing_nucleoside"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "replacement_method",
+          "type": "functional_replacement_method"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-105.2.1:clause:0002"
+          ],
+          "expression_id": "expr.p105.part001.nucleoside_oxo_functional_replacement.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-105.2.1:clause:0002"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p105.part001.nucleoside_oxo_functional_replacement.then.1",
+          "target": "replacement_method",
+          "value": {
+            "clause_ids": [
+              "P-105.2.1:clause:0002"
+            ],
+            "expression_id": "expr.p105.part001.nucleoside_oxo_functional_replacement.then.1.value",
+            "op": "literal",
+            "value": "functional replacement prefixes"
+          }
+        }
+      ],
+      "unit_id": "unit.p105.part001.nucleoside_oxo_functional_replacement",
+      "when": {
+        "clause_ids": [
+          "P-105.2.1:clause:0002"
+        ],
+        "expression_id": "expr.p105.part001.nucleoside_oxo_functional_replacement.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.2.1:clause:0003"
+      ],
+      "else": [],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "nucleoside",
+          "type": "retained_name_nucleoside"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "modification_method",
+          "type": "carbohydrate_modification_method"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-105.2.1:clause:0003"
+          ],
+          "expression_id": "expr.p105.part001.ribofuranosyl_component_modification_permission.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-105.2.1:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p105.part001.ribofuranosyl_component_modification_permission.then.1",
+          "target": "modification_method",
+          "value": {
+            "clause_ids": [
+              "P-105.2.1:clause:0003"
+            ],
+            "expression_id": "expr.p105.part001.ribofuranosyl_component_modification_permission.then.1.value",
+            "op": "literal",
+            "value": "as prescribed for carbohydrates in P-102.5"
+          }
+        }
+      ],
+      "unit_id": "unit.p105.part001.ribofuranosyl_component_modification_permission",
+      "when": {
+        "clause_ids": [
+          "P-105.2.1:clause:0003"
+        ],
+        "expression_id": "expr.p105.part001.ribofuranosyl_component_modification_permission.when",
+        "op": "literal",
+        "value": true
+      }
+    },
+    {
+      "clause_ids": [
+        "P-105.2.2:clause:0001"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "compound",
+          "type": "pseudoketone_nucleoside"
+        },
+        {
+          "name": "characteristic_group",
+          "type": "characteristic_group_higher_priority_than_pseudoketone"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "naming_method",
+          "type": "nomenclature_method"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-105.2.2:clause:0001"
+          ],
+          "expression_id": "expr.p105.part001.higher_priority_group_nucleoside_substitutive_naming.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-105.2.2:clause:0001"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p105.part001.higher_priority_group_nucleoside_substitutive_naming.then.1",
+          "target": "naming_method",
+          "value": {
+            "clause_ids": [
+              "P-105.2.2:clause:0001"
+            ],
+            "expression_id": "expr.p105.part001.higher_priority_group_nucleoside_substitutive_naming.then.1.value",
+            "op": "literal",
+            "value": "normal substitutive nomenclature principles"
+          }
+        }
+      ],
+      "unit_id": "unit.p105.part001.higher_priority_group_nucleoside_substitutive_naming",
+      "when": {
+        "clause_ids": [
+          "P-105.2.2:clause:0001"
+        ],
+        "expression_id": "expr.p105.part001.higher_priority_group_nucleoside_substitutive_naming.when",
+        "op": "literal",
+        "value": true
       }
     },
     {
