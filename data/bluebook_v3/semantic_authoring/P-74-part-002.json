@@ -1,0 +1,312 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-74-part-002",
+  "mechanical_assets": true,
+  "clauses": [
+    null,
+    ["condition","normative","compile"],
+    ["procedure_step","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["condition","normative","compile"],
+    ["procedure_step","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["condition","normative","compile"],
+    ["procedure_step","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["condition","normative","compile"],
+    ["constraint","normative","compile"],
+    ["procedure_step","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    null,
+    null,
+    ["example","illustrative","compile"],
+    ["example","illustrative","compile"],
+    null,
+    ["condition","normative","compile"],
+    ["condition","normative","compile"],
+    null,
+    ["procedure_step","normative","compile"],
+    ["procedure_step","normative","compile"],
+    null,
+    ["procedure_step","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["procedure_step","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["procedure_step","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["procedure_step","normative","compile"],
+    ["procedure_step","normative","compile"],
+    ["procedure_step","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["procedure_step","normative","compile"],
+    ["procedure_step","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["condition","normative","compile"],
+    null,
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["definition","normative","compile"],
+    ["note","informative","compile"],
+    ["procedure_step","normative","compile"],
+    ["procedure_step","normative","compile"],
+    ["procedure_step","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["condition","normative","compile"],
+    ["procedure_step","normative","compile"],
+    ["preference_criterion","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["preference_criterion","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    null,
+    ["procedure_step","normative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null,
+    ["example","illustrative","compile"],
+    null
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "p74221_6_naming_methods",
+      "k": "procedure",
+      "f": "preference",
+      "c": [2, 3],
+      "steps": [
+        ["emit", "R2C--O+=O <-> R2C=O+-O-. Method (1) in P-74.2.2.1 gives preferred IUPAC names."]
+      ]
+    },
+    {
+      "id": "p74221_7_naming_methods",
+      "k": "procedure",
+      "f": "preference",
+      "c": [8, 9],
+      "steps": [
+        ["emit", "R2C=O+-C-(R)2 <-> R2C+-OC-(R)2. Method (2) in P-74.2.2.1 gives preferred IUPAC names."]
+      ]
+    },
+    {
+      "id": "p74221_8_naming_methods",
+      "k": "procedure",
+      "f": "preference",
+      "c": [14, 15],
+      "steps": [
+        ["emit", "RR'C=S+-O- <-> RR'C=S=O, where R' = or != H. Method (4) in P-74.2.2.1 gives preferred IUPAC names."]
+      ]
+    },
+    {
+      "id": "p74221_9_naming_methods",
+      "k": "procedure",
+      "f": "preference",
+      "c": [24, 25, 26],
+      "steps": [
+        ["emit", "R2C=N+(O-)R' <-> R2C+-N(O-)R' where R' != H; compounds where R' = H are not included in this class. Method (3) in P-74.2.2.1 gives preferred IUPAC names."]
+      ]
+    },
+    {
+      "id": "p74221_10_nitro_compound_mapping",
+      "k": "procedure",
+      "f": "required",
+      "c": [33, 34],
+      "steps": [
+        ["emit", "The example maps the displayed nitro compound to nitroethane (PIN)."]
+      ]
+    },
+    {
+      "id": "p74222_dipolar_atom_combinations",
+      "k": "procedure",
+      "f": "required",
+      "c": [36, 37],
+      "steps": [
+        ["emit", "X triple-bond N+--Z- <-> -X=N+=Z <-> -X=N-Z+, where X = C, N or O and Z = C, N or O."]
+      ]
+    },
+    {
+      "id": "p742221_naming_methods",
+      "k": "procedure",
+      "f": "preference",
+      "c": [39, 40],
+      "steps": [
+        ["emit", "Name these compounds either as zwitterionic compounds without breaking the longest chain of heteroatoms, or by functional class nomenclature using the class names imide, oxide, sulfide, etc."]
+      ]
+    },
+    {
+      "id": "p7422211_zwitterionic_names",
+      "k": "procedure",
+      "f": "preference",
+      "c": [42],
+      "steps": [
+        ["emit", "Method (1) in P-74.2.2.2.1, zwitterionic names, generates preferred IUPAC names."]
+      ]
+    },
+    {
+      "id": "p7422212_functional_class_names",
+      "k": "procedure",
+      "f": "preference",
+      "c": [47],
+      "steps": [
+        ["emit", "Method (2) in P-74.2.2.2.1, functional class names, yields preferred IUPAC names (see also P-66.5.4.1)."]
+      ]
+    },
+    {
+      "id": "p7422213_zwitterionic_names",
+      "k": "procedure",
+      "f": "preference",
+      "c": [54],
+      "steps": [
+        ["emit", "Method (1) in P-74.2.2.2.1, zwitterionic names, gives preferred IUPAC names."]
+      ]
+    },
+    {
+      "id": "p742222_azide_naming_methods",
+      "k": "procedure",
+      "f": "preference",
+      "c": [59, 60, 61, 62],
+      "steps": [
+        ["emit", "Azides may be named by three methods: (1) substitutively, using the compulsory prefix azido (P-61.7); (2) by functional class nomenclature using the class name azide; (3) as derivatives of the zwitterionic parent hydride 'triazadien-2-ium-1-ide.' Method (1) yields preferred IUPAC names (see also P-61.7)."]
+      ]
+    },
+    {
+      "id": "p742223_diazo_naming_methods",
+      "k": "procedure",
+      "f": "preference",
+      "c": [67, 68, 69],
+      "steps": [
+        ["emit", "Diazo compounds may be named in two ways: (1) substitutively by using the compulsory prefix diazo (P-61.4); (2) as derivatives of the zwitterionic parent hydride diazen-2-ium-1-ide. Method (1) leads to preferred IUPAC names (see also P-61.4)."]
+      ]
+    },
+    {
+      "id": "p74223_delocalized_carbene_form",
+      "k": "procedure",
+      "f": "required",
+      "c": [74],
+      "steps": [
+        ["emit", "X2 radical-C=Z <-> +X=C-Z-, where X = C or N and Z = C, N or O."]
+      ]
+    },
+    {
+      "id": "p742231_ylidene_example_rule",
+      "k": "procedure",
+      "f": "preference",
+      "c": [77],
+      "steps": [
+        ["emit", "The displayed delocalized carbene is named using the ylidene form as the preferred IUPAC name."]
+      ]
+    },
+    {
+      "id": "p742232_imidoyl_carbene_naming",
+      "k": "procedure",
+      "f": "preference",
+      "c": [80, 81, 82, 83, 84, 85],
+      "steps": [
+        ["emit", "Compounds having the structure RC(=NH)-C2 radical-R are imidoyl carbenes. Imidoyl is a shortened, but imprecise, term for carboximidoyl, RC(=NH)-. These carbenes may be named by two methods: (1) by using the longest carbon chain, according to the principles of substitutive nomenclature for radicals, low locants being assigned to the radical to be cited as suffix; (2) substitutively on the basis of the appropriate carbene as the parent structure. Method (1) leads to preferred IUPAC names."]
+      ]
+    },
+    {
+      "id": "p742233_azanylidene_nitrene_aminylene_naming",
+      "k": "procedure",
+      "f": "preference",
+      "c": [90, 91, 92],
+      "steps": [
+        ["emit", "RC(=N-R')N2 radical <-> RC(N--R')=N+. They may be named substitutively using the parent names azanylidene, nitrene, or aminylene. The use of 'azanylidene' leads to preferred IUPAC names."]
+      ]
+    },
+    {
+      "id": "p742234_longest_chain_ylidene_naming",
+      "k": "procedure",
+      "f": "preference",
+      "c": [97],
+      "steps": [
+        ["emit", "Preferred IUPAC names are formed by using the longest carbon chain according to the principles of substitutive nomenclature for radicals, low locants being assigned to the suffix 'ylidene'."]
+      ]
+    },
+    {
+      "id": "p7423_dipolar_substituent_group_naming",
+      "k": "procedure",
+      "f": "required",
+      "c": [102],
+      "steps": [
+        ["emit", "Names of dipolar substituent groups are formed by using prefixes for naming ions as the substituent group and designating the free valences by the suffixes 'yl', 'ylidene' or 'ylidyne'."]
+      ]
+    }
+  ],
+  "exceptions": [],
+  "tables": [],
+  "figures": [],
+  "examples": [
+    {"id": "p742216_example", "c": [5], "input": "propan-2-one oxide", "ok": ["2-(propan-2-ylidene)dioxidan-2-ium-1-ide (PIN)", "propan-2-one oxide"], "shows": [["figure", "figure.asset.p_74.2.2.1.6:clause:0006"]], "why": "The displayed compound is named by the method giving the preferred IUPAC name and by the alternative name."},
+    {"id": "p742217_example", "c": [11], "input": "propan-2-one oxide analogue", "ok": ["2-[(propan-2-ylidene)oxidaniumyl]propan-2-ide (PIN)", "2-[(propan-2-ylidene)oxoniumyl]propan-2-ide"], "shows": [["figure", "figure.asset.p_74.2.2.1.7:clause:0006"]], "why": "The example gives the preferred IUPAC name and the alternative oxoniumyl name."},
+    {"id": "p742218_propylidene_example", "c": [17], "input": "propanethial oxide", "ok": ["propylidene-lambda4-sulfanone (PIN)", "propanethial oxide", "(propylidenesulfaniumyl)oxidanide", "1-(oxo-lambda4-sulfanylidene)propane"], "shows": [["figure", "figure.asset.p_74.2.2.1.8:clause:0006"]], "why": "The displayed sulfur oxide is named by the preferred method and the listed alternatives."},
+    {"id": "p742218_thiophene_example", "c": [19], "input": "thiophene oxide", "ok": ["1H-1-lambda4-thiophen-1-one (PIN)", "thiophene oxide", "(thiophen-1-ium-1-yl)oxidanide", "1-oxo-1H-1-lambda4-thiophene"], "shows": [["figure", "figure.asset.p_74.2.2.1.8:clause:0008"]], "why": "The example illustrates the preferred and alternative names for thiophene oxide."},
+    {"id": "p742218_thiazole_example", "c": [21], "input": "1,2-thiazole oxide", "ok": ["1H-1-lambda4,2-thiazol-1-one (PIN)", "1,2-thiazole 1-oxide", "1,2-thiazole S-oxide"], "shows": [["figure", "figure.asset.p_74.2.2.1.8:clause:0010"]], "why": "The example illustrates the preferred and alternative names for the thiazole oxide."},
+    {"id": "p742219_example", "c": [28], "input": "N-methylpropan-2-imine N-oxide", "ok": ["N-methylpropan-2-imine N-oxide (PIN)", "[methyl(propan-2-ylidene)azaniumyl]oxidanide"], "shows": [["figure", "figure.asset.p_74.2.2.1.9:clause:0007"]], "why": "The example gives the preferred imine N-oxide name and its zwitterionic alternative."},
+    {"id": "p7422110_example", "c": [33, 34], "input": "CH3-CH2-NO2", "ok": ["nitroethane (PIN)"], "shows": [["figure", "figure.asset.p_74.2.2.1.10:clause:0003"]], "why": "The table example relates the displayed formula to nitroethane (PIN)."},
+    {"id": "p7422211_example", "c": [44], "input": "acetonitrile methylimide", "ok": ["2-ethylidyne-1-methylhydrazin-2-ium-1-ide (PIN)", "acetonitrile methylimide"], "shows": [["figure", "figure.asset.p_74.2.2.2.1.1:clause:0005"]], "why": "Method (1), the zwitterionic name, is preferred."},
+    {"id": "p7422212_oxide_example", "c": [49], "input": "acetonitrile oxide", "ok": ["acetonitrile oxide (PIN)", "(ethylidyneazaniumyl)oxidanide"], "shows": [["figure", "figure.asset.p_74.2.2.2.1.2:clause:0005"]], "why": "The functional class name is preferred for this oxide."},
+    {"id": "p7422212_sulfide_example", "c": [51], "input": "acetonitrile sulfide", "ok": ["acetonitrile sulfide (PIN)", "(ethylidyneazaniumyl)sulfanide"], "shows": [["figure", "figure.asset.p_74.2.2.2.1.2:clause:0007"]], "why": "The functional class name is preferred for this sulfide."},
+    {"id": "p7422213_example", "c": [56], "input": "acetonitriliumyl propan-2-ide", "ok": ["2-(acetonitriliumyl)propan-2-ide (PIN)", "2-(ethylidyneammoniumyl)propan-2-ide"], "shows": [["figure", "figure.asset.p_74.2.2.2.1.3:clause:0005"]], "why": "The zwitterionic name is the preferred IUPAC name."},
+    {"id": "p742222_azide_example", "c": [64], "input": "azidobenzene", "ok": ["azidobenzene (PIN)", "phenyl azide", "3-phenyltriazadien-2-ium-1-ide"], "shows": [["figure", "figure.asset.p_74.2.2.2.2:clause:0008"]], "why": "The compulsory prefix azido method yields the preferred IUPAC name."},
+    {"id": "p742223_diazo_example", "c": [71], "input": "diazomethane", "ok": ["diazomethane (PIN)", "methylidenediazen-2-ium-1-ide"], "shows": [["figure", "figure.asset.p_74.2.2.2.3:clause:0007"]], "why": "The compulsory prefix diazo method yields the preferred IUPAC name."},
+    {"id": "p742231_example", "c": [77], "input": "3-oxopentan-2-ylidene", "ok": ["3-oxopentan-2-ylidene (PIN)"], "shows": [["figure", "figure.asset.p_74.2.2.3.1:clause:0004"]], "why": "The example illustrates the preferred ylidene name."},
+    {"id": "p742232_example", "c": [87], "input": "an imidoyl carbene", "ok": ["3-(methylimino)butan-2-ylidene (PIN)"], "shows": [["figure", "figure.asset.p_74.2.2.3.2:clause:0010"]], "why": "The longest-chain radical method gives the preferred IUPAC name."},
+    {"id": "p742233_example", "c": [94], "input": "an azanylidene, nitrene or aminylene derivative", "ok": ["(N-methylethanimidoyl)azanylidene (PIN)", "(N-methylacetimidoyl)nitrene", "(N-methylacetimidoyl)aminylene"], "shows": [["figure", "figure.asset.p_74.2.2.3.3:clause:0007"]], "why": "Azanylidene is the preferred parent name; nitrene and aminylene are alternatives."},
+    {"id": "p742234_example", "c": [99], "input": "prop-2-en-1-ylidene", "ok": ["prop-2-en-1-ylidene (PIN)"], "shows": [["figure", "figure.asset.p_74.2.2.3.4:clause:0005"]], "why": "The suffix ylidene receives the low locant in the preferred name."},
+    {"id": "p7423_phosphoniumyl_example", "c": [104], "input": "a dipolar substituent group containing oxidodi(phenyl)phosphaniumyl", "ok": ["2-{4-[oxidodi(phenyl)phosphaniumyl]phenyl}propane-1,3-diyl (PIN)", "2-{4-[oxidodi(phenyl)phosphoniumyl]phenyl}propane-1,3-diyl"], "shows": [["figure", "figure.asset.p_74.2.3:clause:0005"]], "why": "The ionic prefix and the free-valence suffix ylyl are used for the dipolar substituent group."},
+    {"id": "p7423_ylidyne_example", "c": [106], "input": "a dipolar substituent group containing oxidoazaniumylidyne", "ok": ["2-{4-[2-(oxidoazaniumylidyne)ethyl]phenyl}propane-1,3-diyl (PIN)", "2-{4-[2-(oxidoammoniumylidyne)ethyl]phenyl}propane-1,3-diyl"], "shows": [["figure", "figure.asset.p_74.2.3:clause:0007"]], "why": "The free valence is designated by the suffix ylydyne in the preferred ionic-prefix name."}
+  ],
+  "corrections": [],
+  "refs": [
+    {"id": "reference.p74.part002.p61_7_1", "c": [59, 60, 61, 62, 64], "rel": "cites", "o": "P-74.2.2.2.2:xref:0001", "resolution": "exact"},
+    {"id": "reference.p74.part002.p61_7_2", "c": [59, 60, 61, 62, 64], "rel": "cites", "o": "P-74.2.2.2.2:xref:0002", "resolution": "exact"},
+    {"id": "reference.p74.part002.p61_4_1", "c": [67, 68, 69, 71], "rel": "cites", "o": "P-74.2.2.2.3:xref:0001", "resolution": "exact"},
+    {"id": "reference.p74.part002.p61_4_2", "c": [67, 68, 69, 71], "rel": "cites", "o": "P-74.2.2.2.3:xref:0002", "resolution": "exact"}
+  ],
+  "additional_refs": []
+}
