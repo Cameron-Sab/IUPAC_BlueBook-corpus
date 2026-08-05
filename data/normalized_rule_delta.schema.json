@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_delta.schema.json",
+  "title": "IUPAC Blue Book semantic decision delta",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "task_id",
+    "task_sha256",
+    "symbol_declarations",
+    "clause_dispositions",
+    "semantic_units",
+    "exceptions",
+    "tables",
+    "figures",
+    "examples",
+    "correction_applications",
+    "citation_bindings",
+    "additional_references",
+    "delta_sha256"
+  ],
+  "properties": {
+    "format": { "const": "iupac-bluebook-semantic-decision-delta" },
+    "format_version": { "const": "1.0.0" },
+    "task_id": { "type": "string", "pattern": "^P-[0-9]+-part-[0-9]{3}$" },
+    "task_sha256": { "$ref": "#/$defs/sha256" },
+    "symbol_declarations": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/symbol" }
+    },
+    "clause_dispositions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/clause_disposition" }
+    },
+    "semantic_units": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/semantic_unit" }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/exception" }
+    },
+    "tables": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/table" }
+    },
+    "figures": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/figure" }
+    },
+    "examples": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/example" }
+    },
+    "correction_applications": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/correction_application" }
+    },
+    "citation_bindings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/citation_binding" }
+    },
+    "additional_references": {
+      "type": "array",
+      "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/reference" }
+    },
+    "delta_sha256": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "citation_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference_id",
+        "clause_ids",
+        "relation",
+        "occurrence_ids",
+        "resolution",
+        "ordered_member_refs"
+      ],
+      "properties": {
+        "reference_id": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/identifier" },
+        "clause_ids": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/clause_ids" },
+        "relation": {
+          "type": "string",
+          "enum": [
+            "cites",
+            "invokes",
+            "exception_to",
+            "overrides",
+            "supersedes",
+            "corrects",
+            "demonstrates",
+            "defines",
+            "uses_table",
+            "uses_figure",
+            "continues",
+            "constrains"
+          ]
+        },
+        "source": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/object_ref" },
+        "target_override": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/object_ref" },
+        "occurrence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^P-[^:]+:xref:[0-9]{4,}$" }
+        },
+        "resolution": { "type": "string", "enum": ["exact", "range", "deictic", "external"] },
+        "ordered_member_refs": {
+          "type": "array",
+          "items": { "$ref": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/normalized_rule_language.schema.json#/$defs/object_ref" }
+        }
+      }
+    }
+  }
+}

@@ -55,11 +55,17 @@ GitHub's 100 MB limit.
 ## Semantic Conversion
 
 `data/normalized_rule_language.schema.json` defines the final rule IR.
-`scripts/build_semantic_work_packets.py` deterministically partitions all 2,554
-records and 32,408 clauses into 151 immutable work packets. Each packet carries
-the source record, document fragment, clause inventory, correction overlays,
-reference occurrences, explicit resolutions, neighboring context, and six
-source-artifact hashes.
+`scripts/build_compact_semantic_tasks.py` deterministically partitions all 2,554
+records and 32,408 clauses into 151 source-bound tasks without copying full
+source records, document fragments, and provenance into every task. The tasks
+occupy 15,908,183 bytes; their token-efficient JSON Lines model views occupy
+6,565,658 bytes, 98.04% less than the former 335,255,522-byte packet set.
+
+Converters emit only a semantic decision delta. The compiler generates record
+envelopes, hierarchy edges, citation targets, occurrence and resolution
+evidence, source hashes, metrics, and content hashes. This keeps mechanical
+provenance out of model output and rejects missing clauses, missing citations,
+ambiguous targets, stale inputs, and altered deltas before assembly.
 
 A semantic chunk is accepted only if:
 
@@ -68,7 +74,7 @@ A semantic chunk is accepted only if:
 - every operative clause reaches typed semantic objects;
 - references and object identifiers resolve uniquely;
 - exception order and dependency projections are deterministic;
-- packet, schema, source, metrics, and content hashes reproduce;
+- task, delta, schema, source, metrics, and content hashes reproduce;
 - no review marker, placeholder, unresolved state, or generic fallback action
   occurs anywhere in the chunk.
 
@@ -83,13 +89,19 @@ python scripts\fetch_official_sources.py --offline-verify
 python scripts\document_node_store.py verify
 python scripts\build_reference_dependency_graph.py `
   --out data\bluebook_v3\bluebook_v3_reference_dependency_graph.json
-python scripts\build_semantic_work_packets.py
+python scripts\build_compact_semantic_tasks.py
+python scripts\build_compact_semantic_tasks.py --check
+python scripts\audit_semantic_delta_progress.py
 python scripts\validate_pdf_rebuild.py --stage source
 python -m pytest
 ```
 
 The full source gate is intentionally expensive: it replays extraction and
 provenance instead of trusting generated counts.
+
+The delta progress auditor returns success for valid partial progress, but
+`--require-complete` succeeds only when all 151 deltas compile and pass. Invalid
+or extra deltas always fail. Legacy manual chunks are not counted.
 
 ## Prototype Engine
 

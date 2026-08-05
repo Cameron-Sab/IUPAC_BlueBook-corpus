@@ -6,18 +6,18 @@ Conversion is source compilation, not prose summarization and not engine work.
 
 ## Inputs
 
-Each converter receives an immutable work packet containing:
+Each converter receives a hash-verified compact task or its JSON Lines model
+view. The task contains only evidence needed for semantic decisions:
 
-- the source record and its PDF line ids;
-- ordered HTML document nodes and stable node ids;
-- linked tables, figures, images, examples, notes, and footnotes;
-- incoming and outgoing source citations;
+- ordered atomic clauses, node kinds, semantic cues, and linked payloads;
+- occurrence-level outgoing citations with local text context;
 - every occurrence-level citation and any exact resolution overlay;
 - applicable correction overlays;
 - the six immutable source-artifact SHA-256 hashes.
 
-PDF and HTML are parallel evidence. Do not silently choose one when they differ.
-Record the alignment or correction that explains the difference.
+The compact task is regenerated from the lossless PDF/HTML source layer and
+checked byte for byte. Full provenance stays in that source layer and is
+reconstructed by code; it is not copied into model output.
 
 ## Atomic Coverage
 
@@ -80,6 +80,8 @@ item when the narrower node or line span exists.
 
 - Store only immediate hierarchy parents.
 - Resolve exact citations uniquely.
+- Bind every task occurrence id to exactly one `citation_binding`. The compiler
+  attaches exact resolution overlay ids and deterministic targets.
 - Resolve ranges to their ordered member set.
 - Represent deictic references such as "the preceding rule" with the resolved
   target and preserve the original wording in the source span.
@@ -109,13 +111,29 @@ formalize. Difficulty changes the converter's work, not the clause's force.
 
 ## Finalization
 
-Write draft chunks under `data/bluebook_v3/semantic_chunks/`. Finalize each one
-against its exact packet; the finalizer writes only after strict validation:
+Build and byte-check compact tasks:
 
 ```powershell
-python scripts\finalize_normalized_rule_chunk.py `
-  data\bluebook_v3\semantic_chunks\P-1-part-001.json `
-  --packet work\semantic_packets\P-1-part-001.json
+python scripts\build_compact_semantic_tasks.py
+python scripts\build_compact_semantic_tasks.py --check
+```
+
+Render only the source evidence the converter needs:
+
+```powershell
+python scripts\render_compact_semantic_task.py `
+  work\compact_semantic_tasks\P-1-part-001.json `
+  --output work\model_views\P-1-part-001.jsonl
+```
+
+Write semantic deltas under `data/bluebook_v3/semantic_deltas/`, then compile
+them. Draft stamping is explicit; routine verification omits that flag:
+
+```powershell
+python scripts\compile_semantic_delta.py `
+  data\bluebook_v3\semantic_deltas\P-1-part-001.json `
+  --task work\compact_semantic_tasks\P-1-part-001.json `
+  --finalize-draft
 ```
 
 When all 151 chunks pass, assemble the corpus with:
@@ -124,6 +142,16 @@ When all 151 chunks pass, assemble the corpus with:
 python scripts\assemble_normalized_rule_corpus.py
 ```
 
-Assembly is atomic and rejects missing packets, duplicate records, conflicting
+Assembly is atomic and rejects missing tasks, duplicate records, conflicting
 symbols, dangling typed references, ambiguous exception precedence, altered
 dependency projections, stale source hashes, or nonreproducible metrics/hashes.
+
+Audit fleet progress without confusing partial coverage for completion:
+
+```powershell
+python scripts\audit_semantic_delta_progress.py
+python scripts\audit_semantic_delta_progress.py --require-complete
+```
+
+The first command permits missing deltas but rejects invalid or unexpected
+deltas. The second additionally requires every task, rule, and clause.

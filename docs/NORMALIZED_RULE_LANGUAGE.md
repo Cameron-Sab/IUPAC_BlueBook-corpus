@@ -22,8 +22,8 @@ Every chunk and final corpus binds these exact artifacts:
 - occurrence-level references;
 - explicit exceptional reference resolutions.
 
-Six artifact SHA-256 values flow from the work-packet manifest through each
-packet and chunk into the final `source_snapshot`. `effective_through` records
+Six artifact SHA-256 values flow from the compact-task manifest through each
+compiled chunk into the final `source_snapshot`. `effective_through` records
 the latest official correction represented, not the retrieval date.
 
 ## Clause Coverage
@@ -95,11 +95,32 @@ supersession, correction, demonstration, definition, table/figure use,
 continuation, and constraint. Targets are typed object references and resolve
 as exact, range, deictic, or intentional external references.
 
+Every semantic reference carries `source_occurrence_ids` and
+`resolution_overlay_ids`. Across a chunk, these arrays must reproduce every raw
+occurrence and exceptional resolution assigned by its compact task exactly once
+and in source order. References created solely by semantic decomposition, such
+as hierarchy or table-use edges, carry empty evidence arrays. Deleted targets
+use the typed `historical_rule` object kind rather than pretending the rule is
+active or external.
+
 The raw occurrence graph remains a separate source artifact. It retains all
 4,023 source citations, including raw targets. Three exact resolution overlay
 records project two source typos to the active rule `P-66.1.2` and preserve the
 deleted `P-65.7.8` target as a historical-rule tombstone. No generic resolution
 fallback exists.
+
+## Semantic Decision Deltas
+
+`data/normalized_rule_delta.schema.json` is the converter-facing format. A delta
+contains clause dispositions, typed semantic objects, citation relations, and
+only those citation targets that the source layer cannot resolve mechanically.
+It does not contain record envelopes, hierarchy references, raw provenance,
+source hashes, counters, or final hashes authored by the converter.
+
+`scripts/compile_semantic_delta.py` reconstructs those mechanical fields from a
+hash-verified compact task, then runs the same strict normalized-chunk gates.
+The JSON Lines model view is a deterministic projection of the task, not a
+second source of truth.
 
 ## Symbols
 

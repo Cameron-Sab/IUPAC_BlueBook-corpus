@@ -327,6 +327,8 @@ def build_corpus() -> dict[str, Any]:
                 "target": object_ref("table", TABLE_ID),
                 "resolution": "exact",
                 "ordered_member_refs": [object_ref("table_row", "row.retained")],
+                "source_occurrence_ids": [],
+                "resolution_overlay_ids": [],
             }
         ],
         "dependency_edges": [

@@ -525,6 +525,9 @@ def _validate_global_refs(
         resolved: AddressableObject | None = None
         if kind == "external" and isinstance(object_id, str):
             continue
+        if kind in {"rule", "historical_rule"} and isinstance(object_id, str):
+            if re.fullmatch(r"P-\d+(?:\.\d+)*(?:\([a-z0-9]+\))?", object_id):
+                continue
         if kind == "chapter" and object_id in chapters:
             continue
         if kind == "clause" and object_id in clauses:

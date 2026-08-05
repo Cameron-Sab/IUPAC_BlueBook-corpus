@@ -88,6 +88,14 @@
       "type": "string",
       "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$"
     },
+    "reference_occurrence_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?:xref:[0-9]{4,}$"
+    },
+    "reference_resolution_id": {
+      "type": "string",
+      "pattern": "^BBV3-XREF-RES-[0-9]{4}$"
+    },
     "clause_id": {
       "type": "string",
       "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?:clause:[0-9]{4,}$"
@@ -148,6 +156,8 @@
             "reference",
             "symbol",
             "chapter",
+            "rule",
+            "historical_rule",
             "external"
           ]
         },
@@ -1033,7 +1043,9 @@
         "source",
         "target",
         "resolution",
-        "ordered_member_refs"
+        "ordered_member_refs",
+        "source_occurrence_ids",
+        "resolution_overlay_ids"
       ],
       "properties": {
         "reference_id": { "$ref": "#/$defs/identifier" },
@@ -1065,6 +1077,16 @@
         "ordered_member_refs": {
           "type": "array",
           "items": { "$ref": "#/$defs/object_ref" }
+        },
+        "source_occurrence_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/reference_occurrence_id" }
+        },
+        "resolution_overlay_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/reference_resolution_id" }
         }
       }
     },

@@ -5,7 +5,10 @@ import json
 from pathlib import Path
 from typing import Any, Sequence
 
-from scripts import validate_normalized_rule_chunks as chunk_validator
+if __package__:
+    from scripts import validate_normalized_rule_chunks as chunk_validator
+else:
+    import validate_normalized_rule_chunks as chunk_validator
 
 
 def finalize_chunk(chunk: dict[str, Any], packet: dict[str, Any]) -> dict[str, Any]:

@@ -28,6 +28,7 @@ RECORD_ID = f"bluebook-v3:{RULE_ID}"
 UNIT_ID = "unit.synthetic_rule"
 STATEMENT_ID = "stmt.emit_name"
 REFERENCE_ID = "reference.rule_constraint"
+HIERARCHY_REFERENCE_ID = "reference.hierarchy_parent"
 SPECIFIC_EXCEPTION_ID = "exception.specific"
 GENERAL_EXCEPTION_ID = "exception.general"
 
@@ -180,6 +181,7 @@ def build_chunk(packet: dict[str, Any]) -> dict[str, Any]:
                         object_ref("exception", SPECIFIC_EXCEPTION_ID),
                         object_ref("exception", GENERAL_EXCEPTION_ID),
                         object_ref("reference", REFERENCE_ID),
+                        object_ref("reference", HIERARCHY_REFERENCE_ID),
                     ],
                 },
             },
@@ -206,7 +208,7 @@ def build_chunk(packet: dict[str, Any]) -> dict[str, Any]:
                 "figure_ids": [],
                 "example_ids": [],
                 "correction_application_ids": [],
-                "reference_ids": [REFERENCE_ID],
+                "reference_ids": [REFERENCE_ID, HIERARCHY_REFERENCE_ID],
             }
         ],
         "semantic_units": [
@@ -267,6 +269,17 @@ def build_chunk(packet: dict[str, Any]) -> dict[str, Any]:
         "correction_applications": [],
         "references": [
             {
+                "reference_id": HIERARCHY_REFERENCE_ID,
+                "clause_ids": [OPERATIVE_CLAUSE],
+                "relation": "hierarchy_parent",
+                "source": object_ref("record", RECORD_ID),
+                "target": object_ref("chapter", "chapter:P-1"),
+                "resolution": "exact",
+                "ordered_member_refs": [],
+                "source_occurrence_ids": [],
+                "resolution_overlay_ids": [],
+            },
+            {
                 "reference_id": REFERENCE_ID,
                 "clause_ids": [OPERATIVE_CLAUSE],
                 "relation": "constrains",
@@ -274,6 +287,8 @@ def build_chunk(packet: dict[str, Any]) -> dict[str, Any]:
                 "target": object_ref("statement", STATEMENT_ID),
                 "resolution": "exact",
                 "ordered_member_refs": [],
+                "source_occurrence_ids": [],
+                "resolution_overlay_ids": [],
             }
         ],
         "chunk_metrics": {},
@@ -392,6 +407,127 @@ def test_every_packet_clause_requires_exactly_one_disposition(
         if mode == "missing"
         else "coverage.disposition_duplicate",
     )
+
+
+def test_normative_operative_role_cannot_be_hidden_as_nonoperative(
+    chunk: dict[str, Any], packet: dict[str, Any]
+) -> None:
+    chunk["clause_dispositions"][0] = {
+        "clause_id": OPERATIVE_CLAUSE,
+        "role": "effect",
+        "force": "normative",
+        "disposition": {
+            "kind": "nonoperative",
+            "reason_code": "explanatory_note",
+        },
+    }
+    stamp_chunk(chunk)
+
+    report = validate_chunk(chunk, packet)
+
+    assert_error(report, "disposition.normative_nonoperative")
+    assert "disposition.operative_role_nonoperative" in error_codes(report)
+
+
+def test_explicit_source_semantic_cue_cannot_be_hidden_as_a_note(
+    chunk: dict[str, Any], packet: dict[str, Any]
+) -> None:
+    source_unit = packet["assigned"][0]["clause_inventory_record"]["source_units"][1]
+    source_unit["semantic_cue"] = "criteria"
+    packet["packet_sha256"] = digest_without_field(packet, "packet_sha256")
+    chunk["packet_sha256"] = packet["packet_sha256"]
+    stamp_chunk(chunk)
+
+    report = validate_chunk(chunk, packet)
+
+    assert_error(report, "disposition.semantic_cue_nonoperative")
+
+
+def test_raw_reference_occurrence_cannot_disappear_from_semantic_references(
+    chunk: dict[str, Any], packet: dict[str, Any]
+) -> None:
+    source_artifact = json.loads(
+        (
+            Path(__file__).resolve().parents[1]
+            / "data"
+            / "bluebook_v3"
+            / "bluebook_v3_reference_occurrences.json"
+        ).read_text(encoding="utf-8")
+    )
+    packet["assigned"][0]["reference_occurrences"] = [
+        deepcopy(source_artifact["occurrences"][0])
+    ]
+    packet["packet_sha256"] = digest_without_field(packet, "packet_sha256")
+    chunk["packet_sha256"] = packet["packet_sha256"]
+    stamp_chunk(chunk)
+
+    report = validate_chunk(chunk, packet)
+
+    assert_error(report, "reference_occurrence.coverage")
+
+
+def test_immediate_packet_parent_cannot_disappear(
+    chunk: dict[str, Any], packet: dict[str, Any]
+) -> None:
+    chunk["references"] = [
+        item
+        for item in chunk["references"]
+        if item["reference_id"] != HIERARCHY_REFERENCE_ID
+    ]
+    chunk["records"][0]["reference_ids"].remove(HIERARCHY_REFERENCE_ID)
+    chunk["clause_dispositions"][0]["disposition"]["targets"] = [
+        ref
+        for ref in chunk["clause_dispositions"][0]["disposition"]["targets"]
+        if ref["id"] != HIERARCHY_REFERENCE_ID
+    ]
+    stamp_chunk(chunk)
+
+    report = validate_chunk(chunk, packet)
+
+    assert_error(report, "reference.hierarchy_coverage")
+
+
+def test_historical_reference_requires_and_accepts_its_exact_resolution_overlay(
+    chunk: dict[str, Any], packet: dict[str, Any]
+) -> None:
+    root = Path(__file__).resolve().parents[1] / "data" / "bluebook_v3"
+    occurrences = json.loads(
+        (root / "bluebook_v3_reference_occurrences.json").read_text(
+            encoding="utf-8"
+        )
+    )["occurrences"]
+    resolutions = json.loads(
+        (root / "bluebook_v3_reference_resolutions.json").read_text(
+            encoding="utf-8"
+        )
+    )["records"]
+    occurrence = next(
+        item for item in occurrences if item["occurrence_id"] == "P-65.7:xref:0009"
+    )
+    resolution = next(
+        item for item in resolutions if item["occurrence_id"] == occurrence["occurrence_id"]
+    )
+    packet["assigned"][0]["reference_occurrences"] = [deepcopy(occurrence)]
+    packet["assigned"][0]["reference_resolutions"] = [deepcopy(resolution)]
+    reference = next(
+        item for item in chunk["references"] if item["reference_id"] == REFERENCE_ID
+    )
+    reference["source_occurrence_ids"] = [occurrence["occurrence_id"]]
+    reference["resolution_overlay_ids"] = [resolution["resolution_id"]]
+    reference["target"] = object_ref("historical_rule", "P-65.7.8")
+    packet["packet_sha256"] = digest_without_field(packet, "packet_sha256")
+    chunk["packet_sha256"] = packet["packet_sha256"]
+    stamp_chunk(chunk)
+
+    report = validate_chunk(chunk, packet)
+
+    assert report["passed"], report["errors"]
+
+    reference["resolution_overlay_ids"] = []
+    stamp_chunk(chunk)
+    report = validate_chunk(chunk, packet)
+    assert_error(report, "reference_occurrence.resolution_binding")
+    assert "reference_occurrence.resolution_coverage" in error_codes(report)
 
 
 def test_duplicate_nested_ast_id_is_not_addressable(

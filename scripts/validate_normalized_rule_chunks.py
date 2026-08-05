@@ -21,6 +21,7 @@ LANGUAGE_SCHEMA_PATH = ROOT / "data" / "normalized_rule_language.schema.json"
 PACKET_SCHEMA_PATH = ROOT / "data" / "bluebook_semantic_work_packet.schema.json"
 DEFAULT_PACKET_DIR = ROOT / "work" / "semantic_packets"
 DRAFT_2020_12 = "https://json-schema.org/draft/2020-12/schema"
+RULE_ID_RE = re.compile(r"^P-\d+(?:\.\d+)*(?:\([a-z0-9]+\))?$")
 
 SOURCE_HASH_FIELDS = (
     "source_corpus_sha256",
@@ -49,6 +50,36 @@ TOP_LEVEL_OBJECTS = {
     "reference": "references",
 }
 AST_KINDS = {"expression", "statement", "decision_stage"}
+OPERATIVE_DISPOSITION_ROLES = {
+    "scope",
+    "definition",
+    "condition",
+    "effect",
+    "constraint",
+    "permission",
+    "prohibition",
+    "preference_criterion",
+    "tie_continuation",
+    "procedure_step",
+    "mapping_entry",
+    "exception",
+    "table_data",
+    "figure_asset",
+    "correction_event",
+}
+SEMANTIC_CUES = {
+    "explicit_order",
+    "criteria",
+    "procedure",
+    "alternatives",
+    "enumeration",
+}
+COMPILED_SOURCE_UNIT_KINDS = {
+    "image_asset",
+    "correction_event",
+    "figure_caption",
+    "caption_text",
+}
 FORBIDDEN_SEMANTIC_RE = re.compile(
     r"\b(?:todo|unresolved|placeholder|not_started|manual_review)\b|"
     r"action:apply_[a-z0-9_]+_rule|"
@@ -562,6 +593,198 @@ def _validate_coverage(
     return expected_set, clause_owner
 
 
+def _validate_disposition_semantics(
+    audit: Audit,
+    chunk: Mapping[str, Any],
+    packet: Mapping[str, Any],
+) -> None:
+    source_units: dict[str, Mapping[str, Any]] = {}
+    for assignment in _list(packet.get("assigned")):
+        inventory = _mapping(_mapping(assignment).get("clause_inventory_record"))
+        for unit in _list(inventory.get("source_units")):
+            source_unit = _mapping(unit)
+            unit_id = source_unit.get("unit_id")
+            if isinstance(unit_id, str):
+                source_units[unit_id] = source_unit
+
+    for index, raw_disposition in enumerate(_list(chunk.get("clause_dispositions"))):
+        disposition = _mapping(raw_disposition)
+        body = _mapping(disposition.get("disposition"))
+        if body.get("kind") != "nonoperative":
+            continue
+        clause_id = disposition.get("clause_id")
+        source_unit = source_units.get(str(clause_id), {})
+        role = disposition.get("role")
+        force = disposition.get("force")
+        unit_kind = source_unit.get("unit_kind")
+        semantic_cue = source_unit.get("semantic_cue")
+        path = ("clause_dispositions", index, "disposition")
+
+        audit.require(
+            force != "normative",
+            "disposition.normative_nonoperative",
+            "A normative clause cannot be classified as nonoperative",
+            path=path,
+            clause_id=clause_id,
+            role=role,
+        )
+        audit.require(
+            role not in OPERATIVE_DISPOSITION_ROLES,
+            "disposition.operative_role_nonoperative",
+            "An operative semantic role cannot be classified as nonoperative",
+            path=path,
+            clause_id=clause_id,
+            role=role,
+        )
+        audit.require(
+            semantic_cue not in SEMANTIC_CUES,
+            "disposition.semantic_cue_nonoperative",
+            "A source clause with an explicit semantic cue cannot be nonoperative",
+            path=path,
+            clause_id=clause_id,
+            semantic_cue=semantic_cue,
+        )
+        audit.require(
+            unit_kind not in COMPILED_SOURCE_UNIT_KINDS,
+            "disposition.source_asset_nonoperative",
+            "A source asset, correction event, or caption must reach a typed object",
+            path=path,
+            clause_id=clause_id,
+            unit_kind=unit_kind,
+        )
+        audit.require(
+            not (role == "example" and unit_kind != "example_label"),
+            "disposition.example_nonoperative",
+            "Example evidence must reach a typed example unless it is only a label",
+            path=path,
+            clause_id=clause_id,
+            unit_kind=unit_kind,
+        )
+
+
+def _validate_reference_occurrence_provenance(
+    audit: Audit,
+    chunk: Mapping[str, Any],
+    packet: Mapping[str, Any],
+) -> None:
+    expected_occurrence_ids: list[str] = []
+    expected_resolution_ids: list[str] = []
+    resolution_by_occurrence: dict[str, str] = {}
+    for assignment in _list(packet.get("assigned")):
+        item = _mapping(assignment)
+        for occurrence in _list(item.get("reference_occurrences")):
+            occurrence_id = _mapping(occurrence).get("occurrence_id")
+            if isinstance(occurrence_id, str):
+                expected_occurrence_ids.append(occurrence_id)
+        for resolution in _list(item.get("reference_resolutions")):
+            record = _mapping(resolution)
+            occurrence_id = record.get("occurrence_id")
+            resolution_id = record.get("resolution_id")
+            if isinstance(occurrence_id, str) and isinstance(resolution_id, str):
+                resolution_by_occurrence[occurrence_id] = resolution_id
+                expected_resolution_ids.append(resolution_id)
+
+    observed_occurrence_ids: list[str] = []
+    observed_resolution_ids: list[str] = []
+    for index, raw_reference in enumerate(_list(chunk.get("references"))):
+        reference = _mapping(raw_reference)
+        occurrence_ids = [
+            value
+            for value in _list(reference.get("source_occurrence_ids"))
+            if isinstance(value, str)
+        ]
+        resolution_ids = [
+            value
+            for value in _list(reference.get("resolution_overlay_ids"))
+            if isinstance(value, str)
+        ]
+        expected_for_reference = [
+            resolution_by_occurrence[occurrence_id]
+            for occurrence_id in occurrence_ids
+            if occurrence_id in resolution_by_occurrence
+        ]
+        audit.require(
+            resolution_ids == expected_for_reference,
+            "reference_occurrence.resolution_binding",
+            "Reference resolution overlays must exactly match its source occurrences",
+            path=("references", index, "resolution_overlay_ids"),
+            expected=expected_for_reference,
+            actual=resolution_ids,
+        )
+        observed_occurrence_ids.extend(occurrence_ids)
+        observed_resolution_ids.extend(resolution_ids)
+
+    audit.require(
+        observed_occurrence_ids == expected_occurrence_ids,
+        "reference_occurrence.coverage",
+        "Semantic references must preserve every assigned raw occurrence exactly once in source order",
+        path=("references",),
+        expected=expected_occurrence_ids,
+        actual=observed_occurrence_ids,
+    )
+    audit.require(
+        observed_resolution_ids == expected_resolution_ids,
+        "reference_occurrence.resolution_coverage",
+        "Semantic references must preserve every assigned resolution overlay exactly once",
+        path=("references",),
+        expected=expected_resolution_ids,
+        actual=observed_resolution_ids,
+    )
+
+
+def _validate_hierarchy_references(
+    audit: Audit,
+    chunk: Mapping[str, Any],
+    packet: Mapping[str, Any],
+) -> None:
+    expected: list[tuple[str, str, str]] = []
+    for assignment in _list(packet.get("assigned")):
+        item = _mapping(assignment)
+        inventory = _mapping(item.get("clause_inventory_record"))
+        record_id = inventory.get("record_id")
+        parent = item.get("immediate_parent")
+        if not isinstance(record_id, str) or not isinstance(parent, str):
+            continue
+        target_kind = "chapter" if parent.startswith("chapter:") else "rule"
+        expected.append((record_id, target_kind, parent))
+
+    observed: list[tuple[str, str, str]] = []
+    for index, raw_reference in enumerate(_list(chunk.get("references"))):
+        reference = _mapping(raw_reference)
+        if reference.get("relation") != "hierarchy_parent":
+            continue
+        source = _mapping(reference.get("source"))
+        target = _mapping(reference.get("target"))
+        observed.append(
+            (
+                str(source.get("id")),
+                str(target.get("kind")),
+                str(target.get("id")),
+            )
+        )
+        audit.require(
+            source.get("kind") == "record",
+            "reference.hierarchy_source",
+            "Hierarchy references must originate at the assigned record",
+            path=("references", index, "source"),
+        )
+        audit.require(
+            not _list(reference.get("source_occurrence_ids"))
+            and not _list(reference.get("resolution_overlay_ids")),
+            "reference.hierarchy_evidence",
+            "Mechanical hierarchy references cannot claim source citation evidence",
+            path=("references", index),
+        )
+    audit.require(
+        observed == expected,
+        "reference.hierarchy_coverage",
+        "Semantic references must preserve every immediate packet parent exactly once",
+        path=("references",),
+        expected=expected,
+        actual=observed,
+    )
+
+
 def _walk_expression(
     expression: Any,
     path: tuple[str | int, ...],
@@ -830,6 +1053,12 @@ def _resolve_ref(
         return None
     if kind == "external":
         return IndexedObject(kind, object_id, (), ref)
+    if kind in {"rule", "historical_rule"}:
+        return (
+            IndexedObject(kind, object_id, (), ref)
+            if RULE_ID_RE.fullmatch(object_id)
+            else None
+        )
     if kind == "chapter":
         return IndexedObject(kind, object_id, (), ref) if object_id in chapters else None
     if kind == "clause":
@@ -1443,13 +1672,15 @@ def validate_chunk(
     language_schema_bytes: bytes | None = None,
     chunk_bytes: bytes | None = None,
     packet_bytes: bytes | None = None,
+    validate_packet_schema: bool = True,
 ) -> dict[str, Any]:
     """Validate one semantic conversion chunk against its immutable work packet."""
 
     audit = Audit()
-    if packet_schema is None:
-        packet_schema = _mapping(load_json(PACKET_SCHEMA_PATH))
-    _packet_schema_validate(audit, packet_schema, packet)
+    if validate_packet_schema:
+        if packet_schema is None:
+            packet_schema = _mapping(load_json(PACKET_SCHEMA_PATH))
+        _packet_schema_validate(audit, packet_schema, packet)
     if chunk_schema is None:
         loaded_chunk_schema = load_json(CHUNK_SCHEMA_PATH)
         chunk_schema = _mapping(loaded_chunk_schema)
@@ -1470,6 +1701,9 @@ def validate_chunk(
     expected_schema_hash = language_schema_sha256(language_schema_bytes)
     _validate_snapshot(audit, chunk, packet, expected_schema_hash)
     source_clauses, _ = _validate_coverage(audit, chunk, packet)
+    _validate_disposition_semantics(audit, chunk, packet)
+    _validate_reference_occurrence_provenance(audit, chunk, packet)
+    _validate_hierarchy_references(audit, chunk, packet)
     by_kind, by_id = _build_object_index(audit, chunk)
     _validate_clause_refs(audit, chunk, source_clauses)
     _validate_refs(audit, chunk, by_kind, by_id, source_clauses)

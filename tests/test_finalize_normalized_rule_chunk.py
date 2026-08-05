@@ -1,9 +1,15 @@
 from __future__ import annotations
 
+import subprocess
+import sys
 from copy import deepcopy
+from pathlib import Path
 
 from scripts import finalize_normalized_rule_chunk as finalizer
 from scripts import validate_normalized_rule_chunks as validator
+
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_finalizer_binds_packet_snapshot_metrics_and_hash_without_changing_semantics(
@@ -66,3 +72,22 @@ def test_finalizer_binds_packet_snapshot_metrics_and_hash_without_changing_seman
     assert result["chunk_sha256"] == validator.digest_without_field(
         result, "chunk_sha256"
     )
+
+
+def test_finalizer_supports_direct_script_invocation() -> None:
+    result = subprocess.run(
+        [
+            sys.executable,
+            "-B",
+            str(ROOT / "scripts" / "finalize_normalized_rule_chunk.py"),
+            "--help",
+        ],
+        cwd=ROOT,
+        check=False,
+        capture_output=True,
+        text=True,
+        timeout=30,
+    )
+
+    assert result.returncode == 0, result.stderr
+    assert "Finalize and validate" in result.stdout

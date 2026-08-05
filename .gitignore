@@ -8,6 +8,8 @@ venv/
 .cache/
 tmp/
 work/semantic_packets/
+work/compact_semantic_tasks/
+work/quarantine_manual_chunks/
 /data/bluebook_v3/bluebook_v3_document_nodes.json
 dist/
 build/

@@ -183,6 +183,17 @@ def build_chunk(packet: dict[str, Any], *, specificity: int) -> dict[str, Any]:
     expression_id = f"expr.exception.p{major}"
     references = [
         {
+            "reference_id": f"reference.p{major}.hierarchy",
+            "clause_ids": [clause_id],
+            "relation": "hierarchy_parent",
+            "source": object_ref("record", record_id),
+            "target": object_ref("chapter", f"chapter:P-{major}"),
+            "resolution": "exact",
+            "ordered_member_refs": [],
+            "source_occurrence_ids": [],
+            "resolution_overlay_ids": [],
+        },
+        {
             "reference_id": f"reference.p{major}.a",
             "clause_ids": [clause_id],
             "relation": "cites",
@@ -190,12 +201,14 @@ def build_chunk(packet: dict[str, Any], *, specificity: int) -> dict[str, Any]:
             "target": object_ref("external", "external.shared"),
             "resolution": "external",
             "ordered_member_refs": [],
+            "source_occurrence_ids": [],
+            "resolution_overlay_ids": [],
         }
     ]
     if major == 1:
         references.append(
             {
-                **deepcopy(references[0]),
+                **deepcopy(references[1]),
                 "reference_id": "reference.p1.b",
             }
         )
@@ -344,7 +357,7 @@ def test_valid_multi_chunk_assembly_merges_and_projects_all_typed_objects(
         and edge["to"]["id"] == "external.shared"
     )
     assert shared["derived_from_object_ids"] == ["reference.p1.a", "reference.p1.b"]
-    assert corpus["metrics"]["dependency_edge_count"] == 4
+    assert corpus["metrics"]["dependency_edge_count"] == 6
     assert corpus["corpus_sha256"] == chunk_validator.digest_without_field(
         corpus, "corpus_sha256"
     )
