@@ -1,0 +1,1508 @@
+{
+  "assigned_rule_ids": [
+    "P-40"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 7,
+    "compiled_clause_count": 5,
+    "correction_application_count": 0,
+    "example_count": 0,
+    "exception_count": 0,
+    "figure_count": 0,
+    "nonoperative_clause_count": 2,
+    "record_count": 1,
+    "reference_count": 1,
+    "semantic_unit_count": 7,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 17,
+    "table_count": 0
+  },
+  "chunk_sha256": "14AD4D5483C5E80BB2CB8B12E25D21E5E773B8611F764582EE7B592A5E8DFF4F",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-40:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-40:clause:0002",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "source_navigation"
+      },
+      "force": "source_metadata",
+      "role": "source_metadata"
+    },
+    {
+      "clause_id": "P-40:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p40.situational_deviation_permission",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p40.deviation_permission.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p40.deviation_permission.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p40.deviation_permission.purpose",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p40.deviation_permission.assign_disposition",
+            "kind": "statement"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-40:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p40.unjustified_deviation_discouraged",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p40.unjustified_deviation.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p40.unjustified_deviation.assign_recommendation",
+            "kind": "statement"
+          },
+          {
+            "id": "unit.p40.derived_name_general_publication_recommendation",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p40.derived_name_publication.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p40.derived_name_publication.when",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p40.derived_name_publication.assign_recommendation",
+            "kind": "statement"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-40:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p40.chapter_application_target",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p40.chapter_application_target.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p40.chapter_application_target.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "scope"
+    },
+    {
+      "clause_id": "P-40:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p40.pin_collegial_aim_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p40.pin_collegial_aim_scope.applies",
+            "kind": "expression"
+          },
+          {
+            "id": "unit.p40.pin_formal_use_appropriateness",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p40.pin_formal_use.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p40.pin_formal_use.formal_context",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p40.pin_formal_use.program_purpose",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p40.pin_formal_use.assign_assessment",
+            "kind": "statement"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-40:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p40.chapter_rule_scope",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p40.chapter_rule_scope.applies",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p40.chapter_rule_scope.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "informative",
+      "role": "scope"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [],
+  "exceptions": [],
+  "figures": [],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-40-part-001",
+  "packet_sha256": "C4765E9FC1ECB89A3049C7F59BBF6DF58BF79492B6A32279CDE19CAFFEFD972F",
+  "records": [
+    {
+      "chapter": "P-4",
+      "clause_ids": [
+        "P-40:clause:0001",
+        "P-40:clause:0002",
+        "P-40:clause:0003",
+        "P-40:clause:0004",
+        "P-40:clause:0005",
+        "P-40:clause:0006",
+        "P-40:clause:0007"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-40",
+      "reference_ids": [
+        "reference.p_40.hierarchy_parent"
+      ],
+      "semantic_unit_ids": [
+        "unit.p40.situational_deviation_permission",
+        "unit.p40.unjustified_deviation_discouraged",
+        "unit.p40.derived_name_general_publication_recommendation",
+        "unit.p40.chapter_application_target",
+        "unit.p40.pin_collegial_aim_scope",
+        "unit.p40.pin_formal_use_appropriateness",
+        "unit.p40.chapter_rule_scope"
+      ],
+      "source_rule_id": "P-40",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-40:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_40.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-40",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-4",
+        "kind": "chapter"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-40:clause:0003"
+      ],
+      "else": [],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "discussion",
+          "type": "ChemicalDiscussion"
+        },
+        {
+          "name": "deviation",
+          "type": "NomenclatureDeviation"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "deviation_disposition",
+          "type": "NomenclatureDeviationDisposition"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "args": [
+            {
+              "clause_ids": [
+                "P-40:clause:0003"
+              ],
+              "expression_id": "expr.p40.deviation_permission.scope.discussion",
+              "name": "discussion",
+              "op": "var"
+            }
+          ],
+          "clause_ids": [
+            "P-40:clause:0003"
+          ],
+          "expression_id": "expr.p40.deviation_permission.scope",
+          "op": "predicate",
+          "symbol": "context.is_chemical_discussion"
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-40:clause:0003"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p40.deviation_permission.assign_disposition",
+          "target": "deviation_disposition",
+          "value": {
+            "clause_ids": [
+              "P-40:clause:0003"
+            ],
+            "expression_id": "expr.p40.deviation_permission.permitted",
+            "op": "literal",
+            "value": "permitted"
+          }
+        }
+      ],
+      "unit_id": "unit.p40.situational_deviation_permission",
+      "when": {
+        "args": [
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-40:clause:0003"
+                ],
+                "expression_id": "expr.p40.deviation_permission.is_rigorous_rule_deviation.deviation",
+                "name": "deviation",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-40:clause:0003"
+            ],
+            "expression_id": "expr.p40.deviation_permission.is_rigorous_rule_deviation",
+            "op": "predicate",
+            "symbol": "nomenclature.is_rigorous_rule_deviation"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "clause_ids": [
+                      "P-40:clause:0003"
+                    ],
+                    "expression_id": "expr.p40.deviation_permission.chemical_intent.deviation",
+                    "name": "deviation",
+                    "op": "var"
+                  },
+                  {
+                    "clause_ids": [
+                      "P-40:clause:0003"
+                    ],
+                    "expression_id": "expr.p40.deviation_permission.chemical_intent.discussion",
+                    "name": "discussion",
+                    "op": "var"
+                  }
+                ],
+                "clause_ids": [
+                  "P-40:clause:0003"
+                ],
+                "expression_id": "expr.p40.deviation_permission.chemical_intent",
+                "op": "predicate",
+                "symbol": "nomenclature.improves_chemical_intent_alignment"
+              },
+              {
+                "args": [
+                  {
+                    "clause_ids": [
+                      "P-40:clause:0003"
+                    ],
+                    "expression_id": "expr.p40.deviation_permission.feature_visibility.deviation",
+                    "name": "deviation",
+                    "op": "var"
+                  },
+                  {
+                    "clause_ids": [
+                      "P-40:clause:0003"
+                    ],
+                    "expression_id": "expr.p40.deviation_permission.feature_visibility.discussion",
+                    "name": "discussion",
+                    "op": "var"
+                  }
+                ],
+                "clause_ids": [
+                  "P-40:clause:0003"
+                ],
+                "expression_id": "expr.p40.deviation_permission.feature_visibility",
+                "op": "predicate",
+                "symbol": "nomenclature.preserves_important_feature_visibility"
+              }
+            ],
+            "clause_ids": [
+              "P-40:clause:0003"
+            ],
+            "expression_id": "expr.p40.deviation_permission.purpose",
+            "op": "any"
+          }
+        ],
+        "clause_ids": [
+          "P-40:clause:0003"
+        ],
+        "expression_id": "expr.p40.deviation_permission.when",
+        "op": "all"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-40:clause:0003",
+        "P-40:clause:0004"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "discussion",
+          "type": "ChemicalDiscussion"
+        },
+        {
+          "name": "deviation",
+          "type": "NomenclatureDeviation"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "deviation_recommendation",
+          "type": "NomenclatureRecommendation"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "args": [
+            {
+              "args": [
+                {
+                  "clause_ids": [
+                    "P-40:clause:0003",
+                    "P-40:clause:0004"
+                  ],
+                  "expression_id": "expr.p40.unjustified_deviation.scope.chemical_discussion.discussion",
+                  "name": "discussion",
+                  "op": "var"
+                }
+              ],
+              "clause_ids": [
+                "P-40:clause:0003",
+                "P-40:clause:0004"
+              ],
+              "expression_id": "expr.p40.unjustified_deviation.scope.chemical_discussion",
+              "op": "predicate",
+              "symbol": "context.is_chemical_discussion"
+            },
+            {
+              "args": [
+                {
+                  "clause_ids": [
+                    "P-40:clause:0003",
+                    "P-40:clause:0004"
+                  ],
+                  "expression_id": "expr.p40.unjustified_deviation.scope.rigorous_rule_deviation.deviation",
+                  "name": "deviation",
+                  "op": "var"
+                }
+              ],
+              "clause_ids": [
+                "P-40:clause:0003",
+                "P-40:clause:0004"
+              ],
+              "expression_id": "expr.p40.unjustified_deviation.scope.rigorous_rule_deviation",
+              "op": "predicate",
+              "symbol": "nomenclature.is_rigorous_rule_deviation"
+            }
+          ],
+          "clause_ids": [
+            "P-40:clause:0003",
+            "P-40:clause:0004"
+          ],
+          "expression_id": "expr.p40.unjustified_deviation.scope",
+          "op": "all"
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-40:clause:0004"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p40.unjustified_deviation.assign_recommendation",
+          "target": "deviation_recommendation",
+          "value": {
+            "clause_ids": [
+              "P-40:clause:0004"
+            ],
+            "expression_id": "expr.p40.unjustified_deviation.discouraged",
+            "op": "literal",
+            "value": "discouraged"
+          }
+        }
+      ],
+      "unit_id": "unit.p40.unjustified_deviation_discouraged",
+      "when": {
+        "arg": {
+          "args": [
+            {
+              "clause_ids": [
+                "P-40:clause:0004"
+              ],
+              "expression_id": "expr.p40.unjustified_deviation.has_good_reason.deviation",
+              "name": "deviation",
+              "op": "var"
+            }
+          ],
+          "clause_ids": [
+            "P-40:clause:0004"
+          ],
+          "expression_id": "expr.p40.unjustified_deviation.has_good_reason",
+          "op": "predicate",
+          "symbol": "nomenclature.deviation_has_good_reason"
+        },
+        "clause_ids": [
+          "P-40:clause:0004"
+        ],
+        "expression_id": "expr.p40.unjustified_deviation.when",
+        "op": "not"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-40:clause:0003",
+        "P-40:clause:0004"
+      ],
+      "else": [],
+      "force": "preference",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "NomenclatureName"
+        },
+        {
+          "name": "deviation",
+          "type": "NomenclatureDeviation"
+        },
+        {
+          "name": "discussion",
+          "type": "ChemicalDiscussion"
+        },
+        {
+          "name": "publication_context",
+          "type": "PublicationContext"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "name_use_recommendation",
+          "type": "NomenclatureRecommendation"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "args": [
+            {
+              "args": [
+                {
+                  "clause_ids": [
+                    "P-40:clause:0004"
+                  ],
+                  "expression_id": "expr.p40.derived_name_publication.is_publication.context",
+                  "name": "publication_context",
+                  "op": "var"
+                }
+              ],
+              "clause_ids": [
+                "P-40:clause:0004"
+              ],
+              "expression_id": "expr.p40.derived_name_publication.is_publication",
+              "op": "predicate",
+              "symbol": "publication.is_publication"
+            },
+            {
+              "args": [
+                {
+                  "clause_ids": [
+                    "P-40:clause:0004"
+                  ],
+                  "expression_id": "expr.p40.derived_name_publication.is_general_use.context",
+                  "name": "publication_context",
+                  "op": "var"
+                }
+              ],
+              "clause_ids": [
+                "P-40:clause:0004"
+              ],
+              "expression_id": "expr.p40.derived_name_publication.is_general_use",
+              "op": "predicate",
+              "symbol": "publication.is_general_use"
+            }
+          ],
+          "clause_ids": [
+            "P-40:clause:0004"
+          ],
+          "expression_id": "expr.p40.derived_name_publication.scope",
+          "op": "all"
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-40:clause:0004"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p40.derived_name_publication.assign_recommendation",
+          "target": "name_use_recommendation",
+          "value": {
+            "clause_ids": [
+              "P-40:clause:0004"
+            ],
+            "expression_id": "expr.p40.derived_name_publication.not_recommended",
+            "op": "literal",
+            "value": "not_recommended"
+          }
+        }
+      ],
+      "unit_id": "unit.p40.derived_name_general_publication_recommendation",
+      "when": {
+        "args": [
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-40:clause:0003",
+                  "P-40:clause:0004"
+                ],
+                "expression_id": "expr.p40.derived_name_publication.when.chemical_discussion.discussion",
+                "name": "discussion",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-40:clause:0003",
+              "P-40:clause:0004"
+            ],
+            "expression_id": "expr.p40.derived_name_publication.when.chemical_discussion",
+            "op": "predicate",
+            "symbol": "context.is_chemical_discussion"
+          },
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-40:clause:0004"
+                ],
+                "expression_id": "expr.p40.derived_name_publication.when.derivation.name",
+                "name": "name",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-40:clause:0003",
+                  "P-40:clause:0004"
+                ],
+                "expression_id": "expr.p40.derived_name_publication.when.derivation.deviation",
+                "name": "deviation",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-40:clause:0003",
+                  "P-40:clause:0004"
+                ],
+                "expression_id": "expr.p40.derived_name_publication.when.derivation.discussion",
+                "name": "discussion",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-40:clause:0003",
+              "P-40:clause:0004"
+            ],
+            "expression_id": "expr.p40.derived_name_publication.when.derivation",
+            "op": "predicate",
+            "symbol": "nomenclature.name_derives_from_rigorous_rule_deviation"
+          }
+        ],
+        "clause_ids": [
+          "P-40:clause:0003",
+          "P-40:clause:0004"
+        ],
+        "expression_id": "expr.p40.derived_name_publication.when",
+        "op": "all"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-40:clause:0005"
+      ],
+      "entity_type": "NomenclatureApplicationTarget",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "chapter_rule_application",
+          "type": "P4NameConstructionApplication"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "target_name_designation",
+          "type": "NomenclatureDesignation"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-40:clause:0005"
+          ],
+          "expression_id": "expr.p40.chapter_application_target.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "term": "p4_name_construction_application_target",
+      "unit_id": "unit.p40.chapter_application_target",
+      "value": {
+        "clause_ids": [
+          "P-40:clause:0005"
+        ],
+        "expression_id": "expr.p40.chapter_application_target.value",
+        "op": "literal",
+        "value": "preferred_iupac_name"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-40:clause:0006"
+      ],
+      "entity_type": "NameUseAimStatus",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "preferred_iupac_name_aim_status",
+          "type": "NameUseAimStatus"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "args": [
+            {
+              "args": [
+                {
+                  "clause_ids": [
+                    "P-40:clause:0006"
+                  ],
+                  "expression_id": "expr.p40.pin_collegial_aim_scope.collegial_communication.context",
+                  "name": "use_context",
+                  "op": "var"
+                }
+              ],
+              "clause_ids": [
+                "P-40:clause:0006"
+              ],
+              "expression_id": "expr.p40.pin_collegial_aim_scope.collegial_communication",
+              "op": "predicate",
+              "symbol": "context.is_practicing_chemist_collegial_communication"
+            },
+            {
+              "args": [
+                {
+                  "clause_ids": [
+                    "P-40:clause:0006"
+                  ],
+                  "expression_id": "expr.p40.pin_collegial_aim_scope.familiar_terms.context",
+                  "name": "use_context",
+                  "op": "var"
+                }
+              ],
+              "clause_ids": [
+                "P-40:clause:0006"
+              ],
+              "expression_id": "expr.p40.pin_collegial_aim_scope.familiar_terms",
+              "op": "predicate",
+              "symbol": "context.uses_familiar_well_understood_terms"
+            }
+          ],
+          "clause_ids": [
+            "P-40:clause:0006"
+          ],
+          "expression_id": "expr.p40.pin_collegial_aim_scope.applies",
+          "op": "all"
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "term": "preferred_iupac_name_aim_in_collegial_communication",
+      "unit_id": "unit.p40.pin_collegial_aim_scope",
+      "value": {
+        "clause_ids": [
+          "P-40:clause:0006"
+        ],
+        "expression_id": "expr.p40.pin_collegial_aim_scope.not_necessary",
+        "op": "literal",
+        "value": "not_necessary"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-40:clause:0006"
+      ],
+      "else": [],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "NomenclatureName"
+        },
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "name_use_assessment",
+          "type": "NameUseAssessment"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-40:clause:0006"
+          ],
+          "expression_id": "expr.p40.pin_formal_use.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "preferred_iupac_name"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-40:clause:0006"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p40.pin_formal_use.assign_assessment",
+          "target": "name_use_assessment",
+          "value": {
+            "clause_ids": [
+              "P-40:clause:0006"
+            ],
+            "expression_id": "expr.p40.pin_formal_use.appropriate",
+            "op": "literal",
+            "value": "appropriate"
+          }
+        }
+      ],
+      "unit_id": "unit.p40.pin_formal_use_appropriateness",
+      "when": {
+        "args": [
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-40:clause:0006"
+                ],
+                "expression_id": "expr.p40.pin_formal_use.cites_chemical_name.context",
+                "name": "use_context",
+                "op": "var"
+              },
+              {
+                "clause_ids": [
+                  "P-40:clause:0006"
+                ],
+                "expression_id": "expr.p40.pin_formal_use.cites_chemical_name.name",
+                "name": "name",
+                "op": "var"
+              }
+            ],
+            "clause_ids": [
+              "P-40:clause:0006"
+            ],
+            "expression_id": "expr.p40.pin_formal_use.cites_chemical_name",
+            "op": "predicate",
+            "symbol": "context.cites_chemical_name"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "clause_ids": [
+                      "P-40:clause:0006"
+                    ],
+                    "expression_id": "expr.p40.pin_formal_use.legislative_document.context",
+                    "name": "use_context",
+                    "op": "var"
+                  }
+                ],
+                "clause_ids": [
+                  "P-40:clause:0006"
+                ],
+                "expression_id": "expr.p40.pin_formal_use.legislative_document",
+                "op": "predicate",
+                "symbol": "context.is_legislative_document"
+              },
+              {
+                "args": [
+                  {
+                    "clause_ids": [
+                      "P-40:clause:0006"
+                    ],
+                    "expression_id": "expr.p40.pin_formal_use.international_trade_or_commerce.context",
+                    "name": "use_context",
+                    "op": "var"
+                  }
+                ],
+                "clause_ids": [
+                  "P-40:clause:0006"
+                ],
+                "expression_id": "expr.p40.pin_formal_use.international_trade_or_commerce",
+                "op": "predicate",
+                "symbol": "context.is_international_trade_or_commerce"
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "clause_ids": [
+                          "P-40:clause:0006"
+                        ],
+                        "expression_id": "expr.p40.pin_formal_use.program_preparation_context.context",
+                        "name": "use_context",
+                        "op": "var"
+                      }
+                    ],
+                    "clause_ids": [
+                      "P-40:clause:0006"
+                    ],
+                    "expression_id": "expr.p40.pin_formal_use.program_preparation_context",
+                    "op": "predicate",
+                    "symbol": "context.is_program_preparation"
+                  },
+                  {
+                    "args": [
+                      {
+                        "args": [
+                          {
+                            "clause_ids": [
+                              "P-40:clause:0006"
+                            ],
+                            "expression_id": "expr.p40.pin_formal_use.index_purpose.context",
+                            "name": "use_context",
+                            "op": "var"
+                          }
+                        ],
+                        "clause_ids": [
+                          "P-40:clause:0006"
+                        ],
+                        "expression_id": "expr.p40.pin_formal_use.index_purpose",
+                        "op": "predicate",
+                        "symbol": "context.has_index_purpose"
+                      },
+                      {
+                        "args": [
+                          {
+                            "clause_ids": [
+                              "P-40:clause:0006"
+                            ],
+                            "expression_id": "expr.p40.pin_formal_use.database_purpose.context",
+                            "name": "use_context",
+                            "op": "var"
+                          }
+                        ],
+                        "clause_ids": [
+                          "P-40:clause:0006"
+                        ],
+                        "expression_id": "expr.p40.pin_formal_use.database_purpose",
+                        "op": "predicate",
+                        "symbol": "context.has_database_purpose"
+                      },
+                      {
+                        "args": [
+                          {
+                            "clause_ids": [
+                              "P-40:clause:0006"
+                            ],
+                            "expression_id": "expr.p40.pin_formal_use.retrieval_system_purpose.context",
+                            "name": "use_context",
+                            "op": "var"
+                          }
+                        ],
+                        "clause_ids": [
+                          "P-40:clause:0006"
+                        ],
+                        "expression_id": "expr.p40.pin_formal_use.retrieval_system_purpose",
+                        "op": "predicate",
+                        "symbol": "context.has_retrieval_system_purpose"
+                      }
+                    ],
+                    "clause_ids": [
+                      "P-40:clause:0006"
+                    ],
+                    "expression_id": "expr.p40.pin_formal_use.program_purpose",
+                    "op": "any"
+                  }
+                ],
+                "clause_ids": [
+                  "P-40:clause:0006"
+                ],
+                "expression_id": "expr.p40.pin_formal_use.program_preparation",
+                "op": "all"
+              }
+            ],
+            "clause_ids": [
+              "P-40:clause:0006"
+            ],
+            "expression_id": "expr.p40.pin_formal_use.formal_context",
+            "op": "any"
+          }
+        ],
+        "clause_ids": [
+          "P-40:clause:0006"
+        ],
+        "expression_id": "expr.p40.pin_formal_use.when",
+        "op": "all"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-40:clause:0007"
+      ],
+      "entity_type": "ChapterRuleScope",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-40:clause:0007"
+          ],
+          "expression_id": "expr.p40.chapter_rule_scope.applies",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "p4_name_construction_rule_scope",
+      "unit_id": "unit.p40.chapter_rule_scope",
+      "value": {
+        "clause_ids": [
+          "P-40:clause:0007"
+        ],
+        "expression_id": "expr.p40.chapter_rule_scope.value",
+        "op": "literal",
+        "value": {
+          "included_content": [
+            "general_rules",
+            "seniority_orders"
+          ],
+          "uses": [
+            {
+              "condition": "unqualified",
+              "nomenclature": "substitutive_nomenclature"
+            },
+            {
+              "condition": "when_required",
+              "nomenclature": "other_nomenclature"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [
+    {
+      "arguments": [
+        {
+          "name": "discussion",
+          "type": "ChemicalDiscussion"
+        }
+      ],
+      "description": "Whether a naming context is a chemical discussion.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0003",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "context.is_chemical_discussion"
+    },
+    {
+      "arguments": [
+        {
+          "name": "deviation",
+          "type": "NomenclatureDeviation"
+        }
+      ],
+      "description": "Whether a proposed naming deviation departs from rigorous nomenclature rules.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0003",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "nomenclature.is_rigorous_rule_deviation"
+    },
+    {
+      "arguments": [
+        {
+          "name": "deviation",
+          "type": "NomenclatureDeviation"
+        },
+        {
+          "name": "discussion",
+          "type": "ChemicalDiscussion"
+        }
+      ],
+      "description": "Whether a naming deviation makes a name more appropriate to the stated chemical intent.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0003",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "nomenclature.improves_chemical_intent_alignment"
+    },
+    {
+      "arguments": [
+        {
+          "name": "deviation",
+          "type": "NomenclatureDeviation"
+        },
+        {
+          "name": "discussion",
+          "type": "ChemicalDiscussion"
+        }
+      ],
+      "description": "Whether a naming deviation avoids obscuring an important chemical feature.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0003",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "nomenclature.preserves_important_feature_visibility"
+    },
+    {
+      "arguments": [
+        {
+          "name": "deviation",
+          "type": "NomenclatureDeviation"
+        }
+      ],
+      "description": "Whether a nomenclature deviation has a good reason.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0004",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "nomenclature.deviation_has_good_reason"
+    },
+    {
+      "arguments": [
+        {
+          "name": "name",
+          "type": "NomenclatureName"
+        },
+        {
+          "name": "deviation",
+          "type": "NomenclatureDeviation"
+        },
+        {
+          "name": "discussion",
+          "type": "ChemicalDiscussion"
+        }
+      ],
+      "description": "Whether a name is derived through a departure from rigorous nomenclature rules in a chemical discussion.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0003",
+            "kind": "clause"
+          },
+          {
+            "id": "P-40:clause:0004",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "nomenclature.name_derives_from_rigorous_rule_deviation"
+    },
+    {
+      "arguments": [
+        {
+          "name": "publication_context",
+          "type": "PublicationContext"
+        }
+      ],
+      "description": "Whether a name-use context is a publication.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0004",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "publication.is_publication"
+    },
+    {
+      "arguments": [
+        {
+          "name": "publication_context",
+          "type": "PublicationContext"
+        }
+      ],
+      "description": "Whether a publication context is for general use.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0004",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "publication.is_general_use"
+    },
+    {
+      "arguments": [
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        }
+      ],
+      "description": "Whether a context is a practicing chemist communicating with colleagues.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0006",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "context.is_practicing_chemist_collegial_communication"
+    },
+    {
+      "arguments": [
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        }
+      ],
+      "description": "Whether communication uses familiar, well-understood chemical terms.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0006",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "context.uses_familiar_well_understood_terms"
+    },
+    {
+      "arguments": [
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        },
+        {
+          "name": "name",
+          "type": "NomenclatureName"
+        }
+      ],
+      "description": "Whether a use context cites the supplied chemical name.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0006",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "context.cites_chemical_name"
+    },
+    {
+      "arguments": [
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        }
+      ],
+      "description": "Whether a chemical-name use context is a legislative document.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0006",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "context.is_legislative_document"
+    },
+    {
+      "arguments": [
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        }
+      ],
+      "description": "Whether a chemical-name use context is international trade or commerce.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0006",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "context.is_international_trade_or_commerce"
+    },
+    {
+      "arguments": [
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        }
+      ],
+      "description": "Whether a use context prepares a program for a stated information purpose.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0006",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "context.is_program_preparation"
+    },
+    {
+      "arguments": [
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        }
+      ],
+      "description": "Whether program preparation has an index purpose.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0006",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "context.has_index_purpose"
+    },
+    {
+      "arguments": [
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        }
+      ],
+      "description": "Whether program preparation has a database purpose.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0006",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "context.has_database_purpose"
+    },
+    {
+      "arguments": [
+        {
+          "name": "use_context",
+          "type": "ChemicalNameUseContext"
+        }
+      ],
+      "description": "Whether program preparation has a retrieval-system purpose.",
+      "grounding": {
+        "kind": "definition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "P-40:clause:0006",
+            "kind": "clause"
+          }
+        ]
+      },
+      "kind": "predicate",
+      "returns": "boolean",
+      "symbol_id": "context.has_retrieval_system_purpose"
+    }
+  ],
+  "tables": []
+}

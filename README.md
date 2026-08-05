@@ -124,6 +124,19 @@ The delta progress auditor returns success for valid partial progress, but
 `--require-complete` succeeds only when all 151 deltas compile and pass. Invalid
 or extra deltas always fail. Legacy manual chunks are not counted.
 
+### Token-Efficient Authoring
+
+Semantic converters no longer need to emit the verbose normalized AST directly.
+`scripts/scaffold_semantic_authoring.py` locks mechanically certain clause and
+citation decisions, `scripts/render_semantic_authoring_task.py` shows only the
+remaining evidence, and `scripts/compile_semantic_authoring.py` expands compact
+prefix expressions and statements into the strict delta format.
+
+The sparse views remove 21.09% of fleet input, while representative compact
+authoring is 71.6% smaller than its expanded delta. All generated IDs,
+provenance, compiled targets, citations, reason symbols, metrics, and hashes are
+local deterministic work. See `docs/SEMANTIC_AUTHORING.md`.
+
 ## Local Nomenclature Benchmark
 
 `scripts/benchmark_chebi_iupac_names.py` joins the ChEBI compounds, names, and

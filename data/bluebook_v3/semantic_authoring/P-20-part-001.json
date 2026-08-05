@@ -1,0 +1,186 @@
+{
+  "additional_refs": [],
+  "clauses": [
+    null,
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["prohibition", "normative", "compile"],
+    ["effect", "normative", "compile"],
+    ["permission", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["constraint", "normative", "compile"],
+    ["definition", "normative", "compile"],
+    ["definition", "normative", "compile"]
+  ],
+  "corrections": [],
+  "examples": [
+    {"id":"pentane_acyclic","c":[4],"input":{"type":"ParentHydride","name":"pentane","topology":"acyclic","saturated":true,"branched":false},"ok":["pentane"],"shows":[["semantic_unit","acyclic_parent_hydride_requirements"]]},
+    {"id":"trisilane_acyclic","c":[4],"input":{"type":"ParentHydride","name":"trisilane","topology":"acyclic","saturated":true,"branched":false},"ok":["trisilane"],"shows":[["semantic_unit","acyclic_parent_hydride_requirements"]]},
+    {"id":"cyclopentane_fully_saturated","c":[5],"input":{"type":"ParentHydride","name":"cyclopentane","topology":"cyclic","saturation_state":"fully_saturated"},"ok":["cyclopentane"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"cyclotrisiloxane_fully_saturated","c":[5],"input":{"type":"ParentHydride","name":"cyclotrisiloxane","topology":"cyclic","saturation_state":"fully_saturated"},"ok":["cyclotrisiloxane"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"azepane_fully_saturated","c":[5],"input":{"type":"ParentHydride","name":"azepane","topology":"cyclic","saturation_state":"fully_saturated"},"ok":["azepane"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"bicyclo_3_2_1_octane_fully_saturated","c":[5],"input":{"type":"ParentHydride","name":"bicyclo[3.2.1]octane","topology":"cyclic","saturation_state":"fully_saturated"},"ok":["bicyclo[3.2.1]octane"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"spiro_4_5_decane_fully_saturated","c":[5],"input":{"type":"ParentHydride","name":"spiro[4.5]decane","topology":"cyclic","saturation_state":"fully_saturated"},"ok":["spiro[4.5]decane"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"benzene_fully_unsaturated","c":[5],"input":{"type":"ParentHydride","name":"benzene","topology":"cyclic","saturation_state":"fully_unsaturated","maximum_noncumulative_double_bonds":true},"ok":["benzene"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"pyridine_fully_unsaturated","c":[5],"input":{"type":"ParentHydride","name":"pyridine","topology":"cyclic","saturation_state":"fully_unsaturated","maximum_noncumulative_double_bonds":true},"ok":["pyridine"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"oxazole_fully_unsaturated","c":[5],"input":{"type":"ParentHydride","name":"1,3-oxazole","topology":"cyclic","saturation_state":"fully_unsaturated","maximum_noncumulative_double_bonds":true},"ok":["1,3-oxazole"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"phenalene_fully_unsaturated","c":[5],"input":{"type":"ParentHydride","name":"1H-phenalene","topology":"cyclic","saturation_state":"fully_unsaturated","maximum_noncumulative_double_bonds":true},"ok":["1H-phenalene"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"phenanthroline_fully_unsaturated","c":[5],"input":{"type":"ParentHydride","name":"phenanthroline","topology":"cyclic","saturation_state":"fully_unsaturated","maximum_noncumulative_double_bonds":true},"ok":["phenanthroline"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"benzo_a_acridine_fully_unsaturated","c":[5],"input":{"type":"ParentHydride","name":"benzo[a]acridine","topology":"cyclic","saturation_state":"fully_unsaturated","maximum_noncumulative_double_bonds":true},"ok":["benzo[a]acridine"],"shows":[["semantic_unit","usual_cyclic_parent_hydride_states"]]},
+    {"id":"partially_saturated_spiro_parent","c":[6],"input":{"type":"ParentHydride","name":"1H-spiro[[1,3]-dioxolane-2,1\u2032-indene]","topology":"cyclic","saturation_state":"partially_saturated"},"ok":["1H-spiro[[1,3]-dioxolane-2,1\u2032-indene]"],"shows":[["semantic_unit","additional_parent_hydride_classes"]]},
+    {"id":"toluene_combined_parent","c":[6],"input":{"type":"ParentHydride","name":"toluene","topology":"combined_cyclic_acyclic","name_origin":"traditional_retained"},"ok":["toluene"],"shows":[["semantic_unit","additional_parent_hydride_classes"]]}
+  ],
+  "exceptions": [],
+  "figures": [],
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "refs": [
+    {"c":[13],"o":"P-20:xref:0002","rel":"invokes"}
+  ],
+  "symbols": [],
+  "tables": [],
+  "task_id": "P-20-part-001",
+  "units": [
+    {
+      "id": "parent_hydride_definition",
+      "k": "definition",
+      "c": [2,3],
+      "in": [["parent_hydride","ParentHydride"]],
+      "out": [["matches_definition","boolean"]],
+      "term": "parent hydride",
+      "entity": "ParentHydride",
+      "value": ["all",
+        ["cmp","eq",["get",["var","parent_hydride"],"named_before_substituent_affix_addition"],true],
+        ["cmp","eq",["get",["var","parent_hydride"],"has_definite_hydrogen_population"],true],
+        ["cmp","eq",["get",["var","parent_hydride"],"hydrogens_attached_to_skeletal_structure"],true]
+      ]
+    },
+    {
+      "id": "acyclic_parent_hydride_requirements",
+      "k": "constraint",
+      "f": "required",
+      "c": [4],
+      "in": [["parent_hydride","ParentHydride"]],
+      "out": [["valid","boolean"]],
+      "assert": ["any",
+        ["not",["cmp","eq",["get",["var","parent_hydride"],"topology"],"acyclic"]],
+        ["all",
+          ["cmp","eq",["get",["var","parent_hydride"],"saturated"],true],
+          ["cmp","eq",["get",["var","parent_hydride"],"branched"],false]
+        ]
+      ],
+      "violation": [["reject","parent_hydride","reason.parent_hydride.acyclic_must_be_saturated_unbranched"]]
+    },
+    {
+      "id": "usual_cyclic_parent_hydride_states",
+      "k": "definition",
+      "c": [5],
+      "in": [["parent_hydride","ParentHydride"]],
+      "out": [["usual_state","boolean"]],
+      "term": "usual cyclic parent hydride saturation state",
+      "entity": "ParentHydride",
+      "value": ["any",
+        ["cmp","eq",["get",["var","parent_hydride"],"saturation_state"],"fully_saturated"],
+        ["all",
+          ["cmp","eq",["get",["var","parent_hydride"],"saturation_state"],"fully_unsaturated"],
+          ["cmp","eq",["get",["var","parent_hydride"],"maximum_noncumulative_double_bonds"],true]
+        ]
+      ]
+    },
+    {
+      "id": "additional_parent_hydride_classes",
+      "k": "definition",
+      "c": [6],
+      "in": [["parent_hydride","ParentHydride"]],
+      "out": [["recognized_class","boolean"]],
+      "term": "additional parent hydride class",
+      "entity": "ParentHydride",
+      "value": ["any",
+        ["cmp","eq",["get",["var","parent_hydride"],"saturation_state"],"partially_saturated"],
+        ["all",
+          ["cmp","eq",["get",["var","parent_hydride"],"topology"],"combined_cyclic_acyclic"],
+          ["cmp","eq",["get",["var","parent_hydride"],"name_origin"],"traditional_retained"]
+        ]
+      ]
+    },
+    {
+      "id": "noncarbon_parent_hydride_name_status",
+      "k": "rule",
+      "f": "required",
+      "c": [7],
+      "in": [["parent_hydride","ParentHydride"]],
+      "out": [["name_status","NameStatus"],["preferred_iupac_name","boolean"]],
+      "if": ["cmp","eq",["get",["var","parent_hydride"],"has_skeletal_carbon"],false],
+      "then": [["set","name_status","preselected_name"],["set","preferred_iupac_name",false]],
+      "else": []
+    },
+    {
+      "id": "organic_derivative_from_preselected_parent",
+      "k": "rule",
+      "f": "required",
+      "c": [8],
+      "in": [["parent_hydride_name_status","NameStatus"],["substituents","SubstituentSet"]],
+      "out": [["derivative_name_status","NameStatus"]],
+      "if": ["all",
+        ["cmp","eq",["var","parent_hydride_name_status"],"preselected_name"],
+        ["forall","substituent",["var","substituents"],["cmp","eq",["get",["var","substituent"],"contains_carbon"],true]]
+      ],
+      "then": [["set","derivative_name_status","preferred_iupac_name"]],
+      "else": []
+    },
+    {
+      "id": "inorganic_team_pin_designation",
+      "k": "rule",
+      "f": "permitted",
+      "c": [9],
+      "in": [["parent_hydride_name","Name"],["inorganic_pin_team_decision","Decision"]],
+      "out": [["name_status","NameStatus"]],
+      "if": ["cmp","eq",["var","inorganic_pin_team_decision"],"designated_preferred"],
+      "then": [["set","name_status","preferred_iupac_name"]],
+      "else": []
+    },
+    {
+      "id": "parent_hydride_name_formation_modes",
+      "k": "definition",
+      "c": [10],
+      "in": [["parent_hydride_name","Name"]],
+      "out": [["valid_formation_mode","boolean"]],
+      "term": "parent hydride name formation mode",
+      "entity": "Name",
+      "value": ["any",
+        ["cmp","eq",["get",["var","parent_hydride_name"],"formation_mode"],"traditional_retained"],
+        ["cmp","eq",["get",["var","parent_hydride_name"],"formation_mode"],"systematic_specific_rules"]
+      ]
+    },
+    {
+      "id": "nomenclature_clarity_requirement",
+      "k": "constraint",
+      "f": "required",
+      "c": [11],
+      "in": [["rule_or_name","NomenclatureArtifact"]],
+      "out": [["valid","boolean"]],
+      "assert": ["all",
+        ["cmp","eq",["get",["var","rule_or_name"],"unambiguous"],true],
+        ["cmp","eq",["get",["var","rule_or_name"],"clear"],true]
+      ],
+      "violation": [["reject","rule_or_name","reason.nomenclature.must_be_unambiguous_and_clear"]]
+    },
+    {
+      "id": "parent_hydride_selection_rule_location",
+      "k": "definition",
+      "c": [12,13],
+      "out": [["location","RuleLocation"]],
+      "term": "location of parent hydride and derived-prefix selection rules",
+      "entity": "RuleLocation",
+      "value": {
+        "chapter": "P-5",
+        "provided_in_P-2": false,
+        "covers": ["preferred_parent_hydride_names","preselected_parent_hydride_names","derived_substituent_prefixes"],
+        "purpose": ["keep_rules_simple","keep_rules_concise"]
+      }
+    }
+  ]
+}

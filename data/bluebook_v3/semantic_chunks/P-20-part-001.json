@@ -1,0 +1,2536 @@
+{
+  "assigned_rule_ids": [
+    "P-20"
+  ],
+  "chunk_metrics": {
+    "clause_disposition_count": 13,
+    "compiled_clause_count": 12,
+    "correction_application_count": 0,
+    "example_count": 15,
+    "exception_count": 0,
+    "figure_count": 0,
+    "nonoperative_clause_count": 1,
+    "record_count": 1,
+    "reference_count": 3,
+    "semantic_unit_count": 10,
+    "superseded_clause_count": 0,
+    "symbol_declaration_count": 2,
+    "table_count": 0
+  },
+  "chunk_sha256": "2F9C128A1012E4C6B98E1D23001F25EAE76CFEC986EFB9D98EF5FD1148F92DEA",
+  "clause_dispositions": [
+    {
+      "clause_id": "P-20:clause:0001",
+      "disposition": {
+        "kind": "nonoperative",
+        "reason_code": "heading_or_title"
+      },
+      "force": "informative",
+      "role": "heading"
+    },
+    {
+      "clause_id": "P-20:clause:0002",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p20.part001.parent_hydride_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg1.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg2.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg2.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg3",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg3.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg3.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg3.right",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-20:clause:0003",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p20.part001.parent_hydride_definition",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg1.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg2.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg2.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg3",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg3.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg3.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_definition.value.arg3.right",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-20:clause:0004",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p20.part001.pentane_acyclic",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.trisilane_acyclic",
+            "kind": "example"
+          },
+          {
+            "id": "unit.p20.part001.acyclic_parent_hydride_requirements",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg1.arg",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg1.arg.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg1.arg.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg1.arg.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg1.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg2.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg2.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p20.part001.acyclic_parent_hydride_requirements.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-20:clause:0005",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p20.part001.cyclopentane_fully_saturated",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.cyclotrisiloxane_fully_saturated",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.azepane_fully_saturated",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.bicyclo_3_2_1_octane_fully_saturated",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.spiro_4_5_decane_fully_saturated",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.benzene_fully_unsaturated",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.pyridine_fully_unsaturated",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.oxazole_fully_unsaturated",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.phenalene_fully_unsaturated",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.phenanthroline_fully_unsaturated",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.benzo_a_acridine_fully_unsaturated",
+            "kind": "example"
+          },
+          {
+            "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg1.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg1.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg2.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg2.right",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-20:clause:0006",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "example.p20.part001.partially_saturated_spiro_parent",
+            "kind": "example"
+          },
+          {
+            "id": "example.p20.part001.toluene_combined_parent",
+            "kind": "example"
+          },
+          {
+            "id": "unit.p20.part001.additional_parent_hydride_classes",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg1.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg1.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg2.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg2.right",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-20:clause:0007",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p20.part001.noncarbon_parent_hydride_name_status",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.noncarbon_parent_hydride_name_status.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.noncarbon_parent_hydride_name_status.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.noncarbon_parent_hydride_name_status.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.noncarbon_parent_hydride_name_status.when.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.noncarbon_parent_hydride_name_status.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p20.part001.noncarbon_parent_hydride_name_status.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p20.part001.noncarbon_parent_hydride_name_status.then.1.value",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p20.part001.noncarbon_parent_hydride_name_status.then.2",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p20.part001.noncarbon_parent_hydride_name_status.then.2.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "prohibition"
+    },
+    {
+      "clause_id": "P-20:clause:0008",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p20.part001.organic_derivative_from_preselected_parent",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2.in",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2.where",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2.where.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2.where.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2.where.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p20.part001.organic_derivative_from_preselected_parent.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p20.part001.organic_derivative_from_preselected_parent.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "effect"
+    },
+    {
+      "clause_id": "P-20:clause:0009",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p20.part001.inorganic_team_pin_designation",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.inorganic_team_pin_designation.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.inorganic_team_pin_designation.when",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.inorganic_team_pin_designation.when.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.inorganic_team_pin_designation.when.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p20.part001.inorganic_team_pin_designation.then.1",
+            "kind": "statement"
+          },
+          {
+            "id": "expr.p20.part001.inorganic_team_pin_designation.then.1.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "permission"
+    },
+    {
+      "clause_id": "P-20:clause:0010",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p20.part001.parent_hydride_name_formation_modes",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_name_formation_modes.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_name_formation_modes.value",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg1.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg2.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg2.right",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-20:clause:0011",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p20.part001.nomenclature_clarity_requirement",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.nomenclature_clarity_requirement.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.nomenclature_clarity_requirement.assertion",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg1",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg1.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg1.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg1.right",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg2",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg2.left",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg2.left.from",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg2.right",
+            "kind": "expression"
+          },
+          {
+            "id": "stmt.p20.part001.nomenclature_clarity_requirement.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "constraint"
+    },
+    {
+      "clause_id": "P-20:clause:0012",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p20.part001.parent_hydride_selection_rule_location",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_selection_rule_location.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_selection_rule_location.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    },
+    {
+      "clause_id": "P-20:clause:0013",
+      "disposition": {
+        "kind": "compiled",
+        "targets": [
+          {
+            "id": "unit.p20.part001.parent_hydride_selection_rule_location",
+            "kind": "semantic_unit"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_selection_rule_location.scope",
+            "kind": "expression"
+          },
+          {
+            "id": "expr.p20.part001.parent_hydride_selection_rule_location.value",
+            "kind": "expression"
+          }
+        ]
+      },
+      "force": "normative",
+      "role": "definition"
+    }
+  ],
+  "clause_inventory_sha256": "9136EA4A2E4133B58C7D60F71EA641C9352AE22C4E7F52E600C3ACA406E4DE76",
+  "correction_applications": [],
+  "correction_overlays_sha256": "1C5DB9CE7EAB5B0BAF656E2A1BB968331F6E5AAF78CE3D950D7A4DB65BAF66BF",
+  "document_nodes_sha256": "12ACBC54AB468C7CF7C2B13D9BA0C4E6E3FAFFA976E0FF4CA2D2ECEC10376CBF",
+  "examples": [
+    {
+      "accepted_names": [
+        "pentane"
+      ],
+      "clause_ids": [
+        "P-20:clause:0004"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.acyclic_parent_hydride_requirements",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.pentane_acyclic",
+      "explanation": null,
+      "input": {
+        "branched": false,
+        "name": "pentane",
+        "saturated": true,
+        "topology": "acyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "trisilane"
+      ],
+      "clause_ids": [
+        "P-20:clause:0004"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.acyclic_parent_hydride_requirements",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.trisilane_acyclic",
+      "explanation": null,
+      "input": {
+        "branched": false,
+        "name": "trisilane",
+        "saturated": true,
+        "topology": "acyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "cyclopentane"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.cyclopentane_fully_saturated",
+      "explanation": null,
+      "input": {
+        "name": "cyclopentane",
+        "saturation_state": "fully_saturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "cyclotrisiloxane"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.cyclotrisiloxane_fully_saturated",
+      "explanation": null,
+      "input": {
+        "name": "cyclotrisiloxane",
+        "saturation_state": "fully_saturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "azepane"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.azepane_fully_saturated",
+      "explanation": null,
+      "input": {
+        "name": "azepane",
+        "saturation_state": "fully_saturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "bicyclo[3.2.1]octane"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.bicyclo_3_2_1_octane_fully_saturated",
+      "explanation": null,
+      "input": {
+        "name": "bicyclo[3.2.1]octane",
+        "saturation_state": "fully_saturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "spiro[4.5]decane"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.spiro_4_5_decane_fully_saturated",
+      "explanation": null,
+      "input": {
+        "name": "spiro[4.5]decane",
+        "saturation_state": "fully_saturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "benzene"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.benzene_fully_unsaturated",
+      "explanation": null,
+      "input": {
+        "maximum_noncumulative_double_bonds": true,
+        "name": "benzene",
+        "saturation_state": "fully_unsaturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "pyridine"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.pyridine_fully_unsaturated",
+      "explanation": null,
+      "input": {
+        "maximum_noncumulative_double_bonds": true,
+        "name": "pyridine",
+        "saturation_state": "fully_unsaturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1,3-oxazole"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.oxazole_fully_unsaturated",
+      "explanation": null,
+      "input": {
+        "maximum_noncumulative_double_bonds": true,
+        "name": "1,3-oxazole",
+        "saturation_state": "fully_unsaturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1H-phenalene"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.phenalene_fully_unsaturated",
+      "explanation": null,
+      "input": {
+        "maximum_noncumulative_double_bonds": true,
+        "name": "1H-phenalene",
+        "saturation_state": "fully_unsaturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "phenanthroline"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.phenanthroline_fully_unsaturated",
+      "explanation": null,
+      "input": {
+        "maximum_noncumulative_double_bonds": true,
+        "name": "phenanthroline",
+        "saturation_state": "fully_unsaturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "benzo[a]acridine"
+      ],
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.benzo_a_acridine_fully_unsaturated",
+      "explanation": null,
+      "input": {
+        "maximum_noncumulative_double_bonds": true,
+        "name": "benzo[a]acridine",
+        "saturation_state": "fully_unsaturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "1H-spiro[[1,3]-dioxolane-2,1′-indene]"
+      ],
+      "clause_ids": [
+        "P-20:clause:0006"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.additional_parent_hydride_classes",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.partially_saturated_spiro_parent",
+      "explanation": null,
+      "input": {
+        "name": "1H-spiro[[1,3]-dioxolane-2,1′-indene]",
+        "saturation_state": "partially_saturated",
+        "topology": "cyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    },
+    {
+      "accepted_names": [
+        "toluene"
+      ],
+      "clause_ids": [
+        "P-20:clause:0006"
+      ],
+      "demonstrates": [
+        {
+          "id": "unit.p20.part001.additional_parent_hydride_classes",
+          "kind": "semantic_unit"
+        }
+      ],
+      "example_id": "example.p20.part001.toluene_combined_parent",
+      "explanation": null,
+      "input": {
+        "name": "toluene",
+        "name_origin": "traditional_retained",
+        "topology": "combined_cyclic_acyclic",
+        "type": "ParentHydride"
+      },
+      "operative": false,
+      "rejected_names": []
+    }
+  ],
+  "exceptions": [],
+  "figures": [],
+  "format": "iupac-bluebook-normalized-rule-chunk",
+  "format_version": "1.0.0",
+  "packet_id": "P-20-part-001",
+  "packet_sha256": "299F33A0069F2F82A7597EC620506D1BF63381097E2F74B5F726D1283D4E9AF5",
+  "records": [
+    {
+      "chapter": "P-2",
+      "clause_ids": [
+        "P-20:clause:0001",
+        "P-20:clause:0002",
+        "P-20:clause:0003",
+        "P-20:clause:0004",
+        "P-20:clause:0005",
+        "P-20:clause:0006",
+        "P-20:clause:0007",
+        "P-20:clause:0008",
+        "P-20:clause:0009",
+        "P-20:clause:0010",
+        "P-20:clause:0011",
+        "P-20:clause:0012",
+        "P-20:clause:0013"
+      ],
+      "correction_application_ids": [],
+      "example_ids": [
+        "example.p20.part001.pentane_acyclic",
+        "example.p20.part001.trisilane_acyclic",
+        "example.p20.part001.cyclopentane_fully_saturated",
+        "example.p20.part001.cyclotrisiloxane_fully_saturated",
+        "example.p20.part001.azepane_fully_saturated",
+        "example.p20.part001.bicyclo_3_2_1_octane_fully_saturated",
+        "example.p20.part001.spiro_4_5_decane_fully_saturated",
+        "example.p20.part001.benzene_fully_unsaturated",
+        "example.p20.part001.pyridine_fully_unsaturated",
+        "example.p20.part001.oxazole_fully_unsaturated",
+        "example.p20.part001.phenalene_fully_unsaturated",
+        "example.p20.part001.phenanthroline_fully_unsaturated",
+        "example.p20.part001.benzo_a_acridine_fully_unsaturated",
+        "example.p20.part001.partially_saturated_spiro_parent",
+        "example.p20.part001.toluene_combined_parent"
+      ],
+      "exception_ids": [],
+      "figure_ids": [],
+      "operative": true,
+      "record_id": "bluebook-v3:P-20",
+      "reference_ids": [
+        "reference.p_20.hierarchy_parent",
+        "reference.P-20:xref:0001",
+        "reference.p20.part001.citation1"
+      ],
+      "semantic_unit_ids": [
+        "unit.p20.part001.parent_hydride_definition",
+        "unit.p20.part001.acyclic_parent_hydride_requirements",
+        "unit.p20.part001.usual_cyclic_parent_hydride_states",
+        "unit.p20.part001.additional_parent_hydride_classes",
+        "unit.p20.part001.noncarbon_parent_hydride_name_status",
+        "unit.p20.part001.organic_derivative_from_preselected_parent",
+        "unit.p20.part001.inorganic_team_pin_designation",
+        "unit.p20.part001.parent_hydride_name_formation_modes",
+        "unit.p20.part001.nomenclature_clarity_requirement",
+        "unit.p20.part001.parent_hydride_selection_rule_location"
+      ],
+      "source_rule_id": "P-20",
+      "table_ids": []
+    }
+  ],
+  "reference_occurrences_sha256": "8353CF239D4D4E2D4C3362C24DEC14988B98BEEF0CC43F57F575E850906718EF",
+  "reference_resolutions_sha256": "D9B8839AC4475887EA84152B7F60A6709DD7907956A7BF4674EC47CEB03356E9",
+  "references": [
+    {
+      "clause_ids": [
+        "P-20:clause:0001"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p_20.hierarchy_parent",
+      "relation": "hierarchy_parent",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-20",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [],
+      "target": {
+        "id": "chapter:P-2",
+        "kind": "chapter"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-20:clause:0008"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.P-20:xref:0001",
+      "relation": "cites",
+      "resolution": "exact",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-20",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-20:xref:0001"
+      ],
+      "target": {
+        "id": "P-12.2",
+        "kind": "rule"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-20:clause:0013"
+      ],
+      "ordered_member_refs": [],
+      "reference_id": "reference.p20.part001.citation1",
+      "relation": "invokes",
+      "resolution": "external",
+      "resolution_overlay_ids": [],
+      "source": {
+        "id": "bluebook-v3:P-20",
+        "kind": "record"
+      },
+      "source_occurrence_ids": [
+        "P-20:xref:0002"
+      ],
+      "target": {
+        "id": "P-5",
+        "kind": "external"
+      }
+    }
+  ],
+  "schema_sha256": "BF34661AF4F8FCA7824ABD32E2B3083A58675349FBECF9B40F9C7F0603460257",
+  "semantic_units": [
+    {
+      "clause_ids": [
+        "P-20:clause:0002",
+        "P-20:clause:0003"
+      ],
+      "entity_type": "ParentHydride",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "parent_hydride",
+          "type": "ParentHydride"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "matches_definition",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-20:clause:0002",
+            "P-20:clause:0003"
+          ],
+          "expression_id": "expr.p20.part001.parent_hydride_definition.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "parent hydride",
+      "unit_id": "unit.p20.part001.parent_hydride_definition",
+      "value": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-20:clause:0002",
+              "P-20:clause:0003"
+            ],
+            "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg1",
+            "left": {
+              "clause_ids": [
+                "P-20:clause:0002",
+                "P-20:clause:0003"
+              ],
+              "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg1.left",
+              "from": {
+                "clause_ids": [
+                  "P-20:clause:0002",
+                  "P-20:clause:0003"
+                ],
+                "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg1.left.from",
+                "name": "parent_hydride",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "named_before_substituent_affix_addition"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-20:clause:0002",
+                "P-20:clause:0003"
+              ],
+              "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg1.right",
+              "op": "literal",
+              "value": true
+            }
+          },
+          {
+            "clause_ids": [
+              "P-20:clause:0002",
+              "P-20:clause:0003"
+            ],
+            "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg2",
+            "left": {
+              "clause_ids": [
+                "P-20:clause:0002",
+                "P-20:clause:0003"
+              ],
+              "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg2.left",
+              "from": {
+                "clause_ids": [
+                  "P-20:clause:0002",
+                  "P-20:clause:0003"
+                ],
+                "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg2.left.from",
+                "name": "parent_hydride",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "has_definite_hydrogen_population"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-20:clause:0002",
+                "P-20:clause:0003"
+              ],
+              "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg2.right",
+              "op": "literal",
+              "value": true
+            }
+          },
+          {
+            "clause_ids": [
+              "P-20:clause:0002",
+              "P-20:clause:0003"
+            ],
+            "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg3",
+            "left": {
+              "clause_ids": [
+                "P-20:clause:0002",
+                "P-20:clause:0003"
+              ],
+              "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg3.left",
+              "from": {
+                "clause_ids": [
+                  "P-20:clause:0002",
+                  "P-20:clause:0003"
+                ],
+                "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg3.left.from",
+                "name": "parent_hydride",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "hydrogens_attached_to_skeletal_structure"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-20:clause:0002",
+                "P-20:clause:0003"
+              ],
+              "expression_id": "expr.p20.part001.parent_hydride_definition.value.arg3.right",
+              "op": "literal",
+              "value": true
+            }
+          }
+        ],
+        "clause_ids": [
+          "P-20:clause:0002",
+          "P-20:clause:0003"
+        ],
+        "expression_id": "expr.p20.part001.parent_hydride_definition.value",
+        "op": "all"
+      }
+    },
+    {
+      "assertion": {
+        "args": [
+          {
+            "arg": {
+              "clause_ids": [
+                "P-20:clause:0004"
+              ],
+              "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg1.arg",
+              "left": {
+                "clause_ids": [
+                  "P-20:clause:0004"
+                ],
+                "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg1.arg.left",
+                "from": {
+                  "clause_ids": [
+                    "P-20:clause:0004"
+                  ],
+                  "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg1.arg.left.from",
+                  "name": "parent_hydride",
+                  "op": "var"
+                },
+                "op": "get",
+                "path": "topology"
+              },
+              "op": "compare",
+              "relation": "eq",
+              "right": {
+                "clause_ids": [
+                  "P-20:clause:0004"
+                ],
+                "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg1.arg.right",
+                "op": "literal",
+                "value": "acyclic"
+              }
+            },
+            "clause_ids": [
+              "P-20:clause:0004"
+            ],
+            "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg1",
+            "op": "not"
+          },
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-20:clause:0004"
+                ],
+                "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg1",
+                "left": {
+                  "clause_ids": [
+                    "P-20:clause:0004"
+                  ],
+                  "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg1.left",
+                  "from": {
+                    "clause_ids": [
+                      "P-20:clause:0004"
+                    ],
+                    "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg1.left.from",
+                    "name": "parent_hydride",
+                    "op": "var"
+                  },
+                  "op": "get",
+                  "path": "saturated"
+                },
+                "op": "compare",
+                "relation": "eq",
+                "right": {
+                  "clause_ids": [
+                    "P-20:clause:0004"
+                  ],
+                  "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg1.right",
+                  "op": "literal",
+                  "value": true
+                }
+              },
+              {
+                "clause_ids": [
+                  "P-20:clause:0004"
+                ],
+                "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg2",
+                "left": {
+                  "clause_ids": [
+                    "P-20:clause:0004"
+                  ],
+                  "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg2.left",
+                  "from": {
+                    "clause_ids": [
+                      "P-20:clause:0004"
+                    ],
+                    "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg2.left.from",
+                    "name": "parent_hydride",
+                    "op": "var"
+                  },
+                  "op": "get",
+                  "path": "branched"
+                },
+                "op": "compare",
+                "relation": "eq",
+                "right": {
+                  "clause_ids": [
+                    "P-20:clause:0004"
+                  ],
+                  "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2.arg2.right",
+                  "op": "literal",
+                  "value": false
+                }
+              }
+            ],
+            "clause_ids": [
+              "P-20:clause:0004"
+            ],
+            "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion.arg2",
+            "op": "all"
+          }
+        ],
+        "clause_ids": [
+          "P-20:clause:0004"
+        ],
+        "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.assertion",
+        "op": "any"
+      },
+      "clause_ids": [
+        "P-20:clause:0004"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "parent_hydride",
+          "type": "ParentHydride"
+        }
+      ],
+      "kind": "constraint",
+      "on_violation": [
+        {
+          "clause_ids": [
+            "P-20:clause:0004"
+          ],
+          "op": "reject",
+          "reason_code": "reason.parent_hydride.acyclic_must_be_saturated_unbranched",
+          "statement_id": "stmt.p20.part001.acyclic_parent_hydride_requirements.violation.1",
+          "target": "parent_hydride"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "valid",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-20:clause:0004"
+          ],
+          "expression_id": "expr.p20.part001.acyclic_parent_hydride_requirements.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "unit_id": "unit.p20.part001.acyclic_parent_hydride_requirements"
+    },
+    {
+      "clause_ids": [
+        "P-20:clause:0005"
+      ],
+      "entity_type": "ParentHydride",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "parent_hydride",
+          "type": "ParentHydride"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "usual_state",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-20:clause:0005"
+          ],
+          "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "usual cyclic parent hydride saturation state",
+      "unit_id": "unit.p20.part001.usual_cyclic_parent_hydride_states",
+      "value": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-20:clause:0005"
+            ],
+            "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg1",
+            "left": {
+              "clause_ids": [
+                "P-20:clause:0005"
+              ],
+              "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg1.left",
+              "from": {
+                "clause_ids": [
+                  "P-20:clause:0005"
+                ],
+                "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg1.left.from",
+                "name": "parent_hydride",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "saturation_state"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-20:clause:0005"
+              ],
+              "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg1.right",
+              "op": "literal",
+              "value": "fully_saturated"
+            }
+          },
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-20:clause:0005"
+                ],
+                "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg1",
+                "left": {
+                  "clause_ids": [
+                    "P-20:clause:0005"
+                  ],
+                  "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg1.left",
+                  "from": {
+                    "clause_ids": [
+                      "P-20:clause:0005"
+                    ],
+                    "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg1.left.from",
+                    "name": "parent_hydride",
+                    "op": "var"
+                  },
+                  "op": "get",
+                  "path": "saturation_state"
+                },
+                "op": "compare",
+                "relation": "eq",
+                "right": {
+                  "clause_ids": [
+                    "P-20:clause:0005"
+                  ],
+                  "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg1.right",
+                  "op": "literal",
+                  "value": "fully_unsaturated"
+                }
+              },
+              {
+                "clause_ids": [
+                  "P-20:clause:0005"
+                ],
+                "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg2",
+                "left": {
+                  "clause_ids": [
+                    "P-20:clause:0005"
+                  ],
+                  "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg2.left",
+                  "from": {
+                    "clause_ids": [
+                      "P-20:clause:0005"
+                    ],
+                    "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg2.left.from",
+                    "name": "parent_hydride",
+                    "op": "var"
+                  },
+                  "op": "get",
+                  "path": "maximum_noncumulative_double_bonds"
+                },
+                "op": "compare",
+                "relation": "eq",
+                "right": {
+                  "clause_ids": [
+                    "P-20:clause:0005"
+                  ],
+                  "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2.arg2.right",
+                  "op": "literal",
+                  "value": true
+                }
+              }
+            ],
+            "clause_ids": [
+              "P-20:clause:0005"
+            ],
+            "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value.arg2",
+            "op": "all"
+          }
+        ],
+        "clause_ids": [
+          "P-20:clause:0005"
+        ],
+        "expression_id": "expr.p20.part001.usual_cyclic_parent_hydride_states.value",
+        "op": "any"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-20:clause:0006"
+      ],
+      "entity_type": "ParentHydride",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "parent_hydride",
+          "type": "ParentHydride"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "recognized_class",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-20:clause:0006"
+          ],
+          "expression_id": "expr.p20.part001.additional_parent_hydride_classes.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "additional parent hydride class",
+      "unit_id": "unit.p20.part001.additional_parent_hydride_classes",
+      "value": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-20:clause:0006"
+            ],
+            "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg1",
+            "left": {
+              "clause_ids": [
+                "P-20:clause:0006"
+              ],
+              "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg1.left",
+              "from": {
+                "clause_ids": [
+                  "P-20:clause:0006"
+                ],
+                "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg1.left.from",
+                "name": "parent_hydride",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "saturation_state"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-20:clause:0006"
+              ],
+              "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg1.right",
+              "op": "literal",
+              "value": "partially_saturated"
+            }
+          },
+          {
+            "args": [
+              {
+                "clause_ids": [
+                  "P-20:clause:0006"
+                ],
+                "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg1",
+                "left": {
+                  "clause_ids": [
+                    "P-20:clause:0006"
+                  ],
+                  "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg1.left",
+                  "from": {
+                    "clause_ids": [
+                      "P-20:clause:0006"
+                    ],
+                    "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg1.left.from",
+                    "name": "parent_hydride",
+                    "op": "var"
+                  },
+                  "op": "get",
+                  "path": "topology"
+                },
+                "op": "compare",
+                "relation": "eq",
+                "right": {
+                  "clause_ids": [
+                    "P-20:clause:0006"
+                  ],
+                  "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg1.right",
+                  "op": "literal",
+                  "value": "combined_cyclic_acyclic"
+                }
+              },
+              {
+                "clause_ids": [
+                  "P-20:clause:0006"
+                ],
+                "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg2",
+                "left": {
+                  "clause_ids": [
+                    "P-20:clause:0006"
+                  ],
+                  "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg2.left",
+                  "from": {
+                    "clause_ids": [
+                      "P-20:clause:0006"
+                    ],
+                    "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg2.left.from",
+                    "name": "parent_hydride",
+                    "op": "var"
+                  },
+                  "op": "get",
+                  "path": "name_origin"
+                },
+                "op": "compare",
+                "relation": "eq",
+                "right": {
+                  "clause_ids": [
+                    "P-20:clause:0006"
+                  ],
+                  "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2.arg2.right",
+                  "op": "literal",
+                  "value": "traditional_retained"
+                }
+              }
+            ],
+            "clause_ids": [
+              "P-20:clause:0006"
+            ],
+            "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value.arg2",
+            "op": "all"
+          }
+        ],
+        "clause_ids": [
+          "P-20:clause:0006"
+        ],
+        "expression_id": "expr.p20.part001.additional_parent_hydride_classes.value",
+        "op": "any"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-20:clause:0007"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "parent_hydride",
+          "type": "ParentHydride"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "name_status",
+          "type": "NameStatus"
+        },
+        {
+          "name": "preferred_iupac_name",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-20:clause:0007"
+          ],
+          "expression_id": "expr.p20.part001.noncarbon_parent_hydride_name_status.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-20:clause:0007"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p20.part001.noncarbon_parent_hydride_name_status.then.1",
+          "target": "name_status",
+          "value": {
+            "clause_ids": [
+              "P-20:clause:0007"
+            ],
+            "expression_id": "expr.p20.part001.noncarbon_parent_hydride_name_status.then.1.value",
+            "op": "literal",
+            "value": "preselected_name"
+          }
+        },
+        {
+          "clause_ids": [
+            "P-20:clause:0007"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p20.part001.noncarbon_parent_hydride_name_status.then.2",
+          "target": "preferred_iupac_name",
+          "value": {
+            "clause_ids": [
+              "P-20:clause:0007"
+            ],
+            "expression_id": "expr.p20.part001.noncarbon_parent_hydride_name_status.then.2.value",
+            "op": "literal",
+            "value": false
+          }
+        }
+      ],
+      "unit_id": "unit.p20.part001.noncarbon_parent_hydride_name_status",
+      "when": {
+        "clause_ids": [
+          "P-20:clause:0007"
+        ],
+        "expression_id": "expr.p20.part001.noncarbon_parent_hydride_name_status.when",
+        "left": {
+          "clause_ids": [
+            "P-20:clause:0007"
+          ],
+          "expression_id": "expr.p20.part001.noncarbon_parent_hydride_name_status.when.left",
+          "from": {
+            "clause_ids": [
+              "P-20:clause:0007"
+            ],
+            "expression_id": "expr.p20.part001.noncarbon_parent_hydride_name_status.when.left.from",
+            "name": "parent_hydride",
+            "op": "var"
+          },
+          "op": "get",
+          "path": "has_skeletal_carbon"
+        },
+        "op": "compare",
+        "relation": "eq",
+        "right": {
+          "clause_ids": [
+            "P-20:clause:0007"
+          ],
+          "expression_id": "expr.p20.part001.noncarbon_parent_hydride_name_status.when.right",
+          "op": "literal",
+          "value": false
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-20:clause:0008"
+      ],
+      "else": [],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "parent_hydride_name_status",
+          "type": "NameStatus"
+        },
+        {
+          "name": "substituents",
+          "type": "SubstituentSet"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "derivative_name_status",
+          "type": "NameStatus"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-20:clause:0008"
+          ],
+          "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-20:clause:0008"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p20.part001.organic_derivative_from_preselected_parent.then.1",
+          "target": "derivative_name_status",
+          "value": {
+            "clause_ids": [
+              "P-20:clause:0008"
+            ],
+            "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.then.1.value",
+            "op": "literal",
+            "value": "preferred_iupac_name"
+          }
+        }
+      ],
+      "unit_id": "unit.p20.part001.organic_derivative_from_preselected_parent",
+      "when": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-20:clause:0008"
+            ],
+            "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg1",
+            "left": {
+              "clause_ids": [
+                "P-20:clause:0008"
+              ],
+              "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg1.left",
+              "name": "parent_hydride_name_status",
+              "op": "var"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-20:clause:0008"
+              ],
+              "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg1.right",
+              "op": "literal",
+              "value": "preselected_name"
+            }
+          },
+          {
+            "bind": "substituent",
+            "clause_ids": [
+              "P-20:clause:0008"
+            ],
+            "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2",
+            "in": {
+              "clause_ids": [
+                "P-20:clause:0008"
+              ],
+              "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2.in",
+              "name": "substituents",
+              "op": "var"
+            },
+            "op": "forall",
+            "where": {
+              "clause_ids": [
+                "P-20:clause:0008"
+              ],
+              "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2.where",
+              "left": {
+                "clause_ids": [
+                  "P-20:clause:0008"
+                ],
+                "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2.where.left",
+                "from": {
+                  "clause_ids": [
+                    "P-20:clause:0008"
+                  ],
+                  "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2.where.left.from",
+                  "name": "substituent",
+                  "op": "var"
+                },
+                "op": "get",
+                "path": "contains_carbon"
+              },
+              "op": "compare",
+              "relation": "eq",
+              "right": {
+                "clause_ids": [
+                  "P-20:clause:0008"
+                ],
+                "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.when.arg2.where.right",
+                "op": "literal",
+                "value": true
+              }
+            }
+          }
+        ],
+        "clause_ids": [
+          "P-20:clause:0008"
+        ],
+        "expression_id": "expr.p20.part001.organic_derivative_from_preselected_parent.when",
+        "op": "all"
+      }
+    },
+    {
+      "clause_ids": [
+        "P-20:clause:0009"
+      ],
+      "else": [],
+      "force": "permitted",
+      "inputs": [
+        {
+          "name": "parent_hydride_name",
+          "type": "Name"
+        },
+        {
+          "name": "inorganic_pin_team_decision",
+          "type": "Decision"
+        }
+      ],
+      "kind": "rule",
+      "outputs": [
+        {
+          "name": "name_status",
+          "type": "NameStatus"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-20:clause:0009"
+          ],
+          "expression_id": "expr.p20.part001.inorganic_team_pin_designation.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "then": [
+        {
+          "clause_ids": [
+            "P-20:clause:0009"
+          ],
+          "op": "assign",
+          "statement_id": "stmt.p20.part001.inorganic_team_pin_designation.then.1",
+          "target": "name_status",
+          "value": {
+            "clause_ids": [
+              "P-20:clause:0009"
+            ],
+            "expression_id": "expr.p20.part001.inorganic_team_pin_designation.then.1.value",
+            "op": "literal",
+            "value": "preferred_iupac_name"
+          }
+        }
+      ],
+      "unit_id": "unit.p20.part001.inorganic_team_pin_designation",
+      "when": {
+        "clause_ids": [
+          "P-20:clause:0009"
+        ],
+        "expression_id": "expr.p20.part001.inorganic_team_pin_designation.when",
+        "left": {
+          "clause_ids": [
+            "P-20:clause:0009"
+          ],
+          "expression_id": "expr.p20.part001.inorganic_team_pin_designation.when.left",
+          "name": "inorganic_pin_team_decision",
+          "op": "var"
+        },
+        "op": "compare",
+        "relation": "eq",
+        "right": {
+          "clause_ids": [
+            "P-20:clause:0009"
+          ],
+          "expression_id": "expr.p20.part001.inorganic_team_pin_designation.when.right",
+          "op": "literal",
+          "value": "designated_preferred"
+        }
+      }
+    },
+    {
+      "clause_ids": [
+        "P-20:clause:0010"
+      ],
+      "entity_type": "Name",
+      "force": "definition",
+      "inputs": [
+        {
+          "name": "parent_hydride_name",
+          "type": "Name"
+        }
+      ],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "valid_formation_mode",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-20:clause:0010"
+          ],
+          "expression_id": "expr.p20.part001.parent_hydride_name_formation_modes.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "parent hydride name formation mode",
+      "unit_id": "unit.p20.part001.parent_hydride_name_formation_modes",
+      "value": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-20:clause:0010"
+            ],
+            "expression_id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg1",
+            "left": {
+              "clause_ids": [
+                "P-20:clause:0010"
+              ],
+              "expression_id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg1.left",
+              "from": {
+                "clause_ids": [
+                  "P-20:clause:0010"
+                ],
+                "expression_id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg1.left.from",
+                "name": "parent_hydride_name",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "formation_mode"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-20:clause:0010"
+              ],
+              "expression_id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg1.right",
+              "op": "literal",
+              "value": "traditional_retained"
+            }
+          },
+          {
+            "clause_ids": [
+              "P-20:clause:0010"
+            ],
+            "expression_id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg2",
+            "left": {
+              "clause_ids": [
+                "P-20:clause:0010"
+              ],
+              "expression_id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg2.left",
+              "from": {
+                "clause_ids": [
+                  "P-20:clause:0010"
+                ],
+                "expression_id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg2.left.from",
+                "name": "parent_hydride_name",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "formation_mode"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-20:clause:0010"
+              ],
+              "expression_id": "expr.p20.part001.parent_hydride_name_formation_modes.value.arg2.right",
+              "op": "literal",
+              "value": "systematic_specific_rules"
+            }
+          }
+        ],
+        "clause_ids": [
+          "P-20:clause:0010"
+        ],
+        "expression_id": "expr.p20.part001.parent_hydride_name_formation_modes.value",
+        "op": "any"
+      }
+    },
+    {
+      "assertion": {
+        "args": [
+          {
+            "clause_ids": [
+              "P-20:clause:0011"
+            ],
+            "expression_id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg1",
+            "left": {
+              "clause_ids": [
+                "P-20:clause:0011"
+              ],
+              "expression_id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg1.left",
+              "from": {
+                "clause_ids": [
+                  "P-20:clause:0011"
+                ],
+                "expression_id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg1.left.from",
+                "name": "rule_or_name",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "unambiguous"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-20:clause:0011"
+              ],
+              "expression_id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg1.right",
+              "op": "literal",
+              "value": true
+            }
+          },
+          {
+            "clause_ids": [
+              "P-20:clause:0011"
+            ],
+            "expression_id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg2",
+            "left": {
+              "clause_ids": [
+                "P-20:clause:0011"
+              ],
+              "expression_id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg2.left",
+              "from": {
+                "clause_ids": [
+                  "P-20:clause:0011"
+                ],
+                "expression_id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg2.left.from",
+                "name": "rule_or_name",
+                "op": "var"
+              },
+              "op": "get",
+              "path": "clear"
+            },
+            "op": "compare",
+            "relation": "eq",
+            "right": {
+              "clause_ids": [
+                "P-20:clause:0011"
+              ],
+              "expression_id": "expr.p20.part001.nomenclature_clarity_requirement.assertion.arg2.right",
+              "op": "literal",
+              "value": true
+            }
+          }
+        ],
+        "clause_ids": [
+          "P-20:clause:0011"
+        ],
+        "expression_id": "expr.p20.part001.nomenclature_clarity_requirement.assertion",
+        "op": "all"
+      },
+      "clause_ids": [
+        "P-20:clause:0011"
+      ],
+      "force": "required",
+      "inputs": [
+        {
+          "name": "rule_or_name",
+          "type": "NomenclatureArtifact"
+        }
+      ],
+      "kind": "constraint",
+      "on_violation": [
+        {
+          "clause_ids": [
+            "P-20:clause:0011"
+          ],
+          "op": "reject",
+          "reason_code": "reason.nomenclature.must_be_unambiguous_and_clear",
+          "statement_id": "stmt.p20.part001.nomenclature_clarity_requirement.violation.1",
+          "target": "rule_or_name"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "valid",
+          "type": "boolean"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-20:clause:0011"
+          ],
+          "expression_id": "expr.p20.part001.nomenclature_clarity_requirement.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "unit_id": "unit.p20.part001.nomenclature_clarity_requirement"
+    },
+    {
+      "clause_ids": [
+        "P-20:clause:0012",
+        "P-20:clause:0013"
+      ],
+      "entity_type": "RuleLocation",
+      "force": "definition",
+      "inputs": [],
+      "kind": "definition",
+      "outputs": [
+        {
+          "name": "location",
+          "type": "RuleLocation"
+        }
+      ],
+      "scope": {
+        "applies_to": {
+          "clause_ids": [
+            "P-20:clause:0012",
+            "P-20:clause:0013"
+          ],
+          "expression_id": "expr.p20.part001.parent_hydride_selection_rule_location.scope",
+          "op": "literal",
+          "value": true
+        },
+        "regimes": [
+          "all"
+        ]
+      },
+      "term": "location of parent hydride and derived-prefix selection rules",
+      "unit_id": "unit.p20.part001.parent_hydride_selection_rule_location",
+      "value": {
+        "clause_ids": [
+          "P-20:clause:0012",
+          "P-20:clause:0013"
+        ],
+        "expression_id": "expr.p20.part001.parent_hydride_selection_rule_location.value",
+        "op": "literal",
+        "value": {
+          "chapter": "P-5",
+          "covers": [
+            "preferred_parent_hydride_names",
+            "preselected_parent_hydride_names",
+            "derived_substituent_prefixes"
+          ],
+          "provided_in_P-2": false,
+          "purpose": [
+            "keep_rules_simple",
+            "keep_rules_concise"
+          ]
+        }
+      }
+    }
+  ],
+  "source_corpus_sha256": "241F1FDA6BFD0E75469223397D4394F46AC73C694ADBC1D7D609538B4EB92103",
+  "symbol_declarations": [
+    {
+      "arguments": [],
+      "description": "Reason emitted when must be unambiguous and clear.",
+      "grounding": {
+        "kind": "composition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "stmt.p20.part001.nomenclature_clarity_requirement.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "kind": "reason_code",
+      "returns": "reason_code",
+      "symbol_id": "reason.nomenclature.must_be_unambiguous_and_clear"
+    },
+    {
+      "arguments": [],
+      "description": "Reason emitted when acyclic must be saturated unbranched.",
+      "grounding": {
+        "kind": "composition",
+        "primitive": null,
+        "refs": [
+          {
+            "id": "stmt.p20.part001.acyclic_parent_hydride_requirements.violation.1",
+            "kind": "statement"
+          }
+        ]
+      },
+      "kind": "reason_code",
+      "returns": "reason_code",
+      "symbol_id": "reason.parent_hydride.acyclic_must_be_saturated_unbranched"
+    }
+  ],
+  "tables": []
+}

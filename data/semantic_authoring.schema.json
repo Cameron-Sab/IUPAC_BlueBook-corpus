@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Cameron-Sab/IUPAC_BlueBook-corpus/data/semantic_authoring.schema.json",
+  "title": "Compact Blue Book semantic authoring source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "task_id",
+    "clauses",
+    "symbols",
+    "units",
+    "exceptions",
+    "tables",
+    "figures",
+    "examples",
+    "corrections",
+    "refs",
+    "additional_refs"
+  ],
+  "properties": {
+    "format": { "const": "iupac-bluebook-semantic-authoring" },
+    "format_version": { "const": "1.0.0" },
+    "task_id": { "type": "string", "pattern": "^P-[0-9]+-part-[0-9]{3}$" },
+    "clauses": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "type": "null" },
+          {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 5
+          }
+        ]
+      }
+    },
+    "symbols": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "units": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "tables": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "figures": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "examples": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "corrections": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "refs": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "additional_refs": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  }
+}
