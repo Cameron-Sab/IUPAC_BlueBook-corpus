@@ -1,0 +1,3870 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-42-part-001",
+  "mechanical_assets": true,
+  "clauses": [
+    null,
+    [
+      "scope",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "scope",
+      "informative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_layout",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "effect",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "history",
+      "informative",
+      "compile"
+    ],
+    [
+      "history",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "correction_event",
+      "informative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ],
+    [
+      "table_data",
+      "normative",
+      "compile"
+    ]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "acid_subclass_selection",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "scope": {
+        "r": [
+          "preferred_iupac_name",
+          "general_nomenclature"
+        ],
+        "if": [
+          "lit",
+          true
+        ]
+      },
+      "in": [
+        [
+          "acid",
+          "Acid"
+        ],
+        [
+          "subclass_candidates",
+          "AcidSubclassCandidateSet"
+        ]
+      ],
+      "out": [
+        [
+          "senior_subclass",
+          "AcidSubclass"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "subclass_candidates"
+      ],
+      "stages": [
+        {
+          "id": "decreasing_seniority",
+          "c": [
+            5
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "subclass_candidates"
+            ],
+            "subclass"
+          ],
+          "cmp": [
+            "ordered_table",
+            "minimum",
+            null,
+            "acid_subclass_order"
+          ]
+        }
+      ],
+      "tie": [
+        "reject_ambiguous",
+        null
+      ]
+    },
+    {
+      "id": "class7a_suffix_mapping",
+      "k": "mapping",
+      "f": "required",
+      "c": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "table": "class7a_suffix_acids"
+    },
+    {
+      "id": "class7b_acid_selection",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "in": [
+        [
+          "acid_candidates",
+          "Class7bAcidCandidateSet"
+        ]
+      ],
+      "out": [
+        [
+          "senior_acid",
+          "Class7bAcid"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "acid_candidates"
+      ],
+      "stages": [
+        {
+          "id": "source_order",
+          "c": [
+            33,
+            34,
+            35,
+            36
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "name"
+          ],
+          "cmp": [
+            "ordered_table",
+            "minimum",
+            null,
+            "class7b_acid_order"
+          ]
+        }
+      ],
+      "tie": [
+        "reject_ambiguous",
+        null
+      ]
+    },
+    {
+      "id": "class7c_preselected_name_status",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        38
+      ],
+      "term": "name status for class 7c noncarbon acids",
+      "entity": "NameStatus",
+      "value": [
+        "lit",
+        {
+          "status": "preselected name",
+          "scope": "noncarbon acids having substitutable hydrogen atoms on the central atom"
+        }
+      ]
+    },
+    {
+      "id": "class7c_seniority",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "in": [
+        [
+          "acid_candidates",
+          "Class7cAcidCandidateSet"
+        ]
+      ],
+      "out": [
+        [
+          "senior_acid",
+          "Class7cAcid"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "acid_candidates"
+      ],
+      "stages": [
+        {
+          "id": "central_atom",
+          "c": [
+            40
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "central_atom"
+          ],
+          "cmp": [
+            "ordered_table",
+            "minimum",
+            null,
+            "class7c_central_atom_precedence"
+          ]
+        },
+        {
+          "id": "central_atom_count",
+          "c": [
+            41
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "central_atom_count"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "homopolyacid",
+          "c": [
+            42
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "is_homopolyacid"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "contiguous_central_atoms",
+          "c": [
+            43
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "has_contiguous_central_atoms"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "acidic_oh_count",
+          "c": [
+            44
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "acidic_oh_group_count"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "central_atom_oxidation_number",
+          "c": [
+            45
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "central_atom_oxidation_number"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        }
+      ],
+      "tie": [
+        "reject_ambiguous",
+        null
+      ]
+    },
+    {
+      "id": "dinuclear_hypo_acid_infix",
+      "k": "rule",
+      "f": "required",
+      "c": [
+        46
+      ],
+      "in": [
+        [
+          "acid",
+          "DinuclearHypoOxoacid"
+        ]
+      ],
+      "out": [
+        [
+          "numerical_infix",
+          "NameComponent"
+        ]
+      ],
+      "if": [
+        "all",
+        [
+          "cmp",
+          "eq",
+          [
+            "get",
+            [
+              "var",
+              "acid"
+            ],
+            "is_hypo_acid"
+          ],
+          true
+        ],
+        [
+          "cmp",
+          "eq",
+          [
+            "get",
+            [
+              "var",
+              "acid"
+            ],
+            "central_atom_count"
+          ],
+          2
+        ]
+      ],
+      "then": [
+        [
+          "set",
+          "numerical_infix",
+          "di"
+        ]
+      ],
+      "else": []
+    },
+    {
+      "id": "class7c_acid_name_formula_mapping",
+      "k": "mapping",
+      "f": "required",
+      "c": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "table": "class7c_acid_names"
+    },
+    {
+      "id": "class7d_preselected_name_status",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        100
+      ],
+      "term": "name status for class 7d noncarbon acids",
+      "entity": "NameStatus",
+      "value": [
+        "lit",
+        {
+          "status": "preselected name",
+          "scope": "noncarbon acids used to generate derivatives having substitutable hydrogen atoms"
+        }
+      ]
+    },
+    {
+      "id": "class7d_seniority",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "in": [
+        [
+          "acid_candidates",
+          "Class7dAcidCandidateSet"
+        ]
+      ],
+      "out": [
+        [
+          "senior_acid",
+          "Class7dAcid"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "acid_candidates"
+      ],
+      "stages": [
+        {
+          "id": "central_atom",
+          "c": [
+            102
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "central_atom"
+          ],
+          "cmp": [
+            "ordered_table",
+            "minimum",
+            null,
+            "class7d_central_atom_precedence"
+          ]
+        },
+        {
+          "id": "central_atom_count",
+          "c": [
+            103
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "central_atom_count"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "homopolyacid",
+          "c": [
+            104
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "is_homopolyacid"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "contiguous_central_atoms",
+          "c": [
+            105
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "has_contiguous_central_atoms"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "acidic_group_count",
+          "c": [
+            106
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "acidic_oh_group_count"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "central_atom_oxidation_number",
+          "c": [
+            107
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "central_atom_oxidation_number"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        }
+      ],
+      "tie": [
+        "reject_ambiguous",
+        null
+      ]
+    },
+    {
+      "id": "class7d_acid_name_formula_mapping",
+      "k": "mapping",
+      "f": "required",
+      "c": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174
+      ],
+      "table": "class7d_acid_names"
+    },
+    {
+      "id": "silicic_acid_name_note",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        138,
+        139,
+        140,
+        141
+      ],
+      "term": "silicic acid",
+      "entity": "RetainedAcidName",
+      "value": [
+        "lit",
+        {
+          "name": "silicic acid",
+          "formula": "Si(OH)4",
+          "former_name": "orthosilicic acid",
+          "dependencies": [
+            "P-67.1.1.1",
+            "P-67.1.2.2",
+            "Table IR-8.1, ref. 12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "disulfurous_acid_ambiguity",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        154,
+        155,
+        156
+      ],
+      "term": "disulfurous acid",
+      "entity": "AmbiguousAcidName",
+      "value": [
+        "lit",
+        {
+          "name": "disulfurous acid",
+          "formula": "(HO)S(O)-O-S(O)(OH)",
+          "status": "ambiguous",
+          "dependency": "P-67.3.2",
+          "source_correction": "added comment"
+        }
+      ]
+    },
+    {
+      "id": "class7e_preselected_name_status",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        176
+      ],
+      "term": "name status for class 7e monobasic oxoacids",
+      "entity": "NameStatus",
+      "value": [
+        "lit",
+        {
+          "status": "preselected name",
+          "scope": "other monobasic oxoacids used as functional parents"
+        }
+      ]
+    },
+    {
+      "id": "class7e_seniority",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        177,
+        178,
+        179
+      ],
+      "in": [
+        [
+          "acid_candidates",
+          "Class7eAcidCandidateSet"
+        ]
+      ],
+      "out": [
+        [
+          "senior_acid",
+          "Class7eAcid"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "acid_candidates"
+      ],
+      "stages": [
+        {
+          "id": "central_atom",
+          "c": [
+            178
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "central_atom"
+          ],
+          "cmp": [
+            "ordered_table",
+            "minimum",
+            null,
+            "class7e_central_atom_precedence"
+          ]
+        },
+        {
+          "id": "central_atom_oxidation_number",
+          "c": [
+            179
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "acid_candidates"
+            ],
+            "central_atom_oxidation_number"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        }
+      ],
+      "tie": [
+        "reject_ambiguous",
+        null
+      ]
+    },
+    {
+      "id": "class7e_acid_name_formula_mapping",
+      "k": "mapping",
+      "f": "required",
+      "c": [
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215
+      ],
+      "table": "class7e_acid_names"
+    }
+  ],
+  "exceptions": [],
+  "tables": [
+    {
+      "id": "acid_subclass_order",
+      "label": "P-42",
+      "title": "Class 7 acid subclasses in decreasing seniority order",
+      "c": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "cols": [
+        [
+          "subclass",
+          "Subclass",
+          "String"
+        ],
+        [
+          "rank",
+          "Seniority rank",
+          "Integer"
+        ],
+        [
+          "scope",
+          "Scope",
+          "String"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "class7a",
+          "c": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "v": [
+            "7a",
+            1,
+            "acids expressed by suffixes, excluding carbonic and polycarbonic acids"
+          ]
+        },
+        {
+          "id": "class7b",
+          "c": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "v": [
+            "7b",
+            2,
+            "carbon acids with no substitutable hydrogen atoms"
+          ]
+        },
+        {
+          "id": "class7c",
+          "c": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "v": [
+            "7c",
+            3,
+            "noncarbon acids having substitutable hydrogen atoms on the central atom"
+          ]
+        },
+        {
+          "id": "class7d",
+          "c": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "v": [
+            "7d",
+            4,
+            "noncarbon acids used to generate derivatives having substitutable hydrogen atoms"
+          ]
+        },
+        {
+          "id": "class7e",
+          "c": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "v": [
+            "7e",
+            5,
+            "other monobasic oxoacids used as functional parents"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "subclass"
+        ],
+        "result": [
+          "rank",
+          "scope"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "ascending"
+      }
+    },
+    {
+      "id": "class7a_suffix_acids",
+      "label": "P-42.1",
+      "title": "Class 7a acid suffix expressions",
+      "c": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "cols": [
+        [
+          "acid_class",
+          "Acid class",
+          "String"
+        ],
+        [
+          "group",
+          "Characteristic group",
+          "String"
+        ],
+        [
+          "suffix",
+          "Suffix",
+          "String"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "carboxylic_carboxy",
+          "c": [
+            8,
+            9,
+            10
+          ],
+          "v": [
+            "carboxylic acids",
+            "-COOH",
+            "-carboxylic acid"
+          ]
+        },
+        {
+          "id": "carboxylic_oic",
+          "c": [
+            11,
+            12,
+            13
+          ],
+          "v": [
+            "carboxylic acids",
+            "-(C)O-OH",
+            "-oic acid"
+          ]
+        },
+        {
+          "id": "sulfonic",
+          "c": [
+            14,
+            15,
+            16
+          ],
+          "v": [
+            "sulfonic acids",
+            "-SO2-OH",
+            "-sulfonic acid"
+          ]
+        },
+        {
+          "id": "sulfinic",
+          "c": [
+            17,
+            18,
+            19
+          ],
+          "v": [
+            "sulfinic acids",
+            "-SO-OH",
+            "-sulfinic acid"
+          ]
+        },
+        {
+          "id": "selenonic",
+          "c": [
+            20,
+            21,
+            22
+          ],
+          "v": [
+            "selenonic acids",
+            "-SeO2-OH",
+            "-selenonic acid"
+          ]
+        },
+        {
+          "id": "seleninic",
+          "c": [
+            23,
+            24,
+            25
+          ],
+          "v": [
+            "seleninic acids",
+            "-SeO-OH",
+            "-seleninic acid"
+          ]
+        },
+        {
+          "id": "telluronic",
+          "c": [
+            26,
+            27,
+            28
+          ],
+          "v": [
+            "telluronic acids",
+            "-TeO2-OH",
+            "-telluronic acid"
+          ]
+        },
+        {
+          "id": "tellurinic",
+          "c": [
+            29,
+            30,
+            31
+          ],
+          "v": [
+            "tellurinic acids",
+            "-TeO-OH",
+            "-tellurinic acid"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "acid_class",
+          "group"
+        ],
+        "result": [
+          "suffix"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "class7b_acid_order",
+      "label": "P-42.2",
+      "title": "Class 7b carbon acids in decreasing seniority order",
+      "c": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "cols": [
+        [
+          "name",
+          "Acid name",
+          "String"
+        ],
+        [
+          "rank",
+          "Seniority rank",
+          "Integer"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "polycarbonic",
+          "c": [
+            33
+          ],
+          "v": [
+            "polycarbonic acids",
+            1
+          ]
+        },
+        {
+          "id": "dicarbonic",
+          "c": [
+            34
+          ],
+          "v": [
+            "dicarbonic acid",
+            2
+          ]
+        },
+        {
+          "id": "carbonic",
+          "c": [
+            35
+          ],
+          "v": [
+            "carbonic acid",
+            3
+          ]
+        },
+        {
+          "id": "cyanic",
+          "c": [
+            36
+          ],
+          "v": [
+            "cyanic acid",
+            4
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "name"
+        ],
+        "result": [
+          "rank"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "ascending"
+      }
+    },
+    {
+      "id": "class7c_central_atom_precedence",
+      "label": "P-42.3(a)",
+      "title": "Class 7c central-atom precedence",
+      "c": [
+        40
+      ],
+      "cols": [
+        [
+          "atom",
+          "Central atom",
+          "Element"
+        ],
+        [
+          "rank",
+          "Seniority rank",
+          "Integer"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "n",
+          "c": [
+            40
+          ],
+          "v": [
+            "N",
+            1
+          ]
+        },
+        {
+          "id": "p",
+          "c": [
+            40
+          ],
+          "v": [
+            "P",
+            2
+          ]
+        },
+        {
+          "id": "as",
+          "c": [
+            40
+          ],
+          "v": [
+            "As",
+            3
+          ]
+        },
+        {
+          "id": "sb",
+          "c": [
+            40
+          ],
+          "v": [
+            "Sb",
+            4
+          ]
+        },
+        {
+          "id": "b",
+          "c": [
+            40
+          ],
+          "v": [
+            "B",
+            5
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "atom"
+        ],
+        "result": [
+          "rank"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "ascending"
+      }
+    },
+    {
+      "id": "class7c_acid_names",
+      "label": "P-42.3",
+      "title": "Class 7c acid names, formulas, and internal order",
+      "c": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "cols": [
+        [
+          "name",
+          "Acid name or ordered family",
+          "String"
+        ],
+        [
+          "formula",
+          "Formula",
+          "String"
+        ],
+        [
+          "entry_kind",
+          "Entry kind",
+          "String"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "azonic",
+          "c": [
+            47,
+            48
+          ],
+          "v": [
+            "azonic acid",
+            "NH(O)(OH)2",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "azinic",
+          "c": [
+            49,
+            50
+          ],
+          "v": [
+            "azinic acid",
+            "NH2(O)(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "polyphosphonic",
+          "c": [
+            51,
+            52
+          ],
+          "v": [
+            "polyphosphonic acids",
+            "(HO)PH(O)-O-[PH(O)-O-]nPH(O)(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "diphosphonic",
+          "c": [
+            53,
+            54
+          ],
+          "v": [
+            "diphosphonic acid",
+            "(HO)PH(O)-O-PH(O)(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "hypodiphosphonic",
+          "c": [
+            55,
+            56
+          ],
+          "v": [
+            "hypodiphosphonic acid",
+            "(HO)(O)HP-PH(O)(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "phosphonic",
+          "c": [
+            57,
+            58
+          ],
+          "v": [
+            "phosphonic acid",
+            "PH(O)(OH)2",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "polyphosphonous",
+          "c": [
+            59,
+            60
+          ],
+          "v": [
+            "polyphosphonous acids",
+            "(HO)PH-O-[PH-O-]nPH(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "diphosphonous",
+          "c": [
+            61,
+            62
+          ],
+          "v": [
+            "diphosphonous acid",
+            "(HO)PH-O-PH(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "hypodiphosphonous",
+          "c": [
+            63,
+            64
+          ],
+          "v": [
+            "hypodiphosphonous acid",
+            "(HO)HP-PH(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "phosphonous",
+          "c": [
+            65,
+            66
+          ],
+          "v": [
+            "phosphonous acid",
+            "PH(OH)2",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "phosphinic",
+          "c": [
+            67,
+            68
+          ],
+          "v": [
+            "phosphinic acid",
+            "PH2(O)(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "phosphinous",
+          "c": [
+            69,
+            70
+          ],
+          "v": [
+            "phosphinous acid",
+            "PH2(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "arsonic_family_order",
+          "c": [
+            71
+          ],
+          "v": [
+            "polyarsonic acids > diarsonic acid > hypodiarsonic acid",
+            null,
+            "ordered_family"
+          ]
+        },
+        {
+          "id": "arsonic",
+          "c": [
+            72,
+            73
+          ],
+          "v": [
+            "arsonic acid",
+            "AsH(O)(OH)2",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "arsonous_family_order",
+          "c": [
+            74
+          ],
+          "v": [
+            "polyarsonous acids > diarsonous acid > hypodiarsonous acid",
+            null,
+            "ordered_family"
+          ]
+        },
+        {
+          "id": "arsonous",
+          "c": [
+            75,
+            76
+          ],
+          "v": [
+            "arsonous acid",
+            "AsH(OH)2",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "arsinic",
+          "c": [
+            77,
+            78
+          ],
+          "v": [
+            "arsinic acid",
+            "AsH2(O)(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "arsinous",
+          "c": [
+            79,
+            80
+          ],
+          "v": [
+            "arsinous acid",
+            "AsH2(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "stibonic_family_order",
+          "c": [
+            81
+          ],
+          "v": [
+            "polystibonic acids > distibonic acid > hypodistibonic acid",
+            null,
+            "ordered_family"
+          ]
+        },
+        {
+          "id": "stibonic",
+          "c": [
+            82,
+            83
+          ],
+          "v": [
+            "stibonic acid",
+            "SbH(O)(OH)2",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "stibonous_family_order",
+          "c": [
+            84
+          ],
+          "v": [
+            "polystibonous acids > distibonous acid > hypodistibonous acid",
+            null,
+            "ordered_family"
+          ]
+        },
+        {
+          "id": "stibonous",
+          "c": [
+            85,
+            86
+          ],
+          "v": [
+            "stibonous acid",
+            "SbH(OH)2",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "stibinic",
+          "c": [
+            87,
+            88
+          ],
+          "v": [
+            "stibinic acid",
+            "SbH2(O)(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "stibinous",
+          "c": [
+            89,
+            90
+          ],
+          "v": [
+            "stibinous acid",
+            "SbH2(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "diboronic",
+          "c": [
+            91,
+            92
+          ],
+          "v": [
+            "diboronic acid",
+            "(HO)BH-O-BH(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "hypodiboronic",
+          "c": [
+            93,
+            94
+          ],
+          "v": [
+            "hypodiboronic acid",
+            "(HO)HB-BH(OH)",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "boronic",
+          "c": [
+            95,
+            96
+          ],
+          "v": [
+            "boronic acid",
+            "BH(OH)2",
+            "name_formula"
+          ]
+        },
+        {
+          "id": "borinic",
+          "c": [
+            97,
+            98
+          ],
+          "v": [
+            "borinic acid",
+            "BH2(OH)",
+            "name_formula"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "name"
+        ],
+        "result": [
+          "formula",
+          "entry_kind"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "class7d_central_atom_precedence",
+      "label": "P-42.4(a)",
+      "title": "Class 7d central-atom precedence",
+      "c": [
+        102
+      ],
+      "cols": [
+        [
+          "atom",
+          "Central atom",
+          "Element"
+        ],
+        [
+          "rank",
+          "Seniority rank",
+          "Integer"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "p",
+          "c": [
+            102
+          ],
+          "v": [
+            "P",
+            1
+          ]
+        },
+        {
+          "id": "as",
+          "c": [
+            102
+          ],
+          "v": [
+            "As",
+            2
+          ]
+        },
+        {
+          "id": "sb",
+          "c": [
+            102
+          ],
+          "v": [
+            "Sb",
+            3
+          ]
+        },
+        {
+          "id": "si",
+          "c": [
+            102
+          ],
+          "v": [
+            "Si",
+            4
+          ]
+        },
+        {
+          "id": "b",
+          "c": [
+            102
+          ],
+          "v": [
+            "B",
+            5
+          ]
+        },
+        {
+          "id": "s",
+          "c": [
+            102
+          ],
+          "v": [
+            "S",
+            6
+          ]
+        },
+        {
+          "id": "se",
+          "c": [
+            102
+          ],
+          "v": [
+            "Se",
+            7
+          ]
+        },
+        {
+          "id": "te",
+          "c": [
+            102
+          ],
+          "v": [
+            "Te",
+            8
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "atom"
+        ],
+        "result": [
+          "rank"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "ascending"
+      }
+    },
+    {
+      "id": "class7d_acid_names",
+      "label": "P-42.4",
+      "title": "Class 7d acid names, formulas, and internal order",
+      "c": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174
+      ],
+      "cols": [
+        [
+          "name",
+          "Acid name or ordered family",
+          "String"
+        ],
+        [
+          "formula",
+          "Formula",
+          "String"
+        ],
+        [
+          "notes",
+          "Status or note",
+          "String"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "polyphosphoric",
+          "c": [
+            108,
+            109
+          ],
+          "v": [
+            "polyphosphoric acids",
+            "(HO)2P(O)-O-[PO(OH)-O-]nP(O)(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "polyphosphorous",
+          "c": [
+            110,
+            111
+          ],
+          "v": [
+            "polyphosphorous acids",
+            "(HO)2P-O-[P(OH)-O-]n-P(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "tetraphosphoric",
+          "c": [
+            112,
+            113
+          ],
+          "v": [
+            "tetraphosphoric acid",
+            "(HO)2P(O)-O-P(O)(OH)-O-P(O)(OH)-O-P(O)(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "triphosphoric",
+          "c": [
+            114,
+            115
+          ],
+          "v": [
+            "triphosphoric acid",
+            "(HO)2P(O)-O-P(O)(OH)-O-P(O)(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "diphosphoric",
+          "c": [
+            116,
+            117
+          ],
+          "v": [
+            "diphosphoric acid",
+            "(HO)2P(O)-O-P(O)(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "diphosphorous",
+          "c": [
+            118,
+            119
+          ],
+          "v": [
+            "diphosphorous acid",
+            "(HO)2P-O-P(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "hypodiphosphoric",
+          "c": [
+            120,
+            121
+          ],
+          "v": [
+            "hypodiphosphoric acid",
+            "(HO)2(O)P-P(O)(OH)2",
+            "hypodi prefix per P-67.2.1"
+          ]
+        },
+        {
+          "id": "hypodiphosphorous",
+          "c": [
+            122,
+            123
+          ],
+          "v": [
+            "hypodiphosphorous acid",
+            "(HO)2P-P(OH)2",
+            "hypodi prefix per P-67.2.1"
+          ]
+        },
+        {
+          "id": "phosphoric",
+          "c": [
+            124,
+            125
+          ],
+          "v": [
+            "phosphoric acid",
+            "P(O)(OH)3",
+            null
+          ]
+        },
+        {
+          "id": "phosphorous",
+          "c": [
+            126,
+            127
+          ],
+          "v": [
+            "phosphorous acid",
+            "P(OH)3",
+            null
+          ]
+        },
+        {
+          "id": "arsenic_family_order",
+          "c": [
+            128
+          ],
+          "v": [
+            "polyarsoric acids > polyarsorous acids > diarsoric acid > diarsorous acid > hypodiarsoric acid > hypodiarsorous acid",
+            null,
+            "ordered family; hypodi prefix per P-67.2.1"
+          ]
+        },
+        {
+          "id": "arsoric",
+          "c": [
+            129,
+            130
+          ],
+          "v": [
+            "arsoric acid",
+            "As(O)(OH)3",
+            null
+          ]
+        },
+        {
+          "id": "arsorous",
+          "c": [
+            131,
+            132
+          ],
+          "v": [
+            "arsorous acid",
+            "As(OH)3",
+            null
+          ]
+        },
+        {
+          "id": "antimony_family_order",
+          "c": [
+            133
+          ],
+          "v": [
+            "polystiboric acids > polystiborous acid > distiboric acid > distiborous acid > hypodistiboric acid > hypodistiborous acid",
+            null,
+            "ordered family; hypodi prefix per P-67.2.1"
+          ]
+        },
+        {
+          "id": "stiboric",
+          "c": [
+            134,
+            135
+          ],
+          "v": [
+            "stiboric acid",
+            "Sb(O)(OH)3",
+            null
+          ]
+        },
+        {
+          "id": "stiborous",
+          "c": [
+            136,
+            137
+          ],
+          "v": [
+            "stiborous acid",
+            "Sb(OH)3",
+            null
+          ]
+        },
+        {
+          "id": "silicic",
+          "c": [
+            138,
+            139,
+            140,
+            141
+          ],
+          "v": [
+            "silicic acid",
+            "Si(OH)4",
+            "formerly orthosilicic acid; see P-67.1.1.1, P-67.1.2.2, and Table IR-8.1, ref. 12"
+          ]
+        },
+        {
+          "id": "diboric",
+          "c": [
+            142,
+            143
+          ],
+          "v": [
+            "diboric acid",
+            "(HO)2B-O-B(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "hypodiboric",
+          "c": [
+            144,
+            145
+          ],
+          "v": [
+            "hypodiboric acid",
+            "(HO)2B-B(OH)2",
+            "hypodi prefix per P-67.2.1"
+          ]
+        },
+        {
+          "id": "boric",
+          "c": [
+            146,
+            147
+          ],
+          "v": [
+            "boric acid",
+            "B(OH)3",
+            null
+          ]
+        },
+        {
+          "id": "polysulfuric",
+          "c": [
+            148,
+            149
+          ],
+          "v": [
+            "polysulfuric acids",
+            "(HO)SO2-O-[SO2-O-]nSO2(OH)",
+            null
+          ]
+        },
+        {
+          "id": "polysulfurous",
+          "c": [
+            150,
+            151
+          ],
+          "v": [
+            "polysulfurous acids",
+            "(HO)SO-O-[SO-O-]nSO(OH)",
+            null
+          ]
+        },
+        {
+          "id": "disulfuric",
+          "c": [
+            152,
+            153
+          ],
+          "v": [
+            "disulfuric acid",
+            "(HO)SO2-O-SO2(OH)",
+            null
+          ]
+        },
+        {
+          "id": "disulfurous",
+          "c": [
+            154,
+            155,
+            156
+          ],
+          "v": [
+            "disulfurous acid",
+            "(HO)S(O)-O-S(O)(OH)",
+            "ambiguous; see P-67.3.2; source correction added comment"
+          ]
+        },
+        {
+          "id": "dithionic",
+          "c": [
+            157,
+            158
+          ],
+          "v": [
+            "dithionic acid (hypodisulfuric acid)",
+            "(HO)O2S-SO2(OH)",
+            "hypodi prefix per P-67.2.1"
+          ]
+        },
+        {
+          "id": "dithionous",
+          "c": [
+            159,
+            160
+          ],
+          "v": [
+            "dithionous acid (hypodisulfurous acid)",
+            "(HO)(O)S-S(O)(OH)",
+            null
+          ]
+        },
+        {
+          "id": "sulfuric",
+          "c": [
+            161,
+            162
+          ],
+          "v": [
+            "sulfuric acid",
+            "S(O)2(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "sulfurous",
+          "c": [
+            163,
+            164
+          ],
+          "v": [
+            "sulfurous acid",
+            "S(O)(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "selenium_family_order",
+          "c": [
+            165
+          ],
+          "v": [
+            "polyselenic acids > polyselenous acids > diselenic acid > diselenous acid > hypodiselenic acid > hypodiselenous acid",
+            null,
+            "ordered family; hypodi prefix per P-67.2.1"
+          ]
+        },
+        {
+          "id": "selenic",
+          "c": [
+            166,
+            167
+          ],
+          "v": [
+            "selenic acid",
+            "Se(O)2(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "selenous",
+          "c": [
+            168,
+            169
+          ],
+          "v": [
+            "selenous acid",
+            "Se(O)(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "tellurium_family_order",
+          "c": [
+            170
+          ],
+          "v": [
+            "polytelluric acids > polytellurous acids > ditelluric acid > ditellurous acid > hypoditelluric acid > hypoditellurous acid",
+            null,
+            "ordered family; hypodi prefix per P-67.2.1"
+          ]
+        },
+        {
+          "id": "telluric",
+          "c": [
+            171,
+            172
+          ],
+          "v": [
+            "telluric acid",
+            "Te(O)2(OH)2",
+            null
+          ]
+        },
+        {
+          "id": "tellurous",
+          "c": [
+            173,
+            174
+          ],
+          "v": [
+            "tellurous acid",
+            "Te(O)(OH)2",
+            null
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "name"
+        ],
+        "result": [
+          "formula",
+          "notes"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "class7e_central_atom_precedence",
+      "label": "P-42.5(a)",
+      "title": "Class 7e central-atom precedence",
+      "c": [
+        178
+      ],
+      "cols": [
+        [
+          "atom",
+          "Central atom",
+          "Element"
+        ],
+        [
+          "rank",
+          "Seniority rank",
+          "Integer"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "n",
+          "c": [
+            178
+          ],
+          "v": [
+            "N",
+            1
+          ]
+        },
+        {
+          "id": "f",
+          "c": [
+            178
+          ],
+          "v": [
+            "F",
+            2
+          ]
+        },
+        {
+          "id": "cl",
+          "c": [
+            178
+          ],
+          "v": [
+            "Cl",
+            3
+          ]
+        },
+        {
+          "id": "br",
+          "c": [
+            178
+          ],
+          "v": [
+            "Br",
+            4
+          ]
+        },
+        {
+          "id": "i",
+          "c": [
+            178
+          ],
+          "v": [
+            "I",
+            5
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "atom"
+        ],
+        "result": [
+          "rank"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "ascending"
+      }
+    },
+    {
+      "id": "class7e_acid_names",
+      "label": "P-42.5",
+      "title": "Class 7e monobasic oxoacid names and formulas",
+      "c": [
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215
+      ],
+      "cols": [
+        [
+          "name",
+          "Acid name",
+          "String"
+        ],
+        [
+          "formula",
+          "Formula",
+          "String"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "nitric",
+          "c": [
+            180,
+            181
+          ],
+          "v": [
+            "nitric acid",
+            "HO-NO2"
+          ]
+        },
+        {
+          "id": "nitrous",
+          "c": [
+            182,
+            183
+          ],
+          "v": [
+            "nitrous acid",
+            "HO-NO"
+          ]
+        },
+        {
+          "id": "perfluoric",
+          "c": [
+            184,
+            185
+          ],
+          "v": [
+            "perfluoric acid",
+            "F(O)3OH"
+          ]
+        },
+        {
+          "id": "fluoric",
+          "c": [
+            186,
+            187
+          ],
+          "v": [
+            "fluoric acid",
+            "F(O)2OH"
+          ]
+        },
+        {
+          "id": "fluorous",
+          "c": [
+            188,
+            189
+          ],
+          "v": [
+            "fluorous acid",
+            "F(O)OH"
+          ]
+        },
+        {
+          "id": "hypofluorous",
+          "c": [
+            190,
+            191
+          ],
+          "v": [
+            "hypofluorous acid",
+            "FOH"
+          ]
+        },
+        {
+          "id": "perchloric",
+          "c": [
+            192,
+            193
+          ],
+          "v": [
+            "perchloric acid",
+            "Cl(O)3OH"
+          ]
+        },
+        {
+          "id": "chloric",
+          "c": [
+            194,
+            195
+          ],
+          "v": [
+            "chloric acid",
+            "Cl(O)2OH"
+          ]
+        },
+        {
+          "id": "chlorous",
+          "c": [
+            196,
+            197
+          ],
+          "v": [
+            "chlorous acid",
+            "Cl(O)OH"
+          ]
+        },
+        {
+          "id": "hypochlorous",
+          "c": [
+            198,
+            199
+          ],
+          "v": [
+            "hypochlorous acid",
+            "ClOH"
+          ]
+        },
+        {
+          "id": "perbromic",
+          "c": [
+            200,
+            201
+          ],
+          "v": [
+            "perbromic acid",
+            "Br(O)3OH"
+          ]
+        },
+        {
+          "id": "bromic",
+          "c": [
+            202,
+            203
+          ],
+          "v": [
+            "bromic acid",
+            "Br(O)2OH"
+          ]
+        },
+        {
+          "id": "bromous",
+          "c": [
+            204,
+            205
+          ],
+          "v": [
+            "bromous acid",
+            "Br(O)OH"
+          ]
+        },
+        {
+          "id": "hypobromous",
+          "c": [
+            206,
+            207
+          ],
+          "v": [
+            "hypobromous acid",
+            "BrOH"
+          ]
+        },
+        {
+          "id": "periodic",
+          "c": [
+            208,
+            209
+          ],
+          "v": [
+            "periodic acid",
+            "I(O)3OH"
+          ]
+        },
+        {
+          "id": "iodic",
+          "c": [
+            210,
+            211
+          ],
+          "v": [
+            "iodic acid",
+            "I(O)2OH"
+          ]
+        },
+        {
+          "id": "iodous",
+          "c": [
+            212,
+            213
+          ],
+          "v": [
+            "iodous acid",
+            "I(O)OH"
+          ]
+        },
+        {
+          "id": "hypoiodous",
+          "c": [
+            214,
+            215
+          ],
+          "v": [
+            "hypoiodous acid",
+            "IOH"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "name"
+        ],
+        "result": [
+          "formula"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [],
+  "examples": [],
+  "corrections": [],
+  "refs": [
+    {
+      "id": "reference.p42.part001.class7c_hypodi",
+      "c": [
+        55,
+        63,
+        71,
+        74,
+        81,
+        84,
+        93
+      ],
+      "rel": "cites",
+      "o": [
+        "P-42.3:xref:0001",
+        "P-42.3:xref:0002",
+        "P-42.3:xref:0003",
+        "P-42.3:xref:0004",
+        "P-42.3:xref:0005",
+        "P-42.3:xref:0006",
+        "P-42.3:xref:0007"
+      ],
+      "src": [
+        "semantic_unit",
+        "class7c_acid_name_formula_mapping"
+      ],
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p42.part001.class7d_hypodi_early",
+      "c": [
+        120,
+        122,
+        128,
+        133
+      ],
+      "rel": "cites",
+      "o": [
+        "P-42.4:xref:0001",
+        "P-42.4:xref:0002",
+        "P-42.4:xref:0003",
+        "P-42.4:xref:0004"
+      ],
+      "src": [
+        "semantic_unit",
+        "class7d_acid_name_formula_mapping"
+      ],
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p42.part001.class7d_hypodiboric",
+      "c": [
+        144
+      ],
+      "rel": "cites",
+      "o": "P-42.4:xref:0007",
+      "src": [
+        "semantic_unit",
+        "class7d_acid_name_formula_mapping"
+      ],
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p42.part001.class7d_hypodi_late",
+      "c": [
+        157,
+        165,
+        170
+      ],
+      "rel": "cites",
+      "o": [
+        "P-42.4:xref:0009",
+        "P-42.4:xref:0010",
+        "P-42.4:xref:0011"
+      ],
+      "src": [
+        "semantic_unit",
+        "class7d_acid_name_formula_mapping"
+      ],
+      "resolution": "exact"
+    }
+  ],
+  "additional_refs": []
+}
