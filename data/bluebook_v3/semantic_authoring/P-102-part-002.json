@@ -1,0 +1,2350 @@
+{
+  "format": "iupac-bluebook-semantic-authoring",
+  "format_version": "1.0.0",
+  "task_id": "P-102-part-002",
+  "mechanical_assets": true,
+  "clauses": [
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "correction_event",
+      "correction",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "preference_criterion",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "note",
+      "informative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "note",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "definition",
+      "normative",
+      "compile"
+    ],
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "constraint",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    null,
+    [
+      "example",
+      "illustrative",
+      "compile"
+    ],
+    null,
+    [
+      "heading",
+      "informative",
+      "skip",
+      "heading_or_title"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ],
+    [
+      "procedure_step",
+      "normative",
+      "compile"
+    ]
+  ],
+  "symbols": [],
+  "units": [
+    {
+      "id": "anomeric_configuration_and_descriptor",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "in": [
+        [
+          "monosaccharide",
+          "MonosaccharideWithRetainedName"
+        ]
+      ],
+      "out": [
+        [
+          "designation",
+          "AnomericDesignation"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "designation",
+          [
+            "lit",
+            {
+              "reference_center": "configurational atom defined by P-102.3.3",
+              "alpha": "anomeric exocyclic oxygen cis to oxygen on reference atom in Fischer projection",
+              "beta": "anomeric exocyclic oxygen trans to oxygen on reference atom in Fischer projection",
+              "reference_plane": "perpendicular to Fischer projection and containing all monosaccharide carbon atoms",
+              "rendering": "alpha or beta followed by a hyphen immediately before D or L"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "designation"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "pyranose_conformation",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        19
+      ],
+      "in": [
+        [
+          "pyranose",
+          "Pyranose"
+        ]
+      ],
+      "out": [
+        [
+          "conformation",
+          "NonplanarConformation"
+        ]
+      ],
+      "term": "pyranose conformation",
+      "entity": "Conformation",
+      "value": [
+        "lit",
+        "pyranose rings are nonplanar"
+      ]
+    },
+    {
+      "id": "mills_depiction",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        25,
+        26
+      ],
+      "in": [
+        [
+          "monosaccharide",
+          "CyclicMonosaccharide"
+        ]
+      ],
+      "out": [
+        [
+          "depiction",
+          "MillsDepiction"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "depiction",
+          [
+            "lit",
+            {
+              "ring_plane": "main hemiacetal ring is in the plane of the paper",
+              "below_plane": "hashed wedge",
+              "above_plane": "solid wedge"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "depiction"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "racemate_stereodescriptor",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        32
+      ],
+      "in": [
+        [
+          "mixture",
+          "CarbohydrateRacemate"
+        ]
+      ],
+      "out": [
+        [
+          "descriptor",
+          "Stereodescriptor"
+        ]
+      ],
+      "term": "DL",
+      "entity": "Stereodescriptor",
+      "value": [
+        "lit",
+        "descriptor for a racemate"
+      ]
+    },
+    {
+      "id": "mixed_anomer_notation",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        49,
+        50
+      ],
+      "in": [
+        [
+          "mixture",
+          "AnomerMixture"
+        ]
+      ],
+      "out": [
+        [
+          "notation",
+          "MixedAnomerNotation"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "notation",
+          [
+            "lit",
+            {
+              "name_prefix": "alpha,beta at the front of the name",
+              "separator": "comma",
+              "haworth_anomeric_center": "replace formal bonds by H and OH symbols"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "notation"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "embedded_monosaccharide_parent_selection",
+      "k": "decision",
+      "f": "required",
+      "c": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        66,
+        70,
+        74,
+        75,
+        76,
+        80
+      ],
+      "in": [
+        [
+          "candidate_parents",
+          "EmbeddedMonosaccharideParentSet"
+        ]
+      ],
+      "out": [
+        [
+          "parent",
+          "MonosaccharideParent"
+        ]
+      ],
+      "candidates": [
+        "var",
+        "candidate_parents"
+      ],
+      "stages": [
+        {
+          "id": "senior_characteristic_group",
+          "c": [
+            56,
+            57,
+            58
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate"
+            ],
+            "senior_group_class_and_count"
+          ],
+          "cmp": [
+            "lexicographic",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "greatest_chain_carbon_count",
+          "c": [
+            59
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate"
+            ],
+            "chain_carbon_count"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "earliest_trivial_or_configurational_name",
+          "c": [
+            60,
+            61,
+            62
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate"
+            ],
+            "trivial_or_configurational_name"
+          ],
+          "cmp": [
+            "lexicographic",
+            "minimum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "d_before_l",
+          "c": [
+            66
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate"
+            ],
+            "d_l_rank"
+          ],
+          "cmp": [
+            "numeric",
+            "minimum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "alpha_before_beta",
+          "c": [
+            70
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate"
+            ],
+            "anomer_rank"
+          ],
+          "cmp": [
+            "numeric",
+            "minimum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "greatest_prefix_substitution_count",
+          "c": [
+            74,
+            75
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate"
+            ],
+            "prefix_substitution_count_including_bridging_deoxy_anhydro"
+          ],
+          "cmp": [
+            "numeric",
+            "maximum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "lowest_substituent_prefix_locants",
+          "c": [
+            76
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate"
+            ],
+            "substituent_prefix_locant_sequence"
+          ],
+          "cmp": [
+            "lexicographic",
+            "minimum",
+            null,
+            null
+          ]
+        },
+        {
+          "id": "lowest_first_cited_substituent_locant",
+          "c": [
+            80
+          ],
+          "key": [
+            "get",
+            [
+              "var",
+              "candidate"
+            ],
+            "first_cited_substituent_locant"
+          ],
+          "cmp": [
+            "numeric",
+            "minimum",
+            null,
+            null
+          ]
+        }
+      ],
+      "tie": [
+        "retain_coequal",
+        null
+      ]
+    },
+    {
+      "id": "aldose_naming_method_selection",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        88,
+        89,
+        90
+      ],
+      "in": [
+        [
+          "aldose",
+          "Aldose"
+        ]
+      ],
+      "out": [
+        [
+          "method",
+          "AldoseNamingMethod"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "method",
+          [
+            "lit",
+            {
+              "three_to_six_carbons": "retained or semisystematic names in Table 10.2",
+              "more_than_six_carbons": [
+                "systematic carbohydrate nomenclature",
+                "systematic substitutive nomenclature"
+              ]
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "method"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "systematic_aldose_name_construction",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        92,
+        93,
+        94
+      ],
+      "in": [
+        [
+          "aldose",
+          "Aldose"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "SystematicCarbohydrateName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name",
+          [
+            "lit",
+            {
+              "components": [
+                "configurational prefix or prefixes",
+                "aldose stem"
+              ],
+              "stem_table": "aldose_stem_by_carbon_count",
+              "numbering": "carbonyl carbon receives locant 1"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "aldose_configurational_prefix_assignment",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        95,
+        96
+      ],
+      "in": [
+        [
+          "aldose",
+          "Aldose"
+        ]
+      ],
+      "out": [
+        [
+          "prefixes",
+          "ConfigurationalPrefixSequence"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "prefixes",
+          [
+            "lit",
+            {
+              "source": "Table 10.2",
+              "examples": [
+                "glycero",
+                "gluco",
+                "manno"
+              ],
+              "qualification": "each name is qualified by D or L under P-102.3.2"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "prefixes"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "long_aldose_configurational_prefix_order",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        100,
+        101,
+        102
+      ],
+      "in": [
+        [
+          "aldose",
+          "AldoseWithMoreThanFourChiralityCenters"
+        ]
+      ],
+      "out": [
+        [
+          "prefixes",
+          "OrderedConfigurationalPrefixes"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "prefixes",
+          [
+            "lit",
+            {
+              "group_size": 4,
+              "assignment_direction": "begin with chirality centers next to aldehydic group",
+              "citation_order": "prefix for group farthest from aldehydic group is cited first",
+              "terminal_group_may_be_shorter": true
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "prefixes"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "separated_chirality_center_prefix_assignment",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        106
+      ],
+      "in": [
+        [
+          "chain",
+          "MonosaccharideChain"
+        ]
+      ],
+      "out": [
+        [
+          "prefixes",
+          "ConfigurationalPrefixSequence"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "prefixes",
+          [
+            "lit",
+            {
+              "ignore": "nonchiral centers separating chirality-center sequences",
+              "up_to_four_centers": "one appropriate configurational prefix",
+              "more_than_four_centers": "two or more appropriate configurational prefixes"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "prefixes"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "long_monosaccharide_cyclic_anomer_assignment",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        111,
+        112,
+        113
+      ],
+      "in": [
+        [
+          "cyclic_form",
+          "MonosaccharideWithMoreThanSixCarbons"
+        ]
+      ],
+      "out": [
+        [
+          "anomer",
+          "AnomericDescriptor"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "anomer",
+          [
+            "lit",
+            {
+              "reference_center": "highest-numbered atom in the single-prefix chirality-center group next to the anomeric center and included in the ring",
+              "alpha": "anomeric and reference oxygen atoms formally cis in Fischer projection",
+              "beta": "anomeric and reference oxygen atoms formally trans in Fischer projection"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "anomer"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "ketose_classification",
+      "k": "definition",
+      "f": "definition",
+      "c": [
+        120
+      ],
+      "in": [
+        [
+          "ketose",
+          "Ketose"
+        ]
+      ],
+      "out": [
+        [
+          "class",
+          "KetoseClass"
+        ]
+      ],
+      "term": "n-ketose",
+      "entity": "KetoseClass",
+      "value": [
+        "lit",
+        "classified by the lowest locant of the actual or potential carbonyl group"
+      ]
+    },
+    {
+      "id": "retained_ketose_name_assignment",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        122,
+        123
+      ],
+      "in": [
+        [
+          "ketose",
+          "KetoseWithRetainedName"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "RetainedKetoseName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name",
+          [
+            "lit",
+            {
+              "source": "Table 10.3",
+              "configuration": "D or L under P-102.3.2"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "systematic_ketose_name_construction",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        136
+      ],
+      "in": [
+        [
+          "ketose",
+          "Ketose"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "SystematicKetoseName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name",
+          [
+            "lit",
+            {
+              "four_to_six_carbons": "Table 10.3 configurational prefix plus stem",
+              "stem_transformation": "replace aldose stem ending ose by locanted ulose",
+              "numbering": "give carbonyl group lowest possible locant",
+              "odd_chain_middle_carbonyl_tie": "apply P-102.4",
+              "two_ketose_prefix_assignment": "same as aldoses",
+              "carbonyl_at_c3_or_higher": "ignore carbonyl and assign prefix or prefixes to chirality centers from Table 10.3",
+              "parallel_recommended_system": "systematic substitutive name may also be supplied"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "deoxy_prefix_status",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        154,
+        155,
+        156,
+        157
+      ],
+      "in": [
+        [
+          "transformation",
+          "CarbohydrateDeoxygenation"
+        ]
+      ],
+      "out": [
+        [
+          "prefix",
+          "DeoxyPrefix"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "prefix",
+          [
+            "lit",
+            {
+              "meaning": "remove an oxy group and rejoin hydrogen",
+              "detachable": true,
+              "alphabetized_with_substitutive_prefixes": true,
+              "current_status": "supersedes former nondetachable treatment; anhydro is likewise detachable"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "prefix"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "retained_deoxy_sugar_names",
+      "k": "mapping",
+      "f": "required",
+      "c": [
+        159,
+        160
+      ],
+      "in": [
+        [
+          "structure",
+          "DeoxySugarStructure"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "RetainedDeoxySugarName"
+        ]
+      ],
+      "table": "retained_deoxy_sugar_names"
+    },
+    {
+      "id": "deoxy_derivative_retained_name_use",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        168,
+        169,
+        170,
+        171
+      ],
+      "in": [
+        [
+          "derivative",
+          "DeoxyMonosaccharideDerivative"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "DeoxyDerivativeName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name",
+          [
+            "lit",
+            {
+              "retained_name_allowed_when": "deoxygenation does not affect configuration at any chirality center",
+              "six_deoxy_glucose_mannose_galactose": "use retained trivial names from P-102.5.3.2",
+              "deoxy_at_chirality_center": "prefer systematic carbohydrate name; substitutive name with CIP descriptors is appropriate",
+              "same_position_prefixes": "amino plus deoxy, or P-59.1.9 always-prefix terms plus deoxy, are allowed"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "systematic_deoxy_sugar_name_construction",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        173,
+        174,
+        175,
+        187,
+        188
+      ],
+      "in": [
+        [
+          "sugar",
+          "DeoxySugar"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "SystematicDeoxySugarName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name",
+          [
+            "lit",
+            {
+              "form": "locanted deoxy prefix followed by stem and necessary configurational prefixes",
+              "configurational_prefix_citation_direction": "commence at end farthest from C-1",
+              "retained_aldose_or_ketose_base": "not recommended",
+              "methylene_between_chirality_sets": "ignore CH2 and assign prefixes across the full chirality-center sequence under P-102.5.1.1.3"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "amino_and_sulfanyl_sugar_treatment",
+      "k": "procedure",
+      "f": "required",
+      "c": [
+        193,
+        194,
+        195
+      ],
+      "in": [
+        [
+          "derivative",
+          "MonosaccharideDerivative"
+        ]
+      ],
+      "out": [
+        [
+          "name",
+          "ReplacementDerivativeName"
+        ]
+      ],
+      "steps": [
+        [
+          "set",
+          "name",
+          [
+            "lit",
+            {
+              "nonanomeric_amino_replacement": "treat as amino substitution of corresponding deoxy monosaccharide",
+              "amino_bearing_center_configuration": "express as aldose configuration as though amino replaced hydroxy",
+              "sulfanyl_replacement": "treat as functional replacement using thio"
+            }
+          ]
+        ],
+        [
+          "emit",
+          [
+            "var",
+            "name"
+          ]
+        ]
+      ]
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "six_deoxy_retained_name_exception",
+      "c": [
+        169
+      ],
+      "if": [
+        "get",
+        [
+          "var",
+          "derivative"
+        ],
+        "is_six_deoxy_glucose_mannose_or_galactose"
+      ],
+      "target": [
+        "semantic_unit",
+        "deoxy_derivative_retained_name_use"
+      ],
+      "mode": "replace",
+      "replacement": [
+        "semantic_unit",
+        "retained_deoxy_sugar_names"
+      ],
+      "order": 169,
+      "specificity": 1
+    }
+  ],
+  "tables": [
+    {
+      "id": "aldose_stem_by_carbon_count",
+      "c": [
+        93
+      ],
+      "title": "Aldose stem names by chain length",
+      "cols": [
+        [
+          "carbon_count",
+          "Carbon atoms",
+          "integer"
+        ],
+        [
+          "stem",
+          "Stem",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "c3",
+          "v": [
+            3,
+            "triose"
+          ]
+        },
+        {
+          "id": "c4",
+          "v": [
+            4,
+            "tetrose"
+          ]
+        },
+        {
+          "id": "c5",
+          "v": [
+            5,
+            "pentose"
+          ]
+        },
+        {
+          "id": "c6",
+          "v": [
+            6,
+            "hexose"
+          ]
+        },
+        {
+          "id": "c7",
+          "v": [
+            7,
+            "heptose"
+          ]
+        },
+        {
+          "id": "c8",
+          "v": [
+            8,
+            "octose"
+          ]
+        },
+        {
+          "id": "c9",
+          "v": [
+            9,
+            "nonose"
+          ]
+        },
+        {
+          "id": "c10",
+          "v": [
+            10,
+            "decose"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "carbon_count"
+        ],
+        "result": [
+          "stem"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    },
+    {
+      "id": "retained_deoxy_sugar_names",
+      "c": [
+        159,
+        160
+      ],
+      "title": "Retained names for 6-deoxy aldoses",
+      "cols": [
+        [
+          "systematic_structure",
+          "Systematic structure",
+          "string"
+        ],
+        [
+          "retained_name",
+          "Retained name",
+          "string"
+        ]
+      ],
+      "rows": [
+        {
+          "id": "fucose",
+          "v": [
+            "6-deoxy-L-galactose",
+            "fucose"
+          ]
+        },
+        {
+          "id": "quinovose",
+          "v": [
+            "6-deoxy-D-glucose",
+            "quinovose"
+          ]
+        },
+        {
+          "id": "rhamnose",
+          "v": [
+            "6-deoxy-L-mannose",
+            "rhamnose"
+          ]
+        }
+      ],
+      "contract": {
+        "key": [
+          "systematic_structure"
+        ],
+        "result": [
+          "retained_name"
+        ],
+        "cardinality": "one_to_one",
+        "ordering": "source_order"
+      }
+    }
+  ],
+  "figures": [],
+  "examples": [
+    {
+      "id": "anomeric_descriptor_examples",
+      "c": [
+        10,
+        13,
+        15,
+        17
+      ],
+      "input": {
+        "forms": [
+          "glucopyranose",
+          "glucofuranose",
+          "fructofuranose"
+        ]
+      },
+      "ok": [
+        "alpha-D-glucopyranose",
+        "alpha-D-glucofuranose",
+        "beta-D-fructofuranose"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "anomeric_configuration_and_descriptor"
+        ]
+      ],
+      "why": "The structures and corrected example distinguish alpha and beta relative configuration."
+    },
+    {
+      "id": "pyranose_conformation_example",
+      "c": [
+        20,
+        22
+      ],
+      "input": {
+        "compound": "beta-D-glucopyranose"
+      },
+      "ok": [
+        "chair conformation with characteristic substituents equatorial"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "pyranose_conformation"
+        ]
+      ],
+      "why": "The example depicts a representative nonplanar pyranose conformation."
+    },
+    {
+      "id": "mills_depiction_example",
+      "c": [
+        28
+      ],
+      "input": {
+        "caption": "alpha-D-glucopyranose"
+      },
+      "ok": [
+        "alpha-D-glucopyranose"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "mills_depiction"
+        ]
+      ],
+      "why": "The wedge directions encode substituents above and below the ring plane."
+    },
+    {
+      "id": "dl_racemate_examples",
+      "c": [
+        35,
+        37,
+        38,
+        39,
+        40,
+        42,
+        44,
+        45,
+        46,
+        47
+      ],
+      "input": {
+        "configurations": [
+          "D",
+          "L"
+        ]
+      },
+      "ok": [
+        "alpha-DL-glucopyranose",
+        "beta-DL-galactopyranose"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "racemate_stereodescriptor"
+        ]
+      ],
+      "why": "The table pairs D and L configurations under the DL racemate descriptor."
+    },
+    {
+      "id": "mixed_anomer_example",
+      "c": [
+        52
+      ],
+      "input": {
+        "mixture": [
+          "alpha anomer",
+          "beta anomer"
+        ]
+      },
+      "ok": [
+        "alpha,beta-D-glucopyranose"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "mixed_anomer_notation"
+        ]
+      ],
+      "why": "Both anomeric descriptors are cited at the front of the name."
+    },
+    {
+      "id": "embedded_parent_selection_examples",
+      "c": [
+        64,
+        65,
+        68,
+        69,
+        72,
+        73,
+        78,
+        79,
+        82,
+        83
+      ],
+      "input": {
+        "criteria": [
+          "alphabetical name",
+          "D before L",
+          "alpha before beta",
+          "lowest locant set",
+          "lowest first cited locant"
+        ]
+      },
+      "ok": [
+        "D-glucitol",
+        "5-O-methyl-D-galactitol",
+        "alpha-D-fructofuranose beta-D-fructofuranose 1,2':1',2-dianhydride",
+        "2,3,5-tri-O-methyl-D-mannitol",
+        "2-O-acetyl-5-O-methyl-D-mannitol"
+      ],
+      "bad": [
+        "L-gulitol",
+        "2-O-methyl-L-galactitol",
+        "beta-D-fructofuranose alpha-D-fructofuranose 1,2':1',2-dianhydride",
+        "2,4,5-tri-O-methyl-D-mannitol",
+        "5-O-acetyl-2-O-methyl-D-mannitol"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "embedded_monosaccharide_parent_selection"
+        ]
+      ],
+      "why": "Each pair demonstrates the next applicable parent-selection criterion."
+    },
+    {
+      "id": "aldose_configurational_name_example",
+      "c": [
+        98
+      ],
+      "input": {
+        "structure": "D-mannose"
+      },
+      "ok": [
+        "D-manno-hexose",
+        "D-mannose"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "aldose_configurational_prefix_assignment"
+        ]
+      ],
+      "why": "The example pairs the systematic carbohydrate and retained names."
+    },
+    {
+      "id": "long_aldose_prefix_order_example",
+      "c": [
+        104
+      ],
+      "input": {
+        "aldose": "seven-carbon aldose"
+      },
+      "ok": [
+        "D-glycero-D-gluco-heptose",
+        "(2R,3S,4R,5R,6R)-2,3,4,5,6,7-hexahydroxyheptanal"
+      ],
+      "bad": [
+        "D-gluco-D-glycero-heptose"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "long_aldose_configurational_prefix_order"
+        ]
+      ],
+      "why": "The farthest configurational group is cited first."
+    },
+    {
+      "id": "separated_chirality_sequence_example",
+      "c": [
+        108
+      ],
+      "input": {
+        "chain": "deoxy decose with separated chirality-center sets"
+      },
+      "ok": [
+        "3,6-dideoxy-L-threo-L-talo-decose",
+        "(2R,4S,5R,7R,8S,9S)-2,4,5,7,8,9,10-heptahydroxydecanal"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "separated_chirality_center_prefix_assignment"
+        ]
+      ],
+      "why": "Nonchiral centers are ignored when assigning the prefix sequence."
+    },
+    {
+      "id": "long_monosaccharide_cyclic_example",
+      "c": [
+        115,
+        117
+      ],
+      "input": {
+        "cyclic_form": "heptopyranose"
+      },
+      "ok": [
+        "L-glycero-alpha-D-manno-heptopyranose",
+        "(2S,3S,4S,5S,6R)-6-[(1S)-1,2-dihydroxyethyl]oxane-2,3,4,5-tetrol"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "long_monosaccharide_cyclic_anomer_assignment"
+        ]
+      ],
+      "why": "The example identifies the anomeric relation in a cyclic monosaccharide longer than a hexose."
+    },
+    {
+      "id": "systematic_ketose_examples",
+      "c": [
+        132,
+        134,
+        138,
+        140,
+        143,
+        145,
+        146,
+        147,
+        149,
+        151,
+        152
+      ],
+      "input": {
+        "classes": [
+          "2-ketose",
+          "3-ketose",
+          "4-ketose",
+          "5-ketose"
+        ]
+      },
+      "ok": [
+        "L-xylo-hex-2-ulose",
+        "L-glycero-D-manno-oct-2-ulose",
+        "D-arabino-hex-3-ulose",
+        "L-threo-D-allo-non-3-ulose",
+        "L-gluco-hept-4-ulose",
+        "L-erythro-L-gluco-non-5-ulose"
+      ],
+      "bad": [
+        "D-gulo-hept-4-ulose",
+        "D-threo-D-allo-non-5-ulose"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "systematic_ketose_name_construction"
+        ]
+      ],
+      "why": "The examples apply carbonyl locants, configurational prefixes, and alphabetical tie breaking."
+    },
+    {
+      "id": "retained_deoxy_sugar_examples",
+      "c": [
+        161,
+        163,
+        165
+      ],
+      "input": {
+        "structures": [
+          "6-deoxy-L-galactose",
+          "6-deoxy-D-glucose",
+          "6-deoxy-L-mannose"
+        ]
+      },
+      "ok": [
+        "alpha-L-fucopyranose",
+        "beta-D-quinovopyranose",
+        "L-rhamnopyranose"
+      ],
+      "bad": [],
+      "shows": [
+        [
+          "semantic_unit",
+          "retained_deoxy_sugar_names"
+        ]
+      ],
+      "why": "The examples pair each retained trivial name with its systematic deoxy structure."
+    },
+    {
+      "id": "systematic_deoxy_sugar_examples",
+      "c": [
+        177,
+        179,
+        181,
+        183,
+        185,
+        190
+      ],
+      "input": {
+        "source_clause_indexes": [
+          177,
+          179,
+          181,
+          183,
+          185,
+          190
+        ]
+      },
+      "ok": [
+        "2-deoxy-D-erythro-pentofuranose",
+        "4-deoxy-beta-D-xylo-hexopyranose",
+        "2-deoxy-D-ribo-hexose",
+        "2,6-dideoxy-alpha-L-arabino-hexopyranose",
+        "1-deoxy-L-glycero-D-altro-oct-2-ulose",
+        "3,6,10-trideoxy-L-threo-L-talo-decose"
+      ],
+      "bad": [
+        "4-deoxy-beta-D-galactopyranose",
+        "2-deoxy-D-allose"
+      ],
+      "shows": [
+        [
+          "semantic_unit",
+          "systematic_deoxy_sugar_name_construction"
+        ]
+      ],
+      "why": "The examples preserve locanted deoxy prefixes and full configurational-prefix assignment."
+    }
+  ],
+  "corrections": [],
+  "refs": [
+    {
+      "id": "reference.p102.part002.anomeric_reference_center",
+      "c": [
+        2
+      ],
+      "rel": "cites",
+      "o": "P-102.3.4.2.2:xref:0001",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p102.part002.substituent_locant_set",
+      "c": [
+        79
+      ],
+      "rel": "cites",
+      "o": "P-102.4:xref:0005",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p102.part002.first_cited_substituent",
+      "c": [
+        83
+      ],
+      "rel": "cites",
+      "o": "P-102.4:xref:0006",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p102.part002.aldose_d_l_descriptor",
+      "c": [
+        96
+      ],
+      "rel": "cites",
+      "o": "P-102.5.1.1.1:xref:0001",
+      "resolution": "exact"
+    },
+    {
+      "id": "reference.p102.part002.ketose_d_l_descriptor",
+      "c": [
+        123
+      ],
+      "rel": "cites",
+      "o": "P-102.5.2.2:xref:0001",
+      "resolution": "exact"
+    }
+  ],
+  "additional_refs": []
+}
