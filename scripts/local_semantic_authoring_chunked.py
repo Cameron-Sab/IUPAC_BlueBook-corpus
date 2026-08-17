@@ -46,6 +46,21 @@ else:
 
 
 def response_schema(maximum_clauses: int) -> dict[str, Any]:
+    unit_variants = [
+        {
+            "type": "object",
+            "required": required,
+            "properties": {"k": {"const": kind}},
+        }
+        for kind, required in (
+            ("rule", ["id", "k", "c", "if"]),
+            ("definition", ["id", "k", "c", "term", "entity", "value"]),
+            ("procedure", ["id", "k", "c", "steps"]),
+            ("constraint", ["id", "k", "c", "assert", "violation"]),
+            ("mapping", ["id", "k", "c", "table"]),
+            ("decision", ["id", "k", "c", "candidates", "stages", "tie"]),
+        )
+    ]
     return {
         "type": "object",
         "additionalProperties": False,
@@ -81,22 +96,28 @@ def response_schema(maximum_clauses: int) -> dict[str, Any]:
             "symbols": {
                 "type": "array",
                 "maxItems": maximum_clauses,
-                "items": {"type": "object"},
+                "items": {
+                    "type": "object",
+                    "required": ["id", "k", "d", "ret"],
+                },
             },
             "units": {
                 "type": "array",
                 "maxItems": maximum_clauses,
-                "items": {"type": "object"},
+                "items": {"oneOf": unit_variants},
             },
             "exceptions": {
                 "type": "array",
                 "maxItems": maximum_clauses,
-                "items": {"type": "object"},
+                "items": {
+                    "type": "object",
+                    "required": ["id", "c", "if", "target", "mode", "order"],
+                },
             },
             "examples": {
                 "type": "array",
                 "maxItems": maximum_clauses,
-                "items": {"type": "object"},
+                "items": {"type": "object", "required": ["id", "c"]},
             },
         },
     }
@@ -229,6 +250,14 @@ def validate_patch(
             errors.append(f"clause indexes must exactly equal {expected}")
     target_set = set(expected)
     object_ids: set[str] = set()
+    required_by_kind = {
+        "rule": {"id", "k", "c", "if"},
+        "definition": {"id", "k", "c", "term", "entity", "value"},
+        "procedure": {"id", "k", "c", "steps"},
+        "constraint": {"id", "k", "c", "assert", "violation"},
+        "mapping": {"id", "k", "c", "table"},
+        "decision": {"id", "k", "c", "candidates", "stages", "tie"},
+    }
     for collection in ("units", "exceptions", "examples"):
         values = patch.get(collection)
         if not isinstance(values, list):
@@ -251,6 +280,20 @@ def validate_patch(
             if item["id"] in object_ids:
                 errors.append(f"duplicate authored id in partition: {item['id']}")
             object_ids.add(item["id"])
+            if collection == "units":
+                required = required_by_kind.get(item.get("k"))
+                if required is None:
+                    errors.append(f"{item['id']}: unknown unit kind {item.get('k')}")
+                else:
+                    missing = sorted(required.difference(item))
+                    if missing:
+                        errors.append(f"{item['id']}: missing required fields {missing}")
+            elif collection == "exceptions":
+                missing = sorted(
+                    {"id", "c", "if", "target", "mode", "order"}.difference(item)
+                )
+                if missing:
+                    errors.append(f"{item['id']}: missing required fields {missing}")
     if not isinstance(patch.get("symbols"), list):
         errors.append("symbols must be an array")
     else:

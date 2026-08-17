@@ -97,7 +97,7 @@ def test_patch_validation_rejects_wrong_order_and_cross_partition_units() -> Non
     validation = validate_patch(patch, authoring["task_id"], [1, 2])
 
     assert validation["passed"] is False
-    assert len(validation["errors"]) == 2
+    assert len(validation["errors"]) >= 2
 
 
 def test_patch_validation_rejects_short_clause_decisions() -> None:
@@ -149,3 +149,23 @@ def test_duplicate_ids_are_namespaced_with_local_references() -> None:
         "semantic_unit",
         "same_partition_002",
     ]
+
+
+def test_patch_validation_rejects_units_missing_kind_fields() -> None:
+    _task, authoring, _candidate = _fixture()
+    patch = {
+        "task_id": authoring["task_id"],
+        "clauses": [{"i": 1, "decision": ["procedure_step", "normative", "compile"]}],
+        "symbols": [],
+        "units": [{"id": "incomplete", "k": "procedure", "c": [1]}],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    validation = validate_patch(patch, authoring["task_id"], [1])
+
+    assert validation["passed"] is False
+    assert any(
+        "missing required fields ['steps']" in error
+        for error in validation["errors"]
+    )
