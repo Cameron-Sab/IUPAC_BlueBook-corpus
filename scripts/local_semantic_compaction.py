@@ -1098,6 +1098,21 @@ def process_task(
             break
         repair_source = best_plan if best_plan else plan
         repair_base, repair_targets = clean_plan_for_patch(repair_source, candidate)
+        cleanup_validation = validate_plan(repair_base, candidate)
+        attempts.append(
+            {
+                "attempt": attempt + 1,
+                "mode": "deterministic_post_patch_cleanup",
+                "source_plan_sha256": _sha256(repair_source),
+                "validation": cleanup_validation,
+            }
+        )
+        if cleanup_validation["passed"]:
+            plan = repair_base
+            validation = cleanup_validation
+            best_plan = repair_base
+            best_validation = cleanup_validation
+            break
         request_prompt = build_patch_prompt(
             candidate, repair_base, repair_targets, validation["errors"]
         )

@@ -193,6 +193,61 @@ def test_process_task_migrates_duplicate_cache_without_model_call(
     assert validate_plan(migrated, candidate)["passed"] is True
 
 
+def test_process_task_accepts_deterministically_cleaned_patch(
+    tmp_path, monkeypatch
+) -> None:
+    candidate = _fixture_candidate()
+    plan = _covering_plan(candidate)
+    target = plan["groups"][0]["clauses"].pop()
+    (tmp_path / "plans").mkdir()
+    (tmp_path / "reports").mkdir()
+    (tmp_path / "plans" / "P-100-part-001.json").write_text(
+        json.dumps(plan), encoding="utf-8"
+    )
+    (tmp_path / "reports" / "P-100-part-001.json").write_text(
+        json.dumps({"candidate_sha256": compaction._sha256(candidate)}),
+        encoding="utf-8",
+    )
+    calls = 0
+
+    def redundant_patch(**_kwargs):
+        nonlocal calls
+        calls += 1
+        return (
+            {
+                "task_id": candidate["task_id"],
+                "groups": [],
+                "exceptions": [],
+                "examples": [target, target + 1],
+            },
+            {"fixture": True},
+        )
+
+    monkeypatch.setattr(compaction, "_request_model", redundant_patch)
+    report = process_task(
+        DEFAULT_TASK_DIR / "P-100-part-001.json",
+        authoring_dir=(
+            DEFAULT_TASK_DIR.parents[1] / "data" / "bluebook_v3" / "semantic_authoring"
+        ),
+        reference_dir=None,
+        output_dir=tmp_path,
+        model="fixture",
+        backend="openai",
+        endpoint="http://127.0.0.1:1",
+        context_tokens=49152,
+        output_tokens=8192,
+        timeout=1,
+        repair_attempts=2,
+        seed=1,
+        dry_run=False,
+        force=False,
+    )
+
+    assert calls == 1
+    assert report["validation"]["passed"] is True
+    assert report["attempts"][-1]["mode"] == "deterministic_post_patch_cleanup"
+
+
 def test_plan_normalization_rebuilds_exact_source_dependencies() -> None:
     candidate = _fixture_candidate()
     plan = _covering_plan(candidate)
