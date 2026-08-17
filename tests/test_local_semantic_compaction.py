@@ -4,6 +4,9 @@ from scripts.build_compact_semantic_tasks import load_json
 from scripts.local_semantic_compaction import (
     DEFAULT_TASK_DIR,
     build_candidate_view,
+    build_patch_prompt,
+    clean_plan_for_patch,
+    merge_plan_patch,
     normalize_plan,
     validate_plan,
 )
@@ -76,6 +79,69 @@ def test_plan_validation_requires_exact_clause_coverage() -> None:
     report = validate_plan(plan, candidate)
     assert report["passed"] is False
     assert any("missing clause indexes" in error for error in report["errors"])
+
+
+def test_plan_validation_rejects_duplicate_clause_ownership() -> None:
+    candidate = _fixture_candidate()
+    plan = _covering_plan(candidate)
+    duplicate = plan["groups"][0]["clauses"][0]
+    plan["examples"].append(duplicate)
+
+    report = validate_plan(plan, candidate)
+
+    assert report["passed"] is False
+    assert report["multiply_grounded_clause_count"] == 1
+    assert any("assigned more than once" in error for error in report["errors"])
+
+
+def test_patch_cleanup_and_merge_preserve_valid_semantics() -> None:
+    candidate = _fixture_candidate()
+    plan = _covering_plan(candidate)
+    target = plan["groups"][0]["clauses"].pop()
+    plan["groups"].append(
+        {
+            "id": "invalid-empty-semantics",
+            "kind": "rule",
+            "force": "required",
+            "clauses": [target],
+            "semantics": {},
+        }
+    )
+
+    base, targets = clean_plan_for_patch(plan, candidate)
+    prompt = build_patch_prompt(candidate, base, targets, ["fixture failure"])
+    patch = {
+        "task_id": candidate["task_id"],
+        "groups": [],
+        "exceptions": [],
+        "examples": [target],
+    }
+    merged, normalization, scope_errors = merge_plan_patch(
+        base, patch, candidate, targets
+    )
+
+    assert targets == [target]
+    assert '"target_clause_indexes":[' + str(target) + "]" in prompt
+    assert scope_errors == []
+    assert normalization["patch_target_clause_count"] == 1
+    assert validate_plan(merged, candidate)["passed"] is True
+
+
+def test_patch_merge_rejects_non_target_clause_indexes() -> None:
+    candidate = _fixture_candidate()
+    plan = _covering_plan(candidate)
+    target = plan["groups"][0]["clauses"].pop()
+    base, targets = clean_plan_for_patch(plan, candidate)
+    patch = {
+        "task_id": candidate["task_id"],
+        "groups": [],
+        "exceptions": [],
+        "examples": [target, target + 1],
+    }
+
+    _, _, scope_errors = merge_plan_patch(base, patch, candidate, targets)
+
+    assert scope_errors == [f"patch contains non-target clause indexes: [{target + 1}]"]
 
 
 def test_plan_normalization_rebuilds_exact_source_dependencies() -> None:

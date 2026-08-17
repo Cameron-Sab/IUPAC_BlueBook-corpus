@@ -3,6 +3,8 @@ param(
     [string]$Model = "qwen3:30b-instruct",
     [int]$Port = 8080,
     [int]$ContextTokens = 49152,
+    [int]$RepairAttempts = 2,
+    [int]$MaximumTaskRuns = 6,
     [switch]$ReplaceServer,
     [switch]$ReuseServer
 )
@@ -23,12 +25,16 @@ $runtime = Join-Path $root "work\local_semantic_supervisor"
 New-Item -ItemType Directory -Force -Path $runtime | Out-Null
 $stdout = Join-Path $runtime "supervisor.out.log"
 $stderr = Join-Path $runtime "supervisor.err.log"
+$stop = Join-Path $runtime "state.stop"
+Remove-Item -LiteralPath $stop -Force -ErrorAction SilentlyContinue
 $python = (Get-Command python -ErrorAction Stop).Source
 $arguments = @(
     "scripts\run_local_semantic_supervisor.py",
     "--model", $Model,
     "--endpoint", "http://127.0.0.1:$Port",
-    "--context-tokens", "$ContextTokens"
+    "--context-tokens", "$ContextTokens",
+    "--repair-attempts", "$RepairAttempts",
+    "--maximum-task-runs", "$MaximumTaskRuns"
 )
 $process = Start-Process -FilePath $python -ArgumentList $arguments -WorkingDirectory $root `
     -WindowStyle Hidden -RedirectStandardOutput $stdout -RedirectStandardError $stderr -PassThru

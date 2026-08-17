@@ -14,6 +14,7 @@ if __package__:
     from scripts.build_compact_semantic_tasks import load_json
     from scripts.local_semantic_compaction import (
         DEFAULT_REFERENCE_DIR,
+        VALIDATOR_VERSION,
         build_candidate_view,
         build_prompt,
         process_task,
@@ -23,6 +24,7 @@ else:
     from build_compact_semantic_tasks import load_json  # type: ignore[no-redef]
     from local_semantic_compaction import (  # type: ignore[no-redef]
         DEFAULT_REFERENCE_DIR,
+        VALIDATOR_VERSION,
         build_candidate_view,
         build_prompt,
         process_task,
@@ -84,6 +86,7 @@ def load_state(path: Path, args: argparse.Namespace) -> dict[str, Any]:
         "maximum_output_tokens": args.maximum_output_tokens,
         "repair_attempts": args.repair_attempts,
         "maximum_task_runs": args.maximum_task_runs,
+        "validator_version": VALIDATOR_VERSION,
     }
     return state
 
@@ -182,7 +185,14 @@ def run(args: argparse.Namespace) -> int:
             runnable = [
                 (prompt_bytes, task_path)
                 for prompt_bytes, task_path in tasks
-                if state["tasks"].get(task_path.stem, {}).get("status") != "passed"
+                if not (
+                    state["tasks"].get(task_path.stem, {}).get("status") == "passed"
+                    and state["tasks"]
+                    .get(task_path.stem, {})
+                    .get("report", {})
+                    .get("validator_version")
+                    == VALIDATOR_VERSION
+                )
                 and int(
                     state["tasks"].get(task_path.stem, {}).get("run_count", 0)
                 )
@@ -234,7 +244,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--maximum-output-tokens", type=int, default=24576)
     parser.add_argument("--minimum-output-tokens", type=int, default=8192)
     parser.add_argument("--repair-attempts", type=int, default=2)
-    parser.add_argument("--maximum-task-runs", type=int, default=2)
+    parser.add_argument("--maximum-task-runs", type=int, default=6)
     parser.add_argument("--seed", type=int, default=3407)
     parser.add_argument("--timeout", type=int, default=7200)
     parser.add_argument("--infrastructure-retry-seconds", type=int, default=30)

@@ -31,6 +31,7 @@ DEFAULT_OUTPUT_DIR = ROOT / "work" / "local_semantic_compaction"
 DEFAULT_REFERENCE_DIR = ROOT / "data" / "bluebook_v3" / "semantic_authoring"
 DEFAULT_MODEL = "qwen3:30b-instruct"
 DEFAULT_SEED = 3407
+VALIDATOR_VERSION = "1.1.0"
 PLAN_KINDS = {"rule", "decision", "definition", "mapping", "procedure", "constraint"}
 PLAN_FORCES = {"required", "permitted", "prohibited", "preference", "definition"}
 
@@ -530,17 +531,231 @@ def validate_plan(plan: Mapping[str, Any], candidate: Mapping[str, Any]) -> dict
     missing = sorted(source_indexes.difference(covered))
     if missing:
         errors.append(f"missing clause indexes: {missing[:40]}")
+    multiply_grounded = sorted(
+        index for index, count in ownership_counts.items() if count > 1
+    )
+    if multiply_grounded:
+        errors.append(
+            f"clause indexes assigned more than once: {multiply_grounded[:40]}"
+        )
     return {
         "passed": not errors,
         "task_id": candidate["task_id"],
         "source_clause_count": len(source_indexes),
         "covered_clause_count": len(covered),
         "group_count": len(group_ids),
-        "multiply_grounded_clause_count": sum(
-            count > 1 for count in ownership_counts.values()
-        ),
+        "multiply_grounded_clause_count": len(multiply_grounded),
         "errors": errors,
     }
+
+
+def clean_plan_for_patch(
+    plan: Mapping[str, Any], candidate: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[int]]:
+    """Retain valid, singly owned semantics and return clauses still needing work."""
+    source_indexes = {
+        clause["i"] for rule in candidate["rules"] for clause in rule["clauses"]
+    }
+    source_rule_ids = {rule["rule_id"] for rule in candidate["rules"]}
+    grounded_rule_ids = source_rule_ids | {
+        reference["target"]
+        for rule in candidate["rules"]
+        for reference in rule.get("references", [])
+    }
+    claimed: set[int] = set()
+    groups: list[dict[str, Any]] = []
+    group_ids: set[str] = set()
+
+    for value in plan.get("groups", []):
+        if not isinstance(value, Mapping):
+            continue
+        group_id = value.get("id")
+        clauses = value.get("clauses")
+        semantics = value.get("semantics")
+        if (
+            not isinstance(group_id, str)
+            or not group_id
+            or group_id in group_ids
+            or value.get("kind") not in PLAN_KINDS
+            or value.get("force") not in PLAN_FORCES
+            or not isinstance(semantics, Mapping)
+            or not semantics
+            or not isinstance(clauses, list)
+        ):
+            continue
+        retained = [
+            index
+            for index in clauses
+            if isinstance(index, int)
+            and index in source_indexes
+            and index not in claimed
+        ]
+        if not retained:
+            continue
+        group = dict(value)
+        group["clauses"] = retained
+        groups.append(group)
+        group_ids.add(group_id)
+        claimed.update(retained)
+
+    exceptions: list[dict[str, Any]] = []
+    exception_ids: set[str] = set()
+    for value in plan.get("exceptions", []):
+        if not isinstance(value, Mapping):
+            continue
+        exception_id = value.get("id")
+        target = value.get("target")
+        clauses = value.get("clauses")
+        target_resolves = isinstance(target, Mapping) and (
+            (target.get("kind") == "group" and target.get("id") in group_ids)
+            or (
+                target.get("kind") == "rule"
+                and target.get("id") in grounded_rule_ids
+            )
+        )
+        if (
+            not isinstance(exception_id, str)
+            or not exception_id
+            or exception_id in exception_ids
+            or not target_resolves
+            or not isinstance(value.get("condition"), Mapping)
+            or not isinstance(value.get("effect"), Mapping)
+            or not isinstance(value.get("precedence"), int)
+            or not isinstance(clauses, list)
+        ):
+            continue
+        retained = [
+            index
+            for index in clauses
+            if isinstance(index, int)
+            and index in source_indexes
+            and index not in claimed
+        ]
+        if not retained:
+            continue
+        exception = dict(value)
+        exception["clauses"] = retained
+        exceptions.append(exception)
+        exception_ids.add(exception_id)
+        claimed.update(retained)
+
+    examples = []
+    for index in plan.get("examples", []):
+        if (
+            isinstance(index, int)
+            and index in source_indexes
+            and index not in claimed
+        ):
+            examples.append(index)
+            claimed.add(index)
+
+    cleaned, _ = normalize_plan(
+        {
+            "task_id": candidate["task_id"],
+            "groups": groups,
+            "exceptions": exceptions,
+            "examples": examples,
+        },
+        candidate,
+    )
+    return cleaned, sorted(source_indexes.difference(claimed))
+
+
+def build_patch_prompt(
+    candidate: Mapping[str, Any],
+    base_plan: Mapping[str, Any],
+    target_indexes: Sequence[int],
+    errors: Sequence[str],
+) -> str:
+    targets = set(target_indexes)
+    focused_rules = []
+    for rule in candidate["rules"]:
+        indexes = [clause["i"] for clause in rule["clauses"]]
+        selected: set[int] = set()
+        for position, index in enumerate(indexes):
+            if index not in targets:
+                continue
+            selected.add(index)
+            if position:
+                selected.add(indexes[position - 1])
+            if position + 1 < len(indexes):
+                selected.add(indexes[position + 1])
+        if not selected:
+            continue
+        focused_rules.append(
+            {
+                "rule_id": rule["rule_id"],
+                "parent": rule.get("parent"),
+                "clauses": [
+                    {**clause, "repair_target": clause["i"] in targets}
+                    for clause in rule["clauses"]
+                    if clause["i"] in selected
+                ],
+                "references": [
+                    reference
+                    for reference in rule.get("references", [])
+                    if reference["i"] in selected
+                ],
+            }
+        )
+    payload = {
+        "task_id": candidate["task_id"],
+        "target_clause_indexes": list(target_indexes),
+        "source_context": focused_rules,
+        "retained_group_ids": [group["id"] for group in base_plan["groups"]],
+        "retained_exception_ids": [
+            exception["id"] for exception in base_plan["exceptions"]
+        ],
+        "validation_errors": list(errors),
+    }
+    return (
+        SYSTEM_PROMPT
+        + "\nPATCH MODE: Return semantic owners only for target_clause_indexes. "
+        "Every target index must occur exactly once across groups, exceptions, and "
+        "examples. Do not return neighboring context indexes. IDs must not duplicate "
+        "retained IDs. The patch is merged mechanically with the retained valid plan.\n"
+        + "RESPONSE SCHEMA:\n"
+        + json.dumps(response_schema(), separators=(",", ":"), ensure_ascii=False)
+        + "\nFOCUSED REPAIR INPUT:\n"
+        + json.dumps(payload, separators=(",", ":"), ensure_ascii=False)
+    )
+
+
+def merge_plan_patch(
+    base_plan: Mapping[str, Any],
+    patch: Mapping[str, Any],
+    candidate: Mapping[str, Any],
+    target_indexes: Sequence[int],
+) -> tuple[dict[str, Any], dict[str, Any], list[str]]:
+    target_set = set(target_indexes)
+    patch_indexes: list[Any] = []
+    for owner in patch.get("groups", []):
+        if isinstance(owner, Mapping) and isinstance(owner.get("clauses"), list):
+            patch_indexes.extend(owner["clauses"])
+    for owner in patch.get("exceptions", []):
+        if isinstance(owner, Mapping) and isinstance(owner.get("clauses"), list):
+            patch_indexes.extend(owner["clauses"])
+    if isinstance(patch.get("examples"), list):
+        patch_indexes.extend(patch["examples"])
+    scope_errors = []
+    outside = sorted(
+        {index for index in patch_indexes if isinstance(index, int)} - target_set
+    )
+    if outside:
+        scope_errors.append(f"patch contains non-target clause indexes: {outside[:40]}")
+    if patch.get("task_id") != candidate["task_id"]:
+        scope_errors.append("patch task_id does not match")
+    merged = {
+        "task_id": candidate["task_id"],
+        "groups": list(base_plan["groups"]) + list(patch.get("groups", [])),
+        "exceptions": list(base_plan["exceptions"])
+        + list(patch.get("exceptions", [])),
+        "examples": list(base_plan["examples"]) + list(patch.get("examples", [])),
+    }
+    normalized, normalization = normalize_plan(merged, candidate)
+    normalization["patch_target_clause_count"] = len(target_set)
+    normalization["patch_returned_clause_count"] = len(patch_indexes)
+    return normalized, normalization, scope_errors
 
 
 def audit_plan_against_authoring(
@@ -680,15 +895,18 @@ def process_task(
 
     if not force and plan_path.exists() and report_path.exists():
         report = load_json(report_path)
+        cached_plan = load_json(plan_path)
+        cached_validation = validate_plan(cached_plan, candidate)
         if (
             report.get("prompt_sha256") == prompt_sha256
             and report.get("model") == model
             and report.get("backend") == backend
             and report.get("endpoint") == endpoint
             and report.get("seed") == seed
-            and report.get("validation", {}).get("passed") is True
+            and report.get("validator_version") == VALIDATOR_VERSION
+            and cached_validation.get("passed") is True
         ):
-            return {**report, "cached": True}
+            return {**report, "validation": cached_validation, "cached": True}
 
     base_report: dict[str, Any] = {
         "format": "iupac-bluebook-local-semantic-compaction-report",
@@ -699,6 +917,7 @@ def process_task(
         "backend": backend,
         "endpoint": endpoint,
         "seed": seed,
+        "validator_version": VALIDATOR_VERSION,
         "response_schema_sha256": _sha256(response_schema()),
         "prompt_sha256": prompt_sha256,
         "prompt_bytes": len(prompt.encode("utf-8")),
@@ -713,15 +932,18 @@ def process_task(
     generated_plan: dict[str, Any] = {}
     best_plan: dict[str, Any] = {}
     best_validation: dict[str, Any] = {"passed": False, "errors": ["not generated"]}
-    best_covered = -1
+    best_score = (-1, -1, -1)
     validation: dict[str, Any] = {"passed": False, "errors": ["not generated"]}
     effective_context = context_tokens
     estimated_prompt_tokens = 0
+    request_output_tokens = output_tokens
+    repair_base: dict[str, Any] | None = None
+    repair_targets: list[int] = []
     for attempt in range(repair_attempts + 1):
         estimated_prompt_tokens = math.ceil(
             len(request_prompt.encode("utf-8")) / 3
         )
-        required_context = estimated_prompt_tokens + output_tokens
+        required_context = estimated_prompt_tokens + request_output_tokens
         effective_context = min(
             context_tokens,
             max(32768, math.ceil(required_context / 16384) * 16384),
@@ -751,7 +973,7 @@ def process_task(
                 model=model,
                 prompt=request_prompt,
                 context_tokens=effective_context,
-                output_tokens=output_tokens,
+                output_tokens=request_output_tokens,
                 timeout=timeout,
                 seed=seed,
             )
@@ -768,25 +990,48 @@ def process_task(
             )
             if attempt == repair_attempts:
                 break
-            request_prompt = (
-                prompt
-                + "\nTHE PREVIOUS ATTEMPT FAILED BEFORE VALIDATION:\n"
-                + str(error)
-                + "\nReturn a complete but substantially more compact plan as JSON only."
-            )
+            if repair_base is None:
+                request_prompt = (
+                    prompt
+                    + "\nTHE PREVIOUS ATTEMPT FAILED BEFORE VALIDATION:\n"
+                    + str(error)
+                    + "\nReturn a complete but substantially more compact plan as JSON only."
+                )
+            else:
+                request_prompt += (
+                    "\nTHE PREVIOUS PATCH FAILED BEFORE VALIDATION:\n"
+                    + str(error)
+                    + "\nReturn the same scoped patch as JSON only."
+                )
             continue
-        plan, normalization = normalize_plan(generated_plan, candidate)
+        if repair_base is None:
+            plan, normalization = normalize_plan(generated_plan, candidate)
+            scope_errors: list[str] = []
+        else:
+            plan, normalization, scope_errors = merge_plan_patch(
+                repair_base, generated_plan, candidate, repair_targets
+            )
         validation = validate_plan(plan, candidate)
+        if scope_errors:
+            validation["passed"] = False
+            validation["errors"] = scope_errors + validation["errors"]
         covered = int(validation.get("covered_clause_count", 0))
-        if validation.get("passed") is True or covered > best_covered:
+        score = (
+            covered,
+            -int(validation.get("multiply_grounded_clause_count", 0)),
+            -len(validation.get("errors", [])),
+        )
+        if validation.get("passed") is True or score > best_score:
             best_plan = plan
             best_validation = validation
-            best_covered = covered
+            best_score = score
         attempts.append(
             {
                 "attempt": attempt + 1,
                 "estimated_prompt_tokens": estimated_prompt_tokens,
                 "context_tokens": effective_context,
+                "output_token_budget": request_output_tokens,
+                "mode": "patch" if repair_base is not None else "full",
                 "metrics": metrics,
                 "normalization": normalization,
                 "validation": validation,
@@ -794,27 +1039,14 @@ def process_task(
         )
         if validation["passed"] or attempt == repair_attempts:
             break
-        repair_prefix = (
-            prompt
-            + "\nPREVIOUS RESPONSE FAILED DETERMINISTIC VALIDATION:\n"
-            + json.dumps(validation["errors"], separators=(",", ":"), ensure_ascii=False)
+        repair_source = best_plan if best_plan else plan
+        repair_base, repair_targets = clean_plan_for_patch(repair_source, candidate)
+        request_prompt = build_patch_prompt(
+            candidate, repair_base, repair_targets, validation["errors"]
         )
-        previous_json = json.dumps(
-            generated_plan, separators=(",", ":"), ensure_ascii=False
+        request_output_tokens = min(
+            output_tokens, max(2048, 768 + 192 * len(repair_targets))
         )
-        with_previous = (
-            repair_prefix
-            + "\nPREVIOUS PLAN TO REPAIR WITHOUT DROPPING VALID CONTENT:\n"
-            + previous_json
-            + "\nReturn the complete corrected plan as compact JSON only."
-        )
-        if math.ceil(len(with_previous.encode("utf-8")) / 3) + output_tokens <= context_tokens:
-            request_prompt = with_previous
-        else:
-            request_prompt = (
-                repair_prefix
-                + "\nRegenerate the complete corrected plan as compact JSON only."
-            )
     if best_plan:
         plan = best_plan
         validation = best_validation
