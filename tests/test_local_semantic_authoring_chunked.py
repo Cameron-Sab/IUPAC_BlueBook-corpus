@@ -1,12 +1,24 @@
 from __future__ import annotations
 
+from jsonschema import Draft202012Validator
+
 from scripts.build_compact_semantic_tasks import load_json
 from scripts.local_semantic_authoring import DEFAULT_BOOTSTRAP_DIR, DEFAULT_EXAMPLE
 from scripts.local_semantic_authoring_chunked import (
     assemble_patches,
     deduplicate_patch_ids,
     focused_candidate,
+    normalize_mechanical_decisions,
+    normalize_mechanical_ownership,
+    normalize_bootstrap_ownership,
+    normalize_clause_metadata,
+    normalize_example_references,
+    normalize_example_names,
+    normalize_compact_identifiers,
+    normalize_reason_codes,
+    normalize_table_references,
     partition_indexes,
+    response_schema,
     validate_patch,
 )
 from scripts.local_semantic_compaction import build_candidate_view
@@ -151,6 +163,26 @@ def test_duplicate_ids_are_namespaced_with_local_references() -> None:
     ]
 
 
+def test_duplicate_mapping_unit_does_not_rename_table_reference() -> None:
+    base = {
+        "symbols": [],
+        "units": [{"id": "shared", "k": "mapping", "table": "shared"}],
+        "exceptions": [],
+        "examples": [],
+    }
+    later = {
+        "symbols": [],
+        "units": [{"id": "shared", "k": "mapping", "table": "shared"}],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    normalized = deduplicate_patch_ids([base, later])
+
+    assert normalized[1]["units"][0]["id"] == "shared_partition_002"
+    assert normalized[1]["units"][0]["table"] == "shared"
+
+
 def test_patch_validation_rejects_units_missing_kind_fields() -> None:
     _task, authoring, _candidate = _fixture()
     patch = {
@@ -169,3 +201,320 @@ def test_patch_validation_rejects_units_missing_kind_fields() -> None:
         "missing required fields ['steps']" in error
         for error in validation["errors"]
     )
+
+
+def test_response_schema_accepts_complete_gold_units_and_rejects_kind_only() -> None:
+    _task, authoring, _candidate = _fixture()
+    schema = response_schema(1)
+    validator = Draft202012Validator(schema)
+    complete = {
+        "task_id": authoring["task_id"],
+        "clauses": [{"i": 1, "decision": authoring["clauses"][0]}],
+        "symbols": [],
+        "units": [authoring["units"][0]],
+        "exceptions": [],
+        "examples": [],
+    }
+    incomplete = {
+        **complete,
+        "units": [{"k": "procedure"}],
+    }
+
+    assert list(validator.iter_errors(complete)) == []
+    assert list(validator.iter_errors(incomplete))
+
+
+def test_strict_patch_validation_rejects_unknown_statement_opcode() -> None:
+    task, authoring, _candidate = _fixture()
+    patch = {
+        "task_id": authoring["task_id"],
+        "clauses": [
+            {"i": 2, "decision": ["procedure_step", "normative", "compile"]}
+        ],
+        "symbols": [],
+        "units": [
+            {
+                "id": "bad_apply",
+                "k": "procedure",
+                "c": [2],
+                "steps": [["apply", "something"]],
+            }
+        ],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    validation = validate_patch(
+        patch,
+        authoring["task_id"],
+        [2],
+        task=task,
+        bootstrap=authoring,
+    )
+
+    assert validation["passed"] is False
+    assert any("response schema" in error for error in validation["errors"])
+
+
+def test_response_schema_rejects_malformed_nested_compact_operations() -> None:
+    _task, authoring, _candidate = _fixture()
+    schema = response_schema(1)
+    validator = Draft202012Validator(schema)
+    patch = {
+        "task_id": authoring["task_id"],
+        "clauses": [{"i": 1, "decision": authoring["clauses"][0]}],
+        "symbols": [],
+        "units": [
+            {
+                "id": "bad_literal",
+                "k": "rule",
+                "c": [1],
+                "if": ["lit", True, False],
+                "then": [["emit", ["lit", "value"]]],
+            }
+        ],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    assert list(validator.iter_errors(patch))
+
+    patch["units"][0]["if"] = ["lit", True]
+    patch["units"][0]["then"] = [["apply", "something"]]
+    assert list(validator.iter_errors(patch))
+
+
+def test_response_schema_rejects_malformed_exception_reference() -> None:
+    _task, authoring, _candidate = _fixture()
+    schema = response_schema(1)
+    validator = Draft202012Validator(schema)
+    patch = {
+        "task_id": authoring["task_id"],
+        "clauses": [{"i": 1, "decision": authoring["clauses"][0]}],
+        "symbols": [],
+        "units": [],
+        "exceptions": [
+            {
+                "id": "bad_target",
+                "c": [1],
+                "if": ["lit", True],
+                "target": [1],
+                "mode": "suppress",
+                "order": 1,
+            }
+        ],
+        "examples": [],
+    }
+
+    assert list(validator.iter_errors(patch))
+    patch["exceptions"][0]["target"] = ["clause", 1]
+    assert list(validator.iter_errors(patch)) == []
+
+
+def test_patch_validation_enforces_mechanical_clause_null() -> None:
+    task, authoring, _candidate = _fixture()
+    assert authoring["clauses"][0] is None
+    patch = {
+        "task_id": authoring["task_id"],
+        "clauses": [{"i": 1, "decision": ["figure_asset", "illustrative", "compile"]}],
+        "symbols": [],
+        "units": [],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    validation = validate_patch(
+        patch,
+        authoring["task_id"],
+        [1],
+        task=task,
+        bootstrap=authoring,
+    )
+
+    assert validation["passed"] is False
+    assert "mechanically proven clause 1 decision must be null" in validation["errors"]
+
+    normalized, changed = normalize_mechanical_decisions(patch, authoring)
+    assert normalized["clauses"][0]["decision"] is None
+    assert changed == [1]
+    assert patch["clauses"][0]["decision"] is not None
+
+
+def test_mechanical_ownership_is_removed_and_empty_objects_are_dropped() -> None:
+    _task, authoring, _candidate = _fixture()
+    patch = {
+        "units": [
+            {"id": "mixed", "c": [1, 2]},
+            {"id": "mechanical_only", "c": [1]},
+        ],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    normalized, changes = normalize_mechanical_ownership(patch, authoring)
+
+    assert normalized["units"] == [{"id": "mixed", "c": [2]}]
+    assert [change["id"] for change in changes] == ["mixed", "mechanical_only"]
+    assert changes[1]["dropped"] is True
+
+
+def test_patch_validation_rejects_compiled_clause_without_owner() -> None:
+    task, authoring, _candidate = _fixture()
+    patch = {
+        "task_id": authoring["task_id"],
+        "clauses": [
+            {"i": 2, "decision": ["definition", "informative", "compile"]}
+        ],
+        "symbols": [],
+        "units": [],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    validation = validate_patch(
+        patch,
+        authoring["task_id"],
+        [2],
+        task=task,
+        bootstrap=authoring,
+    )
+
+    assert validation["passed"] is False
+    assert "compiled clause 2 has no semantic owner" in validation["errors"]
+
+
+def test_bootstrap_ownership_restores_source_example() -> None:
+    authoring = load_json(DEFAULT_BOOTSTRAP_DIR / "P-101-part-002.json")
+    example_index = 217
+    patch = {
+        "clauses": [
+            {"i": example_index, "decision": ["example", "illustrative", "compile"]}
+        ],
+        "units": [],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    normalized, changes = normalize_bootstrap_ownership(patch, authoring)
+
+    assert normalized["examples"][0]["c"] == [example_index]
+    assert normalized["examples"][0]["shows"] == []
+    assert changes[0]["action"] == "restore_source_example"
+
+
+def test_invalid_clause_metadata_is_restored_from_bootstrap() -> None:
+    _task, authoring, _candidate = _fixture()
+    patch = {
+        "clauses": [{"i": 2, "decision": ["compile", "clause-id", "compile"]}]
+    }
+
+    normalized, changes = normalize_clause_metadata(patch, authoring)
+
+    assert normalized["clauses"][0]["decision"][:2] == authoring["clauses"][1][:2]
+    assert changes[0]["clause_index"] == 2
+
+
+def test_invalid_example_reference_is_removed() -> None:
+    patch = {
+        "examples": [
+            {
+                "id": "example",
+                "shows": [
+                    ["render", "not-an-object"],
+                    ["semantic_unit", "valid-unit"],
+                ],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_example_references(patch)
+
+    assert normalized["examples"][0]["shows"] == [
+        ["semantic_unit", "valid-unit"]
+    ]
+    assert changes == [{"example_id": "example", "removed_count": 1}]
+
+
+def test_literal_wrapped_example_name_is_unwrapped() -> None:
+    patch = {
+        "examples": [
+            {"id": "example", "ok": [["lit", "ethane"]], "bad": []}
+        ]
+    }
+
+    normalized, changes = normalize_example_names(patch)
+
+    assert normalized["examples"][0]["ok"] == ["ethane"]
+    assert changes[0]["unwrapped_count"] == 1
+
+
+def test_statement_reason_code_is_normalized_recursively() -> None:
+    patch = {
+        "clauses": [],
+        "units": [
+            {
+                "id": "rule",
+                "then": [
+                    ["if", ["lit", True], [["reject", "name", "Bad name"]], []]
+                ],
+            }
+        ],
+    }
+
+    normalized, changes = normalize_reason_codes(patch)
+
+    assert normalized["units"][0]["then"][0][2][0][2] == "bad_name"
+    assert changes[0]["owner_id"] == "rule"
+
+
+def test_compact_get_path_and_scope_are_normalized() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "rule",
+                "scope": {"r": ["P-101"]},
+                "if": ["get", ["var", "candidate"], "CIP priority"],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["scope"]["r"] == ["class_specific"]
+    assert normalized["units"][0]["if"][2] == "cip_priority"
+    assert len(changes) == 2
+
+
+def test_mapping_table_alias_is_rebound_by_clause_overlap() -> None:
+    authoring = load_json(DEFAULT_BOOTSTRAP_DIR / "P-101-part-002.json")
+    patch = {
+        "units": [
+            {"id": "mapping", "k": "mapping", "c": [32], "table": "invented"}
+        ]
+    }
+
+    normalized, changes = normalize_table_references(patch, authoring)
+
+    assert normalized["units"][0]["table"] == authoring["tables"][0]["id"]
+    assert changes[0]["field"] == "table"
+
+
+def test_unretained_lookup_is_lowered_to_grounded_function() -> None:
+    authoring = load_json(DEFAULT_BOOTSTRAP_DIR / "P-101-part-002.json")
+    patch = {
+        "symbols": [],
+        "units": [
+            {
+                "id": "rule",
+                "k": "rule",
+                "c": [2],
+                "if": ["lookup", "missing", ["var", "key"], "name"],
+            }
+        ],
+    }
+
+    normalized, changes = normalize_table_references(patch, authoring)
+
+    assert normalized["units"][0]["if"][0] == "call"
+    assert normalized["symbols"][0]["id"] == "lookup_missing"
+    assert changes[0]["action"] == "lower_to_grounded_function"

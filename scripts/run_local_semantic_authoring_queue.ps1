@@ -8,6 +8,7 @@ param(
 )
 
 $ErrorActionPreference = "Continue"
+$env:PYTHONUTF8 = "1"
 $root = Split-Path -Parent $PSScriptRoot
 $bootstrap = Join-Path $root "work\bootstrap_semantic_authoring"
 $taskDir = Join-Path $root "work\compact_semantic_tasks"

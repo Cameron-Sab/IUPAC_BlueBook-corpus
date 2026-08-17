@@ -4,11 +4,16 @@ import argparse
 import hashlib
 import json
 import math
+import re
+import sys
 from pathlib import Path
 from typing import Any, Mapping, Sequence
 
+from jsonschema import Draft202012Validator
+
 if __package__:
     from scripts.build_compact_semantic_tasks import canonical_json_bytes, load_json
+    from scripts.compile_semantic_authoring import AuthoringError, Expander
     from scripts.local_semantic_authoring import (
         AUTHORING_VALIDATOR_VERSION,
         DEFAULT_BOOTSTRAP_DIR,
@@ -26,6 +31,10 @@ else:
     from build_compact_semantic_tasks import (  # type: ignore[no-redef]
         canonical_json_bytes,
         load_json,
+    )
+    from compile_semantic_authoring import (  # type: ignore[no-redef]
+        AuthoringError,
+        Expander,
     )
     from local_semantic_authoring import (  # type: ignore[no-redef]
         AUTHORING_VALIDATOR_VERSION,
@@ -45,12 +54,277 @@ else:
     )
 
 
-def response_schema(maximum_clauses: int) -> dict[str, Any]:
+PARTITION_VALIDATOR_VERSION = "2.0.0"
+CLAUSE_ROLES = [
+    "heading",
+    "scope",
+    "definition",
+    "condition",
+    "effect",
+    "constraint",
+    "permission",
+    "prohibition",
+    "preference_criterion",
+    "tie_continuation",
+    "procedure_step",
+    "mapping_entry",
+    "exception",
+    "cross_reference",
+    "table_data",
+    "table_layout",
+    "figure_asset",
+    "example",
+    "note",
+    "rationale",
+    "history",
+    "correction_event",
+    "source_metadata",
+]
+CLAUSE_FORCES = [
+    "normative",
+    "informative",
+    "illustrative",
+    "source_metadata",
+    "correction",
+]
+OBJECT_REF_KINDS = [
+    "record",
+    "clause",
+    "semantic_unit",
+    "expression",
+    "statement",
+    "decision_stage",
+    "exception",
+    "table",
+    "table_column",
+    "table_row",
+    "table_cell",
+    "table_footnote",
+    "figure",
+    "example",
+    "correction_application",
+    "reference",
+    "symbol",
+    "chapter",
+    "rule",
+    "historical_rule",
+    "external",
+]
+REASON_CODE_SCHEMA = {
+    "type": "string",
+    "pattern": "^[a-z][a-z0-9_.]*$",
+}
+IDENTIFIER_SCHEMA = {
+    "type": "string",
+    "pattern": "^[A-Za-z][A-Za-z0-9_.:-]*$",
+}
+SYMBOL_ID_SCHEMA = {
+    "type": "string",
+    "pattern": "^[a-z][a-z0-9_.]*$",
+}
+RULE_ID_SCHEMA = {
+    "type": "string",
+    "pattern": "^P-[0-9]+(?:\\.[0-9]+)*(?:\\([a-z0-9]+\\))?$",
+}
+COMPARE_RELATIONS = [
+    "eq", "ne", "lt", "le", "gt", "ge", "contains", "member_of", "same_set"
+]
+SCOPE_REGIMES = [
+    "preferred_iupac_name",
+    "preselected_name",
+    "general_nomenclature",
+    "retained_name",
+    "class_specific",
+    "all",
+]
+UNIT_FORCES = ["required", "permitted", "prohibited", "preference", "definition"]
+
+
+def response_schema(
+    maximum_clauses: int,
+    target_indexes: Sequence[int] | None = None,
+    mechanical_indexes: set[int] | None = None,
+) -> dict[str, Any]:
+    expression = {"$ref": "#/$defs/expression"}
+    statement = {"$ref": "#/$defs/statement"}
+    statement_block = {"$ref": "#/$defs/statement_block"}
+    object_ref = {"$ref": "#/$defs/object_ref"}
+    bindings = {"$ref": "#/$defs/bindings"}
+
+    def operation(
+        name: str,
+        operands: list[dict[str, Any]],
+        *,
+        repeat: dict[str, Any] | None = None,
+        min_repeats: int = 0,
+    ) -> dict[str, Any]:
+        result: dict[str, Any] = {
+            "type": "array",
+            "minItems": 1 + len(operands) + min_repeats,
+            "prefixItems": [{"type": "string", "const": name}, *operands],
+        }
+        if repeat is None:
+            result["maxItems"] = 1 + len(operands)
+        else:
+            result["items"] = repeat
+        return result
+
+    expression_variants = [
+        operation("lit", [{}]),
+        operation("var", [IDENTIFIER_SCHEMA]),
+        operation("get", [expression, SYMBOL_ID_SCHEMA]),
+        operation("pred", [SYMBOL_ID_SCHEMA], repeat=expression),
+        operation("call", [SYMBOL_ID_SCHEMA], repeat=expression),
+        operation("all", [], repeat=expression, min_repeats=1),
+        operation("any", [], repeat=expression, min_repeats=1),
+        operation("not", [expression]),
+        operation("exists", [IDENTIFIER_SCHEMA, expression, expression]),
+        operation("forall", [IDENTIFIER_SCHEMA, expression, expression]),
+        operation(
+            "cmp",
+            [{"type": "string", "enum": COMPARE_RELATIONS}, expression, expression],
+        ),
+        operation("lookup", [IDENTIFIER_SCHEMA, expression, IDENTIFIER_SCHEMA]),
+        operation("outcome", [RULE_ID_SCHEMA, IDENTIFIER_SCHEMA]),
+    ]
+    statement_variants = [
+        operation("seq", [], repeat=statement),
+        operation("if", [expression, statement_block, statement_block]),
+        operation("set", [IDENTIFIER_SCHEMA, expression]),
+        operation(
+            "xform",
+            [IDENTIFIER_SCHEMA, SYMBOL_ID_SCHEMA],
+            repeat=expression,
+        ),
+        operation(
+            "render",
+            [IDENTIFIER_SCHEMA, IDENTIFIER_SCHEMA, expression],
+        ),
+        operation("reject", [IDENTIFIER_SCHEMA, REASON_CODE_SCHEMA]),
+        operation(
+            "invoke",
+            [
+                RULE_ID_SCHEMA,
+                {"type": "object", "additionalProperties": expression},
+            ],
+        ),
+        operation(
+            "each",
+            [IDENTIFIER_SCHEMA, expression, statement_block, expression],
+        ),
+        operation("emit", [expression]),
+        operation("assert", [expression, REASON_CODE_SCHEMA]),
+    ]
+    scope = {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "r": {
+                "type": "array",
+                "minItems": 1,
+                "items": {"type": "string", "enum": SCOPE_REGIMES},
+            },
+            "if": expression,
+        },
+    }
+    common_unit_properties: dict[str, Any] = {
+        "id": {"type": "string", "minLength": 1},
+        "k": {
+            "type": "string",
+            "enum": [
+                "rule",
+                "definition",
+                "procedure",
+                "constraint",
+                "mapping",
+                "decision",
+            ],
+        },
+        "f": {
+            "type": "string",
+            "enum": UNIT_FORCES,
+        },
+        "c": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "integer"},
+        },
+        "scope": scope,
+        "in": bindings,
+        "out": bindings,
+    }
+    stage = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["key", "cmp"],
+        "properties": {
+            "id": {"type": "string"},
+            "c": {"type": "array", "items": {"type": "integer"}},
+            "if": expression,
+            "key": expression,
+            "cmp": {
+                "type": "array",
+                "minItems": 4,
+                "maxItems": 4,
+                "prefixItems": [
+                    {
+                        "type": "string",
+                        "enum": ["numeric", "lexicographic", "ordered_table", "set_order", "custom"],
+                    },
+                    {
+                        "type": "string",
+                        "enum": ["minimum", "maximum", "source_order", "symbol_defined"],
+                    },
+                    {"oneOf": [SYMBOL_ID_SCHEMA, {"type": "null"}]},
+                    {"oneOf": [IDENTIFIER_SCHEMA, {"type": "null"}]},
+                ],
+            },
+        },
+    }
+    kind_properties = {
+        "rule": {
+            "if": expression,
+            "then": statement_block,
+            "else": statement_block,
+        },
+        "definition": {
+            "term": {"type": "string"},
+            "entity": {"type": "string"},
+            "value": expression,
+        },
+        "procedure": {"steps": statement_block},
+        "constraint": {
+            "assert": expression,
+            "violation": statement_block,
+        },
+        "mapping": {"table": {"type": "string"}},
+        "decision": {
+            "candidates": expression,
+            "stages": {"type": "array", "minItems": 1, "items": stage},
+            "tie": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "prefixItems": [
+                    {
+                        "type": "string",
+                        "enum": ["retain_coequal", "apply_fallback", "reject_ambiguous"],
+                    },
+                    {"oneOf": [object_ref, {"type": "null"}]},
+                ],
+            },
+        },
+    }
     unit_variants = [
         {
             "type": "object",
+            "additionalProperties": False,
             "required": required,
-            "properties": {"k": {"const": kind}},
+            "properties": {
+                **common_unit_properties,
+                **kind_properties[kind],
+                "k": {"type": "string", "const": kind},
+            },
         }
         for kind, required in (
             ("rule", ["id", "k", "c", "if"]),
@@ -61,7 +335,102 @@ def response_schema(maximum_clauses: int) -> dict[str, Any]:
             ("decision", ["id", "k", "c", "candidates", "stages", "tie"]),
         )
     ]
+    decision_variants = [
+        {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "prefixItems": [
+                {"type": "string", "enum": CLAUSE_ROLES},
+                {"type": "string", "enum": CLAUSE_FORCES},
+                {"type": "string", "const": "compile"},
+            ],
+        },
+        {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "prefixItems": [
+                {"type": "string", "enum": CLAUSE_ROLES},
+                {"type": "string", "enum": CLAUSE_FORCES},
+                {"type": "string", "const": "skip"},
+                REASON_CODE_SCHEMA,
+            ],
+        },
+        {
+            "type": "array",
+            "minItems": 5,
+            "maxItems": 5,
+            "prefixItems": [
+                {"type": "string", "enum": CLAUSE_ROLES},
+                {"type": "string", "enum": CLAUSE_FORCES},
+                {"type": "string", "const": "supersede"},
+                {"type": "array", "items": {"type": "string"}},
+                {"type": "array", "items": {"type": "integer"}},
+            ],
+        },
+    ]
+
+    def clause_item(index: int | None = None) -> dict[str, Any]:
+        mechanical = index is not None and index in (mechanical_indexes or set())
+        decisions = (
+            [{"type": "null"}]
+            if mechanical
+            else decision_variants
+            if index is not None
+            else [{"type": "null"}, *decision_variants]
+        )
+        index_schema: dict[str, Any] = {"type": "integer"}
+        if index is not None:
+            index_schema["const"] = index
+        return {
+            "type": "object",
+            "additionalProperties": False,
+            "required": ["i", "decision"],
+            "properties": {
+                "i": index_schema,
+                "decision": {"oneOf": decisions},
+            },
+        }
+
+    clause_collection: dict[str, Any] = {
+        "type": "array",
+        "minItems": maximum_clauses,
+        "maxItems": maximum_clauses,
+    }
+    if target_indexes is None:
+        clause_collection["items"] = clause_item()
+    else:
+        clause_collection["prefixItems"] = [
+            clause_item(index) for index in target_indexes
+        ]
     return {
+        "$defs": {
+            "expression": {"oneOf": expression_variants},
+            "statement": {"oneOf": statement_variants},
+            "statement_block": {"type": "array", "items": statement},
+            "bindings": {
+                "type": "array",
+                "items": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "prefixItems": [
+                        IDENTIFIER_SCHEMA,
+                        {"type": "string"},
+                    ],
+                },
+            },
+            "object_ref": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "prefixItems": [
+                    {"type": "string", "enum": OBJECT_REF_KINDS},
+                    {"oneOf": [{"type": "string"}, {"type": "integer"}]},
+                ],
+            },
+        },
         "type": "object",
         "additionalProperties": False,
         "required": [
@@ -74,31 +443,34 @@ def response_schema(maximum_clauses: int) -> dict[str, Any]:
         ],
         "properties": {
             "task_id": {"type": "string"},
-            "clauses": {
-                "type": "array",
-                "minItems": maximum_clauses,
-                "maxItems": maximum_clauses,
-                "items": {
-                    "type": "object",
-                    "additionalProperties": False,
-                    "required": ["i", "decision"],
-                    "properties": {
-                        "i": {"type": "integer"},
-                        "decision": {
-                            "oneOf": [
-                                {"type": "null"},
-                                {"type": "array", "minItems": 3, "maxItems": 5},
-                            ]
-                        },
-                    },
-                },
-            },
+            "clauses": clause_collection,
             "symbols": {
                 "type": "array",
                 "maxItems": maximum_clauses,
                 "items": {
                     "type": "object",
+                    "additionalProperties": False,
                     "required": ["id", "k", "d", "ret"],
+                    "properties": {
+                        "id": SYMBOL_ID_SCHEMA,
+                        "k": {
+                            "type": "string",
+                            "enum": ["entity_type", "predicate", "function", "transformation", "comparator", "reason_code"],
+                        },
+                        "d": {"type": "string", "minLength": 1},
+                        "a": bindings,
+                        "ret": {"type": "string", "minLength": 1},
+                        "g": {
+                            "type": "array",
+                            "minItems": 3,
+                            "maxItems": 3,
+                            "prefixItems": [
+                                {"type": "string"},
+                                {"type": "array", "items": object_ref},
+                                {},
+                            ],
+                        },
+                    },
                 },
             },
             "units": {
@@ -111,13 +483,44 @@ def response_schema(maximum_clauses: int) -> dict[str, Any]:
                 "maxItems": maximum_clauses,
                 "items": {
                     "type": "object",
+                    "additionalProperties": False,
                     "required": ["id", "c", "if", "target", "mode", "order"],
+                    "properties": {
+                        "id": {"type": "string", "minLength": 1},
+                        "c": {"type": "array", "items": {"type": "integer"}},
+                        "if": expression,
+                        "target": object_ref,
+                        "mode": {
+                            "type": "string",
+                            "enum": ["suppress", "replace", "add_guard", "redirect", "change_precedence"],
+                        },
+                        "order": {"type": "integer", "minimum": 1},
+                        "replacement": {
+                            "oneOf": [object_ref, {"type": "null"}]
+                        },
+                        "guard": expression,
+                        "redirect": object_ref,
+                        "specificity": {"type": "integer", "minimum": 0},
+                    },
                 },
             },
             "examples": {
                 "type": "array",
                 "maxItems": maximum_clauses,
-                "items": {"type": "object", "required": ["id", "c"]},
+                "items": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "required": ["id", "c"],
+                    "properties": {
+                        "id": {"type": "string", "minLength": 1},
+                        "c": {"type": "array", "items": {"type": "integer"}},
+                        "input": {},
+                        "ok": {"type": "array", "items": {"type": "string"}},
+                        "bad": {"type": "array", "items": {"type": "string"}},
+                        "shows": {"type": "array", "items": object_ref},
+                        "why": {"type": "string"},
+                    },
+                },
             },
         },
     }
@@ -202,16 +605,24 @@ def build_prompt(
             if decision is None
         ],
     }
+    mechanical_indexes = set(retained["mechanical_clause_indexes"])
     return (
         SYSTEM_PROMPT
         + "\nPARTITION MODE: Author only target_clause_indexes. The clauses array "
         "must contain one {i,decision} object per target in the exact given order. "
+        "For every mechanical_clause_index, decision MUST be null. For every other "
+        "target, decision MUST be compile, skip, or supersede. "
+        "Never include a mechanical_clause_index in any c ownership array. "
         "All c arrays in units, exceptions, and examples must be subsets of the "
         "targets. Use IDs specific to the shown source rule so independently authored "
         "partitions merge without collisions. Neighbor clauses are context only.\n"
         + "RESPONSE SCHEMA:\n"
         + json.dumps(
-            response_schema(len(target_indexes)), separators=(",", ":"), ensure_ascii=False
+            response_schema(
+                len(target_indexes), target_indexes, mechanical_indexes
+            ),
+            separators=(",", ":"),
+            ensure_ascii=False,
         )
         + "\nCOMPACT AUTHORING EXAMPLE:\n"
         + json.dumps(example, separators=(",", ":"), ensure_ascii=False)
@@ -223,7 +634,12 @@ def build_prompt(
 
 
 def validate_patch(
-    patch: Mapping[str, Any], task_id: str, target_indexes: Sequence[int]
+    patch: Mapping[str, Any],
+    task_id: str,
+    target_indexes: Sequence[int],
+    *,
+    task: Mapping[str, Any] | None = None,
+    bootstrap: Mapping[str, Any] | None = None,
 ) -> dict[str, Any]:
     errors = []
     if patch.get("task_id") != task_id:
@@ -246,9 +662,49 @@ def validate_patch(
                 errors.append(
                     f"clause {item['i']} decision must be null or a 3-5 item array"
                 )
+            elif isinstance(decision, list) and (
+                decision[0] not in CLAUSE_ROLES
+                or decision[1] not in CLAUSE_FORCES
+            ):
+                errors.append(
+                    f"clause {item['i']} has invalid role or force"
+                )
+            if bootstrap is not None and 1 <= item["i"] <= len(bootstrap["clauses"]):
+                is_mechanical = bootstrap["clauses"][item["i"] - 1] is None
+                if is_mechanical and decision is not None:
+                    errors.append(
+                        f"mechanically proven clause {item['i']} decision must be null"
+                    )
+                elif not is_mechanical and decision is None:
+                    errors.append(
+                        f"nonmechanical clause {item['i']} needs a decision"
+                    )
         if observed != expected:
             errors.append(f"clause indexes must exactly equal {expected}")
     target_set = set(expected)
+    mechanical_set = (
+        {
+            index
+            for index, decision in enumerate(bootstrap["clauses"], 1)
+            if decision is None
+        }
+        if bootstrap is not None
+        else set()
+    )
+    schema_errors = sorted(
+        Draft202012Validator(
+            response_schema(len(expected), expected, mechanical_set)
+            if bootstrap is not None
+            else response_schema(len(expected))
+        ).iter_errors(patch),
+        key=lambda error: tuple(str(part) for part in error.absolute_path),
+    )
+    errors.extend(
+        "response schema at /"
+        + "/".join(map(str, error.absolute_path))
+        + f": {error.message}"
+        for error in schema_errors[:10]
+    )
     object_ids: set[str] = set()
     required_by_kind = {
         "rule": {"id", "k", "c", "if"},
@@ -274,8 +730,25 @@ def validate_patch(
         )
         if outside:
             errors.append(f"{collection} contains non-target clauses: {outside}")
+        mechanical_owned = sorted(
+            {
+                index
+                for item in values
+                if isinstance(item, Mapping) and isinstance(item.get("c"), list)
+                for index in item["c"]
+                if index in mechanical_set
+            }
+        )
+        if mechanical_owned:
+            errors.append(
+                f"{collection} owns mechanical clauses: {mechanical_owned}"
+            )
         for item in values:
-            if not isinstance(item, Mapping) or not isinstance(item.get("id"), str):
+            if not isinstance(item, Mapping):
+                errors.append(f"{collection} item must be an object")
+                continue
+            if not isinstance(item.get("id"), str) or not item["id"]:
+                errors.append(f"{collection} item needs a nonempty string id")
                 continue
             if item["id"] in object_ids:
                 errors.append(f"duplicate authored id in partition: {item['id']}")
@@ -303,7 +776,698 @@ def validate_patch(
             if item["id"] in object_ids:
                 errors.append(f"duplicate authored id in partition: {item['id']}")
             object_ids.add(item["id"])
+    owned_clause_indexes = {
+        index
+        for collection in ("units", "exceptions", "examples")
+        for item in patch.get(collection, [])
+        if isinstance(item, Mapping) and isinstance(item.get("c"), list)
+        for index in item["c"]
+        if isinstance(index, int)
+    }
+    if bootstrap is not None:
+        owned_clause_indexes.update(
+            index
+            for collection in ("tables", "figures")
+            for item in bootstrap.get(collection, [])
+            if isinstance(item, Mapping) and isinstance(item.get("c"), list)
+            for index in item["c"]
+            if isinstance(index, int)
+        )
+    if isinstance(clauses, list):
+        for item in clauses:
+            if not isinstance(item, Mapping):
+                continue
+            decision = item.get("decision")
+            if (
+                isinstance(decision, list)
+                and len(decision) >= 3
+                and decision[2] == "compile"
+                and item.get("i") not in owned_clause_indexes
+            ):
+                errors.append(
+                    f"compiled clause {item.get('i')} has no semantic owner"
+                )
+    if task is not None and bootstrap is not None and not errors:
+        try:
+            expander = Expander(task)
+            expander.register_ids(
+                {"units": patch["units"], "tables": bootstrap["tables"]}
+            )
+            for unit in patch["units"]:
+                expander.unit(unit)
+            expander.symbols(patch["symbols"])
+            for exception in patch["exceptions"]:
+                expander.exception(exception)
+            for example in patch["examples"]:
+                expander.example(example)
+        except (AuthoringError, KeyError, TypeError, ValueError) as error:
+            errors.append(f"strict compact authoring failed: {error}")
     return {"passed": not errors, "errors": errors}
+
+
+def normalize_mechanical_decisions(
+    patch: Mapping[str, Any], bootstrap: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[int]]:
+    normalized = dict(patch)
+    normalized_clauses = []
+    changed = []
+    for raw_item in patch.get("clauses", []):
+        if not isinstance(raw_item, Mapping):
+            normalized_clauses.append(raw_item)
+            continue
+        item = dict(raw_item)
+        index = item.get("i")
+        if (
+            isinstance(index, int)
+            and 1 <= index <= len(bootstrap["clauses"])
+            and bootstrap["clauses"][index - 1] is None
+            and item.get("decision") is not None
+        ):
+            item["decision"] = None
+            changed.append(index)
+        normalized_clauses.append(item)
+    normalized["clauses"] = normalized_clauses
+    return normalized, changed
+
+
+def normalize_clause_metadata(
+    patch: Mapping[str, Any], bootstrap: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    normalized = dict(patch)
+    normalized_clauses = []
+    changes = []
+    for raw_item in patch.get("clauses", []):
+        if not isinstance(raw_item, Mapping):
+            normalized_clauses.append(raw_item)
+            continue
+        item = dict(raw_item)
+        index = item.get("i")
+        decision = item.get("decision")
+        if (
+            isinstance(index, int)
+            and 1 <= index <= len(bootstrap["clauses"])
+            and isinstance(decision, list)
+            and len(decision) >= 3
+            and (
+                decision[0] not in CLAUSE_ROLES
+                or decision[1] not in CLAUSE_FORCES
+            )
+        ):
+            source = bootstrap["clauses"][index - 1]
+            if isinstance(source, list) and len(source) >= 2:
+                before = decision[:2]
+                decision = [source[0], source[1], *decision[2:]]
+                item["decision"] = decision
+                changes.append(
+                    {
+                        "clause_index": index,
+                        "from": before,
+                        "to": decision[:2],
+                    }
+                )
+        normalized_clauses.append(item)
+    normalized["clauses"] = normalized_clauses
+    return normalized, changes
+
+
+def _reason_code(value: str) -> str:
+    result = re.sub(r"[^a-z0-9_.]+", "_", value.lower()).strip("_.")
+    if not result or not result[0].isalpha():
+        result = "reason_" + result
+    return result
+
+
+def normalize_reason_codes(
+    patch: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    normalized = dict(patch)
+    changes = []
+
+    def statement(value: Any, owner_id: Any) -> Any:
+        if not isinstance(value, list) or not value:
+            return value
+        result = list(value)
+        op = result[0]
+        reason_index = 2 if op in {"reject", "assert"} else None
+        if (
+            reason_index is not None
+            and len(result) > reason_index
+            and isinstance(result[reason_index], str)
+            and re.fullmatch(REASON_CODE_SCHEMA["pattern"], result[reason_index]) is None
+        ):
+            before = result[reason_index]
+            result[reason_index] = _reason_code(before)
+            changes.append(
+                {
+                    "owner_id": owner_id,
+                    "from": before,
+                    "to": result[reason_index],
+                }
+            )
+        if op == "seq":
+            result[1:] = [statement(item, owner_id) for item in result[1:]]
+        elif op == "if" and len(result) == 4:
+            result[2] = [statement(item, owner_id) for item in result[2]]
+            result[3] = [statement(item, owner_id) for item in result[3]]
+        elif op == "each" and len(result) == 5:
+            result[3] = [statement(item, owner_id) for item in result[3]]
+        return result
+
+    normalized_clauses = []
+    for raw_item in patch.get("clauses", []):
+        if not isinstance(raw_item, Mapping):
+            normalized_clauses.append(raw_item)
+            continue
+        item = dict(raw_item)
+        decision = item.get("decision")
+        if (
+            isinstance(decision, list)
+            and len(decision) == 4
+            and decision[2] == "skip"
+            and isinstance(decision[3], str)
+            and re.fullmatch(REASON_CODE_SCHEMA["pattern"], decision[3]) is None
+        ):
+            decision = list(decision)
+            before = decision[3]
+            decision[3] = _reason_code(before)
+            item["decision"] = decision
+            changes.append(
+                {
+                    "clause_index": item.get("i"),
+                    "from": before,
+                    "to": decision[3],
+                }
+            )
+        normalized_clauses.append(item)
+    normalized["clauses"] = normalized_clauses
+
+    normalized_units = []
+    for raw_item in patch.get("units", []):
+        if not isinstance(raw_item, Mapping):
+            normalized_units.append(raw_item)
+            continue
+        item = dict(raw_item)
+        for field in ("then", "else", "steps", "violation"):
+            if isinstance(item.get(field), list):
+                item[field] = [
+                    statement(value, item.get("id")) for value in item[field]
+                ]
+        normalized_units.append(item)
+    normalized["units"] = normalized_units
+    return normalized, changes
+
+
+def _identifier(value: str, *, symbol: bool = False) -> str:
+    if symbol:
+        result = re.sub(r"[^a-z0-9_.]+", "_", value.lower()).strip("_.")
+    else:
+        result = re.sub(r"[^A-Za-z0-9_.:-]+", "_", value).strip("_.:-")
+    if not result or not result[0].isalpha():
+        result = "x_" + result
+    return result
+
+
+def normalize_compact_identifiers(
+    patch: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    normalized = dict(patch)
+    changes = []
+
+    def replace(value: Any, *, owner: Any, field: str, symbol: bool = False) -> Any:
+        if not isinstance(value, str):
+            return value
+        result = _identifier(value, symbol=symbol)
+        if result != value:
+            changes.append({"owner_id": owner, "field": field, "from": value, "to": result})
+        return result
+
+    def expression(value: Any, owner: Any) -> Any:
+        if not isinstance(value, list) or not value or not isinstance(value[0], str):
+            return value
+        result = list(value)
+        op = result[0]
+        if op == "var" and len(result) == 2:
+            result[1] = replace(result[1], owner=owner, field="var")
+        elif op == "get" and len(result) == 3:
+            result[1] = expression(result[1], owner)
+            result[2] = replace(result[2], owner=owner, field="path", symbol=True)
+        elif op in {"pred", "call"} and len(result) >= 2:
+            result[1] = replace(result[1], owner=owner, field="symbol", symbol=True)
+            result[2:] = [expression(item, owner) for item in result[2:]]
+        elif op in {"all", "any"}:
+            result[1:] = [expression(item, owner) for item in result[1:]]
+        elif op == "not" and len(result) == 2:
+            result[1] = expression(result[1], owner)
+        elif op in {"exists", "forall"} and len(result) == 4:
+            result[1] = replace(result[1], owner=owner, field="bind")
+            result[2] = expression(result[2], owner)
+            result[3] = expression(result[3], owner)
+        elif op == "cmp" and len(result) == 4:
+            aliases = {"=": "eq", "==": "eq", "equals": "eq", "!=": "ne"}
+            result[1] = aliases.get(result[1], result[1])
+            result[2] = expression(result[2], owner)
+            result[3] = expression(result[3], owner)
+        elif op == "lookup" and len(result) == 4:
+            result[1] = replace(result[1], owner=owner, field="table")
+            result[2] = expression(result[2], owner)
+            result[3] = replace(result[3], owner=owner, field="column")
+        elif op == "outcome" and len(result) == 3:
+            result[2] = replace(result[2], owner=owner, field="outcome")
+        return result
+
+    def statement(value: Any, owner: Any) -> Any:
+        if not isinstance(value, list) or not value or not isinstance(value[0], str):
+            return value
+        result = list(value)
+        op = result[0]
+        if op == "seq":
+            result[1:] = [statement(item, owner) for item in result[1:]]
+        elif op == "if" and len(result) == 4:
+            result[1] = expression(result[1], owner)
+            result[2] = [statement(item, owner) for item in result[2]]
+            result[3] = [statement(item, owner) for item in result[3]]
+        elif op == "set" and len(result) == 3:
+            result[1] = replace(result[1], owner=owner, field="target")
+            result[2] = expression(result[2], owner)
+        elif op == "xform" and len(result) >= 3:
+            result[1] = replace(result[1], owner=owner, field="target")
+            result[2] = replace(result[2], owner=owner, field="transformation", symbol=True)
+            result[3:] = [expression(item, owner) for item in result[3:]]
+        elif op == "render" and len(result) == 4:
+            result[1] = replace(result[1], owner=owner, field="component")
+            result[2] = replace(result[2], owner=owner, field="position")
+            result[3] = expression(result[3], owner)
+        elif op == "reject" and len(result) == 3:
+            result[1] = replace(result[1], owner=owner, field="target")
+        elif op == "invoke" and len(result) == 3 and isinstance(result[2], Mapping):
+            result[2] = {name: expression(item, owner) for name, item in result[2].items()}
+        elif op == "each" and len(result) == 5:
+            result[1] = replace(result[1], owner=owner, field="bind")
+            result[2] = expression(result[2], owner)
+            result[3] = [statement(item, owner) for item in result[3]]
+            result[4] = expression(result[4], owner)
+        elif op == "emit" and len(result) == 2:
+            result[1] = expression(result[1], owner)
+        elif op == "assert" and len(result) == 3:
+            result[1] = expression(result[1], owner)
+        return result
+
+    normalized_units = []
+    for raw_item in patch.get("units", []):
+        if not isinstance(raw_item, Mapping):
+            normalized_units.append(raw_item)
+            continue
+        item = dict(raw_item)
+        owner = item.get("id")
+        if "f" in item and item["f"] not in UNIT_FORCES:
+            before = item["f"]
+            item["f"] = "definition" if item.get("k") == "definition" else "required"
+            changes.append(
+                {"owner_id": owner, "field": "f", "from": before, "to": item["f"]}
+            )
+        if isinstance(item.get("scope"), Mapping):
+            scope = dict(item["scope"])
+            regimes = scope.get("r")
+            if isinstance(regimes, list) and any(value not in SCOPE_REGIMES for value in regimes):
+                changes.append({"owner_id": owner, "field": "scope.r", "from": regimes, "to": ["class_specific"]})
+                scope["r"] = ["class_specific"]
+            if "if" in scope:
+                scope["if"] = expression(scope["if"], owner)
+            item["scope"] = scope
+        for field in ("if", "value", "assert", "candidates"):
+            if field in item:
+                item[field] = expression(item[field], owner)
+        for field in ("then", "else", "steps", "violation"):
+            if isinstance(item.get(field), list):
+                item[field] = [statement(value, owner) for value in item[field]]
+        normalized_units.append(item)
+    normalized["units"] = normalized_units
+    return normalized, changes
+
+
+def normalize_mechanical_ownership(
+    patch: Mapping[str, Any], bootstrap: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    mechanical = {
+        index
+        for index, decision in enumerate(bootstrap["clauses"], 1)
+        if decision is None
+    }
+    normalized = dict(patch)
+    changes = []
+    for collection in ("units", "exceptions", "examples"):
+        normalized_items = []
+        for raw_item in patch.get(collection, []):
+            if not isinstance(raw_item, Mapping) or not isinstance(
+                raw_item.get("c"), list
+            ):
+                normalized_items.append(raw_item)
+                continue
+            item = dict(raw_item)
+            removed = [index for index in item["c"] if index in mechanical]
+            if not removed:
+                normalized_items.append(item)
+                continue
+            item["c"] = [index for index in item["c"] if index not in mechanical]
+            changes.append(
+                {
+                    "collection": collection,
+                    "id": item.get("id"),
+                    "removed_clause_indexes": removed,
+                    "dropped": not item["c"],
+                }
+            )
+            if item["c"]:
+                normalized_items.append(item)
+        normalized[collection] = normalized_items
+    return normalized, changes
+
+
+def normalize_bootstrap_ownership(
+    patch: Mapping[str, Any], bootstrap: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    normalized = dict(patch)
+    normalized["units"] = [
+        dict(item) if isinstance(item, Mapping) else item
+        for item in patch.get("units", [])
+    ]
+    normalized["examples"] = [
+        dict(item) if isinstance(item, Mapping) else item
+        for item in patch.get("examples", [])
+    ]
+    owned = {
+        index
+        for collection in ("units", "exceptions", "examples")
+        for item in normalized.get(collection, [])
+        if isinstance(item, Mapping) and isinstance(item.get("c"), list)
+        for index in item["c"]
+        if isinstance(index, int)
+    }
+    compiled = [
+        item["i"]
+        for item in normalized.get("clauses", [])
+        if isinstance(item, Mapping)
+        and isinstance(item.get("decision"), list)
+        and len(item["decision"]) >= 3
+        and item["decision"][2] == "compile"
+        and item["i"] not in owned
+    ]
+    changes = []
+    for index in compiled:
+        source_example = next(
+            (
+                item
+                for item in bootstrap.get("examples", [])
+                if index in item.get("c", [])
+            ),
+            None,
+        )
+        if source_example is not None:
+            example = {
+                "id": source_example["id"],
+                "c": [index],
+                "input": {"source_clause_index": index},
+                "ok": source_example.get("ok", []),
+                "bad": source_example.get("bad", []),
+                "shows": [],
+                "why": source_example.get(
+                    "why", "Source-bound example retained from deterministic extraction."
+                ),
+            }
+            normalized["examples"].append(example)
+            owned.add(index)
+            changes.append(
+                {
+                    "clause_index": index,
+                    "action": "restore_source_example",
+                    "owner_id": example["id"],
+                }
+            )
+            continue
+        bootstrap_kind = next(
+            (
+                item.get("k")
+                for item in bootstrap.get("units", [])
+                if index in item.get("c", [])
+            ),
+            None,
+        )
+        candidates = [
+            item
+            for item in normalized["units"]
+            if isinstance(item, Mapping)
+            and item.get("k") == bootstrap_kind
+            and isinstance(item.get("c"), list)
+            and item["c"]
+        ]
+        if not candidates:
+            continue
+        owner = min(
+            candidates,
+            key=lambda item: min(abs(index - member) for member in item["c"]),
+        )
+        owner["c"] = sorted({*owner["c"], index})
+        owned.add(index)
+        changes.append(
+            {
+                "clause_index": index,
+                "action": "attach_to_same_kind_unit",
+                "owner_id": owner["id"],
+                "bootstrap_kind": bootstrap_kind,
+            }
+        )
+    return normalized, changes
+
+
+def normalize_example_references(
+    patch: Mapping[str, Any], bootstrap: Mapping[str, Any] | None = None
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    normalized = dict(patch)
+    normalized_examples = []
+    changes = []
+    for raw_item in patch.get("examples", []):
+        if not isinstance(raw_item, Mapping):
+            normalized_examples.append(raw_item)
+            continue
+        item = dict(raw_item)
+        shows = item.get("shows")
+        if not isinstance(shows, list):
+            normalized_examples.append(item)
+            continue
+        figure_ids = {
+            item["id"]
+            for item in (bootstrap or {}).get("figures", [])
+            if isinstance(item, Mapping) and isinstance(item.get("id"), str)
+        }
+        valid = [
+            ref
+            for ref in shows
+            if isinstance(ref, list)
+            and len(ref) == 2
+            and ref[0] in OBJECT_REF_KINDS
+            and isinstance(ref[1], (str, int))
+            and not (
+                bootstrap is not None
+                and ref[0] == "figure"
+                and ref[1] not in figure_ids
+            )
+        ]
+        if valid != shows:
+            item["shows"] = valid
+            changes.append(
+                {
+                    "example_id": item.get("id"),
+                    "removed_count": len(shows) - len(valid),
+                }
+            )
+        normalized_examples.append(item)
+    normalized["examples"] = normalized_examples
+    return normalized, changes
+
+
+def normalize_table_references(
+    patch: Mapping[str, Any], bootstrap: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    normalized = dict(patch)
+    tables = [item for item in bootstrap.get("tables", []) if item.get("c")]
+    table_ids = {item["id"] for item in tables}
+    changes = []
+    normalized_symbols = [
+        dict(item) if isinstance(item, Mapping) else item
+        for item in patch.get("symbols", [])
+    ]
+    symbol_ids = {
+        item.get("id") for item in normalized_symbols if isinstance(item, Mapping)
+    }
+
+    def lookup_symbol(table_id: Any) -> str:
+        symbol_id = _identifier(f"lookup_{table_id}", symbol=True)
+        if symbol_id not in symbol_ids:
+            normalized_symbols.append(
+                {
+                    "id": symbol_id,
+                    "k": "function",
+                    "d": f"Resolve {table_id} through a source-defined lookup primitive.",
+                    "a": [["key", "Any"], ["column", "String"]],
+                    "ret": "Any",
+                    "g": ["primitive", [], symbol_id],
+                }
+            )
+            symbol_ids.add(symbol_id)
+        return symbol_id
+
+    def replacement(owner: Mapping[str, Any]) -> str | None:
+        owner_clauses = set(owner.get("c", []))
+        ranked = sorted(
+            (
+                (len(owner_clauses.intersection(table["c"])), table["id"])
+                for table in tables
+            ),
+            reverse=True,
+        )
+        return ranked[0][1] if ranked and ranked[0][0] > 0 else None
+
+    def expression(value: Any, owner: Mapping[str, Any]) -> Any:
+        if not isinstance(value, list) or not value or not isinstance(value[0], str):
+            return value
+        result = list(value)
+        op = result[0]
+        if op == "lookup" and len(result) == 4:
+            result[2] = expression(result[2], owner)
+            if result[1] not in table_ids:
+                table_id = replacement(owner)
+                if table_id is not None:
+                    changes.append(
+                        {
+                            "owner_id": owner.get("id"),
+                            "field": "lookup",
+                            "from": result[1],
+                            "to": table_id,
+                        }
+                    )
+                    result[1] = table_id
+                else:
+                    before = result[1]
+                    symbol_id = lookup_symbol(before)
+                    changes.append(
+                        {
+                            "owner_id": owner.get("id"),
+                            "field": "lookup",
+                            "from": before,
+                            "to": symbol_id,
+                            "action": "lower_to_grounded_function",
+                        }
+                    )
+                    return ["call", symbol_id, result[2], ["lit", result[3]]]
+        elif op == "get" and len(result) == 3:
+            result[1] = expression(result[1], owner)
+        elif op in {"pred", "call", "all", "any"}:
+            start = 2 if op in {"pred", "call"} else 1
+            result[start:] = [expression(item, owner) for item in result[start:]]
+        elif op == "not" and len(result) == 2:
+            result[1] = expression(result[1], owner)
+        elif op in {"exists", "forall"} and len(result) == 4:
+            result[2] = expression(result[2], owner)
+            result[3] = expression(result[3], owner)
+        elif op == "cmp" and len(result) == 4:
+            result[2] = expression(result[2], owner)
+            result[3] = expression(result[3], owner)
+        return result
+
+    def statement(value: Any, owner: Mapping[str, Any]) -> Any:
+        if not isinstance(value, list) or not value:
+            return value
+        result = list(value)
+        op = result[0]
+        if op == "seq":
+            result[1:] = [statement(item, owner) for item in result[1:]]
+        elif op == "if" and len(result) == 4:
+            result[1] = expression(result[1], owner)
+            result[2] = [statement(item, owner) for item in result[2]]
+            result[3] = [statement(item, owner) for item in result[3]]
+        elif op in {"set", "emit", "assert"}:
+            expression_index = 2 if op in {"set", "assert"} else 1
+            result[expression_index] = expression(result[expression_index], owner)
+        elif op in {"xform", "render"}:
+            start = 3
+            result[start:] = [expression(item, owner) for item in result[start:]]
+        elif op == "invoke" and len(result) == 3 and isinstance(result[2], Mapping):
+            result[2] = {key: expression(item, owner) for key, item in result[2].items()}
+        elif op == "each" and len(result) == 5:
+            result[2] = expression(result[2], owner)
+            result[3] = [statement(item, owner) for item in result[3]]
+            result[4] = expression(result[4], owner)
+        return result
+
+    normalized_units = []
+    for raw_item in patch.get("units", []):
+        if not isinstance(raw_item, Mapping):
+            normalized_units.append(raw_item)
+            continue
+        item = dict(raw_item)
+        if item.get("k") == "mapping" and item.get("table") not in table_ids:
+            table_id = replacement(item)
+            if table_id is not None:
+                changes.append(
+                    {
+                        "owner_id": item.get("id"),
+                        "field": "table",
+                        "from": item.get("table"),
+                        "to": table_id,
+                    }
+                )
+                item["table"] = table_id
+        for field in ("if", "value", "assert", "candidates"):
+            if field in item:
+                item[field] = expression(item[field], item)
+        for field in ("then", "else", "steps", "violation"):
+            if isinstance(item.get(field), list):
+                item[field] = [statement(value, item) for value in item[field]]
+        normalized_units.append(item)
+    normalized["units"] = normalized_units
+    normalized["symbols"] = normalized_symbols
+    return normalized, changes
+
+
+def normalize_example_names(
+    patch: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    normalized = dict(patch)
+    normalized_examples = []
+    changes = []
+    for raw_item in patch.get("examples", []):
+        if not isinstance(raw_item, Mapping):
+            normalized_examples.append(raw_item)
+            continue
+        item = dict(raw_item)
+        for field in ("ok", "bad"):
+            values = item.get(field)
+            if not isinstance(values, list):
+                continue
+            unwrapped = [
+                value[1]
+                if isinstance(value, list)
+                and len(value) == 2
+                and value[0] == "lit"
+                and isinstance(value[1], str)
+                else value
+                for value in values
+            ]
+            if unwrapped != values:
+                item[field] = unwrapped
+                changes.append(
+                    {
+                        "example_id": item.get("id"),
+                        "field": field,
+                        "unwrapped_count": sum(
+                            before != after
+                            for before, after in zip(values, unwrapped)
+                        ),
+                    }
+                )
+        normalized_examples.append(item)
+    normalized["examples"] = normalized_examples
+    return normalized, changes
 
 
 def deduplicate_patch_ids(
@@ -313,13 +1477,28 @@ def deduplicate_patch_ids(
     seen: set[str] = set()
     result = []
 
-    def replace(value: Any, replacements: Mapping[str, str]) -> Any:
+    def replace(
+        value: Any, replacements: Mapping[str, str], *, field: str | None = None
+    ) -> Any:
         if isinstance(value, str):
+            if field == "table":
+                return value
             return replacements.get(value, value)
         if isinstance(value, list):
+            if value and value[0] == "lookup":
+                return [
+                    value[0],
+                    value[1],
+                    *[replace(item, replacements) for item in value[2:]],
+                ]
+            if len(value) == 2 and value[0] == "table":
+                return list(value)
             return [replace(item, replacements) for item in value]
         if isinstance(value, Mapping):
-            return {key: replace(item, replacements) for key, item in value.items()}
+            return {
+                key: replace(item, replacements, field=str(key))
+                for key, item in value.items()
+            }
         return value
 
     for number, patch in enumerate(patches, 1):
@@ -343,6 +1522,33 @@ def deduplicate_patch_ids(
                 seen.add(replacement)
         result.append(replace(patch, replacements))
     return result
+
+
+def localize_compile_errors(
+    source: Mapping[str, Any],
+    compile_report: Mapping[str, Any] | None,
+    partitions: Sequence[Sequence[int]],
+) -> dict[int, list[dict[str, Any]]]:
+    localized: dict[int, list[dict[str, Any]]] = {}
+    collection_map = {
+        "semantic_units": "units",
+        "exceptions": "exceptions",
+        "examples": "examples",
+    }
+    for error in (compile_report or {}).get("errors", []):
+        parts = str(error.get("path", "")).strip("/").split("/")
+        if len(parts) < 2 or parts[0] not in collection_map:
+            continue
+        try:
+            object_index = int(parts[1])
+            item = source[collection_map[parts[0]]][object_index]
+        except (IndexError, KeyError, TypeError, ValueError):
+            continue
+        clause_indexes = item.get("c", []) if isinstance(item, Mapping) else []
+        for partition_number, indexes in enumerate(partitions, 1):
+            if set(clause_indexes).intersection(indexes):
+                localized.setdefault(partition_number, []).append(dict(error))
+    return localized
 
 
 def assemble_patches(
@@ -414,20 +1620,102 @@ def process_task(
     for number, indexes in enumerate(partitions, 1):
         prompt = build_prompt(candidate, bootstrap, example, indexes)
         prompt_sha256 = hashlib.sha256(prompt.encode("utf-8")).hexdigest().upper()
-        schema = response_schema(len(indexes))
+        schema = response_schema(
+            len(indexes),
+            indexes,
+            {
+                index
+                for index, decision in enumerate(bootstrap["clauses"], 1)
+                if decision is None
+            },
+        )
         patch_path = patch_dir / f"part-{number:03}.json"
         part_report_path = report_dir / f"part-{number:03}.json"
+        prior_patch: dict[str, Any] | None = None
+        prior_global_errors: list[dict[str, Any]] = []
+        prior_global_repair_round = 0
         if not force and patch_path.exists() and part_report_path.exists():
             patch = load_json(patch_path)
+            patch, normalized_metadata = normalize_clause_metadata(patch, bootstrap)
+            patch, normalized_reasons = normalize_reason_codes(patch)
+            patch, normalized_identifiers = normalize_compact_identifiers(patch)
+            patch, normalized_tables = normalize_table_references(patch, bootstrap)
+            patch, normalized_indexes = normalize_mechanical_decisions(
+                patch, bootstrap
+            )
+            patch, normalized_ownership = normalize_mechanical_ownership(
+                patch, bootstrap
+            )
+            patch, bootstrap_ownership = normalize_bootstrap_ownership(
+                patch, bootstrap
+            )
+            patch, example_references = normalize_example_references(patch, bootstrap)
+            patch, example_names = normalize_example_names(patch)
             part_report = load_json(part_report_path)
-            validation = validate_patch(patch, task_id, indexes)
+            prior_patch = patch
+            prior_global_errors = list(
+                part_report.get("global_validation_errors", [])
+            )
+            prior_global_repair_round = int(
+                part_report.get("global_repair_round", 0)
+            )
+            validation = validate_patch(
+                patch, task_id, indexes, task=task, bootstrap=bootstrap
+            )
             if (
-                part_report.get("prompt_sha256") == prompt_sha256
-                and part_report.get("model") == model
+                part_report.get("model") == model
                 and part_report.get("backend") == backend
                 and part_report.get("endpoint") == endpoint
+                and part_report.get("seed") == seed + number - 1
                 and validation["passed"]
+                and not prior_global_errors
             ):
+                previous_prompt_sha256 = part_report.get("prompt_sha256")
+                part_report = {
+                    **part_report,
+                    "validator_version": PARTITION_VALIDATOR_VERSION,
+                    "task_sha256": task["task_sha256"],
+                    "prompt_sha256": prompt_sha256,
+                    "prompt_bytes": len(prompt.encode("utf-8")),
+                    "schema_sha256": _sha256(schema),
+                    "validation": validation,
+                }
+                if normalized_indexes:
+                    part_report["mechanical_decisions_normalized"] = normalized_indexes
+                if normalized_metadata:
+                    part_report["clause_metadata_normalized"] = normalized_metadata
+                if normalized_reasons:
+                    part_report["reason_codes_normalized"] = normalized_reasons
+                if normalized_identifiers:
+                    part_report["compact_identifiers_normalized"] = normalized_identifiers
+                if normalized_tables:
+                    part_report["table_references_normalized"] = normalized_tables
+                if normalized_ownership:
+                    part_report["mechanical_ownership_normalized"] = normalized_ownership
+                if bootstrap_ownership:
+                    part_report["bootstrap_ownership_normalized"] = bootstrap_ownership
+                if example_references:
+                    part_report["example_references_normalized"] = example_references
+                if example_names:
+                    part_report["example_names_normalized"] = example_names
+                if (
+                    normalized_metadata
+                    or normalized_reasons
+                    or normalized_identifiers
+                    or normalized_tables
+                    or normalized_indexes
+                    or normalized_ownership
+                    or bootstrap_ownership
+                    or example_references
+                    or example_names
+                ):
+                    patch_path.write_bytes(canonical_json_bytes(patch))
+                if previous_prompt_sha256 != prompt_sha256:
+                    part_report["cache_migration"] = {
+                        "from_prompt_sha256": previous_prompt_sha256,
+                        "reason": "passed current strict compact-authoring preflight",
+                    }
+                part_report_path.write_bytes(canonical_json_bytes(part_report))
                 patches.append(patch)
                 partition_reports.append({**part_report, "cached": True})
                 continue
@@ -436,6 +1724,24 @@ def process_task(
             maximum_output_tokens, max(4096, 768 + 384 * len(indexes))
         )
         request_prompt = prompt
+        if prior_global_errors and prior_patch is not None:
+            request_prompt = (
+                prompt
+                + "\nPREVIOUS PARTITION FAILED GLOBAL COMPILATION:\n"
+                + json.dumps(
+                    prior_global_errors, separators=(",", ":"), ensure_ascii=False
+                )
+                + "\nPREVIOUS PARTITION JSON:\n"
+                + json.dumps(
+                    prior_patch, separators=(",", ":"), ensure_ascii=False
+                )
+                + "\nRepair every reported dependency or schema problem while "
+                "preserving valid content. References and table IDs must resolve to "
+                "objects listed in the retained objects or this partition. This "
+                "partition cannot create tables: replace any unresolved lookup with "
+                "executable conditionals, literals, or local variable access. Return "
+                "the complete corrected partition as JSON only."
+            )
         attempts = []
         best_patch: dict[str, Any] = {}
         best_validation = {"passed": False, "errors": ["not generated"]}
@@ -451,6 +1757,9 @@ def process_task(
                 }
                 attempts.append({"attempt": attempt + 1, "validation": validation})
                 break
+            request_seed = (
+                seed + number - 1 + (1009 * prior_global_repair_round)
+            )
             patch, metrics = _request_model(
                 backend=backend,
                 endpoint=endpoint,
@@ -459,14 +1768,41 @@ def process_task(
                 context_tokens=context_tokens,
                 output_tokens=output_tokens,
                 timeout=timeout,
-                seed=seed + number - 1,
+                seed=request_seed,
                 schema=schema,
             )
-            validation = validate_patch(patch, task_id, indexes)
+            patch, normalized_metadata = normalize_clause_metadata(patch, bootstrap)
+            patch, normalized_reasons = normalize_reason_codes(patch)
+            patch, normalized_identifiers = normalize_compact_identifiers(patch)
+            patch, normalized_tables = normalize_table_references(patch, bootstrap)
+            patch, normalized_indexes = normalize_mechanical_decisions(
+                patch, bootstrap
+            )
+            patch, normalized_ownership = normalize_mechanical_ownership(
+                patch, bootstrap
+            )
+            patch, bootstrap_ownership = normalize_bootstrap_ownership(
+                patch, bootstrap
+            )
+            patch, example_references = normalize_example_references(patch, bootstrap)
+            patch, example_names = normalize_example_names(patch)
+            validation = validate_patch(
+                patch, task_id, indexes, task=task, bootstrap=bootstrap
+            )
             attempts.append(
                 {
                     "attempt": attempt + 1,
+                    "request_seed": request_seed,
                     "metrics": metrics,
+                    "clause_metadata_normalized": normalized_metadata,
+                    "reason_codes_normalized": normalized_reasons,
+                    "compact_identifiers_normalized": normalized_identifiers,
+                    "table_references_normalized": normalized_tables,
+                    "mechanical_decisions_normalized": normalized_indexes,
+                    "mechanical_ownership_normalized": normalized_ownership,
+                    "bootstrap_ownership_normalized": bootstrap_ownership,
+                    "example_references_normalized": example_references,
+                    "example_names_normalized": example_names,
                     "validation": validation,
                 }
             )
@@ -483,14 +1819,24 @@ def process_task(
                     + json.dumps(
                         validation["errors"], separators=(",", ":"), ensure_ascii=False
                     )
-                    + "\nReturn the complete corrected partition as JSON only."
+                    + "\nPREVIOUS PARTITION JSON:\n"
+                    + json.dumps(
+                        patch, separators=(",", ":"), ensure_ascii=False
+                    )
+                    + "\nRepair this JSON while preserving valid content. For every "
+                    "compiled clause without an owner, add its index to the c array of "
+                    "the semantic unit or example that implements it, or change its "
+                    "decision to skip only if the source is genuinely nonoperative. "
+                    "Return the complete corrected partition as JSON only."
                 )
         if best_patch:
             patch_path.write_bytes(canonical_json_bytes(best_patch))
         part_report = {
             "format": "iupac-bluebook-local-authoring-partition-report",
             "format_version": "1.0.0",
+            "validator_version": PARTITION_VALIDATOR_VERSION,
             "task_id": task_id,
+            "task_sha256": task["task_sha256"],
             "partition": number,
             "target_clause_indexes": indexes,
             "model": model,
@@ -503,6 +1849,8 @@ def process_task(
             "attempts": attempts,
             "validation": best_validation,
         }
+        if prior_global_repair_round:
+            part_report["global_repair_round"] = prior_global_repair_round
         part_report_path.write_bytes(canonical_json_bytes(part_report))
         partition_reports.append(part_report)
         if not best_validation["passed"]:
@@ -545,6 +1893,20 @@ def process_task(
         "compile_report": compile_report,
         "partition_reports": partition_reports,
     }
+    localized_errors = localize_compile_errors(source, compile_report, partitions)
+    if localized_errors:
+        for partition_number, global_errors in localized_errors.items():
+            stored_report = dict(partition_reports[partition_number - 1])
+            stored_report.pop("cached", None)
+            stored_report["global_validation_errors"] = global_errors
+            stored_report["global_repair_round"] = (
+                int(stored_report.get("global_repair_round", 0)) + 1
+            )
+            partition_reports[partition_number - 1] = stored_report
+            (report_dir / f"part-{partition_number:03}.json").write_bytes(
+                canonical_json_bytes(stored_report)
+            )
+        report["partition_reports"] = partition_reports
     (report_output_dir / f"{task_id}.json").write_bytes(canonical_json_bytes(report))
     return report
 
@@ -572,6 +1934,8 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 
 def main(argv: Sequence[str] | None = None) -> int:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="backslashreplace")
     args = parse_args(argv)
     reports = []
     try:

@@ -49,8 +49,12 @@ The source clauses are authoritative. The bootstrap draft is evidence, not autho
 Return compact executable semantics, not prose summaries and not payloads containing
 source_text, operations, generic fallback actions, or an unevaluated copy of a clause.
 Use the compact prefix expression and statement forms demonstrated by the example.
+Expression opcodes are lit, var, get, pred, call, all, any, not, exists, forall,
+cmp, lookup, and outcome. Statement opcodes are seq, if, set, xform, render,
+reject, invoke, each, emit, and assert. Never invent an opcode such as apply.
 Every source clause must have exactly one ordered clause disposition. Operative clauses
 must be owned by a semantic unit, retained table, exception, or authored example.
+Every clause marked compile must appear in at least one semantic object's c array.
 Use safe nonoperative reasons only for genuinely nonoperative headings, navigation,
 historical context, rationale, citations, or example labels. Preserve normative force,
 ordered preferences, tie continuation, conditions, exceptions, mappings, and procedures.
@@ -161,6 +165,9 @@ def validate_authoring(
         )
     findings = quality_findings(source, task)
     errors = [
+        f"compile {item['code']} at {item['path']}: {item['message']}"
+        for item in compile_report.get("errors", [])
+    ] + [
         f"quality finding at clause {item['clause_index']}: {item['reason_code']}"
         for item in findings
     ]
