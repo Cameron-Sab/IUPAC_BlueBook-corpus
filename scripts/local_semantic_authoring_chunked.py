@@ -218,9 +218,17 @@ def validate_patch(
                 errors.append("clause entry must contain an integer i")
                 continue
             observed.append(item["i"])
+            decision = item.get("decision")
+            if decision is not None and (
+                not isinstance(decision, list) or not 3 <= len(decision) <= 5
+            ):
+                errors.append(
+                    f"clause {item['i']} decision must be null or a 3-5 item array"
+                )
         if observed != expected:
             errors.append(f"clause indexes must exactly equal {expected}")
     target_set = set(expected)
+    object_ids: set[str] = set()
     for collection in ("units", "exceptions", "examples"):
         values = patch.get(collection)
         if not isinstance(values, list):
@@ -237,9 +245,61 @@ def validate_patch(
         )
         if outside:
             errors.append(f"{collection} contains non-target clauses: {outside}")
+        for item in values:
+            if not isinstance(item, Mapping) or not isinstance(item.get("id"), str):
+                continue
+            if item["id"] in object_ids:
+                errors.append(f"duplicate authored id in partition: {item['id']}")
+            object_ids.add(item["id"])
     if not isinstance(patch.get("symbols"), list):
         errors.append("symbols must be an array")
+    else:
+        for item in patch["symbols"]:
+            if not isinstance(item, Mapping) or not isinstance(item.get("id"), str):
+                continue
+            if item["id"] in object_ids:
+                errors.append(f"duplicate authored id in partition: {item['id']}")
+            object_ids.add(item["id"])
     return {"passed": not errors, "errors": errors}
+
+
+def deduplicate_patch_ids(
+    patches: Sequence[Mapping[str, Any]],
+) -> list[dict[str, Any]]:
+    """Namespace only colliding authored IDs and update references in that patch."""
+    seen: set[str] = set()
+    result = []
+
+    def replace(value: Any, replacements: Mapping[str, str]) -> Any:
+        if isinstance(value, str):
+            return replacements.get(value, value)
+        if isinstance(value, list):
+            return [replace(item, replacements) for item in value]
+        if isinstance(value, Mapping):
+            return {key: replace(item, replacements) for key, item in value.items()}
+        return value
+
+    for number, patch in enumerate(patches, 1):
+        replacements: dict[str, str] = {}
+        for collection in ("symbols", "units", "exceptions", "examples"):
+            for item in patch.get(collection, []):
+                if not isinstance(item, Mapping):
+                    continue
+                object_id = item.get("id")
+                if not isinstance(object_id, str) or object_id not in seen:
+                    if isinstance(object_id, str):
+                        seen.add(object_id)
+                    continue
+                suffix = f"_partition_{number:03}"
+                replacement = object_id + suffix
+                counter = 2
+                while replacement in seen:
+                    replacement = f"{object_id}{suffix}_{counter}"
+                    counter += 1
+                replacements[object_id] = replacement
+                seen.add(replacement)
+        result.append(replace(patch, replacements))
+    return result
 
 
 def assemble_patches(
@@ -253,7 +313,7 @@ def assemble_patches(
     exceptions = []
     examples = []
     task_id = bootstrap["task_id"]
-    for patch in patches:
+    for patch in deduplicate_patch_ids(patches):
         if patch.get("task_id") != task_id:
             raise ValueError("Patch task_id does not match bootstrap")
         for item in patch["clauses"]:

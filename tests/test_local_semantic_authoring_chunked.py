@@ -4,6 +4,7 @@ from scripts.build_compact_semantic_tasks import load_json
 from scripts.local_semantic_authoring import DEFAULT_BOOTSTRAP_DIR, DEFAULT_EXAMPLE
 from scripts.local_semantic_authoring_chunked import (
     assemble_patches,
+    deduplicate_patch_ids,
     focused_candidate,
     partition_indexes,
     validate_patch,
@@ -97,3 +98,54 @@ def test_patch_validation_rejects_wrong_order_and_cross_partition_units() -> Non
 
     assert validation["passed"] is False
     assert len(validation["errors"]) == 2
+
+
+def test_patch_validation_rejects_short_clause_decisions() -> None:
+    _task, authoring, _candidate = _fixture()
+    patch = {
+        "task_id": authoring["task_id"],
+        "clauses": [{"i": 1, "decision": ["normative", "compile"]}],
+        "symbols": [],
+        "units": [],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    validation = validate_patch(patch, authoring["task_id"], [1])
+
+    assert validation["passed"] is False
+    assert "3-5 item array" in validation["errors"][0]
+
+
+def test_duplicate_ids_are_namespaced_with_local_references() -> None:
+    base = {
+        "task_id": "P-1-part-001",
+        "clauses": [],
+        "symbols": [],
+        "units": [{"id": "same", "c": [1]}],
+        "exceptions": [],
+        "examples": [],
+    }
+    later = {
+        "task_id": "P-1-part-001",
+        "clauses": [],
+        "symbols": [],
+        "units": [{"id": "same", "c": [2]}],
+        "exceptions": [
+            {
+                "id": "exception",
+                "c": [2],
+                "target": ["semantic_unit", "same"],
+            }
+        ],
+        "examples": [],
+    }
+
+    normalized = deduplicate_patch_ids([base, later])
+
+    assert normalized[0]["units"][0]["id"] == "same"
+    assert normalized[1]["units"][0]["id"] == "same_partition_002"
+    assert normalized[1]["exceptions"][0]["target"] == [
+        "semantic_unit",
+        "same_partition_002",
+    ]
