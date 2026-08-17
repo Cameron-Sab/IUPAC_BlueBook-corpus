@@ -57,6 +57,7 @@ else:
 
 
 PARTITION_VALIDATOR_VERSION = "2.2.0"
+REQUEST_ENVELOPE_SCHEMA = {"type": "object"}
 CLAUSE_ROLES = [
     "heading",
     "scope",
@@ -668,7 +669,9 @@ def build_prompt(
         + "\nPARTITION MODE: Author only target_clause_indexes. The clauses array "
         "must contain one {i,decision} object per target in the exact given order. "
         "For every mechanical_clause_index, decision MUST be null. For every other "
-        "target, decision MUST be compile, skip, or supersede. "
+        "target, decision MUST be the complete 3-5 item clause-decision array "
+        "defined by RESPONSE SCHEMA; its disposition element must be compile, "
+        "skip, or supersede. Never return a bare disposition string. "
         "Never include a mechanical_clause_index in any c ownership array. "
         "All c arrays in units, exceptions, and examples must be subsets of the "
         "targets. Use IDs specific to the shown source rule so independently authored "
@@ -905,6 +908,24 @@ def normalize_mechanical_decisions(
         elif (
             isinstance(index, int)
             and 1 <= index <= len(bootstrap["clauses"])
+            and bootstrap["clauses"][index - 1] is not None
+            and item.get("decision") is None
+        ):
+            item["decision"] = bootstrap["clauses"][index - 1]
+            changed.append(index)
+        elif (
+            isinstance(index, int)
+            and 1 <= index <= len(bootstrap["clauses"])
+            and item.get("decision") == "compile"
+            and isinstance(bootstrap["clauses"][index - 1], list)
+            and len(bootstrap["clauses"][index - 1]) >= 3
+            and bootstrap["clauses"][index - 1][2] == "compile"
+        ):
+            item["decision"] = bootstrap["clauses"][index - 1]
+            changed.append(index)
+        elif (
+            isinstance(index, int)
+            and 1 <= index <= len(bootstrap["clauses"])
             and isinstance(item.get("decision"), list)
             and len(item["decision"]) == 5
             and item["decision"][2] == "supersede"
@@ -1065,8 +1086,38 @@ def _identifier(value: str, *, symbol: bool = False) -> str:
 def normalize_compact_identifiers(
     patch: Mapping[str, Any]
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
-    normalized = dict(patch)
+    allowed_root_keys = {
+        "task_id",
+        "clauses",
+        "symbols",
+        "units",
+        "exceptions",
+        "examples",
+    }
+    normalized = {key: value for key, value in patch.items() if key in allowed_root_keys}
     changes = []
+    removed_root_keys = sorted(set(patch).difference(allowed_root_keys))
+    if removed_root_keys:
+        changes.append(
+            {
+                "field": "root",
+                "action": "remove_unknown_keys",
+                "keys": removed_root_keys,
+            }
+        )
+    for collection in ("exceptions", "examples"):
+        values = normalized.get(collection)
+        if isinstance(values, list):
+            retained = [item for item in values if isinstance(item, Mapping)]
+            if len(retained) != len(values):
+                normalized[collection] = retained
+                changes.append(
+                    {
+                        "field": collection,
+                        "action": "drop_nonobject_items",
+                        "removed_count": len(values) - len(retained),
+                    }
+                )
 
     def replace(value: Any, *, owner: Any, field: str, symbol: bool = False) -> Any:
         if not isinstance(value, str):
@@ -1078,7 +1129,16 @@ def normalize_compact_identifiers(
 
     def expression(value: Any, owner: Any) -> Any:
         if not isinstance(value, list):
-            return value
+            result = ["lit", value]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "raw_expression_literal",
+                    "from": value,
+                    "to": result,
+                }
+            )
+            return result
         if not value or not isinstance(value[0], str):
             if value and all(
                 isinstance(item, list) and len(item) == 2 and item[0] == "lit"
@@ -1094,13 +1154,65 @@ def normalize_compact_identifiers(
                     }
                 )
                 return result
-            return value
+            result = ["lit", value]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "raw_expression_literal",
+                    "from": value,
+                    "to": result,
+                }
+            )
+            return result
         result = list(value)
         op = result[0]
+        expression_ops = {
+            "lit",
+            "var",
+            "get",
+            "pred",
+            "call",
+            "all",
+            "any",
+            "not",
+            "exists",
+            "forall",
+            "cmp",
+            "lookup",
+            "outcome",
+        }
+        if op not in expression_ops:
+            literal = ["lit", value]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "unknown_expression_literal",
+                    "from": value,
+                    "to": literal,
+                }
+            )
+            return literal
         if op == "var" and len(result) == 2:
             result[1] = replace(result[1], owner=owner, field="var")
+        elif op == "get" and len(result) == 2 and isinstance(result[1], str):
+            before = list(result)
+            result = ["var", replace(result[1], owner=owner, field="var")]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "get_variable_shorthand",
+                    "from": before,
+                    "to": result,
+                }
+            )
         elif op == "get" and len(result) == 3:
-            result[1] = expression(result[1], owner)
+            if isinstance(result[1], str):
+                result[1] = [
+                    "var",
+                    replace(result[1], owner=owner, field="var"),
+                ]
+            else:
+                result[1] = expression(result[1], owner)
             result[2] = replace(result[2], owner=owner, field="path", symbol=True)
         elif op in {"pred", "call"} and len(result) >= 2:
             result[1] = replace(result[1], owner=owner, field="symbol", symbol=True)
@@ -1151,6 +1263,27 @@ def normalize_compact_identifiers(
         return result
 
     def statements(values: Sequence[Any], owner: Any) -> list[Any]:
+        statement_ops = {
+            "seq",
+            "if",
+            "set",
+            "xform",
+            "render",
+            "reject",
+            "invoke",
+            "each",
+            "emit",
+            "assert",
+        }
+        if values and isinstance(values[0], str) and values[0] in statement_ops:
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "statement_block",
+                    "action": "wrap_single_statement",
+                }
+            )
+            values = [values]
         return [
             normalized_statement
             for value in values
@@ -1164,6 +1297,17 @@ def normalize_compact_identifiers(
         op = result[0]
         if op == "seq":
             result[1:] = statements(result[1:], owner)
+        elif op == "if" and len(result) == 3:
+            result.append([])
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "statement",
+                    "action": "add_empty_else",
+                }
+            )
+            result[1] = expression(result[1], owner)
+            result[2] = statements(result[2], owner)
         elif op == "if" and len(result) == 4:
             result[1] = expression(result[1], owner)
             result[2] = statements(result[2], owner)
@@ -1190,6 +1334,18 @@ def normalize_compact_identifiers(
             result[3] = expression(result[3], owner)
         elif op == "reject" and len(result) == 3:
             result[1] = replace(result[1], owner=owner, field="target")
+            if isinstance(result[2], str):
+                before = result[2]
+                result[2] = _reason_code(result[2])
+                if result[2] != before:
+                    changes.append(
+                        {
+                            "owner_id": owner,
+                            "field": "reject_reason",
+                            "from": before,
+                            "to": result[2],
+                        }
+                    )
         elif op == "invoke" and len(result) == 3 and isinstance(result[2], Mapping):
             result[2] = {name: expression(item, owner) for name, item in result[2].items()}
         elif op == "each" and len(result) == 5:
@@ -1197,6 +1353,39 @@ def normalize_compact_identifiers(
             result[2] = expression(result[2], owner)
             result[3] = statements(result[3], owner)
             result[4] = expression(result[4], owner)
+        elif op == "each" and len(result) == 4:
+            result[1] = replace(result[1], owner=owner, field="bind")
+            result[2] = expression(result[2], owner)
+            body = list(result[3]) if isinstance(result[3], list) else []
+            statement_ops = {
+                "seq",
+                "if",
+                "set",
+                "xform",
+                "render",
+                "reject",
+                "invoke",
+                "each",
+                "emit",
+                "assert",
+            }
+            result_expression: Any = ["lit", None]
+            if (
+                body
+                and isinstance(body[-1], list)
+                and body[-1]
+                and body[-1][0] not in statement_ops
+            ):
+                result_expression = expression(body.pop(), owner)
+            result[3] = statements(body, owner)
+            result.append(result_expression)
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "statement",
+                    "action": "add_each_result",
+                }
+            )
         elif op == "emit" and len(result) == 2:
             result[1] = expression(result[1], owner)
         elif op == "assert" and len(result) == 3:
@@ -1236,7 +1425,13 @@ def normalize_compact_identifiers(
     normalized_units = []
     for raw_item in patch.get("units", []):
         if not isinstance(raw_item, Mapping):
-            normalized_units.append(raw_item)
+            changes.append(
+                {
+                    "field": "units",
+                    "action": "drop_nonobject_item",
+                    "value": raw_item,
+                }
+            )
             continue
         item = dict(raw_item)
         owner = item.get("id")
@@ -2164,7 +2359,7 @@ def process_task(
                 output_tokens=request_output_tokens,
                 timeout=timeout,
                 seed=request_seed,
-                schema=schema,
+                schema=REQUEST_ENVELOPE_SCHEMA,
             )
             patch, normalized_metadata = normalize_clause_metadata(patch, bootstrap)
             patch, normalized_reasons = normalize_reason_codes(patch, bootstrap)

@@ -625,6 +625,160 @@ def test_compact_literal_expression_list_is_collapsed() -> None:
     assert changes[-1]["field"] == "literal_list"
 
 
+def test_raw_values_and_get_shorthand_become_valid_expressions() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "procedure",
+                "steps": [
+                    [
+                        "assert",
+                        ["cmp", "eq", ["get", "candidate"], "expected"],
+                        "must_match",
+                    ]
+                ],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"][0][1] == [
+        "cmp",
+        "eq",
+        ["var", "candidate"],
+        ["lit", "expected"],
+    ]
+    assert {change["field"] for change in changes} == {
+        "get_variable_shorthand",
+        "raw_expression_literal",
+    }
+
+
+def test_unknown_expression_operation_is_preserved_as_literal_data() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "procedure",
+                "steps": [["set", "source", ["clause", 39]]],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"][0][2] == ["lit", ["clause", 39]]
+    assert changes[-1]["field"] == "unknown_expression_literal"
+
+
+def test_relaxed_response_shape_is_normalized() -> None:
+    patch = {
+        "task_id": "P-1-part-001",
+        "refs": [],
+        "units": [
+            {
+                "id": "procedure",
+                "steps": [
+                    [
+                        "if",
+                        ["get", "invalid"],
+                        [["reject", "candidate", "Invalid candidate"]],
+                    ]
+                ],
+            }
+        ],
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert "refs" not in normalized
+    assert normalized["units"][0]["steps"] == [
+        [
+            "if",
+            ["var", "invalid"],
+            [["reject", "candidate", "invalid_candidate"]],
+            [],
+        ]
+    ]
+    assert {change.get("action") for change in changes}.issuperset(
+        {"remove_unknown_keys", "add_empty_else"}
+    )
+
+
+def test_unwrapped_single_statement_block_is_wrapped() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "procedure",
+                "steps": [
+                    [
+                        "if",
+                        ["get", "invalid"],
+                        ["reject", "candidate", "Invalid candidate"],
+                    ]
+                ],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"][0][2] == [
+        ["reject", "candidate", "invalid_candidate"]
+    ]
+    assert any(change.get("action") == "wrap_single_statement" for change in changes)
+
+
+def test_each_without_result_gets_null_result_expression() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "procedure",
+                "steps": [
+                    [
+                        "each",
+                        "item",
+                        ["var", "items"],
+                        [["emit", ["var", "item"]]],
+                    ]
+                ],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"][0][-1] == ["lit", None]
+    assert changes[-1]["action"] == "add_each_result"
+
+
+def test_each_moves_trailing_expression_out_of_body() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "procedure",
+                "steps": [
+                    [
+                        "each",
+                        "item",
+                        ["var", "items"],
+                        [["emit", ["var", "item"]], ["lit", "result"]],
+                    ]
+                ],
+            },
+            "exceptions",
+        ]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    each = normalized["units"][0]["steps"][0]
+    assert each[3] == [["emit", ["var", "item"]]]
+    assert each[4] == ["lit", "result"]
+    assert len(normalized["units"]) == 1
+    assert any(change.get("action") == "drop_nonobject_item" for change in changes)
+
+
 def test_empty_conditional_statement_is_removed() -> None:
     patch = {
         "units": [
@@ -690,6 +844,36 @@ def test_empty_supersession_restores_bootstrap_disposition() -> None:
 
     assert normalized["clauses"][0]["decision"] == bootstrap["clauses"][0]
     assert changes == [1]
+
+
+def test_missing_nonmechanical_decision_restores_bootstrap_disposition() -> None:
+    patch = {"clauses": [{"i": 1, "decision": None}]}
+    bootstrap = {"clauses": [["procedure_step", "normative", "compile"]]}
+
+    normalized, changes = normalize_mechanical_decisions(patch, bootstrap)
+
+    assert normalized["clauses"][0]["decision"] == bootstrap["clauses"][0]
+    assert changes == [1]
+
+
+def test_bare_compile_decision_restores_bootstrap_metadata() -> None:
+    patch = {"clauses": [{"i": 1, "decision": "compile"}]}
+    bootstrap = {"clauses": [["procedure_step", "normative", "compile"]]}
+
+    normalized, changes = normalize_mechanical_decisions(patch, bootstrap)
+
+    assert normalized["clauses"][0]["decision"] == bootstrap["clauses"][0]
+    assert changes == [1]
+
+
+def test_bare_noncompile_decision_is_not_invented() -> None:
+    patch = {"clauses": [{"i": 1, "decision": "skip"}]}
+    bootstrap = {"clauses": [["procedure_step", "normative", "compile"]]}
+
+    normalized, changes = normalize_mechanical_decisions(patch, bootstrap)
+
+    assert normalized["clauses"][0]["decision"] == "skip"
+    assert changes == []
 
 
 def test_record_ownership_splits_cross_record_objects() -> None:
