@@ -216,12 +216,14 @@ def _request_ollama(
     output_tokens: int,
     timeout: int,
     seed: int,
+    schema: Mapping[str, Any] | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
+    schema = schema or response_schema()
     body = {
         "model": model,
         "stream": False,
         "think": False,
-        "format": response_schema(),
+        "format": schema,
         "messages": [{"role": "user", "content": prompt}],
         "options": {
             "temperature": 0.0,
@@ -279,8 +281,10 @@ def _request_openai(
     output_tokens: int,
     timeout: int,
     seed: int,
+    schema: Mapping[str, Any] | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     del context_tokens
+    schema = schema or response_schema()
     body = {
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
@@ -294,7 +298,7 @@ def _request_openai(
             "json_schema": {
                 "name": "iupac_semantic_plan",
                 "strict": True,
-                "schema": response_schema(),
+                "schema": schema,
             },
         },
     }
