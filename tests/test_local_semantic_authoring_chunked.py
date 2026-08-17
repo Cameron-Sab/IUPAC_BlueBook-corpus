@@ -12,6 +12,8 @@ from scripts.local_semantic_authoring_chunked import (
     normalize_mechanical_ownership,
     normalize_bootstrap_ownership,
     normalize_clause_metadata,
+    normalize_partition_ownership,
+    normalize_record_ownership,
     normalize_example_references,
     normalize_example_names,
     normalize_compact_identifiers,
@@ -435,6 +437,63 @@ def test_invalid_example_reference_is_removed() -> None:
     assert changes == [{"example_id": "example", "removed_count": 1}]
 
 
+def test_example_reference_ids_are_coerced_to_compiler_types() -> None:
+    patch = {
+        "examples": [
+            {
+                "id": "example",
+                "shows": [["record", 194], ["clause", "42"]],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_example_references(patch)
+
+    assert normalized["examples"][0]["shows"] == [
+        ["record", "194"],
+        ["clause", 42],
+    ]
+    assert changes[0]["normalized_count"] == 2
+
+
+def test_unknown_record_reference_is_removed_with_task_context() -> None:
+    patch = {
+        "examples": [
+            {
+                "id": "example",
+                "shows": [["record", "invented"], ["record", "P-1.1"]],
+            }
+        ]
+    }
+    task = {"rules": [{"rule_id": "P-1.1"}]}
+
+    normalized, changes = normalize_example_references(patch, task=task)
+
+    assert normalized["examples"][0]["shows"] == [["record", "P-1.1"]]
+    assert changes[0]["removed_count"] == 1
+
+
+def test_placeholder_statement_reference_is_removed() -> None:
+    patch = {
+        "examples": [
+            {
+                "id": "example",
+                "shows": [
+                    ["statement", "render"],
+                    ["statement", "stmt.p1.rule.then.1"],
+                ],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_example_references(patch)
+
+    assert normalized["examples"][0]["shows"] == [
+        ["statement", "stmt.p1.rule.then.1"]
+    ]
+    assert changes[0]["removed_count"] == 1
+
+
 def test_literal_wrapped_example_name_is_unwrapped() -> None:
     patch = {
         "examples": [
@@ -467,6 +526,21 @@ def test_statement_reason_code_is_normalized_recursively() -> None:
     assert changes[0]["owner_id"] == "rule"
 
 
+def test_invalid_skip_reason_restores_bootstrap_disposition() -> None:
+    patch = {
+        "clauses": [
+            {"i": 1, "decision": ["heading", "informative", "skip", "P-103.2"]}
+        ],
+        "units": [],
+    }
+    bootstrap = {"clauses": [["heading", "informative", "compile"]]}
+
+    normalized, changes = normalize_reason_codes(patch, bootstrap)
+
+    assert normalized["clauses"][0]["decision"] == bootstrap["clauses"][0]
+    assert changes[0]["action"] == "restore_bootstrap_disposition"
+
+
 def test_compact_get_path_and_scope_are_normalized() -> None:
     patch = {
         "units": [
@@ -485,6 +559,83 @@ def test_compact_get_path_and_scope_are_normalized() -> None:
     assert len(changes) == 2
 
 
+def test_compact_literal_list_comparison_becomes_membership() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "rule",
+                "if": [
+                    "cmp",
+                    "eq",
+                    ["var", "suffix"],
+                    [["lit", "ane"], ["lit", "ene"]],
+                ],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["if"] == [
+        "cmp",
+        "member_of",
+        ["var", "suffix"],
+        ["lit", ["ane", "ene"]],
+    ]
+    assert changes[-1]["field"] == "compare_literal_list"
+
+
+def test_partition_ownership_removes_neighbor_clause_indexes() -> None:
+    patch = {
+        "units": [{"id": "keep", "c": [42, 49]}],
+        "exceptions": [{"id": "drop", "c": [49]}],
+        "examples": [],
+    }
+
+    normalized, changes = normalize_partition_ownership(patch, range(25, 49))
+
+    assert normalized["units"][0]["c"] == [42]
+    assert normalized["exceptions"] == []
+    assert len(changes) == 2
+
+
+def test_empty_supersession_restores_bootstrap_disposition() -> None:
+    patch = {
+        "clauses": [
+            {
+                "i": 1,
+                "decision": ["correction_event", "correction", "supersede", [], [2]],
+            }
+        ]
+    }
+    bootstrap = {"clauses": [["correction_event", "correction", "compile"]]}
+
+    normalized, changes = normalize_mechanical_decisions(patch, bootstrap)
+
+    assert normalized["clauses"][0]["decision"] == bootstrap["clauses"][0]
+    assert changes == [1]
+
+
+def test_record_ownership_splits_cross_record_objects() -> None:
+    task = {
+        "rules": [
+            {"rule_id": "P-1.1", "source_units": [{}, {}]},
+            {"rule_id": "P-1.2", "source_units": [{}, {}]},
+        ]
+    }
+    patch = {
+        "units": [{"id": "shared", "c": [2, 3, 4]}],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    normalized, changes = normalize_record_ownership(patch, task)
+
+    assert [item["c"] for item in normalized["units"]] == [[2], [3, 4]]
+    assert normalized["units"][1]["id"] == "shared_record_P-1.2"
+    assert changes[0]["record_ids"] == ["P-1.1", "P-1.2"]
+
+
 def test_mapping_table_alias_is_rebound_by_clause_overlap() -> None:
     authoring = load_json(DEFAULT_BOOTSTRAP_DIR / "P-101-part-002.json")
     patch = {
@@ -497,6 +648,29 @@ def test_mapping_table_alias_is_rebound_by_clause_overlap() -> None:
 
     assert normalized["units"][0]["table"] == authoring["tables"][0]["id"]
     assert changes[0]["field"] == "table"
+
+
+def test_unknown_source_table_column_is_rebound_to_text() -> None:
+    authoring = load_json(DEFAULT_BOOTSTRAP_DIR / "P-101-part-002.json")
+    table = authoring["tables"][0]
+    patch = {
+        "symbols": [],
+        "units": [
+            {
+                "id": "lookup",
+                "k": "procedure",
+                "c": [table["c"][0]],
+                "steps": [
+                    ["set", "value", ["lookup", table["id"], ["lit", 1], "D"]]
+                ],
+            }
+        ],
+    }
+
+    normalized, changes = normalize_table_references(patch, authoring)
+
+    assert normalized["units"][0]["steps"][0][2][3] == "text"
+    assert changes[0]["field"] == "lookup_column"
 
 
 def test_unretained_lookup_is_lowered_to_grounded_function() -> None:

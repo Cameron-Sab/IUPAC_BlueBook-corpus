@@ -6,6 +6,8 @@ import json
 import math
 import re
 import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
 from typing import Any, Mapping, Sequence
 
@@ -54,7 +56,7 @@ else:
     )
 
 
-PARTITION_VALIDATOR_VERSION = "2.0.0"
+PARTITION_VALIDATOR_VERSION = "2.1.0"
 CLAUSE_ROLES = [
     "heading",
     "scope",
@@ -138,6 +140,23 @@ SCOPE_REGIMES = [
     "all",
 ]
 UNIT_FORCES = ["required", "permitted", "prohibited", "preference", "definition"]
+NONOPERATIVE_REASON_CODES = [
+    "heading_or_title",
+    "example_label",
+    "illustrative_example",
+    "explanatory_note",
+    "historical_context",
+    "rationale",
+    "source_navigation",
+    "citation_only",
+    "structural_layout",
+    "empty_layout_cell",
+    "figure_only",
+    "correction_marker",
+    "bibliographic_material",
+    "duplicate_rendering",
+    "source_artifact",
+]
 
 
 def response_schema(
@@ -354,7 +373,7 @@ def response_schema(
                 {"type": "string", "enum": CLAUSE_ROLES},
                 {"type": "string", "enum": CLAUSE_FORCES},
                 {"type": "string", "const": "skip"},
-                REASON_CODE_SCHEMA,
+                {"type": "string", "enum": NONOPERATIVE_REASON_CODES},
             ],
         },
         {
@@ -422,13 +441,31 @@ def response_schema(
                 },
             },
             "object_ref": {
-                "type": "array",
-                "minItems": 2,
-                "maxItems": 2,
-                "prefixItems": [
-                    {"type": "string", "enum": OBJECT_REF_KINDS},
-                    {"oneOf": [{"type": "string"}, {"type": "integer"}]},
-                ],
+                "oneOf": [
+                    {
+                        "type": "array",
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "prefixItems": [
+                            {"type": "string", "const": "clause"},
+                            {"type": "integer"},
+                        ],
+                    },
+                    {
+                        "type": "array",
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "prefixItems": [
+                            {
+                                "type": "string",
+                                "enum": [
+                                    kind for kind in OBJECT_REF_KINDS if kind != "clause"
+                                ],
+                            },
+                            {"type": "string"},
+                        ],
+                    },
+                ]
             },
         },
         "type": "object",
@@ -524,6 +561,26 @@ def response_schema(
             },
         },
     }
+
+
+def count_prompt_tokens(
+    endpoint: str, prompt: str, *, timeout: int = 30
+) -> tuple[int, str]:
+    request = urllib.request.Request(
+        endpoint.rstrip("/") + "/tokenize",
+        data=json.dumps({"content": prompt}).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        tokens = payload.get("tokens")
+        if isinstance(tokens, list):
+            return len(tokens), "server_tokenizer"
+    except (OSError, ValueError, urllib.error.URLError):
+        pass
+    return math.ceil(len(prompt.encode("utf-8")) / 3), "utf8_fallback"
 
 
 def partition_indexes(candidate: Mapping[str, Any], size: int) -> list[list[int]]:
@@ -845,6 +902,16 @@ def normalize_mechanical_decisions(
         ):
             item["decision"] = None
             changed.append(index)
+        elif (
+            isinstance(index, int)
+            and 1 <= index <= len(bootstrap["clauses"])
+            and isinstance(item.get("decision"), list)
+            and len(item["decision"]) == 5
+            and item["decision"][2] == "supersede"
+            and not item["decision"][3]
+        ):
+            item["decision"] = bootstrap["clauses"][index - 1]
+            changed.append(index)
         normalized_clauses.append(item)
     normalized["clauses"] = normalized_clauses
     return normalized, changed
@@ -898,7 +965,7 @@ def _reason_code(value: str) -> str:
 
 
 def normalize_reason_codes(
-    patch: Mapping[str, Any]
+    patch: Mapping[str, Any], bootstrap: Mapping[str, Any] | None = None
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     normalized = dict(patch)
     changes = []
@@ -945,19 +1012,27 @@ def normalize_reason_codes(
             and len(decision) == 4
             and decision[2] == "skip"
             and isinstance(decision[3], str)
-            and re.fullmatch(REASON_CODE_SCHEMA["pattern"], decision[3]) is None
+            and decision[3] not in NONOPERATIVE_REASON_CODES
         ):
-            decision = list(decision)
-            before = decision[3]
-            decision[3] = _reason_code(before)
-            item["decision"] = decision
-            changes.append(
-                {
-                    "clause_index": item.get("i"),
-                    "from": before,
-                    "to": decision[3],
-                }
+            index = item.get("i")
+            source = (
+                bootstrap["clauses"][index - 1]
+                if bootstrap is not None
+                and isinstance(index, int)
+                and 1 <= index <= len(bootstrap["clauses"])
+                else None
             )
+            if isinstance(source, list) and len(source) >= 3:
+                before = list(decision)
+                item["decision"] = list(source)
+                changes.append(
+                    {
+                        "clause_index": index,
+                        "from": before,
+                        "to": item["decision"],
+                        "action": "restore_bootstrap_disposition",
+                    }
+                )
         normalized_clauses.append(item)
     normalized["clauses"] = normalized_clauses
 
@@ -1026,7 +1101,31 @@ def normalize_compact_identifiers(
             aliases = {"=": "eq", "==": "eq", "equals": "eq", "!=": "ne"}
             result[1] = aliases.get(result[1], result[1])
             result[2] = expression(result[2], owner)
-            result[3] = expression(result[3], owner)
+            raw_right = result[3]
+            if (
+                isinstance(raw_right, list)
+                and raw_right
+                and all(
+                    isinstance(item, list)
+                    and len(item) == 2
+                    and item[0] == "lit"
+                    for item in raw_right
+                )
+            ):
+                before = [result[1], raw_right]
+                if result[1] == "eq":
+                    result[1] = "member_of"
+                result[3] = ["lit", [item[1] for item in raw_right]]
+                changes.append(
+                    {
+                        "owner_id": owner,
+                        "field": "compare_literal_list",
+                        "from": before,
+                        "to": [result[1], result[3]],
+                    }
+                )
+            else:
+                result[3] = expression(raw_right, owner)
         elif op == "lookup" and len(result) == 4:
             result[1] = replace(result[1], owner=owner, field="table")
             result[2] = expression(result[2], owner)
@@ -1143,6 +1242,87 @@ def normalize_mechanical_ownership(
     return normalized, changes
 
 
+def normalize_partition_ownership(
+    patch: Mapping[str, Any], target_indexes: Sequence[int]
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    targets = set(target_indexes)
+    normalized = dict(patch)
+    changes = []
+    for collection in ("units", "exceptions", "examples"):
+        normalized_items = []
+        for raw_item in patch.get(collection, []):
+            if not isinstance(raw_item, Mapping) or not isinstance(
+                raw_item.get("c"), list
+            ):
+                normalized_items.append(raw_item)
+                continue
+            item = dict(raw_item)
+            removed = [index for index in item["c"] if index not in targets]
+            item["c"] = [index for index in item["c"] if index in targets]
+            if removed:
+                changes.append(
+                    {
+                        "collection": collection,
+                        "id": item.get("id"),
+                        "removed_clause_indexes": removed,
+                        "dropped": not item["c"],
+                    }
+                )
+            if item["c"]:
+                normalized_items.append(item)
+        normalized[collection] = normalized_items
+    return normalized, changes
+
+
+def normalize_record_ownership(
+    patch: Mapping[str, Any], task: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    owner_by_index = {}
+    index = 0
+    for rule in task["rules"]:
+        for _unit in rule["source_units"]:
+            index += 1
+            owner_by_index[index] = rule["rule_id"]
+    normalized = dict(patch)
+    changes = []
+    for collection in ("units", "exceptions", "examples"):
+        normalized_items = []
+        for raw_item in patch.get(collection, []):
+            if not isinstance(raw_item, Mapping) or not isinstance(
+                raw_item.get("c"), list
+            ):
+                normalized_items.append(raw_item)
+                continue
+            groups: dict[str, list[int]] = {}
+            for clause_index in raw_item["c"]:
+                owner = owner_by_index.get(clause_index)
+                if owner is not None:
+                    groups.setdefault(owner, []).append(clause_index)
+            if len(groups) <= 1:
+                normalized_items.append(dict(raw_item))
+                continue
+            split_ids = []
+            for group_number, (owner, clause_indexes) in enumerate(groups.items(), 1):
+                item = dict(raw_item)
+                item["c"] = clause_indexes
+                if group_number > 1:
+                    item["id"] = (
+                        f"{raw_item.get('id', collection)}_record_{_identifier(owner)}"
+                    )
+                split_ids.append(item.get("id"))
+                normalized_items.append(item)
+            changes.append(
+                {
+                    "collection": collection,
+                    "id": raw_item.get("id"),
+                    "record_ids": list(groups),
+                    "split_ids": split_ids,
+                }
+            )
+        normalized[collection] = normalized_items
+    return normalized, changes
+
+
 def normalize_bootstrap_ownership(
     patch: Mapping[str, Any], bootstrap: Mapping[str, Any]
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
@@ -1240,7 +1420,9 @@ def normalize_bootstrap_ownership(
 
 
 def normalize_example_references(
-    patch: Mapping[str, Any], bootstrap: Mapping[str, Any] | None = None
+    patch: Mapping[str, Any],
+    bootstrap: Mapping[str, Any] | None = None,
+    task: Mapping[str, Any] | None = None,
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     normalized = dict(patch)
     normalized_examples = []
@@ -1259,27 +1441,53 @@ def normalize_example_references(
             for item in (bootstrap or {}).get("figures", [])
             if isinstance(item, Mapping) and isinstance(item.get("id"), str)
         }
-        valid = [
-            ref
-            for ref in shows
-            if isinstance(ref, list)
-            and len(ref) == 2
-            and ref[0] in OBJECT_REF_KINDS
-            and isinstance(ref[1], (str, int))
-            and not (
+        record_ids = {
+            rule["rule_id"]
+            for rule in (task or {}).get("rules", [])
+            if isinstance(rule, Mapping) and isinstance(rule.get("rule_id"), str)
+        }
+        valid = []
+        normalized_count = 0
+        for ref in shows:
+            if (
+                not isinstance(ref, list)
+                or len(ref) != 2
+                or ref[0] not in OBJECT_REF_KINDS
+            ):
+                continue
+            kind, object_id = ref
+            if kind == "clause":
+                if isinstance(object_id, str) and object_id.isdigit():
+                    object_id = int(object_id)
+                    normalized_count += 1
+                if not isinstance(object_id, int):
+                    continue
+            else:
+                if isinstance(object_id, int):
+                    object_id = str(object_id)
+                    normalized_count += 1
+                if not isinstance(object_id, str):
+                    continue
+            if (
                 bootstrap is not None
-                and ref[0] == "figure"
-                and ref[1] not in figure_ids
-            )
-        ]
+                and kind == "figure"
+                and object_id not in figure_ids
+            ):
+                continue
+            if task is not None and kind == "record" and object_id not in record_ids:
+                continue
+            if kind == "statement" and not object_id.startswith("stmt."):
+                continue
+            valid.append([kind, object_id])
         if valid != shows:
             item["shows"] = valid
-            changes.append(
-                {
-                    "example_id": item.get("id"),
-                    "removed_count": len(shows) - len(valid),
-                }
-            )
+            change = {
+                "example_id": item.get("id"),
+                "removed_count": len(shows) - len(valid),
+            }
+            if normalized_count:
+                change["normalized_count"] = normalized_count
+            changes.append(change)
         normalized_examples.append(item)
     normalized["examples"] = normalized_examples
     return normalized, changes
@@ -1291,6 +1499,14 @@ def normalize_table_references(
     normalized = dict(patch)
     tables = [item for item in bootstrap.get("tables", []) if item.get("c")]
     table_ids = {item["id"] for item in tables}
+    table_columns = {
+        item["id"]: {
+            column[0]
+            for column in item.get("cols", [])
+            if isinstance(column, list) and column and isinstance(column[0], str)
+        }
+        for item in tables
+    }
     changes = []
     normalized_symbols = [
         dict(item) if isinstance(item, Mapping) else item
@@ -1359,6 +1575,18 @@ def normalize_table_references(
                         }
                     )
                     return ["call", symbol_id, result[2], ["lit", result[3]]]
+            columns = table_columns.get(result[1], set())
+            if result[3] not in columns and "text" in columns:
+                before = result[3]
+                result[3] = "text"
+                changes.append(
+                    {
+                        "owner_id": owner.get("id"),
+                        "field": "lookup_column",
+                        "from": before,
+                        "to": result[3],
+                    }
+                )
         elif op == "get" and len(result) == 3:
             result[1] = expression(result[1], owner)
         elif op in {"pred", "call", "all", "any"}:
@@ -1637,7 +1865,7 @@ def process_task(
         if not force and patch_path.exists() and part_report_path.exists():
             patch = load_json(patch_path)
             patch, normalized_metadata = normalize_clause_metadata(patch, bootstrap)
-            patch, normalized_reasons = normalize_reason_codes(patch)
+            patch, normalized_reasons = normalize_reason_codes(patch, bootstrap)
             patch, normalized_identifiers = normalize_compact_identifiers(patch)
             patch, normalized_tables = normalize_table_references(patch, bootstrap)
             patch, normalized_indexes = normalize_mechanical_decisions(
@@ -1646,10 +1874,16 @@ def process_task(
             patch, normalized_ownership = normalize_mechanical_ownership(
                 patch, bootstrap
             )
+            patch, partition_ownership = normalize_partition_ownership(
+                patch, indexes
+            )
             patch, bootstrap_ownership = normalize_bootstrap_ownership(
                 patch, bootstrap
             )
-            patch, example_references = normalize_example_references(patch, bootstrap)
+            patch, record_ownership = normalize_record_ownership(patch, task)
+            patch, example_references = normalize_example_references(
+                patch, bootstrap, task
+            )
             patch, example_names = normalize_example_names(patch)
             part_report = load_json(part_report_path)
             prior_patch = patch
@@ -1692,6 +1926,10 @@ def process_task(
                     part_report["table_references_normalized"] = normalized_tables
                 if normalized_ownership:
                     part_report["mechanical_ownership_normalized"] = normalized_ownership
+                if partition_ownership:
+                    part_report["partition_ownership_normalized"] = partition_ownership
+                if record_ownership:
+                    part_report["record_ownership_normalized"] = record_ownership
                 if bootstrap_ownership:
                     part_report["bootstrap_ownership_normalized"] = bootstrap_ownership
                 if example_references:
@@ -1705,6 +1943,8 @@ def process_task(
                     or normalized_tables
                     or normalized_indexes
                     or normalized_ownership
+                    or partition_ownership
+                    or record_ownership
                     or bootstrap_ownership
                     or example_references
                     or example_names
@@ -1746,16 +1986,36 @@ def process_task(
         best_patch: dict[str, Any] = {}
         best_validation = {"passed": False, "errors": ["not generated"]}
         for attempt in range(repair_attempts + 1):
-            estimated = math.ceil(len(request_prompt.encode("utf-8")) / 2)
-            if estimated + output_tokens > context_tokens:
+            prompt_tokens, token_count_method = count_prompt_tokens(
+                endpoint, request_prompt, timeout=min(timeout, 30)
+            )
+            context_overhead = 256
+            available_output_tokens = (
+                context_tokens - prompt_tokens - context_overhead
+            )
+            request_output_tokens = min(output_tokens, available_output_tokens)
+            context_preflight = {
+                "prompt_tokens": prompt_tokens,
+                "count_method": token_count_method,
+                "context_overhead_tokens": context_overhead,
+                "available_output_tokens": available_output_tokens,
+                "requested_output_tokens": request_output_tokens,
+            }
+            if request_output_tokens < 2048:
                 validation = {
                     "passed": False,
                     "errors": [
-                        f"conservative context estimate {estimated + output_tokens} "
-                        f"exceeds {context_tokens}"
+                        f"tokenized prompt leaves only {available_output_tokens} output "
+                        f"tokens inside context {context_tokens}"
                     ],
                 }
-                attempts.append({"attempt": attempt + 1, "validation": validation})
+                attempts.append(
+                    {
+                        "attempt": attempt + 1,
+                        "context_preflight": context_preflight,
+                        "validation": validation,
+                    }
+                )
                 break
             request_seed = (
                 seed + number - 1 + (1009 * prior_global_repair_round)
@@ -1766,13 +2026,13 @@ def process_task(
                 model=model,
                 prompt=request_prompt,
                 context_tokens=context_tokens,
-                output_tokens=output_tokens,
+                output_tokens=request_output_tokens,
                 timeout=timeout,
                 seed=request_seed,
                 schema=schema,
             )
             patch, normalized_metadata = normalize_clause_metadata(patch, bootstrap)
-            patch, normalized_reasons = normalize_reason_codes(patch)
+            patch, normalized_reasons = normalize_reason_codes(patch, bootstrap)
             patch, normalized_identifiers = normalize_compact_identifiers(patch)
             patch, normalized_tables = normalize_table_references(patch, bootstrap)
             patch, normalized_indexes = normalize_mechanical_decisions(
@@ -1781,10 +2041,16 @@ def process_task(
             patch, normalized_ownership = normalize_mechanical_ownership(
                 patch, bootstrap
             )
+            patch, partition_ownership = normalize_partition_ownership(
+                patch, indexes
+            )
             patch, bootstrap_ownership = normalize_bootstrap_ownership(
                 patch, bootstrap
             )
-            patch, example_references = normalize_example_references(patch, bootstrap)
+            patch, record_ownership = normalize_record_ownership(patch, task)
+            patch, example_references = normalize_example_references(
+                patch, bootstrap, task
+            )
             patch, example_names = normalize_example_names(patch)
             validation = validate_patch(
                 patch, task_id, indexes, task=task, bootstrap=bootstrap
@@ -1793,6 +2059,7 @@ def process_task(
                 {
                     "attempt": attempt + 1,
                     "request_seed": request_seed,
+                    "context_preflight": context_preflight,
                     "metrics": metrics,
                     "clause_metadata_normalized": normalized_metadata,
                     "reason_codes_normalized": normalized_reasons,
@@ -1800,6 +2067,8 @@ def process_task(
                     "table_references_normalized": normalized_tables,
                     "mechanical_decisions_normalized": normalized_indexes,
                     "mechanical_ownership_normalized": normalized_ownership,
+                    "partition_ownership_normalized": partition_ownership,
+                    "record_ownership_normalized": record_ownership,
                     "bootstrap_ownership_normalized": bootstrap_ownership,
                     "example_references_normalized": example_references,
                     "example_names_normalized": example_names,
