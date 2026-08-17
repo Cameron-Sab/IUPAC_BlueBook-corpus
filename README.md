@@ -155,6 +155,46 @@ an unfinished semantic conversion or naming engine is complete. Exact-name,
 connectivity, stereochemistry/protonation, parser failure, and unscorable
 dataset outcomes remain separate.
 
+### Preferred-Name Conformance
+
+`scripts/build_bluebook_pin_benchmark.py` extracts names explicitly designated
+`(PIN)` in the provenance-preserving Blue Book node store, parses each name to
+a structure with OPSIN, canonicalizes it with RDKit, and assigns stable
+calibration, holdout, and final-holdout splits. The engine benchmark keeps exact
+PIN matches separate from structurally equivalent nonpreferred names, wrong
+structures, parser failures, and unsupported scope.
+
+```powershell
+python scripts\build_bluebook_pin_benchmark.py
+python scripts\benchmark_pin_engine.py --split calibration
+```
+
+The generated cases and reports stay under `work/benchmarks/`. Because the
+structure is independently reconstructed from the authoritative name rather
+than digitized from every printed structure image, these cases are PIN
+conformance oracles, not an image-to-structure audit.
+
+### Local Semantic Supervisor
+
+The local compaction harness supports Ollama and llama.cpp's OpenAI-compatible
+server, strict JSON Schema output, exact clause/reference coverage, immutable
+hashes, held-out semantic scoring, best-attempt retention, and packet-local
+quarantine. On Windows, the pinned installer verifies the official llama.cpp
+archives before extraction. The supervisor starts a baseline decoder and runs
+the remaining compact tasks in prompt-size order with persistent state.
+
+```powershell
+powershell -File scripts\install_llama_cpp_windows.ps1
+powershell -File scripts\start_local_semantic_supervisor.ps1 -ReplaceServer
+```
+
+Runtime state and logs are written to `work/local_semantic_supervisor/`.
+Creating `work/local_semantic_supervisor/state.stop` requests a clean stop after
+the current packet. Speculative modes are available through
+`scripts/start_local_semantic_server.ps1`, but the supervisor defaults to the
+ordinary decoder because speculative output must first beat the same semantic
+and integrity gates before it is accepted.
+
 ## Prototype Engine
 
 The earlier `iupac_engine/` and `scripts/example_test_engine.py` remain as
