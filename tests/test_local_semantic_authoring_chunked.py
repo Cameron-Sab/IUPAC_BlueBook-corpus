@@ -8,6 +8,7 @@ from scripts.local_semantic_authoring_chunked import (
     assemble_patches,
     deduplicate_patch_ids,
     focused_candidate,
+    localize_compile_errors,
     normalize_mechanical_decisions,
     normalize_mechanical_ownership,
     normalize_bootstrap_ownership,
@@ -494,6 +495,24 @@ def test_placeholder_statement_reference_is_removed() -> None:
     assert changes[0]["removed_count"] == 1
 
 
+def test_source_table_reference_is_rebound_by_rule_label() -> None:
+    authoring = load_json(DEFAULT_BOOTSTRAP_DIR / "P-101-part-002.json")
+    table = authoring["tables"][0]
+    patch = {
+        "examples": [
+            {
+                "id": "example",
+                "shows": [["table", f"{table['label']}:table:0001"]],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_example_references(patch, authoring)
+
+    assert normalized["examples"][0]["shows"] == [["table", table["id"]]]
+    assert changes[0]["normalized_count"] == 1
+
+
 def test_literal_wrapped_example_name_is_unwrapped() -> None:
     patch = {
         "examples": [
@@ -585,6 +604,63 @@ def test_compact_literal_list_comparison_becomes_membership() -> None:
     assert changes[-1]["field"] == "compare_literal_list"
 
 
+def test_compact_literal_expression_list_is_collapsed() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "procedure",
+                "steps": [
+                    ["set", "values", [["lit", {"name": "a"}], ["lit", {"name": "b"}]]]
+                ],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"][0][2] == [
+        "lit",
+        [{"name": "a"}, {"name": "b"}],
+    ]
+    assert changes[-1]["field"] == "literal_list"
+
+
+def test_empty_conditional_statement_is_removed() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "procedure",
+                "steps": [
+                    ["set", "value", ["lit", 1]],
+                    ["if", ["lit", True], [], []],
+                ],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"] == [["set", "value", ["lit", 1]]]
+    assert changes[-1]["action"] == "remove_noop_if"
+
+
+def test_nested_symbol_grounding_is_reduced_to_primitive_id() -> None:
+    patch = {
+        "symbols": [
+            {
+                "id": "lookup_name",
+                "g": ["primitive", [], {"id": "lookup_name", "k": "function"}],
+            }
+        ],
+        "units": [],
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["symbols"][0]["g"] == ["primitive", [], "lookup_name"]
+    assert changes[-1]["field"] == "grounding.primitive"
+
+
 def test_partition_ownership_removes_neighbor_clause_indexes() -> None:
     patch = {
         "units": [{"id": "keep", "c": [42, 49]}],
@@ -636,6 +712,25 @@ def test_record_ownership_splits_cross_record_objects() -> None:
     assert changes[0]["record_ids"] == ["P-1.1", "P-1.2"]
 
 
+def test_clause_disposition_error_is_localized_by_source_index() -> None:
+    report = {
+        "errors": [
+            {
+                "code": "disposition.normative_nonoperative",
+                "path": "/clause_dispositions/24/disposition",
+            }
+        ]
+    }
+
+    localized = localize_compile_errors(
+        {"units": [], "exceptions": [], "examples": []},
+        report,
+        [list(range(1, 25)), list(range(25, 49))],
+    )
+
+    assert localized == {2: report["errors"]}
+
+
 def test_mapping_table_alias_is_rebound_by_clause_overlap() -> None:
     authoring = load_json(DEFAULT_BOOTSTRAP_DIR / "P-101-part-002.json")
     patch = {
@@ -671,6 +766,36 @@ def test_unknown_source_table_column_is_rebound_to_text() -> None:
 
     assert normalized["units"][0]["steps"][0][2][3] == "text"
     assert changes[0]["field"] == "lookup_column"
+
+
+def test_noncustom_decision_comparator_drops_spurious_references() -> None:
+    patch = {
+        "symbols": [],
+        "units": [
+            {
+                "id": "preference",
+                "k": "decision",
+                "c": [1],
+                "stages": [
+                    {
+                        "key": ["var", "candidate"],
+                        "cmp": ["numeric", "maximum", "source_order", "invented"],
+                    }
+                ],
+            }
+        ],
+    }
+    authoring = {"tables": []}
+
+    normalized, changes = normalize_table_references(patch, authoring)
+
+    assert normalized["units"][0]["stages"][0]["cmp"] == [
+        "numeric",
+        "maximum",
+        None,
+        None,
+    ]
+    assert changes[0]["field"] == "decision_comparator"
 
 
 def test_unretained_lookup_is_lowered_to_grounded_function() -> None:

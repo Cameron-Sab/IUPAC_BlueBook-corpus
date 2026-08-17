@@ -56,7 +56,7 @@ else:
     )
 
 
-PARTITION_VALIDATOR_VERSION = "2.1.0"
+PARTITION_VALIDATOR_VERSION = "2.2.0"
 CLAUSE_ROLES = [
     "heading",
     "scope",
@@ -504,7 +504,7 @@ def response_schema(
                             "prefixItems": [
                                 {"type": "string"},
                                 {"type": "array", "items": object_ref},
-                                {},
+                                {"oneOf": [{"type": "string"}, {"type": "null"}]},
                             ],
                         },
                     },
@@ -1077,7 +1077,23 @@ def normalize_compact_identifiers(
         return result
 
     def expression(value: Any, owner: Any) -> Any:
-        if not isinstance(value, list) or not value or not isinstance(value[0], str):
+        if not isinstance(value, list):
+            return value
+        if not value or not isinstance(value[0], str):
+            if value and all(
+                isinstance(item, list) and len(item) == 2 and item[0] == "lit"
+                for item in value
+            ):
+                result = ["lit", [item[1] for item in value]]
+                changes.append(
+                    {
+                        "owner_id": owner,
+                        "field": "literal_list",
+                        "from": value,
+                        "to": result,
+                    }
+                )
+                return result
             return value
         result = list(value)
         op = result[0]
@@ -1134,17 +1150,33 @@ def normalize_compact_identifiers(
             result[2] = replace(result[2], owner=owner, field="outcome")
         return result
 
+    def statements(values: Sequence[Any], owner: Any) -> list[Any]:
+        return [
+            normalized_statement
+            for value in values
+            if (normalized_statement := statement(value, owner)) is not None
+        ]
+
     def statement(value: Any, owner: Any) -> Any:
         if not isinstance(value, list) or not value or not isinstance(value[0], str):
             return value
         result = list(value)
         op = result[0]
         if op == "seq":
-            result[1:] = [statement(item, owner) for item in result[1:]]
+            result[1:] = statements(result[1:], owner)
         elif op == "if" and len(result) == 4:
             result[1] = expression(result[1], owner)
-            result[2] = [statement(item, owner) for item in result[2]]
-            result[3] = [statement(item, owner) for item in result[3]]
+            result[2] = statements(result[2], owner)
+            result[3] = statements(result[3], owner)
+            if not result[2] and not result[3]:
+                changes.append(
+                    {
+                        "owner_id": owner,
+                        "field": "statement",
+                        "action": "remove_noop_if",
+                    }
+                )
+                return None
         elif op == "set" and len(result) == 3:
             result[1] = replace(result[1], owner=owner, field="target")
             result[2] = expression(result[2], owner)
@@ -1163,13 +1195,43 @@ def normalize_compact_identifiers(
         elif op == "each" and len(result) == 5:
             result[1] = replace(result[1], owner=owner, field="bind")
             result[2] = expression(result[2], owner)
-            result[3] = [statement(item, owner) for item in result[3]]
+            result[3] = statements(result[3], owner)
             result[4] = expression(result[4], owner)
         elif op == "emit" and len(result) == 2:
             result[1] = expression(result[1], owner)
         elif op == "assert" and len(result) == 3:
             result[1] = expression(result[1], owner)
         return result
+
+    normalized_symbols = []
+    for raw_item in patch.get("symbols", []):
+        if not isinstance(raw_item, Mapping):
+            normalized_symbols.append(raw_item)
+            continue
+        item = dict(raw_item)
+        grounding = item.get("g")
+        if (
+            isinstance(grounding, list)
+            and len(grounding) == 3
+            and isinstance(grounding[2], Mapping)
+        ):
+            before = grounding[2]
+            primitive = before.get("id")
+            if not isinstance(primitive, str):
+                primitive = item.get("id")
+            grounding = list(grounding)
+            grounding[2] = primitive
+            item["g"] = grounding
+            changes.append(
+                {
+                    "owner_id": item.get("id"),
+                    "field": "grounding.primitive",
+                    "from": before,
+                    "to": primitive,
+                }
+            )
+        normalized_symbols.append(item)
+    normalized["symbols"] = normalized_symbols
 
     normalized_units = []
     for raw_item in patch.get("units", []):
@@ -1198,7 +1260,7 @@ def normalize_compact_identifiers(
                 item[field] = expression(item[field], owner)
         for field in ("then", "else", "steps", "violation"):
             if isinstance(item.get(field), list):
-                item[field] = [statement(value, owner) for value in item[field]]
+                item[field] = statements(item[field], owner)
         normalized_units.append(item)
     normalized["units"] = normalized_units
     return normalized, changes
@@ -1427,6 +1489,18 @@ def normalize_example_references(
     normalized = dict(patch)
     normalized_examples = []
     changes = []
+    table_ids = {
+        item["id"]
+        for item in (bootstrap or {}).get("tables", [])
+        if isinstance(item, Mapping) and isinstance(item.get("id"), str)
+    }
+    table_by_label = {
+        item["label"]: item["id"]
+        for item in (bootstrap or {}).get("tables", [])
+        if isinstance(item, Mapping)
+        and isinstance(item.get("id"), str)
+        and isinstance(item.get("label"), str)
+    }
     for raw_item in patch.get("examples", []):
         if not isinstance(raw_item, Mapping):
             normalized_examples.append(raw_item)
@@ -1468,6 +1542,13 @@ def normalize_example_references(
                     normalized_count += 1
                 if not isinstance(object_id, str):
                     continue
+            if kind == "table" and object_id not in table_ids:
+                label = object_id.split(":", 1)[0]
+                replacement = table_by_label.get(label)
+                if replacement is None:
+                    continue
+                object_id = replacement
+                normalized_count += 1
             if (
                 bootstrap is not None
                 and kind == "figure"
@@ -1602,6 +1683,39 @@ def normalize_table_references(
             result[3] = expression(result[3], owner)
         return result
 
+    def normalize_comparators(item: dict[str, Any]) -> None:
+        if item.get("k") != "decision" or not isinstance(item.get("stages"), list):
+            return
+        for stage in item["stages"]:
+            if not isinstance(stage, Mapping) or not isinstance(stage.get("cmp"), list):
+                continue
+            comparator = list(stage["cmp"])
+            if len(comparator) != 4:
+                continue
+            kind = comparator[0]
+            before = list(comparator)
+            if kind != "custom":
+                comparator[2] = None
+            if kind != "ordered_table":
+                comparator[3] = None
+            elif comparator[3] not in table_ids:
+                table_id = replacement(item)
+                if table_id is not None:
+                    comparator[3] = table_id
+                else:
+                    comparator[0] = "lexicographic"
+                    comparator[3] = None
+            if comparator != before:
+                stage["cmp"] = comparator
+                changes.append(
+                    {
+                        "owner_id": item.get("id"),
+                        "field": "decision_comparator",
+                        "from": before,
+                        "to": comparator,
+                    }
+                )
+
     def statement(value: Any, owner: Mapping[str, Any]) -> Any:
         if not isinstance(value, list) or not value:
             return value
@@ -1633,6 +1747,12 @@ def normalize_table_references(
             normalized_units.append(raw_item)
             continue
         item = dict(raw_item)
+        if isinstance(item.get("stages"), list):
+            item["stages"] = [
+                dict(stage) if isinstance(stage, Mapping) else stage
+                for stage in item["stages"]
+            ]
+        normalize_comparators(item)
         if item.get("k") == "mapping" and item.get("table") not in table_ids:
             table_id = replacement(item)
             if table_id is not None:
@@ -1765,6 +1885,16 @@ def localize_compile_errors(
     }
     for error in (compile_report or {}).get("errors", []):
         parts = str(error.get("path", "")).strip("/").split("/")
+        if len(parts) >= 2 and parts[0] == "clause_dispositions":
+            try:
+                clause_index = int(parts[1]) + 1
+            except ValueError:
+                continue
+            for partition_number, indexes in enumerate(partitions, 1):
+                if clause_index in indexes:
+                    localized.setdefault(partition_number, []).append(dict(error))
+                    break
+            continue
         if len(parts) < 2 or parts[0] not in collection_map:
             continue
         try:
@@ -1896,6 +2026,23 @@ def process_task(
             validation = validate_patch(
                 patch, task_id, indexes, task=task, bootstrap=bootstrap
             )
+            cache_normalized = bool(
+                normalized_metadata
+                or normalized_reasons
+                or normalized_identifiers
+                or normalized_tables
+                or normalized_indexes
+                or normalized_ownership
+                or partition_ownership
+                or record_ownership
+                or bootstrap_ownership
+                or example_references
+                or example_names
+            )
+            if validation["passed"] and prior_global_errors and cache_normalized:
+                part_report["superseded_global_validation_errors"] = prior_global_errors
+                part_report.pop("global_validation_errors", None)
+                prior_global_errors = []
             if (
                 part_report.get("model") == model
                 and part_report.get("backend") == backend
@@ -1936,19 +2083,7 @@ def process_task(
                     part_report["example_references_normalized"] = example_references
                 if example_names:
                     part_report["example_names_normalized"] = example_names
-                if (
-                    normalized_metadata
-                    or normalized_reasons
-                    or normalized_identifiers
-                    or normalized_tables
-                    or normalized_indexes
-                    or normalized_ownership
-                    or partition_ownership
-                    or record_ownership
-                    or bootstrap_ownership
-                    or example_references
-                    or example_names
-                ):
+                if cache_normalized:
                     patch_path.write_bytes(canonical_json_bytes(patch))
                 if previous_prompt_sha256 != prompt_sha256:
                     part_report["cache_migration"] = {
