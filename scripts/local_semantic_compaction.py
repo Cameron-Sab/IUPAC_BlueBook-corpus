@@ -893,20 +893,26 @@ def process_task(
     prompt = build_prompt(candidate)
     prompt_sha256 = hashlib.sha256(prompt.encode("utf-8")).hexdigest().upper()
 
+    cached_report: dict[str, Any] | None = None
+    cached_plan: dict[str, Any] | None = None
     if not force and plan_path.exists() and report_path.exists():
-        report = load_json(report_path)
+        cached_report = load_json(report_path)
         cached_plan = load_json(plan_path)
         cached_validation = validate_plan(cached_plan, candidate)
         if (
-            report.get("prompt_sha256") == prompt_sha256
-            and report.get("model") == model
-            and report.get("backend") == backend
-            and report.get("endpoint") == endpoint
-            and report.get("seed") == seed
-            and report.get("validator_version") == VALIDATOR_VERSION
+            cached_report.get("prompt_sha256") == prompt_sha256
+            and cached_report.get("model") == model
+            and cached_report.get("backend") == backend
+            and cached_report.get("endpoint") == endpoint
+            and cached_report.get("seed") == seed
+            and cached_report.get("validator_version") == VALIDATOR_VERSION
             and cached_validation.get("passed") is True
         ):
-            return {**report, "validation": cached_validation, "cached": True}
+            return {
+                **cached_report,
+                "validation": cached_validation,
+                "cached": True,
+            }
 
     base_report: dict[str, Any] = {
         "format": "iupac-bluebook-local-semantic-compaction-report",
@@ -926,7 +932,6 @@ def process_task(
     if dry_run:
         return {**base_report, "dry_run": True}
 
-    request_prompt = prompt
     attempts = []
     plan: dict[str, Any] = {}
     generated_plan: dict[str, Any] = {}
@@ -936,9 +941,61 @@ def process_task(
     validation: dict[str, Any] = {"passed": False, "errors": ["not generated"]}
     effective_context = context_tokens
     estimated_prompt_tokens = 0
+    request_prompt = prompt
     request_output_tokens = output_tokens
     repair_base: dict[str, Any] | None = None
     repair_targets: list[int] = []
+
+    if (
+        cached_plan is not None
+        and cached_report is not None
+        and cached_report.get("candidate_sha256") == _sha256(candidate)
+    ):
+        cleaned_plan, repair_targets = clean_plan_for_patch(cached_plan, candidate)
+        cleaned_validation = validate_plan(cleaned_plan, candidate)
+        cleanup_attempt = {
+            "attempt": 0,
+            "mode": "deterministic_cache_cleanup",
+            "source_plan_sha256": _sha256(cached_plan),
+            "validation": cleaned_validation,
+        }
+        attempts.append(cleanup_attempt)
+        if cleaned_validation["passed"]:
+            plan_path.write_bytes(canonical_json_bytes(cleaned_plan))
+            report = {
+                **base_report,
+                "plan_sha256": _sha256(cleaned_plan),
+                "attempts": attempts,
+                "estimated_prompt_tokens": 0,
+                "context_tokens": context_tokens,
+                "validation": cleaned_validation,
+            }
+            if reference_dir is not None:
+                reference_path = reference_dir / f"{task_id}.json"
+                if reference_path.exists():
+                    report["benchmark"] = audit_plan_against_authoring(
+                        cleaned_plan, load_json(reference_path)
+                    )
+            report_path.write_bytes(canonical_json_bytes(report))
+            return report
+        if repair_targets:
+            repair_base = cleaned_plan
+            request_prompt = build_patch_prompt(
+                candidate,
+                repair_base,
+                repair_targets,
+                cleaned_validation["errors"],
+            )
+            request_output_tokens = min(
+                output_tokens, max(2048, 768 + 192 * len(repair_targets))
+            )
+            best_plan = cleaned_plan
+            best_validation = cleaned_validation
+            best_score = (
+                int(cleaned_validation.get("covered_clause_count", 0)),
+                0,
+                -len(cleaned_validation.get("errors", [])),
+            )
     for attempt in range(repair_attempts + 1):
         estimated_prompt_tokens = math.ceil(
             len(request_prompt.encode("utf-8")) / 3

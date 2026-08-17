@@ -139,7 +139,7 @@ def process_entry(
             repair_attempts=args.repair_attempts,
             seed=args.seed + run_count,
             dry_run=False,
-            force=run_count > 0,
+            force=False,
         )
         passed = report.get("validation", {}).get("passed") is True
         task_state.update(
