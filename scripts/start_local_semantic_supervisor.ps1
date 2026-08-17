@@ -3,12 +3,21 @@ param(
     [string]$Model = "qwen3:30b-instruct",
     [int]$Port = 8080,
     [int]$ContextTokens = 49152,
-    [switch]$ReplaceServer
+    [switch]$ReplaceServer,
+    [switch]$ReuseServer
 )
 
 $ErrorActionPreference = "Stop"
-$server = & "$PSScriptRoot\start_local_semantic_server.ps1" -Mode baseline -Model $Model `
-    -Port $Port -ContextTokens $ContextTokens -Replace:$ReplaceServer | ConvertFrom-Json
+if ($ReuseServer) {
+    $health = Invoke-RestMethod -Uri "http://127.0.0.1:$Port/health" -TimeoutSec 5
+    if ($health.status -ne "ok") {
+        throw "Existing model server on port $Port is not healthy."
+    }
+    $server = @{ endpoint = "http://127.0.0.1:$Port"; reused = $true }
+} else {
+    $server = & "$PSScriptRoot\start_local_semantic_server.ps1" -Mode baseline -Model $Model `
+        -Port $Port -ContextTokens $ContextTokens -Replace:$ReplaceServer | ConvertFrom-Json
+}
 $root = Split-Path -Parent $PSScriptRoot
 $runtime = Join-Path $root "work\local_semantic_supervisor"
 New-Item -ItemType Directory -Force -Path $runtime | Out-Null

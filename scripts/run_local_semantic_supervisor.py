@@ -88,6 +88,77 @@ def load_state(path: Path, args: argparse.Namespace) -> dict[str, Any]:
     return state
 
 
+def process_entry(
+    args: argparse.Namespace,
+    state: dict[str, Any],
+    prompt_bytes: int,
+    task_path: Path,
+) -> None:
+    task_id = task_path.stem
+    task_state = state["tasks"].setdefault(task_id, {})
+    run_count = int(task_state.get("run_count", 0))
+    estimated_prompt_tokens = math.ceil(prompt_bytes / 3)
+    available_output = args.context_tokens - estimated_prompt_tokens - 1024
+    output_tokens = min(args.maximum_output_tokens, available_output)
+    task_state.update(
+        {
+            "status": "running",
+            "run_count": run_count + 1,
+            "prompt_bytes": prompt_bytes,
+            "estimated_prompt_tokens": estimated_prompt_tokens,
+            "output_tokens": output_tokens,
+            "started_at": now(),
+        }
+    )
+    if output_tokens < args.minimum_output_tokens:
+        task_state.update(
+            {
+                "status": "oversize",
+                "error": "Insufficient context for the minimum output budget",
+                "finished_at": now(),
+            }
+        )
+        atomic_write_json(args.state, state)
+        return
+    atomic_write_json(args.state, state)
+    try:
+        report = process_task(
+            task_path,
+            authoring_dir=args.authoring_dir,
+            reference_dir=args.reference_dir,
+            output_dir=args.output_dir,
+            model=args.model,
+            backend=args.backend,
+            endpoint=args.endpoint,
+            context_tokens=args.context_tokens,
+            output_tokens=output_tokens,
+            timeout=args.timeout,
+            repair_attempts=args.repair_attempts,
+            seed=args.seed + run_count,
+            dry_run=False,
+            force=run_count > 0,
+        )
+        passed = report.get("validation", {}).get("passed") is True
+        task_state.update(
+            {
+                "status": "passed" if passed else "failed",
+                "finished_at": now(),
+                "report": report,
+            }
+        )
+    except Exception as error:
+        task_state.update(
+            {
+                "status": "infrastructure_error",
+                "finished_at": now(),
+                "error": f"{type(error).__name__}: {error}",
+            }
+        )
+        time.sleep(args.infrastructure_retry_seconds)
+    state["updated_at"] = now()
+    atomic_write_json(args.state, state)
+
+
 def run(args: argparse.Namespace) -> int:
     lock_path = args.state.with_suffix(".lock")
     lock_path.parent.mkdir(parents=True, exist_ok=True)
@@ -106,78 +177,33 @@ def run(args: argparse.Namespace) -> int:
         tasks = discover_tasks(args.task_dir, args.authoring_dir)
         state["task_count"] = len(tasks)
         atomic_write_json(args.state, state)
-        for prompt_bytes, task_path in tasks:
-            if stop_path.exists():
-                state["status"] = "stopped"
+        for round_number in range(1, args.maximum_task_runs + 1):
+            state["round"] = round_number
+            runnable = [
+                (prompt_bytes, task_path)
+                for prompt_bytes, task_path in tasks
+                if state["tasks"].get(task_path.stem, {}).get("status") != "passed"
+                and int(
+                    state["tasks"].get(task_path.stem, {}).get("run_count", 0)
+                )
+                < args.maximum_task_runs
+            ]
+            if not runnable:
                 break
-            task_id = task_path.stem
-            task_state = state["tasks"].setdefault(task_id, {})
-            if task_state.get("status") == "passed":
-                continue
-            run_count = int(task_state.get("run_count", 0))
-            if run_count >= args.maximum_task_runs:
+            for prompt_bytes, task_path in runnable:
+                if stop_path.exists():
+                    state["status"] = "stopped"
+                    break
+                process_entry(args, state, prompt_bytes, task_path)
+            if state.get("status") == "stopped":
+                break
+
+        for task_state in state["tasks"].values():
+            if (
+                task_state.get("status") not in {"passed", "oversize"}
+                and int(task_state.get("run_count", 0)) >= args.maximum_task_runs
+            ):
                 task_state["status"] = "quarantined"
-                continue
-            estimated_prompt_tokens = math.ceil(prompt_bytes / 3)
-            available_output = args.context_tokens - estimated_prompt_tokens - 1024
-            output_tokens = min(args.maximum_output_tokens, available_output)
-            task_state.update(
-                {
-                    "status": "running",
-                    "run_count": run_count + 1,
-                    "prompt_bytes": prompt_bytes,
-                    "estimated_prompt_tokens": estimated_prompt_tokens,
-                    "output_tokens": output_tokens,
-                    "started_at": now(),
-                }
-            )
-            if output_tokens < args.minimum_output_tokens:
-                task_state.update(
-                    {
-                        "status": "oversize",
-                        "error": "Insufficient context for the minimum output budget",
-                        "finished_at": now(),
-                    }
-                )
-                atomic_write_json(args.state, state)
-                continue
-            atomic_write_json(args.state, state)
-            try:
-                report = process_task(
-                    task_path,
-                    authoring_dir=args.authoring_dir,
-                    reference_dir=args.reference_dir,
-                    output_dir=args.output_dir,
-                    model=args.model,
-                    backend=args.backend,
-                    endpoint=args.endpoint,
-                    context_tokens=args.context_tokens,
-                    output_tokens=output_tokens,
-                    timeout=args.timeout,
-                    repair_attempts=args.repair_attempts,
-                    seed=args.seed + run_count,
-                    dry_run=False,
-                    force=run_count > 0,
-                )
-                passed = report.get("validation", {}).get("passed") is True
-                task_state.update(
-                    {
-                        "status": "passed" if passed else "failed",
-                        "finished_at": now(),
-                        "report": report,
-                    }
-                )
-            except Exception as error:
-                task_state.update(
-                    {
-                        "status": "infrastructure_error",
-                        "finished_at": now(),
-                        "error": f"{type(error).__name__}: {error}",
-                    }
-                )
-                time.sleep(args.infrastructure_retry_seconds)
-            state["updated_at"] = now()
-            atomic_write_json(args.state, state)
 
         statuses = [task.get("status") for task in state["tasks"].values()]
         if state.get("status") == "running":
