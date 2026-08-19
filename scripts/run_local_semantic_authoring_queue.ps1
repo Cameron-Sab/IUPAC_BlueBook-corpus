@@ -5,7 +5,8 @@ param(
     [int]$ContextTokens = 49152,
     [int]$PartitionClauses = 24,
     [int]$RepairAttempts = 2,
-    [int]$MaximumRounds = 3
+    [int]$MaximumRounds = 3,
+    [int]$RequestTimeout = 300
 )
 
 $ErrorActionPreference = "Continue"
@@ -42,6 +43,22 @@ function Start-ModelServerIfNeeded {
     return Test-ModelServer
 }
 
+function Test-ModelServerIdle {
+    try {
+        $slots = Invoke-RestMethod -Uri "http://127.0.0.1:$Port/slots" -TimeoutSec 5
+        return @($slots | Where-Object { $_.is_processing }).Count -eq 0
+    } catch {
+        return $false
+    }
+}
+
+function Restart-ModelServer {
+    Get-Process llama-server -ErrorAction SilentlyContinue |
+        Stop-Process -Force -ErrorAction SilentlyContinue
+    Start-Sleep -Seconds 2
+    return Start-ModelServerIfNeeded
+}
+
 if (!(Start-ModelServerIfNeeded)) {
     throw "The local model server is unavailable."
 }
@@ -73,8 +90,11 @@ for ($round = 1; $round -le $MaximumRounds -and $pending.Count -gt 0; $round++) 
         & python (Join-Path $PSScriptRoot "local_semantic_authoring_chunked.py") $task `
             --model $Model --endpoint "http://127.0.0.1:$Port" `
             --context-tokens $ContextTokens --partition-clauses $PartitionClauses `
-            --repair-attempts $RepairAttempts
-        if ($LASTEXITCODE -ne 0 -and !(Test-ModelServer)) {
+            --repair-attempts $RepairAttempts --timeout $RequestTimeout
+        if (
+            $LASTEXITCODE -ne 0 -and
+            (!(Test-ModelServer) -or !(Test-ModelServerIdle))
+        ) {
             @{
                 status = "recovering_server"
                 round = $round
@@ -84,11 +104,11 @@ for ($round = 1; $round -le $MaximumRounds -and $pending.Count -gt 0; $round++) 
                 failed = $next.Count
                 updated_at = [DateTimeOffset]::UtcNow.ToString("o")
             } | ConvertTo-Json | Set-Content -LiteralPath $statePath -Encoding utf8
-            if (Start-ModelServerIfNeeded) {
+            if (Restart-ModelServer) {
                 & python (Join-Path $PSScriptRoot "local_semantic_authoring_chunked.py") $task `
                     --model $Model --endpoint "http://127.0.0.1:$Port" `
                     --context-tokens $ContextTokens --partition-clauses $PartitionClauses `
-                    --repair-attempts $RepairAttempts
+                    --repair-attempts $RepairAttempts --timeout $RequestTimeout
             }
         }
         if ($LASTEXITCODE -eq 0) {
