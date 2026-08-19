@@ -5,9 +5,13 @@ from jsonschema import Draft202012Validator
 from scripts.build_compact_semantic_tasks import load_json
 from scripts.local_semantic_authoring import DEFAULT_BOOTSTRAP_DIR, DEFAULT_EXAMPLE
 from scripts.local_semantic_authoring_chunked import (
+    apply_targeted_repair,
     assemble_patches,
+    build_partition_repair_prompt,
+    build_targeted_repair_prompt,
     deduplicate_patch_ids,
     focused_candidate,
+    localize_authoring_validation_errors,
     localize_compile_errors,
     normalize_mechanical_decisions,
     normalize_mechanical_ownership,
@@ -20,8 +24,10 @@ from scripts.local_semantic_authoring_chunked import (
     normalize_compact_identifiers,
     normalize_reason_codes,
     normalize_table_references,
+    only_unresolved_symbol_errors,
     partition_indexes,
     response_schema,
+    repair_unresolved_symbols,
     validate_patch,
 )
 from scripts.local_semantic_compaction import build_candidate_view
@@ -655,6 +661,82 @@ def test_raw_values_and_get_shorthand_become_valid_expressions() -> None:
     }
 
 
+def test_object_dialect_is_compacted_and_cross_kind_fields_are_removed() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "procedure",
+                "k": "procedure",
+                "c": [1],
+                "term": "duplicate prose",
+                "steps": [
+                    {
+                        "seq": [
+                            {"set": ["result", {"op": "lit", "value": "name"}]}
+                        ]
+                    }
+                ],
+            }
+        ]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"] == [
+        ["seq", ["set", "result", ["lit", "name"]]]
+    ]
+    assert "term" not in normalized["units"][0]
+    assert any(change.get("action") == "remove_cross_kind_fields" for change in changes)
+
+
+def test_compact_statement_shorthands_preserve_operands() -> None:
+    patch = {
+        "units": [
+            {
+                "id": "procedure",
+                "k": "procedure",
+                "c": [1],
+                "steps": [
+                    ["invoke", "P-1.2:rule"],
+                    ["set", "value", ["get", ["var", "source"], "a", "b"]],
+                    ["render", "hydrogen", ["var", "locant"], ["lit", "H"]],
+                ],
+            }
+        ]
+    }
+
+    normalized, _changes = normalize_compact_identifiers(patch)
+    steps = normalized["units"][0]["steps"]
+
+    assert steps[0] == ["invoke", "P-1.2", {}]
+    assert steps[1][2] == [
+        "call",
+        "get_path",
+        ["var", "source"],
+        ["lit", "a"],
+        ["lit", "b"],
+    ]
+    assert steps[2] == [
+        "render",
+        "hydrogen",
+        "value",
+        ["call", "concatenate", ["var", "locant"], ["lit", "H"]],
+    ]
+
+
+def test_compact_repair_prompt_omits_full_source_and_schema() -> None:
+    prompt = build_partition_repair_prompt(
+        {"task_id": "P-1-part-001", "clauses": []},
+        ["compiled clause 1 has no semantic owner"],
+        [1],
+    )
+
+    assert "compiled clause 1" in prompt
+    assert "PREVIOUS PARTITION JSON" in prompt
+    assert "FOCUSED SOURCE PARTITION" not in prompt
+    assert "RESPONSE SCHEMA" not in prompt
+
+
 def test_unknown_expression_operation_is_preserved_as_literal_data() -> None:
     patch = {
         "units": [
@@ -798,6 +880,27 @@ def test_empty_conditional_statement_is_removed() -> None:
     assert changes[-1]["action"] == "remove_noop_if"
 
 
+def test_empty_then_branch_is_inverted_deterministically() -> None:
+    patch = {
+        "units": [{
+            "id": "procedure",
+            "steps": [["if", ["pred", "excluded"], [], [
+                ["set", "value", ["lit", 1]]
+            ]]],
+        }]
+    }
+
+    normalized, changes = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"] == [[
+        "if",
+        ["not", ["pred", "excluded"]],
+        [["set", "value", ["lit", 1]]],
+        [],
+    ]]
+    assert changes[-1]["action"] == "invert_empty_then_branch"
+
+
 def test_nested_symbol_grounding_is_reduced_to_primitive_id() -> None:
     patch = {
         "symbols": [
@@ -876,6 +979,18 @@ def test_bare_noncompile_decision_is_not_invented() -> None:
     assert changes == []
 
 
+def test_skip_without_reason_restores_bootstrap_disposition() -> None:
+    patch = {
+        "clauses": [{"i": 1, "decision": ["note", "informative", "skip"]}]
+    }
+    bootstrap = {"clauses": [["note", "informative", "compile"]]}
+
+    normalized, changes = normalize_mechanical_decisions(patch, bootstrap)
+
+    assert normalized["clauses"][0]["decision"] == bootstrap["clauses"][0]
+    assert changes == [1]
+
+
 def test_record_ownership_splits_cross_record_objects() -> None:
     task = {
         "rules": [
@@ -896,6 +1011,24 @@ def test_record_ownership_splits_cross_record_objects() -> None:
     assert changes[0]["record_ids"] == ["P-1.1", "P-1.2"]
 
 
+def test_partition_ownership_removes_extra_clause_slot_and_restores_order() -> None:
+    patch = {
+        "clauses": [
+            {"i": 3, "decision": None},
+            {"i": 2, "decision": None},
+            {"i": 4, "decision": None},
+        ],
+        "units": [],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    normalized, changes = normalize_partition_ownership(patch, [2, 3])
+
+    assert [item["i"] for item in normalized["clauses"]] == [2, 3]
+    assert changes[0]["removed_clause_indexes"] == [4]
+
+
 def test_clause_disposition_error_is_localized_by_source_index() -> None:
     report = {
         "errors": [
@@ -913,6 +1046,186 @@ def test_clause_disposition_error_is_localized_by_source_index() -> None:
     )
 
     assert localized == {2: report["errors"]}
+
+
+def test_authoring_schema_error_is_localized_by_semantic_unit() -> None:
+    source = {
+        "units": [{"id": "procedure", "c": [25], "steps": []}],
+        "exceptions": [],
+        "examples": [],
+    }
+    errors = [
+        "ValueError: Delta fails schema at /semantic_units/0/steps: [] should be non-empty"
+    ]
+
+    localized = localize_authoring_validation_errors(
+        source,
+        errors,
+        [list(range(1, 25)), list(range(25, 49))],
+    )
+
+    assert localized[2][0]["path"] == "/semantic_units/0/steps"
+    assert localized[2][0]["source"] == "authoring_schema"
+
+
+def test_targeted_repair_replaces_only_requested_unit_and_assigns_clause() -> None:
+    patch = {
+        "task_id": "P-X-part-001",
+        "clauses": [],
+        "symbols": [],
+        "units": [
+            {"id": "empty", "k": "procedure", "c": [2], "steps": []},
+            {"id": "owner", "k": "definition", "c": [3], "term": ["lit", "x"],
+             "entity": ["lit", "x"], "value": ["lit", "x"]},
+        ],
+        "exceptions": [],
+        "examples": [],
+    }
+    response = {
+        "unit_repairs": [
+            {"id": "empty", "unit": {
+                "id": "empty", "k": "procedure", "c": [2],
+                "steps": [["invoke", "select_parent", []]],
+            }}
+        ],
+        "assignments": [
+            {"i": 4, "collection": "units", "id": "owner"}
+        ],
+    }
+
+    repaired, actions = apply_targeted_repair(patch, response)
+
+    assert repaired["units"][0]["steps"] == [["invoke", "select_parent", []]]
+    assert repaired["units"][1]["c"] == [3, 4]
+    assert patch["units"][0]["steps"] == []
+    assert len(actions) == 2
+
+
+def test_targeted_repair_prompt_is_small_and_omits_full_partition() -> None:
+    patch = {
+        "task_id": "P-X-part-001",
+        "clauses": [{"i": 1, "decision": ["effect", "must", "compile"]}],
+        "symbols": [{"id": "large-unrelated-symbol"}],
+        "units": [
+            {"id": "empty", "k": "procedure", "c": [1], "steps": []}
+        ],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    prompt = build_targeted_repair_prompt(
+        patch,
+        ["units[0].steps: [] should be non-empty"],
+        {"rules": [{"rule_id": "P-X", "clauses": [{"i": 1, "text": "Do X."}]}]},
+    )
+
+    assert prompt is not None
+    assert '"empty"' in prompt
+    assert "Do X." in prompt
+    assert "large-unrelated-symbol" not in prompt
+    assert "Return JSON only" in prompt
+
+
+def test_nested_set_and_literal_objects_are_canonicalized() -> None:
+    patch = {
+        "units": [{
+            "id": "procedure", "k": "procedure", "c": [1],
+            "steps": [["seq", {"set": {"var": "name", "expr": {"lit": "acetyl"}}}]],
+        }]
+    }
+
+    normalized, _ = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"] == [
+        ["seq", ["set", "name", ["lit", "acetyl"]]]
+    ]
+
+
+def test_unresolved_object_opcode_is_not_hidden_as_a_literal() -> None:
+    patch = {
+        "units": [{
+            "id": "procedure", "k": "procedure", "c": [1],
+            "steps": [["set", "condition", {"pred": {}}]],
+        }]
+    }
+
+    normalized, _ = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"][0][2] == {"pred": {}}
+
+
+def test_nested_predicate_call_is_canonicalized_without_model_retry() -> None:
+    patch = {
+        "units": [{
+            "id": "procedure", "k": "procedure", "c": [1],
+            "steps": [["set", "allowed", {
+                "pred": {"call": {"name": "is_allowed", "args": []}}
+            }]],
+        }]
+    }
+
+    normalized, _ = normalize_compact_identifiers(patch)
+
+    assert normalized["units"][0]["steps"][0][2] == ["call", "is_allowed"]
+
+
+def test_unresolved_symbols_are_declared_once_from_compiler_diagnostics() -> None:
+    patches = [
+        {"clauses": [{"i": 1}], "symbols": []},
+        {"clauses": [{"i": 2}], "symbols": []},
+    ]
+    report = {
+        "errors": [
+            {"code": "symbol.unresolved", "context": {
+                "symbol_id": "is_allowed", "expected_kind": "predicate"
+            }},
+            {"code": "symbol.unresolved", "context": {
+                "symbol_id": "is_allowed", "expected_kind": "predicate"
+            }},
+        ]
+    }
+
+    repaired, actions = repair_unresolved_symbols(patches, report)
+
+    assert repaired[0]["symbols"] == [{
+        "id": "is_allowed",
+        "k": "predicate",
+        "d": "Interface required by a compiled semantic expression.",
+        "ret": "boolean",
+    }]
+    assert repaired[1]["symbols"] == []
+    assert len(actions) == 1
+
+
+def test_only_unresolved_symbol_errors_can_bypass_model_repair() -> None:
+    assert only_unresolved_symbol_errors([
+        {"code": "symbol.unresolved", "path": "/semantic_units/1/when"},
+        {"code": "symbol.unresolved", "path": "/semantic_units/2/value"},
+    ])
+    assert not only_unresolved_symbol_errors([])
+    assert not only_unresolved_symbol_errors([
+        {"code": "symbol.unresolved"},
+        {"code": "schema.invalid"},
+    ])
+
+
+def test_partition_schema_rejects_empty_procedure_steps() -> None:
+    patch = {
+        "task_id": "P-1-part-001",
+        "clauses": [
+            {"i": 1, "decision": ["procedure_step", "normative", "compile"]}
+        ],
+        "symbols": [],
+        "units": [
+            {"id": "procedure", "k": "procedure", "c": [1], "steps": []}
+        ],
+        "exceptions": [],
+        "examples": [],
+    }
+
+    errors = list(Draft202012Validator(response_schema(1, [1], set())).iter_errors(patch))
+
+    assert errors
 
 
 def test_mapping_table_alias_is_rebound_by_clause_overlap() -> None:

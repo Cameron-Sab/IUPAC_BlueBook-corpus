@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import hashlib
 import json
 import math
@@ -247,6 +248,11 @@ def response_schema(
             "if": expression,
         },
     }
+    nonempty_statement_block = {
+        "type": "array",
+        "minItems": 1,
+        "items": statement,
+    }
     common_unit_properties: dict[str, Any] = {
         "id": {"type": "string", "minLength": 1},
         "k": {
@@ -312,10 +318,10 @@ def response_schema(
             "entity": {"type": "string"},
             "value": expression,
         },
-        "procedure": {"steps": statement_block},
+        "procedure": {"steps": nonempty_statement_block},
         "constraint": {
             "assert": expression,
-            "violation": statement_block,
+            "violation": nonempty_statement_block,
         },
         "mapping": {"table": {"type": "string"}},
         "decision": {
@@ -693,6 +699,200 @@ def build_prompt(
     )
 
 
+COMPACT_REPAIR_GUIDE = """Repair the previous machine-readable partition.
+Return the COMPLETE corrected JSON object, not a patch and not prose.
+Keep task_id and the clauses array in the exact target index order.
+Clause decisions are null, [role,force,"compile"], [role,force,"skip",reason],
+or [role,force,"supersede",replacement_ids,source_indexes].
+Root arrays are symbols, units, exceptions, and examples.
+Unit kinds and required fields are: rule(if,then,else),
+definition(term,entity,value), procedure(steps), constraint(assert,violation),
+mapping(table), decision(candidates,stages,tie).
+Expressions are compact arrays using lit,var,get,pred,call,all,any,not,exists,
+forall,cmp,lookup,outcome. Statements use seq,if,set,xform,render,reject,invoke,
+each,emit,assert. Do not use object-form opcodes.
+Every compiled nonmechanical clause must occur in a c array on the unit,
+exception, or example that implements it. Do not invent or remove semantics.
+"""
+
+
+def build_partition_repair_prompt(
+    patch: Mapping[str, Any],
+    errors: Sequence[str],
+    target_indexes: Sequence[int],
+    source_context: Mapping[str, Any] | None = None,
+) -> str:
+    prompt = (
+        COMPACT_REPAIR_GUIDE
+        + "\nTARGET INDEXES:\n"
+        + json.dumps(list(target_indexes), separators=(",", ":"))
+        + "\nVALIDATOR ERRORS:\n"
+        + json.dumps(list(errors), separators=(",", ":"), ensure_ascii=False)
+        + "\nPREVIOUS PARTITION JSON:\n"
+        + json.dumps(patch, separators=(",", ":"), ensure_ascii=False)
+    )
+    if source_context:
+        prompt += "\nTARGET SOURCE CLAUSES:\n" + json.dumps(
+            source_context, separators=(",", ":"), ensure_ascii=False
+        )
+    return prompt
+
+
+def targeted_repair_indexes(
+    patch: Mapping[str, Any], errors: Sequence[str]
+) -> tuple[list[str], list[int]]:
+    """Return invalid unit IDs and unowned source indexes suitable for a tiny retry."""
+    units = patch.get("units", [])
+    invalid_ids = []
+    for unit in units:
+        if not isinstance(unit, Mapping) or not isinstance(unit.get("id"), str):
+            continue
+        if unit.get("k") == "procedure" and unit.get("steps") == []:
+            invalid_ids.append(unit["id"])
+        elif unit.get("k") == "constraint" and unit.get("violation") == []:
+            invalid_ids.append(unit["id"])
+
+    unowned = set()
+    for error in errors:
+        for match in re.finditer(r"response schema at /units/(\d+)", error):
+            index = int(match.group(1))
+            if (
+                0 <= index < len(units)
+                and isinstance(units[index], Mapping)
+                and isinstance(units[index].get("id"), str)
+                and units[index]["id"] not in invalid_ids
+            ):
+                invalid_ids.append(units[index]["id"])
+        for match in re.finditer(r"compiled clause (\d+) has no semantic owner", error):
+            unowned.add(int(match.group(1)))
+    return invalid_ids, sorted(unowned)
+
+
+def build_targeted_repair_prompt(
+    patch: Mapping[str, Any],
+    errors: Sequence[str],
+    source_context: Mapping[str, Any],
+) -> str | None:
+    invalid_ids, unowned = targeted_repair_indexes(patch, errors)
+    if not invalid_ids and not unowned:
+        return None
+
+    records = []
+    invalid_set = set(invalid_ids)
+    for collection in ("units", "exceptions", "examples"):
+        for item in patch.get(collection, []):
+            if not isinstance(item, Mapping) or not isinstance(item.get("id"), str):
+                continue
+            if item["id"] in invalid_set or unowned:
+                records.append(
+                    {
+                        "collection": collection,
+                        **{
+                            key: item[key]
+                            for key in ("id", "k", "c", "if", "steps", "violation")
+                            if key in item
+                        },
+                    }
+                )
+
+    return (
+        "Repair only the named defects in a machine-readable IUPAC rule partition. "
+        "Return JSON only. Do not return the full partition.\n"
+        "For each INVALID UNIT ID return a complete corrected unit in unit_repairs as "
+        '{"id":"same_id","unit":{...}}. Preserve its id and source c indexes. '
+        "A procedure must have nonempty executable compact statement arrays in steps; "
+        "a constraint must have nonempty violation statements. Derive semantics only "
+        "from the supplied source. Statements use seq,if,set,xform,render,reject,invoke,"
+        "each,emit,assert; expressions use lit,var,get,pred,call,all,any,not,exists,"
+        "forall,cmp,lookup,outcome. Every statement and expression must be an array, "
+        "never an object opcode. Give pred and call a nonempty string name. If a unit "
+        "owns several c indexes, encode the distinct semantics of every source clause, "
+        "not only the first one.\n"
+        "For each UNOWNED CLAUSE return one assignment to an existing record as "
+        '{"i":N,"collection":"units|exceptions|examples","id":"existing_id"}. '
+        "Assign it to the record that actually implements that clause.\n"
+        'Exact response shape: {"unit_repairs":[],"assignments":[]}\n'
+        "INVALID UNIT IDS:\n"
+        + json.dumps(invalid_ids, separators=(",", ":"))
+        + "\nUNOWNED CLAUSES:\n"
+        + json.dumps(unowned, separators=(",", ":"))
+        + "\nVALIDATOR ERRORS:\n"
+        + json.dumps(list(errors), separators=(",", ":"), ensure_ascii=False)
+        + "\nRELEVANT CURRENT RECORDS:\n"
+        + json.dumps(records, separators=(",", ":"), ensure_ascii=False)
+        + "\nSOURCE CLAUSES:\n"
+        + json.dumps(source_context, separators=(",", ":"), ensure_ascii=False)
+        + "\nReturn every requested repair now; leave neither array incomplete."
+    )
+
+
+def apply_targeted_repair(
+    patch: Mapping[str, Any], response: Mapping[str, Any]
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    repaired = copy.deepcopy(dict(patch))
+    actions = []
+    by_id: dict[str, tuple[str, int]] = {}
+    for collection in ("units", "exceptions", "examples"):
+        for index, item in enumerate(repaired.get(collection, [])):
+            if isinstance(item, Mapping) and isinstance(item.get("id"), str):
+                by_id[item["id"]] = (collection, index)
+
+    for repair in response.get("unit_repairs", []):
+        if not isinstance(repair, Mapping) or repair.get("id") not in by_id:
+            continue
+        unit = repair.get("unit")
+        if not isinstance(unit, Mapping) or unit.get("id") != repair["id"]:
+            continue
+        collection, index = by_id[repair["id"]]
+        repaired[collection][index] = copy.deepcopy(dict(unit))
+        actions.append({"action": "replace_unit", "id": repair["id"]})
+
+    for assignment in response.get("assignments", []):
+        if not isinstance(assignment, Mapping):
+            continue
+        source_index = assignment.get("i")
+        record_id = assignment.get("id")
+        collection = assignment.get("collection")
+        if (
+            not isinstance(source_index, int)
+            or record_id not in by_id
+            or collection not in ("units", "exceptions", "examples")
+            or by_id[record_id][0] != collection
+        ):
+            continue
+        _, index = by_id[record_id]
+        clauses = repaired[collection][index].setdefault("c", [])
+        if source_index not in clauses:
+            clauses.append(source_index)
+            clauses.sort()
+        actions.append(
+            {"action": "assign_clause", "i": source_index, "id": record_id}
+        )
+    return repaired, actions
+
+
+def compact_partition_source(
+    candidate: Mapping[str, Any], target_indexes: Sequence[int]
+) -> dict[str, Any]:
+    targets = set(target_indexes)
+    rules = []
+    for rule in candidate.get("rules", []):
+        clauses = []
+        for clause in rule.get("clauses", []):
+            if clause.get("i") not in targets:
+                continue
+            clauses.append(
+                {
+                    key: clause[key]
+                    for key in ("i", "id", "text", "cue", "payload", "draft", "mechanical")
+                    if key in clause
+                }
+            )
+        if clauses:
+            rules.append({"rule_id": rule.get("rule_id"), "clauses": clauses})
+    return {"rules": rules}
+
+
 def validate_patch(
     patch: Mapping[str, Any],
     task_id: str,
@@ -927,6 +1127,16 @@ def normalize_mechanical_decisions(
             isinstance(index, int)
             and 1 <= index <= len(bootstrap["clauses"])
             and isinstance(item.get("decision"), list)
+            and len(item["decision"]) == 3
+            and item["decision"][2] == "skip"
+            and isinstance(bootstrap["clauses"][index - 1], list)
+        ):
+            item["decision"] = bootstrap["clauses"][index - 1]
+            changed.append(index)
+        elif (
+            isinstance(index, int)
+            and 1 <= index <= len(bootstrap["clauses"])
+            and isinstance(item.get("decision"), list)
             and len(item["decision"]) == 5
             and item["decision"][2] == "supersede"
             and not item["decision"][3]
@@ -1128,6 +1338,76 @@ def normalize_compact_identifiers(
         return result
 
     def expression(value: Any, owner: Any) -> Any:
+        if isinstance(value, Mapping):
+            raw = dict(value)
+            op = raw.get("op")
+            compact: Any = None
+            if set(raw) == {"lit"}:
+                compact = ["lit", raw["lit"]]
+            elif set(raw) == {"var"}:
+                compact = ["var", raw["var"]]
+            elif op == "lit":
+                compact = ["lit", raw.get("value")]
+            elif op == "var":
+                compact = ["var", raw.get("name", raw.get("var"))]
+            elif op == "get":
+                compact = [
+                    "get",
+                    raw.get("object", raw.get("source", raw.get("value"))),
+                    raw.get("path", raw.get("field")),
+                ]
+            elif op in {"pred", "call"}:
+                name = raw.get("name", raw.get("func", raw.get(op)))
+                args = raw.get("args", [])
+                if not isinstance(args, list):
+                    args = [args]
+                compact = [op, name, *args]
+            elif op == "cmp":
+                compact = [
+                    "cmp",
+                    raw.get("relation", raw.get("cmp", "eq")),
+                    raw.get("left"),
+                    raw.get("right"),
+                ]
+            elif isinstance(raw.get("call"), str):
+                args = raw.get("args")
+                if not isinstance(args, list):
+                    args = [
+                        raw[key]
+                        for key in ("table", "key", "column", "value")
+                        if key in raw
+                    ]
+                compact = ["call", raw["call"], *args]
+            elif isinstance(raw.get("pred"), str):
+                args = raw.get("args")
+                if not isinstance(args, list):
+                    args = [raw["value"]] if "value" in raw else []
+                compact = ["pred", raw["pred"], *args]
+            elif isinstance(raw.get("pred"), Mapping):
+                nested_call = raw["pred"].get("call")
+                if isinstance(nested_call, Mapping) and isinstance(
+                    nested_call.get("name"), str
+                ):
+                    args = nested_call.get("args", [])
+                    if not isinstance(args, list):
+                        args = [args]
+                    compact = ["call", nested_call["name"], *args]
+            if compact is None:
+                if set(raw) & {
+                    "lit", "var", "get", "pred", "call", "all", "any", "not",
+                    "exists", "forall", "cmp", "lookup", "outcome",
+                }:
+                    return value
+                compact = ["lit", raw]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "object_expression",
+                    "from": raw,
+                    "to": compact,
+                }
+            )
+            return expression(compact, owner)
         if not isinstance(value, list):
             result = ["lit", value]
             changes.append(
@@ -1192,7 +1472,19 @@ def normalize_compact_identifiers(
                 }
             )
             return literal
-        if op == "var" and len(result) == 2:
+        if op == "lit" and len(result) > 2:
+            before = list(result)
+            result = ["lit", result[1:]]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "literal",
+                    "from": before,
+                    "to": result,
+                    "action": "collapse_literal_operands",
+                }
+            )
+        elif op == "var" and len(result) == 2:
             result[1] = replace(result[1], owner=owner, field="var")
         elif op == "get" and len(result) == 2 and isinstance(result[1], str):
             before = list(result)
@@ -1205,6 +1497,17 @@ def normalize_compact_identifiers(
                     "to": result,
                 }
             )
+        elif op == "get" and len(result) == 2:
+            before = list(result)
+            result = expression(result[1], owner)
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "get_identity_shorthand",
+                    "from": before,
+                    "to": result,
+                }
+            )
         elif op == "get" and len(result) == 3:
             if isinstance(result[1], str):
                 result[1] = [
@@ -1213,7 +1516,32 @@ def normalize_compact_identifiers(
                 ]
             else:
                 result[1] = expression(result[1], owner)
-            result[2] = replace(result[2], owner=owner, field="path", symbol=True)
+            raw_path = result[2]
+            if (
+                isinstance(raw_path, list)
+                and len(raw_path) == 2
+                and raw_path[0] == "lit"
+            ):
+                raw_path = raw_path[1]
+            if not isinstance(raw_path, str):
+                raw_path = str(raw_path)
+            result[2] = replace(raw_path, owner=owner, field="path", symbol=True)
+        elif op == "get" and len(result) > 3:
+            before = list(result)
+            result = [
+                "call",
+                "get_path",
+                expression(result[1], owner),
+                *[["lit", item] for item in result[2:]],
+            ]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "get_path_shorthand",
+                    "from": before,
+                    "to": result,
+                }
+            )
         elif op in {"pred", "call"} and len(result) >= 2:
             result[1] = replace(result[1], owner=owner, field="symbol", symbol=True)
             result[2:] = [expression(item, owner) for item in result[2:]]
@@ -1225,6 +1553,33 @@ def normalize_compact_identifiers(
             result[1] = replace(result[1], owner=owner, field="bind")
             result[2] = expression(result[2], owner)
             result[3] = expression(result[3], owner)
+        elif op in {"exists", "forall"} and len(result) == 3:
+            result[1] = replace(result[1], owner=owner, field="bind")
+            result[2] = expression(result[2], owner)
+            result.append(["lit", True])
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "quantifier",
+                    "action": "add_true_predicate",
+                }
+            )
+        elif op in {"exists", "forall"} and len(result) == 2:
+            before = list(result)
+            source = (
+                ["var", replace(result[1], owner=owner, field="var")]
+                if isinstance(result[1], str)
+                else expression(result[1], owner)
+            )
+            result = [op, "item", source, ["lit", True]]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "quantifier_shorthand",
+                    "from": before,
+                    "to": result,
+                }
+            )
         elif op == "cmp" and len(result) == 4:
             aliases = {"=": "eq", "==": "eq", "equals": "eq", "!=": "ne"}
             result[1] = aliases.get(result[1], result[1])
@@ -1254,10 +1609,40 @@ def normalize_compact_identifiers(
                 )
             else:
                 result[3] = expression(raw_right, owner)
+        elif op == "cmp" and len(result) == 5 and result[4] == ["lit", True]:
+            before = list(result)
+            result = expression(result[:4], owner)
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "comparison",
+                    "from": before,
+                    "to": result,
+                    "action": "remove_redundant_true_operand",
+                }
+            )
         elif op == "lookup" and len(result) == 4:
             result[1] = replace(result[1], owner=owner, field="table")
             result[2] = expression(result[2], owner)
             result[3] = replace(result[3], owner=owner, field="column")
+        elif op == "lookup" and len(result) == 3:
+            before = list(result)
+            if isinstance(result[1], str) and re.fullmatch(RULE_ID_SCHEMA["pattern"], result[1]):
+                result = [
+                    "outcome",
+                    result[1],
+                    replace(result[2], owner=owner, field="outcome"),
+                ]
+            else:
+                result = ["call", "lookup", expression(result[1], owner), expression(result[2], owner)]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "lookup_shorthand",
+                    "from": before,
+                    "to": result,
+                }
+            )
         elif op == "outcome" and len(result) == 3:
             result[2] = replace(result[2], owner=owner, field="outcome")
         return result
@@ -1275,6 +1660,8 @@ def normalize_compact_identifiers(
             "emit",
             "assert",
         }
+        if isinstance(values, Mapping):
+            values = [values]
         if values and isinstance(values[0], str) and values[0] in statement_ops:
             changes.append(
                 {
@@ -1291,6 +1678,49 @@ def normalize_compact_identifiers(
         ]
 
     def statement(value: Any, owner: Any) -> Any:
+        if isinstance(value, Mapping):
+            raw = dict(value)
+            compact: Any = None
+            op = raw.get("op", raw.get("opcode"))
+            if "seq" in raw and isinstance(raw["seq"], list):
+                compact = ["seq", *raw["seq"]]
+            elif op == "set":
+                compact = [
+                    "set",
+                    raw.get("var", raw.get("target")),
+                    raw.get("expr", raw.get("value")),
+                ]
+            elif op == "invoke":
+                compact = ["invoke", raw.get("id", raw.get("rule")), raw.get("args", {})]
+            elif op in {"emit", "assert"}:
+                compact = [op, raw.get("expr", raw.get("value"))]
+                if op == "assert" and "reason" in raw:
+                    compact.append(raw["reason"])
+            elif "set" in raw and isinstance(raw["set"], list):
+                compact = ["set", *raw["set"]]
+            elif "set" in raw and isinstance(raw["set"], Mapping):
+                payload = raw["set"]
+                compact = [
+                    "set",
+                    payload.get("var", payload.get("target")),
+                    payload.get("expr", payload.get("value")),
+                ]
+            elif "invoke" in raw:
+                payload = raw["invoke"]
+                compact = ["invoke", payload, raw.get("args", {})]
+            elif "if" in raw and "then" in raw:
+                compact = ["if", raw["if"], raw["then"], raw.get("else", [])]
+            if compact is None:
+                return value
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "object_statement",
+                    "from": raw,
+                    "to": compact,
+                }
+            )
+            return statement(compact, owner)
         if not isinstance(value, list) or not value or not isinstance(value[0], str):
             return value
         result = list(value)
@@ -1321,17 +1751,113 @@ def normalize_compact_identifiers(
                     }
                 )
                 return None
+            if not result[2] and result[3]:
+                before = list(result)
+                result = ["if", ["not", result[1]], result[3], []]
+                changes.append(
+                    {
+                        "owner_id": owner,
+                        "field": "statement",
+                        "from": before,
+                        "to": result,
+                        "action": "invert_empty_then_branch",
+                    }
+                )
         elif op == "set" and len(result) == 3:
             result[1] = replace(result[1], owner=owner, field="target")
             result[2] = expression(result[2], owner)
+        elif op == "set" and len(result) == 5:
+            before = list(result)
+            target = replace(result[1], owner=owner, field="target")
+            result = [
+                "if",
+                expression(result[2], owner),
+                [["set", target, expression(result[3], owner)]],
+                [["set", target, expression(result[4], owner)]],
+            ]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "statement",
+                    "from": before,
+                    "to": result,
+                    "action": "expand_conditional_set",
+                }
+            )
+        elif op == "set" and len(result) == 4:
+            before = list(result)
+            target = replace(result[1], owner=owner, field="target")
+            result = [
+                "if",
+                expression(result[2], owner),
+                [["set", target, expression(result[3], owner)]],
+                [],
+            ]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "statement",
+                    "from": before,
+                    "to": result,
+                    "action": "expand_guarded_set",
+                }
+            )
         elif op == "xform" and len(result) >= 3:
             result[1] = replace(result[1], owner=owner, field="target")
             result[2] = replace(result[2], owner=owner, field="transformation", symbol=True)
             result[3:] = [expression(item, owner) for item in result[3:]]
         elif op == "render" and len(result) == 4:
             result[1] = replace(result[1], owner=owner, field="component")
-            result[2] = replace(result[2], owner=owner, field="position")
-            result[3] = expression(result[3], owner)
+            if isinstance(result[2], str):
+                result[2] = replace(result[2], owner=owner, field="position")
+                result[3] = expression(result[3], owner)
+            else:
+                result = [
+                    "render",
+                    result[1],
+                    "value",
+                    [
+                        "call",
+                        "concatenate",
+                        expression(result[2], owner),
+                        expression(result[3], owner),
+                    ],
+                ]
+                changes.append(
+                    {
+                        "owner_id": owner,
+                        "field": "statement",
+                        "action": "move_render_expression_from_position",
+                    }
+                )
+        elif op == "render" and len(result) == 3:
+            result = [
+                "render",
+                replace(result[1], owner=owner, field="component"),
+                "value",
+                expression(result[2], owner),
+            ]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "statement",
+                    "action": "add_render_position",
+                }
+            )
+        elif op == "render" and len(result) > 4:
+            result = [
+                "render",
+                replace(result[1], owner=owner, field="component"),
+                replace(result[2], owner=owner, field="position"),
+                ["call", "concatenate", *[expression(item, owner) for item in result[3:]]],
+            ]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "statement",
+                    "action": "collapse_render_values",
+                }
+            )
         elif op == "reject" and len(result) == 3:
             result[1] = replace(result[1], owner=owner, field="target")
             if isinstance(result[2], str):
@@ -1346,8 +1872,29 @@ def normalize_compact_identifiers(
                             "to": result[2],
                         }
                     )
-        elif op == "invoke" and len(result) == 3 and isinstance(result[2], Mapping):
-            result[2] = {name: expression(item, owner) for name, item in result[2].items()}
+        elif op == "invoke" and len(result) in {2, 3}:
+            if isinstance(result[1], str):
+                base_rule = result[1].split(":", 1)[0]
+                if (
+                    base_rule != result[1]
+                    and re.fullmatch(RULE_ID_SCHEMA["pattern"], base_rule)
+                ):
+                    before = result[1]
+                    result[1] = base_rule
+                    changes.append(
+                        {
+                            "owner_id": owner,
+                            "field": "invoke_rule",
+                            "from": before,
+                            "to": result[1],
+                        }
+                    )
+            if len(result) == 2:
+                result.append({})
+            if isinstance(result[2], Mapping):
+                result[2] = {
+                    name: expression(item, owner) for name, item in result[2].items()
+                }
         elif op == "each" and len(result) == 5:
             result[1] = replace(result[1], owner=owner, field="bind")
             result[2] = expression(result[2], owner)
@@ -1422,6 +1969,24 @@ def normalize_compact_identifiers(
         normalized_symbols.append(item)
     normalized["symbols"] = normalized_symbols
 
+    common_unit_fields = {"id", "k", "f", "c", "scope", "in", "out"}
+    unit_kind_fields = {
+        "rule": {"if", "then", "else"},
+        "definition": {"term", "entity", "value"},
+        "procedure": {"steps"},
+        "constraint": {"assert", "violation"},
+        "mapping": {"table"},
+        "decision": {"candidates", "stages", "tie"},
+    }
+    unit_required_fields = {
+        "rule": {"if"},
+        "definition": {"term", "entity", "value"},
+        "procedure": {"steps"},
+        "constraint": {"assert", "violation"},
+        "mapping": {"table"},
+        "decision": {"candidates", "stages", "tie"},
+    }
+
     normalized_units = []
     for raw_item in patch.get("units", []):
         if not isinstance(raw_item, Mapping):
@@ -1435,6 +2000,90 @@ def normalize_compact_identifiers(
             continue
         item = dict(raw_item)
         owner = item.get("id")
+        kind = item.get("k")
+        required = unit_required_fields.get(kind, set())
+        if isinstance(kind, str) and (
+            kind not in unit_kind_fields or not required.issubset(item)
+        ):
+            inferred = "procedure" if kind == "procedure" and "then" in item else None
+            if inferred is None:
+                for candidate_kind in (
+                    "decision",
+                    "constraint",
+                    "definition",
+                    "mapping",
+                    "rule",
+                    "procedure",
+                ):
+                    if unit_required_fields[candidate_kind].issubset(item):
+                        inferred = candidate_kind
+                        break
+            if inferred is None and "then" in item:
+                inferred = "procedure" if kind == "procedure" else "rule"
+            if inferred is None and "steps" in item:
+                inferred = "procedure"
+            if inferred is not None and inferred != kind:
+                item["k"] = inferred
+                changes.append(
+                    {
+                        "owner_id": owner,
+                        "field": "k",
+                        "from": kind,
+                        "to": inferred,
+                        "action": "infer_unit_kind_from_shape",
+                    }
+                )
+                kind = inferred
+
+        if kind == "procedure" and "steps" not in item and "then" in item:
+            condition = item.get("if", ["lit", True])
+            then_values = item.get("then", [])
+            else_values = item.get("else", [])
+            if condition == ["lit", True] and not else_values:
+                item["steps"] = then_values
+            else:
+                item["steps"] = [["if", condition, then_values, else_values]]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "steps",
+                    "action": "convert_procedure_branches",
+                }
+            )
+        if kind == "procedure" and "if" in item:
+            condition = item["if"]
+            if condition != ["lit", True] and isinstance(item.get("steps"), list):
+                item["steps"] = [["if", condition, item["steps"], []]]
+                changes.append(
+                    {
+                        "owner_id": owner,
+                        "field": "steps",
+                        "action": "preserve_procedure_guard",
+                    }
+                )
+        if kind == "constraint" and "if" in item and item["if"] != ["lit", True]:
+            item["assert"] = ["all", item["if"], item.get("assert", ["lit", True])]
+            changes.append(
+                {
+                    "owner_id": owner,
+                    "field": "assert",
+                    "action": "preserve_constraint_guard",
+                }
+            )
+
+        if kind in unit_kind_fields:
+            allowed = common_unit_fields | unit_kind_fields[kind]
+            removed = sorted(set(item).difference(allowed))
+            if removed:
+                item = {key: value for key, value in item.items() if key in allowed}
+                changes.append(
+                    {
+                        "owner_id": owner,
+                        "field": "unit",
+                        "action": "remove_cross_kind_fields",
+                        "keys": removed,
+                    }
+                )
         if "f" in item and item["f"] not in UNIT_FORCES:
             before = item["f"]
             item["f"] = "definition" if item.get("k") == "definition" else "required"
@@ -1443,6 +2092,17 @@ def normalize_compact_identifiers(
             )
         if isinstance(item.get("scope"), Mapping):
             scope = dict(item["scope"])
+            extra_scope = sorted(set(scope).difference({"r", "if"}))
+            if extra_scope:
+                scope = {key: value for key, value in scope.items() if key in {"r", "if"}}
+                changes.append(
+                    {
+                        "owner_id": owner,
+                        "field": "scope",
+                        "action": "remove_unknown_keys",
+                        "keys": extra_scope,
+                    }
+                )
             regimes = scope.get("r")
             if isinstance(regimes, list) and any(value not in SCOPE_REGIMES for value in regimes):
                 changes.append({"owner_id": owner, "field": "scope.r", "from": regimes, "to": ["class_specific"]})
@@ -1456,6 +2116,18 @@ def normalize_compact_identifiers(
         for field in ("then", "else", "steps", "violation"):
             if isinstance(item.get(field), list):
                 item[field] = statements(item[field], owner)
+        if isinstance(item.get("stages"), list):
+            stages = []
+            for raw_stage in item["stages"]:
+                if not isinstance(raw_stage, Mapping):
+                    stages.append(raw_stage)
+                    continue
+                stage = dict(raw_stage)
+                for field in ("if", "key"):
+                    if field in stage:
+                        stage[field] = expression(stage[field], owner)
+                stages.append(stage)
+            item["stages"] = stages
         normalized_units.append(item)
     normalized["units"] = normalized_units
     return normalized, changes
@@ -1505,6 +2177,26 @@ def normalize_partition_ownership(
     targets = set(target_indexes)
     normalized = dict(patch)
     changes = []
+    clauses = patch.get("clauses")
+    if isinstance(clauses, list):
+        by_index = {
+            item.get("i"): dict(item)
+            for item in clauses
+            if isinstance(item, Mapping) and isinstance(item.get("i"), int)
+        }
+        normalized_clauses = [
+            by_index[index] for index in target_indexes if index in by_index
+        ]
+        removed_indexes = sorted(set(by_index).difference(targets))
+        if removed_indexes or normalized_clauses != clauses:
+            normalized["clauses"] = normalized_clauses
+            changes.append(
+                {
+                    "collection": "clauses",
+                    "action": "restrict_to_partition_order",
+                    "removed_clause_indexes": removed_indexes,
+                }
+            )
     for collection in ("units", "exceptions", "examples"):
         normalized_items = []
         for raw_item in patch.get(collection, []):
@@ -2104,6 +2796,123 @@ def localize_compile_errors(
     return localized
 
 
+def repair_unresolved_symbols(
+    patches: Sequence[Mapping[str, Any]],
+    compile_report: Mapping[str, Any] | None,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Declare compiler-identified symbol interfaces once, without model inference."""
+    repaired = copy.deepcopy([dict(patch) for patch in patches])
+    existing = {
+        item.get("id")
+        for patch in repaired
+        for item in patch.get("symbols", [])
+        if isinstance(item, Mapping) and isinstance(item.get("id"), str)
+    }
+    missing: dict[str, str] = {}
+    for error in (compile_report or {}).get("errors", []):
+        if error.get("code") != "symbol.unresolved":
+            continue
+        context = error.get("context", {})
+        symbol_id = context.get("symbol_id") if isinstance(context, Mapping) else None
+        kind = context.get("expected_kind") if isinstance(context, Mapping) else None
+        if (
+            isinstance(symbol_id, str)
+            and isinstance(kind, str)
+            and symbol_id not in existing
+        ):
+            missing[symbol_id] = kind
+
+    actions = []
+    returns = {
+        "predicate": "boolean",
+        "comparator": "integer",
+        "reason_code": "reason_code",
+        "entity_type": "Entity",
+    }
+    for symbol_id, kind in sorted(missing.items()):
+        destination = next(
+            (
+                patch
+                for patch in repaired
+                if len(patch.get("symbols", [])) < len(patch.get("clauses", []))
+            ),
+            None,
+        )
+        if destination is None:
+            break
+        destination.setdefault("symbols", []).append(
+            {
+                "id": symbol_id,
+                "k": kind,
+                "d": "Interface required by a compiled semantic expression.",
+                "ret": returns.get(kind, "Any"),
+            }
+        )
+        existing.add(symbol_id)
+        actions.append(
+            {
+                "action": "declare_unresolved_symbol",
+                "id": symbol_id,
+                "kind": kind,
+                "partition": repaired.index(destination) + 1,
+            }
+        )
+    return repaired, actions
+
+
+def only_unresolved_symbol_errors(errors: Sequence[Mapping[str, Any]]) -> bool:
+    return bool(errors) and all(
+        isinstance(error, Mapping) and error.get("code") == "symbol.unresolved"
+        for error in errors
+    )
+
+
+def localize_authoring_validation_errors(
+    source: Mapping[str, Any],
+    validation_errors: Sequence[str],
+    partitions: Sequence[Sequence[int]],
+) -> dict[int, list[dict[str, Any]]]:
+    localized: dict[int, list[dict[str, Any]]] = {}
+    collection_map = {
+        "semantic_units": "units",
+        "exceptions": "exceptions",
+        "examples": "examples",
+    }
+    for text in validation_errors:
+        match = re.search(r"Delta fails schema at /([^:]+): (.+)$", text)
+        if match is None:
+            continue
+        path = match.group(1)
+        parts = path.split("/")
+        error = {
+            "path": "/" + path,
+            "message": match.group(2),
+            "source": "authoring_schema",
+        }
+        if len(parts) >= 2 and parts[0] == "clause_dispositions":
+            try:
+                clause_index = int(parts[1]) + 1
+            except ValueError:
+                continue
+            for partition_number, indexes in enumerate(partitions, 1):
+                if clause_index in indexes:
+                    localized.setdefault(partition_number, []).append(error)
+                    break
+            continue
+        if len(parts) < 2 or parts[0] not in collection_map:
+            continue
+        try:
+            object_index = int(parts[1])
+            item = source[collection_map[parts[0]]][object_index]
+        except (IndexError, KeyError, TypeError, ValueError):
+            continue
+        clause_indexes = item.get("c", []) if isinstance(item, Mapping) else []
+        for partition_number, indexes in enumerate(partitions, 1):
+            if set(clause_indexes).intersection(indexes):
+                localized.setdefault(partition_number, []).append(error)
+    return localized
+
+
 def assemble_patches(
     patches: Sequence[Mapping[str, Any]],
     bootstrap: Mapping[str, Any],
@@ -2185,6 +2994,7 @@ def process_task(
         patch_path = patch_dir / f"part-{number:03}.json"
         part_report_path = report_dir / f"part-{number:03}.json"
         prior_patch: dict[str, Any] | None = None
+        cached_validation: dict[str, Any] | None = None
         prior_global_errors: list[dict[str, Any]] = []
         prior_global_repair_round = 0
         if not force and patch_path.exists() and part_report_path.exists():
@@ -2218,9 +3028,17 @@ def process_task(
             prior_global_repair_round = int(
                 part_report.get("global_repair_round", 0)
             )
+            if only_unresolved_symbol_errors(prior_global_errors):
+                part_report["superseded_global_validation_errors"] = (
+                    prior_global_errors
+                )
+                part_report["global_symbol_repair_deferred"] = True
+                part_report.pop("global_validation_errors", None)
+                prior_global_errors = []
             validation = validate_patch(
                 patch, task_id, indexes, task=task, bootstrap=bootstrap
             )
+            cached_validation = validation
             cache_normalized = bool(
                 normalized_metadata
                 or normalized_reasons
@@ -2294,24 +3112,45 @@ def process_task(
             maximum_output_tokens, max(4096, 768 + 384 * len(indexes))
         )
         request_prompt = prompt
+        targeted_base_patch: dict[str, Any] | None = None
         if prior_global_errors and prior_patch is not None:
-            request_prompt = (
-                prompt
-                + "\nPREVIOUS PARTITION FAILED GLOBAL COMPILATION:\n"
-                + json.dumps(
-                    prior_global_errors, separators=(",", ":"), ensure_ascii=False
-                )
-                + "\nPREVIOUS PARTITION JSON:\n"
-                + json.dumps(
-                    prior_patch, separators=(",", ":"), ensure_ascii=False
-                )
-                + "\nRepair every reported dependency or schema problem while "
-                "preserving valid content. References and table IDs must resolve to "
-                "objects listed in the retained objects or this partition. This "
-                "partition cannot create tables: replace any unresolved lookup with "
-                "executable conditionals, literals, or local variable access. Return "
-                "the complete corrected partition as JSON only."
+            repair_errors = [
+                json.dumps(error, separators=(",", ":"), ensure_ascii=False)
+                for error in prior_global_errors
+            ]
+            request_prompt = build_targeted_repair_prompt(
+                prior_patch,
+                repair_errors,
+                compact_partition_source(candidate, indexes),
             )
+            if request_prompt is not None:
+                targeted_base_patch = prior_patch
+            else:
+                request_prompt = build_partition_repair_prompt(
+                    prior_patch,
+                    repair_errors,
+                    indexes,
+                    compact_partition_source(candidate, indexes),
+                )
+        elif (
+            prior_patch is not None
+            and cached_validation is not None
+            and not cached_validation["passed"]
+        ):
+            request_prompt = build_targeted_repair_prompt(
+                prior_patch,
+                cached_validation["errors"],
+                compact_partition_source(candidate, indexes),
+            )
+            if request_prompt is not None:
+                targeted_base_patch = prior_patch
+            else:
+                request_prompt = build_partition_repair_prompt(
+                    prior_patch,
+                    cached_validation["errors"],
+                    indexes,
+                    compact_partition_source(candidate, indexes),
+                )
         attempts = []
         best_patch: dict[str, Any] = {}
         best_validation = {"passed": False, "errors": ["not generated"]}
@@ -2323,7 +3162,12 @@ def process_task(
             available_output_tokens = (
                 context_tokens - prompt_tokens - context_overhead
             )
-            request_output_tokens = min(output_tokens, available_output_tokens)
+            active_output_tokens = (
+                min(output_tokens, 4096)
+                if targeted_base_patch is not None
+                else output_tokens
+            )
+            request_output_tokens = min(active_output_tokens, available_output_tokens)
             context_preflight = {
                 "prompt_tokens": prompt_tokens,
                 "count_method": token_count_method,
@@ -2348,9 +3192,13 @@ def process_task(
                 )
                 break
             request_seed = (
-                seed + number - 1 + (1009 * prior_global_repair_round)
+                seed
+                + number
+                - 1
+                + (97 * attempt)
+                + (1009 * prior_global_repair_round)
             )
-            patch, metrics = _request_model(
+            model_response, metrics = _request_model(
                 backend=backend,
                 endpoint=endpoint,
                 model=model,
@@ -2361,6 +3209,13 @@ def process_task(
                 seed=request_seed,
                 schema=REQUEST_ENVELOPE_SCHEMA,
             )
+            targeted_actions: list[dict[str, Any]] = []
+            if targeted_base_patch is not None:
+                patch, targeted_actions = apply_targeted_repair(
+                    targeted_base_patch, model_response
+                )
+            else:
+                patch = model_response
             patch, normalized_metadata = normalize_clause_metadata(patch, bootstrap)
             patch, normalized_reasons = normalize_reason_codes(patch, bootstrap)
             patch, normalized_identifiers = normalize_compact_identifiers(patch)
@@ -2391,6 +3246,7 @@ def process_task(
                     "request_seed": request_seed,
                     "context_preflight": context_preflight,
                     "metrics": metrics,
+                    "targeted_repair_actions": targeted_actions,
                     "clause_metadata_normalized": normalized_metadata,
                     "reason_codes_normalized": normalized_reasons,
                     "compact_identifiers_normalized": normalized_identifiers,
@@ -2412,22 +3268,21 @@ def process_task(
             best_patch = patch
             best_validation = validation
             if attempt < repair_attempts:
-                request_prompt = (
-                    prompt
-                    + "\nPREVIOUS PARTITION FAILED VALIDATION:\n"
-                    + json.dumps(
-                        validation["errors"], separators=(",", ":"), ensure_ascii=False
-                    )
-                    + "\nPREVIOUS PARTITION JSON:\n"
-                    + json.dumps(
-                        patch, separators=(",", ":"), ensure_ascii=False
-                    )
-                    + "\nRepair this JSON while preserving valid content. For every "
-                    "compiled clause without an owner, add its index to the c array of "
-                    "the semantic unit or example that implements it, or change its "
-                    "decision to skip only if the source is genuinely nonoperative. "
-                    "Return the complete corrected partition as JSON only."
+                request_prompt = build_targeted_repair_prompt(
+                    patch,
+                    validation["errors"],
+                    compact_partition_source(candidate, indexes),
                 )
+                if request_prompt is not None:
+                    targeted_base_patch = patch
+                else:
+                    targeted_base_patch = None
+                    request_prompt = build_partition_repair_prompt(
+                        patch,
+                        validation["errors"],
+                        indexes,
+                        compact_partition_source(candidate, indexes),
+                    )
         if best_patch:
             patch_path.write_bytes(canonical_json_bytes(best_patch))
         part_report = {
@@ -2471,6 +3326,20 @@ def process_task(
 
     source = assemble_patches(patches, bootstrap)
     validation, chunk, compile_report = validate_authoring(source, task)
+    patches, symbol_repairs = repair_unresolved_symbols(patches, compile_report)
+    if symbol_repairs:
+        source = assemble_patches(patches, bootstrap)
+        validation, chunk, compile_report = validate_authoring(source, task)
+        repairs_by_partition: dict[int, list[dict[str, Any]]] = {}
+        for action in symbol_repairs:
+            repairs_by_partition.setdefault(action["partition"], []).append(action)
+        for partition_number, actions in repairs_by_partition.items():
+            (patch_dir / f"part-{partition_number:03}.json").write_bytes(
+                canonical_json_bytes(patches[partition_number - 1])
+            )
+            partition_reports[partition_number - 1][
+                "unresolved_symbols_normalized"
+            ] = actions
     authoring_dir = output_dir / "authoring"
     chunk_dir = output_dir / "chunks"
     report_output_dir = output_dir / "reports"
@@ -2490,9 +3359,15 @@ def process_task(
         "authoring_sha256": _sha256(source),
         "validation": validation,
         "compile_report": compile_report,
+        "unresolved_symbols_normalized": symbol_repairs,
         "partition_reports": partition_reports,
     }
     localized_errors = localize_compile_errors(source, compile_report, partitions)
+    validation_localized = localize_authoring_validation_errors(
+        source, validation.get("errors", []), partitions
+    )
+    for partition_number, errors in validation_localized.items():
+        localized_errors.setdefault(partition_number, []).extend(errors)
     if localized_errors:
         for partition_number, global_errors in localized_errors.items():
             stored_report = dict(partition_reports[partition_number - 1])
